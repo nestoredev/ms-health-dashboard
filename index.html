@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Health Dashboard</title>
+    <style>
+        :root {
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-main: #212529;
+            --text-muted: #6c757d;
+            --border-color: #dee2e6;
+            --primary: #0078d4; /* Microsoft Blue */
+            --success: #107c10;
+            --warning: #ffb900;
+            --danger: #d83b01;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 2rem;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        h1 {
+            margin: 0;
+            font-weight: 600;
+            font-size: 1.75rem;
+        }
+
+        .filters {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            background: var(--card-bg);
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        label {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+        }
+
+        select {
+            padding: 0.5rem;
+            border-radius: 4px;
+            border: 1px solid var(--border-color);
+            min-width: 150px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            transition: transform 0.1s;
+        }
+
+        .card:hover {
+            border-color: var(--primary);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+
+        .service-name {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .status-badge {
+            font-size: 0.75rem;
+            padding: 0.25rem 0.6rem;
+            border-radius: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .status-operational { background: #dff6dd; color: var(--success); }
+        .status-investigating { background: #fff4ce; color: #856404; }
+        .status-incident { background: #fde7e9; color: var(--danger); }
+
+        .issue-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .issue-item {
+            font-size: 0.9rem;
+            padding-top: 0.75rem;
+            margin-top: 0.75rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .issue-id {
+            color: var(--text-muted);
+            font-family: monospace;
+            font-size: 0.8rem;
+        }
+
+        .issue-title {
+            display: block;
+            font-weight: 500;
+            margin: 0.25rem 0;
+        }
+
+        .issue-time {
+            display: block;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        #last-updated {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <h1>Service Health</h1>
+                <div id="last-updated">Last checked: Just now</div>
+            </div>
+        </header>
+
+        <div class="filters">
+            <div class="filter-group">
+                <label for="service-filter">Service</label>
+                <select id="service-filter">
+                    <option value="all">All Services</option>
+                    <option value="Microsoft 365 suite">Microsoft 365 Suite</option>
+                    <option value="Exchange Online">Exchange Online</option>
+                    <option value="SharePoint Online">SharePoint Online</option>
+                    <option value="Microsoft Teams">Microsoft Teams</option>
+                    <option value="OneDrive for Business">OneDrive for Business</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="status-filter">Status</label>
+                <select id="status-filter">
+                    <option value="all">All Statuses</option>
+                    <option value="operational">Operational</option>
+                    <option value="issue">Active Issues</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="grid" id="status-grid">
+            <!-- Cards will be injected here -->
+        </div>
+    </div>
+
+    <script>
+        const placeholderData = [
+            {
+                service: "Microsoft 365 suite",
+                status: "ServiceOperational",
+                issues: []
+            },
+            {
+                service: "Exchange Online",
+                status: "ServiceOperational",
+                issues: []
+            },
+            {
+                service: "Microsoft Teams",
+                status: "Investigating",
+                issues: [
+                    { id: "TM710234", title: "Users may experience delays in chat delivery", startTime: "2026-01-26T17:45:00Z" }
+                ]
+            },
+            {
+                service: "OneDrive for Business",
+                status: "ServiceOperational",
+                issues: []
+            },
+            {
+                service: "SharePoint Online",
+                status: "ServiceOperational",
+                issues: []
+            }
+        ];
+
+        function getStatusClass(status) {
+            if (status === "ServiceOperational") return "status-operational";
+            if (status === "Investigating") return "status-investigating";
+            return "status-incident";
+        }
+
+        function getStatusLabel(status) {
+            if (status === "ServiceOperational") return "Operational";
+            return status;
+        }
+
+        function render(data) {
+            const grid = document.getElementById('status-grid');
+            const serviceFilter = document.getElementById('service-filter').value;
+            const statusFilter = document.getElementById('status-filter').value;
+
+            const filtered = data.filter(item => {
+                const matchesService = serviceFilter === 'all' || item.service === serviceFilter;
+                const matchesStatus = statusFilter === 'all' || 
+                                     (statusFilter === 'operational' && item.status === 'ServiceOperational') ||
+                                     (statusFilter === 'issue' && item.status !== 'ServiceOperational');
+                return matchesService && matchesStatus;
+            });
+
+            grid.innerHTML = filtered.map(item => `
+                <div class="card">
+                    <div class="card-header">
+                        <span class="service-name">${item.service}</span>
+                        <span class="status-badge ${getStatusClass(item.status)}">${getStatusLabel(item.status)}</span>
+                    </div>
+                    ${item.issues.length > 0 ? `
+                        <div class="issue-list">
+                            ${item.issues.map(issue => `
+                                <div class="issue-item">
+                                    <span class="issue-id">${issue.id}</span>
+                                    <span class="issue-title">${issue.title}</span>
+                                    <span class="issue-time">${new Date(issue.startTime).toLocaleString()}</span>
+                                </div>
+                            `).join('')}
+                        </div>
+                    ` : '<div style="color: var(--text-muted); font-size: 0.85rem;">No active issues</div>'}
+                </div>
+            `).join('');
+        }
+
+        document.getElementById('service-filter').addEventListener('change', () => render(placeholderData));
+        document.getElementById('status-filter').addEventListener('change', () => render(placeholderData));
+
+        // Initial render
+        render(placeholderData);
+    </script>
+</body>
+</html>
