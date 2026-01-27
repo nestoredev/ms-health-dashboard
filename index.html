@@ -153,6 +153,33 @@
             font-size: 0.85rem;
             color: var(--text-muted);
         }
+
+        .refresh-btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .refresh-btn:disabled {
+            background: var(--border-color);
+            cursor: not-allowed;
+        }
+
+        .refresh-btn.loading svg {
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
     </style>
 </head>
 <body>
@@ -160,8 +187,12 @@
         <header>
             <div>
                 <h1>Service Health</h1>
-                <div id="last-updated">Last checked: Just now</div>
+                <div id="last-updated">Loading...</div>
             </div>
+            <button id="refresh-btn" class="refresh-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 4v6h-6M1 20v-6h6M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg>
+                Refresh Now
+            </button>
         </header>
 
         <div class="filters">
@@ -195,53 +226,75 @@
     </div>
 
     <script>
-        const placeholderData = [
-            {
-                service: "Microsoft 365 suite",
-                status: "ServiceOperational",
-                issues: []
-            },
-            {
-                service: "Exchange Online",
-                status: "ServiceOperational",
-                issues: []
-            },
-            {
-                service: "Microsoft Teams",
-                status: "Investigating",
-                issues: [
-                    { id: "TM710234", title: "Users may experience delays in chat delivery", startTime: "2026-01-26T17:45:00Z" }
-                ]
-            },
-            {
-                service: "OneDrive for Business",
-                status: "ServiceOperational",
-                issues: []
-            },
-            {
-                service: "SharePoint Online",
-                status: "ServiceOperational",
-                issues: []
+        // Configuration - Set this in a GitHub secret or env if needed
+        // For public pages, we use a proxy or just rely on the Action
+        const GITHUB_OWNER = 'nestoredev';
+        const GITHUB_REPO = 'ms-health-dashboard';
+
+        let currentData = null;
+
+        async function loadData() {
+            try {
+                const response = await fetch('data.json?t=' + Date.now());
+                if (!response.ok) throw new Error('No data found');
+                currentData = await response.json();
+                document.getElementById('last-updated').innerText = 'Last updated: ' + new Date(currentData.lastUpdated).toLocaleString();
+                render(currentData.services);
+            } catch (err) {
+                console.error(err);
+                document.getElementById('last-updated').innerText = 'Starting up... (Initial data fetch pending)';
             }
-        ];
+        }
+
+        async function triggerRefresh() {
+            const btn = document.getElementById('refresh-btn');
+            const pat = prompt("Enter your GitHub PAT to trigger a live refresh:");
+            if (!pat) return;
+
+            btn.disabled = true;
+            btn.classList.add('loading');
+
+            try {
+                const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/dispatches`, {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': `token ${pat}`,
+                        'Accept': 'application/vnd.github.v3+json'
+                    },
+                    body: JSON.stringify({ event_type: 'live_refresh' })
+                });
+
+                if (res.ok) {
+                    alert("Refresh triggered! The data will update in about 60 seconds.");
+                    // Polling for updates could go here
+                } else {
+                    throw new Error('Failed to trigger');
+                }
+            } catch (err) {
+                alert("Error: " + err.message);
+            } finally {
+                btn.disabled = false;
+                btn.classList.remove('loading');
+            }
+        }
 
         function getStatusClass(status) {
             if (status === "ServiceOperational") return "status-operational";
-            if (status === "Investigating") return "status-investigating";
+            if (status === "Investigating" || status === "ServiceDegradation") return "status-investigating";
             return "status-incident";
         }
 
         function getStatusLabel(status) {
             if (status === "ServiceOperational") return "Operational";
-            return status;
+            return status.replace(/([A-Z])/g, ' $1').trim();
         }
 
-        function render(data) {
+        function render(services) {
             const grid = document.getElementById('status-grid');
             const serviceFilter = document.getElementById('service-filter').value;
             const statusFilter = document.getElementById('status-filter').value;
 
-            const filtered = data.filter(item => {
+            const filtered = services.filter(item => {
                 const matchesService = serviceFilter === 'all' || item.service === serviceFilter;
                 const matchesStatus = statusFilter === 'all' || 
                                      (statusFilter === 'operational' && item.status === 'ServiceOperational') ||
@@ -255,7 +308,7 @@
                         <span class="service-name">${item.service}</span>
                         <span class="status-badge ${getStatusClass(item.status)}">${getStatusLabel(item.status)}</span>
                     </div>
-                    ${item.issues.length > 0 ? `
+                    ${item.issues && item.issues.length > 0 ? `
                         <div class="issue-list">
                             ${item.issues.map(issue => `
                                 <div class="issue-item">
@@ -270,11 +323,12 @@
             `).join('');
         }
 
-        document.getElementById('service-filter').addEventListener('change', () => render(placeholderData));
-        document.getElementById('status-filter').addEventListener('change', () => render(placeholderData));
+        document.getElementById('service-filter').addEventListener('change', () => render(currentData?.services || []));
+        document.getElementById('status-filter').addEventListener('change', () => render(currentData?.services || []));
+        document.getElementById('refresh-btn').addEventListener('click', triggerRefresh);
 
-        // Initial render
-        render(placeholderData);
+        // Initial load
+        loadData();
     </script>
 </body>
 </html>
