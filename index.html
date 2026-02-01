@@ -594,6 +594,10 @@
             });
 
             const allIssues = Array.from(issuesMap.values());
+            
+            // Sort by startTime descending (most recent first)
+            allIssues.sort((a, b) => new Date(b.startTime) - new Date(a.startTime));
+
             const incidents = allIssues.filter(i => i.status?.toLowerCase().includes('interruption') || i.severity?.toLowerCase() === 'incident');
             const advisories = allIssues.filter(i => !i.status?.toLowerCase().includes('interruption') && i.severity?.toLowerCase() !== 'incident');
 
