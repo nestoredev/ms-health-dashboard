@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-01T03:06:33.928Z",
+  "lastUpdated": "2026-02-01T03:12:08.529Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -14,9 +14,11 @@
           "lastModified": "2026-01-30T06:41:37.953Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "impactDescription": "Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center.",
+          "userImpact": "Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center.",
           "scopeOfImpact": "Impact is specific to some admins attempting to upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center. This section may be updated as our investigation continues.",
+          "rootCause": "",
           "feature": "All clients",
+          "isResolved": false,
           "posts": [
             {
               "createdAt": "2026-01-30T06:41:37.953Z",
@@ -128,9 +130,11 @@
           "lastModified": "2026-01-30T06:38:33.2Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "impactDescription": "Admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services.",
+          "userImpact": "Admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services.",
           "scopeOfImpact": "Admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\" may be impacted. This section may be updated as our investigation continues.\n\nStart time: Tuesday, October 7, 2025, at 8:27 AM UTC",
+          "rootCause": "A recent service operation intended to upgrade our API flow impacted Microsoft 365 Groups that were previously configured to have the \"SecurityEnabled\" setting enabled, switching this value back to \"False\" by default and resulting in impact to admins and users whose service access was being managed by the affected groups.",
           "feature": "Access",
+          "isResolved": false,
           "posts": [
             {
               "createdAt": "2026-01-30T06:38:33.2Z",
@@ -265,9 +269,11 @@
           "lastModified": "2026-01-30T06:38:33.2Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "impactDescription": "Admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services.",
+          "userImpact": "Admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services.",
           "scopeOfImpact": "Admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\" may be impacted. This section may be updated as our investigation continues.\n\nStart time: Tuesday, October 7, 2025, at 8:27 AM UTC",
+          "rootCause": "A recent service operation intended to upgrade our API flow impacted Microsoft 365 Groups that were previously configured to have the \"SecurityEnabled\" setting enabled, switching this value back to \"False\" by default and resulting in impact to admins and users whose service access was being managed by the affected groups.",
           "feature": "Access",
+          "isResolved": false,
           "posts": [
             {
               "createdAt": "2026-01-30T06:38:33.2Z",
@@ -396,9 +402,11 @@
           "lastModified": "2026-01-21T19:01:08.153Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "impactDescription": "Users with edit and full control permissions may be unable to access or share some items in SharePoint Online.",
+          "userImpact": "Users with edit and full control permissions may be unable to access or share some items in SharePoint Online.",
           "scopeOfImpact": "Some users with edit and full control permissions who are attempting to access or share some items in SharePoint Online that were deleted and recently restored from the recycle bin may be impacted. This information may be updated as our investigation continues.\n\nStart time: Monday, October 13, 2025, at 3:50 PM UTC",
+          "rootCause": "A recent deployment contains a code regression that introduced a compatibility issue between code that's preventing items that have been deleted and recently restored from being accessible again.",
           "feature": "Save Site as Template",
+          "isResolved": false,
           "posts": [
             {
               "createdAt": "2026-01-21T19:01:08.153Z",
@@ -485,9 +493,11 @@
           "lastModified": "2026-01-30T06:38:33.2Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "impactDescription": "Admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services.",
+          "userImpact": "Admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services.",
           "scopeOfImpact": "Admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\" may be impacted. This section may be updated as our investigation continues.\n\nStart time: Tuesday, October 7, 2025, at 8:27 AM UTC",
+          "rootCause": "A recent service operation intended to upgrade our API flow impacted Microsoft 365 Groups that were previously configured to have the \"SecurityEnabled\" setting enabled, switching this value back to \"False\" by default and resulting in impact to admins and users whose service access was being managed by the affected groups.",
           "feature": "Access",
+          "isResolved": false,
           "posts": [
             {
               "createdAt": "2026-01-30T06:38:33.2Z",
@@ -640,9 +650,11 @@
           "lastModified": "2026-01-31T02:05:38.07Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "impactDescription": "Users may see issues with their templated subscription email in Power BI.",
+          "userImpact": "Users may see issues with their templated subscription email in Power BI.",
           "scopeOfImpact": "Users leveraging templated subscription emails in Power BI may be impacted.\n\nStart time: Thursday, January 29, 2026, at 9:21 AM UTC",
+          "rootCause": "A recent change altering the subscription email template for Power BI affected users' existing subscription email templates.",
           "feature": "PowerBI.com",
+          "isResolved": false,
           "posts": [
             {
               "createdAt": "2026-01-31T01:38:40.417Z",
@@ -659,9 +671,11 @@
           "lastModified": "2026-01-30T23:22:50.243Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "impactDescription": "Users may be unable to send subscription emails to external users in Power BI.",
+          "userImpact": "Users may be unable to send subscription emails to external users in Power BI.",
           "scopeOfImpact": "Impact may occur for all users attempting to send subscription emails to external users in Power BI.\n\nStart time: Thursday, January 29, 2026, at 6:45 PM UTC",
+          "rootCause": "An influx of automated email traffic from Power BI subscriptions resulted in impact to external subscription email delivery.",
           "feature": "PowerBI.com",
+          "isResolved": false,
           "posts": [
             {
               "createdAt": "2026-01-30T23:22:50.243Z",
@@ -696,9 +710,11 @@
           "lastModified": "2026-01-21T19:01:34.763Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "impactDescription": "Users with edit and full control permissions may be unable to access or share some files in OneDrive.",
+          "userImpact": "Users with edit and full control permissions may be unable to access or share some files in OneDrive.",
           "scopeOfImpact": "Some users with edit and full control permissions who are attempting to access or share some folders in OneDrive that were deleted and recently restored from the recycle bin may be impacted. This information may be updated as our investigation continues.\n\nStart time: Monday, October 13, 2025, at 3:50 PM UTC",
+          "rootCause": "A recent deployment contains a code regression that introduced a compatibility issue between code that's preventing items that have been deleted and recently restored from being accessible again.",
           "feature": "OneDrive for Business",
+          "isResolved": false,
           "posts": [
             {
               "createdAt": "2026-01-21T19:01:34.763Z",
@@ -785,9 +801,11 @@
           "lastModified": "2026-01-30T06:38:33.2Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "impactDescription": "Admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services.",
+          "userImpact": "Admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services.",
           "scopeOfImpact": "Admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\" may be impacted. This section may be updated as our investigation continues.\n\nStart time: Tuesday, October 7, 2025, at 8:27 AM UTC",
+          "rootCause": "A recent service operation intended to upgrade our API flow impacted Microsoft 365 Groups that were previously configured to have the \"SecurityEnabled\" setting enabled, switching this value back to \"False\" by default and resulting in impact to admins and users whose service access was being managed by the affected groups.",
           "feature": "Access",
+          "isResolved": false,
           "posts": [
             {
               "createdAt": "2026-01-30T06:38:33.2Z",
@@ -916,9 +934,11 @@
           "lastModified": "2026-01-30T06:38:33.2Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "impactDescription": "Admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services.",
+          "userImpact": "Admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services.",
           "scopeOfImpact": "Admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\" may be impacted. This section may be updated as our investigation continues.\n\nStart time: Tuesday, October 7, 2025, at 8:27 AM UTC",
+          "rootCause": "A recent service operation intended to upgrade our API flow impacted Microsoft 365 Groups that were previously configured to have the \"SecurityEnabled\" setting enabled, switching this value back to \"False\" by default and resulting in impact to admins and users whose service access was being managed by the affected groups.",
           "feature": "Access",
+          "isResolved": false,
           "posts": [
             {
               "createdAt": "2026-01-30T06:38:33.2Z",
@@ -1113,9 +1133,11 @@
           "lastModified": "2026-01-21T01:58:17.27Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "impactDescription": "Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page.",
+          "userImpact": "Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page.",
           "scopeOfImpact": "Users attempting to use the “Promote to Viva Engage” feature through a SharePoint Page may encounter errors in their endeavor to do so.\n \nStart time: Thursday, February 6, 2025, at 2:11 PM UTC",
+          "rootCause": "A conflict between two SharePoint web parts which render on the same page is resulting in impact.",
           "feature": "Post/Reply/Like",
+          "isResolved": false,
           "posts": [
             {
               "createdAt": "2026-01-21T01:49:14.003Z",
@@ -1238,9 +1260,11 @@
           "lastModified": "2026-01-26T22:30:57.107Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "impactDescription": "Users aren't shown the \"Edit in Outlook\" button after prompting Copilot Chat to draft an email message.",
+          "userImpact": "Users aren't shown the \"Edit in Outlook\" button after prompting Copilot Chat to draft an email message.",
           "scopeOfImpact": "Any user prompting Copilot Chat to draft an email message may be impacted.\n\nStart time: Friday, December 19, 2025, at 6:00 PM UTC",
+          "rootCause": "We've disabled the \"Edit in Outlook\" feature in Copilot Chat while we implement a fix for a separate service issue relating to the feature, causing impact.",
           "feature": "General",
+          "isResolved": false,
           "posts": [
             {
               "createdAt": "2026-01-26T22:16:01.457Z",
@@ -1265,6 +1289,967 @@
           ]
         }
       ]
+    }
+  ],
+  "history": [
+    {
+      "id": "MO1224866",
+      "title": "Some users may have been unable to export usage reports from the Microsoft 365 admin center",
+      "startTime": "2026-01-29T13:07:00Z",
+      "endTime": "2026-01-31T00:30:00Z",
+      "lastModified": "2026-01-31T09:20:56.463Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have been unable to export usage reports from the Microsoft 365 admin center.",
+      "scopeOfImpact": "Some users attempting to export usage reports in the Microsoft 365 admin center may have been impacted.\n\nStart time: Thursday, January 29, 2026, at 1:07 PM UTC\n\nEnd time: Saturday, January 31, 2026, at 12:30 AM UTC",
+      "rootCause": "A recent code change meant to add new reporting features to the Microsoft 365 admin center mistakenly introduced a code defect that may have prevented users from exporting usage reports.\n\nNext steps:\n- We're reviewing our update procedures to better identify similar issues during our development and testing cycles.\n \nThis is the final update for the event.",
+      "feature": "Company or User Administration",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-01-31T09:19:13.8Z",
+          "postType": "regular",
+          "content": "Title: Some users may have been unable to export usage reports from the Microsoft 365 admin center\n\nUser impact: Users may have been unable to export usage reports from the Microsoft 365 admin center.\n\nMore info: Users may have also encountered errors or empty data when attempting to generate reports from the Microsoft 365 admin center.\n\nFinal status: We’ve confirmed following the feedback from some affected users that impact has been remediated.\n\nScope of impact: Some users attempting to export usage reports in the Microsoft 365 admin center may have been impacted.\n\nStart time: Thursday, January 29, 2026, at 1:07 PM UTC\n\nEnd time: Saturday, January 31, 2026, at 12:30 AM UTC\n\nRoot cause: A recent code change meant to add new reporting features to the Microsoft 365 admin center mistakenly introduced a code defect that may have prevented users from exporting usage reports.\n\nNext steps:\n- We're reviewing our update procedures to better identify similar issues during our development and testing cycles.\n \nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-01-31T00:35:25.943Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to export usage reports from the Microsoft 365 admin center\n\nUser impact: Users may be unable to export usage reports from the Microsoft 365 admin center.\n\nMore info: Users may also encounter errors or empty data when attempting to generate reports from the Microsoft 365 admin center.\n\nCurrent status: We’ve initiated the process of deploying the code fix and we’re validating with affected users that have received the fix to ensure its operating as expected to resolve this issue.\n\nScope of impact: Some users attempting to export usage reports in the Microsoft 365 admin center may be impacted.\n\nStart time: Thursday, January 29, 2026, at 11:00 PM UTC\n\nRoot cause: A recent code change meant to add new reporting features to the Microsoft 365 admin center mistakenly introduced a code defect that may prevent users from exporting usage reports.\n\nNext update by: Saturday, January 31, 2026, at 10:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-01-30T19:29:03.467Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to export usage reports from the Microsoft 365 admin center\n\nUser impact: Users may be unable to export usage reports from the Microsoft 365 admin center.\n\nMore info: Users may also encounter errors or empty data when attempting to generate reports from the Microsoft 365 admin center.\n\nCurrent status: We've identified that a recent code change meant to add new reporting features to the Microsoft 365 admin center mistakenly introduced a code defect that may prevent users from exporting usage reports. We've created and are validating a code fix that will deploy shortly and remediate impact by our next scheduled update.\n\nScope of impact: Some users attempting to export usage reports in the Microsoft 365 admin center may be impacted.\n\nStart time: Thursday, January 29, 2026, at 11:00 PM UTC\n\nRoot cause: A recent code change meant to add new reporting features to the Microsoft 365 admin center mistakenly introduced a code defect that may prevent users from exporting usage reports.\n\nNext update by: Saturday, January 31, 2026, at 2:30 AM UTC"
+        },
+        {
+          "createdAt": "2026-01-30T10:56:49.8Z",
+          "postType": "regular",
+          "content": "Title: Some users are unable to export usage reports from the Microsoft 365 admin center\n\nUser impact: Users are unable to export usage reports from the Microsoft 365 admin center.\n\nMore info: Users may also encounter errors or empty data when attempting to generate reports from the Microsoft 365 admin center.\n\nCurrent status: We're reviewing a potential code change and available logs to help determine the root cause and mitigation plan.\n\nScope of impact: Some users in the North US region attempting to export usage reports in the Microsoft 365 admin center may be impacted.\n\nNext update by: Friday, January 30, 2026, at 9:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-01-30T08:49:42.913Z",
+          "postType": "regular",
+          "content": "Title: Some users are unable to export usage reports from the Microsoft 365 admin center\n\nUser impact: Users are unable to export usage reports from the Microsoft 365 admin center.\n\nMore info: Users may also encounter errors or empty data when attempting to generate reports from the Microsoft 365 admin center.\n\nCurrent status: We're reviewing service monitoring telemetry to isolate the root cause and determine our next troubleshooting steps.\n\nScope of impact: Some users in the North US region attempting to export usage reports in the Microsoft 365 admin center may be impacted.\n\nNext update by: Friday, January 30, 2026, at 11:00 AM UTC"
+        }
+      ],
+      "serviceName": "Microsoft 365 suite"
+    },
+    {
+      "id": "EX1224375",
+      "title": "Users routing their Exchange Online email through a third-party protection service may have send and receive delays",
+      "startTime": "2026-01-26T06:00:00Z",
+      "endTime": "2026-01-30T18:25:00Z",
+      "lastModified": "2026-01-30T19:43:40.45Z",
+      "status": "serviceRestored",
+      "severity": "incident",
+      "userImpact": "Users' Exchange Online email routed through a third-party protection service may have been delayed.",
+      "scopeOfImpact": "This problem may have impacted any user sending or receiving email messages when leveraging a specific third-party email protection service.\n\nStart time: Monday, January 26, 2026, at 6:00 AM UTC\n\nEnd time: Friday, January 30, 2026, at 6:25 PM UTC",
+      "rootCause": "A cache limit configuration that helps facilitate the impact scenario process with SMTP mail flow was misconfigured, resulting in impact.\n\nNext steps: \n - We're continuing our research into identifying the root cause of this impacting event to better understand how to prevent it from happening again in the future.\n\nThis is the final update for the event.",
+      "feature": "Mailflow - delayed delivery from Internet",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-01-30T19:26:22.93Z",
+          "postType": "regular",
+          "content": "Title: Users routing their Exchange Online email through a third-party protection service may have send and receive delays\n\nUser impact: Users' Exchange Online email routed through a third-party protection service may have been delayed.\n\nMore info: This issue specifically impacted users who use Simple Mail Transfer Protocol (SMTP) as their Exchange Online connection method and routed their email messages through a specific third-party email protection service. The email delays, which impacted both sending and receiving email, occurred in all Exchange Online connection methods.\n\nFinal status: We've fully implemented our identified configuration change and confirmed using internal telemetry that it effectively mitigated this issue. We determined that a cache limit configuration that helps facilitate the impact scenario process with SMTP mail flow was misconfigured, resulting in impact.\n\nScope of impact: This problem may have impacted any user sending or receiving email messages when leveraging a specific third-party email protection service.\n\nStart time: Monday, January 26, 2026, at 6:00 AM UTC\n\nEnd time: Friday, January 30, 2026, at 6:25 PM UTC\n\nRoot cause: A cache limit configuration that helps facilitate the impact scenario process with SMTP mail flow was misconfigured, resulting in impact.\n\nNext steps: \n - We're continuing our research into identifying the root cause of this impacting event to better understand how to prevent it from happening again in the future.\n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-01-30T17:49:22.183Z",
+          "postType": "regular",
+          "content": "Title: Users routing their Exchange Online email through a third-party protection service may have send and receive delays\n\nUser impact: Users routing their Exchange Online email through a third-party protection service may have send and receive delays.\n\nMore info: This issue specifically impacts users who use Simple Mail Transfer Protocol (SMTP) as their connection method and route their email messages through a specific third-party email protection service. The email delays, which impacts both sending and receiving email, occurs in all Exchange Online connection methods.\n\nCurrent status: Though our investigation into the root cause of this impacting issue is ongoing, we've identified and implemented a configuration change in effort to mitigate the problem. We're reviewing our internal telemetry to assess if the configuration change was effective. Please note that we've updated the Title, User impact, and More info of this communication to better reflect the impact of the event.\n\nScope of impact: This problem may impact any user sending or receiving email messages when leveraging a specific third-party email protection service.\n\nNext update by: Friday, January 30, 2026, at 8:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-01-29T21:19:48.617Z",
+          "postType": "regular",
+          "content": "Title: Users may experience delays when sending or receiving Exchange Online email messages\n \nUser impact: Users may experience delays when sending or receiving Exchange Online email messages.\n\nMore info: This issue specifically impacts users who are on Simple Mail Transfer Protocol (SMTP) connection methods, which include Outlook on the web, the Outlook desktop clients, and the mobile apps.\n\nCurrent status: Our investigation has further identified that exceptions may be occurring as our mail transport service is sending an unexpectedly large amount of requests to downstream components in the mail routing code path. We're investigating recent changes to confirm this theory and determine next steps for remediation.\n\nScope of impact: Some users attempting to send or receive Exchange Online email messages may be impacted.\n\nNext update by: Friday, January 30, 2026, at 7:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-01-29T19:19:17.823Z",
+          "postType": "regular",
+          "content": "Title: Users may experience delays when sending or receiving Exchange Online email messages\n \nUser impact: Users may experience delays when sending or receiving Exchange Online email messages.\n\nMore info: This issue specifically impacts users who are on Simple Mail Transfer Protocol (SMTP) connection methods, which include Outlook on the web, the Outlook desktop clients, and the mobile apps.\n\nCurrent status: We've identified the \"451 4.3.2 Temporary server error\" occurring that's leading to impact. This error, generally, is a common error, however our review of transport service health telemetry confirmed an increase in the rate of this error generating. We're investigating why we see an increase of this error resulting in impact to better understand how the issue is manifesting and prepare next steps for potential remediating actions.\n\nScope of impact: Some users attempting to send or receive Exchange Online email messages may be impacted.\n\nNext update by: Thursday, January 29, 2026, at 9:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-01-29T18:05:41.22Z",
+          "postType": "regular",
+          "content": "Title: Users may experience delays when sending or receiving Exchange Online email messages\n \nUser impact: Users may experience delays when sending or receiving Exchange Online email messages.\n\nMore info: This issue specifically impacts users who are on Simple Mail Transfer Protocol (SMTP) connection methods, which include Outlook on the web, the Outlook desktop clients, and the mobile apps.\n\nCurrent status: We're reviewing transport service logs in parallel with samples of affected messages to identify and isolate any errors that may be contributing to impact for further investigation.\n\nScope of impact: Some users attempting to send or receive Exchange Online email messages may be impacted.\n\nNext update by: Thursday, January 29, 2026, at 7:30 PM UTC"
+        }
+      ],
+      "serviceName": "Exchange Online"
+    },
+    {
+      "id": "MV1224509",
+      "title": "Users may be unable to access Microsoft Viva Engage content for the first time in the Microsoft Teams mobile app",
+      "startTime": "2026-01-29T09:00:00Z",
+      "endTime": "2026-01-29T22:50:00Z",
+      "lastModified": "2026-01-29T23:26:24.817Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have been unable to access Microsoft Viva Engage content for the first time in the Microsoft Teams mobile app.",
+      "scopeOfImpact": "Any users attempting to access Microsoft Viva Engage content for the first time in the Microsoft Teams mobile app, or any network admin attempting to change a user's network settings may have been impacted.\n\nStart time: Thursday, January 29, 2026, at 9:00 AM UTC\n\nEnd time: Thursday, January 29, 2026, at 10:50 PM UTC",
+      "rootCause": "A recent schema field update was added to the network settings, preventing users from accessing Microsoft Viva Engage content for the first time in the Microsoft Teams mobile app, and prevented network admins from making network settings changes.\n\nNext steps: \n - We're reviewing and improving our schema field update validation procedure to detect and prevent similar issues from occurring in the future.\n\nThis is the final update for the event.",
+      "feature": "Upload files/notes/documents",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-01-29T23:17:32.297Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to access Microsoft Viva Engage content for the first time in the Microsoft Teams mobile app\n\nUser impact: Users may have been unable to access Microsoft Viva Engage content for the first time in the Microsoft Teams mobile app.\n\nMore info: Additionally, network admins may have been unable to change network settings for users.\n\nFinal status: We reverted the offending change and confirmed using our internal telemetry data that impact is remediated.\n\nScope of impact: Any users attempting to access Microsoft Viva Engage content for the first time in the Microsoft Teams mobile app, or any network admin attempting to change a user's network settings may have been impacted.\n\nStart time: Thursday, January 29, 2026, at 9:00 AM UTC\n\nEnd time: Thursday, January 29, 2026, at 10:50 PM UTC\n\nRoot cause: A recent schema field update was added to the network settings, preventing users from accessing Microsoft Viva Engage content for the first time in the Microsoft Teams mobile app, and prevented network admins from making network settings changes.\n\nNext steps: \n - We're reviewing and improving our schema field update validation procedure to detect and prevent similar issues from occurring in the future.\n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-01-29T22:27:59.983Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to access Microsoft Viva Engage content for the first time in the Microsoft Teams mobile app\n\nUser impact: Users may be unable to access Microsoft Viva Engage content for the first time in the Microsoft Teams mobile app.\n\nMore info: Additionally, network admins may be unable to change network settings for users.\n\nCurrent status: At the current stage of our update reversion, we've confirmed that users are able to access Microsoft Viva engage content, but network admins are still unable to change network settings. We're continuing to revert the offending update and expect it should complete and fully remediate impact by our next scheduled update.\n\nScope of impact: Any users attempting to access Microsoft Viva Engage content for the first time in the Microsoft Teams mobile app, or any network admin attempting to change a user's network settings.\n\nStart time: Thursday, January 29, 2026, at 9:00 AM UTC\n\nRoot cause: A recent schema field update was added to the network settings, preventing users from accessing Microsoft Viva Engage content for the first time in the Microsoft Teams mobile app, and preventing network admins from making network settings changes.\n\nNext update by: Friday, January 30, 2026, at 12:30 AM UTC"
+        },
+        {
+          "createdAt": "2026-01-29T20:55:31.057Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to access Microsoft Viva Engage content for the first time in the Microsoft Teams mobile app\n\nUser impact: Users may be unable to access Microsoft Viva Engage content for the first time in the Microsoft Teams mobile app.\n\nMore info: Additionally, network admins may be unable to change network settings for users.\n \nCurrent status: We've identified that a recent schema field update was added to the network settings, preventing users from accessing Microsoft Viva Engage content for the first time in the Microsoft Teams mobile app, and preventing network admins from making network settings changes. We're reverting this update to remediate impact.\n \nScope of impact: Any users attempting to access Microsoft Viva Engage content for the first time in the Microsoft Teams mobile app, or any network admin attempting to change a user's network settings.\n \nRoot cause: A recent schema field update was added to the network settings, preventing users from accessing Microsoft Viva Engage content for the first time in the Microsoft Teams mobile app, and preventing network admins from making network settings changes.\n \nNext update by: Thursday, January 29, 2026, at 10:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-01-29T20:10:59.827Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to access Microsoft Viva Engage content for the first time in the Microsoft Teams mobile app\n\nUser impact: Users may be unable to access Microsoft Viva Engage content for the first time in the Microsoft Teams mobile app.\n\nMore info: Additionally, network admins may be unable to change network settings for users.\n \nCurrent status: We're investigating a potential issue with Microsoft Viva Engage and checking for impact to your organization. We'll provide an update within 30 minutes."
+        }
+      ],
+      "serviceName": "Microsoft Viva"
+    },
+    {
+      "id": "CW1224109",
+      "title": "Some users using Microsoft 365 Copilot Chat may have not seen any responses being generated",
+      "startTime": "2026-01-29T09:20:00Z",
+      "endTime": "2026-01-29T14:00:00Z",
+      "lastModified": "2026-01-29T14:41:20.25Z",
+      "status": "serviceRestored",
+      "severity": "incident",
+      "userImpact": "Users using Copilot Chat may not have seen any responses being generated.",
+      "scopeOfImpact": "Some users attempting to generate responses within Copilot Chat in the Europe may have been impacted.\n \nStart time: Thursday, January 29, 2026, at 9:20 AM UTC\n \nEnd time: Thursday, January 29, 2026, at 2:00 PM UTC",
+      "rootCause": "A section of Microsoft API service infrastructure had dropped below our manageable service performance thresholds, producing failures for users generating responses for Copilot Chat.\n \nNext steps:\n- We're further analyzing the affected subset of Microsoft API service infrastructure in our effort to isolate the source for the lower-than-normal performance levels, and to help prevent similar issues in the future.\n\nThis is the final update for the event.",
+      "feature": "General",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-01-29T14:14:32.45Z",
+          "postType": "regular",
+          "content": "Title: Some users using Microsoft 365 Copilot Chat may have not seen any responses being generated\n\nUser impact: Users using Copilot Chat may not have seen any responses being generated.\n\nMore info: Users may have seen the following error message \"Something went wrong. Please try again.\"\n \nFinal status: We've determined that a section of Microsoft API service infrastructure had dropped below our manageable service performance thresholds, producing failures for users generating responses for Copilot Chat. While we further investigate the source for the lower-than-expected service infrastructure performance levels, we've temporarily increased performance parameters to mitigate impact.\n \nScope of impact: Some users attempting to generate responses within Copilot Chat in the Europe may have been impacted.\n \nStart time: Thursday, January 29, 2026, at 9:20 AM UTC\n \nEnd time: Thursday, January 29, 2026, at 2:00 PM UTC\n \nRoot cause: A section of Microsoft API service infrastructure had dropped below our manageable service performance thresholds, producing failures for users generating responses for Copilot Chat.\n \nNext steps:\n- We're further analyzing the affected subset of Microsoft API service infrastructure in our effort to isolate the source for the lower-than-normal performance levels, and to help prevent similar issues in the future.\n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-01-29T12:25:21.317Z",
+          "postType": "regular",
+          "content": "Title: Some users using Microsoft 365 Copilot Chat may not see any responses being generated\n\nUser impact: Users using Copilot Chat may not see any responses being generated.\n\nMore info: Users may see the following error message \"Something went wrong. Please try again.\"\n\nCurrent status: We've received reports indicating users may be unable to generate responses within Copilot Chat. We're reviewing service monitoring telemetry to isolate the root cause and determine our next troubleshooting steps.\n\nScope of impact: Some users attempting to generate responses within Copilot Chat in the Europe may be impacted.\n\nNext update by: Thursday, January 29, 2026, at 2:30 PM UTC"
+        }
+      ],
+      "serviceName": "Microsoft 365 Copilot Chat"
+    },
+    {
+      "id": "EX1223427",
+      "title": "Some users may have been unable to access the Exchange admin center (EAC)",
+      "startTime": "2026-01-28T09:06:00Z",
+      "endTime": "2026-01-28T11:12:00Z",
+      "lastModified": "2026-01-28T12:43:09.257Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have been unable to access the EAC.",
+      "scopeOfImpact": "Impact was specific to some users who were served through the affected infrastructure attempting to access the EAC.\n \nStart time: Wednesday, January 28, 2026, at 9:06 AM UTC\n \nEnd time: Wednesday, January 28, 2026, at 11:12 AM UTC",
+      "rootCause": "A section of infrastructure, responsible for facilitating EAC access, unexpectedly began performing below acceptable performance thresholds and caused impact.\n \nNext steps:\n- We're reviewing performance data and trends on the affected systems to help prevent similar impact from happening again.\n\nThis is the final update for the event.",
+      "feature": "Tenant Administration (Provisioning, Remote PowerShell)",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-01-28T12:39:32.867Z",
+          "postType": "regular",
+          "content": "Title: Some users may have been unable to access the Exchange admin center (EAC)\n\nUser impact: Users may have been unable to access the EAC.\n\nFinal status: We've identified that a section of infrastructure, responsible for facilitating EAC access, unexpectedly began performing below acceptable performance thresholds and caused impact. We've redirected affected traffic to alternate healthy infrastructure and confirmed impact is no longer occurring after a period of monitoring.\n \nScope of impact: Impact was specific to some users who were served through the affected infrastructure attempting to access the EAC.\n \nStart time: Wednesday, January 28, 2026, at 9:06 AM UTC\n \nEnd time: Wednesday, January 28, 2026, at 11:12 AM UTC\n \nRoot cause: A section of infrastructure, responsible for facilitating EAC access, unexpectedly began performing below acceptable performance thresholds and caused impact.\n \nNext steps:\n- We're reviewing performance data and trends on the affected systems to help prevent similar impact from happening again.\n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-01-28T11:29:05.203Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to access the Exchange admin center (EAC)\n\nUser impact: Users may be unable to access the EAC.\n\nCurrent status: We're continuing to review service monitoring telemetry to isolate the root cause and develop a remediation plan.\n \nScope of impact: Impact is specific to some users who are served through the affected infrastructure attempting to access the EAC.\n \nNext update by: Wednesday, January 28, 2026, at 2:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-01-28T09:49:26.23Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to access the Exchange admin center (EAC)\n\nUser impact: Users may be unable to access the EAC.\n\nCurrent status: We're reviewing service monitoring telemetry to isolate the root cause and develop a remediation plan.\n \nScope of impact: Impact is specific to some users who are served through the affected infrastructure attempting to access the EAC.\n \nNext update by: Wednesday, January 28, 2026, at 12:00 PM UTC"
+        }
+      ],
+      "serviceName": "Exchange Online"
+    },
+    {
+      "id": "EX1221076",
+      "title": "Users may have been unable to delete email messages after running the QUIT command through the POP3 connection method",
+      "startTime": "2026-01-20T05:01:00Z",
+      "endTime": "2026-01-26T05:19:00Z",
+      "lastModified": "2026-01-26T08:47:56.04Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have been unable to delete email messages after running the QUIT command through the POP3 connection method.",
+      "scopeOfImpact": "Impact was specific to some users attempting to delete email messages after running the QUIT command using POP3 connection method.\n \nStart time: Tuesday, January 20, 2026, at 5:01 AM UTC\n \nEnd time: Saturday, January 24, 2026, at 5:19 AM UTC",
+      "rootCause": "A package version conflict introduced a regression that caused the POP3 QUIT command to fail after a DELE operation.\n \nNext steps:\n- We're reviewing our package provisioning procedures to help prevent similar problems in the future.\n\nThis is the final update for the event.",
+      "feature": "Mailbox Provisioning - transient failures",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-01-26T08:47:56.04Z",
+          "postType": "regular",
+          "content": "Title: Users may have been unable to delete email messages after running the QUIT command through the POP3 connection method\n\nUser impact: Users may have been unable to delete email messages after running the QUIT command through the POP3 connection method.\n\nMore info: Specifically, POP3 users could read and download their email messages, but any messages they deleted may not have actually been removed, because the session failed to close properly. If a message was deleted on Exchange Online using the DELE command, the POP3 QUIT command may have failed, preventing the session from closing cleanly and caused messages marked for deletion to remain in the mailbox.\n\nIf the user was not using POP3, they were not impacted.\n \nFinal status: We’ve confirmed that the fix deployment has completed successfully and that the issue has been fully resolved.\n \nScope of impact: Impact was specific to some users attempting to delete email messages after running the QUIT command using POP3 connection method.\n \nStart time: Tuesday, January 20, 2026, at 5:01 AM UTC\n \nEnd time: Saturday, January 24, 2026, at 5:19 AM UTC\n \nRoot cause: A package version conflict introduced a regression that caused the POP3 QUIT command to fail after a DELE operation.\n \nNext steps:\n- We're reviewing our package provisioning procedures to help prevent similar problems in the future.\n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-01-23T09:13:56.21Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to delete email messages after running the QUIT command when POP3 connection method is used\n\nUser impact: Users may be unable to delete email messages after running the QUIT command when POP3 connection method is used.\n\nMore info: Specifically, POP3 users can read and download their email messages, but any messages they delete may not actually be removed, because the session fails to close properly. If a message is deleted on Exchange Online using the DELE command, the POP3 QUIT command may fail, preventing the session from closing cleanly and causing messages marked for deletion to remain in the mailbox.\n\nIf the user is not using POP3, they are not impacted. \n \nCurrent status: We’ve begun rolling out the fix and can confirm it has been successfully deployed to approximately 56% of the affected environments. We’ll continue monitoring progress and will provide an updated completion timeline as soon as it’s available. \n \nScope of impact: Impact is specific to some users attempting to delete email messages after running the QUIT command using POP3 connection method.\n \nRoot cause: A package version conflict introduced a regression that causes the POP3 QUIT command to fail after a DELE operation.\n \nNext update by: Monday, January 26, 2026, at 11:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-01-22T11:59:05.153Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to delete email messages after running the QUIT command when POP3 connection method is used \n\nUser impact: Users may be unable to delete email messages after running the QUIT command when POP3 connection method is used. \n\nMore info: Specifically, POP3 users can read and download their email messages, but any messages they delete may not actually be removed, because the session fails to close properly. If a message is deleted on Exchange Online using the DELE command, the POP3 QUIT command may fail, preventing the session from closing cleanly and causing messages marked for deletion to remain in the mailbox. \n\nIf the user is not using POP3, they are not impacted.\n \nCurrent status: We’ve identified an issue where a recent update introduced a conflict that prevents the POP3 QUIT command from completing after a message is deleted. We've validated a fix in our test environment and initiated a deployment to affected users. The deployment is progressing through a gradual rollout and we expect full completion within the next 24 to 48 hours. \n \nScope of impact: Impact is specific to some users attempting to delete email messages after running the QUIT command using POP3 connection method.  \n \nRoot cause: A package version conflict introduced a regression that causes the POP3 QUIT command to fail after a DELE operation. \n \nNext update by: Friday, January 23, 2026, at 10:00 AM UTC "
+        }
+      ],
+      "serviceName": "Exchange Online"
+    },
+    {
+      "id": "MO1218616",
+      "title": "Some admins may be unable to view pooled storage management in the Microsoft 365 admin center",
+      "startTime": "2026-01-05T22:40:00Z",
+      "endTime": "2026-01-25T22:28:00Z",
+      "lastModified": "2026-01-26T21:54:06.72Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Admins may have been unable to view pooled storage management in the Microsoft 365 admin center.",
+      "scopeOfImpact": "Admins in Microsoft 365 Education organizations attempting to view pooled storage management in the Microsoft 365 admin center may have been impacted.\n\nStart time: Monday, January 5, 2026, at 10:40 PM UTC\n\nEnd time: Sunday, January 25, 2026, at 10:28 PM UTC",
+      "rootCause": "A recent code change intended to update how storage reports were loaded to the Microsoft 365 admin center introduced a regression which was causing the impact.\n\nNext steps: \n - We're reviewing our code change testing and validation procedures to identify opportunities to identify impact earlier and prevent similar future occurrences.\n\nThis is the final update for the event.",
+      "feature": "Company or User Administration",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-01-26T21:54:06.72Z",
+          "postType": "regular",
+          "content": "Title: Some admins may be unable to view pooled storage management in the Microsoft 365 admin center\n\nUser impact: Admins may have been unable to view pooled storage management in the Microsoft 365 admin center.\n\nMore info: This issue was specific to Microsoft 365 Education admins.\n\nFinal status: We've completed the deployment of our fix and confirmed after testing with a subset of affected users that this has successfully remediated impact.\n\nScope of impact: Admins in Microsoft 365 Education organizations attempting to view pooled storage management in the Microsoft 365 admin center may have been impacted.\n\nStart time: Monday, January 5, 2026, at 10:40 PM UTC\n\nEnd time: Sunday, January 25, 2026, at 10:28 PM UTC\n\nRoot cause: A recent code change intended to update how storage reports were loaded to the Microsoft 365 admin center introduced a regression which was causing the impact.\n\nNext steps: \n - We're reviewing our code change testing and validation procedures to identify opportunities to identify impact earlier and prevent similar future occurrences.\n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-01-23T18:39:14.06Z",
+          "postType": "regular",
+          "content": "Title: Some admins may be unable to view pooled storage management in the Microsoft 365 admin center\n\nUser impact: Admins may be unable to view pooled storage management in the Microsoft 365 admin center.\n\nMore info: This issue is specific to Microsoft 365 Education admins.\n\nCurrent status: The code fix has saturated to 92 percent of the affected environment. As the deployment progresses and applies to the content hosting infrastructure to which admins are connecting, admins may begin to see the issue automatically resolve upon refreshing the storage report page. We expect the code fix will saturate the affected environment 100 percent on Wednesday, January 28, 2026.\n\nScope of impact: Admins in Microsoft 365 Education organizations attempting to view pooled storage management in the Microsoft 365 admin center may be impacted. This information may be updated as our investigation continues.\n\nStart time: Monday, January 5, 2026, at 10:40 PM UTC\n\nRoot cause: A recent code change intended to update how storage reports are loaded to the Microsoft 365 admin center introduced a regression which is causing the impact.\n\nNext update by: Wednesday, January 28, 2026, at 8:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-01-20T19:00:21.69Z",
+          "postType": "regular",
+          "content": "Title: Some admins may be unable to view pooled storage management in the Microsoft 365 admin center\n\nUser impact: Admins may be unable to view pooled storage management in the Microsoft 365 admin center.\n\nMore info: This issue is specific to Microsoft 365 Education admins.\n\nCurrent status: The code fix has saturated to 66 percent of the affected environment. As the deployment progresses and applies to the content hosting infrastructure to which admins are connecting, admins may begin to see the issue automatically resolve upon refreshing the storage report page.\n\nScope of impact: Admins in Microsoft 365 Education organizations attempting to view pooled storage management in the Microsoft 365 admin center may be impacted. This information may be updated as our investigation continues.\n\nStart time: Monday, January 5, 2026, at 10:40 PM UTC\n\nRoot cause: A recent code change intended to update how storage reports are loaded to the Microsoft 365 admin center introduced a regression which is causing the impact.\n\nNext update by: Friday, January 23, 2026, at 8:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-01-16T17:34:29.89Z",
+          "postType": "regular",
+          "content": "Title: Some admins may be unable to view pooled storage management in the Microsoft 365 admin center\n\nUser impact: Admins may be unable to view pooled storage management in the Microsoft 365 admin center.\n\nMore info: This issue is specific to Microsoft 365 Education admins.\n\nCurrent status: We've identified a recent code change intended to update how storage reports are loaded to the Microsoft 365 admin center introduced a regression which is causing the impact. We've developed and are deploying a code fix to correct this issue and confirmed the deployment is currently saturated 13 percent of the infrastructure that supports Microsoft 365 Education. We'll provide a timeline for remediation as one becomes available.\n\nScope of impact: Admins in Microsoft 365 Education organizations attempting to view pooled storage management in the Microsoft 365 admin center may be impacted. This information may be updated as our investigation continues.\n\nStart time: Monday, January 5, 2026, at 10:40 PM UTC\n\nRoot cause: A recent code change intended to update how storage reports are loaded to the Microsoft 365 admin center introduced a regression which is causing the impact.\n\nNext update by: Friday, January 23, 2026, at 7:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-01-16T15:34:30.963Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to access or view the storage usage page in the M365 admin center \n\nUser impact: Users may be unable to access or view the storage usage page in the M365 admin center. \n\nCurrent status: We're reviewing service monitoring telemetry to isolate the root cause and determine our next troubleshooting steps.  \n \nScope of impact: Some users attempting to access or view the storage usage page in the M365 admin center may be impacted. This information may be updated as our investigation continues. \n \nNext update by: Friday, January 16, 2026, at 5:30 PM UTC"
+        }
+      ],
+      "serviceName": "Microsoft 365 suite"
+    },
+    {
+      "id": "SP1220310",
+      "title": "Some users that are mentioned in list comments in SharePoint Online may not receive email notifications",
+      "startTime": "2026-01-08T12:24:00Z",
+      "endTime": "2026-01-24T01:07:00Z",
+      "lastModified": "2026-01-24T01:27:03.887Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users that were mentioned in list comments in SharePoint Online may have not received email notifications.",
+      "scopeOfImpact": "Impact was specific to some users that were mentioned in list comments in SharePoint Online.\n\nStart time: Thursday, January 8, 2026, at 12:24 PM UTC\n \nEnd time: Saturday, January 24, 2026, at 1:07 AM UTC",
+      "rootCause": "A recent service change to remove a separate feature introduced a regression within SharePoint Online email notifications, which resulted in impact.\n\nNext steps: \n- We’re continuing to analyze how the service change was partially applied to understand why the potential for impact wasn't caught during the update testing and validation phase. These actions will help us to clarify what actions we can take to ensure similar impact doesn't occur in future and to continue our ongoing mission to improve the resilience of our service for all SharePoint Online users.\n\nThis is the final update for the event.",
+      "feature": "SharePoint Online all features",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-01-24T01:27:03.887Z",
+          "postType": "regular",
+          "content": "Title: Some users that are mentioned in list comments in SharePoint Online may not receive email notifications\n\nUser impact: Users that were mentioned in list comments in SharePoint Online may have not received email notifications.\n\nFinal status: Our reversion of the offending change has completed its saturation process throughout the affected environment, and we’ve confirmed through an extended period of monitoring the service health telemetry that impact has been remediated. \n\nScope of impact: Impact was specific to some users that were mentioned in list comments in SharePoint Online.\n\nStart time: Thursday, January 8, 2026, at 12:24 PM UTC\n \nEnd time: Saturday, January 24, 2026, at 1:07 AM UTC\n\nRoot cause: A recent service change to remove a separate feature introduced a regression within SharePoint Online email notifications, which resulted in impact.\n\nNext steps: \n- We’re continuing to analyze how the service change was partially applied to understand why the potential for impact wasn't caught during the update testing and validation phase. These actions will help us to clarify what actions we can take to ensure similar impact doesn't occur in future and to continue our ongoing mission to improve the resilience of our service for all SharePoint Online users.\n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-01-23T16:52:10.257Z",
+          "postType": "regular",
+          "content": "Title: Some users that are mentioned in list comments in SharePoint Online may not receive email notifications\n\nUser impact: Users that are mentioned in list comments in SharePoint Online may not receive email notifications.\n\nCurrent status: We’re continuing to monitor progress of our fix to reverse the offending change, where it's saturated across 90 percent of the affected infrastructure. We estimate that this saturation will complete by our next communications update, after which we'll perform final testing with a subset of affected users to validate remediation. \n \nScope of impact: Impact is specific to some users that are mentioned in list comments in SharePoint Online.\n \nStart time: Thursday, January 8, 2026, at 12:24 PM UTC\n \nRoot cause: A recent service change to remove a separate feature introduced a regression within SharePoint Online email notifications, resulting in impact.\n \nNext update by: Saturday, January 24, 2026, at 3:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-01-22T18:00:29.94Z",
+          "postType": "regular",
+          "content": "Title: Some users that are mentioned in list comments in SharePoint Online may not receive email notifications\n\nUser impact: Users that are mentioned in list comments in SharePoint Online may not receive email notifications.\n\nCurrent status: We’re continuing to monitor progress of the fix to reverse the offending change and will provide a resolution timeline once available.\n \nScope of impact: Impact is specific to some users that are mentioned in list comments in SharePoint Online.\n \nStart time: Thursday, January 8, 2026, at 12:24 PM UTC\n \nRoot cause: A recent service change to remove a separate feature is causing impact.\n \nNext update by: Friday, January 23, 2026, at 6:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-01-21T18:49:25.707Z",
+          "postType": "regular",
+          "content": "Title: Some users that are mentioned in list comments in SharePoint Online may not receive email notifications\n\nUser impact: Users that are mentioned in list comments in SharePoint Online may not receive email notifications.\n\nCurrent status: We're continuing to reverse the offending change and will provide a timeline for the completion of this reversal as one becomes available.\n\nScope of impact: Impact is specific to some users that are mentioned in list comments in SharePoint Online.\n\nStart time: Thursday, January 8, 2026, at 12:24 PM UTC\n\nRoot cause: A recent service change to remove a separate feature is causing impact.\n\nNext update by: Thursday, January 22, 2026, at 7:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-01-21T17:22:01.593Z",
+          "postType": "regular",
+          "content": "Title: Some users that are mentioned in list comments in SharePoint Online may not receive email notifications\n\nUser impact: Users that are mentioned in list comments in SharePoint Online may not receive email notifications.\n\nCurrent status: We've identified a recent service change to remove a separate feature is causing impact. While we investigate the reason the change caused impact, we're reversing the offending change to remediate the impact.\n\nScope of impact: Impact is specific to some users that are mentioned in list comments in SharePoint Online.\n\nStart time: Thursday, January 8, 2026, at 12:24 PM UTC\n\nRoot cause: A recent service change to remove a separate feature is causing impact.\n\nNext update by: Wednesday, January 21, 2026, at 7:30 PM UTC"
+        }
+      ],
+      "serviceName": "SharePoint Online"
+    },
+    {
+      "id": "CW1221869",
+      "title": "Some users may not receive Microsoft Copilot Chat responses or experience latency using GPT 5.2 Quick response",
+      "startTime": "2026-01-23T18:42:00Z",
+      "endTime": "2026-01-23T19:36:00Z",
+      "lastModified": "2026-01-23T21:21:44.36Z",
+      "status": "serviceRestored",
+      "severity": "incident",
+      "userImpact": "Users may not have received Microsoft Copilot Chat responses or experience latency using GPT 5.2 Quick response.",
+      "scopeOfImpact": "Users may have experienced latency or not received responses while using Microsoft Copilot Chat GPT 5.2 Quick response\n\nStart time: Friday, January 23, 2026, at 6:42 PM UTC\n\nEnd time: Friday, January 23, 2026, at 7:36 PM UTC",
+      "rootCause": "A recent deployment introduced a request routing misconfiguration for Copilot Chat response traffic, resulting in impact.\n\nNext steps: \n - We're reviewing our update testing and validation process to better identify routing and network issues prior to deployment and avoid issue like this moving forward.\n\nThis is the final update for the event.",
+      "feature": "General",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-01-23T20:42:30.193Z",
+          "postType": "regular",
+          "content": "Title: Some users may not receive Microsoft Copilot Chat responses or experience latency using GPT 5.2 Quick response\n\nUser impact: Users may not have received Microsoft Copilot Chat responses or experience latency using GPT 5.2 Quick response.\n\nFinal status: A recent deployment introduced a request routing misconfiguration for Copilot Chat response traffic, resulting in impact. We've corrected the configuration while our automated recovery system directed affected traffic to infrastructure where the request routing configuration wasn't impacted to remediate impact. We confirmed that service was restored by these actions after monitoring the environment.\n\nScope of impact: Users may have experienced latency or not received responses while using Microsoft Copilot Chat GPT 5.2 Quick response\n\nStart time: Friday, January 23, 2026, at 6:42 PM UTC\n\nEnd time: Friday, January 23, 2026, at 7:36 PM UTC\n\nRoot cause: A recent deployment introduced a request routing misconfiguration for Copilot Chat response traffic, resulting in impact.\n\nNext steps: \n - We're reviewing our update testing and validation process to better identify routing and network issues prior to deployment and avoid issue like this moving forward.\n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-01-23T19:58:20.363Z",
+          "postType": "regular",
+          "content": "Title: Some users may not receive Microsoft Copilot Chat responses or experience latency using GPT 5.2 Quick response\n\nUser impact: Users may not receive Microsoft Copilot Chat responses or experience latency using GPT 5.2 Quick response.\n\nCurrent status: We're investigating a potential issue with Microsoft Copilot Chat and checking for impact to your organization. We'll provide an update within 30 minutes."
+        }
+      ],
+      "serviceName": "Microsoft 365 Copilot Chat"
+    },
+    {
+      "id": "EX1220516",
+      "title": "Users' Outlook for iOS app version 5.2602.0 may crash or freeze on iPad devices",
+      "startTime": "2026-01-20T23:00:00Z",
+      "endTime": "2026-01-23T17:13:00Z",
+      "lastModified": "2026-01-23T19:39:34.733Z",
+      "status": "serviceRestored",
+      "severity": "incident",
+      "userImpact": "Users' Outlook for iOS app version 5.2602.0 may have crashed or froze on iPad devices.",
+      "scopeOfImpact": "This issue may have affected all users' iPad devices using Outlook for iOS version 5.2602.0.\n\nStart time: Tuesday, January 20, 2026, at 11:00 PM UTC\n\nEnd time: Thursday, January 22, 2026, at 5:13 PM UTC",
+      "rootCause": "The latest Outlook for iOS update contained a code error related to a change meant to refresh rather than restart tabs when feature flags were updated, which was resulting in this impact.\n\nNext steps: \n - We're reviewing our update testing and validation procedures to identify how impact was missed and better prevent similar future occurrences.\n\nThis is the final update for the event.",
+      "feature": "Outlook - poor customer experience",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-01-23T18:22:30.377Z",
+          "postType": "regular",
+          "content": "Title: Users' Outlook for iOS app version 5.2602.0 may crash or freeze on iPad devices\n\nUser impact: Users' Outlook for iOS app version 5.2602.0 may have crashed or froze on iPad devices.\n\nMore info: Affected users could launch Outlook mobile while in Airplane Mode and then re-enable Wi-Fi and/or cellular data as a way to circumvent impact while we worked towards mitigation.\n\nFinal status: We've confirmed with a subset of previously affected users that the latest version of the Outlook mobile app (5.2602.1) successfully resolves the issue. Users without automatic updates configured may need to manually update to this version through the App Store.\n\nScope of impact: This issue may have affected all users' iPad devices using Outlook for iOS version 5.2602.0.\n\nStart time: Tuesday, January 20, 2026, at 11:00 PM UTC\n\nEnd time: Thursday, January 22, 2026, at 5:13 PM UTC\n\nRoot cause: The latest Outlook for iOS update contained a code error related to a change meant to refresh rather than restart tabs when feature flags were updated, which was resulting in this impact.\n\nNext steps: \n - We're reviewing our update testing and validation procedures to identify how impact was missed and better prevent similar future occurrences.\n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-01-22T17:02:07.637Z",
+          "postType": "regular",
+          "content": "Title: Users' Outlook for iOS app version 5.2602.0 may crash or freeze on iPad devices\n\nUser impact: Users' Outlook for iOS app version 5.2602.0 may crash or freeze on iPad devices.\n\nMore info: Affected users can launch Outlook mobile while in Airplane Mode and then re-enable Wi-Fi and/or cellular data as a way to circumvent impact while we work towards mitigation.\n\nCurrent status: We've completed the development of our fix to address the underlying issue, and we've provided the new version of the app to Apple who are going through their standard review and release processes. It can take up to 24 hours for the new iOS Outlook app version to appear in the App Store. We recommend users periodically check within the App Store for version 5.2602.1 and update to receive the fix.\n\nScope of impact: This issue may affect all users' iPad devices using Outlook for iOS version 5.2602.0. This information may be updated as our investigation continues.\n\nStart time: Tuesday, January 20, 2026, at 11:00 PM UTC\n\nRoot cause: The latest Outlook for iOS update contains a code error related to a change meant to refresh rather than restart tabs when feature flags are updated, which is resulting in this impact.\n\nNext update by: Friday, January 23, 2026, at 8:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-01-21T22:51:06.07Z",
+          "postType": "regular",
+          "content": "Title: Users' Outlook for iOS app version 5.2602.0 may crash or freeze on iPad devices\n\nUser impact: Users' Outlook for iOS app version 5.2602.0 may crash or freeze on iPad devices.\n\nMore info: Affected users can launch Outlook mobile while in Airplane Mode and then re-enable Wi-Fi and/or cellular data as a way to circumvent impact while we work towards mitigation.\n \nCurrent status: We determined that the latest Outlook for iOS update contains a code error related to a change meant to refresh rather than restart tabs when feature flags are updated, which is resulting in this impact. We’ve developed a code solution for the next update to address this issue, which we intend to roll out to iOS tomorrow. We’ll provide further updates on this timeline as soon as they become available.\n \nScope of impact: This issue may affect all users' iPad devices using Outlook for iOS version 5.2602.0. This information may be updated as our investigation continues.\n \nStart time: Tuesday, January 20, 2026, at 11:00 PM UTC\n \nRoot cause: The latest Outlook for iOS update contains a code error related to a change meant to refresh rather than restart tabs when feature flags are updated, which is resulting in this impact.\n \nNext update by: Thursday, January 22, 2026, at 8:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-01-21T17:56:40.61Z",
+          "postType": "regular",
+          "content": "Title: Users' Outlook for iOS app version 5.2602.0 may crash or freeze on iPad devices\n\nUser impact: Users' Outlook for iOS app version 5.2602.0 may crash or freeze on iPad devices.\n\nMore info: Affected users can launch Outlook mobile while in Airplane Mode and then re-enable Wi-Fi and/or cellular data as a way to circumvent impact while we work towards mitigation.\n\nCurrent status: We've successfully reproduced impact in our internal testing environment. We're analyzing this reproduction of impact to determine if a regression was introduced in the latest Outlook for iOS version to better understand how impact manifests and determine next steps for remediation.\n\nScope of impact: This issue may affect all users' iPad devices using Outlook for iOS version 5.2602.0. This information may be updated as our investigation continues.\n\nNext update by: Thursday, January 22, 2026, at 12:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-01-21T17:50:50.56Z",
+          "postType": "regular",
+          "content": "Title: Users' Outlook for iOS app version 5.2602.0 may crash or freeze on iPad devices\n\nUser impact: Users' Outlook for iOS app version 5.2602.0 may crash or freeze on iPad devices.\n\nMore info: Affected users can launch Outlook mobile while in Airplane Mode and then re-enable Wi-Fi and/or cellular data as a way to circumvent impact while we work towards mitigation.\n\nCurrent status: We're investigating a potential issue with Outlook mobile and checking for impact to your organization. We'll provide an update within 30 minutes."
+        }
+      ],
+      "serviceName": "Exchange Online"
+    },
+    {
+      "id": "MO1221364",
+      "title": "Users may be seeing degraded service functionality or be unable to access multiple Microsoft 365 services",
+      "startTime": "2026-01-22T19:33:29Z",
+      "endTime": "2026-01-23T05:00:00Z",
+      "lastModified": "2026-01-30T12:15:30.597Z",
+      "status": "postIncidentReviewPublished",
+      "severity": "incident",
+      "userImpact": "Users may have seen degraded service functionality or were unable to access multiple Microsoft 365 services.",
+      "scopeOfImpact": "",
+      "rootCause": "",
+      "feature": "Access",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-01-30T12:15:30.597Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        },
+        {
+          "createdAt": "2026-01-30T00:39:48.423Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        },
+        {
+          "createdAt": "2026-01-30T00:11:05.567Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        },
+        {
+          "createdAt": "2026-01-30T00:08:39.607Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        },
+        {
+          "createdAt": "2026-01-30T00:07:54.103Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        }
+      ],
+      "serviceName": "Microsoft 365 suite"
+    },
+    {
+      "id": "MO1221222",
+      "title": "Users can't access the Threat Analytics page in Microsoft Defender XDR portal",
+      "startTime": "2026-01-22T12:08:00Z",
+      "endTime": "2026-01-22T14:50:00Z",
+      "lastModified": "2026-01-22T17:02:33.17Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users couldn't access the Threat Analytics page in Microsoft Defender XDR portal.",
+      "scopeOfImpact": "Any user attempting to access the Threat Analytics page in the Microsoft Defender XDR portal may have been impacted.\n \nStart time: Thursday, January 22, 2026, at 12:08 PM UTC\n \nEnd time: Thursday, January 22, 2026, at 2:50 PM UTC",
+      "rootCause": "An improperly configured infrastructure update prevented users from having the necessary permissions to access the Threat Analytics page in the Microsoft Defender XDR portal.\n \nNext steps: \n- We're reviewing and improving our infrastructure update validation procedure to detect and prevent similar misconfigurations in the future.\n \nThis is the final update for the event.",
+      "feature": "Access",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-01-22T17:02:33.17Z",
+          "postType": "regular",
+          "content": "Title: Users can't access the Threat Analytics page in Microsoft Defender XDR portal\n\nUser impact: Users couldn't access the Threat Analytics page in Microsoft Defender XDR portal.\n\nFinal status: We've determined that an improperly configured infrastructure update prevented users from having the necessary permissions to access the Threat Analytics page in the Microsoft Defender XDR portal. We reverted this change and confirmed using our internal telemetry that impact is remediated.\n \nScope of impact: Any user attempting to access the Threat Analytics page in the Microsoft Defender XDR portal may have been impacted.\n \nStart time: Thursday, January 22, 2026, at 12:08 PM UTC\n \nEnd time: Thursday, January 22, 2026, at 2:50 PM UTC\n \nRoot cause: An improperly configured infrastructure update prevented users from having the necessary permissions to access the Threat Analytics page in the Microsoft Defender XDR portal.\n \nNext steps: \n- We're reviewing and improving our infrastructure update validation procedure to detect and prevent similar misconfigurations in the future.\n \nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-01-22T16:17:15.163Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to access the Threat Analytics page in the Microsoft Defender XDR portal\n\nUser impact: Users may have been unable to access the Threat Analytics page in the Microsoft Defender XDR portal.\n\nCurrent status: We've investigated a problem in which users couldn't access the Threat Analytics page in Microsoft Defender XDR portal and confirmed that service is now restored. We'll provide additional information in a closure summary within the \"History\" section of the \"Service health\" dashboard shortly."
+        }
+      ],
+      "serviceName": "Microsoft 365 suite"
+    },
+    {
+      "id": "MO1220544",
+      "title": "Users' Microsoft Power Automate flows may not trigger when users create, update, or delete shifts in Microsoft Teams",
+      "startTime": "2026-01-21T02:30:00Z",
+      "endTime": "2026-01-21T20:08:00Z",
+      "lastModified": "2026-01-21T20:19:45.7Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users' Microsoft Power Automate flows may not have triggered when users created, updated, or deleted shifts.",
+      "scopeOfImpact": "Any user that attempted to create, update, or delete shifts in Microsoft Teams and had a Microsoft Power Automate flow configured with \"When a Shift was created, updated or deleted\" may have been impacted.\n\nStart time: Wednesday, January 21, 2026, at 2:30 AM UTC\n\nEnd time: Wednesday, January 21, 2026, at 8:08 PM UTC",
+      "rootCause": "Our recent efforts to redirect request traffic to alternate portions of infrastructure responsible for facilitating Microsoft Power Automate flows triggered by Microsoft Teams shifts caused the impact.\n\nNext steps: \n - We're continuing to review the affected infrastructure to identify the reason it caused impact, so that we can prevent similar impacts from occurring in the future.\n\nThis is the final update for the event.",
+      "feature": "Company or User Administration",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-01-21T20:19:45.7Z",
+          "postType": "regular",
+          "content": "Title: Users' Microsoft Power Automate flows may not trigger when users create, update, or delete shifts in Microsoft Teams\n\nUser impact: Users' Microsoft Power Automate flows may not have triggered when users created, updated, or deleted shifts.\n\nMore info: Flows that were configured with \"When a Shift was created, updated or deleted\" may have failed to trigger when users performed the actions in Microsoft Teams.\n\nFinal status: We've identified that our recent efforts to redirect request traffic to alternate portions of infrastructure, responsible for facilitating Microsoft Power Automate flows triggered by Microsoft Teams shifts, caused the impact. We've reversed the change by directing the traffic back to its original infrastructure and confirmed through internal testing that the impact is remediated.\n\nScope of impact: Any user that attempted to create, update, or delete shifts in Microsoft Teams and had a Microsoft Power Automate flow configured with \"When a Shift was created, updated or deleted\" may have been impacted.\n\nStart time: Wednesday, January 21, 2026, at 2:30 AM UTC\n\nEnd time: Wednesday, January 21, 2026, at 8:08 PM UTC\n\nRoot cause: Our recent efforts to redirect request traffic to alternate portions of infrastructure responsible for facilitating Microsoft Power Automate flows triggered by Microsoft Teams shifts caused the impact.\n\nNext steps: \n - We're continuing to review the affected infrastructure to identify the reason it caused impact, so that we can prevent similar impacts from occurring in the future.\n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-01-21T19:48:10.943Z",
+          "postType": "regular",
+          "content": "Title: Users' Microsoft Power Automate flows may not trigger when users create, update, or delete shifts in Microsoft Teams\n\nUser impact: Users' Microsoft Power Automate flows may not trigger when users create, update, or delete shifts in Microsoft Teams.\n\nMore info: Flows that are configured with \"When a Shift is created, updated or deleted\" may fail to trigger when users perform the actions in Microsoft Teams.\n\nCurrent status: We're reproducing the impact in our testing environment to gain clarity on the issue and determine our next steps to isolate the root cause.\n\nScope of impact: Any user attempting to create, update, or delete shifts in Microsoft Teams and has a Microsoft Power Automate flow configured with \"When a Shift is created, updated or deleted\" may be impacted.\n\nNext update by: Wednesday, January 21, 2026, at 9:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-01-21T19:23:34.93Z",
+          "postType": "regular",
+          "content": "Title: Users' Microsoft Power Automate flows aren't triggered when users create, update, or delete shifts in Microsoft Teams\n\nUser impact: Users' Microsoft Power Automate flows aren't triggered when users create, update, or delete shifts in Microsoft Teams.\n\nMore info: Flows that are configured with \"When a Shift is created, updated or deleted\" fail to trigger when users perform the actions in Microsoft Teams.\n\nCurrent status: We're investigating a potential issue with Microsoft Teams and Microsoft Power Automate and checking for impact to your organization. We'll provide an update within 30 minutes."
+        }
+      ],
+      "serviceName": "Microsoft 365 suite"
+    },
+    {
+      "id": "MO1220495",
+      "title": "Users may be unable to access Microsoft 365 services",
+      "startTime": "2026-01-21T16:45:09Z",
+      "endTime": "2026-01-21T17:10:00Z",
+      "lastModified": "2026-01-21T18:24:26.963Z",
+      "status": "serviceRestored",
+      "severity": "incident",
+      "userImpact": "Users may have been unable to access Microsoft 365 services, including Teams and Outlook.",
+      "scopeOfImpact": "Your organization was affected by this event, and any of your users hosted in North America may have been impacted.\n\nStart time: Wednesday, January 21, 2026, at 4:10 PM UTC\n\nEnd time: Wednesday, January 21, 2026, at 5:10 PM UTC",
+      "rootCause": "A third-party ISP ASN routing configuration issue caused impact to downstream services, such as Microsoft 365.\n\nNext steps:\n- We're carefully monitoring our managed service environment to ensure the issue doesn't reoccur, and we're reviewing our service resilience practices to identify any necessary improvements so we can reduce the downtime associated with these types of ISP-dependent issues in the future.\n\nThis is the final update for the event.",
+      "feature": "Access",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-01-21T18:24:26.963Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to access Microsoft 365 services\n\nUser impact: Users may have been unable to access Microsoft 365 services, including Teams and Outlook.\n\nMore info: As this issue was a result of a third-party ISP Autonomous System Number (ASN) routing configuration issue; the impact to Microsoft 365 services may have manifested in a multitude of ways. For example, some users may have been unable to access the services and portals altogether, whereas others may have seen impact more variable, such being intermittently unable to send or receive email.\n\nFinal status: We've determined this issue was a result of a third-party ISP Autonomous System Number (ASN) routing configuration issue, and we've identified that the third-party has taken action to remediate the impact to downstream services, such as Microsoft 365, and we've confirmed the issue is no longer occurring.\n\nScope of impact: Your organization was affected by this event, and any of your users hosted in North America may have been impacted.\n\nStart time: Wednesday, January 21, 2026, at 4:10 PM UTC\n\nEnd time: Wednesday, January 21, 2026, at 5:10 PM UTC\n\nRoot cause: A third-party ISP ASN routing configuration issue caused impact to downstream services, such as Microsoft 365.\n\nNext steps:\n- We're carefully monitoring our managed service environment to ensure the issue doesn't reoccur, and we're reviewing our service resilience practices to identify any necessary improvements so we can reduce the downtime associated with these types of ISP-dependent issues in the future.\n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-01-21T17:36:47.543Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to access Microsoft 365 services\n\nUser impact: Users may be unable to access Microsoft 365 services, including Teams and Outlook.\n\nCurrent status: Our investigation so far indicates impact is associated with a possible third-party networking issue. We're recursively investigating the health of the Microsoft-managed service environment to identify whether any mitigation actions are required and ensure our services are healthy.\n\nScope of impact: Your organization is affected by this event, and any of your users hosted in North America may be impacted.\n\nNext update by: Wednesday, January 21, 2026, at 7:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-01-21T17:15:37.93Z",
+          "postType": "quick",
+          "content": "As the primary reports of impact are originating from users hosted in North America, we're reviewing networking health across the region to help us determine whether there are any connectivity issues affecting the Microsoft-managed service environment.\n\nThis quick update is designed to give the latest information on this issue."
+        },
+        {
+          "createdAt": "2026-01-21T17:07:08.597Z",
+          "postType": "regular",
+          "content": "Title: We're investigating a potential issue affecting Microsoft 365 services\n\nUser impact: We've received reports of an issue affecting Microsoft 365 services, including Teams and Outlook.\n\nCurrent status: We're reviewing telemetry across dependent portions of service infrastructure to help us isolate the nature of the impact, the source of the issue, and determine what recovery actions may be required.\n \nScope of impact: The scope of this issue is currently being investigated.\n \nNext update by: Wednesday, January 21, 2026, at 6:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-01-21T16:51:14.43Z",
+          "postType": "regular",
+          "content": "Title: We're investigating a potential issue affecting Microsoft 365 services\n\nUser impact: We've received reports of an issue affecting Microsoft 365 services, including Teams and Outlook.\n\nCurrent status: We're investigating a potential issue with Microsoft 365 services and checking for impact to your organization. We'll provide an update within 30 minutes."
+        }
+      ],
+      "serviceName": "Microsoft 365 suite"
+    },
+    {
+      "id": "MM1219608",
+      "title": "Some users may have been unable to open Microsoft Power Apps",
+      "startTime": "2026-01-20T12:24:29Z",
+      "endTime": "2026-01-20T12:33:00Z",
+      "lastModified": "2026-01-20T14:51:22.53Z",
+      "status": "serviceRestored",
+      "severity": "incident",
+      "userImpact": "Users may have been unable to open Microsoft Power Apps.",
+      "scopeOfImpact": "Impact was specific to some users who were served through the affected infrastructure attempting to open Power App\n\nStart time: Tuesday, January 20, 2026, at 10:41 AM UTC\n\nEnd time: Tuesday, January 20, 2026, at 12:33 PM UTC",
+      "rootCause": "An update to the Power Platform service didn't run as expected, resulting in slow performance, connection failures, and request failures across dependent services.\n\nNext steps:\n- We're reviewing our Power Platform update procedures to help prevent similar impact from happening again.\n\nThis is the final update for the event.",
+      "feature": "Reports of an Incident",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-01-20T14:27:33.93Z",
+          "postType": "regular",
+          "content": "Title: Some users may have been unable to open Microsoft Power Apps\n\nUser impact: Users may have been unable to open Microsoft Power Apps.\n\nMore info: Users may have been unable to open Power Apps, load data from SharePoint-backed applications, or use connectors that rely on Power Apps services.\n\nFinal status: We’ve determined that an update to the Power Platform service didn't run as expected, resulting in slow performance, connection failures, and request failures across dependent services. We’ve confirmed that the service recovered after the aforementioned update completed as expected.\n\nScope of impact: Impact was specific to some users who were served through the affected infrastructure attempting to open Power App\n\nStart time: Tuesday, January 20, 2026, at 10:41 AM UTC\n\nEnd time: Tuesday, January 20, 2026, at 12:33 PM UTC\n\nRoot cause: An update to the Power Platform service didn't run as expected, resulting in slow performance, connection failures, and request failures across dependent services.\n\nNext steps:\n- We're reviewing our Power Platform update procedures to help prevent similar impact from happening again.\n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-01-20T12:38:56.343Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to open Microsoft Power Apps\n\nUser impact: Users may be unable to open Microsoft Power Apps.\n\nMore info: Users may be unable to open Power Apps, load data from SharePoint-backed applications, or use connectors that rely on Power Apps services.\n\nCurrent status: We’re analyzing service telemetry to identify the root cause and develop a remediation plan.\n\nScope of impact: Impact is specific to some users who are served through the affected infrastructure attempting to open Power Apps.\n\nNext update by: Tuesday, January 20, 2026, at 2:30 PM UTC"
+        }
+      ],
+      "serviceName": "Power Apps in Microsoft 365"
+    },
+    {
+      "id": "MF1219609",
+      "title": "Some users may have been unable to run Microsoft Power Automate flows",
+      "startTime": "2026-01-20T10:41:00Z",
+      "endTime": "2026-01-20T12:33:00Z",
+      "lastModified": "2026-01-20T14:51:36.057Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have been unable to run Microsoft Power Automate flows.",
+      "scopeOfImpact": "Impact was specific to some users who were served through the affected infrastructure attempting to run Microsoft Power Automate flows.\n\nStart time: Tuesday, January 20, 2026, at 10:41 AM UTC\n\nEnd time: Tuesday, January 20, 2026, at 12:33 PM UTC",
+      "rootCause": "An update to the Power Platform service didn't run as expected, resulting in slow performance, connection failures, and request failures across dependent services.\n\nNext steps:\n- We're reviewing our Power Platform update procedures to help prevent similar impact from happening again.\n\nThis is the final update for the event.",
+      "feature": "Reports of an Incident",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-01-20T14:29:19.727Z",
+          "postType": "regular",
+          "content": "Title: Some users may have been unable to run Microsoft Power Automate flows\n\nUser impact: Users may have been unable to run Microsoft Power Automate flows.\n\nMore info: Users may have been unable to run flows, use connectors, or perform operations that rely on Power Automate services.\n\nFinal status: We’ve determined that an update to the Power Platform service didn't run as expected, resulting in slow performance, connection failures, and request failures across dependent services. We’ve confirmed that the service recovered after the aforementioned update completed as expected.\n\nScope of impact: Impact was specific to some users who were served through the affected infrastructure attempting to run Microsoft Power Automate flows.\n\nStart time: Tuesday, January 20, 2026, at 10:41 AM UTC\n\nEnd time: Tuesday, January 20, 2026, at 12:33 PM UTC\n\nRoot cause: An update to the Power Platform service didn't run as expected, resulting in slow performance, connection failures, and request failures across dependent services.\n\nNext steps:\n- We're reviewing our Power Platform update procedures to help prevent similar impact from happening again.\n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-01-20T12:40:02.483Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to run Microsoft Power Automate flows\n\nUser impact: Users may be unable to run Microsoft Power Automate flows.\n\nMore info: Users may be unable to run flows, use connectors, or perform operations that rely on Power Automate services.\n\nCurrent status: We’re analyzing service telemetry to identify the root cause and develop a remediation plan.\n\nScope of impact: Impact is specific to some users who are served through the affected infrastructure attempting to run Microsoft Power Automate flows.\n\nNext update by: Tuesday, January 20, 2026, at 2:30 PM UTC"
+        }
+      ],
+      "serviceName": "Microsoft Power Automate in Microsoft 365"
+    },
+    {
+      "id": "SP1218552",
+      "title": "Some users may be unable to select schedule dates within SharePoint Online pages",
+      "startTime": "2026-01-16T06:47:00Z",
+      "endTime": "2026-01-16T23:40:00Z",
+      "lastModified": "2026-01-17T00:24:10.077Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may be unable to select schedule dates within SharePoint Online pages.",
+      "scopeOfImpact": "Some users who were attempting to select scheduled dates within SharePoint Online may have been impacted. \n\nStart time: Thursday, January 15, 2026, at 6:47 AM UTC\n\nEnd time: Friday, January 16, 2026, at 11:40 PM UTC",
+      "rootCause": "A regression was introduced during recent service update which was causing the date selector not to open, which resulted in impact.\n\nNext steps: \n- We're reviewing our update vetting procedures to help ensure impact of this nature doesn’t reoccur with future updates.\n\nThis is the final update for the event.",
+      "feature": "Performance (related to custom solutions)",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-01-17T00:19:05.203Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to select schedule dates within SharePoint Online pages\n\nUser impact: Users may be unable to select schedule dates within SharePoint Online pages.\n\nFinal status: Our fix has fully saturated throughout the affected environment and after an extended period of monitoring the service health telemetry and validating within our internal testing environment, we’ve confirmed that impact has been remediated. \n\nScope of impact: Some users who were attempting to select scheduled dates within SharePoint Online may have been impacted. \n\nStart time: Thursday, January 15, 2026, at 6:47 AM UTC\n\nEnd time: Friday, January 16, 2026, at 11:40 PM UTC\n\nRoot cause: A regression was introduced during recent service update which was causing the date selector not to open, which resulted in impact.\n\nNext steps: \n- We're reviewing our update vetting procedures to help ensure impact of this nature doesn’t reoccur with future updates.\n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-01-16T22:40:54.427Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to select schedule dates within SharePoint Online pages\n\nUser impact: Users may be unable to select schedule dates within SharePoint Online pages.\n\nCurrent status: Our fix to correct the regression introduced by the recent service update is currently ten percent saturated across the affected environment and is progressing slower than we initially anticipated. We're monitoring as it deploys to ensure it completes in a timely manner.\n\nScope of impact: Some users attempting to select scheduled dates within SharePoint Online may be impacted. This information may be updated as our investigation continues.\n\nStart time: Thursday, January 15, 2026, at 6:47 AM UTC\n\nRoot cause: A regression was introduced during recent service update which is causing the date selector not to open, resulting in impact.\n\nNext update by: Saturday, January 17, 2026, at 2:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-01-16T20:57:58.98Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to select schedule dates within SharePoint Online pages\n\nUser impact: Users may be unable to select schedule dates within SharePoint Online pages.\n\nCurrent status: We’ve initiated the process of rolling out a fix to address this issue and anticipate that the deployment should complete to resolve this issue by our next scheduled update.\n\nScope of impact: Some users attempting to select scheduled dates within SharePoint Online may be impacted. This information may be updated as our investigation continues.\n \nStart time: Thursday, January 15, 2026, at 6:47 AM UTC\n\nRoot cause: A change introduced as part of a recent service update is causing impact. \n\nNext update by: Saturday, January 17, 2026, at 12:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-01-16T12:16:05.143Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to select schedule dates within SharePoint Online pages\n\nUser impact: Users may be unable to select schedule dates within SharePoint Online pages. \n\nCurrent status: We've determined that a recent service update is causing impact to occur. As a mitigation strategy, we've initiated the deployment of the fix which has reached an estimated 25 percent of the impacted service environments. We’ll provide a timeline for full completion as soon as it becomes available.\n \nScope of impact: Some users attempting to select scheduled dates within SharePoint Online may be impacted. This information may be updated as our investigation continues. \n \nRoot cause: A change introduced as part of a recent service update is causing impact. \n \nNext update by: Friday, January 16, 2026, at 9:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-01-16T11:05:07.143Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to select schedule dates within SharePoint Online pages\n\nUser impact: Users may be unable to select schedule dates within SharePoint Online pages. \n\nCurrent status: We're reviewing service monitoring telemetry to isolate the root cause and determine our next troubleshooting steps. \n \nScope of impact: Some users attempting to select scheduled dates within SharePoint Online may be impacted. This information may be updated as our investigation continues. \n \nNext update by: Friday, January 16, 2026, at 1:00 PM UTC"
+        }
+      ],
+      "serviceName": "SharePoint Online"
+    },
+    {
+      "id": "SP1218404",
+      "title": "Users may be unable to open People Cards in SharePoint Online",
+      "startTime": "2026-01-14T18:47:00Z",
+      "endTime": "2026-01-16T04:00:00Z",
+      "lastModified": "2026-01-16T04:25:10.027Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have been unable to open People Cards in SharePoint Online.",
+      "scopeOfImpact": "This issue may have potentially impacted any user attempting to open People Cards in SharePoint Online.\n\nStart time: Wednesday, January 14, 2026, at 6:47 PM UTC\n\nEnd time: Friday, January 16, 2026, at 4:00 AM UTC",
+      "rootCause": "Recent authorization changes intended to improve security functionality introduced an error that prevented users from opening People Cards.\n\nNext steps: \n - We're analyzing the authorization changes to better understand what triggered the initial impact, which will help us in avoiding similar issues during future updates.\n\nThis is the final update for the event.",
+      "feature": "Save Site as Template",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-01-16T04:25:10.027Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to open People Cards in SharePoint Online\n\nUser impact: Users may have been unable to open People Cards in SharePoint Online.\n\nFinal status: We confirmed that recent authorization changes intended to improve security functionality introduced an error that prevented users from opening People Cards. We reverted the authorization changes and confirmed in our telemetry that the impact is remediated.\n\nScope of impact: This issue may have potentially impacted any user attempting to open People Cards in SharePoint Online.\n\nStart time: Wednesday, January 14, 2026, at 6:47 PM UTC\n\nEnd time: Friday, January 16, 2026, at 4:00 AM UTC\n\nRoot cause: Recent authorization changes intended to improve security functionality introduced an error that prevented users from opening People Cards.\n\nNext steps: \n - We're analyzing the authorization changes to better understand what triggered the initial impact, which will help us in avoiding similar issues during future updates.\n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-01-16T03:56:42.297Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to open People Cards in SharePoint Online\n\nUser impact: Users may be unable to open People Cards in SharePoint Online.\n\nCurrent status: Our initial testing shows that disabling the change is remediating impact in our test environment. We're evaluating that the change can be safely disabled for the remaining impacted environment before taking any additional mitigation steps.\n\nScope of impact: This issue may potentially impact any user attempting to open People Cards in SharePoint Online.\n\nNext update by: Friday, January 16, 2026, at 6:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-01-16T01:56:25.11Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to open People Cards in SharePoint Online\n\nUser impact: Users may be unable to open People Cards in SharePoint Online.\n\nCurrent status: We identified a recent authorization change that we suspect is causing the impact to People Cards. We're testing disabling the change in our environment to validate that it remediates impact.\n\nScope of impact: This issue may potentially impact any user attempting to open People Cards in SharePoint Online.\n\nNext update by: Friday, January 16, 2026, at 4:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-01-16T00:16:18.513Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to open People Cards in SharePoint Online\n\nUser impact: Users may be unable to open People Cards in SharePoint Online.\n\nCurrent status: We're analyzing system logs, including any recent changes, to identify the source of the issue, which will help us determine our next troubleshooting steps.\n\nScope of impact: This issue may potentially impact any user attempting to open People Cards in SharePoint Online.\n\nNext update by: Friday, January 16, 2026, at 2:30 AM UTC"
+        },
+        {
+          "createdAt": "2026-01-15T23:58:11.48Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to open People Cards in SharePoint Online\n\nUser impact: Users may be unable to open People Cards in SharePoint Online.\n\nCurrent status: We're investigating a potential issue with SharePoint Online and checking for impact to your organization. We'll provide an update within 30 minutes."
+        }
+      ],
+      "serviceName": "SharePoint Online"
+    },
+    {
+      "id": "OD1218091",
+      "title": "Potential issues accessing Microsoft OneDrive content",
+      "startTime": "2026-01-15T06:59:05.233Z",
+      "endTime": "2026-01-15T07:48:44.893Z",
+      "lastModified": "2026-01-15T07:48:46.99Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may be unable to access OneDrive content and may notice delays or navigation errors.",
+      "scopeOfImpact": "A very limited number of customers and users appeared to have been impacted. For most customers, it's unlikely that many users would have reported impact related to this event.\n\r\nStart time: Thursday, January 15, 2026 6:59 AM UTC\r\n\r\nEnd time: Thursday, January 15, 2026 7:48 AM UTC\r\n\r\nThis is the final update for the event.",
+      "rootCause": "",
+      "feature": "OneDrive for Business",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-01-15T07:48:46.99Z",
+          "postType": "regular",
+          "content": "Title: Delays or problems loading OneDrive for Business content\n\r\nUser impact: Users may have experienced intermittent delays or navigation errors when accessing OneDrive for Business content.\n\r\nFinal status: By design, our automated recovery features detected and repaired this problem and our monitoring systems have reported that service has been restored.\n\r\nScope of impact: A very limited number of customers and users appeared to have been impacted. For most customers, it's unlikely that many users would have reported impact related to this event.\n\r\nStart time: Thursday, January 15, 2026 6:59 AM UTC\r\n\r\nEnd time: Thursday, January 15, 2026 7:48 AM UTC\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-01-15T06:59:06.753Z",
+          "postType": "regular",
+          "content": "Title: Potential issues accessing Microsoft OneDrive content\r\n\r\nUser impact: Users may be unable to access OneDrive content and may notice delays or navigation errors.\r\n\r\nCurrent Status: We're investigating a potential issue and checking for impact to your organization. We'll provide an update within one hour."
+        }
+      ],
+      "serviceName": "Microsoft OneDrive"
+    },
+    {
+      "id": "SP1218090",
+      "title": "Potential issues accessing SharePoint Online sites",
+      "startTime": "2026-01-15T06:58:53.893Z",
+      "endTime": "2026-01-15T07:48:32.543Z",
+      "lastModified": "2026-01-15T07:48:34.65Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may be unable to access SharePoint Online sites and may notice delays or navigation errors.",
+      "scopeOfImpact": "A very limited number of customers and users appeared to have been impacted. For most customers, it's unlikely that many users would have reported impact related to this event.\n\r\nStart time: Thursday, January 15, 2026 6:58 AM UTC\r\n\r\nEnd time: Thursday, January 15, 2026 7:48 AM UTC\r\n\r\nThis is the final update for the event.",
+      "rootCause": "",
+      "feature": "SharePoint Online all features",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-01-15T07:48:34.65Z",
+          "postType": "regular",
+          "content": "Title: Delays or problems loading SharePoint Online sites\n\r\nUser impact: Users may have experienced intermittent delays or navigation errors when accessing SharePoint sites.\n\r\nFinal status: By design, our automated recovery features detected and repaired this problem and our monitoring systems have reported that service has been restored.\n\r\nScope of impact: A very limited number of customers and users appeared to have been impacted. For most customers, it's unlikely that many users would have reported impact related to this event.\n\r\nStart time: Thursday, January 15, 2026 6:58 AM UTC\r\n\r\nEnd time: Thursday, January 15, 2026 7:48 AM UTC\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-01-15T06:58:55.417Z",
+          "postType": "regular",
+          "content": "Title: Potential issues accessing SharePoint Online sites\r\n\r\nUser impact: Users may be unable to access SharePoint Online sites and may notice delays or navigation errors.\r\n\r\nCurrent Status: We're investigating a potential issue and checking for impact to your organization. We'll provide an update within one hour."
+        }
+      ],
+      "serviceName": "SharePoint Online"
+    },
+    {
+      "id": "MO1213801",
+      "title": "Users may have been unable to access shared Microsoft To Do lists",
+      "startTime": "2025-12-29T20:00:00Z",
+      "endTime": "2026-01-14T12:30:00Z",
+      "lastModified": "2026-01-14T14:04:10.317Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have been unable to access shared Microsoft To Do lists.",
+      "scopeOfImpact": "This issue may have potentially impacted any user attempting to access shared Microsoft To Do lists.\n\nStart time: Monday, December 29, 2025, at 8:00 PM UTC\n\nEnd time: Wednesday, January 14, 2026, at 12:30 PM UTC",
+      "rootCause": "A recent change to add optimizations when sharing To Do lists introduced a misconfiguration which resulted in impact.\n\nNext steps:\n- We’ll continue monitoring the sharing functionality to ensure stability and service health.\n\nThis is the final update for the event.",
+      "feature": "Access",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-01-14T13:52:49.173Z",
+          "postType": "regular",
+          "content": "Title: Users may have been unable to access shared Microsoft To Do lists\n\nUser impact: Users may have been unable to access shared Microsoft To Do lists.\n\nMore info: Users may also have been unable to open shared To Do list invitation links.\n\nFinal status: We’ve confirmed that the issue is resolved following successful deployment of the fix.\n\nScope of impact: This issue may have potentially impacted any user attempting to access shared Microsoft To Do lists.\n\nStart time: Monday, December 29, 2025, at 8:00 PM UTC\n\nEnd time: Wednesday, January 14, 2026, at 12:30 PM UTC\n\nRoot cause: A recent change to add optimizations when sharing To Do lists introduced a misconfiguration which resulted in impact.\n\nNext steps:\n- We’ll continue monitoring the sharing functionality to ensure stability and service health.\n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-01-13T09:26:06.253Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to access shared Microsoft To Do lists\n\nUser impact: Users may be unable to access shared Microsoft To Do lists.\n\nMore info: Users may also be unable to open shared To Do list invitation links.\n \nCurrent status: We’ve identified that a small number of system processes are running more slowly than expected, which is temporarily delaying the reversion of the change. The reversion has now been successfully completed for approximately 93% of the affected environments. We’ll provide an updated completion timeline as soon as it’s available.\n \nScope of impact: This issue may potentially impact any user attempting to access shared Microsoft To Do lists.\n \nStart time: Monday, December 29, 2025, at 8:00 PM UTC\n \nRoot cause: A recent change to add optimizations when sharing To Do lists introduced a misconfiguration which is resulting in impact.\n \nNext update by: Wednesday, January 14, 2026, at 3:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-01-12T14:31:30.107Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to access shared Microsoft To Do lists\n\nUser impact: Users may be unable to access shared Microsoft To Do lists.\n\nMore info: Users may also be unable to open shared To Do list invitation links.\n \nCurrent status: We're continuing to revert the offending change and anticipate completion by the end of Monday, January 12, 2026. Once completed, we'll need to monitor for an extended period of time to ensure that impact has been fully resolved.\n \nScope of impact: This issue may potentially impact any user attempting to access shared Microsoft To Do lists.\n \nStart time: Monday, December 29, 2025, at 8:00 PM UTC\n \nRoot cause: A recent change to add optimizations when sharing To Do lists introduced a misconfiguration which is resulting in impact.\n \nNext update by: Tuesday, January 13, 2026, at 3:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-01-09T15:20:37.427Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to access shared Microsoft To Do lists\n\nUser impact: Users may be unable to access shared Microsoft To Do lists.\n\nMore info: Users may also be unable to open shared To Do list invitation links.\n \nCurrent status: We've started the reversion process and anticipate complete by Monday, January 12, 2026.\n \nScope of impact: This issue may potentially impact any user attempting to access shared Microsoft To Do lists.\n \nStart time: Monday, December 29, 2025, at 8:00 PM UTC\n \nEstimated time to resolve: Monday, January 12, 2026\n \nRoot cause: A recent change to add optimizations when sharing To Do lists introduced a misconfiguration which is resulting in impact.\n \nNext update by: Monday, January 12, 2026, at 5:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-01-08T16:44:19.203Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to access shared Microsoft To Do lists\n\nUser impact: Users may be unable to access shared Microsoft To Do lists.\n\nMore info: Users may also be unable to open shared To Do list invitation links.\n \nCurrent status: We're completing the final validations prior to initiating the reversion process which we anticipate will begin by our next scheduled communications update.\n \nScope of impact: This issue may potentially impact any user attempting to access shared Microsoft To Do lists.\n \nStart time: Monday, December 29, 2025, at 8:00 PM UTC\n \nRoot cause: A recent change to add optimizations when sharing To Do lists introduced a misconfiguration which is resulting in impact.\n \nNext update by: Friday, January 9, 2026, at 5:00 PM UTC"
+        }
+      ],
+      "serviceName": "Microsoft 365 suite"
+    },
+    {
+      "id": "OP1217551",
+      "title": "Some users may not be able to get the latest Microsoft 365 Apps updates",
+      "startTime": "2026-01-13T15:30:00Z",
+      "endTime": "2026-01-13T22:00:00Z",
+      "lastModified": "2026-01-13T23:16:55.79Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may not have been able to get the latest Microsoft 365 Apps updates.",
+      "scopeOfImpact": "Some users reliant on the Cloud Update process to update their Microsoft 365 apps may have been affected.\n\nStart time: Tuesday, January 13, 2026, at 3:30 PM UTC\n\nEnd time: Tuesday, January 13, 2026, at 10:00 PM UTC",
+      "rootCause": "Values needed weren’t present in the release build which then prevented the Cloud Update service from picking up the new update, and this resulted in the impact.\n\nNext steps: \n - We're reviewing our update standards to ensure missing values are caught and corrected ahead of publishing to prevent this from happening again.\n\nThis is the final update for the event.",
+      "feature": "Multiple Applications",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-01-13T23:04:21.613Z",
+          "postType": "regular",
+          "content": "Title: Some users may not be able to get the latest Microsoft 365 Apps updates\n\nUser impact: Users may not have been able to get the latest Microsoft 365 Apps updates.\n\nMore info: This issue specifically impacted organizations where these updates were facilitated through the Cloud Update process in the Microsoft 365 apps admin center.\n\nFinal status: After our analysis of the latest update, we determined that values needed weren’t present in the release build which then prevented the Cloud Update service from picking up the new update, and this resulted in the impact. We've applied a fix to restore the values and confirmed that this has remediated the issue.\n\nScope of impact: Some users reliant on the Cloud Update process to update their Microsoft 365 apps may have been affected.\n\nStart time: Tuesday, January 13, 2026, at 3:30 PM UTC\n\nEnd time: Tuesday, January 13, 2026, at 10:00 PM UTC\n\nRoot cause: Values needed weren’t present in the release build which then prevented the Cloud Update service from picking up the new update, and this resulted in the impact.\n\nNext steps: \n - We're reviewing our update standards to ensure missing values are caught and corrected ahead of publishing to prevent this from happening again.\n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-01-13T20:39:14.66Z",
+          "postType": "regular",
+          "content": "Title: Some users may not be able to get the latest Microsoft 365 Apps updates\n\nUser impact: Users may not be able to get the latest Microsoft 365 Apps updates.\n\nMore info: This issue specifically impacts organizations where these updates are facilitated through the Cloud Update process in the Microsoft 365 apps admin center.\n\nCurrent status: We're analyzing the latest update to determine our next troubleshooting steps.\n\nScope of impact: Some users reliant on the Cloud Update process to update their Microsoft 365 apps may be affected. This section may be updated as our investigation continues.\n\nNext update by: Wednesday, January 14, 2026, at 12:30 AM UTC"
+        }
+      ],
+      "serviceName": "Microsoft 365 apps"
+    },
+    {
+      "id": "SP1216181",
+      "title": "Users may not receive email notifications generated from the SharePoint Online Rules",
+      "startTime": "2025-12-08T12:00:00Z",
+      "endTime": "2026-01-13T18:00:00Z",
+      "lastModified": "2026-01-13T18:39:15.43Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may not have received email notifications generated from the SharePoint Online Rules feature.",
+      "scopeOfImpact": "Any user expecting SharePoint Online rules email notifications may have been affected.\n\nStart time: Monday, December 8, 2025, at 12:00 PM UTC\n\nEnd time: Tuesday, January 13, 2026, at 6:00 PM UTC",
+      "rootCause": "A recent feature update contained a code error that prevented email notifications from generating as expected, which resulted in impact.\n\nNext steps: \n - We're reviewing our feature update protocols to ensure similar code errors are caught and addressed ahead of deployment to prevent this from reoccurring.\n\nThis is the final update for the event.",
+      "feature": "SharePoint Online all features",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-01-13T18:39:15.43Z",
+          "postType": "regular",
+          "content": "Title: Users may not receive email notifications generated from the SharePoint Online Rules\n\nUser impact: Users may not have received email notifications generated from the SharePoint Online Rules feature.\n\nMore info: Users could have created a new rule with the same settings as an affected rule to bypass the impact while we worked to resolve this issue.\n\nFinal status: We've confirmed the fix has completed deployment and the configuration change has been applied. After validating impact remediation with a subset of affected users, we've verified the issue has been resolved.\n\nScope of impact: Any user expecting SharePoint Online rules email notifications may have been affected.\n\nStart time: Monday, December 8, 2025, at 12:00 PM UTC\n\nEnd time: Tuesday, January 13, 2026, at 6:00 PM UTC\n\nRoot cause: A recent feature update contained a code error that prevented email notifications from generating as expected, which resulted in impact.\n\nNext steps: \n - We're reviewing our feature update protocols to ensure similar code errors are caught and addressed ahead of deployment to prevent this from reoccurring.\n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-01-12T18:40:59.02Z",
+          "postType": "regular",
+          "content": "Title: Users may not receive email notifications generated from the SharePoint Online Rules\n\nUser impact: Users may not receive email notifications generated from the SharePoint Online Rules feature.\n\nMore info: Users can create a new rule with the same settings as an affected rule to bypass the impact while we work to resolve this issue.\n\nCurrent status: We're monitoring as the fix continues its deployment and confirmed it's reached over 95 percent of affected infrastructure. Once complete, an additional configuration change will be applied to fully remediate impact. We hope to provide a remediation timeline by the next scheduled update.\n\nScope of impact: Any user expecting SharePoint Online rules email notifications may be affected.\n\nStart time: Monday, December 8, 2025, at 12:00 PM UTC\n\nRoot cause: A recent feature update contains a code error that's preventing email notifications from generating as expected, resulting in impact.\n\nNext update by: Tuesday, January 13, 2026, at 7:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-01-09T21:12:31.753Z",
+          "postType": "regular",
+          "content": "Title: Users may not receive email notifications generated from the SharePoint Online Rules\n\nUser impact: Users may not receive email notifications generated from the SharePoint Online Rules feature.\n\nMore info: Users can create a new rule with the same settings as an affected rule to bypass the impact while we work to resolve this issue.\n\nCurrent status: Our analysis of recent changes has confirmed that a recent feature update contains a code error that's preventing email notifications from generating as expected, resulting in impact. We're in the process of developing a fix to remediate impact and expect to have a mitigation timeline by the next scheduled communications update.\n\nScope of impact: Any user expecting SharePoint Online rules email notifications may be affected.\n\nStart time: Monday, December 8, 2025, at 12:00 PM UTC\n\nRoot cause: A recent feature update contains a code error that's preventing email notifications from generating as expected, resulting in impact.\n\nNext update by: Monday, January 12, 2026, at 10:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-01-09T18:43:05.037Z",
+          "postType": "regular",
+          "content": "Title: Users aren't receiving notification emails generated from the SharePoint Online Rules feature\n\nUser impact: Users aren't receiving notification emails generated from the SharePoint Online Rules feature.\n\nMore info: Users can create a new rule with the same settings as an affected rule to bypass the impact while we work to resolve this issue.\n\nCurrent status: We're reviewing recent service updates which may be contributing to impact.\n\nScope of impact: Any user expecting SharePoint Online rules notifications may be affected.\n\nNext update by: Friday, January 9, 2026, at 10:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-01-09T18:19:15.99Z",
+          "postType": "regular",
+          "content": "Title: Users aren't receiving notification emails generated from the SharePoint Online Rules feature\n\nUser impact: Users aren't receiving notification emails generated from the SharePoint Online Rules feature.\n\nMore info: This event is a continuation of the incident previously communicated via SP1216014.\n\nUsers can create a new rule with the same settings as an affected rule to bypass the impact while we work to resolve this issue.\n\nCurrent status: We're investigating a potential issue with SharePoint Online rules and checking for impact to your organization. We'll provide an update within 30 minutes."
+        }
+      ],
+      "serviceName": "SharePoint Online"
+    },
+    {
+      "id": "SP1215831",
+      "title": "Some read-only users may see blank pages for their SharePoint Online sites",
+      "startTime": "2026-01-07T19:44:00Z",
+      "endTime": "2026-01-08T18:18:00Z",
+      "lastModified": "2026-01-08T20:22:17.317Z",
+      "status": "serviceRestored",
+      "severity": "incident",
+      "userImpact": "Read-only users may have seen blank pages for their SharePoint Online sites.",
+      "scopeOfImpact": "Some read-only users may have seen blank pages for their SharePoint Online sites. \n \nStart time: Wednesday, January 7, 2026, at 7:44 PM UTC\n \nEnd time: Thursday, January 8, 2026, at 6:18 PM UTC",
+      "rootCause": "The latest SharePoint Online service build contained a regression which resulted in read-only users seeing blank pages for their SharePoint Online sites.\n \nNext steps: \n- We're analyzing the offending service build to isolate the underlying root cause. This analysis will help us to improve the quality and reliability of our future updates, while also helping that similar impact doesn't occur in future.\n \nThis is the final update for the event.",
+      "feature": "SharePoint Online all features",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-01-08T19:53:29.543Z",
+          "postType": "regular",
+          "content": "Title: Some read-only users may see blank pages for their SharePoint Online sites\n\nUser impact: Read-only users may have seen blank pages for their SharePoint Online sites.\n\nMore info: Affected users reported seeing relevant page information displaying briefly before becoming a blank page.\n \nFinal status: We've validated that the latest SharePoint Online service build contained a regression which resulted in read-only users seeing blank pages for their SharePoint Online sites. We've rolled back the offending build and validated with a subset of affected users that our actions successfully resolved the issue.\n \nScope of impact: Some read-only users may have seen blank pages for their SharePoint Online sites. \n \nStart time: Wednesday, January 7, 2026, at 7:44 PM UTC\n \nEnd time: Thursday, January 8, 2026, at 6:18 PM UTC\n \nRoot cause: The latest SharePoint Online service build contained a regression which resulted in read-only users seeing blank pages for their SharePoint Online sites.\n \nNext steps: \n- We're analyzing the offending service build to isolate the underlying root cause. This analysis will help us to improve the quality and reliability of our future updates, while also helping that similar impact doesn't occur in future.\n \nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-01-08T19:20:45.09Z",
+          "postType": "regular",
+          "content": "Title: Some read-only users may see blank pages for their SharePoint Online sites\n\nUser impact: Read-only users may see blank pages for their SharePoint Online sites.\n\nMore info: Affected users report seeing relevant page information displaying briefly before becoming a blank page.\n \nCurrent status: We're reviewing reports from affected users to understand the current impact scenario and to determine what mitigation actions we can take to resolve impact.\n \nScope of impact: Some read-only users may see blank pages for their SharePoint Online sites. This section may be updated as the investigation progresses.\n \nNext update by: Thursday, January 8, 2026, at 9:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-01-08T19:07:37.777Z",
+          "postType": "regular",
+          "content": "Title: Read-only users see blank pages for their SharePoint Online sites\n\nUser impact: Read-only users see blank pages for their SharePoint Online sites.\n\nMore info: Affected users report seeing relevant page information displaying briefly before becoming a blank page.\n \nCurrent status: We're investigating a potential issue with SharePoint Online and checking for impact to your organization. We'll provide an update within 30 minutes."
+        }
+      ],
+      "serviceName": "SharePoint Online"
+    },
+    {
+      "id": "EX1215307",
+      "title": "Some users may have been unable to access their mailboxes using Internet Mailbox Access Protocol 4 (IMAP4) ",
+      "startTime": "2026-01-02T00:00:00Z",
+      "endTime": "2026-01-08T11:30:00Z",
+      "lastModified": "2026-01-08T12:34:33.383Z",
+      "status": "serviceRestored",
+      "severity": "incident",
+      "userImpact": "Users may have intermittently been unable to access their mailboxes using IMAP4. ",
+      "scopeOfImpact": "Some users that were attempting to access their mailboxes using IMAP4 may have been intermittently impacted. \n \nStart time: Friday, January 2, 2026, at 12:00 AM UTC\n \nEnd time: Thursday, January 8, 2026, at 11:30 AM UTC",
+      "rootCause": "A recent IMAP deployment related to authentication support contained a code conflict that introduced a configuration issue and was causing intermittent mailbox access issues for some impacted users.\n \nNext steps:\n- We're reviewing our deployment and provisioning procedures to help prevent similar problems in the future.  \n\nThis is the final update for the event.",
+      "feature": "IMAP - problem connecting or using",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-01-08T12:34:33.383Z",
+          "postType": "regular",
+          "content": "Title: Some users may have been unable to access their mailboxes using Internet Mailbox Access Protocol 4 (IMAP4) \n\nUser impact: Users may have intermittently been unable to access their mailboxes using IMAP4. \n\nMore info: Impact was specific to IMAP4, other connection methods were not impacted. Additionally, if users were actively facing this issue, retries may have been successful. \n\nFinal status: We’ve completed deploying the configuration change on the affected servers, which reduced volume and restored normal service functionality. After a period of monitoring, we’ve confirmed that impact has been fully remediated. \n \nScope of impact: Some users that were attempting to access their mailboxes using IMAP4 may have been intermittently impacted. \n \nStart time: Friday, January 2, 2026, at 12:00 AM UTC\n \nEnd time: Thursday, January 8, 2026, at 11:30 AM UTC\n \nRoot cause: A recent IMAP deployment related to authentication support contained a code conflict that introduced a configuration issue and was causing intermittent mailbox access issues for some impacted users.\n \nNext steps:\n- We're reviewing our deployment and provisioning procedures to help prevent similar problems in the future.  \n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-01-08T12:19:31.763Z",
+          "postType": "regular",
+          "content": "Title: Some users may have been unable to access their mailboxes using Internet Mailbox Access Protocol 4 (IMAP4) \n\nUser impact: Users may have intermittently been unable to access their mailboxes using IMAP4. \n\nMore info: Impact was specific to IMAP4, other connection methods were not impacted. Additionally, if users were actively facing this issue, retries may have been successful. \n\nFinal status: We’ve completed deploying the configuration change on the affected servers, which reduced volume and restored normal service functionality. After a period of monitoring, we’ve confirmed that impact has been fully remediated. \n \nScope of impact: Some users that were attempting to access their mailboxes using IMAP4 may have been intermittently impacted. \n \nStart time: Friday, January 2, 2026, at 12:00 AM UTC\n \nEnd time: Thursday, January 8, 2026, at 11:30 AM UTC\n \nRoot cause: A recent IMAP deployment related to authentication support contained a code conflict that introduced a configuration issue and was causing intermittent mailbox access issues for some impacted users.\n \nNext steps:\n- We're reviewing our deployment and provisioning procedures to help prevent similar problems in the future.  \n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-01-08T07:58:43.177Z",
+          "postType": "regular",
+          "content": "Title: Some users may intermittently be unable to access their mailboxes using Internet Mailbox Access Protocol 4 (IMAP4)\n\nUser impact: Users may intermittently be unable to access their mailboxes using IMAP4.\n\nMore info: Impact is specific to IMAP4, other connection methods are not impacted. Additionally, if users are actively facing this issue, retries may be successful.\n \nCurrent status: We're continuing to deploy the configuration change and expect this process to complete by our next scheduled update.\n \nScope of impact: Some users that are attempting to access their mailboxes using IMAP4 may be intermittently impacted. This information may be updated as our investigation continues.\n \nRoot cause: A recent IMAP deployment related to authentication support contains a code conflict that introduced a configuration issue and is causing intermittent mailbox access issues for some impacted users.\n \nNext update by: Thursday, January 8, 2026, at 1:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-01-08T05:37:19.513Z",
+          "postType": "regular",
+          "content": "Title: Some users may intermittently be unable to access their mailboxes using Internet Mailbox Access Protocol 4 (IMAP4)\n\nUser impact: Users may intermittently be unable to access their mailboxes using IMAP4.\n\nMore info: Impact is specific to IMAP4, other connection methods are not impacted. Additionally, if users are actively facing this issue, retries may be successful.\n \nCurrent status: We've completed developing the configuration change and have validated it in our internal testing environment to ensure its efficacy in remediating impact. We've started deploying it to the impacted environments and we'll aim to provide a resolution timeline by our next scheduled update.\n \nScope of impact: Some users that are attempting to access their mailboxes using IMAP4 may be intermittently impacted. This information may be updated as our investigation continues.\n \nRoot cause: A recent IMAP deployment related to authentication support contains a code conflict that introduced a configuration issue and is causing intermittent mailbox access issues for some impacted users.\n \nNext update by: Thursday, January 8, 2026, at 10:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-01-08T05:09:13.46Z",
+          "postType": "regular",
+          "content": "Title: Some users may intermittently be unable to access their mailboxes using Internet Mailbox Access Protocol 4 (IMAP4)\n\nUser impact: Users may intermittently be unable to access their mailboxes using IMAP4.\n\nMore info: Impact is specific to IMAP4, other connection methods are not impacted. Additionally, if users are actively facing this issue, retries may be successful.\n \nCurrent status: We've identified a recent IMAP deployment related to authentication support contains a code conflict that introduced a configuration issue and is causing intermittent mailbox access issues for some impacted users. We're halting the deployment to prevent further impact from spreading and are developing a configuration change to restore service functionality. We'll aim to provide a resolution timeline once available.\n \nScope of impact: Some users that are attempting to access their mailboxes using IMAP4 may be intermittently impacted. This information may be updated as our investigation continues.\n \nRoot cause: A recent IMAP deployment related to authentication support contains a code conflict that introduced a configuration issue and is causing intermittent mailbox access issues for some impacted users.\n \nNext update by: Thursday, January 8, 2026, at 6:30 AM UTC"
+        }
+      ],
+      "serviceName": "Exchange Online"
+    },
+    {
+      "id": "SP1030180",
+      "title": "Users may see a new \"Content Freshness\" template option when creating pages in SharePoint Online",
+      "startTime": "2025-01-16T00:00:00Z",
+      "endTime": "2026-01-08T00:00:00Z",
+      "lastModified": "2026-01-08T03:05:44.03Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have seen a new \"Content Freshness\" template option when creating pages in SharePoint Online.",
+      "scopeOfImpact": "Users creating pages in SharePoint Online may have been impacted.\n\nStart time: Thursday, January 16, 2025, at 12:00 AM UTC\n\nEnd time: Thursday, January 8, 2026, at 12:00 AM UTC",
+      "rootCause": "A recent deployment incorrectly enabled this feature in the affected environment.\n\nNext steps: \n - To help prevent similar impact in the future, we're further reviewing our deployment release procedures to ensure features aren't enabled incorrectly.\n\nThis is the final update for the event.",
+      "feature": "Save Site as Template",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-01-08T03:05:44.03Z",
+          "postType": "regular",
+          "content": "Title: Users may see a new \"Content Freshness\" template option when creating pages in SharePoint Online\n\nUser impact: Users may have seen a new \"Content Freshness\" template option when creating pages in SharePoint Online.\n\nMore info: Selecting the \"Content Freshness\" template option had no functional impact. If users encountered the option for the template, they could ignore it and continue using other templates without issues. Affected users may have also seen the option appear in List Settings or the Content Type editing panel.\n\nFinal status: Our fix deployment completed, and after a period of monitoring, we've confirmed impact was remediated.\n\nScope of impact: Users creating pages in SharePoint Online may have been impacted.\n\nStart time: Thursday, January 16, 2025, at 12:00 AM UTC\n\nEnd time: Thursday, January 8, 2026, at 12:00 AM UTC\n\nRoot cause: A recent deployment incorrectly enabled this feature in the affected environment.\n\nNext steps: \n - To help prevent similar impact in the future, we're further reviewing our deployment release procedures to ensure features aren't enabled incorrectly.\n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2025-12-18T03:05:38.213Z",
+          "postType": "regular",
+          "content": "Title: Users may see a new \"Content Freshness\" template option when creating pages in SharePoint Online\n\nUser impact: Users may see a new \"Content Freshness\" template option when creating pages in SharePoint Online.\n\nMore info: Selecting the \"Content Freshness\" template option has no functional impact. If users encounter the option for the template, they can ignore it and continue using other templates without issues. Affected users may also see the option appear in List Settings or the Content Type editing panel.\n\nCurrent status: The fix is progressing and we're continuing to monitor as it completes.\n\nScope of impact: Users creating pages in SharePoint Online may be impacted.\n\nStart time: Thursday, January 16, 2025, at 12:00 AM UTC\n\nRoot cause: A recent deployment incorrectly enabled this feature in the affected environment.\n\nNext update by: Thursday, January 8, 2026, at 6:00 AM UTC"
+        },
+        {
+          "createdAt": "2025-12-04T04:01:12.28Z",
+          "postType": "regular",
+          "content": "Title: Users may see a new \"Content Freshness\" template option when creating pages in SharePoint Online\n\nUser impact: Users may see a new \"Content Freshness\" template option when creating pages in SharePoint Online.\n\nMore info: Selecting the \"Content Freshness\" template option has no functional impact. If users encounter the option for the template, they can ignore it and continue using other templates without issues. Affected users may also see the option appear in List Settings or the Content Type editing panel.\n\nCurrent status: The fix is ongoing and we're continuing to monitor as it progresses.\n\nScope of impact: Users creating pages in SharePoint Online may be impacted.\n\nStart time: Thursday, January 16, 2025, at 12:00 AM UTC\n\nRoot cause: A recent deployment incorrectly enabled this feature in the affected environment.\n\nNext update by: Thursday, December 18, 2025, at 6:00 AM UTC"
+        },
+        {
+          "createdAt": "2025-11-20T03:08:05.53Z",
+          "postType": "regular",
+          "content": "Title: Users may see a new \"Content Freshness\" template option when creating pages in SharePoint Online\n\nUser impact: Users may see a new \"Content Freshness\" template option when creating pages in SharePoint Online.\n\nMore info: Selecting the \"Content Freshness\" template option has no functional impact. If users encounter the option for the template, they can ignore it and continue using other templates without issues. Affected users may also see the option appear in List Settings or the Content Type editing panel.\n\nCurrent status: We're continuing to monitor as the fix completes saturating throughout the affected environment to confirm it remains stable.\n\nScope of impact: Users creating pages in SharePoint Online may be impacted.\n\nStart time: Thursday, January 16, 2025, at 12:00 AM UTC\n\nRoot cause: A recent deployment incorrectly enabled this feature in the affected environment.\n\nNext update by: Thursday, December 4, 2025, at 6:00 AM UTC"
+        },
+        {
+          "createdAt": "2025-10-30T03:52:50.143Z",
+          "postType": "regular",
+          "content": "Title: Users may see a new \"Content Freshness\" template option when creating pages in SharePoint Online\n\nUser impact: Users may see a new \"Content Freshness\" template option when creating pages in SharePoint Online.\n\nMore info: Selecting the \"Content Freshness\" template option has no functional impact. If users encounter the option for the template, they can ignore it and continue using other templates without issues. Affected users may also see the option appear in List Settings or the Content Type editing panel.\n\nCurrent status: While the fix deployment is taking longer than previously anticipated to complete, our service health telemetry indicates that the impact is resolved for the affected users. We’re continuing to monitor as the remainder of the fix propagates throughout the affected environment and to ensure that the impact is fully remediated.\n\nScope of impact: Users creating pages in SharePoint Online may be impacted.\n\nStart time: Thursday, January 16, 2025, at 12:00 AM UTC\n\nRoot cause: A recent deployment incorrectly enabled this feature in the affected environment.\n\nNext update by: Thursday, November 20, 2025, at 5:00 AM UTC"
+        }
+      ],
+      "serviceName": "SharePoint Online"
+    },
+    {
+      "id": "EX1213757",
+      "title": "Users may see an English user interface for Outlook on the web on mobile when configured for a non-English language",
+      "startTime": "2025-12-23T00:00:00Z",
+      "endTime": "2026-01-06T05:32:00Z",
+      "lastModified": "2026-01-06T06:02:40.68Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have seen an English user interface for Outlook on the web on mobile when configured for non-English language.",
+      "scopeOfImpact": "Users accessing Outlook on the web through mobile devices with their user interface language set to non-English languages may have been impacted.\n\nStart time: Tuesday, December 23, 2025, at 12:00 AM UTC\n\nEnd time: Tuesday, January 6, 2026, at 5:32 AM UTC",
+      "rootCause": "A recent service update contained misconfigured localization data, resulting in impact.\n\nNext steps: \n - We're reviewing our update testing and validation methods to better identify issues such as this prior to deployment so we can prevent similar impact in the future.\n\nThis is the final update for the event.",
+      "feature": "OWA - poor customer experience",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-01-06T06:02:40.68Z",
+          "postType": "regular",
+          "content": "Title: Users may see an English user interface for Outlook on the web on mobile when configured for a non-English language\n\nUser impact: Users may have seen an English user interface for Outlook on the web on mobile when configured for non-English language.\n\nMore info: Impacted users would see an English user interface for Outlook on the web when accessing the service through mobile devices on both Android and iOS, even when the user interface configuration was set to alternate languages.\n\nFinal status: We've identified that a recent service update contained misconfigured localization data, resulting in impact. We've rolled back the problematic changes throughout the affected environment and confirmed through internal testing that impact is remediated.\n\nScope of impact: Users accessing Outlook on the web through mobile devices with their user interface language set to non-English languages may have been impacted.\n\nStart time: Tuesday, December 23, 2025, at 12:00 AM UTC\n\nEnd time: Tuesday, January 6, 2026, at 5:32 AM UTC\n\nRoot cause: A recent service update contained misconfigured localization data, resulting in impact.\n\nNext steps: \n - We're reviewing our update testing and validation methods to better identify issues such as this prior to deployment so we can prevent similar impact in the future.\n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-01-06T04:55:52.087Z",
+          "postType": "regular",
+          "content": "Title: Users may see an English user interface for Outlook on the web on mobile when configured for a non-English language\n\nUser impact: Users may see an English user interface for Outlook on the web on mobile when configured for a non-English language.\n\nMore info: Impacted users report seeing an English user interface for Outlook on the web when accessing the service through mobile devices on both Android and iOS, even when the user interface configuration is set to Japanese.\n \nCurrent status: We're reviewing contextual details provided by affected users together with data collected from an internal reproduction of the issue to gain insight into the underlying source of impact and determine our next steps. \n \nScope of impact: Users accessing Outlook on the web through mobile devices with their user interface language set to non-English languages may be impacted. This information may be updated as our investigation continues. \n \nNext update by: Tuesday, January 6, 2026, at 6:30 AM UTC"
+        },
+        {
+          "createdAt": "2026-01-06T04:36:26.543Z",
+          "postType": "regular",
+          "content": "Title: Users may see an English user interface for Outlook on the web on mobile when configured for a non-English language\n\nUser impact: Users may see an English user interface for Outlook on the web on mobile when configured for a non-English language.\n\nMore info: Impacted users would see an English user interface for Outlook on the web when accessing the service through mobile devices on both Android and iOS, even when the user interface configuration was set to alternate languages.\n\nCurrent status: We're investigating a potential issue with Exchange Online and checking for impact to your organization. We'll provide an update within 30 minutes."
+        }
+      ],
+      "serviceName": "Exchange Online"
     }
   ]
 }
