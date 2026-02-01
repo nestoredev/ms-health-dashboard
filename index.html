@@ -109,6 +109,20 @@
             padding: 0.5rem;
         }
 
+        .service-group-label {
+            font-size: 0.65rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-dim);
+            padding: 0.75rem 1rem 0.25rem;
+            margin-top: 0.5rem;
+        }
+
+        .service-group-label:first-child {
+            margin-top: 0;
+        }
+
         .service-item {
             display: flex;
             align-items: center;
@@ -217,15 +231,65 @@
             background: currentColor;
         }
 
-        .no-issues {
-            text-align: center;
-            padding: 4rem 2rem;
-            color: var(--text-muted);
+        /* Overview Mode */
+        .overview-section {
+            margin-bottom: 2rem;
         }
 
-        .no-issues-icon {
-            font-size: 3rem;
+        .overview-section h3 {
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
             margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .overview-section h3::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+
+        .overview-section.incidents h3::before { background: var(--danger); }
+        .overview-section.advisories h3::before { background: var(--warning); }
+
+        .overview-issue {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 1rem 1.25rem;
+            margin-bottom: 0.75rem;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+
+        .overview-issue:hover {
+            border-color: #444;
+        }
+
+        .overview-issue-service {
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            color: var(--accent);
+            margin-bottom: 0.25rem;
+        }
+
+        .overview-issue-title {
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .overview-issue-meta {
+            font-size: 0.75rem;
+            color: var(--text-muted);
         }
 
         /* Issue Cards */
@@ -253,16 +317,6 @@
             gap: 1rem;
             align-items: flex-start;
         }
-
-        .issue-severity {
-            width: 4px;
-            border-radius: 2px;
-            align-self: stretch;
-            flex-shrink: 0;
-        }
-
-        .issue-severity.advisory { background: var(--warning); }
-        .issue-severity.incident { background: var(--danger); }
 
         .issue-content {
             flex: 1;
@@ -316,12 +370,21 @@
             display: block;
         }
 
-        .issue-impact {
+        .issue-scope {
             padding: 1rem 1.25rem;
-            background: rgba(245, 158, 11, 0.1);
+            background: rgba(59, 130, 246, 0.1);
             border-bottom: 1px solid var(--border);
             font-size: 0.85rem;
-            color: var(--warning);
+            color: var(--accent);
+        }
+
+        .issue-scope-label {
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            margin-bottom: 0.25rem;
+            opacity: 0.7;
         }
 
         /* Timeline */
@@ -383,29 +446,17 @@
             line-height: 1.6;
         }
 
-        /* Empty state */
-        .empty-state {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 60vh;
-            color: var(--text-muted);
+        /* No issues */
+        .no-issues {
             text-align: center;
+            padding: 3rem 2rem;
+            color: var(--text-muted);
         }
 
-        .empty-state svg {
-            width: 64px;
-            height: 64px;
-            margin-bottom: 1rem;
+        .no-issues-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.75rem;
             opacity: 0.5;
-        }
-
-        .empty-state h3 {
-            font-size: 1.1rem;
-            font-weight: 500;
-            margin-bottom: 0.5rem;
-            color: var(--text);
         }
 
         /* Scrollbar */
@@ -441,6 +492,10 @@
                 overflow-x: auto;
                 padding: 0.5rem 1rem;
                 gap: 0.5rem;
+            }
+
+            .service-group-label {
+                display: none;
             }
 
             .service-item {
@@ -479,20 +534,12 @@
             </div>
             <div class="service-list" id="service-list"></div>
         </aside>
-        <main class="main" id="main-content">
-            <div class="empty-state">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                </svg>
-                <h3>Select a service</h3>
-                <p>Choose a service from the sidebar to view its status</p>
-            </div>
-        </main>
+        <main class="main" id="main-content"></main>
     </div>
 
     <script>
         let data = null;
-        let selectedService = null;
+        let selectedService = null; // null = overview mode
         let currentFilter = 'all';
 
         async function loadData() {
@@ -503,10 +550,7 @@
                 document.getElementById('last-updated').textContent = 
                     'Updated ' + formatRelativeTime(data.lastUpdated);
                 renderServiceList();
-                
-                // Auto-select first service with issues
-                const withIssues = data.services.find(s => s.issues?.length > 0);
-                if (withIssues) selectService(withIssues.service);
+                renderMainContent(); // Start with overview
             } catch (err) {
                 document.getElementById('last-updated').textContent = 'Error loading data';
             }
@@ -530,8 +574,30 @@
         function getStatusClass(status) {
             const s = (status || '').toLowerCase();
             if (s === 'serviceoperational') return 'operational';
-            if (s.includes('degradation') || s.includes('investigating')) return 'degraded';
-            return 'down';
+            if (s.includes('interruption')) return 'down';
+            return 'degraded';
+        }
+
+        function getServicePriority(service) {
+            // Priority: incidents (interruption) first, then degradation/advisory, then operational
+            const hasIncident = service.issues?.some(i => 
+                i.status?.toLowerCase().includes('interruption') || 
+                i.severity?.toLowerCase() === 'incident'
+            );
+            const hasIssues = service.issues?.length > 0;
+            
+            if (hasIncident) return 0;
+            if (hasIssues) return 1;
+            return 2;
+        }
+
+        function sortServices(services) {
+            return [...services].sort((a, b) => {
+                const priorityA = getServicePriority(a);
+                const priorityB = getServicePriority(b);
+                if (priorityA !== priorityB) return priorityA - priorityB;
+                return a.service.localeCompare(b.service);
+            });
         }
 
         function stripHtml(html) {
@@ -542,7 +608,7 @@
 
         function renderServiceList() {
             const list = document.getElementById('service-list');
-            let services = data.services;
+            let services = sortServices(data.services);
 
             if (currentFilter === 'issues') {
                 services = services.filter(s => s.issues?.length > 0);
@@ -550,12 +616,28 @@
                 services = services.filter(s => !s.issues?.length);
             }
 
-            list.innerHTML = services.map(s => {
-                const statusClass = getStatusClass(s.status);
+            let html = '';
+            let lastGroup = null;
+
+            services.forEach(s => {
+                const priority = getServicePriority(s);
                 const issueCount = s.issues?.length || 0;
                 const isActive = selectedService === s.service;
                 
-                return `
+                // Group labels
+                let groupLabel = null;
+                if (priority === 0 && lastGroup !== 0) groupLabel = 'Active Incidents';
+                else if (priority === 1 && lastGroup !== 1 && lastGroup !== 0) groupLabel = 'Advisories';
+                else if (priority === 2 && lastGroup !== 2) groupLabel = 'Operational';
+                
+                if (groupLabel && currentFilter === 'all') {
+                    html += `<div class="service-group-label">${groupLabel}</div>`;
+                }
+                lastGroup = priority;
+                
+                const statusClass = priority === 0 ? 'down' : (priority === 1 ? 'degraded' : 'operational');
+                
+                html += `
                     <div class="service-item ${isActive ? 'active' : ''}" 
                          onclick="selectService('${s.service.replace(/'/g, "\\'")}')">
                         <div class="service-status ${statusClass}"></div>
@@ -565,7 +647,9 @@
                         </div>
                     </div>
                 `;
-            }).join('');
+            });
+
+            list.innerHTML = html;
         }
 
         function selectService(serviceName) {
@@ -576,18 +660,18 @@
 
         function renderMainContent() {
             const main = document.getElementById('main-content');
-            const service = data.services.find(s => s.service === selectedService);
             
+            // Overview mode - show all issues grouped by severity
+            if (!selectedService) {
+                renderOverview(main);
+                return;
+            }
+            
+            // Service detail mode
+            const service = data.services.find(s => s.service === selectedService);
             if (!service) {
-                main.innerHTML = `
-                    <div class="empty-state">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                        </svg>
-                        <h3>Select a service</h3>
-                        <p>Choose a service from the sidebar to view its status</p>
-                    </div>
-                `;
+                selectedService = null;
+                renderOverview(main);
                 return;
             }
 
@@ -613,14 +697,94 @@
             `;
         }
 
+        function renderOverview(main) {
+            // Collect all issues across services
+            const allIssues = [];
+            data.services.forEach(service => {
+                (service.issues || []).forEach(issue => {
+                    allIssues.push({ ...issue, serviceName: service.service });
+                });
+            });
+
+            // Separate into incidents and advisories
+            const incidents = allIssues.filter(i => 
+                i.status?.toLowerCase().includes('interruption') || 
+                i.severity?.toLowerCase() === 'incident'
+            );
+            const advisories = allIssues.filter(i => 
+                !i.status?.toLowerCase().includes('interruption') && 
+                i.severity?.toLowerCase() !== 'incident'
+            );
+
+            if (allIssues.length === 0) {
+                main.innerHTML = `
+                    <div class="main-header">
+                        <h2>All Services Operational</h2>
+                    </div>
+                    <div class="no-issues">
+                        <div class="no-issues-icon">✓</div>
+                        <p>No active issues across any Microsoft 365 services</p>
+                    </div>
+                `;
+                return;
+            }
+
+            let html = `
+                <div class="main-header">
+                    <h2>Active Issues</h2>
+                    <div class="status-line">
+                        <span style="color: var(--text-muted); font-size: 0.9rem;">
+                            ${allIssues.length} issue${allIssues.length !== 1 ? 's' : ''} across ${new Set(allIssues.map(i => i.serviceName)).size} service${new Set(allIssues.map(i => i.serviceName)).size !== 1 ? 's' : ''}
+                        </span>
+                    </div>
+                </div>
+            `;
+
+            if (incidents.length > 0) {
+                html += `
+                    <div class="overview-section incidents">
+                        <h3>Incidents (${incidents.length})</h3>
+                        ${incidents.map(issue => `
+                            <div class="overview-issue" onclick="selectService('${issue.serviceName.replace(/'/g, "\\'")}')">
+                                <div class="overview-issue-service">${issue.serviceName}</div>
+                                <div class="overview-issue-title">${issue.title}</div>
+                                <div class="overview-issue-meta">
+                                    Started ${new Date(issue.startTime).toLocaleDateString()} · 
+                                    Updated ${formatRelativeTime(issue.lastModified)}
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+            }
+
+            if (advisories.length > 0) {
+                html += `
+                    <div class="overview-section advisories">
+                        <h3>Advisories (${advisories.length})</h3>
+                        ${advisories.map(issue => `
+                            <div class="overview-issue" onclick="selectService('${issue.serviceName.replace(/'/g, "\\'")}')">
+                                <div class="overview-issue-service">${issue.serviceName}</div>
+                                <div class="overview-issue-title">${issue.title}</div>
+                                <div class="overview-issue-meta">
+                                    Started ${new Date(issue.startTime).toLocaleDateString()} · 
+                                    Updated ${formatRelativeTime(issue.lastModified)}
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+            }
+
+            main.innerHTML = html;
+        }
+
         function renderIssue(issue) {
-            const severityClass = (issue.severity || '').toLowerCase() === 'incident' ? 'incident' : 'advisory';
             const posts = issue.posts || [];
             
             return `
                 <div class="issue-card" id="issue-${issue.id}">
                     <div class="issue-header" onclick="toggleIssue('${issue.id}')">
-                        <div class="issue-severity ${severityClass}"></div>
                         <div class="issue-content">
                             <div class="issue-id">${issue.id}</div>
                             <div class="issue-title">${issue.title}</div>
@@ -637,7 +801,17 @@
                         </div>
                     </div>
                     <div class="issue-details">
-                        ${issue.impactDescription ? `<div class="issue-impact">${stripHtml(issue.impactDescription)}</div>` : ''}
+                        ${issue.scopeOfImpact ? `
+                            <div class="issue-scope">
+                                <div class="issue-scope-label">Scope of Impact</div>
+                                ${stripHtml(issue.scopeOfImpact)}
+                            </div>
+                        ` : (issue.impactDescription ? `
+                            <div class="issue-scope">
+                                <div class="issue-scope-label">Impact</div>
+                                ${stripHtml(issue.impactDescription)}
+                            </div>
+                        ` : '')}
                         <div class="timeline">
                             <div class="timeline-header">Update Timeline (${posts.length})</div>
                             ${posts.map(post => `
@@ -653,13 +827,12 @@
         }
 
         function formatPost(content) {
-            // Extract just the "Current status" section if present
             const text = stripHtml(content);
             const statusMatch = text.match(/Current status:\s*([^]*?)(?=Scope of impact:|Root cause:|Next update by:|$)/i);
             if (statusMatch) {
-                return statusMatch[1].trim().substring(0, 400) + (statusMatch[1].length > 400 ? '...' : '');
+                return statusMatch[1].trim().substring(0, 500) + (statusMatch[1].length > 500 ? '...' : '');
             }
-            return text.substring(0, 300) + (text.length > 300 ? '...' : '');
+            return text.substring(0, 400) + (text.length > 400 ? '...' : '');
         }
 
         function toggleIssue(issueId) {
@@ -673,7 +846,9 @@
                 document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
                 tab.classList.add('active');
                 currentFilter = tab.dataset.filter;
+                selectedService = null; // Reset to overview when changing filters
                 renderServiceList();
+                renderMainContent();
             });
         });
 

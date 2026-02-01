@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-01T02:51:50.608Z",
+  "lastUpdated": "2026-02-01T03:06:33.928Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -15,6 +15,7 @@
           "status": "serviceDegradation",
           "severity": "advisory",
           "impactDescription": "Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center.",
+          "scopeOfImpact": "Impact is specific to some admins attempting to upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center. This section may be updated as our investigation continues.",
           "feature": "All clients",
           "posts": [
             {
@@ -128,6 +129,7 @@
           "status": "serviceDegradation",
           "severity": "advisory",
           "impactDescription": "Admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services.",
+          "scopeOfImpact": "Admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\" may be impacted. This section may be updated as our investigation continues.\n\nStart time: Tuesday, October 7, 2025, at 8:27 AM UTC",
           "feature": "Access",
           "posts": [
             {
@@ -264,6 +266,7 @@
           "status": "serviceDegradation",
           "severity": "advisory",
           "impactDescription": "Admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services.",
+          "scopeOfImpact": "Admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\" may be impacted. This section may be updated as our investigation continues.\n\nStart time: Tuesday, October 7, 2025, at 8:27 AM UTC",
           "feature": "Access",
           "posts": [
             {
@@ -394,6 +397,7 @@
           "status": "serviceDegradation",
           "severity": "advisory",
           "impactDescription": "Users with edit and full control permissions may be unable to access or share some items in SharePoint Online.",
+          "scopeOfImpact": "Some users with edit and full control permissions who are attempting to access or share some items in SharePoint Online that were deleted and recently restored from the recycle bin may be impacted. This information may be updated as our investigation continues.\n\nStart time: Monday, October 13, 2025, at 3:50 PM UTC",
           "feature": "Save Site as Template",
           "posts": [
             {
@@ -482,6 +486,7 @@
           "status": "serviceDegradation",
           "severity": "advisory",
           "impactDescription": "Admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services.",
+          "scopeOfImpact": "Admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\" may be impacted. This section may be updated as our investigation continues.\n\nStart time: Tuesday, October 7, 2025, at 8:27 AM UTC",
           "feature": "Access",
           "posts": [
             {
@@ -636,6 +641,7 @@
           "status": "serviceDegradation",
           "severity": "advisory",
           "impactDescription": "Users may see issues with their templated subscription email in Power BI.",
+          "scopeOfImpact": "Users leveraging templated subscription emails in Power BI may be impacted.\n\nStart time: Thursday, January 29, 2026, at 9:21 AM UTC",
           "feature": "PowerBI.com",
           "posts": [
             {
@@ -654,6 +660,7 @@
           "status": "serviceDegradation",
           "severity": "advisory",
           "impactDescription": "Users may be unable to send subscription emails to external users in Power BI.",
+          "scopeOfImpact": "Impact may occur for all users attempting to send subscription emails to external users in Power BI.\n\nStart time: Thursday, January 29, 2026, at 6:45 PM UTC",
           "feature": "PowerBI.com",
           "posts": [
             {
@@ -690,6 +697,7 @@
           "status": "serviceDegradation",
           "severity": "advisory",
           "impactDescription": "Users with edit and full control permissions may be unable to access or share some files in OneDrive.",
+          "scopeOfImpact": "Some users with edit and full control permissions who are attempting to access or share some folders in OneDrive that were deleted and recently restored from the recycle bin may be impacted. This information may be updated as our investigation continues.\n\nStart time: Monday, October 13, 2025, at 3:50 PM UTC",
           "feature": "OneDrive for Business",
           "posts": [
             {
@@ -778,6 +786,7 @@
           "status": "serviceDegradation",
           "severity": "advisory",
           "impactDescription": "Admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services.",
+          "scopeOfImpact": "Admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\" may be impacted. This section may be updated as our investigation continues.\n\nStart time: Tuesday, October 7, 2025, at 8:27 AM UTC",
           "feature": "Access",
           "posts": [
             {
@@ -908,6 +917,7 @@
           "status": "serviceDegradation",
           "severity": "advisory",
           "impactDescription": "Admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services.",
+          "scopeOfImpact": "Admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\" may be impacted. This section may be updated as our investigation continues.\n\nStart time: Tuesday, October 7, 2025, at 8:27 AM UTC",
           "feature": "Access",
           "posts": [
             {
@@ -1040,46 +1050,7 @@
       "service": "Microsoft 365 apps",
       "status": "serviceOperational",
       "id": "O365Client",
-      "issues": [
-        {
-          "id": "OP1171442",
-          "title": "Some users may be unable to access Microsoft 365 applications",
-          "startTime": "2025-10-13T07:30:00Z",
-          "endTime": "2025-10-13T16:22:03Z",
-          "lastModified": "2025-10-13T16:22:41.223Z",
-          "status": "investigationSuspended",
-          "severity": "incident",
-          "impactDescription": "Users may be unable to access Microsoft 365 applications.  ",
-          "feature": "Reports of an incident",
-          "posts": [
-            {
-              "createdAt": "2025-10-13T16:22:41.223Z",
-              "postType": "regular",
-              "content": "Title: Some users may be unable to access Microsoft 365 applications\n\nUser impact: Users may be unable to access Microsoft 365 applications.  \n\nMore info: When users attempt to access Microsoft 365 apps from the Office homepage, the apps aren't listed.\n\nFinal status: While we continue to analyze service-side infrastructure logs and service health telemetry to narrow down the source of the impact, we've concluded that the impact is no longer occurring. In the event impact persists, please contact one of our support representatives so we can continue our investigation into the problem.\n \nScope of impact: Impact is specific to some users who are served through the affected infrastructure, attempting to access Microsoft 365 applications.\n \nStart time: Monday, October 13, 2025, at 7:30 AM UTC\n \nThis is the final update for the event."
-            },
-            {
-              "createdAt": "2025-10-13T13:04:32.387Z",
-              "postType": "regular",
-              "content": "Title: Some users may be unable to access Microsoft 365 applications\n\nUser impact: Users may be unable to access Microsoft 365 applications.  \n\nCurrent status: We're continuing to analyze service telemetry alongside recent changes made to the service, to help identify the root cause and define a clear path to resolution.\n \nScope of impact: Impact is specific to some users who are served through the affected infrastructure, attempting to access Microsoft 365 applications.\n \nNext update by: Monday, October 13, 2025, at 6:00 PM UTC"
-            },
-            {
-              "createdAt": "2025-10-13T11:52:42.12Z",
-              "postType": "regular",
-              "content": "Title: Some users may be unable to access Microsoft 365 applications\n \nUser impact: Users may be unable to access Microsoft 365 applications.\n\nCurrent status: We're proceeding to analyze service telemetry to pinpoint the root cause and develop a remediation plan.\n\nScope of impact: Impact is specific to some users who are served through the affected infrastructure, attempting to access Microsoft 365 applications.\n\nNext update by: Monday, October 13, 2025, at 2:00 PM UTC"
-            },
-            {
-              "createdAt": "2025-10-13T10:18:19.433Z",
-              "postType": "regular",
-              "content": "Title: Some users may be unable to access Microsoft 365 applications\n \nUser impact: Users may be unable to access Microsoft 365 applications.\n\nCurrent status: We're continuing to review service monitoring telemetry to isolate the source of the issue and establish a fix.\n\nScope of impact: Impact is specific to some users who are served through the affected infrastructure, attempting to access Microsoft 365 apps.\n\nNext update by: Monday, October 13, 2025, at 12:30 PM UTC"
-            },
-            {
-              "createdAt": "2025-10-13T09:06:11.16Z",
-              "postType": "regular",
-              "content": "Title: Some users may be unable to access Microsoft 365 applications\n \nUser impact: Users may be unable to access Microsoft 365 applications.\n\nCurrent status: We're reviewing service monitoring telemetry to isolate the source of the issue and establish a fix.\n \nScope of impact: Impact is specific to some users who are served through the affected infrastructure, attempting to access Microsoft 365 apps.\n \nNext update by: Monday, October 13, 2025, at 10:30 AM UTC"
-            }
-          ]
-        }
-      ]
+      "issues": []
     },
     {
       "service": "Power Apps",
@@ -1143,6 +1114,7 @@
           "status": "serviceDegradation",
           "severity": "advisory",
           "impactDescription": "Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page.",
+          "scopeOfImpact": "Users attempting to use the “Promote to Viva Engage” feature through a SharePoint Page may encounter errors in their endeavor to do so.\n \nStart time: Thursday, February 6, 2025, at 2:11 PM UTC",
           "feature": "Post/Reply/Like",
           "posts": [
             {
@@ -1267,6 +1239,7 @@
           "status": "serviceDegradation",
           "severity": "advisory",
           "impactDescription": "Users aren't shown the \"Edit in Outlook\" button after prompting Copilot Chat to draft an email message.",
+          "scopeOfImpact": "Any user prompting Copilot Chat to draft an email message may be impacted.\n\nStart time: Friday, December 19, 2025, at 6:00 PM UTC",
           "feature": "General",
           "posts": [
             {

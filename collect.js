@@ -2,14 +2,13 @@ require('dotenv').config();
 const fs = require('fs');
 const axios = require('axios');
 
-// Active issue statuses (filter out resolved/historical)
+// Active issue statuses - truly active issues only
+// Removed investigationSuspended as those are dormant/paused
 const ACTIVE_STATUSES = [
     'investigating',
     'serviceInterruption',
     'serviceDegradation',
-    'extendedRecovery',
-    'falsePositive',
-    'investigationSuspended'
+    'extendedRecovery'
 ];
 
 async function getHealthData() {
@@ -63,6 +62,18 @@ async function getHealthData() {
                     );
                     
                     const fullIssue = issueResponse.data;
+                    
+                    // Extract scope of impact from the latest post
+                    let scopeOfImpact = '';
+                    if (fullIssue.posts && fullIssue.posts.length > 0) {
+                        const latestPost = fullIssue.posts[fullIssue.posts.length - 1];
+                        const content = latestPost.description?.content || '';
+                        const scopeMatch = content.match(/Scope of impact:\s*([^]*?)(?=Root cause:|Next update by:|$)/i);
+                        if (scopeMatch) {
+                            scopeOfImpact = scopeMatch[1].trim();
+                        }
+                    }
+                    
                     const posts = (fullIssue.posts || []).map(post => ({
                         createdAt: post.createdDateTime,
                         postType: post.postType,
@@ -78,6 +89,7 @@ async function getHealthData() {
                         status: fullIssue.status,
                         severity: fullIssue.classification,
                         impactDescription: fullIssue.impactDescription,
+                        scopeOfImpact,
                         feature: fullIssue.feature,
                         posts
                     });
@@ -85,7 +97,6 @@ async function getHealthData() {
                     console.log(`Fetched ${issue.id}: ${posts.length} updates`);
                 } catch (e) {
                     console.error(`Error fetching ${issue.id}:`, e.message);
-                    // Fall back to basic info
                     issuesWithPosts.push({
                         id: issue.id,
                         title: issue.title,
