@@ -249,6 +249,43 @@
 
         .issue-info-item p { font-size: 0.85rem; color: var(--text); }
 
+        /* History detail layout - stacked for long content */
+        .history-info-section {
+            padding: 1.25rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .history-time-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .history-info-block {
+            margin-bottom: 1rem;
+        }
+
+        .history-info-block:last-child {
+            margin-bottom: 0;
+        }
+
+        .history-info-block label {
+            font-size: 0.65rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            color: var(--text-dim);
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        .history-info-block p {
+            font-size: 0.85rem;
+            color: var(--text);
+            line-height: 1.6;
+        }
+
         /* Timeline */
         .timeline { padding: 1.25rem; }
         .timeline-header { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); margin-bottom: 1rem; }
@@ -303,6 +340,7 @@
             .service-issue-count { display: none; }
             .main { margin-left: 0; padding: 1rem; }
             .app { flex-direction: column; }
+            .history-time-row { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -335,6 +373,53 @@
         let currentFilter = 'all';
         let currentView = 'current';
 
+        // Format date to Eastern Time with proper DST handling
+        function formatET(dateStr, includeTime = true) {
+            if (!dateStr) return 'N/A';
+            const date = new Date(dateStr);
+            const options = {
+                timeZone: 'America/New_York',
+                year: 'numeric',
+                month: 'numeric',
+                day: 'numeric',
+            };
+            if (includeTime) {
+                options.hour = 'numeric';
+                options.minute = '2-digit';
+                options.second = '2-digit';
+                options.hour12 = true;
+            }
+            return date.toLocaleString('en-US', options) + (includeTime ? ' ET' : '');
+        }
+
+        function formatETDateOnly(dateStr) {
+            return formatET(dateStr, false);
+        }
+
+        // Convert UTC times in text to ET (e.g., "Next update by: January 31, 2026 at 2:00 PM UTC")
+        function convertUTCInText(text) {
+            // Match patterns like "January 31, 2026, at 2:00 PM UTC" or "1/31/2026 2:00 PM UTC"
+            const utcPatterns = [
+                /(\w+ \d{1,2}, \d{4},? at \d{1,2}:\d{2} [AP]M) UTC/gi,
+                /(\d{1,2}\/\d{1,2}\/\d{4},? \d{1,2}:\d{2}:\d{2} [AP]M) UTC/gi,
+                /(\d{1,2}\/\d{1,2}\/\d{4},? at \d{1,2}:\d{2} [AP]M) UTC/gi
+            ];
+            
+            let result = text;
+            utcPatterns.forEach(pattern => {
+                result = result.replace(pattern, (match, dateStr) => {
+                    try {
+                        const utcDate = new Date(dateStr + ' UTC');
+                        if (!isNaN(utcDate.getTime())) {
+                            return formatET(utcDate);
+                        }
+                    } catch (e) {}
+                    return match; // Return original if parsing fails
+                });
+            });
+            return result;
+        }
+
         async function loadData() {
             try {
                 const response = await fetch('data.json?t=' + Date.now());
@@ -358,7 +443,7 @@
             if (diffMins < 60) return `${diffMins}m ago`;
             if (diffHours < 24) return `${diffHours}h ago`;
             if (diffDays < 7) return `${diffDays}d ago`;
-            return date.toLocaleDateString();
+            return formatETDateOnly(dateStr);
         }
 
         function formatDuration(startStr, endStr) {
@@ -497,7 +582,7 @@
                     <div class="overview-issue" onclick="selectService('${i.serviceName.replace(/'/g, "\\'")}')">
                         <div class="overview-issue-service">${i.serviceName}</div>
                         <div class="overview-issue-title">${i.title}</div>
-                        <div class="overview-issue-meta">Started ${new Date(i.startTime).toLocaleDateString()} · Updated ${formatRelativeTime(i.lastModified)}</div>
+                        <div class="overview-issue-meta">Started ${formatETDateOnly(i.startTime)} · Updated ${formatRelativeTime(i.lastModified)}</div>
                     </div>
                 `).join('')}</div>`;
             }
@@ -507,7 +592,7 @@
                     <div class="overview-issue" onclick="selectService('${i.serviceName.replace(/'/g, "\\'")}')">
                         <div class="overview-issue-service">${i.serviceName}</div>
                         <div class="overview-issue-title">${i.title}</div>
-                        <div class="overview-issue-meta">Started ${new Date(i.startTime).toLocaleDateString()} · Updated ${formatRelativeTime(i.lastModified)}</div>
+                        <div class="overview-issue-meta">Started ${formatETDateOnly(i.startTime)} · Updated ${formatRelativeTime(i.lastModified)}</div>
                     </div>
                 `).join('')}</div>`;
             }
@@ -524,7 +609,7 @@
                             <div class="issue-id">${issue.id}</div>
                             <div class="issue-title">${issue.title}</div>
                             <div class="issue-meta">
-                                <span>Started ${new Date(issue.startTime).toLocaleDateString()}</span>
+                                <span>Started ${formatETDateOnly(issue.startTime)}</span>
                                 ${issue.lastModified ? `<span>Updated ${formatRelativeTime(issue.lastModified)}</span>` : ''}
                                 <span>${posts.length} updates</span>
                             </div>
@@ -534,15 +619,15 @@
                     <div class="issue-details">
                         <div class="issue-info-grid">
                             ${issue.userImpact ? `<div class="issue-info-item"><label>User Impact</label><p>${stripHtml(issue.userImpact)}</p></div>` : ''}
-                            ${issue.scopeOfImpact ? `<div class="issue-info-item"><label>Scope of Impact</label><p>${stripHtml(issue.scopeOfImpact)}</p></div>` : ''}
+                            ${issue.scopeOfImpact ? `<div class="issue-info-item"><label>Scope of Impact</label><p>${convertUTCInText(stripHtml(issue.scopeOfImpact))}</p></div>` : ''}
                             ${issue.rootCause ? `<div class="issue-info-item"><label>Root Cause</label><p>${stripHtml(issue.rootCause)}</p></div>` : ''}
                         </div>
                         <div class="timeline">
                             <div class="timeline-header">Update Timeline (${posts.length})</div>
                             ${posts.map(post => `
                                 <div class="timeline-item">
-                                    <div class="timeline-time">${new Date(post.createdAt).toLocaleString()}</div>
-                                    <div class="timeline-content">${formatPost(post.content)}</div>
+                                    <div class="timeline-time">${formatET(post.createdAt)}</div>
+                                    <div class="timeline-content">${convertUTCInText(formatPost(post.content))}</div>
                                 </div>
                             `).join('')}
                         </div>
@@ -571,25 +656,48 @@
                             <div>
                                 <div class="history-service">${issue.serviceName} · Resolved</div>
                                 <div class="history-title">${issue.title}</div>
-                                <div class="history-dates">${new Date(issue.startTime).toLocaleDateString()} → ${new Date(issue.endTime || issue.lastModified).toLocaleDateString()}</div>
+                                <div class="history-dates">${formatETDateOnly(issue.startTime)} → ${formatETDateOnly(issue.endTime || issue.lastModified)}</div>
                             </div>
                             <div class="history-duration">${formatDuration(issue.startTime, issue.endTime || issue.lastModified)}</div>
                         </div>
                         <div class="history-details">
-                            <div class="issue-info-grid">
-                                <div class="issue-info-item"><label>Start Time</label><p>${new Date(issue.startTime).toLocaleString()}</p></div>
-                                <div class="issue-info-item"><label>End Time</label><p>${new Date(issue.endTime || issue.lastModified).toLocaleString()}</p></div>
-                                ${issue.userImpact ? `<div class="issue-info-item"><label>User Impact</label><p>${stripHtml(issue.userImpact)}</p></div>` : ''}
-                                ${issue.scopeOfImpact ? `<div class="issue-info-item"><label>Scope of Impact</label><p>${stripHtml(issue.scopeOfImpact)}</p></div>` : ''}
-                                ${issue.rootCause ? `<div class="issue-info-item"><label>Root Cause</label><p>${stripHtml(issue.rootCause)}</p></div>` : ''}
+                            <div class="history-info-section">
+                                <div class="history-time-row">
+                                    <div class="history-info-block">
+                                        <label>Start Time</label>
+                                        <p>${formatET(issue.startTime)}</p>
+                                    </div>
+                                    <div class="history-info-block">
+                                        <label>End Time</label>
+                                        <p>${formatET(issue.endTime || issue.lastModified)}</p>
+                                    </div>
+                                </div>
+                                ${issue.userImpact ? `
+                                    <div class="history-info-block">
+                                        <label>User Impact</label>
+                                        <p>${stripHtml(issue.userImpact)}</p>
+                                    </div>
+                                ` : ''}
+                                ${issue.scopeOfImpact ? `
+                                    <div class="history-info-block">
+                                        <label>Scope of Impact</label>
+                                        <p>${convertUTCInText(stripHtml(issue.scopeOfImpact))}</p>
+                                    </div>
+                                ` : ''}
+                                ${issue.rootCause ? `
+                                    <div class="history-info-block">
+                                        <label>Root Cause</label>
+                                        <p>${stripHtml(issue.rootCause)}</p>
+                                    </div>
+                                ` : ''}
                             </div>
                             ${issue.posts?.length ? `
                                 <div class="timeline">
                                     <div class="timeline-header">Recent Updates</div>
                                     ${issue.posts.slice(0, 3).map(post => `
                                         <div class="timeline-item">
-                                            <div class="timeline-time">${new Date(post.createdAt).toLocaleString()}</div>
-                                            <div class="timeline-content">${formatPost(post.content)}</div>
+                                            <div class="timeline-time">${formatET(post.createdAt)}</div>
+                                            <div class="timeline-content">${convertUTCInText(formatPost(post.content))}</div>
                                         </div>
                                     `).join('')}
                                 </div>
