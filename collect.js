@@ -50,7 +50,8 @@ async function getHealthData() {
         );
 
         const services = [];
-        const recentHistory = [];
+        const recentHistoryMap = new Map(); // issueId -> { issue, serviceNames: [] }
+        const allActiveIssues = new Map(); // issueId -> { issue, serviceNames: [] }
         const thirtyDaysAgo = new Date();
         thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
         
@@ -66,20 +67,49 @@ async function getHealthData() {
                 return endDate >= thirtyDaysAgo;
             });
 
-            const issuesWithPosts = [];
-            
-            // Fetch active issues with full details
+            // Process active issues
             for (const issue of activeIssues) {
-                const fullIssue = await fetchIssueDetails(issue.id, headers);
-                if (fullIssue) issuesWithPosts.push(fullIssue);
+                if (allActiveIssues.has(issue.id)) {
+                    allActiveIssues.get(issue.id).serviceNames.push(item.service);
+                } else {
+                    const fullIssue = await fetchIssueDetails(issue.id, headers);
+                    if (fullIssue) {
+                        allActiveIssues.set(issue.id, {
+                            issue: fullIssue,
+                            serviceNames: [item.service]
+                        });
+                    }
+                }
             }
 
-            // Fetch resolved issues with full details (for history)
+            // Process resolved issues (for history)
             for (const issue of resolvedIssues) {
-                const fullIssue = await fetchIssueDetails(issue.id, headers, true);
-                if (fullIssue) {
-                    fullIssue.serviceName = item.service;
-                    recentHistory.push(fullIssue);
+                if (recentHistoryMap.has(issue.id)) {
+                    recentHistoryMap.get(issue.id).serviceNames.push(item.service);
+                } else {
+                    const fullIssue = await fetchIssueDetails(issue.id, headers, true);
+                    if (fullIssue) {
+                        recentHistoryMap.set(issue.id, {
+                            issue: fullIssue,
+                            serviceNames: [item.service]
+                        });
+                    }
+                }
+            }
+        }
+
+        // Rebuild services array with grouped issue info
+        for (const item of healthResponse.data.value) {
+            const serviceIssues = [];
+            const itemIssues = item.issues || [];
+            
+            for (const issue of itemIssues) {
+                if (allActiveIssues.has(issue.id)) {
+                    const mapped = allActiveIssues.get(issue.id);
+                    serviceIssues.push({
+                        ...mapped.issue,
+                        affectedServices: mapped.serviceNames
+                    });
                 }
             }
 
@@ -87,11 +117,17 @@ async function getHealthData() {
                 service: item.service,
                 status: item.status,
                 id: item.id,
-                issues: issuesWithPosts
+                issues: serviceIssues
             });
         }
 
-        // Sort history by end date (most recent first)
+        // Flatten history and sort
+        const recentHistory = Array.from(recentHistoryMap.values()).map(item => ({
+            ...item.issue,
+            serviceName: item.serviceNames.join(', '),
+            affectedServices: item.serviceNames
+        }));
+
         recentHistory.sort((a, b) => {
             const dateA = new Date(a.endTime || a.lastModified);
             const dateB = new Date(b.endTime || b.lastModified);

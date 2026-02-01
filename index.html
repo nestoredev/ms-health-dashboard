@@ -188,6 +188,7 @@
         .overview-issue:hover { border-color: #444; }
         .overview-issue-service { font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; color: var(--accent); margin-bottom: 0.25rem; }
         .overview-issue-title { font-size: 0.9rem; font-weight: 500; margin-bottom: 0.5rem; }
+        .overview-issue-impact { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem; line-height: 1.5; }
         .overview-issue-meta { font-size: 0.75rem; color: var(--text-muted); }
 
         /* Issue Cards */
@@ -575,11 +576,20 @@
         }
 
         function renderOverview(main) {
-            const allIssues = [];
+            const issuesMap = new Map(); // id -> { issue, serviceNames: [] }
+            
             data.services.forEach(service => {
-                (service.issues || []).forEach(issue => allIssues.push({ ...issue, serviceName: service.service }));
+                (service.issues || []).forEach(issue => {
+                    if (!issuesMap.has(issue.id)) {
+                        issuesMap.set(issue.id, {
+                            ...issue,
+                            serviceNames: issue.affectedServices || [service.service]
+                        });
+                    }
+                });
             });
 
+            const allIssues = Array.from(issuesMap.values());
             const incidents = allIssues.filter(i => i.status?.toLowerCase().includes('interruption') || i.severity?.toLowerCase() === 'incident');
             const advisories = allIssues.filter(i => !i.status?.toLowerCase().includes('interruption') && i.severity?.toLowerCase() !== 'incident');
 
@@ -588,33 +598,55 @@
                 return;
             }
 
-            let html = `<div class="main-header"><h2>Active Issues</h2><p style="color:var(--text-muted);font-size:0.9rem">${allIssues.length} issue${allIssues.length !== 1 ? 's' : ''} across ${new Set(allIssues.map(i => i.serviceName)).size} services</p></div>`;
+            let html = `<div class="main-header"><h2>Active Issues</h2><p style="color:var(--text-muted);font-size:0.9rem">${allIssues.length} unique issue${allIssues.length !== 1 ? 's' : ''} across ${data.services.filter(s => s.issues?.length > 0).length} services</p></div>`;
 
             if (incidents.length > 0) {
-                html += `<div class="overview-section incidents"><h3>Incidents (${incidents.length})</h3>${incidents.map(i => `
-                    <div class="overview-issue" onclick="selectService('${i.serviceName.replace(/'/g, "\\'")}')">
-                        <div class="overview-issue-service">${i.serviceName}</div>
-                        <div class="overview-issue-title">${i.title}</div>
-                        <div class="overview-issue-meta">Started ${formatETDateOnly(i.startTime)} · Updated ${formatRelativeTime(i.lastModified)}</div>
-                    </div>
-                `).join('')}</div>`;
+                html += `<div class="overview-section incidents"><h3>Incidents (${incidents.length})</h3>${incidents.map(i => renderOverviewIssue(i)).join('')}</div>`;
             }
 
             if (advisories.length > 0) {
-                html += `<div class="overview-section advisories"><h3>Advisories (${advisories.length})</h3>${advisories.map(i => `
-                    <div class="overview-issue" onclick="selectService('${i.serviceName.replace(/'/g, "\\'")}')">
-                        <div class="overview-issue-service">${i.serviceName}</div>
-                        <div class="overview-issue-title">${i.title}</div>
-                        <div class="overview-issue-meta">Started ${formatETDateOnly(i.startTime)} · Updated ${formatRelativeTime(i.lastModified)}</div>
-                    </div>
-                `).join('')}</div>`;
+                html += `<div class="overview-section advisories"><h3>Advisories (${advisories.length})</h3>${advisories.map(i => renderOverviewIssue(i)).join('')}</div>`;
             }
 
             main.innerHTML = html;
         }
 
+        function renderOverviewIssue(i) {
+            const userImpactText = i.userImpact ? stripHtml(i.userImpact) : '';
+            const truncatedImpact = userImpactText.length > 200 ? userImpactText.substring(0, 200) + '...' : userImpactText;
+            const servicesText = i.serviceNames.join(', ');
+            
+            return `
+                <div class="overview-issue" onclick="selectIssue('${i.serviceNames[0].replace(/'/g, "\\'")}', '${i.id}')">
+                    <div class="overview-issue-service">${servicesText}</div>
+                    <div class="overview-issue-title">${i.title}</div>
+                    ${truncatedImpact ? `<div class="overview-issue-impact">${truncatedImpact}</div>` : ''}
+                    <div class="overview-issue-meta">
+                        Started ${formatETDateOnly(i.startTime)} · Updated ${formatRelativeTime(i.lastModified)}
+                        ${i.nextUpdateBy ? ` · <span style="color:var(--warning)">Next update: ${convertUTCInText(i.nextUpdateBy)}</span>` : ''}
+                    </div>
+                </div>
+            `;
+        }
+
+        function selectIssue(serviceName, issueId) {
+            selectedService = serviceName;
+            renderServiceList();
+            renderMainContent();
+            // Scroll to and expand the specific issue
+            setTimeout(() => {
+                const issueEl = document.getElementById('issue-' + issueId);
+                if (issueEl) {
+                    issueEl.classList.add('expanded');
+                    issueEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }, 50);
+        }
+
         function renderIssue(issue) {
             const posts = issue.posts || [];
+            const servicesText = issue.affectedServices ? issue.affectedServices.join(', ') : '';
+            
             return `
                 <div class="issue-card" id="issue-${issue.id}">
                     <div class="issue-header" onclick="toggleIssue('${issue.id}')">
@@ -632,6 +664,7 @@
                     </div>
                     <div class="issue-details">
                         <div class="issue-info-grid">
+                            ${servicesText ? `<div class="issue-info-item"><label>Affected Services</label><p style="color:var(--accent);font-weight:500">${servicesText}</p></div>` : ''}
                             ${issue.nextUpdateBy ? `<div class="issue-info-item"><label>Next Update By</label><p style="color:var(--warning)">${convertUTCInText(issue.nextUpdateBy)}</p></div>` : ''}
                             ${issue.userImpact ? `<div class="issue-info-item"><label>User Impact</label><p>${stripHtml(issue.userImpact)}</p></div>` : ''}
                             ${issue.scopeOfImpact ? `<div class="issue-info-item"><label>Scope of Impact</label><p>${convertUTCInText(stripHtml(issue.scopeOfImpact))}</p></div>` : ''}

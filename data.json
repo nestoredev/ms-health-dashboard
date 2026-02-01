@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-01T03:23:51.040Z",
+  "lastUpdated": "2026-02-01T03:59:51.683Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -121,6 +121,9 @@
               "postType": "regular",
               "content": "Title: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center\n\nUser impact: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center.\n\nCurrent status: We're investigating a potential issue in which admins can’t upgrade groups from distributions lists to unified groups from both PowerShell and the Exchange admin center and checking for impact to your organization. We'll provide an update within 30 minutes."
             }
+          ],
+          "affectedServices": [
+            "Exchange Online"
           ]
         },
         {
@@ -248,6 +251,13 @@
               "postType": "regular",
               "content": "Title: Admins or users may be unable to access multiple Microsoft 365 services\n\nUser impact: Admins or users may be unable to access multiple Microsoft 365 services.\n\nMore info:  This specifically impacts Microsoft 365 services that have the Microsoft 365 Group SecurityEnabled changed to false.\n \nCurrent status: We've identified that a recent change caused a misconfiguration, which led to the Microsoft 365 Group SecurityEnabled being changed to false as default, resulting in impact. We've reverted the aforementioned change, and we're working with affected users to verify that impact has been fully resolved.\n \nScope of impact: Your organization is affected by this event, and any admin or users attempting to access any Microsoft 365 services with Microsoft 365 Group SecurityEnabled set to false is impacted.\n \nRoot cause: A recent change caused a misconfiguration, which led to the Microsoft 365 Group SecurityEnabled being changed to false as default, resulting in impact.\n \nNext update by: Wednesday, October 22, 2025, at 7:00 AM UTC"
             }
+          ],
+          "affectedServices": [
+            "Exchange Online",
+            "Microsoft 365 suite",
+            "SharePoint Online",
+            "Microsoft OneDrive",
+            "Microsoft Teams"
           ]
         }
       ]
@@ -388,6 +398,13 @@
               "postType": "regular",
               "content": "Title: Admins or users may be unable to access multiple Microsoft 365 services\n\nUser impact: Admins or users may be unable to access multiple Microsoft 365 services.\n\nMore info:  This specifically impacts Microsoft 365 services that have the Microsoft 365 Group SecurityEnabled changed to false.\n \nCurrent status: We've identified that a recent change caused a misconfiguration, which led to the Microsoft 365 Group SecurityEnabled being changed to false as default, resulting in impact. We've reverted the aforementioned change, and we're working with affected users to verify that impact has been fully resolved.\n \nScope of impact: Your organization is affected by this event, and any admin or users attempting to access any Microsoft 365 services with Microsoft 365 Group SecurityEnabled set to false is impacted.\n \nRoot cause: A recent change caused a misconfiguration, which led to the Microsoft 365 Group SecurityEnabled being changed to false as default, resulting in impact.\n \nNext update by: Wednesday, October 22, 2025, at 7:00 AM UTC"
             }
+          ],
+          "affectedServices": [
+            "Exchange Online",
+            "Microsoft 365 suite",
+            "SharePoint Online",
+            "Microsoft OneDrive",
+            "Microsoft Teams"
           ]
         }
       ]
@@ -487,6 +504,9 @@
               "postType": "regular",
               "content": "Title: Some users with edit and full control permissions may be unable to access or share some items in SharePoint Online\n\nUser impact: Users with edit and full control permissions may be unable to access or share some items in SharePoint Online.\n\nMore info: Specifically, this issue impacts files and folders that were deleted and recently restored. Impacted users attempting to access or share some folders experience failures in sharing and permission operations in OneDrive.\n\nCurrent status: We're investigating a potential issue with OneDrive and checking for impact to your organization. We'll provide an update within 30 minutes."
             }
+          ],
+          "affectedServices": [
+            "SharePoint Online"
           ]
         },
         {
@@ -614,6 +634,13 @@
               "postType": "regular",
               "content": "Title: Admins or users may be unable to access multiple Microsoft 365 services\n\nUser impact: Admins or users may be unable to access multiple Microsoft 365 services.\n\nMore info:  This specifically impacts Microsoft 365 services that have the Microsoft 365 Group SecurityEnabled changed to false.\n \nCurrent status: We've identified that a recent change caused a misconfiguration, which led to the Microsoft 365 Group SecurityEnabled being changed to false as default, resulting in impact. We've reverted the aforementioned change, and we're working with affected users to verify that impact has been fully resolved.\n \nScope of impact: Your organization is affected by this event, and any admin or users attempting to access any Microsoft 365 services with Microsoft 365 Group SecurityEnabled set to false is impacted.\n \nRoot cause: A recent change caused a misconfiguration, which led to the Microsoft 365 Group SecurityEnabled being changed to false as default, resulting in impact.\n \nNext update by: Wednesday, October 22, 2025, at 7:00 AM UTC"
             }
+          ],
+          "affectedServices": [
+            "Exchange Online",
+            "Microsoft 365 suite",
+            "SharePoint Online",
+            "Microsoft OneDrive",
+            "Microsoft Teams"
           ]
         }
       ]
@@ -667,6 +694,9 @@
               "postType": "regular",
               "content": "Title: Users may see issues with their templated subscription email in Power BI\n\nUser impact: Users may see issues with their templated subscription email in Power BI.\n\nMore info: Specifically, users may observe that the subscription email template has been altered due to a change rolled out altering the template format.\n\nCustomers may see additional revisions to this template in the future and it is recommended to update processes to be resilient to these changes.  We apologize for the disruption this change has caused. Future updates to this template will be communicated with notice so users can update their processes appropriately.\n\nCurrent status: We've determined that a recent change altering the subscription email template for Power BI affected users' existing subscription email templates. We're moving to roll back the template to the previous default and anticipate we'll have an estimated timeline for full remediation by our next scheduled update.\n\nScope of impact: Users leveraging templated subscription emails in Power BI may be impacted.\n\nStart time: Thursday, January 29, 2026, at 9:21 AM UTC\n\nRoot cause: A recent change altering the subscription email template for Power BI affected users' existing subscription email templates.\n\nNext update by: Tuesday, February 3, 2026, at 2:00 AM UTC"
             }
+          ],
+          "affectedServices": [
+            "Power BI"
           ]
         },
         {
@@ -694,6 +724,9 @@
               "postType": "regular",
               "content": "Title: Users may be unable to send subscription emails to external users in Power BI\n\nUser impact: Users may be unable to send subscription emails to external users in Power BI.\n\nCurrent status: Our monitoring systems have identified impact where users may be unable to send subscription email to external users in Power BI. Our assessment has identified that an influx of automated email traffic from Power BI subscriptions is resulting in impact to external subscription email delivery. To remediate this, we’re temporarily limiting subscription email to be sent only within the same Power BI environment.\n \nScope of impact: Impact may occur for all users attempting to send subscription emails to external users in Power BI.\n \nStart time: Thursday, January 29, 2026, at 6:45 PM UTC\n \nRoot cause: An influx of automated email traffic from Power BI subscriptions resulted in impact to external subscription email delivery.\n \nNext update by: Saturday, January 31, 2026, at 12:30 AM UTC"
             }
+          ],
+          "affectedServices": [
+            "Power BI"
           ]
         }
       ]
@@ -799,6 +832,9 @@
               "postType": "regular",
               "content": "Title: Some users with edit and full control permissions may be unable to access or share some content in Microsoft OneDrive\n\nUser impact: Users with edit and full control permissions may be unable to access or share some files in OneDrive.\n\nMore info: Specifically, this issue impacts files and folders that were deleted and recently restored. Impacted users attempting to access or share some folders experience failures in sharing and permission operations in OneDrive.\n\nCurrent status: We're investigating a potential issue with OneDrive and checking for impact to your organization. We'll provide an update within 30 minutes."
             }
+          ],
+          "affectedServices": [
+            "Microsoft OneDrive"
           ]
         },
         {
@@ -926,6 +962,13 @@
               "postType": "regular",
               "content": "Title: Admins or users may be unable to access multiple Microsoft 365 services\n\nUser impact: Admins or users may be unable to access multiple Microsoft 365 services.\n\nMore info:  This specifically impacts Microsoft 365 services that have the Microsoft 365 Group SecurityEnabled changed to false.\n \nCurrent status: We've identified that a recent change caused a misconfiguration, which led to the Microsoft 365 Group SecurityEnabled being changed to false as default, resulting in impact. We've reverted the aforementioned change, and we're working with affected users to verify that impact has been fully resolved.\n \nScope of impact: Your organization is affected by this event, and any admin or users attempting to access any Microsoft 365 services with Microsoft 365 Group SecurityEnabled set to false is impacted.\n \nRoot cause: A recent change caused a misconfiguration, which led to the Microsoft 365 Group SecurityEnabled being changed to false as default, resulting in impact.\n \nNext update by: Wednesday, October 22, 2025, at 7:00 AM UTC"
             }
+          ],
+          "affectedServices": [
+            "Exchange Online",
+            "Microsoft 365 suite",
+            "SharePoint Online",
+            "Microsoft OneDrive",
+            "Microsoft Teams"
           ]
         }
       ]
@@ -1060,6 +1103,13 @@
               "postType": "regular",
               "content": "Title: Admins or users may be unable to access multiple Microsoft 365 services\n\nUser impact: Admins or users may be unable to access multiple Microsoft 365 services.\n\nMore info:  This specifically impacts Microsoft 365 services that have the Microsoft 365 Group SecurityEnabled changed to false.\n \nCurrent status: We've identified that a recent change caused a misconfiguration, which led to the Microsoft 365 Group SecurityEnabled being changed to false as default, resulting in impact. We've reverted the aforementioned change, and we're working with affected users to verify that impact has been fully resolved.\n \nScope of impact: Your organization is affected by this event, and any admin or users attempting to access any Microsoft 365 services with Microsoft 365 Group SecurityEnabled set to false is impacted.\n \nRoot cause: A recent change caused a misconfiguration, which led to the Microsoft 365 Group SecurityEnabled being changed to false as default, resulting in impact.\n \nNext update by: Wednesday, October 22, 2025, at 7:00 AM UTC"
             }
+          ],
+          "affectedServices": [
+            "Exchange Online",
+            "Microsoft 365 suite",
+            "SharePoint Online",
+            "Microsoft OneDrive",
+            "Microsoft Teams"
           ]
         }
       ]
@@ -1230,6 +1280,9 @@
               "postType": "regular",
               "content": "Title: Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page\n\nUser impact: Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page.   \n\nMore info: The error may occur specifically when using the “Promote to Viva Engage” feature.\n\nTo circumvent impact while the fix is in progress, users can copy the SharePoint page URL and start the post directly within Viva Engage.\n\nCurrent status: We've identified an issue where users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page, and we've determined this issue stems from a conflict between two SharePoint web parts which render on the same page. Due to the complexity of their interaction, a code-level resolution is required to ensure that impact is fully alleviated. We're working to develop this solution and will provide updates as its development progresses.\n\nScope of impact: Users attempting to use the “Promote to Viva Engage” feature through a SharePoint Page may encounter errors in their endeavor to do so.\n\nRoot cause: A conflict resulting from two SharePoint web parts which render on the same page, is resulting in impact.\n\nNext update by: Wednesday, July 2, 2025, at 2:00 AM UTC"
             }
+          ],
+          "affectedServices": [
+            "Microsoft Viva"
           ]
         }
       ]
@@ -1298,6 +1351,9 @@
               "postType": "regular",
               "content": "Title: Users aren't shown the \"Edit in Outlook\" button after prompting Copilot Chat to draft an email message\n\nUser impact: Users aren't shown the \"Edit in Outlook\" button after prompting Copilot Chat to draft an email message.\n\nMore info: When users prompt Copilot Chat to draft an email message, the button to \"Edit in Outlook\" doesn't appear as expected.\n\nCurrent status: We're investigating a potential issue with Copilot Chat and checking for impact to your organization. We'll provide an update within 30 minutes."
             }
+          ],
+          "affectedServices": [
+            "Microsoft 365 Copilot Chat"
           ]
         }
       ]
@@ -1345,7 +1401,10 @@
           "content": "Title: Some users are unable to export usage reports from the Microsoft 365 admin center\n\nUser impact: Users are unable to export usage reports from the Microsoft 365 admin center.\n\nMore info: Users may also encounter errors or empty data when attempting to generate reports from the Microsoft 365 admin center.\n\nCurrent status: We're reviewing service monitoring telemetry to isolate the root cause and determine our next troubleshooting steps.\n\nScope of impact: Some users in the North US region attempting to export usage reports in the Microsoft 365 admin center may be impacted.\n\nNext update by: Friday, January 30, 2026, at 11:00 AM UTC"
         }
       ],
-      "serviceName": "Microsoft 365 suite"
+      "serviceName": "Microsoft 365 suite",
+      "affectedServices": [
+        "Microsoft 365 suite"
+      ]
     },
     {
       "id": "EX1224375",
@@ -1388,7 +1447,10 @@
           "content": "Title: Users may experience delays when sending or receiving Exchange Online email messages\n \nUser impact: Users may experience delays when sending or receiving Exchange Online email messages.\n\nMore info: This issue specifically impacts users who are on Simple Mail Transfer Protocol (SMTP) connection methods, which include Outlook on the web, the Outlook desktop clients, and the mobile apps.\n\nCurrent status: We're reviewing transport service logs in parallel with samples of affected messages to identify and isolate any errors that may be contributing to impact for further investigation.\n\nScope of impact: Some users attempting to send or receive Exchange Online email messages may be impacted.\n\nNext update by: Thursday, January 29, 2026, at 7:30 PM UTC"
         }
       ],
-      "serviceName": "Exchange Online"
+      "serviceName": "Exchange Online",
+      "affectedServices": [
+        "Exchange Online"
+      ]
     },
     {
       "id": "MV1224509",
@@ -1426,7 +1488,10 @@
           "content": "Title: Users may be unable to access Microsoft Viva Engage content for the first time in the Microsoft Teams mobile app\n\nUser impact: Users may be unable to access Microsoft Viva Engage content for the first time in the Microsoft Teams mobile app.\n\nMore info: Additionally, network admins may be unable to change network settings for users.\n \nCurrent status: We're investigating a potential issue with Microsoft Viva Engage and checking for impact to your organization. We'll provide an update within 30 minutes."
         }
       ],
-      "serviceName": "Microsoft Viva"
+      "serviceName": "Microsoft Viva",
+      "affectedServices": [
+        "Microsoft Viva"
+      ]
     },
     {
       "id": "CW1224109",
@@ -1454,7 +1519,10 @@
           "content": "Title: Some users using Microsoft 365 Copilot Chat may not see any responses being generated\n\nUser impact: Users using Copilot Chat may not see any responses being generated.\n\nMore info: Users may see the following error message \"Something went wrong. Please try again.\"\n\nCurrent status: We've received reports indicating users may be unable to generate responses within Copilot Chat. We're reviewing service monitoring telemetry to isolate the root cause and determine our next troubleshooting steps.\n\nScope of impact: Some users attempting to generate responses within Copilot Chat in the Europe may be impacted.\n\nNext update by: Thursday, January 29, 2026, at 2:30 PM UTC"
         }
       ],
-      "serviceName": "Microsoft 365 Copilot Chat"
+      "serviceName": "Microsoft 365 Copilot Chat",
+      "affectedServices": [
+        "Microsoft 365 Copilot Chat"
+      ]
     },
     {
       "id": "EX1223427",
@@ -1487,7 +1555,10 @@
           "content": "Title: Some users may be unable to access the Exchange admin center (EAC)\n\nUser impact: Users may be unable to access the EAC.\n\nCurrent status: We're reviewing service monitoring telemetry to isolate the root cause and develop a remediation plan.\n \nScope of impact: Impact is specific to some users who are served through the affected infrastructure attempting to access the EAC.\n \nNext update by: Wednesday, January 28, 2026, at 12:00 PM UTC"
         }
       ],
-      "serviceName": "Exchange Online"
+      "serviceName": "Exchange Online",
+      "affectedServices": [
+        "Exchange Online"
+      ]
     },
     {
       "id": "EX1221076",
@@ -1520,7 +1591,10 @@
           "content": "Title: Users may be unable to delete email messages after running the QUIT command when POP3 connection method is used \n\nUser impact: Users may be unable to delete email messages after running the QUIT command when POP3 connection method is used. \n\nMore info: Specifically, POP3 users can read and download their email messages, but any messages they delete may not actually be removed, because the session fails to close properly. If a message is deleted on Exchange Online using the DELE command, the POP3 QUIT command may fail, preventing the session from closing cleanly and causing messages marked for deletion to remain in the mailbox. \n\nIf the user is not using POP3, they are not impacted.\n \nCurrent status: We’ve identified an issue where a recent update introduced a conflict that prevents the POP3 QUIT command from completing after a message is deleted. We've validated a fix in our test environment and initiated a deployment to affected users. The deployment is progressing through a gradual rollout and we expect full completion within the next 24 to 48 hours. \n \nScope of impact: Impact is specific to some users attempting to delete email messages after running the QUIT command using POP3 connection method.  \n \nRoot cause: A package version conflict introduced a regression that causes the POP3 QUIT command to fail after a DELE operation. \n \nNext update by: Friday, January 23, 2026, at 10:00 AM UTC "
         }
       ],
-      "serviceName": "Exchange Online"
+      "serviceName": "Exchange Online",
+      "affectedServices": [
+        "Exchange Online"
+      ]
     },
     {
       "id": "MO1218616",
@@ -1563,7 +1637,10 @@
           "content": "Title: Some users may be unable to access or view the storage usage page in the M365 admin center \n\nUser impact: Users may be unable to access or view the storage usage page in the M365 admin center. \n\nCurrent status: We're reviewing service monitoring telemetry to isolate the root cause and determine our next troubleshooting steps.  \n \nScope of impact: Some users attempting to access or view the storage usage page in the M365 admin center may be impacted. This information may be updated as our investigation continues. \n \nNext update by: Friday, January 16, 2026, at 5:30 PM UTC"
         }
       ],
-      "serviceName": "Microsoft 365 suite"
+      "serviceName": "Microsoft 365 suite",
+      "affectedServices": [
+        "Microsoft 365 suite"
+      ]
     },
     {
       "id": "SP1220310",
@@ -1606,7 +1683,10 @@
           "content": "Title: Some users that are mentioned in list comments in SharePoint Online may not receive email notifications\n\nUser impact: Users that are mentioned in list comments in SharePoint Online may not receive email notifications.\n\nCurrent status: We've identified a recent service change to remove a separate feature is causing impact. While we investigate the reason the change caused impact, we're reversing the offending change to remediate the impact.\n\nScope of impact: Impact is specific to some users that are mentioned in list comments in SharePoint Online.\n\nStart time: Thursday, January 8, 2026, at 12:24 PM UTC\n\nRoot cause: A recent service change to remove a separate feature is causing impact.\n\nNext update by: Wednesday, January 21, 2026, at 7:30 PM UTC"
         }
       ],
-      "serviceName": "SharePoint Online"
+      "serviceName": "SharePoint Online",
+      "affectedServices": [
+        "SharePoint Online"
+      ]
     },
     {
       "id": "CW1221869",
@@ -1634,7 +1714,10 @@
           "content": "Title: Some users may not receive Microsoft Copilot Chat responses or experience latency using GPT 5.2 Quick response\n\nUser impact: Users may not receive Microsoft Copilot Chat responses or experience latency using GPT 5.2 Quick response.\n\nCurrent status: We're investigating a potential issue with Microsoft Copilot Chat and checking for impact to your organization. We'll provide an update within 30 minutes."
         }
       ],
-      "serviceName": "Microsoft 365 Copilot Chat"
+      "serviceName": "Microsoft 365 Copilot Chat",
+      "affectedServices": [
+        "Microsoft 365 Copilot Chat"
+      ]
     },
     {
       "id": "EX1220516",
@@ -1677,7 +1760,10 @@
           "content": "Title: Users' Outlook for iOS app version 5.2602.0 may crash or freeze on iPad devices\n\nUser impact: Users' Outlook for iOS app version 5.2602.0 may crash or freeze on iPad devices.\n\nMore info: Affected users can launch Outlook mobile while in Airplane Mode and then re-enable Wi-Fi and/or cellular data as a way to circumvent impact while we work towards mitigation.\n\nCurrent status: We're investigating a potential issue with Outlook mobile and checking for impact to your organization. We'll provide an update within 30 minutes."
         }
       ],
-      "serviceName": "Exchange Online"
+      "serviceName": "Exchange Online",
+      "affectedServices": [
+        "Exchange Online"
+      ]
     },
     {
       "id": "MO1221364",
@@ -1720,7 +1806,10 @@
           "content": "A post-incident report has been published."
         }
       ],
-      "serviceName": "Microsoft 365 suite"
+      "serviceName": "Microsoft 365 suite",
+      "affectedServices": [
+        "Microsoft 365 suite"
+      ]
     },
     {
       "id": "MO1221222",
@@ -1748,7 +1837,10 @@
           "content": "Title: Users may be unable to access the Threat Analytics page in the Microsoft Defender XDR portal\n\nUser impact: Users may have been unable to access the Threat Analytics page in the Microsoft Defender XDR portal.\n\nCurrent status: We've investigated a problem in which users couldn't access the Threat Analytics page in Microsoft Defender XDR portal and confirmed that service is now restored. We'll provide additional information in a closure summary within the \"History\" section of the \"Service health\" dashboard shortly."
         }
       ],
-      "serviceName": "Microsoft 365 suite"
+      "serviceName": "Microsoft 365 suite",
+      "affectedServices": [
+        "Microsoft 365 suite"
+      ]
     },
     {
       "id": "MO1220544",
@@ -1781,7 +1873,10 @@
           "content": "Title: Users' Microsoft Power Automate flows aren't triggered when users create, update, or delete shifts in Microsoft Teams\n\nUser impact: Users' Microsoft Power Automate flows aren't triggered when users create, update, or delete shifts in Microsoft Teams.\n\nMore info: Flows that are configured with \"When a Shift is created, updated or deleted\" fail to trigger when users perform the actions in Microsoft Teams.\n\nCurrent status: We're investigating a potential issue with Microsoft Teams and Microsoft Power Automate and checking for impact to your organization. We'll provide an update within 30 minutes."
         }
       ],
-      "serviceName": "Microsoft 365 suite"
+      "serviceName": "Microsoft 365 suite",
+      "affectedServices": [
+        "Microsoft 365 suite"
+      ]
     },
     {
       "id": "MO1220495",
@@ -1824,7 +1919,10 @@
           "content": "Title: We're investigating a potential issue affecting Microsoft 365 services\n\nUser impact: We've received reports of an issue affecting Microsoft 365 services, including Teams and Outlook.\n\nCurrent status: We're investigating a potential issue with Microsoft 365 services and checking for impact to your organization. We'll provide an update within 30 minutes."
         }
       ],
-      "serviceName": "Microsoft 365 suite"
+      "serviceName": "Microsoft 365 suite",
+      "affectedServices": [
+        "Microsoft 365 suite"
+      ]
     },
     {
       "id": "MM1219608",
@@ -1852,7 +1950,10 @@
           "content": "Title: Some users may be unable to open Microsoft Power Apps\n\nUser impact: Users may be unable to open Microsoft Power Apps.\n\nMore info: Users may be unable to open Power Apps, load data from SharePoint-backed applications, or use connectors that rely on Power Apps services.\n\nCurrent status: We’re analyzing service telemetry to identify the root cause and develop a remediation plan.\n\nScope of impact: Impact is specific to some users who are served through the affected infrastructure attempting to open Power Apps.\n\nNext update by: Tuesday, January 20, 2026, at 2:30 PM UTC"
         }
       ],
-      "serviceName": "Power Apps in Microsoft 365"
+      "serviceName": "Power Apps in Microsoft 365",
+      "affectedServices": [
+        "Power Apps in Microsoft 365"
+      ]
     },
     {
       "id": "MF1219609",
@@ -1880,7 +1981,10 @@
           "content": "Title: Some users may be unable to run Microsoft Power Automate flows\n\nUser impact: Users may be unable to run Microsoft Power Automate flows.\n\nMore info: Users may be unable to run flows, use connectors, or perform operations that rely on Power Automate services.\n\nCurrent status: We’re analyzing service telemetry to identify the root cause and develop a remediation plan.\n\nScope of impact: Impact is specific to some users who are served through the affected infrastructure attempting to run Microsoft Power Automate flows.\n\nNext update by: Tuesday, January 20, 2026, at 2:30 PM UTC"
         }
       ],
-      "serviceName": "Microsoft Power Automate in Microsoft 365"
+      "serviceName": "Microsoft Power Automate in Microsoft 365",
+      "affectedServices": [
+        "Microsoft Power Automate in Microsoft 365"
+      ]
     },
     {
       "id": "SP1218552",
@@ -1923,7 +2027,10 @@
           "content": "Title: Some users may be unable to select schedule dates within SharePoint Online pages\n\nUser impact: Users may be unable to select schedule dates within SharePoint Online pages. \n\nCurrent status: We're reviewing service monitoring telemetry to isolate the root cause and determine our next troubleshooting steps. \n \nScope of impact: Some users attempting to select scheduled dates within SharePoint Online may be impacted. This information may be updated as our investigation continues. \n \nNext update by: Friday, January 16, 2026, at 1:00 PM UTC"
         }
       ],
-      "serviceName": "SharePoint Online"
+      "serviceName": "SharePoint Online",
+      "affectedServices": [
+        "SharePoint Online"
+      ]
     },
     {
       "id": "SP1218404",
@@ -1966,7 +2073,10 @@
           "content": "Title: Users may be unable to open People Cards in SharePoint Online\n\nUser impact: Users may be unable to open People Cards in SharePoint Online.\n\nCurrent status: We're investigating a potential issue with SharePoint Online and checking for impact to your organization. We'll provide an update within 30 minutes."
         }
       ],
-      "serviceName": "SharePoint Online"
+      "serviceName": "SharePoint Online",
+      "affectedServices": [
+        "SharePoint Online"
+      ]
     },
     {
       "id": "OD1218091",
@@ -1994,7 +2104,10 @@
           "content": "Title: Potential issues accessing Microsoft OneDrive content\r\n\r\nUser impact: Users may be unable to access OneDrive content and may notice delays or navigation errors.\r\n\r\nCurrent Status: We're investigating a potential issue and checking for impact to your organization. We'll provide an update within one hour."
         }
       ],
-      "serviceName": "Microsoft OneDrive"
+      "serviceName": "Microsoft OneDrive",
+      "affectedServices": [
+        "Microsoft OneDrive"
+      ]
     },
     {
       "id": "SP1218090",
@@ -2022,7 +2135,10 @@
           "content": "Title: Potential issues accessing SharePoint Online sites\r\n\r\nUser impact: Users may be unable to access SharePoint Online sites and may notice delays or navigation errors.\r\n\r\nCurrent Status: We're investigating a potential issue and checking for impact to your organization. We'll provide an update within one hour."
         }
       ],
-      "serviceName": "SharePoint Online"
+      "serviceName": "SharePoint Online",
+      "affectedServices": [
+        "SharePoint Online"
+      ]
     },
     {
       "id": "MO1213801",
@@ -2065,7 +2181,10 @@
           "content": "Title: Users may be unable to access shared Microsoft To Do lists\n\nUser impact: Users may be unable to access shared Microsoft To Do lists.\n\nMore info: Users may also be unable to open shared To Do list invitation links.\n \nCurrent status: We're completing the final validations prior to initiating the reversion process which we anticipate will begin by our next scheduled communications update.\n \nScope of impact: This issue may potentially impact any user attempting to access shared Microsoft To Do lists.\n \nStart time: Monday, December 29, 2025, at 8:00 PM UTC\n \nRoot cause: A recent change to add optimizations when sharing To Do lists introduced a misconfiguration which is resulting in impact.\n \nNext update by: Friday, January 9, 2026, at 5:00 PM UTC"
         }
       ],
-      "serviceName": "Microsoft 365 suite"
+      "serviceName": "Microsoft 365 suite",
+      "affectedServices": [
+        "Microsoft 365 suite"
+      ]
     },
     {
       "id": "OP1217551",
@@ -2093,7 +2212,10 @@
           "content": "Title: Some users may not be able to get the latest Microsoft 365 Apps updates\n\nUser impact: Users may not be able to get the latest Microsoft 365 Apps updates.\n\nMore info: This issue specifically impacts organizations where these updates are facilitated through the Cloud Update process in the Microsoft 365 apps admin center.\n\nCurrent status: We're analyzing the latest update to determine our next troubleshooting steps.\n\nScope of impact: Some users reliant on the Cloud Update process to update their Microsoft 365 apps may be affected. This section may be updated as our investigation continues.\n\nNext update by: Wednesday, January 14, 2026, at 12:30 AM UTC"
         }
       ],
-      "serviceName": "Microsoft 365 apps"
+      "serviceName": "Microsoft 365 apps",
+      "affectedServices": [
+        "Microsoft 365 apps"
+      ]
     },
     {
       "id": "SP1216181",
@@ -2136,7 +2258,10 @@
           "content": "Title: Users aren't receiving notification emails generated from the SharePoint Online Rules feature\n\nUser impact: Users aren't receiving notification emails generated from the SharePoint Online Rules feature.\n\nMore info: This event is a continuation of the incident previously communicated via SP1216014.\n\nUsers can create a new rule with the same settings as an affected rule to bypass the impact while we work to resolve this issue.\n\nCurrent status: We're investigating a potential issue with SharePoint Online rules and checking for impact to your organization. We'll provide an update within 30 minutes."
         }
       ],
-      "serviceName": "SharePoint Online"
+      "serviceName": "SharePoint Online",
+      "affectedServices": [
+        "SharePoint Online"
+      ]
     },
     {
       "id": "SP1215831",
@@ -2169,7 +2294,10 @@
           "content": "Title: Read-only users see blank pages for their SharePoint Online sites\n\nUser impact: Read-only users see blank pages for their SharePoint Online sites.\n\nMore info: Affected users report seeing relevant page information displaying briefly before becoming a blank page.\n \nCurrent status: We're investigating a potential issue with SharePoint Online and checking for impact to your organization. We'll provide an update within 30 minutes."
         }
       ],
-      "serviceName": "SharePoint Online"
+      "serviceName": "SharePoint Online",
+      "affectedServices": [
+        "SharePoint Online"
+      ]
     },
     {
       "id": "EX1215307",
@@ -2212,7 +2340,10 @@
           "content": "Title: Some users may intermittently be unable to access their mailboxes using Internet Mailbox Access Protocol 4 (IMAP4)\n\nUser impact: Users may intermittently be unable to access their mailboxes using IMAP4.\n\nMore info: Impact is specific to IMAP4, other connection methods are not impacted. Additionally, if users are actively facing this issue, retries may be successful.\n \nCurrent status: We've identified a recent IMAP deployment related to authentication support contains a code conflict that introduced a configuration issue and is causing intermittent mailbox access issues for some impacted users. We're halting the deployment to prevent further impact from spreading and are developing a configuration change to restore service functionality. We'll aim to provide a resolution timeline once available.\n \nScope of impact: Some users that are attempting to access their mailboxes using IMAP4 may be intermittently impacted. This information may be updated as our investigation continues.\n \nRoot cause: A recent IMAP deployment related to authentication support contains a code conflict that introduced a configuration issue and is causing intermittent mailbox access issues for some impacted users.\n \nNext update by: Thursday, January 8, 2026, at 6:30 AM UTC"
         }
       ],
-      "serviceName": "Exchange Online"
+      "serviceName": "Exchange Online",
+      "affectedServices": [
+        "Exchange Online"
+      ]
     },
     {
       "id": "SP1030180",
@@ -2255,7 +2386,10 @@
           "content": "Title: Users may see a new \"Content Freshness\" template option when creating pages in SharePoint Online\n\nUser impact: Users may see a new \"Content Freshness\" template option when creating pages in SharePoint Online.\n\nMore info: Selecting the \"Content Freshness\" template option has no functional impact. If users encounter the option for the template, they can ignore it and continue using other templates without issues. Affected users may also see the option appear in List Settings or the Content Type editing panel.\n\nCurrent status: While the fix deployment is taking longer than previously anticipated to complete, our service health telemetry indicates that the impact is resolved for the affected users. We’re continuing to monitor as the remainder of the fix propagates throughout the affected environment and to ensure that the impact is fully remediated.\n\nScope of impact: Users creating pages in SharePoint Online may be impacted.\n\nStart time: Thursday, January 16, 2025, at 12:00 AM UTC\n\nRoot cause: A recent deployment incorrectly enabled this feature in the affected environment.\n\nNext update by: Thursday, November 20, 2025, at 5:00 AM UTC"
         }
       ],
-      "serviceName": "SharePoint Online"
+      "serviceName": "SharePoint Online",
+      "affectedServices": [
+        "SharePoint Online"
+      ]
     },
     {
       "id": "EX1213757",
@@ -2288,7 +2422,10 @@
           "content": "Title: Users may see an English user interface for Outlook on the web on mobile when configured for a non-English language\n\nUser impact: Users may see an English user interface for Outlook on the web on mobile when configured for a non-English language.\n\nMore info: Impacted users would see an English user interface for Outlook on the web when accessing the service through mobile devices on both Android and iOS, even when the user interface configuration was set to alternate languages.\n\nCurrent status: We're investigating a potential issue with Exchange Online and checking for impact to your organization. We'll provide an update within 30 minutes."
         }
       ],
-      "serviceName": "Exchange Online"
+      "serviceName": "Exchange Online",
+      "affectedServices": [
+        "Exchange Online"
+      ]
     }
   ]
 }
