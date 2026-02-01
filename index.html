@@ -436,7 +436,11 @@
 
         async function loadData() {
             try {
-                const response = await fetch('health-data.json?t=' + Date.now());
+                // Try relative path first (for GitHub Pages/Static), then fall back to health-data.json (for local dev server)
+                let response = await fetch('data.json?t=' + Date.now());
+                if (!response.ok) {
+                    response = await fetch('health-data.json?t=' + Date.now());
+                }
                 if (!response.ok) throw new Error('Failed to load');
                 data = await response.json();
                 document.getElementById('last-updated').textContent = 'Updated ' + formatRelativeTime(data.lastUpdated);
