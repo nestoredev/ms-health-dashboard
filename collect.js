@@ -44,7 +44,7 @@ async function getHealthData() {
             { headers }
         );
 
-        // 3. For each active issue, fetch the posts (updates)
+        // 3. For each active issue, fetch full details including posts
         const services = [];
         
         for (const item of healthResponse.data.value) {
@@ -55,32 +55,45 @@ async function getHealthData() {
             const issuesWithPosts = [];
             
             for (const issue of activeIssues) {
-                let posts = [];
                 try {
-                    const postsResponse = await axios.get(
-                        `https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/issues/${issue.id}/posts`,
+                    // Fetch full issue details including posts
+                    const issueResponse = await axios.get(
+                        `https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/issues/${issue.id}`,
                         { headers }
                     );
-                    posts = (postsResponse.data.value || []).map(post => ({
+                    
+                    const fullIssue = issueResponse.data;
+                    const posts = (fullIssue.posts || []).map(post => ({
                         createdAt: post.createdDateTime,
-                        content: post.description?.content || post.body?.content || ''
+                        postType: post.postType,
+                        content: post.description?.content || ''
                     })).sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
-                } catch (e) {
-                    // Posts endpoint may not exist for all issues
-                    console.log(`No posts for ${issue.id}`);
-                }
 
-                issuesWithPosts.push({
-                    id: issue.id,
-                    title: issue.title,
-                    startTime: issue.startDateTime,
-                    endTime: issue.endDateTime,
-                    lastModified: issue.lastModifiedDateTime,
-                    status: issue.status,
-                    severity: issue.classification || issue.severity,
-                    impactDescription: issue.impactDescription,
-                    posts
-                });
+                    issuesWithPosts.push({
+                        id: fullIssue.id,
+                        title: fullIssue.title,
+                        startTime: fullIssue.startDateTime,
+                        endTime: fullIssue.endDateTime,
+                        lastModified: fullIssue.lastModifiedDateTime,
+                        status: fullIssue.status,
+                        severity: fullIssue.classification,
+                        impactDescription: fullIssue.impactDescription,
+                        feature: fullIssue.feature,
+                        posts
+                    });
+                    
+                    console.log(`Fetched ${issue.id}: ${posts.length} updates`);
+                } catch (e) {
+                    console.error(`Error fetching ${issue.id}:`, e.message);
+                    // Fall back to basic info
+                    issuesWithPosts.push({
+                        id: issue.id,
+                        title: issue.title,
+                        startTime: issue.startDateTime,
+                        status: issue.status,
+                        posts: []
+                    });
+                }
             }
 
             services.push({
@@ -97,7 +110,9 @@ async function getHealthData() {
         };
 
         fs.writeFileSync('data.json', JSON.stringify(data, null, 2));
-        console.log(`Health data updated. ${services.reduce((n, s) => n + s.issues.length, 0)} active issues.`);
+        const totalIssues = services.reduce((n, s) => n + s.issues.length, 0);
+        const totalPosts = services.reduce((n, s) => n + s.issues.reduce((m, i) => m + i.posts.length, 0), 0);
+        console.log(`Health data updated. ${totalIssues} active issues, ${totalPosts} total updates.`);
 
     } catch (error) {
         console.error("Error fetching health data:", error.response ? error.response.data : error.message);
