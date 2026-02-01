@@ -127,6 +127,7 @@ async function fetchIssueDetails(issueId, headers, isHistory = false) {
         let scopeOfImpact = '';
         let rootCause = '';
         let userImpact = fullIssue.impactDescription || '';
+        let nextUpdateBy = '';
         
         if (fullIssue.posts && fullIssue.posts.length > 0) {
             // Get from the most recent post
@@ -141,6 +142,10 @@ async function fetchIssueDetails(issueId, headers, isHistory = false) {
             
             const impactMatch = content.match(/User impact:\s*([^]*?)(?=Current status:|More info:|$)/i);
             if (impactMatch && !userImpact) userImpact = impactMatch[1].trim();
+            
+            // Extract next update time
+            const nextUpdateMatch = content.match(/Next update by:\s*([^<\n]+)/i);
+            if (nextUpdateMatch) nextUpdateBy = nextUpdateMatch[1].trim();
         }
         
         const posts = (fullIssue.posts || []).map(post => ({
@@ -160,6 +165,7 @@ async function fetchIssueDetails(issueId, headers, isHistory = false) {
             userImpact,
             scopeOfImpact,
             rootCause,
+            nextUpdateBy,
             feature: fullIssue.feature,
             isResolved: fullIssue.isResolved,
             posts: isHistory ? posts.slice(0, 5) : posts // Limit history posts

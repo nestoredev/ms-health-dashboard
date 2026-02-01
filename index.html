@@ -398,25 +398,38 @@
 
         // Convert UTC times in text to ET (e.g., "Next update by: January 31, 2026 at 2:00 PM UTC")
         function convertUTCInText(text) {
-            // Match patterns like "January 31, 2026, at 2:00 PM UTC" or "1/31/2026 2:00 PM UTC"
+            if (!text) return text;
+            // Match patterns like "Monday, February 2, 2026, at 8:00 AM UTC" or "January 31, 2026, at 2:00 PM UTC"
             const utcPatterns = [
-                /(\w+ \d{1,2}, \d{4},? at \d{1,2}:\d{2} [AP]M) UTC/gi,
-                /(\d{1,2}\/\d{1,2}\/\d{4},? \d{1,2}:\d{2}:\d{2} [AP]M) UTC/gi,
-                /(\d{1,2}\/\d{1,2}\/\d{4},? at \d{1,2}:\d{2} [AP]M) UTC/gi
+                /(\w+day,? )?(\w+ \d{1,2}, \d{4}),? at (\d{1,2}:\d{2} [AP]M) UTC/gi,
+                /(\d{1,2}\/\d{1,2}\/\d{4}),? (\d{1,2}:\d{2}:\d{2} [AP]M) UTC/gi,
+                /(\d{1,2}\/\d{1,2}\/\d{4}),? at (\d{1,2}:\d{2} [AP]M) UTC/gi
             ];
             
             let result = text;
-            utcPatterns.forEach(pattern => {
-                result = result.replace(pattern, (match, dateStr) => {
-                    try {
-                        const utcDate = new Date(dateStr + ' UTC');
-                        if (!isNaN(utcDate.getTime())) {
-                            return formatET(utcDate);
-                        }
-                    } catch (e) {}
-                    return match; // Return original if parsing fails
-                });
+            
+            // Handle the "Monday, February 2, 2026, at 8:00 AM UTC" format
+            result = result.replace(/(\w+day,?\s+)?(\w+ \d{1,2}, \d{4}),?\s+at\s+(\d{1,2}:\d{2}\s*[AP]M)\s*UTC/gi, (match, dayName, dateStr, timeStr) => {
+                try {
+                    const utcDate = new Date(`${dateStr} ${timeStr} UTC`);
+                    if (!isNaN(utcDate.getTime())) {
+                        return formatET(utcDate);
+                    }
+                } catch (e) {}
+                return match;
             });
+            
+            // Handle numeric date formats
+            result = result.replace(/(\d{1,2}\/\d{1,2}\/\d{4}),?\s+(\d{1,2}:\d{2}(?::\d{2})?\s*[AP]M)\s*UTC/gi, (match, dateStr, timeStr) => {
+                try {
+                    const utcDate = new Date(`${dateStr} ${timeStr} UTC`);
+                    if (!isNaN(utcDate.getTime())) {
+                        return formatET(utcDate);
+                    }
+                } catch (e) {}
+                return match;
+            });
+            
             return result;
         }
 
@@ -611,6 +624,7 @@
                             <div class="issue-meta">
                                 <span>Started ${formatETDateOnly(issue.startTime)}</span>
                                 ${issue.lastModified ? `<span>Updated ${formatRelativeTime(issue.lastModified)}</span>` : ''}
+                                ${issue.nextUpdateBy ? `<span style="color:var(--warning)">Next update: ${convertUTCInText(issue.nextUpdateBy)}</span>` : ''}
                                 <span>${posts.length} updates</span>
                             </div>
                         </div>
@@ -618,6 +632,7 @@
                     </div>
                     <div class="issue-details">
                         <div class="issue-info-grid">
+                            ${issue.nextUpdateBy ? `<div class="issue-info-item"><label>Next Update By</label><p style="color:var(--warning)">${convertUTCInText(issue.nextUpdateBy)}</p></div>` : ''}
                             ${issue.userImpact ? `<div class="issue-info-item"><label>User Impact</label><p>${stripHtml(issue.userImpact)}</p></div>` : ''}
                             ${issue.scopeOfImpact ? `<div class="issue-info-item"><label>Scope of Impact</label><p>${convertUTCInText(stripHtml(issue.scopeOfImpact))}</p></div>` : ''}
                             ${issue.rootCause ? `<div class="issue-info-item"><label>Root Cause</label><p>${stripHtml(issue.rootCause)}</p></div>` : ''}
