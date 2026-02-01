@@ -235,14 +235,16 @@
 
         async function loadData() {
             try {
+                console.log("Fetching data.json...");
                 const response = await fetch('data.json?t=' + Date.now());
-                if (!response.ok) throw new Error('No data found');
+                if (!response.ok) throw new Error('HTTP error! status: ' + response.status);
                 currentData = await response.json();
+                console.log("Data loaded:", currentData);
                 document.getElementById('last-updated').innerText = 'Last updated: ' + new Date(currentData.lastUpdated).toLocaleString();
                 render(currentData.services);
             } catch (err) {
-                console.error(err);
-                document.getElementById('last-updated').innerText = 'Starting up... (Initial data fetch pending)';
+                console.error("Fetch error:", err);
+                document.getElementById('last-updated').innerText = 'Error loading data: ' + err.message;
             }
         }
 
@@ -279,14 +281,15 @@
         }
 
         function getStatusClass(status) {
-            if (status === "ServiceOperational") return "status-operational";
-            if (status === "Investigating" || status === "ServiceDegradation") return "status-investigating";
+            const s = status.toLowerCase();
+            if (s === "serviceoperational") return "status-operational";
+            if (s === "investigating" || s === "servicedegradation") return "status-investigating";
             return "status-incident";
         }
 
         function getStatusLabel(status) {
-            if (status === "ServiceOperational") return "Operational";
-            return status.replace(/([A-Z])/g, ' $1').trim();
+            if (status.toLowerCase() === "serviceoperational") return "Operational";
+            return status.replace(/([A-Z])/g, ' $1').trim().replace(/^\w/, c => c.toUpperCase());
         }
 
         function render(services) {
@@ -297,8 +300,8 @@
             const filtered = services.filter(item => {
                 const matchesService = serviceFilter === 'all' || item.service === serviceFilter;
                 const matchesStatus = statusFilter === 'all' || 
-                                     (statusFilter === 'operational' && item.status === 'ServiceOperational') ||
-                                     (statusFilter === 'issue' && item.status !== 'ServiceOperational');
+                                     (statusFilter === 'operational' && item.status.toLowerCase() === 'serviceoperational') ||
+                                     (statusFilter === 'issue' && item.status.toLowerCase() !== 'serviceoperational');
                 return matchesService && matchesStatus;
             });
 
