@@ -11,7 +11,7 @@
             --text-main: #212529;
             --text-muted: #6c757d;
             --border-color: #dee2e6;
-            --primary: #0078d4; /* Microsoft Blue */
+            --primary: #0078d4;
             --success: #107c10;
             --warning: #ffb900;
             --danger: #d83b01;
@@ -53,6 +53,7 @@
             border-radius: 8px;
             border: 1px solid var(--border-color);
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            flex-wrap: wrap;
         }
 
         .filter-group {
@@ -77,7 +78,7 @@
 
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
             gap: 1.5rem;
         }
 
@@ -87,7 +88,6 @@
             border-radius: 8px;
             padding: 1.5rem;
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-            transition: transform 0.1s;
         }
 
         .card:hover {
@@ -107,46 +107,121 @@
         }
 
         .status-badge {
-            font-size: 0.75rem;
-            padding: 0.25rem 0.6rem;
+            font-size: 0.7rem;
+            padding: 0.2rem 0.5rem;
             border-radius: 12px;
             font-weight: 700;
             text-transform: uppercase;
+            white-space: nowrap;
         }
 
         .status-operational { background: #dff6dd; color: var(--success); }
         .status-investigating { background: #fff4ce; color: #856404; }
         .status-incident { background: #fde7e9; color: var(--danger); }
 
-        .issue-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
         .issue-item {
             font-size: 0.9rem;
-            padding-top: 0.75rem;
+            padding: 0.75rem;
             margin-top: 0.75rem;
-            border-top: 1px solid var(--border-color);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            background: #fafafa;
+        }
+
+        .issue-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 0.5rem;
+            cursor: pointer;
+        }
+
+        .issue-header:hover .issue-title {
+            color: var(--primary);
         }
 
         .issue-id {
             color: var(--text-muted);
             font-family: monospace;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
         }
 
         .issue-title {
-            display: block;
             font-weight: 500;
             margin: 0.25rem 0;
+            flex: 1;
         }
 
-        .issue-time {
-            display: block;
+        .issue-meta {
             font-size: 0.75rem;
             color: var(--text-muted);
+        }
+
+        .issue-severity {
+            font-size: 0.65rem;
+            padding: 0.15rem 0.4rem;
+            border-radius: 8px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .severity-advisory { background: #e8f4fd; color: #0078d4; }
+        .severity-incident { background: #fde7e9; color: var(--danger); }
+
+        .issue-details {
+            display: none;
+            margin-top: 0.75rem;
+            padding-top: 0.75rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .issue-item.expanded .issue-details {
+            display: block;
+        }
+
+        .issue-impact {
+            font-size: 0.85rem;
+            margin-bottom: 0.75rem;
+            padding: 0.5rem;
+            background: #fff3cd;
+            border-radius: 4px;
+        }
+
+        .posts-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .post-item {
+            padding: 0.5rem 0;
+            border-bottom: 1px dashed var(--border-color);
+        }
+
+        .post-item:last-child {
+            border-bottom: none;
+        }
+
+        .post-time {
+            font-size: 0.7rem;
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .post-content {
+            font-size: 0.8rem;
+            color: var(--text-main);
+            margin-top: 0.25rem;
+        }
+
+        .expand-icon {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            transition: transform 0.2s;
+        }
+
+        .issue-item.expanded .expand-icon {
+            transform: rotate(90deg);
         }
 
         #last-updated {
@@ -172,13 +247,16 @@
             cursor: not-allowed;
         }
 
-        .refresh-btn.loading svg {
-            animation: spin 1s linear infinite;
+        .no-issues {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            font-style: italic;
         }
 
-        @keyframes spin {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
+        .issue-count {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-left: 0.5rem;
         }
     </style>
 </head>
@@ -200,14 +278,6 @@
                 <label for="service-filter">Service</label>
                 <select id="service-filter">
                     <option value="all">All Services</option>
-                    <option value="Microsoft 365 suite">Microsoft 365 Suite</option>
-                    <option value="Exchange Online">Exchange Online</option>
-                    <option value="SharePoint Online">SharePoint Online</option>
-                    <option value="Microsoft Teams">Microsoft Teams</option>
-                    <option value="OneDrive for Business">OneDrive for Business</option>
-                    <option value="Microsoft Copilot">Microsoft Copilot</option>
-                    <option value="Planner">Planner</option>
-                    <option value="Microsoft Viva">Microsoft Viva</option>
                 </select>
             </div>
             <div class="filter-group">
@@ -215,19 +285,15 @@
                 <select id="status-filter">
                     <option value="all">All Statuses</option>
                     <option value="operational">Operational</option>
-                    <option value="issue">Active Issues</option>
+                    <option value="issue">With Issues</option>
                 </select>
             </div>
         </div>
 
-        <div class="grid" id="status-grid">
-            <!-- Cards will be injected here -->
-        </div>
+        <div class="grid" id="status-grid"></div>
     </div>
 
     <script>
-        // Configuration - Set this in a GitHub secret or env if needed
-        // For public pages, we use a proxy or just rely on the Action
         const GITHUB_OWNER = 'nestoredev';
         const GITHUB_REPO = 'ms-health-dashboard';
 
@@ -235,12 +301,23 @@
 
         async function loadData() {
             try {
-                console.log("Fetching data.json...");
                 const response = await fetch('data.json?t=' + Date.now());
                 if (!response.ok) throw new Error('HTTP error! status: ' + response.status);
                 currentData = await response.json();
-                console.log("Data loaded:", currentData);
                 document.getElementById('last-updated').innerText = 'Last updated: ' + new Date(currentData.lastUpdated).toLocaleString();
+                
+                // Populate service filter dynamically
+                const serviceFilter = document.getElementById('service-filter');
+                const existingOptions = new Set([...serviceFilter.options].map(o => o.value));
+                currentData.services.forEach(s => {
+                    if (!existingOptions.has(s.service)) {
+                        const opt = document.createElement('option');
+                        opt.value = s.service;
+                        opt.textContent = s.service;
+                        serviceFilter.appendChild(opt);
+                    }
+                });
+                
                 render(currentData.services);
             } catch (err) {
                 console.error("Fetch error:", err);
@@ -254,8 +331,6 @@
             if (!pat) return;
 
             btn.disabled = true;
-            btn.classList.add('loading');
-
             try {
                 const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/dispatches`, {
                     method: 'POST',
@@ -267,8 +342,7 @@
                 });
 
                 if (res.ok) {
-                    alert("Refresh triggered! The data will update in about 60 seconds.");
-                    // Polling for updates could go here
+                    alert("Refresh triggered! Data will update in ~60 seconds.");
                 } else {
                     throw new Error('Failed to trigger');
                 }
@@ -276,20 +350,50 @@
                 alert("Error: " + err.message);
             } finally {
                 btn.disabled = false;
-                btn.classList.remove('loading');
             }
         }
 
         function getStatusClass(status) {
-            const s = status.toLowerCase();
+            const s = (status || '').toLowerCase();
             if (s === "serviceoperational") return "status-operational";
-            if (s === "investigating" || s === "servicedegradation") return "status-investigating";
+            if (s === "investigating" || s === "servicedegradation" || s === "extendedrecovery") return "status-investigating";
             return "status-incident";
         }
 
         function getStatusLabel(status) {
+            if (!status) return 'Unknown';
             if (status.toLowerCase() === "serviceoperational") return "Operational";
-            return status.replace(/([A-Z])/g, ' $1').trim().replace(/^\w/, c => c.toUpperCase());
+            return status.replace(/([A-Z])/g, ' $1').trim();
+        }
+
+        function getSeverityClass(severity) {
+            const s = (severity || '').toLowerCase();
+            if (s === 'advisory' || s === 'low') return 'severity-advisory';
+            return 'severity-incident';
+        }
+
+        function stripHtml(html) {
+            const tmp = document.createElement('div');
+            tmp.innerHTML = html || '';
+            return tmp.textContent || tmp.innerText || '';
+        }
+
+        function formatRelativeTime(dateStr) {
+            const date = new Date(dateStr);
+            const now = new Date();
+            const diffMs = now - date;
+            const diffMins = Math.floor(diffMs / 60000);
+            const diffHours = Math.floor(diffMins / 60);
+            const diffDays = Math.floor(diffHours / 24);
+
+            if (diffMins < 60) return `${diffMins}m ago`;
+            if (diffHours < 24) return `${diffHours}h ago`;
+            if (diffDays < 7) return `${diffDays}d ago`;
+            return date.toLocaleDateString();
+        }
+
+        function toggleIssue(el) {
+            el.closest('.issue-item').classList.toggle('expanded');
         }
 
         function render(services) {
@@ -299,38 +403,59 @@
 
             const filtered = services.filter(item => {
                 const matchesService = serviceFilter === 'all' || item.service === serviceFilter;
+                const hasIssues = item.issues && item.issues.length > 0;
                 const matchesStatus = statusFilter === 'all' || 
-                                     (statusFilter === 'operational' && item.status.toLowerCase() === 'serviceoperational') ||
-                                     (statusFilter === 'issue' && item.status.toLowerCase() !== 'serviceoperational');
+                                     (statusFilter === 'operational' && !hasIssues) ||
+                                     (statusFilter === 'issue' && hasIssues);
                 return matchesService && matchesStatus;
             });
 
-            grid.innerHTML = filtered.map(item => `
+            grid.innerHTML = filtered.map(item => {
+                const issueCount = item.issues?.length || 0;
+                return `
                 <div class="card">
                     <div class="card-header">
-                        <span class="service-name">${item.service}</span>
+                        <span class="service-name">${item.service}${issueCount > 0 ? `<span class="issue-count">(${issueCount} issue${issueCount > 1 ? 's' : ''})</span>` : ''}</span>
                         <span class="status-badge ${getStatusClass(item.status)}">${getStatusLabel(item.status)}</span>
                     </div>
-                    ${item.issues && item.issues.length > 0 ? `
-                        <div class="issue-list">
-                            ${item.issues.map(issue => `
-                                <div class="issue-item">
+                    ${issueCount > 0 ? item.issues.map(issue => `
+                        <div class="issue-item">
+                            <div class="issue-header" onclick="toggleIssue(this)">
+                                <div>
                                     <span class="issue-id">${issue.id}</span>
-                                    <span class="issue-title">${issue.title}</span>
-                                    <span class="issue-time">${new Date(issue.startTime).toLocaleString()}</span>
+                                    ${issue.severity ? `<span class="issue-severity ${getSeverityClass(issue.severity)}">${issue.severity}</span>` : ''}
+                                    <div class="issue-title">${issue.title}</div>
+                                    <div class="issue-meta">
+                                        Started: ${new Date(issue.startTime).toLocaleString()}
+                                        ${issue.lastModified ? ` · Updated: ${formatRelativeTime(issue.lastModified)}` : ''}
+                                    </div>
                                 </div>
-                            `).join('')}
+                                <span class="expand-icon">▶</span>
+                            </div>
+                            <div class="issue-details">
+                                ${issue.impactDescription ? `<div class="issue-impact">${stripHtml(issue.impactDescription)}</div>` : ''}
+                                ${issue.posts && issue.posts.length > 0 ? `
+                                    <strong style="font-size: 0.8rem;">Updates:</strong>
+                                    <ul class="posts-list">
+                                        ${issue.posts.map(post => `
+                                            <li class="post-item">
+                                                <div class="post-time">${new Date(post.createdAt).toLocaleString()}</div>
+                                                <div class="post-content">${stripHtml(post.content).substring(0, 500)}${stripHtml(post.content).length > 500 ? '...' : ''}</div>
+                                            </li>
+                                        `).join('')}
+                                    </ul>
+                                ` : '<div class="no-issues">No updates available</div>'}
+                            </div>
                         </div>
-                    ` : '<div style="color: var(--text-muted); font-size: 0.85rem;">No active issues</div>'}
+                    `).join('') : '<div class="no-issues">No active issues</div>'}
                 </div>
-            `).join('');
+            `}).join('');
         }
 
         document.getElementById('service-filter').addEventListener('change', () => render(currentData?.services || []));
         document.getElementById('status-filter').addEventListener('change', () => render(currentData?.services || []));
         document.getElementById('refresh-btn').addEventListener('click', triggerRefresh);
 
-        // Initial load
         loadData();
     </script>
 </body>
