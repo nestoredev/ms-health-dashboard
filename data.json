@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-02T23:00:48.460Z",
+  "lastUpdated": "2026-02-02T23:30:46.141Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -744,16 +744,21 @@
           "title": "Users may be unable to send subscription emails to external users in Power BI",
           "startTime": "2026-01-29T18:41:24Z",
           "endTime": null,
-          "lastModified": "2026-01-30T23:22:50.243Z",
+          "lastModified": "2026-02-02T23:12:02.773Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to send subscription emails to external users in Power BI.",
           "scopeOfImpact": "Impact may occur for all users attempting to send subscription emails to external users in Power BI.\n\nStart time: Thursday, January 29, 2026, at 6:45 PM UTC",
           "rootCause": "An influx of automated email traffic from Power BI subscriptions resulted in impact to external subscription email delivery.",
-          "nextUpdateBy": "Tuesday, February 3, 2026, at 12:30 AM UTC",
+          "nextUpdateBy": "Tuesday, February 10, 2026, at 12:30 AM UTC",
           "feature": "PowerBI.com",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-02-02T23:12:02.773Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to send subscription emails to external users in Power BI\n\nUser impact: Users may be unable to send subscription emails to external users in Power BI.\n\nCurrent status: We've determined that the previous potential mitigation mentioned in our last update isn't a viable solution to deploy to all impacted users. We're further analyzing the influx of automated email traffic from Power BI subscriptions to help with identifying a new remediation plan to resolve the issue for all impacted users.\n \nScope of impact: Impact may occur for all users attempting to send subscription emails to external users in Power BI.\n\nStart time: Thursday, January 29, 2026, at 6:45 PM UTC\n\nRoot cause: An influx of automated email traffic from Power BI subscriptions resulted in impact to external subscription email delivery.\n\nNext update by: Tuesday, February 10, 2026, at 12:30 AM UTC"
+            },
             {
               "createdAt": "2026-01-30T23:22:50.243Z",
               "postType": "regular",
@@ -1341,24 +1346,29 @@
     },
     {
       "service": "Microsoft Purview",
-      "status": "investigating",
+      "status": "serviceDegradation",
       "id": "Purview",
       "issues": [
         {
           "id": "MP1226160",
-          "title": "Some users in Australia may experience reduced effectiveness of Microsoft Purview Data Loss Prevention (DLP) policies",
+          "title": "Users' Microsoft Purview Data Loss Prevention (DLP) policies in Australia may intermittently fail",
           "startTime": "2026-02-02T22:17:55Z",
           "endTime": null,
-          "lastModified": "2026-02-02T22:45:19.233Z",
-          "status": "investigating",
-          "severity": "advisory",
-          "userImpact": "Users may experience reduced effectiveness of DLP polices across multiple Microsoft 365 services.",
-          "scopeOfImpact": "",
+          "lastModified": "2026-02-02T23:27:07.823Z",
+          "status": "serviceDegradation",
+          "severity": "incident",
+          "userImpact": "Users' Microsoft Purview Data Loss Prevention (DLP) policies in Australia may intermittently fail.",
+          "scopeOfImpact": "Any user in the Australia region may be intermittently affected.",
           "rootCause": "",
-          "nextUpdateBy": "",
+          "nextUpdateBy": "Tuesday, February 3, 2026, at 12:30 AM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-02-02T23:00:50.73Z",
+              "postType": "regular",
+              "content": "Title: Users' Microsoft Purview Data Loss Prevention (DLP) policies in Australia may intermittently fail\n\nUser impact: Users' Microsoft Purview Data Loss Prevention (DLP) policies in Australia may intermittently fail.\n\nMore info: Affected services include but may not be limited to the application of DLP policies in:\n- Exchange Online \n- SharePoint Online \n- Microsoft OneDrive\n- Microsoft Teams\n- Microsoft Purview Data Loss Prevention for Endpoint\n- Microsoft Defender for Cloud Apps\n- Power BI\n\nCurrent status: Our monitoring has identified an increase in DLP request failures affecting the Australia region. We're reviewing service telemetry to better understand the impact scenario and determine our next steps.\n\nScope of impact: Any user in the Australia region may be intermittently affected.\n\nNext update by: Tuesday, February 3, 2026, at 12:30 AM UTC"
+            },
             {
               "createdAt": "2026-02-02T22:36:51.317Z",
               "postType": "regular",
