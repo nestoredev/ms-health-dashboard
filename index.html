@@ -184,6 +184,7 @@
         .summary-card.status-primary {
             grid-column: 1 / -1;
             border-left: 4px solid var(--accent);
+            padding-bottom: 1.5rem;
         }
 
         .summary-card-label {
@@ -207,8 +208,23 @@
 
         .summary-card-impact {
             font-size: 0.85rem;
-            color: var(--text);
+            color: var(--text-muted);
             line-height: 1.5;
+        }
+
+        .summary-impact-list {
+            margin: 0.5rem 0 0 1.1rem;
+            padding: 0;
+            list-style-type: disc;
+        }
+
+        .summary-impact-list li {
+            margin-bottom: 0.35rem;
+        }
+
+        .summary-impact-list li b {
+            color: var(--text);
+            font-weight: 600;
         }
 
         /* Overview */
@@ -661,49 +677,48 @@
                 systemStatusLabel = "Service Interruption";
                 systemStatusClass = "status-danger";
                 const uniqueIncidents = incidents.filter((v, i, a) => a.findIndex(t => t.id === v.id) === i);
-                systemStatusImpact = generateConciseSummary(uniqueIncidents, 300);
+                systemStatusImpact = generateConciseSummary(uniqueIncidents);
             } else if (advisories.length > 0) {
                 systemStatusLabel = "Degraded Performance";
                 systemStatusClass = "status-warning";
                 const uniqueAdvisories = advisories.filter((v, i, a) => a.findIndex(t => t.id === v.id) === i);
-                systemStatusImpact = generateConciseSummary(uniqueAdvisories, 300);
+                systemStatusImpact = generateConciseSummary(uniqueAdvisories);
             }
 
-            function generateConciseSummary(issues, limit) {
+            function generateConciseSummary(issues) {
                 if (!issues.length) return "No active service issues reported.";
                 
-                // Group by impact to avoid repetition
-                const items = issues.map(i => {
-                    const services = i.serviceNames.join(', ')
-                        .replace(/Microsoft /g, '')
-                        .replace(/Online/g, '')
-                        .replace(/ for Business/g, '');
-                    
-                    let text = stripHtml(i.userImpact).split(/[.!?]/)[0].trim();
-                    // Strip generic prefixes
-                    text = text.replace(/Users (?:may|might|could|are) (?:experience|be experiencing|encounter|seeing)/gi, "")
-                        .replace(/There is an issue /gi, "")
-                        .trim();
-                    
-                    return { services, text };
-                });
-                
-                // Deduplicate impacts
+                // Deduplicate by impact text
                 const unique = [];
                 const seen = new Set();
-                for (const item of items) {
-                    if (!seen.has(item.text.toLowerCase())) {
-                        unique.push(item);
-                        seen.add(item.text.toLowerCase());
+                for (const issue of issues) {
+                    const txt = stripHtml(issue.userImpact).toLowerCase().trim();
+                    if (!seen.has(txt)) {
+                        unique.push(issue);
+                        seen.add(txt);
                     }
                 }
 
-                let summary = unique.map(u => `<b>${u.services}:</b> ${u.text}`).join(". ");
-                
-                if (summary.length > limit) {
-                    summary = summary.substring(0, limit - 3).trim() + "...";
+                if (unique.length === 1) {
+                    const i = unique[0];
+                    let text = stripHtml(i.userImpact).split(/[.!?]/)[0].trim();
+                    text = text.replace(/Users (?:may|might|could|are) (?:experience|be experiencing|encounter|seeing)/gi, "").trim();
+                    text = text.charAt(0).toUpperCase() + text.slice(1);
+                    return `<b>${i.serviceNames[0].replace(/ Microsoft/g, '')}:</b> ${text}.`;
                 }
-                return summary + (summary.endsWith(".") || summary.endsWith("...") ? "" : ".");
+
+                // Multiple issues: use a clean list
+                let html = '<ul class="summary-impact-list">';
+                unique.slice(0, 4).forEach(i => {
+                    let text = stripHtml(i.userImpact).split(/[.!?]/)[0].trim();
+                    text = text.replace(/Users (?:may|might|could|are) (?:experience|be experiencing|encounter|seeing)/gi, "").trim();
+                    text = text.charAt(0).toUpperCase() + text.slice(1);
+                    const serviceName = i.serviceNames[0].replace(/ Microsoft| Online| for Business/g, '');
+                    html += `<li><b>${serviceName}:</b> ${text}</li>`;
+                });
+                if (unique.length > 4) html += `<li>...and ${unique.length - 4} other issues</li>`;
+                html += '</ul>';
+                return html;
             }
 
             let html = `
