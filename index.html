@@ -166,7 +166,7 @@
         /* Overview Cards */
         .summary-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 1rem;
             margin-bottom: 2rem;
         }
@@ -179,7 +179,11 @@
             display: flex;
             flex-direction: column;
             gap: 0.5rem;
-            min-height: 180px;
+        }
+
+        .summary-card.status-primary {
+            grid-column: 1 / -1;
+            border-left: 4px solid var(--accent);
         }
 
         .summary-card-label {
@@ -202,14 +206,9 @@
         .summary-card.status-danger { border-left: 4px solid var(--danger); }
 
         .summary-card-impact {
-            font-size: 0.8rem;
-            color: var(--text-muted);
+            font-size: 0.85rem;
+            color: var(--text);
             line-height: 1.5;
-            display: -webkit-box;
-            -webkit-line-clamp: 5;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-overflow: ellipsis;
         }
 
         /* Overview */
@@ -661,60 +660,50 @@
             if (incidents.length > 0) {
                 systemStatusLabel = "Service Interruption";
                 systemStatusClass = "status-danger";
-                
-                const uniqueIssues = [...incidents, ...advisories].filter((v, i, a) => a.findIndex(t => t.id === v.id) === i);
-                const rawImpacts = uniqueIssues
-                    .map(i => stripHtml(i.userImpact))
-                    .filter(txt => txt && txt.length > 5)
-                    .map(txt => txt.split(/[.!?]/)[0].trim());
-
-                systemStatusImpact = generateConciseSummary(rawImpacts, 200);
-                if (!systemStatusImpact) {
-                    systemStatusImpact = `${incidents.length} major incidents affecting key services. User productivity is impacted.`;
-                }
+                const uniqueIncidents = incidents.filter((v, i, a) => a.findIndex(t => t.id === v.id) === i);
+                systemStatusImpact = generateConciseSummary(uniqueIncidents, 300);
             } else if (advisories.length > 0) {
                 systemStatusLabel = "Degraded Performance";
                 systemStatusClass = "status-warning";
-                
                 const uniqueAdvisories = advisories.filter((v, i, a) => a.findIndex(t => t.id === v.id) === i);
-                const rawImpacts = uniqueAdvisories
-                    .map(i => stripHtml(i.userImpact))
-                    .filter(txt => txt && txt.length > 5)
-                    .map(txt => txt.split(/[.!?]/)[0].trim());
-
-                systemStatusImpact = generateConciseSummary(rawImpacts, 200);
-                if (!systemStatusImpact) {
-                    systemStatusImpact = `${advisories.length} active advisories. Some users may experience minor issues.`;
-                }
+                systemStatusImpact = generateConciseSummary(uniqueAdvisories, 300);
             }
 
-            function generateConciseSummary(impacts, limit) {
-                if (!impacts.length) return "";
+            function generateConciseSummary(issues, limit) {
+                if (!issues.length) return "No active service issues reported.";
                 
-                // Clean and shorten common phrases to save space
-                let cleaned = impacts.map(s => s
-                    .replace(/Users (?:may|might|could) (?:experience|be experiencing|encounter)/gi, "Users may see")
-                    .replace(/is experiencing (?:a|an) (?:issue|problem|service disruption)/gi, "has issues")
-                    .replace(/resulting in (?:the inability to|users being unable to)/gi, "preventing")
-                    .trim()
-                ).filter((v, i, a) => a.indexOf(v) === i);
-
-                let result = cleaned.join(". ");
+                // Group by impact to avoid repetition
+                const items = issues.map(i => {
+                    const services = i.serviceNames.join(', ')
+                        .replace(/Microsoft /g, '')
+                        .replace(/Online/g, '')
+                        .replace(/ for Business/g, '');
+                    
+                    let text = stripHtml(i.userImpact).split(/[.!?]/)[0].trim();
+                    // Strip generic prefixes
+                    text = text.replace(/Users (?:may|might|could|are) (?:experience|be experiencing|encounter|seeing)/gi, "")
+                        .replace(/There is an issue /gi, "")
+                        .trim();
+                    
+                    return { services, text };
+                });
                 
-                // If too long, drop fragments until it fits
-                if (result.length > limit) {
-                    for (let i = cleaned.length - 1; i > 0; i--) {
-                        result = cleaned.slice(0, i).join(". ") + "...";
-                        if (result.length <= limit) break;
+                // Deduplicate impacts
+                const unique = [];
+                const seen = new Set();
+                for (const item of items) {
+                    if (!seen.has(item.text.toLowerCase())) {
+                        unique.push(item);
+                        seen.add(item.text.toLowerCase());
                     }
                 }
+
+                let summary = unique.map(u => `<b>${u.services}:</b> ${u.text}`).join(". ");
                 
-                // Hard crop if still over limit
-                if (result.length > limit) {
-                    result = result.substring(0, limit - 3).trim() + "...";
+                if (summary.length > limit) {
+                    summary = summary.substring(0, limit - 3).trim() + "...";
                 }
-                
-                return result + (result.endsWith(".") || result.endsWith("...") ? "" : ".");
+                return summary + (summary.endsWith(".") || summary.endsWith("...") ? "" : ".");
             }
 
             let html = `
@@ -724,7 +713,7 @@
                 </div>
 
                 <div class="summary-grid">
-                    <div class="summary-card ${systemStatusClass}">
+                    <div class="summary-card status-primary ${systemStatusClass}">
                         <div class="summary-card-label">Overall Status</div>
                         <div class="summary-card-value">${systemStatusLabel}</div>
                         <div class="summary-card-impact">${systemStatusImpact}</div>
