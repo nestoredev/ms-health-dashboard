@@ -653,18 +653,38 @@
             if (incidents.length > 0) {
                 systemStatusLabel = "Service Interruption";
                 systemStatusClass = "status-danger";
-                // Sum up impact text if possible or use a summary
-                const uniqueIncidents = incidents.filter((v, i, a) => a.findIndex(t => t.id === v.id) === i);
-                systemStatusImpact = uniqueIncidents.length === 1 
-                    ? stripHtml(uniqueIncidents[0].userImpact).substring(0, 120) + (stripHtml(uniqueIncidents[0].userImpact).length > 120 ? '...' : '')
-                    : `${incidents.length} major incidents affecting key services. User productivity is likely impacted.`;
+                
+                // Get unique incidents and advisories for a combined impact list
+                const uniqueIssues = [...incidents, ...advisories].filter((v, i, a) => a.findIndex(t => t.id === v.id) === i);
+                const impacts = uniqueIssues
+                    .map(i => stripHtml(i.userImpact))
+                    .filter(txt => txt && txt.length > 5)
+                    .map(txt => txt.split(/[.!?]/)[0].trim()) // Just the first sentence/fragment
+                    .filter((v, i, a) => a.indexOf(v) === i); // Unique impact fragments
+                
+                if (impacts.length > 0) {
+                    systemStatusImpact = impacts.join('. ') + (impacts.length > 1 ? '.' : '');
+                    if (systemStatusImpact.length > 160) systemStatusImpact = systemStatusImpact.substring(0, 157) + '...';
+                } else {
+                    systemStatusImpact = `${incidents.length} major incident${incidents.length > 1 ? 's' : ''} affecting key services. User productivity is likely impacted.`;
+                }
             } else if (advisories.length > 0) {
                 systemStatusLabel = "Degraded Performance";
                 systemStatusClass = "status-warning";
+                
                 const uniqueAdvisories = advisories.filter((v, i, a) => a.findIndex(t => t.id === v.id) === i);
-                systemStatusImpact = uniqueAdvisories.length === 1
-                    ? stripHtml(uniqueAdvisories[0].userImpact).substring(0, 120) + (stripHtml(uniqueAdvisories[0].userImpact).length > 120 ? '...' : '')
-                    : `${advisories.length} active advisories. Some users may experience minor issues.`;
+                const impacts = uniqueAdvisories
+                    .map(i => stripHtml(i.userImpact))
+                    .filter(txt => txt && txt.length > 5)
+                    .map(txt => txt.split(/[.!?]/)[0].trim())
+                    .filter((v, i, a) => a.indexOf(v) === i);
+
+                if (impacts.length > 0) {
+                    systemStatusImpact = impacts.join('. ') + (impacts.length > 1 ? '.' : '');
+                    if (systemStatusImpact.length > 160) systemStatusImpact = systemStatusImpact.substring(0, 157) + '...';
+                } else {
+                    systemStatusImpact = `${advisories.length} active advisories. Some users may experience minor issues.`;
+                }
             }
 
             let html = `
