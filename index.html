@@ -665,7 +665,7 @@
                 
                 if (impacts.length > 0) {
                     systemStatusImpact = impacts.join('. ') + (impacts.length > 1 ? '.' : '');
-                    if (systemStatusImpact.length > 300) systemStatusImpact = systemStatusImpact.substring(0, 297) + '...';
+                    if (systemStatusImpact.length > 250) systemStatusImpact = systemStatusImpact.substring(0, 247) + '...';
                 } else {
                     systemStatusImpact = `${incidents.length} major incident${incidents.length > 1 ? 's' : ''} affecting key services. User productivity is likely impacted.`;
                 }
@@ -682,7 +682,7 @@
 
                 if (impacts.length > 0) {
                     systemStatusImpact = impacts.join('. ') + (impacts.length > 1 ? '.' : '');
-                    if (systemStatusImpact.length > 300) systemStatusImpact = systemStatusImpact.substring(0, 297) + '...';
+                    if (systemStatusImpact.length > 250) systemStatusImpact = systemStatusImpact.substring(0, 247) + '...';
                 } else {
                     systemStatusImpact = `${advisories.length} active advisories. Some users may experience minor issues.`;
                 }
