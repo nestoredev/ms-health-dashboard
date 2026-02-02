@@ -653,11 +653,18 @@
             if (incidents.length > 0) {
                 systemStatusLabel = "Service Interruption";
                 systemStatusClass = "status-danger";
-                systemStatusImpact = `${incidents.length} major incident${incidents.length > 1 ? 's' : ''} affecting key services. User productivity is likely impacted.`;
+                // Sum up impact text if possible or use a summary
+                const uniqueIncidents = incidents.filter((v, i, a) => a.findIndex(t => t.id === v.id) === i);
+                systemStatusImpact = uniqueIncidents.length === 1 
+                    ? stripHtml(uniqueIncidents[0].userImpact).substring(0, 120) + (stripHtml(uniqueIncidents[0].userImpact).length > 120 ? '...' : '')
+                    : `${incidents.length} major incidents affecting key services. User productivity is likely impacted.`;
             } else if (advisories.length > 0) {
                 systemStatusLabel = "Degraded Performance";
                 systemStatusClass = "status-warning";
-                systemStatusImpact = `${advisories.length} active advisor${advisories.length > 1 ? 'ies' : 'y'}. Some users may experience minor issues.`;
+                const uniqueAdvisories = advisories.filter((v, i, a) => a.findIndex(t => t.id === v.id) === i);
+                systemStatusImpact = uniqueAdvisories.length === 1
+                    ? stripHtml(uniqueAdvisories[0].userImpact).substring(0, 120) + (stripHtml(uniqueAdvisories[0].userImpact).length > 120 ? '...' : '')
+                    : `${advisories.length} active advisories. Some users may experience minor issues.`;
             }
 
             let html = `
