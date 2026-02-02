@@ -163,6 +163,47 @@
         .status-badge.down { background: rgba(239, 68, 68, 0.15); color: var(--danger); }
         .status-badge::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
 
+        /* Overview Cards */
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .summary-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .summary-card-label {
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+        }
+
+        .summary-card-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .summary-card.status-ok { border-left: 4px solid var(--success); }
+        .summary-card.status-warning { border-left: 4px solid var(--warning); }
+        .summary-card.status-danger { border-left: 4px solid var(--danger); }
+
+        .summary-card-impact {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            line-height: 1.4;
+        }
+
         /* Overview */
         .overview-section { margin-bottom: 2rem; }
         .overview-section h3 {
@@ -601,12 +642,54 @@
             const incidents = allIssues.filter(i => i.status?.toLowerCase().includes('interruption') || i.severity?.toLowerCase() === 'incident');
             const advisories = allIssues.filter(i => !i.status?.toLowerCase().includes('interruption') && i.severity?.toLowerCase() !== 'incident');
 
-            if (allIssues.length === 0) {
-                main.innerHTML = `<div class="main-header"><h2>All Services Operational</h2></div><div class="no-issues"><div class="no-issues-icon">✓</div><p>No active issues</p></div>`;
-                return;
+            const totalServices = data.services.length;
+            const affectedServicesCount = data.services.filter(s => s.issues?.length > 0).length;
+            const healthyServicesCount = totalServices - affectedServicesCount;
+
+            let systemStatusLabel = "All Services Operational";
+            let systemStatusClass = "status-ok";
+            let systemStatusImpact = "No active service issues reported at this time.";
+
+            if (incidents.length > 0) {
+                systemStatusLabel = "Service Interruption";
+                systemStatusClass = "status-danger";
+                systemStatusImpact = `${incidents.length} major incident${incidents.length > 1 ? 's' : ''} affecting key services. User productivity is likely impacted.`;
+            } else if (advisories.length > 0) {
+                systemStatusLabel = "Degraded Performance";
+                systemStatusClass = "status-warning";
+                systemStatusImpact = `${advisories.length} active advisor${advisories.length > 1 ? 'ies' : 'y'}. Some users may experience minor issues.`;
             }
 
-            let html = `<div class="main-header"><h2>Active Issues</h2><p style="color:var(--text-muted);font-size:0.9rem">${allIssues.length} unique issue${allIssues.length !== 1 ? 's' : ''} across ${data.services.filter(s => s.issues?.length > 0).length} services</p></div>`;
+            let html = `
+                <div class="main-header">
+                    <h2>Suite Overview</h2>
+                    <p style="color:var(--text-muted);font-size:0.9rem">Current health across all Microsoft 365 services</p>
+                </div>
+
+                <div class="summary-grid">
+                    <div class="summary-card ${systemStatusClass}">
+                        <div class="summary-card-label">Overall Status</div>
+                        <div class="summary-card-value">${systemStatusLabel}</div>
+                        <div class="summary-card-impact">${systemStatusImpact}</div>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-card-label">Services</div>
+                        <div class="summary-card-value">${healthyServicesCount} / ${totalServices}</div>
+                        <div class="summary-card-impact">Healthy services currently operational.</div>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-card-label">Active Issues</div>
+                        <div class="summary-card-value">${allIssues.length}</div>
+                        <div class="summary-card-impact">${incidents.length} incidents, ${advisories.length} advisories.</div>
+                    </div>
+                </div>
+            `;
+
+            if (allIssues.length === 0) {
+                html += `<div class="no-issues"><div class="no-issues-icon">✓</div><p>No active issues</p></div>`;
+                main.innerHTML = html;
+                return;
+            }
 
             if (incidents.length > 0) {
                 html += `<div class="overview-section incidents"><h3>Incidents (${incidents.length})</h3>${incidents.map(i => renderOverviewIssue(i)).join('')}</div>`;
