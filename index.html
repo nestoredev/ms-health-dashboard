@@ -179,7 +179,7 @@
             display: flex;
             flex-direction: column;
             gap: 0.5rem;
-            min-height: 140px;
+            min-height: 160px;
         }
 
         .summary-card-label {
@@ -203,6 +203,10 @@
             font-size: 0.8rem;
             color: var(--text-muted);
             line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
         }
 
         /* Overview */
