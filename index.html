@@ -181,11 +181,6 @@
             gap: 0.5rem;
         }
 
-        .summary-card.status-primary {
-            grid-column: 1 / -1;
-            border-left: 4px solid var(--accent);
-        }
-
         .summary-card-label {
             font-size: 0.7rem;
             font-weight: 600;
@@ -206,10 +201,9 @@
         .summary-card.status-danger { border-left: 4px solid var(--danger); }
 
         .summary-card-impact {
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             color: var(--text);
             line-height: 1.5;
-            padding-top: 0.25rem;
         }
 
         /* Overview */
@@ -656,29 +650,26 @@
 
             let systemStatusLabel = "All Services Operational";
             let systemStatusClass = "status-ok";
-            let systemStatusImpact = "No active service issues reported at this time.";
+            let systemStatusImpact = "All systems are currently operational with no active issues reported.";
 
             if (incidents.length > 0) {
                 systemStatusLabel = "Service Interruption";
                 systemStatusClass = "status-danger";
-                const uniqueIncidents = incidents.filter((v, i, a) => a.findIndex(t => t.id === v.id) === i);
-                systemStatusImpact = generateConciseSummary(uniqueIncidents);
+                systemStatusImpact = generateConciseSummary(allIssues);
             } else if (advisories.length > 0) {
                 systemStatusLabel = "Degraded Performance";
                 systemStatusClass = "status-warning";
-                const uniqueAdvisories = advisories.filter((v, i, a) => a.findIndex(t => t.id === v.id) === i);
-                systemStatusImpact = generateConciseSummary(uniqueAdvisories);
+                systemStatusImpact = generateConciseSummary(allIssues);
             }
 
             function generateConciseSummary(issues) {
-                if (!issues.length) return "All systems are currently operational with no active issues reported.";
+                if (!issues.length) return "All systems are currently operational.";
                 
-                // Group by impact to avoid repeating same text for different services
                 const impactMap = new Map();
                 issues.forEach(i => {
                     const services = i.serviceNames.join(', ').replace(/Microsoft | Online| for Business/g, '');
                     let text = stripHtml(i.userImpact).split(/[.!?]/)[0].trim();
-                    text = text.replace(/Users (?:may|might|could|are) (?:experience|be experiencing|encounter|seeing|unable to)/gi, "Can't")
+                    text = text.replace(/Users (?:may|might|could|are) (?:experience|be experiencing|encounter|seeing|unable to)/gi, "can't")
                                .replace(/There is an issue /gi, "")
                                .replace(/has issues/gi, "disrupted")
                                .trim();
@@ -697,13 +688,8 @@
                 });
 
                 let finalSummary = summaries.slice(0, 3).join(". ") + (summaries.length > 1 ? "." : "");
-                if (summaries.length > 3) finalSummary += ` Additionally, ${summaries.length - 3} other minor disruptions are active.`;
+                if (summaries.length > 3) finalSummary += ` Additionally, ${summaries.length - 3} other disruptions are active.`;
                 
-                // Ensure absolute maximum length to fit card
-                if (finalSummary.length > 220) {
-                    finalSummary = finalSummary.substring(0, 217).split('. ').slice(0, -1).join('. ') + "...";
-                }
-
                 return finalSummary.charAt(0).toUpperCase() + finalSummary.slice(1);
             }
 
@@ -714,7 +700,7 @@
                 </div>
 
                 <div class="summary-grid">
-                    <div class="summary-card status-primary ${systemStatusClass}">
+                    <div class="summary-card ${systemStatusClass}">
                         <div class="summary-card-label">Overall Status</div>
                         <div class="summary-card-value">${systemStatusLabel}</div>
                         <div class="summary-card-impact">${systemStatusImpact}</div>
