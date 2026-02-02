@@ -179,7 +179,7 @@
             display: flex;
             flex-direction: column;
             gap: 0.5rem;
-            min-height: 160px;
+            min-height: 180px;
         }
 
         .summary-card-label {
@@ -191,8 +191,10 @@
         }
 
         .summary-card-value {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 0.25rem;
         }
 
         .summary-card.status-ok { border-left: 4px solid var(--success); }
@@ -202,11 +204,12 @@
         .summary-card-impact {
             font-size: 0.8rem;
             color: var(--text-muted);
-            line-height: 1.4;
+            line-height: 1.5;
             display: -webkit-box;
             -webkit-line-clamp: 5;
             -webkit-box-orient: vertical;
             overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         /* Overview */
@@ -659,37 +662,59 @@
                 systemStatusLabel = "Service Interruption";
                 systemStatusClass = "status-danger";
                 
-                // Get unique incidents and advisories for a combined impact list
                 const uniqueIssues = [...incidents, ...advisories].filter((v, i, a) => a.findIndex(t => t.id === v.id) === i);
-                const impacts = uniqueIssues
+                const rawImpacts = uniqueIssues
                     .map(i => stripHtml(i.userImpact))
                     .filter(txt => txt && txt.length > 5)
-                    .map(txt => txt.split(/[.!?]/)[0].trim()) // Just the first sentence/fragment
-                    .filter((v, i, a) => a.indexOf(v) === i); // Unique impact fragments
-                
-                if (impacts.length > 0) {
-                    systemStatusImpact = impacts.join('. ') + (impacts.length > 1 ? '.' : '');
-                    if (systemStatusImpact.length > 250) systemStatusImpact = systemStatusImpact.substring(0, 247) + '...';
-                } else {
-                    systemStatusImpact = `${incidents.length} major incident${incidents.length > 1 ? 's' : ''} affecting key services. User productivity is likely impacted.`;
+                    .map(txt => txt.split(/[.!?]/)[0].trim());
+
+                systemStatusImpact = generateConciseSummary(rawImpacts, 200);
+                if (!systemStatusImpact) {
+                    systemStatusImpact = `${incidents.length} major incidents affecting key services. User productivity is impacted.`;
                 }
             } else if (advisories.length > 0) {
                 systemStatusLabel = "Degraded Performance";
                 systemStatusClass = "status-warning";
                 
                 const uniqueAdvisories = advisories.filter((v, i, a) => a.findIndex(t => t.id === v.id) === i);
-                const impacts = uniqueAdvisories
+                const rawImpacts = uniqueAdvisories
                     .map(i => stripHtml(i.userImpact))
                     .filter(txt => txt && txt.length > 5)
-                    .map(txt => txt.split(/[.!?]/)[0].trim())
-                    .filter((v, i, a) => a.indexOf(v) === i);
+                    .map(txt => txt.split(/[.!?]/)[0].trim());
 
-                if (impacts.length > 0) {
-                    systemStatusImpact = impacts.join('. ') + (impacts.length > 1 ? '.' : '');
-                    if (systemStatusImpact.length > 250) systemStatusImpact = systemStatusImpact.substring(0, 247) + '...';
-                } else {
+                systemStatusImpact = generateConciseSummary(rawImpacts, 200);
+                if (!systemStatusImpact) {
                     systemStatusImpact = `${advisories.length} active advisories. Some users may experience minor issues.`;
                 }
+            }
+
+            function generateConciseSummary(impacts, limit) {
+                if (!impacts.length) return "";
+                
+                // Clean and shorten common phrases to save space
+                let cleaned = impacts.map(s => s
+                    .replace(/Users (?:may|might|could) (?:experience|be experiencing|encounter)/gi, "Users may see")
+                    .replace(/is experiencing (?:a|an) (?:issue|problem|service disruption)/gi, "has issues")
+                    .replace(/resulting in (?:the inability to|users being unable to)/gi, "preventing")
+                    .trim()
+                ).filter((v, i, a) => a.indexOf(v) === i);
+
+                let result = cleaned.join(". ");
+                
+                // If too long, drop fragments until it fits
+                if (result.length > limit) {
+                    for (let i = cleaned.length - 1; i > 0; i--) {
+                        result = cleaned.slice(0, i).join(". ") + "...";
+                        if (result.length <= limit) break;
+                    }
+                }
+                
+                // Hard crop if still over limit
+                if (result.length > limit) {
+                    result = result.substring(0, limit - 3).trim() + "...";
+                }
+                
+                return result + (result.endsWith(".") || result.endsWith("...") ? "" : ".");
             }
 
             let html = `
