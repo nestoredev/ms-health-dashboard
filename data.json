@@ -1,11 +1,36 @@
 {
-  "lastUpdated": "2026-02-02T14:00:47.193Z",
+  "lastUpdated": "2026-02-02T14:31:05.154Z",
   "services": [
     {
       "service": "Exchange Online",
       "status": "serviceDegradation",
       "id": "Exchange",
       "issues": [
+        {
+          "id": "EX1226012",
+          "title": "Users' contacts hidden from the Global Address List (GAL) may not appear in Outlook on the web people search results",
+          "startTime": "2026-02-02T14:04:28Z",
+          "endTime": null,
+          "lastModified": "2026-02-02T14:07:18.637Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users' contacts hidden from the Global Address List (GAL) may not appear in Outlook on the web people search results.",
+          "scopeOfImpact": "Some users attempting to retrieve contacts in Outlook on the web people search results may be impacted.",
+          "rootCause": "",
+          "nextUpdateBy": "Monday, February 2, 2026, at 4:00 PM UTC",
+          "feature": "Offline Address Book (OAB)",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-02-02T14:07:18.637Z",
+              "postType": "regular",
+              "content": "Title: Users' contacts hidden from the Global Address List (GAL) may not appear in Outlook on the web people search results\n\nUser impact: Users' contacts hidden from the Global Address List (GAL) may not appear in Outlook on the web people search results.\n\nCurrent status: We're reviewing service monitoring telemetry to isolate the source of the issue and establish a fix.\n\nScope of impact: Some users attempting to retrieve contacts in Outlook on the web people search results may be impacted.\n\nNext update by: Monday, February 2, 2026, at 4:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online"
+          ]
+        },
         {
           "id": "EX1213792",
           "title": "Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center",
