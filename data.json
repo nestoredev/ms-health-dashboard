@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-03T14:25:29.565Z",
+  "lastUpdated": "2026-02-03T14:55:30.744Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -11,16 +11,21 @@
           "title": "Admins may be unable to complete mailbox migrations in Exchange Online",
           "startTime": "2026-02-02T04:52:11Z",
           "endTime": null,
-          "lastModified": "2026-02-03T13:12:17.943Z",
+          "lastModified": "2026-02-03T14:47:20.383Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may be unable to complete mailbox migrations in Exchange Online.",
           "scopeOfImpact": "Multi-geo admins may be unable to complete mailbox migrations in Exchange Online. This information may be updated as our investigation continues.",
           "rootCause": "A recent service configuration change, intended to optimize how requests are routed within the service, is resulting in impact.",
-          "nextUpdateBy": "Tuesday, February 3, 2026, at 3:30 PM UTC",
+          "nextUpdateBy": "Tuesday, February 3, 2026, at 6:30 PM UTC",
           "feature": "Mailbox Migrations",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-02-03T14:47:20.383Z",
+              "postType": "regular",
+              "content": "Title: Admins may be unable to complete mailbox migrations in Exchange Online\n\nUser impact: Admins may be unable to complete mailbox migrations in Exchange Online.\n\nMore info: This issue only affects multi-geo tenants.\n \nCurrent status: We're continuing to implement a configuration change to the migration mailbox and system mailbox locations for some admins who reported that they are still impacted after disabling the setting.\n \nScope of impact: Multi-geo admins may be unable to complete mailbox migrations in Exchange Online. This information may be updated as our investigation continues.\n \nRoot cause: A recent service configuration change, intended to optimize how requests are routed within the service, is resulting in impact.\n \nNext update by: Tuesday, February 3, 2026, at 6:30 PM UTC"
+            },
             {
               "createdAt": "2026-02-03T13:12:17.943Z",
               "postType": "regular",
