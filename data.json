@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-03T08:55:26.926Z",
+  "lastUpdated": "2026-02-03T09:56:10.581Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1405,6 +1405,36 @@
               "createdAt": "2026-01-15T18:58:01.643Z",
               "postType": "regular",
               "content": "Title: Users aren't shown the \"Edit in Outlook\" button after prompting Copilot Chat to draft an email message\n\nUser impact: Users aren't shown the \"Edit in Outlook\" button after prompting Copilot Chat to draft an email message.\n\nMore info: When users prompt Copilot Chat to draft an email message, the button to \"Edit in Outlook\" doesn't appear as expected.\n\nCurrent status: We're investigating a potential issue with Copilot Chat and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 Copilot Chat"
+          ]
+        },
+        {
+          "id": "CW1226324",
+          "title": "Users' email messages with a confidential label applied are being incorrectly processed by Microsoft 365 Copilot chat",
+          "startTime": "2026-02-03T06:54:42Z",
+          "endTime": null,
+          "lastModified": "2026-02-03T08:49:51.283Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users' email messages with a confidential label applied are being incorrectly processed by Microsoft 365 Copilot chat.",
+          "scopeOfImpact": "Your organization is affected by this event, and users' email messages with a confidential label applied are being incorrectly processed by Microsoft 365 Copilot chat. This section may be updated as our investigation continues.",
+          "rootCause": "",
+          "nextUpdateBy": "Tuesday, February 3, 2026, at 11:00 AM UTC",
+          "feature": "General",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-02-03T08:49:51.283Z",
+              "postType": "regular",
+              "content": "Title: Users' email messages with a confidential label applied are being incorrectly processed by Microsoft 365 Copilot chat\n\nUser impact: Users' email messages with a confidential label applied are being incorrectly processed by Microsoft 365 Copilot chat.\n\nMore info: The Microsoft 365 Copilot \"work tab\" Chat is summarizing email messages even though these email messages have a sensitivity label applied and a DLP policy is configured.\n\nCurrent status: We're continuing our review of the provided case details, sample email message screenshots and all available resources to identify the root cause of impact and mitigation plan.\n\nScope of impact: Your organization is affected by this event, and users' email messages with a confidential label applied are being incorrectly processed by Microsoft 365 Copilot chat. This section may be updated as our investigation continues.\n\nNext update by: Tuesday, February 3, 2026, at 11:00 AM UTC"
+            },
+            {
+              "createdAt": "2026-02-03T07:29:44.083Z",
+              "postType": "regular",
+              "content": "Title: Users' email messages with a confidential label applied are being incorrectly processed by Microsoft 365 Copilot chat\n\nUser impact: Users' email messages with a confidential label applied are being incorrectly processed by Microsoft 365 Copilot chat.\n\nMore info: The Microsoft 365 Copilot \"work tab\" Chat is summarizing email messages even though these email messages have a sensitivity label applied and a DLP policy is configured.\n \nCurrent status: We've received a report of an issue with the Microsoft 365 Copilot chat improperly summarizing email messages. We're reviewing the provided case details and sample email message screenshots to identify the underlying root cause of impact and inform our next steps.\n \nScope of impact: Your organization is affected by this event, and users' email messages with a confidential label applied are being incorrectly processed by Microsoft 365 Copilot chat. This section may be updated as our investigation continues.\n \nNext update by: Tuesday, February 3, 2026, at 9:00 AM UTC"
             }
           ],
           "affectedServices": [
