@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-03T00:30:49.605Z",
+  "lastUpdated": "2026-02-03T01:25:24.369Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -715,31 +715,6 @@
       "id": "PowerBIcom",
       "issues": [
         {
-          "id": "PB1225246",
-          "title": "Users may see issues with their templated subscription email in Power BI",
-          "startTime": "2026-01-29T09:21:00Z",
-          "endTime": null,
-          "lastModified": "2026-01-31T02:05:38.07Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may see issues with their templated subscription email in Power BI.",
-          "scopeOfImpact": "Users leveraging templated subscription emails in Power BI may be impacted.\n\nStart time: Thursday, January 29, 2026, at 9:21 AM UTC",
-          "rootCause": "A recent change altering the subscription email template for Power BI affected users' existing subscription email templates.",
-          "nextUpdateBy": "Tuesday, February 3, 2026, at 2:00 AM UTC",
-          "feature": "PowerBI.com",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-01-31T01:38:40.417Z",
-              "postType": "regular",
-              "content": "Title: Users may see issues with their templated subscription email in Power BI\n\nUser impact: Users may see issues with their templated subscription email in Power BI.\n\nMore info: Specifically, users may observe that the subscription email template has been altered due to a change rolled out altering the template format.\n\nCustomers may see additional revisions to this template in the future and it is recommended to update processes to be resilient to these changes.  We apologize for the disruption this change has caused. Future updates to this template will be communicated with notice so users can update their processes appropriately.\n\nCurrent status: We've determined that a recent change altering the subscription email template for Power BI affected users' existing subscription email templates. We're moving to roll back the template to the previous default and anticipate we'll have an estimated timeline for full remediation by our next scheduled update.\n\nScope of impact: Users leveraging templated subscription emails in Power BI may be impacted.\n\nStart time: Thursday, January 29, 2026, at 9:21 AM UTC\n\nRoot cause: A recent change altering the subscription email template for Power BI affected users' existing subscription email templates.\n\nNext update by: Tuesday, February 3, 2026, at 2:00 AM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Power BI"
-          ]
-        },
-        {
           "id": "PB1224494",
           "title": "Users may be unable to send subscription emails to external users in Power BI",
           "startTime": "2026-01-29T18:41:24Z",
@@ -1346,40 +1321,9 @@
     },
     {
       "service": "Microsoft Purview",
-      "status": "serviceDegradation",
+      "status": "serviceOperational",
       "id": "Purview",
-      "issues": [
-        {
-          "id": "MP1226160",
-          "title": "Users' Microsoft Purview Data Loss Prevention (DLP) policies in Australia may intermittently fail",
-          "startTime": "2026-02-02T22:17:55Z",
-          "endTime": null,
-          "lastModified": "2026-02-02T23:27:07.823Z",
-          "status": "serviceDegradation",
-          "severity": "incident",
-          "userImpact": "Users' Microsoft Purview Data Loss Prevention (DLP) policies in Australia may intermittently fail.",
-          "scopeOfImpact": "Any user in the Australia region may be intermittently affected.",
-          "rootCause": "",
-          "nextUpdateBy": "Tuesday, February 3, 2026, at 12:30 AM UTC",
-          "feature": "General",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-02-02T23:00:50.73Z",
-              "postType": "regular",
-              "content": "Title: Users' Microsoft Purview Data Loss Prevention (DLP) policies in Australia may intermittently fail\n\nUser impact: Users' Microsoft Purview Data Loss Prevention (DLP) policies in Australia may intermittently fail.\n\nMore info: Affected services include but may not be limited to the application of DLP policies in:\n- Exchange Online \n- SharePoint Online \n- Microsoft OneDrive\n- Microsoft Teams\n- Microsoft Purview Data Loss Prevention for Endpoint\n- Microsoft Defender for Cloud Apps\n- Power BI\n\nCurrent status: Our monitoring has identified an increase in DLP request failures affecting the Australia region. We're reviewing service telemetry to better understand the impact scenario and determine our next steps.\n\nScope of impact: Any user in the Australia region may be intermittently affected.\n\nNext update by: Tuesday, February 3, 2026, at 12:30 AM UTC"
-            },
-            {
-              "createdAt": "2026-02-02T22:36:51.317Z",
-              "postType": "regular",
-              "content": "Title: Some users in Australia may experience reduced effectiveness of Microsoft Purview Data Loss Prevention (DLP) policies\n\nUser impact: Users may experience reduced effectiveness of DLP polices across multiple Microsoft 365 services.\n\nMore info: Affected services include but may not be limited to the application of DLP policies in:\n\n- Exchange Online \n- SharePoint Online \n- Microsoft OneDrive\n- Microsoft Teams\n- Microsoft Purview Data Loss Prevention for Endpoint\n- Microsoft Defender for Cloud Apps\n- Power BI\n\nCurrent status: We're investigating a potential issue with Microsoft Purview Data Loss Prevention and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Microsoft Purview"
-          ]
-        }
-      ]
+      "issues": []
     },
     {
       "service": "Microsoft Clipchamp ",
@@ -1436,6 +1380,73 @@
     }
   ],
   "history": [
+    {
+      "id": "MP1226160",
+      "title": "Users' Microsoft Purview Data Loss Prevention (DLP) policies in Australia may intermittently fail",
+      "startTime": "2026-02-02T20:46:00Z",
+      "endTime": "2026-02-03T00:28:29Z",
+      "lastModified": "2026-02-03T00:29:08.663Z",
+      "status": "serviceRestored",
+      "severity": "incident",
+      "userImpact": "Users' Microsoft Purview Data Loss Prevention (DLP) policies in Australia may have intermittently fail.",
+      "scopeOfImpact": "Any user in the Australia region may have been intermittently affected.\n\nStart time: Monday, February 2, 2026, at 8:46 PM UTC\n\nEnd time: Monday, February 2, 2026, at 11:55 PM UTC",
+      "rootCause": "Recent network configuration changes intended to improve service reliability caused impact to DLP policies.\n\nNext steps: \n - We're further reviewing the recently implemented network configuration changes to better understand what triggered the initial impact, which will help us in finding ways to avoid similar situations in the future.\n\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "General",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-02-03T00:29:08.663Z",
+          "postType": "regular",
+          "content": "Title: Users' Microsoft Purview Data Loss Prevention (DLP) policies in Australia may intermittently fail\n\nUser impact: Users' Microsoft Purview Data Loss Prevention (DLP) policies in Australia may have intermittently fail.\n\nMore info: Affected services included but may have not been limited to the application of DLP policies in:\n- Exchange Online \n- SharePoint Online \n- Microsoft OneDrive\n- Microsoft Teams\n- Microsoft Purview Data Loss Prevention for Endpoint\n- Microsoft Defender for Cloud Apps\n- Power BI\n\nFinal status: We identified recent network configuration changes that caused the impact to DLP policies. We reverted the changes and monitored the telemetry to validate that the impact was remediated.\n\nScope of impact: Any user in the Australia region may have been intermittently affected.\n\nStart time: Monday, February 2, 2026, at 8:46 PM UTC\n\nEnd time: Monday, February 2, 2026, at 11:55 PM UTC\n\nRoot cause: Recent network configuration changes intended to improve service reliability caused impact to DLP policies.\n\nNext steps: \n - We're further reviewing the recently implemented network configuration changes to better understand what triggered the initial impact, which will help us in finding ways to avoid similar situations in the future.\n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-02-02T23:00:50.73Z",
+          "postType": "regular",
+          "content": "Title: Users' Microsoft Purview Data Loss Prevention (DLP) policies in Australia may intermittently fail\n\nUser impact: Users' Microsoft Purview Data Loss Prevention (DLP) policies in Australia may intermittently fail.\n\nMore info: Affected services include but may not be limited to the application of DLP policies in:\n- Exchange Online \n- SharePoint Online \n- Microsoft OneDrive\n- Microsoft Teams\n- Microsoft Purview Data Loss Prevention for Endpoint\n- Microsoft Defender for Cloud Apps\n- Power BI\n\nCurrent status: Our monitoring has identified an increase in DLP request failures affecting the Australia region. We're reviewing service telemetry to better understand the impact scenario and determine our next steps.\n\nScope of impact: Any user in the Australia region may be intermittently affected.\n\nNext update by: Tuesday, February 3, 2026, at 12:30 AM UTC"
+        },
+        {
+          "createdAt": "2026-02-02T22:36:51.317Z",
+          "postType": "regular",
+          "content": "Title: Some users in Australia may experience reduced effectiveness of Microsoft Purview Data Loss Prevention (DLP) policies\n\nUser impact: Users may experience reduced effectiveness of DLP polices across multiple Microsoft 365 services.\n\nMore info: Affected services include but may not be limited to the application of DLP policies in:\n\n- Exchange Online \n- SharePoint Online \n- Microsoft OneDrive\n- Microsoft Teams\n- Microsoft Purview Data Loss Prevention for Endpoint\n- Microsoft Defender for Cloud Apps\n- Power BI\n\nCurrent status: We're investigating a potential issue with Microsoft Purview Data Loss Prevention and checking for impact to your organization. We'll provide an update within 30 minutes."
+        }
+      ],
+      "serviceName": "Microsoft Purview",
+      "affectedServices": [
+        "Microsoft Purview"
+      ]
+    },
+    {
+      "id": "PB1225246",
+      "title": "Users may see issues with their templated subscription email in Power BI",
+      "startTime": "2026-01-29T09:21:00Z",
+      "endTime": "2026-02-02T18:00:00Z",
+      "lastModified": "2026-02-03T00:28:30.35Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have seen issues with their templated subscription email in Power BI.",
+      "scopeOfImpact": "Users leveraging templated subscription emails in Power BI may have been impacted.\n\nStart time: Thursday, January 29, 2026, at 9:21 AM UTC\n\nEnd time: Monday, February 2, 2026, at 6:00 PM UTC",
+      "rootCause": "A recent change altering the subscription email template for Power BI affected users' existing subscription email templates.\n\nNext steps: \n - To help prevent similar impact in the future, we're further reviewing our change release procedures to identify issues before being released.\n\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "PowerBI.com",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-02-03T00:28:30.35Z",
+          "postType": "regular",
+          "content": "Title: Users may see issues with their templated subscription email in Power BI\n\nUser impact: Users may have seen issues with their templated subscription email in Power BI.\n\nMore info: Specifically, users may have observed that the subscription email template was altered due to a change rolled out altering the template format.\n\nCustomers may have seen additional revisions to this template in the future and it is recommended to update processes to be resilient to these changes.  We apologize for the disruption this change has caused. Future updates to this template will be communicated with notice so users can update their processes appropriately.\n\nFinal status: We've completed reverting the template to it's previous default state, and after a period of monitoring, we've confirmed impact was remediated.\n\nScope of impact: Users leveraging templated subscription emails in Power BI may have been impacted.\n\nStart time: Thursday, January 29, 2026, at 9:21 AM UTC\n\nEnd time: Monday, February 2, 2026, at 6:00 PM UTC\n\nRoot cause: A recent change altering the subscription email template for Power BI affected users' existing subscription email templates.\n\nNext steps: \n - To help prevent similar impact in the future, we're further reviewing our change release procedures to identify issues before being released.\n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-01-31T01:38:40.417Z",
+          "postType": "regular",
+          "content": "Title: Users may see issues with their templated subscription email in Power BI\n\nUser impact: Users may see issues with their templated subscription email in Power BI.\n\nMore info: Specifically, users may observe that the subscription email template has been altered due to a change rolled out altering the template format.\n\nCustomers may see additional revisions to this template in the future and it is recommended to update processes to be resilient to these changes.  We apologize for the disruption this change has caused. Future updates to this template will be communicated with notice so users can update their processes appropriately.\n\nCurrent status: We've determined that a recent change altering the subscription email template for Power BI affected users' existing subscription email templates. We're moving to roll back the template to the previous default and anticipate we'll have an estimated timeline for full remediation by our next scheduled update.\n\nScope of impact: Users leveraging templated subscription emails in Power BI may be impacted.\n\nStart time: Thursday, January 29, 2026, at 9:21 AM UTC\n\nRoot cause: A recent change altering the subscription email template for Power BI affected users' existing subscription email templates.\n\nNext update by: Tuesday, February 3, 2026, at 2:00 AM UTC"
+        }
+      ],
+      "serviceName": "Power BI",
+      "affectedServices": [
+        "Power BI"
+      ]
+    },
     {
       "id": "MO1224866",
       "title": "Some users may have been unable to export usage reports from the Microsoft 365 admin center",
