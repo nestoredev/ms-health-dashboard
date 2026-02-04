@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-04T18:18:20.108Z",
+  "lastUpdated": "2026-02-04T18:48:35.084Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -479,16 +479,21 @@
           "title": "Some users with edit and full control permissions may be unable to access or share some items in SharePoint Online",
           "startTime": "2025-10-13T18:50:00Z",
           "endTime": null,
-          "lastModified": "2026-01-21T19:01:08.153Z",
+          "lastModified": "2026-02-04T18:39:02.33Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users with edit and full control permissions may be unable to access or share some items in SharePoint Online.",
           "scopeOfImpact": "Some users with edit and full control permissions who are attempting to access or share some items in SharePoint Online that were deleted and recently restored from the recycle bin may be impacted. This information may be updated as our investigation continues.\n\nStart time: Monday, October 13, 2025, at 3:50 PM UTC",
           "rootCause": "A recent deployment contains a code regression that introduced a compatibility issue between code that's preventing items that have been deleted and recently restored from being accessible again.",
-          "nextUpdateBy": "Wednesday, February 4, 2026, at 8:00 PM UTC",
+          "nextUpdateBy": "Wednesday, February 18, 2026, at 8:00 PM UTC",
           "feature": "Save Site as Template",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-02-04T18:39:02.33Z",
+              "postType": "regular",
+              "content": "Title: Some users with edit and full control permissions may be unable to access or share some items in SharePoint Online\n\nUser impact: Users with edit and full control permissions may be unable to access or share some items in SharePoint Online.\n\nTitle: Some users with edit and full control permissions may be unable to access or share some items in SharePoint Online\n\nUser impact: Users with edit and full control permissions may be unable to access or share some items in SharePoint Online.\n\nMore info: Specifically, this issue impacts files, folders, and list items that were deleted and recently restored from the recycle bin. Impacted users attempting to access or share some folders experience failures in sharing and permission operations in SharePoint Online.\nAdditionally, processes that attempt to enumerate permissions on these items may see failures.\n\nSite administrators will still have complete access to the content that's been deleted and restored.\n\nWhile we work to implement our fix to fully resolve the impact, your organization may raise a support case to have the fix manually run to repair affected items.\n\nCurrent status: We've completed our tests within the infrastructure which received the automated repair process and confirmed this action remediates the impact. We're monitoring the deployment as it progresses to the remaining affected infrastructure, and our estimation for this process to complete remains late February 2026.\n\nScope of impact: Some users with edit and full control permissions who are attempting to access or share some items in SharePoint Online that were deleted and recently restored from the recycle bin may be impacted. This information may be updated as our investigation continues.\n\nStart time: Monday, October 13, 2025, at 3:50 PM UTC\n\nRoot cause: A recent deployment contains a code regression that introduced a compatibility issue between code that's preventing items that have been deleted and recently restored from being accessible again.\n\nNext update by: Wednesday, February 18, 2026, at 8:00 PM UTC"
+            },
             {
               "createdAt": "2026-01-21T19:01:08.153Z",
               "postType": "regular",
@@ -739,16 +744,21 @@
           "title": "Admins may be missing Microsoft 365 Usage Analytics reports in Power BI",
           "startTime": "2026-02-04T18:01:27Z",
           "endTime": null,
-          "lastModified": "2026-02-04T18:02:14.583Z",
-          "status": "investigating",
+          "lastModified": "2026-02-04T18:32:09.817Z",
+          "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may be missing Microsoft 365 Usage Analytics reports in Power BI.",
-          "scopeOfImpact": "",
-          "rootCause": "",
-          "nextUpdateBy": "",
+          "scopeOfImpact": "Any admin accessing Microsoft 365 Usage Analytics reports in Power BI may be affected.\n\nStart time: Thursday, January 1, 2026, at 12:00 AM UTC",
+          "rootCause": "A subset of Power BI logic doesn't have the expected date formatting required for the year 2026, resulting in impact",
+          "nextUpdateBy": "Friday, February 6, 2026, at 9:00 PM UTC",
           "feature": "PowerBI.com",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-02-04T18:32:09.817Z",
+              "postType": "regular",
+              "content": "Title: Admins may be missing Microsoft 365 Usage Analytics reports in Power BI\n\nUser impact: Admins may be missing Microsoft 365 Usage Analytics reports in Power BI.\n\nCurrent status: We've received reports from admins missing some Microsoft 365 Usage Analytics reports within Power BI. We've analyzed service telemetry in conjunction with HTTP Archive format (HAR) captures of the issue in progress and identified that a subset of Power BI logic doesn't have the expected date formatting required for the year 2026, resulting in impact. We're in the process of developing a fix to update and correct the formatting for 2026 and later to remediate this issue.\n\nScope of impact: Any admin accessing Microsoft 365 Usage Analytics reports in Power BI may be affected.\n\nStart time: Thursday, January 1, 2026, at 12:00 AM UTC\n\nRoot cause: A subset of Power BI logic doesn't have the expected date formatting required for the year 2026, resulting in impact\n\nNext update by: Friday, February 6, 2026, at 9:00 PM UTC"
+            },
             {
               "createdAt": "2026-02-04T18:02:14.583Z",
               "postType": "regular",
@@ -812,16 +822,21 @@
           "title": "Some users with edit and full control permissions may be unable to access or share some files in Microsoft OneDrive",
           "startTime": "2025-10-13T15:50:00Z",
           "endTime": null,
-          "lastModified": "2026-01-21T19:01:34.763Z",
+          "lastModified": "2026-02-04T18:37:04.21Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users with edit and full control permissions may be unable to access or share some files in OneDrive.",
-          "scopeOfImpact": "Some users with edit and full control permissions who are attempting to access or share some folders in OneDrive that were deleted and recently restored from the recycle bin may be impacted. This information may be updated as our investigation continues.\n\nStart time: Monday, October 13, 2025, at 3:50 PM UTC",
+          "scopeOfImpact": "Some users with edit and full control permissions who are attempting to access or share some folders in OneDrive that were deleted and recently restored from the recycle bin may be impacted. This information may be updated as our investigation continues.\n \nStart time: Monday, October 13, 2025, at 3:50 PM UTC",
           "rootCause": "A recent deployment contains a code regression that introduced a compatibility issue between code that's preventing items that have been deleted and recently restored from being accessible again.",
-          "nextUpdateBy": "Wednesday, February 4, 2026, at 8:00 PM UTC",
+          "nextUpdateBy": "Wednesday, February 18, 2026, at 8:00 PM UTC",
           "feature": "OneDrive for Business",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-02-04T18:37:04.21Z",
+              "postType": "regular",
+              "content": "Title: Some users with edit and full control permissions may be unable to access or share some files in Microsoft OneDrive\n\nUser impact: Users with edit and full control permissions may be unable to access or share some files in OneDrive.\n\nMore info: Specifically, this issue impacts files, folders, and list items that were deleted and recently restored from the recycle bin. Impacted users attempting to access or share some folders experience failures in sharing and permission operations in OneDrive.\n \nAdditionally, processes that attempt to enumerate permissions on these items may see failures.\n \nSite administrators will still have complete access to the content that's been deleted and restored.\n \nWhile we work to implement our fix to fully resolve the impact, your organization may raise a support case to have the fix manually run to repair affected items.\n \nCurrent status: We've completed our tests within the infrastructure which received the automated repair process and confirmed this action remediates the impact. We're monitoring the deployment as it progresses to the remaining affected infrastructure, and our estimation for this process to complete remains late February 2026.\n \nScope of impact: Some users with edit and full control permissions who are attempting to access or share some folders in OneDrive that were deleted and recently restored from the recycle bin may be impacted. This information may be updated as our investigation continues.\n \nStart time: Monday, October 13, 2025, at 3:50 PM UTC\n \nRoot cause: A recent deployment contains a code regression that introduced a compatibility issue between code that's preventing items that have been deleted and recently restored from being accessible again.\n \nNext update by: Wednesday, February 18, 2026, at 8:00 PM UTC"
+            },
             {
               "createdAt": "2026-01-21T19:01:34.763Z",
               "postType": "regular",
