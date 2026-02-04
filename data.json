@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-04T17:47:55.029Z",
+  "lastUpdated": "2026-02-04T18:18:20.108Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -734,6 +734,31 @@
       "status": "serviceDegradation",
       "id": "PowerBIcom",
       "issues": [
+        {
+          "id": "PB1226924",
+          "title": "Admins may be missing Microsoft 365 Usage Analytics reports in Power BI",
+          "startTime": "2026-02-04T18:01:27Z",
+          "endTime": null,
+          "lastModified": "2026-02-04T18:02:14.583Z",
+          "status": "investigating",
+          "severity": "advisory",
+          "userImpact": "Admins may be missing Microsoft 365 Usage Analytics reports in Power BI.",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
+          "feature": "PowerBI.com",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-02-04T18:02:14.583Z",
+              "postType": "regular",
+              "content": "Title: Admins may be missing Microsoft 365 Usage Analytics reports in Power BI\n\nUser impact: Admins may be missing Microsoft 365 Usage Analytics reports in Power BI.\n\nCurrent status: We're investigating a potential issue with Power BI reporting and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Power BI"
+          ]
+        },
         {
           "id": "PB1224494",
           "title": "Users may be unable to send subscription emails to external users in Power BI",
