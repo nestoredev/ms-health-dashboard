@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-04T02:28:47.779Z",
+  "lastUpdated": "2026-02-04T02:58:56.055Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1262,110 +1262,9 @@
     },
     {
       "service": "Microsoft Viva",
-      "status": "serviceDegradation",
+      "status": "serviceOperational",
       "id": "Viva",
-      "issues": [
-        {
-          "id": "MV1097445",
-          "title": "Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page",
-          "startTime": "2024-02-06T02:11:00Z",
-          "endTime": null,
-          "lastModified": "2026-01-21T01:58:17.27Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page.",
-          "scopeOfImpact": "Users attempting to use the “Promote to Viva Engage” feature through a SharePoint Page may encounter errors in their endeavor to do so.\n \nStart time: Thursday, February 6, 2025, at 2:11 PM UTC",
-          "rootCause": "A conflict between two SharePoint web parts which render on the same page is resulting in impact.",
-          "nextUpdateBy": "Wednesday, February 4, 2026, at 3:00 AM UTC",
-          "feature": "Post/Reply/Like",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-01-21T01:49:14.003Z",
-              "postType": "regular",
-              "content": "Title: Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page\n\nUser impact: Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page.\n\nMore info: The error may occur specifically when using the “Promote to Viva Engage” feature.\n\nTo circumvent impact while the fix is in progress, users can copy the SharePoint page URL and start the post directly within Viva Engage.\n \nCurrent status: During our process of initiating the deployment of the fix, we've identified an additional change to the code is needed in order to ensure it will successfully remediate impact without adversely impacting other aspects of the service. We've halted the deployment and are implementing the necessary change before proceeding with the deployment of the code fix. We expect the saturation will be complete, and the impact remediated by our next scheduled update.\n \nScope of impact: Users attempting to use the “Promote to Viva Engage” feature through a SharePoint Page may encounter errors in their endeavor to do so.\n \nStart time: Thursday, February 6, 2025, at 2:11 PM UTC\n \nRoot cause: A conflict between two SharePoint web parts which render on the same page is resulting in impact.\n \nNext update by: Wednesday, February 4, 2026, at 3:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-01-13T01:54:45.66Z",
-              "postType": "regular",
-              "content": "Title: Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page\n\nUser impact: Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page.\n\nMore info: The error may occur specifically when using the “Promote to Viva Engage” feature.\nTo circumvent impact while the fix is in progress, users can copy the SharePoint page URL and start the post directly within Viva Engage.\n \nCurrent status: We've tested and validated that our code solution has successfully resolved the issue in our testing environment. We're now progressing with a full deployment of the fix which we anticipate will complete by our next scheduled update.\n \nScope of impact: Users attempting to use the “Promote to Viva Engage” feature through a SharePoint Page may encounter errors in their endeavor to do so.\n \nStart time: Thursday, February 6, 2025, at 2:11 PM UTC\n \nRoot cause: A conflict between two SharePoint web parts which render on the same page is resulting in impact.\n \nNext update by: Wednesday, January 21, 2026, at 3:00 AM UTC"
-            },
-            {
-              "createdAt": "2025-12-24T00:06:20.33Z",
-              "postType": "regular",
-              "content": "Title: Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page\n\nUser impact: Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page.\n\nMore info: The error may occur specifically when using the “Promote to Viva Engage” feature.\nTo circumvent impact while the fix is in progress, users can copy the SharePoint page URL and start the post directly within Viva Engage.\n \nCurrent status: Due to the complexity of the fix, additional testing is required before we're ready to start deploying the code solution to address the conflict between the two SharePoint Online web parts. We now anticipate that the deployment will begin by our next scheduled communications update.\n \nScope of impact: Users attempting to use the “Promote to Viva Engage” feature through a SharePoint Page may encounter errors in their endeavor to do so.\n \nStart time: Thursday, February 6, 2025, at 2:11 PM UTC\n \nRoot cause: A conflict between two SharePoint web parts which render on the same page is resulting in impact.\n \nNext update by: Tuesday, January 13, 2026, at 3:00 AM UTC"
-            },
-            {
-              "createdAt": "2025-12-10T01:44:31.963Z",
-              "postType": "regular",
-              "content": "Title: Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page\n\nUser impact: Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page.\n\nMore info: The error may occur specifically when using the “Promote to Viva Engage” feature.\n \nTo circumvent impact while the fix is in progress, users can copy the SharePoint page URL and start the post directly within Viva Engage.\n \nCurrent status: Our development of the code solution that we anticipate will address the conflict between the two SharePoint web parts which render on the same page, is ongoing. We're in the initial evaluation and development stages and we expect that we'll begin deployment of the full fix by the end of December 2025.\n \nScope of impact: Users attempting to use the “Promote to Viva Engage” feature through a SharePoint Page may encounter errors in their endeavor to do so.\n \nStart time: Thursday, February 6, 2025, at 2:11 PM UTC\n \nRoot cause: A conflict between two SharePoint web parts which render on the same page is resulting in impact.\n \nNext update by: Wednesday, December 24, 2025, at 3:00 AM UTC"
-            },
-            {
-              "createdAt": "2025-11-26T02:32:31.093Z",
-              "postType": "regular",
-              "content": "Title: Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page\n\nUser impact: Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page.\n\nMore info: The error may occur specifically when using the “Promote to Viva Engage” feature.\n\nTo circumvent impact while the fix is in progress, users can copy the SharePoint page URL and start the post directly within Viva Engage.\n \nCurrent status: We're continuing our efforts to complete the fix for this issue and prepare it for deployment. We're still aiming to have the issue fully remediated by the end of December 2025.\n \nScope of impact: Users attempting to use the “Promote to Viva Engage” feature through a SharePoint Page may encounter errors in their endeavor to do so.\n \nStart time: Thursday, February 6, 2025, at 2:11 PM UTC\n \nRoot cause: A conflict between two SharePoint web parts which render on the same page is resulting in impact.\n \nNext update by: Wednesday, December 10, 2025, at 3:00 AM UTC"
-            },
-            {
-              "createdAt": "2025-11-11T01:57:44.643Z",
-              "postType": "regular",
-              "content": "Title: Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page\n\nUser impact: Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page.\n\nMore info: The error may occur specifically when using the “Promote to Viva Engage” feature.\nTo circumvent impact while the fix is in progress, users can copy the SharePoint page URL and start the post directly within Viva Engage.\n\nCurrent status: Work on the fix is continuing though progress is slow due to the complexity of the issue. We anticipate that deployment of the fix will start in December 2025 and complete by the end of the calendar year. We'll provide updates on the timeline and ETA as they become available.\n\nScope of impact: Users attempting to use the “Promote to Viva Engage” feature through a SharePoint Page may encounter errors in their endeavor to do so.\n\nStart time: Thursday, February 6, 2025, at 2:11 PM UTC\n\nRoot cause: A conflict between two SharePoint web parts which render on the same page is resulting in impact.\n\nNext update by: Wednesday, November 26, 2025, at 3:00 AM UTC"
-            },
-            {
-              "createdAt": "2025-10-29T01:01:53.7Z",
-              "postType": "regular",
-              "content": "Title: Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page\n\nUser impact: Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page.\n\nMore info: The error may occur specifically when using the “Promote to Viva Engage” feature.\nTo circumvent impact while the fix is in progress, users can copy the SharePoint page URL and start the post directly within Viva Engage.\n \nCurrent status: The development of the fix is ongoing, and due to the complexity of the issue, we're still anticipating deployment will start in December 2025. We'll provided an updated timeline and ETA once one becomes available.\n \nScope of impact: Users attempting to use the “Promote to Viva Engage” feature through a SharePoint Page may encounter errors in their endeavor to do so.\n \nStart time: Thursday, February 6, 2025, at 2:11 PM UTC\n \nRoot cause: A conflict between two SharePoint web parts which render on the same page is resulting in impact.\n \nNext update by: Wednesday, November 12, 2025, at 3:00 AM UTC"
-            },
-            {
-              "createdAt": "2025-10-15T00:20:21.077Z",
-              "postType": "regular",
-              "content": "Title: Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page\n\nUser impact: Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page.\n\nMore info: The error may occur specifically when using the “Promote to Viva Engage” feature.\n \nTo circumvent impact while the fix is in progress, users can copy the SharePoint page URL and start the post directly within Viva Engage.\n\nCurrent status: We're continuing our efforts to develop the fix and still anticipate the fix, and a deployment timeline will be provided by the end of December 2025. \n\nScope of impact: Users attempting to use the “Promote to Viva Engage” feature through a SharePoint Page may encounter errors in their endeavor to do so.\n\nStart time: Thursday, February 6, 2025, at 2:11 PM UTC\n\nRoot cause: A conflict between two SharePoint web parts which render on the same page is resulting in impact.\n\nNext update by: Wednesday, October 29, 2025, at 2:00 AM UTC"
-            },
-            {
-              "createdAt": "2025-10-01T00:40:02.98Z",
-              "postType": "regular",
-              "content": "Title: Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page\n\nUser impact: Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page.\n\nMore info: The error may occur specifically when using the “Promote to Viva Engage” feature.\n\nTo circumvent impact while the fix is in progress, users can copy the SharePoint page URL and start the post directly within Viva Engage.\n\nCurrent status: The development of the fix is taking longer than previously anticipated. We now anticipate that the fix will be completed, and a deployment timeline will be provided by the end of December 2025.\n\nScope of impact: Users attempting to use the “Promote to Viva Engage” feature through a SharePoint Page may encounter errors in their endeavor to do so.\n\nStart time: Thursday, February 6, 2025, at 2:11 PM UTC\n\nRoot cause: A conflict between two SharePoint web parts which render on the same page is resulting in impact.\n\nNext update by: Wednesday, October 15, 2025, at 2:00 AM UTC"
-            },
-            {
-              "createdAt": "2025-09-17T01:27:28.1Z",
-              "postType": "regular",
-              "content": "Title: Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page\n\nUser impact: Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page.\n\nMore info: The error may occur specifically when using the “Promote to Viva Engage” feature.\n\nTo circumvent impact while the fix is in progress, users can copy the SharePoint page URL and start the post directly within Viva Engage.\n\nCurrent status: The development of the fix is nearly completed. Once development is complete, which we anticipate will be in October 2025, we'll aim to provide a deployment timeline.\n\nScope of impact: Users attempting to use the “Promote to Viva Engage” feature through a SharePoint Page may encounter errors in their endeavor to do so.\n\nStart time: Thursday, February 6, 2025, at 2:11 PM UTC\n\nRoot cause: A conflict between two SharePoint web parts which render on the same page is resulting in impact.\n\nNext update by: Wednesday, October 1, 2025, at 2:00 AM UTC"
-            },
-            {
-              "createdAt": "2025-09-03T00:38:12.43Z",
-              "postType": "regular",
-              "content": "Title: Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page\n\nUser impact: Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page.\n\nMore info: The error may occur specifically when using the “Promote to Viva Engage” feature.\n\nTo circumvent impact while the fix is in progress, users can copy the SharePoint page URL and start the post directly within Viva Engage.\n\nCurrent status: We're continuing to progress in our development of the fix. Once development is complete, which we anticipate will be in October 2025, we'll aim to provide a deployment timeline.\n\nScope of impact: Users attempting to use the “Promote to Viva Engage” feature through a SharePoint Page may encounter errors in their endeavor to do so.\n\nStart time: Thursday, February 6, 2025, at 2:11 PM UTC\n\nRoot cause: A conflict between two SharePoint web parts which render on the same page is resulting in impact.\n\nNext update by: Wednesday, September 17, 2025, at 2:00 AM UTC"
-            },
-            {
-              "createdAt": "2025-08-13T01:05:16.493Z",
-              "postType": "regular",
-              "content": "Title: Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page\n\nUser impact: Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page.\n\nMore info: The error may occur specifically when using the “Promote to Viva Engage” feature.\n\nTo circumvent impact while the fix is in progress, users can copy the SharePoint page URL and start the post directly within Viva Engage.\n\nCurrent status: We're continuing to prepare the fix, which we still anticipate will be ready for deployment by early October 2025.\n\nScope of impact: Users attempting to use the “Promote to Viva Engage” feature through a SharePoint Page may encounter errors in their endeavor to do so.\n\nStart time: Thursday, February 6, 2025, at 2:11 PM UTC\n\nRoot cause: A conflict between two SharePoint web parts which render on the same page is resulting in impact.\n\nNext update by: Wednesday, September 3, 2025, at 2:00 AM UTC"
-            },
-            {
-              "createdAt": "2025-07-30T00:26:29.74Z",
-              "postType": "regular",
-              "content": "Title: Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page\n\nUser impact: Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page.\n\nMore info: The error may occur specifically when using the “Promote to Viva Engage” feature.\n\nTo circumvent impact while the fix is in progress, users can copy the SharePoint page URL and start the post directly within Viva Engage.\n\nCurrent status: The preparation of the fix deployment is ongoing. We're still projecting that the full release of the fix will complete around early October 2025.\n\nScope of impact: Users attempting to use the “Promote to Viva Engage” feature through a SharePoint Page may encounter errors in their endeavor to do so.\n\nStart time: Thursday, February 6, 2025, at 2:11 PM UTC\n\nRoot cause: A conflict between two SharePoint web parts which render on the same page is resulting in impact.\n\nNext update by: Wednesday, August 13, 2025, at 2:00 AM UTC"
-            },
-            {
-              "createdAt": "2025-07-16T00:24:52.3Z",
-              "postType": "regular",
-              "content": "Title: Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page\n\nUser impact: Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page.\n\nMore info: The error may occur specifically when using the “Promote to Viva Engage” feature.\n\nTo circumvent impact while the fix is in progress, users can copy the SharePoint page URL and start the post directly within Viva Engage.\n\nCurrent status: We're continuing to prepare our fix for deployment. We're currently projecting its full release may complete around early October 2025.\n\nScope of impact: Users attempting to use the “Promote to Viva Engage” feature through a SharePoint Page may encounter errors in their endeavor to do so.\n\nStart time: Thursday, February 6, 2025, at 2:11 PM UTC\n\nRoot cause: A conflict between two SharePoint web parts which render on the same page is resulting in impact.\n\nNext update by: Wednesday, July 30, 2025, at 2:00 AM UTC"
-            },
-            {
-              "createdAt": "2025-07-02T00:30:42.54Z",
-              "postType": "regular",
-              "content": "Title: Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page\n\nUser impact: Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page.\n\nMore info: The error may occur specifically when using the “Promote to Viva Engage” feature.\n\nTo circumvent impact while the fix is in progress, users can copy the SharePoint page URL and start the post directly within Viva Engage.\n\nCurrent status: We're continuing our efforts to develop a code fix for the conflicting SharePoint web parts. We anticipate that the fix and subsequent deployment will take an extended time to complete. We'll provide updates on the status as they become available.\n\nScope of impact: Users attempting to use the “Promote to Viva Engage” feature through a SharePoint Page may encounter errors in their endeavor to do so.\n\nRoot cause: A conflict resulting from two SharePoint web parts which render on the same page, is resulting in impact.\n\nNext update by: Wednesday, July 16, 2025, at 2:00 AM UTC"
-            },
-            {
-              "createdAt": "2025-06-18T02:53:13.397Z",
-              "postType": "regular",
-              "content": "Title: Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page\n\nUser impact: Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page.   \n\nMore info: The error may occur specifically when using the “Promote to Viva Engage” feature.\n\nTo circumvent impact while the fix is in progress, users can copy the SharePoint page URL and start the post directly within Viva Engage.\n\nCurrent status: We've identified an issue where users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page, and we've determined this issue stems from a conflict between two SharePoint web parts which render on the same page. Due to the complexity of their interaction, a code-level resolution is required to ensure that impact is fully alleviated. We're working to develop this solution and will provide updates as its development progresses.\n\nScope of impact: Users attempting to use the “Promote to Viva Engage” feature through a SharePoint Page may encounter errors in their endeavor to do so.\n\nRoot cause: A conflict resulting from two SharePoint web parts which render on the same page, is resulting in impact.\n\nNext update by: Wednesday, July 2, 2025, at 2:00 AM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Microsoft Viva"
-          ]
-        }
-      ]
+      "issues": []
     },
     {
       "service": "Microsoft Dataverse",
@@ -1514,6 +1413,52 @@
       "serviceName": "Exchange Online",
       "affectedServices": [
         "Exchange Online"
+      ]
+    },
+    {
+      "id": "MV1097445",
+      "title": "Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page",
+      "startTime": "2024-02-06T02:11:00Z",
+      "endTime": "2026-02-03T07:00:00Z",
+      "lastModified": "2026-02-04T02:51:30.347Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have encountered errors when creating a post in Microsoft Viva Engage directly from a SharePoint page.",
+      "scopeOfImpact": "Users attempting to use the “Promote to Viva Engage” feature through a SharePoint Page may have encountered errors in their endeavor to do so.\n \nStart time: Thursday, February 6, 2025, at 2:11 PM UTC\n \nEnd time: Tuesday, February 3, 2026, at 7:00 AM UTC",
+      "rootCause": "A conflict between two SharePoint web parts which render on the same page was resulting in impact.\n \nNext steps: \n- We're working to make additional changes to our service to provide additional support and harden our infrastructure to help prevent similar issues from occurring again in the future.\n \nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Post/Reply/Like",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-02-04T02:51:30.347Z",
+          "postType": "regular",
+          "content": "Title: Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page\n\nUser impact: Users may have encountered errors when creating a post in Microsoft Viva Engage directly from a SharePoint page.\n\nMore info: The error may have occurred specifically when using the “Promote to Viva Engage” feature.\n \nTo circumvent impact while the fix was in progress, users could have copied the SharePoint page URL and started the post directly within Viva Engage.\n \nFinal status: We've completed the additional changes and proceeded with the deployment of the code fix. After allowing time for the deployment to complete and for the fix to fully saturate, we've confirmed that impact has now been resolved.\n \nScope of impact: Users attempting to use the “Promote to Viva Engage” feature through a SharePoint Page may have encountered errors in their endeavor to do so.\n \nStart time: Thursday, February 6, 2025, at 2:11 PM UTC\n \nEnd time: Tuesday, February 3, 2026, at 7:00 AM UTC\n \nRoot cause: A conflict between two SharePoint web parts which render on the same page was resulting in impact.\n \nNext steps: \n- We're working to make additional changes to our service to provide additional support and harden our infrastructure to help prevent similar issues from occurring again in the future.\n \nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-01-21T01:49:14.003Z",
+          "postType": "regular",
+          "content": "Title: Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page\n\nUser impact: Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page.\n\nMore info: The error may occur specifically when using the “Promote to Viva Engage” feature.\n\nTo circumvent impact while the fix is in progress, users can copy the SharePoint page URL and start the post directly within Viva Engage.\n \nCurrent status: During our process of initiating the deployment of the fix, we've identified an additional change to the code is needed in order to ensure it will successfully remediate impact without adversely impacting other aspects of the service. We've halted the deployment and are implementing the necessary change before proceeding with the deployment of the code fix. We expect the saturation will be complete, and the impact remediated by our next scheduled update.\n \nScope of impact: Users attempting to use the “Promote to Viva Engage” feature through a SharePoint Page may encounter errors in their endeavor to do so.\n \nStart time: Thursday, February 6, 2025, at 2:11 PM UTC\n \nRoot cause: A conflict between two SharePoint web parts which render on the same page is resulting in impact.\n \nNext update by: Wednesday, February 4, 2026, at 3:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-01-13T01:54:45.66Z",
+          "postType": "regular",
+          "content": "Title: Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page\n\nUser impact: Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page.\n\nMore info: The error may occur specifically when using the “Promote to Viva Engage” feature.\nTo circumvent impact while the fix is in progress, users can copy the SharePoint page URL and start the post directly within Viva Engage.\n \nCurrent status: We've tested and validated that our code solution has successfully resolved the issue in our testing environment. We're now progressing with a full deployment of the fix which we anticipate will complete by our next scheduled update.\n \nScope of impact: Users attempting to use the “Promote to Viva Engage” feature through a SharePoint Page may encounter errors in their endeavor to do so.\n \nStart time: Thursday, February 6, 2025, at 2:11 PM UTC\n \nRoot cause: A conflict between two SharePoint web parts which render on the same page is resulting in impact.\n \nNext update by: Wednesday, January 21, 2026, at 3:00 AM UTC"
+        },
+        {
+          "createdAt": "2025-12-24T00:06:20.33Z",
+          "postType": "regular",
+          "content": "Title: Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page\n\nUser impact: Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page.\n\nMore info: The error may occur specifically when using the “Promote to Viva Engage” feature.\nTo circumvent impact while the fix is in progress, users can copy the SharePoint page URL and start the post directly within Viva Engage.\n \nCurrent status: Due to the complexity of the fix, additional testing is required before we're ready to start deploying the code solution to address the conflict between the two SharePoint Online web parts. We now anticipate that the deployment will begin by our next scheduled communications update.\n \nScope of impact: Users attempting to use the “Promote to Viva Engage” feature through a SharePoint Page may encounter errors in their endeavor to do so.\n \nStart time: Thursday, February 6, 2025, at 2:11 PM UTC\n \nRoot cause: A conflict between two SharePoint web parts which render on the same page is resulting in impact.\n \nNext update by: Tuesday, January 13, 2026, at 3:00 AM UTC"
+        },
+        {
+          "createdAt": "2025-12-10T01:44:31.963Z",
+          "postType": "regular",
+          "content": "Title: Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page\n\nUser impact: Users may encounter errors when attempting to create a post in Microsoft Viva Engage directly from a SharePoint page.\n\nMore info: The error may occur specifically when using the “Promote to Viva Engage” feature.\n \nTo circumvent impact while the fix is in progress, users can copy the SharePoint page URL and start the post directly within Viva Engage.\n \nCurrent status: Our development of the code solution that we anticipate will address the conflict between the two SharePoint web parts which render on the same page, is ongoing. We're in the initial evaluation and development stages and we expect that we'll begin deployment of the full fix by the end of December 2025.\n \nScope of impact: Users attempting to use the “Promote to Viva Engage” feature through a SharePoint Page may encounter errors in their endeavor to do so.\n \nStart time: Thursday, February 6, 2025, at 2:11 PM UTC\n \nRoot cause: A conflict between two SharePoint web parts which render on the same page is resulting in impact.\n \nNext update by: Wednesday, December 24, 2025, at 3:00 AM UTC"
+        }
+      ],
+      "serviceName": "Microsoft Viva",
+      "affectedServices": [
+        "Microsoft Viva"
       ]
     },
     {
