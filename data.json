@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-05T05:24:45.695Z",
+  "lastUpdated": "2026-02-05T05:54:53.044Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -2557,42 +2557,6 @@
       "serviceName": "SharePoint Online",
       "affectedServices": [
         "SharePoint Online"
-      ]
-    },
-    {
-      "id": "EX1213757",
-      "title": "Users may see an English user interface for Outlook on the web on mobile when configured for a non-English language",
-      "startTime": "2025-12-23T00:00:00Z",
-      "endTime": "2026-01-06T05:32:00Z",
-      "lastModified": "2026-01-06T06:02:40.68Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users may have seen an English user interface for Outlook on the web on mobile when configured for non-English language.",
-      "scopeOfImpact": "Users accessing Outlook on the web through mobile devices with their user interface language set to non-English languages may have been impacted.\n\nStart time: Tuesday, December 23, 2025, at 12:00 AM UTC\n\nEnd time: Tuesday, January 6, 2026, at 5:32 AM UTC",
-      "rootCause": "A recent service update contained misconfigured localization data, resulting in impact.\n\nNext steps: \n - We're reviewing our update testing and validation methods to better identify issues such as this prior to deployment so we can prevent similar impact in the future.\n\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "OWA - poor customer experience",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-01-06T06:02:40.68Z",
-          "postType": "regular",
-          "content": "Title: Users may see an English user interface for Outlook on the web on mobile when configured for a non-English language\n\nUser impact: Users may have seen an English user interface for Outlook on the web on mobile when configured for non-English language.\n\nMore info: Impacted users would see an English user interface for Outlook on the web when accessing the service through mobile devices on both Android and iOS, even when the user interface configuration was set to alternate languages.\n\nFinal status: We've identified that a recent service update contained misconfigured localization data, resulting in impact. We've rolled back the problematic changes throughout the affected environment and confirmed through internal testing that impact is remediated.\n\nScope of impact: Users accessing Outlook on the web through mobile devices with their user interface language set to non-English languages may have been impacted.\n\nStart time: Tuesday, December 23, 2025, at 12:00 AM UTC\n\nEnd time: Tuesday, January 6, 2026, at 5:32 AM UTC\n\nRoot cause: A recent service update contained misconfigured localization data, resulting in impact.\n\nNext steps: \n - We're reviewing our update testing and validation methods to better identify issues such as this prior to deployment so we can prevent similar impact in the future.\n\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-01-06T04:55:52.087Z",
-          "postType": "regular",
-          "content": "Title: Users may see an English user interface for Outlook on the web on mobile when configured for a non-English language\n\nUser impact: Users may see an English user interface for Outlook on the web on mobile when configured for a non-English language.\n\nMore info: Impacted users report seeing an English user interface for Outlook on the web when accessing the service through mobile devices on both Android and iOS, even when the user interface configuration is set to Japanese.\n \nCurrent status: We're reviewing contextual details provided by affected users together with data collected from an internal reproduction of the issue to gain insight into the underlying source of impact and determine our next steps. \n \nScope of impact: Users accessing Outlook on the web through mobile devices with their user interface language set to non-English languages may be impacted. This information may be updated as our investigation continues. \n \nNext update by: Tuesday, January 6, 2026, at 6:30 AM UTC"
-        },
-        {
-          "createdAt": "2026-01-06T04:36:26.543Z",
-          "postType": "regular",
-          "content": "Title: Users may see an English user interface for Outlook on the web on mobile when configured for a non-English language\n\nUser impact: Users may see an English user interface for Outlook on the web on mobile when configured for a non-English language.\n\nMore info: Impacted users would see an English user interface for Outlook on the web when accessing the service through mobile devices on both Android and iOS, even when the user interface configuration was set to alternate languages.\n\nCurrent status: We're investigating a potential issue with Exchange Online and checking for impact to your organization. We'll provide an update within 30 minutes."
-        }
-      ],
-      "serviceName": "Exchange Online",
-      "affectedServices": [
-        "Exchange Online"
       ]
     }
   ]
