@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-05T20:58:11.818Z",
+  "lastUpdated": "2026-02-05T21:28:16.803Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1330,16 +1330,21 @@
           "title": "Users aren't shown the \"Edit in Outlook\" button after prompting Copilot Chat to draft an email message",
           "startTime": "2026-01-15T18:55:08Z",
           "endTime": null,
-          "lastModified": "2026-02-03T21:14:35.533Z",
+          "lastModified": "2026-02-05T21:23:06.807Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users aren't shown the \"Edit in Outlook\" button after prompting Copilot Chat to draft an email message.",
           "scopeOfImpact": "Any user prompting Copilot Chat to draft an email message may be impacted.\n\nStart time: Friday, December 19, 2025, at 6:00 PM UTC",
           "rootCause": "We've disabled the \"Edit in Outlook\" feature in Copilot Chat while we implement a fix for a separate service issue relating to the feature, causing impact.",
-          "nextUpdateBy": "Thursday, February 5, 2026, at 11:00 PM UTC",
+          "nextUpdateBy": "Thursday, February 12, 2026, at 11:00 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-02-05T21:23:06.807Z",
+              "postType": "regular",
+              "content": "Title: Users aren't shown the \"Edit in Outlook\" button after prompting Copilot Chat to draft an email message\n\nUser impact: Users aren't shown the \"Edit in Outlook\" button after prompting Copilot Chat to draft an email message.\n\nMore info: When users prompt Copilot Chat to draft an email message, the button to \"Edit in Outlook\" may not appear as expected.\n\nCurrent status: After re-enabling the feature for 50 percent of the affected environment and then pausing the rollout, the current metrics we've reviewed are not substantial enough to confirm whether to proceed with re-enabling for the remaining 50 percent. We're continuing to monitor metrics until our next scheduled communication update to gather more insight and determine when to proceed with further enabling.\n\nScope of impact: Any user prompting Copilot Chat to draft an email message may be impacted.\n\nStart time: Friday, December 19, 2025, at 6:00 PM UTC\n\nRoot cause: We've disabled the \"Edit in Outlook\" feature in Copilot Chat while we implement a fix for a separate service issue relating to the feature, causing impact.\n\nNext update by: Thursday, February 12, 2026, at 11:00 PM UTC"
+            },
             {
               "createdAt": "2026-02-03T21:14:35.533Z",
               "postType": "regular",
