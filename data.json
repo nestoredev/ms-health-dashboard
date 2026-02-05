@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-05T19:57:58.825Z",
+  "lastUpdated": "2026-02-05T20:28:04.386Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -769,16 +769,21 @@
           "title": "Admins may be missing Microsoft 365 Usage Analytics reports in Power BI",
           "startTime": "2026-02-04T18:01:27Z",
           "endTime": null,
-          "lastModified": "2026-02-04T18:55:46.907Z",
+          "lastModified": "2026-02-05T19:59:41.563Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may be missing Microsoft 365 Usage Analytics reports in Power BI.",
-          "scopeOfImpact": "Any admin accessing Microsoft 365 Usage Analytics reports in Power BI may be affected.\n\nStart time: Thursday, January 1, 2026, at 12:00 AM UTC",
+          "scopeOfImpact": "Any admin accessing Microsoft 365 Usage Analytics reports in Power BI may be affected.\n \nStart time: Thursday, January 1, 2026, at 12:00 AM UTC",
           "rootCause": "A subset of Power BI logic doesn't have the expected date formatting required for the year 2026, resulting in impact.",
-          "nextUpdateBy": "Thursday, February 5, 2026, at 9:00 PM UTC",
+          "nextUpdateBy": "Monday, February 9, 2026, at 9:00 PM UTC",
           "feature": "PowerBI.com",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-02-05T19:59:41.563Z",
+              "postType": "regular",
+              "content": "Title: Admins may be missing Microsoft 365 Usage Analytics reports in Power BI\n\nUser impact: Admins may be missing Microsoft 365 Usage Analytics reports in Power BI.\n\nCurrent status: We’re continuing our work to develop a fix that updates and corrects the date formatting for 2026 and later to remediate this issue. We’ll provide a resolution timeline once it’s available.\n \nScope of impact: Any admin accessing Microsoft 365 Usage Analytics reports in Power BI may be affected.\n \nStart time: Thursday, January 1, 2026, at 12:00 AM UTC\n \nRoot cause: A subset of Power BI logic doesn't have the expected date formatting required for the year 2026, resulting in impact.\n \nNext update by: Monday, February 9, 2026, at 9:00 PM UTC"
+            },
             {
               "createdAt": "2026-02-04T18:32:09.817Z",
               "postType": "regular",
