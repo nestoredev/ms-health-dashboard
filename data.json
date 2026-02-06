@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-06T06:30:13.446Z",
+  "lastUpdated": "2026-02-06T07:00:21.567Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -191,16 +191,21 @@
           "title": "Some admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services",
           "startTime": "2025-10-07T08:27:00Z",
           "endTime": null,
-          "lastModified": "2026-01-30T06:38:33.2Z",
+          "lastModified": "2026-02-06T06:29:22.2Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services.",
           "scopeOfImpact": "Admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\" may be impacted. This section may be updated as our investigation continues.\n\nStart time: Tuesday, October 7, 2025, at 8:27 AM UTC",
           "rootCause": "A recent service operation intended to upgrade our API flow impacted Microsoft 365 Groups that were previously configured to have the \"SecurityEnabled\" setting enabled, switching this value back to \"False\" by default and resulting in impact to admins and users whose service access was being managed by the affected groups.",
-          "nextUpdateBy": "Friday, February 6, 2026, at 8:00 AM UTC",
+          "nextUpdateBy": "Friday, February 6, 2026, at 12:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-02-06T06:29:22.2Z",
+              "postType": "regular",
+              "content": "Title: Some admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services\n\nUser impact: Admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services.\n\nMore info: This issue specifically affects admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\".\n\nWhile we finalize the deployment of our fix to restore the appropriate configuration for the impacted Microsoft 365 Groups, affected admins can follow the steps below to manually restore the SecurityEnabled property configuration and resolve the impact:\n\n1. Connect to Exchange Online PowerShell with “Connect-ExchangeOnline”, then run the following command to retrieve audit logs specific to this scenario:\n$AuditLog = Search-UnifiedAuditLog -Operations \"Update group\" -StartDate (Get-Date).AddDays(-30) -EndDate (Get-Date) -ResultSize 5000.\n\n2. Filter logs matching the issue to gather affected group info by running the following two commands:\n\n$GroupID = $AuditLog | % {ConvertFrom-Json $_.AuditData} | ? {($_.Actor -match \"Group Configuration Processor\") -and ($_.ModifiedProperties -match \"SecurityEnabled\")} | % {$_.ObjectId -replace \"^.*Group_\", \"\"}\n \n$GroupID | Get-UnifiedGroup -ResultSize Unlimited\n \n3. Connect to Microsoft Graph PowerShell with Connect-MgGraph -Scope \"Group.ReadWrite.All\" and then run the following command to restore the SecurityEnabled property for the affected groups to True, which should remediate the impact:\n \n$GroupID | % {Update-MgGroup -GroupId $_ -BodyParameter @{SecurityEnabled = $true}}\n\nFor further information on how to run Microsoft Graph PowerShell commands and cmdlets or guidance on connecting to Exchange Online through PowerShell, please reference the following documentation:\n\nhttps://learn.microsoft.com/en-us/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps\n\nhttps://learn.microsoft.com/en-us/powershell/microsoftgraph/authentication-commands?view=graph-powershell-1.0\n\nCurrent status: We’re continuing our analysis of the aforementioned timeout issues so we can efficiently resume the deployment on the remaining impacted groups.\n\nScope of impact: Admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\" may be impacted. This section may be updated as our investigation continues.\n\nStart time: Tuesday, October 7, 2025, at 8:27 AM UTC\n\nRoot cause: A recent service operation intended to upgrade our API flow impacted Microsoft 365 Groups that were previously configured to have the \"SecurityEnabled\" setting enabled, switching this value back to \"False\" by default and resulting in impact to admins and users whose service access was being managed by the affected groups.\n\nNext update by: Friday, February 6, 2026, at 12:30 PM UTC"
+            },
             {
               "createdAt": "2026-01-30T06:38:33.2Z",
               "postType": "regular",
@@ -338,16 +343,21 @@
           "title": "Some admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services",
           "startTime": "2025-10-07T08:27:00Z",
           "endTime": null,
-          "lastModified": "2026-01-30T06:38:33.2Z",
+          "lastModified": "2026-02-06T06:29:22.2Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services.",
           "scopeOfImpact": "Admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\" may be impacted. This section may be updated as our investigation continues.\n\nStart time: Tuesday, October 7, 2025, at 8:27 AM UTC",
           "rootCause": "A recent service operation intended to upgrade our API flow impacted Microsoft 365 Groups that were previously configured to have the \"SecurityEnabled\" setting enabled, switching this value back to \"False\" by default and resulting in impact to admins and users whose service access was being managed by the affected groups.",
-          "nextUpdateBy": "Friday, February 6, 2026, at 8:00 AM UTC",
+          "nextUpdateBy": "Friday, February 6, 2026, at 12:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-02-06T06:29:22.2Z",
+              "postType": "regular",
+              "content": "Title: Some admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services\n\nUser impact: Admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services.\n\nMore info: This issue specifically affects admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\".\n\nWhile we finalize the deployment of our fix to restore the appropriate configuration for the impacted Microsoft 365 Groups, affected admins can follow the steps below to manually restore the SecurityEnabled property configuration and resolve the impact:\n\n1. Connect to Exchange Online PowerShell with “Connect-ExchangeOnline”, then run the following command to retrieve audit logs specific to this scenario:\n$AuditLog = Search-UnifiedAuditLog -Operations \"Update group\" -StartDate (Get-Date).AddDays(-30) -EndDate (Get-Date) -ResultSize 5000.\n\n2. Filter logs matching the issue to gather affected group info by running the following two commands:\n\n$GroupID = $AuditLog | % {ConvertFrom-Json $_.AuditData} | ? {($_.Actor -match \"Group Configuration Processor\") -and ($_.ModifiedProperties -match \"SecurityEnabled\")} | % {$_.ObjectId -replace \"^.*Group_\", \"\"}\n \n$GroupID | Get-UnifiedGroup -ResultSize Unlimited\n \n3. Connect to Microsoft Graph PowerShell with Connect-MgGraph -Scope \"Group.ReadWrite.All\" and then run the following command to restore the SecurityEnabled property for the affected groups to True, which should remediate the impact:\n \n$GroupID | % {Update-MgGroup -GroupId $_ -BodyParameter @{SecurityEnabled = $true}}\n\nFor further information on how to run Microsoft Graph PowerShell commands and cmdlets or guidance on connecting to Exchange Online through PowerShell, please reference the following documentation:\n\nhttps://learn.microsoft.com/en-us/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps\n\nhttps://learn.microsoft.com/en-us/powershell/microsoftgraph/authentication-commands?view=graph-powershell-1.0\n\nCurrent status: We’re continuing our analysis of the aforementioned timeout issues so we can efficiently resume the deployment on the remaining impacted groups.\n\nScope of impact: Admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\" may be impacted. This section may be updated as our investigation continues.\n\nStart time: Tuesday, October 7, 2025, at 8:27 AM UTC\n\nRoot cause: A recent service operation intended to upgrade our API flow impacted Microsoft 365 Groups that were previously configured to have the \"SecurityEnabled\" setting enabled, switching this value back to \"False\" by default and resulting in impact to admins and users whose service access was being managed by the affected groups.\n\nNext update by: Friday, February 6, 2026, at 12:30 PM UTC"
+            },
             {
               "createdAt": "2026-01-30T06:38:33.2Z",
               "postType": "regular",
@@ -579,16 +589,21 @@
           "title": "Some admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services",
           "startTime": "2025-10-07T08:27:00Z",
           "endTime": null,
-          "lastModified": "2026-01-30T06:38:33.2Z",
+          "lastModified": "2026-02-06T06:29:22.2Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services.",
           "scopeOfImpact": "Admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\" may be impacted. This section may be updated as our investigation continues.\n\nStart time: Tuesday, October 7, 2025, at 8:27 AM UTC",
           "rootCause": "A recent service operation intended to upgrade our API flow impacted Microsoft 365 Groups that were previously configured to have the \"SecurityEnabled\" setting enabled, switching this value back to \"False\" by default and resulting in impact to admins and users whose service access was being managed by the affected groups.",
-          "nextUpdateBy": "Friday, February 6, 2026, at 8:00 AM UTC",
+          "nextUpdateBy": "Friday, February 6, 2026, at 12:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-02-06T06:29:22.2Z",
+              "postType": "regular",
+              "content": "Title: Some admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services\n\nUser impact: Admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services.\n\nMore info: This issue specifically affects admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\".\n\nWhile we finalize the deployment of our fix to restore the appropriate configuration for the impacted Microsoft 365 Groups, affected admins can follow the steps below to manually restore the SecurityEnabled property configuration and resolve the impact:\n\n1. Connect to Exchange Online PowerShell with “Connect-ExchangeOnline”, then run the following command to retrieve audit logs specific to this scenario:\n$AuditLog = Search-UnifiedAuditLog -Operations \"Update group\" -StartDate (Get-Date).AddDays(-30) -EndDate (Get-Date) -ResultSize 5000.\n\n2. Filter logs matching the issue to gather affected group info by running the following two commands:\n\n$GroupID = $AuditLog | % {ConvertFrom-Json $_.AuditData} | ? {($_.Actor -match \"Group Configuration Processor\") -and ($_.ModifiedProperties -match \"SecurityEnabled\")} | % {$_.ObjectId -replace \"^.*Group_\", \"\"}\n \n$GroupID | Get-UnifiedGroup -ResultSize Unlimited\n \n3. Connect to Microsoft Graph PowerShell with Connect-MgGraph -Scope \"Group.ReadWrite.All\" and then run the following command to restore the SecurityEnabled property for the affected groups to True, which should remediate the impact:\n \n$GroupID | % {Update-MgGroup -GroupId $_ -BodyParameter @{SecurityEnabled = $true}}\n\nFor further information on how to run Microsoft Graph PowerShell commands and cmdlets or guidance on connecting to Exchange Online through PowerShell, please reference the following documentation:\n\nhttps://learn.microsoft.com/en-us/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps\n\nhttps://learn.microsoft.com/en-us/powershell/microsoftgraph/authentication-commands?view=graph-powershell-1.0\n\nCurrent status: We’re continuing our analysis of the aforementioned timeout issues so we can efficiently resume the deployment on the remaining impacted groups.\n\nScope of impact: Admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\" may be impacted. This section may be updated as our investigation continues.\n\nStart time: Tuesday, October 7, 2025, at 8:27 AM UTC\n\nRoot cause: A recent service operation intended to upgrade our API flow impacted Microsoft 365 Groups that were previously configured to have the \"SecurityEnabled\" setting enabled, switching this value back to \"False\" by default and resulting in impact to admins and users whose service access was being managed by the affected groups.\n\nNext update by: Friday, February 6, 2026, at 12:30 PM UTC"
+            },
             {
               "createdAt": "2026-01-30T06:38:33.2Z",
               "postType": "regular",
@@ -927,16 +942,21 @@
           "title": "Some admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services",
           "startTime": "2025-10-07T08:27:00Z",
           "endTime": null,
-          "lastModified": "2026-01-30T06:38:33.2Z",
+          "lastModified": "2026-02-06T06:29:22.2Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services.",
           "scopeOfImpact": "Admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\" may be impacted. This section may be updated as our investigation continues.\n\nStart time: Tuesday, October 7, 2025, at 8:27 AM UTC",
           "rootCause": "A recent service operation intended to upgrade our API flow impacted Microsoft 365 Groups that were previously configured to have the \"SecurityEnabled\" setting enabled, switching this value back to \"False\" by default and resulting in impact to admins and users whose service access was being managed by the affected groups.",
-          "nextUpdateBy": "Friday, February 6, 2026, at 8:00 AM UTC",
+          "nextUpdateBy": "Friday, February 6, 2026, at 12:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-02-06T06:29:22.2Z",
+              "postType": "regular",
+              "content": "Title: Some admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services\n\nUser impact: Admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services.\n\nMore info: This issue specifically affects admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\".\n\nWhile we finalize the deployment of our fix to restore the appropriate configuration for the impacted Microsoft 365 Groups, affected admins can follow the steps below to manually restore the SecurityEnabled property configuration and resolve the impact:\n\n1. Connect to Exchange Online PowerShell with “Connect-ExchangeOnline”, then run the following command to retrieve audit logs specific to this scenario:\n$AuditLog = Search-UnifiedAuditLog -Operations \"Update group\" -StartDate (Get-Date).AddDays(-30) -EndDate (Get-Date) -ResultSize 5000.\n\n2. Filter logs matching the issue to gather affected group info by running the following two commands:\n\n$GroupID = $AuditLog | % {ConvertFrom-Json $_.AuditData} | ? {($_.Actor -match \"Group Configuration Processor\") -and ($_.ModifiedProperties -match \"SecurityEnabled\")} | % {$_.ObjectId -replace \"^.*Group_\", \"\"}\n \n$GroupID | Get-UnifiedGroup -ResultSize Unlimited\n \n3. Connect to Microsoft Graph PowerShell with Connect-MgGraph -Scope \"Group.ReadWrite.All\" and then run the following command to restore the SecurityEnabled property for the affected groups to True, which should remediate the impact:\n \n$GroupID | % {Update-MgGroup -GroupId $_ -BodyParameter @{SecurityEnabled = $true}}\n\nFor further information on how to run Microsoft Graph PowerShell commands and cmdlets or guidance on connecting to Exchange Online through PowerShell, please reference the following documentation:\n\nhttps://learn.microsoft.com/en-us/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps\n\nhttps://learn.microsoft.com/en-us/powershell/microsoftgraph/authentication-commands?view=graph-powershell-1.0\n\nCurrent status: We’re continuing our analysis of the aforementioned timeout issues so we can efficiently resume the deployment on the remaining impacted groups.\n\nScope of impact: Admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\" may be impacted. This section may be updated as our investigation continues.\n\nStart time: Tuesday, October 7, 2025, at 8:27 AM UTC\n\nRoot cause: A recent service operation intended to upgrade our API flow impacted Microsoft 365 Groups that were previously configured to have the \"SecurityEnabled\" setting enabled, switching this value back to \"False\" by default and resulting in impact to admins and users whose service access was being managed by the affected groups.\n\nNext update by: Friday, February 6, 2026, at 12:30 PM UTC"
+            },
             {
               "createdAt": "2026-01-30T06:38:33.2Z",
               "postType": "regular",
@@ -1068,16 +1088,21 @@
           "title": "Some admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services",
           "startTime": "2025-10-07T08:27:00Z",
           "endTime": null,
-          "lastModified": "2026-01-30T06:38:33.2Z",
+          "lastModified": "2026-02-06T06:29:22.2Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services.",
           "scopeOfImpact": "Admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\" may be impacted. This section may be updated as our investigation continues.\n\nStart time: Tuesday, October 7, 2025, at 8:27 AM UTC",
           "rootCause": "A recent service operation intended to upgrade our API flow impacted Microsoft 365 Groups that were previously configured to have the \"SecurityEnabled\" setting enabled, switching this value back to \"False\" by default and resulting in impact to admins and users whose service access was being managed by the affected groups.",
-          "nextUpdateBy": "Friday, February 6, 2026, at 8:00 AM UTC",
+          "nextUpdateBy": "Friday, February 6, 2026, at 12:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-02-06T06:29:22.2Z",
+              "postType": "regular",
+              "content": "Title: Some admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services\n\nUser impact: Admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services.\n\nMore info: This issue specifically affects admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\".\n\nWhile we finalize the deployment of our fix to restore the appropriate configuration for the impacted Microsoft 365 Groups, affected admins can follow the steps below to manually restore the SecurityEnabled property configuration and resolve the impact:\n\n1. Connect to Exchange Online PowerShell with “Connect-ExchangeOnline”, then run the following command to retrieve audit logs specific to this scenario:\n$AuditLog = Search-UnifiedAuditLog -Operations \"Update group\" -StartDate (Get-Date).AddDays(-30) -EndDate (Get-Date) -ResultSize 5000.\n\n2. Filter logs matching the issue to gather affected group info by running the following two commands:\n\n$GroupID = $AuditLog | % {ConvertFrom-Json $_.AuditData} | ? {($_.Actor -match \"Group Configuration Processor\") -and ($_.ModifiedProperties -match \"SecurityEnabled\")} | % {$_.ObjectId -replace \"^.*Group_\", \"\"}\n \n$GroupID | Get-UnifiedGroup -ResultSize Unlimited\n \n3. Connect to Microsoft Graph PowerShell with Connect-MgGraph -Scope \"Group.ReadWrite.All\" and then run the following command to restore the SecurityEnabled property for the affected groups to True, which should remediate the impact:\n \n$GroupID | % {Update-MgGroup -GroupId $_ -BodyParameter @{SecurityEnabled = $true}}\n\nFor further information on how to run Microsoft Graph PowerShell commands and cmdlets or guidance on connecting to Exchange Online through PowerShell, please reference the following documentation:\n\nhttps://learn.microsoft.com/en-us/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps\n\nhttps://learn.microsoft.com/en-us/powershell/microsoftgraph/authentication-commands?view=graph-powershell-1.0\n\nCurrent status: We’re continuing our analysis of the aforementioned timeout issues so we can efficiently resume the deployment on the remaining impacted groups.\n\nScope of impact: Admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\" may be impacted. This section may be updated as our investigation continues.\n\nStart time: Tuesday, October 7, 2025, at 8:27 AM UTC\n\nRoot cause: A recent service operation intended to upgrade our API flow impacted Microsoft 365 Groups that were previously configured to have the \"SecurityEnabled\" setting enabled, switching this value back to \"False\" by default and resulting in impact to admins and users whose service access was being managed by the affected groups.\n\nNext update by: Friday, February 6, 2026, at 12:30 PM UTC"
+            },
             {
               "createdAt": "2026-01-30T06:38:33.2Z",
               "postType": "regular",
