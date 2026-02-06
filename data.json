@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-06T10:31:02.183Z",
+  "lastUpdated": "2026-02-06T11:01:07.246Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -45,6 +45,51 @@
               "createdAt": "2026-02-02T14:07:18.637Z",
               "postType": "regular",
               "content": "Title: Users' contacts hidden from the Global Address List (GAL) may not appear in Outlook on the web people search results\n\nUser impact: Users' contacts hidden from the Global Address List (GAL) may not appear in Outlook on the web people search results.\n\nCurrent status: We're reviewing service monitoring telemetry to isolate the source of the issue and establish a fix.\n\nScope of impact: Some users attempting to retrieve contacts in Outlook on the web people search results may be impacted.\n\nNext update by: Monday, February 2, 2026, at 4:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online"
+          ]
+        },
+        {
+          "id": "EX1227432",
+          "title": "Some users' legitimate email messages may be marked as phish and quarantined in Exchange Online",
+          "startTime": "2026-02-05T15:31:57Z",
+          "endTime": null,
+          "lastModified": "2026-02-06T10:38:33.52Z",
+          "status": "serviceDegradation",
+          "severity": "incident",
+          "userImpact": "Users' legitimate email messages may be marked as phish and quarantined in Exchange Online.",
+          "scopeOfImpact": "Some users attempting to send or receive Exchange Online email messages may be impacted.",
+          "rootCause": "The email messages are getting incorrectly marked as phish and quarantined in Exchange Online due to ever-evolving criteria aimed at identifying suspicious email messages, as spam and phishing techniques have become more sophisticated in avoiding detection.",
+          "nextUpdateBy": "Saturday, February 7, 2026, at 12:30 AM UTC",
+          "feature": "Performance degradation",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-02-06T10:29:10.443Z",
+              "postType": "regular",
+              "content": "Title: Some users' legitimate email messages may be marked as phish and quarantined in Exchange Online\n\nUser impact: Users' legitimate email messages may be marked as phish and quarantined in Exchange Online.\n\nCurrent status: We're continuing to release the quarantine messages for the affected users to fully resolve this problem. In parallel, we're actively working to evaluate additional remediation actions to perform in order to expedite the process of recovery.\n \nScope of impact: Some users attempting to send or receive Exchange Online email messages may be impacted.\n \nRoot cause: The email messages are getting incorrectly marked as phish and quarantined in Exchange Online due to ever-evolving criteria aimed at identifying suspicious email messages, as spam and phishing techniques have become more sophisticated in avoiding detection.\n \nNext update by: Saturday, February 7, 2026, at 12:30 AM UTC"
+            },
+            {
+              "createdAt": "2026-02-06T05:04:50.09Z",
+              "postType": "regular",
+              "content": "Title: Some users' legitimate email messages are being marked as phish and quarantined in Exchange Online\n\nUser impact: Users' legitimate email messages are being marked as phish and quarantined in Exchange Online.\n\nCurrent status: We expect that the issue is resolved for any new messages as a result of adding the affected URLs to the allow list and we’re continuing the process of working with support to collect the necessary data to release the quarantine messages to fully resolve this problem. We’ll provide an estimate for the completion of this process when available.\n \nScope of impact: Your organization is affected by this event, and some users attempting to send or receive Exchange Online email messages are impacted.\n\nRoot cause: The email messages are getting incorrectly marked as phish and quarantined in Exchange Online due to ever-evolving criteria aimed at identifying suspicious email messages, as spam and phishing techniques have become more sophisticated in avoiding detection.\n \nNext update by: Friday, February 6, 2026, at 10:30 AM UTC"
+            },
+            {
+              "createdAt": "2026-02-06T01:03:38.1Z",
+              "postType": "regular",
+              "content": "Title: Some users' legitimate email messages are being marked as phish and quarantined in Exchange Online\n\nUser impact: Users' legitimate email messages are being marked as phish and quarantined in Exchange Online.\n\nCurrent status: We’ve added the associated URLs for the affected email messages to the allow list to resolve further impact from occurring. We’re now in the process of releasing the affected quarantined email messages to fully resolve the issue. Additionally, we anticipate that we’ll be able to provide a remediation timeline by the time of our next scheduled communications update.\n\nScope of impact: Your organization is affected by this event, and some users attempting to send or receive Exchange Online email messages are impacted.\n \nRoot cause: The email messages are getting incorrectly marked as phish and quarantined in Exchange Online due to ever-evolving criteria aimed at identifying suspicious email messages, as spam and phishing techniques have become more sophisticated in avoiding detection.\n\nNext update by: Friday, February 6, 2026, at 6:30 AM UTC"
+            },
+            {
+              "createdAt": "2026-02-05T17:36:47.993Z",
+              "postType": "regular",
+              "content": "Title: Some users' legitimate email messages are being marked as phish and quarantined in Exchange Online\n\nUser impact: Users' legitimate email messages are being marked as phish and quarantined in Exchange Online.\n\nCurrent status: We've determined that the URLs associated with these email messages are incorrectly marked as phish and quarantined in Exchange Online due to ever-evolving criteria aimed at identifying suspicious email messages, as spam and phishing techniques have become more sophisticated in avoiding detection. We've added the associated URLs for these affected email messages to an allow list and are currently monitoring as these actions reflect within our service. After we confirm these URLs have successfully been allowed, we'll conduct final testing with a subset of users in order to validate that this has remediated impact.\n\nScope of impact: Your organization is affected by this event, and some users attempting to send or receive Exchange Online email messages are impacted.\n \nRoot cause: The email messages are getting incorrectly marked as phish and quarantined in Exchange Online due to ever-evolving criteria aimed at identifying suspicious email messages, as spam and phishing techniques have become more sophisticated in avoiding detection.\n\nNext update by: Friday, February 6, 2026, at 2:00 AM UTC"
+            },
+            {
+              "createdAt": "2026-02-05T15:32:52.303Z",
+              "postType": "regular",
+              "content": "Title: Some users' legitimate email messages are being marked as phish and quarantined in Exchange Online  \n\nUser impact: Users' legitimate email messages are being marked as phish and quarantined in Exchange Online.  \n\nCurrent status: We're reviewing support provided information to determine our next troubleshooting steps.\n \nScope of impact: Your organization is affected by this event, and some users attempting to send or receive Exchange Online email messages are impacted.\n \nNext update by: Thursday, February 5, 2026, at 5:30 PM UTC "
             }
           ],
           "affectedServices": [
