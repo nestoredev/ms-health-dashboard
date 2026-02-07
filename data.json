@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-07T02:04:27.661Z",
+  "lastUpdated": "2026-02-07T02:34:34.315Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -106,16 +106,21 @@
           "title": "Some users' legitimate email messages may be marked as phishing email and quarantined in Exchange Online",
           "startTime": "2026-02-05T15:31:57Z",
           "endTime": null,
-          "lastModified": "2026-02-06T23:17:15.733Z",
+          "lastModified": "2026-02-07T02:22:02.62Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users' legitimate email messages may be marked as phishing email and quarantined in Exchange Online.",
           "scopeOfImpact": "Some users attempting to send or receive Exchange Online email messages may be impacted.",
           "rootCause": "The email messages are getting incorrectly marked as phishing and quarantined in Exchange Online due to ever-evolving criteria aimed at identifying suspicious email messages, as spam and phishing techniques have become more sophisticated in avoiding detection.",
-          "nextUpdateBy": "Saturday, February 7, 2026, at 2:30 AM UTC",
+          "nextUpdateBy": "Saturday, February 7, 2026, at 4:30 AM UTC",
           "feature": "Performance degradation",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-02-07T02:22:02.62Z",
+              "postType": "regular",
+              "content": "Title: Some users' legitimate email messages may be marked as phishing email and quarantined in Exchange Online\n\nUser impact: Users' legitimate email messages may be marked as phishing email and quarantined in Exchange Online.\n\nCurrent status: While monitoring the process of releasing the quarantined messages for the affected users, we received fresh reports of quarantined messages from a subset of affected users. We're reviewing the logging and impact details provided by this subset of users to help us determine how we can adjust our current mitigation strategy to ensure full remediation for all affected environments.\n \nScope of impact: Some users attempting to send or receive Exchange Online email messages may be impacted.\n \nRoot cause: The email messages are getting incorrectly marked as phishing and quarantined in Exchange Online due to ever-evolving criteria aimed at identifying suspicious email messages, as spam and phishing techniques have become more sophisticated in avoiding detection.\n \nNext update by: Saturday, February 7, 2026, at 4:30 AM UTC"
+            },
             {
               "createdAt": "2026-02-06T10:29:10.443Z",
               "postType": "regular",
