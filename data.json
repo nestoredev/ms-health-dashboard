@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-06T23:33:53.300Z",
+  "lastUpdated": "2026-02-07T00:04:00.454Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -2657,52 +2657,6 @@
       "serviceName": "Exchange Online",
       "affectedServices": [
         "Exchange Online"
-      ]
-    },
-    {
-      "id": "SP1030180",
-      "title": "Users may see a new \"Content Freshness\" template option when creating pages in SharePoint Online",
-      "startTime": "2025-01-16T00:00:00Z",
-      "endTime": "2026-01-08T00:00:00Z",
-      "lastModified": "2026-01-08T03:05:44.03Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users may have seen a new \"Content Freshness\" template option when creating pages in SharePoint Online.",
-      "scopeOfImpact": "Users creating pages in SharePoint Online may have been impacted.\n\nStart time: Thursday, January 16, 2025, at 12:00 AM UTC\n\nEnd time: Thursday, January 8, 2026, at 12:00 AM UTC",
-      "rootCause": "A recent deployment incorrectly enabled this feature in the affected environment.\n\nNext steps: \n - To help prevent similar impact in the future, we're further reviewing our deployment release procedures to ensure features aren't enabled incorrectly.\n\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Save Site as Template",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-01-08T03:05:44.03Z",
-          "postType": "regular",
-          "content": "Title: Users may see a new \"Content Freshness\" template option when creating pages in SharePoint Online\n\nUser impact: Users may have seen a new \"Content Freshness\" template option when creating pages in SharePoint Online.\n\nMore info: Selecting the \"Content Freshness\" template option had no functional impact. If users encountered the option for the template, they could ignore it and continue using other templates without issues. Affected users may have also seen the option appear in List Settings or the Content Type editing panel.\n\nFinal status: Our fix deployment completed, and after a period of monitoring, we've confirmed impact was remediated.\n\nScope of impact: Users creating pages in SharePoint Online may have been impacted.\n\nStart time: Thursday, January 16, 2025, at 12:00 AM UTC\n\nEnd time: Thursday, January 8, 2026, at 12:00 AM UTC\n\nRoot cause: A recent deployment incorrectly enabled this feature in the affected environment.\n\nNext steps: \n - To help prevent similar impact in the future, we're further reviewing our deployment release procedures to ensure features aren't enabled incorrectly.\n\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2025-12-18T03:05:38.213Z",
-          "postType": "regular",
-          "content": "Title: Users may see a new \"Content Freshness\" template option when creating pages in SharePoint Online\n\nUser impact: Users may see a new \"Content Freshness\" template option when creating pages in SharePoint Online.\n\nMore info: Selecting the \"Content Freshness\" template option has no functional impact. If users encounter the option for the template, they can ignore it and continue using other templates without issues. Affected users may also see the option appear in List Settings or the Content Type editing panel.\n\nCurrent status: The fix is progressing and we're continuing to monitor as it completes.\n\nScope of impact: Users creating pages in SharePoint Online may be impacted.\n\nStart time: Thursday, January 16, 2025, at 12:00 AM UTC\n\nRoot cause: A recent deployment incorrectly enabled this feature in the affected environment.\n\nNext update by: Thursday, January 8, 2026, at 6:00 AM UTC"
-        },
-        {
-          "createdAt": "2025-12-04T04:01:12.28Z",
-          "postType": "regular",
-          "content": "Title: Users may see a new \"Content Freshness\" template option when creating pages in SharePoint Online\n\nUser impact: Users may see a new \"Content Freshness\" template option when creating pages in SharePoint Online.\n\nMore info: Selecting the \"Content Freshness\" template option has no functional impact. If users encounter the option for the template, they can ignore it and continue using other templates without issues. Affected users may also see the option appear in List Settings or the Content Type editing panel.\n\nCurrent status: The fix is ongoing and we're continuing to monitor as it progresses.\n\nScope of impact: Users creating pages in SharePoint Online may be impacted.\n\nStart time: Thursday, January 16, 2025, at 12:00 AM UTC\n\nRoot cause: A recent deployment incorrectly enabled this feature in the affected environment.\n\nNext update by: Thursday, December 18, 2025, at 6:00 AM UTC"
-        },
-        {
-          "createdAt": "2025-11-20T03:08:05.53Z",
-          "postType": "regular",
-          "content": "Title: Users may see a new \"Content Freshness\" template option when creating pages in SharePoint Online\n\nUser impact: Users may see a new \"Content Freshness\" template option when creating pages in SharePoint Online.\n\nMore info: Selecting the \"Content Freshness\" template option has no functional impact. If users encounter the option for the template, they can ignore it and continue using other templates without issues. Affected users may also see the option appear in List Settings or the Content Type editing panel.\n\nCurrent status: We're continuing to monitor as the fix completes saturating throughout the affected environment to confirm it remains stable.\n\nScope of impact: Users creating pages in SharePoint Online may be impacted.\n\nStart time: Thursday, January 16, 2025, at 12:00 AM UTC\n\nRoot cause: A recent deployment incorrectly enabled this feature in the affected environment.\n\nNext update by: Thursday, December 4, 2025, at 6:00 AM UTC"
-        },
-        {
-          "createdAt": "2025-10-30T03:52:50.143Z",
-          "postType": "regular",
-          "content": "Title: Users may see a new \"Content Freshness\" template option when creating pages in SharePoint Online\n\nUser impact: Users may see a new \"Content Freshness\" template option when creating pages in SharePoint Online.\n\nMore info: Selecting the \"Content Freshness\" template option has no functional impact. If users encounter the option for the template, they can ignore it and continue using other templates without issues. Affected users may also see the option appear in List Settings or the Content Type editing panel.\n\nCurrent status: While the fix deployment is taking longer than previously anticipated to complete, our service health telemetry indicates that the impact is resolved for the affected users. We’re continuing to monitor as the remainder of the fix propagates throughout the affected environment and to ensure that the impact is fully remediated.\n\nScope of impact: Users creating pages in SharePoint Online may be impacted.\n\nStart time: Thursday, January 16, 2025, at 12:00 AM UTC\n\nRoot cause: A recent deployment incorrectly enabled this feature in the affected environment.\n\nNext update by: Thursday, November 20, 2025, at 5:00 AM UTC"
-        }
-      ],
-      "serviceName": "SharePoint Online",
-      "affectedServices": [
-        "SharePoint Online"
       ]
     }
   ]
