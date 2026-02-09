@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-09T20:41:09.606Z",
+  "lastUpdated": "2026-02-09T21:11:17.647Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -894,16 +894,21 @@
           "title": "Admins may be missing Microsoft 365 Usage Analytics reports in Power BI",
           "startTime": "2026-02-04T18:01:27Z",
           "endTime": null,
-          "lastModified": "2026-02-05T19:59:41.563Z",
+          "lastModified": "2026-02-09T20:47:35.85Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may be missing Microsoft 365 Usage Analytics reports in Power BI.",
           "scopeOfImpact": "Any admin accessing Microsoft 365 Usage Analytics reports in Power BI may be affected.\n \nStart time: Thursday, January 1, 2026, at 12:00 AM UTC",
           "rootCause": "A subset of Power BI logic doesn't have the expected date formatting required for the year 2026, resulting in impact.",
-          "nextUpdateBy": "Monday, February 9, 2026, at 9:00 PM UTC",
+          "nextUpdateBy": "Wednesday, February 11, 2026, at 10:00 PM UTC",
           "feature": "PowerBI.com",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-02-09T20:47:35.85Z",
+              "postType": "regular",
+              "content": "Title: Admins may be missing Microsoft 365 Usage Analytics reports in Power BI\n\nUser impact: Admins may be missing Microsoft 365 Usage Analytics reports in Power BI.\n\nCurrent status: We're progressing with the development of our fix to correct the date formatting for 2026 and later and to restore admins’ Microsoft 365 Usage Analytics reports in Power BI. We'll provide an estimated timeline for the deployment of our solution after our internal fix development and validations have been completed. \n \nScope of impact: Any admin accessing Microsoft 365 Usage Analytics reports in Power BI may be affected.\n \nStart time: Thursday, January 1, 2026, at 12:00 AM UTC\n \nRoot cause: A subset of Power BI logic doesn't have the expected date formatting required for the year 2026, resulting in impact.\n \nNext update by: Wednesday, February 11, 2026, at 10:00 PM UTC"
+            },
             {
               "createdAt": "2026-02-05T19:59:41.563Z",
               "postType": "regular",
@@ -1077,16 +1082,21 @@
           "title": "Some admins may be unable to provision new Microsoft OneDrive personal sites for newly onboarded users",
           "startTime": "2026-02-09T15:30:53Z",
           "endTime": null,
-          "lastModified": "2026-02-09T18:52:33.303Z",
+          "lastModified": "2026-02-09T20:50:49.95Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Admins may be unable to provision new OneDrive personal sites for newly onboarded users.",
           "scopeOfImpact": "Some admins attempting to provision new OneDrive personal sites may be impacted. This information may be updated as our investigation continues.",
           "rootCause": "",
-          "nextUpdateBy": "Monday, February 9, 2026, at 9:00 PM UTC",
+          "nextUpdateBy": "Monday, February 9, 2026, at 11:00 PM UTC",
           "feature": "OneDrive for Business",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-02-09T20:50:49.95Z",
+              "postType": "regular",
+              "content": "Title: Some admins may be unable to provision new Microsoft OneDrive personal sites for newly onboarded users\n\nUser impact: Admins may be unable to provision new OneDrive personal sites for newly onboarded users.\n\nMore info: As a result, new users may be unable to access OneDrive.\n \nUsers who are auto-provisioned by the service aren't affected.\n \nCurrent status: We've identified a recent change which we suspect may be causing the impact, and we're reversing this change to check whether this resolves the issue.\n \nScope of impact: Some admins attempting to provision new OneDrive personal sites may be impacted. This information may be updated as our investigation continues.\n \nNext update by: Monday, February 9, 2026, at 11:00 PM UTC"
+            },
             {
               "createdAt": "2026-02-09T18:52:33.303Z",
               "postType": "regular",
