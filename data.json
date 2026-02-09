@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-09T18:40:44.550Z",
+  "lastUpdated": "2026-02-09T19:10:51.733Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -11,16 +11,21 @@
           "title": "Users' MailTips may not reflect free/busy correctly in Outlook desktop and crashes may occur when adding mailboxes",
           "startTime": "2026-02-06T18:45:07Z",
           "endTime": null,
-          "lastModified": "2026-02-07T01:48:48.177Z",
+          "lastModified": "2026-02-09T18:51:34.58Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users' MailTips may not reflect free/busy correctly in Outlook desktop and crashes may occur when adding mailboxes.",
-          "scopeOfImpact": "Any admins’ cross-tenant AutoDiscover requests may fail from hybrid environments, causing MailTips free/busy not to show and crashing for users’ Outlook desktop clients when adding additional on-premises mailboxes. This information may be updated as our investigation continues.\n \nStart time: Tuesday, January 27, 2026, at 12:30 AM UTC",
+          "scopeOfImpact": "Any admins’ cross-tenant AutoDiscover requests may fail from hybrid environments, causing MailTips free/busy not to show and crashing for users’ Outlook desktop clients when adding additional on-premises mailboxes. This information may be updated as our investigation continues.\n\nStart time: Tuesday, January 27, 2026, at 12:30 AM UTC",
           "rootCause": "A routing change for Autodiscover requests introduced a header duplication issue causing a backlog of requests that ultimately fail or timeout, resulting in the impact.",
-          "nextUpdateBy": "Monday, February 9, 2026, at 8:30 PM UTC",
+          "nextUpdateBy": "Wednesday, February 11, 2026, at 8:00 PM UTC",
           "feature": "Tenant Administration (Provisioning, Remote PowerShell)",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-02-09T18:51:34.58Z",
+              "postType": "regular",
+              "content": "Title: Users' MailTips may not reflect free/busy correctly in Outlook desktop and crashes may occur when adding mailboxes\n\nUser impact: Users' MailTips may not reflect free/busy correctly in Outlook desktop and crashes may occur when adding mailboxes.\n\nMore info: This issue is specific to the Outlook desktop client in organizations with a hybrid environment using Exchange Web Services (EWS) for MailTips. Users may notice that the MailTips free/busy feature isn’t operating as expected and may see an error stating “we can’t show MailTips right now.”\n\nThe Outlook desktop crashes occur when attempting to add a new on-premises mailbox. \n\nAdmins may be unable to create new on-premises mailboxes, and their cross-tenant AutoDiscover requests general may fail from hybrid environments.\n \nWhile we work on deploying the fix, admins may be able to mitigate the impact by restarting the Autodiscover app pool.\n\nCurrent status: We've developed a fix that will prevent the header duplication issue from occurring and have begun deploying the fix to the Exchange Online versions 15.20.9587.019, 15.20.9632.004, 15.20.9611.008, and 15.20.9564.022. As the fix saturates, admins will begin to gradually notice impact remediation, and we expect that the fix will complete deployment by the time of our next update.\n\nScope of impact: Any admins’ cross-tenant AutoDiscover requests may fail from hybrid environments, causing MailTips free/busy not to show and crashing for users’ Outlook desktop clients when adding additional on-premises mailboxes. This information may be updated as our investigation continues.\n\nStart time: Tuesday, January 27, 2026, at 12:30 AM UTC\n\nRoot cause: A routing change for Autodiscover requests introduced a header duplication issue causing a backlog of requests that ultimately fail or timeout, resulting in the impact.\n\nNext update by: Wednesday, February 11, 2026, at 8:00 PM UTC"
+            },
             {
               "createdAt": "2026-02-07T01:41:31.773Z",
               "postType": "regular",
@@ -1072,16 +1077,21 @@
           "title": "Some admins may be unable to provision new Microsoft OneDrive personal sites for newly onboarded users",
           "startTime": "2026-02-09T15:30:53Z",
           "endTime": null,
-          "lastModified": "2026-02-09T16:43:32.883Z",
+          "lastModified": "2026-02-09T18:52:33.303Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Admins may be unable to provision new OneDrive personal sites for newly onboarded users.",
           "scopeOfImpact": "Some admins attempting to provision new OneDrive personal sites may be impacted. This information may be updated as our investigation continues.",
           "rootCause": "",
-          "nextUpdateBy": "Monday, February 9, 2026, at 7:00 PM UTC",
+          "nextUpdateBy": "Monday, February 9, 2026, at 9:00 PM UTC",
           "feature": "OneDrive for Business",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-02-09T18:52:33.303Z",
+              "postType": "regular",
+              "content": "Title: Some admins may be unable to provision new Microsoft OneDrive personal sites for newly onboarded users\n\nUser impact: Admins may be unable to provision new OneDrive personal sites for newly onboarded users.\n\nMore info: As a result, new users may be unable to access OneDrive.\n\nUsers who are auto-provisioned by the service aren't affected.\n\nCurrent status: We've identified an exception which may indicate an authentication issue, and we're further analyzing this exception to confirm whether this is the origin of the impact.\n\nScope of impact: Some admins attempting to provision new OneDrive personal sites may be impacted. This information may be updated as our investigation continues.\n\nNext update by: Monday, February 9, 2026, at 9:00 PM UTC"
+            },
             {
               "createdAt": "2026-02-09T16:37:22.68Z",
               "postType": "regular",
