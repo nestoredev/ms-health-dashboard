@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-07T15:07:13.821Z",
+  "lastUpdated": "2026-02-09T03:56:12.154Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -103,19 +103,24 @@
         },
         {
           "id": "EX1227432",
-          "title": "Some users' legitimate email messages may be marked as phishing email and quarantined in Exchange Online",
+          "title": "Some users' legitimate email messages may be marked as phishing and quarantined in Exchange Online",
           "startTime": "2026-02-05T15:31:57Z",
           "endTime": null,
-          "lastModified": "2026-02-07T03:50:26.363Z",
+          "lastModified": "2026-02-07T23:01:42.573Z",
           "status": "serviceDegradation",
           "severity": "incident",
-          "userImpact": "Users' legitimate email messages may be marked as phishing email and quarantined in Exchange Online.",
-          "scopeOfImpact": "Some users attempting to send or receive Exchange Online email messages may be impacted.",
-          "rootCause": "The email messages are getting incorrectly marked as phishing and quarantined in Exchange Online due to ever-evolving criteria aimed at identifying suspicious email messages, as spam and phishing techniques have become more sophisticated in avoiding detection.",
-          "nextUpdateBy": "Saturday, February 7, 2026, at 8:30 PM UTC",
+          "userImpact": "Users' legitimate email messages may be marked as phishing and quarantined in Exchange Online.",
+          "scopeOfImpact": "Some users attempting to send or receive Exchange Online email messages may be impacted.\n\nPreliminary",
+          "rootCause": "An updated URL rule intending to identify more sophisticated spam and phishing email messages is incorrectly quarantining legitimate email messages in Exchange Online, resulting in impact.",
+          "nextUpdateBy": "Tuesday, February 10, 2026, at 1:00 AM UTC",
           "feature": "Performance degradation",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-02-07T20:20:01.883Z",
+              "postType": "regular",
+              "content": "Title: Some users' legitimate email messages may be marked as phishing and quarantined in Exchange Online\n\nUser impact: Users' legitimate email messages may be marked as phishing and quarantined in Exchange Online.\n\nCurrent status: We’re reviewing the release of quarantined messages for affected users and working on confirming legitimate URLs are unblocked. Some users may see their previously quarantined messages successfully delivered and we’re working to confirm full remediation. We’ll provide an estimated time to resolve when one becomes available.\n\nScope of impact: Some users attempting to send or receive Exchange Online email messages may be impacted.\n\nPreliminary root cause: An updated URL rule intending to identify more sophisticated spam and phishing email messages is incorrectly quarantining legitimate email messages in Exchange Online, resulting in impact. \n\nNext update by: Tuesday, February 10, 2026, at 1:00 AM UTC"
+            },
             {
               "createdAt": "2026-02-07T03:50:26.363Z",
               "postType": "regular",
@@ -596,6 +601,45 @@
             "Microsoft OneDrive",
             "Microsoft Teams"
           ]
+        },
+        {
+          "id": "MO1228788",
+          "title": "Some users may experience various issues with some Microsoft 365 services",
+          "startTime": "2026-02-07T17:14:50Z",
+          "endTime": null,
+          "lastModified": "2026-02-07T22:21:56.877Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may experience various issues with some Microsoft 365 services.",
+          "scopeOfImpact": "This issue may affect users in the West US region who are attempting to utilize the features outlined in the More info section.\n\nStart time: Saturday, February 7, 2026, at 8:07 AM UTC",
+          "rootCause": "A recent power surge within a portion of our Azure infrastructure in the West US region caused services to go temporarily offline.",
+          "nextUpdateBy": "Monday, February 9, 2026, at 6:00 PM UTC",
+          "feature": "Sign-in",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-02-07T21:26:22.06Z",
+              "postType": "regular",
+              "content": "Title: Some users may experience various issues with some Microsoft 365 services\n\nUser impact: Users may experience various issues with some Microsoft 365 services.\n\nMore info: This issue impacts the following services and scenarios:\n- Some users in the West US region may be unable to execute data plane operations in Power BI.\n- Some users may be unable to utilize Activity and file policy evaluation, Anomaly detection, or Advanced hunting for Microsoft Defender for Cloud Apps.\n- Users may also see stale information in the portal and execution of governance actions for Microsoft Defender for Cloud Apps.\n- Some users may be unable to utilize Advanced hunting in Microsoft Defender for Identity.\n- Admins may be unable to complete onboarding activities in the Microsoft Defender XDR portal\n- Admins may be unable to see Microsoft Purview Communication Compliance policy hits in Microsoft Purview.\n- Users may be unable to view recent data in Threat Explorer and Advanced Hunting within Microsoft Defender for Office 365.\n- Users may see device enrollment failures in Microsoft Intune.\n \nCurrent status: Our backup power systems have connected all but a subset of the impacted services and we're working to process the remaining backlogs to ensure full recovery for those services. Review of service health telemetry indicates the backup power systems have returned those services to expected functionality, and we're continuing our efforts to restore the remaining affected infrastructure.\n \nScope of impact: This issue may affect users in the West US region who are attempting to utilize the features outlined in the More info section.\n\nStart time: Saturday, February 7, 2026, at 8:07 AM UTC\n \nRoot cause: A recent power surge within a portion of our Azure infrastructure in the West US region caused services to go temporarily offline.\n \nNext update by: Monday, February 9, 2026, at 6:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-02-07T19:22:08.493Z",
+              "postType": "regular",
+              "content": "Title: Some users may experience various issues with some Microsoft 365 services\n\nUser impact: Users may experience various issues with some Microsoft 365 services.\n\nMore info: This issue impacts the following services and scenarios:\n \n- Some users in the West US region may be unable to execute data plane operations in Power BI.\n \n- Some users may be unable to utilize Activity and file policy evaluation, Anomaly detection, or Advanced hunting for Microsoft Defender for Cloud Apps.\n \n- Users may also see stale information in the portal and execution of governance actions for Microsoft Defender for Cloud Apps.\n \n- Some users may be unable to utilize Advanced hunting in Microsoft Defender for Identity.\n \n- Admins may be unable to complete onboarding activities in the Microsoft Defender XDR portal\n \n- Admins may be unable to see Microsoft Purview Communication Compliance policy hits in Microsoft Purview.\n \n- Users may be unable to view recent data in Threat Explorer and Advanced Hunting within Microsoft Defender for Office 365.\n \n- Users may see device enrollment failures in Microsoft Intune.\n \nCurrent status: We're seeing recovery within a portion of the affected Microsoft 365 services as our backup power systems connect to impacted services and the backlog from services are processed. We're reviewing telemetry related to the remaining portion of affected infrastructure to determine what additional mitigation actions are required to fully recover the service.\n \nScope of impact: This issue may affect users in the West US region who are attempting to utilize the features outlined in the More info section.\n \nRoot cause: A recent power surge within a portion of our Azure infrastructure in the West US region caused services to go temporarily offline.\n \nNext update by: Saturday, February 7, 2026, at 9:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-02-07T17:16:58.127Z",
+              "postType": "regular",
+              "content": "Title: Some users may experience various issues with some Microsoft 365 services\n\nUser impact: Users may experience various issues with some Microsoft 365 services.\n\nMore info: This issue impacts the following services and scenarios:\n\n- Some users in the West US region may be unable to execute data plane operations in Power BI.\n\n- Some users may be unable to utilize Activity and file policy evaluation, Anomaly detection, or Advanced hunting for Microsoft Defender for Cloud Apps. \n\n- Users may also see stale information in the portal and execution of governance actions for Microsoft Defender for Cloud Apps.\n\n- Some users may be unable to utilize Advanced hunting in Microsoft Defender for Identity.\n\n- Admins may be unable to complete onboarding activities in the Microsoft Defender XDR portal\n\n- Admins may be unable to see Microsoft Purview Communication Compliance policy hits in Microsoft Purview.\n\n- Users may be unable to view recent data in Threat Explorer and Advanced Hunting within Microsoft Defender for Office 365.\n\n- Users may see device enrollment failures in Microsoft Intune.\n\nCurrent status: Our monitoring has notified us of an issue in the West US region where some users may experience various impacts to some Microsoft 365 services, which we've outlined in the More info section above. We've confirmed that a recent power surge at a portion of our Azure infrastructure in the West US region caused services to go temporarily offline. Our backup power systems were activated and we've confirmed that power remains stable to handle service activity. We're working to restore connectivity to the impacted services to fully resolve this issue.\n\nScope of impact: This issue may affect users in the West US region who are attempting to utilize the features outlined in the More info section.\n\nRoot cause: A recent power surge within a portion of our Azure infrastructure in the West US region caused services to go temporarily offline.\n\nNext update by: Saturday, February 7, 2026, at 7:30 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite",
+            "Power BI",
+            "Microsoft Intune",
+            "Microsoft Defender XDR",
+            "Microsoft Purview"
+          ]
         }
       ]
     },
@@ -948,14 +992,93 @@
           "affectedServices": [
             "Power BI"
           ]
+        },
+        {
+          "id": "MO1228788",
+          "title": "Some users may experience various issues with some Microsoft 365 services",
+          "startTime": "2026-02-07T17:14:50Z",
+          "endTime": null,
+          "lastModified": "2026-02-07T22:21:56.877Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may experience various issues with some Microsoft 365 services.",
+          "scopeOfImpact": "This issue may affect users in the West US region who are attempting to utilize the features outlined in the More info section.\n\nStart time: Saturday, February 7, 2026, at 8:07 AM UTC",
+          "rootCause": "A recent power surge within a portion of our Azure infrastructure in the West US region caused services to go temporarily offline.",
+          "nextUpdateBy": "Monday, February 9, 2026, at 6:00 PM UTC",
+          "feature": "Sign-in",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-02-07T21:26:22.06Z",
+              "postType": "regular",
+              "content": "Title: Some users may experience various issues with some Microsoft 365 services\n\nUser impact: Users may experience various issues with some Microsoft 365 services.\n\nMore info: This issue impacts the following services and scenarios:\n- Some users in the West US region may be unable to execute data plane operations in Power BI.\n- Some users may be unable to utilize Activity and file policy evaluation, Anomaly detection, or Advanced hunting for Microsoft Defender for Cloud Apps.\n- Users may also see stale information in the portal and execution of governance actions for Microsoft Defender for Cloud Apps.\n- Some users may be unable to utilize Advanced hunting in Microsoft Defender for Identity.\n- Admins may be unable to complete onboarding activities in the Microsoft Defender XDR portal\n- Admins may be unable to see Microsoft Purview Communication Compliance policy hits in Microsoft Purview.\n- Users may be unable to view recent data in Threat Explorer and Advanced Hunting within Microsoft Defender for Office 365.\n- Users may see device enrollment failures in Microsoft Intune.\n \nCurrent status: Our backup power systems have connected all but a subset of the impacted services and we're working to process the remaining backlogs to ensure full recovery for those services. Review of service health telemetry indicates the backup power systems have returned those services to expected functionality, and we're continuing our efforts to restore the remaining affected infrastructure.\n \nScope of impact: This issue may affect users in the West US region who are attempting to utilize the features outlined in the More info section.\n\nStart time: Saturday, February 7, 2026, at 8:07 AM UTC\n \nRoot cause: A recent power surge within a portion of our Azure infrastructure in the West US region caused services to go temporarily offline.\n \nNext update by: Monday, February 9, 2026, at 6:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-02-07T19:22:08.493Z",
+              "postType": "regular",
+              "content": "Title: Some users may experience various issues with some Microsoft 365 services\n\nUser impact: Users may experience various issues with some Microsoft 365 services.\n\nMore info: This issue impacts the following services and scenarios:\n \n- Some users in the West US region may be unable to execute data plane operations in Power BI.\n \n- Some users may be unable to utilize Activity and file policy evaluation, Anomaly detection, or Advanced hunting for Microsoft Defender for Cloud Apps.\n \n- Users may also see stale information in the portal and execution of governance actions for Microsoft Defender for Cloud Apps.\n \n- Some users may be unable to utilize Advanced hunting in Microsoft Defender for Identity.\n \n- Admins may be unable to complete onboarding activities in the Microsoft Defender XDR portal\n \n- Admins may be unable to see Microsoft Purview Communication Compliance policy hits in Microsoft Purview.\n \n- Users may be unable to view recent data in Threat Explorer and Advanced Hunting within Microsoft Defender for Office 365.\n \n- Users may see device enrollment failures in Microsoft Intune.\n \nCurrent status: We're seeing recovery within a portion of the affected Microsoft 365 services as our backup power systems connect to impacted services and the backlog from services are processed. We're reviewing telemetry related to the remaining portion of affected infrastructure to determine what additional mitigation actions are required to fully recover the service.\n \nScope of impact: This issue may affect users in the West US region who are attempting to utilize the features outlined in the More info section.\n \nRoot cause: A recent power surge within a portion of our Azure infrastructure in the West US region caused services to go temporarily offline.\n \nNext update by: Saturday, February 7, 2026, at 9:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-02-07T17:16:58.127Z",
+              "postType": "regular",
+              "content": "Title: Some users may experience various issues with some Microsoft 365 services\n\nUser impact: Users may experience various issues with some Microsoft 365 services.\n\nMore info: This issue impacts the following services and scenarios:\n\n- Some users in the West US region may be unable to execute data plane operations in Power BI.\n\n- Some users may be unable to utilize Activity and file policy evaluation, Anomaly detection, or Advanced hunting for Microsoft Defender for Cloud Apps. \n\n- Users may also see stale information in the portal and execution of governance actions for Microsoft Defender for Cloud Apps.\n\n- Some users may be unable to utilize Advanced hunting in Microsoft Defender for Identity.\n\n- Admins may be unable to complete onboarding activities in the Microsoft Defender XDR portal\n\n- Admins may be unable to see Microsoft Purview Communication Compliance policy hits in Microsoft Purview.\n\n- Users may be unable to view recent data in Threat Explorer and Advanced Hunting within Microsoft Defender for Office 365.\n\n- Users may see device enrollment failures in Microsoft Intune.\n\nCurrent status: Our monitoring has notified us of an issue in the West US region where some users may experience various impacts to some Microsoft 365 services, which we've outlined in the More info section above. We've confirmed that a recent power surge at a portion of our Azure infrastructure in the West US region caused services to go temporarily offline. Our backup power systems were activated and we've confirmed that power remains stable to handle service activity. We're working to restore connectivity to the impacted services to fully resolve this issue.\n\nScope of impact: This issue may affect users in the West US region who are attempting to utilize the features outlined in the More info section.\n\nRoot cause: A recent power surge within a portion of our Azure infrastructure in the West US region caused services to go temporarily offline.\n\nNext update by: Saturday, February 7, 2026, at 7:30 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite",
+            "Power BI",
+            "Microsoft Intune",
+            "Microsoft Defender XDR",
+            "Microsoft Purview"
+          ]
         }
       ]
     },
     {
       "service": "Microsoft Intune",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "Intune",
-      "issues": []
+      "issues": [
+        {
+          "id": "MO1228788",
+          "title": "Some users may experience various issues with some Microsoft 365 services",
+          "startTime": "2026-02-07T17:14:50Z",
+          "endTime": null,
+          "lastModified": "2026-02-07T22:21:56.877Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may experience various issues with some Microsoft 365 services.",
+          "scopeOfImpact": "This issue may affect users in the West US region who are attempting to utilize the features outlined in the More info section.\n\nStart time: Saturday, February 7, 2026, at 8:07 AM UTC",
+          "rootCause": "A recent power surge within a portion of our Azure infrastructure in the West US region caused services to go temporarily offline.",
+          "nextUpdateBy": "Monday, February 9, 2026, at 6:00 PM UTC",
+          "feature": "Sign-in",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-02-07T21:26:22.06Z",
+              "postType": "regular",
+              "content": "Title: Some users may experience various issues with some Microsoft 365 services\n\nUser impact: Users may experience various issues with some Microsoft 365 services.\n\nMore info: This issue impacts the following services and scenarios:\n- Some users in the West US region may be unable to execute data plane operations in Power BI.\n- Some users may be unable to utilize Activity and file policy evaluation, Anomaly detection, or Advanced hunting for Microsoft Defender for Cloud Apps.\n- Users may also see stale information in the portal and execution of governance actions for Microsoft Defender for Cloud Apps.\n- Some users may be unable to utilize Advanced hunting in Microsoft Defender for Identity.\n- Admins may be unable to complete onboarding activities in the Microsoft Defender XDR portal\n- Admins may be unable to see Microsoft Purview Communication Compliance policy hits in Microsoft Purview.\n- Users may be unable to view recent data in Threat Explorer and Advanced Hunting within Microsoft Defender for Office 365.\n- Users may see device enrollment failures in Microsoft Intune.\n \nCurrent status: Our backup power systems have connected all but a subset of the impacted services and we're working to process the remaining backlogs to ensure full recovery for those services. Review of service health telemetry indicates the backup power systems have returned those services to expected functionality, and we're continuing our efforts to restore the remaining affected infrastructure.\n \nScope of impact: This issue may affect users in the West US region who are attempting to utilize the features outlined in the More info section.\n\nStart time: Saturday, February 7, 2026, at 8:07 AM UTC\n \nRoot cause: A recent power surge within a portion of our Azure infrastructure in the West US region caused services to go temporarily offline.\n \nNext update by: Monday, February 9, 2026, at 6:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-02-07T19:22:08.493Z",
+              "postType": "regular",
+              "content": "Title: Some users may experience various issues with some Microsoft 365 services\n\nUser impact: Users may experience various issues with some Microsoft 365 services.\n\nMore info: This issue impacts the following services and scenarios:\n \n- Some users in the West US region may be unable to execute data plane operations in Power BI.\n \n- Some users may be unable to utilize Activity and file policy evaluation, Anomaly detection, or Advanced hunting for Microsoft Defender for Cloud Apps.\n \n- Users may also see stale information in the portal and execution of governance actions for Microsoft Defender for Cloud Apps.\n \n- Some users may be unable to utilize Advanced hunting in Microsoft Defender for Identity.\n \n- Admins may be unable to complete onboarding activities in the Microsoft Defender XDR portal\n \n- Admins may be unable to see Microsoft Purview Communication Compliance policy hits in Microsoft Purview.\n \n- Users may be unable to view recent data in Threat Explorer and Advanced Hunting within Microsoft Defender for Office 365.\n \n- Users may see device enrollment failures in Microsoft Intune.\n \nCurrent status: We're seeing recovery within a portion of the affected Microsoft 365 services as our backup power systems connect to impacted services and the backlog from services are processed. We're reviewing telemetry related to the remaining portion of affected infrastructure to determine what additional mitigation actions are required to fully recover the service.\n \nScope of impact: This issue may affect users in the West US region who are attempting to utilize the features outlined in the More info section.\n \nRoot cause: A recent power surge within a portion of our Azure infrastructure in the West US region caused services to go temporarily offline.\n \nNext update by: Saturday, February 7, 2026, at 9:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-02-07T17:16:58.127Z",
+              "postType": "regular",
+              "content": "Title: Some users may experience various issues with some Microsoft 365 services\n\nUser impact: Users may experience various issues with some Microsoft 365 services.\n\nMore info: This issue impacts the following services and scenarios:\n\n- Some users in the West US region may be unable to execute data plane operations in Power BI.\n\n- Some users may be unable to utilize Activity and file policy evaluation, Anomaly detection, or Advanced hunting for Microsoft Defender for Cloud Apps. \n\n- Users may also see stale information in the portal and execution of governance actions for Microsoft Defender for Cloud Apps.\n\n- Some users may be unable to utilize Advanced hunting in Microsoft Defender for Identity.\n\n- Admins may be unable to complete onboarding activities in the Microsoft Defender XDR portal\n\n- Admins may be unable to see Microsoft Purview Communication Compliance policy hits in Microsoft Purview.\n\n- Users may be unable to view recent data in Threat Explorer and Advanced Hunting within Microsoft Defender for Office 365.\n\n- Users may see device enrollment failures in Microsoft Intune.\n\nCurrent status: Our monitoring has notified us of an issue in the West US region where some users may experience various impacts to some Microsoft 365 services, which we've outlined in the More info section above. We've confirmed that a recent power surge at a portion of our Azure infrastructure in the West US region caused services to go temporarily offline. Our backup power systems were activated and we've confirmed that power remains stable to handle service activity. We're working to restore connectivity to the impacted services to fully resolve this issue.\n\nScope of impact: This issue may affect users in the West US region who are attempting to utilize the features outlined in the More info section.\n\nRoot cause: A recent power surge within a portion of our Azure infrastructure in the West US region caused services to go temporarily offline.\n\nNext update by: Saturday, February 7, 2026, at 7:30 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite",
+            "Power BI",
+            "Microsoft Intune",
+            "Microsoft Defender XDR",
+            "Microsoft Purview"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft OneDrive",
@@ -1409,9 +1532,49 @@
     },
     {
       "service": "Microsoft Defender XDR",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "Microsoft365Defender",
-      "issues": []
+      "issues": [
+        {
+          "id": "MO1228788",
+          "title": "Some users may experience various issues with some Microsoft 365 services",
+          "startTime": "2026-02-07T17:14:50Z",
+          "endTime": null,
+          "lastModified": "2026-02-07T22:21:56.877Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may experience various issues with some Microsoft 365 services.",
+          "scopeOfImpact": "This issue may affect users in the West US region who are attempting to utilize the features outlined in the More info section.\n\nStart time: Saturday, February 7, 2026, at 8:07 AM UTC",
+          "rootCause": "A recent power surge within a portion of our Azure infrastructure in the West US region caused services to go temporarily offline.",
+          "nextUpdateBy": "Monday, February 9, 2026, at 6:00 PM UTC",
+          "feature": "Sign-in",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-02-07T21:26:22.06Z",
+              "postType": "regular",
+              "content": "Title: Some users may experience various issues with some Microsoft 365 services\n\nUser impact: Users may experience various issues with some Microsoft 365 services.\n\nMore info: This issue impacts the following services and scenarios:\n- Some users in the West US region may be unable to execute data plane operations in Power BI.\n- Some users may be unable to utilize Activity and file policy evaluation, Anomaly detection, or Advanced hunting for Microsoft Defender for Cloud Apps.\n- Users may also see stale information in the portal and execution of governance actions for Microsoft Defender for Cloud Apps.\n- Some users may be unable to utilize Advanced hunting in Microsoft Defender for Identity.\n- Admins may be unable to complete onboarding activities in the Microsoft Defender XDR portal\n- Admins may be unable to see Microsoft Purview Communication Compliance policy hits in Microsoft Purview.\n- Users may be unable to view recent data in Threat Explorer and Advanced Hunting within Microsoft Defender for Office 365.\n- Users may see device enrollment failures in Microsoft Intune.\n \nCurrent status: Our backup power systems have connected all but a subset of the impacted services and we're working to process the remaining backlogs to ensure full recovery for those services. Review of service health telemetry indicates the backup power systems have returned those services to expected functionality, and we're continuing our efforts to restore the remaining affected infrastructure.\n \nScope of impact: This issue may affect users in the West US region who are attempting to utilize the features outlined in the More info section.\n\nStart time: Saturday, February 7, 2026, at 8:07 AM UTC\n \nRoot cause: A recent power surge within a portion of our Azure infrastructure in the West US region caused services to go temporarily offline.\n \nNext update by: Monday, February 9, 2026, at 6:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-02-07T19:22:08.493Z",
+              "postType": "regular",
+              "content": "Title: Some users may experience various issues with some Microsoft 365 services\n\nUser impact: Users may experience various issues with some Microsoft 365 services.\n\nMore info: This issue impacts the following services and scenarios:\n \n- Some users in the West US region may be unable to execute data plane operations in Power BI.\n \n- Some users may be unable to utilize Activity and file policy evaluation, Anomaly detection, or Advanced hunting for Microsoft Defender for Cloud Apps.\n \n- Users may also see stale information in the portal and execution of governance actions for Microsoft Defender for Cloud Apps.\n \n- Some users may be unable to utilize Advanced hunting in Microsoft Defender for Identity.\n \n- Admins may be unable to complete onboarding activities in the Microsoft Defender XDR portal\n \n- Admins may be unable to see Microsoft Purview Communication Compliance policy hits in Microsoft Purview.\n \n- Users may be unable to view recent data in Threat Explorer and Advanced Hunting within Microsoft Defender for Office 365.\n \n- Users may see device enrollment failures in Microsoft Intune.\n \nCurrent status: We're seeing recovery within a portion of the affected Microsoft 365 services as our backup power systems connect to impacted services and the backlog from services are processed. We're reviewing telemetry related to the remaining portion of affected infrastructure to determine what additional mitigation actions are required to fully recover the service.\n \nScope of impact: This issue may affect users in the West US region who are attempting to utilize the features outlined in the More info section.\n \nRoot cause: A recent power surge within a portion of our Azure infrastructure in the West US region caused services to go temporarily offline.\n \nNext update by: Saturday, February 7, 2026, at 9:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-02-07T17:16:58.127Z",
+              "postType": "regular",
+              "content": "Title: Some users may experience various issues with some Microsoft 365 services\n\nUser impact: Users may experience various issues with some Microsoft 365 services.\n\nMore info: This issue impacts the following services and scenarios:\n\n- Some users in the West US region may be unable to execute data plane operations in Power BI.\n\n- Some users may be unable to utilize Activity and file policy evaluation, Anomaly detection, or Advanced hunting for Microsoft Defender for Cloud Apps. \n\n- Users may also see stale information in the portal and execution of governance actions for Microsoft Defender for Cloud Apps.\n\n- Some users may be unable to utilize Advanced hunting in Microsoft Defender for Identity.\n\n- Admins may be unable to complete onboarding activities in the Microsoft Defender XDR portal\n\n- Admins may be unable to see Microsoft Purview Communication Compliance policy hits in Microsoft Purview.\n\n- Users may be unable to view recent data in Threat Explorer and Advanced Hunting within Microsoft Defender for Office 365.\n\n- Users may see device enrollment failures in Microsoft Intune.\n\nCurrent status: Our monitoring has notified us of an issue in the West US region where some users may experience various impacts to some Microsoft 365 services, which we've outlined in the More info section above. We've confirmed that a recent power surge at a portion of our Azure infrastructure in the West US region caused services to go temporarily offline. Our backup power systems were activated and we've confirmed that power remains stable to handle service activity. We're working to restore connectivity to the impacted services to fully resolve this issue.\n\nScope of impact: This issue may affect users in the West US region who are attempting to utilize the features outlined in the More info section.\n\nRoot cause: A recent power surge within a portion of our Azure infrastructure in the West US region caused services to go temporarily offline.\n\nNext update by: Saturday, February 7, 2026, at 7:30 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite",
+            "Power BI",
+            "Microsoft Intune",
+            "Microsoft Defender XDR",
+            "Microsoft Purview"
+          ]
+        }
+      ]
     },
     {
       "service": "Project for the web",
@@ -1445,9 +1608,49 @@
     },
     {
       "service": "Microsoft Purview",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "Purview",
-      "issues": []
+      "issues": [
+        {
+          "id": "MO1228788",
+          "title": "Some users may experience various issues with some Microsoft 365 services",
+          "startTime": "2026-02-07T17:14:50Z",
+          "endTime": null,
+          "lastModified": "2026-02-07T22:21:56.877Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may experience various issues with some Microsoft 365 services.",
+          "scopeOfImpact": "This issue may affect users in the West US region who are attempting to utilize the features outlined in the More info section.\n\nStart time: Saturday, February 7, 2026, at 8:07 AM UTC",
+          "rootCause": "A recent power surge within a portion of our Azure infrastructure in the West US region caused services to go temporarily offline.",
+          "nextUpdateBy": "Monday, February 9, 2026, at 6:00 PM UTC",
+          "feature": "Sign-in",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-02-07T21:26:22.06Z",
+              "postType": "regular",
+              "content": "Title: Some users may experience various issues with some Microsoft 365 services\n\nUser impact: Users may experience various issues with some Microsoft 365 services.\n\nMore info: This issue impacts the following services and scenarios:\n- Some users in the West US region may be unable to execute data plane operations in Power BI.\n- Some users may be unable to utilize Activity and file policy evaluation, Anomaly detection, or Advanced hunting for Microsoft Defender for Cloud Apps.\n- Users may also see stale information in the portal and execution of governance actions for Microsoft Defender for Cloud Apps.\n- Some users may be unable to utilize Advanced hunting in Microsoft Defender for Identity.\n- Admins may be unable to complete onboarding activities in the Microsoft Defender XDR portal\n- Admins may be unable to see Microsoft Purview Communication Compliance policy hits in Microsoft Purview.\n- Users may be unable to view recent data in Threat Explorer and Advanced Hunting within Microsoft Defender for Office 365.\n- Users may see device enrollment failures in Microsoft Intune.\n \nCurrent status: Our backup power systems have connected all but a subset of the impacted services and we're working to process the remaining backlogs to ensure full recovery for those services. Review of service health telemetry indicates the backup power systems have returned those services to expected functionality, and we're continuing our efforts to restore the remaining affected infrastructure.\n \nScope of impact: This issue may affect users in the West US region who are attempting to utilize the features outlined in the More info section.\n\nStart time: Saturday, February 7, 2026, at 8:07 AM UTC\n \nRoot cause: A recent power surge within a portion of our Azure infrastructure in the West US region caused services to go temporarily offline.\n \nNext update by: Monday, February 9, 2026, at 6:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-02-07T19:22:08.493Z",
+              "postType": "regular",
+              "content": "Title: Some users may experience various issues with some Microsoft 365 services\n\nUser impact: Users may experience various issues with some Microsoft 365 services.\n\nMore info: This issue impacts the following services and scenarios:\n \n- Some users in the West US region may be unable to execute data plane operations in Power BI.\n \n- Some users may be unable to utilize Activity and file policy evaluation, Anomaly detection, or Advanced hunting for Microsoft Defender for Cloud Apps.\n \n- Users may also see stale information in the portal and execution of governance actions for Microsoft Defender for Cloud Apps.\n \n- Some users may be unable to utilize Advanced hunting in Microsoft Defender for Identity.\n \n- Admins may be unable to complete onboarding activities in the Microsoft Defender XDR portal\n \n- Admins may be unable to see Microsoft Purview Communication Compliance policy hits in Microsoft Purview.\n \n- Users may be unable to view recent data in Threat Explorer and Advanced Hunting within Microsoft Defender for Office 365.\n \n- Users may see device enrollment failures in Microsoft Intune.\n \nCurrent status: We're seeing recovery within a portion of the affected Microsoft 365 services as our backup power systems connect to impacted services and the backlog from services are processed. We're reviewing telemetry related to the remaining portion of affected infrastructure to determine what additional mitigation actions are required to fully recover the service.\n \nScope of impact: This issue may affect users in the West US region who are attempting to utilize the features outlined in the More info section.\n \nRoot cause: A recent power surge within a portion of our Azure infrastructure in the West US region caused services to go temporarily offline.\n \nNext update by: Saturday, February 7, 2026, at 9:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-02-07T17:16:58.127Z",
+              "postType": "regular",
+              "content": "Title: Some users may experience various issues with some Microsoft 365 services\n\nUser impact: Users may experience various issues with some Microsoft 365 services.\n\nMore info: This issue impacts the following services and scenarios:\n\n- Some users in the West US region may be unable to execute data plane operations in Power BI.\n\n- Some users may be unable to utilize Activity and file policy evaluation, Anomaly detection, or Advanced hunting for Microsoft Defender for Cloud Apps. \n\n- Users may also see stale information in the portal and execution of governance actions for Microsoft Defender for Cloud Apps.\n\n- Some users may be unable to utilize Advanced hunting in Microsoft Defender for Identity.\n\n- Admins may be unable to complete onboarding activities in the Microsoft Defender XDR portal\n\n- Admins may be unable to see Microsoft Purview Communication Compliance policy hits in Microsoft Purview.\n\n- Users may be unable to view recent data in Threat Explorer and Advanced Hunting within Microsoft Defender for Office 365.\n\n- Users may see device enrollment failures in Microsoft Intune.\n\nCurrent status: Our monitoring has notified us of an issue in the West US region where some users may experience various impacts to some Microsoft 365 services, which we've outlined in the More info section above. We've confirmed that a recent power surge at a portion of our Azure infrastructure in the West US region caused services to go temporarily offline. Our backup power systems were activated and we've confirmed that power remains stable to handle service activity. We're working to restore connectivity to the impacted services to fully resolve this issue.\n\nScope of impact: This issue may affect users in the West US region who are attempting to utilize the features outlined in the More info section.\n\nRoot cause: A recent power surge within a portion of our Azure infrastructure in the West US region caused services to go temporarily offline.\n\nNext update by: Saturday, February 7, 2026, at 7:30 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite",
+            "Power BI",
+            "Microsoft Intune",
+            "Microsoft Defender XDR",
+            "Microsoft Purview"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft Clipchamp ",
@@ -2625,42 +2828,6 @@
           "createdAt": "2026-01-09T18:19:15.99Z",
           "postType": "regular",
           "content": "Title: Users aren't receiving notification emails generated from the SharePoint Online Rules feature\n\nUser impact: Users aren't receiving notification emails generated from the SharePoint Online Rules feature.\n\nMore info: This event is a continuation of the incident previously communicated via SP1216014.\n\nUsers can create a new rule with the same settings as an affected rule to bypass the impact while we work to resolve this issue.\n\nCurrent status: We're investigating a potential issue with SharePoint Online rules and checking for impact to your organization. We'll provide an update within 30 minutes."
-        }
-      ],
-      "serviceName": "SharePoint Online",
-      "affectedServices": [
-        "SharePoint Online"
-      ]
-    },
-    {
-      "id": "SP1215831",
-      "title": "Some read-only users may see blank pages for their SharePoint Online sites",
-      "startTime": "2026-01-07T19:44:00Z",
-      "endTime": "2026-01-08T18:18:00Z",
-      "lastModified": "2026-01-08T20:22:17.317Z",
-      "status": "serviceRestored",
-      "severity": "incident",
-      "userImpact": "Read-only users may have seen blank pages for their SharePoint Online sites.",
-      "scopeOfImpact": "Some read-only users may have seen blank pages for their SharePoint Online sites. \n \nStart time: Wednesday, January 7, 2026, at 7:44 PM UTC\n \nEnd time: Thursday, January 8, 2026, at 6:18 PM UTC",
-      "rootCause": "The latest SharePoint Online service build contained a regression which resulted in read-only users seeing blank pages for their SharePoint Online sites.\n \nNext steps: \n- We're analyzing the offending service build to isolate the underlying root cause. This analysis will help us to improve the quality and reliability of our future updates, while also helping that similar impact doesn't occur in future.\n \nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "SharePoint Online all features",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-01-08T19:53:29.543Z",
-          "postType": "regular",
-          "content": "Title: Some read-only users may see blank pages for their SharePoint Online sites\n\nUser impact: Read-only users may have seen blank pages for their SharePoint Online sites.\n\nMore info: Affected users reported seeing relevant page information displaying briefly before becoming a blank page.\n \nFinal status: We've validated that the latest SharePoint Online service build contained a regression which resulted in read-only users seeing blank pages for their SharePoint Online sites. We've rolled back the offending build and validated with a subset of affected users that our actions successfully resolved the issue.\n \nScope of impact: Some read-only users may have seen blank pages for their SharePoint Online sites. \n \nStart time: Wednesday, January 7, 2026, at 7:44 PM UTC\n \nEnd time: Thursday, January 8, 2026, at 6:18 PM UTC\n \nRoot cause: The latest SharePoint Online service build contained a regression which resulted in read-only users seeing blank pages for their SharePoint Online sites.\n \nNext steps: \n- We're analyzing the offending service build to isolate the underlying root cause. This analysis will help us to improve the quality and reliability of our future updates, while also helping that similar impact doesn't occur in future.\n \nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-01-08T19:20:45.09Z",
-          "postType": "regular",
-          "content": "Title: Some read-only users may see blank pages for their SharePoint Online sites\n\nUser impact: Read-only users may see blank pages for their SharePoint Online sites.\n\nMore info: Affected users report seeing relevant page information displaying briefly before becoming a blank page.\n \nCurrent status: We're reviewing reports from affected users to understand the current impact scenario and to determine what mitigation actions we can take to resolve impact.\n \nScope of impact: Some read-only users may see blank pages for their SharePoint Online sites. This section may be updated as the investigation progresses.\n \nNext update by: Thursday, January 8, 2026, at 9:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-01-08T19:07:37.777Z",
-          "postType": "regular",
-          "content": "Title: Read-only users see blank pages for their SharePoint Online sites\n\nUser impact: Read-only users see blank pages for their SharePoint Online sites.\n\nMore info: Affected users report seeing relevant page information displaying briefly before becoming a blank page.\n \nCurrent status: We're investigating a potential issue with SharePoint Online and checking for impact to your organization. We'll provide an update within 30 minutes."
         }
       ],
       "serviceName": "SharePoint Online",
