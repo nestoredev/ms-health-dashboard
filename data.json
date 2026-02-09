@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-09T08:36:45.295Z",
+  "lastUpdated": "2026-02-09T09:06:50.391Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1039,6 +1039,31 @@
       "status": "serviceDegradation",
       "id": "Intune",
       "issues": [
+        {
+          "id": "IT1229615",
+          "title": "Admins are unable to edit certain policies in the Endpoint Security node in Microsoft Intune",
+          "startTime": "2026-02-09T06:03:11Z",
+          "endTime": null,
+          "lastModified": "2026-02-09T07:00:17.4Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Admins are unable to edit certain policies in the Endpoint Security node in Microsoft Intune.",
+          "scopeOfImpact": "Your organization is affected by this event, and admins are unable to edit certain policies in the Endpoint Security node in Microsoft Intune. This section may be updated as our investigation continues.",
+          "rootCause": "",
+          "nextUpdateBy": "Monday, February 9, 2026, at 10:00 AM UTC",
+          "feature": "Microsoft Intune",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-02-09T07:00:17.4Z",
+              "postType": "regular",
+              "content": "Title: Admins are unable to edit certain policies in the Endpoint Security node in Microsoft Intune\n\nUser impact: Admins are unable to edit certain policies in the Endpoint Security node in Microsoft Intune.\n\nMore info: Admins see errors when trying to edit or assign Account Protection Policies, Firewall Policies, Endpoint Protection Policies, and Antivirus Policies.\n \nCurrent status: We've received reports of issues when attempting to edit certain policies in Microsoft Intune. We're investigating our service logs and attempting to reproduce the issue internally to help understand the underlying cause of impact and inform our next troubleshooting steps.\n \nScope of impact: Your organization is affected by this event, and admins are unable to edit certain policies in the Endpoint Security node in Microsoft Intune. This section may be updated as our investigation continues.\n \nNext update by: Monday, February 9, 2026, at 10:00 AM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Intune"
+          ]
+        },
         {
           "id": "MO1228788",
           "title": "Some users may experience various issues with some Microsoft 365 services",
