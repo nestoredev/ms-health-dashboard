@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-09T23:11:45.810Z",
+  "lastUpdated": "2026-02-09T23:41:53.697Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -111,16 +111,21 @@
           "title": "Some users' legitimate email messages may be marked as phishing and quarantined in Exchange Online",
           "startTime": "2026-02-05T15:31:57Z",
           "endTime": null,
-          "lastModified": "2026-02-07T23:01:42.573Z",
+          "lastModified": "2026-02-09T23:34:22.81Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users' legitimate email messages may be marked as phishing and quarantined in Exchange Online.",
-          "scopeOfImpact": "Some users attempting to send or receive Exchange Online email messages may be impacted.\n\nPreliminary",
+          "scopeOfImpact": "Some users attempting to send or receive Exchange Online email messages may be impacted.\n\nStart time: Thursday, February 5, 2026, at 12:26 AM UTC \n\nPreliminary",
           "rootCause": "An updated URL rule intending to identify more sophisticated spam and phishing email messages is incorrectly quarantining legitimate email messages in Exchange Online, resulting in impact.",
-          "nextUpdateBy": "Tuesday, February 10, 2026, at 1:00 AM UTC",
+          "nextUpdateBy": "Wednesday, February 11, 2026, at 1:00 AM UTC",
           "feature": "Performance degradation",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-02-09T23:34:22.81Z",
+              "postType": "regular",
+              "content": "Title: Some users' legitimate email messages may be marked as phishing and quarantined in Exchange Online\n\nUser impact: Users' legitimate email messages may be marked as phishing and quarantined in Exchange Online.\n\nMore info: Users may see some previously quarantined messages successfully delivered; however, some messages may still be impacted until the issue is fully resolved.\n\nCurrent status: We discovered an issue when unblocking some legitimate URLs which we must resolve prior to releasing the quarantined messages. We’re working on addressing the blocker so we can proceed with unblocking the legitimate URLs and releasing the quarantined messages to remediate.\n\nScope of impact: Some users attempting to send or receive Exchange Online email messages may be impacted.\n\nStart time: Thursday, February 5, 2026, at 12:26 AM UTC \n\nPreliminary root cause: An updated URL rule intending to identify more sophisticated spam and phishing email messages is incorrectly quarantining legitimate email messages in Exchange Online, resulting in impact. \n\nNext update by: Wednesday, February 11, 2026, at 1:00 AM UTC"
+            },
             {
               "createdAt": "2026-02-07T20:20:01.883Z",
               "postType": "regular",
@@ -934,16 +939,21 @@
           "title": "Users may be unable to send subscription emails to external users in Power BI",
           "startTime": "2026-01-29T18:41:24Z",
           "endTime": null,
-          "lastModified": "2026-02-02T23:12:02.773Z",
+          "lastModified": "2026-02-09T23:14:34.923Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to send subscription emails to external users in Power BI.",
           "scopeOfImpact": "Impact may occur for all users attempting to send subscription emails to external users in Power BI.\n\nStart time: Thursday, January 29, 2026, at 6:45 PM UTC",
-          "rootCause": "An influx of automated email traffic from Power BI subscriptions resulted in impact to external subscription email delivery.",
-          "nextUpdateBy": "Tuesday, February 10, 2026, at 12:30 AM UTC",
+          "rootCause": "An influx of automated email traffic from Power BI subscriptions is resulting in impact to external subscription email delivery.",
+          "nextUpdateBy": "Tuesday, February 24, 2026, at 12:30 AM UTC",
           "feature": "PowerBI.com",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-02-09T23:14:34.923Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to send subscription emails to external users in Power BI\n\nUser impact: Users may be unable to send subscription emails to external users in Power BI.\n\nCurrent status: We're working to develop a code fix although we anticipate this process may take an extended period as we work to address the issue resulting in impact, and in tandem restore subscription mail flow to external users. We’ll provide a resolution timeline as more details become available to us.\n\nScope of impact: Impact may occur for all users attempting to send subscription emails to external users in Power BI.\n\nStart time: Thursday, January 29, 2026, at 6:45 PM UTC\n\nRoot cause: An influx of automated email traffic from Power BI subscriptions is resulting in impact to external subscription email delivery.\n\nNext update by: Tuesday, February 24, 2026, at 12:30 AM UTC"
+            },
             {
               "createdAt": "2026-02-02T23:12:02.773Z",
               "postType": "regular",
