@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-10T16:45:43.291Z",
+  "lastUpdated": "2026-02-10T17:15:51.137Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -428,16 +428,21 @@
           "title": "Some users in the North America region may be unable to access the Microsoft 365 admin center",
           "startTime": "2026-02-10T13:00:00Z",
           "endTime": null,
-          "lastModified": "2026-02-10T16:32:25.173Z",
+          "lastModified": "2026-02-10T16:47:04.983Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users in the North America region may be unable to access the Microsoft 365 admin center.",
-          "scopeOfImpact": "",
+          "scopeOfImpact": "This issue impacts the North America region.",
           "rootCause": "",
-          "nextUpdateBy": "",
+          "nextUpdateBy": "Tuesday, February 10, 2026, at 6:00 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-02-10T16:47:04.983Z",
+              "postType": "regular",
+              "content": "Title: Some users in the North America region may be unable to access the Microsoft 365 admin center\n\nUser impact: Users in the North America region may be unable to access the Microsoft 365 admin center.\n\nMore info: Users able to access the admin center may be experiencing degraded functionality. \n\nAs functionality is degraded, users may be unable to raise support tickets through the Microsoft 365 admin center.\n\nAdditionally, users may be unable to access the M365 app.\n\nCurrent status: Whilst we were performing the targeted restarts, parallel root cause investigations identified a recent change to the redirection service which may have been contributing to impact. We’ve reverted the change and are monitoring the service for recovery. Telemetry indicates that the service is beginning to recover.\n\nScope of impact: This issue impacts the North America region. \n\nNext update by: Tuesday, February 10, 2026, at 6:00 PM UTC"
+            },
             {
               "createdAt": "2026-02-10T16:10:38.817Z",
               "postType": "quick",
