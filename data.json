@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-10T18:16:05.636Z",
+  "lastUpdated": "2026-02-10T18:46:13.316Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1043,56 +1043,6 @@
           ]
         },
         {
-          "id": "OD1229770",
-          "title": "Some admins may be unable to provision new Microsoft OneDrive personal sites for newly onboarded users",
-          "startTime": "2026-02-09T15:30:53Z",
-          "endTime": null,
-          "lastModified": "2026-02-10T01:26:34.083Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Admins may be unable to provision new OneDrive personal sites for newly onboarded users.",
-          "scopeOfImpact": "Some admins attempting to provision new OneDrive personal sites may be impacted. This information may be updated as our investigation continues.",
-          "rootCause": "",
-          "nextUpdateBy": "Tuesday, February 10, 2026, at 8:00 PM UTC",
-          "feature": "OneDrive for Business",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-02-10T01:19:55.9Z",
-              "postType": "regular",
-              "content": "Title: Some admins may be unable to provision new Microsoft OneDrive personal sites for newly onboarded users\n\nUser impact: Admins may be unable to provision new OneDrive personal sites for newly onboarded users.\n\nMore info: As a result, new users may be unable to access OneDrive.\n \nUsers who are auto-provisioned by the service aren't affected.\n\nCurrent status: We’re continuing to analyze the recently collected ULS logs and are reviewing any recent changes to authentication that may have contributed to the impact to confirm our findings and determine our next troubleshooting steps.\n\nScope of impact: Some admins attempting to provision new OneDrive personal sites may be impacted. This information may be updated as our investigation continues.\n\nNext update by: Tuesday, February 10, 2026, at 8:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-02-09T22:12:31.49Z",
-              "postType": "regular",
-              "content": "Title: Some admins may be unable to provision new Microsoft OneDrive personal sites for newly onboarded users\n\nUser impact: Admins may be unable to provision new OneDrive personal sites for newly onboarded users.\n\nMore info: As a result, new users may be unable to access OneDrive.\n\nUsers who are auto-provisioned by the service aren't affected.\n \nCurrent status: Our roll back of the recent change we suspected may be causing the impact hasn't resolved the issue. We're continuing our review of the ULS logging collected from a reproduction of the impact conducted in our internal testing environment for any further errors or exceptions which may uncover the source of the impact.\n \nScope of impact: Some admins attempting to provision new OneDrive personal sites may be impacted. This information may be updated as our investigation continues.\n \nNext update by: Tuesday, February 10, 2026, at 2:30 AM UTC"
-            },
-            {
-              "createdAt": "2026-02-09T20:50:49.95Z",
-              "postType": "regular",
-              "content": "Title: Some admins may be unable to provision new Microsoft OneDrive personal sites for newly onboarded users\n\nUser impact: Admins may be unable to provision new OneDrive personal sites for newly onboarded users.\n\nMore info: As a result, new users may be unable to access OneDrive.\n \nUsers who are auto-provisioned by the service aren't affected.\n \nCurrent status: We've identified a recent change which we suspect may be causing the impact, and we're reversing this change to check whether this resolves the issue.\n \nScope of impact: Some admins attempting to provision new OneDrive personal sites may be impacted. This information may be updated as our investigation continues.\n \nNext update by: Monday, February 9, 2026, at 11:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-02-09T18:52:33.303Z",
-              "postType": "regular",
-              "content": "Title: Some admins may be unable to provision new Microsoft OneDrive personal sites for newly onboarded users\n\nUser impact: Admins may be unable to provision new OneDrive personal sites for newly onboarded users.\n\nMore info: As a result, new users may be unable to access OneDrive.\n\nUsers who are auto-provisioned by the service aren't affected.\n\nCurrent status: We've identified an exception which may indicate an authentication issue, and we're further analyzing this exception to confirm whether this is the origin of the impact.\n\nScope of impact: Some admins attempting to provision new OneDrive personal sites may be impacted. This information may be updated as our investigation continues.\n\nNext update by: Monday, February 9, 2026, at 9:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-02-09T16:37:22.68Z",
-              "postType": "regular",
-              "content": "Title: Some admins may be unable to provision new Microsoft OneDrive personal sites for newly onboarded users\n\nUser impact: Admins may be unable to provision new OneDrive personal sites for newly onboarded users.\n\nMore info: As a result, new users may be unable to access OneDrive.\n \nCurrent status: We're expanding our investigation to include correlation IDs and request IDs provided by a sample affected user to aid our efforts in identifying the source of impact.\n \nScope of impact: Some admins attempting to provision new OneDrive personal sites may be impacted. This information may be updated as our investigation continues.\n \nNext update by: Monday, February 9, 2026, at 7:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-02-09T15:31:32.933Z",
-              "postType": "regular",
-              "content": "Title: Some admins may be unable to provision new Microsoft OneDrive personal sites for newly onboarded users\n\nUser impact: Admins may be unable to provision new OneDrive personal sites for newly onboarded users.\n\nMore info: As a result, new users may be unable to access OneDrive.\n \nCurrent status: We're reviewing service monitoring telemetry to isolate the root cause and determine our next troubleshooting steps.\n \nScope of impact: Some admins attempting to provision new OneDrive personal sites may be impacted. This information may be updated as our investigation continues. \n \nNext update by: Monday, February 9, 2026, at 5:30 PM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Microsoft OneDrive"
-          ]
-        },
-        {
           "id": "MO1176905",
           "title": "Some admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services",
           "startTime": "2025-10-07T08:27:00Z",
@@ -1545,16 +1495,21 @@
           "title": "Users' email messages with a confidential label applied are being incorrectly processed by Microsoft 365 Copilot chat",
           "startTime": "2026-01-21T07:25:00Z",
           "endTime": null,
-          "lastModified": "2026-02-10T18:04:05.273Z",
+          "lastModified": "2026-02-10T18:22:38Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users' email messages with a confidential label applied are being incorrectly processed by Microsoft 365 Copilot chat.",
-          "scopeOfImpact": "Your organization is affected by this event, and users' email messages with a confidential label applied are being incorrectly processed by Microsoft 365 Copilot chat. This section may be updated as our investigation continues.",
+          "scopeOfImpact": "Your organization is affected by this event, and users' email messages with a confidential label applied are being incorrectly processed by Microsoft 365 Copilot chat. This section may be updated as our investigation continues.\n \nStart time: Wednesday, January 21, 2026, at 7:25 AM UTC",
           "rootCause": "A code issue is allowing items in the sent items and draft folders to be picked up by Copilot even though confidential labels are set in place.",
-          "nextUpdateBy": "Tuesday, February 10, 2026, at 7:00 PM UTC",
+          "nextUpdateBy": "Wednesday, February 18, 2026, at 11:00 AM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-02-10T18:22:38Z",
+              "postType": "regular",
+              "content": "Title: Users' email messages with a confidential label applied are being incorrectly processed by Microsoft 365 Copilot chat\n\nUser impact: Users' email messages with a confidential label applied are being incorrectly processed by Microsoft 365 Copilot chat.\n\nMore info: The Microsoft 365 Copilot \"work tab\" Chat is summarizing email messages even though these email messages have a sensitivity label applied and a DLP policy is configured.\n \nCurrent status: Deployment of our fix to remediate incorrect processing of email messages with a confidential label by Microsoft 365 Copilot chat is ongoing, and we're reaching out to a subset of affected users to test for impact remediation as our rollout saturates across affected environments. We aim to provide a timeline to remediation as one becomes available.\n \nScope of impact: Your organization is affected by this event, and users' email messages with a confidential label applied are being incorrectly processed by Microsoft 365 Copilot chat. This section may be updated as our investigation continues.\n \nStart time: Wednesday, January 21, 2026, at 7:25 AM UTC\n \nRoot cause: A code issue is allowing items in the sent items and draft folders to be picked up by Copilot even though confidential labels are set in place.\n \nNext update by: Wednesday, February 18, 2026, at 11:00 AM UTC"
+            },
             {
               "createdAt": "2026-02-03T10:41:13.613Z",
               "postType": "regular",
@@ -1623,6 +1578,52 @@
       "serviceName": "Microsoft 365 suite",
       "affectedServices": [
         "Microsoft 365 suite"
+      ]
+    },
+    {
+      "id": "OD1229770",
+      "title": "Some admins may be unable to provision new Microsoft OneDrive personal sites for newly onboarded users",
+      "startTime": "2026-02-02T17:47:00Z",
+      "endTime": "2026-02-10T06:12:00Z",
+      "lastModified": "2026-02-10T18:40:30.743Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Admins may have been unable to provision new OneDrive personal sites for newly onboarded users.",
+      "scopeOfImpact": "Some admins attempting to provision new OneDrive personal sites for newly onboarded users may have been impacted.\n \nStart time: Friday, February 6, 2026, at 5:47 PM UTC\n \nEnd time: Tuesday, February 10, 2026, at 6:12 AM UTC",
+      "rootCause": "A recent service update which intended to modify the permissions for newly onboarded users contained a code issue, which resulted in impact.\n \nNext steps: \n- We're reviewing our update procedures to understand why impact to onboarding wasn't caught during the testing phase. This will allow us to drive service improvements by proactively identifying similar issues in the future and improve our update testing processes.\n \nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "OneDrive for Business",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-02-10T18:40:30.743Z",
+          "postType": "regular",
+          "content": "Title: Some admins may be unable to provision new Microsoft OneDrive personal sites for newly onboarded users\n\nUser impact: Admins may have been unable to provision new OneDrive personal sites for newly onboarded users.\n\nMore info: As a result, new users may have been unable to access OneDrive.\nUsers who were auto-provisioned by the service weren't affected.\n \nFinal status: We've identified that a recent service update, intended to modify the permissions for newly onboarded users, contained a code issue which resulted in impact. We've reverted the offending service update and confirmed through testing with affected users that the impact has been remediated.\n \nScope of impact: Some admins attempting to provision new OneDrive personal sites for newly onboarded users may have been impacted.\n \nStart time: Friday, February 6, 2026, at 5:47 PM UTC\n \nEnd time: Tuesday, February 10, 2026, at 6:12 AM UTC\n \nRoot cause: A recent service update which intended to modify the permissions for newly onboarded users contained a code issue, which resulted in impact.\n \nNext steps: \n- We're reviewing our update procedures to understand why impact to onboarding wasn't caught during the testing phase. This will allow us to drive service improvements by proactively identifying similar issues in the future and improve our update testing processes.\n \nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-02-10T01:19:55.9Z",
+          "postType": "regular",
+          "content": "Title: Some admins may be unable to provision new Microsoft OneDrive personal sites for newly onboarded users\n\nUser impact: Admins may be unable to provision new OneDrive personal sites for newly onboarded users.\n\nMore info: As a result, new users may be unable to access OneDrive.\n \nUsers who are auto-provisioned by the service aren't affected.\n\nCurrent status: We’re continuing to analyze the recently collected ULS logs and are reviewing any recent changes to authentication that may have contributed to the impact to confirm our findings and determine our next troubleshooting steps.\n\nScope of impact: Some admins attempting to provision new OneDrive personal sites may be impacted. This information may be updated as our investigation continues.\n\nNext update by: Tuesday, February 10, 2026, at 8:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-02-09T22:12:31.49Z",
+          "postType": "regular",
+          "content": "Title: Some admins may be unable to provision new Microsoft OneDrive personal sites for newly onboarded users\n\nUser impact: Admins may be unable to provision new OneDrive personal sites for newly onboarded users.\n\nMore info: As a result, new users may be unable to access OneDrive.\n\nUsers who are auto-provisioned by the service aren't affected.\n \nCurrent status: Our roll back of the recent change we suspected may be causing the impact hasn't resolved the issue. We're continuing our review of the ULS logging collected from a reproduction of the impact conducted in our internal testing environment for any further errors or exceptions which may uncover the source of the impact.\n \nScope of impact: Some admins attempting to provision new OneDrive personal sites may be impacted. This information may be updated as our investigation continues.\n \nNext update by: Tuesday, February 10, 2026, at 2:30 AM UTC"
+        },
+        {
+          "createdAt": "2026-02-09T20:50:49.95Z",
+          "postType": "regular",
+          "content": "Title: Some admins may be unable to provision new Microsoft OneDrive personal sites for newly onboarded users\n\nUser impact: Admins may be unable to provision new OneDrive personal sites for newly onboarded users.\n\nMore info: As a result, new users may be unable to access OneDrive.\n \nUsers who are auto-provisioned by the service aren't affected.\n \nCurrent status: We've identified a recent change which we suspect may be causing the impact, and we're reversing this change to check whether this resolves the issue.\n \nScope of impact: Some admins attempting to provision new OneDrive personal sites may be impacted. This information may be updated as our investigation continues.\n \nNext update by: Monday, February 9, 2026, at 11:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-02-09T18:52:33.303Z",
+          "postType": "regular",
+          "content": "Title: Some admins may be unable to provision new Microsoft OneDrive personal sites for newly onboarded users\n\nUser impact: Admins may be unable to provision new OneDrive personal sites for newly onboarded users.\n\nMore info: As a result, new users may be unable to access OneDrive.\n\nUsers who are auto-provisioned by the service aren't affected.\n\nCurrent status: We've identified an exception which may indicate an authentication issue, and we're further analyzing this exception to confirm whether this is the origin of the impact.\n\nScope of impact: Some admins attempting to provision new OneDrive personal sites may be impacted. This information may be updated as our investigation continues.\n\nNext update by: Monday, February 9, 2026, at 9:00 PM UTC"
+        }
+      ],
+      "serviceName": "Microsoft OneDrive",
+      "affectedServices": [
+        "Microsoft OneDrive"
       ]
     },
     {
