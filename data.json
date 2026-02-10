@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-10T14:45:14.823Z",
+  "lastUpdated": "2026-02-10T15:15:20.795Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -423,6 +423,31 @@
       "status": "serviceDegradation",
       "id": "OSDPPlatform",
       "issues": [
+        {
+          "id": "MO1230320",
+          "title": "Some users in the North America region may be unable to access the Microsoft 365 admin center",
+          "startTime": "2026-02-10T14:48:50Z",
+          "endTime": null,
+          "lastModified": "2026-02-10T14:53:23.17Z",
+          "status": "serviceDegradation",
+          "severity": "incident",
+          "userImpact": "Users in the North America region may be unable to access the Microsoft 365 admin center.",
+          "scopeOfImpact": "Initial reports indicate that the issue is occurring in the North America region. We'll provide more information as we investigate.",
+          "rootCause": "",
+          "nextUpdateBy": "Tuesday, February 10, 2026, at 4:00 PM UTC",
+          "feature": "Access",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-02-10T14:50:24.737Z",
+              "postType": "regular",
+              "content": "Title: Some users in the North America region may be unable to access the Microsoft 365 admin center\n\nUser impact: Users in the North America region may be unable to access the Microsoft 365 admin center.\n\nMore info: Users able to access the admin center may experiencing degraded functionality.\n \nCurrent status: We're reviewing service monitoring telemetry to isolate the root cause and develop a remediation plan.\n\nScope of impact: Initial reports indicate that the issue is occurring in the North America region. We'll provide more information as we investigate.\n\nNext update by: Tuesday, February 10, 2026, at 4:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite"
+          ]
+        },
         {
           "id": "MO1176905",
           "title": "Some admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services",
