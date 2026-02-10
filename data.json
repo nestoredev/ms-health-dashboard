@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-10T13:45:02.845Z",
+  "lastUpdated": "2026-02-10T14:15:09.128Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -50,56 +50,6 @@
               "createdAt": "2026-02-06T19:01:42.533Z",
               "postType": "regular",
               "content": "Title: Users' MailTips may not reflect free/busy correctly in Outlook desktop and crashes may occur when adding mailboxes\n \nUser impact: Users' MailTips may not reflect free/busy correctly in Outlook desktop and crashes may occur when adding mailboxes.\n \nMore info: This issue is specific to the Outlook desktop client in organizations with a hybrid environment using Exchange Web Services (EWS) for MailTips. Users may notice that the MailTips free/busy feature isn’t operating as expected and may see an error stating “we can’t show MailTips right now.”\n \nThe Outlook desktop crashes occur when attempting to add a new on-premise mailbox. \n \nAdmins may be unable to create new on-premise mailboxes and their cross-tenant AutoDiscover requests general may fail from hybrid environments.\n \nCurrent status: We're investigating a potential issue in which admins' cross-tenant AutoDiscover requests may fail from hybrid environments and Outlook desktop crashes when adding additional on-premises mailboxes, and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Exchange Online"
-          ]
-        },
-        {
-          "id": "EX1226012",
-          "title": "Users' contacts hidden from the Global Address List (GAL) may not appear in Outlook on the web people search results",
-          "startTime": "2026-02-02T14:04:28Z",
-          "endTime": null,
-          "lastModified": "2026-02-06T13:38:03.78Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users' contacts hidden from the Global Address List (GAL) may not appear in Outlook on the web people search results.",
-          "scopeOfImpact": "Some users attempting to retrieve contacts in Outlook on the web people search results may be impacted.",
-          "rootCause": "",
-          "nextUpdateBy": "Tuesday, February 10, 2026, at 2:00 PM UTC",
-          "feature": "Offline Address Book (OAB)",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-02-06T13:38:03.78Z",
-              "postType": "regular",
-              "content": "Title: Users' contacts hidden from the Global Address List (GAL) may not appear in Outlook on the web people search results\n\nUser impact: Users' contacts hidden from the Global Address List (GAL) may not appear in Outlook on the web people search results.\n\nCurrent status: We're continuing to monitor the progress of the fix deployment, and expect to have an estimated time of completion by our next scheduled update.\n \nScope of impact: Some users attempting to retrieve contacts in Outlook on the web people search results may be impacted.\n \nNext update by: Tuesday, February 10, 2026, at 2:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-02-04T14:46:59.167Z",
-              "postType": "regular",
-              "content": "Title: Users' contacts hidden from the Global Address List (GAL) may not appear in Outlook on the web people search results\n\nUser impact: Users' contacts hidden from the Global Address List (GAL) may not appear in Outlook on the web people search results.\n\nCurrent status: We're proceeding to monitor the deployment of this fix so that we can validate its effectiveness upon completion.\n \nScope of impact: Some users attempting to retrieve contacts in Outlook on the web people search results may be impacted.\n \nNext update by: Friday, February 6, 2026, at 2:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-02-03T18:27:39.04Z",
-              "postType": "regular",
-              "content": "Title: Users' contacts hidden from the Global Address List (GAL) may not appear in Outlook on the web people search results\n\nUser impact: Users' contacts hidden from the Global Address List (GAL) may not appear in Outlook on the web people search results.\n\nCurrent status: The fix has currently saturated to 35 percent of the affected environment. We’ll continue to monitor the deployment of this fix so that we can validate its effectiveness upon completion.\n\nScope of impact: Some users attempting to retrieve contacts in Outlook on the web people search results may be impacted.\n \nNext update by: Wednesday, February 4, 2026, at 4:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-02-02T21:29:09.537Z",
-              "postType": "regular",
-              "content": "Title: Users' contacts hidden from the Global Address List (GAL) may not appear in Outlook on the web people search results\n\nUser impact: Users' contacts hidden from the Global Address List (GAL) may not appear in Outlook on the web people search results.\n\nCurrent status: We've initiated the deployment of the fix, which is progressing though saturation is slower than anticipated.  We'll provide an estimate for when the fix deployment is expected to complete when this is available.\n\nScope of impact: Some users attempting to retrieve contacts in Outlook on the web people search results may be impacted.\n\nNext update by: Tuesday, February 3, 2026, at 8:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-02-02T15:34:00.617Z",
-              "postType": "regular",
-              "content": "Title: Users' contacts hidden from the Global Address List (GAL) may not appear in Outlook on the web people search results\n\nUser impact: Users' contacts hidden from the Global Address List (GAL) may not appear in Outlook on the web people search results.\n\nCurrent status: We've identified a potential cause of impact and are actively developing and validating a fix. The fix will be deployed to the affected infrastructure to validate our hypothesis and restore service health.\n \nScope of impact: Some users attempting to retrieve contacts in Outlook on the web people search results may be impacted.\n \nNext update by: Monday, February 2, 2026, at 9:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-02-02T14:07:18.637Z",
-              "postType": "regular",
-              "content": "Title: Users' contacts hidden from the Global Address List (GAL) may not appear in Outlook on the web people search results\n\nUser impact: Users' contacts hidden from the Global Address List (GAL) may not appear in Outlook on the web people search results.\n\nCurrent status: We're reviewing service monitoring telemetry to isolate the source of the issue and establish a fix.\n\nScope of impact: Some users attempting to retrieve contacts in Outlook on the web people search results may be impacted.\n\nNext update by: Monday, February 2, 2026, at 4:00 PM UTC"
             }
           ],
           "affectedServices": [
@@ -1629,6 +1579,52 @@
     }
   ],
   "history": [
+    {
+      "id": "EX1226012",
+      "title": "Users' contacts hidden from the Global Address List (GAL) did not appear in Outlook on the web people search results",
+      "startTime": "2025-12-18T19:52:00Z",
+      "endTime": "2026-02-09T13:00:00Z",
+      "lastModified": "2026-02-10T13:55:42.65Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users' contacts hidden from the Global Address List (GAL) did not appear in Outlook on the web people search results.",
+      "scopeOfImpact": "Some users attempting to retrieve contacts in Outlook on the web people search results may have been impacted.\n\nStart time: Thursday, December 18, 2025, at 7:52 PM UTC\n\nEnd time: Monday, February 9, 2026, at 1:00 PM UTC",
+      "rootCause": "A code change inadvertently caused a regression, which caused impact to occur.\n \nNext steps:\n- We're reviewing our update procedures to better identify similar issues during our development and testing cycles.\n \nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Offline Address Book (OAB)",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-02-10T13:55:42.65Z",
+          "postType": "regular",
+          "content": "Title: Users' contacts hidden from the Global Address List (GAL) did not appear in Outlook on the web people search results\n\nUser impact: Users' contacts hidden from the Global Address List (GAL) did not appear in Outlook on the web people search results.\n\nFinal status: We've determined that a code change inadvertently caused a regression, which caused impact to occur. We've confirmed that the fix deployment has successfully completed and that impact has been remediated.\n\nScope of impact: Some users attempting to retrieve contacts in Outlook on the web people search results may have been impacted.\n\nStart time: Thursday, December 18, 2025, at 7:52 PM UTC\n\nEnd time: Monday, February 9, 2026, at 1:00 PM UTC\n\nRoot cause: A code change inadvertently caused a regression, which caused impact to occur.\n \nNext steps:\n- We're reviewing our update procedures to better identify similar issues during our development and testing cycles.\n \nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-02-06T13:38:03.78Z",
+          "postType": "regular",
+          "content": "Title: Users' contacts hidden from the Global Address List (GAL) may not appear in Outlook on the web people search results\n\nUser impact: Users' contacts hidden from the Global Address List (GAL) may not appear in Outlook on the web people search results.\n\nCurrent status: We're continuing to monitor the progress of the fix deployment, and expect to have an estimated time of completion by our next scheduled update.\n \nScope of impact: Some users attempting to retrieve contacts in Outlook on the web people search results may be impacted.\n \nNext update by: Tuesday, February 10, 2026, at 2:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-02-04T14:46:59.167Z",
+          "postType": "regular",
+          "content": "Title: Users' contacts hidden from the Global Address List (GAL) may not appear in Outlook on the web people search results\n\nUser impact: Users' contacts hidden from the Global Address List (GAL) may not appear in Outlook on the web people search results.\n\nCurrent status: We're proceeding to monitor the deployment of this fix so that we can validate its effectiveness upon completion.\n \nScope of impact: Some users attempting to retrieve contacts in Outlook on the web people search results may be impacted.\n \nNext update by: Friday, February 6, 2026, at 2:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-02-03T18:27:39.04Z",
+          "postType": "regular",
+          "content": "Title: Users' contacts hidden from the Global Address List (GAL) may not appear in Outlook on the web people search results\n\nUser impact: Users' contacts hidden from the Global Address List (GAL) may not appear in Outlook on the web people search results.\n\nCurrent status: The fix has currently saturated to 35 percent of the affected environment. We’ll continue to monitor the deployment of this fix so that we can validate its effectiveness upon completion.\n\nScope of impact: Some users attempting to retrieve contacts in Outlook on the web people search results may be impacted.\n \nNext update by: Wednesday, February 4, 2026, at 4:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-02-02T21:29:09.537Z",
+          "postType": "regular",
+          "content": "Title: Users' contacts hidden from the Global Address List (GAL) may not appear in Outlook on the web people search results\n\nUser impact: Users' contacts hidden from the Global Address List (GAL) may not appear in Outlook on the web people search results.\n\nCurrent status: We've initiated the deployment of the fix, which is progressing though saturation is slower than anticipated.  We'll provide an estimate for when the fix deployment is expected to complete when this is available.\n\nScope of impact: Some users attempting to retrieve contacts in Outlook on the web people search results may be impacted.\n\nNext update by: Tuesday, February 3, 2026, at 8:00 PM UTC"
+        }
+      ],
+      "serviceName": "Exchange Online",
+      "affectedServices": [
+        "Exchange Online"
+      ]
+    },
     {
       "id": "MO1228788",
       "title": "Some users may experience various issues with some Microsoft 365 services",
