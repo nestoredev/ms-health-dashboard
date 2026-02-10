@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-10T15:15:20.795Z",
+  "lastUpdated": "2026-02-10T15:45:28.730Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -428,20 +428,25 @@
           "title": "Some users in the North America region may be unable to access the Microsoft 365 admin center",
           "startTime": "2026-02-10T14:48:50Z",
           "endTime": null,
-          "lastModified": "2026-02-10T14:53:23.17Z",
+          "lastModified": "2026-02-10T15:25:39.723Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users in the North America region may be unable to access the Microsoft 365 admin center.",
-          "scopeOfImpact": "Initial reports indicate that the issue is occurring in the North America region. We'll provide more information as we investigate.",
+          "scopeOfImpact": "",
           "rootCause": "",
-          "nextUpdateBy": "Tuesday, February 10, 2026, at 4:00 PM UTC",
+          "nextUpdateBy": "",
           "feature": "Access",
           "isResolved": false,
           "posts": [
             {
+              "createdAt": "2026-02-10T15:18:54.58Z",
+              "postType": "quick",
+              "content": "We’re continuing to review telemetry related to Microsoft 365 admin center access to isolate the source of the issue.\n\nThis quick update is designed to give the latest information on this issue."
+            },
+            {
               "createdAt": "2026-02-10T14:50:24.737Z",
               "postType": "regular",
-              "content": "Title: Some users in the North America region may be unable to access the Microsoft 365 admin center\n\nUser impact: Users in the North America region may be unable to access the Microsoft 365 admin center.\n\nMore info: Users able to access the admin center may experiencing degraded functionality.\n \nCurrent status: We're reviewing service monitoring telemetry to isolate the root cause and develop a remediation plan.\n\nScope of impact: Initial reports indicate that the issue is occurring in the North America region. We'll provide more information as we investigate.\n\nNext update by: Tuesday, February 10, 2026, at 4:00 PM UTC"
+              "content": "Title: Some users in the North America region may be unable to access the Microsoft 365 admin center\n\nUser impact: Users in the North America region may be unable to access the Microsoft 365 admin center.\n\nMore info: Users able to access the admin center may be experiencing degraded functionality. \n \nAs functionality is degraded, users may be unable to raise support tickets through the Microsoft 365 admin center.\n \nAdditionally, users may be unable to access the M365 app.\n \nCurrent status: We're reviewing service monitoring telemetry to isolate the root cause and develop a remediation plan.\n\nScope of impact: Initial reports indicate that the issue is occurring in the North America region. We'll provide more information as we investigate.\n\nNext update by: Tuesday, February 10, 2026, at 4:00 PM UTC"
             }
           ],
           "affectedServices": [
