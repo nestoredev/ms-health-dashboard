@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-10T23:47:24.367Z",
+  "lastUpdated": "2026-02-11T00:17:30.381Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -61,16 +61,21 @@
           "title": "Some users' legitimate email messages may be marked as phishing and quarantined in Exchange Online",
           "startTime": "2026-02-05T15:31:57Z",
           "endTime": null,
-          "lastModified": "2026-02-09T23:34:22.81Z",
+          "lastModified": "2026-02-11T00:00:56.987Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users' legitimate email messages may be marked as phishing and quarantined in Exchange Online.",
-          "scopeOfImpact": "Some users attempting to send or receive Exchange Online email messages may be impacted.\n\nStart time: Thursday, February 5, 2026, at 12:26 AM UTC \n\nPreliminary",
+          "scopeOfImpact": "Some users attempting to send or receive Exchange Online email messages may be impacted. This information may be updated as our investigation continues.\n\nStart time: Thursday, February 5, 2026, at 12:26 AM UTC \n\nPreliminary",
           "rootCause": "An updated URL rule intending to identify more sophisticated spam and phishing email messages is incorrectly quarantining legitimate email messages in Exchange Online, resulting in impact.",
-          "nextUpdateBy": "Wednesday, February 11, 2026, at 1:00 AM UTC",
+          "nextUpdateBy": "Thursday, February 12, 2026, at 1:00 AM UTC",
           "feature": "Performance degradation",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-02-11T00:00:56.987Z",
+              "postType": "regular",
+              "content": "Title: Some users' legitimate email messages may be marked as phishing and quarantined in Exchange Online\n\nUser impact: Users' legitimate email messages may be marked as phishing and quarantined in Exchange Online.\n\nMore info: Users may see some previously quarantined messages successfully delivered; however, some messages may still be impacted until the issue is fully resolved. \n\nCurrent status: We’re actively working on unblocking legitimate URLs and releasing quarantined messages. As we progress through these workstreams, some impacted accounts will see legitimate email messages returning to their inboxes from quarantine. \n\nScope of impact: Some users attempting to send or receive Exchange Online email messages may be impacted. This information may be updated as our investigation continues.\n\nStart time: Thursday, February 5, 2026, at 12:26 AM UTC \n\nPreliminary root cause: An updated URL rule intending to identify more sophisticated spam and phishing email messages is incorrectly quarantining legitimate email messages in Exchange Online, resulting in impact. \n\nNext update by: Thursday, February 12, 2026, at 1:00 AM UTC"
+            },
             {
               "createdAt": "2026-02-09T23:34:22.81Z",
               "postType": "regular",
