@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-11T19:21:52.943Z",
+  "lastUpdated": "2026-02-11T19:51:58.526Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -11,16 +11,21 @@
           "title": "Users' MailTips may not reflect free/busy correctly in Outlook desktop and crashes may occur when adding mailboxes",
           "startTime": "2026-02-06T18:45:07Z",
           "endTime": null,
-          "lastModified": "2026-02-09T18:51:34.58Z",
+          "lastModified": "2026-02-11T19:42:34.877Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users' MailTips may not reflect free/busy correctly in Outlook desktop and crashes may occur when adding mailboxes.",
-          "scopeOfImpact": "Any admins’ cross-tenant AutoDiscover requests may fail from hybrid environments, causing MailTips free/busy not to show and crashing for users’ Outlook desktop clients when adding additional on-premises mailboxes. This information may be updated as our investigation continues.\n\nStart time: Tuesday, January 27, 2026, at 12:30 AM UTC",
+          "scopeOfImpact": "Any admins’ cross-tenant AutoDiscover requests may fail from hybrid environments, causing MailTips free/busy not to show and crashing for users’ Outlook desktop clients when adding additional on-premises mailboxes. This information may be updated as our investigation continues.\n \nStart time: Tuesday, January 27, 2026, at 12:30 AM UTC",
           "rootCause": "A routing change for Autodiscover requests introduced a header duplication issue causing a backlog of requests that ultimately fail or timeout, resulting in the impact.",
-          "nextUpdateBy": "Wednesday, February 11, 2026, at 8:00 PM UTC",
+          "nextUpdateBy": "Wednesday, February 18, 2026, at 2:00 AM UTC",
           "feature": "Tenant Administration (Provisioning, Remote PowerShell)",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-02-11T19:42:34.877Z",
+              "postType": "regular",
+              "content": "Title: Users' MailTips may not reflect free/busy correctly in Outlook desktop and crashes may occur when adding mailboxes\n\nUser impact: Users' MailTips may not reflect free/busy correctly in Outlook desktop and crashes may occur when adding mailboxes.\n\nMore info: This issue is specific to the Outlook desktop client in organizations with a hybrid environment using Exchange Web Services (EWS) for MailTips. Users may notice that the MailTips free/busy feature isn’t operating as expected and may see an error stating “we can’t show MailTips right now.”\n \nThe Outlook desktop crashes occur when attempting to add a new on-premises mailbox.\n \nAdmins may be unable to create new on-premises mailboxes, and their cross-tenant AutoDiscover requests general may fail from hybrid environments.\nWhile we work on deploying the fix, admins may be able to mitigate the impact by restarting the Autodiscover app pool.\n \nCurrent status: Our monitoring of the deployment of the fix to prevent the header duplication issue indicates that the majority of admins should be experiencing remediation, and we're beginning to validate impact resolution with a subset of affected admins as the saturation of the fix fully completes.\n \nScope of impact: Any admins’ cross-tenant AutoDiscover requests may fail from hybrid environments, causing MailTips free/busy not to show and crashing for users’ Outlook desktop clients when adding additional on-premises mailboxes. This information may be updated as our investigation continues.\n \nStart time: Tuesday, January 27, 2026, at 12:30 AM UTC\n \nRoot cause: A routing change for Autodiscover requests introduced a header duplication issue causing a backlog of requests that ultimately fail or timeout, resulting in the impact.\n \nNext update by: Wednesday, February 18, 2026, at 2:00 AM UTC"
+            },
             {
               "createdAt": "2026-02-09T18:51:34.58Z",
               "postType": "regular",
