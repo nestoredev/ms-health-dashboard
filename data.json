@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-12T00:23:04.642Z",
+  "lastUpdated": "2026-02-12T00:53:10.220Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -66,16 +66,21 @@
           "title": "Some users' legitimate email messages may be marked as phishing and quarantined in Exchange Online",
           "startTime": "2026-02-05T15:31:57Z",
           "endTime": null,
-          "lastModified": "2026-02-11T00:00:56.987Z",
+          "lastModified": "2026-02-12T00:31:17.48Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users' legitimate email messages may be marked as phishing and quarantined in Exchange Online.",
-          "scopeOfImpact": "Some users attempting to send or receive Exchange Online email messages may be impacted. This information may be updated as our investigation continues.\n\nStart time: Thursday, February 5, 2026, at 12:26 AM UTC \n\nPreliminary",
+          "scopeOfImpact": "Some users attempting to send or receive Exchange Online email messages may be impacted. This information may be updated as our investigation continues.\n \nStart time: Thursday, February 5, 2026, at 12:26 AM UTC\n \nPreliminary",
           "rootCause": "An updated URL rule intending to identify more sophisticated spam and phishing email messages is incorrectly quarantining legitimate email messages in Exchange Online, resulting in impact.",
-          "nextUpdateBy": "Thursday, February 12, 2026, at 1:00 AM UTC",
+          "nextUpdateBy": "Thursday, February 12, 2026, at 6:00 AM UTC",
           "feature": "Performance degradation",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-02-12T00:31:17.48Z",
+              "postType": "regular",
+              "content": "Title: Some users' legitimate email messages may be marked as phishing and quarantined in Exchange Online\n\nUser impact: Users' legitimate email messages may be marked as phishing and quarantined in Exchange Online.\n\nMore info: Users may see some previously quarantined messages successfully delivered; however, some messages may still be impacted until the issue is fully resolved.\n \nCurrent status: We've confirmed that no additional messages are being quarantined due to this incident, and we’re proceeding with our work to incrementally release those messages which were previously affected.\n \nScope of impact: Some users attempting to send or receive Exchange Online email messages may be impacted. This information may be updated as our investigation continues.\n \nStart time: Thursday, February 5, 2026, at 12:26 AM UTC\n \nPreliminary root cause: An updated URL rule intending to identify more sophisticated spam and phishing email messages is incorrectly quarantining legitimate email messages in Exchange Online, resulting in impact.\n \nNext update by: Thursday, February 12, 2026, at 6:00 AM UTC"
+            },
             {
               "createdAt": "2026-02-11T00:00:56.987Z",
               "postType": "regular",
@@ -1549,6 +1554,37 @@
     }
   ],
   "history": [
+    {
+      "id": "MV1230913",
+      "title": "Some users may not be able to access the Communities section and receive an error in Microsoft Viva Engage",
+      "startTime": "2026-02-11T22:15:00Z",
+      "endTime": "2026-02-12T00:05:00Z",
+      "lastModified": "2026-02-12T00:45:51.507Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may not have been able to access the Communities section and received an error in Microsoft Viva Engage.",
+      "scopeOfImpact": "Any user may have been impacted by this event, and may not have been able to access the Communities section and received and error.\n \nStart time: Wednesday, February 11, 2026, at 10:15 PM UTC\n \nEnd time: Thursday, February 12, 2026, at 12:05 AM UTC",
+      "rootCause": "A recent update to the Microsoft Viva Engage infrastructure inadvertently removed a configuration property responsible for facilitating access to the Communities section, which led to impact.\n \nNext steps: \n- We're reviewing our update testing processes and assessing whether additional monitoring can be added to help identify sooner and prevent similar issues from occurring in the future.\n \nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Post/Reply/Like",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-02-12T00:45:51.507Z",
+          "postType": "regular",
+          "content": "Title: Some users may not be able to access the Communities section and receive an error in Microsoft Viva Engage\n\nUser impact: Users may not have been able to access the Communities section and received an error in Microsoft Viva Engage.\n\nMore info: The error stated that \"Communities aren't loading right now. Please try again\".\n \nFinal status: We've confirmed that the roll back of the update successfully completed, and after monitoring the service health, we've confirmed that impact has been remediated.\n \nScope of impact: Any user may have been impacted by this event, and may not have been able to access the Communities section and received and error.\n \nStart time: Wednesday, February 11, 2026, at 10:15 PM UTC\n \nEnd time: Thursday, February 12, 2026, at 12:05 AM UTC\n \nRoot cause: A recent update to the Microsoft Viva Engage infrastructure inadvertently removed a configuration property responsible for facilitating access to the Communities section, which led to impact.\n \nNext steps: \n- We're reviewing our update testing processes and assessing whether additional monitoring can be added to help identify sooner and prevent similar issues from occurring in the future.\n \nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-02-12T00:24:56.727Z",
+          "postType": "regular",
+          "content": "Title: Some users may not be able to access the Communities section and receive an error in Microsoft Viva Engage\n\nUser impact: Users may not be able to access the Communities section and receive an error in Microsoft Viva Engage.\n\nMore info: The error states that \"Communities aren't loading right now. Please try again\".\n \nCurrent status: We were made aware of this issue from internal reports indicating that users may not be able to access the Communities section and receive an error. Upon investigating, we identified a recent update to the service removed a configuration property responsible for facilitating access to the Communities section, leading to impact. We're reverting this change to resolve this issue, after which we’ll monitor our service health telemetry to confirm that impact is remediated.\n \n \nScope of impact: Any user may have been impacted by this event, and may not be able to access the Communities section and receive and error. This section may be updated as our investigation continues.\n \nStart time: Wednesday, February 11, 2026, at 10:15 PM UTC\n \nRoot cause: A recent update to the Microsoft Viva Engage infrastructure inadvertently removed a configuration property responsible for facilitating access to the Communities section, leading to impact.\n\nNext update by: Thursday, February 12, 2026, at 1:30 AM UTC"
+        }
+      ],
+      "serviceName": "Microsoft Viva",
+      "affectedServices": [
+        "Microsoft Viva"
+      ]
+    },
     {
       "id": "MO1230320",
       "title": "Some users in the North America region may have been unable to access the Microsoft 365 admin center",
