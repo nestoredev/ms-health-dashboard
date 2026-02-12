@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-12T21:57:59.938Z",
+  "lastUpdated": "2026-02-12T22:28:07.723Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1496,16 +1496,21 @@
           "title": "Users aren't shown the \"Edit in Outlook\" button after prompting Copilot Chat to draft an email message",
           "startTime": "2026-01-15T18:55:08Z",
           "endTime": null,
-          "lastModified": "2026-02-05T21:23:06.807Z",
+          "lastModified": "2026-02-12T21:57:57.247Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users aren't shown the \"Edit in Outlook\" button after prompting Copilot Chat to draft an email message.",
           "scopeOfImpact": "Any user prompting Copilot Chat to draft an email message may be impacted.\n\nStart time: Friday, December 19, 2025, at 6:00 PM UTC",
           "rootCause": "We've disabled the \"Edit in Outlook\" feature in Copilot Chat while we implement a fix for a separate service issue relating to the feature, causing impact.",
-          "nextUpdateBy": "Thursday, February 12, 2026, at 11:00 PM UTC",
+          "nextUpdateBy": "Monday, February 23, 2026, at 11:00 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-02-12T21:57:57.247Z",
+              "postType": "regular",
+              "content": "Title: Users aren't shown the \"Edit in Outlook\" button after prompting Copilot Chat to draft an email message\n\nUser impact: Users aren't shown the \"Edit in Outlook\" button after prompting Copilot Chat to draft an email message.\n\nMore info: When users prompt Copilot Chat to draft an email message, the button to \"Edit in Outlook\" may not appear as expected.\n\nCurrent status: Our metrics indicate that there are slow request response times, making the current metrics insufficient to proceed with re-enabling the \"Edit in Outlook\" button for the remaining 50 percent of users. We're reviewing possible options to improve request response times, so that we can bring the metrics up to an acceptable level before re-enabling the feature.\n\nScope of impact: Any user prompting Copilot Chat to draft an email message may be impacted.\n\nStart time: Friday, December 19, 2025, at 6:00 PM UTC\n\nRoot cause: We've disabled the \"Edit in Outlook\" feature in Copilot Chat while we implement a fix for a separate service issue relating to the feature, causing impact.\n\nNext update by: Monday, February 23, 2026, at 11:00 PM UTC"
+            },
             {
               "createdAt": "2026-02-05T21:23:06.807Z",
               "postType": "regular",
@@ -2881,37 +2886,6 @@
       "serviceName": "Microsoft 365 suite",
       "affectedServices": [
         "Microsoft 365 suite"
-      ]
-    },
-    {
-      "id": "OP1217551",
-      "title": "Some users may not be able to get the latest Microsoft 365 Apps updates",
-      "startTime": "2026-01-13T15:30:00Z",
-      "endTime": "2026-01-13T22:00:00Z",
-      "lastModified": "2026-01-13T23:16:55.79Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users may not have been able to get the latest Microsoft 365 Apps updates.",
-      "scopeOfImpact": "Some users reliant on the Cloud Update process to update their Microsoft 365 apps may have been affected.\n\nStart time: Tuesday, January 13, 2026, at 3:30 PM UTC\n\nEnd time: Tuesday, January 13, 2026, at 10:00 PM UTC",
-      "rootCause": "Values needed weren’t present in the release build which then prevented the Cloud Update service from picking up the new update, and this resulted in the impact.\n\nNext steps: \n - We're reviewing our update standards to ensure missing values are caught and corrected ahead of publishing to prevent this from happening again.\n\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Multiple Applications",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-01-13T23:04:21.613Z",
-          "postType": "regular",
-          "content": "Title: Some users may not be able to get the latest Microsoft 365 Apps updates\n\nUser impact: Users may not have been able to get the latest Microsoft 365 Apps updates.\n\nMore info: This issue specifically impacted organizations where these updates were facilitated through the Cloud Update process in the Microsoft 365 apps admin center.\n\nFinal status: After our analysis of the latest update, we determined that values needed weren’t present in the release build which then prevented the Cloud Update service from picking up the new update, and this resulted in the impact. We've applied a fix to restore the values and confirmed that this has remediated the issue.\n\nScope of impact: Some users reliant on the Cloud Update process to update their Microsoft 365 apps may have been affected.\n\nStart time: Tuesday, January 13, 2026, at 3:30 PM UTC\n\nEnd time: Tuesday, January 13, 2026, at 10:00 PM UTC\n\nRoot cause: Values needed weren’t present in the release build which then prevented the Cloud Update service from picking up the new update, and this resulted in the impact.\n\nNext steps: \n - We're reviewing our update standards to ensure missing values are caught and corrected ahead of publishing to prevent this from happening again.\n\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-01-13T20:39:14.66Z",
-          "postType": "regular",
-          "content": "Title: Some users may not be able to get the latest Microsoft 365 Apps updates\n\nUser impact: Users may not be able to get the latest Microsoft 365 Apps updates.\n\nMore info: This issue specifically impacts organizations where these updates are facilitated through the Cloud Update process in the Microsoft 365 apps admin center.\n\nCurrent status: We're analyzing the latest update to determine our next troubleshooting steps.\n\nScope of impact: Some users reliant on the Cloud Update process to update their Microsoft 365 apps may be affected. This section may be updated as our investigation continues.\n\nNext update by: Wednesday, January 14, 2026, at 12:30 AM UTC"
-        }
-      ],
-      "serviceName": "Microsoft 365 apps",
-      "affectedServices": [
-        "Microsoft 365 apps"
       ]
     }
   ]
