@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-12T22:58:14.392Z",
+  "lastUpdated": "2026-02-12T23:28:21.595Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1672,20 +1672,25 @@
       "title": "Some users in the North America region may have been unable to access the Microsoft 365 admin center",
       "startTime": "2026-02-10T14:10:00Z",
       "endTime": "2026-02-10T16:25:00Z",
-      "lastModified": "2026-02-10T17:20:15.417Z",
-      "status": "serviceRestored",
+      "lastModified": "2026-02-12T23:13:00.873Z",
+      "status": "postIncidentReviewPublished",
       "severity": "incident",
       "userImpact": "Users in the North America region may have been unable to access the Microsoft 365 admin center.",
-      "scopeOfImpact": "This issue impacted the North America region. \n\nStart time: Tuesday, February 10, 2026, at 2:10 PM UTC\n\nEnd time: Tuesday, February 10, 2026, at 4:25 PM UTC\n\nPreliminary",
-      "rootCause": "A recent change to the redirection service, related to caching mechanisms, resulted in impact. We'll provide more details within the Post-Incident Report.\n\nNext steps:\n- We're reviewing the change to better understand why impact occurred and implement items to prevent this issue reoccurring.\n\nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days.",
+      "scopeOfImpact": "",
+      "rootCause": "",
       "nextUpdateBy": "",
       "feature": "Access",
       "isResolved": true,
       "posts": [
         {
+          "createdAt": "2026-02-12T23:13:00.873Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        },
+        {
           "createdAt": "2026-02-10T17:20:15.417Z",
           "postType": "regular",
-          "content": "Title: Some users in the North America region may have been unable to access the Microsoft 365 admin center\n\nUser impact: Users in the North America region may have been unable to access the Microsoft 365 admin center.\n\nMore info: Users able to access the admin center may have experienced degraded functionality.\n \nAs functionality was degraded, users may have been unable to raise support tickets through the Microsoft 365 admin center.\n \nAdditionally, users may have been unable to access the M365 app.\n\nFinal status: We've confirmed that the issue is resolved through monitoring telemetry and customer validations.\n\nScope of impact: This issue impacted the North America region. \n\nStart time: Tuesday, February 10, 2026, at 2:10 PM UTC\n\nEnd time: Tuesday, February 10, 2026, at 4:25 PM UTC\n\nPreliminary root cause: A recent change to the redirection service, related to caching mechanisms, resulted in impact. We'll provide more details within the Post-Incident Report.\n\nNext steps:\n- We're reviewing the change to better understand why impact occurred and implement items to prevent this issue reoccurring.\n\nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days."
+          "content": "Title: Some users in the North America region may have been unable to access the Microsoft 365 admin center\n\nUser impact: Users in the North America region may have been unable to access the Microsoft 365 admin center.\n\nMore info: Users able to access the admin center may have experienced degraded functionality.\n \nAs functionality was degraded, users may have been unable to raise support tickets through the Microsoft 365 admin center.\n\nFinal status: We've confirmed that the issue is resolved through monitoring telemetry and customer validations.\n\nScope of impact: This issue impacted the North America region. \n\nStart time: Tuesday, February 10, 2026, at 2:10 PM UTC\n\nEnd time: Tuesday, February 10, 2026, at 4:25 PM UTC\n\nRoot cause: A recent change to the redirection service, related to caching mechanisms, resulted in impact. More information is provided within the Post-Incident Report.\n\nNext steps:\n- We're reviewing the change to better understand why impact occurred and implement items to prevent this issue reoccurring.\n\nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days."
         },
         {
           "createdAt": "2026-02-10T16:47:04.983Z",
@@ -1701,11 +1706,6 @@
           "createdAt": "2026-02-10T15:48:04.177Z",
           "postType": "regular",
           "content": "Title: Some users in the North America region may be unable to access the Microsoft 365 admin center\n\nUser impact: Users in the North America region may be unable to access the Microsoft 365 admin center.\n\nMore info: Users able to access the admin center may be experiencing degraded functionality. \n\nAs functionality is degraded, users may be unable to raise support tickets through the Microsoft 365 admin center.\n\nAdditionally, users may be unable to access the M365 app.\n\nCurrent status: We’re continuing to analyze diagnostic data from the Microsoft 365 admin center infrastructure, with a current focus on usage patterns and Central Processing Unit (CPU) utilization levels. Additionally, we’re reviewing HTTP Archive (HAR) files provided by impacted users to support our investigation.\n\nScope of impact: Initial reports indicate that the issue is occurring in the North America region. We'll provide more information once identified.\n\nNext update by: Tuesday, February 10, 2026, at 5:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-02-10T15:18:54.58Z",
-          "postType": "quick",
-          "content": "We’re continuing to review telemetry related to Microsoft 365 admin center access to isolate the source of the issue.\n\nThis quick update is designed to give the latest information on this issue."
         }
       ],
       "serviceName": "Microsoft 365 suite",
