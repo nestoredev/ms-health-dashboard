@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-13T19:32:32.024Z",
+  "lastUpdated": "2026-02-13T20:02:38.347Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -864,61 +864,6 @@
       "id": "PowerBIcom",
       "issues": [
         {
-          "id": "PB1226924",
-          "title": "Admins may be missing Microsoft 365 Usage Analytics reports in Power BI",
-          "startTime": "2026-02-04T18:01:27Z",
-          "endTime": null,
-          "lastModified": "2026-02-13T00:08:21.587Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Admins may be missing Microsoft 365 Usage Analytics reports in Power BI.",
-          "scopeOfImpact": "Any admin accessing Microsoft 365 Usage Analytics reports in Power BI may be affected.\n \nStart time: Thursday, January 1, 2026, at 12:00 AM UTC",
-          "rootCause": "A subset of Power BI logic doesn't have the expected date formatting required for the year 2026, resulting in impact.",
-          "nextUpdateBy": "Friday, February 13, 2026, at 8:00 PM UTC",
-          "feature": "PowerBI.com",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-02-13T00:08:21.587Z",
-              "postType": "regular",
-              "content": "Title: Admins may be missing Microsoft 365 Usage Analytics reports in Power BI\n\nUser impact: Admins may be missing Microsoft 365 Usage Analytics reports in Power BI.\n\nMore info: Admins can access the missing data through the Microsoft 365 admin center or by leveraging the Graph API.\n \nCurrent status: We're continuing the validations of the fix to correct the date formatting and to restore admins' Microsoft 365 Usage Analytics reports in Power BI, and we'll aim to provide a deployment timeline by our next scheduled update.\n\nScope of impact: Any admin accessing Microsoft 365 Usage Analytics reports in Power BI may be affected.\n \nStart time: Thursday, January 1, 2026, at 12:00 AM UTC\n \nRoot cause: A subset of Power BI logic doesn't have the expected date formatting required for the year 2026, resulting in impact.\n \nNext update by: Friday, February 13, 2026, at 8:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-02-12T19:56:56.963Z",
-              "postType": "regular",
-              "content": "Title: Admins may be missing Microsoft 365 Usage Analytics reports in Power BI\n\nUser impact: Admins may be missing Microsoft 365 Usage Analytics reports in Power BI.\n\nMore info: Admins can access the missing data through the Microsoft 365 admin center or by leveraging the Graph API.\n \nCurrent status: Our fix development to correct the date formatting and to restore admins' Microsoft 365 Usage Analytics reports in Power BI is requiring additional validation time to ensure that it will correct all facets of this issue. In the meantime, we've identified that admins can access the missing data through the Microsoft 365 admin center or by leveraging the Graph API.\n\nScope of impact: Any admin accessing Microsoft 365 Usage Analytics reports in Power BI may be affected.\n \nStart time: Thursday, January 1, 2026, at 12:00 AM UTC\n \nRoot cause: A subset of Power BI logic doesn't have the expected date formatting required for the year 2026, resulting in impact.\n \nNext update by: Friday, February 13, 2026, at 3:30 AM UTC"
-            },
-            {
-              "createdAt": "2026-02-11T21:28:03.187Z",
-              "postType": "regular",
-              "content": "Title: Admins may be missing Microsoft 365 Usage Analytics reports in Power BI\n\nUser impact: Admins may be missing Microsoft 365 Usage Analytics reports in Power BI.\n\nCurrent status: Our fix to correct the date formatting and to restore admins' Microsoft 365 Usage Analytics reports in Power BI requires more time to develop that originally expected. We'll provide an estimated timeline for remediating the impact once it has become available.\n \nScope of impact: Any admin accessing Microsoft 365 Usage Analytics reports in Power BI may be affected.\n \nStart time: Thursday, January 1, 2026, at 12:00 AM UTC\n \nRoot cause: A subset of Power BI logic doesn't have the expected date formatting required for the year 2026, resulting in impact.\n \nNext update by: Friday, February 13, 2026, at 9:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-02-09T20:47:35.85Z",
-              "postType": "regular",
-              "content": "Title: Admins may be missing Microsoft 365 Usage Analytics reports in Power BI\n\nUser impact: Admins may be missing Microsoft 365 Usage Analytics reports in Power BI.\n\nCurrent status: We're progressing with the development of our fix to correct the date formatting for 2026 and later and to restore admins’ Microsoft 365 Usage Analytics reports in Power BI. We'll provide an estimated timeline for the deployment of our solution after our internal fix development and validations have been completed. \n \nScope of impact: Any admin accessing Microsoft 365 Usage Analytics reports in Power BI may be affected.\n \nStart time: Thursday, January 1, 2026, at 12:00 AM UTC\n \nRoot cause: A subset of Power BI logic doesn't have the expected date formatting required for the year 2026, resulting in impact.\n \nNext update by: Wednesday, February 11, 2026, at 10:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-02-05T19:59:41.563Z",
-              "postType": "regular",
-              "content": "Title: Admins may be missing Microsoft 365 Usage Analytics reports in Power BI\n\nUser impact: Admins may be missing Microsoft 365 Usage Analytics reports in Power BI.\n\nCurrent status: We’re continuing our work to develop a fix that updates and corrects the date formatting for 2026 and later to remediate this issue. We’ll provide a resolution timeline once it’s available.\n \nScope of impact: Any admin accessing Microsoft 365 Usage Analytics reports in Power BI may be affected.\n \nStart time: Thursday, January 1, 2026, at 12:00 AM UTC\n \nRoot cause: A subset of Power BI logic doesn't have the expected date formatting required for the year 2026, resulting in impact.\n \nNext update by: Monday, February 9, 2026, at 9:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-02-04T18:32:09.817Z",
-              "postType": "regular",
-              "content": "Title: Admins may be missing Microsoft 365 Usage Analytics reports in Power BI\n\nUser impact: Admins may be missing Microsoft 365 Usage Analytics reports in Power BI.\n\nCurrent status: We've received reports from admins missing some Microsoft 365 Usage Analytics reports within Power BI. We've analyzed service telemetry in conjunction with HTTP Archive format (HAR) captures of the issue in progress and identified that a subset of Power BI logic doesn't have the expected date formatting required for the year 2026, resulting in impact. We're in the process of developing a fix to update and correct the formatting for 2026 and later to remediate this issue.\n\nScope of impact: Any admin accessing Microsoft 365 Usage Analytics reports in Power BI may be affected.\n\nStart time: Thursday, January 1, 2026, at 12:00 AM UTC\n\nRoot cause: A subset of Power BI logic doesn't have the expected date formatting required for the year 2026, resulting in impact.\n\nNext update by: Thursday, February 5, 2026, at 9:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-02-04T18:02:14.583Z",
-              "postType": "regular",
-              "content": "Title: Admins may be missing Microsoft 365 Usage Analytics reports in Power BI\n\nUser impact: Admins may be missing Microsoft 365 Usage Analytics reports in Power BI.\n\nCurrent status: We're investigating a potential issue with Power BI reporting and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Power BI"
-          ]
-        },
-        {
           "id": "PB1224494",
           "title": "Users may be unable to send subscription emails to external users in Power BI",
           "startTime": "2026-01-29T18:41:24Z",
@@ -1634,6 +1579,52 @@
       "serviceName": "Microsoft Viva",
       "affectedServices": [
         "Microsoft Viva"
+      ]
+    },
+    {
+      "id": "PB1226924",
+      "title": "Admins may be missing Microsoft 365 Usage Analytics reports in Power BI",
+      "startTime": "2026-02-04T18:01:27Z",
+      "endTime": "2026-02-13T17:25:00Z",
+      "lastModified": "2026-02-13T19:52:55.553Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Admins may have been missing Microsoft 365 Usage Analytics reports in Power BI.",
+      "scopeOfImpact": "Any admin accessing Microsoft 365 Usage Analytics reports in Power BI may have been affected.\n \nStart time: Thursday, January 1, 2026, at 12:00 AM UTC\n \nEnd time: Friday, February 13, 2026, at 5:25 PM UTC",
+      "rootCause": "A subset of Power BI logic didn't have the expected date formatting required for the year 2026, resulting in impact.\n \nNext steps: \n- We're reviewing the impacting Power BI logic to determine how the incorrect date formatting wasn't identified prior to being introduced into the service. The results of this investigation will help us to improve our pre-deployment processes and ensure similar instances of impact don't occur in the future.\n \nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "PowerBI.com",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-02-13T19:52:55.553Z",
+          "postType": "regular",
+          "content": "Title: Admins may be missing Microsoft 365 Usage Analytics reports in Power BI\n\nUser impact: Admins may have been missing Microsoft 365 Usage Analytics reports in Power BI.\n\nMore info: Admins could access the missing data through the Microsoft 365 admin center or by leveraging the Graph API.\n \nWe recommend affected admins follow these steps to update to the latest app version of Microsoft 365 Usage Analytics, which contains the fix for this issue:\n \n1. Follow the link to the Microsoft 365 Usage Analytics V15 App: https://app.powerbi.com/Redirect?action=InstallApp&appId=5954cb3f-35a2-494c-a7af-adbb9229069f&packageKey=11c1513a-ba16-45c9-9077-cc5f79a6c9d8eReAKIjns3tbhr-POllSDcCeCtjCengXhfHpQMMFJmY&ownerId=72f988bf-86f1-41af-91ab-2d7cd011db47&buildVersion=15\n2. Install the app using the desired method.\n(Use \"Update the workspace and the app\" option to overwrite the broken version, or use  \"Install another copy\" if you would like to keep a copy)\n3. Once the app is installed, go to the workspace. It will show sample data at first load. Select \"Connect your data\" from the yellow banner to connect your tenant's data.\n4. Enter your tenant ID, select Next\n5. Ensure that Authentication Method is set to \"OAuth2\", then Sign In and Connect.\n6. Sign in with your admin/report reader credentials.\n7. Report data will refresh and the report will update automatically.\n \nFinal status: The validation process for the fix completed, and we've deployed the fix within the most recent app version of Microsoft 365 Usage Analytics. We've tested with a subset of affected admins to ensure the impact has been remediated with our fix implemented, and admins need to take the actions outlined in the More Info section of this communication to update their app version and receive the fix.\n \nScope of impact: Any admin accessing Microsoft 365 Usage Analytics reports in Power BI may have been affected.\n \nStart time: Thursday, January 1, 2026, at 12:00 AM UTC\n \nEnd time: Friday, February 13, 2026, at 5:25 PM UTC\n \nRoot cause: A subset of Power BI logic didn't have the expected date formatting required for the year 2026, resulting in impact.\n \nNext steps: \n- We're reviewing the impacting Power BI logic to determine how the incorrect date formatting wasn't identified prior to being introduced into the service. The results of this investigation will help us to improve our pre-deployment processes and ensure similar instances of impact don't occur in the future.\n \nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-02-13T00:08:21.587Z",
+          "postType": "regular",
+          "content": "Title: Admins may be missing Microsoft 365 Usage Analytics reports in Power BI\n\nUser impact: Admins may be missing Microsoft 365 Usage Analytics reports in Power BI.\n\nMore info: Admins can access the missing data through the Microsoft 365 admin center or by leveraging the Graph API.\n \nCurrent status: We're continuing the validations of the fix to correct the date formatting and to restore admins' Microsoft 365 Usage Analytics reports in Power BI, and we'll aim to provide a deployment timeline by our next scheduled update.\n\nScope of impact: Any admin accessing Microsoft 365 Usage Analytics reports in Power BI may be affected.\n \nStart time: Thursday, January 1, 2026, at 12:00 AM UTC\n \nRoot cause: A subset of Power BI logic doesn't have the expected date formatting required for the year 2026, resulting in impact.\n \nNext update by: Friday, February 13, 2026, at 8:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-02-12T19:56:56.963Z",
+          "postType": "regular",
+          "content": "Title: Admins may be missing Microsoft 365 Usage Analytics reports in Power BI\n\nUser impact: Admins may be missing Microsoft 365 Usage Analytics reports in Power BI.\n\nMore info: Admins can access the missing data through the Microsoft 365 admin center or by leveraging the Graph API.\n \nCurrent status: Our fix development to correct the date formatting and to restore admins' Microsoft 365 Usage Analytics reports in Power BI is requiring additional validation time to ensure that it will correct all facets of this issue. In the meantime, we've identified that admins can access the missing data through the Microsoft 365 admin center or by leveraging the Graph API.\n\nScope of impact: Any admin accessing Microsoft 365 Usage Analytics reports in Power BI may be affected.\n \nStart time: Thursday, January 1, 2026, at 12:00 AM UTC\n \nRoot cause: A subset of Power BI logic doesn't have the expected date formatting required for the year 2026, resulting in impact.\n \nNext update by: Friday, February 13, 2026, at 3:30 AM UTC"
+        },
+        {
+          "createdAt": "2026-02-11T21:28:03.187Z",
+          "postType": "regular",
+          "content": "Title: Admins may be missing Microsoft 365 Usage Analytics reports in Power BI\n\nUser impact: Admins may be missing Microsoft 365 Usage Analytics reports in Power BI.\n\nCurrent status: Our fix to correct the date formatting and to restore admins' Microsoft 365 Usage Analytics reports in Power BI requires more time to develop that originally expected. We'll provide an estimated timeline for remediating the impact once it has become available.\n \nScope of impact: Any admin accessing Microsoft 365 Usage Analytics reports in Power BI may be affected.\n \nStart time: Thursday, January 1, 2026, at 12:00 AM UTC\n \nRoot cause: A subset of Power BI logic doesn't have the expected date formatting required for the year 2026, resulting in impact.\n \nNext update by: Friday, February 13, 2026, at 9:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-02-09T20:47:35.85Z",
+          "postType": "regular",
+          "content": "Title: Admins may be missing Microsoft 365 Usage Analytics reports in Power BI\n\nUser impact: Admins may be missing Microsoft 365 Usage Analytics reports in Power BI.\n\nCurrent status: We're progressing with the development of our fix to correct the date formatting for 2026 and later and to restore admins’ Microsoft 365 Usage Analytics reports in Power BI. We'll provide an estimated timeline for the deployment of our solution after our internal fix development and validations have been completed. \n \nScope of impact: Any admin accessing Microsoft 365 Usage Analytics reports in Power BI may be affected.\n \nStart time: Thursday, January 1, 2026, at 12:00 AM UTC\n \nRoot cause: A subset of Power BI logic doesn't have the expected date formatting required for the year 2026, resulting in impact.\n \nNext update by: Wednesday, February 11, 2026, at 10:00 PM UTC"
+        }
+      ],
+      "serviceName": "Power BI",
+      "affectedServices": [
+        "Power BI"
       ]
     },
     {
