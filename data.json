@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-13T10:30:31.653Z",
+  "lastUpdated": "2026-02-13T11:00:37.392Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1463,9 +1463,35 @@
     },
     {
       "service": "Microsoft Viva",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "Viva",
-      "issues": []
+      "issues": [
+        {
+          "id": "MV1231713",
+          "title": "Admins may be unable to edit or update communications configurations in Microsoft Viva Glint",
+          "startTime": "2026-02-13T10:33:36Z",
+          "endTime": null,
+          "lastModified": "2026-02-13T10:40:23.467Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Admins may be unable to edit or update communications configurations in Microsoft Viva Glint.",
+          "scopeOfImpact": "Impact is specific to some users who are served through the affected infrastructure and attempting to edit or update communications configurations in Microsoft Viva Glint. This information may be updated as our investigation continues.",
+          "rootCause": "",
+          "nextUpdateBy": "Friday, February 13, 2026, at 12:30 PM UTC",
+          "feature": "General",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-02-13T10:37:40.553Z",
+              "postType": "regular",
+              "content": "Title: Admins may be unable to edit or update communications configurations in Microsoft Viva Glint\n\nUser impact: Admins may be unable to edit or update communications configurations in Microsoft Viva Glint.\n\nMore info: The Viva Glint Communications page becomes unresponsive when attempting to edit survey email templates (Invite / Reminder). The page remains in a loading state and eventually shows “Page not responding”.\n\nCurrent status: We're reviewing support provided information and service telemetry to determine our next troubleshooting steps.\n\nScope of impact: Impact is specific to some users who are served through the affected infrastructure and attempting to edit or update communications configurations in Microsoft Viva Glint. This information may be updated as our investigation continues.\n\nNext update by: Friday, February 13, 2026, at 12:30 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Viva"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft Dataverse",
