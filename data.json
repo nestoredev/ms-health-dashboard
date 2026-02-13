@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-13T14:31:23.876Z",
+  "lastUpdated": "2026-02-13T15:01:29.417Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -547,6 +547,31 @@
             "SharePoint Online",
             "Microsoft OneDrive",
             "Microsoft Teams"
+          ]
+        },
+        {
+          "id": "MO1231810",
+          "title": "Some users may experience failures or timeouts while accessing Microsoft Copilot (Microsoft 365)",
+          "startTime": "2026-02-13T13:26:00Z",
+          "endTime": null,
+          "lastModified": "2026-02-13T14:31:47.08Z",
+          "status": "serviceDegradation",
+          "severity": "incident",
+          "userImpact": "Users may experience failures or timeouts while accessing Copilot.",
+          "scopeOfImpact": "Impact is specific to users located in Europe attempting to access Copilot.",
+          "rootCause": "",
+          "nextUpdateBy": "Friday, February 13, 2026, at 3:30 PM UTC",
+          "feature": "Access",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-02-13T14:31:47.08Z",
+              "postType": "regular",
+              "content": "Title: Some users may experience failures or timeouts while accessing Microsoft Copilot (Microsoft 365)  \n\nUser impact: Users may experience failures or timeouts while accessing Copilot. \n\nCurrent status: We’ve identified an underlying service issue affecting a subset of infrastructure components. We’ve confirmed a remediation plan and are restarting the affected components to restore full service capacity.\n \nScope of impact: Impact is specific to users located in Europe attempting to access Copilot. \n \nNext update by: Friday, February 13, 2026, at 3:30 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite"
           ]
         }
       ]
