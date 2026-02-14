@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-14T09:05:08.829Z",
+  "lastUpdated": "2026-02-14T09:35:13.995Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -625,36 +625,6 @@
           ]
         },
         {
-          "id": "SP1232155",
-          "title": "Users may be unable to access SharePoint Online sites and may notice delays or navigation errors",
-          "startTime": "2026-02-14T06:15:16Z",
-          "endTime": null,
-          "lastModified": "2026-02-14T08:07:35.7Z",
-          "status": "serviceDegradation",
-          "severity": "incident",
-          "userImpact": "Users may be unable to access SharePoint Online sites and may notice delays or navigation errors.",
-          "scopeOfImpact": "Some users in the United States may be unable to access SharePoint Online sites and may notice delays or navigation errors.",
-          "rootCause": "",
-          "nextUpdateBy": "Saturday, February 14, 2026, at 10:00 AM UTC",
-          "feature": "SharePoint Online all features",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-02-14T07:55:40.77Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to access SharePoint Online sites and may notice delays or navigation errors\n\nUser impact: Users may be unable to access SharePoint Online sites and may notice delays or navigation errors.\n\nCurrent status: We're reviewing service monitoring telemetry to isolate the source of the issue and establish a fix\n \nScope of impact: Some users in the United States may be unable to access SharePoint Online sites and may notice delays or navigation errors.\n \nNext update by: Saturday, February 14, 2026, at 10:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-02-14T06:15:18.507Z",
-              "postType": "regular",
-              "content": "Title: Potential issues accessing SharePoint Online sites\r\n\r\nUser impact: Users may be unable to access SharePoint Online sites and may notice delays or navigation errors.\r\n\r\nCurrent Status: We're investigating a potential issue and checking for impact to your organization. We'll provide an update within one hour."
-            }
-          ],
-          "affectedServices": [
-            "SharePoint Online"
-          ]
-        },
-        {
           "id": "MO1176905",
           "title": "Some admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services",
           "startTime": "2025-10-07T08:27:00Z",
@@ -1001,36 +971,6 @@
               "createdAt": "2025-10-21T20:16:01.217Z",
               "postType": "regular",
               "content": "Title: Some users with edit and full control permissions may be unable to access or share some content in Microsoft OneDrive\n\nUser impact: Users with edit and full control permissions may be unable to access or share some files in OneDrive.\n\nMore info: Specifically, this issue impacts files and folders that were deleted and recently restored. Impacted users attempting to access or share some folders experience failures in sharing and permission operations in OneDrive.\n\nCurrent status: We're investigating a potential issue with OneDrive and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Microsoft OneDrive"
-          ]
-        },
-        {
-          "id": "OD1232156",
-          "title": "Users may be unable to access Microsoft OneDrive content and may notice delays or navigation errors",
-          "startTime": "2026-02-14T06:15:26Z",
-          "endTime": null,
-          "lastModified": "2026-02-14T08:07:40.777Z",
-          "status": "serviceDegradation",
-          "severity": "incident",
-          "userImpact": "Users may be unable to access Microsoft OneDrive content and may notice delays or navigation errors.",
-          "scopeOfImpact": "Some users in the United States may be unable to access OneDrive content and may notice delays or navigation errors.",
-          "rootCause": "",
-          "nextUpdateBy": "Saturday, February 14, 2026, at 10:00 AM UTC",
-          "feature": "OneDrive for Business",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-02-14T07:54:47.697Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to access Microsoft OneDrive content and may notice delays or navigation errors\n\nUser impact: Users may be unable to access Microsoft OneDrive content and may notice delays or navigation errors.\n\nCurrent status: We're reviewing service monitoring telemetry to isolate the source of the issue and establish a fix\n \nScope of impact: Some users in the United States may be unable to access OneDrive content and may notice delays or navigation errors.\n \nNext update by: Saturday, February 14, 2026, at 10:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-02-14T06:15:27.55Z",
-              "postType": "regular",
-              "content": "Title: Potential issues accessing Microsoft OneDrive content\r\n\r\nUser impact: Users may be unable to access OneDrive content and may notice delays or navigation errors.\r\n\r\nCurrent Status: We're investigating a potential issue and checking for impact to your organization. We'll provide an update within one hour."
             }
           ],
           "affectedServices": [
@@ -1534,6 +1474,78 @@
     }
   ],
   "history": [
+    {
+      "id": "OD1232156",
+      "title": "Users may have been unable to access Microsoft OneDrive content and may notice delays or navigation errors",
+      "startTime": "2026-02-14T06:15:26Z",
+      "endTime": "2026-02-14T09:26:28Z",
+      "lastModified": "2026-02-14T09:30:28.73Z",
+      "status": "serviceRestored",
+      "severity": "incident",
+      "userImpact": "Users may have been unable to access Microsoft OneDrive content and may notice delays or navigation errors.",
+      "scopeOfImpact": "Some users in the United States may have been unable to access OneDrive content and may notice delays or navigation errors.\n \nStart time: Saturday, February 14, 2026, at 7:00 AM UTC\n \nEnd time: Saturday, February 14, 2026, at 7:57 AM UTC",
+      "rootCause": "A recent standard service update responsible for maintenance of SQL database infrastructure, resulted in downtime for a subset of resources\n \nNext steps:\n- We're reviewing our update procedures to better identify similar issues during our development and testing cycles.\n\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "OneDrive for Business",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-02-14T09:28:35.193Z",
+          "postType": "regular",
+          "content": "Title: Users may have been unable to access Microsoft OneDrive content and may notice delays or navigation errors\n\nUser impact: Users may have been unable to access Microsoft OneDrive content and may notice delays or navigation errors.\n\nFinal status: We've identified that a recent standard service update related to routine SQL database infrastructure maintenance resulted in downtime for a subset of resources. We rerouted user traffic to alternate infrastructure and and confirmed after a period of monitoring that issue has been mitigated.\n \nScope of impact: Some users in the United States may have been unable to access OneDrive content and may notice delays or navigation errors.\n \nStart time: Saturday, February 14, 2026, at 7:00 AM UTC\n \nEnd time: Saturday, February 14, 2026, at 7:57 AM UTC\n \nRoot cause: A recent standard service update responsible for maintenance of SQL database infrastructure, resulted in downtime for a subset of resources\n \nNext steps:\n- We're reviewing our update procedures to better identify similar issues during our development and testing cycles.\n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-02-14T07:54:47.697Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to access Microsoft OneDrive content and may notice delays or navigation errors\n\nUser impact: Users may be unable to access Microsoft OneDrive content and may notice delays or navigation errors.\n\nCurrent status: We're reviewing service monitoring telemetry to isolate the source of the issue and establish a fix\n \nScope of impact: Some users in the United States may be unable to access OneDrive content and may notice delays or navigation errors.\n \nNext update by: Saturday, February 14, 2026, at 10:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-02-14T06:15:27.55Z",
+          "postType": "regular",
+          "content": "Title: Potential issues accessing Microsoft OneDrive content\r\n\r\nUser impact: Users may be unable to access OneDrive content and may notice delays or navigation errors.\r\n\r\nCurrent Status: We're investigating a potential issue and checking for impact to your organization. We'll provide an update within one hour."
+        }
+      ],
+      "serviceName": "Microsoft OneDrive",
+      "affectedServices": [
+        "Microsoft OneDrive"
+      ]
+    },
+    {
+      "id": "SP1232155",
+      "title": "Users may have been unable to access SharePoint Online sites and may notice delays or navigation errors",
+      "startTime": "2026-02-14T06:15:16Z",
+      "endTime": "2026-02-14T09:16:07Z",
+      "lastModified": "2026-02-14T09:30:49.733Z",
+      "status": "serviceRestored",
+      "severity": "incident",
+      "userImpact": "Users may have been unable to access SharePoint Online sites and may notice delays or navigation errors.",
+      "scopeOfImpact": "Some users in the United States may have been unable to access SharePoint Online sites and may notice delays or navigation errors.\n \nStart time: Saturday, February 14, 2026, at 7:00 AM UTC\n \nEnd time: Saturday, February 14, 2026, at 7:57 AM UTC",
+      "rootCause": "A recent standard service update responsible for maintenance of SQL database infrastructure, resulted in downtime for a subset of resources\n \nNext steps:\n- We're reviewing our update procedures to better identify similar issues during our development and testing cycles.\n\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "SharePoint Online all features",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-02-14T09:26:00.413Z",
+          "postType": "regular",
+          "content": "Title: Users may have been unable to access SharePoint Online sites and may notice delays or navigation errors\n\nUser impact: Users may have been unable to access SharePoint Online sites and may notice delays or navigation errors.\n\nFinal status: We've identified that a recent standard service update related to routine SQL database infrastructure maintenance resulted in downtime for a subset of resources. We rerouted user traffic to alternate infrastructure and and confirmed after a period of monitoring that issue has been mitigated.\n \nScope of impact: Some users in the United States may have been unable to access SharePoint Online sites and may notice delays or navigation errors.\n \nStart time: Saturday, February 14, 2026, at 7:00 AM UTC\n \nEnd time: Saturday, February 14, 2026, at 7:57 AM UTC\n \nRoot cause: A recent standard service update responsible for maintenance of SQL database infrastructure, resulted in downtime for a subset of resources\n \nNext steps:\n- We're reviewing our update procedures to better identify similar issues during our development and testing cycles.\n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-02-14T07:55:40.77Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to access SharePoint Online sites and may notice delays or navigation errors\n\nUser impact: Users may be unable to access SharePoint Online sites and may notice delays or navigation errors.\n\nCurrent status: We're reviewing service monitoring telemetry to isolate the source of the issue and establish a fix\n \nScope of impact: Some users in the United States may be unable to access SharePoint Online sites and may notice delays or navigation errors.\n \nNext update by: Saturday, February 14, 2026, at 10:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-02-14T06:15:18.507Z",
+          "postType": "regular",
+          "content": "Title: Potential issues accessing SharePoint Online sites\r\n\r\nUser impact: Users may be unable to access SharePoint Online sites and may notice delays or navigation errors.\r\n\r\nCurrent Status: We're investigating a potential issue and checking for impact to your organization. We'll provide an update within one hour."
+        }
+      ],
+      "serviceName": "SharePoint Online",
+      "affectedServices": [
+        "SharePoint Online"
+      ]
+    },
     {
       "id": "MO1231021",
       "title": "Some users may be unable to access or see Excel data in multiple Microsoft 365 services on the web",
