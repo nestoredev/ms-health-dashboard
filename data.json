@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-14T06:04:32.454Z",
+  "lastUpdated": "2026-02-14T06:34:40.507Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -625,6 +625,31 @@
           ]
         },
         {
+          "id": "SP1232155",
+          "title": "Potential issues accessing SharePoint Online sites",
+          "startTime": "2026-02-14T06:15:16.473Z",
+          "endTime": null,
+          "lastModified": "2026-02-14T06:15:18.507Z",
+          "status": "investigating",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to access SharePoint Online sites and may notice delays or navigation errors.",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
+          "feature": "SharePoint Online all features",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-02-14T06:15:18.507Z",
+              "postType": "regular",
+              "content": "Title: Potential issues accessing SharePoint Online sites\r\n\r\nUser impact: Users may be unable to access SharePoint Online sites and may notice delays or navigation errors.\r\n\r\nCurrent Status: We're investigating a potential issue and checking for impact to your organization. We'll provide an update within one hour."
+            }
+          ],
+          "affectedServices": [
+            "SharePoint Online"
+          ]
+        },
+        {
           "id": "MO1176905",
           "title": "Some admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services",
           "startTime": "2025-10-07T08:27:00Z",
@@ -971,6 +996,31 @@
               "createdAt": "2025-10-21T20:16:01.217Z",
               "postType": "regular",
               "content": "Title: Some users with edit and full control permissions may be unable to access or share some content in Microsoft OneDrive\n\nUser impact: Users with edit and full control permissions may be unable to access or share some files in OneDrive.\n\nMore info: Specifically, this issue impacts files and folders that were deleted and recently restored. Impacted users attempting to access or share some folders experience failures in sharing and permission operations in OneDrive.\n\nCurrent status: We're investigating a potential issue with OneDrive and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft OneDrive"
+          ]
+        },
+        {
+          "id": "OD1232156",
+          "title": "Potential issues accessing Microsoft OneDrive content",
+          "startTime": "2026-02-14T06:15:26.103Z",
+          "endTime": null,
+          "lastModified": "2026-02-14T06:15:27.55Z",
+          "status": "investigating",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to access OneDrive content and may notice delays or navigation errors.",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
+          "feature": "OneDrive for Business",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-02-14T06:15:27.55Z",
+              "postType": "regular",
+              "content": "Title: Potential issues accessing Microsoft OneDrive content\r\n\r\nUser impact: Users may be unable to access OneDrive content and may notice delays or navigation errors.\r\n\r\nCurrent Status: We're investigating a potential issue and checking for impact to your organization. We'll provide an update within one hour."
             }
           ],
           "affectedServices": [
@@ -1360,9 +1410,35 @@
     },
     {
       "service": "Microsoft Purview",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "Purview",
-      "issues": []
+      "issues": [
+        {
+          "id": "MP1232157",
+          "title": "Some admins see delays in Data Security Posture Management (DSPM) metrics within Microsoft Purview",
+          "startTime": "2026-02-14T05:18:12Z",
+          "endTime": null,
+          "lastModified": "2026-02-14T06:25:00.237Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Admins see delays in new or modified assets being reflected in DSPM within Microsoft Purview.",
+          "scopeOfImpact": "Your organization is affected by this event, and any admins attempting to view new or modified assets in DSPM within Microsoft Purview are impacted. This information may be updated as our investigation continues.",
+          "rootCause": "",
+          "nextUpdateBy": "Saturday, February 14, 2026, at 8:00 PM UTC",
+          "feature": "General",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-02-14T06:25:00.237Z",
+              "postType": "regular",
+              "content": "Title: Some admins see delays in Data Security Posture Management (DSPM) metrics within Microsoft Purview\n\nUser impact: Admins see delays in new or modified assets being reflected in DSPM within Microsoft Purview. \n\nMore info: More specifically, admins see delays for the following impacted assets:\n \n- Key posture metric for Classified or labeled assets\n- Data snapshot (Stale and Fresh data trends)\n- Asset explorer\n- Posture metrics, sensitive data discovery trends, and risk patterns in the Discover sensitive data in your organization objective\n\nCurrent status: Our system monitoring has alerted us to an issue in which some admins are seeing delays in new or modified assets in DSPM within Microsoft Purview. We're investigating the processing delays for the affected assets so that we can identify the root cause of the issue and develop a remediation plan.\n\nScope of impact: Your organization is affected by this event, and any admins attempting to view new or modified assets in DSPM within Microsoft Purview are impacted. This information may be updated as our investigation continues.\n\nNext update by: Saturday, February 14, 2026, at 8:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Purview"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft Clipchamp ",
