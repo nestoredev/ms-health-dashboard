@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-15T03:38:35.851Z",
+  "lastUpdated": "2026-02-15T04:08:42.243Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -2862,52 +2862,6 @@
           "createdAt": "2026-01-16T11:05:07.143Z",
           "postType": "regular",
           "content": "Title: Some users may be unable to select schedule dates within SharePoint Online pages\n\nUser impact: Users may be unable to select schedule dates within SharePoint Online pages. \n\nCurrent status: We're reviewing service monitoring telemetry to isolate the root cause and determine our next troubleshooting steps. \n \nScope of impact: Some users attempting to select scheduled dates within SharePoint Online may be impacted. This information may be updated as our investigation continues. \n \nNext update by: Friday, January 16, 2026, at 1:00 PM UTC"
-        }
-      ],
-      "serviceName": "SharePoint Online",
-      "affectedServices": [
-        "SharePoint Online"
-      ]
-    },
-    {
-      "id": "SP1218404",
-      "title": "Users may be unable to open People Cards in SharePoint Online",
-      "startTime": "2026-01-14T18:47:00Z",
-      "endTime": "2026-01-16T04:00:00Z",
-      "lastModified": "2026-01-16T04:25:10.027Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users may have been unable to open People Cards in SharePoint Online.",
-      "scopeOfImpact": "This issue may have potentially impacted any user attempting to open People Cards in SharePoint Online.\n\nStart time: Wednesday, January 14, 2026, at 6:47 PM UTC\n\nEnd time: Friday, January 16, 2026, at 4:00 AM UTC",
-      "rootCause": "Recent authorization changes intended to improve security functionality introduced an error that prevented users from opening People Cards.\n\nNext steps: \n - We're analyzing the authorization changes to better understand what triggered the initial impact, which will help us in avoiding similar issues during future updates.\n\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Save Site as Template",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-01-16T04:25:10.027Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to open People Cards in SharePoint Online\n\nUser impact: Users may have been unable to open People Cards in SharePoint Online.\n\nFinal status: We confirmed that recent authorization changes intended to improve security functionality introduced an error that prevented users from opening People Cards. We reverted the authorization changes and confirmed in our telemetry that the impact is remediated.\n\nScope of impact: This issue may have potentially impacted any user attempting to open People Cards in SharePoint Online.\n\nStart time: Wednesday, January 14, 2026, at 6:47 PM UTC\n\nEnd time: Friday, January 16, 2026, at 4:00 AM UTC\n\nRoot cause: Recent authorization changes intended to improve security functionality introduced an error that prevented users from opening People Cards.\n\nNext steps: \n - We're analyzing the authorization changes to better understand what triggered the initial impact, which will help us in avoiding similar issues during future updates.\n\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-01-16T03:56:42.297Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to open People Cards in SharePoint Online\n\nUser impact: Users may be unable to open People Cards in SharePoint Online.\n\nCurrent status: Our initial testing shows that disabling the change is remediating impact in our test environment. We're evaluating that the change can be safely disabled for the remaining impacted environment before taking any additional mitigation steps.\n\nScope of impact: This issue may potentially impact any user attempting to open People Cards in SharePoint Online.\n\nNext update by: Friday, January 16, 2026, at 6:00 AM UTC"
-        },
-        {
-          "createdAt": "2026-01-16T01:56:25.11Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to open People Cards in SharePoint Online\n\nUser impact: Users may be unable to open People Cards in SharePoint Online.\n\nCurrent status: We identified a recent authorization change that we suspect is causing the impact to People Cards. We're testing disabling the change in our environment to validate that it remediates impact.\n\nScope of impact: This issue may potentially impact any user attempting to open People Cards in SharePoint Online.\n\nNext update by: Friday, January 16, 2026, at 4:00 AM UTC"
-        },
-        {
-          "createdAt": "2026-01-16T00:16:18.513Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to open People Cards in SharePoint Online\n\nUser impact: Users may be unable to open People Cards in SharePoint Online.\n\nCurrent status: We're analyzing system logs, including any recent changes, to identify the source of the issue, which will help us determine our next troubleshooting steps.\n\nScope of impact: This issue may potentially impact any user attempting to open People Cards in SharePoint Online.\n\nNext update by: Friday, January 16, 2026, at 2:30 AM UTC"
-        },
-        {
-          "createdAt": "2026-01-15T23:58:11.48Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to open People Cards in SharePoint Online\n\nUser impact: Users may be unable to open People Cards in SharePoint Online.\n\nCurrent status: We're investigating a potential issue with SharePoint Online and checking for impact to your organization. We'll provide an update within 30 minutes."
         }
       ],
       "serviceName": "SharePoint Online",
