@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-15T23:12:29.543Z",
+  "lastUpdated": "2026-02-15T23:42:36.505Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -2821,52 +2821,6 @@
       "serviceName": "Microsoft Power Automate in Microsoft 365",
       "affectedServices": [
         "Microsoft Power Automate in Microsoft 365"
-      ]
-    },
-    {
-      "id": "SP1218552",
-      "title": "Some users may be unable to select schedule dates within SharePoint Online pages",
-      "startTime": "2026-01-16T06:47:00Z",
-      "endTime": "2026-01-16T23:40:00Z",
-      "lastModified": "2026-01-17T00:24:10.077Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users may be unable to select schedule dates within SharePoint Online pages.",
-      "scopeOfImpact": "Some users who were attempting to select scheduled dates within SharePoint Online may have been impacted. \n\nStart time: Thursday, January 15, 2026, at 6:47 AM UTC\n\nEnd time: Friday, January 16, 2026, at 11:40 PM UTC",
-      "rootCause": "A regression was introduced during recent service update which was causing the date selector not to open, which resulted in impact.\n\nNext steps: \n- We're reviewing our update vetting procedures to help ensure impact of this nature doesn’t reoccur with future updates.\n\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Performance (related to custom solutions)",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-01-17T00:19:05.203Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to select schedule dates within SharePoint Online pages\n\nUser impact: Users may be unable to select schedule dates within SharePoint Online pages.\n\nFinal status: Our fix has fully saturated throughout the affected environment and after an extended period of monitoring the service health telemetry and validating within our internal testing environment, we’ve confirmed that impact has been remediated. \n\nScope of impact: Some users who were attempting to select scheduled dates within SharePoint Online may have been impacted. \n\nStart time: Thursday, January 15, 2026, at 6:47 AM UTC\n\nEnd time: Friday, January 16, 2026, at 11:40 PM UTC\n\nRoot cause: A regression was introduced during recent service update which was causing the date selector not to open, which resulted in impact.\n\nNext steps: \n- We're reviewing our update vetting procedures to help ensure impact of this nature doesn’t reoccur with future updates.\n\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-01-16T22:40:54.427Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to select schedule dates within SharePoint Online pages\n\nUser impact: Users may be unable to select schedule dates within SharePoint Online pages.\n\nCurrent status: Our fix to correct the regression introduced by the recent service update is currently ten percent saturated across the affected environment and is progressing slower than we initially anticipated. We're monitoring as it deploys to ensure it completes in a timely manner.\n\nScope of impact: Some users attempting to select scheduled dates within SharePoint Online may be impacted. This information may be updated as our investigation continues.\n\nStart time: Thursday, January 15, 2026, at 6:47 AM UTC\n\nRoot cause: A regression was introduced during recent service update which is causing the date selector not to open, resulting in impact.\n\nNext update by: Saturday, January 17, 2026, at 2:00 AM UTC"
-        },
-        {
-          "createdAt": "2026-01-16T20:57:58.98Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to select schedule dates within SharePoint Online pages\n\nUser impact: Users may be unable to select schedule dates within SharePoint Online pages.\n\nCurrent status: We’ve initiated the process of rolling out a fix to address this issue and anticipate that the deployment should complete to resolve this issue by our next scheduled update.\n\nScope of impact: Some users attempting to select scheduled dates within SharePoint Online may be impacted. This information may be updated as our investigation continues.\n \nStart time: Thursday, January 15, 2026, at 6:47 AM UTC\n\nRoot cause: A change introduced as part of a recent service update is causing impact. \n\nNext update by: Saturday, January 17, 2026, at 12:00 AM UTC"
-        },
-        {
-          "createdAt": "2026-01-16T12:16:05.143Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to select schedule dates within SharePoint Online pages\n\nUser impact: Users may be unable to select schedule dates within SharePoint Online pages. \n\nCurrent status: We've determined that a recent service update is causing impact to occur. As a mitigation strategy, we've initiated the deployment of the fix which has reached an estimated 25 percent of the impacted service environments. We’ll provide a timeline for full completion as soon as it becomes available.\n \nScope of impact: Some users attempting to select scheduled dates within SharePoint Online may be impacted. This information may be updated as our investigation continues. \n \nRoot cause: A change introduced as part of a recent service update is causing impact. \n \nNext update by: Friday, January 16, 2026, at 9:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-01-16T11:05:07.143Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to select schedule dates within SharePoint Online pages\n\nUser impact: Users may be unable to select schedule dates within SharePoint Online pages. \n\nCurrent status: We're reviewing service monitoring telemetry to isolate the root cause and determine our next troubleshooting steps. \n \nScope of impact: Some users attempting to select scheduled dates within SharePoint Online may be impacted. This information may be updated as our investigation continues. \n \nNext update by: Friday, January 16, 2026, at 1:00 PM UTC"
-        }
-      ],
-      "serviceName": "SharePoint Online",
-      "affectedServices": [
-        "SharePoint Online"
       ]
     }
   ]
