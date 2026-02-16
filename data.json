@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-16T11:14:59.312Z",
+  "lastUpdated": "2026-02-16T11:45:05.340Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -643,31 +643,6 @@
               "createdAt": "2025-10-21T20:18:27.79Z",
               "postType": "regular",
               "content": "Title: Some users with edit and full control permissions may be unable to access or share some items in SharePoint Online\n\nUser impact: Users with edit and full control permissions may be unable to access or share some items in SharePoint Online.\n\nMore info: Specifically, this issue impacts files and folders that were deleted and recently restored. Impacted users attempting to access or share some folders experience failures in sharing and permission operations in OneDrive.\n\nCurrent status: We're investigating a potential issue with OneDrive and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "SharePoint Online"
-          ]
-        },
-        {
-          "id": "SP1233278",
-          "title": "Some admins and users may be unable to register or edit pages in SharePoint Online",
-          "startTime": "2026-02-16T09:09:07Z",
-          "endTime": null,
-          "lastModified": "2026-02-16T10:32:28.743Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Admins and users may be unable to register or edit pages in SharePoint Online.",
-          "scopeOfImpact": "Impact is specific to some admins and users who are served through the affected infrastructure attempting to register or edit pages in SharePoint Online.  This information may be updated as our investigation continues.",
-          "rootCause": "",
-          "nextUpdateBy": "Monday, February 16, 2026, at 11:30 AM UTC",
-          "feature": "Save Site as Template",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-02-16T09:09:51.62Z",
-              "postType": "regular",
-              "content": "Title: Some admins and users may be unable to register or edit pages in SharePoint Online\n \nUser impact: Admins and users may be unable to register or edit pages in SharePoint Online.\n\nMore info: As a temporary workaround, some admins and users may be able to edit pages by navigating to the Site Pages library settings and enabling the option “Require documents to be checked out before they can be edited” under Versioning settings.\n\nCurrent status: We're reviewing support provided information to determine our next troubleshooting steps.\n\nScope of impact: Impact is specific to some admins and users who are served through the affected infrastructure attempting to register or edit pages in SharePoint Online.  This information may be updated as our investigation continues.\n\nNext update by: Monday, February 16, 2026, at 11:30 AM UTC"
             }
           ],
           "affectedServices": [
@@ -1524,6 +1499,37 @@
     }
   ],
   "history": [
+    {
+      "id": "SP1233278",
+      "title": "Some admins and users were unable to register or edit pages in SharePoint Online",
+      "startTime": "2026-02-10T04:07:00Z",
+      "endTime": "2026-02-16T11:07:00Z",
+      "lastModified": "2026-02-16T11:32:55.293Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Admins and users were unable to register or edit pages in SharePoint Online.",
+      "scopeOfImpact": "Impact was specific to some admins and users who were served through the affected infrastructure attempting to register or edit pages in SharePoint Online.\n\nStart time: Tuesday, February 10, 2026, at 4:07 AM UTC\n\nEnd time: Monday, February 16, 2026, at 11:07 AM UTC",
+      "rootCause": "A recent standard service update inadvertently introduced the issue, which resulted in impact.\n\nNext steps:\n- We're reviewing our deployment and provisioning procedures to help prevent similar problems in the future.\n\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Save Site as Template",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-02-16T11:25:38.453Z",
+          "postType": "regular",
+          "content": "Title: Some admins and users were unable to register or edit pages in SharePoint Online\n\nUser impact: Admins and users were unable to register or edit pages in SharePoint Online.\n\nFinal status: We’ve determined that a recent standard service update inadvertently introduced the issue, resulting in impact. We've reverted this change to resolve impact.\n \nScope of impact: Impact was specific to some admins and users who were served through the affected infrastructure attempting to register or edit pages in SharePoint Online.\n\nStart time: Tuesday, February 10, 2026, at 4:07 AM UTC\n\nEnd time: Monday, February 16, 2026, at 11:07 AM UTC\n\nRoot cause: A recent standard service update inadvertently introduced the issue, which resulted in impact.\n\nNext steps:\n- We're reviewing our deployment and provisioning procedures to help prevent similar problems in the future.\n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-02-16T09:09:51.62Z",
+          "postType": "regular",
+          "content": "Title: Some admins and users may be unable to register or edit pages in SharePoint Online\n \nUser impact: Admins and users may be unable to register or edit pages in SharePoint Online.\n\nMore info: As a temporary workaround, some admins and users may be able to edit pages by navigating to the Site Pages library settings and enabling the option “Require documents to be checked out before they can be edited” under Versioning settings.\n\nCurrent status: We're reviewing support provided information to determine our next troubleshooting steps.\n\nScope of impact: Impact is specific to some admins and users who are served through the affected infrastructure attempting to register or edit pages in SharePoint Online.  This information may be updated as our investigation continues.\n\nNext update by: Monday, February 16, 2026, at 11:30 AM UTC"
+        }
+      ],
+      "serviceName": "SharePoint Online",
+      "affectedServices": [
+        "SharePoint Online"
+      ]
+    },
     {
       "id": "SP1232155",
       "title": "Users may have been unable to access SharePoint Online sites and may notice delays or navigation errors",
