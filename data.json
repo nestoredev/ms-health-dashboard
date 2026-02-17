@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-17T21:22:31.785Z",
+  "lastUpdated": "2026-02-17T22:14:35.304Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -166,7 +166,7 @@
           "title": "Some admins may be unable to perform tenant to tenant migrations and offboarding moves in Exchange Online",
           "startTime": "2026-02-15T01:44:21Z",
           "endTime": null,
-          "lastModified": "2026-02-17T21:12:28.48Z",
+          "lastModified": "2026-02-17T21:20:06.637Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may be unable to perform tenant to tenant migrations and offboarding moves in Exchange Online.",
@@ -1680,16 +1680,21 @@
       "title": "Some users may experience failures or timeouts while accessing Microsoft Copilot (Microsoft 365)",
       "startTime": "2026-02-13T13:26:00Z",
       "endTime": "2026-02-13T15:52:19Z",
-      "lastModified": "2026-02-13T15:52:48.533Z",
-      "status": "serviceRestored",
+      "lastModified": "2026-02-17T21:48:02.847Z",
+      "status": "postIncidentReviewPublished",
       "severity": "incident",
       "userImpact": "Users may experience failures or timeouts while accessing Copilot.",
-      "scopeOfImpact": "Impact was specific to user attempting to access Copilot. \n\nStart time: Friday, February 13, 2026, at 1:26 PM UTC\n\nEnd time: Friday, February 13, 2026, at 1:54 PM UTC",
-      "rootCause": "Traffic management measures were applied as part of a mitigation for a configuration issue, which caused user impact. More details will be provided in the Post‑Incident Report.\n\nNext Steps\nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days.",
+      "scopeOfImpact": "",
+      "rootCause": "",
       "nextUpdateBy": "",
       "feature": "Access",
       "isResolved": true,
       "posts": [
+        {
+          "createdAt": "2026-02-17T21:48:02.847Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        },
         {
           "createdAt": "2026-02-13T15:52:48.533Z",
           "postType": "regular",
