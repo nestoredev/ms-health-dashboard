@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-18T09:47:18.704Z",
+  "lastUpdated": "2026-02-18T10:17:25.087Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1415,16 +1415,21 @@
           "title": "Users' email messages with a confidential label applied are being incorrectly processed by Microsoft 365 Copilot chat",
           "startTime": "2026-01-21T07:25:00Z",
           "endTime": null,
-          "lastModified": "2026-02-11T05:52:24.37Z",
+          "lastModified": "2026-02-18T10:14:27.867Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users' email messages with a confidential label applied are being incorrectly processed by Microsoft 365 Copilot chat.",
-          "scopeOfImpact": "Your organization is affected by this event, and users' email messages with a confidential label applied are being incorrectly processed by Microsoft 365 Copilot chat. This section may be updated as our investigation continues.\n \nStart time: Wednesday, January 21, 2026, at 7:25 AM UTC",
+          "scopeOfImpact": "Your organization is affected by this event, and users' email messages with a confidential label applied are being incorrectly processed by Microsoft 365 Copilot chat. This section may be updated as our investigation continues.\n\nStart time: Wednesday, January 21, 2026, at 7:25 AM UTC",
           "rootCause": "A code issue is allowing items in the sent items and draft folders to be picked up by Copilot even though confidential labels are set in place.",
-          "nextUpdateBy": "Wednesday, February 18, 2026, at 11:00 AM UTC",
+          "nextUpdateBy": "Wednesday, February 18, 2026, at 7:00 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-02-18T10:14:27.867Z",
+              "postType": "regular",
+              "content": "Title: Users' email messages with a confidential label applied are being incorrectly processed by Microsoft 365 Copilot chat\n\nUser impact: Users' email messages with a confidential label applied are being incorrectly processed by Microsoft 365 Copilot chat.\n\nMore info: The Microsoft 365 Copilot \"work tab\" Chat is summarizing email messages even though these email messages have a sensitivity label applied and a DLP policy is configured.\n \nCurrent status: We're proceeding to monitor the deployment of the fix as it progresses and are reaching out to a subset of users to test for impact remediation. We expect to have a estimated time for completion by our next scheduled update.\n\nScope of impact: Your organization is affected by this event, and users' email messages with a confidential label applied are being incorrectly processed by Microsoft 365 Copilot chat. This section may be updated as our investigation continues.\n\nStart time: Wednesday, January 21, 2026, at 7:25 AM UTC\n\nRoot cause: A code issue is allowing items in the sent items and draft folders to be picked up by Copilot even though confidential labels are set in place.\n\nNext update by: Wednesday, February 18, 2026, at 7:00 PM UTC"
+            },
             {
               "createdAt": "2026-02-10T18:22:38Z",
               "postType": "regular",
