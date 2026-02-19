@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-19T12:23:29.533Z",
+  "lastUpdated": "2026-02-19T12:53:37.367Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -2826,68 +2826,6 @@
       "serviceName": "Microsoft 365 suite",
       "affectedServices": [
         "Microsoft 365 suite"
-      ]
-    },
-    {
-      "id": "MM1219608",
-      "title": "Some users may have been unable to open Microsoft Power Apps",
-      "startTime": "2026-01-20T12:24:29Z",
-      "endTime": "2026-01-20T12:33:00Z",
-      "lastModified": "2026-01-20T14:51:22.53Z",
-      "status": "serviceRestored",
-      "severity": "incident",
-      "userImpact": "Users may have been unable to open Microsoft Power Apps.",
-      "scopeOfImpact": "Impact was specific to some users who were served through the affected infrastructure attempting to open Power App\n\nStart time: Tuesday, January 20, 2026, at 10:41 AM UTC\n\nEnd time: Tuesday, January 20, 2026, at 12:33 PM UTC",
-      "rootCause": "An update to the Power Platform service didn't run as expected, resulting in slow performance, connection failures, and request failures across dependent services.\n\nNext steps:\n- We're reviewing our Power Platform update procedures to help prevent similar impact from happening again.\n\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Reports of an Incident",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-01-20T14:27:33.93Z",
-          "postType": "regular",
-          "content": "Title: Some users may have been unable to open Microsoft Power Apps\n\nUser impact: Users may have been unable to open Microsoft Power Apps.\n\nMore info: Users may have been unable to open Power Apps, load data from SharePoint-backed applications, or use connectors that rely on Power Apps services.\n\nFinal status: We’ve determined that an update to the Power Platform service didn't run as expected, resulting in slow performance, connection failures, and request failures across dependent services. We’ve confirmed that the service recovered after the aforementioned update completed as expected.\n\nScope of impact: Impact was specific to some users who were served through the affected infrastructure attempting to open Power App\n\nStart time: Tuesday, January 20, 2026, at 10:41 AM UTC\n\nEnd time: Tuesday, January 20, 2026, at 12:33 PM UTC\n\nRoot cause: An update to the Power Platform service didn't run as expected, resulting in slow performance, connection failures, and request failures across dependent services.\n\nNext steps:\n- We're reviewing our Power Platform update procedures to help prevent similar impact from happening again.\n\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-01-20T12:38:56.343Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to open Microsoft Power Apps\n\nUser impact: Users may be unable to open Microsoft Power Apps.\n\nMore info: Users may be unable to open Power Apps, load data from SharePoint-backed applications, or use connectors that rely on Power Apps services.\n\nCurrent status: We’re analyzing service telemetry to identify the root cause and develop a remediation plan.\n\nScope of impact: Impact is specific to some users who are served through the affected infrastructure attempting to open Power Apps.\n\nNext update by: Tuesday, January 20, 2026, at 2:30 PM UTC"
-        }
-      ],
-      "serviceName": "Power Apps in Microsoft 365",
-      "affectedServices": [
-        "Power Apps in Microsoft 365"
-      ]
-    },
-    {
-      "id": "MF1219609",
-      "title": "Some users may have been unable to run Microsoft Power Automate flows",
-      "startTime": "2026-01-20T10:41:00Z",
-      "endTime": "2026-01-20T12:33:00Z",
-      "lastModified": "2026-01-20T14:51:36.057Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users may have been unable to run Microsoft Power Automate flows.",
-      "scopeOfImpact": "Impact was specific to some users who were served through the affected infrastructure attempting to run Microsoft Power Automate flows.\n\nStart time: Tuesday, January 20, 2026, at 10:41 AM UTC\n\nEnd time: Tuesday, January 20, 2026, at 12:33 PM UTC",
-      "rootCause": "An update to the Power Platform service didn't run as expected, resulting in slow performance, connection failures, and request failures across dependent services.\n\nNext steps:\n- We're reviewing our Power Platform update procedures to help prevent similar impact from happening again.\n\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Reports of an Incident",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-01-20T14:29:19.727Z",
-          "postType": "regular",
-          "content": "Title: Some users may have been unable to run Microsoft Power Automate flows\n\nUser impact: Users may have been unable to run Microsoft Power Automate flows.\n\nMore info: Users may have been unable to run flows, use connectors, or perform operations that rely on Power Automate services.\n\nFinal status: We’ve determined that an update to the Power Platform service didn't run as expected, resulting in slow performance, connection failures, and request failures across dependent services. We’ve confirmed that the service recovered after the aforementioned update completed as expected.\n\nScope of impact: Impact was specific to some users who were served through the affected infrastructure attempting to run Microsoft Power Automate flows.\n\nStart time: Tuesday, January 20, 2026, at 10:41 AM UTC\n\nEnd time: Tuesday, January 20, 2026, at 12:33 PM UTC\n\nRoot cause: An update to the Power Platform service didn't run as expected, resulting in slow performance, connection failures, and request failures across dependent services.\n\nNext steps:\n- We're reviewing our Power Platform update procedures to help prevent similar impact from happening again.\n\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-01-20T12:40:02.483Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to run Microsoft Power Automate flows\n\nUser impact: Users may be unable to run Microsoft Power Automate flows.\n\nMore info: Users may be unable to run flows, use connectors, or perform operations that rely on Power Automate services.\n\nCurrent status: We’re analyzing service telemetry to identify the root cause and develop a remediation plan.\n\nScope of impact: Impact is specific to some users who are served through the affected infrastructure attempting to run Microsoft Power Automate flows.\n\nNext update by: Tuesday, January 20, 2026, at 2:30 PM UTC"
-        }
-      ],
-      "serviceName": "Microsoft Power Automate in Microsoft 365",
-      "affectedServices": [
-        "Microsoft Power Automate in Microsoft 365"
       ]
     }
   ]
