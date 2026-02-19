@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-19T02:21:21.214Z",
+  "lastUpdated": "2026-02-19T02:51:27.376Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1422,19 +1422,24 @@
         },
         {
           "id": "CW1226324",
-          "title": "Users' sent and draft folder messages with confidential labels may be incorrectly processed by Microsoft Copilot chat",
+          "title": "Users may notice Copilot prompts returning information from Sent and Draft folder messages with DLP policies configured",
           "startTime": "2026-01-21T07:25:00Z",
           "endTime": null,
-          "lastModified": "2026-02-18T21:29:45.767Z",
+          "lastModified": "2026-02-19T02:27:38.227Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "userImpact": "Users' sent and draft folder messages with confidential labels may be incorrectly processed by Microsoft Copilot chat.",
-          "scopeOfImpact": "Users leveraging Microsoft 365 Copilot Chat may notice that email messages in their Drafts or Sent Items folder may show up despite them having a sensitivity label applied and a DLP policy configured. This section may be updated as our investigation continues.\n\nStart time: Wednesday, January 21, 2026, at 7:25 AM UTC",
-          "rootCause": "A code issue is allowing items in the sent items and draft folders to be picked up by Copilot even though confidential labels are set in place.",
+          "userImpact": "Users may notice Copilot prompts returning information from Sent and Draft folder messages with DLP policies configured.",
+          "scopeOfImpact": "Users leveraging Microsoft 365 Copilot Chat may notice that email messages in their Drafts or Sent Items folder may be referenced in prompt responses even though these messages may have a sensitivity label applied and a DLP policy configured. This section may be updated as our investigation continues.\n \nStart time: Wednesday, January 21, 2026, at 7:25 AM UTC",
+          "rootCause": "A code issue is allowing items in the Sent items and Draft folders to be picked up by Copilot even though confidential labels are set in place.",
           "nextUpdateBy": "Thursday, February 19, 2026, at 9:30 AM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-02-19T02:27:38.227Z",
+              "postType": "regular",
+              "content": "Title: Users may notice Copilot prompts returning information from Sent and Draft folder messages with DLP policies configured\n\nUser impact: Users may notice Copilot prompts returning information from Sent and Draft folder messages with DLP policies configured.\n\nMore info: This issue is specific to Exchange Online email messages that are in the Sent Items and Drafts folders. The Microsoft 365 Copilot \"work tab\" Chat may process these email messages for the user that owns them even though these email messages have a sensitivity label applied and a DLP policy is configured.\n\nCurrent status: We have completed deployment of the fix and we’re working with affected users to confirm that the issue is mitigated. \n\nScope of impact: Users leveraging Microsoft 365 Copilot Chat may notice that email messages in their Drafts or Sent Items folder may be referenced in prompt responses even though these messages may have a sensitivity label applied and a DLP policy configured. This section may be updated as our investigation continues.\n \nStart time: Wednesday, January 21, 2026, at 7:25 AM UTC\n\nRoot cause: A code issue is allowing items in the Sent items and Draft folders to be picked up by Copilot even though confidential labels are set in place.\n \nNext update by: Thursday, February 19, 2026, at 9:30 AM UTC"
+            },
             {
               "createdAt": "2026-02-18T17:12:22.54Z",
               "postType": "regular",
