@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-20T01:26:37.030Z",
+  "lastUpdated": "2026-02-20T01:56:43.020Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -764,9 +764,35 @@
     },
     {
       "service": "Planner",
-      "status": "serviceOperational",
+      "status": "investigating",
       "id": "Planner",
-      "issues": []
+      "issues": [
+        {
+          "id": "PL1235137",
+          "title": "Some users may see delays with Microsoft Planner tasks updating to Microsoft To-Do",
+          "startTime": "2026-02-20T01:07:05Z",
+          "endTime": null,
+          "lastModified": "2026-02-20T01:28:38.703Z",
+          "status": "investigating",
+          "severity": "advisory",
+          "userImpact": "Users may see delays with Microsoft Planner tasks updating to Microsoft To-Do.",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
+          "feature": "Task detail",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-02-20T01:28:38.703Z",
+              "postType": "regular",
+              "content": "Title: Some users may see delays with Microsoft Planner tasks updating to Microsoft To-Do\n\nUser impact: Users may see delays with Microsoft Planner tasks updating to Microsoft To-Do.\n\nCurrent status: We're investigating a potential issue with Microsoft Planner and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Planner"
+          ]
+        }
+      ]
     },
     {
       "service": "Sway",
