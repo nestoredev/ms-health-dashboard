@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-20T01:56:43.020Z",
+  "lastUpdated": "2026-02-20T02:26:50.036Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -772,16 +772,21 @@
           "title": "Some users may see delays with Microsoft Planner tasks updating to Microsoft To-Do",
           "startTime": "2026-02-20T01:07:05Z",
           "endTime": null,
-          "lastModified": "2026-02-20T01:28:38.703Z",
+          "lastModified": "2026-02-20T02:02:12.147Z",
           "status": "investigating",
           "severity": "advisory",
           "userImpact": "Users may see delays with Microsoft Planner tasks updating to Microsoft To-Do.",
-          "scopeOfImpact": "",
-          "rootCause": "",
-          "nextUpdateBy": "",
+          "scopeOfImpact": "This issue may impact some users in the North America and Europe regions who are attempting to get Microsoft Planner tasks updated to Microsoft To-Do.\n\nStart time: Tuesday, February 3, 2026, at 12:00 AM UTC",
+          "rootCause": "An issue is causing delays within the data pipeline that facilitates Microsoft Planner task updates in Microsoft To-Do, leading to impact.",
+          "nextUpdateBy": "Saturday, February 21, 2026, at 12:00 AM UTC",
           "feature": "Task detail",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-02-20T02:02:12.147Z",
+              "postType": "regular",
+              "content": "Title: Some users may see delays with Microsoft Planner tasks updating to Microsoft To-Do\n\nUser impact: Users may see delays with Microsoft Planner tasks updating to Microsoft To-Do.\n\nCurrent status: We identified an issue that’s causing delays within the data pipeline that facilitates Microsoft Planner task updates in Microsoft To-Do, leading to impact. We can see that the backlog of events is processing and that the service health is improving. We'll continue monitoring the backlog processing to validate that the impact is remediated.\n\nScope of impact: This issue may impact some users in the North America and Europe regions who are attempting to get Microsoft Planner tasks updated to Microsoft To-Do.\n\nStart time: Tuesday, February 3, 2026, at 12:00 AM UTC\n\nRoot cause: An issue is causing delays within the data pipeline that facilitates Microsoft Planner task updates in Microsoft To-Do, leading to impact.\n\nNext update by: Saturday, February 21, 2026, at 12:00 AM UTC"
+            },
             {
               "createdAt": "2026-02-20T01:28:38.703Z",
               "postType": "regular",
