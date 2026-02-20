@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-20T15:29:49.495Z",
+  "lastUpdated": "2026-02-20T15:59:56.618Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1776,7 +1776,7 @@
       "title": "Some users may experience failures or timeouts while accessing Microsoft Copilot (Microsoft 365)",
       "startTime": "2026-02-13T13:26:00Z",
       "endTime": "2026-02-13T15:52:19Z",
-      "lastModified": "2026-02-17T21:48:02.847Z",
+      "lastModified": "2026-02-20T15:44:26.04Z",
       "status": "postIncidentReviewPublished",
       "severity": "incident",
       "userImpact": "Users may experience failures or timeouts while accessing Copilot.",
@@ -1787,6 +1787,11 @@
       "isResolved": true,
       "posts": [
         {
+          "createdAt": "2026-02-20T15:44:26.04Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        },
+        {
           "createdAt": "2026-02-17T21:48:02.847Z",
           "postType": "regular",
           "content": "A post-incident report has been published."
@@ -1794,7 +1799,7 @@
         {
           "createdAt": "2026-02-13T15:52:48.533Z",
           "postType": "regular",
-          "content": "Title: Some users may experience failures or timeouts while accessing Microsoft Copilot (Microsoft 365)\n\nUser impact: Users may experience failures or timeouts while accessing Copilot.\n\nFinal status: We’ve applied the mitigation and the affected components have been restored to full-service capacity. We will continue to monitor service availability and investigate the underlying root cause.\n\nScope of impact: Impact was specific to user attempting to access Copilot. \n\nStart time: Friday, February 13, 2026, at 1:26 PM UTC\n\nEnd time: Friday, February 13, 2026, at 1:54 PM UTC\n\nRoot cause: Traffic management measures were applied as part of a mitigation for a configuration issue, which caused user impact. More details will be provided in the Post‑Incident Report.\n\nNext Steps\nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days."
+          "content": "Title: Some users may experience failures or timeouts while accessing Microsoft Copilot (Microsoft 365)\n\nUser impact: Users may experience failures or timeouts while accessing Copilot.\n\nFinal status: We’ve applied the mitigation and the affected components have been restored to full-service capacity. We will continue to monitor service availability and investigate the underlying root cause.\n\nScope of impact: Impact was specific to user attempting to access Copilot. \n\nStart time: Friday, February 13, 2026, at 1:26 PM UTC\n\nEnd time: Friday, February 13, 2026, at 1:54 PM UTC\n\nRoot cause: A driver issue on a subset of Graphics Processing Units (GPUs) affected a portion of the infrastructure supporting Microsoft 365 Copilot in Europe. This caused some processing capacity to become temporarily unavailable, which led to a reduction in available capacity within the environment and limited the service’s ability to handle requests at normal levels.\n\nTo reduce user impact while recovery actions were underway, traffic management measures were applied to control request volumes and protect overall service stability. During this process, the traffic controls were briefly applied more aggressively than intended, which resulted in some users outside the Europe region also experiencing impact for a short period (approximately 25 minutes).\n\nAs a result of the reduced capacity and the temporary traffic management actions, some users experienced failures or timeouts when accessing Microsoft 365 Copilot until the affected components were restored.\n\nNext Steps\n- For a more comprehensive list of next steps and actions, please refer to the Post Incident Report document."
         },
         {
           "createdAt": "2026-02-13T15:04:40.99Z",
