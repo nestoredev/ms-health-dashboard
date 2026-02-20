@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-20T21:01:03.875Z",
+  "lastUpdated": "2026-02-20T21:31:11.106Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -166,16 +166,21 @@
           "title": "Some admins may be unable to perform tenant to tenant migrations and offboarding moves in Exchange Online",
           "startTime": "2026-02-15T01:44:21Z",
           "endTime": null,
-          "lastModified": "2026-02-17T21:20:06.637Z",
+          "lastModified": "2026-02-20T21:02:05.76Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may be unable to perform tenant to tenant migrations and offboarding moves in Exchange Online.",
           "scopeOfImpact": "Some admins attempting to perform tenant to tenant migrations and offboarding moves in Exchange Online may be affected. This information may be updated as our investigation continues.",
           "rootCause": "A change introduced a code regression to Mailbox Replication Service (MRS), which causes intermittent failures for tenant-to-tenant migration actions or offboarding moves as the property tags needed to complete the request are not being properly configured.",
-          "nextUpdateBy": "Friday, February 20, 2026, at 10:00 PM UTC",
+          "nextUpdateBy": "Thursday, February 26, 2026, at 10:00 PM UTC",
           "feature": "Tenant Administration (Provisioning, Remote PowerShell)",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-02-20T20:59:13.903Z",
+              "postType": "regular",
+              "content": "Title: Some admins may be unable to perform tenant to tenant migrations and offboarding moves in Exchange Online\n\nUser impact: Admins may be unable to perform tenant to tenant migrations and offboarding moves in Exchange Online.\n\nMore info: While we work on developing a long-term solution, admins may use PowerShell for the affected migrations and moves with the following cmdlet against the affected mailboxes:\n\nSet-MoveRequest \"user@yourdomain.com\" -SkipMoving FolderRestrictions\n\nThe tenant admin may then resume the move request (Resume-MoveRequest \"user@yourdomain.com\") or simply resume the migration batch. This will allow the affected move jobs to continue to make progress.\n\nAdmins attempting to complete a tenant-to-tenant migration or an offboarding move in Exchange Online will be returned the following error \"PropTagToPropertyDefinitionConversionException\"\n \nCurrent status: We're in the final stages of the development of our solution to address the code regression and we're preparing to begin testing this fix to validate that it'll successfully remediate the impact. We'll provide a timeline for resolution as one becomes available.\n \nScope of impact: Some admins attempting to perform tenant to tenant migrations and offboarding moves in Exchange Online may be affected. This information may be updated as our investigation continues.\n \nRoot cause: A change introduced a code regression to Mailbox Replication Service (MRS), which causes intermittent failures for tenant-to-tenant migration actions or offboarding moves as the property tags needed to complete the request are not being properly configured.\n \nNext update by: Thursday, February 26, 2026, at 10:00 PM UTC"
+            },
             {
               "createdAt": "2026-02-17T21:12:28.48Z",
               "postType": "regular",
