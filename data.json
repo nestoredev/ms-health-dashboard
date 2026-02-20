@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-20T17:00:12.015Z",
+  "lastUpdated": "2026-02-20T17:30:20.709Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -2846,52 +2846,6 @@
           "createdAt": "2026-01-21T19:23:34.93Z",
           "postType": "regular",
           "content": "Title: Users' Microsoft Power Automate flows aren't triggered when users create, update, or delete shifts in Microsoft Teams\n\nUser impact: Users' Microsoft Power Automate flows aren't triggered when users create, update, or delete shifts in Microsoft Teams.\n\nMore info: Flows that are configured with \"When a Shift is created, updated or deleted\" fail to trigger when users perform the actions in Microsoft Teams.\n\nCurrent status: We're investigating a potential issue with Microsoft Teams and Microsoft Power Automate and checking for impact to your organization. We'll provide an update within 30 minutes."
-        }
-      ],
-      "serviceName": "Microsoft 365 suite",
-      "affectedServices": [
-        "Microsoft 365 suite"
-      ]
-    },
-    {
-      "id": "MO1220495",
-      "title": "Users may be unable to access Microsoft 365 services",
-      "startTime": "2026-01-21T16:45:09Z",
-      "endTime": "2026-01-21T17:10:00Z",
-      "lastModified": "2026-01-21T18:24:26.963Z",
-      "status": "serviceRestored",
-      "severity": "incident",
-      "userImpact": "Users may have been unable to access Microsoft 365 services, including Teams and Outlook.",
-      "scopeOfImpact": "Your organization was affected by this event, and any of your users hosted in North America may have been impacted.\n\nStart time: Wednesday, January 21, 2026, at 4:10 PM UTC\n\nEnd time: Wednesday, January 21, 2026, at 5:10 PM UTC",
-      "rootCause": "A third-party ISP ASN routing configuration issue caused impact to downstream services, such as Microsoft 365.\n\nNext steps:\n- We're carefully monitoring our managed service environment to ensure the issue doesn't reoccur, and we're reviewing our service resilience practices to identify any necessary improvements so we can reduce the downtime associated with these types of ISP-dependent issues in the future.\n\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Access",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-01-21T18:24:26.963Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to access Microsoft 365 services\n\nUser impact: Users may have been unable to access Microsoft 365 services, including Teams and Outlook.\n\nMore info: As this issue was a result of a third-party ISP Autonomous System Number (ASN) routing configuration issue; the impact to Microsoft 365 services may have manifested in a multitude of ways. For example, some users may have been unable to access the services and portals altogether, whereas others may have seen impact more variable, such being intermittently unable to send or receive email.\n\nFinal status: We've determined this issue was a result of a third-party ISP Autonomous System Number (ASN) routing configuration issue, and we've identified that the third-party has taken action to remediate the impact to downstream services, such as Microsoft 365, and we've confirmed the issue is no longer occurring.\n\nScope of impact: Your organization was affected by this event, and any of your users hosted in North America may have been impacted.\n\nStart time: Wednesday, January 21, 2026, at 4:10 PM UTC\n\nEnd time: Wednesday, January 21, 2026, at 5:10 PM UTC\n\nRoot cause: A third-party ISP ASN routing configuration issue caused impact to downstream services, such as Microsoft 365.\n\nNext steps:\n- We're carefully monitoring our managed service environment to ensure the issue doesn't reoccur, and we're reviewing our service resilience practices to identify any necessary improvements so we can reduce the downtime associated with these types of ISP-dependent issues in the future.\n\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-01-21T17:36:47.543Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to access Microsoft 365 services\n\nUser impact: Users may be unable to access Microsoft 365 services, including Teams and Outlook.\n\nCurrent status: Our investigation so far indicates impact is associated with a possible third-party networking issue. We're recursively investigating the health of the Microsoft-managed service environment to identify whether any mitigation actions are required and ensure our services are healthy.\n\nScope of impact: Your organization is affected by this event, and any of your users hosted in North America may be impacted.\n\nNext update by: Wednesday, January 21, 2026, at 7:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-01-21T17:15:37.93Z",
-          "postType": "quick",
-          "content": "As the primary reports of impact are originating from users hosted in North America, we're reviewing networking health across the region to help us determine whether there are any connectivity issues affecting the Microsoft-managed service environment.\n\nThis quick update is designed to give the latest information on this issue."
-        },
-        {
-          "createdAt": "2026-01-21T17:07:08.597Z",
-          "postType": "regular",
-          "content": "Title: We're investigating a potential issue affecting Microsoft 365 services\n\nUser impact: We've received reports of an issue affecting Microsoft 365 services, including Teams and Outlook.\n\nCurrent status: We're reviewing telemetry across dependent portions of service infrastructure to help us isolate the nature of the impact, the source of the issue, and determine what recovery actions may be required.\n \nScope of impact: The scope of this issue is currently being investigated.\n \nNext update by: Wednesday, January 21, 2026, at 6:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-01-21T16:51:14.43Z",
-          "postType": "regular",
-          "content": "Title: We're investigating a potential issue affecting Microsoft 365 services\n\nUser impact: We've received reports of an issue affecting Microsoft 365 services, including Teams and Outlook.\n\nCurrent status: We're investigating a potential issue with Microsoft 365 services and checking for impact to your organization. We'll provide an update within 30 minutes."
         }
       ],
       "serviceName": "Microsoft 365 suite",
