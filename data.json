@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-20T20:00:52.525Z",
+  "lastUpdated": "2026-02-20T20:30:58.126Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -2692,42 +2692,6 @@
           "createdAt": "2026-01-22T16:17:15.163Z",
           "postType": "regular",
           "content": "Title: Users may be unable to access the Threat Analytics page in the Microsoft Defender XDR portal\n\nUser impact: Users may have been unable to access the Threat Analytics page in the Microsoft Defender XDR portal.\n\nCurrent status: We've investigated a problem in which users couldn't access the Threat Analytics page in Microsoft Defender XDR portal and confirmed that service is now restored. We'll provide additional information in a closure summary within the \"History\" section of the \"Service health\" dashboard shortly."
-        }
-      ],
-      "serviceName": "Microsoft 365 suite",
-      "affectedServices": [
-        "Microsoft 365 suite"
-      ]
-    },
-    {
-      "id": "MO1220544",
-      "title": "Users' Microsoft Power Automate flows may not trigger when users create, update, or delete shifts in Microsoft Teams",
-      "startTime": "2026-01-21T02:30:00Z",
-      "endTime": "2026-01-21T20:08:00Z",
-      "lastModified": "2026-01-21T20:19:45.7Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users' Microsoft Power Automate flows may not have triggered when users created, updated, or deleted shifts.",
-      "scopeOfImpact": "Any user that attempted to create, update, or delete shifts in Microsoft Teams and had a Microsoft Power Automate flow configured with \"When a Shift was created, updated or deleted\" may have been impacted.\n\nStart time: Wednesday, January 21, 2026, at 2:30 AM UTC\n\nEnd time: Wednesday, January 21, 2026, at 8:08 PM UTC",
-      "rootCause": "Our recent efforts to redirect request traffic to alternate portions of infrastructure responsible for facilitating Microsoft Power Automate flows triggered by Microsoft Teams shifts caused the impact.\n\nNext steps: \n - We're continuing to review the affected infrastructure to identify the reason it caused impact, so that we can prevent similar impacts from occurring in the future.\n\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Company or User Administration",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-01-21T20:19:45.7Z",
-          "postType": "regular",
-          "content": "Title: Users' Microsoft Power Automate flows may not trigger when users create, update, or delete shifts in Microsoft Teams\n\nUser impact: Users' Microsoft Power Automate flows may not have triggered when users created, updated, or deleted shifts.\n\nMore info: Flows that were configured with \"When a Shift was created, updated or deleted\" may have failed to trigger when users performed the actions in Microsoft Teams.\n\nFinal status: We've identified that our recent efforts to redirect request traffic to alternate portions of infrastructure, responsible for facilitating Microsoft Power Automate flows triggered by Microsoft Teams shifts, caused the impact. We've reversed the change by directing the traffic back to its original infrastructure and confirmed through internal testing that the impact is remediated.\n\nScope of impact: Any user that attempted to create, update, or delete shifts in Microsoft Teams and had a Microsoft Power Automate flow configured with \"When a Shift was created, updated or deleted\" may have been impacted.\n\nStart time: Wednesday, January 21, 2026, at 2:30 AM UTC\n\nEnd time: Wednesday, January 21, 2026, at 8:08 PM UTC\n\nRoot cause: Our recent efforts to redirect request traffic to alternate portions of infrastructure responsible for facilitating Microsoft Power Automate flows triggered by Microsoft Teams shifts caused the impact.\n\nNext steps: \n - We're continuing to review the affected infrastructure to identify the reason it caused impact, so that we can prevent similar impacts from occurring in the future.\n\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-01-21T19:48:10.943Z",
-          "postType": "regular",
-          "content": "Title: Users' Microsoft Power Automate flows may not trigger when users create, update, or delete shifts in Microsoft Teams\n\nUser impact: Users' Microsoft Power Automate flows may not trigger when users create, update, or delete shifts in Microsoft Teams.\n\nMore info: Flows that are configured with \"When a Shift is created, updated or deleted\" may fail to trigger when users perform the actions in Microsoft Teams.\n\nCurrent status: We're reproducing the impact in our testing environment to gain clarity on the issue and determine our next steps to isolate the root cause.\n\nScope of impact: Any user attempting to create, update, or delete shifts in Microsoft Teams and has a Microsoft Power Automate flow configured with \"When a Shift is created, updated or deleted\" may be impacted.\n\nNext update by: Wednesday, January 21, 2026, at 9:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-01-21T19:23:34.93Z",
-          "postType": "regular",
-          "content": "Title: Users' Microsoft Power Automate flows aren't triggered when users create, update, or delete shifts in Microsoft Teams\n\nUser impact: Users' Microsoft Power Automate flows aren't triggered when users create, update, or delete shifts in Microsoft Teams.\n\nMore info: Flows that are configured with \"When a Shift is created, updated or deleted\" fail to trigger when users perform the actions in Microsoft Teams.\n\nCurrent status: We're investigating a potential issue with Microsoft Teams and Microsoft Power Automate and checking for impact to your organization. We'll provide an update within 30 minutes."
         }
       ],
       "serviceName": "Microsoft 365 suite",
