@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-21T14:34:26.950Z",
+  "lastUpdated": "2026-02-21T15:04:32.128Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -2671,37 +2671,6 @@
           "createdAt": "2026-01-30T00:07:54.103Z",
           "postType": "regular",
           "content": "A post-incident report has been published."
-        }
-      ],
-      "serviceName": "Microsoft 365 suite",
-      "affectedServices": [
-        "Microsoft 365 suite"
-      ]
-    },
-    {
-      "id": "MO1221222",
-      "title": "Users can't access the Threat Analytics page in Microsoft Defender XDR portal",
-      "startTime": "2026-01-22T12:08:00Z",
-      "endTime": "2026-01-22T14:50:00Z",
-      "lastModified": "2026-01-22T17:02:33.17Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users couldn't access the Threat Analytics page in Microsoft Defender XDR portal.",
-      "scopeOfImpact": "Any user attempting to access the Threat Analytics page in the Microsoft Defender XDR portal may have been impacted.\n \nStart time: Thursday, January 22, 2026, at 12:08 PM UTC\n \nEnd time: Thursday, January 22, 2026, at 2:50 PM UTC",
-      "rootCause": "An improperly configured infrastructure update prevented users from having the necessary permissions to access the Threat Analytics page in the Microsoft Defender XDR portal.\n \nNext steps: \n- We're reviewing and improving our infrastructure update validation procedure to detect and prevent similar misconfigurations in the future.\n \nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Access",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-01-22T17:02:33.17Z",
-          "postType": "regular",
-          "content": "Title: Users can't access the Threat Analytics page in Microsoft Defender XDR portal\n\nUser impact: Users couldn't access the Threat Analytics page in Microsoft Defender XDR portal.\n\nFinal status: We've determined that an improperly configured infrastructure update prevented users from having the necessary permissions to access the Threat Analytics page in the Microsoft Defender XDR portal. We reverted this change and confirmed using our internal telemetry that impact is remediated.\n \nScope of impact: Any user attempting to access the Threat Analytics page in the Microsoft Defender XDR portal may have been impacted.\n \nStart time: Thursday, January 22, 2026, at 12:08 PM UTC\n \nEnd time: Thursday, January 22, 2026, at 2:50 PM UTC\n \nRoot cause: An improperly configured infrastructure update prevented users from having the necessary permissions to access the Threat Analytics page in the Microsoft Defender XDR portal.\n \nNext steps: \n- We're reviewing and improving our infrastructure update validation procedure to detect and prevent similar misconfigurations in the future.\n \nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-01-22T16:17:15.163Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to access the Threat Analytics page in the Microsoft Defender XDR portal\n\nUser impact: Users may have been unable to access the Threat Analytics page in the Microsoft Defender XDR portal.\n\nCurrent status: We've investigated a problem in which users couldn't access the Threat Analytics page in Microsoft Defender XDR portal and confirmed that service is now restored. We'll provide additional information in a closure summary within the \"History\" section of the \"Service health\" dashboard shortly."
         }
       ],
       "serviceName": "Microsoft 365 suite",
