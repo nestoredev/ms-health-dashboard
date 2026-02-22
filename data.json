@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-22T19:09:31.839Z",
+  "lastUpdated": "2026-02-22T19:39:36.707Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -2553,37 +2553,6 @@
       "serviceName": "SharePoint Online",
       "affectedServices": [
         "SharePoint Online"
-      ]
-    },
-    {
-      "id": "CW1221869",
-      "title": "Some users may not receive Microsoft Copilot Chat responses or experience latency using GPT 5.2 Quick response",
-      "startTime": "2026-01-23T18:42:00Z",
-      "endTime": "2026-01-23T19:36:00Z",
-      "lastModified": "2026-01-23T21:21:44.36Z",
-      "status": "serviceRestored",
-      "severity": "incident",
-      "userImpact": "Users may not have received Microsoft Copilot Chat responses or experience latency using GPT 5.2 Quick response.",
-      "scopeOfImpact": "Users may have experienced latency or not received responses while using Microsoft Copilot Chat GPT 5.2 Quick response\n\nStart time: Friday, January 23, 2026, at 6:42 PM UTC\n\nEnd time: Friday, January 23, 2026, at 7:36 PM UTC",
-      "rootCause": "A recent deployment introduced a request routing misconfiguration for Copilot Chat response traffic, resulting in impact.\n\nNext steps: \n - We're reviewing our update testing and validation process to better identify routing and network issues prior to deployment and avoid issue like this moving forward.\n\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "General",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-01-23T20:42:30.193Z",
-          "postType": "regular",
-          "content": "Title: Some users may not receive Microsoft Copilot Chat responses or experience latency using GPT 5.2 Quick response\n\nUser impact: Users may not have received Microsoft Copilot Chat responses or experience latency using GPT 5.2 Quick response.\n\nFinal status: A recent deployment introduced a request routing misconfiguration for Copilot Chat response traffic, resulting in impact. We've corrected the configuration while our automated recovery system directed affected traffic to infrastructure where the request routing configuration wasn't impacted to remediate impact. We confirmed that service was restored by these actions after monitoring the environment.\n\nScope of impact: Users may have experienced latency or not received responses while using Microsoft Copilot Chat GPT 5.2 Quick response\n\nStart time: Friday, January 23, 2026, at 6:42 PM UTC\n\nEnd time: Friday, January 23, 2026, at 7:36 PM UTC\n\nRoot cause: A recent deployment introduced a request routing misconfiguration for Copilot Chat response traffic, resulting in impact.\n\nNext steps: \n - We're reviewing our update testing and validation process to better identify routing and network issues prior to deployment and avoid issue like this moving forward.\n\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-01-23T19:58:20.363Z",
-          "postType": "regular",
-          "content": "Title: Some users may not receive Microsoft Copilot Chat responses or experience latency using GPT 5.2 Quick response\n\nUser impact: Users may not receive Microsoft Copilot Chat responses or experience latency using GPT 5.2 Quick response.\n\nCurrent status: We're investigating a potential issue with Microsoft Copilot Chat and checking for impact to your organization. We'll provide an update within 30 minutes."
-        }
-      ],
-      "serviceName": "Microsoft 365 Copilot Chat",
-      "affectedServices": [
-        "Microsoft 365 Copilot Chat"
       ]
     }
   ]
