@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-22T17:09:12.211Z",
+  "lastUpdated": "2026-02-22T17:39:17.289Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -2584,52 +2584,6 @@
       "serviceName": "Microsoft 365 Copilot Chat",
       "affectedServices": [
         "Microsoft 365 Copilot Chat"
-      ]
-    },
-    {
-      "id": "EX1220516",
-      "title": "Users' Outlook for iOS app version 5.2602.0 may crash or freeze on iPad devices",
-      "startTime": "2026-01-20T23:00:00Z",
-      "endTime": "2026-01-23T17:13:00Z",
-      "lastModified": "2026-01-23T19:39:34.733Z",
-      "status": "serviceRestored",
-      "severity": "incident",
-      "userImpact": "Users' Outlook for iOS app version 5.2602.0 may have crashed or froze on iPad devices.",
-      "scopeOfImpact": "This issue may have affected all users' iPad devices using Outlook for iOS version 5.2602.0.\n\nStart time: Tuesday, January 20, 2026, at 11:00 PM UTC\n\nEnd time: Thursday, January 22, 2026, at 5:13 PM UTC",
-      "rootCause": "The latest Outlook for iOS update contained a code error related to a change meant to refresh rather than restart tabs when feature flags were updated, which was resulting in this impact.\n\nNext steps: \n - We're reviewing our update testing and validation procedures to identify how impact was missed and better prevent similar future occurrences.\n\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Outlook - poor customer experience",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-01-23T18:22:30.377Z",
-          "postType": "regular",
-          "content": "Title: Users' Outlook for iOS app version 5.2602.0 may crash or freeze on iPad devices\n\nUser impact: Users' Outlook for iOS app version 5.2602.0 may have crashed or froze on iPad devices.\n\nMore info: Affected users could launch Outlook mobile while in Airplane Mode and then re-enable Wi-Fi and/or cellular data as a way to circumvent impact while we worked towards mitigation.\n\nFinal status: We've confirmed with a subset of previously affected users that the latest version of the Outlook mobile app (5.2602.1) successfully resolves the issue. Users without automatic updates configured may need to manually update to this version through the App Store.\n\nScope of impact: This issue may have affected all users' iPad devices using Outlook for iOS version 5.2602.0.\n\nStart time: Tuesday, January 20, 2026, at 11:00 PM UTC\n\nEnd time: Thursday, January 22, 2026, at 5:13 PM UTC\n\nRoot cause: The latest Outlook for iOS update contained a code error related to a change meant to refresh rather than restart tabs when feature flags were updated, which was resulting in this impact.\n\nNext steps: \n - We're reviewing our update testing and validation procedures to identify how impact was missed and better prevent similar future occurrences.\n\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-01-22T17:02:07.637Z",
-          "postType": "regular",
-          "content": "Title: Users' Outlook for iOS app version 5.2602.0 may crash or freeze on iPad devices\n\nUser impact: Users' Outlook for iOS app version 5.2602.0 may crash or freeze on iPad devices.\n\nMore info: Affected users can launch Outlook mobile while in Airplane Mode and then re-enable Wi-Fi and/or cellular data as a way to circumvent impact while we work towards mitigation.\n\nCurrent status: We've completed the development of our fix to address the underlying issue, and we've provided the new version of the app to Apple who are going through their standard review and release processes. It can take up to 24 hours for the new iOS Outlook app version to appear in the App Store. We recommend users periodically check within the App Store for version 5.2602.1 and update to receive the fix.\n\nScope of impact: This issue may affect all users' iPad devices using Outlook for iOS version 5.2602.0. This information may be updated as our investigation continues.\n\nStart time: Tuesday, January 20, 2026, at 11:00 PM UTC\n\nRoot cause: The latest Outlook for iOS update contains a code error related to a change meant to refresh rather than restart tabs when feature flags are updated, which is resulting in this impact.\n\nNext update by: Friday, January 23, 2026, at 8:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-01-21T22:51:06.07Z",
-          "postType": "regular",
-          "content": "Title: Users' Outlook for iOS app version 5.2602.0 may crash or freeze on iPad devices\n\nUser impact: Users' Outlook for iOS app version 5.2602.0 may crash or freeze on iPad devices.\n\nMore info: Affected users can launch Outlook mobile while in Airplane Mode and then re-enable Wi-Fi and/or cellular data as a way to circumvent impact while we work towards mitigation.\n \nCurrent status: We determined that the latest Outlook for iOS update contains a code error related to a change meant to refresh rather than restart tabs when feature flags are updated, which is resulting in this impact. We’ve developed a code solution for the next update to address this issue, which we intend to roll out to iOS tomorrow. We’ll provide further updates on this timeline as soon as they become available.\n \nScope of impact: This issue may affect all users' iPad devices using Outlook for iOS version 5.2602.0. This information may be updated as our investigation continues.\n \nStart time: Tuesday, January 20, 2026, at 11:00 PM UTC\n \nRoot cause: The latest Outlook for iOS update contains a code error related to a change meant to refresh rather than restart tabs when feature flags are updated, which is resulting in this impact.\n \nNext update by: Thursday, January 22, 2026, at 8:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-01-21T17:56:40.61Z",
-          "postType": "regular",
-          "content": "Title: Users' Outlook for iOS app version 5.2602.0 may crash or freeze on iPad devices\n\nUser impact: Users' Outlook for iOS app version 5.2602.0 may crash or freeze on iPad devices.\n\nMore info: Affected users can launch Outlook mobile while in Airplane Mode and then re-enable Wi-Fi and/or cellular data as a way to circumvent impact while we work towards mitigation.\n\nCurrent status: We've successfully reproduced impact in our internal testing environment. We're analyzing this reproduction of impact to determine if a regression was introduced in the latest Outlook for iOS version to better understand how impact manifests and determine next steps for remediation.\n\nScope of impact: This issue may affect all users' iPad devices using Outlook for iOS version 5.2602.0. This information may be updated as our investigation continues.\n\nNext update by: Thursday, January 22, 2026, at 12:00 AM UTC"
-        },
-        {
-          "createdAt": "2026-01-21T17:50:50.56Z",
-          "postType": "regular",
-          "content": "Title: Users' Outlook for iOS app version 5.2602.0 may crash or freeze on iPad devices\n\nUser impact: Users' Outlook for iOS app version 5.2602.0 may crash or freeze on iPad devices.\n\nMore info: Affected users can launch Outlook mobile while in Airplane Mode and then re-enable Wi-Fi and/or cellular data as a way to circumvent impact while we work towards mitigation.\n\nCurrent status: We're investigating a potential issue with Outlook mobile and checking for impact to your organization. We'll provide an update within 30 minutes."
-        }
-      ],
-      "serviceName": "Exchange Online",
-      "affectedServices": [
-        "Exchange Online"
       ]
     }
   ]
