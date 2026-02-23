@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-23T00:40:27.880Z",
+  "lastUpdated": "2026-02-23T01:26:40.170Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -2507,52 +2507,6 @@
       "serviceName": "Microsoft 365 suite",
       "affectedServices": [
         "Microsoft 365 suite"
-      ]
-    },
-    {
-      "id": "SP1220310",
-      "title": "Some users that are mentioned in list comments in SharePoint Online may not receive email notifications",
-      "startTime": "2026-01-08T12:24:00Z",
-      "endTime": "2026-01-24T01:07:00Z",
-      "lastModified": "2026-01-24T01:27:03.887Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users that were mentioned in list comments in SharePoint Online may have not received email notifications.",
-      "scopeOfImpact": "Impact was specific to some users that were mentioned in list comments in SharePoint Online.\n\nStart time: Thursday, January 8, 2026, at 12:24 PM UTC\n \nEnd time: Saturday, January 24, 2026, at 1:07 AM UTC",
-      "rootCause": "A recent service change to remove a separate feature introduced a regression within SharePoint Online email notifications, which resulted in impact.\n\nNext steps: \n- We’re continuing to analyze how the service change was partially applied to understand why the potential for impact wasn't caught during the update testing and validation phase. These actions will help us to clarify what actions we can take to ensure similar impact doesn't occur in future and to continue our ongoing mission to improve the resilience of our service for all SharePoint Online users.\n\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "SharePoint Online all features",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-01-24T01:27:03.887Z",
-          "postType": "regular",
-          "content": "Title: Some users that are mentioned in list comments in SharePoint Online may not receive email notifications\n\nUser impact: Users that were mentioned in list comments in SharePoint Online may have not received email notifications.\n\nFinal status: Our reversion of the offending change has completed its saturation process throughout the affected environment, and we’ve confirmed through an extended period of monitoring the service health telemetry that impact has been remediated. \n\nScope of impact: Impact was specific to some users that were mentioned in list comments in SharePoint Online.\n\nStart time: Thursday, January 8, 2026, at 12:24 PM UTC\n \nEnd time: Saturday, January 24, 2026, at 1:07 AM UTC\n\nRoot cause: A recent service change to remove a separate feature introduced a regression within SharePoint Online email notifications, which resulted in impact.\n\nNext steps: \n- We’re continuing to analyze how the service change was partially applied to understand why the potential for impact wasn't caught during the update testing and validation phase. These actions will help us to clarify what actions we can take to ensure similar impact doesn't occur in future and to continue our ongoing mission to improve the resilience of our service for all SharePoint Online users.\n\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-01-23T16:52:10.257Z",
-          "postType": "regular",
-          "content": "Title: Some users that are mentioned in list comments in SharePoint Online may not receive email notifications\n\nUser impact: Users that are mentioned in list comments in SharePoint Online may not receive email notifications.\n\nCurrent status: We’re continuing to monitor progress of our fix to reverse the offending change, where it's saturated across 90 percent of the affected infrastructure. We estimate that this saturation will complete by our next communications update, after which we'll perform final testing with a subset of affected users to validate remediation. \n \nScope of impact: Impact is specific to some users that are mentioned in list comments in SharePoint Online.\n \nStart time: Thursday, January 8, 2026, at 12:24 PM UTC\n \nRoot cause: A recent service change to remove a separate feature introduced a regression within SharePoint Online email notifications, resulting in impact.\n \nNext update by: Saturday, January 24, 2026, at 3:00 AM UTC"
-        },
-        {
-          "createdAt": "2026-01-22T18:00:29.94Z",
-          "postType": "regular",
-          "content": "Title: Some users that are mentioned in list comments in SharePoint Online may not receive email notifications\n\nUser impact: Users that are mentioned in list comments in SharePoint Online may not receive email notifications.\n\nCurrent status: We’re continuing to monitor progress of the fix to reverse the offending change and will provide a resolution timeline once available.\n \nScope of impact: Impact is specific to some users that are mentioned in list comments in SharePoint Online.\n \nStart time: Thursday, January 8, 2026, at 12:24 PM UTC\n \nRoot cause: A recent service change to remove a separate feature is causing impact.\n \nNext update by: Friday, January 23, 2026, at 6:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-01-21T18:49:25.707Z",
-          "postType": "regular",
-          "content": "Title: Some users that are mentioned in list comments in SharePoint Online may not receive email notifications\n\nUser impact: Users that are mentioned in list comments in SharePoint Online may not receive email notifications.\n\nCurrent status: We're continuing to reverse the offending change and will provide a timeline for the completion of this reversal as one becomes available.\n\nScope of impact: Impact is specific to some users that are mentioned in list comments in SharePoint Online.\n\nStart time: Thursday, January 8, 2026, at 12:24 PM UTC\n\nRoot cause: A recent service change to remove a separate feature is causing impact.\n\nNext update by: Thursday, January 22, 2026, at 7:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-01-21T17:22:01.593Z",
-          "postType": "regular",
-          "content": "Title: Some users that are mentioned in list comments in SharePoint Online may not receive email notifications\n\nUser impact: Users that are mentioned in list comments in SharePoint Online may not receive email notifications.\n\nCurrent status: We've identified a recent service change to remove a separate feature is causing impact. While we investigate the reason the change caused impact, we're reversing the offending change to remediate the impact.\n\nScope of impact: Impact is specific to some users that are mentioned in list comments in SharePoint Online.\n\nStart time: Thursday, January 8, 2026, at 12:24 PM UTC\n\nRoot cause: A recent service change to remove a separate feature is causing impact.\n\nNext update by: Wednesday, January 21, 2026, at 7:30 PM UTC"
-        }
-      ],
-      "serviceName": "SharePoint Online",
-      "affectedServices": [
-        "SharePoint Online"
       ]
     }
   ]
