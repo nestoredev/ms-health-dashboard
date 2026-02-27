@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-23T02:56:54.966Z",
+  "lastUpdated": "2026-02-27T19:20:02.541Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -7,24 +7,59 @@
       "id": "Exchange",
       "issues": [
         {
+          "id": "EX1237864",
+          "title": "Users' auto-decline meeting settings for automatic replies may not be working in Exchange Online",
+          "startTime": "2026-02-24T02:08:29Z",
+          "endTime": null,
+          "lastModified": "2026-02-24T02:23:30.837Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users' auto-decline meeting settings for automatic replies may not be working in Exchange Online.",
+          "scopeOfImpact": "Users with automatic replies set up to auto-decline meeting invites in Exchange Online may be impacted. This information may be updated as our investigation continues.\n\nStart time: Monday, February 23, 2026, at 8:00 AM UTC",
+          "rootCause": "A latent code issue triggered by a recent service configuration update is resulting in impact.",
+          "nextUpdateBy": "Tuesday, March 3, 2026, at 12:30 AM UTC",
+          "feature": "Outlook - poor customer experience",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-02-24T02:23:30.837Z",
+              "postType": "regular",
+              "content": "Title: Users' auto-decline meeting settings for automatic replies may not be working in Exchange Online\n\nUser impact: Users' auto-decline meeting settings for automatic replies may not be working in Exchange Online.\n\nCurrent status: We've identified through internal monitoring that users' auto-decline meeting settings may be failing to apply, resulting in users' incoming meeting invites not being auto-declined as expected due to a latent code issue triggered by a recent service configuration update. We're working to roll out a code fix that we anticipate should be in effect by our next scheduled update.\n\nScope of impact: Users with automatic replies set up to auto-decline meeting invites in Exchange Online may be impacted. This information may be updated as our investigation continues.\n\nStart time: Monday, February 23, 2026, at 8:00 AM UTC\n\nRoot cause: A latent code issue triggered by a recent service configuration update is resulting in impact.\n\nNext update by: Tuesday, March 3, 2026, at 12:30 AM UTC"
+            },
+            {
+              "createdAt": "2026-02-24T02:10:12.337Z",
+              "postType": "regular",
+              "content": "Title: Users' auto-decline meeting settings for automatic replies may not be working in Exchange Online\n\nUser impact: Users' auto-decline meeting settings for automatic replies may not be working in Exchange Online.\n\nCurrent status: We're investigating a potential issue with Exchange Online and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online"
+          ]
+        },
+        {
           "id": "EX1213792",
           "title": "Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center",
           "startTime": "2026-01-06T06:49:02Z",
           "endTime": null,
-          "lastModified": "2026-02-13T11:36:32.783Z",
+          "lastModified": "2026-02-27T11:30:10.853Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center.",
-          "scopeOfImpact": "Impact is specific to some admins attempting to upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center. This section may be updated as our investigation continues.",
+          "scopeOfImpact": "Impact is specific to some admins attempting to upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center. This section may be updated as our investigation. continues.",
           "rootCause": "",
-          "nextUpdateBy": "Friday, February 27, 2026, at 11:00 AM UTC",
+          "nextUpdateBy": "Monday, March 2, 2026, at 1:00 PM UTC",
           "feature": "All clients",
           "isResolved": false,
           "posts": [
             {
+              "createdAt": "2026-02-27T11:30:10.853Z",
+              "postType": "regular",
+              "content": "Title: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center\n\nUser impact: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center.\n\nCurrent status: We've determined that our previous fix did not successfully mitigate impact in the testing environment. We’ve now implemented an alternative fix in the test environment and will share an update on its effectiveness in our next scheduled communication.\n \nScope of impact: Impact is specific to some admins attempting to upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center. This section may be updated as our investigation. continues.\n \nNext update by: Monday, March 2, 2026, at 1:00 PM UTC"
+            },
+            {
               "createdAt": "2026-02-13T11:36:32.783Z",
               "postType": "regular",
-              "content": "Title: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center\n\nUser impact: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center.\n\nCurrent status: We're continuing to test the fix within our internal testing environment. However, due to the complexity of the changes, this testing is expected to take an extended amount of time. We will share further details once testing has completed.\n\nScope of impact: Impact is specific to some admins attempting to upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center. This section may be updated as our investigation continues.\n\nNext update by: Friday, February 27, 2026, at 11:00 AM UTC"
+              "content": "Title: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center\n\nUser impact: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center.\n\nCurrent status: We're continuing to test the fix within our internal testing environment. However, due to the complexity of the changes, this testing is expected to take an extended amount of time. We will share further details once testing has completed.\n\nScope of impact: Impact is specific to some admins attempting to upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center. This section may be updated as our investigation continues.\n\nNext update by: Friday, February 27, 2026, at 1:00 PM UTC"
             },
             {
               "createdAt": "2026-02-12T11:20:07.103Z",
@@ -166,16 +201,21 @@
           "title": "Some admins may be unable to perform tenant to tenant migrations and offboarding moves in Exchange Online",
           "startTime": "2026-02-15T01:44:21Z",
           "endTime": null,
-          "lastModified": "2026-02-20T21:02:05.76Z",
+          "lastModified": "2026-02-26T21:24:27.193Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may be unable to perform tenant to tenant migrations and offboarding moves in Exchange Online.",
           "scopeOfImpact": "Some admins attempting to perform tenant to tenant migrations and offboarding moves in Exchange Online may be affected. This information may be updated as our investigation continues.",
           "rootCause": "A change introduced a code regression to Mailbox Replication Service (MRS), which causes intermittent failures for tenant-to-tenant migration actions or offboarding moves as the property tags needed to complete the request are not being properly configured.",
-          "nextUpdateBy": "Thursday, February 26, 2026, at 10:00 PM UTC",
+          "nextUpdateBy": "Monday, March 2, 2026, at 10:00 PM UTC",
           "feature": "Tenant Administration (Provisioning, Remote PowerShell)",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-02-26T21:24:27.193Z",
+              "postType": "regular",
+              "content": "Title: Some admins may be unable to perform tenant to tenant migrations and offboarding moves in Exchange Online\n\nUser impact: Admins may be unable to perform tenant to tenant migrations and offboarding moves in Exchange Online.\n\nMore info: While we work on developing a long-term solution, admins may use PowerShell for the affected migrations and moves with the following cmdlet against the affected mailboxes:\n\nSet-MoveRequest \"user@yourdomain.com\" -SkipMoving FolderRestrictions\n\nThe tenant admin may then resume the move request (Resume-MoveRequest \"user@yourdomain.com\") or simply resume the migration batch. This will allow the affected move jobs to continue to make progress.\n\nAdmins attempting to complete a tenant-to-tenant migration or an offboarding move in Exchange Online will be returned the following error \"PropTagToPropertyDefinitionConversionException\"\n \nCurrent status: Following our completed fix development, we've progressed to the internal validation stage of our mitigations so we can ensure that the fix addresses the problems admins are having with migrations and offboarding without introducing any unexpected problems to the service. We're expecting an estimated timeline for the deployment of our fix and the remediation of the impact will be available once our internal validations have completed.\n \nScope of impact: Some admins attempting to perform tenant to tenant migrations and offboarding moves in Exchange Online may be affected. This information may be updated as our investigation continues.\n \nRoot cause: A change introduced a code regression to Mailbox Replication Service (MRS), which causes intermittent failures for tenant-to-tenant migration actions or offboarding moves as the property tags needed to complete the request are not being properly configured.\n \nNext update by: Monday, March 2, 2026, at 10:00 PM UTC"
+            },
             {
               "createdAt": "2026-02-20T20:59:13.903Z",
               "postType": "regular",
@@ -201,16 +241,26 @@
           "title": "Some admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services",
           "startTime": "2025-10-07T08:27:00Z",
           "endTime": null,
-          "lastModified": "2026-02-20T10:20:02.15Z",
+          "lastModified": "2026-02-24T09:29:10.383Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services.",
           "scopeOfImpact": "Admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\" may be impacted. This section may be updated as our investigation continues.\n \nStart time: Tuesday, October 7, 2025, at 8:27 AM UTC",
           "rootCause": "A recent service operation intended to upgrade our API flow impacted Microsoft 365 Groups that were previously configured to have the \"SecurityEnabled\" setting enabled, switching this value back to \"False\" by default and resulting in impact to admins and users whose service access was being managed by the affected groups.",
-          "nextUpdateBy": "Monday, February 23, 2026, at 12:30 PM UTC",
+          "nextUpdateBy": "Tuesday, March 3, 2026, at 11:00 AM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-02-24T09:28:07.54Z",
+              "postType": "regular",
+              "content": "Title: Some admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services\n\nUser impact: Admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services.\n\nMore info: This issue specifically affects admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\".\n\nWhile we finalize the deployment of our fix to restore the appropriate configuration for the impacted Microsoft 365 Groups, affected admins can follow the steps below to manually restore the SecurityEnabled property configuration and resolve the impact:\n\n1. Connect to Exchange Online PowerShell with “Connect-ExchangeOnline”, then run the following command to retrieve audit logs specific to this scenario:\n$AuditLog = Search-UnifiedAuditLog -Operations \"Update group\" -StartDate (Get-Date).AddDays(-30) -EndDate (Get-Date) -ResultSize 5000.\n\n2. Filter logs matching the issue to gather affected group info by running the following two commands:\n\n$GroupID = $AuditLog | % {ConvertFrom-Json $_.AuditData} | ? {($_.Actor -match \"Group Configuration Processor\") -and ($_.ModifiedProperties -match \"SecurityEnabled\")} | % {$_.ObjectId -replace \"^.*Group_\", \"\"}\n\n$GroupID | Get-UnifiedGroup -ResultSize Unlimited\n\n3. Connect to Microsoft Graph PowerShell with Connect-MgGraph -Scope \"Group.ReadWrite.All\" and then run the following command to restore the SecurityEnabled property for the affected groups to True, which should remediate the impact:\n\n$GroupID | % {Update-MgGroup -GroupId $_ -BodyParameter @{SecurityEnabled = $true}}\n\nFor further information on how to run Microsoft Graph PowerShell commands and cmdlets or guidance on connecting to Exchange Online through PowerShell, please reference the following documentation:\n\nhttps://learn.microsoft.com/en-us/powershell/exchange/connect-to-exchange-online-powershell?view=ex…\n\nhttps://learn.microsoft.com/en-us/powershell/microsoftgraph/authentication-commands?view=graph-powe…\n \nCurrent status: We’re in the final stages of deploying the fix and expect completion by the next scheduled update. We’ve also confirmed with affected users that the majority of groups are now resolved.\n \nScope of impact: Admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\" may be impacted. This section may be updated as our investigation continues.\n \nStart time: Tuesday, October 7, 2025, at 8:27 AM UTC\n \nRoot cause: A recent service operation intended to upgrade our API flow impacted Microsoft 365 Groups that were previously configured to have the \"SecurityEnabled\" setting enabled, switching this value back to \"False\" by default and resulting in impact to admins and users whose service access was being managed by the affected groups.\n \nNext update by: Tuesday, March 3, 2026, at 11:00 AM UTC"
+            },
+            {
+              "createdAt": "2026-02-23T09:30:04.543Z",
+              "postType": "regular",
+              "content": "Title: Some admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services\n\nUser impact: Admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services.\n\nMore info: This issue specifically affects admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\".\n\nWhile we finalize the deployment of our fix to restore the appropriate configuration for the impacted Microsoft 365 Groups, affected admins can follow the steps below to manually restore the SecurityEnabled property configuration and resolve the impact:\n\n1. Connect to Exchange Online PowerShell with “Connect-ExchangeOnline”, then run the following command to retrieve audit logs specific to this scenario:\n$AuditLog = Search-UnifiedAuditLog -Operations \"Update group\" -StartDate (Get-Date).AddDays(-30) -EndDate (Get-Date) -ResultSize 5000.\n\n2. Filter logs matching the issue to gather affected group info by running the following two commands:\n\n$GroupID = $AuditLog | % {ConvertFrom-Json $_.AuditData} | ? {($_.Actor -match \"Group Configuration Processor\") -and ($_.ModifiedProperties -match \"SecurityEnabled\")} | % {$_.ObjectId -replace \"^.*Group_\", \"\"}\n\n$GroupID | Get-UnifiedGroup -ResultSize Unlimited\n\n3. Connect to Microsoft Graph PowerShell with Connect-MgGraph -Scope \"Group.ReadWrite.All\" and then run the following command to restore the SecurityEnabled property for the affected groups to True, which should remediate the impact:\n\n$GroupID | % {Update-MgGroup -GroupId $_ -BodyParameter @{SecurityEnabled = $true}}\n\nFor further information on how to run Microsoft Graph PowerShell commands and cmdlets or guidance on connecting to Exchange Online through PowerShell, please reference the following documentation:\n\nhttps://learn.microsoft.com/en-us/powershell/exchange/connect-to-exchange-online-powershell?view=ex…\n\nhttps://learn.microsoft.com/en-us/powershell/microsoftgraph/authentication-commands?view=graph-powe…\n \nCurrent status: While we continue deploying the fix and exploring ways to accelerate rollout, we’ve identified that the fix has not yet resolved impact for some groups. We’re engaging with affected users to confirm which groups remain impacted.\n \nScope of impact: Admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\" may be impacted. This section may be updated as our investigation continues.\n \nStart time: Tuesday, October 7, 2025, at 8:27 AM UTC\n \nRoot cause: A recent service operation intended to upgrade our API flow impacted Microsoft 365 Groups that were previously configured to have the \"SecurityEnabled\" setting enabled, switching this value back to \"False\" by default and resulting in impact to admins and users whose service access was being managed by the affected groups.\n \nNext update by: Tuesday, February 24, 2026, at 12:00 PM UTC"
+            },
             {
               "createdAt": "2026-02-20T10:20:02.15Z",
               "postType": "regular",
@@ -363,16 +413,26 @@
           "title": "Some admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services",
           "startTime": "2025-10-07T08:27:00Z",
           "endTime": null,
-          "lastModified": "2026-02-20T10:20:02.15Z",
+          "lastModified": "2026-02-24T09:29:10.383Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services.",
           "scopeOfImpact": "Admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\" may be impacted. This section may be updated as our investigation continues.\n \nStart time: Tuesday, October 7, 2025, at 8:27 AM UTC",
           "rootCause": "A recent service operation intended to upgrade our API flow impacted Microsoft 365 Groups that were previously configured to have the \"SecurityEnabled\" setting enabled, switching this value back to \"False\" by default and resulting in impact to admins and users whose service access was being managed by the affected groups.",
-          "nextUpdateBy": "Monday, February 23, 2026, at 12:30 PM UTC",
+          "nextUpdateBy": "Tuesday, March 3, 2026, at 11:00 AM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-02-24T09:28:07.54Z",
+              "postType": "regular",
+              "content": "Title: Some admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services\n\nUser impact: Admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services.\n\nMore info: This issue specifically affects admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\".\n\nWhile we finalize the deployment of our fix to restore the appropriate configuration for the impacted Microsoft 365 Groups, affected admins can follow the steps below to manually restore the SecurityEnabled property configuration and resolve the impact:\n\n1. Connect to Exchange Online PowerShell with “Connect-ExchangeOnline”, then run the following command to retrieve audit logs specific to this scenario:\n$AuditLog = Search-UnifiedAuditLog -Operations \"Update group\" -StartDate (Get-Date).AddDays(-30) -EndDate (Get-Date) -ResultSize 5000.\n\n2. Filter logs matching the issue to gather affected group info by running the following two commands:\n\n$GroupID = $AuditLog | % {ConvertFrom-Json $_.AuditData} | ? {($_.Actor -match \"Group Configuration Processor\") -and ($_.ModifiedProperties -match \"SecurityEnabled\")} | % {$_.ObjectId -replace \"^.*Group_\", \"\"}\n\n$GroupID | Get-UnifiedGroup -ResultSize Unlimited\n\n3. Connect to Microsoft Graph PowerShell with Connect-MgGraph -Scope \"Group.ReadWrite.All\" and then run the following command to restore the SecurityEnabled property for the affected groups to True, which should remediate the impact:\n\n$GroupID | % {Update-MgGroup -GroupId $_ -BodyParameter @{SecurityEnabled = $true}}\n\nFor further information on how to run Microsoft Graph PowerShell commands and cmdlets or guidance on connecting to Exchange Online through PowerShell, please reference the following documentation:\n\nhttps://learn.microsoft.com/en-us/powershell/exchange/connect-to-exchange-online-powershell?view=ex…\n\nhttps://learn.microsoft.com/en-us/powershell/microsoftgraph/authentication-commands?view=graph-powe…\n \nCurrent status: We’re in the final stages of deploying the fix and expect completion by the next scheduled update. We’ve also confirmed with affected users that the majority of groups are now resolved.\n \nScope of impact: Admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\" may be impacted. This section may be updated as our investigation continues.\n \nStart time: Tuesday, October 7, 2025, at 8:27 AM UTC\n \nRoot cause: A recent service operation intended to upgrade our API flow impacted Microsoft 365 Groups that were previously configured to have the \"SecurityEnabled\" setting enabled, switching this value back to \"False\" by default and resulting in impact to admins and users whose service access was being managed by the affected groups.\n \nNext update by: Tuesday, March 3, 2026, at 11:00 AM UTC"
+            },
+            {
+              "createdAt": "2026-02-23T09:30:04.543Z",
+              "postType": "regular",
+              "content": "Title: Some admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services\n\nUser impact: Admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services.\n\nMore info: This issue specifically affects admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\".\n\nWhile we finalize the deployment of our fix to restore the appropriate configuration for the impacted Microsoft 365 Groups, affected admins can follow the steps below to manually restore the SecurityEnabled property configuration and resolve the impact:\n\n1. Connect to Exchange Online PowerShell with “Connect-ExchangeOnline”, then run the following command to retrieve audit logs specific to this scenario:\n$AuditLog = Search-UnifiedAuditLog -Operations \"Update group\" -StartDate (Get-Date).AddDays(-30) -EndDate (Get-Date) -ResultSize 5000.\n\n2. Filter logs matching the issue to gather affected group info by running the following two commands:\n\n$GroupID = $AuditLog | % {ConvertFrom-Json $_.AuditData} | ? {($_.Actor -match \"Group Configuration Processor\") -and ($_.ModifiedProperties -match \"SecurityEnabled\")} | % {$_.ObjectId -replace \"^.*Group_\", \"\"}\n\n$GroupID | Get-UnifiedGroup -ResultSize Unlimited\n\n3. Connect to Microsoft Graph PowerShell with Connect-MgGraph -Scope \"Group.ReadWrite.All\" and then run the following command to restore the SecurityEnabled property for the affected groups to True, which should remediate the impact:\n\n$GroupID | % {Update-MgGroup -GroupId $_ -BodyParameter @{SecurityEnabled = $true}}\n\nFor further information on how to run Microsoft Graph PowerShell commands and cmdlets or guidance on connecting to Exchange Online through PowerShell, please reference the following documentation:\n\nhttps://learn.microsoft.com/en-us/powershell/exchange/connect-to-exchange-online-powershell?view=ex…\n\nhttps://learn.microsoft.com/en-us/powershell/microsoftgraph/authentication-commands?view=graph-powe…\n \nCurrent status: While we continue deploying the fix and exploring ways to accelerate rollout, we’ve identified that the fix has not yet resolved impact for some groups. We’re engaging with affected users to confirm which groups remain impacted.\n \nScope of impact: Admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\" may be impacted. This section may be updated as our investigation continues.\n \nStart time: Tuesday, October 7, 2025, at 8:27 AM UTC\n \nRoot cause: A recent service operation intended to upgrade our API flow impacted Microsoft 365 Groups that were previously configured to have the \"SecurityEnabled\" setting enabled, switching this value back to \"False\" by default and resulting in impact to admins and users whose service access was being managed by the affected groups.\n \nNext update by: Tuesday, February 24, 2026, at 12:00 PM UTC"
+            },
             {
               "createdAt": "2026-02-20T10:20:02.15Z",
               "postType": "regular",
@@ -506,6 +566,36 @@
             "Microsoft OneDrive",
             "Microsoft Teams"
           ]
+        },
+        {
+          "id": "MO1239876",
+          "title": "Admins may receive delayed mailbox usage reports from the Microsoft 365 admin center",
+          "startTime": "2026-02-21T13:00:00Z",
+          "endTime": null,
+          "lastModified": "2026-02-27T19:04:02.133Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Admins may receive delayed mailbox usage reports from the Microsoft 365 admin center.",
+          "scopeOfImpact": "This issue may potentially affect any admin attempting to view mailbox usage reports in the Microsoft 365 admin center.\n \nStart time: Saturday, February 21, 2026, at 1:00 PM UTC",
+          "rootCause": "A malformed data issue within the pipeline responsible for timely report data in the admin center is resulting in mailbox usage report delays.",
+          "nextUpdateBy": "Monday, March 2, 2026, at 5:00 PM UTC",
+          "feature": "Company or User Administration",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-02-27T19:04:02.133Z",
+              "postType": "regular",
+              "content": "Title: Admins may receive delayed mailbox usage reports from the Microsoft 365 admin center\n\nUser impact: Admins may receive delayed mailbox usage reports from the Microsoft 365 admin center.\n\nCurrent status: We're completing the final validations on our fix to address this malformed data issue and deployment will begin soon. We anticipate that this fix will have completed its deployment to all affected environments by our next scheduled update.\n\nScope of impact: This issue may potentially affect any admin attempting to view mailbox usage reports in the Microsoft 365 admin center.\n \nStart time: Saturday, February 21, 2026, at 1:00 PM UTC\n \nRoot cause: A malformed data issue within the pipeline responsible for timely report data in the admin center is resulting in mailbox usage report delays.\n \nNext update by: Monday, March 2, 2026, at 5:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-02-26T21:39:59.123Z",
+              "postType": "regular",
+              "content": "Title: Admins may receive delayed mailbox usage reports from the Microsoft 365 admin center\n\nUser impact: Admins may receive delayed mailbox usage reports from the Microsoft 365 admin center.\n\nCurrent status: We identified a malformed data issue within the pipeline responsible for timely report data in the admin center, resulting in mailbox usage report delays. We're currently developing a fix to address this underlying root cause and will provide a status on its progress by our next scheduled update.\n\nScope of impact: This issue may potentially affect any admin attempting to view mailbox usage reports in the Microsoft 365 admin center.\n\nStart time: Saturday, February 21, 2026, at 1:00 PM UTC\n\nRoot cause: A malformed data issue within the pipeline responsible for timely report data in the admin center is resulting in mailbox usage report delays.\n\nNext update by: Friday, February 27, 2026, at 8:30 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite"
+          ]
         }
       ]
     },
@@ -519,16 +609,26 @@
           "title": "Some admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services",
           "startTime": "2025-10-07T08:27:00Z",
           "endTime": null,
-          "lastModified": "2026-02-20T10:20:02.15Z",
+          "lastModified": "2026-02-24T09:29:10.383Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services.",
           "scopeOfImpact": "Admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\" may be impacted. This section may be updated as our investigation continues.\n \nStart time: Tuesday, October 7, 2025, at 8:27 AM UTC",
           "rootCause": "A recent service operation intended to upgrade our API flow impacted Microsoft 365 Groups that were previously configured to have the \"SecurityEnabled\" setting enabled, switching this value back to \"False\" by default and resulting in impact to admins and users whose service access was being managed by the affected groups.",
-          "nextUpdateBy": "Monday, February 23, 2026, at 12:30 PM UTC",
+          "nextUpdateBy": "Tuesday, March 3, 2026, at 11:00 AM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-02-24T09:28:07.54Z",
+              "postType": "regular",
+              "content": "Title: Some admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services\n\nUser impact: Admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services.\n\nMore info: This issue specifically affects admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\".\n\nWhile we finalize the deployment of our fix to restore the appropriate configuration for the impacted Microsoft 365 Groups, affected admins can follow the steps below to manually restore the SecurityEnabled property configuration and resolve the impact:\n\n1. Connect to Exchange Online PowerShell with “Connect-ExchangeOnline”, then run the following command to retrieve audit logs specific to this scenario:\n$AuditLog = Search-UnifiedAuditLog -Operations \"Update group\" -StartDate (Get-Date).AddDays(-30) -EndDate (Get-Date) -ResultSize 5000.\n\n2. Filter logs matching the issue to gather affected group info by running the following two commands:\n\n$GroupID = $AuditLog | % {ConvertFrom-Json $_.AuditData} | ? {($_.Actor -match \"Group Configuration Processor\") -and ($_.ModifiedProperties -match \"SecurityEnabled\")} | % {$_.ObjectId -replace \"^.*Group_\", \"\"}\n\n$GroupID | Get-UnifiedGroup -ResultSize Unlimited\n\n3. Connect to Microsoft Graph PowerShell with Connect-MgGraph -Scope \"Group.ReadWrite.All\" and then run the following command to restore the SecurityEnabled property for the affected groups to True, which should remediate the impact:\n\n$GroupID | % {Update-MgGroup -GroupId $_ -BodyParameter @{SecurityEnabled = $true}}\n\nFor further information on how to run Microsoft Graph PowerShell commands and cmdlets or guidance on connecting to Exchange Online through PowerShell, please reference the following documentation:\n\nhttps://learn.microsoft.com/en-us/powershell/exchange/connect-to-exchange-online-powershell?view=ex…\n\nhttps://learn.microsoft.com/en-us/powershell/microsoftgraph/authentication-commands?view=graph-powe…\n \nCurrent status: We’re in the final stages of deploying the fix and expect completion by the next scheduled update. We’ve also confirmed with affected users that the majority of groups are now resolved.\n \nScope of impact: Admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\" may be impacted. This section may be updated as our investigation continues.\n \nStart time: Tuesday, October 7, 2025, at 8:27 AM UTC\n \nRoot cause: A recent service operation intended to upgrade our API flow impacted Microsoft 365 Groups that were previously configured to have the \"SecurityEnabled\" setting enabled, switching this value back to \"False\" by default and resulting in impact to admins and users whose service access was being managed by the affected groups.\n \nNext update by: Tuesday, March 3, 2026, at 11:00 AM UTC"
+            },
+            {
+              "createdAt": "2026-02-23T09:30:04.543Z",
+              "postType": "regular",
+              "content": "Title: Some admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services\n\nUser impact: Admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services.\n\nMore info: This issue specifically affects admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\".\n\nWhile we finalize the deployment of our fix to restore the appropriate configuration for the impacted Microsoft 365 Groups, affected admins can follow the steps below to manually restore the SecurityEnabled property configuration and resolve the impact:\n\n1. Connect to Exchange Online PowerShell with “Connect-ExchangeOnline”, then run the following command to retrieve audit logs specific to this scenario:\n$AuditLog = Search-UnifiedAuditLog -Operations \"Update group\" -StartDate (Get-Date).AddDays(-30) -EndDate (Get-Date) -ResultSize 5000.\n\n2. Filter logs matching the issue to gather affected group info by running the following two commands:\n\n$GroupID = $AuditLog | % {ConvertFrom-Json $_.AuditData} | ? {($_.Actor -match \"Group Configuration Processor\") -and ($_.ModifiedProperties -match \"SecurityEnabled\")} | % {$_.ObjectId -replace \"^.*Group_\", \"\"}\n\n$GroupID | Get-UnifiedGroup -ResultSize Unlimited\n\n3. Connect to Microsoft Graph PowerShell with Connect-MgGraph -Scope \"Group.ReadWrite.All\" and then run the following command to restore the SecurityEnabled property for the affected groups to True, which should remediate the impact:\n\n$GroupID | % {Update-MgGroup -GroupId $_ -BodyParameter @{SecurityEnabled = $true}}\n\nFor further information on how to run Microsoft Graph PowerShell commands and cmdlets or guidance on connecting to Exchange Online through PowerShell, please reference the following documentation:\n\nhttps://learn.microsoft.com/en-us/powershell/exchange/connect-to-exchange-online-powershell?view=ex…\n\nhttps://learn.microsoft.com/en-us/powershell/microsoftgraph/authentication-commands?view=graph-powe…\n \nCurrent status: While we continue deploying the fix and exploring ways to accelerate rollout, we’ve identified that the fix has not yet resolved impact for some groups. We’re engaging with affected users to confirm which groups remain impacted.\n \nScope of impact: Admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\" may be impacted. This section may be updated as our investigation continues.\n \nStart time: Tuesday, October 7, 2025, at 8:27 AM UTC\n \nRoot cause: A recent service operation intended to upgrade our API flow impacted Microsoft 365 Groups that were previously configured to have the \"SecurityEnabled\" setting enabled, switching this value back to \"False\" by default and resulting in impact to admins and users whose service access was being managed by the affected groups.\n \nNext update by: Tuesday, February 24, 2026, at 12:00 PM UTC"
+            },
             {
               "createdAt": "2026-02-20T10:20:02.15Z",
               "postType": "regular",
@@ -685,18 +785,23 @@
         {
           "id": "PL1235137",
           "title": "Some users may see delays with Microsoft Planner tasks updating to Microsoft To-Do",
-          "startTime": "2026-02-20T01:07:05Z",
+          "startTime": "2026-02-03T00:00:00Z",
           "endTime": null,
-          "lastModified": "2026-02-20T22:16:52.957Z",
+          "lastModified": "2026-02-24T22:41:29.707Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may see delays with Microsoft Planner tasks updating to Microsoft To-Do.",
           "scopeOfImpact": "This issue may impact some users in the North America and Europe regions who are attempting to get Microsoft Planner tasks updated to Microsoft To-Do.\n \nStart time: Tuesday, February 3, 2026, at 12:00 AM UTC",
           "rootCause": "An issue is causing delays within the data pipeline that facilitates Microsoft Planner task updates in Microsoft To-Do, leading to impact.",
-          "nextUpdateBy": "Wednesday, February 25, 2026, at 12:00 AM UTC",
+          "nextUpdateBy": "Saturday, February 28, 2026, at 12:00 AM UTC",
           "feature": "Task detail",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-02-24T22:41:29.707Z",
+              "postType": "regular",
+              "content": "Title: Some users may see delays with Microsoft Planner tasks updating to Microsoft To-Do\n\nUser impact: Users may see delays with Microsoft Planner tasks updating to Microsoft To-Do.\n\nCurrent status: The backlog of events is being processed, though at a slower pace than initially anticipated. We're continuing to monitor the backlog of events as they're processed and to validate what actions we can take to expedite recovery.\n\nScope of impact: This issue may impact some users in the North America and Europe regions who are attempting to get Microsoft Planner tasks updated to Microsoft To-Do.\n \nStart time: Tuesday, February 3, 2026, at 12:00 AM UTC\n \nRoot cause: An issue is causing delays within the data pipeline that facilitates Microsoft Planner task updates in Microsoft To-Do, leading to impact.\n \nNext update by: Saturday, February 28, 2026, at 12:00 AM UTC"
+            },
             {
               "createdAt": "2026-02-20T22:16:52.957Z",
               "postType": "regular",
@@ -735,16 +840,21 @@
           "title": "Users may see incorrect results with certain queries when using result set caching in Microsoft Fabric",
           "startTime": "2025-06-16T00:00:00Z",
           "endTime": null,
-          "lastModified": "2026-02-19T20:15:56.137Z",
+          "lastModified": "2026-02-26T19:45:45.267Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may see incorrect results with certain queries when using result set caching in Microsoft Fabric.",
-          "scopeOfImpact": "This issue may potentially impact any user utilizing result set caching in Microsoft Fabric.\n\nStart time: Monday, June 16, 2025, at 12:00 AM UTC",
+          "scopeOfImpact": "This issue may potentially impact any user utilizing result set caching in Microsoft Fabric.\n \nStart time: Monday, June 16, 2025, at 12:00 AM UTC",
           "rootCause": "A code issue with the result set caching feature in Microsoft Fabric is causing incorrect results with certain queries in Fabric Data Warehouse and Lakehouse SQL Analytics Endpoint.",
-          "nextUpdateBy": "Thursday, February 26, 2026, at 9:00 PM UTC",
+          "nextUpdateBy": "Thursday, March 5, 2026, at 9:00 PM UTC",
           "feature": "PowerBI.com",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-02-26T19:45:45.267Z",
+              "postType": "regular",
+              "content": "Title: Users may see incorrect results with certain queries when using result set caching in Microsoft Fabric\n\nUser impact: Users may see incorrect results with certain queries when using result set caching in Microsoft Fabric.\n\nMore info: This issue may specifically impact results with the queries in Fabric Data Warehouse and SQL Analytics Endpoint.\n \nWhile the feature remains disabled, we encourage users to manually refresh any reports, downstream apps, or both that may be using cached results from February 16, 2026, or earlier from the Data Warehouse or SQL Analytics Endpoints. This will ensure that these other apps don't continue to work with potentially incorrect results.\n\nFor more information, please see the known-issues page for this event here:\n \nsupport.fabric.microsoft.com/known-issues/?product=Data%2520Warehouse&active=true&fixed=true&sort=published&issueId=1729\n \nCurrent status: We’re continuing to work on a long-term fix to allow us to re-enable the result set caching feature at a later date, and we recommend that users follow the steps listed in the More info, if not done so already. \n\nScope of impact: This issue may potentially impact any user utilizing result set caching in Microsoft Fabric.\n \nStart time: Monday, June 16, 2025, at 12:00 AM UTC\n \nRoot cause: A code issue with the result set caching feature in Microsoft Fabric is causing incorrect results with certain queries in Fabric Data Warehouse and Lakehouse SQL Analytics Endpoint.\n \nNext update by: Thursday, March 5, 2026, at 9:00 PM UTC"
+            },
             {
               "createdAt": "2026-02-19T19:50:07.607Z",
               "postType": "regular",
@@ -770,16 +880,21 @@
           "title": "Users may be unable to send subscription emails to external users in Power BI",
           "startTime": "2026-01-29T18:41:24Z",
           "endTime": null,
-          "lastModified": "2026-02-09T23:14:34.923Z",
+          "lastModified": "2026-02-23T23:11:45.42Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to send subscription emails to external users in Power BI.",
-          "scopeOfImpact": "Impact may occur for all users attempting to send subscription emails to external users in Power BI.\n\nStart time: Thursday, January 29, 2026, at 6:45 PM UTC",
+          "scopeOfImpact": "Impact may occur for all users attempting to send subscription emails to external users in Power BI.\n \nStart time: Thursday, January 29, 2026, at 6:45 PM UTC",
           "rootCause": "An influx of automated email traffic from Power BI subscriptions is resulting in impact to external subscription email delivery.",
-          "nextUpdateBy": "Tuesday, February 24, 2026, at 12:30 AM UTC",
+          "nextUpdateBy": "Monday, March 9, 2026, at 12:30 AM UTC",
           "feature": "PowerBI.com",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-02-23T23:11:45.42Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to send subscription emails to external users in Power BI\n\nUser impact: Users may be unable to send subscription emails to external users in Power BI.\n\nCurrent status: The development of our code fix to restore subscription mail flow to external users is progressing. We're expecting an estimated timeline for the deployment of our fix, and the remediation of the impact will be available once our new solution has been tested and verified as a viable solution for remediating the impact.\n \nScope of impact: Impact may occur for all users attempting to send subscription emails to external users in Power BI.\n \nStart time: Thursday, January 29, 2026, at 6:45 PM UTC\n \nRoot cause: An influx of automated email traffic from Power BI subscriptions is resulting in impact to external subscription email delivery.\n \nNext update by: Monday, March 9, 2026, at 12:30 AM UTC"
+            },
             {
               "createdAt": "2026-02-09T23:14:34.923Z",
               "postType": "regular",
@@ -823,16 +938,26 @@
           "title": "Some admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services",
           "startTime": "2025-10-07T08:27:00Z",
           "endTime": null,
-          "lastModified": "2026-02-20T10:20:02.15Z",
+          "lastModified": "2026-02-24T09:29:10.383Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services.",
           "scopeOfImpact": "Admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\" may be impacted. This section may be updated as our investigation continues.\n \nStart time: Tuesday, October 7, 2025, at 8:27 AM UTC",
           "rootCause": "A recent service operation intended to upgrade our API flow impacted Microsoft 365 Groups that were previously configured to have the \"SecurityEnabled\" setting enabled, switching this value back to \"False\" by default and resulting in impact to admins and users whose service access was being managed by the affected groups.",
-          "nextUpdateBy": "Monday, February 23, 2026, at 12:30 PM UTC",
+          "nextUpdateBy": "Tuesday, March 3, 2026, at 11:00 AM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-02-24T09:28:07.54Z",
+              "postType": "regular",
+              "content": "Title: Some admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services\n\nUser impact: Admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services.\n\nMore info: This issue specifically affects admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\".\n\nWhile we finalize the deployment of our fix to restore the appropriate configuration for the impacted Microsoft 365 Groups, affected admins can follow the steps below to manually restore the SecurityEnabled property configuration and resolve the impact:\n\n1. Connect to Exchange Online PowerShell with “Connect-ExchangeOnline”, then run the following command to retrieve audit logs specific to this scenario:\n$AuditLog = Search-UnifiedAuditLog -Operations \"Update group\" -StartDate (Get-Date).AddDays(-30) -EndDate (Get-Date) -ResultSize 5000.\n\n2. Filter logs matching the issue to gather affected group info by running the following two commands:\n\n$GroupID = $AuditLog | % {ConvertFrom-Json $_.AuditData} | ? {($_.Actor -match \"Group Configuration Processor\") -and ($_.ModifiedProperties -match \"SecurityEnabled\")} | % {$_.ObjectId -replace \"^.*Group_\", \"\"}\n\n$GroupID | Get-UnifiedGroup -ResultSize Unlimited\n\n3. Connect to Microsoft Graph PowerShell with Connect-MgGraph -Scope \"Group.ReadWrite.All\" and then run the following command to restore the SecurityEnabled property for the affected groups to True, which should remediate the impact:\n\n$GroupID | % {Update-MgGroup -GroupId $_ -BodyParameter @{SecurityEnabled = $true}}\n\nFor further information on how to run Microsoft Graph PowerShell commands and cmdlets or guidance on connecting to Exchange Online through PowerShell, please reference the following documentation:\n\nhttps://learn.microsoft.com/en-us/powershell/exchange/connect-to-exchange-online-powershell?view=ex…\n\nhttps://learn.microsoft.com/en-us/powershell/microsoftgraph/authentication-commands?view=graph-powe…\n \nCurrent status: We’re in the final stages of deploying the fix and expect completion by the next scheduled update. We’ve also confirmed with affected users that the majority of groups are now resolved.\n \nScope of impact: Admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\" may be impacted. This section may be updated as our investigation continues.\n \nStart time: Tuesday, October 7, 2025, at 8:27 AM UTC\n \nRoot cause: A recent service operation intended to upgrade our API flow impacted Microsoft 365 Groups that were previously configured to have the \"SecurityEnabled\" setting enabled, switching this value back to \"False\" by default and resulting in impact to admins and users whose service access was being managed by the affected groups.\n \nNext update by: Tuesday, March 3, 2026, at 11:00 AM UTC"
+            },
+            {
+              "createdAt": "2026-02-23T09:30:04.543Z",
+              "postType": "regular",
+              "content": "Title: Some admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services\n\nUser impact: Admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services.\n\nMore info: This issue specifically affects admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\".\n\nWhile we finalize the deployment of our fix to restore the appropriate configuration for the impacted Microsoft 365 Groups, affected admins can follow the steps below to manually restore the SecurityEnabled property configuration and resolve the impact:\n\n1. Connect to Exchange Online PowerShell with “Connect-ExchangeOnline”, then run the following command to retrieve audit logs specific to this scenario:\n$AuditLog = Search-UnifiedAuditLog -Operations \"Update group\" -StartDate (Get-Date).AddDays(-30) -EndDate (Get-Date) -ResultSize 5000.\n\n2. Filter logs matching the issue to gather affected group info by running the following two commands:\n\n$GroupID = $AuditLog | % {ConvertFrom-Json $_.AuditData} | ? {($_.Actor -match \"Group Configuration Processor\") -and ($_.ModifiedProperties -match \"SecurityEnabled\")} | % {$_.ObjectId -replace \"^.*Group_\", \"\"}\n\n$GroupID | Get-UnifiedGroup -ResultSize Unlimited\n\n3. Connect to Microsoft Graph PowerShell with Connect-MgGraph -Scope \"Group.ReadWrite.All\" and then run the following command to restore the SecurityEnabled property for the affected groups to True, which should remediate the impact:\n\n$GroupID | % {Update-MgGroup -GroupId $_ -BodyParameter @{SecurityEnabled = $true}}\n\nFor further information on how to run Microsoft Graph PowerShell commands and cmdlets or guidance on connecting to Exchange Online through PowerShell, please reference the following documentation:\n\nhttps://learn.microsoft.com/en-us/powershell/exchange/connect-to-exchange-online-powershell?view=ex…\n\nhttps://learn.microsoft.com/en-us/powershell/microsoftgraph/authentication-commands?view=graph-powe…\n \nCurrent status: While we continue deploying the fix and exploring ways to accelerate rollout, we’ve identified that the fix has not yet resolved impact for some groups. We’re engaging with affected users to confirm which groups remain impacted.\n \nScope of impact: Admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\" may be impacted. This section may be updated as our investigation continues.\n \nStart time: Tuesday, October 7, 2025, at 8:27 AM UTC\n \nRoot cause: A recent service operation intended to upgrade our API flow impacted Microsoft 365 Groups that were previously configured to have the \"SecurityEnabled\" setting enabled, switching this value back to \"False\" by default and resulting in impact to admins and users whose service access was being managed by the affected groups.\n \nNext update by: Tuesday, February 24, 2026, at 12:00 PM UTC"
+            },
             {
               "createdAt": "2026-02-20T10:20:02.15Z",
               "postType": "regular",
@@ -979,16 +1104,26 @@
           "title": "Some admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services",
           "startTime": "2025-10-07T08:27:00Z",
           "endTime": null,
-          "lastModified": "2026-02-20T10:20:02.15Z",
+          "lastModified": "2026-02-24T09:29:10.383Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services.",
           "scopeOfImpact": "Admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\" may be impacted. This section may be updated as our investigation continues.\n \nStart time: Tuesday, October 7, 2025, at 8:27 AM UTC",
           "rootCause": "A recent service operation intended to upgrade our API flow impacted Microsoft 365 Groups that were previously configured to have the \"SecurityEnabled\" setting enabled, switching this value back to \"False\" by default and resulting in impact to admins and users whose service access was being managed by the affected groups.",
-          "nextUpdateBy": "Monday, February 23, 2026, at 12:30 PM UTC",
+          "nextUpdateBy": "Tuesday, March 3, 2026, at 11:00 AM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-02-24T09:28:07.54Z",
+              "postType": "regular",
+              "content": "Title: Some admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services\n\nUser impact: Admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services.\n\nMore info: This issue specifically affects admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\".\n\nWhile we finalize the deployment of our fix to restore the appropriate configuration for the impacted Microsoft 365 Groups, affected admins can follow the steps below to manually restore the SecurityEnabled property configuration and resolve the impact:\n\n1. Connect to Exchange Online PowerShell with “Connect-ExchangeOnline”, then run the following command to retrieve audit logs specific to this scenario:\n$AuditLog = Search-UnifiedAuditLog -Operations \"Update group\" -StartDate (Get-Date).AddDays(-30) -EndDate (Get-Date) -ResultSize 5000.\n\n2. Filter logs matching the issue to gather affected group info by running the following two commands:\n\n$GroupID = $AuditLog | % {ConvertFrom-Json $_.AuditData} | ? {($_.Actor -match \"Group Configuration Processor\") -and ($_.ModifiedProperties -match \"SecurityEnabled\")} | % {$_.ObjectId -replace \"^.*Group_\", \"\"}\n\n$GroupID | Get-UnifiedGroup -ResultSize Unlimited\n\n3. Connect to Microsoft Graph PowerShell with Connect-MgGraph -Scope \"Group.ReadWrite.All\" and then run the following command to restore the SecurityEnabled property for the affected groups to True, which should remediate the impact:\n\n$GroupID | % {Update-MgGroup -GroupId $_ -BodyParameter @{SecurityEnabled = $true}}\n\nFor further information on how to run Microsoft Graph PowerShell commands and cmdlets or guidance on connecting to Exchange Online through PowerShell, please reference the following documentation:\n\nhttps://learn.microsoft.com/en-us/powershell/exchange/connect-to-exchange-online-powershell?view=ex…\n\nhttps://learn.microsoft.com/en-us/powershell/microsoftgraph/authentication-commands?view=graph-powe…\n \nCurrent status: We’re in the final stages of deploying the fix and expect completion by the next scheduled update. We’ve also confirmed with affected users that the majority of groups are now resolved.\n \nScope of impact: Admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\" may be impacted. This section may be updated as our investigation continues.\n \nStart time: Tuesday, October 7, 2025, at 8:27 AM UTC\n \nRoot cause: A recent service operation intended to upgrade our API flow impacted Microsoft 365 Groups that were previously configured to have the \"SecurityEnabled\" setting enabled, switching this value back to \"False\" by default and resulting in impact to admins and users whose service access was being managed by the affected groups.\n \nNext update by: Tuesday, March 3, 2026, at 11:00 AM UTC"
+            },
+            {
+              "createdAt": "2026-02-23T09:30:04.543Z",
+              "postType": "regular",
+              "content": "Title: Some admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services\n\nUser impact: Admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services.\n\nMore info: This issue specifically affects admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\".\n\nWhile we finalize the deployment of our fix to restore the appropriate configuration for the impacted Microsoft 365 Groups, affected admins can follow the steps below to manually restore the SecurityEnabled property configuration and resolve the impact:\n\n1. Connect to Exchange Online PowerShell with “Connect-ExchangeOnline”, then run the following command to retrieve audit logs specific to this scenario:\n$AuditLog = Search-UnifiedAuditLog -Operations \"Update group\" -StartDate (Get-Date).AddDays(-30) -EndDate (Get-Date) -ResultSize 5000.\n\n2. Filter logs matching the issue to gather affected group info by running the following two commands:\n\n$GroupID = $AuditLog | % {ConvertFrom-Json $_.AuditData} | ? {($_.Actor -match \"Group Configuration Processor\") -and ($_.ModifiedProperties -match \"SecurityEnabled\")} | % {$_.ObjectId -replace \"^.*Group_\", \"\"}\n\n$GroupID | Get-UnifiedGroup -ResultSize Unlimited\n\n3. Connect to Microsoft Graph PowerShell with Connect-MgGraph -Scope \"Group.ReadWrite.All\" and then run the following command to restore the SecurityEnabled property for the affected groups to True, which should remediate the impact:\n\n$GroupID | % {Update-MgGroup -GroupId $_ -BodyParameter @{SecurityEnabled = $true}}\n\nFor further information on how to run Microsoft Graph PowerShell commands and cmdlets or guidance on connecting to Exchange Online through PowerShell, please reference the following documentation:\n\nhttps://learn.microsoft.com/en-us/powershell/exchange/connect-to-exchange-online-powershell?view=ex…\n\nhttps://learn.microsoft.com/en-us/powershell/microsoftgraph/authentication-commands?view=graph-powe…\n \nCurrent status: While we continue deploying the fix and exploring ways to accelerate rollout, we’ve identified that the fix has not yet resolved impact for some groups. We’re engaging with affected users to confirm which groups remain impacted.\n \nScope of impact: Admins and users whose service access is managed by Microsoft 365 Groups that were previously configured with the \"SecurityEnabled\" setting set to \"True\" may be impacted. This section may be updated as our investigation continues.\n \nStart time: Tuesday, October 7, 2025, at 8:27 AM UTC\n \nRoot cause: A recent service operation intended to upgrade our API flow impacted Microsoft 365 Groups that were previously configured to have the \"SecurityEnabled\" setting enabled, switching this value back to \"False\" by default and resulting in impact to admins and users whose service access was being managed by the affected groups.\n \nNext update by: Tuesday, February 24, 2026, at 12:00 PM UTC"
+            },
             {
               "createdAt": "2026-02-20T10:20:02.15Z",
               "postType": "regular",
@@ -1231,16 +1366,21 @@
           "title": "Users aren't shown the \"Edit in Outlook\" button after prompting Copilot Chat to draft an email message",
           "startTime": "2026-01-15T18:55:08Z",
           "endTime": null,
-          "lastModified": "2026-02-12T21:57:57.247Z",
+          "lastModified": "2026-02-23T20:53:09.933Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users aren't shown the \"Edit in Outlook\" button after prompting Copilot Chat to draft an email message.",
           "scopeOfImpact": "Any user prompting Copilot Chat to draft an email message may be impacted.\n\nStart time: Friday, December 19, 2025, at 6:00 PM UTC",
           "rootCause": "We've disabled the \"Edit in Outlook\" feature in Copilot Chat while we implement a fix for a separate service issue relating to the feature, causing impact.",
-          "nextUpdateBy": "Monday, February 23, 2026, at 11:00 PM UTC",
+          "nextUpdateBy": "Monday, March 9, 2026, at 10:00 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-02-23T20:53:09.933Z",
+              "postType": "regular",
+              "content": "Title: Users aren't shown the \"Edit in Outlook\" button after prompting Copilot Chat to draft an email message\n\nUser impact: Users aren't shown the \"Edit in Outlook\" button after prompting Copilot Chat to draft an email message.\n\nMore info: As an optional work around, affected users can use the Copy button to transfer a generated draft from Copilot chat to Outlook, and continue their work. If your organization has enabled Copilot access within Outlook, the user can continue using Copilot to draft an email once they've moved to Outlook.\n\nCurrent status: Our work to improve the slow request response times continues. We're ensuring that the improvement process will not cause any additional service issues before we re-enable the feature.  We anticipate being able to have a solution ready by Friday, March 20, 2026. We will provide any available updates to the progress at next scheduled communication time.\n\nScope of impact: Any user prompting Copilot Chat to draft an email message may be impacted.\n\nStart time: Friday, December 19, 2025, at 6:00 PM UTC\n\nRoot cause: We've disabled the \"Edit in Outlook\" feature in Copilot Chat while we implement a fix for a separate service issue relating to the feature, causing impact.\n\nNext update by: Monday, March 9, 2026, at 10:00 PM UTC"
+            },
             {
               "createdAt": "2026-02-12T21:57:57.247Z",
               "postType": "regular",
@@ -1280,76 +1420,247 @@
           "affectedServices": [
             "Microsoft 365 Copilot Chat"
           ]
-        },
-        {
-          "id": "CW1226324",
-          "title": "Some users' Copilot prompts return information from Sent and Draft folder messages with Copilot DLP policies configured",
-          "startTime": "2026-01-21T07:25:00Z",
-          "endTime": null,
-          "lastModified": "2026-02-20T01:03:56.39Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users' Copilot prompts return information from Sent and Draft folder messages with Copilot DLP policies configured.",
-          "scopeOfImpact": "Impact is specific to users leveraging Microsoft 365 Copilot Chat with email messages in their Drafts or Sent Items folder with a sensitivity label applied and a Copilot DLP policy configured. This section may be updated as our investigation continues.\n \nStart time: Wednesday, January 21, 2026, at 7:25 AM UTC",
-          "rootCause": "A code issue is allowing items in the Sent items and Draft folders to be picked up by Copilot even though confidential labels are set in place.",
-          "nextUpdateBy": "Tuesday, February 24, 2026, at 7:30 AM UTC",
-          "feature": "General",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-02-20T01:03:56.39Z",
-              "postType": "regular",
-              "content": "Title: Some users' Copilot prompts return information from Sent and Draft folder messages with Copilot DLP policies configured\n\nUser impact: Users' Copilot prompts return information from Sent and Draft folder messages with Copilot DLP policies configured.\n\nMore info: This issue is specific to Exchange Online email messages that are in the Sent Items and Drafts folders. The Microsoft 365 Copilot \"work tab\" Chat may process these email messages for the user that owns them even though these email messages have a sensitivity label applied and a Copilot DLP policy is configured.\n \nCurrent status: Our targeted code fix to prevent further impact is moving forward and has saturated across the majority of affected environments. Our deployment remains in progress only for a small section of our more complex service environments. As such, we believe the root cause of this issue has been addressed for most customers, and no new email messages for customers who have received the fix will be affected moving forward.\n \nWe’re now completing a longer-term, comprehensive sync to apply this fix retroactively to previously affected messages within the Sent and Draft folders to fully remediate the impact.\n \nScope of impact: Impact is specific to users leveraging Microsoft 365 Copilot Chat with email messages in their Drafts or Sent Items folder with a sensitivity label applied and a Copilot DLP policy configured. This section may be updated as our investigation continues.\n \nStart time: Wednesday, January 21, 2026, at 7:25 AM UTC\n \nRoot cause: A code issue is allowing items in the Sent items and Draft folders to be picked up by Copilot even though confidential labels are set in place.\n \nNext update by: Tuesday, February 24, 2026, at 7:30 AM UTC"
-            },
-            {
-              "createdAt": "2026-02-19T08:33:57.29Z",
-              "postType": "regular",
-              "content": "Title: Some users' Copilot prompts return information from Sent and Draft folder messages with Copilot DLP policies configured\n\nUser impact: Users' Copilot prompts return information from Sent and Draft folder messages with Copilot DLP policies configured.\n\nMore info: This issue is specific to Exchange Online email messages that are in the Sent Items and Drafts folders. The Microsoft 365 Copilot \"work tab\" Chat may process these email messages for the user that owns them even though these email messages have a sensitivity label applied and a Copilot DLP policy is configured.\n \nCurrent status: We've received feedback from some affected users that the deployment fix has resolved impact. We're monitoring the fix as it fully saturates in the remaining affected environments, and we expect full remediation by our next scheduled update.\n \nScope of impact: Users leveraging Microsoft 365 Copilot Chat may notice that email messages in their Drafts or Sent Items folder may be referenced in prompt responses even though these messages may have a sensitivity label applied and a Copilot DLP policy configured. This section may be updated as our investigation continues.\n\nStart time: Wednesday, January 21, 2026, at 7:25 AM UTC\n \nRoot cause: A code issue is allowing items in the Sent items and Draft folders to be picked up by Copilot even though confidential labels are set in place.\n\nNext update by: Tuesday, February 24, 2026, at 7:30 AM UTC"
-            },
-            {
-              "createdAt": "2026-02-19T02:27:38.227Z",
-              "postType": "regular",
-              "content": "Title: Users may notice Copilot prompts returning information from Sent and Draft folder messages with DLP policies configured\n\nUser impact: Users may notice Copilot prompts returning information from Sent and Draft folder messages with DLP policies configured.\n\nMore info: This issue is specific to Exchange Online email messages that are in the Sent Items and Drafts folders. The Microsoft 365 Copilot \"work tab\" Chat may process these email messages for the user that owns them even though these email messages have a sensitivity label applied and a DLP policy is configured.\n\nCurrent status: We have completed deployment of the fix and we’re working with affected users to confirm that the issue is mitigated. \n\nScope of impact: Users leveraging Microsoft 365 Copilot Chat may notice that email messages in their Drafts or Sent Items folder may be referenced in prompt responses even though these messages may have a sensitivity label applied and a DLP policy configured. This section may be updated as our investigation continues.\n \nStart time: Wednesday, January 21, 2026, at 7:25 AM UTC\n\nRoot cause: A code issue is allowing items in the Sent items and Draft folders to be picked up by Copilot even though confidential labels are set in place.\n \nNext update by: Thursday, February 19, 2026, at 9:30 AM UTC"
-            },
-            {
-              "createdAt": "2026-02-18T17:12:22.54Z",
-              "postType": "regular",
-              "content": "Title: Users' sent and draft folder messages with confidential labels may be incorrectly processed by Microsoft Copilot chat\n\nUser impact: Users' sent and draft folder messages with confidential labels may be incorrectly processed by Microsoft Copilot chat.\n\nMore info: This issue is specific to Exchange Online email messages that are in the Sent Items and Drafts folders. The Microsoft 365 Copilot \"work tab\" Chat may process these email messages for the user that owns them even though these email messages have a sensitivity label applied and a DLP policy is configured.\n \nCurrent status: We're continuing to monitor the final stages of our fix deployment as it saturates throughout the remaining affected infrastructure. Once this saturation is complete, we'll reach out to additional users to verify impact has been remediated as expected.\n\nScope of impact: Users leveraging Microsoft 365 Copilot Chat may notice that email messages in their Drafts or Sent Items folder may show up despite them having a sensitivity label applied and a DLP policy configured. This section may be updated as our investigation continues.\n\nStart time: Wednesday, January 21, 2026, at 7:25 AM UTC\n\nRoot cause: A code issue is allowing items in the sent items and draft folders to be picked up by Copilot even though confidential labels are set in place.\n\nNext update by: Thursday, February 19, 2026, at 9:30 AM UTC"
-            },
-            {
-              "createdAt": "2026-02-18T10:14:27.867Z",
-              "postType": "regular",
-              "content": "Title: Users' sent and draft folder messages with confidential labels may be incorrectly processed by Microsoft Copilot chat\n\nUser impact: Users' sent and draft folder messages with confidential labels may be incorrectly processed by Microsoft Copilot chat.\n\nMore info: This issue is specific to Exchange Online email messages that are in the Sent Items and Drafts folders. The Microsoft 365 Copilot \"work tab\" Chat may process these email messages for the user that owns them even though these email messages have a sensitivity label applied and a DLP policy is configured.\n \nCurrent status: We're proceeding to monitor the deployment of the fix as it progresses and are reaching out to a subset of users to test for impact remediation. We expect to have an estimated time for completion by our next scheduled update.\n\nScope of impact: Users leveraging Microsoft 365 Copilot Chat may notice that email messages in their Drafts or Sent Items folder may show up despite them having a sensitivity label applied and a DLP policy configured. This section may be updated as our investigation continues.\n\nStart time: Wednesday, January 21, 2026, at 7:25 AM UTC\n\nRoot cause: A code issue is allowing items in the sent items and draft folders to be picked up by Copilot even though confidential labels are set in place.\n\nNext update by: Wednesday, February 18, 2026, at 7:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-02-10T18:22:38Z",
-              "postType": "regular",
-              "content": "Title: Users' sent and draft folder messages with confidential labels may be incorrectly processed by Microsoft Copilot chat\n\nUser impact: Users' sent and draft folder messages with confidential labels may be incorrectly processed by Microsoft Copilot chat.\n\nMore info: This issue is specific to Exchange Online email messages that are in the Sent Items and Drafts folders. The Microsoft 365 Copilot \"work tab\" Chat may process these email messages for the user that owns them even though these email messages have a sensitivity label applied and a DLP policy is configured.\n \nCurrent status: Deployment of our fix to remediate incorrect processing of email messages with a confidential label by Microsoft 365 Copilot chat is ongoing, and we're reaching out to a subset of affected users to test for impact remediation as our rollout saturates across affected environments. We aim to provide a timeline to remediation as one becomes available.\n \nScope of impact: Users leveraging Microsoft 365 Copilot Chat may notice that email messages in their Drafts or Sent Items folder may show up despite them having a sensitivity label applied and a DLP policy is configured. This section may be updated as our investigation continues.\n \nStart time: Wednesday, January 21, 2026, at 7:25 AM UTC\n \nRoot cause: A code issue is allowing items in the sent items and draft folders to be picked up by Copilot even though confidential labels are set in place.\n \nNext update by: Wednesday, February 18, 2026, at 11:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-02-03T10:41:13.613Z",
-              "postType": "regular",
-              "content": "Title: Users' sent and draft folder messages with confidential labels may be incorrectly processed by Microsoft Copilot chat\n\nUser impact: Users' sent and draft folder messages with confidential labels may be incorrectly processed by Microsoft Copilot chat.\n\nMore info: This issue is specific to Exchange Online email messages that are in the Sent Items and Drafts folders. The Microsoft 365 Copilot \"work tab\" Chat may process these email messages for the user that owns them even though these email messages have a sensitivity label applied and a DLP policy is configured.\n\nCurrent status: We've identified a code issue that is allowing items in the Sent Items and Drafts folders to be picked up by Copilot even though confidential labels are set in place. We've developed and started to deploy a fix to mitigate impact.\n\nScope of impact: Users leveraging Microsoft 365 Copilot Chat may notice that email messages in their Drafts or Sent Items folder may show up despite them having a sensitivity label applied and a DLP policy configured. This section may be updated as our investigation continues.\n\nRoot cause: A code issue is allowing items in the sent items and draft folders to be picked up by Copilot even though confidential labels are set in place.\n\nNext update by: Tuesday, February 10, 2026, at 7:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-02-03T08:49:51.283Z",
-              "postType": "regular",
-              "content": "Title: Users' sent and draft folder messages with confidential labels may be incorrectly processed by Microsoft Copilot chat\n\nUser impact: Users' sent and draft folder messages with confidential labels may be incorrectly processed by Microsoft Copilot chat.\n\nMore info: This issue is specific to Exchange Online email messages that are in the Sent Items and Drafts folders. The Microsoft 365 Copilot \"work tab\" Chat may process these email messages for the user that owns them even though these email messages have a sensitivity label applied and a DLP policy is configured.\n\nCurrent status: We're continuing our review email message examples and other documentation provided by some affected users to identify the root cause of impact and mitigation plan.\n\nScope of impact: Users leveraging Microsoft 365 Copilot Chat may notice that email messages in their Drafts or Sent Items folder may show up despite them having a sensitivity label applied and a DLP policy configured. This section may be updated as our investigation continues.\n\nNext update by: Tuesday, February 3, 2026, at 11:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-02-03T07:29:44.083Z",
-              "postType": "regular",
-              "content": "Title: Users' sent and draft folder messages with confidential labels may be incorrectly processed by Microsoft Copilot chat\n\nUser impact: Users' sent and draft folder messages with confidential labels may be incorrectly processed by Microsoft Copilot chat.\n\nMore info: This issue is specific to Exchange Online email messages that are in the Sent Items and Drafts folders. The Microsoft 365 Copilot \"work tab\" Chat may process these email messages for the user that owns them even though these email messages have a sensitivity label applied and a DLP policy is configured.\n \nCurrent status: We've received reports of an issue with the Microsoft 365 Copilot chat improperly summarizing email messages. We're reviewing some sample email messages to identify the underlying root cause of impact and inform our next steps.\n \nScope of impact: Users leveraging Microsoft 365 Copilot Chat may notice that email messages in their Drafts or Sent Items folder may show up despite them having a sensitivity label applied and a DLP policy configured. This section may be updated as our investigation continues.\n \nNext update by: Tuesday, February 3, 2026, at 9:00 AM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Microsoft 365 Copilot Chat"
-          ]
         }
       ]
     }
   ],
   "history": [
+    {
+      "id": "DZ1239812",
+      "title": "Admins notice that some Advanced Hunting and Threat Explorer data in the Microsoft Defender XDR portal is delayed",
+      "startTime": "2026-02-26T12:40:00Z",
+      "endTime": "2026-02-26T19:00:00Z",
+      "lastModified": "2026-02-26T20:50:44.303Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Admins' Advanced Hunting and Threat Explorer data in the Microsoft Defender XDR portal was delayed.",
+      "scopeOfImpact": "Your organization was affected by this event, and any admin viewing Threat Explorer data in the Microsoft Defender XDR portal was impacted.\n\nStart time: Thursday, February 26, 2026, at 12:40 PM UTC\n\nEnd time: Thursday, February 26, 2026, at 7:00 PM UTC",
+      "rootCause": "A portion of service infrastructure responsible for relaying Advanced Hunting and Threat Explorer data to the Microsoft Defender XDR portal was operating in a suboptimal state, causing a backlog of unprocessed data and resulted in impact.\n\nNext steps: \n - We're continuing to review the portion of affected infrastructure to identify the reason it was operating in a suboptimal state, so that we can determine how to prevent similar impact from occurring in the future.\n\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "MDO",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-02-26T20:49:14.667Z",
+          "postType": "regular",
+          "content": "Title: Admins notice that some Advanced Hunting and Threat Explorer data in the Microsoft Defender XDR portal is delayed\n\nUser impact: Admins' Advanced Hunting and Threat Explorer data in the Microsoft Defender XDR portal was delayed.\n\nMore info: The Advanced Hunting and Threat Explorer data may have been delayed up to three hours. Additionally, when admins attempted to view the data of existing entries in Threat Explorer, they received an error that stated, \"Something went wrong. Primary and secondary data missing.\"\n\nFinal status: After monitoring our telemetry we've confirmed that the remaining backlog of Advanced Hunting and Threat Explorer data has completed processing and the impact is remediated.\n\nScope of impact: Your organization was affected by this event, and any admin viewing Threat Explorer data in the Microsoft Defender XDR portal was impacted.\n\nStart time: Thursday, February 26, 2026, at 12:40 PM UTC\n\nEnd time: Thursday, February 26, 2026, at 7:00 PM UTC\n\nRoot cause: A portion of service infrastructure responsible for relaying Advanced Hunting and Threat Explorer data to the Microsoft Defender XDR portal was operating in a suboptimal state, causing a backlog of unprocessed data and resulted in impact.\n\nNext steps: \n - We're continuing to review the portion of affected infrastructure to identify the reason it was operating in a suboptimal state, so that we can determine how to prevent similar impact from occurring in the future.\n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-02-26T20:25:53.97Z",
+          "postType": "regular",
+          "content": "Title: Admins notice that some Advanced Hunting and Threat Explorer data in the Microsoft Defender XDR portal is delayed\n\nUser impact: Admins notice that some Advanced Hunting and Threat Explorer data in the Microsoft Defender XDR portal is delayed.\n\nMore info: The Advanced Hunting and Threat Explorer data may be delayed up to three hours. Additionally, when admins attempt to view the data of existing entries in Threat Explorer, they receive an error that states, \"Something went wrong. Primary and secondary data missing.\"\n\nCurrent status: We've identified that the portion of service infrastructure responsible for relaying Advanced Hunting and Threat Explorer data to the Microsoft Defender XDR portal is operating in a suboptimal state, causing a backlog of unprocessed data and resulting in impact. The backlog of data has begun processing without requiring any mitigating actions and we're monitoring to confirm it processes to completion.\n\nScope of impact: Your organization is affected by this event, and any admin viewing Threat Explorer data in the Microsoft Defender XDR portal is impacted.\n\nStart time: Thursday, February 26, 2026, at 12:40 PM UTC\n\nNext update by: Thursday, February 26, 2026, at 10:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-02-26T19:09:50.7Z",
+          "postType": "regular",
+          "content": "Title: Admins notice that some Advanced Hunting and Threat Explorer data in the Microsoft Defender XDR portal is delayed\n\nUser impact: Admins notice that some Advanced Hunting and Threat Explorer data in the Microsoft Defender XDR portal is delayed.\n\nMore info: Additionally, when admins attempt to view the data of existing entries in Threat Explorer, they receive an error that states, \"Something went wrong. Primary and secondary data missing.\"\n\nCurrent status: We're reviewing provided screenshots to gain clarity on the issue and determine the next steps to investigate the root cause.\n\nScope of impact: Your organization is affected by this event, and any admin viewing Threat Explorer data in the Microsoft Defender XDR portal is impacted.\n\nNext update by: Thursday, February 26, 2026, at 8:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-02-26T18:50:33.337Z",
+          "postType": "regular",
+          "content": "Title: Admins notice that some Advanced Hunting and Threat Explorer data in the Microsoft Defender XDR portal is delayed\n\nUser impact: Admins notice that some Advanced Hunting and Threat Explorer data in the Microsoft Defender XDR portal is delayed.\n\nMore info: Additionally, when admins attempt to view the data of existing entries in Threat Explorer, they receive an error that states, \"Something went wrong. Primary and secondary data missing.\"\n\nCurrent status: We're investigating a potential issue with Microsoft Defender XDR and checking for impact to your organization. We'll provide an update within 30 minutes."
+        }
+      ],
+      "serviceName": "Microsoft Defender XDR",
+      "affectedServices": [
+        "Microsoft Defender XDR"
+      ]
+    },
+    {
+      "id": "PB1238769",
+      "title": "Some users using the January 2026 Report Server version (1.25.9508.3237) may have encountered access issues",
+      "startTime": "2026-01-21T00:00:00Z",
+      "endTime": "2026-02-25T15:00:00Z",
+      "lastModified": "2026-02-25T15:24:05.193Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users using the January 2026 Report Server version (1.25.9508.3237) may have encountered access issues.",
+      "scopeOfImpact": "Impact was specific to users using the January 2026 Report Server version (1.25.9508.3237).\n \nStart time: Wednesday, January 21, 2026, at 12:00 AM UTC\n \nEnd time: Wednesday, February 25, 2026, at 3:00 PM UTC",
+      "rootCause": "An issue with the January 2026 Report Server version (1.25.9508.3237) may have caused access issues, as certain reports could have triggered excessive crash dump generation on disk.\n \nNext steps:\n- We're continuing to identify the underlying root cause of impact within the January 2026 Report Server version (1.25.9508.3237).\n\n- We're reviewing our update procedures to better identify similar issues during our development and testing cycles.\n\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "PowerBI.com",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-02-25T15:24:05.193Z",
+          "postType": "regular",
+          "content": "Title: Some users using the January 2026 Report Server version (1.25.9508.3237) may have encountered access issues\n\nUser impact: Users using the January 2026 Report Server version (1.25.9508.3237) may have encountered access issues.\n\nMore info: Users using the January 2026 Report Server version (1.25.9508.3237) may have encountered access issues, as certain reports may have triggered excessive crash dump generation on disks. As a workaround, users could have downgraded to the September 2025 version (1.15.8377.1837) or deleted the generated crash dump files due to a known limitation.\n \nFinal status: We've determined that an issue with the January 2026 Report Server version (1.25.9508.3237) may have caused access issues, as certain reports could have triggered excessive crash dump generation on disk. We've reverted to the previous working version September 2025 version (1.15.8377.1837), which has remediated impact.\n \nScope of impact: Impact was specific to users using the January 2026 Report Server version (1.25.9508.3237).\n \nStart time: Wednesday, January 21, 2026, at 12:00 AM UTC\n \nEnd time: Wednesday, February 25, 2026, at 3:00 PM UTC\n \nRoot cause: An issue with the January 2026 Report Server version (1.25.9508.3237) may have caused access issues, as certain reports could have triggered excessive crash dump generation on disk.\n \nNext steps:\n- We're continuing to identify the underlying root cause of impact within the January 2026 Report Server version (1.25.9508.3237).\n\n- We're reviewing our update procedures to better identify similar issues during our development and testing cycles.\n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-02-25T13:32:34.74Z",
+          "postType": "regular",
+          "content": "Title: Some users using the January 2026 Report Server version (1.25.9508.3237) may encounter access issues\n\nUser impact: Users using the January 2026 Report Server version (1.25.9508.3237) may encounter access issues.\n\nMore info: Users using the January 2026 Report Server version (1.25.9508.3237) may encounter access issues, as certain reports can trigger excessive crash dump generation on disk. As a workaround, users can downgrade to the September 2025 version (1.15.8377.1837) or may delete the generated crash dump files due to a known limitation.\n \nCurrent status: We're reviewing service monitoring telemetry to isolate the root cause and develop a remediation plan.\n \nScope of impact: Impact is specific to users using the January 2026 Report Server version (1.25.9508.3237).\n \nStart time: Wednesday, January 21, 2026, at 12:00 AM UTC\n \nNext update by: Wednesday, February 25, 2026, at 3:30 PM UTC"
+        }
+      ],
+      "serviceName": "Power BI",
+      "affectedServices": [
+        "Power BI"
+      ]
+    },
+    {
+      "id": "OP1237616",
+      "title": "Some admins may experience intermittent page loading issues and errors in the Microsoft 365 Apps admin center",
+      "startTime": "2026-02-16T06:30:00Z",
+      "endTime": "2026-02-25T00:00:00Z",
+      "lastModified": "2026-02-26T22:54:45.51Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Admins may have experienced intermittent page loading issues in the Microsoft 365 Apps admin center.",
+      "scopeOfImpact": "This issue may have intermittently impacted admins who were attempting to access and load certain pages in the Microsoft 365 Apps admin center. \n \nStart time: Monday, February 16, 2026, at 6:30 AM UTC\n \nEnd time: Wednesday, February 25, 2026, at 12:00 AM UTC",
+      "rootCause": "Service infrastructure adjustments to help improve reliability within the Microsoft 365 Apps admin center were intermittently producing page loading failures in the Microsoft 365 Apps admin center.\n \nNext steps:\n- We're further analyzing the isolated offending service infrastructure adjustments to help us prevent similar issues in the future. \n\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Reports of an incident",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-02-26T22:54:45.51Z",
+          "postType": "regular",
+          "content": "Title: Some admins may experience intermittent page loading issues and errors in the Microsoft 365 Apps admin center\n\nUser impact: Admins may have experienced intermittent page loading issues in the Microsoft 365 Apps admin center.\n\nMore info: Impacted admins reported that config.office.com pages intermittently failed to load and resulted in errors.\n \nFinal status: After our additional system monitoring to ensure that service availability remained constant after our service infrastructure adjustments, we've validated that impact has been remediated.\n \nScope of impact: This issue may have intermittently impacted admins who were attempting to access and load certain pages in the Microsoft 365 Apps admin center. \n \nStart time: Monday, February 16, 2026, at 6:30 AM UTC\n \nEnd time: Wednesday, February 25, 2026, at 12:00 AM UTC\n \nRoot cause: Service infrastructure adjustments to help improve reliability within the Microsoft 365 Apps admin center were intermittently producing page loading failures in the Microsoft 365 Apps admin center.\n \nNext steps:\n- We're further analyzing the isolated offending service infrastructure adjustments to help us prevent similar issues in the future. \n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-02-26T00:05:22.47Z",
+          "postType": "regular",
+          "content": "Title: Some admins may experience intermittent page loading issues and errors in the Microsoft 365 Apps admin center\n\nUser impact: Admins may experience intermittent page loading issues in the Microsoft 365 Apps admin center.\n\nMore info: Impacted admins report that config.office.com pages intermittently fail to load and result in errors.\n \nCurrent status: We're continuing to monitor the environment to validate if our optimizations have remediated impact. This period of monitoring will help us validate if any additional actions are needed to resolve this issue.\n \nScope of impact: This issue may intermittently impact admins who are attempting to access and load certain pages in the Microsoft 365 Apps admin center. This section may be updated as our investigation continues.\n \nStart time: Monday, February 16, 2026, at 6:30 AM UTC\n \nRoot cause: Service infrastructure adjustments to help improve reliability within the Microsoft 365 Apps admin center are intermittently producing page loading failures in the Microsoft 365 Apps admin center.\n \nNext update by: Friday, February 27, 2026, at 1:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-02-25T20:29:19.223Z",
+          "postType": "regular",
+          "content": "Title: Some admins may experience intermittent page loading issues and errors in the Microsoft 365 Apps admin center\n\nUser impact: Admins may experience intermittent page loading issues in the Microsoft 365 Apps admin center.\n\nMore info: Impacted admins report that config.office.com pages intermittently fail to load and result in errors.\n\nCurrent status: Our initial telemetry analysis indicates that the optimizations performed have had a positive effect on the page loads. We're continuing to monitor the environment to validate this issue is no longer occurring.\n\nScope of impact: This issue may intermittently impact admins who are attempting to access and load certain pages in the Microsoft 365 Apps admin center. This section may be updated as our investigation continues.\n\nStart time: Monday, February 16, 2026, at 6:30 AM UTC\n\nRoot cause: Service infrastructure adjustments to help improve reliability within the Microsoft 365 Apps admin center are intermittently producing page loading failures in the Microsoft 365 Apps admin center.\n\nNext update by: Thursday, February 26, 2026, at 1:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-02-24T17:51:02.217Z",
+          "postType": "regular",
+          "content": "Title: Some admins may experience intermittent page loading issues and errors in the Microsoft 365 Apps admin center\n\nUser impact: Admins may experience intermittent page loading issues in the Microsoft 365 Apps admin center.\n\nMore info: Impacted admins report that config.office.com pages intermittently fail to load and result in errors.\n\nCurrent status: Our service health telemetry and admin data analysis has determined that adjustments to service infrastructure in our effort to improve reliability within the Microsoft 365 Apps admin center are producing intermittent page loading failures that are resulting in the impact.  We've deployed a fix to address the page loading failures and expect to have more clarity into the problems that were produced by our change, along with an update on our timeline for remediating the impact, by our next scheduled communication update. \n \nScope of impact: This issue may intermittently impact admins who are attempting to access and load certain pages in the Microsoft 365 Apps admin center. This section may be updated as our investigation continues.\n \nRoot cause: Service infrastructure adjustments to help improve reliability within the Microsoft 365 Apps admin center are intermittently producing page loading failures in the Microsoft 365 Apps admin center. \n \nNext update by: Wednesday, February 25, 2026, at 9:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-02-23T22:01:17.727Z",
+          "postType": "regular",
+          "content": "Title: Some admins may experience intermittent page loading issues and errors in the Microsoft 365 Apps admin center\n\nUser impact: Admins may experience intermittent page loading issues in the Microsoft 365 Apps admin center.\n\nMore info: Impacted admins report that config.office.com pages intermittently fail to load and result in errors.\n\nCurrent status: We're continuing to analyze service health telemetry and data provided by impacted admins as we investigate into this issue's root cause and determine our next troubleshooting steps.\n\nScope of impact: This issue may intermittently impact admins who are attempting to access and load certain pages in the Microsoft 365 Apps admin center. This section may be updated as our investigation continues.\n\nNext update by: Tuesday, February 24, 2026, at 7:00 PM"
+        }
+      ],
+      "serviceName": "Microsoft 365 apps",
+      "affectedServices": [
+        "Microsoft 365 apps"
+      ]
+    },
+    {
+      "id": "IT1237713",
+      "title": "Admins may be unable to update the MacOS Wi-Fi policy in the Microsoft Intune admin center",
+      "startTime": "2026-02-10T16:00:00Z",
+      "endTime": "2026-02-24T19:00:00Z",
+      "lastModified": "2026-02-24T20:57:38.247Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Admins may have been unable to update the MacOS Wi-Fi policy in the Microsoft Intune admin center.",
+      "scopeOfImpact": "This may have affected any admin updating the MacOS Wi-Fi policy for users on build 6.2602.7.2001 forward through Microsoft Intune.\n\nStart time: Tuesday, February 10, 2026, at 4:00 PM UTC\n\nEnd time: Tuesday, February 24, 2026, at 7:00 PM UTC",
+      "rootCause": "An issue with a property update that was introduced in Microsoft Intune build 6.2602.7.2001 was preventing MacOS Wi-Fi policy updates through Microsoft Intune.\n\nNext steps: \n - We're continuing our analysis of the impacting change to better understand the underlying cause of impact and prevent similar issues in the future.\n\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Microsoft Intune",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-02-24T20:57:38.247Z",
+          "postType": "regular",
+          "content": "Title: Admins may be unable to update the MacOS Wi-Fi policy in the Microsoft Intune admin center\n\nUser impact: Admins may have been unable to update the MacOS Wi-Fi policy in the Microsoft Intune admin center.\n\nMore info: This affected all MacOS devices on Microsoft Intune build 6.2602.7.2001 forward. As a work around, admins could have used Microsoft Graph API to update the MacOS Wi-Fi policy.\n\nFinal status: he fix has completed its deployment, and we've validated that this issue is no longer occurring using internal testing and service telemetry.\n\nScope of impact: This may have affected any admin updating the MacOS Wi-Fi policy for users on build 6.2602.7.2001 forward through Microsoft Intune.\n\nStart time: Tuesday, February 10, 2026, at 4:00 PM UTC\n\nEnd time: Tuesday, February 24, 2026, at 7:00 PM UTC\n\nRoot cause: An issue with a property update that was introduced in Microsoft Intune build 6.2602.7.2001 was preventing MacOS Wi-Fi policy updates through Microsoft Intune.\n\nNext steps: \n - We're continuing our analysis of the impacting change to better understand the underlying cause of impact and prevent similar issues in the future.\n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-02-24T05:42:43.533Z",
+          "postType": "regular",
+          "content": "Title: Admins may be unable to update the MacOS Wi-Fi policy in Microsoft Intune\n\nUser impact: Admins may be unable to update the MacOS Wi-Fi policy in Microsoft Intune.\n\nMore info: This affects all MacOS users on Microsoft Intune build 6.2602.7.2001 forward. As a work around, admins can use Microsoft Graph API to update the MacOS Wi-Fi policy.\n\nCurrent status: We validated that the fix for the MacOS Wi-Fi policy and have started the deployment to the remaining affected environment. We'll monitor the deployment to ensure that the impact is remediated.\n\nScope of impact: This may affect all admins updating the MacOS Wi-Fi policy for users on build 6.2602.7.2001 forward through Microsoft Intune.\n\nStart time: Tuesday, February 10, 2026, at 4:00 PM UTC\n\nRoot cause: An issue with a property update that was introduced in Microsoft Intune build 6.2602.7.2001 is preventing MacOS Wi-Fi policy updates through Microsoft Intune.\n\nNext update by: Tuesday, February 24, 2026, at 10:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-02-24T02:07:49.073Z",
+          "postType": "regular",
+          "content": "Title: Admins may be unable to update the MacOS Wi-Fi policy in Microsoft Intune\n\nUser impact: Admins may be unable to update the MacOS Wi-Fi policy in Microsoft Intune.\n\nMore info: This affects all MacOS users on Microsoft Intune build 6.2602.7.2001 forward. As a work around, admins can use Microsoft Graph API to update the MacOS Wi-Fi policy.\n\nCurrent status: The validation of our fix for the MacOS Wi-Fi policy updates is underway. Once validation completes, we'll begin deployment to the affected environment.\n\nScope of impact: This may affect all admins updating the MacOS Wi-Fi policy for users on build 6.2602.7.2001 forward through Microsoft Intune.\n\nStart time: Tuesday, February 10, 2026, at 4:00 PM UTC\n\nRoot cause: An issue with a property update that was introduced in Microsoft Intune build 6.2602.7.2001 is preventing MacOS Wi-Fi policy updates through Microsoft Intune.\n\nNext update by: Tuesday, February 24, 2026, at 7:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-02-23T23:17:07.663Z",
+          "postType": "regular",
+          "content": "Title: Admins may be unable to update the MacOS Wi-Fi policy in Microsoft Intune\n\nUser impact: Admins may be unable to update the MacOS Wi-Fi policy in Microsoft Intune.\n\nMore info: This affects all MacOS users on Microsoft Intune build 6.2602.7.2001 forward. As a work around, admins can use Microsoft Graph API to update the MacOS Wi-Fi policy.\n\nCurrent status: We've identified a property update that was introduced in build 6.2602.7.2001 that’s preventing MacOS Wi-Fi policy updates through Microsoft Intune. We’ve developed a solution and are working on final reviews before deploying. We’ll provide a further update on deployment of this solution with our next communication update.\n\nScope of impact: This may affect all admins updating the MacOS Wi-Fi policy for users on build 6.2602.7.2001 forward through Microsoft Intune.\n\nStart time: Tuesday, February 10, 2026, at 4:00 PM UTC\n\nRoot cause: An issue with a property update that was introduced in Microsoft Intune build 6.2602.7.2001 is preventing MacOS Wi-Fi policy updates through Microsoft Intune.\n\nNext update by: Tuesday, February 24, 2026, at 3:00 AM UTC"
+        }
+      ],
+      "serviceName": "Microsoft Intune",
+      "affectedServices": [
+        "Microsoft Intune"
+      ]
+    },
+    {
+      "id": "CW1226324",
+      "title": "Some users' Copilot prompts return information from Sent and Draft folder messages with Copilot DLP policies configured",
+      "startTime": "2026-01-21T07:25:00Z",
+      "endTime": "2026-02-24T00:09:00Z",
+      "lastModified": "2026-02-24T06:09:33.15Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users' Copilot prompts return information from Sent and Draft folder messages with Copilot DLP policies configured.",
+      "scopeOfImpact": "Impact was specific to users leveraging Microsoft 365 Copilot Chat with email messages in their Drafts or Sent Items folder with a sensitivity label applied and a Copilot DLP policy configured.  \n\nStart time: Wednesday, January 21, 2026, at 7:25 AM UTC \n\nEnd time: Tuesday, February 24, 2026, at 12:09 AM UTC",
+      "rootCause": "A code issue was allowing items in the Sent items and Draft folders to be picked up by Copilot even though confidential labels are set in place. \n\nNext steps: \n- We are refining our procedures to make our service even more resilient moving forward.\n\nThis is the final update for this event.",
+      "nextUpdateBy": "",
+      "feature": "General",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-02-24T06:05:21.94Z",
+          "postType": "regular",
+          "content": "Title: Some users' Copilot prompts return information from Sent and Draft folder messages with Copilot DLP policies configured\n\nUser impact: Users' Copilot prompts return information from Sent and Draft folder messages with Copilot DLP policies configured.\n\nMore info: This issue was specific to Exchange Online email messages that were in the Sent Items and Drafts folders. The Microsoft 365 Copilot \"work tab\" Chat may have processed these email messages for the user that owned them even though these email messages had a sensitivity label applied, a Copilot DLP policy is configured.\n\nFinal status: We have successfully deployed a targeted fix across all impacted environments. The root cause has been addressed, and customers should not experience this issue with email messages going forward.  \n\nScope of impact: Impact was specific to users leveraging Microsoft 365 Copilot Chat with email messages in their Drafts or Sent Items folder with a sensitivity label applied and a Copilot DLP policy configured.  \n\nStart time: Wednesday, January 21, 2026, at 7:25 AM UTC \n\nEnd time: Tuesday, February 24, 2026, at 12:09 AM UTC  \n\nRoot cause: A code issue was allowing items in the Sent items and Draft folders to be picked up by Copilot even though confidential labels are set in place. \n\nNext steps: \n- We are refining our procedures to make our service even more resilient moving forward.\n\nThis is the final update for this event."
+        },
+        {
+          "createdAt": "2026-02-20T01:03:56.39Z",
+          "postType": "regular",
+          "content": "Title: Some users' Copilot prompts return information from Sent and Draft folder messages with Copilot DLP policies configured\n\nUser impact: Users' Copilot prompts return information from Sent and Draft folder messages with Copilot DLP policies configured.\n\nMore info: This issue is specific to Exchange Online email messages that are in the Sent Items and Drafts folders. The Microsoft 365 Copilot \"work tab\" Chat may process these email messages for the user that owns them even though these email messages have a sensitivity label applied and a Copilot DLP policy is configured.\n \nCurrent status: Our targeted code fix to prevent further impact is moving forward and has saturated across the majority of affected environments. Our deployment remains in progress only for a small section of our more complex service environments. As such, we believe the root cause of this issue has been addressed for most customers, and no new email messages for customers who have received the fix will be affected moving forward.\n \nWe’re now completing a longer-term, comprehensive sync to apply this fix retroactively to previously affected messages within the Sent and Draft folders to fully remediate the impact.\n \nScope of impact: Impact is specific to users leveraging Microsoft 365 Copilot Chat with email messages in their Drafts or Sent Items folder with a sensitivity label applied and a Copilot DLP policy configured. This section may be updated as our investigation continues.\n \nStart time: Wednesday, January 21, 2026, at 7:25 AM UTC\n \nRoot cause: A code issue is allowing items in the Sent items and Draft folders to be picked up by Copilot even though confidential labels are set in place.\n \nNext update by: Tuesday, February 24, 2026, at 7:30 AM UTC"
+        },
+        {
+          "createdAt": "2026-02-19T08:33:57.29Z",
+          "postType": "regular",
+          "content": "Title: Some users' Copilot prompts return information from Sent and Draft folder messages with Copilot DLP policies configured\n\nUser impact: Users' Copilot prompts return information from Sent and Draft folder messages with Copilot DLP policies configured.\n\nMore info: This issue is specific to Exchange Online email messages that are in the Sent Items and Drafts folders. The Microsoft 365 Copilot \"work tab\" Chat may process these email messages for the user that owns them even though these email messages have a sensitivity label applied and a Copilot DLP policy is configured.\n \nCurrent status: We've received feedback from some affected users that the deployment fix has resolved impact. We're monitoring the fix as it fully saturates in the remaining affected environments, and we expect full remediation by our next scheduled update.\n \nScope of impact: Users leveraging Microsoft 365 Copilot Chat may notice that email messages in their Drafts or Sent Items folder may be referenced in prompt responses even though these messages may have a sensitivity label applied and a Copilot DLP policy configured. This section may be updated as our investigation continues.\n\nStart time: Wednesday, January 21, 2026, at 7:25 AM UTC\n \nRoot cause: A code issue is allowing items in the Sent items and Draft folders to be picked up by Copilot even though confidential labels are set in place.\n\nNext update by: Tuesday, February 24, 2026, at 7:30 AM UTC"
+        },
+        {
+          "createdAt": "2026-02-19T02:27:38.227Z",
+          "postType": "regular",
+          "content": "Title: Users may notice Copilot prompts returning information from Sent and Draft folder messages with DLP policies configured\n\nUser impact: Users may notice Copilot prompts returning information from Sent and Draft folder messages with DLP policies configured.\n\nMore info: This issue is specific to Exchange Online email messages that are in the Sent Items and Drafts folders. The Microsoft 365 Copilot \"work tab\" Chat may process these email messages for the user that owns them even though these email messages have a sensitivity label applied and a DLP policy is configured.\n\nCurrent status: We have completed deployment of the fix and we’re working with affected users to confirm that the issue is mitigated. \n\nScope of impact: Users leveraging Microsoft 365 Copilot Chat may notice that email messages in their Drafts or Sent Items folder may be referenced in prompt responses even though these messages may have a sensitivity label applied and a DLP policy configured. This section may be updated as our investigation continues.\n \nStart time: Wednesday, January 21, 2026, at 7:25 AM UTC\n\nRoot cause: A code issue is allowing items in the Sent items and Draft folders to be picked up by Copilot even though confidential labels are set in place.\n \nNext update by: Thursday, February 19, 2026, at 9:30 AM UTC"
+        },
+        {
+          "createdAt": "2026-02-18T17:12:22.54Z",
+          "postType": "regular",
+          "content": "Title: Users' sent and draft folder messages with confidential labels may be incorrectly processed by Microsoft Copilot chat\n\nUser impact: Users' sent and draft folder messages with confidential labels may be incorrectly processed by Microsoft Copilot chat.\n\nMore info: This issue is specific to Exchange Online email messages that are in the Sent Items and Drafts folders. The Microsoft 365 Copilot \"work tab\" Chat may process these email messages for the user that owns them even though these email messages have a sensitivity label applied and a DLP policy is configured.\n \nCurrent status: We're continuing to monitor the final stages of our fix deployment as it saturates throughout the remaining affected infrastructure. Once this saturation is complete, we'll reach out to additional users to verify impact has been remediated as expected.\n\nScope of impact: Users leveraging Microsoft 365 Copilot Chat may notice that email messages in their Drafts or Sent Items folder may show up despite them having a sensitivity label applied and a DLP policy configured. This section may be updated as our investigation continues.\n\nStart time: Wednesday, January 21, 2026, at 7:25 AM UTC\n\nRoot cause: A code issue is allowing items in the sent items and draft folders to be picked up by Copilot even though confidential labels are set in place.\n\nNext update by: Thursday, February 19, 2026, at 9:30 AM UTC"
+        }
+      ],
+      "serviceName": "Microsoft 365 Copilot Chat",
+      "affectedServices": [
+        "Microsoft 365 Copilot Chat"
+      ]
+    },
+    {
+      "id": "MV1237654",
+      "title": "Users may be unable to send posts in Microsoft Viva Engage",
+      "startTime": "2026-02-23T19:08:00Z",
+      "endTime": "2026-02-23T19:46:00Z",
+      "lastModified": "2026-02-23T21:11:30.383Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have been unable to send posts in Viva Engage.",
+      "scopeOfImpact": "Any user that attempted to send a post in Viva Engage may have been impacted.\n \nStart time: Monday, February 23, 2026, at 7:08 PM UTC\n \nEnd time: Monday, February 23, 2026, at 7:46 PM UTC",
+      "rootCause": "Routine infrastructure maintenance prevented the affected infrastructure from processing requests to send posts in Viva Engage, which resulted in impact.\n \nNext steps: \n- We're reviewing and improving our routine infrastructure maintenance procedures to prevent similar impact from occurring again in the future.\n \nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Post/Reply/Like",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-02-23T21:11:30.383Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to send posts in Microsoft Viva Engage\n\nUser impact: Users may have been unable to send posts in Viva Engage.\n\nFinal status: We determined that routine infrastructure maintenance prevented the affected infrastructure from processing requests to send posts in Viva Engage, which resulted in impact. We disabled this maintenance and confirmed using our internal telemetry data that impact has been remediated.\n \nScope of impact: Any user that attempted to send a post in Viva Engage may have been impacted.\n \nStart time: Monday, February 23, 2026, at 7:08 PM UTC\n \nEnd time: Monday, February 23, 2026, at 7:46 PM UTC\n \nRoot cause: Routine infrastructure maintenance prevented the affected infrastructure from processing requests to send posts in Viva Engage, which resulted in impact.\n \nNext steps: \n- We're reviewing and improving our routine infrastructure maintenance procedures to prevent similar impact from occurring again in the future.\n \nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-02-23T20:15:41.217Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to send posts in Microsoft Viva Engage\n\nUser impact: Users may have been unable to send posts in Viva Engage.\n\nCurrent status: We've investigated a problem in which users may have been unable to send posts in Viva Engage and confirmed that service is now restored. We'll provide additional information in a closure summary within the \"History\" section of the \"Service health\" dashboard shortly."
+        }
+      ],
+      "serviceName": "Microsoft Viva",
+      "affectedServices": [
+        "Microsoft Viva"
+      ]
+    },
     {
       "id": "SP1177145",
       "title": "Some users with edit and full control permissions may be unable to access or share some items in SharePoint Online",
@@ -2389,124 +2700,6 @@
       "serviceName": "Microsoft 365 Copilot Chat",
       "affectedServices": [
         "Microsoft 365 Copilot Chat"
-      ]
-    },
-    {
-      "id": "EX1223427",
-      "title": "Some users may have been unable to access the Exchange admin center (EAC)",
-      "startTime": "2026-01-28T09:06:00Z",
-      "endTime": "2026-01-28T11:12:00Z",
-      "lastModified": "2026-01-28T12:43:09.257Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users may have been unable to access the EAC.",
-      "scopeOfImpact": "Impact was specific to some users who were served through the affected infrastructure attempting to access the EAC.\n \nStart time: Wednesday, January 28, 2026, at 9:06 AM UTC\n \nEnd time: Wednesday, January 28, 2026, at 11:12 AM UTC",
-      "rootCause": "A section of infrastructure, responsible for facilitating EAC access, unexpectedly began performing below acceptable performance thresholds and caused impact.\n \nNext steps:\n- We're reviewing performance data and trends on the affected systems to help prevent similar impact from happening again.\n\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Tenant Administration (Provisioning, Remote PowerShell)",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-01-28T12:39:32.867Z",
-          "postType": "regular",
-          "content": "Title: Some users may have been unable to access the Exchange admin center (EAC)\n\nUser impact: Users may have been unable to access the EAC.\n\nFinal status: We've identified that a section of infrastructure, responsible for facilitating EAC access, unexpectedly began performing below acceptable performance thresholds and caused impact. We've redirected affected traffic to alternate healthy infrastructure and confirmed impact is no longer occurring after a period of monitoring.\n \nScope of impact: Impact was specific to some users who were served through the affected infrastructure attempting to access the EAC.\n \nStart time: Wednesday, January 28, 2026, at 9:06 AM UTC\n \nEnd time: Wednesday, January 28, 2026, at 11:12 AM UTC\n \nRoot cause: A section of infrastructure, responsible for facilitating EAC access, unexpectedly began performing below acceptable performance thresholds and caused impact.\n \nNext steps:\n- We're reviewing performance data and trends on the affected systems to help prevent similar impact from happening again.\n\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-01-28T11:29:05.203Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to access the Exchange admin center (EAC)\n\nUser impact: Users may be unable to access the EAC.\n\nCurrent status: We're continuing to review service monitoring telemetry to isolate the root cause and develop a remediation plan.\n \nScope of impact: Impact is specific to some users who are served through the affected infrastructure attempting to access the EAC.\n \nNext update by: Wednesday, January 28, 2026, at 2:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-01-28T09:49:26.23Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to access the Exchange admin center (EAC)\n\nUser impact: Users may be unable to access the EAC.\n\nCurrent status: We're reviewing service monitoring telemetry to isolate the root cause and develop a remediation plan.\n \nScope of impact: Impact is specific to some users who are served through the affected infrastructure attempting to access the EAC.\n \nNext update by: Wednesday, January 28, 2026, at 12:00 PM UTC"
-        }
-      ],
-      "serviceName": "Exchange Online",
-      "affectedServices": [
-        "Exchange Online"
-      ]
-    },
-    {
-      "id": "EX1221076",
-      "title": "Users may have been unable to delete email messages after running the QUIT command through the POP3 connection method",
-      "startTime": "2026-01-20T05:01:00Z",
-      "endTime": "2026-01-26T05:19:00Z",
-      "lastModified": "2026-01-26T08:47:56.04Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users may have been unable to delete email messages after running the QUIT command through the POP3 connection method.",
-      "scopeOfImpact": "Impact was specific to some users attempting to delete email messages after running the QUIT command using POP3 connection method.\n \nStart time: Tuesday, January 20, 2026, at 5:01 AM UTC\n \nEnd time: Saturday, January 24, 2026, at 5:19 AM UTC",
-      "rootCause": "A package version conflict introduced a regression that caused the POP3 QUIT command to fail after a DELE operation.\n \nNext steps:\n- We're reviewing our package provisioning procedures to help prevent similar problems in the future.\n\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Mailbox Provisioning - transient failures",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-01-26T08:47:56.04Z",
-          "postType": "regular",
-          "content": "Title: Users may have been unable to delete email messages after running the QUIT command through the POP3 connection method\n\nUser impact: Users may have been unable to delete email messages after running the QUIT command through the POP3 connection method.\n\nMore info: Specifically, POP3 users could read and download their email messages, but any messages they deleted may not have actually been removed, because the session failed to close properly. If a message was deleted on Exchange Online using the DELE command, the POP3 QUIT command may have failed, preventing the session from closing cleanly and caused messages marked for deletion to remain in the mailbox.\n\nIf the user was not using POP3, they were not impacted.\n \nFinal status: We’ve confirmed that the fix deployment has completed successfully and that the issue has been fully resolved.\n \nScope of impact: Impact was specific to some users attempting to delete email messages after running the QUIT command using POP3 connection method.\n \nStart time: Tuesday, January 20, 2026, at 5:01 AM UTC\n \nEnd time: Saturday, January 24, 2026, at 5:19 AM UTC\n \nRoot cause: A package version conflict introduced a regression that caused the POP3 QUIT command to fail after a DELE operation.\n \nNext steps:\n- We're reviewing our package provisioning procedures to help prevent similar problems in the future.\n\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-01-23T09:13:56.21Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to delete email messages after running the QUIT command when POP3 connection method is used\n\nUser impact: Users may be unable to delete email messages after running the QUIT command when POP3 connection method is used.\n\nMore info: Specifically, POP3 users can read and download their email messages, but any messages they delete may not actually be removed, because the session fails to close properly. If a message is deleted on Exchange Online using the DELE command, the POP3 QUIT command may fail, preventing the session from closing cleanly and causing messages marked for deletion to remain in the mailbox.\n\nIf the user is not using POP3, they are not impacted. \n \nCurrent status: We’ve begun rolling out the fix and can confirm it has been successfully deployed to approximately 56% of the affected environments. We’ll continue monitoring progress and will provide an updated completion timeline as soon as it’s available. \n \nScope of impact: Impact is specific to some users attempting to delete email messages after running the QUIT command using POP3 connection method.\n \nRoot cause: A package version conflict introduced a regression that causes the POP3 QUIT command to fail after a DELE operation.\n \nNext update by: Monday, January 26, 2026, at 11:00 AM UTC"
-        },
-        {
-          "createdAt": "2026-01-22T11:59:05.153Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to delete email messages after running the QUIT command when POP3 connection method is used \n\nUser impact: Users may be unable to delete email messages after running the QUIT command when POP3 connection method is used. \n\nMore info: Specifically, POP3 users can read and download their email messages, but any messages they delete may not actually be removed, because the session fails to close properly. If a message is deleted on Exchange Online using the DELE command, the POP3 QUIT command may fail, preventing the session from closing cleanly and causing messages marked for deletion to remain in the mailbox. \n\nIf the user is not using POP3, they are not impacted.\n \nCurrent status: We’ve identified an issue where a recent update introduced a conflict that prevents the POP3 QUIT command from completing after a message is deleted. We've validated a fix in our test environment and initiated a deployment to affected users. The deployment is progressing through a gradual rollout and we expect full completion within the next 24 to 48 hours. \n \nScope of impact: Impact is specific to some users attempting to delete email messages after running the QUIT command using POP3 connection method.  \n \nRoot cause: A package version conflict introduced a regression that causes the POP3 QUIT command to fail after a DELE operation. \n \nNext update by: Friday, January 23, 2026, at 10:00 AM UTC "
-        }
-      ],
-      "serviceName": "Exchange Online",
-      "affectedServices": [
-        "Exchange Online"
-      ]
-    },
-    {
-      "id": "MO1218616",
-      "title": "Some admins may be unable to view pooled storage management in the Microsoft 365 admin center",
-      "startTime": "2026-01-05T22:40:00Z",
-      "endTime": "2026-01-25T22:28:00Z",
-      "lastModified": "2026-01-26T21:54:06.72Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Admins may have been unable to view pooled storage management in the Microsoft 365 admin center.",
-      "scopeOfImpact": "Admins in Microsoft 365 Education organizations attempting to view pooled storage management in the Microsoft 365 admin center may have been impacted.\n\nStart time: Monday, January 5, 2026, at 10:40 PM UTC\n\nEnd time: Sunday, January 25, 2026, at 10:28 PM UTC",
-      "rootCause": "A recent code change intended to update how storage reports were loaded to the Microsoft 365 admin center introduced a regression which was causing the impact.\n\nNext steps: \n - We're reviewing our code change testing and validation procedures to identify opportunities to identify impact earlier and prevent similar future occurrences.\n\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Company or User Administration",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-01-26T21:54:06.72Z",
-          "postType": "regular",
-          "content": "Title: Some admins may be unable to view pooled storage management in the Microsoft 365 admin center\n\nUser impact: Admins may have been unable to view pooled storage management in the Microsoft 365 admin center.\n\nMore info: This issue was specific to Microsoft 365 Education admins.\n\nFinal status: We've completed the deployment of our fix and confirmed after testing with a subset of affected users that this has successfully remediated impact.\n\nScope of impact: Admins in Microsoft 365 Education organizations attempting to view pooled storage management in the Microsoft 365 admin center may have been impacted.\n\nStart time: Monday, January 5, 2026, at 10:40 PM UTC\n\nEnd time: Sunday, January 25, 2026, at 10:28 PM UTC\n\nRoot cause: A recent code change intended to update how storage reports were loaded to the Microsoft 365 admin center introduced a regression which was causing the impact.\n\nNext steps: \n - We're reviewing our code change testing and validation procedures to identify opportunities to identify impact earlier and prevent similar future occurrences.\n\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-01-23T18:39:14.06Z",
-          "postType": "regular",
-          "content": "Title: Some admins may be unable to view pooled storage management in the Microsoft 365 admin center\n\nUser impact: Admins may be unable to view pooled storage management in the Microsoft 365 admin center.\n\nMore info: This issue is specific to Microsoft 365 Education admins.\n\nCurrent status: The code fix has saturated to 92 percent of the affected environment. As the deployment progresses and applies to the content hosting infrastructure to which admins are connecting, admins may begin to see the issue automatically resolve upon refreshing the storage report page. We expect the code fix will saturate the affected environment 100 percent on Wednesday, January 28, 2026.\n\nScope of impact: Admins in Microsoft 365 Education organizations attempting to view pooled storage management in the Microsoft 365 admin center may be impacted. This information may be updated as our investigation continues.\n\nStart time: Monday, January 5, 2026, at 10:40 PM UTC\n\nRoot cause: A recent code change intended to update how storage reports are loaded to the Microsoft 365 admin center introduced a regression which is causing the impact.\n\nNext update by: Wednesday, January 28, 2026, at 8:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-01-20T19:00:21.69Z",
-          "postType": "regular",
-          "content": "Title: Some admins may be unable to view pooled storage management in the Microsoft 365 admin center\n\nUser impact: Admins may be unable to view pooled storage management in the Microsoft 365 admin center.\n\nMore info: This issue is specific to Microsoft 365 Education admins.\n\nCurrent status: The code fix has saturated to 66 percent of the affected environment. As the deployment progresses and applies to the content hosting infrastructure to which admins are connecting, admins may begin to see the issue automatically resolve upon refreshing the storage report page.\n\nScope of impact: Admins in Microsoft 365 Education organizations attempting to view pooled storage management in the Microsoft 365 admin center may be impacted. This information may be updated as our investigation continues.\n\nStart time: Monday, January 5, 2026, at 10:40 PM UTC\n\nRoot cause: A recent code change intended to update how storage reports are loaded to the Microsoft 365 admin center introduced a regression which is causing the impact.\n\nNext update by: Friday, January 23, 2026, at 8:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-01-16T17:34:29.89Z",
-          "postType": "regular",
-          "content": "Title: Some admins may be unable to view pooled storage management in the Microsoft 365 admin center\n\nUser impact: Admins may be unable to view pooled storage management in the Microsoft 365 admin center.\n\nMore info: This issue is specific to Microsoft 365 Education admins.\n\nCurrent status: We've identified a recent code change intended to update how storage reports are loaded to the Microsoft 365 admin center introduced a regression which is causing the impact. We've developed and are deploying a code fix to correct this issue and confirmed the deployment is currently saturated 13 percent of the infrastructure that supports Microsoft 365 Education. We'll provide a timeline for remediation as one becomes available.\n\nScope of impact: Admins in Microsoft 365 Education organizations attempting to view pooled storage management in the Microsoft 365 admin center may be impacted. This information may be updated as our investigation continues.\n\nStart time: Monday, January 5, 2026, at 10:40 PM UTC\n\nRoot cause: A recent code change intended to update how storage reports are loaded to the Microsoft 365 admin center introduced a regression which is causing the impact.\n\nNext update by: Friday, January 23, 2026, at 7:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-01-16T15:34:30.963Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to access or view the storage usage page in the M365 admin center \n\nUser impact: Users may be unable to access or view the storage usage page in the M365 admin center. \n\nCurrent status: We're reviewing service monitoring telemetry to isolate the root cause and determine our next troubleshooting steps.  \n \nScope of impact: Some users attempting to access or view the storage usage page in the M365 admin center may be impacted. This information may be updated as our investigation continues. \n \nNext update by: Friday, January 16, 2026, at 5:30 PM UTC"
-        }
-      ],
-      "serviceName": "Microsoft 365 suite",
-      "affectedServices": [
-        "Microsoft 365 suite"
       ]
     }
   ]
