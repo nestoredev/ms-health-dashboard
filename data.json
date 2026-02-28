@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-28T13:50:15.902Z",
+  "lastUpdated": "2026-02-28T14:20:24.130Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -2751,37 +2751,6 @@
       "serviceName": "Microsoft Viva",
       "affectedServices": [
         "Microsoft Viva"
-      ]
-    },
-    {
-      "id": "CW1224109",
-      "title": "Some users using Microsoft 365 Copilot Chat may have not seen any responses being generated",
-      "startTime": "2026-01-29T09:20:00Z",
-      "endTime": "2026-01-29T14:00:00Z",
-      "lastModified": "2026-01-29T14:41:20.25Z",
-      "status": "serviceRestored",
-      "severity": "incident",
-      "userImpact": "Users using Copilot Chat may not have seen any responses being generated.",
-      "scopeOfImpact": "Some users attempting to generate responses within Copilot Chat in the Europe may have been impacted.\n \nStart time: Thursday, January 29, 2026, at 9:20 AM UTC\n \nEnd time: Thursday, January 29, 2026, at 2:00 PM UTC",
-      "rootCause": "A section of Microsoft API service infrastructure had dropped below our manageable service performance thresholds, producing failures for users generating responses for Copilot Chat.\n \nNext steps:\n- We're further analyzing the affected subset of Microsoft API service infrastructure in our effort to isolate the source for the lower-than-normal performance levels, and to help prevent similar issues in the future.\n\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "General",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-01-29T14:14:32.45Z",
-          "postType": "regular",
-          "content": "Title: Some users using Microsoft 365 Copilot Chat may have not seen any responses being generated\n\nUser impact: Users using Copilot Chat may not have seen any responses being generated.\n\nMore info: Users may have seen the following error message \"Something went wrong. Please try again.\"\n \nFinal status: We've determined that a section of Microsoft API service infrastructure had dropped below our manageable service performance thresholds, producing failures for users generating responses for Copilot Chat. While we further investigate the source for the lower-than-expected service infrastructure performance levels, we've temporarily increased performance parameters to mitigate impact.\n \nScope of impact: Some users attempting to generate responses within Copilot Chat in the Europe may have been impacted.\n \nStart time: Thursday, January 29, 2026, at 9:20 AM UTC\n \nEnd time: Thursday, January 29, 2026, at 2:00 PM UTC\n \nRoot cause: A section of Microsoft API service infrastructure had dropped below our manageable service performance thresholds, producing failures for users generating responses for Copilot Chat.\n \nNext steps:\n- We're further analyzing the affected subset of Microsoft API service infrastructure in our effort to isolate the source for the lower-than-normal performance levels, and to help prevent similar issues in the future.\n\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-01-29T12:25:21.317Z",
-          "postType": "regular",
-          "content": "Title: Some users using Microsoft 365 Copilot Chat may not see any responses being generated\n\nUser impact: Users using Copilot Chat may not see any responses being generated.\n\nMore info: Users may see the following error message \"Something went wrong. Please try again.\"\n\nCurrent status: We've received reports indicating users may be unable to generate responses within Copilot Chat. We're reviewing service monitoring telemetry to isolate the root cause and determine our next troubleshooting steps.\n\nScope of impact: Some users attempting to generate responses within Copilot Chat in the Europe may be impacted.\n\nNext update by: Thursday, January 29, 2026, at 2:30 PM UTC"
-        }
-      ],
-      "serviceName": "Microsoft 365 Copilot Chat",
-      "affectedServices": [
-        "Microsoft 365 Copilot Chat"
       ]
     }
   ]
