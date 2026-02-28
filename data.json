@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-27T19:20:02.541Z",
+  "lastUpdated": "2026-02-28T13:50:15.902Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -787,16 +787,21 @@
           "title": "Some users may see delays with Microsoft Planner tasks updating to Microsoft To-Do",
           "startTime": "2026-02-03T00:00:00Z",
           "endTime": null,
-          "lastModified": "2026-02-24T22:41:29.707Z",
+          "lastModified": "2026-02-27T22:22:50.35Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may see delays with Microsoft Planner tasks updating to Microsoft To-Do.",
-          "scopeOfImpact": "This issue may impact some users in the North America and Europe regions who are attempting to get Microsoft Planner tasks updated to Microsoft To-Do.\n \nStart time: Tuesday, February 3, 2026, at 12:00 AM UTC",
+          "scopeOfImpact": "This issue may impact some users in the North America and Europe regions who are attempting to get Microsoft Planner tasks updated to Microsoft To-Do.\n \nStart time: Tuesday, February 3, 2026, at 12:00 AM UTC\n \nEstimated time to resolve: We anticipate that the backlog of accumulated requests will be processed and the impact remediated by Tuesday, March 3, 2026, at 12:00 AM UTC.",
           "rootCause": "An issue is causing delays within the data pipeline that facilitates Microsoft Planner task updates in Microsoft To-Do, leading to impact.",
-          "nextUpdateBy": "Saturday, February 28, 2026, at 12:00 AM UTC",
+          "nextUpdateBy": "Tuesday, March 3, 2026, at 12:00 AM UTC",
           "feature": "Task detail",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-02-27T22:22:50.35Z",
+              "postType": "regular",
+              "content": "Title: Some users may see delays with Microsoft Planner tasks updating to Microsoft To-Do\n\nUser impact: Users may see delays with Microsoft Planner tasks updating to Microsoft To-Do.\n\nCurrent status: The backlog of accumulated events continues to be processed as expected, and we anticipate the backlog will be fully cleared by our next scheduled communications update.\n \nScope of impact: This issue may impact some users in the North America and Europe regions who are attempting to get Microsoft Planner tasks updated to Microsoft To-Do.\n \nStart time: Tuesday, February 3, 2026, at 12:00 AM UTC\n \nEstimated time to resolve: We anticipate that the backlog of accumulated requests will be processed and the impact remediated by Tuesday, March 3, 2026, at 12:00 AM UTC.\n \nRoot cause: An issue is causing delays within the data pipeline that facilitates Microsoft Planner task updates in Microsoft To-Do, leading to impact.\n \nNext update by: Tuesday, March 3, 2026, at 12:00 AM UTC"
+            },
             {
               "createdAt": "2026-02-24T22:41:29.707Z",
               "postType": "regular",
@@ -1328,9 +1333,45 @@
     },
     {
       "service": "Microsoft Viva",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "Viva",
-      "issues": []
+      "issues": [
+        {
+          "id": "MV1240680",
+          "title": "Users may see an action count of zero in Microsoft Viva Insights for the Copilot metrics \"Total emails sent\" field",
+          "startTime": "2026-02-27T20:56:36Z",
+          "endTime": null,
+          "lastModified": "2026-02-28T00:02:49.417Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may see an action count of zero in Microsoft Viva Insights for the Copilot metrics \"Total emails sent\" field.",
+          "scopeOfImpact": "Users reviewing the Copilot metrics \"Total emails sent\" field may be impacted.\n\nStart time: Thursday, January 22, 2026, at 7:26 PM UTC",
+          "rootCause": "An updated metadata file that contained invalid metric logic is resulting in impact",
+          "nextUpdateBy": "Tuesday, March 3, 2026, at 3:30 AM UTC",
+          "feature": "General",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-02-27T23:01:00.9Z",
+              "postType": "regular",
+              "content": "Title: Users may see an action count of zero in Microsoft Viva Insights for the Copilot metrics \"Total emails sent\" field\n\nUser impact: Users may see an action count of zero in Microsoft Viva Insights for the Copilot metrics \"Total emails sent\" field.\n\nMore info: This metric should be accounting for users that have selected \"Send message with elaborate\" in Outlook, but it isn't. The total action count appears to be zero.\n\nCurrent status: We've identified that this was caused by an updated metadata file that contained invalid metric logic, resulting in impact. We're reviewing options to mitigate this issue as well as our options for recovering the reporting data.\n\nScope of impact: Users reviewing the Copilot metrics \"Total emails sent\" field may be impacted.\n\nStart time: Thursday, January 22, 2026, at 7:26 PM UTC\n\nRoot cause: An updated metadata file that contained invalid metric logic is resulting in impact\n\nNext update by: Tuesday, March 3, 2026, at 3:30 AM UTC"
+            },
+            {
+              "createdAt": "2026-02-27T21:49:05.18Z",
+              "postType": "regular",
+              "content": "Title: Users may see an action count of zero in Microsoft Viva Insights for the Copilot metrics \"Total emails sent\" field\n\nUser impact: Users may see an action count of zero in Microsoft Viva Insights for the Copilot metrics \"Total emails sent\" field.\n\nMore info: This metric should be accounting for users that have selected \"Send message with elaborate\" in Outlook, but it isn't. The total action count appears to be zero.\n\nCurrent status: We're reviewing internal telemetry data to determine why users may see an action count of zero in Microsoft Viva Insights for the Copilot metrics \"Total emails sent\" field.\n\nScope of impact: Users reviewing the Copilot metrics \"Total emails sent\" field may be impacted.\n\nNext update by: Friday, February 27, 2026, at 11:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-02-27T21:10:15.8Z",
+              "postType": "regular",
+              "content": "Title: Users may see an action count of zero in Microsoft Viva Insights for the Copilot metrics \"Total emails sent\" field\n\nUser impact: Users may see an action count of zero in Microsoft Viva Insights for the Copilot metrics \"Total emails sent\" field.\n\nMore info: This metric should be accounting for users that have selected \"Send message with elaborate\" in Outlook, but it isn't. The total action count appears to be zero.\n\nCurrent status: We're investigating a potential issue with Microsoft Viva Insights and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Viva"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft Dataverse",
@@ -1346,9 +1387,50 @@
     },
     {
       "service": "Microsoft Purview",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "Purview",
-      "issues": []
+      "issues": [
+        {
+          "id": "MP1240709",
+          "title": "Admin updates to the Microsoft Purview compliance portal may not be implemented as expected",
+          "startTime": "2026-02-27T22:06:09Z",
+          "endTime": null,
+          "lastModified": "2026-02-28T02:06:43.917Z",
+          "status": "serviceDegradation",
+          "severity": "incident",
+          "userImpact": "Admin updates to the Microsoft Purview compliance portal may not be implemented as expected.",
+          "scopeOfImpact": "Admins who attempt to update to policies in the Microsoft Purview compliance portal may not be able to do so.",
+          "rootCause": "",
+          "nextUpdateBy": "Saturday, February 28, 2026, at 7:00 PM UTC",
+          "feature": "General",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-02-28T02:06:43.917Z",
+              "postType": "regular",
+              "content": "Title: Admin updates to the Microsoft Purview compliance portal may not be implemented as expected\n\nUser impact: Admin updates to the Microsoft Purview compliance portal may not be implemented as expected.\n\nMore info: This may impact changes to the following policies made since Wednesday, February 25, 2026:\n \n-Sensitivity Labels\n-Microsoft Purview Data Loss Prevention (DLP) policies\n-Holds\n-Custom Tags\n \n \nAdditionally, admins aren’t notified if the policies don’t sync as expected.\n\nCurrent status: We're pursuing multiple workstreams aimed at better understanding the nature of the issue, including generation of policies within an internal testing environment. In parallel, we're continuing our work to validate that previous component changes are the source of impact so as to generate an effective code fix.\n\nScope of impact: Admins who attempt to update to policies in the Microsoft Purview compliance portal may not be able to do so.\n\nNext update by: Saturday, February 28, 2026, at 7:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-02-28T01:12:16.837Z",
+              "postType": "regular",
+              "content": "Title: Admin updates to the Microsoft Purview compliance portal may not be implemented as expected\n\nUser impact: Admin updates to the Microsoft Purview compliance portal may not be implemented as expected.\n\nMore info: This may impact changes to the following policies made since Wednesday, February 25, 2026:\n \n-Sensitivity Labels\n-Microsoft Purview Data Loss Prevention (DLP) policies\n-Holds\n-Custom Tags\n \n \nAdditionally, admins aren’t notified if the policies don’t sync as expected.\n\nCurrent status: We're continuing to validate whether the previously mentioned component changes are the source of impact as well as developing and testing a code fix.\n\nScope of impact: Admins who attempt to update to policies in the Microsoft Purview compliance portal may not be able to do so.\n\nNext update by: Saturday, February 28, 2026, at 7:00 AM UTC"
+            },
+            {
+              "createdAt": "2026-02-27T23:19:52.147Z",
+              "postType": "regular",
+              "content": "Title: Admin updates to the Microsoft Purview compliance portal may not be implemented as expected\n\nUser impact: Admin updates to the Microsoft Purview compliance portal may not be implemented as expected.\n\nMore info: This may impact changes to the following policies made since Wednesday, February 25, 2026:\n \n-Sensitivity Labels\n-Microsoft Purview Data Loss Prevention (DLP) policies\n-Holds\n-Custom Tags\n \n \nAdditionally, admins aren’t notified if the policies don’t sync as expected.\n\nCurrent status: We've identified some components of a recent update may have changed event handling for the affected policies, resulting in this impacting event. We're validating whether this is the source of this problem and testing some code fixes that are directed towards remediating this issue.\n\nScope of impact: Admins who attempt to update to policies in the Microsoft Purview compliance portal may not be able to do so.\n\nNext update by: Saturday, February 28, 2026, at 1:30 AM UTC"
+            },
+            {
+              "createdAt": "2026-02-27T22:18:02.677Z",
+              "postType": "regular",
+              "content": "Title: Admin updates to the Microsoft Purview compliance portal may not be implemented as expected\n\nUser impact: Admin updates to the Microsoft Purview compliance portal may not be implemented as expected.\n\nMore info: More info: This may impact new changes to policies such as:\n \n-Sensitivity Labels\n-Microsoft Purview Data Loss Prevention (DLP) policies\n-Holds\n-Custom Tags\n \nAdditionally, admins aren’t notified if the policies don’t sync as expected.\n\nCurrent status: We're investigating the back-end service code updates to determine if any recent changes are responsible for this impacting event.\n\nScope of impact: Admins who attempt to update to policies in the Microsoft Purview compliance portal may not be able to do so.\n\nNext update by: Friday, February 27, 2026, at 11:30 AM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Purview"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft Clipchamp ",
