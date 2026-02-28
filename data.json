@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-28T22:21:57.657Z",
+  "lastUpdated": "2026-02-28T22:52:03.909Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -2715,47 +2715,6 @@
       "serviceName": "Exchange Online",
       "affectedServices": [
         "Exchange Online"
-      ]
-    },
-    {
-      "id": "MV1224509",
-      "title": "Users may be unable to access Microsoft Viva Engage content for the first time in the Microsoft Teams mobile app",
-      "startTime": "2026-01-29T09:00:00Z",
-      "endTime": "2026-01-29T22:50:00Z",
-      "lastModified": "2026-01-29T23:26:24.817Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users may have been unable to access Microsoft Viva Engage content for the first time in the Microsoft Teams mobile app.",
-      "scopeOfImpact": "Any users attempting to access Microsoft Viva Engage content for the first time in the Microsoft Teams mobile app, or any network admin attempting to change a user's network settings may have been impacted.\n\nStart time: Thursday, January 29, 2026, at 9:00 AM UTC\n\nEnd time: Thursday, January 29, 2026, at 10:50 PM UTC",
-      "rootCause": "A recent schema field update was added to the network settings, preventing users from accessing Microsoft Viva Engage content for the first time in the Microsoft Teams mobile app, and prevented network admins from making network settings changes.\n\nNext steps: \n - We're reviewing and improving our schema field update validation procedure to detect and prevent similar issues from occurring in the future.\n\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Upload files/notes/documents",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-01-29T23:17:32.297Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to access Microsoft Viva Engage content for the first time in the Microsoft Teams mobile app\n\nUser impact: Users may have been unable to access Microsoft Viva Engage content for the first time in the Microsoft Teams mobile app.\n\nMore info: Additionally, network admins may have been unable to change network settings for users.\n\nFinal status: We reverted the offending change and confirmed using our internal telemetry data that impact is remediated.\n\nScope of impact: Any users attempting to access Microsoft Viva Engage content for the first time in the Microsoft Teams mobile app, or any network admin attempting to change a user's network settings may have been impacted.\n\nStart time: Thursday, January 29, 2026, at 9:00 AM UTC\n\nEnd time: Thursday, January 29, 2026, at 10:50 PM UTC\n\nRoot cause: A recent schema field update was added to the network settings, preventing users from accessing Microsoft Viva Engage content for the first time in the Microsoft Teams mobile app, and prevented network admins from making network settings changes.\n\nNext steps: \n - We're reviewing and improving our schema field update validation procedure to detect and prevent similar issues from occurring in the future.\n\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-01-29T22:27:59.983Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to access Microsoft Viva Engage content for the first time in the Microsoft Teams mobile app\n\nUser impact: Users may be unable to access Microsoft Viva Engage content for the first time in the Microsoft Teams mobile app.\n\nMore info: Additionally, network admins may be unable to change network settings for users.\n\nCurrent status: At the current stage of our update reversion, we've confirmed that users are able to access Microsoft Viva engage content, but network admins are still unable to change network settings. We're continuing to revert the offending update and expect it should complete and fully remediate impact by our next scheduled update.\n\nScope of impact: Any users attempting to access Microsoft Viva Engage content for the first time in the Microsoft Teams mobile app, or any network admin attempting to change a user's network settings.\n\nStart time: Thursday, January 29, 2026, at 9:00 AM UTC\n\nRoot cause: A recent schema field update was added to the network settings, preventing users from accessing Microsoft Viva Engage content for the first time in the Microsoft Teams mobile app, and preventing network admins from making network settings changes.\n\nNext update by: Friday, January 30, 2026, at 12:30 AM UTC"
-        },
-        {
-          "createdAt": "2026-01-29T20:55:31.057Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to access Microsoft Viva Engage content for the first time in the Microsoft Teams mobile app\n\nUser impact: Users may be unable to access Microsoft Viva Engage content for the first time in the Microsoft Teams mobile app.\n\nMore info: Additionally, network admins may be unable to change network settings for users.\n \nCurrent status: We've identified that a recent schema field update was added to the network settings, preventing users from accessing Microsoft Viva Engage content for the first time in the Microsoft Teams mobile app, and preventing network admins from making network settings changes. We're reverting this update to remediate impact.\n \nScope of impact: Any users attempting to access Microsoft Viva Engage content for the first time in the Microsoft Teams mobile app, or any network admin attempting to change a user's network settings.\n \nRoot cause: A recent schema field update was added to the network settings, preventing users from accessing Microsoft Viva Engage content for the first time in the Microsoft Teams mobile app, and preventing network admins from making network settings changes.\n \nNext update by: Thursday, January 29, 2026, at 10:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-01-29T20:10:59.827Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to access Microsoft Viva Engage content for the first time in the Microsoft Teams mobile app\n\nUser impact: Users may be unable to access Microsoft Viva Engage content for the first time in the Microsoft Teams mobile app.\n\nMore info: Additionally, network admins may be unable to change network settings for users.\n \nCurrent status: We're investigating a potential issue with Microsoft Viva Engage and checking for impact to your organization. We'll provide an update within 30 minutes."
-        }
-      ],
-      "serviceName": "Microsoft Viva",
-      "affectedServices": [
-        "Microsoft Viva"
       ]
     }
   ]
