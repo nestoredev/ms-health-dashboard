@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-28T17:51:05.705Z",
+  "lastUpdated": "2026-02-28T18:21:11.181Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1395,16 +1395,21 @@
           "title": "Admin updates to the Microsoft Purview compliance portal may not be implemented as expected",
           "startTime": "2026-02-27T22:06:09Z",
           "endTime": null,
-          "lastModified": "2026-02-28T02:06:43.917Z",
+          "lastModified": "2026-02-28T18:03:54.1Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Admin updates to the Microsoft Purview compliance portal may not be implemented as expected.",
           "scopeOfImpact": "Admins who attempt to update to policies in the Microsoft Purview compliance portal may not be able to do so.",
           "rootCause": "",
-          "nextUpdateBy": "Saturday, February 28, 2026, at 7:00 PM UTC",
+          "nextUpdateBy": "Monday, March 2, 2026, at 2:00 AM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-02-28T18:03:54.1Z",
+              "postType": "regular",
+              "content": "Title: Admin updates to the Microsoft Purview compliance portal may not be implemented as expected\n\nUser impact: Admin updates to the Microsoft Purview compliance portal may not be implemented as expected.\n\nMore info: This may impact changes to the following policies made since Wednesday, February 25, 2026:\n\n-Sensitivity Labels\n-Microsoft Purview Data Loss Prevention (DLP) policies\n-Holds\n-Retention Policies\n\nAdditionally, admins aren’t notified if the policies don’t sync as expected.\n \nCurrent status: We've updated the More info section of this communication as further investigation has identified that Custom Holds aren't affected by this issue. We've also identified that changes made to Retention Policies may be impacted.\n \nWe’ve isolated a specific component change that we suspect is causing the impact. We’ve developed a fix to address this change and we're deploying it to our internal test environment to validate that the fix is a viable remediation plan. We’ll aim to provide a timeline for completing internal validations by our next scheduled communications update.\n \nScope of impact: Admins who attempt to update to policies in the Microsoft Purview compliance portal may not be able to do so.\n \nNext update by: Monday, March 2, 2026, at 2:00 AM UTC"
+            },
             {
               "createdAt": "2026-02-28T02:06:43.917Z",
               "postType": "regular",
