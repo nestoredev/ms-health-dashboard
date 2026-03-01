@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-01T17:55:33.082Z",
+  "lastUpdated": "2026-03-01T18:25:38.403Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -2669,52 +2669,6 @@
       "serviceName": "Microsoft 365 suite",
       "affectedServices": [
         "Microsoft 365 suite"
-      ]
-    },
-    {
-      "id": "EX1224375",
-      "title": "Users routing their Exchange Online email through a third-party protection service may have send and receive delays",
-      "startTime": "2026-01-26T06:00:00Z",
-      "endTime": "2026-01-30T18:25:00Z",
-      "lastModified": "2026-01-30T19:43:40.45Z",
-      "status": "serviceRestored",
-      "severity": "incident",
-      "userImpact": "Users' Exchange Online email routed through a third-party protection service may have been delayed.",
-      "scopeOfImpact": "This problem may have impacted any user sending or receiving email messages when leveraging a specific third-party email protection service.\n\nStart time: Monday, January 26, 2026, at 6:00 AM UTC\n\nEnd time: Friday, January 30, 2026, at 6:25 PM UTC",
-      "rootCause": "A cache limit configuration that helps facilitate the impact scenario process with SMTP mail flow was misconfigured, resulting in impact.\n\nNext steps: \n - We're continuing our research into identifying the root cause of this impacting event to better understand how to prevent it from happening again in the future.\n\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Mailflow - delayed delivery from Internet",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-01-30T19:26:22.93Z",
-          "postType": "regular",
-          "content": "Title: Users routing their Exchange Online email through a third-party protection service may have send and receive delays\n\nUser impact: Users' Exchange Online email routed through a third-party protection service may have been delayed.\n\nMore info: This issue specifically impacted users who use Simple Mail Transfer Protocol (SMTP) as their Exchange Online connection method and routed their email messages through a specific third-party email protection service. The email delays, which impacted both sending and receiving email, occurred in all Exchange Online connection methods.\n\nFinal status: We've fully implemented our identified configuration change and confirmed using internal telemetry that it effectively mitigated this issue. We determined that a cache limit configuration that helps facilitate the impact scenario process with SMTP mail flow was misconfigured, resulting in impact.\n\nScope of impact: This problem may have impacted any user sending or receiving email messages when leveraging a specific third-party email protection service.\n\nStart time: Monday, January 26, 2026, at 6:00 AM UTC\n\nEnd time: Friday, January 30, 2026, at 6:25 PM UTC\n\nRoot cause: A cache limit configuration that helps facilitate the impact scenario process with SMTP mail flow was misconfigured, resulting in impact.\n\nNext steps: \n - We're continuing our research into identifying the root cause of this impacting event to better understand how to prevent it from happening again in the future.\n\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-01-30T17:49:22.183Z",
-          "postType": "regular",
-          "content": "Title: Users routing their Exchange Online email through a third-party protection service may have send and receive delays\n\nUser impact: Users routing their Exchange Online email through a third-party protection service may have send and receive delays.\n\nMore info: This issue specifically impacts users who use Simple Mail Transfer Protocol (SMTP) as their connection method and route their email messages through a specific third-party email protection service. The email delays, which impacts both sending and receiving email, occurs in all Exchange Online connection methods.\n\nCurrent status: Though our investigation into the root cause of this impacting issue is ongoing, we've identified and implemented a configuration change in effort to mitigate the problem. We're reviewing our internal telemetry to assess if the configuration change was effective. Please note that we've updated the Title, User impact, and More info of this communication to better reflect the impact of the event.\n\nScope of impact: This problem may impact any user sending or receiving email messages when leveraging a specific third-party email protection service.\n\nNext update by: Friday, January 30, 2026, at 8:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-01-29T21:19:48.617Z",
-          "postType": "regular",
-          "content": "Title: Users may experience delays when sending or receiving Exchange Online email messages\n \nUser impact: Users may experience delays when sending or receiving Exchange Online email messages.\n\nMore info: This issue specifically impacts users who are on Simple Mail Transfer Protocol (SMTP) connection methods, which include Outlook on the web, the Outlook desktop clients, and the mobile apps.\n\nCurrent status: Our investigation has further identified that exceptions may be occurring as our mail transport service is sending an unexpectedly large amount of requests to downstream components in the mail routing code path. We're investigating recent changes to confirm this theory and determine next steps for remediation.\n\nScope of impact: Some users attempting to send or receive Exchange Online email messages may be impacted.\n\nNext update by: Friday, January 30, 2026, at 7:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-01-29T19:19:17.823Z",
-          "postType": "regular",
-          "content": "Title: Users may experience delays when sending or receiving Exchange Online email messages\n \nUser impact: Users may experience delays when sending or receiving Exchange Online email messages.\n\nMore info: This issue specifically impacts users who are on Simple Mail Transfer Protocol (SMTP) connection methods, which include Outlook on the web, the Outlook desktop clients, and the mobile apps.\n\nCurrent status: We've identified the \"451 4.3.2 Temporary server error\" occurring that's leading to impact. This error, generally, is a common error, however our review of transport service health telemetry confirmed an increase in the rate of this error generating. We're investigating why we see an increase of this error resulting in impact to better understand how the issue is manifesting and prepare next steps for potential remediating actions.\n\nScope of impact: Some users attempting to send or receive Exchange Online email messages may be impacted.\n\nNext update by: Thursday, January 29, 2026, at 9:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-01-29T18:05:41.22Z",
-          "postType": "regular",
-          "content": "Title: Users may experience delays when sending or receiving Exchange Online email messages\n \nUser impact: Users may experience delays when sending or receiving Exchange Online email messages.\n\nMore info: This issue specifically impacts users who are on Simple Mail Transfer Protocol (SMTP) connection methods, which include Outlook on the web, the Outlook desktop clients, and the mobile apps.\n\nCurrent status: We're reviewing transport service logs in parallel with samples of affected messages to identify and isolate any errors that may be contributing to impact for further investigation.\n\nScope of impact: Some users attempting to send or receive Exchange Online email messages may be impacted.\n\nNext update by: Thursday, January 29, 2026, at 7:30 PM UTC"
-        }
-      ],
-      "serviceName": "Exchange Online",
-      "affectedServices": [
-        "Exchange Online"
       ]
     }
   ]
