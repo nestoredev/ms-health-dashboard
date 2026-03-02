@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-02T13:29:12.399Z",
+  "lastUpdated": "2026-03-02T13:59:18.801Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -30,36 +30,6 @@
               "createdAt": "2026-02-24T02:10:12.337Z",
               "postType": "regular",
               "content": "Title: Users' auto-decline meeting settings for automatic replies may not be working in Exchange Online\n\nUser impact: Users' auto-decline meeting settings for automatic replies may not be working in Exchange Online.\n\nCurrent status: We're investigating a potential issue with Exchange Online and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Exchange Online"
-          ]
-        },
-        {
-          "id": "EX1242346",
-          "title": "Some users may be unable to access the Exchange admin center (EAC)",
-          "startTime": "2026-03-02T09:39:45Z",
-          "endTime": null,
-          "lastModified": "2026-03-02T11:16:24.107Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may be unable to access the EAC.",
-          "scopeOfImpact": "Impact is specific to some users who are served through the affected infrastructure attempting to access the EAC.",
-          "rootCause": "",
-          "nextUpdateBy": "Monday, March 2, 2026, at 1:30 PM UTC",
-          "feature": "Tenant Administration (Provisioning, Remote PowerShell)",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-03-02T11:16:24.107Z",
-              "postType": "regular",
-              "content": "Title: Some users may be unable to access the Exchange admin center (EAC)\n\nUser impact: Users may be unable to access the EAC.\n\nCurrent status: We're continuing our reviewing service monitoring telemetry to isolate the root cause and develop a remediation plan.\n \nScope of impact: Impact is specific to some users who are served through the affected infrastructure attempting to access the EAC.\n \nNext update by: Monday, March 2, 2026, at 1:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-03-02T09:40:37.85Z",
-              "postType": "regular",
-              "content": "Title: Some users may be unable to access the Exchange admin center (EAC)\n\nUser impact: Users may be unable to access the EAC.\n\nCurrent status: We're reviewing service monitoring telemetry to isolate the root cause and develop a remediation plan.\n \nScope of impact: Impact is specific to some users who are served through the affected infrastructure attempting to access the EAC.\n \nNext update by: Monday, March 2, 2026, at 11:30 AM UTC"
             }
           ],
           "affectedServices": [
@@ -1557,6 +1527,42 @@
     }
   ],
   "history": [
+    {
+      "id": "EX1242346",
+      "title": "Some users may have been unable to access the Exchange admin center (EAC)",
+      "startTime": "2026-03-02T08:20:00Z",
+      "endTime": "2026-03-02T13:29:57Z",
+      "lastModified": "2026-03-02T13:49:39.26Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have been unable to access the EAC.",
+      "scopeOfImpact": "Impact was specific to some users who were served through the affected infrastructure attempting to access the EAC.\n \nStart time: Monday, March 2, 2026, at 8:20 AM UTC\n \nEnd time: Monday, March 2, 2026, at 11:53 AM UTC",
+      "rootCause": "A section of networking infrastructure was performing below acceptable performance thresholds and resulting in impact. \n \nNext steps:\n- We're reviewing performance data and trends on the affected infrastructure to help prevent similar impact from happening again.\n\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Tenant Administration (Provisioning, Remote PowerShell)",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-03-02T13:30:18.447Z",
+          "postType": "regular",
+          "content": "Title: Some users may have been unable to access the Exchange admin center (EAC)\n\nUser impact: Users may have been unable to access the EAC.\n\nFinal status: We've identified that a section of networking infrastructure was performing below acceptable performance thresholds and resulting in impact. We've applied traffic and performance optimizations which has remediated impact.\n \nScope of impact: Impact was specific to some users who were served through the affected infrastructure attempting to access the EAC.\n \nStart time: Monday, March 2, 2026, at 8:20 AM UTC\n \nEnd time: Monday, March 2, 2026, at 11:53 AM UTC\n \nRoot cause: A section of networking infrastructure was performing below acceptable performance thresholds and resulting in impact. \n \nNext steps:\n- We're reviewing performance data and trends on the affected infrastructure to help prevent similar impact from happening again.\n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-03-02T11:16:24.107Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to access the Exchange admin center (EAC)\n\nUser impact: Users may be unable to access the EAC.\n\nCurrent status: We're continuing our reviewing service monitoring telemetry to isolate the root cause and develop a remediation plan.\n \nScope of impact: Impact is specific to some users who are served through the affected infrastructure attempting to access the EAC.\n \nNext update by: Monday, March 2, 2026, at 1:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-03-02T09:40:37.85Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to access the Exchange admin center (EAC)\n\nUser impact: Users may be unable to access the EAC.\n\nCurrent status: We're reviewing service monitoring telemetry to isolate the root cause and develop a remediation plan.\n \nScope of impact: Impact is specific to some users who are served through the affected infrastructure attempting to access the EAC.\n \nNext update by: Monday, March 2, 2026, at 11:30 AM UTC"
+        }
+      ],
+      "serviceName": "Exchange Online",
+      "affectedServices": [
+        "Exchange Online"
+      ]
+    },
     {
       "id": "MO1242002",
       "title": "Users in Australia may be unable to access various Microsoft 365 Apps or services from portal.office.com",
