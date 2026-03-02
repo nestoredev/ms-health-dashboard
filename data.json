@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-02T16:59:57.034Z",
+  "lastUpdated": "2026-03-02T17:30:02.718Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -614,6 +614,66 @@
       "status": "serviceDegradation",
       "id": "SharePoint",
       "issues": [
+        {
+          "id": "SP1242132",
+          "title": "Some admins may be unable to access the SharePoint Online admin center",
+          "startTime": "2026-03-02T03:26:49Z",
+          "endTime": null,
+          "lastModified": "2026-03-02T17:15:05.263Z",
+          "status": "serviceDegradation",
+          "severity": "incident",
+          "userImpact": "Admins may be unable to access the SharePoint Online admin center.",
+          "scopeOfImpact": "Some admins or users attempting to access the SharePoint Online admin center or sites may be impacted, and are returned an error message stating “Sorry, something went wrong.” This information may be updated as our investigation continues.",
+          "rootCause": "",
+          "nextUpdateBy": "Monday, March 2, 2026, at 8:30 PM UTC",
+          "feature": "Save Site as Template",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-03-02T16:59:32.2Z",
+              "postType": "regular",
+              "content": "Title: Some admins may be unable to access the SharePoint Online admin center\n\nUser impact: Admins may be unable to access the SharePoint Online admin center.\n\nMore info: Additionally, the top navigation suite bar (app launcher, search, and settings) doesn't load across SharePoint Online sites for any users.\n \nWhen attempting to access the SharePoint Online admin center, admins may see the following error message:\n \n“Sorry, something went wrong.”\n \nTechnical details of the error may reference an application initialization error.\n \nCurrent status: We've isolated that impact isn’t limited to users or admins in Australia and updated the \"Title\", \"User impact\", and \"Scope of impact\" sections of our communications to reflect this change. We're analyzing recent updates to the SharePoint Online admin center. We’re also implementing a configuration change to have SharePoint Online admin center access requests route to any available endpoint as a potential remediation action to restore users to a healthy operating state while we continue to work to isolate the underlying root cause.\n \nScope of impact: Some admins or users attempting to access the SharePoint Online admin center or sites may be impacted, and are returned an error message stating “Sorry, something went wrong.” This information may be updated as our investigation continues.\n \nNext update by: Monday, March 2, 2026, at 8:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-03-02T13:15:44.833Z",
+              "postType": "regular",
+              "content": "Title: Some admins may be unable to access the SharePoint Online admin center\n\nUser impact: Admins may be unable to access the SharePoint Online admin center.\n\nMore info: Additionally, the top navigation suite bar (app launcher, search, and settings) doesn't load across SharePoint Online sites for any users. When attempting to access the SharePoint Online admin center, admins may see the following error message:\n\n“Sorry, something went wrong.”\n\nTechnical details may reference an application initialization error.\n \nCurrent status: We’re progressing with our investigation into the reported behavior and are reviewing the additional information provided by affected users to determine next steps toward mitigation.\n \nScope of impact: Some admins or users attempting to access the SharePoint Online admin center or sites may be impacted, and are returned an error message stating “Sorry, something went wrong.” This information may be updated as our investigation continues.\n \nNext update by: Monday, March 2, 2026, at 5:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-03-02T10:29:56.23Z",
+              "postType": "regular",
+              "content": "Title: Some admins may be unable to access the SharePoint Online admin center\n\nUser impact: Admins may be unable to access the SharePoint Online admin center.\n\nMore info: Additionally, the top navigation suite bar (app launcher, search, and settings) doesn't load across SharePoint Online sites for any users. When attempting to access the SharePoint Online admin center, admins may see the following error message:\n\n“Sorry, something went wrong.”\n\nTechnical details may reference an application initialization error.\n\nCurrent status: We’re continuing to investigate the reported behavior and are awaiting additional information from affected users to help validate our findings and confirm next mitigative steps.\n\nScope of impact: Some admins or users attempting to access the SharePoint Online admin center or sites may be impacted, and are returned an error message stating “Sorry, something went wrong.” This information may be updated as our investigation continues.\n \nNext update by: Monday, March 2, 2026, at 2:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-03-02T09:17:40.483Z",
+              "postType": "regular",
+              "content": "Title: Some admins may be unable to access the SharePoint Online admin center\n\nUser impact: Admins may be unable to access the SharePoint Online admin center.\n\nMore info: All admins cannot access the SharePoint Online admin center.\n\nIn addition, the top navigation suite bar (app launcher, search, and settings) does not load across SharePoint Online sites for any users.\n\nWhen attempting to access the SharePoint Online admin center, admins may see the following error message:\n\n“Sorry, something went wrong.”\n\nTechnical details may reference an application initialization error.\n\nCurrent status: We’ve identified that this issue appears to be region-specific, with impact currently observed for users accessing SharePoint Online from Australia. We’re continuing to investigate the behavior and are reviewing request patterns and service responses to understand why components are not loading as expected in this region.\n\nScope of impact: Some admins or users attempting to access the SharePoint Online admin center or sites may be impacted, and are returned an error message stating “Sorry, something went wrong.” This information may be updated as our investigation continues.\n\nNext update by: Monday, March 2, 2026, at 11:30 AM UTC"
+            },
+            {
+              "createdAt": "2026-03-02T06:36:04.71Z",
+              "postType": "regular",
+              "content": "Title: Some admins may be unable to access the SharePoint Online admin center\n\nUser impact: Admins may be unable to access the SharePoint Online admin center.\n\nMore info: Admins receive the following error message, \"Sorry, something went wrong\".\n \nCurrent status: Our investigation into the HAR logs and Unified Logging Service (ULS) logs continue while we try to identify the underlying root cause.\n\nScope of impact: Some admins or users attempting to access the SharePoint Online admin center or sites may be impacted, and are returned an error message stating “Sorry, something went wrong.” This information may be updated as our investigation continues.\n\nNext update by: Monday, March 2, 2026, at 9:30 AM UTC"
+            },
+            {
+              "createdAt": "2026-03-02T04:48:04.58Z",
+              "postType": "regular",
+              "content": "Title: Some admins may be unable to access the SharePoint Online admin center\n\nUser impact: Admins may be unable to access the SharePoint Online admin center.\n\nMore info: Admins receive the following error message, \"Sorry, something went wrong\".\n \nCurrent status: We're continuing to investigate the HAR logs to help with isolating the source of the issue.\n\nScope of impact: Some admins or users attempting to access the SharePoint Online admin center or sites may be impacted, and are returned an error message stating “Sorry, something went wrong.” This information may be updated as our investigation continues.\n\nNext update by: Monday, March 2, 2026, at 7:00 AM UTC"
+            },
+            {
+              "createdAt": "2026-03-02T03:52:37.18Z",
+              "postType": "regular",
+              "content": "Title: Some admins may be unable to access the SharePoint Online admin center\n\nUser impact: Admins may be unable to access the SharePoint Online admin center.\n\nMore info: Admins receive the following error message, \"Sorry, something went wrong\".\n \nCurrent status: We're reviewing HTTP Archive format (HAR) logs from admins reproducing the issue to help with the investigation and to identify our next troubleshooting steps.\n\nScope of impact: Some admins or users attempting to access the SharePoint Online admin center or sites may be impacted, and are returned an error message stating “Sorry, something went wrong.” This information may be updated as our investigation continues.\n\nNext update by: Monday, March 2, 2026, at 5:00 AM UTC"
+            },
+            {
+              "createdAt": "2026-03-02T03:30:24.247Z",
+              "postType": "regular",
+              "content": "Title: Some admins may be unable to access the SharePoint Online admin center\n\nUser impact: Admins may be unable to access the SharePoint Online admin center.\n\nMore info: Admins receive the following error message, \"Sorry, something went wrong\".\n \nCurrent status: We're investigating a potential issue with SharePoint Online and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "SharePoint Online"
+          ]
+        },
         {
           "id": "MO1176905",
           "title": "Some admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services",
