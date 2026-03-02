@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-02T20:00:40.213Z",
+  "lastUpdated": "2026-03-02T20:30:45.977Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -858,41 +858,6 @@
       "id": "Planner",
       "issues": [
         {
-          "id": "PL1242549",
-          "title": "Some users may be unable to access Planner on the web",
-          "startTime": "2026-03-02T14:29:42Z",
-          "endTime": null,
-          "lastModified": "2026-03-02T18:09:30.11Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may be unable to access Planner on the web.",
-          "scopeOfImpact": "Some users that are trying to access Planner on the web may be impacted.\n\nStart time: Monday, March 2, 2026, at 7:15 AM UTC",
-          "rootCause": "An update to the Planner Microsoft Authentication Library (MSAL) is introducing a mismatch between the unauthenticated Planner on the web landing page and the authenticated experience after users sign in. This mismatch is resulting in the impact.",
-          "nextUpdateBy": "Monday, March 2, 2026, at 8:30 PM UTC",
-          "feature": "Attachment",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-03-02T18:09:30.11Z",
-              "postType": "regular",
-              "content": "Title: Some users may be unable to access Planner on the web\n\nUser impact: Users may be unable to access Planner on the web.\n\nMore info: To bypass the impact, some users may be able to access Planner via Microsoft Teams if this option is available to them.\n\nCurrent status: We've confirmed that an update to the Planner Microsoft Authentication Library (MSAL) is introducing a mismatch between the unauthenticated Planner on the web landing page and the authenticated experience after users sign in. This mismatch is resulting in the impact. We've updated the MSAL to be aligned across both experiences, and we're validating this has resolved the issue with a subset of affected users.\n\nScope of impact: Some users that are trying to access Planner on the web may be impacted.\n\nStart time: Monday, March 2, 2026, at 7:15 AM UTC\n\nRoot cause: An update to the Planner Microsoft Authentication Library (MSAL) is introducing a mismatch between the unauthenticated Planner on the web landing page and the authenticated experience after users sign in. This mismatch is resulting in the impact.\n\nNext update by: Monday, March 2, 2026, at 8:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-03-02T16:10:58.353Z",
-              "postType": "regular",
-              "content": "Title: Some users may be unable to access Planner on the web\n\nUser impact: Users may be unable to access Planner on the web.\n\nMore info: To bypass the impact, some users may be able to access Planner via Microsoft Teams if this option is available to them.\n\nCurrent status: We're reproducing the issue within our internal testing environment to collect further diagnostic data to aid in our troubleshooting and identification of the source of the impact.\n\nScope of impact: Some users that are trying to access Planner on the web may be impacted.\n\nNext update by: Monday, March 2, 2026, at 6:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-03-02T14:32:39.807Z",
-              "postType": "regular",
-              "content": "Title: Some users may be unable to access Planner on the web\n \nUser impact: Users may be unable to access Planner on the web.\n\nMore info: As a workaround, some users may be able to access Planner via Microsoft Teams.\n \nCurrent status: We're reviewing support provided information and service monitoring telemetry, to isolate the source of the issue and establish a fix.\n \nScope of impact: Some users that are trying to access Planner on the web may be impacted.\n \nNext update by: Monday, March 2, 2026, at 4:30 PM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Planner"
-          ]
-        },
-        {
           "id": "PL1235137",
           "title": "Some users may see delays with Microsoft Planner tasks updating to Microsoft To-Do",
           "startTime": "2026-02-03T00:00:00Z",
@@ -1637,6 +1602,47 @@
     }
   ],
   "history": [
+    {
+      "id": "PL1242549",
+      "title": "Some users may be unable to access Planner on the web",
+      "startTime": "2026-03-02T07:15:00Z",
+      "endTime": "2026-03-02T17:25:00Z",
+      "lastModified": "2026-03-02T20:03:45.223Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have been unable to access Planner on the web.",
+      "scopeOfImpact": "Some users that were trying to access Planner on the web may have been impacted.\n \nStart time: Monday, March 2, 2026, at 7:15 AM UTC\n \nEnd time: Monday, March 2, 2026, at 5:25 PM UTC",
+      "rootCause": "An update to the Planner MSAL introduced a mismatch between the unauthenticated Planner on the web landing page and the authenticated experience after users signed in. This mismatch resulted in the impact.\n \nNext steps: \n- We're reviewing our standard update protocol to ensure future updates are applied with the proper cadence to prevent similar mismatches from occurring.\n \nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Attachment",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-03-02T20:03:45.223Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to access Planner on the web\n\nUser impact: Users may have been unable to access Planner on the web.\n\nMore info: To bypass the impact, some users may have been able to access Planner via Microsoft Teams if this option was available to them.\n \nFinal status: We've confirmed with a subset of affected users that updating the Microsoft Authentication Library (MSAL) to resolve the mismatch has remediated the impact.\n \nScope of impact: Some users that were trying to access Planner on the web may have been impacted.\n \nStart time: Monday, March 2, 2026, at 7:15 AM UTC\n \nEnd time: Monday, March 2, 2026, at 5:25 PM UTC\n \nRoot cause: An update to the Planner MSAL introduced a mismatch between the unauthenticated Planner on the web landing page and the authenticated experience after users signed in. This mismatch resulted in the impact.\n \nNext steps: \n- We're reviewing our standard update protocol to ensure future updates are applied with the proper cadence to prevent similar mismatches from occurring.\n \nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-03-02T18:09:30.11Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to access Planner on the web\n\nUser impact: Users may be unable to access Planner on the web.\n\nMore info: To bypass the impact, some users may be able to access Planner via Microsoft Teams if this option is available to them.\n\nCurrent status: We've confirmed that an update to the Planner Microsoft Authentication Library (MSAL) is introducing a mismatch between the unauthenticated Planner on the web landing page and the authenticated experience after users sign in. This mismatch is resulting in the impact. We've updated the MSAL to be aligned across both experiences, and we're validating this has resolved the issue with a subset of affected users.\n\nScope of impact: Some users that are trying to access Planner on the web may be impacted.\n\nStart time: Monday, March 2, 2026, at 7:15 AM UTC\n\nRoot cause: An update to the Planner Microsoft Authentication Library (MSAL) is introducing a mismatch between the unauthenticated Planner on the web landing page and the authenticated experience after users sign in. This mismatch is resulting in the impact.\n\nNext update by: Monday, March 2, 2026, at 8:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-03-02T16:10:58.353Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to access Planner on the web\n\nUser impact: Users may be unable to access Planner on the web.\n\nMore info: To bypass the impact, some users may be able to access Planner via Microsoft Teams if this option is available to them.\n\nCurrent status: We're reproducing the issue within our internal testing environment to collect further diagnostic data to aid in our troubleshooting and identification of the source of the impact.\n\nScope of impact: Some users that are trying to access Planner on the web may be impacted.\n\nNext update by: Monday, March 2, 2026, at 6:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-03-02T14:32:39.807Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to access Planner on the web\n \nUser impact: Users may be unable to access Planner on the web.\n\nMore info: As a workaround, some users may be able to access Planner via Microsoft Teams.\n \nCurrent status: We're reviewing support provided information and service monitoring telemetry, to isolate the source of the issue and establish a fix.\n \nScope of impact: Some users that are trying to access Planner on the web may be impacted.\n \nNext update by: Monday, March 2, 2026, at 4:30 PM UTC"
+        }
+      ],
+      "serviceName": "Planner",
+      "affectedServices": [
+        "Planner"
+      ]
+    },
     {
       "id": "EX1242346",
       "title": "Some users may have been unable to access the Exchange admin center (EAC)",
