@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-02T04:27:23.407Z",
+  "lastUpdated": "2026-03-02T04:57:29.403Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -411,12 +411,12 @@
         {
           "id": "MO1242002",
           "title": "Users in Australia may be unable to access various Microsoft 365 Apps or services from portal.office.com",
-          "startTime": "2026-03-02T00:38:57Z",
+          "startTime": "2026-03-01T21:30:00Z",
           "endTime": null,
-          "lastModified": "2026-03-02T03:29:01.507Z",
+          "lastModified": "2026-03-02T04:40:12.777Z",
           "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may be unable to access various Microsoft 365 Apps or services from portal.office.com.",
+          "severity": "incident",
+          "userImpact": "Users may have been unable to access various Microsoft 365 Apps or services from portal.office.com.",
           "scopeOfImpact": "Users in Australia attempting to access or use Microsoft 365 Apps and services may be impacted. This section may be updated as our investigation continues.",
           "rootCause": "A resource contention caused by a spike in demand on infrastructure that facilitates access to Microsoft 365 apps and services through the portal. This reduced the rate at which user requests were processed, leading to impact.",
           "nextUpdateBy": "Monday, March 2, 2026, at 5:30 AM UTC",
