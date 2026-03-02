@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-02T00:26:41.747Z",
+  "lastUpdated": "2026-03-02T00:56:46.913Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -408,6 +408,31 @@
       "status": "serviceDegradation",
       "id": "OSDPPlatform",
       "issues": [
+        {
+          "id": "MO1242002",
+          "title": "Users in Australia may be unable to access various Microsoft 365 Apps or services from portal.office.com",
+          "startTime": "2026-03-02T00:38:57Z",
+          "endTime": null,
+          "lastModified": "2026-03-02T00:47:02.197Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to access various Microsoft 365 Apps or services from portal.office.com.",
+          "scopeOfImpact": "Users in Australia attempting to access or use Microsoft 365 Apps and services may be impacted. This section may be updated as our investigation continues.",
+          "rootCause": "",
+          "nextUpdateBy": "Monday, March 2, 2026, at 1:30 AM UTC",
+          "feature": "Sign-in",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-03-02T00:47:02.197Z",
+              "postType": "regular",
+              "content": "Title: Users in Australia may be unable to access various Microsoft 365 Apps or services from portal.office.com\n\nUser impact: Users may be unable to access various Microsoft 365 Apps or services from portal.office.com.\n\nMore info: This issue affects users accessing apps or services from portal.office.com and m365.cloud.microsoft.com.\n \nCurrent status: We've received reports indicating that users are unable to access Microsoft 365 Apps and services when attempting to access them from portal.office.com or m365.cloud.microsoft.com. We're reviewing the provided impact details and investigating service health telemetry to help contextualize the impact and inform our next troubleshooting steps.\n \nScope of impact: Users in Australia attempting to access or use Microsoft 365 Apps and services may be impacted. This section may be updated as our investigation continues.\n \nNext update by: Monday, March 2, 2026, at 1:30 AM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite"
+          ]
+        },
         {
           "id": "MO1176905",
           "title": "Some admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services",
@@ -1502,36 +1527,6 @@
               "createdAt": "2026-01-15T18:58:01.643Z",
               "postType": "regular",
               "content": "Title: Users aren't shown the \"Edit in Outlook\" button after prompting Copilot Chat to draft an email message\n\nUser impact: Users aren't shown the \"Edit in Outlook\" button after prompting Copilot Chat to draft an email message.\n\nMore info: When users prompt Copilot Chat to draft an email message, the button to \"Edit in Outlook\" doesn't appear as expected.\n\nCurrent status: We're investigating a potential issue with Copilot Chat and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Microsoft 365 Copilot Chat"
-          ]
-        },
-        {
-          "id": "CW1241992",
-          "title": "Users may be unable to access or use the Microsoft Copilot Chat web app",
-          "startTime": "2026-03-01T23:14:55Z",
-          "endTime": null,
-          "lastModified": "2026-03-02T00:11:09.19Z",
-          "status": "serviceDegradation",
-          "severity": "incident",
-          "userImpact": "Users may be unable to access or use the Microsoft Copilot Chat web app.",
-          "scopeOfImpact": "Users in Australia attempting to access or use the Microsoft Copilot Chat web app may be impacted. This section may be updated as our investigation continues.",
-          "rootCause": "",
-          "nextUpdateBy": "Monday, March 2, 2026, at 1:30 AM UTC",
-          "feature": "General",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-03-02T00:05:19.68Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to access or use the Microsoft Copilot Chat web app\n \nUser impact: Users may be unable to access or use the Microsoft Copilot Chat web app.\n \nMore info: This issue may affect users accessing office.com and m365.cloud.microsoft.\n \nCurrent status: We're reviewing the provided impact details and investigating the telemetry for the service health to help contextualize the impact and inform our next troubleshooting steps.\n \nScope of impact: Users in Australia attempting to access or use the Microsoft Copilot Chat web app may be impacted. This section may be updated as our investigation continues.\n \nNext update by: Monday, March 2, 2026, at 1:30 AM UTC"
-            },
-            {
-              "createdAt": "2026-03-01T23:16:02.31Z",
-              "postType": "regular",
-              "content": "Title: Users can't access or use the Microsoft Copilot Chat web app\n\nUser impact: Users can't access or use the Microsoft Copilot Chat web app.\n\nMore info: This issue affects users accessing office.com and m365.cloud.microsoft.\n\nCurrent status: We're investigating a potential issue with Microsoft Copilot Chat and checking for impact to your organization. We'll provide an update within 60 minutes."
             }
           ],
           "affectedServices": [
@@ -2653,52 +2648,6 @@
       "serviceName": "Power BI",
       "affectedServices": [
         "Power BI"
-      ]
-    },
-    {
-      "id": "MO1224866",
-      "title": "Some users may have been unable to export usage reports from the Microsoft 365 admin center",
-      "startTime": "2026-01-29T13:07:00Z",
-      "endTime": "2026-01-31T00:30:00Z",
-      "lastModified": "2026-01-31T09:20:56.463Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users may have been unable to export usage reports from the Microsoft 365 admin center.",
-      "scopeOfImpact": "Some users attempting to export usage reports in the Microsoft 365 admin center may have been impacted.\n\nStart time: Thursday, January 29, 2026, at 1:07 PM UTC\n\nEnd time: Saturday, January 31, 2026, at 12:30 AM UTC",
-      "rootCause": "A recent code change meant to add new reporting features to the Microsoft 365 admin center mistakenly introduced a code defect that may have prevented users from exporting usage reports.\n\nNext steps:\n- We're reviewing our update procedures to better identify similar issues during our development and testing cycles.\n \nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Company or User Administration",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-01-31T09:19:13.8Z",
-          "postType": "regular",
-          "content": "Title: Some users may have been unable to export usage reports from the Microsoft 365 admin center\n\nUser impact: Users may have been unable to export usage reports from the Microsoft 365 admin center.\n\nMore info: Users may have also encountered errors or empty data when attempting to generate reports from the Microsoft 365 admin center.\n\nFinal status: We’ve confirmed following the feedback from some affected users that impact has been remediated.\n\nScope of impact: Some users attempting to export usage reports in the Microsoft 365 admin center may have been impacted.\n\nStart time: Thursday, January 29, 2026, at 1:07 PM UTC\n\nEnd time: Saturday, January 31, 2026, at 12:30 AM UTC\n\nRoot cause: A recent code change meant to add new reporting features to the Microsoft 365 admin center mistakenly introduced a code defect that may have prevented users from exporting usage reports.\n\nNext steps:\n- We're reviewing our update procedures to better identify similar issues during our development and testing cycles.\n \nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-01-31T00:35:25.943Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to export usage reports from the Microsoft 365 admin center\n\nUser impact: Users may be unable to export usage reports from the Microsoft 365 admin center.\n\nMore info: Users may also encounter errors or empty data when attempting to generate reports from the Microsoft 365 admin center.\n\nCurrent status: We’ve initiated the process of deploying the code fix and we’re validating with affected users that have received the fix to ensure its operating as expected to resolve this issue.\n\nScope of impact: Some users attempting to export usage reports in the Microsoft 365 admin center may be impacted.\n\nStart time: Thursday, January 29, 2026, at 11:00 PM UTC\n\nRoot cause: A recent code change meant to add new reporting features to the Microsoft 365 admin center mistakenly introduced a code defect that may prevent users from exporting usage reports.\n\nNext update by: Saturday, January 31, 2026, at 10:00 AM UTC"
-        },
-        {
-          "createdAt": "2026-01-30T19:29:03.467Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to export usage reports from the Microsoft 365 admin center\n\nUser impact: Users may be unable to export usage reports from the Microsoft 365 admin center.\n\nMore info: Users may also encounter errors or empty data when attempting to generate reports from the Microsoft 365 admin center.\n\nCurrent status: We've identified that a recent code change meant to add new reporting features to the Microsoft 365 admin center mistakenly introduced a code defect that may prevent users from exporting usage reports. We've created and are validating a code fix that will deploy shortly and remediate impact by our next scheduled update.\n\nScope of impact: Some users attempting to export usage reports in the Microsoft 365 admin center may be impacted.\n\nStart time: Thursday, January 29, 2026, at 11:00 PM UTC\n\nRoot cause: A recent code change meant to add new reporting features to the Microsoft 365 admin center mistakenly introduced a code defect that may prevent users from exporting usage reports.\n\nNext update by: Saturday, January 31, 2026, at 2:30 AM UTC"
-        },
-        {
-          "createdAt": "2026-01-30T10:56:49.8Z",
-          "postType": "regular",
-          "content": "Title: Some users are unable to export usage reports from the Microsoft 365 admin center\n\nUser impact: Users are unable to export usage reports from the Microsoft 365 admin center.\n\nMore info: Users may also encounter errors or empty data when attempting to generate reports from the Microsoft 365 admin center.\n\nCurrent status: We're reviewing a potential code change and available logs to help determine the root cause and mitigation plan.\n\nScope of impact: Some users in the North US region attempting to export usage reports in the Microsoft 365 admin center may be impacted.\n\nNext update by: Friday, January 30, 2026, at 9:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-01-30T08:49:42.913Z",
-          "postType": "regular",
-          "content": "Title: Some users are unable to export usage reports from the Microsoft 365 admin center\n\nUser impact: Users are unable to export usage reports from the Microsoft 365 admin center.\n\nMore info: Users may also encounter errors or empty data when attempting to generate reports from the Microsoft 365 admin center.\n\nCurrent status: We're reviewing service monitoring telemetry to isolate the root cause and determine our next troubleshooting steps.\n\nScope of impact: Some users in the North US region attempting to export usage reports in the Microsoft 365 admin center may be impacted.\n\nNext update by: Friday, January 30, 2026, at 11:00 AM UTC"
-        }
-      ],
-      "serviceName": "Microsoft 365 suite",
-      "affectedServices": [
-        "Microsoft 365 suite"
       ]
     }
   ]
