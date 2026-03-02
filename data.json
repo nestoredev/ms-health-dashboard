@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-02T22:31:10.219Z",
+  "lastUpdated": "2026-03-02T23:01:16.404Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -11,16 +11,21 @@
           "title": "Users' auto-decline meeting settings for automatic replies may not be working in Exchange Online",
           "startTime": "2026-02-24T02:08:29Z",
           "endTime": null,
-          "lastModified": "2026-02-24T02:23:30.837Z",
+          "lastModified": "2026-03-02T22:57:36.253Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users' auto-decline meeting settings for automatic replies may not be working in Exchange Online.",
           "scopeOfImpact": "Users with automatic replies set up to auto-decline meeting invites in Exchange Online may be impacted. This information may be updated as our investigation continues.\n\nStart time: Monday, February 23, 2026, at 8:00 AM UTC",
           "rootCause": "A latent code issue triggered by a recent service configuration update is resulting in impact.",
-          "nextUpdateBy": "Tuesday, March 3, 2026, at 12:30 AM UTC",
+          "nextUpdateBy": "Friday, March 6, 2026, at 10:30 PM UTC",
           "feature": "Outlook - poor customer experience",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-03-02T22:55:58.087Z",
+              "postType": "regular",
+              "content": "Title: Users' auto-decline meeting settings for automatic replies may not be working in Exchange Online\n\nUser impact: Users' auto-decline meeting settings for automatic replies may not be working in Exchange Online.\n\nCurrent status: Our code fix continues to roll out and has saturated approximately 93% of the environment, and some users may already see mitigation of this issue. At our next communication, which is when we estimate this deployment will conclude, we'll provide an additional update regarding the status of the code fix saturation to all affected users.\n\nScope of impact: Users with automatic replies set up to auto-decline meeting invites in Exchange Online may be impacted. This information may be updated as our investigation continues.\n\nStart time: Monday, February 23, 2026, at 8:00 AM UTC\n\nRoot cause: A latent code issue triggered by a recent service configuration update is resulting in impact.\n\nNext update by: Friday, March 6, 2026, at 10:30 PM UTC"
+            },
             {
               "createdAt": "2026-02-24T02:23:30.837Z",
               "postType": "regular",
@@ -867,16 +872,21 @@
           "title": "Some users may see delays with Microsoft Planner tasks updating to Microsoft To-Do",
           "startTime": "2026-02-03T00:00:00Z",
           "endTime": null,
-          "lastModified": "2026-02-27T22:22:50.35Z",
+          "lastModified": "2026-03-02T22:29:16.667Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may see delays with Microsoft Planner tasks updating to Microsoft To-Do.",
-          "scopeOfImpact": "This issue may impact some users in the North America and Europe regions who are attempting to get Microsoft Planner tasks updated to Microsoft To-Do.\n \nStart time: Tuesday, February 3, 2026, at 12:00 AM UTC\n \nEstimated time to resolve: We anticipate that the backlog of accumulated requests will be processed and the impact remediated by Tuesday, March 3, 2026, at 12:00 AM UTC.",
+          "scopeOfImpact": "This issue may impact some users in the North America and Europe regions who are attempting to get Microsoft Planner tasks updated to Microsoft To-Do.\n \nStart time: Tuesday, February 3, 2026, at 12:00 AM UTC",
           "rootCause": "An issue is causing delays within the data pipeline that facilitates Microsoft Planner task updates in Microsoft To-Do, leading to impact.",
-          "nextUpdateBy": "Tuesday, March 3, 2026, at 12:00 AM UTC",
+          "nextUpdateBy": "Thursday, March 5, 2026, at 12:00 AM UTC",
           "feature": "Task detail",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-03-02T22:29:16.667Z",
+              "postType": "regular",
+              "content": "Title: Some users may see delays with Microsoft Planner tasks updating to Microsoft To-Do\n\nUser impact: Users may see delays with Microsoft Planner tasks updating to Microsoft To-Do.\n\nCurrent status: We've identified that it's taking longer than anticipated for the remaining backlog of accumulated events to be processed. With the current progress of our remediation efforts, we've confirmed that the latency and delays users are experiencing has drastically reduced from 20 hours, to between 30 minutes and 1 hour. We're continuing to monitor as the remaining backlog of accumulated events are processed to ensure the latency users are experiencing is fully resolved.\n \nScope of impact: This issue may impact some users in the North America and Europe regions who are attempting to get Microsoft Planner tasks updated to Microsoft To-Do.\n \nStart time: Tuesday, February 3, 2026, at 12:00 AM UTC\n \nRoot cause: An issue is causing delays within the data pipeline that facilitates Microsoft Planner task updates in Microsoft To-Do, leading to impact.\n \nNext update by: Thursday, March 5, 2026, at 12:00 AM UTC"
+            },
             {
               "createdAt": "2026-02-27T22:22:50.35Z",
               "postType": "regular",
@@ -1612,9 +1622,9 @@
       "title": "Some users may be unable to access Planner on the web",
       "startTime": "2026-03-02T07:15:00Z",
       "endTime": "2026-03-02T17:25:00Z",
-      "lastModified": "2026-03-02T20:03:45.223Z",
+      "lastModified": "2026-03-02T22:42:25.863Z",
       "status": "serviceRestored",
-      "severity": "advisory",
+      "severity": "incident",
       "userImpact": "Users may have been unable to access Planner on the web.",
       "scopeOfImpact": "Some users that were trying to access Planner on the web may have been impacted.\n \nStart time: Monday, March 2, 2026, at 7:15 AM UTC\n \nEnd time: Monday, March 2, 2026, at 5:25 PM UTC",
       "rootCause": "An update to the Planner MSAL introduced a mismatch between the unauthenticated Planner on the web landing page and the authenticated experience after users signed in. This mismatch resulted in the impact.\n \nNext steps: \n- We're reviewing our standard update protocol to ensure future updates are applied with the proper cadence to prevent similar mismatches from occurring.\n \nThis is the final update for the event.",
