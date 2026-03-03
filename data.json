@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-03T03:32:11.031Z",
+  "lastUpdated": "2026-03-03T04:02:16.780Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1431,20 +1431,20 @@
           "title": "Users may see an action count of zero in Microsoft Viva Insights for the Copilot metrics \"Total emails sent\" field",
           "startTime": "2026-02-27T20:56:36Z",
           "endTime": null,
-          "lastModified": "2026-03-03T03:04:25.523Z",
+          "lastModified": "2026-03-03T03:50:15.457Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may see an action count of zero in Microsoft Viva Insights for the Copilot metrics \"Total emails sent\" field.",
           "scopeOfImpact": "Users reviewing the Copilot metrics \"Total emails sent\" field may be impacted.\n \nStart time: Thursday, January 22, 2026, at 7:26 PM UTC",
           "rootCause": "An updated metadata file that contained invalid metric logic is resulting in impact",
-          "nextUpdateBy": "Tuesday, March 3, 2026, at 9:00 PM UTC",
+          "nextUpdateBy": "Wednesday, March 4, 2026, at 3:00 AM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
             {
               "createdAt": "2026-03-03T03:04:25.523Z",
               "postType": "regular",
-              "content": "Title: Users may see an action count of zero in Microsoft Viva Insights for the Copilot metrics \"Total emails sent\" field\n\nUser impact: Users may see an action count of zero in Microsoft Viva Insights for the Copilot metrics \"Total emails sent\" field.\n\nMore info: This metric should be accounting for users that have selected \"Send message with elaborate\" in Outlook, but it isn't. The total action count appears to be zero.\n \nCurrent status: We've identified that this was caused by an updated metadata file that contained invalid metric logic, resulting in impact. We're reviewing options to mitigate this issue as well as our options for recovering the reporting data.\n \nScope of impact: Users reviewing the Copilot metrics \"Total emails sent\" field may be impacted.\n \nStart time: Thursday, January 22, 2026, at 7:26 PM UTC\n \nRoot cause: An updated metadata file that contained invalid metric logic is resulting in impact\n \nNext update by: Tuesday, March 3, 2026, at 9:00 PM UTC"
+              "content": "Title: Users may see an action count of zero in Microsoft Viva Insights for the Copilot metrics \"Total emails sent\" field\n\nUser impact: Users may see an action count of zero in Microsoft Viva Insights for the Copilot metrics \"Total emails sent\" field.\n\nMore info: This metric should be accounting for users that have selected \"Send message with elaborate\" in Outlook, but it isn't. The total action count appears to be zero.\n \nCurrent status: We've identified that this was caused by an updated metadata file that contained invalid metric logic, resulting in impact. We're reviewing options to mitigate this issue as well as our options for recovering the reporting data.\n \nScope of impact: Users reviewing the Copilot metrics \"Total emails sent\" field may be impacted.\n \nStart time: Thursday, January 22, 2026, at 7:26 PM UTC\n \nRoot cause: An updated metadata file that contained invalid metric logic is resulting in impact\n \nNext update by: Wednesday, March 4, 2026, at 3:00 AM UTC"
             },
             {
               "createdAt": "2026-02-27T23:01:00.9Z",
