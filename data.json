@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-03T19:05:30.637Z",
+  "lastUpdated": "2026-03-03T19:35:38.875Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -644,16 +644,21 @@
           "title": "Some admins may be unable to access the SharePoint Online admin center",
           "startTime": "2026-03-02T03:26:49Z",
           "endTime": null,
-          "lastModified": "2026-03-03T14:45:27.637Z",
+          "lastModified": "2026-03-03T19:26:26.773Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Admins may be unable to access the SharePoint Online admin center.",
-          "scopeOfImpact": "Some admins or users attempting to access the SharePoint Online admin center or sites may be impacted.\n \nStart time: Tuesday, February 24, 2026, at 3:30 PM UTC",
+          "scopeOfImpact": "Some admins or users attempting to access the SharePoint Online admin center or sites may be impacted.\n\nStart time: Tuesday, February 24, 2026, at 3:30 PM UTC",
           "rootCause": "",
-          "nextUpdateBy": "Tuesday, March 3, 2026, at 8:00 PM UTC",
+          "nextUpdateBy": "Wednesday, March 4, 2026, at 7:30 AM UTC",
           "feature": "Save Site as Template",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-03-03T19:26:26.773Z",
+              "postType": "regular",
+              "content": "Title: Some admins may be unable to access the SharePoint Online admin center\n\nUser impact: Admins may be unable to access the SharePoint Online admin center.\n\nMore info: Additionally, the top navigation suite bar (app launcher, search, and settings) doesn't load across SharePoint Online sites for any users.\n\nWhen attempting to access the SharePoint Online admin center, admins may see the following error message:\n\n“Sorry, something went wrong.”\nTechnical details of the error may reference an application initialization error.\n\nCurrent status: Our analysis of the information gathered from a subset of admins who reported impact is persisting after the deployment of the configuration change indicates that a stale caching issue may be preventing them from receiving the fix. We've applied a solution to resolve the caching issue, and we're reaching out to the subset of affected admins to verify this has fully remediated the issue. This verification will help confirm our understanding of the root cause of the issue.\n\nScope of impact: Some admins or users attempting to access the SharePoint Online admin center or sites may be impacted.\n\nStart time: Tuesday, February 24, 2026, at 3:30 PM UTC\n\nNext update by: Wednesday, March 4, 2026, at 7:30 AM UTC"
+            },
             {
               "createdAt": "2026-03-03T13:52:07.033Z",
               "postType": "regular",
@@ -1516,16 +1521,21 @@
           "title": "Users may be unable to access the Suite navigation bar within Microsoft Viva Engage",
           "startTime": "2026-03-03T18:12:34Z",
           "endTime": null,
-          "lastModified": "2026-03-03T18:39:28.723Z",
+          "lastModified": "2026-03-03T19:20:42.897Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to access the Suite navigation bar within Viva Engage.",
-          "scopeOfImpact": "Impact may occur for all users attempting to utilize the Suite navigation bar within Viva Engage.",
-          "rootCause": "",
-          "nextUpdateBy": "Tuesday, March 3, 2026, at 7:30 PM UTC",
+          "scopeOfImpact": "Impact may occur for all users attempting to utilize the Suite navigation bar within Viva Engage.\n \nStart time: Monday, March 2, 2026, at 4:30 AM UTC",
+          "rootCause": "A recent Content Delivery Network (CDN) configuration change introduced an authentication component name mismatch in the allow list that prevented required navigation assets from loading within Viva Engage.",
+          "nextUpdateBy": "Tuesday, March 3, 2026, at 9:30 PM UTC",
           "feature": "Post/Reply/Like",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-03-03T19:20:07.783Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to access the Suite navigation bar within Microsoft Viva Engage\n\nUser impact: Users may be unable to access the Suite navigation bar within Viva Engage.\n\nCurrent status: We've identified that a recent Content Delivery Network (CDN) configuration change introduced an authentication component name mismatch in the allow list that prevented required navigation assets from loading within Viva Engage. To remediate this issue, we've applied a configuration update to correct the name mismatch in the allow list, and we're monitoring the service to ensure successful remediation. \n \nScope of impact: Impact may occur for all users attempting to utilize the Suite navigation bar within Viva Engage.\n \nStart time: Monday, March 2, 2026, at 4:30 AM UTC\n \nRoot cause: A recent Content Delivery Network (CDN) configuration change introduced an authentication component name mismatch in the allow list that prevented required navigation assets from loading within Viva Engage.\n \nNext update by: Tuesday, March 3, 2026, at 9:30 PM UTC"
+            },
             {
               "createdAt": "2026-03-03T18:39:28.723Z",
               "postType": "regular",
