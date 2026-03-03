@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-03T19:35:38.875Z",
+  "lastUpdated": "2026-03-03T20:05:46.463Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1515,36 +1515,6 @@
           "affectedServices": [
             "Microsoft Viva"
           ]
-        },
-        {
-          "id": "MV1243442",
-          "title": "Users may be unable to access the Suite navigation bar within Microsoft Viva Engage",
-          "startTime": "2026-03-03T18:12:34Z",
-          "endTime": null,
-          "lastModified": "2026-03-03T19:20:42.897Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may be unable to access the Suite navigation bar within Viva Engage.",
-          "scopeOfImpact": "Impact may occur for all users attempting to utilize the Suite navigation bar within Viva Engage.\n \nStart time: Monday, March 2, 2026, at 4:30 AM UTC",
-          "rootCause": "A recent Content Delivery Network (CDN) configuration change introduced an authentication component name mismatch in the allow list that prevented required navigation assets from loading within Viva Engage.",
-          "nextUpdateBy": "Tuesday, March 3, 2026, at 9:30 PM UTC",
-          "feature": "Post/Reply/Like",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-03-03T19:20:07.783Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to access the Suite navigation bar within Microsoft Viva Engage\n\nUser impact: Users may be unable to access the Suite navigation bar within Viva Engage.\n\nCurrent status: We've identified that a recent Content Delivery Network (CDN) configuration change introduced an authentication component name mismatch in the allow list that prevented required navigation assets from loading within Viva Engage. To remediate this issue, we've applied a configuration update to correct the name mismatch in the allow list, and we're monitoring the service to ensure successful remediation. \n \nScope of impact: Impact may occur for all users attempting to utilize the Suite navigation bar within Viva Engage.\n \nStart time: Monday, March 2, 2026, at 4:30 AM UTC\n \nRoot cause: A recent Content Delivery Network (CDN) configuration change introduced an authentication component name mismatch in the allow list that prevented required navigation assets from loading within Viva Engage.\n \nNext update by: Tuesday, March 3, 2026, at 9:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-03-03T18:39:28.723Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to access the Suite navigation bar within Microsoft Viva Engage\n\nUser impact: Users may be unable to access the Suite navigation bar within Viva Engage.\n\nCurrent status: We've received reports from affected users that users may be unable to access the Suite navigation bar within Viva Engage. We're reviewing service telemetry to isolate the source of this impact and determine appropriate remediation actions.  \n \nScope of impact: Impact may occur for all users attempting to utilize the Suite navigation bar within Viva Engage.\n \nNext update by: Tuesday, March 3, 2026, at 7:30 PM UTC\n \n"
-            }
-          ],
-          "affectedServices": [
-            "Microsoft Viva"
-          ]
         }
       ]
     },
@@ -1702,6 +1672,42 @@
     }
   ],
   "history": [
+    {
+      "id": "MV1243442",
+      "title": "Users may be unable to access the Suite navigation bar within Microsoft Viva Engage",
+      "startTime": "2026-03-02T04:30:00Z",
+      "endTime": "2026-03-03T18:30:00Z",
+      "lastModified": "2026-03-03T19:53:23.443Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have been unable to access the Suite navigation bar within Viva Engage.",
+      "scopeOfImpact": "Impact may have occurred for all users attempting to utilize the Suite navigation bar within Viva Engage.\n \nStart time: Monday, March 2, 2026, at 4:30 AM UTC\n \nEnd time: Tuesday, March 3, 2026, at 6:30 PM UTC",
+      "rootCause": "A recent Content Delivery Network (CDN) configuration change introduced an authentication component name mismatch in the allow list that prevented required navigation assets from loading within Viva Engage.\n \nNext steps:\n- We're investigating how the recent Content Delivery Network (CDN) configuration change introduced an authentication component name mismatch in the allow list to prevent this problem from happening again.\n \nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Post/Reply/Like",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-03-03T19:49:43.743Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to access the Suite navigation bar within Microsoft Viva Engage\n\nUser impact: Users may have been unable to access the Suite navigation bar within Viva Engage.\n\nFinal status: We've verified after monitoring the service that the applied configuration update to correct the name mismatch in the allow list has successfully remediated the problem. \n \nScope of impact: Impact may have occurred for all users attempting to utilize the Suite navigation bar within Viva Engage.\n \nStart time: Monday, March 2, 2026, at 4:30 AM UTC\n \nEnd time: Tuesday, March 3, 2026, at 6:30 PM UTC\n \nRoot cause: A recent Content Delivery Network (CDN) configuration change introduced an authentication component name mismatch in the allow list that prevented required navigation assets from loading within Viva Engage.\n \nNext steps:\n- We're investigating how the recent Content Delivery Network (CDN) configuration change introduced an authentication component name mismatch in the allow list to prevent this problem from happening again.\n \nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-03-03T19:20:07.783Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to access the Suite navigation bar within Microsoft Viva Engage\n\nUser impact: Users may be unable to access the Suite navigation bar within Viva Engage.\n\nCurrent status: We've identified that a recent Content Delivery Network (CDN) configuration change introduced an authentication component name mismatch in the allow list that prevented required navigation assets from loading within Viva Engage. To remediate this issue, we've applied a configuration update to correct the name mismatch in the allow list, and we're monitoring the service to ensure successful remediation. \n \nScope of impact: Impact may occur for all users attempting to utilize the Suite navigation bar within Viva Engage.\n \nStart time: Monday, March 2, 2026, at 4:30 AM UTC\n \nRoot cause: A recent Content Delivery Network (CDN) configuration change introduced an authentication component name mismatch in the allow list that prevented required navigation assets from loading within Viva Engage.\n \nNext update by: Tuesday, March 3, 2026, at 9:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-03-03T18:39:28.723Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to access the Suite navigation bar within Microsoft Viva Engage\n\nUser impact: Users may be unable to access the Suite navigation bar within Viva Engage.\n\nCurrent status: We've received reports from affected users that users may be unable to access the Suite navigation bar within Viva Engage. We're reviewing service telemetry to isolate the source of this impact and determine appropriate remediation actions.  \n \nScope of impact: Impact may occur for all users attempting to utilize the Suite navigation bar within Viva Engage.\n \nNext update by: Tuesday, March 3, 2026, at 7:30 PM UTC\n \n"
+        }
+      ],
+      "serviceName": "Microsoft Viva",
+      "affectedServices": [
+        "Microsoft Viva"
+      ]
+    },
     {
       "id": "PL1242549",
       "title": "Some users may be unable to access Planner on the web",
