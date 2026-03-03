@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-03T16:04:47.804Z",
+  "lastUpdated": "2026-03-03T16:34:56.661Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -597,16 +597,21 @@
           "title": "Admins may receive delayed mailbox usage reports from the Microsoft 365 admin center",
           "startTime": "2026-02-21T13:00:00Z",
           "endTime": null,
-          "lastModified": "2026-03-02T15:16:16.183Z",
+          "lastModified": "2026-03-03T16:02:45.607Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may receive delayed mailbox usage reports from the Microsoft 365 admin center.",
-          "scopeOfImpact": "This issue may potentially affect any admin attempting to view mailbox usage reports in the Microsoft 365 admin center.\n \nStart time: Saturday, February 21, 2026, at 1:00 PM UTC",
+          "scopeOfImpact": "Any admin attempting to view mailbox usage reports in the Microsoft 365 admin center may be impacted.\n\nStart time: Saturday, February 21, 2026, at 1:00 PM UTC",
           "rootCause": "A malformed data issue within the pipeline responsible for timely report data in the admin center is resulting in mailbox usage report delays.",
-          "nextUpdateBy": "Tuesday, March 3, 2026, at 5:00 PM UTC",
+          "nextUpdateBy": "Thursday, March 5, 2026, at 5:00 PM UTC",
           "feature": "Company or User Administration",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-03-03T16:02:12.253Z",
+              "postType": "regular",
+              "content": "Title: Admins may receive delayed mailbox usage reports from the Microsoft 365 admin center\n\nUser impact: Admins may receive delayed mailbox usage reports from the Microsoft 365 admin center.\n\nMore info: Admins' mailbox usage reports may be delayed as far back as Tuesday, February 17, 2026.\n\nCurrent status: The mailbox usage reports has completed processing for some users, but the Microsoft 365 Groups reporting is still in progress. We expect that all reports will be available by the time of our next update.\n\nScope of impact: Any admin attempting to view mailbox usage reports in the Microsoft 365 admin center may be impacted.\n\nStart time: Saturday, February 21, 2026, at 1:00 PM UTC\n\nRoot cause: A malformed data issue within the pipeline responsible for timely report data in the admin center is resulting in mailbox usage report delays.\n\nNext update by: Thursday, March 5, 2026, at 5:00 PM UTC"
+            },
             {
               "createdAt": "2026-03-02T15:16:16.183Z",
               "postType": "regular",
