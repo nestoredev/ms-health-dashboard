@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-03T18:35:22.616Z",
+  "lastUpdated": "2026-03-03T19:05:30.637Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1505,6 +1505,31 @@
               "createdAt": "2026-02-27T21:10:15.8Z",
               "postType": "regular",
               "content": "Title: Users may see an action count of zero in Microsoft Viva Insights for the Copilot metrics \"Total emails sent\" field\n\nUser impact: Users may see an action count of zero in Microsoft Viva Insights for the Copilot metrics \"Total emails sent\" field.\n\nMore info: This metric should be accounting for users that have selected \"Send message with elaborate\" in Outlook, but it isn't. The total action count appears to be zero.\n\nCurrent status: We're investigating a potential issue with Microsoft Viva Insights and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Viva"
+          ]
+        },
+        {
+          "id": "MV1243442",
+          "title": "Users may be unable to access the Suite navigation bar within Microsoft Viva Engage",
+          "startTime": "2026-03-03T18:12:34Z",
+          "endTime": null,
+          "lastModified": "2026-03-03T18:39:28.723Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to access the Suite navigation bar within Viva Engage.",
+          "scopeOfImpact": "Impact may occur for all users attempting to utilize the Suite navigation bar within Viva Engage.",
+          "rootCause": "",
+          "nextUpdateBy": "Tuesday, March 3, 2026, at 7:30 PM UTC",
+          "feature": "Post/Reply/Like",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-03-03T18:39:28.723Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to access the Suite navigation bar within Microsoft Viva Engage\n\nUser impact: Users may be unable to access the Suite navigation bar within Viva Engage.\n\nCurrent status: We've received reports from affected users that users may be unable to access the Suite navigation bar within Viva Engage. We're reviewing service telemetry to isolate the source of this impact and determine appropriate remediation actions.  \n \nScope of impact: Impact may occur for all users attempting to utilize the Suite navigation bar within Viva Engage.\n \nNext update by: Tuesday, March 3, 2026, at 7:30 PM UTC\n \n"
             }
           ],
           "affectedServices": [
