@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-05T20:45:44.900Z",
+  "lastUpdated": "2026-03-05T21:15:50.601Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -895,46 +895,6 @@
       "status": "serviceDegradation",
       "id": "PowerBIcom",
       "issues": [
-        {
-          "id": "PB1232111",
-          "title": "Users may see incorrect data in reports and downstream apps using result set caching in Microsoft Fabric",
-          "startTime": "2025-06-16T00:00:00Z",
-          "endTime": null,
-          "lastModified": "2026-03-05T20:40:22.99Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may have seen incorrect data in reports and downstream apps using result set caching in Microsoft Fabric.",
-          "scopeOfImpact": "This issue may potentially impact any user utilizing result set caching in Microsoft Fabric.\n \nStart time: Monday, June 16, 2025, at 12:00 AM UTC",
-          "rootCause": "A code issue with the result set caching feature in Microsoft Fabric is causing incorrect results with certain queries in Fabric Data Warehouse and Lakehouse SQL Analytics Endpoint.",
-          "nextUpdateBy": "Thursday, March 5, 2026, at 9:00 PM UTC",
-          "feature": "PowerBI.com",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-02-26T19:45:45.267Z",
-              "postType": "regular",
-              "content": "Title: Users may see incorrect results with certain queries when using result set caching in Microsoft Fabric\n\nUser impact: Users may see incorrect results with certain queries when using result set caching in Microsoft Fabric.\n\nMore info: This issue may specifically impact results with the queries in Fabric Data Warehouse and SQL Analytics Endpoint.\n \nWhile the feature remains disabled, we encourage users to manually refresh any reports, downstream apps, or both that may be using cached results from February 16, 2026, or earlier from the Data Warehouse or SQL Analytics Endpoints. This will ensure that these other apps don't continue to work with potentially incorrect results.\n\nFor more information, please see the known-issues page for this event here:\n \nsupport.fabric.microsoft.com/known-issues/?product=Data%2520Warehouse&active=true&fixed=true&sort=published&issueId=1729\n \nCurrent status: We’re continuing to work on a long-term fix to allow us to re-enable the result set caching feature at a later date, and we recommend that users follow the steps listed in the More info, if not done so already. \n\nScope of impact: This issue may potentially impact any user utilizing result set caching in Microsoft Fabric.\n \nStart time: Monday, June 16, 2025, at 12:00 AM UTC\n \nRoot cause: A code issue with the result set caching feature in Microsoft Fabric is causing incorrect results with certain queries in Fabric Data Warehouse and Lakehouse SQL Analytics Endpoint.\n \nNext update by: Thursday, March 5, 2026, at 9:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-02-19T19:50:07.607Z",
-              "postType": "regular",
-              "content": "Title: Users may see incorrect results with certain queries when using result set caching in Microsoft Fabric\n\nUser impact: Users may see incorrect results with certain queries when using result set caching in Microsoft Fabric.\n\nMore info: This issue may specifically impact results with the queries in Fabric Data Warehouse and SQL Analytics Endpoint.\n \nUsers should manually refresh any reports and/or downstream applications that may be using cached results from the Data Warehouse or SQL Analytics Endpoints, to ensure that these other applications don't continue to work with potentially incorrect results.\n\nCurrent status: While the feature remains disabled, we encourage users to manually refresh any reports and/or downstream applications that may be using cached results from the Data Warehouse or SQL Analytics Endpoints, to ensure that these other applications don't continue to work with potentially incorrect results.\n\nFor more information, please see the known-issues page for this event here:\n\nsupport.fabric.microsoft.com/known-issues/?product=Data%2520Warehouse&active=true&fixed=true&sort=published&issueId=1729\n\nScope of impact: This issue may potentially impact any user utilizing result set caching in Microsoft Fabric.\n\nStart time: Monday, June 16, 2025, at 12:00 AM UTC\n\nRoot cause: A code issue with the result set caching feature in Microsoft Fabric is causing incorrect results with certain queries in Fabric Data Warehouse and Lakehouse SQL Analytics Endpoint.\n\nNext update by: Thursday, February 26, 2026, at 9:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-02-17T20:20:48.103Z",
-              "postType": "regular",
-              "content": "Title: Users may see incorrect results with certain queries when using result set caching in Microsoft Fabric\n\nUser impact: Users may see incorrect results with certain queries when using result set caching in Microsoft Fabric.\n\nMore info: This issue may specifically impact results with the queries in Fabric Data Warehouse and Lakehouse SQL Analytics Endpoint.\n \nWhile we're focused on remediation, users can disable result set caching in Fabric Data Warehouse and Lakehouse SQL Analytics Endpoint.\n\nCurrent status: To prevent inaccurate results being generated, we've disabled this feature while we work on a long-term fix. \n\nFor more information, please see the known-issues page for this event here:\n\nsupport.fabric.microsoft.com/known-issues/?product=Data%2520Warehouse&active=true&fixed=true&sort=published&issueId=1729\n\nScope of impact: This issue may potentially impact any user utilizing result set caching in Microsoft Fabric.\n\nStart time: Monday, June 16, 2025, at 12:00 AM UTC\n\nRoot cause: A code issue with the result set caching feature in Microsoft Fabric is causing incorrect results with certain queries in Fabric Data Warehouse and Lakehouse SQL Analytics Endpoint.\n\nNext update by: Thursday, February 19, 2026, at 9:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-02-14T02:37:53.75Z",
-              "postType": "regular",
-              "content": "Title: Users may see incorrect results with certain queries when using result set caching in Microsoft Fabric\n\nUser impact: Users may see incorrect results with certain queries when using result set caching in Microsoft Fabric.\n\nMore info: This issue may specifically impact results with the queries in Fabric Data Warehouse and Lakehouse SQL Analytics Endpoint.\n \nWhile we're focused on remediation, users can disable result set caching in Fabric Data Warehouse and Lakehouse SQL Analytics Endpoint.\n\nCurrent status: We identified a code issue with the result set caching feature in Microsoft Fabric that is causing incorrect results with certain queries in Fabric Data Warehouse and Lakehouse SQL Analytics Endpoint. We're implementing a fix to disable the result set caching feature to remediate the impact. We anticipate that the fix will complete by the next scheduled update time.\n\nScope of impact: This issue may potentially impact any user utilizing result set caching in Microsoft Fabric.\n\nStart time: Monday, June 16, 2025, at 12:00 AM UTC\n\nRoot cause: A code issue with the result set caching feature in Microsoft Fabric is causing incorrect results with certain queries in Fabric Data Warehouse and Lakehouse SQL Analytics Endpoint.\n\nNext update by: Tuesday, February 17, 2026, at 9:00 PM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Power BI"
-          ]
-        },
         {
           "id": "PB1224494",
           "title": "Users may be unable to send subscription emails to external users in Power BI",
@@ -2230,6 +2190,52 @@
       "serviceName": "SharePoint Online",
       "affectedServices": [
         "SharePoint Online"
+      ]
+    },
+    {
+      "id": "PB1232111",
+      "title": "Users may see incorrect data in reports and downstream apps using result set caching in Microsoft Fabric",
+      "startTime": "2025-06-16T00:00:00Z",
+      "endTime": "2026-02-15T01:00:00Z",
+      "lastModified": "2026-03-05T20:43:16.4Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have seen incorrect data in reports and downstream apps using result set caching in Microsoft Fabric.",
+      "scopeOfImpact": "This issue may have potentially impacted any user utilizing result set caching in Microsoft Fabric.\n\nStart time: Monday, June 16, 2025, at 12:00 AM UTC\n\nEnd time: Sunday, February 15, 2026, at 1:00 AM UTC",
+      "rootCause": "A code issue with the result set caching feature in Microsoft Fabric was causing incorrect results with certain queries in Fabric Data Warehouse and Lakehouse SQL Analytics Endpoint, which resulted in impact.\n\nNext steps:\n- We're continuing to develop a long-term fix to fully resolve the result set caching feature issue and restore query result accuracy for both Fabric Data Warehouse and SQL Analytics Endpoint. We anticipate that this long-term fix development and safe deployment process will complete by Thursday, April 30, 2026.\n\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "PowerBI.com",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-03-05T20:43:16.4Z",
+          "postType": "regular",
+          "content": "Title: Users may see incorrect data in reports and downstream apps using result set caching in Microsoft Fabric\n\nUser impact: Users may have seen incorrect data in reports and downstream apps using result set caching in Microsoft Fabric.\n\nMore info: This issue specifically impacted results with the queries in Fabric Data Warehouse and SQL Analytics Endpoint when the result set caching feature was active. The results may have included incorrect cached items or excluded relevant cached items.\n\nWe disabled the result set caching feature as of February 16, 2026, to prevent any confusion or misinterpretation of results.  For any reports or downstream apps using cached results on or prior to February 16, 2026, from the Data Warehouse or SQL Analytics Endpoints, users will need to manually refresh to obtain relevant results. This will ensure that these other apps don't continue to work with potentially incorrect results.\n\nYou can also find further information here:\n\nsupport.fabric.microsoft.com/known-issues/?product=Data%2520Warehouse&active=true&fixed=true&sort=published&issueId=1729\n\nFinal status: We confirmed that disabling the result set caching feature has prevented the problem from spreading further. While we expect that we'll have a fix deployed at the end of April 2026, users will need to manually refresh the affected reports and downstream apps as outlined in the More info section to remediate the issue until that time. Please reach out to a support representative for additional help with manually refreshing the reports and apps or if the manual refresh isn't successful in providing the appropriate results.\n\nScope of impact: This issue may have potentially impacted any user utilizing result set caching in Microsoft Fabric.\n\nStart time: Monday, June 16, 2025, at 12:00 AM UTC\n\nEnd time: Sunday, February 15, 2026, at 1:00 AM UTC\n\nRoot cause: A code issue with the result set caching feature in Microsoft Fabric was causing incorrect results with certain queries in Fabric Data Warehouse and Lakehouse SQL Analytics Endpoint, which resulted in impact.\n\nNext steps:\n- We're continuing to develop a long-term fix to fully resolve the result set caching feature issue and restore query result accuracy for both Fabric Data Warehouse and SQL Analytics Endpoint. We anticipate that this long-term fix development and safe deployment process will complete by Thursday, April 30, 2026.\n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-02-26T19:45:45.267Z",
+          "postType": "regular",
+          "content": "Title: Users may see incorrect results with certain queries when using result set caching in Microsoft Fabric\n\nUser impact: Users may see incorrect results with certain queries when using result set caching in Microsoft Fabric.\n\nMore info: This issue may specifically impact results with the queries in Fabric Data Warehouse and SQL Analytics Endpoint.\n \nWhile the feature remains disabled, we encourage users to manually refresh any reports, downstream apps, or both that may be using cached results from February 16, 2026, or earlier from the Data Warehouse or SQL Analytics Endpoints. This will ensure that these other apps don't continue to work with potentially incorrect results.\n\nFor more information, please see the known-issues page for this event here:\n \nsupport.fabric.microsoft.com/known-issues/?product=Data%2520Warehouse&active=true&fixed=true&sort=published&issueId=1729\n \nCurrent status: We’re continuing to work on a long-term fix to allow us to re-enable the result set caching feature at a later date, and we recommend that users follow the steps listed in the More info, if not done so already. \n\nScope of impact: This issue may potentially impact any user utilizing result set caching in Microsoft Fabric.\n \nStart time: Monday, June 16, 2025, at 12:00 AM UTC\n \nRoot cause: A code issue with the result set caching feature in Microsoft Fabric is causing incorrect results with certain queries in Fabric Data Warehouse and Lakehouse SQL Analytics Endpoint.\n \nNext update by: Thursday, March 5, 2026, at 9:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-02-19T19:50:07.607Z",
+          "postType": "regular",
+          "content": "Title: Users may see incorrect results with certain queries when using result set caching in Microsoft Fabric\n\nUser impact: Users may see incorrect results with certain queries when using result set caching in Microsoft Fabric.\n\nMore info: This issue may specifically impact results with the queries in Fabric Data Warehouse and SQL Analytics Endpoint.\n \nUsers should manually refresh any reports and/or downstream applications that may be using cached results from the Data Warehouse or SQL Analytics Endpoints, to ensure that these other applications don't continue to work with potentially incorrect results.\n\nCurrent status: While the feature remains disabled, we encourage users to manually refresh any reports and/or downstream applications that may be using cached results from the Data Warehouse or SQL Analytics Endpoints, to ensure that these other applications don't continue to work with potentially incorrect results.\n\nFor more information, please see the known-issues page for this event here:\n\nsupport.fabric.microsoft.com/known-issues/?product=Data%2520Warehouse&active=true&fixed=true&sort=published&issueId=1729\n\nScope of impact: This issue may potentially impact any user utilizing result set caching in Microsoft Fabric.\n\nStart time: Monday, June 16, 2025, at 12:00 AM UTC\n\nRoot cause: A code issue with the result set caching feature in Microsoft Fabric is causing incorrect results with certain queries in Fabric Data Warehouse and Lakehouse SQL Analytics Endpoint.\n\nNext update by: Thursday, February 26, 2026, at 9:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-02-17T20:20:48.103Z",
+          "postType": "regular",
+          "content": "Title: Users may see incorrect results with certain queries when using result set caching in Microsoft Fabric\n\nUser impact: Users may see incorrect results with certain queries when using result set caching in Microsoft Fabric.\n\nMore info: This issue may specifically impact results with the queries in Fabric Data Warehouse and Lakehouse SQL Analytics Endpoint.\n \nWhile we're focused on remediation, users can disable result set caching in Fabric Data Warehouse and Lakehouse SQL Analytics Endpoint.\n\nCurrent status: To prevent inaccurate results being generated, we've disabled this feature while we work on a long-term fix. \n\nFor more information, please see the known-issues page for this event here:\n\nsupport.fabric.microsoft.com/known-issues/?product=Data%2520Warehouse&active=true&fixed=true&sort=published&issueId=1729\n\nScope of impact: This issue may potentially impact any user utilizing result set caching in Microsoft Fabric.\n\nStart time: Monday, June 16, 2025, at 12:00 AM UTC\n\nRoot cause: A code issue with the result set caching feature in Microsoft Fabric is causing incorrect results with certain queries in Fabric Data Warehouse and Lakehouse SQL Analytics Endpoint.\n\nNext update by: Thursday, February 19, 2026, at 9:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-02-14T02:37:53.75Z",
+          "postType": "regular",
+          "content": "Title: Users may see incorrect results with certain queries when using result set caching in Microsoft Fabric\n\nUser impact: Users may see incorrect results with certain queries when using result set caching in Microsoft Fabric.\n\nMore info: This issue may specifically impact results with the queries in Fabric Data Warehouse and Lakehouse SQL Analytics Endpoint.\n \nWhile we're focused on remediation, users can disable result set caching in Fabric Data Warehouse and Lakehouse SQL Analytics Endpoint.\n\nCurrent status: We identified a code issue with the result set caching feature in Microsoft Fabric that is causing incorrect results with certain queries in Fabric Data Warehouse and Lakehouse SQL Analytics Endpoint. We're implementing a fix to disable the result set caching feature to remediate the impact. We anticipate that the fix will complete by the next scheduled update time.\n\nScope of impact: This issue may potentially impact any user utilizing result set caching in Microsoft Fabric.\n\nStart time: Monday, June 16, 2025, at 12:00 AM UTC\n\nRoot cause: A code issue with the result set caching feature in Microsoft Fabric is causing incorrect results with certain queries in Fabric Data Warehouse and Lakehouse SQL Analytics Endpoint.\n\nNext update by: Tuesday, February 17, 2026, at 9:00 PM UTC"
+        }
+      ],
+      "serviceName": "Power BI",
+      "affectedServices": [
+        "Power BI"
       ]
     },
     {
