@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-05T20:15:39.529Z",
+  "lastUpdated": "2026-03-05T20:45:44.900Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -897,13 +897,13 @@
       "issues": [
         {
           "id": "PB1232111",
-          "title": "Users may see incorrect results with certain queries when using result set caching in Microsoft Fabric",
+          "title": "Users may see incorrect data in reports and downstream apps using result set caching in Microsoft Fabric",
           "startTime": "2025-06-16T00:00:00Z",
           "endTime": null,
-          "lastModified": "2026-02-26T19:45:45.267Z",
+          "lastModified": "2026-03-05T20:40:22.99Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "userImpact": "Users may see incorrect results with certain queries when using result set caching in Microsoft Fabric.",
+          "userImpact": "Users may have seen incorrect data in reports and downstream apps using result set caching in Microsoft Fabric.",
           "scopeOfImpact": "This issue may potentially impact any user utilizing result set caching in Microsoft Fabric.\n \nStart time: Monday, June 16, 2025, at 12:00 AM UTC",
           "rootCause": "A code issue with the result set caching feature in Microsoft Fabric is causing incorrect results with certain queries in Fabric Data Warehouse and Lakehouse SQL Analytics Endpoint.",
           "nextUpdateBy": "Thursday, March 5, 2026, at 9:00 PM UTC",
