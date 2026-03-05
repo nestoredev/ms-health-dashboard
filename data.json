@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-05T09:13:23.714Z",
+  "lastUpdated": "2026-03-05T09:43:29.837Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -245,6 +245,36 @@
               "createdAt": "2026-02-15T01:47:25.983Z",
               "postType": "regular",
               "content": "Title: Some admins may be unable to perform tenant to tenant migrations and offboarding moves in Exchange Online \n\nUser impact: Admins may be unable to perform tenant to tenant migrations and offboarding moves in Exchange Online.\n\nMore info: While we work on developing a long-term solution, admins may use PowerShell for the affected migrations and moves with the following cmdlet against the affected mailboxes:\n\nSet-MoveRequest \"user@yourdomain.com\" -SkipMoving FolderRestrictions\n\nThe tenant admin may then resume the move request (Resume-MoveRequest \"user@yourdomain.com\") or simply resume the migration batch. This will allow the affected move jobs to continue to make progress.\n\nCurrent status: We've been made aware of an issue in which some admins may be unable to perform tenant to tenant migrations and offboarding moves in Exchange Online. We're reviewing backend settings and recent changes to identify the root cause and develop a long-term solution. In the meantime, admins can follow the steps listed in the More Info section of this communication to bypass the impact scenario.\n \nScope of impact: Some admins attempting to perform tenant to tenant migrations and offboarding moves in Exchange Online may be affected. This information may be updated as our investigation continues. \n\nNext update by: Tuesday, February 17, 2026, at 10:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online"
+          ]
+        },
+        {
+          "id": "EX1243339",
+          "title": "Users may be unable to create or edit Ownerless Groups policies in Exchange Online",
+          "startTime": "2026-03-03T17:03:29Z",
+          "endTime": null,
+          "lastModified": "2026-03-05T09:31:12.293Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to create or edit Ownerless Groups policies in Exchange Online.",
+          "scopeOfImpact": "Users attempting to create or update Ownerless Groups policies in Exchange Online may be impacted. This section may be updated as our investigation continues.",
+          "rootCause": "A recent update to the authentication flow is causing the call to DSAPI to update Ownerless Groups policies to fail due to outdated authentication flow mapping, resulting in the impact.",
+          "nextUpdateBy": "Tuesday, March 10, 2026, at 7:30 AM UTC",
+          "feature": "Tenant Administration (Provisioning, Remote PowerShell)",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-03-03T17:40:45.777Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to create or edit Ownerless Groups policies in Exchange Online\n\nUser impact: Users may be unable to create or edit Ownerless Groups policies in Exchange Online.\n\nCurrent status: We've determined that a recent update to the authentication flow is causing the call to the Directory Services API (DSAPI) to update Ownerless Groups policies to fail due to outdated authentication flow mapping, resulting in the impact. We're deploying a solution to update the flow mapping for this call and we'll provide a timeline for remediation as one becomes available.\n\nScope of impact: Users attempting to create or update Ownerless Groups policies in Exchange Online may be impacted. This section may be updated as our investigation continues.\n\nRoot cause: A recent update to the authentication flow is causing the call to DSAPI to update Ownerless Groups policies to fail due to outdated authentication flow mapping, resulting in the impact.\n\nNext update by: Tuesday, March 10, 2026, at 7:30 AM UTC"
+            },
+            {
+              "createdAt": "2026-03-03T17:12:23.023Z",
+              "postType": "regular",
+              "content": "Title: Users can't create or edit Ownerless Groups policies in Exchange Online\n\nUser impact: Users can't create or edit Ownerless Groups policies in Exchange Online.\n\nCurrent status: We're investigating a potential issue with Exchange Online and checking for impact to your organization. We'll provide an update within 30 minutes."
             }
           ],
           "affectedServices": [
