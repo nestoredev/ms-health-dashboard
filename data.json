@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-06T15:49:33.324Z",
+  "lastUpdated": "2026-03-06T16:19:39.147Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -465,23 +465,33 @@
       "issues": [
         {
           "id": "MO1245624",
-          "title": "Some admins in North America region may be unable to access the Microsoft 365 admin center",
+          "title": "Some users in the North American region may be unable to access multiple Microsoft 365 services",
           "startTime": "2026-03-06T15:18:52Z",
           "endTime": null,
-          "lastModified": "2026-03-06T15:36:20.737Z",
+          "lastModified": "2026-03-06T16:09:44.033Z",
           "status": "serviceDegradation",
           "severity": "incident",
-          "userImpact": "Admins in North America region may be unable to access the Microsoft 365 admin center.",
-          "scopeOfImpact": "Impact is specific to some admins located in North America region attempting to access the admin center.",
+          "userImpact": "Users in the North American region may be unable to access multiple Microsoft 365 services.",
+          "scopeOfImpact": "Impact is specific to some users located in North American region attempting to access the Microsoft 365 admin center, Microsoft Teams and SharePoint Online.",
           "rootCause": "",
           "nextUpdateBy": "Friday, March 6, 2025, at 5:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
             {
+              "createdAt": "2026-03-06T16:09:44.033Z",
+              "postType": "regular",
+              "content": "Title: Some users in the North American region may be unable to access multiple Microsoft 365 services\n\nUser impact: Users in the North American region may be unable to access multiple Microsoft 365 services.\n\nMore info: Impacted services include, but are not limited to:\n- Microsoft 365 admin center\n- SharePoint Online\n- Microsoft Teams\n \nCurrent status: We're retrieving additional service monitoring telemetry for review as we work to isolate the root cause and develop a remediation plan.\n\nScope of impact: Impact is specific to some users located in North American region attempting to access the Microsoft 365 admin center, Microsoft Teams and SharePoint Online.\n\nNext update by: Friday, March 6, 2025, at 5:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-03-06T15:46:03.523Z",
+              "postType": "quick",
+              "content": "We’re continuing to review service monitoring telemetry related to Microsoft 365 admin center access in the North American region to isolate the source of the issue. \n\nThis quick update is designed to give the latest information on this issue."
+            },
+            {
               "createdAt": "2026-03-06T15:21:20.6Z",
               "postType": "regular",
-              "content": "Title: Some admins in North America region may be unable to access the Microsoft 365 admin center\n\nUser impact: Admins in North America region may be unable to access the Microsoft 365 admin center.\n\nCurrent status: We're reviewing service monitoring telemetry to isolate the root cause and develop a remediation plan.\n \nScope of impact: Impact is specific to some admins located in North America region attempting to access the admin center.\n \nNext update by: Friday, March 6, 2025, at 5:30 PM UTC"
+              "content": "Title: Some admins in the North American region may be unable to access the Microsoft 365 admin center\n\nUser impact: Admins in the North American region may be unable to access the Microsoft 365 admin center.\n\nCurrent status: We're reviewing service monitoring telemetry to isolate the root cause and develop a remediation plan.\n \nScope of impact: Impact is specific to some admins located in the North American region attempting to access the admin center.\n \nNext update by: Friday, March 6, 2025, at 5:30 PM UTC"
             }
           ],
           "affectedServices": [
