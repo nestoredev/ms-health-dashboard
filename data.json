@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-06T23:51:13.892Z",
+  "lastUpdated": "2026-03-07T00:21:20.219Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -2842,37 +2842,6 @@
       "serviceName": "Microsoft Intune",
       "affectedServices": [
         "Microsoft Intune"
-      ]
-    },
-    {
-      "id": "MO1227225",
-      "title": "Admins' usage reports in the Microsoft 365 admin center may be delayed",
-      "startTime": "2026-02-03T00:00:00Z",
-      "endTime": "2026-02-05T00:00:00Z",
-      "lastModified": "2026-02-05T22:02:30.687Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Admins' usage reports in the Microsoft 365 admin center may have been delayed.",
-      "scopeOfImpact": "Any admin may have been affected and may have seen delays in their usage reports in the Microsoft admin center. \n \nStart time: Tuesday, February 3, 2026, at 12:00 AM UTC\n \nEnd time: Thursday, February 5, 2026, at 12:00 AM UTC",
-      "rootCause": "A failure in an upstream data processing component prevented usage report data from being generated and supplied to the Microsoft 365 admin center, resulting in delayed usage reports.\n \nNext steps:\n- We’re investigating the failure in the upstream data processing component to help prevent this issue from recurring.\n \nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Company or User Administration",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-02-05T21:48:05.43Z",
-          "postType": "regular",
-          "content": "Title: Admins' usage reports in the Microsoft 365 admin center may be delayed\n\nUser impact: Admins' usage reports in the Microsoft 365 admin center may have been delayed.\n\nMore info: The \"Teams Team\" and \"Group Activity\" usage reports in the Microsoft 365 admin center may have been delayed.\n \nFinal status: We’ve identified a failure in an upstream data processing component that prevented usage report data from generating to the Microsoft 365 admin center, resulting in delayed usage reports. To remediate this issue, we manually restarted the affected data processing component and, after monitoring the service, we’ve verified the issue is successfully resolved.\n \nScope of impact: Any admin may have been affected and may have seen delays in their usage reports in the Microsoft admin center. \n \nStart time: Tuesday, February 3, 2026, at 12:00 AM UTC\n \nEnd time: Thursday, February 5, 2026, at 12:00 AM UTC\n \nRoot cause: A failure in an upstream data processing component prevented usage report data from being generated and supplied to the Microsoft 365 admin center, resulting in delayed usage reports.\n \nNext steps:\n- We’re investigating the failure in the upstream data processing component to help prevent this issue from recurring.\n \nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-02-05T06:52:16.26Z",
-          "postType": "regular",
-          "content": "Title: Admins' usage reports in the Microsoft admin center may be delayed\n\nUser impact: Admins' usage reports in the Microsoft admin center may be delayed.\n\nMore info: The \"Teams Team\" and \"Group Activity\" usage reports in the Microsoft admin center may be delayed.\n \nCurrent status: We were alerted to an issue from our internal monitoring that indicated a delay for the usage reports in the Microsoft admin center. We're reviewing our service infrastructure and telemetry logs to help pinpoint the underlying cause of the delayed usage report data, and to help develop our next troubleshooting steps.\n \nScope of impact: Any admin may be affected and see delays in their usage reports in the Microsoft admin center. This information may be updated as our investigation continues.\n \nNext update by: Thursday, February 5, 2026, at 10:30 PM UTC"
-        }
-      ],
-      "serviceName": "Microsoft 365 suite",
-      "affectedServices": [
-        "Microsoft 365 suite"
       ]
     }
   ]
