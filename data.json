@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-10T04:37:03.188Z",
+  "lastUpdated": "2026-03-10T05:07:08.491Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -226,16 +226,21 @@
           "title": "Users may be unable to create or edit Ownerless Groups policies in Exchange Online",
           "startTime": "2026-03-03T17:03:29Z",
           "endTime": null,
-          "lastModified": "2026-03-05T09:31:12.293Z",
+          "lastModified": "2026-03-10T04:48:49.01Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to create or edit Ownerless Groups policies in Exchange Online.",
           "scopeOfImpact": "Users attempting to create or update Ownerless Groups policies in Exchange Online may be impacted. This section may be updated as our investigation continues.",
           "rootCause": "A recent update to the authentication flow is causing the call to DSAPI to update Ownerless Groups policies to fail due to outdated authentication flow mapping, resulting in the impact.",
-          "nextUpdateBy": "Tuesday, March 10, 2026, at 7:30 AM UTC",
+          "nextUpdateBy": "Monday, March 16, 2026, at 8:30 AM UTC",
           "feature": "Tenant Administration (Provisioning, Remote PowerShell)",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-03-10T04:48:32.52Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to create or edit Ownerless Groups policies in Exchange Online\n\nUser impact: Users may be unable to create or edit Ownerless Groups policies in Exchange Online.\n\nCurrent status: The fix deployment is ongoing, and we anticipate it will have completed by our next scheduled update.\n\nScope of impact: Users attempting to create or update Ownerless Groups policies in Exchange Online may be impacted. This section may be updated as our investigation continues.\n\nRoot cause: A recent update to the authentication flow is causing the call to DSAPI to update Ownerless Groups policies to fail due to outdated authentication flow mapping, resulting in the impact.\n\nNext update by: Monday, March 16, 2026, at 8:30 AM UTC"
+            },
             {
               "createdAt": "2026-03-03T17:40:45.777Z",
               "postType": "regular",
