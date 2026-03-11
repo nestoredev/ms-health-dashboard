@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-11T18:14:46.525Z",
+  "lastUpdated": "2026-03-11T18:44:52.305Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -989,6 +989,36 @@
       "status": "serviceDegradation",
       "id": "PowerBIcom",
       "issues": [
+        {
+          "id": "PB1249121",
+          "title": "Users may not get email notifications for shared Power BI reports and dashboards or Microsoft Fabric artifactss",
+          "startTime": "2026-03-10T21:08:00Z",
+          "endTime": null,
+          "lastModified": "2026-03-11T18:35:21.22Z",
+          "status": "investigating",
+          "severity": "advisory",
+          "userImpact": "Users may not get email notifications for shared Power BI reports and dashboards or Microsoft Fabric artifacts.",
+          "scopeOfImpact": "An unexpected issue with Power BI report and dashboard and Microsoft Fabric artifact sharing is preventing delivery of email notifications reporting the shared items to users.\n\nStart time: Tuesday, March 10, 2026, at 9:08 PM UTC",
+          "rootCause": "An unexpected issue with Power BI report and dashboard and Microsoft Fabric artifact sharing that is preventing users from receiving email notifications.",
+          "nextUpdateBy": "Friday, March 13, 2026, at 8:00 PM UTC",
+          "feature": "PowerBI.com",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-03-11T18:27:22.497Z",
+              "postType": "regular",
+              "content": "Title: Users may not get email notifications for shared Power BI reports and dashboards or Microsoft Fabric artifactss\n\nUser impact: Users may not get email notifications for shared Power BI reports and dashboards or Microsoft Fabric artifacts.\n\nCurrent status: We've identified an unexpected issue with Power BI report and dashboard and Microsoft Fabric artifact sharing that’s preventing delivery of email notifications reporting the shared item to users. We're working on a fix to restore the functionality and will provide a timeline for the completion of the fix as one becomes available\n\nScope of impact: An unexpected issue with Power BI report and dashboard and Microsoft Fabric artifact sharing is preventing delivery of email notifications reporting the shared items to users.\n\nStart time: Tuesday, March 10, 2026, at 9:08 PM UTC\n\nRoot cause: An unexpected issue with Power BI report and dashboard and Microsoft Fabric artifact sharing that is preventing users from receiving email notifications.\n\nNext update by: Friday, March 13, 2026, at 8:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-03-11T18:17:17.617Z",
+              "postType": "regular",
+              "content": "Title: Users may not get email notifications for shared Power BI reports and dashboards or Microsoft Fabric artifactss\n\nUser impact: Users may not get email notifications for shared Power BI reports and dashboards or Microsoft Fabric artifacts.\n\nCurrent status: We're investigating a potential issue with Power BI and Microsoft Fabric and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Power BI"
+          ]
+        },
         {
           "id": "PB1224494",
           "title": "Users may be unable to send subscription emails to external users in Power BI",
