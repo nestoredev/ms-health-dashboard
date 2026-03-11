@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-11T21:45:28.620Z",
+  "lastUpdated": "2026-03-11T22:15:34.065Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1670,6 +1670,42 @@
     }
   ],
   "history": [
+    {
+      "id": "CW1247849",
+      "title": "Some users see additional Microsoft 365 Copilot Chat agents available to use",
+      "startTime": "2026-03-09T03:30:00Z",
+      "endTime": "2026-03-09T18:08:00Z",
+      "lastModified": "2026-03-10T21:25:09.243Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have seen additional Copilot Chat agents available to use.",
+      "scopeOfImpact": "This issue may have affected any Copilot Chat user.\n \nStart time: Monday, March 9, 2026, at 3:30 AM UTC\n \nEnd time: Monday, March 9, 2026, at 6:08 PM UTC",
+      "rootCause": "A recent Copilot Chat service update contained a misconfiguration for returning available agents, resulting in impact.\n \nNext steps: \n- We're reviewing our update testing and validation process to better detect issues such as this prior to deployment as to prevent similar future occurrences.\n \nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "General",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-03-10T21:25:09.243Z",
+          "postType": "regular",
+          "content": "Title: Some users see additional Microsoft 365 Copilot Chat agents available to use\n\nUser impact: Users may have seen additional Copilot Chat agents available to use.\n\nFinal status: We've determined that a recent Copilot Chat service update contained a misconfiguration for returning available agents, resulting in impact. We've reverted the update and confirmed that the additional agents are no longer appearing as available to use.\n \nScope of impact: This issue may have affected any Copilot Chat user.\n \nStart time: Monday, March 9, 2026, at 3:30 AM UTC\n \nEnd time: Monday, March 9, 2026, at 6:08 PM UTC\n \nRoot cause: A recent Copilot Chat service update contained a misconfiguration for returning available agents, resulting in impact.\n \nNext steps: \n- We're reviewing our update testing and validation process to better detect issues such as this prior to deployment as to prevent similar future occurrences.\n \nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-03-09T21:36:09.783Z",
+          "postType": "regular",
+          "content": "Title: Users may see additional Microsoft 365 Copilot Chat agents available to use\n\nUser impact: Users may see additional Copilot Chat agents available to use.\n\nMore info: The agents are labeled as \"bizchat-as-gpt-scenario\" and \"cwc-as-gpt-scenario.\"\n\nCurrent status: We've identified a change to the service that potentially introduced this problem and have rolled it back. We've asked a subset of users to test and confirm that this resolved the issue.\n\nScope of impact: This issue may affect any Copilot Chat user.\n\nNext update by: Tuesday, March 10, 2026, at 10:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-03-09T20:32:04.393Z",
+          "postType": "regular",
+          "content": "Title: Users may see additional Microsoft 365 Copilot Chat agents available to use\n\nUser impact: Users may see additional Microsoft 365 Copilot Chat agents available to use.\n\nMore info: The agents are labeled as \"bizchat-as-gpt-scenario\" and \"cwc-as-gpt-scenario.\"\n\nCurrent status: We're investigating a potential issue with Microsoft 365 Copilot Chat and checking for impact to your organization. We'll provide an update within 60 minutes."
+        }
+      ],
+      "serviceName": "Microsoft 365 Copilot Chat",
+      "affectedServices": [
+        "Microsoft 365 Copilot Chat"
+      ]
+    },
     {
       "id": "PL1235137",
       "title": "Some users may see delays with Microsoft Planner tasks updating to Microsoft To-Do",
