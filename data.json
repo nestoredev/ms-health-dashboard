@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-12T15:18:53.035Z",
+  "lastUpdated": "2026-03-12T15:48:58.706Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -2898,52 +2898,6 @@
       "serviceName": "Microsoft Viva",
       "affectedServices": [
         "Microsoft Viva"
-      ]
-    },
-    {
-      "id": "MO1230320",
-      "title": "Some users in the North America region may have been unable to access the Microsoft 365 admin center",
-      "startTime": "2026-02-10T13:56:00Z",
-      "endTime": "2026-02-10T16:25:00Z",
-      "lastModified": "2026-02-17T22:59:14.563Z",
-      "status": "postIncidentReviewPublished",
-      "severity": "incident",
-      "userImpact": "Users in the North America region may have been unable to access the Microsoft 365 admin center.",
-      "scopeOfImpact": "",
-      "rootCause": "",
-      "nextUpdateBy": "",
-      "feature": "Access",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-02-17T22:59:14.563Z",
-          "postType": "regular",
-          "content": "A post-incident report has been published."
-        },
-        {
-          "createdAt": "2026-02-12T23:13:00.873Z",
-          "postType": "regular",
-          "content": "A post-incident report has been published."
-        },
-        {
-          "createdAt": "2026-02-10T17:20:15.417Z",
-          "postType": "regular",
-          "content": "Title: Some users in the North America region may have been unable to access the Microsoft 365 admin center\n\nUser impact: Users in the North America region may have been unable to access the Microsoft 365 admin center.\n\nMore info: Users able to access the admin center may have experienced degraded functionality.\n \nAs functionality was degraded, users may have been unable to raise support tickets through the Microsoft 365 admin center.\n\nFinal status: We've confirmed that the issue is resolved through monitoring telemetry and customer validations.\n\nScope of impact: This issue impacted the North America region. \n\nStart time: Tuesday, February 10, 2026, at 1:56 PM UTC\n\nEnd time: Tuesday, February 10, 2026, at 4:25 PM UTC\n\nRoot cause: A recent change to the redirection service, related to caching mechanisms, resulted in impact. More information is provided within the Post-Incident Report.\n\nNext steps:\n- For a more comprehensive list of next steps and actions, please refer to the Post Incident Report document.\n\nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days."
-        },
-        {
-          "createdAt": "2026-02-10T16:47:04.983Z",
-          "postType": "regular",
-          "content": "Title: Some users in the North America region may be unable to access the Microsoft 365 admin center\n\nUser impact: Users in the North America region may be unable to access the Microsoft 365 admin center.\n\nMore info: Users able to access the admin center may be experiencing degraded functionality. \n\nAs functionality is degraded, users may be unable to raise support tickets through the Microsoft 365 admin center.\n\nAdditionally, users may be unable to access the M365 app.\n\nCurrent status: Whilst we were performing the targeted restarts, parallel root cause investigations identified a recent change to the redirection service which may have been contributing to impact. We’ve reverted the change and are monitoring the service for recovery. Telemetry indicates that the service is beginning to recover.\n\nScope of impact: This issue impacts the North America region. \n\nNext update by: Tuesday, February 10, 2026, at 6:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-02-10T16:10:38.817Z",
-          "postType": "quick",
-          "content": "We’ve identified elevated resource utilization in the service that routes requests to the admin center, and we’re restarting the service to mitigate impact.\n\nThis quick update is designed to give the latest information on this issue."
-        }
-      ],
-      "serviceName": "Microsoft 365 suite",
-      "affectedServices": [
-        "Microsoft 365 suite"
       ]
     }
   ]
