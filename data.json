@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-16T18:08:55.621Z",
+  "lastUpdated": "2026-03-16T18:39:01.019Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -722,16 +722,21 @@
           "title": "Some users may be unable to access Office.com or the Microsoft 365 Copilot web sign‑in page",
           "startTime": "2026-03-16T14:23:23Z",
           "endTime": null,
-          "lastModified": "2026-03-16T16:57:02.047Z",
+          "lastModified": "2026-03-16T18:16:44.84Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to access Office.com or the Microsoft 365 Copilot web sign‑in page.",
           "scopeOfImpact": "Impact is specific to some users who are served through the affected infrastructure.",
           "rootCause": "",
-          "nextUpdateBy": "Monday, March 16, 2026, at 6:30 PM UTC",
+          "nextUpdateBy": "Monday, March 16, 2026, at 8:30 PM UTC",
           "feature": "Company or User Administration",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-03-16T18:16:44.84Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to access Office.com or the Microsoft 365 Copilot web sign‑in page\n\nUser impact: Users may be unable to access Office.com or the Microsoft 365 Copilot web sign‑in page.\n\nMore info: The impacted web-client is office.com, and impacted Microsoft 365 Copilot web-clients are office.com/chat, m365.cloud.microsoft, m365.cloud.microsoft/chat and copilot.cloud.microsoft.\n \nUsers can access Microsoft Copilot through application-based Microsoft Copilot services. This includes but isn’t limited to:\n- Microsoft Copilot desktop app\n- Copilot in Microsoft Teams \n- Copilot in Office apps\n\nUser may be able to leverage office.com/search, which redirects to https://m365.cloud.microsoft/search, and should be able to sign in using this page. Once signed in, users can access the impacted web-based office.com and Copilot clients.\n\nCurrent status: Through analysis of our service-side telemetry, we’ve made additional configuration changes to optimize traffic to the affected infrastructure.  Our monitoring of service telemetry tracking successful and failed access attempts continues to ensure the effectiveness of these changes.\n\nScope of impact: Impact is specific to some users who are served through the affected infrastructure.\n\nNext update by: Monday, March 16, 2026, at 8:30 PM UTC"
+            },
             {
               "createdAt": "2026-03-16T16:13:02.333Z",
               "postType": "regular",
@@ -1647,16 +1652,21 @@
           "title": "Some users may be unable to access Office.com or the Microsoft 365 Copilot web sign‑in page",
           "startTime": "2026-03-16T14:23:23Z",
           "endTime": null,
-          "lastModified": "2026-03-16T16:57:02.047Z",
+          "lastModified": "2026-03-16T18:16:44.84Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to access Office.com or the Microsoft 365 Copilot web sign‑in page.",
           "scopeOfImpact": "Impact is specific to some users who are served through the affected infrastructure.",
           "rootCause": "",
-          "nextUpdateBy": "Monday, March 16, 2026, at 6:30 PM UTC",
+          "nextUpdateBy": "Monday, March 16, 2026, at 8:30 PM UTC",
           "feature": "Company or User Administration",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-03-16T18:16:44.84Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to access Office.com or the Microsoft 365 Copilot web sign‑in page\n\nUser impact: Users may be unable to access Office.com or the Microsoft 365 Copilot web sign‑in page.\n\nMore info: The impacted web-client is office.com, and impacted Microsoft 365 Copilot web-clients are office.com/chat, m365.cloud.microsoft, m365.cloud.microsoft/chat and copilot.cloud.microsoft.\n \nUsers can access Microsoft Copilot through application-based Microsoft Copilot services. This includes but isn’t limited to:\n- Microsoft Copilot desktop app\n- Copilot in Microsoft Teams \n- Copilot in Office apps\n\nUser may be able to leverage office.com/search, which redirects to https://m365.cloud.microsoft/search, and should be able to sign in using this page. Once signed in, users can access the impacted web-based office.com and Copilot clients.\n\nCurrent status: Through analysis of our service-side telemetry, we’ve made additional configuration changes to optimize traffic to the affected infrastructure.  Our monitoring of service telemetry tracking successful and failed access attempts continues to ensure the effectiveness of these changes.\n\nScope of impact: Impact is specific to some users who are served through the affected infrastructure.\n\nNext update by: Monday, March 16, 2026, at 8:30 PM UTC"
+            },
             {
               "createdAt": "2026-03-16T16:13:02.333Z",
               "postType": "regular",
@@ -1680,9 +1690,9 @@
     {
       "id": "EX1253275",
       "title": "Some users may have experienced issues when accessing their Exchange Online mailbox via one or more connection method  ",
-      "startTime": "2026-03-16T10:42:04Z",
+      "startTime": "2026-03-16T09:30:00Z",
       "endTime": "2026-03-16T13:30:00Z",
-      "lastModified": "2026-03-16T16:34:21.017Z",
+      "lastModified": "2026-03-16T18:30:21.283Z",
       "status": "serviceRestored",
       "severity": "incident",
       "userImpact": "Users may have experienced errors when accessing their mailbox via multiple Exchange Online connection methods.",
