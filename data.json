@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-16T14:38:15.828Z",
+  "lastUpdated": "2026-03-16T15:08:21.512Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -241,20 +241,25 @@
           "title": "Some users may experience issues when accessing their Exchange Online mailbox via one or more connection method  ",
           "startTime": "2026-03-16T10:42:04Z",
           "endTime": null,
-          "lastModified": "2026-03-16T14:26:50.193Z",
+          "lastModified": "2026-03-16T14:53:06.91Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may experience errors or failures when accessing their mailbox via one or more Exchange Online connection methods.",
-          "scopeOfImpact": "Impact is specific to some users attempting to access their mailbox via any of the connection methods detailed above.",
+          "scopeOfImpact": "",
           "rootCause": "",
-          "nextUpdateBy": "Monday, March 16, 2026, at 3:30 PM UTC",
+          "nextUpdateBy": "",
           "feature": "OWA - problem connecting",
           "isResolved": false,
           "posts": [
             {
+              "createdAt": "2026-03-16T14:45:19.47Z",
+              "postType": "quick",
+              "content": "We’re continuing to monitor service health to identify whether any additional actions are required to ensure longstanding recovery. Our telemetry continues to indicate the issue is no longer occurring for affected users.\n\nThis quick update is designed to give the latest information on this issue."
+            },
+            {
               "createdAt": "2026-03-16T14:19:26.81Z",
               "postType": "regular",
-              "content": "Title: Some users may experience issues when accessing their Exchange Online mailbox via one or more connection method  \n\nUser impact: Users may experience errors or failures when accessing their mailbox via one or more Exchange Online connection methods.\n\nMore info: Users may experience intermittent errors or degraded performance when attempting to access their mailbox. Impacted connection methods may include, but are not limited to:\n\n- Outlook on the web\n \nCurrent status: Internal reports and service monitoring telemetry indicate that the issue is no longer occurring for affected users. We’ll continue to monitor service health to ensure ongoing stability.\n\nScope of impact: Impact is specific to some users attempting to access their mailbox via any of the connection methods detailed above.\n \nNext update by: Monday, March 16, 2026, at 3:30 PM UTC"
+              "content": "Title: Some users may experience issues when accessing their Exchange Online mailbox via one or more connection method  \n\nUser impact: Users may experience errors or failures when accessing their mailbox via one or more Exchange Online connection methods.\n\nMore info: Users may experience errors or failures when attempting to accessing their mailbox. Impacted connection methods include but may not be limited to:\n\n- Outlook on the web\n \nCurrent status: Internal reports and service monitoring telemetry indicate that the issue is no longer occurring for affected users. We’ll continue to monitor service health to ensure ongoing stability.\n\nScope of impact: Impact is specific to some users attempting to access their mailbox via any of the connection methods detailed above.\n \nNext update by: Monday, March 16, 2026, at 3:30 PM UTC"
             },
             {
               "createdAt": "2026-03-16T13:30:35.023Z",
@@ -762,11 +767,11 @@
           "title": "Some users may be unable to access Office.com or the Microsoft 365 Copilot web sign‑in page",
           "startTime": "2026-03-16T14:23:23Z",
           "endTime": null,
-          "lastModified": "2026-03-16T14:28:52.61Z",
+          "lastModified": "2026-03-16T15:01:06.953Z",
           "status": "serviceDegradation",
-          "severity": "advisory",
+          "severity": "incident",
           "userImpact": "Users may be unable to access Office.com or the Microsoft 365 Copilot web sign‑in page.",
-          "scopeOfImpact": ": Impact is specific to some users who are served through the affected infrastructure.",
+          "scopeOfImpact": "Impact is specific to some users who are served through the affected infrastructure.",
           "rootCause": "",
           "nextUpdateBy": "Monday, March 16, 2026, at 4:30 PM UTC",
           "feature": "Company or User Administration",
@@ -775,11 +780,12 @@
             {
               "createdAt": "2026-03-16T14:28:52.61Z",
               "postType": "regular",
-              "content": "Title: Some users may be unable to access Office.com or the Microsoft 365 Copilot web sign‑in page\n\nUser impact: Users may be unable to access Office.com or the Microsoft 365 Copilot web sign‑in page.\n\nMore info: The impacted Microsoft 365 Copilot web-clients are office.com/chat and m365.cloud.microsoft/chat.\n \nUsers can access Microsoft Copilot through application-based Microsoft Copilot services. This includes, but is not limited to:\n\n- Microsoft Copilot desktop app\n- Copilot in Microsoft Teams \n- Copilot in Office apps\n\nCurrent status: We've identified that a section of service infrastructure is not processing traffic efficiently. We're making configuration changes to remediate impact.\n\nScope of impact:: Impact is specific to some users who are served through the affected infrastructure.\n\nNext update by: Monday, March 16, 2026, at 4:30 PM UTC "
+              "content": "Title: Some users may be unable to access Office.com or the Microsoft 365 Copilot web sign‑in page\n\nUser impact: Users may be unable to access Office.com or the Microsoft 365 Copilot web sign‑in page.\n\nMore info: The impacted web-client is office.com, and impacted Microsoft 365 Copilot web-clients are office.com/chat, m365.cloud.microsoft, m365.cloud.microsoft/chat and copilot.cloud.microsoft.\nUsers can access Microsoft Copilot through application-based Microsoft Copilot services. This includes, but is not limited to:\n \n- Microsoft Copilot desktop app\n- Copilot in Microsoft Teams \n- Copilot in Office apps\n\nCurrent status: We've identified that a section of service infrastructure is not processing traffic efficiently. We're making configuration changes to remediate impact.\n\nScope of impact: Impact is specific to some users who are served through the affected infrastructure.\n\nNext update by: Monday, March 16, 2026, at 4:30 PM UTC"
             }
           ],
           "affectedServices": [
-            "Microsoft 365 suite"
+            "Microsoft 365 suite",
+            "Microsoft 365 Copilot Chat"
           ]
         }
       ]
@@ -1718,6 +1724,32 @@
             }
           ],
           "affectedServices": [
+            "Microsoft 365 Copilot Chat"
+          ]
+        },
+        {
+          "id": "MO1253428",
+          "title": "Some users may be unable to access Office.com or the Microsoft 365 Copilot web sign‑in page",
+          "startTime": "2026-03-16T14:23:23Z",
+          "endTime": null,
+          "lastModified": "2026-03-16T15:01:06.953Z",
+          "status": "serviceDegradation",
+          "severity": "incident",
+          "userImpact": "Users may be unable to access Office.com or the Microsoft 365 Copilot web sign‑in page.",
+          "scopeOfImpact": "Impact is specific to some users who are served through the affected infrastructure.",
+          "rootCause": "",
+          "nextUpdateBy": "Monday, March 16, 2026, at 4:30 PM UTC",
+          "feature": "Company or User Administration",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-03-16T14:28:52.61Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to access Office.com or the Microsoft 365 Copilot web sign‑in page\n\nUser impact: Users may be unable to access Office.com or the Microsoft 365 Copilot web sign‑in page.\n\nMore info: The impacted web-client is office.com, and impacted Microsoft 365 Copilot web-clients are office.com/chat, m365.cloud.microsoft, m365.cloud.microsoft/chat and copilot.cloud.microsoft.\nUsers can access Microsoft Copilot through application-based Microsoft Copilot services. This includes, but is not limited to:\n \n- Microsoft Copilot desktop app\n- Copilot in Microsoft Teams \n- Copilot in Office apps\n\nCurrent status: We've identified that a section of service infrastructure is not processing traffic efficiently. We're making configuration changes to remediate impact.\n\nScope of impact: Impact is specific to some users who are served through the affected infrastructure.\n\nNext update by: Monday, March 16, 2026, at 4:30 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite",
             "Microsoft 365 Copilot Chat"
           ]
         }
