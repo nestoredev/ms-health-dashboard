@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-16T13:38:03.752Z",
+  "lastUpdated": "2026-03-16T14:08:10.750Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -230,6 +230,41 @@
               "createdAt": "2026-02-15T01:47:25.983Z",
               "postType": "regular",
               "content": "Title: Some admins may be unable to perform tenant to tenant migrations and offboarding moves in Exchange Online \n\nUser impact: Admins may be unable to perform tenant to tenant migrations and offboarding moves in Exchange Online.\n\nMore info: While we work on developing a long-term solution, admins may use PowerShell for the affected migrations and moves with the following cmdlet against the affected mailboxes:\n\nSet-MoveRequest \"user@yourdomain.com\" -SkipMoving FolderRestrictions\n\nThe tenant admin may then resume the move request (Resume-MoveRequest \"user@yourdomain.com\") or simply resume the migration batch. This will allow the affected move jobs to continue to make progress.\n\nCurrent status: We've been made aware of an issue in which some admins may be unable to perform tenant to tenant migrations and offboarding moves in Exchange Online. We're reviewing backend settings and recent changes to identify the root cause and develop a long-term solution. In the meantime, admins can follow the steps listed in the More Info section of this communication to bypass the impact scenario.\n \nScope of impact: Some admins attempting to perform tenant to tenant migrations and offboarding moves in Exchange Online may be affected. This information may be updated as our investigation continues. \n\nNext update by: Tuesday, February 17, 2026, at 10:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online"
+          ]
+        },
+        {
+          "id": "EX1253275",
+          "title": "Some users may experience issues when accessing their Exchange Online mailbox via one or more connection method  ",
+          "startTime": "2026-03-16T10:42:04Z",
+          "endTime": null,
+          "lastModified": "2026-03-16T13:53:42.433Z",
+          "status": "serviceDegradation",
+          "severity": "incident",
+          "userImpact": "Users may experience errors or failures when accessing their mailbox via one or more Exchange Online connection methods.",
+          "scopeOfImpact": "Impact is specific to some users attempting to access their mailbox via any of the connection methods detailed above.",
+          "rootCause": "",
+          "nextUpdateBy": "Monday, March 16, 2026, at 3:30 PM UTC",
+          "feature": "OWA - problem connecting",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-03-16T13:30:35.023Z",
+              "postType": "regular",
+              "content": "Title: Some users may experience issues when accessing their Exchange Online mailbox via one or more connection method  \n\nUser impact: Users may experience errors or failures when accessing their mailbox via one or more Exchange Online connection methods.\n\nMore info: Users may experience errors or failures when attempting to accessing their mailbox.\n \nImpacted connection methods include but may not be limited to:\n\n- Outlook on the web\n\nCurrent status: We’ve identified a backend issue that’s preventing some services from responding as expected, resulting in mailbox access delays. We’re investigating this behavior across regions to better understand the impact and determine next steps. We’re seeing signs of service recovery and will share additional updates as our investigation continues.\n \nScope of impact: Impact is specific to some users attempting to access their mailbox via any of the connection methods detailed above.\n \nNext update by: Monday, March 16, 2026, at 3:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-03-16T11:23:23.117Z",
+              "postType": "regular",
+              "content": "Title: Some users may experience issues when accessing their Exchange Online mailbox via one or more connection method  \n\nUser impact: Users may experience errors or failures when accessing their mailbox via one or more Exchange Online connection methods.\n\nMore info: Users may experience errors or failures when attempting to accessing their mailbox.\n \nImpacted connection methods include but may not be limited to:\n\n- Outlook on the web \n \nCurrent status: We’re currently reviewing service telemetry data to help identify the root cause and next steps required to mitigate impact. \n \nScope of impact: Impact is specific to some users located in Europe attempting to access their mailbox via any of the connection methods detailed above. \n \nNext update by: Monday, March 16, 2026, at 1:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-03-16T10:56:55.19Z",
+              "postType": "regular",
+              "content": "Title: Potential issues accessing mailboxes via one or more connection methods\n\nUser impact: Users may experience errors or failures when accessing their mailbox via one or more Exchange Online connection methods.\n\nCurrent status: We're investigating a potential issue and checking for impact to your organization. We'll provide an update within 60 minutes."
             }
           ],
           "affectedServices": [
