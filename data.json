@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-16T08:37:06.098Z",
+  "lastUpdated": "2026-03-16T09:07:12.480Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1660,7 +1660,7 @@
       "title": "Users were unable to create or edit Ownerless Groups policies in Exchange Online",
       "startTime": "2026-02-12T15:33:00Z",
       "endTime": "2026-03-16T06:30:00Z",
-      "lastModified": "2026-03-16T07:35:17.42Z",
+      "lastModified": "2026-03-16T08:36:41.51Z",
       "status": "serviceRestored",
       "severity": "advisory",
       "userImpact": "Users were unable to create or edit Ownerless Groups policies in Exchange Online.",
@@ -1670,6 +1670,11 @@
       "feature": "Tenant Administration (Provisioning, Remote PowerShell)",
       "isResolved": true,
       "posts": [
+        {
+          "createdAt": "2026-03-16T08:36:41.51Z",
+          "postType": "regular",
+          "content": "Title: Users were unable to create or edit Ownerless Groups policies in Exchange Online\n\nUser impact: Users were unable to create or edit Ownerless Groups policies in Exchange Online.\n\nFinal status: We’ve successfully developed and deployed the fix and after our validations have confirmed that impact is resolved.\n \nScope of impact: Users attempting to create or update Ownerless Groups policies in Exchange Online were impacted.\n \nStart time: Thursday, February 12, 2026, at 3:33 PM UTC\n \nEnd time: Monday, March 16, 2026, at 6:30 AM UTC\n \nRoot cause: A recent update to the authentication flow is caused the call to DSAPI to update Ownerless Groups policies to fail due to outdated authentication flow mapping, resulting in the impact.\n \nNext steps:\n- We're reviewing our update procedures to better identify similar issues during our development and testing cycles\n \nThis is the final update for this event."
+        },
         {
           "createdAt": "2026-03-16T07:33:50.45Z",
           "postType": "regular",
