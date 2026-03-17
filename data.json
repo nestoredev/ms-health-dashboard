@@ -1,11 +1,41 @@
 {
-  "lastUpdated": "2026-03-17T08:41:35.628Z",
+  "lastUpdated": "2026-03-17T09:11:41.120Z",
   "services": [
     {
       "service": "Exchange Online",
       "status": "serviceDegradation",
       "id": "Exchange",
       "issues": [
+        {
+          "id": "EX1254044",
+          "title": "Some users may be unable to use Microsoft Outlook Classic while the Microsoft Teams Meeting Add-in is enabled",
+          "startTime": "2026-03-12T12:36:00Z",
+          "endTime": null,
+          "lastModified": "2026-03-17T08:57:51.667Z",
+          "status": "serviceDegradation",
+          "severity": "incident",
+          "userImpact": "Users may be unable to use Microsoft Outlook Classic while the Microsoft Teams Meeting Add-in is enabled.",
+          "scopeOfImpact": "Users attempting to use Microsoft Outlook Classic while the Microsoft Teams Meeting Add-in and previous Outlook build version is enabled may be impacted.\n\nStart time: Thursday, March 12, 2026, at 12:36 PM UTC",
+          "rootCause": "A previous Outlook build version that is enabled is causing impact to occur.",
+          "nextUpdateBy": "Thursday, March 19, 2025, at 10:30 AM UTC",
+          "feature": "Outlook - problems connecting",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-03-17T08:54:12.257Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to use Microsoft Outlook Classic while the Microsoft Teams Meeting Add-in is enabled\n\nUser impact: Users may be unable to use Microsoft Outlook Classic while the Microsoft Teams Meeting Add-in is enabled.\n\nMore info: If Teams Meeting Add-in is disabled then Outlook Classic functions as normal.\n\nAs a workaround, users can also perform an Online Repair of Office or update Outlook to the latest version to resolve the issue.\n\nCurrent status: We've identified that a previous Outlook build version is causing impact to occur. We're working with your representatives to ensure that the latest Outlook version is enabled, to mitigate impact.\n\nScope of impact: Users attempting to use Microsoft Outlook Classic while the Microsoft Teams Meeting Add-in and previous Outlook build version is enabled may be impacted.\n\nStart time: Thursday, March 12, 2026, at 12:36 PM UTC\n\nRoot cause: A previous Outlook build version that is enabled is causing impact to occur.\n\nNext update by: Thursday, March 19, 2025, at 10:30 AM UTC"
+            },
+            {
+              "createdAt": "2026-03-17T06:55:06.537Z",
+              "postType": "regular",
+              "content": "Title: Some users are unable to use Microsoft Outlook Classic while the Microsoft Teams Meeting Add-in is enabled\n\nUser impact: Users are unable to use Microsoft Outlook Classic while the Microsoft Teams Meeting Add-in is enabled.\n\nMore info: If Teams Meeting Add-in is disabled then Outlook Classic functions as normal. \n\nAs a workaround, users can also perform an Online Repair of Office or update Outlook to the latest version to resolve the issue.\n\nCurrent status: We're analyzing support provided information to determine our next troubleshooting steps.\n\nScope of impact: Your organization is affected by this event, and users attempting to use Microsoft Outlook Classic while the Microsoft Teams Meeting Add-in is enabled are impacted.\n\nNext update by: Tuesday, March 17, 2025, at 9:00 AM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online"
+          ]
+        },
         {
           "id": "EX1213792",
           "title": "Admins can’t upgrade groups from Distributions Lists to Unified Groups using PowerShell or the Exchange admin center",
