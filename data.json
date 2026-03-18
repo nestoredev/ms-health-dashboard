@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-18T00:14:34.353Z",
+  "lastUpdated": "2026-03-18T00:44:39.936Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -662,16 +662,21 @@
           "title": "Admins' Microsoft 365 admin center usage report data may be delayed",
           "startTime": "2026-03-13T00:00:00Z",
           "endTime": null,
-          "lastModified": "2026-03-17T15:40:02.813Z",
+          "lastModified": "2026-03-18T00:25:09.64Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins' Microsoft 365 admin center usage report data may be delayed.",
-          "scopeOfImpact": "Admins attempting to view usage report data in the Microsoft 365 admin center may be impacted. This information may be updated as our investigation continues.\n\nStart time: Friday, March 13, 2026, at 12:00 AM UTC",
+          "scopeOfImpact": "Admins attempting to view usage report data in the Microsoft 365 admin center may be impacted. This information may be updated as our investigation continues.\n \nStart time: Friday, March 13, 2026, at 12:00 AM UTC",
           "rootCause": "An upstream data source pipeline issue is causing delays in usage report data availability, and this is resulting in impact.",
-          "nextUpdateBy": "Wednesday, March 18, 2026, at 1:00 AM UTC",
+          "nextUpdateBy": "Thursday, March 18, 2026, at 1:00 AM UTC",
           "feature": "Company or User Administration",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-03-18T00:25:09.64Z",
+              "postType": "regular",
+              "content": "Title: Admins' Microsoft 365 admin center usage report data may be delayed\n\nUser impact: Admins' Microsoft 365 admin center usage report data may be delayed.\n\nMore info: Specifically, admins attempting to view usage report data for any Microsoft 365 service in the Microsoft 365 admin center, including Copilot and Microsoft Teams, may see delays.\n \nCurrent status: We’re implementing a fix to address the upstream data source pipeline issue, which we anticipate we’ll be able to provide a timeline for resolution by our next scheduled communications update. As our fix propagates throughout the affected regions the backlog for some of the affected usage report data has been processed and admins may see impact alleviate during this process. Additionally, as our fix completely saturates the subsequent remaining regions, the remaining backlog will be fully processed.\n \nScope of impact: Admins attempting to view usage report data in the Microsoft 365 admin center may be impacted. This information may be updated as our investigation continues.\n \nStart time: Friday, March 13, 2026, at 12:00 AM UTC\n \nRoot cause: An upstream data source pipeline issue is causing delays in usage report data availability, and this is resulting in impact.\n \nNext update by: Thursday, March 18, 2026, at 1:00 AM UTC"
+            },
             {
               "createdAt": "2026-03-17T00:06:45.033Z",
               "postType": "regular",
@@ -757,16 +762,21 @@
           "title": "Some users may be unable to access Office.com or the Microsoft 365 Copilot web sign‑in page",
           "startTime": "2026-03-17T11:42:00Z",
           "endTime": null,
-          "lastModified": "2026-03-17T22:11:24.92Z",
+          "lastModified": "2026-03-18T00:31:17.847Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to access Office.com or the Microsoft 365 Copilot web sign‑in page.",
-          "scopeOfImpact": "Impact is specific to some users who are served through the affected infrastructure.\n\nStart time: Tuesday, March 17, 2026, at 11:42 AM UTC",
+          "scopeOfImpact": "Impact is specific to some users who are served through the affected infrastructure.\n \nStart time: Tuesday, March 17, 2026, at 11:42 AM UTC",
           "rootCause": "The infrastructure that supports access to Office.com and the Microsoft 365 Copilot web sign-in page is receiving a high volume of traffic that inhibits the rate at which some users' requests are being processed, preventing some users from accessing the service pages.",
-          "nextUpdateBy": "Wednesday, March 18, 2026, at 12:30 AM UTC",
+          "nextUpdateBy": "Wednesday, March 18, 2026, at 3:00 PM UTC",
           "feature": "Sign-in",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-03-18T00:31:17.847Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to access Office.com or the Microsoft 365 Copilot web sign‑in page\n\nUser impact: Users may be unable to access Office.com or the Microsoft 365 Copilot web sign‑in page.\n\nMore info: The impact to Office.com is still occurring, but the impact to Microsoft 365 Copilot web clients, office.com/chat, m365.cloud.microsoft, m365.cloud.microsoft/chat and copilot.cloud.microsoft, have recovered as of March 17, 2026, at 4:05 PM UTC.\n \nUsers can access Microsoft Copilot through application-based Microsoft Copilot services. This includes, but is not limited to:\n- Microsoft Copilot desktop app\n- Copilot in Microsoft Teams \n- Copilot in Office apps\nUser may be able to leverage https://m365.cloud.microsoft/search, and should be able to sign in using this page. Once signed in, users can access Office.com.\n \nCurrent status: While our telemetry indicates that the impact is largely remediated, we’re continuing to monitor the environment as our traffic optimizations are nearing completion. We're proceeding with the monitoring process to ensure the service is stable and to determine whether any additional mitigative steps may be necessary to fully resolve this issue.\n \nScope of impact: Impact is specific to some users who are served through the affected infrastructure.\n \nStart time: Tuesday, March 17, 2026, at 11:42 AM UTC\n \nRoot cause: The infrastructure that supports access to Office.com and the Microsoft 365 Copilot web sign-in page is receiving a high volume of traffic that inhibits the rate at which some users' requests are being processed, preventing some users from accessing the service pages.\n \nNext update by: Wednesday, March 18, 2026, at 3:00 PM UTC"
+            },
             {
               "createdAt": "2026-03-17T22:11:24.92Z",
               "postType": "regular",
