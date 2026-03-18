@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-18T18:18:02.675Z",
+  "lastUpdated": "2026-03-18T18:48:08.126Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1953,16 +1953,26 @@
       "title": "Some users may experience issues when accessing their Exchange Online mailbox via one or more connection method",
       "startTime": "2026-03-16T09:30:00Z",
       "endTime": "2026-03-16T13:30:00Z",
-      "lastModified": "2026-03-16T18:36:47.493Z",
-      "status": "serviceRestored",
+      "lastModified": "2026-03-18T18:30:48.347Z",
+      "status": "postIncidentReviewPublished",
       "severity": "incident",
       "userImpact": "Users may have experienced errors when accessing their mailbox via multiple Exchange Online connection methods.",
-      "scopeOfImpact": "Impact was specific to some users attempting to access their mailbox via any of the connection methods detailed above.\n\nStart time: Monday, March 16, 2026, at 9:30 AM UTC\n\nEnd time: Monday, March 16, 2026, at 1:30 PM UTC\n\nPreliminary",
-      "rootCause": "An underlying issue involving the supporting network infrastructure resulted in a service availability degradation across the Exchange Online connection methods. We're continuing to investigate to determine the full root cause and will provide more information within the Post-Incident Report.\n\nNext steps:\n- We're continuing to examine the underlying circumstances that led to this behavior to understand the root cause. \n\nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days.",
+      "scopeOfImpact": "",
+      "rootCause": "",
       "nextUpdateBy": "",
       "feature": "OWA - problem connecting",
       "isResolved": true,
       "posts": [
+        {
+          "createdAt": "2026-03-18T18:30:48.347Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        },
+        {
+          "createdAt": "2026-03-18T18:30:33.903Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        },
         {
           "createdAt": "2026-03-16T16:34:21.017Z",
           "postType": "regular",
@@ -1977,16 +1987,6 @@
           "createdAt": "2026-03-16T14:45:19.47Z",
           "postType": "quick",
           "content": "We’re continuing to monitor service health to identify whether any additional actions are required to ensure longstanding recovery. Our telemetry continues to indicate the issue is no longer occurring for affected users.\n\nThis quick update is designed to give the latest information on this issue."
-        },
-        {
-          "createdAt": "2026-03-16T14:19:26.81Z",
-          "postType": "regular",
-          "content": "Title: Some users may experience issues when accessing their Exchange Online mailbox via one or more connection method  \n\nUser impact: Users may experience errors or failures when accessing their mailbox via one or more Exchange Online connection methods.\n\nMore info: Users may experience errors or failures when attempting to accessing their mailbox. Impacted connection methods include but may not be limited to:\n\n- Outlook on the web\n \nCurrent status: Internal reports and service monitoring telemetry indicate that the issue is no longer occurring for affected users. We’ll continue to monitor service health to ensure ongoing stability.\n\nScope of impact: Impact is specific to some users attempting to access their mailbox via any of the connection methods detailed above.\n \nNext update by: Monday, March 16, 2026, at 3:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-03-16T13:30:35.023Z",
-          "postType": "regular",
-          "content": "Title: Some users may experience issues when accessing their Exchange Online mailbox via one or more connection method  \n\nUser impact: Users may experience errors or failures when accessing their mailbox via one or more Exchange Online connection methods.\n\nMore info: Users may experience errors or failures when attempting to accessing their mailbox.\n \nImpacted connection methods include but may not be limited to:\n\n- Outlook on the web\n\nCurrent status: We’ve identified a backend issue that’s preventing some services from responding as expected, resulting in mailbox access delays. We’re investigating this behavior across regions to better understand the impact and determine next steps. We’re seeing signs of service recovery and will share additional updates as our investigation continues.\n \nScope of impact: Impact is specific to some users attempting to access their mailbox via any of the connection methods detailed above.\n \nNext update by: Monday, March 16, 2026, at 3:30 PM UTC"
         }
       ],
       "serviceName": "Exchange Online",
