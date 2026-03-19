@@ -1,11 +1,41 @@
 {
-  "lastUpdated": "2026-03-19T16:52:19.237Z",
+  "lastUpdated": "2026-03-19T17:22:26.570Z",
   "services": [
     {
       "service": "Exchange Online",
       "status": "serviceDegradation",
       "id": "Exchange",
       "issues": [
+        {
+          "id": "EX1256020",
+          "title": "Some users may be intermittently unable to access their Exchange Online mailboxes with the Outlook mobile apps",
+          "startTime": "2026-03-19T14:20:42Z",
+          "endTime": null,
+          "lastModified": "2026-03-19T17:10:27.383Z",
+          "status": "serviceDegradation",
+          "severity": "incident",
+          "userImpact": "Users may be intermittently unable to access their Exchange Online mailboxes with the Outlook mobile apps.",
+          "scopeOfImpact": "Impact may occur for some users intermittently unable to access their Exchange Online mailboxes with the Outlook mobile apps.",
+          "rootCause": "",
+          "nextUpdateBy": "Thursday, March 19, 2026, at 6:30 PM UTC",
+          "feature": "Performance degradation",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-03-19T16:19:24.1Z",
+              "postType": "regular",
+              "content": "Title: Some users may be intermittently unable to access their Exchange Online mailboxes with the Outlook mobile apps\n\nUser impact: Users may be intermittently unable to access their Exchange Online mailboxes with the Outlook mobile apps.\n\nMore info: This issue impacts both the Android and iOS mobile app experiences.\n \nCurrent status: We’re continuing our review of Outlook mobile logs and service telemetry to isolate the source of the issue and determine appropriate remediation actions.\n \nScope of impact: Impact may occur for some users intermittently unable to access their Exchange Online mailboxes with the Outlook mobile apps.\n \nNext update by: Thursday, March 19, 2026, at 6:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-03-19T14:23:32.703Z",
+              "postType": "regular",
+              "content": "Title: Some users may be intermittently unable to access their Exchange Online mailboxes with the Outlook mobile apps\n \nUser impact: Users may be intermittently unable to access their Exchange Online mailboxes with the Outlook mobile apps.\n\nMore info: This issue impacts both the Android and iOS mobile app experiences.\n \nCurrent status: We're analyzing Outlook mobile logs to isolate the root cause of impact and establish a fix.\n \nScope of impact: Impact may occur for some users intermittently unable to access their Exchange Online mailboxes with the Outlook mobile apps.\n \nNext update by: Thursday, March 19, 2026, at 4:30 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online"
+          ]
+        },
         {
           "id": "EX1233142",
           "title": "Some users may see that when selecting a meeting room when scheduling meetings, it changes from available to unavailable",
