@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-19T19:53:00.302Z",
+  "lastUpdated": "2026-03-19T20:23:06.130Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -361,16 +361,21 @@
           "title": "Some admins may be unable to perform tenant to tenant migrations and offboarding moves in the Exchange admin center",
           "startTime": "2026-02-15T01:44:21Z",
           "endTime": null,
-          "lastModified": "2026-03-16T20:38:50.193Z",
+          "lastModified": "2026-03-19T20:15:30.147Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may be unable to perform tenant to tenant migrations and offboarding moves in the Exchange admin center.",
           "scopeOfImpact": "Some admins attempting to perform tenant to tenant migrations and offboarding moves in the Exchange admin center may be affected. This information may be updated as our investigation continues.",
           "rootCause": "A change introduced a code regression to Mailbox Replication Service (MRS), which causes intermittent failures for tenant-to-tenant migration actions or offboarding moves as the property tags needed to complete the request are not being properly configured.",
-          "nextUpdateBy": "Thursday, March 19, 2026, at 9:30 PM UTC",
+          "nextUpdateBy": "Thursday, March 26, 2026, at 9:30 PM UTC",
           "feature": "Tenant Administration (Provisioning, Remote PowerShell)",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-03-19T20:15:30.147Z",
+              "postType": "regular",
+              "content": "Title: Some admins may be unable to perform tenant to tenant migrations and offboarding moves in the Exchange admin center\n\nUser impact: Admins may be unable to perform tenant to tenant migrations and offboarding moves in the Exchange admin center.\n\nMore info: While we work on developing a long-term solution, admins may use PowerShell for the affected migrations and moves with the following cmdlet against the affected mailboxes:\n \nSet-MoveRequest \"user@yourdomain.com\" -SkipMoving FolderRestrictions\n \nNext, the tenant admin may resume the move request using the cmdlet:\n \nResume-MoveRequest \"user@yourdomain.com\"\n \nThis will allow the affected move jobs to continue to make progress.\n \nAdmins may run the following PowerShell cmdlets sequentially for migration batches:\n \nSet-MigrationBatch batchname -SkipMoving FolderRestrictions\nStart-MigrationBatch \"BatchName\"\n \nAdmins attempting to complete a tenant-to-tenant migration or an offboarding move in Exchange Online will be returned the following error \n\"PropTagToPropertyDefinitionConversionException\"\n \nCurrent status: We've developed and deployed an updated fix to ensure that all tenant to tenant and offboarding moves are restored for admins in the Exchange Online admin center. We expect that this fix will have completely saturated all affected environments by Friday, April 3, 2026, and we'll continue monitoring this process as it progresses so that we’re able to provide any updates to this timeline as soon as they become available.\n \nScope of impact: Some admins attempting to perform tenant to tenant migrations and offboarding moves in the Exchange admin center may be affected. This information may be updated as our investigation continues.\n \nRoot cause: A change introduced a code regression to Mailbox Replication Service (MRS), which causes intermittent failures for tenant-to-tenant migration actions or offboarding moves as the property tags needed to complete the request are not being properly configured.\n \nNext update by: Thursday, March 26, 2026, at 9:30 PM UTC"
+            },
             {
               "createdAt": "2026-03-16T20:38:50.193Z",
               "postType": "regular",
@@ -812,7 +817,7 @@
           "title": "Some admins' Microsoft 365 admin center usage report data may be delayed",
           "startTime": "2026-03-13T00:00:00Z",
           "endTime": null,
-          "lastModified": "2026-03-19T19:39:05.337Z",
+          "lastModified": "2026-03-19T20:17:52.923Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins' Microsoft 365 admin center usage report data may be delayed.",
@@ -825,7 +830,7 @@
             {
               "createdAt": "2026-03-19T19:38:40.413Z",
               "postType": "regular",
-              "content": "Title: Some Admins' Microsoft 365 admin center usage report data may be delayed\n\nUser impact: Admins' Microsoft 365 admin center usage report data may be delayed.\n\nMore info: Specifically, admins attempting to view usage report data for any Microsoft 365 service in the Microsoft 365 admin center, including Copilot and Microsoft Teams, may see delays.\n \nCurrent status: We've confirmed that the backlogged data for the mass majority of previously affected reports has been processed and the usage report data is reflecting accurately. There are three remaining affected reports that we're continuing to monitor while the data is being processed. The remaining reports affected are all Copilot reports with the latest data being from March 14, 2026, Team User Activity Reports which are only delayed for some admins located in North America with the latest data being from March 13, 2026, and Adoption Score Reports that are delayed for some admins with the latest data being from March 5th, 2026. We anticipate the majority of the data for the remaining affected usage reports will be processed by our next scheduled update, and we'll aim to provide an updated resolution timeline if the processing is not complete.\n\nScope of impact: Admins attempting to view some usage report data in the Microsoft 365 admin center may be impacted. This information may be updated as our investigation continues.\n \nStart time: Friday, March 13, 2026, at 12:00 AM UTC\n \nRoot cause: An upstream data source pipeline issue is causing delays in some usage report data availability, and this is resulting in impact.\n \nNext update by: Saturday, March 21, 2026, at 1:00 AM UTC"
+              "content": "Title: Some Admins' Microsoft 365 admin center usage report data may be delayed\n\nUser impact: Admins' Microsoft 365 admin center usage report data may be delayed.\n\nMore info: The majority of usage reports are within Service Level Agreement (SLA), while the following usage report data in the Microsoft 365 admin center are still impacted:\n\n- All Copilot Reports may be delayed for admins in all regions, the latest data is from March 14, 2026.\n- Teams User Activity Reports may be delayed for admins in North America, the latest data is from March 13, 2026.\n- Adoption Score Reports may be delayed for admins in North America, Europe, and Asia- Pacific, the data is from March 5, 2026.\n \nCurrent status: We've confirmed that the backlogged data for the mass majority of previously affected reports has been processed and the usage report data is reflecting accurately. There are three remaining affected reports that we're continuing to monitor while the data is being processed. The remaining reports affected are all Copilot reports with the latest data being from March 14, 2026, Team User Activity Reports which are only delayed for some admins located in North America with the latest data being from March 13, 2026, and Adoption Score Reports that are delayed for some admins with the latest data being from March 5th, 2026. We anticipate the majority of the data for the remaining affected usage reports will be processed by our next scheduled update, and we'll aim to provide an updated resolution timeline if the processing is not complete.\n\nScope of impact: Admins attempting to view some usage report data in the Microsoft 365 admin center may be impacted. This information may be updated as our investigation continues.\n \nStart time: Friday, March 13, 2026, at 12:00 AM UTC\n \nRoot cause: An upstream data source pipeline issue is causing delays in some usage report data availability, and this is resulting in impact.\n \nNext update by: Saturday, March 21, 2026, at 1:00 AM UTC"
             },
             {
               "createdAt": "2026-03-18T23:43:11.22Z",
