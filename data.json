@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-20T18:27:53.367Z",
+  "lastUpdated": "2026-03-20T18:58:00.826Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -990,36 +990,6 @@
           ]
         },
         {
-          "id": "SP1256971",
-          "title": "Some users may experience intermittent delays when opening SharePoint Online sites and receive an error message",
-          "startTime": "2026-03-20T15:14:26Z",
-          "endTime": null,
-          "lastModified": "2026-03-20T17:25:22.62Z",
-          "status": "serviceDegradation",
-          "severity": "incident",
-          "userImpact": "Users may experience intermittent delays when opening SharePoint Online sites and receive an error message.",
-          "scopeOfImpact": "This issue may intermittently affect some users that are based in the United States and are attempting to access any SharePoint Online site.",
-          "rootCause": "",
-          "nextUpdateBy": "Friday, March 20, 2026, at 6:00 PM UTC",
-          "feature": "SharePoint Online all features",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-03-20T16:06:42.39Z",
-              "postType": "regular",
-              "content": "Title: Some users may experience intermittent delays when opening SharePoint Online sites and receive an error message\n\nUser impact: Users may experience intermittent delays when opening SharePoint Online sites and receive an error message.\n\nCurrent status: We're reviewing service telemetry to better understand this event and identify any potential root cause.\n \nScope of impact: This issue may intermittently affect some users that are based in the United States and are attempting to access any SharePoint Online site.\n\nNext update by: Friday, March 20, 2026, at 6:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-03-20T15:14:27.647Z",
-              "postType": "regular",
-              "content": "Title: Potential issues accessing SharePoint Online sites\r\n\r\nUser impact: Users may be unable to access SharePoint Online sites and may notice delays or navigation errors.\r\n\r\nCurrent Status: We're investigating a potential issue and checking for impact to your organization. We'll provide an update within one hour."
-            }
-          ],
-          "affectedServices": [
-            "SharePoint Online"
-          ]
-        },
-        {
           "id": "MO1176905",
           "title": "Some admins and users managed through Microsoft 365 Groups may be unable to access some Microsoft 365 services",
           "startTime": "2025-10-07T08:27:00Z",
@@ -1986,14 +1956,50 @@
   ],
   "history": [
     {
+      "id": "SP1256971",
+      "title": "Some users may experience intermittent delays when opening SharePoint Online sites and receive an error message",
+      "startTime": "2026-03-20T15:05:00Z",
+      "endTime": "2026-03-20T17:45:00Z",
+      "lastModified": "2026-03-20T18:47:31.983Z",
+      "status": "serviceRestored",
+      "severity": "incident",
+      "userImpact": "Users may have experienced intermittent delays when opening SharePoint Online sites and received an error message.",
+      "scopeOfImpact": "This issue may have intermittently affected some users that were based in the United States when attempting to access any SharePoint Online site.\n \nStart time: Friday, March 20, 2026, at 3:05 PM UTC\n \nEnd time: Friday, March 20, 2026, at 5:45 PM UTC",
+      "rootCause": "A portion of service side infrastructure was experiencing traffic flow issues which resulted in the intermittent issue.\n \nNext steps: \n- We'll continue to monitor our service-side telemetry to better understand this impacting event and how to prevent it from happening in the future.\n \nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "SharePoint Online all features",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-03-20T18:27:47.843Z",
+          "postType": "regular",
+          "content": "Title: Some users may experience intermittent delays when opening SharePoint Online sites and receive an error message\n\nUser impact: Users may have experienced intermittent delays when opening SharePoint Online sites and received an error message.\n\nFinal status: We identified that a portion of service side infrastructure was experiencing traffic flow issues which resulted in this impact. We optimized the traffic flow balancing mechanisms, and the service has been restored to healthy levels which was confirmed through service side telemetry.\n \nScope of impact: This issue may have intermittently affected some users that were based in the United States when attempting to access any SharePoint Online site.\n \nStart time: Friday, March 20, 2026, at 3:05 PM UTC\n \nEnd time: Friday, March 20, 2026, at 5:45 PM UTC\n \nRoot cause: A portion of service side infrastructure was experiencing traffic flow issues which resulted in the intermittent issue.\n \nNext steps: \n- We'll continue to monitor our service-side telemetry to better understand this impacting event and how to prevent it from happening in the future.\n \nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-03-20T16:06:42.39Z",
+          "postType": "regular",
+          "content": "Title: Some users may experience intermittent delays when opening SharePoint Online sites and receive an error message\n\nUser impact: Users may experience intermittent delays when opening SharePoint Online sites and receive an error message.\n\nCurrent status: We're reviewing service telemetry to better understand this event and identify any potential root cause.\n \nScope of impact: This issue may intermittently affect some users that are based in the United States and are attempting to access any SharePoint Online site.\n\nNext update by: Friday, March 20, 2026, at 6:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-03-20T15:14:27.647Z",
+          "postType": "regular",
+          "content": "Title: Potential issues accessing SharePoint Online sites\r\n\r\nUser impact: Users may be unable to access SharePoint Online sites and may notice delays or navigation errors.\r\n\r\nCurrent Status: We're investigating a potential issue and checking for impact to your organization. We'll provide an update within one hour."
+        }
+      ],
+      "serviceName": "SharePoint Online",
+      "affectedServices": [
+        "SharePoint Online"
+      ]
+    },
+    {
       "id": "OD1256972",
       "title": "Some users may experience intermittent delays when accessing Microsoft OneDrive content and receive an error message",
       "startTime": "2026-03-20T15:05:00Z",
       "endTime": "2026-03-20T17:45:00Z",
-      "lastModified": "2026-03-20T18:23:58.733Z",
+      "lastModified": "2026-03-20T18:47:36.347Z",
       "status": "serviceRestored",
       "severity": "incident",
-      "userImpact": "Users may have experienced intermittent delays when opening SharePoint Online sites and received an error message.",
+      "userImpact": "Users may have experienced intermittent delays when accessing OneDrive content and received an error message.",
       "scopeOfImpact": "This issue may have intermittently affected some users that were based in the United States when attempting to access any SharePoint Online site.\n \nStart time: Friday, March 20, 2026, at 3:05 PM UTC\n \nEnd time: Friday, March 20, 2026, at 5:45 PM UTC",
       "rootCause": "A portion of service side infrastructure was experiencing traffic flow issues which resulted in the intermittent issue.\n \nNext steps: \n- We'll continue to monitor our service-side telemetry to better understand this impacting event and how to prevent it from happening in the future.\n \nThis is the final update for the event.",
       "nextUpdateBy": "",
@@ -2003,7 +2009,7 @@
         {
           "createdAt": "2026-03-20T18:22:56.823Z",
           "postType": "regular",
-          "content": "Title: Some users may experience intermittent delays when accessing Microsoft OneDrive content and receive an error message\n\nUser impact: Users may have experienced intermittent delays when opening SharePoint Online sites and received an error message.\n\nFinal status: We identified that a portion of service side infrastructure was experiencing traffic flow issues which resulted in this impact. We optimized the traffic flow balancing mechanisms, and the service has been restored to healthy levels which was confirmed through service side telemetry.\n \nScope of impact: This issue may have intermittently affected some users that were based in the United States when attempting to access any SharePoint Online site.\n \nStart time: Friday, March 20, 2026, at 3:05 PM UTC\n \nEnd time: Friday, March 20, 2026, at 5:45 PM UTC\n \nRoot cause: A portion of service side infrastructure was experiencing traffic flow issues which resulted in the intermittent issue.\n \nNext steps: \n- We'll continue to monitor our service-side telemetry to better understand this impacting event and how to prevent it from happening in the future.\n \nThis is the final update for the event."
+          "content": "Title: Some users may experience intermittent delays when accessing Microsoft OneDrive content and receive an error message\n\nUser impact: Users may have experienced intermittent delays when accessing OneDrive content and received an error message.\n\nFinal status: We identified that a portion of service side infrastructure was experiencing traffic flow issues which resulted in this impact. We optimized the traffic flow balancing mechanisms, and the service has been restored to healthy levels which was confirmed through service side telemetry.\n \nScope of impact: This issue may have intermittently affected some users that were based in the United States when attempting to access any SharePoint Online site.\n \nStart time: Friday, March 20, 2026, at 3:05 PM UTC\n \nEnd time: Friday, March 20, 2026, at 5:45 PM UTC\n \nRoot cause: A portion of service side infrastructure was experiencing traffic flow issues which resulted in the intermittent issue.\n \nNext steps: \n- We'll continue to monitor our service-side telemetry to better understand this impacting event and how to prevent it from happening in the future.\n \nThis is the final update for the event."
         },
         {
           "createdAt": "2026-03-20T16:08:15.61Z",
