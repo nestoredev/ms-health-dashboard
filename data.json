@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-20T16:27:28.269Z",
+  "lastUpdated": "2026-03-20T16:57:34.338Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -11,12 +11,12 @@
           "title": "Some users may be intermittently unable to access their Exchange Online mailboxes in some connection methods",
           "startTime": "2026-03-19T14:20:42Z",
           "endTime": null,
-          "lastModified": "2026-03-19T22:19:13.43Z",
+          "lastModified": "2026-03-20T16:52:24.593Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be intermittently unable to access their Exchange Online mailboxes in some connection methods.",
           "scopeOfImpact": "Impact may occur for some users intermittently and users may be unable to access their Exchange Online mailboxes with the Outlook mobile apps.\n \nStart time: Thursday, March 12, 2026, at 12:00 AM UTC",
-          "rootCause": "A recent change within the Exchange Online service intended to introduce a new virtual account resulted in impact.",
+          "rootCause": "",
           "nextUpdateBy": "Friday, March 20, 2026, at 6:30 PM UTC",
           "feature": "Performance degradation",
           "isResolved": false,
@@ -24,7 +24,7 @@
             {
               "createdAt": "2026-03-19T22:18:40.49Z",
               "postType": "regular",
-              "content": "Title: Some users may be intermittently unable to access their Exchange Online mailboxes in some connection methods\n\nUser impact: Users may be intermittently unable to access their Exchange Online mailboxes in some connection methods.\n\nMore info: This issue may intermittently impact some users who are attempting to access the Exchange Online service through the Outlook mobile apps or the new Outlook for Mac desktop client.\n \nCurrent status: We’ve identified that restarting the affected infrastructure isn’t a sufficient fix for this issue and we’re continuing our investigation to identify and validate an appropriate remediation action. Once available, we’ll provide a timeline for resolution.\n \nScope of impact: Impact may occur for some users intermittently and users may be unable to access their Exchange Online mailboxes with the Outlook mobile apps.\n \nStart time: Thursday, March 12, 2026, at 12:00 AM UTC\n \nRoot cause: A recent change within the Exchange Online service intended to introduce a new virtual account resulted in impact.\n \nNext update by: Friday, March 20, 2026, at 6:30 PM UTC"
+              "content": "Title: Some users may be intermittently unable to access their Exchange Online mailboxes in some connection methods\n\nUser impact: Users may be intermittently unable to access their Exchange Online mailboxes in some connection methods.\n\nMore info: This issue may intermittently impact some users who are attempting to access the Exchange Online service through the Outlook mobile apps or the new Outlook for Mac desktop client.\n \nCurrent status: We’ve identified that restarting the affected infrastructure isn’t a sufficient fix for this issue and we’re continuing our investigation to identify and validate an appropriate remediation action. Once available, we’ll provide a timeline for resolution.\n \nScope of impact: Impact may occur for some users intermittently and users may be unable to access their Exchange Online mailboxes with the Outlook mobile apps.\n \nStart time: Thursday, March 12, 2026, at 12:00 AM UTC\n \nNext update by: Friday, March 20, 2026, at 6:30 PM UTC"
             },
             {
               "createdAt": "2026-03-19T17:58:49.673Z",
@@ -178,19 +178,24 @@
         },
         {
           "id": "EX1256744",
-          "title": "Some users experience errors when attempting to create shared mailboxes in Exchange Online",
+          "title": "Admins may be unable to create shared mailboxes in Exchange Online ",
           "startTime": "2026-03-20T11:20:36Z",
           "endTime": null,
-          "lastModified": "2026-03-20T14:57:28.027Z",
+          "lastModified": "2026-03-20T16:27:34.99Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "userImpact": "Users experience errors when attempting to create shared mailboxes in Exchange Online.",
-          "scopeOfImpact": "Your organization is affected by this event, and some users attempting to create shared mailboxes in Exchange Online may be impacted.",
+          "userImpact": "Admins may be unable to create shared mailboxes in Exchange Online.",
+          "scopeOfImpact": "Any admin attempting to create a shared mailbox in Exchange Online may be impacted.",
           "rootCause": "",
-          "nextUpdateBy": "Friday, March 20, 2025, at 5:30 PM UTC",
+          "nextUpdateBy": "Friday, March 20, 2026, at 6:30 PM UTC",
           "feature": "Database Offline - mailbox database is dismounted",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-03-20T16:27:34.99Z",
+              "postType": "regular",
+              "content": "Title: Admins may be unable to create shared mailboxes in Exchange Online \n\nUser impact: Admins may be unable to create shared mailboxes in Exchange Online.\n\nMore info: When admins attempt to create a shared mailbox, they may receive an error that states, \"Cannot convert a primitive value to the expected type 'Edm.Int64'.\"\n\nCurrent status: We've isolated a recent service change that we believe may be causing impact and we're continuing to review this change to verify our theory.\n\nScope of impact: Any admin attempting to create a shared mailbox in Exchange Online may be impacted.\n\nNext update by: Friday, March 20, 2026, at 6:30 PM UTC"
+            },
             {
               "createdAt": "2026-03-20T13:26:20.243Z",
               "postType": "regular",
@@ -1083,6 +1088,36 @@
               "createdAt": "2026-02-27T02:15:10.837Z",
               "postType": "regular",
               "content": "Title: Some users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results\n\nUser impact: Users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results.\n\nCurrent status: We're investigating a potential issue with SharePoint Online and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "SharePoint Online"
+          ]
+        },
+        {
+          "id": "SP1256971",
+          "title": "Some users may experience intermittent delays when opening SharePoint Online sites and receive an error message",
+          "startTime": "2026-03-20T15:14:26Z",
+          "endTime": null,
+          "lastModified": "2026-03-20T16:06:42.39Z",
+          "status": "serviceDegradation",
+          "severity": "incident",
+          "userImpact": "Users may experience intermittent delays when opening SharePoint Online sites and receive an error message.",
+          "scopeOfImpact": "This issue may intermittently affect some users that are based in the United States and are attempting to access any SharePoint Online site.",
+          "rootCause": "",
+          "nextUpdateBy": "Friday, March 20, 2026, at 6:00 PM UTC",
+          "feature": "SharePoint Online all features",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-03-20T16:06:42.39Z",
+              "postType": "regular",
+              "content": "Title: Some users may experience intermittent delays when opening SharePoint Online sites and receive an error message\n\nUser impact: Users may experience intermittent delays when opening SharePoint Online sites and receive an error message.\n\nCurrent status: We're reviewing service telemetry to better understand this event and identify any potential root cause.\n \nScope of impact: This issue may intermittently affect some users that are based in the United States and are attempting to access any SharePoint Online site.\n\nNext update by: Friday, March 20, 2026, at 6:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-03-20T15:14:27.647Z",
+              "postType": "regular",
+              "content": "Title: Potential issues accessing SharePoint Online sites\r\n\r\nUser impact: Users may be unable to access SharePoint Online sites and may notice delays or navigation errors.\r\n\r\nCurrent Status: We're investigating a potential issue and checking for impact to your organization. We'll provide an update within one hour."
             }
           ],
           "affectedServices": [
