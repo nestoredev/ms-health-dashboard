@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-23T11:11:02.479Z",
+  "lastUpdated": "2026-03-23T11:41:10.052Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -440,6 +440,51 @@
               "createdAt": "2026-02-15T01:47:25.983Z",
               "postType": "regular",
               "content": "Title: Some admins may be unable to perform tenant to tenant migrations and offboarding moves in Exchange Online \n\nUser impact: Admins may be unable to perform tenant to tenant migrations and offboarding moves in Exchange Online.\n\nMore info: While we work on developing a long-term solution, admins may use PowerShell for the affected migrations and moves with the following cmdlet against the affected mailboxes:\n\nSet-MoveRequest \"user@yourdomain.com\" -SkipMoving FolderRestrictions\n\nThe tenant admin may then resume the move request (Resume-MoveRequest \"user@yourdomain.com\") or simply resume the migration batch. This will allow the affected move jobs to continue to make progress.\n\nCurrent status: We've been made aware of an issue in which some admins may be unable to perform tenant to tenant migrations and offboarding moves in Exchange Online. We're reviewing backend settings and recent changes to identify the root cause and develop a long-term solution. In the meantime, admins can follow the steps listed in the More Info section of this communication to bypass the impact scenario.\n \nScope of impact: Some admins attempting to perform tenant to tenant migrations and offboarding moves in Exchange Online may be affected. This information may be updated as our investigation continues. \n\nNext update by: Tuesday, February 17, 2026, at 10:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online"
+          ]
+        },
+        {
+          "id": "EX1255397",
+          "title": "Some users may be unable to access the My Templates add-in in Outlook",
+          "startTime": "2026-03-18T21:53:53Z",
+          "endTime": null,
+          "lastModified": "2026-03-23T11:19:49.177Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to access the My Templates add-in in Outlook.",
+          "scopeOfImpact": "Some users attempting to access or use the My Templates add-in within Outlook may be impacted. This information may be updated as our investigation continues.",
+          "rootCause": "",
+          "nextUpdateBy": "Monday, March 23, 2026, at 7:00 PM UTC",
+          "feature": "Tenant Administration (Provisioning, Remote PowerShell)",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-03-23T11:19:49.177Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to access the My Templates add-in in Outlook\n\nUser impact: Users may be unable to access the My Templates add-in in Outlook.\n\nMore info: This issue impacts both the Outlook desktop client and Outlook on the web. Some affected users find that the “My Templates” icon is missing from the Outlook ribbon and others may be unable to find templates in the AppData Microsoft Templates location, even though templates are known to exist and may still be being used by other (non-impacted) users.\n\nCurrent status: We’re continuing to analyze system logs and service data to isolate a potential root cause and determine next steps for mitigation.\n \nScope of impact: Some users attempting to access or use the My Templates add-in within Outlook may be impacted. This information may be updated as our investigation continues.\n \nNext update by: Monday, March 23, 2026, at 7:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-03-20T20:52:28.863Z",
+              "postType": "regular",
+              "content": "Title: Users can't access a collection of custom add-ins with organizational access\n\nUser impact: Users are unable to access a collection of custom add-ins with organizational access.\n\nMore info: Affected add-ins we've validated include, but may not be limited to, the following:\n- My Templates add-in\n\nCurrent status: We’ve updated the More info section of this communication to more appropriately reflect this issue's impact and investigation as it relates specifically to My Templates add-ins. We're continuing to analyze system logs and service data related to this issue with My Templates add-ins in order to isolate a potential root cause and determine our next mitigative steps.\n \nScope of impact: Your organization is affected by this event, and all users can't access a collection of custom add-ins with organizational access. This information may be updated as our investigation continues.\n\nNext update by: Monday, March 23, 2026, at 7:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-03-19T22:32:35.41Z",
+              "postType": "regular",
+              "content": "Title: Users can't access a collection of custom add-ins with organizational access\n\nUser impact: Users are unable to access a collection of custom add-ins with organizational access.\n\nMore info: Affected add-ins we've validated include, but may not be limited to, the following:\n- My Templates add-in\n- Salesforce add-ins\n- Viva Insights add-ins\n \nCurrent status: We're continuing our analysis of system logging and other service side data to understand why the custom add-ins aren't enabled for user mailboxes as expected. In parallel, we're investigating whether this impact may be related to another event to assist in our understanding of the root cause.\n \nScope of impact: Your organization is affected by this event, and all users can't access a collection of custom add-ins with organizational access. This information may be updated as our investigation continues.\n \nNext update by: Friday, March 20, 2026, at 9:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-03-18T23:47:37.497Z",
+              "postType": "regular",
+              "content": "Title: Users can't access a collection of custom add-ins with organizational access\n\nUser impact: Users are unable to access a collection of custom add-ins with organizational access.\n\nMore info: Affected add-ins we've validated include, but may not be limited to, the following:\n- My Templates add-in\n- Salesforce add-ins\n- Viva Insights add-ins\n\nCurrent status: We're continuing to analyze our system logging to understand why the custom add-ins are not enabling for user mailboxes as expected.\n\nScope of impact: Your organization is affected by this event, and all users can't access a collection of custom add-ins with organizational access. This information may be updated as our investigation continues.\n\nNext update by: Friday, March 20, 2026, at 12:00 AM UTC"
+            },
+            {
+              "createdAt": "2026-03-18T21:55:12.567Z",
+              "postType": "regular",
+              "content": "Title: Users can't access a collection of custom add-ins with organizational access\n\nUser impact: Users are unable to access a collection of custom add-ins with organizational access. \n\nMore info: Affected add-ins we've validated include, but may not be limited to, the following:\n- My Templates add-in\n- Salesforce add-ins\n- Viva Insights add-ins\n \nCurrent status: We've identified an issue that's preventing users from accessing a collection of custom add-ins that have been granted organizational access. We're analyzing system logging to isolate the source for the event, and so we can determine the next troubleshooting steps for remediating the impact. \n \nScope of impact: Your organization is affected by this event, and all users can't access a collection of custom add-ins with organizational access.\n \nNext update by: Thursday, March 19, 2026, at 1:00 AM UTC"
             }
           ],
           "affectedServices": [
