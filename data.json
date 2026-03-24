@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-24T14:47:20.314Z",
+  "lastUpdated": "2026-03-24T15:17:27.187Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -2065,7 +2065,7 @@
       "title": "Some users may have been unable to access their Exchange Online mailboxes using the Outlook desktop client",
       "startTime": "2026-03-24T05:40:00Z",
       "endTime": "2026-03-24T13:00:00Z",
-      "lastModified": "2026-03-24T14:42:35.56Z",
+      "lastModified": "2026-03-24T14:58:27.65Z",
       "status": "serviceRestored",
       "severity": "advisory",
       "userImpact": "Users may have been unable to access their Exchange Online mailboxes using the Outlook desktop client.",
@@ -2075,6 +2075,16 @@
       "feature": "Outlook - problems connecting",
       "isResolved": true,
       "posts": [
+        {
+          "createdAt": "2026-03-24T14:58:27.65Z",
+          "postType": "regular",
+          "content": "Title: Some users may have been unable to access their Exchange Online mailboxes using the Outlook desktop client\n\nUser impact: Users may have been unable to access their Exchange Online mailboxes using the Outlook desktop client.\n\nMore info: Impacted users may have received a 401 error message.\n \nFinal status: We’ve confirmed that reverting the change successfully remediated the impact and restored the service.\n \nScope of impact: Some users attempting to access their Exchange Online mailboxes via the Outlook desktop client may have been impacted.\n \nStart time: Tuesday, March 24, 2026, at 5:40 AM UTC\n \nEnd time: Tuesday, March 24, 2026, at 1:00 PM UTC\n \nRoot cause: A recent service change introduced an unexpected behaviour that prevented part of the service from operating as designed, resulting in impact.\n \nNext steps:\n- We'll continue to closely monitor the service to ensure it remains healthy.\n- We're reviewing our deployment procedures to better identify similar issues during our development and testing cycles.\n \nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-03-24T14:55:53.24Z",
+          "postType": "regular",
+          "content": "Title: Some users may have been unable to access their Exchange Online mailboxes using the Outlook desktop client\n\nUser impact: Users may have been unable to access their Exchange Online mailboxes using the Outlook desktop client.\n\nMore info: Impacted users may have received a 401 error message.\n \nFinal status: We’ve confirmed that reverting the change successfully remediated the impact and restored the service.\n \nScope of impact: Some users attempting to access their Exchange Online mailboxes via the Outlook desktop client may have been impacted.\n \nStart time: Tuesday, March 24, 2026, at 5:40 AM UTC\n \nEnd time: Tuesday, March 24, 2026, at 1:00 PM UTC\n \nRoot cause: A recent service change introduced an unexpected behaviour that prevented part of the service from operating as designed, resulting in impact.\n \nNext steps:\n- We'll continue to closely monitor the service to ensure it remains healthy.\n- We're reviewing our deployment procedures to better identify similar issues during our development and testing cycles.\n \nThis is the final update for the event."
+        },
         {
           "createdAt": "2026-03-24T14:42:35.56Z",
           "postType": "regular",
