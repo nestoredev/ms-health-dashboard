@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-24T21:48:54.265Z",
+  "lastUpdated": "2026-03-24T22:19:01.090Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -60,6 +60,61 @@
               "createdAt": "2026-03-19T14:23:32.703Z",
               "postType": "regular",
               "content": "Title: Some users may be intermittently unable to access their Exchange Online mailboxes with the Outlook mobile apps\n \nUser impact: Users may be intermittently unable to access their Exchange Online mailboxes with the Outlook mobile apps.\n\nMore info: This issue impacts both the Android and iOS mobile app experiences.\n \nCurrent status: We're analyzing Outlook mobile logs to isolate the root cause of impact and establish a fix.\n \nScope of impact: Impact may occur for some users intermittently unable to access their Exchange Online mailboxes with the Outlook mobile apps.\n \nNext update by: Thursday, March 19, 2026, at 4:30 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online"
+          ]
+        },
+        {
+          "id": "EX1259460",
+          "title": "Some users may be unable to access custom add-ins through any Exchange Online connection method",
+          "startTime": "2026-03-03T13:52:00Z",
+          "endTime": null,
+          "lastModified": "2026-03-24T21:54:26.613Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to access custom add-ins through any Exchange Online connection method.",
+          "scopeOfImpact": "Some users who are attempting to access custom add-ins through all Exchange Online connection methods may be impacted. This section may be updated as our investigation continues.",
+          "rootCause": "",
+          "nextUpdateBy": "Wednesday, March 25, 2026, at 9:30 PM UTC",
+          "feature": "Reports of an Incident",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-03-24T16:39:51.073Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to access custom add-ins through any Exchange Online connection method\n\nUser impact: Users may be unable to access custom add-ins through any Exchange Online connection method.\n\nCurrent status: As we progress with our root cause analysis and confirm the source for this event, we're working with some reporting users to test a potential workaround that may remediate the impact. \n \nScope of impact: Some users who are attempting to access custom add-ins through all Exchange Online connection methods may be impacted. This section may be updated as our investigation continues.\n \nNext update by: Wednesday, March 25, 2026, at 9:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-03-24T00:40:11.003Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to access custom add-ins through any Exchange Online connection method\n\nUser impact: Users may be unable to access custom add-ins through any Exchange Online connection method.\n\nCurrent status: We're finalizing our analysis of the latest collected logging in parallel with our review of recent service changes to gain further insight into the source of impact and determine our next steps.\n\nScope of impact: Some users who are attempting to access custom add-ins through all Exchange Online connection methods may be impacted. This section may be updated as our investigation continues.\n\nNext update by: Tuesday, March 24, 2026, at 6:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-03-23T20:45:52.657Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to access custom add-ins through any Exchange Online connection method\n\nUser impact: Users may be unable to access custom add-ins through any Exchange Online connection method.\n\nCurrent status: We're continuing to analyze recent service changes that may be causing or contributing to impact while exploring what additional logging and data may be needed in order to further our investigation and isolate a potential root cause. \n\nScope of impact: Some users who are attempting to access custom add-ins through all Exchange Online connection methods may be impacted. This section may be updated as our investigation continues.\n\nNext update by: Tuesday, March 24, 2026, at 2:30 AM UTC"
+            },
+            {
+              "createdAt": "2026-03-23T19:32:03.357Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to access custom add-ins through any Exchange Online connection method\n\nUser impact: Users may be unable to access custom add-ins through any Exchange Online connection method.\n\nCurrent status: Our review of the available HAR logs from working and non-working users has been inconclusive in identifying the cause of this issue. Additionally, our review of impacted users' configurations for this specific add-in didn't uncover why this problem is occurring. We're reviewing recent service changes as well as reassessing what additional logging is needed to further the investigation. \n\nScope of impact: Some users who are attempting to access custom add-ins through all Exchange Online connection methods may be impacted. This section may be updated as our investigation continues.\n\nNext update by: Monday, March 23, 2026, at 9:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-03-23T17:29:22.907Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to access custom add-ins through any Exchange Online connection method\n\nUser impact: Users may be unable to access custom add-ins through any Exchange Online connection method.\n\nCurrent status: We're continuing to analyze HAR logs from working and non-working users while we while conduct a deeper review of impacted users' configurations for this specific add-in to isolate a root cause for this issue and determine our next troubleshooting steps. \n\nScope of impact: Some users who are attempting to access custom add-ins through all Exchange Online connection methods may be impacted. This section may be updated as our investigation continues.\n\nNext update by: Monday, March 23, 2026, at 7:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-03-23T15:29:51.857Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to access custom add-ins through any Exchange Online connection method\n\nUser impact: Users may be unable to access custom add-ins through any Exchange Online connection method.\n\nCurrent status: We're analyzing provided data from impacted users, including HTTP Archive format (HAR) logs, while reviewing the specific add-in configurations to troubleshoot this issue and determine our next steps.\n\nScope of impact: Some users who are attempting to access custom add-ins through all Exchange Online connection methods may be impacted. This section may be updated as our investigation continues.\n\nNext update by: Monday, March 23, 2026, at 5:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-03-23T14:57:52.987Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to access custom add-ins through any Exchange Online connection method\n\nUser impact: Users may be unable to access custom add-ins through any Exchange Online connection method.\n\nCurrent status: We're investigating a potential issue with Exchange Online where some users can't access a specific add-in through any connection method. We're checking for impact to your organization and will provide an update in 30 minutes."
             }
           ],
           "affectedServices": [
