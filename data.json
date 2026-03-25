@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-25T23:24:59.308Z",
+  "lastUpdated": "2026-03-25T23:55:04.848Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -2298,16 +2298,21 @@
       "title": "Users may be unable to save their personalization settings within Microsoft Copilot Chat and encounter an error",
       "startTime": "2026-03-16T00:00:00Z",
       "endTime": "2026-03-20T23:30:00Z",
-      "lastModified": "2026-03-23T21:36:48.517Z",
-      "status": "serviceRestored",
+      "lastModified": "2026-03-25T23:36:42.347Z",
+      "status": "postIncidentReviewPublished",
       "severity": "incident",
       "userImpact": "Users may have been unable to save their personalization settings within Copilot Chat and encountered an error.",
-      "scopeOfImpact": "All users attempting to save preferences within the Microsoft Copilot Chat settings page may have been affected.\n\nStart time: Monday, March 16, 2026, at 12:00 AM UTC\n\nEnd time: Friday, March 20, 2026, at 11:30 PM UTC",
-      "rootCause": "The API that facilitates settings saving was set to a prior, deprecated version of the Copilot model.\n\nNext steps: \n - To help prevent similar impacts in the future, we're further reviewing our testing and validation processes prior to deployment.\n\nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days.",
+      "scopeOfImpact": "",
+      "rootCause": "",
       "nextUpdateBy": "",
       "feature": "General",
       "isResolved": true,
       "posts": [
+        {
+          "createdAt": "2026-03-25T23:36:42.347Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        },
         {
           "createdAt": "2026-03-23T21:35:01.087Z",
           "postType": "regular",
@@ -2327,11 +2332,6 @@
           "createdAt": "2026-03-18T22:25:07.643Z",
           "postType": "regular",
           "content": "Title: Users may be unable to save their personalization settings within Microsoft Copilot Chat and encounter an error\n\nUser impact: Users may be unable to save their personalization settings within Microsoft Copilot Chat and encounter an error.\n\nMore info: Affected users may see a \"Something went wrong, and we couldn't save your changes. Try refreshing the page.\" banner.\n\nCurrent status: We've identified a potential issue with the API that facilitates settings saving that's attempting to save to a prior version of the Copilot model. We're working to confirm this as the root cause. \n\nScope of impact: All users attempting to save preferences within the Microsoft Copilot Chat settings page may be affected. This information may be updated as our investigation continues.\n\nNext update by: Thursday, March 19, 2026, at 12:30 AM UTC"
-        },
-        {
-          "createdAt": "2026-03-18T20:32:08.397Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to save their personalization settings within Microsoft Copilot Chat and encounter an error\n\nUser impact: Users may be unable to save their personalization settings within Microsoft Copilot Chat and encounter an error.\n\nMore info: Affected users may see a \"Something went wrong, and we couldn't save your changes. Try refreshing the page.\" banner.\n\nCurrent status: Our analysis of provided HAR captures indicates an API that facilitates preference saving isn't working as expected. We're expanding our investigation to include API logs to further isolate the underlying cause of impact and develop a remediation strategy.\n\nScope of impact: All users attempting to save preferences within the Microsoft Copilot Chat settings page may be affected. This information may be updated as our investigation continues.\n\nNext update by: Wednesday, March 18, 2026, at 10:30 PM UTC"
         }
       ],
       "serviceName": "Microsoft 365 Copilot Chat",
