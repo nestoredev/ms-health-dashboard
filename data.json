@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-26T18:29:05.247Z",
+  "lastUpdated": "2026-03-26T18:59:11.381Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -2121,16 +2121,21 @@
           "title": "Admins may not be able to search for Microsoft 365 Copilot Chat messages using Microsoft Purview eDiscovery searches",
           "startTime": "2026-03-06T16:34:35Z",
           "endTime": null,
-          "lastModified": "2026-03-25T18:48:32.067Z",
+          "lastModified": "2026-03-26T18:28:41.32Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may not be able to search for Copilot Chat messages using eDiscovery searches.",
-          "scopeOfImpact": "Admins performing eDiscovery searches that should contain Copilot Chat messages may be impacted by this event.\nStart time: Friday, February 13, 2026, at 7:20 PM UTC",
+          "scopeOfImpact": "Admins performing eDiscovery searches that should contain Copilot Chat messages may be impacted by this event.\n\nStart time: Friday, February 13, 2026, at 7:20 PM UTC\n\nEstimated time to resolve: We anticipate the deployment of our fix will complete by Friday, March 27, 2026, at 1:30 AM UTC.",
           "rootCause": "A latent code error is preventing some metadata from being indexed as expected, which is resulting in impact.",
-          "nextUpdateBy": "Thursday, March 26, 2026, at 8:00 PM UTC",
+          "nextUpdateBy": "Friday, March 27, 2026, at 1:30 AM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-03-26T18:28:41.32Z",
+              "postType": "regular",
+              "content": "Title: Admins may not be able to search for Microsoft 365 Copilot Chat messages using Microsoft Purview eDiscovery searches\n\nUser impact: Admins may not be able to search for Copilot Chat messages using eDiscovery searches.\n\nCurrent status: Based on the current rate of saturation from our fix deployment, we anticipate it will complete, remediating impact for all admins, by our next scheduled communication update on Friday, March 27, 2026, at 1:30 AM UTC.\n\nScope of impact: Admins performing eDiscovery searches that should contain Copilot Chat messages may be impacted by this event.\n\nStart time: Friday, February 13, 2026, at 7:20 PM UTC\n\nEstimated time to resolve: We anticipate the deployment of our fix will complete by Friday, March 27, 2026, at 1:30 AM UTC.\n\nRoot cause: A latent code error is preventing some metadata from being indexed as expected, which is resulting in impact.\n\nNext update by: Friday, March 27, 2026, at 1:30 AM UTC"
+            },
             {
               "createdAt": "2026-03-25T18:48:32.067Z",
               "postType": "regular",
