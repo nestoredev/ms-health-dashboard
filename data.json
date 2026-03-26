@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-26T23:00:08.070Z",
+  "lastUpdated": "2026-03-26T23:30:14.806Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1469,16 +1469,21 @@
           "title": "Some users may be unable to connect to Azure Analysis Services live connection reports from Power BI desktop",
           "startTime": "2026-03-26T17:43:03Z",
           "endTime": null,
-          "lastModified": "2026-03-26T22:19:06.367Z",
+          "lastModified": "2026-03-26T22:58:59.373Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be intermittently unable to connect to Azure Analysis Services live connection reports from Power BI desktop.",
           "scopeOfImpact": "Some users attempting to connect to Azure Analysis Services live connection reports from Power BI desktop may be impacted.",
           "rootCause": "",
-          "nextUpdateBy": "Thursday, March 26, 2026, at 11:30 PM UTC",
+          "nextUpdateBy": "Friday, March 27, 2026, at 10:00 PM UTC",
           "feature": "PowerBI.com",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-03-26T22:58:59.373Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to connect to Azure Analysis Services live connection reports from Power BI desktop\n\nUser impact: Users may be intermittently unable to connect to Azure Analysis Services live connection reports from Power BI desktop.\n\nCurrent status: We're reviewing the new diagnostic data obtained from some users after turning off a feature setting, while we also investigate whether any recent changes or deployments may be contributing to impact. We anticipate being able to provide details on the root cause and remediation plan by our next scheduled update.\n \nScope of impact: Some users attempting to connect to Azure Analysis Services live connection reports from Power BI desktop may be impacted.\n \nNext update by: Friday, March 27, 2026, at 10:00 PM UTC"
+            },
             {
               "createdAt": "2026-03-26T20:38:14Z",
               "postType": "regular",
@@ -3548,52 +3553,6 @@
       "serviceName": "Power BI",
       "affectedServices": [
         "Power BI"
-      ]
-    },
-    {
-      "id": "OP1237616",
-      "title": "Some admins may experience intermittent page loading issues and errors in the Microsoft 365 Apps admin center",
-      "startTime": "2026-02-16T06:30:00Z",
-      "endTime": "2026-02-25T00:00:00Z",
-      "lastModified": "2026-02-26T22:54:45.51Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Admins may have experienced intermittent page loading issues in the Microsoft 365 Apps admin center.",
-      "scopeOfImpact": "This issue may have intermittently impacted admins who were attempting to access and load certain pages in the Microsoft 365 Apps admin center. \n \nStart time: Monday, February 16, 2026, at 6:30 AM UTC\n \nEnd time: Wednesday, February 25, 2026, at 12:00 AM UTC",
-      "rootCause": "Service infrastructure adjustments to help improve reliability within the Microsoft 365 Apps admin center were intermittently producing page loading failures in the Microsoft 365 Apps admin center.\n \nNext steps:\n- We're further analyzing the isolated offending service infrastructure adjustments to help us prevent similar issues in the future. \n\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Reports of an incident",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-02-26T22:54:45.51Z",
-          "postType": "regular",
-          "content": "Title: Some admins may experience intermittent page loading issues and errors in the Microsoft 365 Apps admin center\n\nUser impact: Admins may have experienced intermittent page loading issues in the Microsoft 365 Apps admin center.\n\nMore info: Impacted admins reported that config.office.com pages intermittently failed to load and resulted in errors.\n \nFinal status: After our additional system monitoring to ensure that service availability remained constant after our service infrastructure adjustments, we've validated that impact has been remediated.\n \nScope of impact: This issue may have intermittently impacted admins who were attempting to access and load certain pages in the Microsoft 365 Apps admin center. \n \nStart time: Monday, February 16, 2026, at 6:30 AM UTC\n \nEnd time: Wednesday, February 25, 2026, at 12:00 AM UTC\n \nRoot cause: Service infrastructure adjustments to help improve reliability within the Microsoft 365 Apps admin center were intermittently producing page loading failures in the Microsoft 365 Apps admin center.\n \nNext steps:\n- We're further analyzing the isolated offending service infrastructure adjustments to help us prevent similar issues in the future. \n\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-02-26T00:05:22.47Z",
-          "postType": "regular",
-          "content": "Title: Some admins may experience intermittent page loading issues and errors in the Microsoft 365 Apps admin center\n\nUser impact: Admins may experience intermittent page loading issues in the Microsoft 365 Apps admin center.\n\nMore info: Impacted admins report that config.office.com pages intermittently fail to load and result in errors.\n \nCurrent status: We're continuing to monitor the environment to validate if our optimizations have remediated impact. This period of monitoring will help us validate if any additional actions are needed to resolve this issue.\n \nScope of impact: This issue may intermittently impact admins who are attempting to access and load certain pages in the Microsoft 365 Apps admin center. This section may be updated as our investigation continues.\n \nStart time: Monday, February 16, 2026, at 6:30 AM UTC\n \nRoot cause: Service infrastructure adjustments to help improve reliability within the Microsoft 365 Apps admin center are intermittently producing page loading failures in the Microsoft 365 Apps admin center.\n \nNext update by: Friday, February 27, 2026, at 1:00 AM UTC"
-        },
-        {
-          "createdAt": "2026-02-25T20:29:19.223Z",
-          "postType": "regular",
-          "content": "Title: Some admins may experience intermittent page loading issues and errors in the Microsoft 365 Apps admin center\n\nUser impact: Admins may experience intermittent page loading issues in the Microsoft 365 Apps admin center.\n\nMore info: Impacted admins report that config.office.com pages intermittently fail to load and result in errors.\n\nCurrent status: Our initial telemetry analysis indicates that the optimizations performed have had a positive effect on the page loads. We're continuing to monitor the environment to validate this issue is no longer occurring.\n\nScope of impact: This issue may intermittently impact admins who are attempting to access and load certain pages in the Microsoft 365 Apps admin center. This section may be updated as our investigation continues.\n\nStart time: Monday, February 16, 2026, at 6:30 AM UTC\n\nRoot cause: Service infrastructure adjustments to help improve reliability within the Microsoft 365 Apps admin center are intermittently producing page loading failures in the Microsoft 365 Apps admin center.\n\nNext update by: Thursday, February 26, 2026, at 1:00 AM UTC"
-        },
-        {
-          "createdAt": "2026-02-24T17:51:02.217Z",
-          "postType": "regular",
-          "content": "Title: Some admins may experience intermittent page loading issues and errors in the Microsoft 365 Apps admin center\n\nUser impact: Admins may experience intermittent page loading issues in the Microsoft 365 Apps admin center.\n\nMore info: Impacted admins report that config.office.com pages intermittently fail to load and result in errors.\n\nCurrent status: Our service health telemetry and admin data analysis has determined that adjustments to service infrastructure in our effort to improve reliability within the Microsoft 365 Apps admin center are producing intermittent page loading failures that are resulting in the impact.  We've deployed a fix to address the page loading failures and expect to have more clarity into the problems that were produced by our change, along with an update on our timeline for remediating the impact, by our next scheduled communication update. \n \nScope of impact: This issue may intermittently impact admins who are attempting to access and load certain pages in the Microsoft 365 Apps admin center. This section may be updated as our investigation continues.\n \nRoot cause: Service infrastructure adjustments to help improve reliability within the Microsoft 365 Apps admin center are intermittently producing page loading failures in the Microsoft 365 Apps admin center. \n \nNext update by: Wednesday, February 25, 2026, at 9:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-02-23T22:01:17.727Z",
-          "postType": "regular",
-          "content": "Title: Some admins may experience intermittent page loading issues and errors in the Microsoft 365 Apps admin center\n\nUser impact: Admins may experience intermittent page loading issues in the Microsoft 365 Apps admin center.\n\nMore info: Impacted admins report that config.office.com pages intermittently fail to load and result in errors.\n\nCurrent status: We're continuing to analyze service health telemetry and data provided by impacted admins as we investigate into this issue's root cause and determine our next troubleshooting steps.\n\nScope of impact: This issue may intermittently impact admins who are attempting to access and load certain pages in the Microsoft 365 Apps admin center. This section may be updated as our investigation continues.\n\nNext update by: Tuesday, February 24, 2026, at 7:00 PM"
-        }
-      ],
-      "serviceName": "Microsoft 365 apps",
-      "affectedServices": [
-        "Microsoft 365 apps"
       ]
     }
   ]
