@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-26T21:59:51.834Z",
+  "lastUpdated": "2026-03-26T22:29:58.159Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1458,6 +1458,46 @@
               "createdAt": "2026-03-11T18:17:17.617Z",
               "postType": "regular",
               "content": "Title: Users may not get email notifications for shared Power BI reports and dashboards or Microsoft Fabric artifactss\n\nUser impact: Users may not get email notifications for shared Power BI reports and dashboards or Microsoft Fabric artifacts.\n\nCurrent status: We're investigating a potential issue with Power BI and Microsoft Fabric and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Power BI"
+          ]
+        },
+        {
+          "id": "PB1262330",
+          "title": "Some users may be unable to connect to Azure Analysis Services live connection reports from Power BI desktop",
+          "startTime": "2026-03-26T17:43:03Z",
+          "endTime": null,
+          "lastModified": "2026-03-26T22:19:06.367Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be intermittently unable to connect to Azure Analysis Services live connection reports from Power BI desktop.",
+          "scopeOfImpact": "Some users attempting to connect to Azure Analysis Services live connection reports from Power BI desktop may be impacted.",
+          "rootCause": "",
+          "nextUpdateBy": "Thursday, March 26, 2026, at 11:30 PM UTC",
+          "feature": "PowerBI.com",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-03-26T20:38:14Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to connect to Azure Analysis Services live connection reports from Power BI desktop\n\nUser impact: Users may be intermittently unable to connect to Azure Analysis Services live connection reports from Power BI desktop.\n\nCurrent status: We're collaborating with a subset of affected users to test disabling the setting we suspect is causing the impact in their environment and to collect further diagnostic data from the impacted scenario. Analyzing this data will aid us in confirming the root cause and the path towards mitigation.\n\nScope of impact: Some users attempting to connect to Azure Analysis Services live connection reports from Power BI desktop may be impacted.\n\nNext update by: Thursday, March 26, 2026, at 11:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-03-26T18:56:40.91Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to connect to Azure Analysis Services live connection reports from Power BI desktop\n\nUser impact: Users may be intermittently unable to connect to Azure Analysis Services live connection reports from Power BI desktop.\n\nCurrent status: We've identified a recent default setting which we suspect may be causing the impact. We're testing whether disabling this setting is a viable mitigation option.\n\nScope of impact: Some users attempting to connect to Azure Analysis Services live connection reports from Power BI desktop may be impacted.\n\nNext update by: Thursday, March 26, 2026, at 9:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-03-26T18:34:03.643Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to connect to Azure Analysis Services live connection reports from Power BI desktop\n\nUser impact: Users may be intermittently unable to connect to Azure Analysis Services live connection reports from Power BI desktop.\n\nCurrent status: We're reviewing the diagnostic data collected from a subset of affected users to help determine our next troubleshooting steps.\n\nScope of impact: Some users attempting to connect to Azure Analysis Services live connection reports from Power BI desktop may be impacted.\n\nNext update by: Thursday, March 26, 2026, at 8:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-03-26T18:08:23.82Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to connect to Azure Analysis Services live connection reports from Power BI desktop\n\nUser impact: Users may be intermittently unable to connect to Azure Analysis Services live connection reports from Power BI desktop.\n\nCurrent status: We're investigating a potential issue with Power BI and checking for impact to your organization. We'll provide an update within 30 minutes."
             }
           ],
           "affectedServices": [
