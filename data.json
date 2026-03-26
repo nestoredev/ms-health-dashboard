@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-26T19:59:25.568Z",
+  "lastUpdated": "2026-03-26T20:29:31.831Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -86,16 +86,21 @@
           "title": "Some users may be unable to access custom add-ins through any Exchange Online connection method",
           "startTime": "2026-03-03T13:52:00Z",
           "endTime": null,
-          "lastModified": "2026-03-25T20:18:26.053Z",
+          "lastModified": "2026-03-26T20:04:53.367Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to access custom add-ins through any Exchange Online connection method.",
           "scopeOfImpact": "Some users who are attempting to access custom add-ins through all Exchange Online connection methods may be impacted. This section may be updated as our investigation continues.",
           "rootCause": "",
-          "nextUpdateBy": "Thursday, March 26, 2026, at 9:00 PM UTC",
+          "nextUpdateBy": "Friday, March 27, 2026, at 9:00 PM UTC",
           "feature": "Reports of an Incident",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-03-26T20:04:53.367Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to access custom add-ins through any Exchange Online connection method\n\nUser impact: Users may be unable to access custom add-ins through any Exchange Online connection method.\n\nCurrent status: We're investigating the possibility that incoming traffic may not be appropriately balanced throughout the affected environment while also continuing to review the previously identified exception to determine the root cause and a strategy that remediates impact.\n\nScope of impact: Some users who are attempting to access custom add-ins through all Exchange Online connection methods may be impacted. This section may be updated as our investigation continues.\n\nNext update by: Friday, March 27, 2026, at 9:00 PM UTC"
+            },
             {
               "createdAt": "2026-03-25T20:18:26.053Z",
               "postType": "regular",
@@ -481,16 +486,21 @@
           "title": "Some admins may be unable to perform tenant to tenant migrations and offboarding moves in the Exchange admin center",
           "startTime": "2026-02-15T01:44:21Z",
           "endTime": null,
-          "lastModified": "2026-03-19T20:15:30.147Z",
+          "lastModified": "2026-03-26T20:16:40.593Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may be unable to perform tenant to tenant migrations and offboarding moves in the Exchange admin center.",
           "scopeOfImpact": "Some admins attempting to perform tenant to tenant migrations and offboarding moves in the Exchange admin center may be affected. This information may be updated as our investigation continues.",
           "rootCause": "A change introduced a code regression to Mailbox Replication Service (MRS), which causes intermittent failures for tenant-to-tenant migration actions or offboarding moves as the property tags needed to complete the request are not being properly configured.",
-          "nextUpdateBy": "Thursday, March 26, 2026, at 9:30 PM UTC",
+          "nextUpdateBy": "Friday, April 3, 2026, at 9:30 PM UTC",
           "feature": "Tenant Administration (Provisioning, Remote PowerShell)",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-03-26T20:16:40.593Z",
+              "postType": "regular",
+              "content": "Title: Some admins may be unable to perform tenant to tenant migrations and offboarding moves in the Exchange admin center\n\nUser impact: Admins may be unable to perform tenant to tenant migrations and offboarding moves in the Exchange admin center.\n\nMore info: While we work on developing a long-term solution, admins may use PowerShell for the affected migrations and moves with the following cmdlet against the affected mailboxes:\n \nSet-MoveRequest \"user@yourdomain.com\" -SkipMoving FolderRestrictions\n \nNext, the tenant admin may resume the move request using the cmdlet:\n \nResume-MoveRequest \"user@yourdomain.com\"\n \nThis will allow the affected move jobs to continue to make progress.\n \nAdmins may run the following PowerShell cmdlets sequentially for migration batches:\n \nSet-MigrationBatch batchname -SkipMoving FolderRestrictions\nStart-MigrationBatch \"BatchName\"\n \nAdmins attempting to complete a tenant-to-tenant migration or an offboarding move in Exchange Online will be returned the following error \n\"PropTagToPropertyDefinitionConversionException\"\n \nCurrent status: The deployment of our fix isn't progressing as quickly as expected, which may delay our original estimated timeline for remediating the impact. We're expecting our solution will have completed over half of the necessary deployment by our next scheduled communication update, when we'll confirm the remaining timeline for remediating the impact.\n \nScope of impact: Some admins attempting to perform tenant to tenant migrations and offboarding moves in the Exchange admin center may be affected. This information may be updated as our investigation continues.\n \nRoot cause: A change introduced a code regression to Mailbox Replication Service (MRS), which causes intermittent failures for tenant-to-tenant migration actions or offboarding moves as the property tags needed to complete the request are not being properly configured.\n \nNext update by: Friday, April 3, 2026, at 9:30 PM UTC"
+            },
             {
               "createdAt": "2026-03-19T20:15:30.147Z",
               "postType": "regular",
