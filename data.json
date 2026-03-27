@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-27T21:05:04.353Z",
+  "lastUpdated": "2026-03-27T21:35:11.685Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -96,16 +96,21 @@
           "title": "Some users may be unable to access custom add-ins through any Exchange Online connection method",
           "startTime": "2026-03-03T13:52:00Z",
           "endTime": null,
-          "lastModified": "2026-03-26T20:04:53.367Z",
+          "lastModified": "2026-03-27T21:17:15.207Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to access custom add-ins through any Exchange Online connection method.",
           "scopeOfImpact": "Some users who are attempting to access custom add-ins through all Exchange Online connection methods may be impacted. This section may be updated as our investigation continues.",
           "rootCause": "",
-          "nextUpdateBy": "Friday, March 27, 2026, at 9:00 PM UTC",
+          "nextUpdateBy": "Saturday, March 28, 2026, at 9:00 PM UTC",
           "feature": "Reports of an Incident",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-03-27T21:17:15.207Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to access custom add-ins through any Exchange Online connection method\n\nUser impact: Users may be unable to access custom add-ins through any Exchange Online connection method.\n\nCurrent status: We've been unable to confirm that a traffic imbalance is preventing access to the affected add-ins. We're collecting enhanced trace logs and looking into recent changes in the code path to identify the root cause and a strategy that remediates impact.\n \nScope of impact: Some users who are attempting to access custom add-ins through all Exchange Online connection methods may be impacted. This section may be updated as our investigation continues.\n \nNext update by: Saturday, March 28, 2026, at 9:00 PM UTC"
+            },
             {
               "createdAt": "2026-03-26T20:04:53.367Z",
               "postType": "regular",
@@ -571,16 +576,21 @@
           "title": "Some users may be unable to access the default add-ins in Outlook",
           "startTime": "2026-03-18T21:53:53Z",
           "endTime": null,
-          "lastModified": "2026-03-26T19:52:01.07Z",
+          "lastModified": "2026-03-27T21:07:15.953Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to access the default add-ins in Outlook.",
           "scopeOfImpact": "Some users attempting to access or use the default add-ins within Outlook may be impacted. This information may be updated as our investigation continues.",
           "rootCause": "A recent REST API update prevents users from accessing default add-ins in Outlook.",
-          "nextUpdateBy": "Friday, March 27, 2026, at 9:00 PM UTC",
+          "nextUpdateBy": "Saturday, March 28, 2026, at 9:00 PM UTC",
           "feature": "Tenant Administration (Provisioning, Remote PowerShell)",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-03-27T21:07:15.953Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to access the default add-ins in Outlook\n\nUser impact: Users may be unable to access the default add-ins in Outlook.\n\nMore info: This issue impacts both the Outlook desktop client and Outlook on the web. Some affected users find that the “My Templates” icon is missing from the Outlook ribbon and others may be unable to find templates in the AppData Microsoft Templates location, even though templates are known to exist and may still be being used by non-impacted users. Some users also report that the Viva Insights add-in is also impacted by this event.\n \nCurrent status: We rolled back this change for all impacted users and determine that while this resolved the issue for some users, others are still impacted. We're attempting to determine the difference between users that no longer experience this issue and those that are still impacted to determine a solution that completely remediates impact.\n \nScope of impact: Some users attempting to access or use the default add-ins within Outlook may be impacted. This information may be updated as our investigation continues.\n \nRoot cause: A recent REST API update prevents users from accessing default add-ins in Outlook.\n \nNext update by: Saturday, March 28, 2026, at 9:00 PM UTC"
+            },
             {
               "createdAt": "2026-03-26T19:52:01.07Z",
               "postType": "regular",
