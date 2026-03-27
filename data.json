@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-27T13:33:27.793Z",
+  "lastUpdated": "2026-03-27T14:03:33.960Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -2530,37 +2530,6 @@
       "serviceName": "Microsoft Defender XDR",
       "affectedServices": [
         "Microsoft Defender XDR"
-      ]
-    },
-    {
-      "id": "PB1238769",
-      "title": "Some users using the January 2026 Report Server version (1.25.9508.3237) may have encountered access issues",
-      "startTime": "2026-01-21T00:00:00Z",
-      "endTime": "2026-02-25T15:00:00Z",
-      "lastModified": "2026-02-25T15:24:05.193Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users using the January 2026 Report Server version (1.25.9508.3237) may have encountered access issues.",
-      "scopeOfImpact": "Impact was specific to users using the January 2026 Report Server version (1.25.9508.3237).\n \nStart time: Wednesday, January 21, 2026, at 12:00 AM UTC\n \nEnd time: Wednesday, February 25, 2026, at 3:00 PM UTC",
-      "rootCause": "An issue with the January 2026 Report Server version (1.25.9508.3237) may have caused access issues, as certain reports could have triggered excessive crash dump generation on disk.\n \nNext steps:\n- We're continuing to identify the underlying root cause of impact within the January 2026 Report Server version (1.25.9508.3237).\n\n- We're reviewing our update procedures to better identify similar issues during our development and testing cycles.\n\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "PowerBI.com",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-02-25T15:24:05.193Z",
-          "postType": "regular",
-          "content": "Title: Some users using the January 2026 Report Server version (1.25.9508.3237) may have encountered access issues\n\nUser impact: Users using the January 2026 Report Server version (1.25.9508.3237) may have encountered access issues.\n\nMore info: Users using the January 2026 Report Server version (1.25.9508.3237) may have encountered access issues, as certain reports may have triggered excessive crash dump generation on disks. As a workaround, users could have downgraded to the September 2025 version (1.15.8377.1837) or deleted the generated crash dump files due to a known limitation.\n \nFinal status: We've determined that an issue with the January 2026 Report Server version (1.25.9508.3237) may have caused access issues, as certain reports could have triggered excessive crash dump generation on disk. We've reverted to the previous working version September 2025 version (1.15.8377.1837), which has remediated impact.\n \nScope of impact: Impact was specific to users using the January 2026 Report Server version (1.25.9508.3237).\n \nStart time: Wednesday, January 21, 2026, at 12:00 AM UTC\n \nEnd time: Wednesday, February 25, 2026, at 3:00 PM UTC\n \nRoot cause: An issue with the January 2026 Report Server version (1.25.9508.3237) may have caused access issues, as certain reports could have triggered excessive crash dump generation on disk.\n \nNext steps:\n- We're continuing to identify the underlying root cause of impact within the January 2026 Report Server version (1.25.9508.3237).\n\n- We're reviewing our update procedures to better identify similar issues during our development and testing cycles.\n\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-02-25T13:32:34.74Z",
-          "postType": "regular",
-          "content": "Title: Some users using the January 2026 Report Server version (1.25.9508.3237) may encounter access issues\n\nUser impact: Users using the January 2026 Report Server version (1.25.9508.3237) may encounter access issues.\n\nMore info: Users using the January 2026 Report Server version (1.25.9508.3237) may encounter access issues, as certain reports can trigger excessive crash dump generation on disk. As a workaround, users can downgrade to the September 2025 version (1.15.8377.1837) or may delete the generated crash dump files due to a known limitation.\n \nCurrent status: We're reviewing service monitoring telemetry to isolate the root cause and develop a remediation plan.\n \nScope of impact: Impact is specific to users using the January 2026 Report Server version (1.25.9508.3237).\n \nStart time: Wednesday, January 21, 2026, at 12:00 AM UTC\n \nNext update by: Wednesday, February 25, 2026, at 3:30 PM UTC"
-        }
-      ],
-      "serviceName": "Power BI",
-      "affectedServices": [
-        "Power BI"
       ]
     }
   ]
