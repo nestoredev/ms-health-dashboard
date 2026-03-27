@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-27T01:30:50.809Z",
+  "lastUpdated": "2026-03-27T02:00:57.472Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -161,16 +161,21 @@
           "title": "Some users may see that when selecting a meeting room when scheduling meetings, it changes from available to unavailable",
           "startTime": "2025-12-08T03:04:00Z",
           "endTime": null,
-          "lastModified": "2026-03-19T06:48:27.07Z",
+          "lastModified": "2026-03-27T01:39:25.713Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may see that after selecting a meeting room when scheduling meetings, it changes from available to unavailable.",
-          "scopeOfImpact": "Any users that are trying to select a meeting room when scheduling meetings outside the room's working hours in Exchange Online may be impacted. This information may be updated as our investigation continues.\n\nStart time: Monday, December 8, 2025, at 3:04 AM UTC",
+          "scopeOfImpact": "Any users that are trying to select a meeting room when scheduling meetings outside the room's working hours in Exchange Online may be impacted. This information may be updated as our investigation continues.\n \nStart time: Monday, December 8, 2025, at 3:04 AM UTC",
           "rootCause": "A recent expansion of the feature logic used to book rooms for scheduled meetings contains a code complication which automatically sets the meeting rooms' default working hours to appear in Pacific Standard Time instead of their accurate time zone.",
-          "nextUpdateBy": "Friday, March 27, 2026, at 3:00 AM UTC",
+          "nextUpdateBy": "Thursday, April 2, 2026, at 1:00 AM UTC",
           "feature": "Reports of an Incident",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-03-27T01:39:25.713Z",
+              "postType": "regular",
+              "content": "Title: Some users may see that when selecting a meeting room when scheduling meetings, it changes from available to unavailable\n\nUser impact: Users may see that after selecting a meeting room when scheduling meetings, it changes from available to unavailable.\n\nMore info: While we are working to remediate the impact, admins can mitigate the issue by assigning the desired working hours and the time zone for the meeting rooms.\n \nCurrent status: We’re continuing to monitor the deployment of our fix as it progresses and we anticipate it’ll reach completion by mid-April.\n \nScope of impact: Any users that are trying to select a meeting room when scheduling meetings outside the room's working hours in Exchange Online may be impacted. This information may be updated as our investigation continues.\n \nStart time: Monday, December 8, 2025, at 3:04 AM UTC\n \nRoot cause: A recent expansion of the feature logic used to book rooms for scheduled meetings contains a code complication which automatically sets the meeting rooms' default working hours to appear in Pacific Standard Time instead of their accurate time zone.\n \nNext update by: Thursday, April 2, 2026, at 1:00 AM UTC"
+            },
             {
               "createdAt": "2026-03-18T02:02:04.317Z",
               "postType": "regular",
@@ -2235,86 +2240,57 @@
           "affectedServices": [
             "Microsoft 365 Copilot Chat"
           ]
-        },
-        {
-          "id": "CW1245654",
-          "title": "Admins may not be able to search for Microsoft 365 Copilot Chat messages using Microsoft Purview eDiscovery searches",
-          "startTime": "2026-02-13T19:20:00Z",
-          "endTime": null,
-          "lastModified": "2026-03-27T01:10:36.887Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Admins may not have been able to search for Copilot Chat messages using eDiscovery searches.",
-          "scopeOfImpact": "Admins performing eDiscovery searches that should contain Copilot Chat messages may be impacted by this event.\n\nStart time: Friday, February 13, 2026, at 7:20 PM UTC\n\nEstimated time to resolve: We anticipate the deployment of our fix will complete by Friday, March 27, 2026, at 1:30 AM UTC.",
-          "rootCause": "A latent code error is preventing some metadata from being indexed as expected, which is resulting in impact.",
-          "nextUpdateBy": "Friday, March 27, 2026, at 1:30 AM UTC",
-          "feature": "General",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-03-26T18:28:41.32Z",
-              "postType": "regular",
-              "content": "Title: Admins may not be able to search for Microsoft 365 Copilot Chat messages using Microsoft Purview eDiscovery searches\n\nUser impact: Admins may not be able to search for Copilot Chat messages using eDiscovery searches.\n\nCurrent status: Based on the current rate of saturation from our fix deployment, we anticipate it will complete, remediating impact for all admins, by our next scheduled communication update on Friday, March 27, 2026, at 1:30 AM UTC.\n\nScope of impact: Admins performing eDiscovery searches that should contain Copilot Chat messages may be impacted by this event.\n\nStart time: Friday, February 13, 2026, at 7:20 PM UTC\n\nEstimated time to resolve: We anticipate the deployment of our fix will complete by Friday, March 27, 2026, at 1:30 AM UTC.\n\nRoot cause: A latent code error is preventing some metadata from being indexed as expected, which is resulting in impact.\n\nNext update by: Friday, March 27, 2026, at 1:30 AM UTC"
-            },
-            {
-              "createdAt": "2026-03-25T18:48:32.067Z",
-              "postType": "regular",
-              "content": "Title: Admins may not be able to search for Microsoft 365 Copilot Chat messages using Microsoft Purview eDiscovery searches\n\nUser impact: Admins may not be able to search for Copilot Chat messages using eDiscovery searches.\n\nCurrent status: We've validated the fix in the remaining environments and initiated its release. We're monitoring as it progresses and will provide a remediation timeline once one is available.\n \nScope of impact: Admins performing eDiscovery searches that should contain Copilot Chat messages may be impacted by this event.\nStart time: Friday, February 13, 2026, at 7:20 PM UTC\n \nRoot cause: A latent code error is preventing some metadata from being indexed as expected, which is resulting in impact.\n \nNext update by: Thursday, March 26, 2026, at 8:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-03-23T18:47:40.743Z",
-              "postType": "regular",
-              "content": "Title: Admins may not be able to search for Microsoft 365 Copilot Chat messages using Microsoft Purview eDiscovery searches\n\nUser impact: Admins may not be able to search for Copilot Chat messages using eDiscovery searches.\n\nCurrent status: We've deployed our fix to a majority of affected users, who should start to see relief from this issue. We're proceeding with a meticulous deployment of this fix to the remaining affected users and once completed will be testing with a subset of users within this environment to ensure remediation.\n \nScope of impact: Admins performing eDiscovery searches that should contain Copilot Chat messages may be impacted by this event.\n \nRoot cause: A latent code error is preventing some metadata from being indexed as expected, which is resulting in impact.\n \nNext update by: Wednesday, March 25, 2026, at 8:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-03-20T19:21:24.543Z",
-              "postType": "regular",
-              "content": "Title: Admins may not be able to search for Microsoft 365 Copilot Chat messages using Microsoft Purview eDiscovery searches\n\nUser impact: Admins may not be able to search for Copilot Chat messages using eDiscovery searches.\n\nCurrent status: We've developed and deployed a fix to a subset of affected users, who should start to see relief of this issue as it saturates. We intend to proceed with a meticulous deployment of this fix to the remaining affected users on Monday, March 23, 2026. We'll provide updates to the full remediation timeline as soon as they become available.\n \nScope of impact: Admins performing eDiscovery searches that should contain Copilot Chat messages may be impacted by this event.\n \nRoot cause: A latent code error is preventing some metadata from being indexed as expected, which is resulting in impact.\n \nNext update by: Monday, March 23, 2026, at 8:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-03-13T17:03:33.157Z",
-              "postType": "regular",
-              "content": "Title: Admins may not be able to search for Microsoft 365 Copilot Chat messages using Microsoft Purview eDiscovery searches\n \nUser impact: Admins may not be able to search for Copilot Chat messages using eDiscovery searches.\n \nCurrent status: Our investigation has confirmed that a latent code error is preventing some metadata from being indexed as expected, resulting in impact. We've developed a fix and are in the process of safely releasing the change to remediate impact. We expect the fix will be fully released by the next scheduled update. \n\nScope of impact: Admins performing eDiscovery searches that should contain Copilot Chat messages may be impacted by this event.\n \nRoot cause: A latent code error is preventing some metadata from being indexed as expected, which is resulting in impact.\n\nNext update by: Friday, March 20, 2026, at 9:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-03-10T16:54:32.877Z",
-              "postType": "regular",
-              "content": "Title: Admins may not be able to search for Microsoft 365 Copilot Chat messages using Microsoft Purview eDiscovery searches\n \nUser impact: Admins may not be able to search for Copilot Chat messages using eDiscovery searches.\n \nCurrent status: We're progressing with our analysis into the isolated parsing failures as we determine the source for this event. In parallel, we're further reviewing an internal setting adjustment to determine if it may be viable for addressing the eDiscovery search problems admins are experiencing when searching for some Copilot Chat.\n\nScope of impact: Admins performing eDiscovery searches that should contain Copilot Chat messages may be impacted by this event.\n\nNext update by: Friday, March 13, 2026, at 5:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-03-09T19:05:45.487Z",
-              "postType": "regular",
-              "content": "Title: Admins may not be able to search for Microsoft 365 Copilot Chat messages using Microsoft Purview eDiscovery searches\n \nUser impact: Admins may not be able to search for Copilot Chat messages using eDiscovery searches.\n \nCurrent status: After using the data generated by our reproduction to review the indexing model, we've found that some necessary data from the Copilot Chat messages isn't being parsed, resulting in some messages being unavailable during the search. We're continuing to investigate these parsing failures to isolate their source and determine our next troubleshooting steps.\n \nScope of impact: Admins performing eDiscovery searches that should contain Copilot Chat messages may be impacted by this event.\n \nNext update by: Tuesday, March 10, 2026, at 5:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-03-06T20:37:02.477Z",
-              "postType": "regular",
-              "content": "Title: Admins may not be able to search for Microsoft 365 Copilot Chat messages using Microsoft Purview eDiscovery searches\n \nUser impact: Admins may not be able to search for Copilot Chat messages using eDiscovery searches.\n \nCurrent status: We're using data generated by our reproduction of the impact through our internal testing environment to investigate the indexing model for the conversation history in the portion of storage infrastructure responsible for storing Copilot Chat messages, which will help us pinpoint the source of the indexing issue.\n \nScope of impact: Admins performing eDiscovery searches that should contain Copilot Chat messages may be impacted by this event.\n \nNext update by: Monday, March 9, 2026, at 8:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-03-06T18:52:41.207Z",
-              "postType": "regular",
-              "content": "Title: Admins may not be able to search for Microsoft 365 Copilot Chat messages using Microsoft Purview eDiscovery searches\n \nUser impact: Admins may not be able to search for Copilot Chat messages using eDiscovery searches.\n \nCurrent status: Our initial review of the Copilot Chat messages that aren't appearing in the eDiscovery searches suggest that their indexes aren't matching the associated keywords. We're using our internal testing environment to troubleshoot and gain further understanding on what issue is occurring with the indexes.\n \nScope of impact: Admins performing eDiscovery searches that should contain Copilot Chat messages may be impacted by this event.\n \nNext update by: Friday, March 6, 2026, at 9:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-03-06T17:04:28.913Z",
-              "postType": "regular",
-              "content": "Title: Admins may not be able to search for Microsoft 365 Copilot Chat messages using Microsoft Purview eDiscovery searches\n\nUser impact: Admins may not be able to search for Copilot Chat messages using eDiscovery searches.\n\nCurrent status: We're reviewing the explanation of the scenario provided by a subset of impacted users so that we can gain clarity on the issue and determine the next steps to isolate the root cause.\n \nScope of impact: Admins performing eDiscovery searches that should contain Copilot Chat messages may be impacted by this event.\n \nNext update by: Friday, March 6, 2026, at 6:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-03-06T16:40:37.347Z",
-              "postType": "regular",
-              "content": "Title: Admins may not be able to search for Microsoft 365 Copilot Chat messages using Microsoft Purview eDiscovery searches\n\nUser impact: Admins may not be able to search for Copilot Chat messages using eDiscovery searches.\n \nCurrent status: We're investigating a potential issue impacting Microsoft 365 Copilot Chat and checking for impact. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Microsoft 365 Copilot Chat"
-          ]
         }
       ]
     }
   ],
   "history": [
+    {
+      "id": "CW1245654",
+      "title": "Admins may not be able to search for Microsoft 365 Copilot Chat messages using Microsoft Purview eDiscovery searches",
+      "startTime": "2026-02-13T19:20:00Z",
+      "endTime": "2026-03-27T00:00:00Z",
+      "lastModified": "2026-03-27T01:30:01.563Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Admins may not have been able to search for Copilot Chat messages using eDiscovery searches.",
+      "scopeOfImpact": "Admins performing eDiscovery searches that should've contained Copilot Chat messages may have been impacted by this event.\n \nStart time: Friday, February 13, 2026, at 7:20 PM UTC\n \nEnd time: Friday, March 27, 2026, at 12:00 AM UTC",
+      "rootCause": "A latent code error was preventing some metadata from being indexed as expected, which was resulting in impact.\n \nNext steps: \n- We're further analyzing the indexing error to better understand how this wasn't detected sooner and what changes we can make to our monitoring and testing to help prevent similar issues in the future.\n \nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "General",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-03-27T01:30:01.563Z",
+          "postType": "regular",
+          "content": "Title: Admins may not be able to search for Microsoft 365 Copilot Chat messages using Microsoft Purview eDiscovery searches\n\nUser impact: Admins may not have been able to search for Copilot Chat messages using eDiscovery searches.\n\nFinal status: We've confirmed that the fix has fully saturated and impact is now fully remediated.\n \nScope of impact: Admins performing eDiscovery searches that should've contained Copilot Chat messages may have been impacted by this event.\n \nStart time: Friday, February 13, 2026, at 7:20 PM UTC\n \nEnd time: Friday, March 27, 2026, at 12:00 AM UTC\n \nRoot cause: A latent code error was preventing some metadata from being indexed as expected, which was resulting in impact.\n \nNext steps: \n- We're further analyzing the indexing error to better understand how this wasn't detected sooner and what changes we can make to our monitoring and testing to help prevent similar issues in the future.\n \nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-03-26T18:28:41.32Z",
+          "postType": "regular",
+          "content": "Title: Admins may not be able to search for Microsoft 365 Copilot Chat messages using Microsoft Purview eDiscovery searches\n\nUser impact: Admins may not be able to search for Copilot Chat messages using eDiscovery searches.\n\nCurrent status: Based on the current rate of saturation from our fix deployment, we anticipate it will complete, remediating impact for all admins, by our next scheduled communication update on Friday, March 27, 2026, at 1:30 AM UTC.\n\nScope of impact: Admins performing eDiscovery searches that should contain Copilot Chat messages may be impacted by this event.\n\nStart time: Friday, February 13, 2026, at 7:20 PM UTC\n\nEstimated time to resolve: We anticipate the deployment of our fix will complete by Friday, March 27, 2026, at 1:30 AM UTC.\n\nRoot cause: A latent code error is preventing some metadata from being indexed as expected, which is resulting in impact.\n\nNext update by: Friday, March 27, 2026, at 1:30 AM UTC"
+        },
+        {
+          "createdAt": "2026-03-25T18:48:32.067Z",
+          "postType": "regular",
+          "content": "Title: Admins may not be able to search for Microsoft 365 Copilot Chat messages using Microsoft Purview eDiscovery searches\n\nUser impact: Admins may not be able to search for Copilot Chat messages using eDiscovery searches.\n\nCurrent status: We've validated the fix in the remaining environments and initiated its release. We're monitoring as it progresses and will provide a remediation timeline once one is available.\n \nScope of impact: Admins performing eDiscovery searches that should contain Copilot Chat messages may be impacted by this event.\nStart time: Friday, February 13, 2026, at 7:20 PM UTC\n \nRoot cause: A latent code error is preventing some metadata from being indexed as expected, which is resulting in impact.\n \nNext update by: Thursday, March 26, 2026, at 8:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-03-23T18:47:40.743Z",
+          "postType": "regular",
+          "content": "Title: Admins may not be able to search for Microsoft 365 Copilot Chat messages using Microsoft Purview eDiscovery searches\n\nUser impact: Admins may not be able to search for Copilot Chat messages using eDiscovery searches.\n\nCurrent status: We've deployed our fix to a majority of affected users, who should start to see relief from this issue. We're proceeding with a meticulous deployment of this fix to the remaining affected users and once completed will be testing with a subset of users within this environment to ensure remediation.\n \nScope of impact: Admins performing eDiscovery searches that should contain Copilot Chat messages may be impacted by this event.\n \nRoot cause: A latent code error is preventing some metadata from being indexed as expected, which is resulting in impact.\n \nNext update by: Wednesday, March 25, 2026, at 8:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-03-20T19:21:24.543Z",
+          "postType": "regular",
+          "content": "Title: Admins may not be able to search for Microsoft 365 Copilot Chat messages using Microsoft Purview eDiscovery searches\n\nUser impact: Admins may not be able to search for Copilot Chat messages using eDiscovery searches.\n\nCurrent status: We've developed and deployed a fix to a subset of affected users, who should start to see relief of this issue as it saturates. We intend to proceed with a meticulous deployment of this fix to the remaining affected users on Monday, March 23, 2026. We'll provide updates to the full remediation timeline as soon as they become available.\n \nScope of impact: Admins performing eDiscovery searches that should contain Copilot Chat messages may be impacted by this event.\n \nRoot cause: A latent code error is preventing some metadata from being indexed as expected, which is resulting in impact.\n \nNext update by: Monday, March 23, 2026, at 8:00 PM UTC"
+        }
+      ],
+      "serviceName": "Microsoft 365 Copilot Chat",
+      "affectedServices": [
+        "Microsoft 365 Copilot Chat"
+      ]
+    },
     {
       "id": "EX1260428",
       "title": "Some users may have been unable to access their Exchange Online mailboxes using the Outlook desktop client",
