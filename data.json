@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-27T18:34:30.951Z",
+  "lastUpdated": "2026-03-27T19:04:38.793Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -11,16 +11,21 @@
           "title": "Some users may be intermittently unable to access their Exchange Online mailboxes in some connection methods",
           "startTime": "2026-03-12T00:00:00Z",
           "endTime": null,
-          "lastModified": "2026-03-27T00:09:23.137Z",
+          "lastModified": "2026-03-27T18:50:34.82Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be intermittently unable to access their Exchange Online mailboxes in some connection methods.",
-          "scopeOfImpact": "Impact may occur for some users intermittently and users may be unable to access their Exchange Online mailboxes with the Outlook mobile apps or the new Outlook for Mac desktop client. This section may be updated as our investigation progresses.\n\nStart time: Thursday, March 12, 2026, at 12:00 AM UTC",
+          "scopeOfImpact": "Impact may occur for some users intermittently and users may be unable to access their Exchange Online mailboxes with the Outlook mobile apps or the new Outlook for Mac desktop client. This section may be updated as our investigation progresses.\n \nStart time: Thursday, March 12, 2026, at 12:00 AM UTC",
           "rootCause": "A recent update intended to enable new Virtual Account functionality introduced a routing conflict that’s preventing the Outlook mobile apps from syncing to the Exchange service as expected, leading to impact.",
-          "nextUpdateBy": "Friday, March 27, 2026, at 8:00 PM UTC",
+          "nextUpdateBy": "Monday, March 30, 2026, at 6:00 PM UTC",
           "feature": "Performance degradation",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-03-27T18:50:34.82Z",
+              "postType": "regular",
+              "content": "Title: Some users may be intermittently unable to access their Exchange Online mailboxes in some connection methods\n\nUser impact: Users may be intermittently unable to access their Exchange Online mailboxes in some connection methods.\n\nMore info: This issue may intermittently impact some users who are attempting to access the Exchange Online service through the Outlook mobile apps or the new Outlook for Mac desktop client.\n\nCurrent status: We're continuing to monitor the service health telemetry to ensure failure rates continue to improve while we work on the enablement of our secondary mitigation progresses.\n\nScope of impact: Impact may occur for some users intermittently and users may be unable to access their Exchange Online mailboxes with the Outlook mobile apps or the new Outlook for Mac desktop client. This section may be updated as our investigation progresses.\n \nStart time: Thursday, March 12, 2026, at 12:00 AM UTC\n \nRoot cause: A recent update intended to enable new Virtual Account functionality introduced a routing conflict that’s preventing the Outlook mobile apps from syncing to the Exchange service as expected, leading to impact.\n \nNext update by: Monday, March 30, 2026, at 6:00 PM UTC"
+            },
             {
               "createdAt": "2026-03-27T00:09:23.137Z",
               "postType": "regular",
@@ -896,16 +901,21 @@
           "title": "Some users may be unable to connect to Azure Analysis Services live connection reports from Power BI desktop",
           "startTime": "2026-03-26T17:43:03Z",
           "endTime": null,
-          "lastModified": "2026-03-26T22:58:59.373Z",
+          "lastModified": "2026-03-27T18:44:45.603Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be intermittently unable to connect to Azure Analysis Services live connection reports from Power BI desktop.",
           "scopeOfImpact": "Some users attempting to connect to Azure Analysis Services live connection reports from Power BI desktop may be impacted.",
           "rootCause": "",
-          "nextUpdateBy": "Friday, March 27, 2026, at 10:00 PM UTC",
+          "nextUpdateBy": "Saturday, March 28, 2026, at 12:00 AM UTC",
           "feature": "PowerBI.com",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-03-27T18:44:45.603Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to connect to Azure Analysis Services live connection reports from Power BI desktop\n\nUser impact: Users may be intermittently unable to connect to Azure Analysis Services live connection reports from Power BI desktop.\n\nMore info: As a workaround, affected users can disable the “Sign-in experience for data sources” option in the security settings of Power BI Desktop and restart the application to mitigate the issue.\n\nCurrent status: While we continue confirming root cause details and developing a mitigation strategy, we've identified a workaround which affected users can leverage to mitigate the impact until the issue is resolved. The steps have been provided in the \"More info\" section of this communication.\n\nScope of impact: Some users attempting to connect to Azure Analysis Services live connection reports from Power BI desktop may be impacted.\n\nNext update by: Saturday, March 28, 2026, at 12:00 AM UTC"
+            },
             {
               "createdAt": "2026-03-26T22:58:59.373Z",
               "postType": "regular",
