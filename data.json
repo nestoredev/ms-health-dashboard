@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-27T22:05:17.891Z",
+  "lastUpdated": "2026-03-27T22:35:23.808Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -911,16 +911,21 @@
           "title": "Some users may be unable to connect to Azure Analysis Services live connection reports from Power BI desktop",
           "startTime": "2026-03-26T17:43:03Z",
           "endTime": null,
-          "lastModified": "2026-03-27T18:44:45.603Z",
+          "lastModified": "2026-03-27T22:25:07.84Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be intermittently unable to connect to Azure Analysis Services live connection reports from Power BI desktop.",
           "scopeOfImpact": "Some users attempting to connect to Azure Analysis Services live connection reports from Power BI desktop may be impacted.",
           "rootCause": "",
-          "nextUpdateBy": "Saturday, March 28, 2026, at 12:00 AM UTC",
+          "nextUpdateBy": "Tuesday, March 31, 2026, at 12:00 AM UTC",
           "feature": "PowerBI.com",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-03-27T22:25:07.84Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to connect to Azure Analysis Services live connection reports from Power BI desktop\n\nUser impact: Users may be intermittently unable to connect to Azure Analysis Services live connection reports from Power BI desktop.\n\nMore info: As a workaround, affected users can disable the “Sign-in experience for data sources” option in the security settings of Power BI Desktop and restart the application to mitigate the issue.\n\nCurrent status: While we continue to investigate the reason why the default setting that was introduced in a recent service change is causing this impact, we've developed a fix that disables this setting and are validating its efficacy before deploying it. We expect that deployment will begin before the time of our next update.\n\nScope of impact: Some users attempting to connect to Azure Analysis Services live connection reports from Power BI desktop may be impacted.\n\nNext update by: Tuesday, March 31, 2026, at 12:00 AM UTC"
+            },
             {
               "createdAt": "2026-03-27T18:44:45.603Z",
               "postType": "regular",
