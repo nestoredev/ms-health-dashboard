@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-28T00:35:48.565Z",
+  "lastUpdated": "2026-03-28T01:05:54.666Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -96,16 +96,21 @@
           "title": "Some users may be unable to access custom add-ins through any Exchange Online connection method",
           "startTime": "2026-03-03T13:52:00Z",
           "endTime": null,
-          "lastModified": "2026-03-27T21:17:15.207Z",
+          "lastModified": "2026-03-28T00:58:34.3Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to access custom add-ins through any Exchange Online connection method.",
           "scopeOfImpact": "Some users who are attempting to access custom add-ins through all Exchange Online connection methods may be impacted. This section may be updated as our investigation continues.",
           "rootCause": "",
-          "nextUpdateBy": "Saturday, March 28, 2026, at 9:00 PM UTC",
+          "nextUpdateBy": "Monday, March 30, 2026, at 9:00 PM UTC",
           "feature": "Reports of an Incident",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-03-28T00:48:04.867Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to access custom add-ins through any Exchange Online connection method\n\nUser impact: Users may be unable to access custom add-ins through any Exchange Online connection method.\n\nMore info: For additional guidance on managing Exchange Web Services, please refer to the following:\n\nhttps://learn.microsoft.com/en-us/exchange/client-developer/exchange-web-services/how-to-control-access-to-ews-in-exchange\n\nCurrent status: We identified that a recent service update is affecting Exchange Web Services which impacts add-ins in Exchange Online. While we continue our investigation to confirm this theory, we recommend following the guidance in the \"More Info\" section to verify that Exchange Web Services access is enabled and then testing to validate whether the customer add-ins are accessible.\n\nScope of impact: Some users who are attempting to access custom add-ins through all Exchange Online connection methods may be impacted. This section may be updated as our investigation continues.\n\nNext update by: Monday, March 30, 2026, at 9:00 PM UTC"
+            },
             {
               "createdAt": "2026-03-27T21:17:15.207Z",
               "postType": "regular",
