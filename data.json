@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-28T05:06:44.725Z",
+  "lastUpdated": "2026-03-28T05:36:50.877Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -666,9 +666,35 @@
     },
     {
       "service": "Microsoft 365 suite",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "OSDPPlatform",
-      "issues": []
+      "issues": [
+        {
+          "id": "MO1263631",
+          "title": "Admins may see stale or delayed data in ProPlusUsage reports within the Microsoft 365 Admin center",
+          "startTime": "2026-03-28T04:20:13Z",
+          "endTime": null,
+          "lastModified": "2026-03-28T05:09:38.423Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Admins may see stale or delayed data in ProPlusUsage reports within the Microsoft 365 Admin center.",
+          "scopeOfImpact": "Any admins in North America, Europe, and Asia Pacific regions attempting to view data in ProPlusUsage reports in Microsoft 365 admin center may be impacted by this event. This section may be updated as our investigation continues.",
+          "rootCause": "An underlying infrastructure issue is causing delays within our ProPlusUsage report data processing pipeline.",
+          "nextUpdateBy": "Monday, March 30, 2026, at 7:00 PM UTC",
+          "feature": "Company or User Administration",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-03-28T05:09:38.423Z",
+              "postType": "regular",
+              "content": "Title: Admins may see stale or delayed data in ProPlusUsage reports within the Microsoft 365 Admin center\n\nUser impact: Admins may see stale or delayed data in ProPlusUsage reports within the Microsoft 365 Admin center.\n\nMore info: Additionally, the ProPlusUsage reports may not contain data for March 24, 2026. \n \nCurrent status: We've been made aware of an issue in which any admin may see stale or delayed data in ProPlusUsage reports within the Microsoft 365 Admin center. We've identified that an underlying infrastructure issue is causing delays within our ProPlusUsage report data processing pipeline. We're investigating the underlying infrastructure issue to determine the most effective solution for recovering the affected pipelines and to process the impacted data.\n \nScope of impact: Any admins in North America, Europe, and Asia Pacific regions attempting to view data in ProPlusUsage reports in Microsoft 365 admin center may be impacted by this event. This section may be updated as our investigation continues.\n \nRoot cause: An underlying infrastructure issue is causing delays within our ProPlusUsage report data processing pipeline. \n \nNext update by: Monday, March 30, 2026, at 7:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite"
+          ]
+        }
+      ]
     },
     {
       "service": "SharePoint Online",
