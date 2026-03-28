@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-28T17:39:20.047Z",
+  "lastUpdated": "2026-03-28T18:09:26.257Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -2555,47 +2555,6 @@
       "serviceName": "Microsoft 365 suite",
       "affectedServices": [
         "Microsoft 365 suite"
-      ]
-    },
-    {
-      "id": "DZ1239812",
-      "title": "Admins notice that some Advanced Hunting and Threat Explorer data in the Microsoft Defender XDR portal is delayed",
-      "startTime": "2026-02-26T12:40:00Z",
-      "endTime": "2026-02-26T19:00:00Z",
-      "lastModified": "2026-02-26T20:50:44.303Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Admins' Advanced Hunting and Threat Explorer data in the Microsoft Defender XDR portal was delayed.",
-      "scopeOfImpact": "Your organization was affected by this event, and any admin viewing Threat Explorer data in the Microsoft Defender XDR portal was impacted.\n\nStart time: Thursday, February 26, 2026, at 12:40 PM UTC\n\nEnd time: Thursday, February 26, 2026, at 7:00 PM UTC",
-      "rootCause": "A portion of service infrastructure responsible for relaying Advanced Hunting and Threat Explorer data to the Microsoft Defender XDR portal was operating in a suboptimal state, causing a backlog of unprocessed data and resulted in impact.\n\nNext steps: \n - We're continuing to review the portion of affected infrastructure to identify the reason it was operating in a suboptimal state, so that we can determine how to prevent similar impact from occurring in the future.\n\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "MDO",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-02-26T20:49:14.667Z",
-          "postType": "regular",
-          "content": "Title: Admins notice that some Advanced Hunting and Threat Explorer data in the Microsoft Defender XDR portal is delayed\n\nUser impact: Admins' Advanced Hunting and Threat Explorer data in the Microsoft Defender XDR portal was delayed.\n\nMore info: The Advanced Hunting and Threat Explorer data may have been delayed up to three hours. Additionally, when admins attempted to view the data of existing entries in Threat Explorer, they received an error that stated, \"Something went wrong. Primary and secondary data missing.\"\n\nFinal status: After monitoring our telemetry we've confirmed that the remaining backlog of Advanced Hunting and Threat Explorer data has completed processing and the impact is remediated.\n\nScope of impact: Your organization was affected by this event, and any admin viewing Threat Explorer data in the Microsoft Defender XDR portal was impacted.\n\nStart time: Thursday, February 26, 2026, at 12:40 PM UTC\n\nEnd time: Thursday, February 26, 2026, at 7:00 PM UTC\n\nRoot cause: A portion of service infrastructure responsible for relaying Advanced Hunting and Threat Explorer data to the Microsoft Defender XDR portal was operating in a suboptimal state, causing a backlog of unprocessed data and resulted in impact.\n\nNext steps: \n - We're continuing to review the portion of affected infrastructure to identify the reason it was operating in a suboptimal state, so that we can determine how to prevent similar impact from occurring in the future.\n\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-02-26T20:25:53.97Z",
-          "postType": "regular",
-          "content": "Title: Admins notice that some Advanced Hunting and Threat Explorer data in the Microsoft Defender XDR portal is delayed\n\nUser impact: Admins notice that some Advanced Hunting and Threat Explorer data in the Microsoft Defender XDR portal is delayed.\n\nMore info: The Advanced Hunting and Threat Explorer data may be delayed up to three hours. Additionally, when admins attempt to view the data of existing entries in Threat Explorer, they receive an error that states, \"Something went wrong. Primary and secondary data missing.\"\n\nCurrent status: We've identified that the portion of service infrastructure responsible for relaying Advanced Hunting and Threat Explorer data to the Microsoft Defender XDR portal is operating in a suboptimal state, causing a backlog of unprocessed data and resulting in impact. The backlog of data has begun processing without requiring any mitigating actions and we're monitoring to confirm it processes to completion.\n\nScope of impact: Your organization is affected by this event, and any admin viewing Threat Explorer data in the Microsoft Defender XDR portal is impacted.\n\nStart time: Thursday, February 26, 2026, at 12:40 PM UTC\n\nNext update by: Thursday, February 26, 2026, at 10:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-02-26T19:09:50.7Z",
-          "postType": "regular",
-          "content": "Title: Admins notice that some Advanced Hunting and Threat Explorer data in the Microsoft Defender XDR portal is delayed\n\nUser impact: Admins notice that some Advanced Hunting and Threat Explorer data in the Microsoft Defender XDR portal is delayed.\n\nMore info: Additionally, when admins attempt to view the data of existing entries in Threat Explorer, they receive an error that states, \"Something went wrong. Primary and secondary data missing.\"\n\nCurrent status: We're reviewing provided screenshots to gain clarity on the issue and determine the next steps to investigate the root cause.\n\nScope of impact: Your organization is affected by this event, and any admin viewing Threat Explorer data in the Microsoft Defender XDR portal is impacted.\n\nNext update by: Thursday, February 26, 2026, at 8:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-02-26T18:50:33.337Z",
-          "postType": "regular",
-          "content": "Title: Admins notice that some Advanced Hunting and Threat Explorer data in the Microsoft Defender XDR portal is delayed\n\nUser impact: Admins notice that some Advanced Hunting and Threat Explorer data in the Microsoft Defender XDR portal is delayed.\n\nMore info: Additionally, when admins attempt to view the data of existing entries in Threat Explorer, they receive an error that states, \"Something went wrong. Primary and secondary data missing.\"\n\nCurrent status: We're investigating a potential issue with Microsoft Defender XDR and checking for impact to your organization. We'll provide an update within 30 minutes."
-        }
-      ],
-      "serviceName": "Microsoft Defender XDR",
-      "affectedServices": [
-        "Microsoft Defender XDR"
       ]
     }
   ]
