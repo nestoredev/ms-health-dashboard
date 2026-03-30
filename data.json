@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-30T17:19:21.917Z",
+  "lastUpdated": "2026-03-30T17:49:28.904Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -11,16 +11,21 @@
           "title": "Some users may be intermittently unable to access their Exchange Online mailboxes in some connection methods",
           "startTime": "2026-03-12T00:00:00Z",
           "endTime": null,
-          "lastModified": "2026-03-27T18:50:34.82Z",
+          "lastModified": "2026-03-30T17:21:33.837Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be intermittently unable to access their Exchange Online mailboxes in some connection methods.",
-          "scopeOfImpact": "Impact may occur for some users intermittently and users may be unable to access their Exchange Online mailboxes with the Outlook mobile apps or the new Outlook for Mac desktop client. This section may be updated as our investigation progresses.\n \nStart time: Thursday, March 12, 2026, at 12:00 AM UTC",
+          "scopeOfImpact": "Impact may occur for some users intermittently and users may be unable to access their Exchange Online mailboxes with the Outlook mobile apps or the new Outlook for Mac desktop client. This section may be updated as our investigation progresses.\n\nStart time: Thursday, March 12, 2026, at 12:00 AM UTC",
           "rootCause": "A recent update intended to enable new Virtual Account functionality introduced a routing conflict that’s preventing the Outlook mobile apps from syncing to the Exchange service as expected, leading to impact.",
-          "nextUpdateBy": "Monday, March 30, 2026, at 6:00 PM UTC",
+          "nextUpdateBy": "Wednesday, April 1, 2026, at 6:00 PM UTC",
           "feature": "Performance degradation",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-03-30T17:21:33.837Z",
+              "postType": "regular",
+              "content": "Title: Some users may be intermittently unable to access their Exchange Online mailboxes in some connection methods\n\nUser impact: Users may be intermittently unable to access their Exchange Online mailboxes in some connection methods.\n\nMore info: This issue may intermittently impact some users who are attempting to access the Exchange Online service through the Outlook mobile apps or the new Outlook for Mac desktop client.\n\nCurrent status: Our telemetry indicates that disabling the impacting updates has significantly reduced the number of errors. We're continuing to monitor the environment to validate no additional mitigation actions are needed.\n\nScope of impact: Impact may occur for some users intermittently and users may be unable to access their Exchange Online mailboxes with the Outlook mobile apps or the new Outlook for Mac desktop client. This section may be updated as our investigation progresses.\n\nStart time: Thursday, March 12, 2026, at 12:00 AM UTC\n\nRoot cause: A recent update intended to enable new Virtual Account functionality introduced a routing conflict that’s preventing the Outlook mobile apps from syncing to the Exchange service as expected, leading to impact.\n\nNext update by: Wednesday, April 1, 2026, at 6:00 PM UTC"
+            },
             {
               "createdAt": "2026-03-27T18:50:34.82Z",
               "postType": "regular",
