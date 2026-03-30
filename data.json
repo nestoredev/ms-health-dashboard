@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-30T20:50:11.434Z",
+  "lastUpdated": "2026-03-30T21:20:18.437Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -101,16 +101,21 @@
           "title": "Some users may be unable to access custom add-ins through any Exchange Online connection method",
           "startTime": "2026-03-03T13:52:00Z",
           "endTime": null,
-          "lastModified": "2026-03-28T00:58:34.3Z",
+          "lastModified": "2026-03-30T21:14:29.613Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to access custom add-ins through any Exchange Online connection method.",
           "scopeOfImpact": "Some users who are attempting to access custom add-ins through all Exchange Online connection methods may be impacted. This section may be updated as our investigation continues.",
           "rootCause": "",
-          "nextUpdateBy": "Monday, March 30, 2026, at 9:00 PM UTC",
+          "nextUpdateBy": "Tuesday, March 31, 2026, at 9:00 PM UTC",
           "feature": "Reports of an Incident",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-03-30T20:56:56.623Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to access custom add-ins through any Exchange Online connection method\n\nUser impact: Users may be unable to access custom add-ins through any Exchange Online connection method.\n\nMore info: For additional guidance on managing Exchange Web Services, please refer to the following:\n\nhttps://learn.microsoft.com/en-us/exchange/client-developer/exchange-web-services/how-to-control-access-to-ews-in-exchange\n\nCurrent status: We're continuing to validate our suspected root cause as mentioned in our previous communication update, and we recommend following the guidance in the \"More Info\" section to verify that Exchange Web Services access is enabled. Once enabled, we request that impacted users validate whether the custom add-ins are accessible. If impact persists for users after enabling this, please contact us through your support case for further investigation.\n\nScope of impact: Some users who are attempting to access custom add-ins through all Exchange Online connection methods may be impacted. This section may be updated as our investigation continues.\n\nNext update by: Tuesday, March 31, 2026, at 9:00 PM UTC"
+            },
             {
               "createdAt": "2026-03-28T00:48:04.867Z",
               "postType": "regular",
@@ -591,16 +596,21 @@
           "title": "Some users may be unable to access the default add-ins in Outlook",
           "startTime": "2026-03-18T21:53:53Z",
           "endTime": null,
-          "lastModified": "2026-03-28T01:21:01.533Z",
+          "lastModified": "2026-03-30T20:55:40.937Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to access the default add-ins in Outlook.",
           "scopeOfImpact": "Some users attempting to access or use the default add-ins within Outlook may be impacted. This information may be updated as our investigation continues.",
           "rootCause": "A recent REST API update prevents users from accessing default add-ins in Outlook.",
-          "nextUpdateBy": "Monday, March 30, 2026, at 9:00 PM UTC",
+          "nextUpdateBy": "Tuesday, March 31, 2026, at 9:00 PM UTC",
           "feature": "Tenant Administration (Provisioning, Remote PowerShell)",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-03-30T20:55:40.937Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to access the default add-ins in Outlook\n\nUser impact: Users may be unable to access the default add-ins in Outlook.\n\nMore info: This issue impacts both the Outlook desktop client and Outlook on the web. Some affected users find that the “My Templates” icon is missing from the Outlook ribbon and others may be unable to find templates in the AppData Microsoft Templates location, even though templates are known to exist and may still be being used by non-impacted users. Some users also report that the Viva Insights add-in is also impacted by this event.\n\nCurrent status: We're continuing our comparison of provided working and non-working user scenarios while conducting internal reproductions of impact to isolate potential issues contributing to this event. Due to multiple concurrent add-in functionality issues currently under investigation, this is taking additional time to complete.  Meanwhile, we’re requesting additional trace logs from some users to aid this investigation.\n\nScope of impact: Some users attempting to access or use the default add-ins within Outlook may be impacted. This information may be updated as our investigation continues.\n\nRoot cause: A recent REST API update prevents users from accessing default add-ins in Outlook.\n\nNext update by: Tuesday, March 31, 2026, at 9:00 PM UTC"
+            },
             {
               "createdAt": "2026-03-28T01:21:01.533Z",
               "postType": "regular",
