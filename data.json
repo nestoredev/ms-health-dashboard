@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-30T15:49:02.245Z",
+  "lastUpdated": "2026-03-30T16:19:09.124Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -680,121 +680,6 @@
       "status": "serviceDegradation",
       "id": "SharePoint",
       "issues": [
-        {
-          "id": "SP1240084",
-          "title": "Some users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results",
-          "startTime": "2026-02-27T02:11:21Z",
-          "endTime": null,
-          "lastModified": "2026-03-26T16:25:38.793Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results.",
-          "scopeOfImpact": "This incident impacts all users performing SharePoint Online searches, who may not see search returns prioritizing high-relevancy items in the results. This information may be updated as our investigation continues.\n \nStart time: Friday, January 2, 2026, at 12:00 AM UTC",
-          "rootCause": "A recent change introduced a code issue which is resulting in impact.",
-          "nextUpdateBy": "Monday, March 30, 2026, at 5:30 PM UTC",
-          "feature": "Save Site as Template",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-03-26T16:20:02.21Z",
-              "postType": "regular",
-              "content": "Title: Some users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results\n\nUser impact: Users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results.\n\nMore info: Although search results provide all items to users, the results don't appear to be utilizing relevancy tuning. Items that are highly relevant to the searches may not be provided as top results due to this.\n \nCurrent status: We’re continuing to await verification results from a subset of affected users to confirm that the issue has been successfully remediated by our fix to correct the code issue.\n \nScope of impact: This incident impacts all users performing SharePoint Online searches, who may not see search returns prioritizing high-relevancy items in the results. This information may be updated as our investigation continues.\n \nStart time: Friday, January 2, 2026, at 12:00 AM UTC\n \nRoot cause: A recent change introduced a code issue which is resulting in impact.\n \nNext update by: Monday, March 30, 2026, at 5:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-03-24T15:50:49.827Z",
-              "postType": "regular",
-              "content": "Title: Some users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results\n\nUser impact: Users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results.\n\nMore info: Although search results provide all items to users, the results don't appear to be utilizing relevancy tuning. Items that are highly relevant to the searches may not be provided as top results due to this.\n\nCurrent status: We're awaiting the results from a subset of affected users' testing to validate the impact has been remediated by our fix to correct the code issue.\n\nScope of impact: This incident impacts all users performing SharePoint Online searches, who may not see search returns prioritizing high-relevancy items in the results. This information may be updated as our investigation continues.\n\nStart time: Friday, January 2, 2026, at 12:00 AM UTC\n\nRoot cause: A recent change introduced a code issue which is resulting in impact.\n\nNext update by: Thursday, March 26, 2026, at 5:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-03-23T15:25:27.003Z",
-              "postType": "regular",
-              "content": "Title: Some users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results\n\nUser impact: Users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results.\n\nMore info: Although search results provide all items to users, the results don't appear to be utilizing relevancy tuning. Items that are highly relevant to the searches may not be provided as top results due to this.\n\nCurrent status: The deployment of our solution to address the code issue is complete. We're reaching out to users hosted in the affected environments to validate that the issue is no longer occurring.\n\nScope of impact: This incident impacts all users performing SharePoint Online searches, who may not see search returns prioritizing high-relevancy items in the results. This information may be updated as our investigation continues.\n\nStart time: Friday, January 2, 2026, at 12:00 AM UTC\n\nRoot cause: A recent change introduced a code issue which is resulting in impact.\n\nNext update by: Tuesday, March 24, 2026, at 5:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-03-20T15:25:53.77Z",
-              "postType": "regular",
-              "content": "Title: Some users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results\n\nUser impact: Users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results.\n\nMore info: Although search results provide all items to users, the results don't appear to be utilizing relevancy tuning. Items that are highly relevant to the searches may not be provided as top results due to this.\n\nCurrent status: The deployment of our solution to address the code issue is at 94 percent saturation in the non-Government Cloud spaces, and we're reaching out to users hosted in those environments to validate that the issue is no longer occurring. In parallel, deployment to the Government Clouds has just initiated and we're monitoring its progress to ensure it completes as expected.\n\nScope of impact: This incident impacts all users performing SharePoint Online searches, who may not see search returns prioritizing high-relevancy items in the results. This information may be updated as our investigation continues.\n\nStart time: Friday, January 2, 2026, at 12:00 AM UTC\n\nRoot cause: A recent change introduced a code issue which is resulting in impact.\n\nNext update by: Monday, March 23, 2026, at 5:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-03-19T15:22:39.94Z",
-              "postType": "regular",
-              "content": "Title: Some users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results\n\nUser impact: Users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results.\n\nMore info: Although search results provide all items to users, the results don't appear to be utilizing relevancy tuning. Items that are highly relevant to the searches may not be provided as top results due to this.\n\nCurrent status: Our fix has reached 64 percent saturation and we're reaching out to previously reporting users to confirm if the issue is still observed.\n\nScope of impact: This incident impacts all users performing SharePoint Online searches, who may not see search returns prioritizing high-relevancy items in the results. This information may be updated as our investigation continues.\n\nStart time: Friday, January 2, 2026, at 12:00 AM UTC\n\nRoot cause: A recent change introduced a code issue which is resulting in impact.\n\nNext update by: Friday, March 20, 2026, at 5:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-03-17T15:48:37.263Z",
-              "postType": "regular",
-              "content": "Title: Some users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results\n\nUser impact: Users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results.\n\nMore info: Although search results provide all items to users, the results don't appear to be utilizing relevancy tuning. Items that are highly relevant to the searches may not be provided as top results due to this.\n \nCurrent status: We’ve confirmed that the fix has reached 25 percent saturation, and we’re continuing to monitor its progression as it deploys across affected environments. Once available, we’ll provide a resolution timeline.\n \nScope of impact: This incident impacts all users performing SharePoint Online searches, who may not see search returns prioritizing high-relevancy items in the results. This information may be updated as our investigation continues.\n \nStart time: Friday, January 2, 2026, at 12:00 AM UTC\n \nRoot cause: A recent change introduced a code issue which is resulting in impact.\n \nNext update by: Thursday, March 19, 2026, at 5:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-03-12T15:51:21.18Z",
-              "postType": "regular",
-              "content": "Title: Some users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results\n\nUser impact: Users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results.\n\nMore info: Although search results provide all items to users, the results don't appear to be utilizing relevancy tuning. Items that are highly relevant to the searches may not be provided as top results due to this.\n\nCurrent status: We've expanded communications to encompass all potentially affected users and we've updated the \"Title\", \"User impact\", and \"Scope of impact\" fields of our communications to reflect this change. We've initiated deployment of our code fix to address the offending code issue so a subset of users to for additional assurance of it's success, and we anticipate these users will see remediation by Tuesday, March 12, 2026. After validation from that limited deployment, will continue the process to all environment and provide a timeline for remediation as one becomes available.\n\nScope of impact: This incident impacts all users performing SharePoint Online searches, who may not see search returns prioritizing high-relevancy items in the results. This information may be updated as our investigation continues.\n \nStart time: Friday, January 2, 2026, at 12:00 AM UTC\n \nRoot cause: A recent change introduced a code issue which is resulting in impact.\n \nNext update by: Tuesday, March 17, 2026, at 5:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-03-09T15:47:15.853Z",
-              "postType": "regular",
-              "content": "Title: Some users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results\n \nUser impact: Users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results.\n\nMore info: Although search results provide all items to users, the results don't appear to be utilizing relevancy tuning. Items that are highly relevant to the searches may not be provided as top results due to this.\n \nCurrent status: We've internally validated our code fix and have confirmed it will be viable for addressing the code problems and for remediating the impact. As we further analyze the offending service update that introduced the code problem and confirm when the problems initially began, we're expecting our solution will start deployment and that an estimated timeline for the remediation of the impact will be available by our next scheduled communication update. \n \nScope of impact: This incident impacts all users performing SharePoint Online searches, who may not see search returns prioritizing high-relevancy items in the results. This information may be updated as our investigation continues.\n \nRoot cause: A recent change introduced a code issue which is resulting in impact.\n \nNext update by: Thursday, March 12, 2026, at 5:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-03-06T17:20:42.217Z",
-              "postType": "regular",
-              "content": "Title: Some users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results\n \nUser impact: Users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results.\n\nMore info: Although search results are providing all items to users, the results don't appear to be utilizing relevancy tuning. Items that are highly relevant to the searches may not be provided as top results due to this.\n\nCurrent status: We've identified that a recent change introduced a code issue which is resulting in impact. We're preparing a fix to correct the code issue and expect to have a timeline for the fix deployment with our next scheduled communication update.\n\nScope of impact: This incident impacts all users performing SharePoint Online searches, who may not see search returns prioritizing high-relevancy items in the results. This information may be updated as our investigation continues.\n\nRoot cause: A recent change introduced a code issue which is resulting in impact.\n\nNext update by: Monday, March 9, 2026, at 6:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-03-06T11:36:21.827Z",
-              "postType": "regular",
-              "content": "Title: Some users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results\n \nUser impact: Users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results.\n\nMore info: Although search results are providing all items to users, the results don't appear to be utilizing relevancy tuning. Items that are highly relevant to the searches may not be provided as top results due to this.\n \nCurrent status: We're enabling connector data to assist us in validation of the path to confirm whether the property value is coming through as empty or if there is a property resolution issue caused by a conflict. Additionally, we're exploring making code changes to add more logging to allow us to verify the behavior in greater detail.\n \nScope of impact: This incident impacts all users performing SharePoint Online searches, who may not see search returns prioritizing high-relevancy items in the results. This information may be updated as our investigation continues.\n \nNext update by: Friday, March 6, 2026, at 7:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-03-05T12:14:50.037Z",
-              "postType": "regular",
-              "content": "Title: Some users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results\n \nUser impact: Users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results.\n\nMore info: Although search results are providing all items to users, the results don't appear to be utilizing relevancy tuning. Items that are highly relevant to the searches may not be provided as top results due to this.\n \nCurrent status: We're progressing with the investigation into all available diagnostic data and support-provided information to help identify the root cause of impact and a mitigation plan.\n \nScope of impact: This incident impacts all users performing SharePoint Online searches, who may not see search returns prioritizing high-relevancy items in the results. This information may be updated as our investigation continues.\n \nNext update by: Friday, March 6, 2026, at 1:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-03-05T09:53:47.863Z",
-              "postType": "regular",
-              "content": "Title: Some users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results\n \nUser impact: Users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results.\n\nMore info: Although search results are providing all items to users, the results don't appear to be utilizing relevancy tuning. Items that are highly relevant to the searches may not be provided as top results due to this.\n\nCurrent status: We've obtained further details from reporting users and are continuing to investigate all our available diagnostic data and support-provided information to help identify the root cause of impact and a mitigation plan.\n\nScope of impact: This incident impacts all users performing SharePoint Online searches, who may not see search returns prioritizing high-relevancy items in the results. This information may be updated as our investigation continues.\n\nNext update by: Thursday, March 5, 2026, at 3:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-03-04T08:44:43.737Z",
-              "postType": "regular",
-              "content": "Title: Some users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results\n \nUser impact: Users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results.\n\nMore info: Although search results are providing all items to users, the results don't appear to be utilizing relevancy tuning. Items that are highly relevant to the searches may not be provided as top results due to this.\n \nCurrent status: We're continuing to source search results where relevancy results aren't prioritized to determine what is occurring. This process is moving slower than expected due to needing a larger data scope from affected users to understand the cause. \n \nScope of impact: This incident impacts all users performing SharePoint Online searches, who may not see search returns prioritizing high-relevancy items in the results. This information may be updated as our investigation continues.\n \nNext update by: Thursday, March 5, 2026, at 10:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-03-03T07:28:47.343Z",
-              "postType": "regular",
-              "content": "Title: Some users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results\n \nUser impact: Users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results.\n\nMore info: Although searches results are providing all items to users, the results don't appear to be utilizing relevancy tuning. Items that are highly relevant to the searches may not be provided as top results due to this.\n\nCurrent status: We require some additional information to effectively identify the root cause including full search results and confirmation that the searched items are present in the index. We're expecting that this information will be available to us for further investigation and we'll update at our next communication.\n\nScope of impact: This incident impacts all users performing SharePoint Online searches, who may not see search returns prioritizing high-relevancy items in the results. This information may be updated as our investigation continues.\n\nNext update by: Wednesday, March 4, 2026, at 9:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-02-27T22:09:22.35Z",
-              "postType": "regular",
-              "content": "Title: Some users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results\n \nUser impact: Users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results.\n\nMore info: Although searches results are providing all items to users, the results don't appear to be utilizing relevancy tuning. Items that are highly relevant to the searches may not be provided as top results due to this.\n \nCurrent status: We’ve gathered the requested diagnostic data from some affected users, and we're assessing this data to help isolate the source of impact and determine appropriate remediation actions.\n \nScope of impact: This incident impacts all users performing SharePoint Online searches, who may not see search returns prioritizing high-relevancy items in the results. This information may be updated as our investigation continues.\n \nNext update by: Tuesday, March 3, 2026, at 7:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-02-27T11:30:25.407Z",
-              "postType": "regular",
-              "content": "Title: Some users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results\n \nUser impact: Users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results.\n\nCurrent status: Our investigation into the HAR logs has so far proven inconclusive. We're collecting additional affected query results to help us continue the investigation.\n\nScope of impact: This incident impacts all users performing SharePoint Online searches, who may not see search returns prioritizing high-relevancy items in the results. This information may be updated as our investigation continues.\n \nNext update by: Friday, February 27, 2026, at 10:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-02-27T06:36:47.98Z",
-              "postType": "regular",
-              "content": "Title: Some users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results\n \nUser impact: Users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results.\n\nCurrent status: We're continuing our review of the previously provided HAR logs. We've also requested additional search results and URLs that are expected to be listed with higher relevancy to help uncover the underlying reason for deprioritized search results.\n \nScope of impact: This incident impacts all users performing SharePoint Online searches, who may not see search returns prioritizing high-relevancy items in the results. This information may be updated as our investigation continues.\n \nNext update by: Friday, February 27, 2026, at 11:30 AM UTC"
-            },
-            {
-              "createdAt": "2026-02-27T02:40:35.903Z",
-              "postType": "regular",
-              "content": "Title: Some users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results\n \nUser impact: Users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results.\n\nCurrent status: We're reviewing HTTP Archive format (HAR) logs provided by some affected users to help with isolating the source of the issue and are formulating a remediation plan.\n \nScope of impact: This incident impacts all users performing SharePoint Online searches, who may not see search returns prioritizing high-relevancy items in the results. This information may be updated as our investigation continues.\n \nNext update by: Friday, February 27, 2026, at 7:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-02-27T02:15:10.837Z",
-              "postType": "regular",
-              "content": "Title: Some users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results\n\nUser impact: Users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results.\n\nCurrent status: We're investigating a potential issue with SharePoint Online and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "SharePoint Online"
-          ]
-        },
         {
           "id": "SP1256716",
           "title": "Users may be unable to edit SharePoint Online sites using the SharePoint Designer 2013 tool",
@@ -1561,6 +1446,52 @@
       "serviceName": "Microsoft 365 Copilot Chat",
       "affectedServices": [
         "Microsoft 365 Copilot Chat"
+      ]
+    },
+    {
+      "id": "SP1240084",
+      "title": "Some users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results",
+      "startTime": "2026-01-02T00:00:00Z",
+      "endTime": "2026-03-20T19:15:00Z",
+      "lastModified": "2026-03-30T15:57:35.68Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users’ SharePoint Online search returns may not have been prioritizing high-relevancy items in the results.",
+      "scopeOfImpact": "This incident impacted all users performing SharePoint Online searches, who may not have seen search returns prioritizing high-relevancy items in the results.\n\nStart time: Friday, January 2, 2026, at 12:00 AM UTC\n\nEnd time: Friday, March 20, 2026, at 7:15 PM UTC",
+      "rootCause": "A recent update introduced a code issue that caused impact.\n\nNext steps: \n - We're reviewing our service update testing and validation procedures to identify and prevent similar code issues that impact SharePoint Online searches in deployments moving forward.\n\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Save Site as Template",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-03-30T15:57:35.68Z",
+          "postType": "regular",
+          "content": "Title: Some users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results\n\nUser impact: Users’ SharePoint Online search returns may not have been prioritizing high-relevancy items in the results.\n\nMore info: Although search results provided all items to users, the results didn't appear to be utilizing relevancy tuning. Items that were highly relevant to the searches may not have been provided as top results due to this.\n\nFinal status: We've received feedback from a subset of affected users that our code fix remediated the impact as expected.\n\nScope of impact: This incident impacted all users performing SharePoint Online searches, who may not have seen search returns prioritizing high-relevancy items in the results.\n\nStart time: Friday, January 2, 2026, at 12:00 AM UTC\n\nEnd time: Friday, March 20, 2026, at 7:15 PM UTC\n\nRoot cause: A recent update introduced a code issue that caused impact.\n\nNext steps: \n - We're reviewing our service update testing and validation procedures to identify and prevent similar code issues that impact SharePoint Online searches in deployments moving forward.\n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-03-26T16:20:02.21Z",
+          "postType": "regular",
+          "content": "Title: Some users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results\n\nUser impact: Users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results.\n\nMore info: Although search results provide all items to users, the results don't appear to be utilizing relevancy tuning. Items that are highly relevant to the searches may not be provided as top results due to this.\n \nCurrent status: We’re continuing to await verification results from a subset of affected users to confirm that the issue has been successfully remediated by our fix to correct the code issue.\n \nScope of impact: This incident impacts all users performing SharePoint Online searches, who may not see search returns prioritizing high-relevancy items in the results. This information may be updated as our investigation continues.\n \nStart time: Friday, January 2, 2026, at 12:00 AM UTC\n \nRoot cause: A recent change introduced a code issue which is resulting in impact.\n \nNext update by: Monday, March 30, 2026, at 5:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-03-24T15:50:49.827Z",
+          "postType": "regular",
+          "content": "Title: Some users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results\n\nUser impact: Users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results.\n\nMore info: Although search results provide all items to users, the results don't appear to be utilizing relevancy tuning. Items that are highly relevant to the searches may not be provided as top results due to this.\n\nCurrent status: We're awaiting the results from a subset of affected users' testing to validate the impact has been remediated by our fix to correct the code issue.\n\nScope of impact: This incident impacts all users performing SharePoint Online searches, who may not see search returns prioritizing high-relevancy items in the results. This information may be updated as our investigation continues.\n\nStart time: Friday, January 2, 2026, at 12:00 AM UTC\n\nRoot cause: A recent change introduced a code issue which is resulting in impact.\n\nNext update by: Thursday, March 26, 2026, at 5:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-03-23T15:25:27.003Z",
+          "postType": "regular",
+          "content": "Title: Some users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results\n\nUser impact: Users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results.\n\nMore info: Although search results provide all items to users, the results don't appear to be utilizing relevancy tuning. Items that are highly relevant to the searches may not be provided as top results due to this.\n\nCurrent status: The deployment of our solution to address the code issue is complete. We're reaching out to users hosted in the affected environments to validate that the issue is no longer occurring.\n\nScope of impact: This incident impacts all users performing SharePoint Online searches, who may not see search returns prioritizing high-relevancy items in the results. This information may be updated as our investigation continues.\n\nStart time: Friday, January 2, 2026, at 12:00 AM UTC\n\nRoot cause: A recent change introduced a code issue which is resulting in impact.\n\nNext update by: Tuesday, March 24, 2026, at 5:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-03-20T15:25:53.77Z",
+          "postType": "regular",
+          "content": "Title: Some users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results\n\nUser impact: Users’ SharePoint Online search returns may not be prioritizing high-relevancy items in the results.\n\nMore info: Although search results provide all items to users, the results don't appear to be utilizing relevancy tuning. Items that are highly relevant to the searches may not be provided as top results due to this.\n\nCurrent status: The deployment of our solution to address the code issue is at 94 percent saturation in the non-Government Cloud spaces, and we're reaching out to users hosted in those environments to validate that the issue is no longer occurring. In parallel, deployment to the Government Clouds has just initiated and we're monitoring its progress to ensure it completes as expected.\n\nScope of impact: This incident impacts all users performing SharePoint Online searches, who may not see search returns prioritizing high-relevancy items in the results. This information may be updated as our investigation continues.\n\nStart time: Friday, January 2, 2026, at 12:00 AM UTC\n\nRoot cause: A recent change introduced a code issue which is resulting in impact.\n\nNext update by: Monday, March 23, 2026, at 5:00 PM UTC"
+        }
+      ],
+      "serviceName": "SharePoint Online",
+      "affectedServices": [
+        "SharePoint Online"
       ]
     },
     {
