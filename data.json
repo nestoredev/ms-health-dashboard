@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-31T08:52:44.249Z",
+  "lastUpdated": "2026-03-31T09:22:51.635Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -695,6 +695,31 @@
       "status": "serviceDegradation",
       "id": "SharePoint",
       "issues": [
+        {
+          "id": "SP1266250",
+          "title": "Some users may be unable to access the new Clipchamp start page within SharePoint Online",
+          "startTime": "2026-03-31T09:13:20Z",
+          "endTime": null,
+          "lastModified": "2026-03-31T09:14:26.85Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to access the new Clipchamp start page within SharePoint Online.",
+          "scopeOfImpact": "Some users attempting to access the new Clipchamp start page within SharePoint Online may be impacted.",
+          "rootCause": "",
+          "nextUpdateBy": "Tuesday, March 31, 2026, at 11:30 AM UTC",
+          "feature": "SharePoint Online all features",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-03-31T09:14:26.85Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to access the new Clipchamp start page within SharePoint Online\n\nUser impact: Users may be unable to access the new Clipchamp start page within SharePoint Online.\n\nCurrent status: We're suspecting that a recent update may be contributing to the impact. While we continue to validate this hypothesis, we're reverting the update to determine whether this mitigates the issue.\n \nScope of impact: Some users attempting to access the new Clipchamp start page within SharePoint Online may be impacted.\n \nNext update by: Tuesday, March 31, 2026, at 11:30 AM UTC\n \n"
+            }
+          ],
+          "affectedServices": [
+            "SharePoint Online"
+          ]
+        },
         {
           "id": "SP1256716",
           "title": "Users may be unable to edit SharePoint Online sites using the SharePoint Designer 2013 tool",
