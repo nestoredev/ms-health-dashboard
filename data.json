@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-31T10:53:14.393Z",
+  "lastUpdated": "2026-03-31T11:23:23.337Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -698,18 +698,23 @@
         {
           "id": "SP1266250",
           "title": "Some users may be unable to access the new Clipchamp start page within SharePoint Online",
-          "startTime": "2026-03-31T09:13:20Z",
+          "startTime": "2026-03-27T04:39:00Z",
           "endTime": null,
-          "lastModified": "2026-03-31T09:34:26.227Z",
+          "lastModified": "2026-03-31T11:15:03.057Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to access the new Clipchamp start page within SharePoint Online.",
-          "scopeOfImpact": "Some users attempting to access the new Clipchamp start page within SharePoint Online may be impacted.",
-          "rootCause": "",
-          "nextUpdateBy": "Tuesday, March 31, 2026, at 11:30 AM UTC",
+          "scopeOfImpact": "Some users attempting to access the new Clipchamp start page within SharePoint Online may be impacted.\n \nStart time: Friday, March 27, 2026, at 4:39 AM UTC",
+          "rootCause": "A recent update, which redirected users to a new video page as part of deprecating the legacy page, caused impact.",
+          "nextUpdateBy": "Tuesday, March 31, 2026, at 1:30 PM UTC",
           "feature": "SharePoint Online all features",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-03-31T11:10:18.12Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to access the new Clipchamp start page within SharePoint Online\n\nUser impact: Users may be unable to access the new Clipchamp start page within SharePoint Online.\n\nCurrent status: We’ve confirmed that a recent update, which redirected users to a new video page as part of deprecating the legacy page, caused impact. We’ve reverted the change and reaching out to some affected users to validate the impact has been resolved. \n \nScope of impact: Some users attempting to access the new Clipchamp start page within SharePoint Online may be impacted.\n \nStart time: Friday, March 27, 2026, at 4:39 AM UTC\n \nRoot cause: A recent update, which redirected users to a new video page as part of deprecating the legacy page, caused impact.\n \nNext update by: Tuesday, March 31, 2026, at 1:30 PM UTC"
+            },
             {
               "createdAt": "2026-03-31T09:14:26.85Z",
               "postType": "regular",
