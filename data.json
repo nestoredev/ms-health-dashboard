@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-01T20:01:57.902Z",
+  "lastUpdated": "2026-04-01T20:32:04.520Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -526,16 +526,21 @@
           "title": "Users may not get email notifications for shared Power BI reports and dashboards or Microsoft Fabric artifacts",
           "startTime": "2026-03-10T21:08:00Z",
           "endTime": null,
-          "lastModified": "2026-03-25T19:23:52.467Z",
+          "lastModified": "2026-04-01T20:17:02.28Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may not get email notifications for shared Power BI reports and dashboards or Microsoft Fabric artifacts.",
-          "scopeOfImpact": "Any user that should receive an email notification for shared Power BI reports and dashboards or Microsoft Fabric artifacts may be impacted.\n\nStart time: Tuesday, March 10, 2026, at 9:08 PM UTC",
+          "scopeOfImpact": "Any user that should receive an email notification for shared Power BI reports and dashboards or Microsoft Fabric artifacts may be impacted.\n \nStart time: Tuesday, March 10, 2026, at 9:08 PM UTC",
           "rootCause": "An unexpected issue with Power BI reports and dashboards and Microsoft Fabric artifact sharing is preventing users from receiving email notifications.",
-          "nextUpdateBy": "Wednesday, April 1, 2026, at 9:00 PM UTC",
+          "nextUpdateBy": "Friday, April 3, 2026, at 9:00 PM UTC",
           "feature": "PowerBI.com",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-04-01T20:17:02.28Z",
+              "postType": "regular",
+              "content": "Title: Users may not get email notifications for shared Power BI reports and dashboards or Microsoft Fabric artifacts\n\nUser impact: Users may not get email notifications for shared Power BI reports and dashboards or Microsoft Fabric artifacts.\n\nCurrent status: We've determined that the deployment of our fix will require more time than our original estimated timeline. We're expecting an updated timeline for our deployment will be available by our next scheduled communication update. \n \nScope of impact: Any user that should receive an email notification for shared Power BI reports and dashboards or Microsoft Fabric artifacts may be impacted.\n \nStart time: Tuesday, March 10, 2026, at 9:08 PM UTC\n \nRoot cause: An unexpected issue with Power BI reports and dashboards and Microsoft Fabric artifact sharing is preventing users from receiving email notifications.\n \nNext update by: Friday, April 3, 2026, at 9:00 PM UTC"
+            },
             {
               "createdAt": "2026-03-25T19:23:52.467Z",
               "postType": "regular",
@@ -823,16 +828,21 @@
           "title": "Users aren't shown the \"Edit in Outlook\" button after prompting Copilot Chat to draft an email message",
           "startTime": "2025-12-19T18:00:00Z",
           "endTime": null,
-          "lastModified": "2026-03-31T21:40:36.057Z",
+          "lastModified": "2026-04-01T20:22:07.297Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users aren't shown the \"Edit in Outlook\" button after prompting Copilot Chat to draft an email message.",
           "scopeOfImpact": "Any user prompting Copilot Chat to draft an email message may be impacted.\n \nStart time: Friday, December 19, 2025, at 6:00 PM UTC",
           "rootCause": "As part of our ongoing efforts to strengthen the Copilot platform, the \"Edit in Outlook\" feature is temporarily disabled while we address an upstream code issue affecting that feature. Affected users are encouraged to review the workaround information in the more info above while we continue to prepare a comprehensive solution.",
-          "nextUpdateBy": "Wednesday, April 1, 2026, at 10:00 PM UTC",
+          "nextUpdateBy": "Friday, April 3, 2026, at 10:00 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-04-01T20:22:07.297Z",
+              "postType": "regular",
+              "content": "Title: Users aren't shown the \"Edit in Outlook\" button after prompting Copilot Chat to draft an email message\n\nUser impact: Users aren't shown the \"Edit in Outlook\" button after prompting Copilot Chat to draft an email message.\n\nMore info: As an optional way to circumvent impact, affected users can use the Copy button to transfer a generated draft from Copilot Chat to Outlook, and continue their work. If your organization has enabled Copilot access within Outlook, the user can continue using Copilot to draft an email once they've moved to Outlook.\n \nCurrent status: The re-enablement of the \"Edit in Outlook\" feature has been delayed by an additional 48 hours while we complete supplementary validations to ensure that once the feature is re-enabled, impact will be fully resolved. We aim to provide a timeline for remediation once one becomes available.\n \nScope of impact: Any user prompting Copilot Chat to draft an email message may be impacted.\n \nStart time: Friday, December 19, 2025, at 6:00 PM UTC\n \nRoot cause: As part of our ongoing efforts to strengthen the Copilot platform, the \"Edit in Outlook\" feature is temporarily disabled while we address an upstream code issue affecting that feature. Affected users are encouraged to review the workaround information in the more info above while we continue to prepare a comprehensive solution.\n \nNext update by: Friday, April 3, 2026, at 10:00 PM UTC"
+            },
             {
               "createdAt": "2026-03-31T21:40:36.057Z",
               "postType": "regular",
