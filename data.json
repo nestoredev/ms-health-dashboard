@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-02T19:07:34.904Z",
+  "lastUpdated": "2026-04-02T19:37:43.807Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -155,6 +155,31 @@
               "createdAt": "2026-03-17T06:55:06.537Z",
               "postType": "regular",
               "content": "Title: Some users may be unable to use classic Outlook when the Teams Meeting Add-in is enabled\n \nUser impact: Users may be unable to use classic Outlook when the Teams Meeting Add-in is enabled.\n \nMore info: Specifically, impacted users may experience crashes while using the classic Outlook on any client, or be unable to launch the service. While we work on the permanent fix, we recommend impacted users upgrade to the latest Outlook version.\n\nAs a workaround, users can also perform an Online Repair of Office or update Outlook to the latest version to resolve the issue.\n\nCurrent status: We're analyzing support provided information to determine our next troubleshooting steps.\n\nScope of impact: Some users that are attempting to use classic Outlook with the Microsoft Teams Meeting Add-in version 26043.2016.4478.2773 enabled may be impacted. This information may be updated as our investigation continues.\n\nNext update by: Tuesday, March 17, 2026, at 9:00 AM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online"
+          ]
+        },
+        {
+          "id": "EX1268771",
+          "title": "Users may have been intermittently unable to access their Exchange Online mailboxes in some connection methods.",
+          "startTime": "2026-04-02T19:14:14Z",
+          "endTime": null,
+          "lastModified": "2026-04-02T19:15:53.243Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be intermittently unable to access their Exchange Online mailboxes in some connection methods.",
+          "scopeOfImpact": "Impact may occur intermittently for some users accessing their Exchange Online mailboxes in the Outlook mobile apps or the new Outlook for Mac desktop client. This section may be updated as our investigation progresses.",
+          "rootCause": "",
+          "nextUpdateBy": "Thursday, April 2, 2026, at 11:30 PM UTC",
+          "feature": "Performance degradation",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-04-02T19:15:53.243Z",
+              "postType": "regular",
+              "content": "Title: Users may have been intermittently unable to access their Exchange Online mailboxes in some connection methods.\n\nUser impact: Users may be intermittently unable to access their Exchange Online mailboxes in some connection methods.\n\nMore info: This issue may intermittently impact some users who attempted to access the Exchange Online service through the Outlook mobile apps or the new Outlook for Mac desktop client.\n \nCurrent status: We've received reports from affected tenants that the impact scenario originally communicated through SHD EX1256020 is still ongoing. We're working to restart the Notification Broker service on affected portions of Exchange Online service infrastructure to remediate impact while we continue our analysis into the underlying root cause.\n \nScope of impact: Impact may occur intermittently for some users accessing their Exchange Online mailboxes in the Outlook mobile apps or the new Outlook for Mac desktop client. This section may be updated as our investigation progresses.\n \nNext update by: Thursday, April 2, 2026, at 11:30 PM UTC"
             }
           ],
           "affectedServices": [
@@ -968,16 +993,21 @@
           "title": "Users' queries may fail with an error message in Microsoft 365 Copilot Chat",
           "startTime": "2026-04-02T12:00:00Z",
           "endTime": null,
-          "lastModified": "2026-04-02T17:52:02.117Z",
+          "lastModified": "2026-04-02T19:05:57.6Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users' queries may fail with an error in Copilot Chat.",
           "scopeOfImpact": "Any user attempting to run queries in Copilot Chat may experience failures in completing the action.\n\nStart time: Thursday, April 2, 2026, at 12:00 PM UTC",
-          "rootCause": "",
-          "nextUpdateBy": "Thursday, April 2, 2026, at 7:00 PM UTC",
+          "rootCause": "A configuration service utilized in the flow of completing this operation has fallen below optimal operating thresholds, resulting in impact.",
+          "nextUpdateBy": "Thursday, April 2, 2026, at 9:00 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-04-02T19:05:57.6Z",
+              "postType": "regular",
+              "content": "Title: Users' queries may fail with an error message in Microsoft 365 Copilot Chat\n\nUser impact: Users' queries may fail with an error in Copilot Chat.\n\nMore info: Users may see the following error message: \"Sorry, something went wrong. Service unavailable. Please try again.\"\n\nCurrent status: We've confirmed that a configuration service utilized in the flow of completing this operation has fallen below optimal operating thresholds, resulting in impact. We're applying manual mitigations to adjust capacity and traffic to restore this operation. \n\nScope of impact: Any user attempting to run queries in Copilot Chat may experience failures in completing the action.\n\nStart time: Thursday, April 2, 2026, at 12:00 PM UTC\n\nRoot cause: A configuration service utilized in the flow of completing this operation has fallen below optimal operating thresholds, resulting in impact.\n\nNext update by: Thursday, April 2, 2026, at 9:00 PM UTC"
+            },
             {
               "createdAt": "2026-04-02T17:52:02.117Z",
               "postType": "regular",
