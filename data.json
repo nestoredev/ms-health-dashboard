@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-02T21:38:13.556Z",
+  "lastUpdated": "2026-04-02T22:08:20.439Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -469,16 +469,21 @@
           "title": "Central US admins may be unable to access or experience delays accessing the Microsoft 365 admin center",
           "startTime": "2026-04-02T20:20:30Z",
           "endTime": null,
-          "lastModified": "2026-04-02T21:30:40.343Z",
+          "lastModified": "2026-04-02T21:58:43.157Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Admins may be unable to access or experience delays accessing the Microsoft 365 admin center",
           "scopeOfImpact": "Impact is primarily focused in the Central US region, any admin located in that region may be unable to access the admin center. This information may be updated as our investigation continues.\n\nPreliminary",
           "rootCause": "A subset of infrastructure in the Central US datacenter entered an unexpected degraded state, resulting in disruptions to request handling.\n \nStart Time: Thursday, April 2, 2026, at 6:30 PM UTC",
-          "nextUpdateBy": "Thursday, April 2, 2025, at 10:00 PM UTC",
+          "nextUpdateBy": "Thursday, April 2, 2026, at 10:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-04-02T21:58:43.157Z",
+              "postType": "regular",
+              "content": "Title: Central US admins may be unable to access or experience delays accessing the Microsoft 365 admin center\n\nUser impact: Admins may be unable to access or experience delays accessing the Microsoft 365 admin center\n\nCurrent status: We completed a restart of all affected infrastructure, however; this action did not fully resolve the issue. We’ve observed that error rates are starting to decrease but remain above normal levels. We’re reviewing recent changes made in the environment to determine whether a change could be contributing to the issue.\n \nScope of impact: Impact is primarily focused in the Central US region, any admin located in that region may be unable to access the admin center. This information may be updated as our investigation continues.\n\nPreliminary root cause: A subset of infrastructure in the Central US datacenter entered an unexpected degraded state, resulting in disruptions to request handling.\n \nStart Time: Thursday, April 2, 2026, at 6:30 PM UTC\n \nNext update by: Thursday, April 2, 2026, at 10:30 PM UTC"
+            },
             {
               "createdAt": "2026-04-02T21:30:40.343Z",
               "postType": "regular",
@@ -604,7 +609,7 @@
           "scopeOfImpact": "Any user that should receive an email notification for shared Power BI reports and dashboards or Microsoft Fabric artifacts may be impacted.\n \nStart time: Tuesday, March 10, 2026, at 9:08 PM UTC",
           "rootCause": "An unexpected issue with Power BI reports and dashboards and Microsoft Fabric artifact sharing is preventing users from receiving email notifications.",
           "nextUpdateBy": "Friday, April 3, 2026, at 9:00 PM UTC",
-          "feature": "PowerBI.com",
+          "feature": "General",
           "isResolved": false,
           "posts": [
             {
@@ -654,7 +659,7 @@
           "scopeOfImpact": "Impact may occur for all users attempting to send subscription email messages to external users in Power BI.\n \nStart time: Thursday, January 29, 2026, at 6:45 PM UTC",
           "rootCause": "An influx of automated email traffic from Power BI subscriptions is resulting in impact to external subscription email delivery.",
           "nextUpdateBy": "Monday, April 6, 2026, at 11:30 PM UTC",
-          "feature": "PowerBI.com",
+          "feature": "General",
           "isResolved": false,
           "posts": [
             {
@@ -1187,7 +1192,7 @@
       "scopeOfImpact": "Some users attempting to connect to Azure Analysis Services live connection reports from Power BI desktop may have been impacted.\n \nStart time: Friday, February 20, 2026, at 7:00 PM UTC\n \nEnd time: Saturday, March 28, 2026, at 2:01 PM UTC",
       "rootCause": "A recent service change to enable “Sign-in experience for data sources” by default contained a code misconfiguration which resulted in timeout errors when attempting to connect to Azure Analysis Services.\n \nNext steps: \n- We're analyzing the offending service change to determine why the potential for impact wasn't caught during our internal testing and validation stages. This analysis will help us to ensure similar impact scenarios don't occur in the future by bolstering our internal testing procedures.\n \nThis is the final update for the event.",
       "nextUpdateBy": "",
-      "feature": "PowerBI.com",
+      "feature": "General",
       "isResolved": true,
       "posts": [
         {
@@ -1776,7 +1781,7 @@
       "scopeOfImpact": "Users attempting to summarize report content using Copilot for Microsoft Fabric may have been affected.\n \nStart time: Thursday, March 19, 2026, at 1:30 PM UTC\n \nEnd time: Thursday, March 19, 2026, at 5:45 PM UTC",
       "rootCause": "A recent service feature introduced an unsupported value for Copilot for Microsoft Fabric API requests within the Microsoft Fabric, and resulted in impact.\n \nNext steps:\n- We're reviewing our service feature review process to better understand how we might detect and prevent similar issues from occurring in the future.\n \nThis is the final update for the event.",
       "nextUpdateBy": "",
-      "feature": "PowerBI.com",
+      "feature": "General",
       "isResolved": true,
       "posts": [
         {
