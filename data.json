@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-02T17:37:10.587Z",
+  "lastUpdated": "2026-04-02T18:07:19.113Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -935,19 +935,24 @@
         },
         {
           "id": "CW1268725",
-          "title": "We're looking into a potential problem impacting Microsoft 365 Copilot Chat",
-          "startTime": "2026-04-02T17:23:58Z",
+          "title": "Users' queries may fail with an error message in Microsoft 365 Copilot Chat",
+          "startTime": "2026-04-02T12:00:00Z",
           "endTime": null,
-          "lastModified": "2026-04-02T17:28:09.32Z",
-          "status": "investigating",
+          "lastModified": "2026-04-02T17:52:02.117Z",
+          "status": "serviceDegradation",
           "severity": "advisory",
-          "userImpact": "We're checking for potential impact to your users.",
-          "scopeOfImpact": "",
+          "userImpact": "Users' queries may fail with an error in Copilot Chat.",
+          "scopeOfImpact": "Any user attempting to run queries in Copilot Chat may experience failures in completing the action.\n\nStart time: Thursday, April 2, 2026, at 12:00 PM UTC",
           "rootCause": "",
-          "nextUpdateBy": "",
+          "nextUpdateBy": "Thursday, April 2, 2026, at 7:00 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-04-02T17:52:02.117Z",
+              "postType": "regular",
+              "content": "Title: Users' queries may fail with an error message in Microsoft 365 Copilot Chat\n\nUser impact: Users' queries may fail with an error in Copilot Chat.\n\nMore info: Users may see the following error message: \"Sorry, something went wrong. Service unavailable. Please try again.\"\n\nCurrent status: We're reviewing the service side logs related to this event to determine whether it's correlated to an ongoing incident in order to develop remediation steps to address the issue expediently.\n\nScope of impact: Any user attempting to run queries in Copilot Chat may experience failures in completing the action.\n\nStart time: Thursday, April 2, 2026, at 12:00 PM UTC\n\nNext update by: Thursday, April 2, 2026, at 7:00 PM UTC"
+            },
             {
               "createdAt": "2026-04-02T17:28:09.32Z",
               "postType": "regular",
