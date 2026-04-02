@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-02T19:37:43.807Z",
+  "lastUpdated": "2026-04-02T20:07:49.984Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -166,9 +166,9 @@
           "title": "Users may have been intermittently unable to access their Exchange Online mailboxes in some connection methods.",
           "startTime": "2026-04-02T19:14:14Z",
           "endTime": null,
-          "lastModified": "2026-04-02T19:15:53.243Z",
+          "lastModified": "2026-04-02T20:00:16.2Z",
           "status": "serviceDegradation",
-          "severity": "advisory",
+          "severity": "incident",
           "userImpact": "Users may be intermittently unable to access their Exchange Online mailboxes in some connection methods.",
           "scopeOfImpact": "Impact may occur intermittently for some users accessing their Exchange Online mailboxes in the Outlook mobile apps or the new Outlook for Mac desktop client. This section may be updated as our investigation progresses.",
           "rootCause": "",
@@ -827,16 +827,21 @@
           "title": "Some users may be unable to load Microsoft Viva Insights",
           "startTime": "2026-04-02T18:17:24Z",
           "endTime": null,
-          "lastModified": "2026-04-02T18:53:40.86Z",
+          "lastModified": "2026-04-02T19:52:26.113Z",
           "status": "investigating",
           "severity": "advisory",
           "userImpact": "Users may be unable to load Microsoft Viva Insights.",
-          "scopeOfImpact": "Some users attempting to load Microsoft Viva Insights may be impacted.",
-          "rootCause": "",
-          "nextUpdateBy": "Thursday, April 2, 2026, at 8:00 PM UTC",
+          "scopeOfImpact": "Some users attempting to load Microsoft Viva insights may be impacted.\n\nStart time: Thursday, April 2, 2026, at 4:53 PM UTC",
+          "rootCause": "An upstream configuration service on which our service is dependent is performing below acceptable thresholds, resulting in the impact.",
+          "nextUpdateBy": "Thursday, April 2, 2026, at 10:00 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-04-02T19:52:26.113Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to load Microsoft Viva Insights\n\nUser impact: Users may be unable to load Microsoft Viva Insights.\n\nMore info: Affected users will see the following error message:\n \n\"Something went wrong\n \nPlease refresh the page and try again. If the issue persists, contact your administrator\"\n\nCurrent status: We've confirmed that an upstream configuration service on which our service is dependent is performing below acceptable thresholds, resulting in the impact. We're manually applying traffic optimization measures and observing early signs of recovery. In addition to the traffic optimizations, we're determining whether there are any further actions which can be taken to expedite impact resolution.\n\nScope of impact: Some users attempting to load Microsoft Viva insights may be impacted.\n\nStart time: Thursday, April 2, 2026, at 4:53 PM UTC\n\nRoot cause: An upstream configuration service on which our service is dependent is performing below acceptable thresholds, resulting in the impact.\n\nNext update by: Thursday, April 2, 2026, at 10:00 PM UTC"
+            },
             {
               "createdAt": "2026-04-02T18:53:40.86Z",
               "postType": "regular",
