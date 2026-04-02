@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-02T22:38:25.864Z",
+  "lastUpdated": "2026-04-02T23:08:31.949Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -469,16 +469,26 @@
           "title": "Central US admins may be unable to access or experience delays accessing the Microsoft 365 admin center",
           "startTime": "2026-04-02T20:20:30Z",
           "endTime": null,
-          "lastModified": "2026-04-02T22:27:29.703Z",
+          "lastModified": "2026-04-02T22:59:24.1Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Admins may be unable to access or experience delays accessing the Microsoft 365 admin center",
           "scopeOfImpact": "Admins hosted in US Central attempting to access the Microsoft 365 admin center may be impacted. This information may be updated as our investigation continues.\n \nStart Time: Thursday, April 2, 2026, at 6:30 PM UTC\n\nPreliminary",
           "rootCause": "A subset of infrastructure in the Central US datacenter entered an unexpected degraded state, resulting in disruptions to request handling.",
-          "nextUpdateBy": "Thursday, April 2, 2026, at 11:00 PM UTC",
+          "nextUpdateBy": "Thursday, April 2, 2026, at 11:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-04-02T22:59:24.1Z",
+              "postType": "regular",
+              "content": "Title: Central US admins may be unable to access or experience delays accessing the Microsoft 365 admin center\n\nUser impact: Admins may be unable to access or experience delays accessing the Microsoft 365 admin center\n\nCurrent status: Following our recent mitigation efforts to reroute traffic away from the affected systems, service stability has been restored. We’re continuing to closely monitor service telemetry to confirm full remediation and ensure the service remains healthy.\n \nScope of impact: Admins hosted in US Central attempting to access the Microsoft 365 admin center may be impacted. This information may be updated as our investigation continues.\n \nStart Time: Thursday, April 2, 2026, at 6:30 PM UTC\n\nPreliminary root cause: A subset of infrastructure in the Central US datacenter entered an unexpected degraded state, resulting in disruptions to request handling.\n \nNext update by: Thursday, April 2, 2026, at 11:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-04-02T22:43:05.98Z",
+              "postType": "quick",
+              "content": "We've successfully rerouted traffic away from the affected systems and we're reviewing service telemetry to confirm overall service health. We’ll provide additional updates as we continue monitoring the environment.\n\nThis quick update is designed to give the latest information on this issue."
+            },
             {
               "createdAt": "2026-04-02T22:26:03.473Z",
               "postType": "regular",
@@ -513,6 +523,31 @@
               "createdAt": "2026-04-02T20:25:48.613Z",
               "postType": "regular",
               "content": "Title: Users may be unable to access or have delays accessing the Microsoft 365 admin center\n\nUser impact: Users may be unable to access or have delays accessing the Microsoft 365 admin center\n\nCurrent status: We're investigating reports of an issue in which users may be unable to access or have delays accessing the Microsoft 365 admin center. We are reviewing service telemetry and available information to determine if there is an issue happening and we'll update this message shortly with our latest findings.\n\nScope of impact: Any users attempting to access the Microsoft 365 admin center may be impacted.\n\nNext update by: Thursday, April 2, 2025, at 9:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite"
+          ]
+        },
+        {
+          "id": "MO1268972",
+          "title": "Some users may be unable to access the Microsoft 365 web sign-in page and the Microsoft 365 Copilot web sign‑in page",
+          "startTime": "2026-04-02T22:52:25Z",
+          "endTime": null,
+          "lastModified": "2026-04-02T22:58:10.927Z",
+          "status": "serviceDegradation",
+          "severity": "incident",
+          "userImpact": "Users may be unable to access the Microsoft 365 web sign-in page and the Microsoft 365 Copilot web sign‑in page.",
+          "scopeOfImpact": "Impact is specific to some users who are served through the affected infrastructure.",
+          "rootCause": "The infrastructure that supports access to the Microsoft 365 web sign-in page and the Microsoft 365 Copilot web sign-in page is not processing traffic efficiently, preventing some users from accessing the service pages.",
+          "nextUpdateBy": "Friday, April 3, 2026, at 12:30 AM UTC",
+          "feature": "Sign-in",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-04-02T22:58:10.927Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to access the Microsoft 365 web sign-in page and the Microsoft 365 Copilot web sign‑in page\n\nUser impact: Users may be unable to access the Microsoft 365 web sign-in page and the Microsoft 365 Copilot web sign‑in page.\n\nMore info: Users can access Microsoft Copilot through application-based Microsoft Copilot services. This includes, but is not limited to:\n- Microsoft Copilot desktop app\n- Copilot in Microsoft Teams \n- Copilot in Office apps\nUser may be able to leverage https://m365.cloud.microsoft/search, and should be able to sign in using this page. Once signed in, users can access Office.com.\n\nCurrent status: We've identified that a section of service infrastructure is not processing traffic efficiently. We're making configuration changes to remediate impact.\n\nScope of impact: Impact is specific to some users who are served through the affected infrastructure.\n\nRoot cause: The infrastructure that supports access to the Microsoft 365 web sign-in page and the Microsoft 365 Copilot web sign-in page is not processing traffic efficiently, preventing some users from accessing the service pages.\n\nNext update by: Friday, April 3, 2026, at 12:30 AM UTC"
             }
           ],
           "affectedServices": [
@@ -884,7 +919,7 @@
           "startTime": "2026-04-02T18:17:24Z",
           "endTime": null,
           "lastModified": "2026-04-02T21:34:42.223Z",
-          "status": "investigating",
+          "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to load Microsoft Viva Insights.",
           "scopeOfImpact": "Some users attempting to load Microsoft Viva insights may be impacted.\n \nStart time: Thursday, April 2, 2026, at 4:53 PM UTC",
@@ -1059,16 +1094,21 @@
           "title": "Users' queries may fail with an error message in Microsoft 365 Copilot Chat",
           "startTime": "2026-04-02T12:00:00Z",
           "endTime": null,
-          "lastModified": "2026-04-02T21:03:21.193Z",
+          "lastModified": "2026-04-02T23:02:56.043Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users' queries may fail with an error in Copilot Chat.",
-          "scopeOfImpact": "Any user attempting to run queries in Copilot Chat may experience failures in completing the action. \n\nStart time: Thursday, April 2, 2026, at 12:00 PM UTC",
+          "scopeOfImpact": "Any user attempting to run queries in Copilot Chat may experience failures in completing the action.\n\nStart time: Thursday, April 2, 2026, at 12:00 PM UTC",
           "rootCause": "A configuration service utilized in the flow of completing this operation has fallen below optimal operating thresholds, resulting in impact.",
-          "nextUpdateBy": "Thursday, April 2, 2026, at 11:00 PM UTC",
+          "nextUpdateBy": "Friday, April 3, 2026, at 1:00 AM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-04-02T23:02:56.043Z",
+              "postType": "regular",
+              "content": "Title: Users' queries may fail with an error message in Microsoft 365 Copilot Chat\n\nUser impact: Users' queries may fail with an error in Copilot Chat.\n\nMore info: Users may see the following error message: \"Sorry, something went wrong. Service unavailable. Please try again.\"\n\nCurrent status: We've confirmed that manually restarting the affected infrastructure achieves mitigation and are manually applying this mitigation to all affected regions. We anticipate that this restart will be completed by our next scheduled update, resolving the event.\n\nScope of impact: Any user attempting to run queries in Copilot Chat may experience failures in completing the action.\n\nStart time: Thursday, April 2, 2026, at 12:00 PM UTC\n\nRoot cause: A configuration service utilized in the flow of completing this operation has fallen below optimal operating thresholds, resulting in impact.\n\nNext update by: Friday, April 3, 2026, at 1:00 AM UTC"
+            },
             {
               "createdAt": "2026-04-02T21:03:21.193Z",
               "postType": "regular",
