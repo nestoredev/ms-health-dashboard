@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-02T20:37:57.421Z",
+  "lastUpdated": "2026-04-02T21:08:07.210Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -466,19 +466,29 @@
       "issues": [
         {
           "id": "MO1268822",
-          "title": "Users may be unable to access or have delays accessing the Microsoft 365 admin center",
+          "title": "Central US admins may be unable to access or experience delays accessing the Microsoft 365 admin center",
           "startTime": "2026-04-02T20:20:30Z",
           "endTime": null,
-          "lastModified": "2026-04-02T20:26:38.113Z",
+          "lastModified": "2026-04-02T21:02:11.997Z",
           "status": "investigating",
           "severity": "incident",
-          "userImpact": "Users may be unable to access or have delays accessing the Microsoft 365 admin center",
-          "scopeOfImpact": "Any users attempting to access the Microsoft 365 admin center may be impacted.",
+          "userImpact": "Admins may be unable to access or experience delays accessing the Microsoft 365 admin center",
+          "scopeOfImpact": "Impact is primarily focused in the Central US region, any admin located in that region may be unable to access the admin center. This information may be updated as our investigation continues.\n \nStart Time: Thursday, April 2, 2026, at 6:30 PM UTC",
           "rootCause": "",
-          "nextUpdateBy": "Thursday, April 2, 2025, at 9:00 PM UTC",
+          "nextUpdateBy": "Thursday, April 2, 2025, at 9:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-04-02T21:01:51.13Z",
+              "postType": "regular",
+              "content": "Title: Central US admins may be unable to access or experience delays accessing the Microsoft 365 admin center\n\nUser impact: Admins may be unable to access or experience delays accessing the Microsoft 365 admin center\n\nCurrent status: Our investigation identified a subset of infrastructure in the Central US datacenter that entered a degraded state. We’re conducting targeted restarts in an effort to restore expected service. We’re monitoring the results closely and will share additional updates as more information becomes available.\n \nScope of impact: Impact is primarily focused in the Central US region, any admin located in that region may be unable to access the admin center. This information may be updated as our investigation continues.\n \nStart Time: Thursday, April 2, 2026, at 6:30 PM UTC\n \nNext update by: Thursday, April 2, 2025, at 9:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-04-02T20:42:55.773Z",
+              "postType": "quick",
+              "content": "We are actively reviewing service telemetry data to identify the source of the issue. We’ll provide additional updates as more information becomes available.\n\nThis quick update is designed to give the latest information on this issue."
+            },
             {
               "createdAt": "2026-04-02T20:25:48.613Z",
               "postType": "regular",
@@ -1024,16 +1034,21 @@
           "title": "Users' queries may fail with an error message in Microsoft 365 Copilot Chat",
           "startTime": "2026-04-02T12:00:00Z",
           "endTime": null,
-          "lastModified": "2026-04-02T19:05:57.6Z",
+          "lastModified": "2026-04-02T21:03:21.193Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users' queries may fail with an error in Copilot Chat.",
-          "scopeOfImpact": "Any user attempting to run queries in Copilot Chat may experience failures in completing the action.\n\nStart time: Thursday, April 2, 2026, at 12:00 PM UTC",
+          "scopeOfImpact": "Any user attempting to run queries in Copilot Chat may experience failures in completing the action. \n\nStart time: Thursday, April 2, 2026, at 12:00 PM UTC",
           "rootCause": "A configuration service utilized in the flow of completing this operation has fallen below optimal operating thresholds, resulting in impact.",
-          "nextUpdateBy": "Thursday, April 2, 2026, at 9:00 PM UTC",
+          "nextUpdateBy": "Thursday, April 2, 2026, at 11:00 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-04-02T21:03:21.193Z",
+              "postType": "regular",
+              "content": "Title: Users' queries may fail with an error message in Microsoft 365 Copilot Chat\n\nUser impact: Users' queries may fail with an error in Copilot Chat.\n\nMore info: Users may see the following error message: \"Sorry, something went wrong. Service unavailable. Please try again.\"\n\nCurrent status: We've successfully completed applying our manual mitigations to recover the performance of the responsible configuration service, however additional remediation steps are needed to resolve this impact to Copilot Chat queries. We're manually restarting a subset of the affected infrastructure to confirm that this action will achieve resolution before applying this fix to all affected environments. \n\nScope of impact: Any user attempting to run queries in Copilot Chat may experience failures in completing the action. \n\nStart time: Thursday, April 2, 2026, at 12:00 PM UTC\n\nRoot cause: A configuration service utilized in the flow of completing this operation has fallen below optimal operating thresholds, resulting in impact.\n\nNext update by: Thursday, April 2, 2026, at 11:00 PM UTC"
+            },
             {
               "createdAt": "2026-04-02T19:05:57.6Z",
               "postType": "regular",
