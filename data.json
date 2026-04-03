@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-03T02:39:32.739Z",
+  "lastUpdated": "2026-04-03T03:09:38.810Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -968,16 +968,21 @@
           "title": "Users' queries may fail with an error message in Microsoft 365 Copilot Chat",
           "startTime": "2026-04-02T12:00:00Z",
           "endTime": null,
-          "lastModified": "2026-04-03T00:57:50.503Z",
+          "lastModified": "2026-04-03T02:48:14.103Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users' queries may fail with an error in Copilot Chat.",
           "scopeOfImpact": "Any user attempting to run queries in Copilot Chat may experience failures in completing the action.\n\nStart time: Thursday, April 2, 2026, at 12:00 PM UTC",
           "rootCause": "A configuration service utilized in the flow of completing this operation has fallen below optimal operating thresholds, resulting in impact.",
-          "nextUpdateBy": "Friday, April 3, 2026, at 3:00 AM UTC",
+          "nextUpdateBy": "Friday, April 3, 2026, at 5:00 AM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-04-03T02:48:14.103Z",
+              "postType": "regular",
+              "content": "Title: Users' queries may fail with an error message in Microsoft 365 Copilot Chat\n\nUser impact: Users' queries may fail with an error in Copilot Chat.\n\nMore info: Users may see the following error message: \"Sorry, something went wrong. Service unavailable. Please try again.\"\n\nCurrent status: We're finalizing the process of restarting service instances throughout the remaining affected service environment for full remediation and anticipate the last of the restarts may take effect by our next scheduled communications update, at which point we'll confirm through telemetry whether impact is fully resolved.\n\nScope of impact: Any user attempting to run queries in Copilot Chat may experience failures in completing the action.\n\nStart time: Thursday, April 2, 2026, at 12:00 PM UTC\n\nRoot cause: A configuration service utilized in the flow of completing this operation has fallen below optimal operating thresholds, resulting in impact.\n\nNext update by: Friday, April 3, 2026, at 5:00 AM UTC"
+            },
             {
               "createdAt": "2026-04-03T00:57:50.503Z",
               "postType": "regular",
