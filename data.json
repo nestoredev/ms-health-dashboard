@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-02T23:38:40.062Z",
+  "lastUpdated": "2026-04-03T00:08:48.434Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -166,25 +166,25 @@
           "title": "Users may have been intermittently unable to access their Exchange Online mailboxes in some connection methods.",
           "startTime": "2026-04-02T19:14:14Z",
           "endTime": null,
-          "lastModified": "2026-04-02T23:32:52.457Z",
+          "lastModified": "2026-04-02T23:44:09.573Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be intermittently unable to access their Exchange Online mailboxes in some connection methods.",
           "scopeOfImpact": "Impact may occur intermittently for some users accessing their Exchange Online mailboxes in the Outlook mobile apps or the new Outlook for Mac desktop client. This section may be updated as our investigation progresses.",
           "rootCause": "",
-          "nextUpdateBy": "Friday, April 3, 2026, at 1:30 AM UTC",
+          "nextUpdateBy": "Friday, April 3, 2026, at 8:00 PM UTC",
           "feature": "Performance degradation",
           "isResolved": false,
           "posts": [
             {
               "createdAt": "2026-04-02T23:15:21.063Z",
               "postType": "regular",
-              "content": "Title: Users may be intermittently unable to access their Exchange Online mailboxes in some connection methods\n\nUser impact: Users may be intermittently unable to access their Exchange Online mailboxes in some connection methods.\n\nMore info: This issue may intermittently impact some users who attempt to access the Exchange Online service through the Outlook mobile apps or the new Outlook for Mac desktop client.\n\nCurrent status: We're finalizing our process to restart the Notification Broker service across the affected infrastructure, which we anticipate may remediate the impact. In parallel, we're assessing options to implement long-term mitigation and telemetry to prevent further instances of impact while we continue our investigation into the underlying root cause.\n\nScope of impact: Impact may occur intermittently for some users accessing their Exchange Online mailboxes in the Outlook mobile apps or the new Outlook for Mac desktop client. This section may be updated as our investigation progresses.\n\nNext update by: Friday, April 3, 2026, at 1:30 AM UTC"
+              "content": "Title: Users may be intermittently unable to access their Exchange Online mailboxes in some connection methods\n\nUser impact: Users may be intermittently unable to access their Exchange Online mailboxes in some connection methods.\n\nMore info: This issue may intermittently impact some users who attempt to access the Exchange Online service through the Outlook mobile apps or the new Outlook for Mac desktop client.\n\nCurrent status: We're finalizing our process to restart the Notification Broker service across the affected infrastructure, which we anticipate may remediate the impact. In parallel, we're assessing options to implement long-term mitigation and telemetry to prevent further instances of impact while we continue our investigation into the underlying root cause.\n\nScope of impact: Impact may occur intermittently for some users accessing their Exchange Online mailboxes in the Outlook mobile apps or the new Outlook for Mac desktop client. This section may be updated as our investigation progresses.\n\nNext update by: Friday, April 3, 2026, at 8:00 PM UTC"
             },
             {
               "createdAt": "2026-04-02T19:15:53.243Z",
               "postType": "regular",
-              "content": "Title: Users may have been intermittently unable to access their Exchange Online mailboxes in some connection methods.\n\nUser impact: Users may be intermittently unable to access their Exchange Online mailboxes in some connection methods.\n\nMore info: This issue may intermittently impact some users who attempted to access the Exchange Online service through the Outlook mobile apps or the new Outlook for Mac desktop client.\n \nCurrent status: We've received reports from affected tenants that the impact scenario originally communicated through SHD EX1256020 is still ongoing. We're working to restart the Notification Broker service on affected portions of Exchange Online service infrastructure to remediate impact while we continue our analysis into the underlying root cause.\n \nScope of impact: Impact may occur intermittently for some users accessing their Exchange Online mailboxes in the Outlook mobile apps or the new Outlook for Mac desktop client. This section may be updated as our investigation progresses.\n \nNext update by: Thursday, April 2, 2026, at 11:30 PM UTC"
+              "content": "Title: Users may be intermittently unable to access their Exchange Online mailboxes in some connection methods\n\nUser impact: Users may be intermittently unable to access their Exchange Online mailboxes in some connection methods.\n\nMore info: This issue may intermittently impact some users who attempted to access the Exchange Online service through the Outlook mobile apps or the new Outlook for Mac desktop client.\n \nCurrent status: We've received reports from affected tenants that the impact scenario originally communicated through SHD EX1256020 is still ongoing. We're working to restart the Notification Broker service on affected portions of Exchange Online service infrastructure to remediate impact while we continue our analysis into the underlying root cause.\n \nScope of impact: Impact may occur intermittently for some users accessing their Exchange Online mailboxes in the Outlook mobile apps or the new Outlook for Mac desktop client. This section may be updated as our investigation progresses.\n \nNext update by: Thursday, April 2, 2026, at 11:30 PM UTC"
             }
           ],
           "affectedServices": [
@@ -1034,9 +1034,9 @@
           "title": "Users' queries may fail with an error message in Microsoft 365 Copilot Chat",
           "startTime": "2026-04-02T12:00:00Z",
           "endTime": null,
-          "lastModified": "2026-04-02T23:02:56.043Z",
+          "lastModified": "2026-04-02T23:40:11.89Z",
           "status": "serviceDegradation",
-          "severity": "advisory",
+          "severity": "incident",
           "userImpact": "Users' queries may fail with an error in Copilot Chat.",
           "scopeOfImpact": "Any user attempting to run queries in Copilot Chat may experience failures in completing the action.\n\nStart time: Thursday, April 2, 2026, at 12:00 PM UTC",
           "rootCause": "A configuration service utilized in the flow of completing this operation has fallen below optimal operating thresholds, resulting in impact.",
@@ -1081,9 +1081,9 @@
     {
       "id": "MO1268822",
       "title": "Central US admins may be unable to access or experience delays accessing the Microsoft 365 admin center",
-      "startTime": "2026-04-02T20:20:30Z",
+      "startTime": "2026-04-02T18:30:00Z",
       "endTime": "2026-04-02T22:33:00Z",
-      "lastModified": "2026-04-02T23:17:31.877Z",
+      "lastModified": "2026-04-02T23:37:36.423Z",
       "status": "serviceRestored",
       "severity": "incident",
       "userImpact": "Admins may have been unable to access or experience delays accessing the Microsoft 365 admin center",
