@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-03T00:38:57.060Z",
+  "lastUpdated": "2026-04-03T01:09:05.943Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -999,16 +999,21 @@
           "title": "Users' queries may fail with an error message in Microsoft 365 Copilot Chat",
           "startTime": "2026-04-02T12:00:00Z",
           "endTime": null,
-          "lastModified": "2026-04-02T23:40:11.89Z",
+          "lastModified": "2026-04-03T00:57:50.503Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users' queries may fail with an error in Copilot Chat.",
           "scopeOfImpact": "Any user attempting to run queries in Copilot Chat may experience failures in completing the action.\n\nStart time: Thursday, April 2, 2026, at 12:00 PM UTC",
           "rootCause": "A configuration service utilized in the flow of completing this operation has fallen below optimal operating thresholds, resulting in impact.",
-          "nextUpdateBy": "Friday, April 3, 2026, at 1:00 AM UTC",
+          "nextUpdateBy": "Friday, April 3, 2026, at 3:00 AM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-04-03T00:57:50.503Z",
+              "postType": "regular",
+              "content": "Title: Users' queries may fail with an error message in Microsoft 365 Copilot Chat\n\nUser impact: Users' queries may fail with an error in Copilot Chat.\n\nMore info: Users may see the following error message: \"Sorry, something went wrong. Service unavailable. Please try again.\"\n\nCurrent status: We've manually restarted the service in the majority of affected regions and have confirmed through service health telemetry that recovery has started for those regions. However, we're monitoring the remaining impacted regions' recoveries and applying additional restarts as needed to achieve full remediation, which is taking more time to complete than originally anticipated. We'll provide details on our timeline for complete mitigation as soon as they become available.\n\nScope of impact: Any user attempting to run queries in Copilot Chat may experience failures in completing the action.\n\nStart time: Thursday, April 2, 2026, at 12:00 PM UTC\n\nRoot cause: A configuration service utilized in the flow of completing this operation has fallen below optimal operating thresholds, resulting in impact.\n\nNext update by: Friday, April 3, 2026, at 3:00 AM UTC"
+            },
             {
               "createdAt": "2026-04-02T23:02:56.043Z",
               "postType": "regular",
