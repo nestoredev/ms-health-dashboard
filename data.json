@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-04T03:47:28.121Z",
+  "lastUpdated": "2026-04-04T04:17:37.142Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -166,9 +166,9 @@
           "title": "Users may have been intermittently unable to access their Exchange Online mailboxes in some connection methods.",
           "startTime": "2026-04-02T19:14:14Z",
           "endTime": null,
-          "lastModified": "2026-04-03T19:19:09.553Z",
+          "lastModified": "2026-04-04T04:07:05.753Z",
           "status": "serviceDegradation",
-          "severity": "incident",
+          "severity": "advisory",
           "userImpact": "Users may be intermittently unable to access their Exchange Online mailboxes in some connection methods.",
           "scopeOfImpact": "Impact may occur intermittently for some users accessing their Exchange Online mailboxes in the Outlook mobile apps or the new Outlook for Mac desktop client. This section may be updated as our investigation progresses.",
           "rootCause": "",
@@ -917,6 +917,37 @@
     }
   ],
   "history": [
+    {
+      "id": "MP1269923",
+      "title": "Some admins may be unable to see some policy events in the Microsoft Purview Communication Compliance portal",
+      "startTime": "2026-03-30T13:00:00Z",
+      "endTime": "2026-04-04T03:30:00Z",
+      "lastModified": "2026-04-04T04:02:48.36Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Admins may have been unable to see some policy events in the Microsoft Purview Communication Compliance portal.",
+      "scopeOfImpact": "Some admins attempting to view communication compliance policy hit events in the Microsoft Purview Communication Compliance portal may have been impacted.\n\nStart time: Monday, March 30, 2026, at 1:00 PM UTC\n\nEnd time: Saturday, April 4, 2026, at 3:30 AM UTC",
+      "rootCause": "A configuration issue involving an upstream service component leveraged to facilitate the display of some events in the compliance portal resulted in impact.\n\nNext steps: \n - We're reviewing our update testing and validation methods to better identify potential configuration issues such as this prior to deployment to prevent similar impact in the future.\n\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "General",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-04-04T04:02:48.36Z",
+          "postType": "regular",
+          "content": "Title: Some admins may be unable to see some policy events in the Microsoft Purview Communication Compliance portal\n\nUser impact: Admins may have been unable to see some policy events in the Microsoft Purview Communication Compliance portal.\n\nMore info: Specifically, admins may have been unable to see some communication compliance policy hit events in the Microsoft Purview Communication Compliance portal.\n\nFinal status: We've investigated a problem in which admins may have been unable to see some communication compliance policy events in the Microsoft Purview portal and determined that a configuration issue involving an upstream service component leveraged to facilitate the display of some events in the compliance portal resulted in impact. We've manually resolved the problematic configuration to prevent further impact and confirmed the issue is fully remediated.\n\nScope of impact: Some admins attempting to view communication compliance policy hit events in the Microsoft Purview Communication Compliance portal may have been impacted.\n\nStart time: Monday, March 30, 2026, at 1:00 PM UTC\n\nEnd time: Saturday, April 4, 2026, at 3:30 AM UTC\n\nRoot cause: A configuration issue involving an upstream service component leveraged to facilitate the display of some events in the compliance portal resulted in impact.\n\nNext steps: \n - We're reviewing our update testing and validation methods to better identify potential configuration issues such as this prior to deployment to prevent similar impact in the future.\n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-04-04T03:59:12.983Z",
+          "postType": "regular",
+          "content": "Title: Some admins may be unable to see some policy events in the Microsoft Purview Communication Compliance portal\n\nUser impact: Admins may have been unable to see some policy events in the Microsoft Purview Communication Compliance portal.\n\nMore info: Specifically, admins may have been unable to see some communication compliance policy hit events in the Microsoft Purview Communication Compliance portal.\n\nCurrent status: We've investigated a problem in which admins may have been unable to see some communication compliance policy events in the Microsoft Purview portal. We'll provide additional information in a closure summary within the \"History\" section of the \"Service health\" dashboard shortly."
+        }
+      ],
+      "serviceName": "Microsoft Purview",
+      "affectedServices": [
+        "Microsoft Purview"
+      ]
+    },
     {
       "id": "MV1269743",
       "title": "Users may be unable to load the Data Quality page in Microsoft Viva Insights and receive an error",
