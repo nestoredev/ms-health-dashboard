@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-05T15:25:54.240Z",
+  "lastUpdated": "2026-04-05T15:56:00.651Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -2395,52 +2395,6 @@
       "serviceName": "Exchange Online",
       "affectedServices": [
         "Exchange Online"
-      ]
-    },
-    {
-      "id": "MO1245624",
-      "title": "Some users in the North American region may have been unable to access multiple Microsoft 365 services",
-      "startTime": "2026-03-06T13:08:00Z",
-      "endTime": "2026-03-06T16:50:00Z",
-      "lastModified": "2026-03-17T16:10:34.7Z",
-      "status": "postIncidentReviewPublished",
-      "severity": "incident",
-      "userImpact": "Users in the North American region may have been unable to access multiple Microsoft 365 services.",
-      "scopeOfImpact": "",
-      "rootCause": "",
-      "nextUpdateBy": "",
-      "feature": "Access",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-03-10T17:02:51.803Z",
-          "postType": "regular",
-          "content": "A post-incident report has been published."
-        },
-        {
-          "createdAt": "2026-03-06T18:14:34.667Z",
-          "postType": "regular",
-          "content": "Title: Some users in the North American region may have been unable to access multiple Microsoft 365 services\n\nUser impact: Users in the North American region may have been unable to access multiple Microsoft 365 services.\n\nMore info: Impacted services included, but were not limited to:\n- Microsoft 365 admin center\n- SharePoint Online\n- Microsoft Teams\n\nFinal status: We've received additional reports that the issue has recovered, and telemetry that monitors CDN interactions has shown there is no longer impact. We've confirmed that a CDN endpoint became unavailable for a period of time and the cause of this is still under investigation. We’re continuing to examine the underlying circumstances that led to this behavior to enhance the resiliency of our services.\n\nScope of impact: Impact was specific to some users located in the North American region attempting to access the Microsoft 365 admin center, Microsoft Teams and SharePoint Online.\n\nStart time: Friday, March 6, 2026, at 1:08 PM UTC\n\nEnd time: Friday, March 6, 2026, at 4:50 PM UTC\n\nRoot Cause: Throughout the incident, Microsoft-managed infrastructure remained healthy and was performing as expected.\nA third-party DNS Security provider incorrectly blocked a domain that is used within the Content Delivery Network (CDN) by multiple Microsoft 365 services. \n\nNext steps:\n- For a more comprehensive list of next steps and actions, please refer to the Post Incident Report document.\n\nAs the Microsoft-managed environment was healthy throughout the issue, we will not produce a preliminary Post-Incident Report; we will only be publishing the final Post-Incident Report."
-        },
-        {
-          "createdAt": "2026-03-06T17:25:14.607Z",
-          "postType": "regular",
-          "content": "Title: Some users in the North American region may be unable to access multiple Microsoft 365 services\n\nUser impact: Users in the North American region may be unable to access multiple Microsoft 365 services.\n\nMore info: Impacted services include, but are not limited to:\n- Microsoft 365 admin center\n- SharePoint Online\n- Microsoft Teams\n \nCurrent status: We've received reports that the issue is no longer occurring for some users and we're continuing our investigation to confirm full recovery. Our investigation is focused on content delivery network (CDN) configurations and interactions with third‑party network providers.\n \nScope of impact: Impact is specific to some users located in the North American region attempting to access the Microsoft 365 admin center, Microsoft Teams and SharePoint Online.\n \nNext update by: Friday, March 6, 2025, at 6:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-03-06T16:53:53.267Z",
-          "postType": "quick",
-          "content": "We’re continuing to focus our investigation on Content Delivery Network (CDN) configurations and how they may interact with downstream services. \n\nThis quick update is designed to give the latest information on this issue."
-        },
-        {
-          "createdAt": "2026-03-06T16:26:53.527Z",
-          "postType": "quick",
-          "content": "We’re continuing to review telemetry related to the impacted services to help isolate the source of the issue. Our investigation is currently focused on Content Delivery Network (CDN) configurations.\n\nThis quick update is designed to give the latest information on this issue."
-        }
-      ],
-      "serviceName": "Microsoft 365 suite",
-      "affectedServices": [
-        "Microsoft 365 suite"
       ]
     }
   ]
