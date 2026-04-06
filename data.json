@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-06T23:02:43.753Z",
+  "lastUpdated": "2026-04-06T23:32:49.882Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -476,9 +476,35 @@
     },
     {
       "service": "Microsoft 365 suite",
-      "status": "serviceOperational",
+      "status": "investigating",
       "id": "OSDPPlatform",
-      "issues": []
+      "issues": [
+        {
+          "id": "MO1272581",
+          "title": "Users may see delays with some reports in the Microsoft 365 admin center",
+          "startTime": "2026-04-04T00:00:00Z",
+          "endTime": null,
+          "lastModified": "2026-04-06T23:18:40.057Z",
+          "status": "investigating",
+          "severity": "advisory",
+          "userImpact": "Users may see delays with some reports in the Microsoft 365 admin center.",
+          "scopeOfImpact": "This issue may potentially impact any user attempting to view the affected reports in the More Info section.\n\nStart time: Saturday, April 4, 2026, at 12:00 AM UTC",
+          "rootCause": "An issue with an upstream data pipeline responsible for populating reports in the Microsoft 365 admin center is degraded, causing reporting delays.",
+          "nextUpdateBy": "Wednesday, April 8, 2026, at 2:00 AM UTC",
+          "feature": "Company or User Administration",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-04-06T23:18:40.057Z",
+              "postType": "regular",
+              "content": "Title: Users may see delays with some reports in the Microsoft 365 admin center\n\nUser impact: Users may see delays with some reports in the Microsoft 365 admin center.\n\nMore info: Impacted reports include the following:\n-Microsoft 365 group reports\n-Microsoft 365 active user reports\n-Microsoft Teams team activity reports\n-Adoption Score\n\nCurrent status: We identified that an issue with an upstream data pipeline responsible for populating reports in the Microsoft 365 admin center is degraded, causing reporting delays. We're working with the upstream dependency owners to repair the issue and get the reporting data up to date.\n\nScope of impact: This issue may potentially impact any user attempting to view the affected reports in the More Info section.\n\nStart time: Saturday, April 4, 2026, at 12:00 AM UTC\n\nRoot cause: An issue with an upstream data pipeline responsible for populating reports in the Microsoft 365 admin center is degraded, causing reporting delays.\n\nNext update by: Wednesday, April 8, 2026, at 2:00 AM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite"
+          ]
+        }
+      ]
     },
     {
       "service": "SharePoint Online",
