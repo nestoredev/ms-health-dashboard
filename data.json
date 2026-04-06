@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-06T20:32:11.704Z",
+  "lastUpdated": "2026-04-06T21:02:17.854Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -484,16 +484,21 @@
           "title": "A small subset of admins in North America may be unable to access the Microsoft 365 admin center ",
           "startTime": "2026-04-06T19:04:17Z",
           "endTime": null,
-          "lastModified": "2026-04-06T19:59:06.01Z",
+          "lastModified": "2026-04-06T20:52:21.31Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "A subset of admins in North America may be unable to access the Microsoft 365 admin center.",
-          "scopeOfImpact": "",
-          "rootCause": "",
+          "scopeOfImpact": "A small subset of admins in North America who are attempting to access the Microsoft 365 admin center may be impacted. \n \nStart time: Monday, April 6, 2026, at 5:00 PM UTC\n\nPreliminary",
+          "rootCause": "A recent deployment introduced a code issue which introduced errors in the code path that facilitates calls to the Microsoft 365 admin center and is preventing some admins from accessing the Microsoft 365 admin center as expected. \n\nNext update: Monday, April 6, 2026, at 9:30 PM UTC",
           "nextUpdateBy": "",
           "feature": "Company or User Administration",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-04-06T20:36:48.67Z",
+              "postType": "regular",
+              "content": "Title: A small subset of admins in North America may be unable to access the Microsoft 365 admin center \n\nUser impact: A subset of admins in North America may be unable to access the Microsoft 365 admin center.\n\nCurrent status: We confirmed that an issue in a recent update introduced errors in the code path that facilitates calls to the Microsoft 365 admin center when encountered by admins, which resulted in their inability to access the Microsoft 365 admin center. As mentioned previously, we're reverting this update to resolve the issue. The reversion was completed on a portion of infrastructure and our telemetry is showing positive trends. We're closely tracking its progress to ensure all infrastructure receives the change. \n\nScope of impact: A small subset of admins in North America who are attempting to access the Microsoft 365 admin center may be impacted. \n \nStart time: Monday, April 6, 2026, at 5:00 PM UTC\n\nPreliminary root cause: A recent deployment introduced a code issue which introduced errors in the code path that facilitates calls to the Microsoft 365 admin center and is preventing some admins from accessing the Microsoft 365 admin center as expected. \n\nNext update: Monday, April 6, 2026, at 9:30 PM UTC"
+            },
             {
               "createdAt": "2026-04-06T19:59:06.01Z",
               "postType": "quick",
