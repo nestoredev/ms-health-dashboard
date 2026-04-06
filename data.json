@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-06T19:01:52.006Z",
+  "lastUpdated": "2026-04-06T19:31:59.483Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -476,9 +476,35 @@
     },
     {
       "service": "Microsoft 365 suite",
-      "status": "serviceOperational",
+      "status": "investigating",
       "id": "OSDPPlatform",
-      "issues": []
+      "issues": [
+        {
+          "id": "MO1272387",
+          "title": "Investigating user reports of Microsoft 365 Admin Center issues in the United States",
+          "startTime": "2026-04-06T19:04:17Z",
+          "endTime": null,
+          "lastModified": "2026-04-06T19:21:34.9Z",
+          "status": "investigating",
+          "severity": "incident",
+          "userImpact": "We don't have details on impact yet. We're seeing an increase in user reported issues above our alerting threshold.",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
+          "feature": "Company or User Administration",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-04-06T19:08:22.243Z",
+              "postType": "regular",
+              "content": "Title: Investigating user reports of Microsoft 365 Admin Center issues in the United States\n\nUser impact: We don't have details on impact yet. We're seeing an increase in user reported issues above our alerting threshold.\n\nCurrent status: We are reviewing service telemetry and available information to determine if there is an issue happening and we'll update this message shortly with our latest findings.\n\nThis communication serves as a preliminary notification about a potential issue affecting your service."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite"
+          ]
+        }
+      ]
     },
     {
       "service": "SharePoint Online",
