@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-07T02:03:22.110Z",
+  "lastUpdated": "2026-04-07T02:33:28.614Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -716,9 +716,35 @@
     },
     {
       "service": "Microsoft Intune",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "Intune",
-      "issues": []
+      "issues": [
+        {
+          "id": "IT1272653",
+          "title": "Users may be unable to install user targeted apps that have been made available in the Intune Company Portal",
+          "startTime": "2026-04-07T01:14:14Z",
+          "endTime": null,
+          "lastModified": "2026-04-07T02:30:39.07Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to install user targeted apps that have been made available in the Intune Company Portal.",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
+          "feature": "Microsoft Intune",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-04-07T02:01:02.213Z",
+              "postType": "regular",
+              "content": "Title: Users are unable to install user targeted apps that have been made available in the Intune Company Portal\n\nUser impact: Users are unable to install user targeted apps that have been made available in the Intune Company Portal.\n\nCurrent status: We're investigating a potential issue with Intune and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Intune"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft OneDrive",
