@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-08T15:12:05.893Z",
+  "lastUpdated": "2026-04-08T15:42:13.235Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -470,6 +470,48 @@
           "affectedServices": [
             "Exchange Online"
           ]
+        },
+        {
+          "id": "MO1274150",
+          "title": "Potential issues with multiple Microsoft 365 services",
+          "startTime": "2026-04-08T15:07:07Z",
+          "endTime": null,
+          "lastModified": "2026-04-08T15:37:52.753Z",
+          "status": "investigating",
+          "severity": "incident",
+          "userImpact": "We're investigating a potential issue with multiple Microsoft 365 services.",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
+          "feature": "Access",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-04-08T15:37:52.753Z",
+              "postType": "quick",
+              "content": "We've identified and corrected a network level disruption that affected multiple services and while our recovery actions have mitigated impact, some users may observe brief email delivery delays as our remediation actions are applied across the service.\n\nThis quick update is designed to give the latest information on this issue."
+            },
+            {
+              "createdAt": "2026-04-08T15:32:45.237Z",
+              "postType": "quick",
+              "content": "Our recovery mechanisms have taken action to restore service. Reports from customers and our own internal telemetry indicate that service health is improving rapidly. We're continuing to take corrective action and monitor the service as it recovers.\n\nThis quick update is designed to give the latest information on this issue."
+            },
+            {
+              "createdAt": "2026-04-08T15:31:36.64Z",
+              "postType": "regular",
+              "content": "Title: Potential issues with multiple Microsoft 365 services\n\nUser impact: We're investigating a potential issue with multiple Microsoft 365 services.\n\nCurrent status: We’ve identified an external service dependency that is contributing to impact across multiple Microsoft 365 services. We’re implementing mitigation actions and have already begun observing signs of recovery. \n \nScope of impact: A subset of users in the US, Netherlands, UK, and Canada have reported impact. This information may be updated as our investigation continues.\n \nNext update by: Wednesday, April 8, 2026, at 4:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-04-08T15:13:53.443Z",
+              "postType": "regular",
+              "content": "Title: Potential issues with multiple Microsoft 365 services\n\nUser impact: We're investigating a potential issue with multiple Microsoft 365 services.\n\nCurrent status: We're investigating a potential issue with multiple Microsoft 365 services, including but not limited to Microsoft Teams and Exchange Online. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online",
+            "Microsoft 365 suite",
+            "Microsoft Teams"
+          ]
         }
       ]
     },
@@ -512,6 +554,48 @@
           ],
           "affectedServices": [
             "Microsoft 365 suite"
+          ]
+        },
+        {
+          "id": "MO1274150",
+          "title": "Potential issues with multiple Microsoft 365 services",
+          "startTime": "2026-04-08T15:07:07Z",
+          "endTime": null,
+          "lastModified": "2026-04-08T15:37:52.753Z",
+          "status": "investigating",
+          "severity": "incident",
+          "userImpact": "We're investigating a potential issue with multiple Microsoft 365 services.",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
+          "feature": "Access",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-04-08T15:37:52.753Z",
+              "postType": "quick",
+              "content": "We've identified and corrected a network level disruption that affected multiple services and while our recovery actions have mitigated impact, some users may observe brief email delivery delays as our remediation actions are applied across the service.\n\nThis quick update is designed to give the latest information on this issue."
+            },
+            {
+              "createdAt": "2026-04-08T15:32:45.237Z",
+              "postType": "quick",
+              "content": "Our recovery mechanisms have taken action to restore service. Reports from customers and our own internal telemetry indicate that service health is improving rapidly. We're continuing to take corrective action and monitor the service as it recovers.\n\nThis quick update is designed to give the latest information on this issue."
+            },
+            {
+              "createdAt": "2026-04-08T15:31:36.64Z",
+              "postType": "regular",
+              "content": "Title: Potential issues with multiple Microsoft 365 services\n\nUser impact: We're investigating a potential issue with multiple Microsoft 365 services.\n\nCurrent status: We’ve identified an external service dependency that is contributing to impact across multiple Microsoft 365 services. We’re implementing mitigation actions and have already begun observing signs of recovery. \n \nScope of impact: A subset of users in the US, Netherlands, UK, and Canada have reported impact. This information may be updated as our investigation continues.\n \nNext update by: Wednesday, April 8, 2026, at 4:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-04-08T15:13:53.443Z",
+              "postType": "regular",
+              "content": "Title: Potential issues with multiple Microsoft 365 services\n\nUser impact: We're investigating a potential issue with multiple Microsoft 365 services.\n\nCurrent status: We're investigating a potential issue with multiple Microsoft 365 services, including but not limited to Microsoft Teams and Exchange Online. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online",
+            "Microsoft 365 suite",
+            "Microsoft Teams"
           ]
         }
       ]
@@ -799,9 +883,52 @@
     },
     {
       "service": "Microsoft Teams",
-      "status": "serviceOperational",
+      "status": "investigating",
       "id": "microsoftteams",
-      "issues": []
+      "issues": [
+        {
+          "id": "MO1274150",
+          "title": "Potential issues with multiple Microsoft 365 services",
+          "startTime": "2026-04-08T15:07:07Z",
+          "endTime": null,
+          "lastModified": "2026-04-08T15:37:52.753Z",
+          "status": "investigating",
+          "severity": "incident",
+          "userImpact": "We're investigating a potential issue with multiple Microsoft 365 services.",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
+          "feature": "Access",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-04-08T15:37:52.753Z",
+              "postType": "quick",
+              "content": "We've identified and corrected a network level disruption that affected multiple services and while our recovery actions have mitigated impact, some users may observe brief email delivery delays as our remediation actions are applied across the service.\n\nThis quick update is designed to give the latest information on this issue."
+            },
+            {
+              "createdAt": "2026-04-08T15:32:45.237Z",
+              "postType": "quick",
+              "content": "Our recovery mechanisms have taken action to restore service. Reports from customers and our own internal telemetry indicate that service health is improving rapidly. We're continuing to take corrective action and monitor the service as it recovers.\n\nThis quick update is designed to give the latest information on this issue."
+            },
+            {
+              "createdAt": "2026-04-08T15:31:36.64Z",
+              "postType": "regular",
+              "content": "Title: Potential issues with multiple Microsoft 365 services\n\nUser impact: We're investigating a potential issue with multiple Microsoft 365 services.\n\nCurrent status: We’ve identified an external service dependency that is contributing to impact across multiple Microsoft 365 services. We’re implementing mitigation actions and have already begun observing signs of recovery. \n \nScope of impact: A subset of users in the US, Netherlands, UK, and Canada have reported impact. This information may be updated as our investigation continues.\n \nNext update by: Wednesday, April 8, 2026, at 4:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-04-08T15:13:53.443Z",
+              "postType": "regular",
+              "content": "Title: Potential issues with multiple Microsoft 365 services\n\nUser impact: We're investigating a potential issue with multiple Microsoft 365 services.\n\nCurrent status: We're investigating a potential issue with multiple Microsoft 365 services, including but not limited to Microsoft Teams and Exchange Online. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online",
+            "Microsoft 365 suite",
+            "Microsoft Teams"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft Bookings",
