@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-08T23:14:09.119Z",
+  "lastUpdated": "2026-04-08T23:44:16.126Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -874,18 +874,23 @@
         {
           "id": "DZ1274078",
           "title": "Some users may be unable to view data in Threat Explorer and Advanced Hunting in Microsoft Defender for Office 365",
-          "startTime": "2026-04-08T13:12:27Z",
+          "startTime": "2026-04-08T10:26:00Z",
           "endTime": "2026-04-08T16:21:57Z",
-          "lastModified": "2026-04-08T18:39:31.383Z",
+          "lastModified": "2026-04-08T23:24:27.62Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to view data in Threat Explorer and Advanced Hunting in Microsoft Defender for Office 365.",
-          "scopeOfImpact": "Impact is specific to some users in North America and Europe attempting to view recent data in Threat Explorer and Advanced Hunting scenarios in Microsoft Defender for Office 365.",
-          "rootCause": "",
-          "nextUpdateBy": "Thursday, April 9, 2026, at 12:30 AM UTC",
+          "scopeOfImpact": "Impact is specific to some users in North America and Europe attempting to view recent data in Threat Explorer and Advanced Hunting scenarios in Microsoft Defender for Office 365.\n\nStart time: Wednesday, April 8, 2026, at 10:26 AM UTC",
+          "rootCause": "A portion of infrastructure leveraged for processing data in Microsoft Defender for Office 365 was degraded, triggering failures.",
+          "nextUpdateBy": "Thursday, April 9, 2026, at 5:30 AM UTC",
           "feature": "MDO",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-04-08T23:24:27.62Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to view data in Threat Explorer and Advanced Hunting in Microsoft Defender for Office 365\n\nUser impact: Users may be unable to view data in Threat Explorer and Advanced Hunting in Microsoft Defender for Office 365.\n\nMore info: Impacted scenarios may include, but aren't limited to: \n \n- AIR\n- Remediation\n- Alerts\n\nCurrent status: We identified that a portion of infrastructure that is leveraged for processing data in Microsoft Defender for Office 365, was triggering failures. We rerouted connections to alternate infrastructure and can see that the requests are processing successfully. We're continuing to monitor telemetry to validate that impact is remediated and that reporting data is up to date.\n\nScope of impact: Impact is specific to some users in North America and Europe attempting to view recent data in Threat Explorer and Advanced Hunting scenarios in Microsoft Defender for Office 365.\n\nStart time: Wednesday, April 8, 2026, at 10:26 AM UTC\n\nRoot cause: A portion of infrastructure leveraged for processing data in Microsoft Defender for Office 365 was degraded, triggering failures.\n\nNext update by: Thursday, April 9, 2026, at 5:30 AM UTC"
+            },
             {
               "createdAt": "2026-04-08T18:39:31.383Z",
               "postType": "regular",
@@ -1217,16 +1222,21 @@
       "title": "A small subset of admins in North America and Brazil may be unable to access the Microsoft 365 admin center ",
       "startTime": "2026-04-06T17:45:00Z",
       "endTime": "2026-04-06T22:11:07Z",
-      "lastModified": "2026-04-06T22:12:24.84Z",
-      "status": "serviceRestored",
+      "lastModified": "2026-04-08T23:36:38.827Z",
+      "status": "postIncidentReviewPublished",
       "severity": "incident",
       "userImpact": "A subset of admins in North America and Brazil may have been unable to access the Microsoft 365 admin center.",
-      "scopeOfImpact": "A small subset of admins in North America and Brazil who were attempting to access the Microsoft 365 admin center during the impact timeframe may have been impacted.\n \nStart time: Monday, April 6, 2026, at 5:45 PM UTC\n \nEnd time: Monday, April 6, 2026, at 9:55 PM UTC\n\nPreliminary",
-      "rootCause": "A recent deployment introduced a code issue which caused errors in the code path that facilitates calls to the Microsoft 365 admin center, preventing some admins from accessing the Microsoft 365 admin center as expected.\n\nNext steps: \n-We're examining the code path responsible for impact in our recent deployment so we can ensure it's corrected and redeployed without issue. \n \nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days.",
+      "scopeOfImpact": "",
+      "rootCause": "",
       "nextUpdateBy": "",
       "feature": "Company or User Administration",
       "isResolved": true,
       "posts": [
+        {
+          "createdAt": "2026-04-08T23:36:38.827Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        },
         {
           "createdAt": "2026-04-06T22:12:24.84Z",
           "postType": "regular",
@@ -1246,11 +1256,6 @@
           "createdAt": "2026-04-06T19:59:06.01Z",
           "postType": "quick",
           "content": "Current status: We're observing some service recovery as our reversion of the recent deployment progresses throughout the impacted infrastructure. We'll continue to carefully monitor the service during the reversion process to confirm full restoration. \n\nThis quick update is designed to give the latest information on this issue."
-        },
-        {
-          "createdAt": "2026-04-06T19:39:21.863Z",
-          "postType": "regular",
-          "content": "Title: A small subset of admins in North America and Brazil may be unable to access the Microsoft 365 admin center \n\nUser impact: A subset of admins in North America and Brazil may be unable to access the Microsoft 365 admin center.\n\nCurrent status: We've identified a recent deployment which we believe is contributing to impact. We're reverting this deployment and monitoring our service to confirm this resolves the issue. \n \nScope of impact: A small subset of admins in North America who are attempting to access the Microsoft 365 admin center may be impacted. \n \nPreliminary root cause: An issue with a recent deployment is preventing some admins from accessing the Microsoft 365 admin center as expected. We'll provide more information regarding the cause as our investigation progresses. \n \nNext update: Monday, April 4, 2026, at 8:30 PM UTC"
         }
       ],
       "serviceName": "Microsoft 365 suite",
