@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-08T18:12:54.901Z",
+  "lastUpdated": "2026-04-08T18:43:03.425Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -853,9 +853,40 @@
     },
     {
       "service": "Microsoft Defender XDR",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "Microsoft365Defender",
-      "issues": []
+      "issues": [
+        {
+          "id": "DZ1274078",
+          "title": "Some users may be unable to view data in Threat Explorer and Advanced Hunting in Microsoft Defender for Office 365",
+          "startTime": "2026-04-08T13:12:27Z",
+          "endTime": "2026-04-08T16:21:57Z",
+          "lastModified": "2026-04-08T18:39:31.383Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to view data in Threat Explorer and Advanced Hunting in Microsoft Defender for Office 365.",
+          "scopeOfImpact": "Impact is specific to some users in North America and Europe attempting to view recent data in Threat Explorer and Advanced Hunting scenarios in Microsoft Defender for Office 365.",
+          "rootCause": "",
+          "nextUpdateBy": "Thursday, April 9, 2026, at 12:30 AM UTC",
+          "feature": "MDO",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-04-08T18:39:31.383Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to view data in Threat Explorer and Advanced Hunting in Microsoft Defender for Office 365\n\nUser impact: Users may be unable to view data in Threat Explorer and Advanced Hunting in Microsoft Defender for Office 365.\n\nMore info: Impacted scenarios may include, but aren't limited to: \n \n- AIR\n- Remediation\n- Alerts\n\nCurrent status: We're continuing our analysis of service telemetry in conjunction with recent service updates which may be contributing to impact.\n\nScope of impact: Impact is specific to some users in North America and Europe attempting to view recent data in Threat Explorer and Advanced Hunting scenarios in Microsoft Defender for Office 365.\n\nNext update by: Thursday, April 9, 2026, at 12:30 AM UTC"
+            },
+            {
+              "createdAt": "2026-04-08T16:24:59.083Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to view data in Threat Explorer and Advanced Hunting in Microsoft Defender for Office 365\n\nUser impact: Users may be unable to view data in Threat Explorer and Advanced Hunting in Microsoft Defender for Office 365.\n\nMore info: Impacted scenarios may include, but aren't limited to: \n \n- AIR\n- Remediation\n- Alerts\n \nCurrent status: We're reviewing service monitoring telemetry to isolate the root cause and develop a remediation plan.\n \nScope of impact: Impact is specific to some users in North America and Europe attempting to view recent data in Threat Explorer and Advanced Hunting scenarios in Microsoft Defender for Office 365.\n \nNext update by: Wednesday, April 8, 2026, at 6:30 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Defender XDR"
+          ]
+        }
+      ]
     },
     {
       "service": "Project for the web",
