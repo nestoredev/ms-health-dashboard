@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-09T06:15:54.684Z",
+  "lastUpdated": "2026-04-09T06:46:02.122Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -980,9 +980,35 @@
     },
     {
       "service": "Microsoft Purview",
-      "status": "serviceOperational",
+      "status": "investigating",
       "id": "Purview",
-      "issues": []
+      "issues": [
+        {
+          "id": "MP1274841",
+          "title": "Users may be unable to access activity explorer in the Microsoft Purview portal",
+          "startTime": "2026-04-09T06:15:29Z",
+          "endTime": null,
+          "lastModified": "2026-04-09T06:30:15.01Z",
+          "status": "investigating",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to access activity explorer in the Microsoft Purview portal.",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
+          "feature": "General",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-04-09T06:30:15.01Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to access activity explorer in the Microsoft Purview portal\n\nUser impact: Users may be unable to access activity explorer in the Microsoft Purview portal.\n\nCurrent status: We're investigating a potential issue with Microsoft Purview and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Purview"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft Clipchamp ",
