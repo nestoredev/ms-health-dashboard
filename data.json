@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-09T15:18:07.480Z",
+  "lastUpdated": "2026-04-09T15:48:14.274Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -236,16 +236,21 @@
           "title": "Users may be intermittently unable to access their Exchange Online mailboxes in some connection methods.",
           "startTime": "2026-04-02T19:14:14Z",
           "endTime": null,
-          "lastModified": "2026-04-07T19:31:52.063Z",
+          "lastModified": "2026-04-09T15:42:51.627Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be intermittently unable to access their Exchange Online mailboxes in some connection methods.",
-          "scopeOfImpact": "Impact may occur intermittently for some users accessing their Exchange Online mailboxes in the Outlook mobile apps or the new Outlook for Mac desktop client. This section may be updated as our investigation progresses.\n\nEstimated time to resolve: We expect the fix deployment to complete by Friday, April 17, 2026.",
+          "scopeOfImpact": "Impact may occur intermittently for approximately 3,000 users with a smaller set of users persistently being unable to access their Exchange Online mailboxes in the Outlook mobile apps or the new Outlook for Mac desktop client. This section may be updated as our investigation progresses.\n\nEstimated time to resolve: We expect the fix deployment to complete by Friday, April 17, 2026.",
           "rootCause": "A service that facilitates notification generation and delivery isn't processing requests as expected, resulting in impact.",
           "nextUpdateBy": "Friday, April 10, 2026, at 8:00 PM UTC",
           "feature": "Performance degradation",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-04-09T15:42:51.627Z",
+              "postType": "regular",
+              "content": "Title: Users may be intermittently unable to access their Exchange Online mailboxes in some connection methods.\n\nUser impact: Users may be intermittently unable to access their Exchange Online mailboxes in some connection methods.\n\nMore info: This issue may intermittently impact some users who attempt to access the Exchange Online service through the Outlook mobile apps or the new Outlook for Mac desktop client.\n\nCurrent status: After further analysis, we've isolated that this issue intermittently impacts approximately 3,000 users with a smaller set of users persistently impacted, and we've updated the \"Scope of impact\" in our communications to reflect this new scope. We're continuing to monitor the deployment of our long-term fix while we also continue to implement a program to identify and restart the Notification service as errors are identified. These actions will help us limit further impact while the fix deploys.\n\nScope of impact: Impact may occur intermittently for approximately 3,000 users with a smaller set of users persistently being unable to access their Exchange Online mailboxes in the Outlook mobile apps or the new Outlook for Mac desktop client. This section may be updated as our investigation progresses.\n\nEstimated time to resolve: We expect the fix deployment to complete by Friday, April 17, 2026.\n \nRoot cause: A service that facilitates notification generation and delivery isn't processing requests as expected, resulting in impact.\n \nNext update by: Friday, April 10, 2026, at 8:00 PM UTC"
+            },
             {
               "createdAt": "2026-04-07T19:31:52.063Z",
               "postType": "regular",
@@ -988,16 +993,21 @@
           "title": "Some admins may be unable to access Activity Explorer in the Microsoft Purview portal",
           "startTime": "2026-04-09T06:15:29Z",
           "endTime": null,
-          "lastModified": "2026-04-09T12:47:02.14Z",
+          "lastModified": "2026-04-09T15:23:34.12Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may be unable to access Activity Explorer in the Microsoft Purview portal.",
-          "scopeOfImpact": "Some admins attempting to access Activity Explorer in the Microsoft Purview portal or retrieve sensitivity labels using the AIP unified labeling client may be impacted. This information may be updated as our investigation continues.",
+          "scopeOfImpact": "Some admins attempting to access Activity Explorer in the Microsoft Purview portal or retrieve sensitivity labels using the AIP unified labeling client may be impacted. This information may be updated as our investigation continues.\n \nStart time: Wednesday, April 1, 2026, at 12:00 AM UTC",
           "rootCause": "A service-to-service authentication certificate was recently updated and is disrupting how licensing information is validated, causing some requests to be incorrectly identified as unlicensed and resulting in impact.",
-          "nextUpdateBy": "Thursday, April 9, 2026, at 3:00 PM UTC",
+          "nextUpdateBy": "Friday, April 10, 2026, at 6:00 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-04-09T15:21:43.653Z",
+              "postType": "regular",
+              "content": "Title: Some admins may be unable to access Activity Explorer in the Microsoft Purview portal\n\nUser impact: Admins may be unable to access Activity Explorer in the Microsoft Purview portal.\n\nMore info: Affected admins may be unable to load Activity Explorer or may see it reported as unavailable due to licensing checks incorrectly returning ineligible results.\n\nIn some cases, admins may also experience issues retrieving sensitivity labels when using the Azure Information Protection (AIP) unified labeling client.\n \nCurrent status: We're progressing with our restarting of controlled services across the impacted environments which is expected to remediate the impact. Our restart timeline projects that the process will have completed and for impact to be remediated by our next scheduled communication update.\n \nScope of impact: Some admins attempting to access Activity Explorer in the Microsoft Purview portal or retrieve sensitivity labels using the AIP unified labeling client may be impacted. This information may be updated as our investigation continues.\n \nStart time: Wednesday, April 1, 2026, at 12:00 AM UTC\n \nRoot cause: A service-to-service authentication certificate was recently updated and is disrupting how licensing information is validated, causing some requests to be incorrectly identified as unlicensed and resulting in impact.\n \nNext update by: Friday, April 10, 2026, at 6:00 PM UTC"
+            },
             {
               "createdAt": "2026-04-09T12:47:02.14Z",
               "postType": "regular",
