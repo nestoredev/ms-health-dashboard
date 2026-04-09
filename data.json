@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-09T12:47:28.598Z",
+  "lastUpdated": "2026-04-09T13:17:35.896Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -988,16 +988,21 @@
           "title": "Some admins may be unable to access Activity Explorer in the Microsoft Purview portal",
           "startTime": "2026-04-09T06:15:29Z",
           "endTime": null,
-          "lastModified": "2026-04-09T10:57:30.083Z",
+          "lastModified": "2026-04-09T12:47:02.14Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may be unable to access Activity Explorer in the Microsoft Purview portal.",
           "scopeOfImpact": "Some admins attempting to access Activity Explorer in the Microsoft Purview portal or retrieve sensitivity labels using the AIP unified labeling client may be impacted. This information may be updated as our investigation continues.",
           "rootCause": "A service-to-service authentication certificate was recently updated and is disrupting how licensing information is validated, causing some requests to be incorrectly identified as unlicensed and resulting in impact.",
-          "nextUpdateBy": "Thursday, April 9, 2026, at 1:00 PM UTC",
+          "nextUpdateBy": "Thursday, April 9, 2026, at 3:00 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-04-09T12:47:02.14Z",
+              "postType": "regular",
+              "content": "Title: Some admins may be unable to access Activity Explorer in the Microsoft Purview portal\n\nUser impact: Admins may be unable to access Activity Explorer in the Microsoft Purview portal.\n\nMore info: Affected admins may be unable to load Activity Explorer or may see it reported as unavailable due to licensing checks incorrectly returning ineligible results.\n\nIn some cases, admins may also experience issues retrieving sensitivity labels when using the Azure Information Protection (AIP) unified labeling client.\n\nCurrent status: We’ve successfully validated the controlled service restart process, confirming that the corrected certificate is loading as expected and licensing validation is recovering. We’re now proceeding with the restart across a broader set of impacted environments. We’re continuing to closely monitor recovery signals and will provide further updates as the expansion progresses.\n\nScope of impact: Some admins attempting to access Activity Explorer in the Microsoft Purview portal or retrieve sensitivity labels using the AIP unified labeling client may be impacted. This information may be updated as our investigation continues.\n\nRoot cause: A service-to-service authentication certificate was recently updated and is disrupting how licensing information is validated, causing some requests to be incorrectly identified as unlicensed and resulting in impact.\n\nNext update by: Thursday, April 9, 2026, at 3:00 PM UTC"
+            },
             {
               "createdAt": "2026-04-09T10:57:30.083Z",
               "postType": "regular",
