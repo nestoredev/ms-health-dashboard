@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-10T12:23:29.736Z",
+  "lastUpdated": "2026-04-10T12:53:37.210Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -230,6 +230,31 @@
               "createdAt": "2026-03-17T06:55:06.537Z",
               "postType": "regular",
               "content": "Title: Some users may be unable to use classic Outlook when the Teams Meeting Add-in is enabled\n \nUser impact: Users may be unable to use classic Outlook when the Teams Meeting Add-in is enabled.\n \nMore info: Specifically, impacted users may experience crashes while using the classic Outlook on any client, or be unable to launch the service. While we work on the permanent fix, we recommend impacted users upgrade to the latest Outlook version.\n\nAs a workaround, users can also perform an Online Repair of Office or update Outlook to the latest version to resolve the issue.\n\nCurrent status: We're analyzing support provided information to determine our next troubleshooting steps.\n\nScope of impact: Some users that are attempting to use classic Outlook with the Microsoft Teams Meeting Add-in version 26043.2016.4478.2773 enabled may be impacted. This information may be updated as our investigation continues.\n\nNext update by: Tuesday, March 17, 2026, at 9:00 AM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online"
+          ]
+        },
+        {
+          "id": "EX1276049",
+          "title": "Users email messages are being delivered in Exchange Online but senders may receive incorrect non‑delivery reports",
+          "startTime": "2026-04-10T12:15:32Z",
+          "endTime": null,
+          "lastModified": "2026-04-10T12:26:07.253Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users email messages are being delivered in Exchange Online but senders may receive incorrect non‑delivery reports.",
+          "scopeOfImpact": "Impact is specific to some users attempting to send email messages in Exchange Online.",
+          "rootCause": "",
+          "nextUpdateBy": "Friday, April 10, 2026, at 2:30 PM UTC",
+          "feature": "E-Mail non delivery",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-04-10T12:24:11.67Z",
+              "postType": "regular",
+              "content": "Title: Users' email messages are being delivered in Exchange Online but senders may receive incorrect non‑delivery reports \n\nUser impact: Users' email messages are being delivered in Exchange Online but senders may receive incorrect non‑delivery reports. \n\nMore info: Senders may see delivery failures or non‑delivery reports (NDRs) indicating the recipient domain is unreachable, despite email messages being delivered successfully. \n \nCurrent status: We're reviewing support provided information to determine our next troubleshooting steps. \n \nScope of impact: Impact is specific to some users attempting to send email messages in Exchange Online. \n \nNext update by: Friday, April 10, 2026, at 2:30 PM UTC"
             }
           ],
           "affectedServices": [
