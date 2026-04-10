@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-10T13:53:51.383Z",
+  "lastUpdated": "2026-04-10T14:23:58.361Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -241,16 +241,21 @@
           "title": "Users email messages are being delivered in Exchange Online but senders may receive incorrect non‑delivery reports",
           "startTime": "2026-04-10T12:15:32Z",
           "endTime": null,
-          "lastModified": "2026-04-10T12:26:07.253Z",
+          "lastModified": "2026-04-10T14:10:00.37Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users email messages are being delivered in Exchange Online but senders may receive incorrect non‑delivery reports.",
           "scopeOfImpact": "Impact is specific to some users attempting to send email messages in Exchange Online.",
           "rootCause": "",
-          "nextUpdateBy": "Friday, April 10, 2026, at 2:30 PM UTC",
+          "nextUpdateBy": "Friday, April 10, 2026, at 4:30 PM UTC",
           "feature": "E-Mail non delivery",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-04-10T14:10:00.37Z",
+              "postType": "regular",
+              "content": "Title: Users email messages are being delivered in Exchange Online but senders may receive incorrect non‑delivery reports\n\nUser impact: Users email messages are being delivered in Exchange Online but senders may receive incorrect non‑delivery reports.\n\nMore info: Senders may see delivery failures or non‑delivery reports (NDRs) indicating the recipient domain is unreachable, despite email messages being delivered successfully. \n \nCurrent status: We're analyzing message replication and delivery confirmation behavior to isolate the root cause and develop a mitigation plan. \n \nScope of impact: Impact is specific to some users attempting to send email messages in Exchange Online. \n \nNext update by: Friday, April 10, 2026, at 4:30 PM UTC"
+            },
             {
               "createdAt": "2026-04-10T12:24:11.67Z",
               "postType": "regular",
