@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-12T14:41:08.852Z",
+  "lastUpdated": "2026-04-12T15:11:15.411Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -2643,42 +2643,6 @@
       "serviceName": "Microsoft 365 suite",
       "affectedServices": [
         "Microsoft 365 suite"
-      ]
-    },
-    {
-      "id": "MV1250870",
-      "title": "Users' Microsoft Viva Engage feed may not load and they may encounter timeout errors when editing posts or replies",
-      "startTime": "2026-03-13T13:12:00Z",
-      "endTime": "2026-03-13T15:05:00Z",
-      "lastModified": "2026-03-13T15:13:00.257Z",
-      "status": "serviceRestored",
-      "severity": "incident",
-      "userImpact": "Users' Viva Engage feed may not have loaded and they may have encountered timeout errors when editing posts or replies.",
-      "scopeOfImpact": "Any user that attempted to view their Viva Engage feed or edit posts or replies may have been impacted.\n\nStart time: Friday, March 13, 2026, at 1:12 PM UTC\n\nEnd time: Friday, March 13, 2026, at 3:05 PM UTC",
-      "rootCause": "A recent service-level change to the portion of service infrastructure responsible for facilitating users' feeds caused and unexpected increase in traffic to the infrastructure and resulted in impact.\n\nNext steps: \n - We're continuing to evaluate the request traffic to the affected infrastructure along with our service testing testing and validation procedures to prevent similar load balancing issues in deployments moving forward.\n\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Post/Reply/Like",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-03-13T15:13:00.257Z",
-          "postType": "regular",
-          "content": "Title: Users' Microsoft Viva Engage feed may not load and they may encounter timeout errors when editing posts or replies\n\nUser impact: Users' Viva Engage feed may not have loaded and they may have encountered timeout errors when editing posts or replies.\n\nFinal status: We've identified that a recent service-level change to the portion of service infrastructure responsible for facilitating users' feeds caused and unexpected increase in traffic to the infrastructure and resulted in impact. We've rebalanced the request traffic and confirmed through service health monitoring that the impact is remediated.\n\nScope of impact: Any user that attempted to view their Viva Engage feed or edit posts or replies may have been impacted.\n\nStart time: Friday, March 13, 2026, at 1:12 PM UTC\n\nEnd time: Friday, March 13, 2026, at 3:05 PM UTC\n\nRoot cause: A recent service-level change to the portion of service infrastructure responsible for facilitating users' feeds caused and unexpected increase in traffic to the infrastructure and resulted in impact.\n\nNext steps: \n - We're continuing to evaluate the request traffic to the affected infrastructure along with our service testing testing and validation procedures to prevent similar load balancing issues in deployments moving forward.\n\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-03-13T15:01:06.42Z",
-          "postType": "regular",
-          "content": "Title: Users' Microsoft Viva Engage feed may not load and they may encounter timeout errors when editing posts or replies\n\nUser impact: Users' Viva Engage feed may not load and they may encounter timeout errors when editing posts or replies.\n\nCurrent status: Our service health monitoring alerted us to failures occurring when users attempt to view their feeds or edit posts or replies. We're reviewing the portion of service infrastructure responsible for facilitating users' feeds to isolate the source of the failures.\n\nScope of impact: Any user attempting to view their Viva Engage feed or edit posts or replies may be impacted.\n\nStart time: Friday, March 13, 2026, at 1:12 PM UTC\n\nNext update by: Friday, March 13, 2026, at 4:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-03-13T14:52:04.527Z",
-          "postType": "regular",
-          "content": "Title: Users' Microsoft Viva Engage feed may not load and they may encounter timeout errors when editing posts or replies\n\nUser impact: Users' Viva Engage feed may not load and they may encounter timeout errors when editing posts or replies.\n\nCurrent status: We're investigating a potential issue with Viva Engage and checking for impact to your organization. We'll provide an update within 30 minutes."
-        }
-      ],
-      "serviceName": "Microsoft Viva",
-      "affectedServices": [
-        "Microsoft Viva"
       ]
     }
   ]
