@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-13T20:18:31.386Z",
+  "lastUpdated": "2026-04-13T20:48:40.289Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -678,7 +678,7 @@
           "title": "Some users' newly enrolled devices in Microsoft Intune may be unable to access company resources",
           "startTime": "2026-04-13T19:42:25Z",
           "endTime": null,
-          "lastModified": "2026-04-13T20:10:26.313Z",
+          "lastModified": "2026-04-13T20:31:11.167Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users' newly enrolled devices in Microsoft Intune may be unable to access company resources.",
@@ -691,7 +691,7 @@
             {
               "createdAt": "2026-04-13T20:10:26.313Z",
               "postType": "regular",
-              "content": "Title: Some users' newly enrolled devices in Microsoft Intune may be unable to access company resources\n\nUser impact: Users' newly enrolled devices in Microsoft Intune may be unable to access company resources.\n\nCurrent status: We've identified that due to a code issue, when the Microsoft Intune service attempts to calculate a device's compliance status to provide access to company resources, it's failing to propagate the device state to the underlying Entra service, resulting in impact. To recover newly enrolled devices experiencing impact, we're working to retrigger these compliance calculations to re-initiate propagation to the Entra service. In parallel, we're testing a potential code fix to ensure no further devices fall into this state.\n\nScope of impact: This issue may affect some users' newly enrolled devices.\n\nRoot cause: Due to a code issue, when the Microsoft Intune service attempts to calculate a device's compliance status to provide access to company resources, it's failing to propagate the device state to the underlying Entra service, resulting in impact.\n\nNext update by: Monday, April 13, 2026, at 9:30 PM UTC"
+              "content": "Title: Some users' newly enrolled devices in Microsoft Intune may be unable to access company resources\n\nUser impact: Users' newly enrolled devices in Microsoft Intune may be unable to access company resources.\n\nMore info: This issue may also impact Entra re-registered devices.\n\nCurrent status: We've identified that due to a code issue, when the Microsoft Intune service attempts to calculate a device's compliance status to provide access to company resources, it's failing to propagate the device state to the underlying Entra service, resulting in impact. To recover newly enrolled devices experiencing impact, we're working to retrigger these compliance calculations to re-initiate propagation to the Entra service. In parallel, we're testing a potential code fix to ensure no further devices fall into this state.\n\nScope of impact: This issue may affect some users' newly enrolled devices.\n\nRoot cause: Due to a code issue, when the Microsoft Intune service attempts to calculate a device's compliance status to provide access to company resources, it's failing to propagate the device state to the underlying Entra service, resulting in impact.\n\nNext update by: Monday, April 13, 2026, at 9:30 PM UTC"
             },
             {
               "createdAt": "2026-04-13T19:48:17.12Z",
