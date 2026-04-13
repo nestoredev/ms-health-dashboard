@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-13T21:18:47.497Z",
+  "lastUpdated": "2026-04-13T21:48:54.981Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -678,16 +678,21 @@
           "title": "Some users' newly enrolled devices in Microsoft Intune may be unable to access company resources",
           "startTime": "2026-04-13T19:42:25Z",
           "endTime": null,
-          "lastModified": "2026-04-13T20:31:11.167Z",
+          "lastModified": "2026-04-13T21:19:52.247Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users' newly enrolled devices in Microsoft Intune may be unable to access company resources.",
           "scopeOfImpact": "This issue may affect some users' newly enrolled devices.",
           "rootCause": "Due to a code issue, when the Microsoft Intune service attempts to calculate a device's compliance status to provide access to company resources, it's failing to propagate the device state to the underlying Entra service, resulting in impact.",
-          "nextUpdateBy": "Monday, April 13, 2026, at 9:30 PM UTC",
+          "nextUpdateBy": "Monday, April 13, 2026, at 11:30 PM UTC",
           "feature": "Microsoft Intune",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-04-13T21:19:52.247Z",
+              "postType": "regular",
+              "content": "Title: Some users' newly enrolled devices in Microsoft Intune may be unable to access company resources\n\nUser impact: Users' newly enrolled devices in Microsoft Intune may be unable to access company resources.\n\nMore info: This issue may also impact Entra re-registered devices.\n\nCurrent status: We've started retriggering the compliance calculations to re-initiate propagation to the Entra service for currently affected devices. Some devices may begin to see relief as we continue this action. In parallel, we've initiated the deployment of a potential code fix to our internal testing environment for validation. Once we've confirmed the fix successfully resolves the code issue as expected, we'll prepare a deployment timeline to the broader impacted environment.\n\nScope of impact: This issue may affect some users' newly enrolled devices.\n\nRoot cause: Due to a code issue, when the Microsoft Intune service attempts to calculate a device's compliance status to provide access to company resources, it's failing to propagate the device state to the underlying Entra service, resulting in impact.\n\nNext update by: Monday, April 13, 2026, at 11:30 PM UTC"
+            },
             {
               "createdAt": "2026-04-13T20:10:26.313Z",
               "postType": "regular",
