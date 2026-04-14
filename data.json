@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-14T10:52:37.891Z",
+  "lastUpdated": "2026-04-14T11:22:44.441Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -290,206 +290,6 @@
               "createdAt": "2026-04-02T19:15:53.243Z",
               "postType": "regular",
               "content": "Title: Users may be intermittently unable to access their Exchange Online mailboxes in some connection methods\n\nUser impact: Users may be intermittently unable to access their Exchange Online mailboxes in some connection methods.\n\nMore info: This issue may intermittently impact some users who attempted to access the Exchange Online service through the Outlook mobile apps or the new Outlook for Mac desktop client.\n \nCurrent status: We've received reports from affected tenants that the impact scenario originally communicated through SHD EX1256020 is still ongoing. We're working to restart the Notification Broker service on affected portions of Exchange Online service infrastructure to remediate impact while we continue our analysis into the underlying root cause.\n \nScope of impact: Impact may occur intermittently for some users accessing their Exchange Online mailboxes in the Outlook mobile apps or the new Outlook for Mac desktop client. This section may be updated as our investigation progresses.\n \nNext update by: Thursday, April 2, 2026, at 11:30 PM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Exchange Online"
-          ]
-        },
-        {
-          "id": "EX1213792",
-          "title": "Admins couldn’t upgrade groups from Distribution Lists to Unified Groups using PowerShell or the Exchange admin center",
-          "startTime": "2026-01-06T06:49:02Z",
-          "endTime": null,
-          "lastModified": "2026-04-14T10:47:12.273Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Admins couldn’t upgrade groups from Distribution Lists to Unified Groups using PowerShell or the Exchange admin center.",
-          "scopeOfImpact": "Impact is specific to some admins attempting to upgrade groups from Distribution Lists to Unified Groups using PowerShell or the Exchange admin center. This section may be updated as our investigation continues.\n \nStart time: Friday, October 24, 2025, at 11:32 AM UTC",
-          "rootCause": "A timing issue during a recent migration is causing backend systems to act before directory changes are fully synchronized.",
-          "nextUpdateBy": "Tuesday, April 14, 2026, at 11:00 AM UTC",
-          "feature": "All clients",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-04-03T10:57:21.46Z",
-              "postType": "regular",
-              "content": "Title: Admins can’t upgrade groups from Distributions Lists to Unified Groups using PowerShell or the Exchange admin center\n\nUser impact: Admins can’t upgrade groups from Distributions Lists to Unified Groups using PowerShell or the Exchange admin center.\n\nMore info: As a workaround, admins may be able to run the following command to mitigate impact.\n\nIn Admin PowerShell, Run: New-UnifiedGroup -DlIdentity  \n\nCurrent status: We’ve deployed the fix to approximately 50% of the affected environment after fixing the issue that was causing the deployment to be delayed. We anticipate being able to provide a completion timeline by our next scheduled update.\n \nScope of impact: Impact is specific to some admins attempting to upgrade groups from Distribution Lists to Unified Groups using PowerShell or the Exchange admin center. This section may be updated as our investigation continues.\n \nStart time: Friday, October 24, 2025, at 11:32 AM UTC\n \nRoot cause: A timing issue during a recent migration is causing backend systems to act before directory changes are fully synchronized.\n \nNext update by: Tuesday, April 14, 2026, at 11:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-04-01T07:18:19.04Z",
-              "postType": "regular",
-              "content": "Title: Admins can’t upgrade groups from Distributions Lists to Unified Groups using PowerShell or the Exchange admin center\n\nUser impact: Admins can’t upgrade groups from Distributions Lists to Unified Groups using PowerShell or the Exchange admin center.\n\nCurrent status: We’ve deployed the fix to approximately 10% of the affected environment. We’re investigating the cause of the deployment delay and exploring alternative approaches to accelerate the rollout.\n \nScope of impact: Impact is specific to some admins attempting to upgrade groups from Distribution Lists to Unified Groups using PowerShell or the Exchange admin center. This section may be updated as our investigation continues.\n \nStart time: Friday, October 24, 2025, at 11:32 AM UTC\n \nRoot cause: A timing issue during a recent migration is causing backend systems to act before directory changes are fully synchronized.\n \nNext update by: Friday, April 3, 2026, at 11:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-03-20T07:47:39.92Z",
-              "postType": "regular",
-              "content": "Title: Admins can’t upgrade groups from Distributions Lists to Unified Groups using PowerShell or the Exchange admin center\n\nUser impact: Admins can’t upgrade groups from Distributions Lists to Unified Groups using PowerShell or the Exchange admin center.\n\nCurrent status: The deployment of the fix is progressing as anticipated, and we expect this to be complete and impact remediated by our next scheduled update.\n\nScope of impact: Impact is specific to some admins attempting to upgrade groups from Distribution Lists to Unified Groups using PowerShell or the Exchange admin center. This section may be updated as our investigation continues.\n\nStart time: Friday, October 24, 2025, at 11:32 AM UTC\n\nEstimated time to resolve: Wednesday, April 1, 2026\n\nRoot cause: A timing issue during a recent migration is causing backend systems to act before directory changes are fully synchronized.\n\nNext update by: Wednesday, April 1, 2026, at 9:30 AM UTC"
-            },
-            {
-              "createdAt": "2026-03-18T11:39:09.063Z",
-              "postType": "regular",
-              "content": "Title: Admins can’t upgrade groups from Distributions Lists to Unified Groups using PowerShell or the Exchange admin center\n\nUser impact: Admins can’t upgrade groups from Distributions Lists to Unified Groups using PowerShell or the Exchange admin center.\n\nCurrent status: We’re continuing to monitor the fix as it deploys across the impacted environments. We anticipate that the deployment should complete by Thursday, April 2, 2026. Once deployment has completed, the fix will be enabled to restore functionality.\n\nScope of impact: Impact is specific to some admins attempting to upgrade groups from Distribution Lists to Unified Groups using PowerShell or the Exchange admin center. This section may be updated as our investigation continues.\n\nStart time: Friday, October 24, 2025, at 11:32 AM UTC\n\nEstimated time to resolve: Thursday, April 2, 2026\n\nRoot cause: A timing issue during a recent migration is causing backend systems to act before directory changes are fully synchronized.\n\nNext update by: Thursday, April 2, 2026, at 10:30 AM UTC"
-            },
-            {
-              "createdAt": "2026-03-17T11:54:38.42Z",
-              "postType": "regular",
-              "content": "Title: Admins can’t upgrade groups from Distributions Lists to Unified Groups using PowerShell or the Exchange admin center\n\nUser impact: Admins can’t upgrade groups from Distributions Lists to Unified Groups using PowerShell or the Exchange admin center.\n\nCurrent status: We've determined that a timing issue during a recent migration is causing backend systems to act before directory changes are fully synchronized. This is leading to failures during group configuration, preventing the Distribution List from successfully upgrading to a Unified Group. We're monitoring the deployment fix as it saturates across all impacted environments, which is taking longer than anticipated due to additional validation steps.\n\nScope of impact: Impact is specific to some admins attempting to upgrade groups from Distribution Lists to Unified Groups using PowerShell or the Exchange admin center. This section may be updated as our investigation continues.\n \nStart time: Friday, October 24, 2025, at 11:32 AM UTC \n \nRoot cause: A timing issue during a recent migration is causing backend systems to act before directory changes are fully synchronized.\n \nNext update by: Wednesday, March 18, 2026, at 11:30 AM UTC"
-            },
-            {
-              "createdAt": "2026-03-16T11:56:10.407Z",
-              "postType": "regular",
-              "content": "Title: Admins can’t upgrade groups from Distributions Lists to Unified Groups using PowerShell or the Exchange admin center\n\nUser impact: Admins can’t upgrade groups from Distributions Lists to Unified Groups using PowerShell or the Exchange admin center.\n\nCurrent status: We're proceeding with our deployment of the fix across all impacted environments and expect completion by Tuesday, March 17, 2026.\n \nScope of impact: Impact is specific to some admins attempting to upgrade groups from Distribution Lists to Unified Groups using PowerShell or the Exchange admin center. This section may be updated as our investigation continues.\n \nEstimated time to resolve: Tuesday, March 17, 2026\n\nNext update by: Tuesday, March 17, 2026, at 12:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-03-12T11:06:18.65Z",
-              "postType": "regular",
-              "content": "Title: Admins can’t upgrade groups from Distributions Lists to Unified Groups using PowerShell or the Exchange admin center\n\nUser impact: Admins can’t upgrade groups from Distributions Lists to Unified Groups using PowerShell or the Exchange admin center.\n\nCurrent status: We're continuing to deploy the fix across all impacted environments and expect completion by Monday, March 16, 2026.\n \nScope of impact: Impact is specific to some admins attempting to upgrade groups from Distribution Lists to Unified Groups using PowerShell or the Exchange admin center. This section may be updated as our investigation continues.\n \nEstimated time to resolve: Monday, March 16, 2026\n\nNext update by: Monday, March 16, 2026, at 12:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-03-02T12:39:18.47Z",
-              "postType": "regular",
-              "content": "Title: Admins can’t upgrade groups from Distributions Lists to Unified Groups using PowerShell or the Exchange admin center\n\nUser impact: Admins can’t upgrade groups from Distributions Lists to Unified Groups using PowerShell or the Exchange admin center.\n\nCurrent status: We’ve developed a new fix and validated that it works in our testing environment. We’re currently deploying the fix across all impacted environments. Deployment is expected to complete by Monday, March 16, 2026. We’ll continue to monitor deployment progress and share updates accordingly.\n \nScope of impact: Impact is specific to some admins attempting to upgrade groups from Distribution Lists to Unified Groups using PowerShell or the Exchange admin center. This section may be updated as our investigation continues.\n \nEstimated time to resolve: Monday, March 16, 2026\n\nNext update by: Thursday, March 12, 2026, at 12:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-02-27T11:30:10.853Z",
-              "postType": "regular",
-              "content": "Title: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center\n\nUser impact: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center.\n\nCurrent status: We've determined that our previous fix did not successfully mitigate impact in the testing environment. We’ve now implemented an alternative fix in the test environment and will share an update on its effectiveness in our next scheduled communication.\n \nScope of impact: Impact is specific to some admins attempting to upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center. This section may be updated as our investigation. continues.\n \nNext update by: Monday, March 2, 2026, at 1:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-02-13T11:36:32.783Z",
-              "postType": "regular",
-              "content": "Title: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center\n\nUser impact: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center.\n\nCurrent status: We're continuing to test the fix within our internal testing environment. However, due to the complexity of the changes, this testing is expected to take an extended amount of time. We will share further details once testing has completed.\n\nScope of impact: Impact is specific to some admins attempting to upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center. This section may be updated as our investigation continues.\n\nNext update by: Friday, February 27, 2026, at 1:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-02-12T11:20:07.103Z",
-              "postType": "regular",
-              "content": "Title: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center\n\nUser impact: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center.\n\nCurrent status: We're deploying the fix to our test environment and expect this process to complete by our next scheduled update. After the deployment completes, we'll be able to validate its effectiveness before deploying to the affected environments.\n \nScope of impact: Impact is specific to some admins attempting to upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center. This section may be updated as our investigation continues.\n \nNext update by: Friday, February 13, 2026, at 1:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-02-10T12:22:35.443Z",
-              "postType": "regular",
-              "content": "Title: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center\n\nUser impact: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center.\n\nCurrent status: We’ve determined that the previously mentioned fix didn't successfully mitigate impact in our testing environment. As a result, we’ve developed an additional fix and are preparing to deploy it to our test environment to validate its effectiveness before deploying it to affected environments.\n \nScope of impact: Impact is specific to some admins attempting to upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center. This section may be updated as our investigation continues.\n \nNext update by: Thursday, February 12, 2026, at 1:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-02-06T12:54:20.887Z",
-              "postType": "regular",
-              "content": "Title: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center\n\nUser impact: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center.\n\nCurrent status: We're progressing with our validation of the fix to ensure its efficacy. We'll provide a completion timeline when one becomes available.\n \nScope of impact: Impact is specific to some admins attempting to upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center. This section may be updated as our investigation continues.\n \nNext update by: Tuesday, February 10, 2026, at 1:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-02-04T13:33:34.853Z",
-              "postType": "regular",
-              "content": "Title: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center\n\nUser impact: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center.\n\nCurrent status: We're continuing to validate the fix to ensure its efficacy. We'll provide a completion timeline when one becomes available.\n\nScope of impact: Impact is specific to some admins attempting to upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center. This section may be updated as our investigation continues.\n\nNext update by: Friday, February 6, 2026, at 1:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-02-04T06:29:33.747Z",
-              "postType": "regular",
-              "content": "Title: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center\n\nUser impact: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center.\n\nCurrent status: We've begun validation on the fix to ensure its efficacy. We'll provide a completion timeline when one becomes available.\n\nScope of impact: Impact is specific to some admins attempting to upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center. This section may be updated as our investigation continues.\n\nNext update by: Wednesday, February 4, 2026, at 1:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-02-02T06:58:44.163Z",
-              "postType": "regular",
-              "content": "Title: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center\n\nUser impact: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center.\n\nCurrent status: After evaluating all available logging, we've identified a fix to safely resolve the impact. We're in the final stages of its development process and once the fix is ready, we will first deploy it to our test environment for validation.\n\nScope of impact: Impact is specific to some admins attempting to upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center. This section may be updated as our investigation continues.\n\nNext update by: Wednesday, February 4, 2026, at 8:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-01-30T06:41:37.953Z",
-              "postType": "regular",
-              "content": "Title: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center\n\nUser impact: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center.\n\nCurrent status: We expect that the fix will complete deployment to our internal testing environment, allowing us to validate its efficacy by the time of our next scheduled update. Additionally, we’re reaching out to a subset of affected users to provide Fiddler trace logs to assist us in validating that the previously mentioned timing-related issue during group creation is leading to impact and subsequently expedite the ongoing deployment of the aforementioned fix.\n\n\nScope of impact: Impact is specific to some admins attempting to upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center. This section may be updated as our investigation continues.\n\nNext update by: Monday, February 2, 2026, at 8:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-01-28T07:00:13.37Z",
-              "postType": "regular",
-              "content": "Title: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center\n\nUser impact: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center.\n\nCurrent status: We've encountered an issue preventing us from safely rolling out the code changes we were previously theorizing may be able to resolve the issue. We've identified that due to the complexity of the involved request flow and low volume of data associated with the impacted scenario, our internal reproduction of the issue is insufficient to conclusively validate our root cause theory without making changes to enhance our service logging specific to this scenario. We're evaluating options for implementing advanced logging and data collection methods to assist us in identifying our next steps towards remediation, as well as reassessing our options for safely deploying our potential fix.\n\nScope of impact: Impact is specific to some admins attempting to upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center. This section may be updated as our investigation continues.\n\nNext update by: Friday, January 30, 2026, at 8:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-01-27T14:34:38.737Z",
-              "postType": "regular",
-              "content": "Title: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center\n\nUser impact: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center.\n\nCurrent status: We’re proceeding to work on the fix to ensure directory cache information is refreshed correctly across all servers. We’re also progressing our deployment validation and now expect to provide a completion timeline by our next scheduled update. \n\nScope of impact: Impact is specific to some admins attempting to upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center. This section may be updated as our investigation continues.\n\nRoot cause: A timing-related issue during group creation across backend systems where service requests are processed before directory information has fully refreshed across all servers, leading to impact.\n\nNext update by: Wednesday, January 28, 2026, at 7:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-01-26T14:15:11.497Z",
-              "postType": "regular",
-              "content": "Title: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center\n\nUser impact: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center.\n\nCurrent status: We’re actively working on the fix to ensure directory cache information is refreshed correctly across all servers. We’re progressing our deployment validation and expect to provide a completion timeline by our next scheduled update. \n \nScope of impact: Impact is specific to some admins attempting to upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center. This section may be updated as our investigation continues.\n \nRoot cause: A timing-related issue during group creation across backend systems where service requests are processed before directory information has fully refreshed across all servers, leading to impact.\n \nNext update by: Tuesday, January 27, 2026, at 3:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-01-23T14:56:31.193Z",
-              "postType": "regular",
-              "content": "Title: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center\n\nUser impact: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center.\n\nCurrent status: We've identified a timing-related issue during group creation across backend systems where service requests are processed before directory information has fully refreshed across all servers, leading to impact. We're deploying a fix to ensure directory cache information is refreshed correctly across all servers and expect to provide completion timeline by our next scheduled update. \n \nScope of impact: Impact is specific to some admins attempting to upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center. This section may be updated as our investigation continues.\n \nRoot cause: A timing-related issue during group creation across backend systems where service requests are processed before directory information has fully refreshed across all servers, leading to impact.\n \nNext update by: Monday, January 26, 2026, at 3:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-01-23T06:44:43.197Z",
-              "postType": "regular",
-              "content": "Title: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center\n\nUser impact: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center.\n\nCurrent status: We're continuing our review of the latest collected error logs and service data to gain further insight into the underlying source of impact and determine our next steps.\n\nScope of impact: Impact is specific to some admins attempting to upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center. This section may be updated as our investigation continues.\n\nNext update by: Friday, January 23, 2026, at 3:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-01-22T06:51:34.18Z",
-              "postType": "regular",
-              "content": "Title: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center\n\nUser impact: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center.\n\nCurrent status: After initial difficulties with acquiring specific logs from the impacted service, we've successfully managed to gather the needed error logs to help our investigation into the root cause of impact. We're analyzing these, along with previous data, to help inform our next troubleshooting steps and strategy to resolve the issue.\n \nScope of impact: Impact is specific to some admins attempting to upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center. This section may be updated as our investigation continues.\n \nNext update by: Friday, January 23, 2026, at 8:30 AM UTC"
-            },
-            {
-              "createdAt": "2026-01-21T06:37:09.14Z",
-              "postType": "regular",
-              "content": "Title: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center\n\nUser impact: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center.\n\nCurrent status: We're continuing our efforts to gather and analyze additional service logging as we continue to work towards gathering data from an internal reproduction of the issue. Due to the complexity of the scenario, we're anticipating it may require some additional time before we can determine our options for mitigation.\n\nScope of impact: Impact is specific to some admins attempting to upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center. This section may be updated as our investigation continues.\n\nNext update by: Thursday, January 22, 2026, at 8:30 AM UTC"
-            },
-            {
-              "createdAt": "2026-01-21T01:38:12.073Z",
-              "postType": "regular",
-              "content": "Title: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center\n\nUser impact: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center.\n\nCurrent status: The previously mentioned log analysis to help understand why impact is occurring and to identify a strategy to resolve impact is ongoing. In parallel, we’re working to reproduce the issue internally to help aid our root cause investigation.\n \nScope of impact: Impact is specific to some admins attempting to upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center. This section may be updated as our investigation continues.\n \nNext update by: Wednesday, January 21, 2026, at 8:30 AM UTC"
-            },
-            {
-              "createdAt": "2026-01-21T00:17:02.623Z",
-              "postType": "regular",
-              "content": "Title: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center\n\nUser impact: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center.\n\nCurrent status: We're continuing our analysis of the diagnostic logs, along with request IDs and error logs, to help identify the underlying root cause of impact and to inform our next steps to resolve the impact.\n \nScope of impact: Impact is specific to some admins attempting to upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center. This section may be updated as our investigation continues.\n \nNext update by: Wednesday, January 21, 2026, at 2:30 AM UTC"
-            },
-            {
-              "createdAt": "2026-01-20T17:38:31.283Z",
-              "postType": "regular",
-              "content": "Title: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center\n\nUser impact: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center.\n\nCurrent status: Our analysis of the diagnostic logging is progressing as we work to identify the source of the issue and inform our next steps towards developing a strategy to resolve the impact.\n\nScope of impact: Impact is specific to some admins attempting to upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center.\n\nNext update by: Wednesday, January 21, 2026, at 12:30 AM UTC"
-            },
-            {
-              "createdAt": "2026-01-19T14:03:46.82Z",
-              "postType": "regular",
-              "content": "Title: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center\n\nUser impact: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center.\n\nCurrent status: We're proceeding with our analysis of the diagnostic logs, to isolate the underlying root cause of impact and formulate a mitigation plan.\n\nScope of impact: Impact is specific to some admins attempting to upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center.\n\nNext update by: Tuesday, January 20, 2026, at 6:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-01-14T14:52:21.2Z",
-              "postType": "regular",
-              "content": "Title: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center\n\nUser impact: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center.\n\nCurrent status: We're continuing to analyze the diagnostic logs to isolate the root cause of impact and develop a fix.\n \nScope of impact: Impact is specific to some admins attempting to upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center.\n \nNext update by: Monday, January 19, 2026, at 3:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-01-13T13:45:05.56Z",
-              "postType": "regular",
-              "content": "Title: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center\n\nUser impact: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center.\n\nCurrent status: We've collected diagnostic logs and we're analyzing them to isolate the root cause of impact and develop a fix.\n\nScope of impact: Impact is specific to some admins attempting to upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center.\n\nNext update by: Wednesday, January 14, 2026, at 3:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-01-12T13:21:23.54Z",
-              "postType": "regular",
-              "content": "Title: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center\n\nUser impact: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center.\n\nCurrent status: We're obtaining diagnostic logs to help us isolate the root cause of impact and formulate a mitigation plan.\n \nScope of impact: Impact is specific to some admins attempting to upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center.\n \nNext update by: Tuesday, January 13, 2026, at 3:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-01-09T13:16:55.797Z",
-              "postType": "regular",
-              "content": "Title: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center\n\nUser impact: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center.\n\nCurrent status: Our efforts to review logs, group creation and deletion processes, and environmental differences to reach a mitigation plan and root cause analysis is ongoing.\n\nScope of impact: Your organization is affected by this event, and admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center. This information may be updated as our investigation continues.\n\nNext update by: Monday, January 12, 2026, at 2:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-01-07T13:58:58.24Z",
-              "postType": "regular",
-              "content": "Title: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center\n\nUser impact: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center.\n\nCurrent status: We’re continuing with our review logs, group creation and deletion processes, and environmental differences to find the cause of the upgrade issue.\n \nScope of impact: Your organization is affected by this event, and admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center. This information may be updated as our investigation continues.\n \nNext update by: Friday, January 9, 2026, at 2:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-01-06T12:51:01.537Z",
-              "postType": "regular",
-              "content": "Title: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center\n\nUser impact: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center.\n\nCurrent status: We’re currently reviewing logs, group creation and deletion processes, and environmental differences to find the cause of the upgrade issue.\n \nScope of impact: Your organization is affected by this event, and admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center. This information may be updated as our investigation continues.\n \nNext update by: Wednesday, January 7, 2026, at 2:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-01-06T07:00:53.827Z",
-              "postType": "regular",
-              "content": "Title: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center\n\nUser impact: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center.\n\nCurrent status: We're reviewing system logs to isolate the origin of this issue.\n\nScope of impact: Your organization is affected by this event, and any admin can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center. This information may be updated as our investigation continues.\n\nNext update by: Tuesday, January 6, 2026, at 2:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-01-06T06:50:39.683Z",
-              "postType": "regular",
-              "content": "Title: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center\n\nUser impact: Admins can’t upgrade groups from distributions lists to unified groups from PowerShell and the Exchange admin center.\n\nCurrent status: We're investigating a potential issue in which admins can’t upgrade groups from distributions lists to unified groups from both PowerShell and the Exchange admin center and checking for impact to your organization. We'll provide an update within 30 minutes."
             }
           ],
           "affectedServices": [
@@ -1296,6 +1096,52 @@
       "serviceName": "Microsoft 365 suite",
       "affectedServices": [
         "Microsoft 365 suite"
+      ]
+    },
+    {
+      "id": "EX1213792",
+      "title": "Admins couldn’t upgrade groups from Distribution Lists to Unified Groups using PowerShell or the Exchange admin center",
+      "startTime": "2026-01-06T06:49:02Z",
+      "endTime": "2026-04-08T04:33:00Z",
+      "lastModified": "2026-04-14T11:09:50.413Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Admins couldn’t upgrade groups from Distribution Lists to Unified Groups using PowerShell or the Exchange admin center.",
+      "scopeOfImpact": "Impact was specific to some admins attempting to upgrade groups from Distribution Lists to Unified Groups using PowerShell or the Exchange admin center.\n \nStart time: Friday, October 24, 2025, at 11:32 AM UTC\n \nEnd time: Wednesday, April 8, 2026, at 4:33 AM UTC",
+      "rootCause": "A timing issue during a recent migration causes backend systems to act before directory changes were fully synchronized, resulting in impact.\n \nNext steps:\n- We’re considering deprecating the Upgrade-DistributionGroup cmdlet in the future.\n \nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "All clients",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-04-14T11:03:31.05Z",
+          "postType": "regular",
+          "content": "Title: Admins couldn’t upgrade groups from Distribution Lists to Unified Groups using PowerShell or the Exchange admin center\n\nUser impact: Admins couldn’t upgrade groups from Distribution Lists to Unified Groups using PowerShell or the Exchange admin center.\n\nFinal status: We’ve confirmed that the fix is fully deployed across all impacted environments. Admins can now use the New-UnifiedGroup cmdlet in PowerShell to convert Distribution Lists to Unified Groups:\n \nNew-UnifiedGroup -DlIdentity <DistributionGroupIdParameter> -DeleteDlAfterMigration\n \nAdmins who run the Upgrade-DistributionGroup cmdlet directly will continue to encounter failures. This cmdlet may be deprecated in the future.\n \nScope of impact: Impact was specific to some admins attempting to upgrade groups from Distribution Lists to Unified Groups using PowerShell or the Exchange admin center.\n \nStart time: Friday, October 24, 2025, at 11:32 AM UTC\n \nEnd time: Wednesday, April 8, 2026, at 4:33 AM UTC\n \nRoot cause: A timing issue during a recent migration causes backend systems to act before directory changes were fully synchronized, resulting in impact.\n \nNext steps:\n- We’re considering deprecating the Upgrade-DistributionGroup cmdlet in the future.\n \nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-04-03T10:57:21.46Z",
+          "postType": "regular",
+          "content": "Title: Admins can’t upgrade groups from Distributions Lists to Unified Groups using PowerShell or the Exchange admin center\n\nUser impact: Admins can’t upgrade groups from Distributions Lists to Unified Groups using PowerShell or the Exchange admin center.\n\nMore info: As a workaround, admins may be able to run the following command to mitigate impact.\n\nIn Admin PowerShell, Run: New-UnifiedGroup -DlIdentity  \n\nCurrent status: We’ve deployed the fix to approximately 50% of the affected environment after fixing the issue that was causing the deployment to be delayed. We anticipate being able to provide a completion timeline by our next scheduled update.\n \nScope of impact: Impact is specific to some admins attempting to upgrade groups from Distribution Lists to Unified Groups using PowerShell or the Exchange admin center. This section may be updated as our investigation continues.\n \nStart time: Friday, October 24, 2025, at 11:32 AM UTC\n \nRoot cause: A timing issue during a recent migration is causing backend systems to act before directory changes are fully synchronized.\n \nNext update by: Tuesday, April 14, 2026, at 11:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-04-01T07:18:19.04Z",
+          "postType": "regular",
+          "content": "Title: Admins can’t upgrade groups from Distributions Lists to Unified Groups using PowerShell or the Exchange admin center\n\nUser impact: Admins can’t upgrade groups from Distributions Lists to Unified Groups using PowerShell or the Exchange admin center.\n\nCurrent status: We’ve deployed the fix to approximately 10% of the affected environment. We’re investigating the cause of the deployment delay and exploring alternative approaches to accelerate the rollout.\n \nScope of impact: Impact is specific to some admins attempting to upgrade groups from Distribution Lists to Unified Groups using PowerShell or the Exchange admin center. This section may be updated as our investigation continues.\n \nStart time: Friday, October 24, 2025, at 11:32 AM UTC\n \nRoot cause: A timing issue during a recent migration is causing backend systems to act before directory changes are fully synchronized.\n \nNext update by: Friday, April 3, 2026, at 11:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-03-20T07:47:39.92Z",
+          "postType": "regular",
+          "content": "Title: Admins can’t upgrade groups from Distributions Lists to Unified Groups using PowerShell or the Exchange admin center\n\nUser impact: Admins can’t upgrade groups from Distributions Lists to Unified Groups using PowerShell or the Exchange admin center.\n\nCurrent status: The deployment of the fix is progressing as anticipated, and we expect this to be complete and impact remediated by our next scheduled update.\n\nScope of impact: Impact is specific to some admins attempting to upgrade groups from Distribution Lists to Unified Groups using PowerShell or the Exchange admin center. This section may be updated as our investigation continues.\n\nStart time: Friday, October 24, 2025, at 11:32 AM UTC\n\nEstimated time to resolve: Wednesday, April 1, 2026\n\nRoot cause: A timing issue during a recent migration is causing backend systems to act before directory changes are fully synchronized.\n\nNext update by: Wednesday, April 1, 2026, at 9:30 AM UTC"
+        },
+        {
+          "createdAt": "2026-03-18T11:39:09.063Z",
+          "postType": "regular",
+          "content": "Title: Admins can’t upgrade groups from Distributions Lists to Unified Groups using PowerShell or the Exchange admin center\n\nUser impact: Admins can’t upgrade groups from Distributions Lists to Unified Groups using PowerShell or the Exchange admin center.\n\nCurrent status: We’re continuing to monitor the fix as it deploys across the impacted environments. We anticipate that the deployment should complete by Thursday, April 2, 2026. Once deployment has completed, the fix will be enabled to restore functionality.\n\nScope of impact: Impact is specific to some admins attempting to upgrade groups from Distribution Lists to Unified Groups using PowerShell or the Exchange admin center. This section may be updated as our investigation continues.\n\nStart time: Friday, October 24, 2025, at 11:32 AM UTC\n\nEstimated time to resolve: Thursday, April 2, 2026\n\nRoot cause: A timing issue during a recent migration is causing backend systems to act before directory changes are fully synchronized.\n\nNext update by: Thursday, April 2, 2026, at 10:30 AM UTC"
+        }
+      ],
+      "serviceName": "Exchange Online",
+      "affectedServices": [
+        "Exchange Online"
       ]
     },
     {
