@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-13T23:49:27.212Z",
+  "lastUpdated": "2026-04-14T00:19:36.067Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -11,9 +11,9 @@
           "title": "Users may be unable to access archived email messages in Outlook on the web",
           "startTime": "2026-03-24T11:08:01Z",
           "endTime": null,
-          "lastModified": "2026-04-13T16:59:29.017Z",
+          "lastModified": "2026-04-13T23:54:57.443Z",
           "status": "serviceDegradation",
-          "severity": "incident",
+          "severity": "advisory",
           "userImpact": "Users may be unable to access archived email messages in Outlook on the web. ",
           "scopeOfImpact": "Impact is specific to some users attempting to access archived email messages in Outlook on the web. This section may be updated as our investigation continues.\n\nStart time: Tuesday, March 24, 2026, at 9:37 AM UTC",
           "rootCause": "A code issue is resulting in restricted access when archiving email messages in Outlook on the web. The primary and archive mailboxes are on different machines, the request to access the mailbox is landing in the correct portion of infrastructure but is trying to find the primary instead of the archive mailbox, resulting in impact.",
@@ -674,59 +674,24 @@
       "id": "Intune",
       "issues": [
         {
-          "id": "IT1279031",
-          "title": "Some users' newly enrolled devices in Microsoft Intune may be unable to access company resources",
-          "startTime": "2026-04-13T19:42:25Z",
-          "endTime": null,
-          "lastModified": "2026-04-13T21:47:32.103Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users' newly enrolled devices in Microsoft Intune may be unable to access company resources.",
-          "scopeOfImpact": "This issue may affect some users' newly enrolled devices.",
-          "rootCause": "Due to a code issue, when the Microsoft Intune service attempts to calculate a device's compliance status to provide access to company resources, it's failing to propagate the device state to the underlying Entra service, resulting in impact.",
-          "nextUpdateBy": "Tuesday, April 14, 2026, at 1:00 AM UTC",
-          "feature": "Microsoft Intune",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-04-13T21:19:52.247Z",
-              "postType": "regular",
-              "content": "Title: Some users' newly enrolled devices in Microsoft Intune may be unable to access company resources\n\nUser impact: Users' newly enrolled devices in Microsoft Intune may be unable to access company resources.\n\nMore info: This issue may also impact Entra re-registered devices.\n\nCurrent status: We've started retriggering the compliance calculations to re-initiate propagation to the Entra service for currently affected devices. Some devices may begin to see relief as we continue this action. In parallel, we've initiated the deployment of a potential code fix to our internal testing environment for validation. Once we've confirmed the fix successfully resolves the code issue as expected, we'll prepare a deployment timeline to the broader impacted environment.\n\nScope of impact: This issue may affect some users' newly enrolled devices.\n\nRoot cause: Due to a code issue, when the Microsoft Intune service attempts to calculate a device's compliance status to provide access to company resources, it's failing to propagate the device state to the underlying Entra service, resulting in impact.\n\nNext update by: Tuesday, April 14, 2026, at 1:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-04-13T20:10:26.313Z",
-              "postType": "regular",
-              "content": "Title: Some users' newly enrolled devices in Microsoft Intune may be unable to access company resources\n\nUser impact: Users' newly enrolled devices in Microsoft Intune may be unable to access company resources.\n\nMore info: This issue may also impact Entra re-registered devices.\n\nCurrent status: We've identified that due to a code issue, when the Microsoft Intune service attempts to calculate a device's compliance status to provide access to company resources, it's failing to propagate the device state to the underlying Entra service, resulting in impact. To recover newly enrolled devices experiencing impact, we're working to retrigger these compliance calculations to re-initiate propagation to the Entra service. In parallel, we're testing a potential code fix to ensure no further devices fall into this state.\n\nScope of impact: This issue may affect some users' newly enrolled devices.\n\nRoot cause: Due to a code issue, when the Microsoft Intune service attempts to calculate a device's compliance status to provide access to company resources, it's failing to propagate the device state to the underlying Entra service, resulting in impact.\n\nNext update by: Monday, April 13, 2026, at 9:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-04-13T19:48:17.12Z",
-              "postType": "regular",
-              "content": "Title: Some users' newly enrolled devices in Microsoft Intune may be unable to access company resources\n\nUser impact: Users' newly enrolled devices in Microsoft Intune may be unable to access company resources.\n\nCurrent status: We're investigating a potential issue with Microsoft Intune and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Microsoft Intune"
-          ]
-        },
-        {
           "id": "IT1272653",
           "title": "Users may be unable to install user targeted apps that have been made available in the Intune Company Portal",
           "startTime": "2026-04-02T03:30:00Z",
           "endTime": null,
-          "lastModified": "2026-04-13T21:08:28.54Z",
+          "lastModified": "2026-04-14T00:14:39.253Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to install user targeted apps that have been made available in the Intune Company Portal.",
           "scopeOfImpact": "Impact is specific to some users attempting to install user targeted apps in the Intune Company Portal. This information may be updated as our investigation continues.\n\nStart time: Thursday, April 2, 2026, at 3:30 AM UTC",
           "rootCause": "A recent service update introduced a regression that prevented app installations from progressing as expected which changed how a required configuration file was packaged, resulting in the file not being available and preventing app downloads from completing.",
-          "nextUpdateBy": "Tuesday, April 14, 2026, at 2:00 AM UTC",
+          "nextUpdateBy": "Tuesday, April 14, 2026, at 3:30 AM UTC",
           "feature": "Microsoft Intune",
           "isResolved": false,
           "posts": [
             {
               "createdAt": "2026-04-13T21:08:28.54Z",
               "postType": "regular",
-              "content": "Title: Users may be unable to install user targeted apps that have been made available in the Intune Company Portal\n\nUser impact: Users may be unable to install user targeted apps that have been made available in the Intune Company Portal.\n\nMore info: Affected users may observe that app installations in the Intune Company Portal are stuck in a “Download Pending” state. A fix is currently being deployed, and impacted devices will receive an Intune client upgrade to version 1.101.109.0.\nUsers who attempted to install user targeted apps while their device was running a version of the IME impacted by this issue and whose group memberships were modified by an administrator before the fixed IME version was deployed, may continue to experience the issue. We’re actively working on an additional fix to remediate this subset of users.\n\nCurrent status: We're continuing to monitor as the supplemental fix progresses however our testing indicates that this doesn't resolve all devices in the company portal. While users will continue to see relief as the fix progresses and we're continuing our analysis of the remaining affected devices to identify and remediate them.\n\nScope of impact: Impact is specific to some users attempting to install user targeted apps in the Intune Company Portal. This information may be updated as our investigation continues.\n\nStart time: Thursday, April 2, 2026, at 3:30 AM UTC\n\nRoot cause: A recent service update introduced a regression that prevented app installations from progressing as expected which changed how a required configuration file was packaged, resulting in the file not being available and preventing app downloads from completing.\n\nNext update by: Tuesday, April 14, 2026, at 2:00 AM UTC"
+              "content": "Title: Users may be unable to install user targeted apps that have been made available in the Intune Company Portal\n\nUser impact: Users may be unable to install user targeted apps that have been made available in the Intune Company Portal.\n\nMore info: Affected users may observe that app installations in the Intune Company Portal are stuck in a “Download Pending” state. A fix is currently being deployed, and impacted devices will receive an Intune client upgrade to version 1.101.109.0.\nUsers who attempted to install user targeted apps while their device was running a version of the IME impacted by this issue and whose group memberships were modified by an administrator before the fixed IME version was deployed, may continue to experience the issue. We’re actively working on an additional fix to remediate this subset of users.\n\nCurrent status: We're continuing to monitor as the supplemental fix progresses however our testing indicates that this doesn't resolve all devices in the company portal. While users will continue to see relief as the fix progresses and we're continuing our analysis of the remaining affected devices to identify and remediate them.\n\nScope of impact: Impact is specific to some users attempting to install user targeted apps in the Intune Company Portal. This information may be updated as our investigation continues.\n\nStart time: Thursday, April 2, 2026, at 3:30 AM UTC\n\nRoot cause: A recent service update introduced a regression that prevented app installations from progressing as expected which changed how a required configuration file was packaged, resulting in the file not being available and preventing app downloads from completing.\n\nNext update by: Tuesday, April 14, 2026, at 3:30 AM UTC"
             },
             {
               "createdAt": "2026-04-10T20:00:40.997Z",
@@ -1354,7 +1319,7 @@
       "title": "A small subset of admins in North America and Brazil may be unable to access the Microsoft 365 admin center ",
       "startTime": "2026-04-06T17:45:00Z",
       "endTime": "2026-04-06T22:11:07Z",
-      "lastModified": "2026-04-08T23:36:38.827Z",
+      "lastModified": "2026-04-14T00:04:32.777Z",
       "status": "postIncidentReviewPublished",
       "severity": "incident",
       "userImpact": "A subset of admins in North America and Brazil may have been unable to access the Microsoft 365 admin center.",
@@ -1364,6 +1329,11 @@
       "feature": "Company or User Administration",
       "isResolved": true,
       "posts": [
+        {
+          "createdAt": "2026-04-14T00:04:32.777Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        },
         {
           "createdAt": "2026-04-08T23:36:38.827Z",
           "postType": "regular",
@@ -1383,11 +1353,6 @@
           "createdAt": "2026-04-06T20:36:48.67Z",
           "postType": "regular",
           "content": "Title: A small subset of admins in North America and Brazil may be unable to access the Microsoft 365 admin center \n\nUser impact: A subset of admins in North America and Brazil may be unable to access the Microsoft 365 admin center.\n\nCurrent status: We confirmed that an issue in a recent update introduced errors in the code path that facilitates calls to the Microsoft 365 admin center when encountered by admins, which resulted in their inability to access the Microsoft 365 admin center. As mentioned previously, we're reverting this update to resolve the issue. The reversion was completed on a portion of infrastructure and our telemetry is showing positive trends. We're closely tracking its progress to ensure all infrastructure receives the change. \n\nScope of impact: A small subset of admins in North America who are attempting to access the Microsoft 365 admin center may be impacted. \n \nStart time: Monday, April 6, 2026, at 5:45 PM UTC\n\nPreliminary root cause: A recent deployment introduced a code issue which introduced errors in the code path that facilitates calls to the Microsoft 365 admin center and is preventing some admins from accessing the Microsoft 365 admin center as expected. \n\nNext update: Monday, April 6, 2026, at 9:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-04-06T19:59:06.01Z",
-          "postType": "quick",
-          "content": "Current status: We're observing some service recovery as our reversion of the recent deployment progresses throughout the impacted infrastructure. We'll continue to carefully monitor the service during the reversion process to confirm full restoration. \n\nThis quick update is designed to give the latest information on this issue."
         }
       ],
       "serviceName": "Microsoft 365 suite",
