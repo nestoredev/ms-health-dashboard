@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-14T18:24:50.003Z",
+  "lastUpdated": "2026-04-14T18:54:57.880Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -176,16 +176,21 @@
           "title": "Users may be intermittently unable to access their Exchange Online mailboxes in some connection methods.",
           "startTime": "2026-04-02T19:14:14Z",
           "endTime": null,
-          "lastModified": "2026-04-13T18:34:10.327Z",
+          "lastModified": "2026-04-14T18:48:08.293Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be intermittently unable to access their Exchange Online mailboxes in some connection methods.",
-          "scopeOfImpact": "Impact may occur intermittently for some users with a smaller small set of users persistently being unable to access their Exchange Online mailboxes in the Outlook mobile apps or the new Outlook for Mac desktop client. This section may be updated as our investigation progresses.",
-          "rootCause": "A service that facilitates notification generation and delivery isn't processing requests as expected, resulting in impact.",
-          "nextUpdateBy": "Tuesday, April 14, 2026, at 8:00 PM UTC",
+          "scopeOfImpact": "This issue intermittently impacts some users attempting to access their Exchange Online mailboxes, with a smaller subset of users persistently unable to access their Exchange Online mailboxes in the Outlook mobile apps or the new Outlook for Mac desktop client. This section may be updated as our investigation progresses.\n\nStart time: Tuesday, March 17, 2026, at 2:00 PM UTC",
+          "rootCause": "A service component that facilitates notification generation and delivery isn't processing requests as expected, which is resulting in impact.",
+          "nextUpdateBy": "Friday, April 17, 2026, at 8:00 PM UTC",
           "feature": "Performance degradation",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-04-14T18:48:08.293Z",
+              "postType": "regular",
+              "content": "Title: Users may be intermittently unable to access their Exchange Online mailboxes in some connection methods.\n\nUser impact: Users may be intermittently unable to access their Exchange Online mailboxes in some connection methods.\n\nMore info: This issue may intermittently impact some users attempting to access the Exchange Online service through the Outlook mobile apps or the new Outlook for Mac desktop client.\n\nCurrent status: We're continuing to monitor our fix deployment as it saturates throughout the remaining 10 percent of the affected environment. Many previously impacted users will begin to experience significant impact relief as this saturation finalizes. In tandem, we're implementing a program to identify and restart the Notification service as persistent errors are identified. \n\nScope of impact: This issue intermittently impacts some users attempting to access their Exchange Online mailboxes, with a smaller subset of users persistently unable to access their Exchange Online mailboxes in the Outlook mobile apps or the new Outlook for Mac desktop client. This section may be updated as our investigation progresses.\n\nStart time: Tuesday, March 17, 2026, at 2:00 PM UTC\n\nRoot cause: A service component that facilitates notification generation and delivery isn't processing requests as expected, which is resulting in impact.\n\nNext update by: Friday, April 17, 2026, at 8:00 PM UTC"
+            },
             {
               "createdAt": "2026-04-13T18:34:10.327Z",
               "postType": "regular",
@@ -434,10 +439,10 @@
           "title": "Users may be unable to install user targeted apps that have been made available in the Intune Company Portal",
           "startTime": "2026-04-02T03:30:00Z",
           "endTime": null,
-          "lastModified": "2026-04-14T02:25:57.637Z",
+          "lastModified": "2026-04-14T18:47:09.277Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "userImpact": "Users may be unable to install user targeted apps that have been made available in the Intune Company Portal.",
+          "userImpact": "Users may have been unable to install user targeted apps that have been made available in the Intune Company Portal.",
           "scopeOfImpact": "Impact is specific to some users attempting to install user targeted apps in the Intune Company Portal. This information may be updated as our investigation continues.\n\nStart time: Thursday, April 2, 2026, at 3:30 AM UTC",
           "rootCause": "A recent service update introduced a regression that prevented app installations from progressing as expected which changed how a required configuration file was packaged, resulting in the file not being available and preventing app downloads from completing.",
           "nextUpdateBy": "Tuesday, April 14, 2026, at 7:30 PM UTC",
