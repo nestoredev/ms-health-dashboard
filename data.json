@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-15T00:26:19.116Z",
+  "lastUpdated": "2026-04-15T00:56:26.322Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -295,6 +295,31 @@
               "createdAt": "2026-04-02T19:15:53.243Z",
               "postType": "regular",
               "content": "Title: Users may be intermittently unable to access their Exchange Online mailboxes in some connection methods\n\nUser impact: Users may be intermittently unable to access their Exchange Online mailboxes in some connection methods.\n\nMore info: This issue may intermittently impact some users who attempted to access the Exchange Online service through the Outlook mobile apps or the new Outlook for Mac desktop client.\n \nCurrent status: We've received reports from affected tenants that the impact scenario originally communicated through SHD EX1256020 is still ongoing. We're working to restart the Notification Broker service on affected portions of Exchange Online service infrastructure to remediate impact while we continue our analysis into the underlying root cause.\n \nScope of impact: Impact may occur intermittently for some users accessing their Exchange Online mailboxes in the Outlook mobile apps or the new Outlook for Mac desktop client. This section may be updated as our investigation progresses.\n \nNext update by: Thursday, April 2, 2026, at 11:30 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online"
+          ]
+        },
+        {
+          "id": "EX1280216",
+          "title": "Admins may experience failures when running admin operations the admin portal in Exchange Online",
+          "startTime": "2026-04-15T00:38:10Z",
+          "endTime": null,
+          "lastModified": "2026-04-15T00:50:52.633Z",
+          "status": "investigating",
+          "severity": "advisory",
+          "userImpact": "Admins may experience failures when running admin operations the admin portal in Exchange Online.",
+          "scopeOfImpact": "This event impacts any admin attempting to run admin operations through the Exchange Online admin portal, and any admin may see failures. This section may be updated as our investigation continues.\n\nStart time: Monday, April 13, 2026, at 10:00 PM UTC",
+          "rootCause": "A recent build update contained a regression to running PowerShell scripts, resulting in this impact",
+          "nextUpdateBy": "Wednesday, April 15, 2026, at 6:00 AM UTC",
+          "feature": "Remote PowerShell - problem connecting",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-04-15T00:50:52.633Z",
+              "postType": "regular",
+              "content": "Title: Admins may experience failures when running admin operations the admin portal in Exchange Online\n\nUser impact: Admins may experience failures when running admin operations the admin portal in Exchange Online.\n\nCurrent status: We determined that a recent build update contained a regression to running PowerShell scripts, resulting in this impact. We're completing validations on a fix to address this issue and restore impact and will provide an update on its deployment timeline as soon as one becomes available.\n\nScope of impact: This event impacts any admin attempting to run admin operations through the Exchange Online admin portal, and any admin may see failures. This section may be updated as our investigation continues.\n\nStart time: Monday, April 13, 2026, at 10:00 PM UTC\n\nRoot cause: A recent build update contained a regression to running PowerShell scripts, resulting in this impact\n\nNext update by: Wednesday, April 15, 2026, at 6:00 AM UTC"
             }
           ],
           "affectedServices": [
