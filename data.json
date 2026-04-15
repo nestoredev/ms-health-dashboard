@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-15T18:31:13.027Z",
+  "lastUpdated": "2026-04-15T19:01:21.444Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -404,16 +404,21 @@
           "title": "Admins may see delays occur with several reports in the Microsoft 365 Admin Center",
           "startTime": "2026-04-10T00:00:00Z",
           "endTime": null,
-          "lastModified": "2026-04-14T23:49:34.847Z",
+          "lastModified": "2026-04-15T18:38:02.38Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may see delays occur with several reports in the Microsoft 365 Admin Center.",
-          "scopeOfImpact": "This issue may potentially impact any admin in Europe, Asia-Pacific, and North America attempting to view the affected reports in the More Info section.\n\nStart time: Friday, April 10, 2026, at 12:00 AM UTC",
+          "scopeOfImpact": "This issue may potentially impact any admin in Europe, Asia-Pacific, and North America attempting to view the affected reports in the More Info section.\n \nStart time: Friday, April 10, 2026, at 12:00 AM UTC",
           "rootCause": "An issue with an upstream data pipeline responsible for populating reports in the Microsoft 365 admin center is causing reporting delays.",
-          "nextUpdateBy": "Wednesday, April 15, 2026, at 8:00 PM UTC",
+          "nextUpdateBy": "Friday, April 17, 2026, at 8:30 PM UTC",
           "feature": "Company or User Administration",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-04-15T18:38:02.38Z",
+              "postType": "regular",
+              "content": "Title: Admins may see delays occur with several reports in the Microsoft 365 Admin Center\n\nUser impact: Admins may see delays occur with several reports in the Microsoft 365 Admin Center.\n\nMore info: Affected reports include:\n- Visio Activity\n- Project Activity\n- Microsoft 365 Copilot Readiness\n- Report\n- Microsoft 365 Apps Usage\n\nThese reports may not reflect the most recent user activity during the impact window.\n\nCurrent status: We've confirmed that the pipeline has recovered and that a majority of admins are no longer seeing delayed reports in the Microsoft 365 Admin Center. Admins could potentially still experience a delay while our fix completes the necessary deployment which is projected by our next scheduled communication update.\n \nScope of impact: This issue may potentially impact any admin in Europe, Asia-Pacific, and North America attempting to view the affected reports in the More Info section.\n \nStart time: Friday, April 10, 2026, at 12:00 AM UTC\n \nRoot cause: An issue with an upstream data pipeline responsible for populating reports in the Microsoft 365 admin center is causing reporting delays.\n \nNext update by: Friday, April 17, 2026, at 8:30 PM UTC"
+            },
             {
               "createdAt": "2026-04-14T23:49:34.847Z",
               "postType": "regular",
@@ -458,65 +463,9 @@
     },
     {
       "service": "SharePoint Online",
-      "status": "serviceDegradation",
+      "status": "serviceOperational",
       "id": "SharePoint",
-      "issues": [
-        {
-          "id": "SP1256716",
-          "title": "Users may be unable to edit SharePoint Online sites using the SharePoint Designer 2013 tool",
-          "startTime": "2026-03-20T09:56:15Z",
-          "endTime": null,
-          "lastModified": "2026-04-08T18:57:48.367Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may be unable to edit SharePoint Online sites using the SharePoint Designer 2013 tool.",
-          "scopeOfImpact": "Impact may occur for users attempting to edit SharePoint Online sites using the SharePoint Designer 2013 tool.\n \nStart time: Thursday, March 19, 2026, at 4:49 PM UTC",
-          "rootCause": "A recent configuration change is preventing users from being able to edit sites using the SharePoint Online Designer 2013 tool.",
-          "nextUpdateBy": "Wednesday, April 15, 2026, at 8:30 PM UTC",
-          "feature": "Save Site as Template",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-04-08T18:57:48.367Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to edit SharePoint Online sites using the SharePoint Designer 2013 tool\n\nUser impact: Users may be unable to edit SharePoint Online sites using the SharePoint Designer 2013 tool.\n\nCurrent status: We’re continuing to monitor the deployment as it continues to deploy to the affected environments. The fix has reached 64 percent saturation, and we’ll provide a resolution timeline once available. \n \nScope of impact: Impact may occur for users attempting to edit SharePoint Online sites using the SharePoint Designer 2013 tool.\n \nStart time: Thursday, March 19, 2026, at 4:49 PM UTC\n \nRoot cause: A recent configuration change is preventing users from being able to edit sites using the SharePoint Online Designer 2013 tool.\n \nNext update by: Wednesday, April 15, 2026, at 8:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-03-26T19:50:58.067Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to edit SharePoint Online sites using the SharePoint Designer 2013 tool\n\nUser impact: Users may be unable to edit SharePoint Online sites using the SharePoint Designer 2013 tool.\n\nCurrent status: We’ve completed development of the code fix and initiated deployment to the affected environments. Based on our current estimates, this deployment is expected to take several weeks to reach full saturation. We’ll provide a more precise timeline for resolution as it becomes available.\n \nScope of impact: Impact may occur for users attempting to edit SharePoint Online sites using the SharePoint Designer 2013 tool.\n \nStart time: Thursday, March 19, 2026, at 4:49 PM UTC\n \nRoot cause: A recent configuration change is preventing users from being able to edit sites using the SharePoint Online Designer 2013 tool.\n \nNext update by: Wednesday, April 8, 2026, at 8:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-03-24T19:20:44.123Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to edit SharePoint Online sites using the SharePoint Designer 2013 tool\n \nUser impact: Users may be unable to edit SharePoint Online sites using the SharePoint Designer 2013 tool.\n\nCurrent status: We've determined that a recent configuration change is preventing users from being able to edit sites using the SharePoint Online Designer 2013 tool, and we've developed a fix to address this issue. We're preparing the fix for deployment, and we'll provide a timeline for deployment and impact remediation as one becomes available.\n\nScope of impact: Impact may occur for users attempting to edit SharePoint Online sites using the SharePoint Designer 2013 tool.\n\nRoot cause: A recent configuration change is preventing users from being able to edit sites using the SharePoint Online Designer 2013 tool.\n\nNext update by: Thursday, March 26, 2026, at 8:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-03-23T21:41:21.667Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to edit SharePoint Online sites using the SharePoint Designer 2013 tool\n \nUser impact: Users may be unable to edit SharePoint Online sites using the SharePoint Designer 2013 tool.\n\nCurrent status: Analysis of the SharePoint Online Designer usage data is ongoing in our effort to isolate the source of the impact and develop a mitigation strategy.\n\nScope of impact: Impact may occur for users attempting to edit SharePoint Online sites using the SharePoint Designer 2013 tool.\n\nNext update by: Tuesday, March 24, 2026, at 8:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-03-23T18:47:18.05Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to edit SharePoint Online sites using the SharePoint Designer 2013 tool\n \nUser impact: Users may be unable to edit SharePoint Online sites using the SharePoint Designer 2013 tool.\n\nCurrent status: We've collected and are analyzing SharePoint Online Designer usage data from a subset of impacted users as we explore potential workarounds to the problem and as our root cause analysis progresses.\n \nScope of impact: Impact may occur for users attempting to edit SharePoint Online sites using the SharePoint Designer 2013 tool.\n \nNext update by: Monday, March 23, 2026, at 11:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-03-20T18:24:08.533Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to edit SharePoint Online sites using the SharePoint Designer 2013 tool\n \nUser impact: Users may be unable to edit SharePoint Online sites using the SharePoint Designer 2013 tool.\n\nCurrent status: We're reaching out to your representatives to confirm additional information regarding the usage of SharePoint Designer in your organization to assist us further with developing a remediation plan.\n\nScope of impact: Impact may occur for users attempting to edit SharePoint Online sites using the SharePoint Designer 2013 tool.\n\nNext update by: Monday, March 23, 2026, at 8:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-03-20T09:59:34.54Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to edit SharePoint Online sites using the SharePoint Designer 2013 tool\n \nUser impact: Users may be unable to edit SharePoint Online sites using the SharePoint Designer 2013 tool.\n\nCurrent status: We're reviewing service monitoring telemetry to isolate the root cause and develop a remediation plan.\n \nScope of impact: Impact may occur for users attempting to edit SharePoint Online sites using the SharePoint Designer 2013 tool.\n \nNext update by: Friday, March 20, 2026, at 7:30 PM UTC"
-            }
-          ],
-          "affectedServices": [
-            "SharePoint Online"
-          ]
-        }
-      ]
+      "issues": []
     },
     {
       "service": "Dynamics 365 Apps",
@@ -969,6 +918,52 @@
       "serviceName": "Microsoft 365 Copilot Chat",
       "affectedServices": [
         "Microsoft 365 Copilot Chat"
+      ]
+    },
+    {
+      "id": "SP1256716",
+      "title": "Users may be unable to edit SharePoint Online sites using the SharePoint Designer 2013 tool",
+      "startTime": "2026-03-19T16:49:00Z",
+      "endTime": "2026-04-14T05:27:00Z",
+      "lastModified": "2026-04-15T18:56:57.1Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have been unable to edit SharePoint Online sites using the SharePoint Designer 2013 tool.",
+      "scopeOfImpact": "Impact may have occur for users attempting to edit SharePoint Online sites using the SharePoint Designer 2013 tool.\n\nStart time: Thursday, March 19, 2026, at 4:49 PM UTC\n\nEnd time: Tuesday, April 14, 2026, at 5:27 AM UTC",
+      "rootCause": "A recent configuration change was preventing users from being able to edit sites using the SharePoint Online Designer 2013 tool.\n\nNext steps: \n - We'll continue our review of the impacting configuration change to better understand how the change resulted in impact and what we can do to improve our pre-deployment processes to identify and resolve similar issues.\n\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Save Site as Template",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-04-15T18:56:57.1Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to edit SharePoint Online sites using the SharePoint Designer 2013 tool\n\nUser impact: Users may have been unable to edit SharePoint Online sites using the SharePoint Designer 2013 tool.\n\nFinal status: The fix has now been fully deployed, and we have confirmed through testing that this issue is now mitigated.\n\nScope of impact: Impact may have occur for users attempting to edit SharePoint Online sites using the SharePoint Designer 2013 tool.\n\nStart time: Thursday, March 19, 2026, at 4:49 PM UTC\n\nEnd time: Tuesday, April 14, 2026, at 5:27 AM UTC\n\nRoot cause: A recent configuration change was preventing users from being able to edit sites using the SharePoint Online Designer 2013 tool.\n\nNext steps: \n - We'll continue our review of the impacting configuration change to better understand how the change resulted in impact and what we can do to improve our pre-deployment processes to identify and resolve similar issues.\n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-04-08T18:57:48.367Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to edit SharePoint Online sites using the SharePoint Designer 2013 tool\n\nUser impact: Users may be unable to edit SharePoint Online sites using the SharePoint Designer 2013 tool.\n\nCurrent status: We’re continuing to monitor the deployment as it continues to deploy to the affected environments. The fix has reached 64 percent saturation, and we’ll provide a resolution timeline once available. \n \nScope of impact: Impact may occur for users attempting to edit SharePoint Online sites using the SharePoint Designer 2013 tool.\n \nStart time: Thursday, March 19, 2026, at 4:49 PM UTC\n \nRoot cause: A recent configuration change is preventing users from being able to edit sites using the SharePoint Online Designer 2013 tool.\n \nNext update by: Wednesday, April 15, 2026, at 8:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-03-26T19:50:58.067Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to edit SharePoint Online sites using the SharePoint Designer 2013 tool\n\nUser impact: Users may be unable to edit SharePoint Online sites using the SharePoint Designer 2013 tool.\n\nCurrent status: We’ve completed development of the code fix and initiated deployment to the affected environments. Based on our current estimates, this deployment is expected to take several weeks to reach full saturation. We’ll provide a more precise timeline for resolution as it becomes available.\n \nScope of impact: Impact may occur for users attempting to edit SharePoint Online sites using the SharePoint Designer 2013 tool.\n \nStart time: Thursday, March 19, 2026, at 4:49 PM UTC\n \nRoot cause: A recent configuration change is preventing users from being able to edit sites using the SharePoint Online Designer 2013 tool.\n \nNext update by: Wednesday, April 8, 2026, at 8:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-03-24T19:20:44.123Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to edit SharePoint Online sites using the SharePoint Designer 2013 tool\n \nUser impact: Users may be unable to edit SharePoint Online sites using the SharePoint Designer 2013 tool.\n\nCurrent status: We've determined that a recent configuration change is preventing users from being able to edit sites using the SharePoint Online Designer 2013 tool, and we've developed a fix to address this issue. We're preparing the fix for deployment, and we'll provide a timeline for deployment and impact remediation as one becomes available.\n\nScope of impact: Impact may occur for users attempting to edit SharePoint Online sites using the SharePoint Designer 2013 tool.\n\nRoot cause: A recent configuration change is preventing users from being able to edit sites using the SharePoint Online Designer 2013 tool.\n\nNext update by: Thursday, March 26, 2026, at 8:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-03-23T21:41:21.667Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to edit SharePoint Online sites using the SharePoint Designer 2013 tool\n \nUser impact: Users may be unable to edit SharePoint Online sites using the SharePoint Designer 2013 tool.\n\nCurrent status: Analysis of the SharePoint Online Designer usage data is ongoing in our effort to isolate the source of the impact and develop a mitigation strategy.\n\nScope of impact: Impact may occur for users attempting to edit SharePoint Online sites using the SharePoint Designer 2013 tool.\n\nNext update by: Tuesday, March 24, 2026, at 8:30 PM UTC"
+        }
+      ],
+      "serviceName": "SharePoint Online",
+      "affectedServices": [
+        "SharePoint Online"
       ]
     },
     {
