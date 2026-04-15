@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-15T14:30:01.766Z",
+  "lastUpdated": "2026-04-15T15:00:12.851Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -330,6 +330,56 @@
               "createdAt": "2026-04-15T00:50:52.633Z",
               "postType": "regular",
               "content": "Title: Admins may experience failures when running admin operations the admin portal in Exchange Online\n\nUser impact: Admins may experience failures when running admin operations the admin portal in Exchange Online.\n\nCurrent status: We determined that a recent build update contained a regression to running PowerShell scripts, resulting in this impact. We're completing validations on a fix to address this issue and restore impact and will provide an update on its deployment timeline as soon as one becomes available.\n\nScope of impact: This event impacts any admin attempting to run admin operations through the Exchange Online admin portal, and any admin may see failures. This section may be updated as our investigation continues.\n\nStart time: Monday, April 13, 2026, at 10:00 PM UTC\n\nRoot cause: A recent build update contained a regression to running PowerShell scripts, resulting in this impact.\n\nNext update by: Wednesday, April 15, 2026, at 8:00 AM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online"
+          ]
+        },
+        {
+          "id": "EX1279879",
+          "title": "Users may be unable to respond directly to specific encrypted email messages from a shared mailbox in Exchange Online",
+          "startTime": "2026-04-14T19:04:35Z",
+          "endTime": null,
+          "lastModified": "2026-04-15T14:23:15.59Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to respond directly to specific encrypted email messages from a shared mailbox in Exchange Online.",
+          "scopeOfImpact": "Impact is specific to some users who are served through the affected infrastructure, attempting to respond directly to specific encrypted email messages from a shared mailbox in Exchange Online.",
+          "rootCause": "",
+          "nextUpdateBy": "Thursday, April 16, 2026, at 4:00 PM UTC",
+          "feature": "Reports of an Incident",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-04-15T14:23:15.59Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to respond directly to specific encrypted email messages from a shared mailbox in Exchange Online\n\nUser impact: Users may be unable to respond directly to specific encrypted email messages from a shared mailbox in Exchange Online.\n\nMore info: Affected users see the following error: “This Message can’t be saved right now. Please try again later.\"\n\nAffected users can send a new email message to the specific senders as a way to circumvent impact but are unable to respond directly to the existing thread.\n\nCurrent status: We’ve reproduced the issue internally and are analyzing these reproductions alongside our service-side data to isolate the root cause and determine a fix.\n\nScope of impact: Impact is specific to some users who are served through the affected infrastructure, attempting to respond directly to specific encrypted email messages from a shared mailbox in Exchange Online.\n\nNext update by: Thursday, April 16, 2026, at 4:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-04-15T10:10:03.6Z",
+              "postType": "regular",
+              "content": "Title: Some users are unable to respond directly to specific encrypted email messages from a shared mailbox in Exchange Online\n\nUser impact: Users are unable to respond directly to specific encrypted email messages from a shared mailbox in Exchange Online.\n\nMore info: Users will see the error: “This Message can’t be saved right now. Please try again later.\"\n \nUsers can send a new email message to the specific senders as a way to circumvent impact but are unable to respond directly to the existing thread.\n \nCurrent status: We're proceeding with our review of the logs provided by your organization alongside our service-side data related to the encryption flow, to identify the root cause and determine the appropriate fix.\n \nScope of impact: Your organization is impacted by this event, and some users are unable to respond directly to specific encrypted email messages from a shared mailbox in Exchange Online. This section may be updated as our investigation continues.\n \nNext update by: Wednesday, April 15, 2026, at 4:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-04-15T05:03:30.35Z",
+              "postType": "regular",
+              "content": "Title: Some users are unable to respond directly to specific encrypted email messages from a shared mailbox in Exchange Online\n\nUser impact: Users are unable to respond directly to specific encrypted email messages from a shared mailbox in Exchange Online.\n\nMore info: Users will see the error: “This Message can’t be saved right now. Please try again later.\"\n\nUsers can send a new email message to the specific senders as a way to circumvent impact but are unable to respond directly to the existing thread.\n\nCurrent status: We're furthering our review of the logs provided by your organization and the service side data into the encryption flow utilized in this event to isolate the cause of impact and determine our troubleshooting steps.\n\nScope of impact: Your organization is impacted by this event, and some users are unable to respond directly to specific encrypted email messages from a shared mailbox in Exchange Online. This section may be updated as our investigation continues.\n\nNext update by: Wednesday, April 15, 2026, at 10:30 AM UTC"
+            },
+            {
+              "createdAt": "2026-04-14T21:03:18.733Z",
+              "postType": "regular",
+              "content": "Title: Some users are unable to respond directly to specific encrypted email messages from a shared mailbox in Exchange Online\n\nUser impact: Users are unable to respond directly to specific encrypted email messages from a shared mailbox in Exchange Online.\n\nMore info: Users will see the error: “This Message can’t be saved right now. Please try again later.\"\n\nUsers can send a new email message to the specific senders as a way to circumvent impact but are unable to respond directly to the existing thread.\n\nCurrent status: We're continuing our review of the logs provided by your organization alongside service side data into the encryption flow utilized in this event to assist in our active root cause investigation.\n\nScope of impact: Your organization is impacted by this event, and some users are unable to respond directly to specific encrypted email messages from a shared mailbox in Exchange Online. This section may be updated as our investigation continues.\n\nNext update by: Wednesday, April 15, 2026, at 5:30 AM UTC"
+            },
+            {
+              "createdAt": "2026-04-14T19:28:32.12Z",
+              "postType": "regular",
+              "content": "Title: Some users are unable to respond directly to specific encrypted email messages from a shared mailbox in Exchange Online\n\nUser impact: Users are unable to respond directly to specific encrypted email messages from a shared mailbox in Exchange Online.\n\nMore info: Users will see the error: “This Message can’t be saved right now. Please try again later.\"\n\nUsers can send a new email message to the specific senders as a way to circumvent impact but are unable to respond directly to the existing thread.\n\nCurrent status: We're reviewing the logs and impact details provided by your organization to assist in our investigation into the underlying root cause of this event.\n\nScope of impact: Your organization is impacted by this event, and some users are unable to respond directly to specific encrypted email messages from a shared mailbox in Exchange Online. This section may be updated as our investigation continues.\n\nNext update by: Tuesday, April 14, 2026, at 9:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-04-14T19:06:08.62Z",
+              "postType": "regular",
+              "content": "Title: Some users are unable to respond directly to specific encrypted email messages from a shared mailbox in Exchange Online\n\nUser impact: Users are unable to respond directly to specific encrypted email messages from a shared mailbox in Exchange Online.\n\nMore info: Users will see the error: “This Message can’t be saved right now. Please try again later.\"\n \nUsers can send a new email message to the specific senders as a way to circumvent impact but are unable to respond directly to the existing thread.\n\nCurrent status: We're investigating a potential issue with Exchange Online and checking for impact to your organization. We'll provide an update within 30 minutes."
             }
           ],
           "affectedServices": [
