@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-15T11:59:18.938Z",
+  "lastUpdated": "2026-04-15T12:29:27.338Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -306,16 +306,21 @@
           "title": "Admins may experience failures when running admin operations the admin portal in Exchange Online",
           "startTime": "2026-04-13T22:00:00Z",
           "endTime": null,
-          "lastModified": "2026-04-15T06:41:12.29Z",
+          "lastModified": "2026-04-15T11:56:48.37Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may experience failures when running admin operations the admin portal in Exchange Online.",
-          "scopeOfImpact": "This event impacts any admin attempting to run admin operations through the Exchange Online admin portal, and any admin may see failures. This section may be updated as our investigation continues.\n\nStart time: Monday, April 13, 2026, at 10:00 PM UTC",
+          "scopeOfImpact": "This event impacts any admin attempting to run admin operations through the Exchange Online admin portal, and any admin may see failures. This section may be updated as our investigation continues.\n \nStart time: Monday, April 13, 2026, at 10:00 PM UTC\n \nEstimated time to resolve: Saturday, April 18, 2026",
           "rootCause": "A recent build update contained a regression to running PowerShell scripts, resulting in this impact.",
-          "nextUpdateBy": "Wednesday, April 15, 2026, at 12:00 PM UTC",
+          "nextUpdateBy": "Thursday, April 16, 2026, at 12:00 PM UTC",
           "feature": "Remote PowerShell - problem connecting",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-04-15T11:56:48.37Z",
+              "postType": "regular",
+              "content": "Title: Admins may experience failures when running admin operations the admin portal in Exchange Online\n\nUser impact: Admins may experience failures when running admin operations the admin portal in Exchange Online.\n\nCurrent status: We've confirmed that the fix has started to be deployed to the affected environment and we anticipate its completion by Saturday, April 18, 2026.\n \nScope of impact: This event impacts any admin attempting to run admin operations through the Exchange Online admin portal, and any admin may see failures. This section may be updated as our investigation continues.\n \nStart time: Monday, April 13, 2026, at 10:00 PM UTC\n \nEstimated time to resolve: Saturday, April 18, 2026\n \nRoot cause: A recent build update contained a regression to running PowerShell scripts, resulting in this impact.\n \nNext update by: Thursday, April 16, 2026, at 12:00 PM UTC"
+            },
             {
               "createdAt": "2026-04-15T06:41:12.29Z",
               "postType": "regular",
