@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-16T00:32:52.680Z",
+  "lastUpdated": "2026-04-16T01:03:00.565Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -588,11 +588,11 @@
           "title": "Users may be unable to access the Microsoft Intune web app from a managed Microsoft Edge iOS browser",
           "startTime": "2026-04-15T19:32:42Z",
           "endTime": null,
-          "lastModified": "2026-04-15T20:28:07.867Z",
+          "lastModified": "2026-04-16T00:37:21.517Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to access the Microsoft Intune web app from a managed Microsoft Edge iOS browser.",
-          "scopeOfImpact": "Any user attempting to access the Microsoft Intune web app from a managed Microsoft Edge iOS browser may be impacted.",
+          "scopeOfImpact": "Any user who's attempting to access the created and targeted iOS Microsoft Intune web app that's configured to launch in a managed Microsoft Edge browser may be affected.",
           "rootCause": "A code issue in the Mobile Application Management (MAM) SDK conflicts with a recently enabled account management feature, resulting in impact.",
           "nextUpdateBy": "Friday, April 17, 2026, at 3:00 AM UTC",
           "feature": "Microsoft Intune",
@@ -601,7 +601,7 @@
             {
               "createdAt": "2026-04-15T20:21:54.23Z",
               "postType": "regular",
-              "content": "Title: Users may be unable to access the Microsoft Intune web app from a managed Microsoft Edge iOS browser\n\nUser impact: Users may be unable to access the Microsoft Intune web app from a managed Microsoft Edge iOS browser.\n\nMore info: The managed Microsoft Edge iOS browser may be displaying an error stating “Action Not Allowed” when trying to launch the Microsoft Intune web app.\n \nCurrent status: We're testing a new build of the Microsoft Edge iOS browser that has the account management feature disabled to remediate impact. Once testing is complete, we'll determine the timeline for release and provide the version number.\n \nScope of impact: Any user attempting to access the Microsoft Intune web app from a managed Microsoft Edge iOS browser may be impacted.\n \nRoot cause: A code issue in the Mobile Application Management (MAM) SDK conflicts with a recently enabled account management feature, resulting in impact.\n \nNext update by: Friday, April 17, 2026, at 3:00 AM UTC"
+              "content": "Title: Users may be unable to access the Microsoft Intune web app from a managed Microsoft Edge iOS browser\n\nUser impact: Users may be unable to access the Microsoft Intune web app from a managed Microsoft Edge iOS browser.\n\nMore info: The managed Microsoft Edge iOS browser may be displaying an error stating “Action Not Allowed” when trying to launch the Microsoft Intune web app.\nThis only impacts those with iOS webapps created and targeted to users, and configured to launch in managed Microsoft Edge browser.\n \nCurrent status: We're testing a new build of the Microsoft Edge iOS browser that has the account management feature disabled to remediate impact. Once testing is complete, we'll determine the timeline for release and provide the version number.\n \nScope of impact: Any user who's attempting to access the created and targeted iOS Microsoft Intune web app that's configured to launch in a managed Microsoft Edge browser may be affected.\n \nRoot cause: A code issue in the Mobile Application Management (MAM) SDK conflicts with a recently enabled account management feature, resulting in impact.\n \nNext update by: Friday, April 17, 2026, at 3:00 AM UTC"
             },
             {
               "createdAt": "2026-04-15T19:37:24.723Z",
