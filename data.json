@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-17T18:44:15.259Z",
+  "lastUpdated": "2026-04-17T19:14:23.368Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -304,16 +304,21 @@
           "title": "Users may see a delay in certain reports in the Microsoft 365 admin center",
           "startTime": "2026-04-17T00:00:00Z",
           "endTime": null,
-          "lastModified": "2026-04-17T04:31:56.973Z",
+          "lastModified": "2026-04-17T19:08:16.873Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may see a delay in certain reports in the Microsoft 365 admin center.",
-          "scopeOfImpact": "Any user located in North America, Europe, or Asia-Pacific regions may be affected by this issue and may see a delay in certain reports in the Microsoft 365 admin center. This section may be updated as our investigation continues.\n \nStart time: Friday, April 17, 2026, at 12:00 AM UTC",
-          "rootCause": "A portion of infrastructure that is required for and the Microsoft 365 admin center reporting relies upon, encountered a processing issue, leading to delays and impact.",
-          "nextUpdateBy": "Friday, April 17, 2026, at 8:30 PM UTC",
+          "scopeOfImpact": "Any user located in the North America, Europe, or Asia-Pacific regions may be affected by this issue and may see a delay in certain reports in the Microsoft 365 admin center. This section may be updated as our investigation continues.\n\nStart time: Friday, April 17, 2026, at 12:00 AM UTC",
+          "rootCause": "A portion of infrastructure that is required for and the Microsoft 365 admin center reporting relies upon encountered a processing issue, leading to delays and impact.",
+          "nextUpdateBy": "Saturday, April 18, 2026, at 7:00 PM UTC",
           "feature": "Company or User Administration",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-04-17T19:08:16.873Z",
+              "postType": "regular",
+              "content": "Title: Users may see a delay in certain reports in the Microsoft 365 admin center\n\nUser impact: Users may see a delay in certain reports in the Microsoft 365 admin center.\n\nMore info: The following reports are delayed and may not be fresh including:\n- Copilot usage [Restored]\n- Copilot chat usage [Restored]\n- Exchange Store \n- Group Activity \n- Teams Team\n\nCurrent status: The delays affecting the reports for Copilot and Copilot chat usage have been addressed. We'll continue to monitor the backlog of data used to populate the other affected reports with the most up-to-date data to ensure it’s processed as expected, and that all reports return to a healthy state.\n\nScope of impact: Any user located in the North America, Europe, or Asia-Pacific regions may be affected by this issue and may see a delay in certain reports in the Microsoft 365 admin center. This section may be updated as our investigation continues.\n\nStart time: Friday, April 17, 2026, at 12:00 AM UTC\n\nRoot cause: A portion of infrastructure that is required for and the Microsoft 365 admin center reporting relies upon encountered a processing issue, leading to delays and impact.\n\nNext update by: Saturday, April 18, 2026, at 7:00 PM UTC"
+            },
             {
               "createdAt": "2026-04-17T04:31:56.973Z",
               "postType": "regular",
