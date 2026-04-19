@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-19T16:25:56.684Z",
+  "lastUpdated": "2026-04-19T16:56:03.502Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -2367,47 +2367,6 @@
       "serviceName": "Microsoft OneDrive",
       "affectedServices": [
         "Microsoft OneDrive"
-      ]
-    },
-    {
-      "id": "EX1256744",
-      "title": "Admins may be unable to create shared mailboxes in Exchange Online ",
-      "startTime": "2026-03-20T06:10:00Z",
-      "endTime": "2026-03-20T16:39:00Z",
-      "lastModified": "2026-03-20T18:01:52.163Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Admins may have been unable to create shared mailboxes in Exchange Online.",
-      "scopeOfImpact": "Any admin that attempted to create a shared mailbox in Exchange Online may have been impacted.\n\nStart time: Friday, March 20, 2026, at 6:10 AM UTC\n\nEnd time: Friday, March 20, 2026, at 4:39 PM UTC",
-      "rootCause": "A recent service change meant to fix an issue with the communication between Microsoft Entra and Exchange Online caused impact.\n\nNext steps: \n - While we investigate the reason our service change caused the impact, we're reviewing our service change testing and validation procedures to identify and prevent similar issues in fixes moving forward.\n\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Database Offline - mailbox database is dismounted",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-03-20T18:01:20.533Z",
-          "postType": "regular",
-          "content": "Title: Admins may be unable to create shared mailboxes in Exchange Online \n\nUser impact: Admins may have been unable to create shared mailboxes in Exchange Online.\n\nMore info: When admins attempted to create a shared mailbox, they may have received an error that stated, \"Cannot convert a primitive value to the expected type 'Edm.Int64'.\"\n\nFinal status: We've identified that a recent service change meant to fix an issue with the communication between Microsoft Entra and Exchange Online caused impact. We've reversed the change and confirmed through service health telemetry and internal testing that the impact is remediated.\n\nScope of impact: Any admin that attempted to create a shared mailbox in Exchange Online may have been impacted.\n\nStart time: Friday, March 20, 2026, at 6:10 AM UTC\n\nEnd time: Friday, March 20, 2026, at 4:39 PM UTC\n\nRoot cause: A recent service change meant to fix an issue with the communication between Microsoft Entra and Exchange Online caused impact.\n\nNext steps: \n - While we investigate the reason our service change caused the impact, we're reviewing our service change testing and validation procedures to identify and prevent similar issues in fixes moving forward.\n\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-03-20T16:27:34.99Z",
-          "postType": "regular",
-          "content": "Title: Admins may be unable to create shared mailboxes in Exchange Online \n\nUser impact: Admins may be unable to create shared mailboxes in Exchange Online.\n\nMore info: When admins attempt to create a shared mailbox, they may receive an error that states, \"Cannot convert a primitive value to the expected type 'Edm.Int64'.\"\n\nCurrent status: We've isolated a recent service change that we believe may be causing impact and we're continuing to review this change to verify our theory.\n\nScope of impact: Any admin attempting to create a shared mailbox in Exchange Online may be impacted.\n\nNext update by: Friday, March 20, 2026, at 6:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-03-20T13:26:20.243Z",
-          "postType": "regular",
-          "content": "Title: Some users experience errors when attempting to create shared mailboxes in Exchange Online\n\nUser impact: Users experience errors when attempting to create shared mailboxes in Exchange Online.\n\nCurrent status: We're analyzing HTTP Archive format (HAR) logs to identify the underlying root cause and a mitigation plan.\n\nScope of impact: Your organization is affected by this event, and some users attempting to create shared mailboxes in Exchange Online may be impacted.\n\nNext update by: Friday, March 20, 2025, at 5:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-03-20T11:23:59.587Z",
-          "postType": "regular",
-          "content": "Title: Some users experience errors when attempting to create shared mailboxes in Exchange Online\n\nUser impact: Users experience errors when attempting to create shared mailboxes in Exchange Online.\n\nAs a workaround users are able to create a user mailbox and convert it to a shared mailbox.\n\nCurrent status: We're analyzing support provided information to determine our next troubleshooting steps.\n\nScope of impact: Your organization is affected by this event, and some users attempting to create shared mailboxes in Exchange Online may be impacted.\n\nNext update by: Friday, March 20, 2025, at 1:30 PM UTC"
-        }
-      ],
-      "serviceName": "Exchange Online",
-      "affectedServices": [
-        "Exchange Online"
       ]
     }
   ]
