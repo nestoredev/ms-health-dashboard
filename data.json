@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-20T23:33:20.244Z",
+  "lastUpdated": "2026-04-21T00:03:27.139Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -309,28 +309,33 @@
       "issues": [
         {
           "id": "IT1286314",
-          "title": "Admins may see Declarative Device Management (DDM) policies for Microsoft Intune misreported as pending",
+          "title": "Admins may see Apple Declarative Device Management (DDM) policies for Microsoft Intune misreported as pending",
           "startTime": "2026-04-20T22:26:18Z",
           "endTime": null,
-          "lastModified": "2026-04-20T22:56:18.853Z",
+          "lastModified": "2026-04-20T23:56:41.043Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "userImpact": "Admins may see DDM policies for Microsoft Intune misreported as pending.",
-          "scopeOfImpact": "This event impacts any admins checking DDM policies in Microsoft Intune, which are misreported as pending in the console. This section may be update as our investigation continues.",
+          "userImpact": "Admins may see Apple DDM policies for Microsoft Intune misreported as pending.",
+          "scopeOfImpact": "This event impacts any admins checking Apple DDM policies in Microsoft Intune, which are misreported as pending in the console. This section may be update as our investigation continues.",
           "rootCause": "",
-          "nextUpdateBy": "Tuesday, April 21, 2026, at 12:00 AM UTC",
+          "nextUpdateBy": "Tuesday, April 21, 2026, at 2:00 AM UTC",
           "feature": "Microsoft Intune",
           "isResolved": false,
           "posts": [
             {
+              "createdAt": "2026-04-20T23:56:27.363Z",
+              "postType": "regular",
+              "content": "Title: Admins may see Declarative Device Management (DDM) policies for Microsoft Intune misreported as pending\n\nUser impact: Admins may see DDM policies for Microsoft Intune misreported as pending.\n\nMore info: These policies have been applied to the devices but are misreported as \"pending\" in the console.\n\nThis only impacts DDM policies on Apple devices.\n\nCurrent status: We're continuing our review of service side telemetry and an internal reproduction of impact as we work to narrow down the underlying root cause of this event.\n\nScope of impact: This event impacts any admins checking Apple DDM policies in Microsoft Intune, which are misreported as pending in the console. This section may be update as our investigation continues.\n\nNext update by: Tuesday, April 21, 2026, at 2:00 AM UTC"
+            },
+            {
               "createdAt": "2026-04-20T22:56:04.597Z",
               "postType": "regular",
-              "content": "Title: Admins may see Declarative Device Management (DDM) policies for Microsoft Intune misreported as pending\n\nUser impact: Admins may see DDM policies for Microsoft Intune misreported as pending.\n\nMore info: These policies have been applied to the devices but are misreported as \"pending\" in the console.\n\nCurrent status: We're reviewing service side telemetry as a part of our active investigation into the underlying root cause of this event.\n\nScope of impact: This event impacts any admins checking DDM policies in Microsoft Intune, which are misreported as pending in the console. This section may be update as our investigation continues.\n\nNext update by: Tuesday, April 21, 2026, at 12:00 AM UTC"
+              "content": "Title: Admins may see Apple Declarative Device Management (DDM) policies for Microsoft Intune misreported as pending\n\nUser impact: Admins may see Apple DDM policies for Microsoft Intune misreported as pending.\n\nMore info: These policies have been applied to the devices but are misreported as \"pending\" in the console.\n\nThis only impacts DDM policies on Apple devices.\n\nCurrent status: We're reviewing service side telemetry as a part of our active investigation into the underlying root cause of this event.\n\nScope of impact: This event impacts any admins checking DDM policies in Microsoft Intune, which are misreported as pending in the console. This section may be update as our investigation continues.\n\nNext update by: Tuesday, April 21, 2026, at 12:00 AM UTC"
             },
             {
               "createdAt": "2026-04-20T22:28:05.647Z",
               "postType": "regular",
-              "content": "Title: Admins may see Declarative Device Management (DDM) policies for Microsoft Intune misreported as pending\n\nUser impact: Admins may see DDM policies for Microsoft Intune misreported as pending.\n\nMore info: These policies have been applied to the devices but are misreported as \"pending\" in the console.\n\nCurrent status: We're investigating a potential issue with Microsoft Intune and checking for impact to your organization. We'll provide an update within 30 minutes."
+              "content": "Title: Admins may see Apple Declarative Device Management (DDM) policies for Microsoft Intune misreported as pending\n\nUser impact: Admins may see Apple DDM policies for Microsoft Intune misreported as pending.\n\nMore info: These policies have been applied to the devices but are misreported as \"pending\" in the console.\n\nThis only impacts DDM policies on Apple devices.\n\nCurrent status: We're investigating a potential issue with Microsoft Intune and checking for impact to your organization. We'll provide an update within 30 minutes."
             }
           ],
           "affectedServices": [
