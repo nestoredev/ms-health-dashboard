@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-23T17:51:00.840Z",
+  "lastUpdated": "2026-04-23T18:21:08.288Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -121,16 +121,21 @@
           "title": "Admins are unable to progress mailbox migrations in Exchange Online",
           "startTime": "2026-04-15T08:36:58Z",
           "endTime": null,
-          "lastModified": "2026-04-22T18:19:49.517Z",
+          "lastModified": "2026-04-23T17:54:34.883Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins are unable to progress mailbox migrations in Exchange Online.",
           "scopeOfImpact": "All admins attempting mailbox migrations into or out of Exchange Online are impacted.",
-          "rootCause": "A recent service side update introduced an issue that's causing migration jobs to fail, resulting in impact.",
-          "nextUpdateBy": "Thursday, April 23, 2026, at 7:30 PM UTC",
+          "rootCause": "A recent service side update introduced an issue that's causing migration jobs to fail, resulting in impact.\r\n\r\nNext update time: Monday, April 27, 2026, at 6:30 PM UTC",
+          "nextUpdateBy": "",
           "feature": "Mailbox Migrations",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-04-23T17:54:26.217Z",
+              "postType": "regular",
+              "content": "Title: Admins are unable to progress mailbox migrations in Exchange Online\r\n\r\nUser impact: Admins are unable to progress mailbox migrations in Exchange Online.\r\n\r\nMore info: All mailbox onboarding and offboarding scenarios in Exchange Online, including Tenant to Tenant migrations remain in a syncing state.\r\n\r\nCurrent status: We’re continuing to monitor the fix as it propagates throughout the affected infrastructure, where deployment has now reached 90 percent. We’ll provide a resolution timeline once available.\r\n\r\nScope of impact: All admins attempting mailbox migrations into or out of Exchange Online are impacted.\r\n\r\nRoot cause: A recent service side update introduced an issue that's causing migration jobs to fail, resulting in impact.\r\n\r\nNext update time: Monday, April 27, 2026, at 6:30 PM UTC"
+            },
             {
               "createdAt": "2026-04-22T18:19:49.517Z",
               "postType": "regular",
