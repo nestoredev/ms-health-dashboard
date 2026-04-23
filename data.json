@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-23T12:49:41.373Z",
+  "lastUpdated": "2026-04-23T13:19:49.833Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -2166,37 +2166,6 @@
       "serviceName": "Microsoft 365 Copilot Chat",
       "affectedServices": [
         "Microsoft 365 Copilot Chat"
-      ]
-    },
-    {
-      "id": "EX1260428",
-      "title": "Some users may have been unable to access their Exchange Online mailboxes using the Outlook desktop client",
-      "startTime": "2026-03-24T05:40:00Z",
-      "endTime": "2026-03-24T13:00:00Z",
-      "lastModified": "2026-03-24T15:44:00.93Z",
-      "status": "serviceRestored",
-      "severity": "incident",
-      "userImpact": "Users may have been unable to access their Exchange Online mailboxes using the Outlook desktop client.",
-      "scopeOfImpact": "Some users attempting to access their Exchange Online mailboxes via the Outlook desktop client may have been impacted.\n \nStart time: Tuesday, March 24, 2026, at 5:40 AM UTC\n \nEnd time: Tuesday, March 24, 2026, at 1:00 PM UTC",
-      "rootCause": "A recent service change introduced an unexpected behaviour that prevented part of the service from operating as designed, resulting in impact.\n \nNext steps:\n- We'll continue to closely monitor the service to ensure it remains healthy.\n- We're reviewing our deployment procedures to better identify similar issues during our development and testing cycles.\n \nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Outlook - problems connecting",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-03-24T14:58:27.65Z",
-          "postType": "regular",
-          "content": "Title: Some users may have been unable to access their Exchange Online mailboxes using the Outlook desktop client\n\nUser impact: Users may have been unable to access their Exchange Online mailboxes using the Outlook desktop client.\n\nMore info: Impacted users may have received a 401 error message.\n \nFinal status: We’ve confirmed that reverting the change successfully remediated the impact and restored the service.\n \nScope of impact: Some users attempting to access their Exchange Online mailboxes via the Outlook desktop client may have been impacted.\n \nStart time: Tuesday, March 24, 2026, at 5:40 AM UTC\n \nEnd time: Tuesday, March 24, 2026, at 1:00 PM UTC\n \nRoot cause: A recent service change introduced an unexpected behaviour that prevented part of the service from operating as designed, resulting in impact.\n \nNext steps:\n- We'll continue to closely monitor the service to ensure it remains healthy.\n- We're reviewing our deployment procedures to better identify similar issues during our development and testing cycles.\n \nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-03-24T13:09:04.707Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to access their Exchange Online mailboxes using the Outlook desktop client\n\nUser impact: Users may be unable to access their Exchange Online mailboxes using the Outlook desktop client.\n\nMore info: Impacted users may receive a 401 error message.\n\nCurrent status: We’ve identified that a recent service change may be causing impact to occur. We’ve reverted the change to restore normal service and are monitoring service data to confirm the mitigation is working as expected.\n\nScope of impact: Some users attempting to access their Exchange Online mailboxes via the Outlook desktop client may be impacted. This information may be updated as our investigation continues.\n \nNext update by: Tuesday, March 24, 2026, at 3:00 PM UTC"
-        }
-      ],
-      "serviceName": "Exchange Online",
-      "affectedServices": [
-        "Exchange Online"
       ]
     }
   ]
