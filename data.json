@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-24T06:24:28.619Z",
+  "lastUpdated": "2026-04-24T06:54:36.017Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -11,7 +11,7 @@
           "title": "Some users may see that when selecting a meeting room when scheduling meetings, it changes from available to unavailable",
           "startTime": "2025-12-08T03:04:00Z",
           "endTime": null,
-          "lastModified": "2026-04-24T06:05:46.2Z",
+          "lastModified": "2026-04-24T06:24:44.91Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may see that after selecting a meeting room when scheduling meetings, it changes from available to unavailable.",
@@ -126,20 +126,20 @@
           "title": "Admins are unable to progress mailbox migrations in Exchange Online",
           "startTime": "2026-04-15T08:36:58Z",
           "endTime": null,
-          "lastModified": "2026-04-23T17:54:34.883Z",
+          "lastModified": "2026-04-24T06:29:14.963Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins are unable to progress mailbox migrations in Exchange Online.",
           "scopeOfImpact": "All admins attempting mailbox migrations into or out of Exchange Online are impacted.",
-          "rootCause": "A recent service side update introduced an issue that's causing migration jobs to fail, resulting in impact.\r\n\r\nNext update time: Monday, April 27, 2026, at 6:30 PM UTC",
-          "nextUpdateBy": "",
+          "rootCause": "A recent service side update introduced an issue that's causing migration jobs to fail, resulting in impact.",
+          "nextUpdateBy": "Monday, April 27, 2026, at 6:30 PM UTC",
           "feature": "Mailbox Migrations",
           "isResolved": false,
           "posts": [
             {
               "createdAt": "2026-04-23T17:54:26.217Z",
               "postType": "regular",
-              "content": "Title: Admins are unable to progress mailbox migrations in Exchange Online\r\n\r\nUser impact: Admins are unable to progress mailbox migrations in Exchange Online.\r\n\r\nMore info: All mailbox onboarding and offboarding scenarios in Exchange Online, including Tenant to Tenant migrations remain in a syncing state.\r\n\r\nCurrent status: We’re continuing to monitor the fix as it propagates throughout the affected infrastructure, where deployment has now reached 90 percent. We’ll provide a resolution timeline once available.\r\n\r\nScope of impact: All admins attempting mailbox migrations into or out of Exchange Online are impacted.\r\n\r\nRoot cause: A recent service side update introduced an issue that's causing migration jobs to fail, resulting in impact.\r\n\r\nNext update time: Monday, April 27, 2026, at 6:30 PM UTC"
+              "content": "Title: Admins are unable to progress mailbox migrations in Exchange Online\n\nUser impact: Admins are unable to progress mailbox migrations in Exchange Online.\n\nMore info: All mailbox onboarding and offboarding scenarios in Exchange Online, including Tenant to Tenant migrations remain in a syncing state.\n\nCurrent status: We’re continuing to monitor the fix as it propagates throughout the affected infrastructure, where deployment has now reached 90 percent. We’ll provide a resolution timeline once available.\n\nScope of impact: All admins attempting mailbox migrations into or out of Exchange Online are impacted.\n\nRoot cause: A recent service side update introduced an issue that's causing migration jobs to fail, resulting in impact.\n\nNext update by: Monday, April 27, 2026, at 6:30 PM UTC"
             },
             {
               "createdAt": "2026-04-22T18:19:49.517Z",
