@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-24T22:05:39.550Z",
+  "lastUpdated": "2026-04-24T22:35:47.100Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -573,7 +573,7 @@
           "title": "Users are experiencing intermittent latency and failures for scenarios that rely on Dataverse",
           "startTime": "2026-04-24T20:40:00Z",
           "endTime": null,
-          "lastModified": "2026-04-24T21:38:59.063Z",
+          "lastModified": "2026-04-24T22:22:47.887Z",
           "status": "serviceInterruption",
           "severity": "advisory",
           "userImpact": "Users are experiencing intermittent latency and failures for scenarios that rely on Dataverse.",
@@ -583,6 +583,11 @@
           "feature": "Other",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-04-24T22:22:47.887Z",
+              "postType": "regular",
+              "content": "Title: Users are experiencing intermittent latency and failures for scenarios that rely on Dataverse\n\nUser impact: Users are experiencing intermittent latency and failures for scenarios that rely on Dataverse.\n\nMore Info: Users are experiencing impact across multiple scenarios across products including but not limited to:\n\n- Dynamics 365 Contact Center\n- Microsoft Copilot Studio \n- Power Apps \n- Power Automate\n- Power Pages\n\nCurrent Status: After our investigation, we identified that the outage affecting the service dependency was caused by a recent deployment. A rollback of the deployment has been initiated, which is ongoing. In parallel, automated recovery processes have been triggered and are routing service traffic to healthy, redundant infrastructure. We are monitoring service health diagnostics for recovery as the mitigation efforts are applied. \n\nNext Update: Saturday, April 25, 2026, at 2:00 AM UTC"
+            },
             {
               "createdAt": "2026-04-24T21:38:59.063Z",
               "postType": "regular",
