@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-24T21:35:29.460Z",
+  "lastUpdated": "2026-04-24T22:05:39.550Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -365,20 +365,20 @@
           "title": "Users may not get email notifications for shared Power BI reports and dashboards or Microsoft Fabric artifacts",
           "startTime": "2026-03-10T21:08:00Z",
           "endTime": null,
-          "lastModified": "2026-04-24T20:08:58.24Z",
+          "lastModified": "2026-04-24T21:37:12.693Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may not get email notifications for shared Power BI reports and dashboards or Microsoft Fabric artifacts.",
-          "scopeOfImpact": "Any user that should receive an email notification for shared Power BI reports and dashboards or Microsoft Fabric artifacts may be impacted.\r\n\r\nStart time: Tuesday, March 10, 2026, at 9:08 PM UTC\r\n\r\nEstimated time to resolve: We anticipate the code fix will complete deployment and remediate the impact by Monday, April 27, 2026, at 9:30 PM UTC.",
-          "rootCause": "An unexpected issue with Power BI reports and dashboards and Microsoft Fabric artifact sharing is preventing users from receiving email notifications.\r\n\r\nNext update time: Monday, April 27, 2026, at 9:30 PM UTC",
-          "nextUpdateBy": "",
+          "scopeOfImpact": "Any user that should receive an email notification for shared Power BI reports and dashboards or Microsoft Fabric artifacts may be impacted.\n\nStart time: Tuesday, March 10, 2026, at 9:08 PM UTC\n\nEstimated time to resolve: We anticipate the code fix will complete deployment and remediate the impact by Monday, April 27, 2026, at 9:30 PM UTC.",
+          "rootCause": "An unexpected issue with Power BI reports and dashboards and Microsoft Fabric artifact sharing is preventing users from receiving email notifications.",
+          "nextUpdateBy": "Monday, April 27, 2026, at 9:30 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
             {
               "createdAt": "2026-04-24T20:08:58.24Z",
               "postType": "regular",
-              "content": "Title: Users may not get email notifications for shared Power BI reports and dashboards or Microsoft Fabric artifacts\r\n\r\nUser impact: Users may not get email notifications for shared Power BI reports and dashboards or Microsoft Fabric artifacts.\r\n\r\nCurrent status: We're monitoring the deployment of our code fix which as it nears completion. While the deployment is taking longer than initially anticipated, we expect it will complete by our next scheduled communications update.\r\n\r\nScope of impact: Any user that should receive an email notification for shared Power BI reports and dashboards or Microsoft Fabric artifacts may be impacted.\r\n\r\nStart time: Tuesday, March 10, 2026, at 9:08 PM UTC\r\n\r\nEstimated time to resolve: We anticipate the code fix will complete deployment and remediate the impact by Monday, April 27, 2026, at 9:30 PM UTC.\r\n\r\nRoot cause: An unexpected issue with Power BI reports and dashboards and Microsoft Fabric artifact sharing is preventing users from receiving email notifications.\r\n\r\nNext update time: Monday, April 27, 2026, at 9:30 PM UTC"
+              "content": "Title: Users may not get email notifications for shared Power BI reports and dashboards or Microsoft Fabric artifacts\n\nUser impact: Users may not get email notifications for shared Power BI reports and dashboards or Microsoft Fabric artifacts.\n\nCurrent status: We're monitoring the deployment of our code fix which as it nears completion. While the deployment is taking longer than initially anticipated, we expect it will complete by our next scheduled communications update.\n\nScope of impact: Any user that should receive an email notification for shared Power BI reports and dashboards or Microsoft Fabric artifacts may be impacted.\n\nStart time: Tuesday, March 10, 2026, at 9:08 PM UTC\n\nEstimated time to resolve: We anticipate the code fix will complete deployment and remediate the impact by Monday, April 27, 2026, at 9:30 PM UTC.\n\nRoot cause: An unexpected issue with Power BI reports and dashboards and Microsoft Fabric artifact sharing is preventing users from receiving email notifications.\n\nNext update by: Monday, April 27, 2026, at 9:30 PM UTC"
             },
             {
               "createdAt": "2026-04-22T19:56:19.157Z",
@@ -565,7 +565,7 @@
     },
     {
       "service": "Microsoft Dataverse",
-      "status": "investigating",
+      "status": "serviceInterruption",
       "id": "MicrosoftDataverse",
       "issues": [
         {
@@ -573,8 +573,8 @@
           "title": "Users are experiencing intermittent latency and failures for scenarios that rely on Dataverse",
           "startTime": "2026-04-24T20:40:00Z",
           "endTime": null,
-          "lastModified": "2026-04-24T21:16:55.257Z",
-          "status": "investigating",
+          "lastModified": "2026-04-24T21:38:59.063Z",
+          "status": "serviceInterruption",
           "severity": "advisory",
           "userImpact": "Users are experiencing intermittent latency and failures for scenarios that rely on Dataverse.",
           "scopeOfImpact": "",
@@ -583,6 +583,11 @@
           "feature": "Other",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-04-24T21:38:59.063Z",
+              "postType": "regular",
+              "content": "Title: Users are experiencing intermittent latency and failures for scenarios that rely on Dataverse\n\nUser impact: Users are experiencing intermittent latency and failures for scenarios that rely on Dataverse.\n\nCurrent Status: After an initial investigation, we identified an outage for an upstream service dependency as the source of impact. We are continuing to investigate to further isolate the root cause of the impact and to develop a strategy for mitigation. \n\nNext Update: Saturday, April 25, 2026, at 12:00 AM UTC"
+            },
             {
               "createdAt": "2026-04-24T21:16:55.257Z",
               "postType": "regular",
