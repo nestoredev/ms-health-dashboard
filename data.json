@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-24T19:34:53.704Z",
+  "lastUpdated": "2026-04-24T20:05:04.160Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -595,7 +595,7 @@
       "title": "Users are experiencing intermittent latency and failures for scenarios that rely on Dataverse",
       "startTime": "2026-04-24T12:20:00Z",
       "endTime": "2026-04-24T18:18:00Z",
-      "lastModified": "2026-04-24T19:13:48.503Z",
+      "lastModified": "2026-04-24T19:52:40.6Z",
       "status": "serviceRestored",
       "severity": "advisory",
       "userImpact": "Users experienced intermittent latency and failures for scenarios that rely on Dataverse.",
@@ -613,7 +613,7 @@
         {
           "createdAt": "2026-04-24T18:51:25.36Z",
           "postType": "regular",
-          "content": "Title: Users are experiencing intermittent latency and failures for scenarios that rely on Dataverse\n\nUser impact: Users are experiencing intermittent latency and failures for scenarios that rely on Dataverse.\n\nMore Info: Users are experiencing impact across multiple scenarios across products including but not limited to:\n\n- Dynamics 365 Contact Center\n- Microsoft Copilot Studio \n- Power Apps \n- Power Automate\n- Power Pages\n\nCurrent Status: After our investigation, we identified an outage for a service dependency as the source of the impact. To mitigate the issue, automated recovery processes were triggered which re-routed service traffic to healthy redundant infrastructure. We are monitoring service health diagnostics to confirm recovery. \n \nNext Update: Friday, April 24, 2026, at 9:00 PM UTC"
+          "content": "Title: Users are experiencing intermittent latency and failures for scenarios that rely on Dataverse\n\nUser impact: Users are experiencing intermittent latency and failures for scenarios that rely on Dataverse.\n\nMore Info: Users are experiencing impact across multiple scenarios across products including but not limited to:\n\n- Dynamics 365 Contact Center\n- Microsoft Copilot Studio \n- Power Apps \n- Power Automate\n- Power Pages\n\nCurrent Status: After our investigation, we identified an outage for a service dependency caused by a recent deployment as the source of the impact. To mitigate the issue, we initiated a rollback of the deployment. In parallel, automated recovery processes were triggered which re-routed service traffic to healthy redundant infrastructure. We are monitoring service health diagnostics to confirm recovery.\n \nNext Update: Friday, April 24, 2026, at 9:00 PM UTC"
         },
         {
           "createdAt": "2026-04-24T18:23:53.967Z",
