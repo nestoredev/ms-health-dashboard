@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-24T21:05:21.680Z",
+  "lastUpdated": "2026-04-24T21:35:29.460Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -565,9 +565,35 @@
     },
     {
       "service": "Microsoft Dataverse",
-      "status": "serviceOperational",
+      "status": "investigating",
       "id": "MicrosoftDataverse",
-      "issues": []
+      "issues": [
+        {
+          "id": "DV1290815",
+          "title": "Users are experiencing intermittent latency and failures for scenarios that rely on Dataverse",
+          "startTime": "2026-04-24T20:40:00Z",
+          "endTime": null,
+          "lastModified": "2026-04-24T21:16:55.257Z",
+          "status": "investigating",
+          "severity": "advisory",
+          "userImpact": "Users are experiencing intermittent latency and failures for scenarios that rely on Dataverse.",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
+          "feature": "Other",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-04-24T21:16:55.257Z",
+              "postType": "regular",
+              "content": "Title: Users are experiencing intermittent latency and failures for scenarios that rely on Dataverse\n\nUser impact: Users are experiencing intermittent latency and failures for scenarios that rely on Dataverse.\n\nCurrent Status: We are aware of an emerging issue where users are experiencing intermittent latency and failures for scenarios that rely on Dataverse. We are investigating the issue and will provide another update within the next 30 minutes.\n\nThis information is preliminary and may be subject to changes, corrections, and updates.\n"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Dataverse"
+          ]
+        }
+      ]
     },
     {
       "service": "Power Platform",
