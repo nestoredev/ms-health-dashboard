@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-25T01:06:30.484Z",
+  "lastUpdated": "2026-04-25T01:36:38.345Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -565,45 +565,9 @@
     },
     {
       "service": "Microsoft Dataverse",
-      "status": "serviceInterruption",
+      "status": "serviceOperational",
       "id": "MicrosoftDataverse",
-      "issues": [
-        {
-          "id": "DV1290815",
-          "title": "Users are experiencing intermittent latency and failures for scenarios that rely on Dataverse",
-          "startTime": "2026-04-24T20:40:00Z",
-          "endTime": null,
-          "lastModified": "2026-04-24T22:54:39.593Z",
-          "status": "serviceInterruption",
-          "severity": "advisory",
-          "userImpact": "Users are experiencing intermittent latency and failures for scenarios that rely on Dataverse.",
-          "scopeOfImpact": "",
-          "rootCause": "",
-          "nextUpdateBy": "",
-          "feature": "Other",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-04-24T22:22:47.887Z",
-              "postType": "regular",
-              "content": "Title: Users are experiencing intermittent latency and failures for scenarios that rely on Dataverse\n\nUser impact: Users are experiencing intermittent latency and failures for scenarios that rely on Dataverse.\n\nMore Info: Users are experiencing impact across multiple scenarios across products including but not limited to:\n\n- Dynamics 365 Contact Center\n- Microsoft Copilot Studio \n- Power Apps \n- Power Automate\n- Power Pages\n\nUsers may observe recovery as the rollbacks progress. \n\nCurrent Status: After our investigation, we identified that the service issue affecting the dependency was caused by a recent infrastructure deployment. A rollback of the infrastructure deployment was initiated, but two additional deployments to other portions of the service infrastructure were identified to contain a regression. A rollback of the other two infrastructure deployments containing the regression are ongoing. We are monitoring service health diagnostics for recovery as the rollbacks progress. \n\nNext Update: Saturday, April 25, 2026, at 2:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-04-24T21:38:59.063Z",
-              "postType": "regular",
-              "content": "Title: Users are experiencing intermittent latency and failures for scenarios that rely on Dataverse\n\nUser impact: Users are experiencing intermittent latency and failures for scenarios that rely on Dataverse.\n\nCurrent Status: After an initial investigation, we identified that a service issue affecting an upstream service dependency as the source of impact. We are continuing to investigate to further isolate the root cause of the impact and to develop a strategy for mitigation. \n\nNext Update: Saturday, April 25, 2026, at 12:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-04-24T21:16:55.257Z",
-              "postType": "regular",
-              "content": "Title: Users are experiencing intermittent latency and failures for scenarios that rely on Dataverse\n\nUser impact: Users are experiencing intermittent latency and failures for scenarios that rely on Dataverse.\n\nCurrent Status: We are aware of an emerging issue where users are experiencing intermittent latency and failures for scenarios that rely on Dataverse. We are investigating the issue and will provide another update within the next 30 minutes.\n\nThis information is preliminary and may be subject to changes, corrections, and updates.\n"
-            }
-          ],
-          "affectedServices": [
-            "Microsoft Dataverse"
-          ]
-        }
-      ]
+      "issues": []
     },
     {
       "service": "Power Platform",
@@ -631,6 +595,47 @@
     }
   ],
   "history": [
+    {
+      "id": "DV1290815",
+      "title": "Users are experiencing intermittent latency and failures for scenarios that rely on Dataverse",
+      "startTime": "2026-04-24T20:40:00Z",
+      "endTime": "2026-04-24T22:04:00Z",
+      "lastModified": "2026-04-25T01:25:27.373Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users experienced intermittent latency and failures for scenarios that rely on Dataverse.",
+      "scopeOfImpact": "",
+      "rootCause": "A service dependency experienced a service issue, which resulted in downstream impact. \n\nNext Steps: We're analyzing performance data and trends on the affected service infrastructure to prevent this problem from happening again.",
+      "nextUpdateBy": "",
+      "feature": "Other",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-04-25T01:25:27.373Z",
+          "postType": "regular",
+          "content": "Title: Users are experiencing intermittent latency and failures for scenarios that rely on Dataverse\n\nUser impact: Users experienced intermittent latency and failures for scenarios that rely on Dataverse.\n\nMore Info: Users experienced impact across multiple scenarios across products including but not limited to:\n\n- Dynamics 365 Contact Center\n- Microsoft Copilot Studio \n- Power Apps \n- Power Automate\n- Power Pages\n\nFinal Status: While monitoring service diagnostics for recovery, we identified a configuration change we could make to a portion of the service infrastructure utilized by the affected scenarios to improve our service health. We applied the configuration change and, in parallel, confirmed that the mitigations being performed by the service dependency had reached a stage that their service issue was no longer causing downstream impact. Following this, we monitored service health for a period and confirmed that user impact was resolved.\n\nA Post Incident Report will be published within five days.\n\nPreliminary Root Cause: A service dependency experienced a service issue, which resulted in downstream impact. \n\nNext Steps: We're analyzing performance data and trends on the affected service infrastructure to prevent this problem from happening again."
+        },
+        {
+          "createdAt": "2026-04-24T22:22:47.887Z",
+          "postType": "regular",
+          "content": "Title: Users are experiencing intermittent latency and failures for scenarios that rely on Dataverse\n\nUser impact: Users are experiencing intermittent latency and failures for scenarios that rely on Dataverse.\n\nMore Info: Users are experiencing impact across multiple scenarios across products including but not limited to:\n\n- Dynamics 365 Contact Center\n- Microsoft Copilot Studio \n- Power Apps \n- Power Automate\n- Power Pages\n\nUsers may observe recovery as the rollbacks progress. \n\nCurrent Status: After our investigation, we identified that the service issue affecting the dependency was caused by a recent infrastructure deployment. A rollback of the infrastructure deployment was initiated, but two additional deployments to other portions of the service infrastructure were identified to contain a regression. A rollback of the other two infrastructure deployments containing the regression are ongoing. We are monitoring service health diagnostics for recovery as the rollbacks progress. \n\nNext Update: Saturday, April 25, 2026, at 2:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-04-24T21:38:59.063Z",
+          "postType": "regular",
+          "content": "Title: Users are experiencing intermittent latency and failures for scenarios that rely on Dataverse\n\nUser impact: Users are experiencing intermittent latency and failures for scenarios that rely on Dataverse.\n\nCurrent Status: After an initial investigation, we identified that a service issue affecting an upstream service dependency as the source of impact. We are continuing to investigate to further isolate the root cause of the impact and to develop a strategy for mitigation. \n\nNext Update: Saturday, April 25, 2026, at 12:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-04-24T21:16:55.257Z",
+          "postType": "regular",
+          "content": "Title: Users are experiencing intermittent latency and failures for scenarios that rely on Dataverse\n\nUser impact: Users are experiencing intermittent latency and failures for scenarios that rely on Dataverse.\n\nCurrent Status: We are aware of an emerging issue where users are experiencing intermittent latency and failures for scenarios that rely on Dataverse. We are investigating the issue and will provide another update within the next 30 minutes.\n\nThis information is preliminary and may be subject to changes, corrections, and updates.\n"
+        }
+      ],
+      "serviceName": "Microsoft Dataverse",
+      "affectedServices": [
+        "Microsoft Dataverse"
+      ]
+    },
     {
       "id": "MP1290847",
       "title": "Admins may be unable to create new policies or edit existing compliance policies through Microsoft Purview",
