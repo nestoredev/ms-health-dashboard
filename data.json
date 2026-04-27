@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-27T22:55:34.959Z",
+  "lastUpdated": "2026-04-27T23:25:42.931Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -211,16 +211,21 @@
           "title": "Admins' search parameters may be missing after performing a group search in the Exchange admin center",
           "startTime": "2026-04-14T16:22:39Z",
           "endTime": null,
-          "lastModified": "2026-04-27T16:40:10.97Z",
+          "lastModified": "2026-04-27T22:51:54.223Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins' search parameters may be missing after performing a group search in the Exchange admin center.",
           "scopeOfImpact": "Any admin performing a group search in the Exchange admin center may be affected. This information may be updated as our investigation continues.",
-          "rootCause": "A recent service-side configuration change contains a code issue that's preventing the search parameters from populating after performing a group search in the Exchange admin center.",
-          "nextUpdateBy": "Monday, April 27, 2026, at 11:30 PM UTC",
+          "rootCause": "A recent service-side configuration change contains a code issue that's preventing the search parameters from populating after performing a group search in the Exchange admin center.\r\n\r\nNext update time: Tuesday, April 28, 2026, at 8:00 PM UTC",
+          "nextUpdateBy": "",
           "feature": "Tenant Administration (Provisioning, Remote PowerShell)",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-04-27T22:51:54.223Z",
+              "postType": "regular",
+              "content": "Title: Admins' search parameters may be missing after performing a group search in the Exchange admin center\r\n\r\nUser impact: Admins' search parameters may be missing after performing a group search in the Exchange admin center.\r\n\r\nMore info: Specifically, the search terms are removed upon initiating a group searches.\n\nOther searches don't appear to be affected.\r\n\r\nCurrent status: We're continuing to monitor the progress of our fix deployment and are monitoring whether it remediates the impact as expected.\r\n\r\nScope of impact: Any admin performing a group search in the Exchange admin center may be affected. This information may be updated as our investigation continues.\r\n\r\nRoot cause: A recent service-side configuration change contains a code issue that's preventing the search parameters from populating after performing a group search in the Exchange admin center.\r\n\r\nNext update time: Tuesday, April 28, 2026, at 8:00 PM UTC"
+            },
             {
               "createdAt": "2026-04-27T16:40:10.97Z",
               "postType": "regular",
