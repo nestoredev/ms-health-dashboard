@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-27T17:54:17.702Z",
+  "lastUpdated": "2026-04-27T18:24:24.618Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -115,61 +115,6 @@
               "createdAt": "2026-02-16T05:07:28.317Z",
               "postType": "regular",
               "content": "Title: Some users may see that when selecting a meeting room when scheduling meetings, it changes from available to unavailable\n\nUser impact: Users may see that after selecting a meeting room when scheduling meetings, it changes from available to unavailable.\n\nMore info: Specifically, the meeting room selected is incorrectly changing from available to unavailable in Exchange Online. \n\nCurrent status: We're investigating a potential issue with Exchange Online and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Exchange Online"
-          ]
-        },
-        {
-          "id": "EX1280763",
-          "title": "Admins are unable to progress mailbox migrations in Exchange Online",
-          "startTime": "2026-04-15T08:36:58Z",
-          "endTime": null,
-          "lastModified": "2026-04-24T06:29:14.963Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Admins are unable to progress mailbox migrations in Exchange Online.",
-          "scopeOfImpact": "All admins attempting mailbox migrations into or out of Exchange Online are impacted.",
-          "rootCause": "A recent service side update introduced an issue that's causing migration jobs to fail, resulting in impact.",
-          "nextUpdateBy": "Monday, April 27, 2026, at 6:30 PM UTC",
-          "feature": "Mailbox Migrations",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-04-23T17:54:26.217Z",
-              "postType": "regular",
-              "content": "Title: Admins are unable to progress mailbox migrations in Exchange Online\n\nUser impact: Admins are unable to progress mailbox migrations in Exchange Online.\n\nMore info: All mailbox onboarding and offboarding scenarios in Exchange Online, including Tenant to Tenant migrations remain in a syncing state.\n\nCurrent status: We’re continuing to monitor the fix as it propagates throughout the affected infrastructure, where deployment has now reached 90 percent. We’ll provide a resolution timeline once available.\n\nScope of impact: All admins attempting mailbox migrations into or out of Exchange Online are impacted.\n\nRoot cause: A recent service side update introduced an issue that's causing migration jobs to fail, resulting in impact.\n\nNext update by: Monday, April 27, 2026, at 6:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-04-22T18:19:49.517Z",
-              "postType": "regular",
-              "content": "Title: Admins are unable to progress mailbox migrations in Exchange Online\n\nUser impact: Admins are unable to progress mailbox migrations in Exchange Online.\n\nMore info: All mailbox onboarding and offboarding scenarios in Exchange Online, including Tenant to Tenant migrations remain in a syncing state.\n\nCurrent status: The fix has reached around 85 percent of the affected infrastructure and we're continuing to monitor as the fix deployment progresses and we expect it to complete by the next scheduled update.\n\nScope of impact: All admins attempting mailbox migrations into or out of Exchange Online are impacted.\n\nRoot cause: A recent service side update introduced an issue that's causing migration jobs to fail, resulting in impact.\n\nNext update by: Thursday, April 23, 2026, at 7:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-04-20T17:32:25.12Z",
-              "postType": "regular",
-              "content": "Title: Admins are unable to progress mailbox migrations in Exchange Online\n\nUser impact: Admins are unable to progress mailbox migrations in Exchange Online.\n\nMore info: All mailbox onboarding and offboarding scenarios in Exchange Online, including Tenant to Tenant migrations remain in a syncing state.\n\nCurrent status: We confirmed through internal testing in our internal environments the effectiveness of the fix and have begun broad deployment. The deployment is currently at 29% and progressing. We'll continue to monitor the deployment of the fix and provide additional status at next communication time.\n\nScope of impact: All admins attempting mailbox migrations into or out of Exchange Online are impacted. This information may be updated as our investigation continues.\n\nRoot cause: A recent service-side update introduced an issue that is causing migration jobs to fail, resulting in impact.\n\nNext update by: Wednesday, April 22, 2026, at 7:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-04-16T12:29:43.513Z",
-              "postType": "regular",
-              "content": "Title: Admins may be unable to progress mailbox migrations in Exchange Online\n\nUser impact: Admins may be unable to progress mailbox migrations in Exchange Online.\n\nMore info: All mailbox onboarding and offboarding scenarios in Exchange Online, including Tenant to Tenant migrations remain in a syncing state.\n\nCurrent status: We've begun deploying our fix to revert the offending service update to our internal test environment to validate whether it resolves the issue prior to broad deployment. We anticipate our validations will complete, and broad deployment initiated by our next scheduled communications update. We'll continue reviewing potential short-term mitigation options, but our testing thus far hasn't revealed any viable actions besides the reversion.\n\nScope of impact: All admins attempting mailbox migrations into or out of Exchange Online are impacted. This information may be updated as our investigation continues.\n\nRoot cause: A recent service-side update introduced an issue that is causing migration jobs to fail, resulting in impact.\n\nNext update by: Monday, April 20, 2026, at 6:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-04-15T17:51:25.437Z",
-              "postType": "regular",
-              "content": "Title: Admins may be unable to progress mailbox migrations in Exchange Online\n\nUser impact: Admins may be unable to progress mailbox migrations in Exchange Online.\n\nMore info: All mailbox migrations from on-premises to Exchange Online remain in a syncing state.\n \nCurrent status: We've begun deploying our fix to revert the offending service update to our internal test environment to validate whether it resolves the issue prior to broad deployment. We anticipate our validations will complete, and broad deployment initiated by our next scheduled communications update. We'll continue reviewing potential short-term mitigation options, but our testing thus far hasn't revealed any viable actions besides the reversion.\n \nScope of impact: All admins attempting mailbox migrations from on-premises to Exchange Online are impacted. This information may be updated as our investigation continues.\n \nRoot cause: A recent service-side update introduced an issue that is causing migration jobs to fail, resulting in impact.\n \nNext update by: Monday, April 20, 2026, at 6:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-04-15T10:29:32.683Z",
-              "postType": "regular",
-              "content": "Title: Admins may be unable to progress mailbox migrations in Exchange Online\n\nUser impact: Admins may be unable to progress mailbox migrations in Exchange Online.\n\nMore info: All mailbox migrations from on-premises to Exchange Online remain in a syncing state.\n\nCurrent status: We’ve determined that a recent service-side update inadvertently introduced a dependency issue that is causing migration jobs to fail. We’re reverting the update that introduced the issue to remediate impact. We’re also exploring short-term mitigations to allow migrations to complete while the permanent fix is finalized and deployed.\n\nScope of impact: All admins attempting mailbox migrations from on-premises to Exchange Online are impacted. This information may be updated as our investigation continues.\n\nRoot cause: A recent service-side update inadvertently introduced an issue that is causing migration jobs to fail, resulting in impact.\n\nNext update by: Wednesday, April 15, 2026, at 6:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-04-15T08:39:57.01Z",
-              "postType": "regular",
-              "content": "Title: Admins may be unable to progress mailbox migrations in Exchange Online\n\nUser impact: Admins may be unable to progress mailbox migrations in Exchange Online.\n\nMore info: All mailbox migrations from on-premises to Exchange Online remain in a syncing state.\n\nCurrent status: We’re analyzing migration and move request diagnostics to understand why mailbox migrations aren’t progressing and to determine a remediation path.\n\nScope of impact: All admins attempting mailbox migrations from on-premises to Exchange Online are impacted. This information may be updated as our investigation continues.\n\nNext update by: Wednesday, April 15, 2026, at 10:30 AM UTC"
             }
           ],
           "affectedServices": [
@@ -605,6 +550,52 @@
     }
   ],
   "history": [
+    {
+      "id": "EX1280763",
+      "title": "Admins may be unable to progress mailbox migrations in Exchange Online",
+      "startTime": "2026-04-14T11:20:00Z",
+      "endTime": "2026-04-27T16:39:00Z",
+      "lastModified": "2026-04-27T17:58:59.43Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Admins may have been unable to progress mailbox migrations in Exchange Online.",
+      "scopeOfImpact": "All admins attempting mailbox migrations into or out of Exchange Online may have been impacted.\r\n\r\nStart time: Tuesday, April 14, 2026, at 11:20 AM UTC\r\n\r\nEnd time: Monday, April 27, 2026, at 4:39 PM UTC",
+      "rootCause": "A recent service side update introduced an issue that was causing migration jobs to fail, resulting in impact.\r\n\r\nNext steps: We're analyzing the offending service-side update to determine why the potential for impact wasn't caught during our internal update testing and validation phases. This analysis will help us to improve our update testing processes moving forward to ensure similar impact scenarios don't occur in the future.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Mailbox Migrations",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-04-27T17:57:57.56Z",
+          "postType": "regular",
+          "content": "Title: Admins may be unable to progress mailbox migrations in Exchange Online\r\n\r\nUser impact: Admins may have been unable to progress mailbox migrations in Exchange Online.\r\n\r\nMore info: All mailbox onboarding and offboarding scenarios in Exchange Online, including Tenant to Tenant migrations remained in a syncing state.\r\n\r\nFinal status: We've confirmed that our deployment of a code fix to address an offending service-side update has completed and impact is remediated.\r\n\r\nScope of impact: All admins attempting mailbox migrations into or out of Exchange Online may have been impacted.\r\n\r\nStart time: Tuesday, April 14, 2026, at 11:20 AM UTC\r\n\r\nEnd time: Monday, April 27, 2026, at 4:39 PM UTC\r\n\r\nRoot cause: A recent service side update introduced an issue that was causing migration jobs to fail, resulting in impact.\r\n\r\nNext steps: We're analyzing the offending service-side update to determine why the potential for impact wasn't caught during our internal update testing and validation phases. This analysis will help us to improve our update testing processes moving forward to ensure similar impact scenarios don't occur in the future.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-04-23T17:54:26.217Z",
+          "postType": "regular",
+          "content": "Title: Admins are unable to progress mailbox migrations in Exchange Online\n\nUser impact: Admins are unable to progress mailbox migrations in Exchange Online.\n\nMore info: All mailbox onboarding and offboarding scenarios in Exchange Online, including Tenant to Tenant migrations remain in a syncing state.\n\nCurrent status: We’re continuing to monitor the fix as it propagates throughout the affected infrastructure, where deployment has now reached 90 percent. We’ll provide a resolution timeline once available.\n\nScope of impact: All admins attempting mailbox migrations into or out of Exchange Online are impacted.\n\nRoot cause: A recent service side update introduced an issue that's causing migration jobs to fail, resulting in impact.\n\nNext update by: Monday, April 27, 2026, at 6:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-04-22T18:19:49.517Z",
+          "postType": "regular",
+          "content": "Title: Admins are unable to progress mailbox migrations in Exchange Online\n\nUser impact: Admins are unable to progress mailbox migrations in Exchange Online.\n\nMore info: All mailbox onboarding and offboarding scenarios in Exchange Online, including Tenant to Tenant migrations remain in a syncing state.\n\nCurrent status: The fix has reached around 85 percent of the affected infrastructure and we're continuing to monitor as the fix deployment progresses and we expect it to complete by the next scheduled update.\n\nScope of impact: All admins attempting mailbox migrations into or out of Exchange Online are impacted.\n\nRoot cause: A recent service side update introduced an issue that's causing migration jobs to fail, resulting in impact.\n\nNext update by: Thursday, April 23, 2026, at 7:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-04-20T17:32:25.12Z",
+          "postType": "regular",
+          "content": "Title: Admins are unable to progress mailbox migrations in Exchange Online\n\nUser impact: Admins are unable to progress mailbox migrations in Exchange Online.\n\nMore info: All mailbox onboarding and offboarding scenarios in Exchange Online, including Tenant to Tenant migrations remain in a syncing state.\n\nCurrent status: We confirmed through internal testing in our internal environments the effectiveness of the fix and have begun broad deployment. The deployment is currently at 29% and progressing. We'll continue to monitor the deployment of the fix and provide additional status at next communication time.\n\nScope of impact: All admins attempting mailbox migrations into or out of Exchange Online are impacted. This information may be updated as our investigation continues.\n\nRoot cause: A recent service-side update introduced an issue that is causing migration jobs to fail, resulting in impact.\n\nNext update by: Wednesday, April 22, 2026, at 7:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-04-16T12:29:43.513Z",
+          "postType": "regular",
+          "content": "Title: Admins may be unable to progress mailbox migrations in Exchange Online\n\nUser impact: Admins may be unable to progress mailbox migrations in Exchange Online.\n\nMore info: All mailbox onboarding and offboarding scenarios in Exchange Online, including Tenant to Tenant migrations remain in a syncing state.\n\nCurrent status: We've begun deploying our fix to revert the offending service update to our internal test environment to validate whether it resolves the issue prior to broad deployment. We anticipate our validations will complete, and broad deployment initiated by our next scheduled communications update. We'll continue reviewing potential short-term mitigation options, but our testing thus far hasn't revealed any viable actions besides the reversion.\n\nScope of impact: All admins attempting mailbox migrations into or out of Exchange Online are impacted. This information may be updated as our investigation continues.\n\nRoot cause: A recent service-side update introduced an issue that is causing migration jobs to fail, resulting in impact.\n\nNext update by: Monday, April 20, 2026, at 6:00 PM UTC"
+        }
+      ],
+      "serviceName": "Exchange Online",
+      "affectedServices": [
+        "Exchange Online"
+      ]
+    },
     {
       "id": "DV1290815",
       "title": "Users are experiencing intermittent latency and failures for scenarios that rely on Dataverse",
