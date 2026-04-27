@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-27T10:22:15.327Z",
+  "lastUpdated": "2026-04-27T10:52:24.142Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -181,16 +181,21 @@
           "title": "Some users may be unable to use classic Outlook when the Teams Meeting Add-in is enabled",
           "startTime": "2026-03-12T12:36:00Z",
           "endTime": null,
-          "lastModified": "2026-04-26T20:54:24.69Z",
+          "lastModified": "2026-04-27T10:36:07.757Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to use classic Outlook when the Teams Meeting Add-in is enabled.",
-          "scopeOfImpact": "Some users attempting to use classic Outlook with the Microsoft Teams Meeting Add-in enabled in Teams version 26043.2016.4478.2773 may be impacted. This information may be updated as our investigation continues.\n\nStart time: Thursday, March 12, 2026, at 12:36 PM UTC\n\nEstimated time to resolve:  Tuesday, April 28, 2026",
+          "scopeOfImpact": "Some users attempting to use classic Outlook with the Microsoft Teams Meeting Add-in enabled in Teams version 26043.2016.4478.2773 may be impacted. This information may be updated as our investigation continues.\n\nStart time: Thursday, March 12, 2026, at 12:36 PM UTC",
           "rootCause": "A code issue within a recent Microsoft Teams Meeting Add-in update under Microsoft Teams version 26043.2016.4478.2773 is causing a compatibility issue with classic Outlook and resulting in functionality issues.",
-          "nextUpdateBy": "Monday, April 27, 2026, at 11:00 AM UTC",
+          "nextUpdateBy": "Tuesday, April 28, 2026, at 11:30 AM UTC",
           "feature": "Outlook - problems connecting",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-04-27T10:36:07.757Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to use classic Outlook when the Teams Meeting Add-in is enabled\n\nUser impact: Users may be unable to use classic Outlook when the Teams Meeting Add-in is enabled.\n\nMore info: Specifically, impacted users may experience crashes while using the classic Outlook on any client, or be unable to launch the service.\n\nWe've confirmed that the previous Microsoft Teams version 26032.208.4399.5 works successfully with classic Outlook. Users who’ve updated to the latest version of Teams and are still experiencing issues should restart the Teams app and sign out and back in again to ensure the updated configuration is applied. If the issue persists, we recommend reaching out to your support representatives to request a temporary reversion if you're affected by this event while we work to resolve this issue.\n\nCurrent status: We've determined that a fix is ready for deployment and is expected to be completed by tomorrow. We're continuing to monitor the fix progress and will provide an update once the deployment is completed.\n\nScope of impact: Some users attempting to use classic Outlook with the Microsoft Teams Meeting Add-in enabled in Teams version 26043.2016.4478.2773 may be impacted. This information may be updated as our investigation continues.\n\nStart time: Thursday, March 12, 2026, at 12:36 PM UTC\n\nRoot cause: A code issue within a recent Microsoft Teams Meeting Add-in update under Microsoft Teams version 26043.2016.4478.2773 is causing a compatibility issue with classic Outlook and resulting in functionality issues.\n\nNext update by: Tuesday, April 28, 2026, at 11:30 AM UTC"
+            },
             {
               "createdAt": "2026-04-24T09:18:41.473Z",
               "postType": "regular",
