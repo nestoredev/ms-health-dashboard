@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-29T20:07:33.620Z",
+  "lastUpdated": "2026-04-29T20:37:42.331Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -297,40 +297,9 @@
     },
     {
       "service": "SharePoint Online",
-      "status": "serviceDegradation",
+      "status": "serviceOperational",
       "id": "SharePoint",
-      "issues": [
-        {
-          "id": "SP1295361",
-          "title": "Users may be unable to view analytics for SharePoint Online sites",
-          "startTime": "2026-04-29T18:55:16.123Z",
-          "endTime": null,
-          "lastModified": "2026-04-29T19:39:24.477Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may be unable to view analytics for SharePoint Online sites. ",
-          "scopeOfImpact": "This issue may affect any user that's attempting to view analytics for SharePoint Online sites.\n\nStart time: Friday, April 24, 2026, at 12:30 PM UTC",
-          "rootCause": "A recent configuration change has introduced an error in the code, resulting in impact.",
-          "nextUpdateBy": "Wednesday, April 29, 2026, at 8:30 PM UTC",
-          "feature": "SharePoint Online all features",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-04-29T19:23:20.123Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to view analytics for SharePoint Online sites\n\nUser impact: Users may be unable to view analytics for SharePoint Online sites. \n\nMore info: Specifically, when attempting to view site analytics data, the page renders but analytics data may not be populated.\n\nCurrent status: After investigating the source of the impact, we've determined that a recent configuration change introduced an error in the code, resulting in impact. We've reverted this change through our rollback process and are monitoring service health telemetry to confirm errors associated with impact have ceased and the issue is fully remediated.\n\nScope of impact: This issue may affect any user that's attempting to view analytics for SharePoint Online sites.\n\nStart time: Friday, April 24, 2026, at 12:30 PM UTC\n\nRoot cause: A recent configuration change has introduced an error in the code, resulting in impact.\n\nNext update by: Wednesday, April 29, 2026, at 8:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-04-29T18:56:59.07Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to view analytics for SharePoint Online sites\r\n\r\nUser impact: Users may be unable to view analytics for SharePoint Online sites. \r\n\r\nMore info: Specifically, when attempting to view site analytics data, the page renders but analytics data may not be populated.\r\n\r\nCurrent status: We're investigating a potential issue with Sharepoint Online and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "SharePoint Online"
-          ]
-        }
-      ]
+      "issues": []
     },
     {
       "service": "Dynamics 365 Apps",
@@ -606,6 +575,42 @@
     }
   ],
   "history": [
+    {
+      "id": "SP1295361",
+      "title": "Users may be unable to view analytics for SharePoint Online sites",
+      "startTime": "2026-04-24T12:30:00Z",
+      "endTime": "2026-04-29T19:30:00Z",
+      "lastModified": "2026-04-29T20:14:52.193Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have been unable to view analytics for SharePoint Online sites.",
+      "scopeOfImpact": "This issue may have affected any user attempting to view analytics for SharePoint Online sites.\r\n\r\nStart time: Friday, April 24, 2026, at 12:30 PM UTC\r\n\r\nEnd time: Wednesday, April 29, 2026, at 7:30 PM UTC",
+      "rootCause": "A recent configuration change has introduced an error in the code, resulting in impact.\r\n\r\nNext steps: We’re reviewing our change testing and validation procedures to identify how impact was missed and better prevent similar future occurrences. \r\n\r\nThis is the final update for this event.",
+      "nextUpdateBy": "",
+      "feature": "SharePoint Online all features",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-04-29T20:13:08.57Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to view analytics for SharePoint Online sites\r\n\r\nUser impact: Users may have been unable to view analytics for SharePoint Online sites.\r\n\r\nMore info: Specifically, when attempting to view site analytics data, the page rendered but analytics data may not have been populated.\r\n\r\nFinal status: After completing our rollback of the impacting configuration change, we’ve confirmed through service health telemetry that errors associated with impact have ceased and the issue is fully remediated.\r\n\r\nScope of impact: This issue may have affected any user attempting to view analytics for SharePoint Online sites.\r\n\r\nStart time: Friday, April 24, 2026, at 12:30 PM UTC\r\n\r\nEnd time: Wednesday, April 29, 2026, at 7:30 PM UTC\r\n\r\nRoot cause: A recent configuration change has introduced an error in the code, resulting in impact.\r\n\r\nNext steps: We’re reviewing our change testing and validation procedures to identify how impact was missed and better prevent similar future occurrences. \r\n\r\nThis is the final update for this event."
+        },
+        {
+          "createdAt": "2026-04-29T19:23:20.123Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to view analytics for SharePoint Online sites\n\nUser impact: Users may be unable to view analytics for SharePoint Online sites. \n\nMore info: Specifically, when attempting to view site analytics data, the page renders but analytics data may not be populated.\n\nCurrent status: After investigating the source of the impact, we've determined that a recent configuration change introduced an error in the code, resulting in impact. We've reverted this change through our rollback process and are monitoring service health telemetry to confirm errors associated with impact have ceased and the issue is fully remediated.\n\nScope of impact: This issue may affect any user that's attempting to view analytics for SharePoint Online sites.\n\nStart time: Friday, April 24, 2026, at 12:30 PM UTC\n\nRoot cause: A recent configuration change has introduced an error in the code, resulting in impact.\n\nNext update by: Wednesday, April 29, 2026, at 8:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-04-29T18:56:59.07Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to view analytics for SharePoint Online sites\r\n\r\nUser impact: Users may be unable to view analytics for SharePoint Online sites. \r\n\r\nMore info: Specifically, when attempting to view site analytics data, the page renders but analytics data may not be populated.\r\n\r\nCurrent status: We're investigating a potential issue with Sharepoint Online and checking for impact to your organization. We'll provide an update within 30 minutes."
+        }
+      ],
+      "serviceName": "SharePoint Online",
+      "affectedServices": [
+        "SharePoint Online"
+      ]
+    },
     {
       "id": "EX1280763",
       "title": "Admins may be unable to progress mailbox migrations in Exchange Online",
