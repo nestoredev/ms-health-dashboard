@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-29T19:07:15.308Z",
+  "lastUpdated": "2026-04-29T19:37:25.395Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -305,16 +305,21 @@
           "title": "Users may be unable to view analytics for SharePoint Online sites",
           "startTime": "2026-04-29T18:55:16.123Z",
           "endTime": null,
-          "lastModified": "2026-04-29T18:56:59.07Z",
+          "lastModified": "2026-04-29T19:23:20.123Z",
           "status": "investigating",
           "severity": "advisory",
           "userImpact": "Users may be unable to view analytics for SharePoint Online sites. ",
-          "scopeOfImpact": "",
-          "rootCause": "",
+          "scopeOfImpact": "This issue may affect any user that's attempting to view analytics for SharePoint Online sites.\r\n\r\nStart time: Friday, April 24, 2026, at 12:30 PM UTC",
+          "rootCause": "A recent configuration change has introduced an error in the code, resulting in impact.\r\n\r\nNext update time: Wednesday, April 29, 2026, at 8:30 PM UTC",
           "nextUpdateBy": "",
           "feature": "SharePoint Online all features",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-04-29T19:23:20.123Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to view analytics for SharePoint Online sites\r\n\r\nUser impact: Users may be unable to view analytics for SharePoint Online sites. \r\n\r\nMore info: Specifically, when attempting to view site analytics data, the page renders but analytics data may not be populated.\r\n\r\nCurrent status: After investigating the source of the impact, we've determined that a recent configuration change introduced an error in the code, resulting in impact. We've reverted this change through our rollback process and are monitoring service health telemetry to confirm errors associated with impact have ceased and the issue is fully remediated.\r\n\r\nScope of impact: This issue may affect any user that's attempting to view analytics for SharePoint Online sites.\r\n\r\nStart time: Friday, April 24, 2026, at 12:30 PM UTC\r\n\r\nRoot cause: A recent configuration change has introduced an error in the code, resulting in impact.\r\n\r\nNext update time: Wednesday, April 29, 2026, at 8:30 PM UTC"
+            },
             {
               "createdAt": "2026-04-29T18:56:59.07Z",
               "postType": "regular",
