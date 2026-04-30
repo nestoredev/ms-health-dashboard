@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-30T17:13:32.421Z",
+  "lastUpdated": "2026-04-30T17:43:41.642Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -297,9 +297,40 @@
     },
     {
       "service": "SharePoint Online",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "SharePoint",
-      "issues": []
+      "issues": [
+        {
+          "id": "SP1296487",
+          "title": "Users may not be able to load the search bar in SharePoint Online sites",
+          "startTime": "2026-04-30T16:20:50Z",
+          "endTime": null,
+          "lastModified": "2026-04-30T17:29:39.23Z",
+          "status": "serviceDegradation",
+          "severity": "incident",
+          "userImpact": "Users may not be able to load the search bar in SharePoint Online sites.",
+          "scopeOfImpact": "This event impacts any user attempting to use the search bar in SharePoint Online.",
+          "rootCause": "",
+          "nextUpdateBy": "Thursday, April 30, 2026, at 6:30 PM UTC",
+          "feature": "SharePoint Online all features",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-04-30T17:17:55.183Z",
+              "postType": "regular",
+              "content": "Title: Users may not be able to load the search bar in SharePoint Online sites\n\nUser impact: Users may not be able to load the search bar in SharePoint Online sites.\n\nCurrent status: We've reproduced the issue in our environment, and we're reviewing traces collected while the issue is occurring to pinpoint the source of the failure.\n \nScope of impact: This event impacts any user attempting to use the search bar in SharePoint Online.\n\nNext update by: Thursday, April 30, 2026, at 6:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-04-30T16:20:51.01Z",
+              "postType": "regular",
+              "content": "Title: Possible delays or problems when accessing SharePoint Online\n\nUser impact: Some customers have reported issues with accessing the service, or using features in SharePoint Online.\n\nCurrent status: We’re looking into your reported issue and checking for impact to your organization. We'll provide an update within one hour."
+            }
+          ],
+          "affectedServices": [
+            "SharePoint Online"
+          ]
+        }
+      ]
     },
     {
       "service": "Dynamics 365 Apps",
@@ -380,9 +411,35 @@
     },
     {
       "service": "Microsoft OneDrive",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "OneDriveForBusiness",
-      "issues": []
+      "issues": [
+        {
+          "id": "OD1296516",
+          "title": "Users may not be able to load the search bar in Microsoft OneDrive",
+          "startTime": "2026-04-30T17:13:19Z",
+          "endTime": null,
+          "lastModified": "2026-04-30T17:29:59.38Z",
+          "status": "serviceDegradation",
+          "severity": "incident",
+          "userImpact": "Users may not be able to load the search bar in Microsoft OneDrive.",
+          "scopeOfImpact": "This event impacts any user attempting to use the search bar in Microsoft OneDrive.",
+          "rootCause": "",
+          "nextUpdateBy": "Thursday, April 30, 2026, at 6:30 PM UTC",
+          "feature": "OneDrive for Business",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-04-30T17:16:17.19Z",
+              "postType": "regular",
+              "content": "Title: Users may not be able to load the search bar in Microsoft OneDrive\n\nUser impact: Users may not be able to load the search bar in Microsoft OneDrive.\n\nCurrent status: We've reproduced the issue in our environment, and we're reviewing traces collected while the issue is occurring to pinpoint the source of the failure.\n\nScope of impact: This event impacts any user attempting to use the search bar in Microsoft OneDrive.\n\nNext update by: Thursday, April 30, 2026, at 6:30 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft OneDrive"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft Teams",
