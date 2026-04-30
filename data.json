@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-30T20:14:32.528Z",
+  "lastUpdated": "2026-04-30T20:44:42.504Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -297,45 +297,9 @@
     },
     {
       "service": "SharePoint Online",
-      "status": "serviceDegradation",
+      "status": "serviceOperational",
       "id": "SharePoint",
-      "issues": [
-        {
-          "id": "SP1296487",
-          "title": "Users may not be able to load the search bar in SharePoint Online sites",
-          "startTime": "2026-04-30T16:20:50Z",
-          "endTime": null,
-          "lastModified": "2026-04-30T18:30:20.72Z",
-          "status": "serviceDegradation",
-          "severity": "incident",
-          "userImpact": "Users may not be able to load the search bar in SharePoint Online sites.",
-          "scopeOfImpact": "This event impacts any user attempting to use the search bar in SharePoint Online.",
-          "rootCause": "",
-          "nextUpdateBy": "Thursday, April 30, 2026, at 8:30 PM UTC",
-          "feature": "SharePoint Online all features",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-04-30T18:30:20.72Z",
-              "postType": "regular",
-              "content": "Title: Users may not be able to load the search bar in SharePoint Online sites\n\nUser impact: Users may not be able to load the search bar in SharePoint Online sites.\n\nCurrent status: We've discovered a recent change that may be contributing to this event. We’ve rolled it back and our monitoring service health to determine whether this mitigates the event, which will help us confirm our hypothesis on the root cause of impact.\n\nScope of impact: This event impacts any user attempting to use the search bar in SharePoint Online.\n\nNext update by: Thursday, April 30, 2026, at 8:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-04-30T17:17:55.183Z",
-              "postType": "regular",
-              "content": "Title: Users may not be able to load the search bar in SharePoint Online sites\n\nUser impact: Users may not be able to load the search bar in SharePoint Online sites.\n\nCurrent status: We've reproduced the issue in our environment, and we're reviewing traces collected while the issue is occurring to pinpoint the source of the failure.\n \nScope of impact: This event impacts any user attempting to use the search bar in SharePoint Online.\n\nNext update by: Thursday, April 30, 2026, at 6:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-04-30T16:20:51.01Z",
-              "postType": "regular",
-              "content": "Title: Possible delays or problems when accessing SharePoint Online\n\nUser impact: Some customers have reported issues with accessing the service, or using features in SharePoint Online.\n\nCurrent status: We’re looking into your reported issue and checking for impact to your organization. We'll provide an update within one hour."
-            }
-          ],
-          "affectedServices": [
-            "SharePoint Online"
-          ]
-        }
-      ]
+      "issues": []
     },
     {
       "service": "Dynamics 365 Apps",
@@ -416,40 +380,9 @@
     },
     {
       "service": "Microsoft OneDrive",
-      "status": "serviceDegradation",
+      "status": "serviceOperational",
       "id": "OneDriveForBusiness",
-      "issues": [
-        {
-          "id": "OD1296516",
-          "title": "Users may not be able to load the search bar in Microsoft OneDrive",
-          "startTime": "2026-04-30T17:13:19Z",
-          "endTime": null,
-          "lastModified": "2026-04-30T18:31:53.937Z",
-          "status": "serviceDegradation",
-          "severity": "incident",
-          "userImpact": "Users may not be able to load the search bar in Microsoft OneDrive.",
-          "scopeOfImpact": "This event impacts any user attempting to use the search bar in OneDrive.",
-          "rootCause": "",
-          "nextUpdateBy": "Thursday, April 30, 2026, at 8:30 PM UTC",
-          "feature": "OneDrive for Business",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-04-30T18:30:54.577Z",
-              "postType": "regular",
-              "content": "Title: Users may not be able to load the search bar in Microsoft OneDrive\n\nUser impact: Users may not be able to load the search bar in Microsoft OneDrive.\n\nCurrent status: We've discovered a recent change that may be contributing to this event. We’ve rolled it back and our monitoring service health to determine whether this mitigates the event, which will help us confirm our hypothesis on the root cause of impact.\n\nScope of impact: This event impacts any user attempting to use the search bar in OneDrive.\n\nNext update by: Thursday, April 30, 2026, at 8:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-04-30T17:16:17.19Z",
-              "postType": "regular",
-              "content": "Title: Users may not be able to load the search bar in Microsoft OneDrive\n\nUser impact: Users may not be able to load the search bar in Microsoft OneDrive.\n\nCurrent status: We've reproduced the issue in our environment, and we're reviewing traces collected while the issue is occurring to pinpoint the source of the failure.\n\nScope of impact: This event impacts any user attempting to use the search bar in Microsoft OneDrive.\n\nNext update by: Thursday, April 30, 2026, at 6:30 PM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Microsoft OneDrive"
-          ]
-        }
-      ]
+      "issues": []
     },
     {
       "service": "Microsoft Teams",
@@ -642,6 +575,83 @@
     }
   ],
   "history": [
+    {
+      "id": "SP1296487",
+      "title": "Users may not be able to load the search bar in SharePoint Online sites",
+      "startTime": "2026-04-30T07:30:00Z",
+      "endTime": "2026-04-30T18:45:00Z",
+      "lastModified": "2026-04-30T20:17:40.603Z",
+      "status": "serviceRestored",
+      "severity": "incident",
+      "userImpact": "Users may not have been able to load the search bar in SharePoint Online sites.",
+      "scopeOfImpact": "This event impacted any user attempting to use the search bar in SharePoint Online.\n\nStart time: Thursday, April 30, 2026, at 7:30 AM UTC\n\nEnd time: Thursday, April 30, 2026, at 6:45 PM UTC",
+      "rootCause": "A recent service update contained a regression that resulted in this impact.\n\nNext steps: \n- We're reviewing the responsible change to better understand what led to the error that resulted in impact and prevent similar future occurrences by improving our service update testing and validation phases.\n\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "SharePoint Online all features",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-04-30T20:17:40.603Z",
+          "postType": "regular",
+          "content": "Title: Users may not be able to load the search bar in SharePoint Online sites\n\nUser impact: Users may not have been able to load the search bar in SharePoint Online sites.\n\nFinal status: We’ve confirmed that the recent change that we rolled back contained a regression that resulted in this impact. After completing this rollback, we were able to confirm that this action resolved the through service health telemetry and confirmation from a subset of affected users.\n\nScope of impact: This event impacted any user attempting to use the search bar in SharePoint Online.\n\nStart time: Thursday, April 30, 2026, at 7:30 AM UTC\n\nEnd time: Thursday, April 30, 2026, at 6:45 PM UTC\n\nRoot cause: A recent service update contained a regression that resulted in this impact.\n\nNext steps: \n- We're reviewing the responsible change to better understand what led to the error that resulted in impact and prevent similar future occurrences by improving our service update testing and validation phases.\n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-04-30T18:30:20.72Z",
+          "postType": "regular",
+          "content": "Title: Users may not be able to load the search bar in SharePoint Online sites\n\nUser impact: Users may not be able to load the search bar in SharePoint Online sites.\n\nCurrent status: We've discovered a recent change that may be contributing to this event. We’ve rolled it back and our monitoring service health to determine whether this mitigates the event, which will help us confirm our hypothesis on the root cause of impact.\n\nScope of impact: This event impacts any user attempting to use the search bar in SharePoint Online.\n\nNext update by: Thursday, April 30, 2026, at 8:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-04-30T17:17:55.183Z",
+          "postType": "regular",
+          "content": "Title: Users may not be able to load the search bar in SharePoint Online sites\n\nUser impact: Users may not be able to load the search bar in SharePoint Online sites.\n\nCurrent status: We've reproduced the issue in our environment, and we're reviewing traces collected while the issue is occurring to pinpoint the source of the failure.\n \nScope of impact: This event impacts any user attempting to use the search bar in SharePoint Online.\n\nNext update by: Thursday, April 30, 2026, at 6:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-04-30T16:20:51.01Z",
+          "postType": "regular",
+          "content": "Title: Possible delays or problems when accessing SharePoint Online\n\nUser impact: Some customers have reported issues with accessing the service, or using features in SharePoint Online.\n\nCurrent status: We’re looking into your reported issue and checking for impact to your organization. We'll provide an update within one hour."
+        }
+      ],
+      "serviceName": "SharePoint Online",
+      "affectedServices": [
+        "SharePoint Online"
+      ]
+    },
+    {
+      "id": "OD1296516",
+      "title": "Users may not be able to load the search bar in Microsoft OneDrive",
+      "startTime": "2026-04-30T07:30:00Z",
+      "endTime": "2026-04-30T18:45:00Z",
+      "lastModified": "2026-04-30T20:20:24.253Z",
+      "status": "serviceRestored",
+      "severity": "incident",
+      "userImpact": "Users may not have been able to load the search bar in OneDrive.",
+      "scopeOfImpact": "This event impacted any user attempting to use the search bar in OneDrive.\n\nStart time: Thursday, April 30, 2026, at 7:30 AM UTC\n\nEnd time: Thursday, April 30, 2026, at 6:45 PM UTC",
+      "rootCause": "A recent service update contained a regression that resulted in this impact.\n\nNext steps: \n- We're reviewing the responsible change to better understand what led to the error that resulted in impact and prevent similar future occurrences by improving our service update testing and validation phases.\n\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "OneDrive for Business",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-04-30T20:20:24.253Z",
+          "postType": "regular",
+          "content": "Title: Users may not be able to load the search bar in Microsoft OneDrive\n\nUser impact: Users may not have been able to load the search bar in OneDrive.\n\nFinal status: We’ve confirmed that the recent change that we rolled back contained a regression that resulted in this impact. After completing this rollback, we were able to confirm that this action resolved the through service health telemetry and confirmation from a subset of affected users.\n\nScope of impact: This event impacted any user attempting to use the search bar in OneDrive.\n\nStart time: Thursday, April 30, 2026, at 7:30 AM UTC\n\nEnd time: Thursday, April 30, 2026, at 6:45 PM UTC\n\nRoot cause: A recent service update contained a regression that resulted in this impact.\n\nNext steps: \n- We're reviewing the responsible change to better understand what led to the error that resulted in impact and prevent similar future occurrences by improving our service update testing and validation phases.\n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-04-30T18:30:54.577Z",
+          "postType": "regular",
+          "content": "Title: Users may not be able to load the search bar in Microsoft OneDrive\n\nUser impact: Users may not be able to load the search bar in Microsoft OneDrive.\n\nCurrent status: We've discovered a recent change that may be contributing to this event. We’ve rolled it back and our monitoring service health to determine whether this mitigates the event, which will help us confirm our hypothesis on the root cause of impact.\n\nScope of impact: This event impacts any user attempting to use the search bar in OneDrive.\n\nNext update by: Thursday, April 30, 2026, at 8:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-04-30T17:16:17.19Z",
+          "postType": "regular",
+          "content": "Title: Users may not be able to load the search bar in Microsoft OneDrive\n\nUser impact: Users may not be able to load the search bar in Microsoft OneDrive.\n\nCurrent status: We've reproduced the issue in our environment, and we're reviewing traces collected while the issue is occurring to pinpoint the source of the failure.\n\nScope of impact: This event impacts any user attempting to use the search bar in Microsoft OneDrive.\n\nNext update by: Thursday, April 30, 2026, at 6:30 PM UTC"
+        }
+      ],
+      "serviceName": "Microsoft OneDrive",
+      "affectedServices": [
+        "Microsoft OneDrive"
+      ]
+    },
     {
       "id": "SP1295361",
       "title": "Users may be unable to view analytics for SharePoint Online sites",
