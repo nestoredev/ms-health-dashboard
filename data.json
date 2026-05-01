@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-01T19:51:24.284Z",
+  "lastUpdated": "2026-05-01T20:21:32.088Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -320,33 +320,6 @@
           "affectedServices": [
             "Exchange Online"
           ]
-        },
-        {
-          "id": "MO1297784",
-          "title": "Some admins may see an error when removing blocked users from the Restricted entities page in Microsoft 365 suite.",
-          "startTime": "2026-05-01T18:52:43Z",
-          "endTime": null,
-          "lastModified": "2026-05-01T19:45:03.13Z",
-          "status": "investigating",
-          "severity": "advisory",
-          "userImpact": "Admins may’ve seen an error when removing blocked users from the Restricted entities page in Microsoft 365 ",
-          "scopeOfImpact": "",
-          "rootCause": "",
-          "nextUpdateBy": "",
-          "feature": "Company or User Administration",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-05-01T19:11:48.707Z",
-              "postType": "regular",
-              "content": "Title: Some admins may see an error when removing blocked users from the Restricted entities page in Microsoft 365 suite.\r\n\r\nUser impact: Admins may see an error when removing blocked users from the Restricted entities page in Microsoft 365 suite.\r\n\r\nMore info: Admins are unable to remove Restricted entities from the Microsoft Defender XDR portal, Exchange Online admin center, or PowerShell.\r\n\r\nCurrent status: We're investigating a potential issue with removing blocked users from Microsoft Defender XDR, Exchange Online, or PowerShell, and we're checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Exchange Online",
-            "Microsoft 365 suite",
-            "Microsoft Defender XDR"
-          ]
         }
       ]
     },
@@ -361,33 +334,6 @@
       "status": "serviceDegradation",
       "id": "OSDPPlatform",
       "issues": [
-        {
-          "id": "MO1297784",
-          "title": "Some admins may see an error when removing blocked users from the Restricted entities page in Microsoft 365 suite.",
-          "startTime": "2026-05-01T18:52:43Z",
-          "endTime": null,
-          "lastModified": "2026-05-01T19:45:03.13Z",
-          "status": "investigating",
-          "severity": "advisory",
-          "userImpact": "Admins may’ve seen an error when removing blocked users from the Restricted entities page in Microsoft 365 ",
-          "scopeOfImpact": "",
-          "rootCause": "",
-          "nextUpdateBy": "",
-          "feature": "Company or User Administration",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-05-01T19:11:48.707Z",
-              "postType": "regular",
-              "content": "Title: Some admins may see an error when removing blocked users from the Restricted entities page in Microsoft 365 suite.\r\n\r\nUser impact: Admins may see an error when removing blocked users from the Restricted entities page in Microsoft 365 suite.\r\n\r\nMore info: Admins are unable to remove Restricted entities from the Microsoft Defender XDR portal, Exchange Online admin center, or PowerShell.\r\n\r\nCurrent status: We're investigating a potential issue with removing blocked users from Microsoft Defender XDR, Exchange Online, or PowerShell, and we're checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Exchange Online",
-            "Microsoft 365 suite",
-            "Microsoft Defender XDR"
-          ]
-        },
         {
           "id": "MO1297751",
           "title": "Some users may not receive results when performing searches in SharePoint Online",
@@ -560,37 +506,9 @@
     },
     {
       "service": "Microsoft Defender XDR",
-      "status": "investigating",
+      "status": "serviceOperational",
       "id": "Microsoft365Defender",
-      "issues": [
-        {
-          "id": "MO1297784",
-          "title": "Some admins may see an error when removing blocked users from the Restricted entities page in Microsoft 365 suite.",
-          "startTime": "2026-05-01T18:52:43Z",
-          "endTime": null,
-          "lastModified": "2026-05-01T19:45:03.13Z",
-          "status": "investigating",
-          "severity": "advisory",
-          "userImpact": "Admins may’ve seen an error when removing blocked users from the Restricted entities page in Microsoft 365 ",
-          "scopeOfImpact": "",
-          "rootCause": "",
-          "nextUpdateBy": "",
-          "feature": "Company or User Administration",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-05-01T19:11:48.707Z",
-              "postType": "regular",
-              "content": "Title: Some admins may see an error when removing blocked users from the Restricted entities page in Microsoft 365 suite.\r\n\r\nUser impact: Admins may see an error when removing blocked users from the Restricted entities page in Microsoft 365 suite.\r\n\r\nMore info: Admins are unable to remove Restricted entities from the Microsoft Defender XDR portal, Exchange Online admin center, or PowerShell.\r\n\r\nCurrent status: We're investigating a potential issue with removing blocked users from Microsoft Defender XDR, Exchange Online, or PowerShell, and we're checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Exchange Online",
-            "Microsoft 365 suite",
-            "Microsoft Defender XDR"
-          ]
-        }
-      ]
+      "issues": []
     },
     {
       "service": "Project for the web",
