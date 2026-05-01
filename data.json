@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-01T18:20:56.586Z",
+  "lastUpdated": "2026-05-01T18:51:05.715Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -221,16 +221,21 @@
           "title": "Users may be experiencing high latency when performing searches in Exchange Online",
           "startTime": "2026-05-01T17:47:13.33Z",
           "endTime": null,
-          "lastModified": "2026-05-01T18:05:31.027Z",
+          "lastModified": "2026-05-01T18:38:29.99Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be experiencing high latency when performing searches in Exchange Online.",
-          "scopeOfImpact": "This issue may impact any user attempting to perform searches in Outlook, Outlook on the web, or Outlook mobile.",
-          "rootCause": "",
-          "nextUpdateBy": "Friday, May 01, 2026, at 7:30 PM UTC",
+          "scopeOfImpact": "This issue may impact any user attempting to perform searches in Outlook, Outlook on the web, or Outlook mobile. \r\n\r\nStart time: Wednesday, April 01, 2026, at 7:00 AM UTC",
+          "rootCause": "The search latency was caused by outsized loads on service infrastructure from increased traffic and ongoing improvements.",
+          "nextUpdateBy": "Monday, May 04, 2026, at 6:00 PM UTC",
           "feature": "Outlook - poor customer experience",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-05-01T18:38:29.99Z",
+              "postType": "regular",
+              "content": "Title: Users may be experiencing high latency when performing searches in Exchange Online\r\n\r\nUser impact: Users may be experiencing high latency when performing searches in Exchange Online.\r\n\r\nCurrent status: After determining that the source of impact is related to high loads on service infrastructure, we've implemented optimizations to expand available resources and reduce latency. We're monitoring service health telemetry to ensure that latency is successfully alleviated.\r\n\r\nScope of impact: This issue may impact any user attempting to perform searches in Outlook, Outlook on the web, or Outlook mobile. \r\n\r\nStart time: Wednesday, April 01, 2026, at 7:00 AM UTC\r\n\r\nRoot cause: The search latency was caused by outsized loads on service infrastructure from increased traffic and ongoing improvements.\r\n\r\nNext update by: Monday, May 04, 2026, at 6:00 PM UTC"
+            },
             {
               "createdAt": "2026-05-01T18:05:11.64Z",
               "postType": "regular",
