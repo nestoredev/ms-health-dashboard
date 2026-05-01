@@ -1,9 +1,9 @@
 {
-  "lastUpdated": "2026-05-01T21:51:56.790Z",
+  "lastUpdated": "2026-05-01T22:22:06.038Z",
   "services": [
     {
       "service": "Exchange Online",
-      "status": "restoringService",
+      "status": "serviceDegradation",
       "id": "Exchange",
       "issues": [
         {
@@ -646,6 +646,52 @@
     }
   ],
   "history": [
+    {
+      "id": "EX1281449",
+      "title": "Users may be unable to reply to email messages from a pop-up window in Outlook on the web",
+      "startTime": "2026-04-14T02:00:00Z",
+      "endTime": "2026-05-01T22:09:35.967Z",
+      "lastModified": "2026-05-01T22:10:53.51Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have been unable reply to email messages from a pop-up window in Outlook on the web.",
+      "scopeOfImpact": "Users attempting to reply to email messages from a pop-up window in Outlook in the web may have been impacted.\r\n\r\nStart time: Tuesday, April 14, 2026, at 2:00 AM UTC\r\n\r\nEnd time: Thursday, April 30, 2026, at 3:21 PM UTC",
+      "rootCause": "A fix to address an unrelated issue introduced a code issue that’s leading to the impact.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Reports of an Incident",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-05-01T22:10:43.147Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to reply to email messages from a pop-up window in Outlook on the web\r\n\r\nUser impact: Users may have been unable reply to email messages from a pop-up window in Outlook on the web.\r\n\r\nMore info: This issue may have occurred within any browser and impacted single reply and reply all functions. While we were focused on remediation, user testing indicated that by changing browser-specific pop-up settings to ensure that pop-ups were allowed, affected users may have been able to avoid impact.\r\n\r\nFinal status: We've confirmed through testing with a subset of affected users that the impact has been remediated. Affected users may need to refresh their Outlook on the web session to have the changes saturate.\r\n\r\nScope of impact: Users attempting to reply to email messages from a pop-up window in Outlook in the web may have been impacted.\r\n\r\nStart time: Tuesday, April 14, 2026, at 2:00 AM UTC\r\n\r\nEnd time: Thursday, April 30, 2026, at 3:21 PM UTC\r\n\r\nRoot cause: A fix to address an unrelated issue introduced a code issue that’s leading to the impact.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-05-01T04:27:08.237Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to reply to email messages from a pop-up window in Outlook on the web\r\n\r\nUser impact: Users may be unable reply to email messages from a pop-up window in Outlook on the web.\r\n\r\nMore info: This issue may occur within any browser and impacts single reply and reply all functions. While we're focused on remediation, user testing indicates that by changing browser-specific pop-up settings to ensure that pop-ups are allowed, affected users may be able to avoid impact.\r\n\r\nCurrent status: We’ve received positive reports from our initial validations and we’re continuing to test with affected users to ensure the issue is fully resolved.\r\n\r\nScope of impact: Users attempting to reply to email messages from a pop-up window in Outlook in the web may be impacted.\r\n\r\nStart time: Tuesday, April 14, 2026, at 2:00 AM UTC\r\n\r\nRoot cause: A fix to address an unrelated issue introduced a code issue that’s leading to the impact.\r\n\r\nNext update by: Friday, May 01, 2026, at 10:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-04-30T16:54:45.14Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to reply to email messages from a pop-up window in Outlook on the web\n\nUser impact: Users may be unable reply to email messages from a pop-up window in Outlook on the web.\n\nMore info: This issue may occur within any browser and impacts single reply and reply all functions. While we're focused on remediation, user testing indicates that by changing browser-specific pop-up settings to ensure that pop-ups are allowed, affected users may be able to avoid impact.\n\nCurrent status: We've completed the deployment of our fix and validations within our internal test environment indicate it's functioning as expected. We're continuing to test with a subset of affected users to ensure the issue is fully resolved.\n\nScope of impact: Users attempting to reply to email messages from a pop-up window in Outlook in the web may be impacted.\n\nStart time: Tuesday, April 14, 2026, at 2:00 AM UTC\n\nRoot cause: A fix to address an unrelated issue introduced a code issue that’s leading to the impact.\n\nNext update by: Friday, May 01, 2026, at 5:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-04-27T17:09:40.19Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to reply to email messages from a pop-up window in Outlook on the web\n\nUser impact: Users may be unable reply to email messages from a pop-up window in Outlook on the web.\n\nMore info: This issue may occur within any browser and impacts single reply and reply all functions. While we're focused on remediation, user testing indicates that by changing browser-specific pop-up settings to ensure that pop-ups are allowed, affected users may be able to avoid impact.\n\nCurrent status: We’re continuing to monitor our fix deployment as it saturates throughout the affected environments. As this saturation nears completion, we’re continuing our validation efforts to verify the fix's efficacy with a subset of affected users and within our internal environments. We expect that this deployment process will be completed in full by our next scheduled update.\n\nScope of impact: Users attempting to reply to email messages from a pop-up window in Outlook in the web may be impacted.\n\nStart time: Tuesday, April 14, 2026, at 2:00 AM UTC\n\nRoot cause: A fix to address an unrelated issue introduced a code issue that’s leading to the impact.\n\nNext update by: Thursday, April 30, 2026, at 6:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-04-23T17:13:57.007Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to reply to email messages from a pop-up window in Outlook on the web\n\nUser impact: Users may be unable reply to email messages from a pop-up window in Outlook on the web.\n\nMore info: This issue may occur within any browser and impacts single reply and reply all functions. While we're focused on remediation, user testing indicates that by changing browser-specific pop-up settings to ensure that pop-ups are allowed, affected users may be able to avoid impact.\n\nCurrent status: We’re continuing deployment of the fix across the affected environments. In parallel, we’re continuing our validation efforts as deployment progresses with affected users and within our internal environments to verify efficacy and ensure successful resolution.\n\nScope of impact: Users attempting to reply to email messages from a pop-up window in Outlook in the web may be impacted.\n\nStart time: Tuesday, April 14, 2026, at 2:00 AM UTC\n\nRoot cause: A fix to address an unrelated issue introduced a code issue that’s leading to the impact.\n\nNext update by: Monday, April 27, 2026, at 6:00 PM UTC"
+        }
+      ],
+      "serviceName": "Exchange Online",
+      "affectedServices": [
+        "Exchange Online"
+      ]
+    },
     {
       "id": "SP1296487",
       "title": "Users may not be able to load the search bar in SharePoint Online sites",
