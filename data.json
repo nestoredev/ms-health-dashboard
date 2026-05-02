@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-02T06:24:21.018Z",
+  "lastUpdated": "2026-05-02T06:54:28.595Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -519,9 +519,35 @@
     },
     {
       "service": "Microsoft Intune",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "Intune",
-      "issues": []
+      "issues": [
+        {
+          "id": "IT1298282",
+          "title": "Some users' Windows Intune devices may intermittently drop device policy assignments",
+          "startTime": "2026-04-28T12:30:00Z",
+          "endTime": null,
+          "lastModified": "2026-05-02T06:32:50.083Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users' Windows Intune devices may intermittently drop specific policy assignments.",
+          "scopeOfImpact": "This issue may intermittently impact some users' Windows Intune devices between check-ins.\n\nStart time: Tuesday, April 28, 2026, at 12:30 PM UTC",
+          "rootCause": "",
+          "nextUpdateBy": "Saturday, May 2, 2026, at 12:00 PM UTC",
+          "feature": "Microsoft Intune",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-05-02T06:21:21.283Z",
+              "postType": "regular",
+              "content": "Title: Some users' Windows Intune devices may intermittently drop device policy assignments\n\nUser impact: Users' Windows Intune devices may intermittently drop specific policy assignments. \n\nMore info: The affected device policies include:\n-Endpoint Privilege Management\n-Microsoft Defender for Endpoint\n-Device Inventory\n\nCurrent status: We're reviewing recent service updates and system logs to understand the source of the issue, which will help us determine our next troubleshooting steps.\n\nScope of impact: This issue may intermittently impact some users' Windows Intune devices between check-ins.\n\nStart time: Tuesday, April 28, 2026, at 12:30 PM UTC\n\nNext update by: Saturday, May 2, 2026, at 12:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Intune"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft OneDrive",
