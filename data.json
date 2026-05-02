@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-02T14:26:40.281Z",
+  "lastUpdated": "2026-05-02T14:56:49.995Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -789,12 +789,12 @@
       "title": "Users may be unable to reply to email messages from a pop-up window in Outlook on the web",
       "startTime": "2026-04-14T02:00:00Z",
       "endTime": "2026-05-01T22:09:35.967Z",
-      "lastModified": "2026-05-01T22:10:53.51Z",
+      "lastModified": "2026-05-02T14:34:18.257Z",
       "status": "serviceRestored",
       "severity": "advisory",
       "userImpact": "Users may have been unable reply to email messages from a pop-up window in Outlook on the web.",
-      "scopeOfImpact": "Users attempting to reply to email messages from a pop-up window in Outlook in the web may have been impacted.\r\n\r\nStart time: Tuesday, April 14, 2026, at 2:00 AM UTC\r\n\r\nEnd time: Thursday, April 30, 2026, at 3:21 PM UTC",
-      "rootCause": "A fix to address an unrelated issue introduced a code issue that’s leading to the impact.\r\n\r\nThis is the final update for the event.",
+      "scopeOfImpact": "Users attempting to reply to email messages from a pop-up window in Outlook in the web may have been impacted.\n\nStart time: Tuesday, April 14, 2026, at 2:00 AM UTC\n\nEnd time: Thursday, April 30, 2026, at 3:21 PM UTC",
+      "rootCause": "A fix to address an unrelated issue introduced a code issue that’s leading to the impact.\n\nNext steps: \n- We're reviewing offending fix to understand why impact to reply functionality wasn't caught during the testing phase. This will allow us to drive service improvements by proactively identifying similar issues in the future and improve our update testing processes.\n\nThis is the final update for the event.",
       "nextUpdateBy": "",
       "feature": "Reports of an Incident",
       "isResolved": true,
@@ -802,7 +802,7 @@
         {
           "createdAt": "2026-05-01T22:10:43.147Z",
           "postType": "regular",
-          "content": "Title: Users may be unable to reply to email messages from a pop-up window in Outlook on the web\r\n\r\nUser impact: Users may have been unable reply to email messages from a pop-up window in Outlook on the web.\r\n\r\nMore info: This issue may have occurred within any browser and impacted single reply and reply all functions. While we were focused on remediation, user testing indicated that by changing browser-specific pop-up settings to ensure that pop-ups were allowed, affected users may have been able to avoid impact.\r\n\r\nFinal status: We've confirmed through testing with a subset of affected users that the impact has been remediated. Affected users may need to refresh their Outlook on the web session to have the changes saturate.\r\n\r\nScope of impact: Users attempting to reply to email messages from a pop-up window in Outlook in the web may have been impacted.\r\n\r\nStart time: Tuesday, April 14, 2026, at 2:00 AM UTC\r\n\r\nEnd time: Thursday, April 30, 2026, at 3:21 PM UTC\r\n\r\nRoot cause: A fix to address an unrelated issue introduced a code issue that’s leading to the impact.\r\n\r\nThis is the final update for the event."
+          "content": "Title: Users may be unable to reply to email messages from a pop-up window in Outlook on the web\n\nUser impact: Users may have been unable reply to email messages from a pop-up window in Outlook on the web.\n\nMore info: This issue may have occurred within any browser and impacted single reply and reply all functions. While we were focused on remediation, user testing indicated that by changing browser-specific pop-up settings to ensure that pop-ups were allowed, affected users may have been able to avoid impact.\n\nFinal status: We've confirmed through testing with a subset of affected users that the impact has been remediated. Affected users may need to refresh their Outlook on the web session to have the changes saturate.\n\nScope of impact: Users attempting to reply to email messages from a pop-up window in Outlook in the web may have been impacted.\n\nStart time: Tuesday, April 14, 2026, at 2:00 AM UTC\n\nEnd time: Thursday, April 30, 2026, at 3:21 PM UTC\n\nRoot cause: A fix to address an unrelated issue introduced a code issue that’s leading to the impact.\n\nNext steps: \n- We're reviewing offending fix to understand why impact to reply functionality wasn't caught during the testing phase. This will allow us to drive service improvements by proactively identifying similar issues in the future and improve our update testing processes.\n\nThis is the final update for the event."
         },
         {
           "createdAt": "2026-05-01T04:27:08.237Z",
