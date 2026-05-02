@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-01T23:52:29.082Z",
+  "lastUpdated": "2026-05-02T00:22:37.117Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -368,40 +368,9 @@
     },
     {
       "service": "SharePoint Online",
-      "status": "investigating",
+      "status": "serviceOperational",
       "id": "SharePoint",
-      "issues": [
-        {
-          "id": "SP1297967",
-          "title": "Users may not be able to load the search bar in SharePoint Online sites",
-          "startTime": "2026-05-01T22:13:22.58Z",
-          "endTime": null,
-          "lastModified": "2026-05-01T22:42:38.5Z",
-          "status": "investigating",
-          "severity": "advisory",
-          "userImpact": "Users may not be able to load the search bar in SharePoint Online sites.",
-          "scopeOfImpact": "This event impacts any user attempting to use the search bar in SharePoint Online.",
-          "rootCause": "",
-          "nextUpdateBy": "Saturday, May 02, 2026, at 12:00 AM UTC",
-          "feature": "Create from Template",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-05-01T22:42:38.5Z",
-              "postType": "regular",
-              "content": "Title: Users may not be able to load the search bar in SharePoint Online sites\r\n\r\nUser impact: Users may not be able to load the search bar in SharePoint Online sites.\r\n\r\nCurrent status: We're reviewing service telemetry to better understand the impact scenario and determine our next steps.\r\n\r\nScope of impact: This event impacts any user attempting to use the search bar in SharePoint Online.\r\n\r\nNext update by: Saturday, May 02, 2026, at 12:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-05-01T22:18:09.05Z",
-              "postType": "regular",
-              "content": "Title: Users may not be able to load the search bar in SharePoint Online sites\r\n\r\nUser impact: Users may not be able to load the search bar in SharePoint Online sites.\r\n\r\nCurrent status: We received reports that the issue previously communicated via SP1296487 persists and we're checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "SharePoint Online"
-          ]
-        }
-      ]
+      "issues": []
     },
     {
       "service": "Dynamics 365 Apps",
