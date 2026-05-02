@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-02T22:58:56.757Z",
+  "lastUpdated": "2026-05-02T23:29:04.861Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -537,16 +537,21 @@
           "title": "Some users' Windows Intune devices may intermittently drop device policy assignments",
           "startTime": "2026-04-28T12:30:00Z",
           "endTime": null,
-          "lastModified": "2026-05-02T18:54:02.663Z",
+          "lastModified": "2026-05-02T22:59:38.807Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users' Windows Intune devices may intermittently drop specific policy assignments.",
-          "scopeOfImpact": "This issue may intermittently impact some users' Windows Intune devices between check-ins.\r\n\r\nStart time: Tuesday, April 28, 2026, at 12:30 PM UTC",
+          "scopeOfImpact": "This issue may intermittently impact some users' Windows Intune devices between check-ins.\n\nStart time: Tuesday, April 28, 2026, at 12:30 PM UTC",
           "rootCause": "A code regression introduced during the rollout of a recent update associated with a new preview feature is causing impact to occur.",
-          "nextUpdateBy": "Sunday, May 03, 2026, at 1:00 AM UTC",
+          "nextUpdateBy": "Sunday, May 03, 2026, at 5:00 AM UTC",
           "feature": "Microsoft Intune",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-05-02T22:59:38.807Z",
+              "postType": "regular",
+              "content": "Title: Some users' Windows Intune devices may intermittently drop device policy assignments\n\nUser impact: Users' Windows Intune devices may intermittently drop specific policy assignments.\n\nMore info: The affected device policies include, but aren't limited to:\n\n-Endpoint Privilege Management\n-Microsoft Defender for Endpoint\n-Device Inventory\n\nCurrent status: The broad deployment has begun saturating throughout the affected service environment and we’re in the process of running the aforementioned script to expedite the remediation process for affected users.\n\nScope of impact: This issue may intermittently impact some users' Windows Intune devices between check-ins.\n\nStart time: Tuesday, April 28, 2026, at 12:30 PM UTC\n\nRoot cause: A code regression introduced during the rollout of a recent update associated with a new preview feature is causing impact to occur.\n\nNext update by: Sunday, May 03, 2026, at 5:00 AM UTC"
+            },
             {
               "createdAt": "2026-05-02T18:54:02.663Z",
               "postType": "regular",
