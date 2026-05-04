@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-04T21:40:37.890Z",
+  "lastUpdated": "2026-05-04T22:10:45.948Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -344,16 +344,21 @@
           "title": "Some users may not receive results when performing searches in SharePoint Online",
           "startTime": "2026-05-01T17:31:58.353Z",
           "endTime": null,
-          "lastModified": "2026-05-04T19:53:31.383Z",
+          "lastModified": "2026-05-04T21:57:52.863Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may not receive results when performing searches in SharePoint Online.",
           "scopeOfImpact": "Some users attempting searches in SharePoint Online may be impacted. This section may be updated as our investigation continues.\r\n\r\nStart time: Monday, April 20, 2026, at 12:00 AM UTC",
           "rootCause": "",
-          "nextUpdateBy": "Monday, May 04, 2026, at 10:00 PM UTC",
+          "nextUpdateBy": "Tuesday, May 05, 2026, at 12:00 AM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-05-04T21:57:52.863Z",
+              "postType": "regular",
+              "content": "Title: Some users may not receive results when performing searches in SharePoint Online\r\n\r\nUser impact: Users may not receive results when performing searches in SharePoint Online.\r\n\r\nCurrent status: While our monitoring of telemetry shows recovery, we're analyzing the request traffic which was impacted to determine the root cause of the issue. This data will improve our understanding of the origin of impact and will aid in our development of a solution to prevent this from reoccurring.\r\n\r\nScope of impact: Some users attempting searches in SharePoint Online may be impacted. This section may be updated as our investigation continues.\r\n\r\nStart time: Monday, April 20, 2026, at 12:00 AM UTC\r\n\r\nNext update by: Tuesday, May 05, 2026, at 12:00 AM UTC"
+            },
             {
               "createdAt": "2026-05-04T19:53:31.383Z",
               "postType": "regular",
@@ -437,16 +442,21 @@
           "title": "Some users' Windows Intune devices may intermittently drop device policy assignments",
           "startTime": "2026-04-28T12:30:00Z",
           "endTime": null,
-          "lastModified": "2026-05-04T15:13:21.133Z",
+          "lastModified": "2026-05-04T22:05:06.483Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users' Windows Intune devices may intermittently drop specific policy assignments.",
           "scopeOfImpact": "This issue may intermittently impact some users' Windows Intune devices between policy check-ins.\r\n\r\nStart time: Tuesday, April 28, 2026, at 12:30 PM UTC",
           "rootCause": "A code regression introduced during the rollout of a recent update associated with a new preview feature is resulting in impact.",
-          "nextUpdateBy": "Monday, May 04, 2026, at 11:00 PM UTC",
+          "nextUpdateBy": "Tuesday, May 05, 2026, at 3:30 AM UTC",
           "feature": "Microsoft Intune",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-05-04T22:05:06.483Z",
+              "postType": "regular",
+              "content": "Title: Some users' Windows Intune devices may intermittently drop device policy assignments\r\n\r\nUser impact: Users' Windows Intune devices may intermittently drop specific policy assignments.\r\n\r\nMore info: The affected device policies include but aren't limited to:\n\n- Endpoint Privilege Management\n- Microsoft Defender for Endpoint\n- Device Inventory\r\n\r\nCurrent status: The fix has been applied to approximately 75 percent of the affected infrastructure and we expect to have a complete remediation timeline by the next scheduled update. \r\n\r\nScope of impact: This issue may intermittently impact some users' Windows Intune devices between policy check-ins.\r\n\r\nStart time: Tuesday, April 28, 2026, at 12:30 PM UTC\r\n\r\nRoot cause: A code regression introduced during the rollout of a recent update associated with a new preview feature is resulting in impact.\r\n\r\nNext update by: Tuesday, May 05, 2026, at 3:30 AM UTC"
+            },
             {
               "createdAt": "2026-05-04T15:13:21.133Z",
               "postType": "regular",
