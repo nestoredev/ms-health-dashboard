@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-04T05:06:21.634Z",
+  "lastUpdated": "2026-05-04T05:36:28.348Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -789,6 +789,36 @@
               "createdAt": "2026-02-27T21:10:15.8Z",
               "postType": "regular",
               "content": "Title: Users may see an action count of zero in Microsoft Viva Insights for the Copilot metrics \"Total emails sent\" field\n\nUser impact: Users may see an action count of zero in Microsoft Viva Insights for the Copilot metrics \"Total emails sent\" field.\n\nMore info: This metric should be accounting for users that have selected \"Send message with elaborate\" in Outlook, but it isn't. The total action count appears to be zero.\n\nCurrent status: We're investigating a potential issue with Microsoft Viva Insights and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Viva"
+          ]
+        },
+        {
+          "id": "MV1300072",
+          "title": "Users may be unable to access Community Analytics in Microsoft Viva Engage",
+          "startTime": "2026-05-04T05:02:15.173Z",
+          "endTime": null,
+          "lastModified": "2026-05-04T05:29:26.05Z",
+          "status": "investigating",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to access Community Analytics in Microsoft Viva Engage.",
+          "scopeOfImpact": "Any user including internal users, may be affected and unable to access Community Analytics in Microsoft Viva Engage. This section may be updated as our investigation continues.",
+          "rootCause": "A recent update to the Microsoft Viva Engage service contained a code configuration issue, leading to impact.",
+          "nextUpdateBy": "Monday, May 04, 2026, at 6:30 AM UTC",
+          "feature": "Upload files/notes/documents",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-05-04T05:29:26.05Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to access Community Analytics in Microsoft Viva Engage\r\n\r\nUser impact: Users may be unable to access Community Analytics in Microsoft Viva Engage.\r\n\r\nCurrent status: We've investigated the affected Microsoft Viva Engage Community Analytics page and correlated the impact with a recent change made to the service contained a code configuration issue, leading to the impact. We're initiating a roll back of the change to the last known healthy version to resolve impact.\r\n\r\nScope of impact: Any user including internal users, may be affected and unable to access Community Analytics in Microsoft Viva Engage. This section may be updated as our investigation continues.\r\n\r\nRoot cause: A recent update to the Microsoft Viva Engage service contained a code configuration issue, leading to impact.\r\n\r\nNext update by: Monday, May 04, 2026, at 6:30 AM UTC"
+            },
+            {
+              "createdAt": "2026-05-04T05:05:01.627Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to access Community Analytics in Microsoft Viva Engage\n\nUser impact: Users may be unable to access Community Analytics in Microsoft Viva Engage.\n\nCurrent status: We're investigating a potential issue with Microsoft Viva Engage and checking for impact to your organization. We'll provide an update within 30 minutes."
             }
           ],
           "affectedServices": [
