@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-04T06:06:35.335Z",
+  "lastUpdated": "2026-05-04T06:36:43.148Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -794,36 +794,6 @@
           "affectedServices": [
             "Microsoft Viva"
           ]
-        },
-        {
-          "id": "MV1300072",
-          "title": "Users may be unable to access Community Analytics in Microsoft Viva Engage",
-          "startTime": "2026-05-04T05:02:15.173Z",
-          "endTime": null,
-          "lastModified": "2026-05-04T05:29:26.05Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may be unable to access Community Analytics in Microsoft Viva Engage.",
-          "scopeOfImpact": "Any user including internal users, may be affected and unable to access Community Analytics in Microsoft Viva Engage. This section may be updated as our investigation continues.",
-          "rootCause": "A recent update to the Microsoft Viva Engage service contained a code configuration issue, leading to impact.",
-          "nextUpdateBy": "Monday, May 04, 2026, at 6:30 AM UTC",
-          "feature": "Upload files/notes/documents",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-05-04T05:29:26.05Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to access Community Analytics in Microsoft Viva Engage\r\n\r\nUser impact: Users may be unable to access Community Analytics in Microsoft Viva Engage.\r\n\r\nCurrent status: We've investigated the affected Microsoft Viva Engage Community Analytics page and correlated the impact with a recent change made to the service contained a code configuration issue, leading to the impact. We're initiating a roll back of the change to the last known healthy version to resolve impact.\r\n\r\nScope of impact: Any user including internal users, may be affected and unable to access Community Analytics in Microsoft Viva Engage. This section may be updated as our investigation continues.\r\n\r\nRoot cause: A recent update to the Microsoft Viva Engage service contained a code configuration issue, leading to impact.\r\n\r\nNext update by: Monday, May 04, 2026, at 6:30 AM UTC"
-            },
-            {
-              "createdAt": "2026-05-04T05:05:01.627Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to access Community Analytics in Microsoft Viva Engage\n\nUser impact: Users may be unable to access Community Analytics in Microsoft Viva Engage.\n\nCurrent status: We're investigating a potential issue with Microsoft Viva Engage and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Microsoft Viva"
-          ]
         }
       ]
     },
@@ -859,6 +829,42 @@
     }
   ],
   "history": [
+    {
+      "id": "MV1300072",
+      "title": "Users may be unable to access Community Analytics in Microsoft Viva Engage",
+      "startTime": "2026-05-01T21:00:00Z",
+      "endTime": "2026-05-04T05:35:00Z",
+      "lastModified": "2026-05-04T06:14:58.783Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have been unable to access Community Analytics in Microsoft Viva Engage.",
+      "scopeOfImpact": "Any user including internal users, may have been affected and unable to access Community Analytics in Microsoft Viva Engage.\r\n\r\nStart time: Friday, May 01, 2026, at 9:00 PM UTC\r\n\r\nEnd time: Monday, May 04, 2026, at 5:35 AM UTC",
+      "rootCause": "A recent update to the Microsoft Viva Engage service contained a code configuration issue, which led to impact.\r\n\r\nNext steps: \n- We're reviewing our update procedures to understand why impact to the Community Analytics page wasn't caught during the testing phase. This will help to drive service improvements by proactively identifying similar issues in the future and improve our update testing processes.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Upload files/notes/documents",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-05-04T06:13:01.143Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to access Community Analytics in Microsoft Viva Engage\r\n\r\nUser impact: Users may have been unable to access Community Analytics in Microsoft Viva Engage.\r\n\r\nFinal status: We've completed our roll back of the recent change and confirmed internally through telemetry, as well as with a subset of affected users, that impact has been remediated.\r\n\r\nScope of impact: Any user including internal users, may have been affected and unable to access Community Analytics in Microsoft Viva Engage.\r\n\r\nStart time: Friday, May 01, 2026, at 9:00 PM UTC\r\n\r\nEnd time: Monday, May 04, 2026, at 5:35 AM UTC\r\n\r\nRoot cause: A recent update to the Microsoft Viva Engage service contained a code configuration issue, which led to impact.\r\n\r\nNext steps: \n- We're reviewing our update procedures to understand why impact to the Community Analytics page wasn't caught during the testing phase. This will help to drive service improvements by proactively identifying similar issues in the future and improve our update testing processes.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-05-04T05:29:26.05Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to access Community Analytics in Microsoft Viva Engage\r\n\r\nUser impact: Users may be unable to access Community Analytics in Microsoft Viva Engage.\r\n\r\nCurrent status: We've investigated the affected Microsoft Viva Engage Community Analytics page and correlated the impact with a recent change made to the service contained a code configuration issue, leading to the impact. We're initiating a roll back of the change to the last known healthy version to resolve impact.\r\n\r\nScope of impact: Any user including internal users, may be affected and unable to access Community Analytics in Microsoft Viva Engage. This section may be updated as our investigation continues.\r\n\r\nRoot cause: A recent update to the Microsoft Viva Engage service contained a code configuration issue, leading to impact.\r\n\r\nNext update by: Monday, May 04, 2026, at 6:30 AM UTC"
+        },
+        {
+          "createdAt": "2026-05-04T05:05:01.627Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to access Community Analytics in Microsoft Viva Engage\n\nUser impact: Users may be unable to access Community Analytics in Microsoft Viva Engage.\n\nCurrent status: We're investigating a potential issue with Microsoft Viva Engage and checking for impact to your organization. We'll provide an update within 30 minutes."
+        }
+      ],
+      "serviceName": "Microsoft Viva",
+      "affectedServices": [
+        "Microsoft Viva"
+      ]
+    },
     {
       "id": "EX1281449",
       "title": "Users may be unable to reply to email messages from a pop-up window in Outlook on the web",
