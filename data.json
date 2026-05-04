@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-04T18:39:51.301Z",
+  "lastUpdated": "2026-05-04T19:09:59.792Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -742,42 +742,6 @@
     }
   ],
   "history": [
-    {
-      "id": "MO1298081",
-      "title": "Some admins may be unable to remove blocked users from the Restricted entities page in Microsoft 365 suite",
-      "startTime": "2026-05-02T00:15:00Z",
-      "endTime": "2026-05-04T11:00:00Z",
-      "lastModified": "2026-05-04T18:27:27.64Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Admins may have be unable to remove blocked users from the Restricted entities page in Microsoft 365 suite.",
-      "scopeOfImpact": "Admins attempting to remove blocked users from the Restricted Entities page in Microsoft 365 suite may have been impacted.\n\nStart time: Saturday, May 2, 2026, at 12:15 AM UTC\n\nEnd time: Monday, May 4, 2026, at 11:00 AM UTC",
-      "rootCause": "A modification made to a previous change was resulting in admins potentially receiving an error when attempting to remove a blocked user from the Restricted entities page in Microsoft 365 suite.\n\nNext steps:\n- We’re reviewing the offending modification made to a previous change in order to correct any issues prior to its safe redeployment and to prevent similar issues from reoccurring in the future.\n\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Company or User Administration",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-05-04T18:27:27.64Z",
-          "postType": "regular",
-          "content": "Title: Some admins may be unable to remove blocked users from the Restricted entities page in Microsoft 365 suite\n\nUser impact: Admins may have be unable to remove blocked users from the Restricted entities page in Microsoft 365 suite.\n\nMore info: Affected admins were unable to remove Restricted entities from the Microsoft Defender XDR portal, Exchange Online admin center, or PowerShell.\n\nFinal status: We've validated through service health telemetry that reverting to a previous stable build completed as expected and successfully remediated all impact.\n\nScope of impact: Admins attempting to remove blocked users from the Restricted Entities page in Microsoft 365 suite may have been impacted.\n\nStart time: Saturday, May 2, 2026, at 12:15 AM UTC\n\nEnd time: Monday, May 4, 2026, at 11:00 AM UTC\n\nRoot cause: A modification made to a previous change was resulting in admins potentially receiving an error when attempting to remove a blocked user from the Restricted entities page in Microsoft 365 suite.\n\nNext steps:\n- We’re reviewing the offending modification made to a previous change in order to correct any issues prior to its safe redeployment and to prevent similar issues from reoccurring in the future.\n\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-05-02T01:32:57.903Z",
-          "postType": "regular",
-          "content": "Title: Some admins may be unable to remove blocked users from the Restricted entities page in Microsoft 365 suite\n\nUser impact: Admins may be unable to remove blocked users from the Restricted entities page in Microsoft 365 suite.\n\nMore info: Affected admins can’t remove Restricted entities from the Microsoft Defender XDR portal, Exchange Online admin center, or PowerShell.\n\nCurrent status: We identified that our previous fix for the issue could have caused additional service degradation. We reverted the fix, causing this impact to reoccur and are now rolling back to a previously known stable build to remediate the impact. Affected users should experience relief as the rollback progresses.\n\nScope of impact: Admins removing blocked users from the Restricted Entities page in Microsoft 365 suite may be impacted.\n\nStart time: Saturday, May 2, 2026, at 12:15 AM UTC\n\nRoot cause: A modification made to a previous change is resulting in admins potentially receiving an error when removing a blocked user from the Restricted entities page in Microsoft 365 suite.\n\nNext update by: Monday, May 4, 2026, at 7:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-05-02T00:58:34.497Z",
-          "postType": "regular",
-          "content": "Title: Some admins may be unable to remove blocked users from the Restricted entities page in Microsoft 365 suite\n\nUser impact: Admins may be unable to remove blocked users from the Restricted entities page in Microsoft 365 suite.\n\nMore info: Affected admins can’t remove Restricted entities from the Microsoft Defender XDR portal, Exchange Online admin center, or PowerShell.\n\nCurrent status: We've identified that the impact we previously communicated for under MO1297784 is reoccurring. We're reviewing the details of the issue and will provide an update within 30 minutes.\n\nScope of impact: Admins removing blocked users from the Restricted Entities page in Microsoft 365 suite may be impacted."
-        }
-      ],
-      "serviceName": "Microsoft 365 suite",
-      "affectedServices": [
-        "Microsoft 365 suite"
-      ]
-    },
     {
       "id": "MV1300072",
       "title": "Users may be unable to access Community Analytics in Microsoft Viva Engage",
