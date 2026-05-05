@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-05T20:46:30.552Z",
+  "lastUpdated": "2026-05-05T21:16:38.389Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -409,35 +409,9 @@
     },
     {
       "service": "Microsoft Intune",
-      "status": "investigating",
+      "status": "serviceOperational",
       "id": "Intune",
-      "issues": [
-        {
-          "id": "IT1301759",
-          "title": "Users may experience failures when enrolling Apple devices in Microsoft Intune",
-          "startTime": "2026-05-05T20:19:13Z",
-          "endTime": null,
-          "lastModified": "2026-05-05T20:36:38.18Z",
-          "status": "investigating",
-          "severity": "advisory",
-          "userImpact": "Users may have experienced failures when enrolling Apple devices in Microsoft Intune.",
-          "scopeOfImpact": "",
-          "rootCause": "",
-          "nextUpdateBy": "",
-          "feature": "Microsoft Intune",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-05-05T20:36:38.18Z",
-              "postType": "regular",
-              "content": "Title: Users may experience failures when enrolling Apple devices in Microsoft Intune\n\nUser impact: Users may have experienced failures when enrolling Apple devices in Microsoft Intune.\n\nCurrent status: We've investigated a problem in which users may have experienced failures when enrolling Apple devices in Microsoft Intune and confirmed that service is now restored. We'll provide additional information in a closure summary within the \"History\" section of the \"Service health\" dashboard shortly."
-            }
-          ],
-          "affectedServices": [
-            "Microsoft Intune"
-          ]
-        }
-      ]
+      "issues": []
     },
     {
       "service": "Microsoft OneDrive",
