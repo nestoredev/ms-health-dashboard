@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-05T18:45:58.281Z",
+  "lastUpdated": "2026-05-05T19:16:06.731Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -307,18 +307,23 @@
         {
           "id": "MO1297751",
           "title": "Some users may not receive results when performing searches in SharePoint Online",
-          "startTime": "2026-05-01T17:31:58.353Z",
+          "startTime": "2026-04-20T00:00:00Z",
           "endTime": null,
-          "lastModified": "2026-05-05T00:08:34.1Z",
+          "lastModified": "2026-05-05T19:04:28.627Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may not receive results when performing searches in SharePoint Online.",
-          "scopeOfImpact": "Some users attempting searches in SharePoint Online may be impacted. This section may be updated as our investigation continues.\r\n\r\nStart time: Monday, April 20, 2026, at 12:00 AM UTC",
-          "rootCause": "",
-          "nextUpdateBy": "Tuesday, May 05, 2026, at 7:30 PM UTC",
+          "scopeOfImpact": "Some users attempting to perform searches in SharePoint Online may be impacted by this event. This section may be updated as our investigation continues.\r\n\r\nStart time: Monday, April 20, 2026, at 12:00 AM UTC",
+          "rootCause": "Multiple concurrent issues, including unexpected spikes in traffic and an overloaded search request queue, are causing a subset of service infrastructure that processes SharePoint Online search requests to enter an unhealthy state, which is resulting in impact.",
+          "nextUpdateBy": "Wednesday, May 06, 2026, at 7:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-05-05T19:04:28.627Z",
+              "postType": "regular",
+              "content": "Title: Some users may not receive results when performing searches in SharePoint Online\r\n\r\nUser impact: Users may not receive results when performing searches in SharePoint Online.\r\n\r\nCurrent status: We've determined that multiple concurrent issues, including unexpected spikes in user traffic and an overloaded search request queue, are causing a subset of service infrastructure that processes SharePoint Online search requests to enter an unhealthy state, which is resulting in impact. We're redirecting and rebalancing traffic within the affected infrastructure subset and optimizing the amount of search requests that our service can handle simultaneously to alleviate impact while we continue developing long term remediation solutions.\r\n\r\nScope of impact: Some users attempting to perform searches in SharePoint Online may be impacted by this event. This section may be updated as our investigation continues.\r\n\r\nStart time: Monday, April 20, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: Multiple concurrent issues, including unexpected spikes in traffic and an overloaded search request queue, are causing a subset of service infrastructure that processes SharePoint Online search requests to enter an unhealthy state, which is resulting in impact.\r\n\r\nNext update by: Wednesday, May 06, 2026, at 7:30 PM UTC"
+            },
             {
               "createdAt": "2026-05-05T00:08:34.1Z",
               "postType": "regular",
