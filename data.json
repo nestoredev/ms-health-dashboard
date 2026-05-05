@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-05T17:15:32.423Z",
+  "lastUpdated": "2026-05-05T17:45:42.730Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -632,52 +632,6 @@
   ],
   "history": [
     {
-      "id": "EX1297752",
-      "title": "Users may be experiencing high latency when performing searches in Exchange Online",
-      "startTime": "2026-04-01T07:00:00Z",
-      "endTime": "2026-05-05T17:07:33.547Z",
-      "lastModified": "2026-05-05T17:08:42.343Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users may have experienced high latency when performing searches in Exchange Online.",
-      "scopeOfImpact": "This issue may have impacted any user attempting to perform searches in the Outlook desktop client, Outlook on the web, or Outlook mobile.\r\n\r\nStart time: Wednesday, April 01, 2026, at 7:00 AM UTC\r\n\r\nEnd time: Tuesday, May 05, 2026, at 5:07 PM UTC",
-      "rootCause": "A portion of the Exchange Online service infrastructure was operating in a suboptimal state due to an increased volume of service requests and ongoing improvements, resulting in search latency and impact.\r\n\r\nNext steps: We’re investigating the impacted service infrastructure determine why the increased volume of service requests and ongoing improvements caused search latency issues to prevent this problem from happening again in the future.\r\n\r\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Outlook - poor customer experience",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-05-05T17:08:23.21Z",
-          "postType": "regular",
-          "content": "Title: Users may be experiencing high latency when performing searches in Exchange Online\r\n\r\nUser impact: Users may have experienced high latency when performing searches in Exchange Online.\r\n\r\nFinal status: We’ve monitored service health telemetry and validated that our service optimizations to expand available resources and reduce overall latency successfully alleviated latency, resolving the issue.\r\n\r\nScope of impact: This issue may have impacted any user attempting to perform searches in the Outlook desktop client, Outlook on the web, or Outlook mobile.\r\n\r\nStart time: Wednesday, April 01, 2026, at 7:00 AM UTC\r\n\r\nEnd time: Tuesday, May 05, 2026, at 5:07 PM UTC\r\n\r\nRoot cause: A portion of the Exchange Online service infrastructure was operating in a suboptimal state due to an increased volume of service requests and ongoing improvements, resulting in search latency and impact.\r\n\r\nNext steps: We’re investigating the impacted service infrastructure determine why the increased volume of service requests and ongoing improvements caused search latency issues to prevent this problem from happening again in the future.\r\n\r\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-05-04T16:31:21.81Z",
-          "postType": "regular",
-          "content": "Title: Users may be experiencing high latency when performing searches in Exchange Online\r\n\r\nUser impact: Users may be experiencing high latency when performing searches in Exchange Online.\r\n\r\nCurrent status: We're continuing to monitor service health telemetry to validate that latency is successfully alleviated following our service optimizations aimed at expanding available resources and reducing overall latency. We'll provide a timeline for impact remediation as once becomes available.\r\n\r\nScope of impact: This issue may impact any user attempting to perform searches in Outlook, Outlook on the web, or Outlook mobile. \r\n\r\nStart time: Wednesday, April 01, 2026, at 7:00 AM UTC\r\n\r\nRoot cause: Outsized loads on service infrastructure from increased traffic and ongoing improvements is causing search latency issues and resulting in impact.\r\n\r\nNext update by: Tuesday, May 05, 2026, at 6:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-05-01T18:38:29.99Z",
-          "postType": "regular",
-          "content": "Title: Users may be experiencing high latency when performing searches in Exchange Online\r\n\r\nUser impact: Users may be experiencing high latency when performing searches in Exchange Online.\r\n\r\nCurrent status: After determining that the source of impact is related to high loads on service infrastructure, we've implemented optimizations to expand available resources and reduce latency. We're monitoring service health telemetry to ensure that latency is successfully alleviated.\r\n\r\nScope of impact: This issue may impact any user attempting to perform searches in Outlook, Outlook on the web, or Outlook mobile. \r\n\r\nStart time: Wednesday, April 01, 2026, at 7:00 AM UTC\r\n\r\nRoot cause: The search latency was caused by outsized loads on service infrastructure from increased traffic and ongoing improvements.\r\n\r\nNext update by: Monday, May 04, 2026, at 6:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-05-01T18:05:11.64Z",
-          "postType": "regular",
-          "content": "Title: Users may be experiencing high latency when performing searches in Exchange Online\r\n\r\nUser impact: Users may be experiencing high latency when performing searches in Exchange Online.\r\n\r\nCurrent status: We're reviewing service health telemetry to isolate the source of impact and identify any errors which may be contributing to search latency.\r\n\r\nScope of impact: This issue may impact any user attempting to perform searches in Outlook, Outlook on the web, or Outlook mobile. \r\n\r\nNext update by: Friday, May 01, 2026, at 7:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-05-01T17:50:51.207Z",
-          "postType": "regular",
-          "content": "Title: Users may be experiencing high latency when performing searches in Exchange Online\r\n\r\nUser impact: Users may be experiencing high latency when performing searches in Exchange Online.\r\n\r\nCurrent status: We're investigating a potential issue with Exchange Online and checking for impact to your organization. We'll provide an update within 30 minutes."
-        }
-      ],
-      "serviceName": "Exchange Online",
-      "affectedServices": [
-        "Exchange Online"
-      ]
-    },
-    {
       "id": "SP1301507",
       "title": "Some users may have been unable to successfully invoke Power Automate flows from their SharePoint (SPFx) applications ",
       "startTime": "2026-04-29T23:30:00Z",
@@ -829,6 +783,52 @@
       "serviceName": "Microsoft Viva",
       "affectedServices": [
         "Microsoft Viva"
+      ]
+    },
+    {
+      "id": "EX1297752",
+      "title": "Users may be experiencing high latency when performing searches in Exchange Online",
+      "startTime": "2026-04-01T07:00:00Z",
+      "endTime": "2026-05-01T23:00:00Z",
+      "lastModified": "2026-05-05T17:11:44.043Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have experienced high latency when performing searches in Exchange Online.",
+      "scopeOfImpact": "This issue may have impacted any user attempting to perform searches in the Outlook desktop client, Outlook on the web, or Outlook mobile.\r\n\r\nStart time: Wednesday, April 01, 2026, at 7:00 AM UTC\r\n\r\nEnd time: Friday, May 01, 2026, at 11:00 PM UTC",
+      "rootCause": "A portion of the Exchange Online service infrastructure was operating in a suboptimal state due to an increased volume of service requests and ongoing improvements, resulting in search latency and impact.\r\n\r\nNext steps: We’re investigating the impacted service infrastructure determine why the increased volume of service requests and ongoing improvements caused search latency issues to prevent this problem from happening again in the future.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Outlook - poor customer experience",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-05-05T17:08:23.21Z",
+          "postType": "regular",
+          "content": "Title: Users may be experiencing high latency when performing searches in Exchange Online\r\n\r\nUser impact: Users may have experienced high latency when performing searches in Exchange Online.\r\n\r\nFinal status: We’ve monitored service health telemetry and validated that our service optimizations to expand available resources and reduce overall latency successfully alleviated latency, resolving the issue.\r\n\r\nScope of impact: This issue may have impacted any user attempting to perform searches in the Outlook desktop client, Outlook on the web, or Outlook mobile.\r\n\r\nStart time: Wednesday, April 01, 2026, at 7:00 AM UTC\r\n\r\nEnd time: Friday, May 01, 2026, at 11:00 PM UTC\r\n\r\nRoot cause: A portion of the Exchange Online service infrastructure was operating in a suboptimal state due to an increased volume of service requests and ongoing improvements, resulting in search latency and impact.\r\n\r\nNext steps: We’re investigating the impacted service infrastructure determine why the increased volume of service requests and ongoing improvements caused search latency issues to prevent this problem from happening again in the future.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-05-04T16:31:21.81Z",
+          "postType": "regular",
+          "content": "Title: Users may be experiencing high latency when performing searches in Exchange Online\r\n\r\nUser impact: Users may be experiencing high latency when performing searches in Exchange Online.\r\n\r\nCurrent status: We're continuing to monitor service health telemetry to validate that latency is successfully alleviated following our service optimizations aimed at expanding available resources and reducing overall latency. We'll provide a timeline for impact remediation as once becomes available.\r\n\r\nScope of impact: This issue may impact any user attempting to perform searches in Outlook, Outlook on the web, or Outlook mobile. \r\n\r\nStart time: Wednesday, April 01, 2026, at 7:00 AM UTC\r\n\r\nRoot cause: Outsized loads on service infrastructure from increased traffic and ongoing improvements is causing search latency issues and resulting in impact.\r\n\r\nNext update by: Tuesday, May 05, 2026, at 6:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-05-01T18:38:29.99Z",
+          "postType": "regular",
+          "content": "Title: Users may be experiencing high latency when performing searches in Exchange Online\r\n\r\nUser impact: Users may be experiencing high latency when performing searches in Exchange Online.\r\n\r\nCurrent status: After determining that the source of impact is related to high loads on service infrastructure, we've implemented optimizations to expand available resources and reduce latency. We're monitoring service health telemetry to ensure that latency is successfully alleviated.\r\n\r\nScope of impact: This issue may impact any user attempting to perform searches in Outlook, Outlook on the web, or Outlook mobile. \r\n\r\nStart time: Wednesday, April 01, 2026, at 7:00 AM UTC\r\n\r\nRoot cause: The search latency was caused by outsized loads on service infrastructure from increased traffic and ongoing improvements.\r\n\r\nNext update by: Monday, May 04, 2026, at 6:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-05-01T18:05:11.64Z",
+          "postType": "regular",
+          "content": "Title: Users may be experiencing high latency when performing searches in Exchange Online\r\n\r\nUser impact: Users may be experiencing high latency when performing searches in Exchange Online.\r\n\r\nCurrent status: We're reviewing service health telemetry to isolate the source of impact and identify any errors which may be contributing to search latency.\r\n\r\nScope of impact: This issue may impact any user attempting to perform searches in Outlook, Outlook on the web, or Outlook mobile. \r\n\r\nNext update by: Friday, May 01, 2026, at 7:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-05-01T17:50:51.207Z",
+          "postType": "regular",
+          "content": "Title: Users may be experiencing high latency when performing searches in Exchange Online\r\n\r\nUser impact: Users may be experiencing high latency when performing searches in Exchange Online.\r\n\r\nCurrent status: We're investigating a potential issue with Exchange Online and checking for impact to your organization. We'll provide an update within 30 minutes."
+        }
+      ],
+      "serviceName": "Exchange Online",
+      "affectedServices": [
+        "Exchange Online"
       ]
     },
     {
