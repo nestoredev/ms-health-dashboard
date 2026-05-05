@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-05T18:15:50.522Z",
+  "lastUpdated": "2026-05-05T18:45:58.281Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -636,12 +636,12 @@
       "title": "Some users may have been unable to successfully invoke Power Automate flows from their SharePoint (SPFx) applications ",
       "startTime": "2026-04-29T23:30:00Z",
       "endTime": "2026-05-05T13:00:00Z",
-      "lastModified": "2026-05-05T14:25:08.35Z",
+      "lastModified": "2026-05-05T18:30:54.85Z",
       "status": "serviceRestored",
       "severity": "advisory",
       "userImpact": "Users may have been unable to successfully invoke Power Automate flows from their SPFx applications.",
-      "scopeOfImpact": "Impact was specific to users attempting to invoke Power Automate flows from their SPFx applications.\r\n\r\nStart time: Wednesday, April 29, 2026, at 11:30 PM UTC\r\n\r\nEnd time: Tuesday, May 05, 2026, at 1:00 PM UTC",
-      "rootCause": "A recent service update introduced a token provider that was incorrectly modifying a specific resource endpoint URL and resulted in impact. \r\n\r\nNext steps: We're reviewing our update procedures to better identify similar issues during our development and testing cycles.",
+      "scopeOfImpact": "Impact was specific to users attempting to invoke Power Automate flows from their SPFx applications.\n\nStart time: Wednesday, April 29, 2026, at 11:30 PM UTC\n\nEnd time: Tuesday, May 05, 2026, at 1:00 PM UTC",
+      "rootCause": "A recent service update introduced a token provider that was incorrectly modifying a specific resource endpoint URL and resulted in impact. \n\nNext steps: \n- We're reviewing our update procedures to better identify similar issues during our development and testing cycles.\n\nThis is the final update for the event.",
       "nextUpdateBy": "",
       "feature": "Performance (related to custom solutions)",
       "isResolved": true,
@@ -649,7 +649,7 @@
         {
           "createdAt": "2026-05-05T14:24:38.72Z",
           "postType": "regular",
-          "content": "Title: Some users may have been unable to successfully invoke Power Automate flows from their SharePoint (SPFx) applications \r\n\r\nUser impact: Users may have been unable to successfully invoke Power Automate flows from their SPFx applications.\r\n\r\nCurrent status: We've identified that a recent service update introduced a token provider that was incorrectly modifying a specific resource endpoint URL, resulting in impact. We've reverted service to the previous known working version, and received feedback from a number of affected users that impact has been remediated.\r\n\r\nScope of impact: Impact was specific to users attempting to invoke Power Automate flows from their SPFx applications.\r\n\r\nStart time: Wednesday, April 29, 2026, at 11:30 PM UTC\r\n\r\nEnd time: Tuesday, May 05, 2026, at 1:00 PM UTC\r\n\r\nRoot cause: A recent service update introduced a token provider that was incorrectly modifying a specific resource endpoint URL and resulted in impact. \r\n\r\nNext steps: We're reviewing our update procedures to better identify similar issues during our development and testing cycles."
+          "content": "Title: Some users may have been unable to successfully invoke Power Automate flows from their SharePoint (SPFx) applications \n\nUser impact: Users may have been unable to successfully invoke Power Automate flows from their SPFx applications.\n\nFinal status: We've identified that a recent service update introduced a token provider that was incorrectly modifying a specific resource endpoint URL, resulting in impact. We've reverted service to the previous known working version, and received feedback from a number of affected users that impact has been remediated.\n\nScope of impact: Impact was specific to users attempting to invoke Power Automate flows from their SPFx applications.\n\nStart time: Wednesday, April 29, 2026, at 11:30 PM UTC\n\nEnd time: Tuesday, May 05, 2026, at 1:00 PM UTC\n\nRoot cause: A recent service update introduced a token provider that was incorrectly modifying a specific resource endpoint URL and resulted in impact. \n\nNext steps: \n- We're reviewing our update procedures to better identify similar issues during our development and testing cycles.\n\nThis is the final update for the event."
         }
       ],
       "serviceName": "SharePoint Online",
