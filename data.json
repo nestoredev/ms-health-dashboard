@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-06T18:22:07.646Z",
+  "lastUpdated": "2026-05-06T18:52:15.779Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -309,16 +309,21 @@
           "title": "Some users may not receive results when performing searches in SharePoint Online",
           "startTime": "2026-04-20T00:00:00Z",
           "endTime": null,
-          "lastModified": "2026-05-05T19:04:28.627Z",
+          "lastModified": "2026-05-06T18:30:06.323Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may not receive results when performing searches in SharePoint Online.",
           "scopeOfImpact": "Some users attempting to perform searches in SharePoint Online may be impacted by this event. This section may be updated as our investigation continues.\r\n\r\nStart time: Monday, April 20, 2026, at 12:00 AM UTC",
-          "rootCause": "Multiple concurrent issues, including unexpected spikes in traffic and an overloaded search request queue, are causing a subset of service infrastructure that processes SharePoint Online search requests to enter an unhealthy state, which is resulting in impact.",
-          "nextUpdateBy": "Wednesday, May 06, 2026, at 7:30 PM UTC",
+          "rootCause": "An unexpected increase in request traffic and search request queuing is causing a subset of service infrastructure that processes SharePoint Online search requests to enter a suboptimal state, resulting in impact.",
+          "nextUpdateBy": "Thursday, May 07, 2026, at 7:00 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-05-06T18:30:06.323Z",
+              "postType": "regular",
+              "content": "Title: Some users may not receive results when performing searches in SharePoint Online\r\n\r\nUser impact: Users may not receive results when performing searches in SharePoint Online.\r\n\r\nCurrent status: We're continuing our efforts to redirect and rebalance traffic within the subset of affected infrastructure while optimizing the amount of new search requests that our service can handle to remediate the impact. We'll monitor the efficacy of these remediation strategies over the next 24 hours, after which we'll reach out to a subset of affected users to validate whether this issue is resolved or additional mitigative actions may be required.\r\n\r\nScope of impact: Some users attempting to perform searches in SharePoint Online may be impacted by this event. This section may be updated as our investigation continues.\r\n\r\nStart time: Monday, April 20, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: An unexpected increase in request traffic and search request queuing is causing a subset of service infrastructure that processes SharePoint Online search requests to enter a suboptimal state, resulting in impact.\r\n\r\nNext update by: Thursday, May 07, 2026, at 7:00 PM UTC"
+            },
             {
               "createdAt": "2026-05-05T19:04:28.627Z",
               "postType": "regular",
