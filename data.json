@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-07T12:56:55.729Z",
+  "lastUpdated": "2026-05-07T13:27:03.260Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -283,9 +283,35 @@
     },
     {
       "service": "SharePoint Online",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "SharePoint",
-      "issues": []
+      "issues": [
+        {
+          "id": "SP1303340",
+          "title": "Potential issues accessing SharePoint Online sites",
+          "startTime": "2026-05-07T12:54:01.823Z",
+          "endTime": null,
+          "lastModified": "2026-05-07T12:54:02.893Z",
+          "status": "serviceDegradation",
+          "severity": "incident",
+          "userImpact": "Users may be unable to access SharePoint Online sites and may notice delays or navigation errors.",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
+          "feature": "SharePoint Online all features",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-05-07T12:54:02.893Z",
+              "postType": "regular",
+              "content": "Title: Potential issues accessing SharePoint Online sites\r\n\r\nUser impact: Users may be unable to access SharePoint Online sites and may notice delays or navigation errors.\r\n\r\nCurrent Status: We're investigating a potential issue and checking for impact to your organization. We'll provide an update within one hour."
+            }
+          ],
+          "affectedServices": [
+            "SharePoint Online"
+          ]
+        }
+      ]
     },
     {
       "service": "Dynamics 365 Apps",
