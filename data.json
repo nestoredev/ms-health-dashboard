@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-08T22:05:32.275Z",
+  "lastUpdated": "2026-05-08T22:35:39.669Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -559,19 +559,24 @@
         },
         {
           "id": "CW1304234",
-          "title": "We're looking into a potential problem impacting Microsoft 365 Copilot chat",
+          "title": "Admins may see Microsoft 365 Copilot Chat reports delayed by up to one day within the Microsoft 365 admin center",
           "startTime": "2026-05-08T21:39:43.903Z",
           "endTime": null,
-          "lastModified": "2026-05-08T21:40:58.843Z",
-          "status": "investigating",
+          "lastModified": "2026-05-08T22:15:21.227Z",
+          "status": "serviceDegradation",
           "severity": "advisory",
-          "userImpact": "We're checking for potential impact to your users.",
-          "scopeOfImpact": "",
-          "rootCause": "",
-          "nextUpdateBy": "",
+          "userImpact": "Admins may see Copilot Chat reports delayed by up to one day within the Microsoft 365 admin center.",
+          "scopeOfImpact": "Any admin accessing Copilot Chat reports within the Microsoft 365 admin center may be impacted.\r\n\r\nStart time: Thursday, May 07, 2026, at 12:00 AM UTC",
+          "rootCause": "An issue within an upstream service supporting Copilot Chat reporting functionality is causing impact.",
+          "nextUpdateBy": "Saturday, May 09, 2026, at 11:00 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-05-08T22:14:43.693Z",
+              "postType": "regular",
+              "content": "Title: Admins may see Microsoft 365 Copilot Chat reports delayed by up to one day within the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see Copilot Chat reports delayed by up to one day within the Microsoft 365 admin center.\r\n\r\nCurrent status: We've identified that an issue within an upstream service supporting Copilot Chat reporting functionality that's causing impact. While we gather more contextual details regarding how the specific issue is causing impact, we're determining our next steps to restore the upstream service to expected functionality.\r\n\r\nScope of impact: Any admin accessing Copilot Chat reports within the Microsoft 365 admin center may be impacted.\r\n\r\nStart time: Thursday, May 07, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: An issue within an upstream service supporting Copilot Chat reporting functionality is causing impact.\r\n\r\nNext update by: Saturday, May 09, 2026, at 11:00 PM UTC"
+            },
             {
               "createdAt": "2026-05-08T21:40:58.843Z",
               "postType": "regular",
