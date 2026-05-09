@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-09T20:10:44.601Z",
+  "lastUpdated": "2026-05-09T20:40:50.784Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -556,41 +556,47 @@
           "affectedServices": [
             "Microsoft 365 Copilot Chat"
           ]
-        },
-        {
-          "id": "CW1304234",
-          "title": "Admins may see Microsoft 365 Copilot Chat reports delayed by up to one day within the Microsoft 365 admin center",
-          "startTime": "2026-05-08T21:39:43.903Z",
-          "endTime": null,
-          "lastModified": "2026-05-09T20:06:49.993Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Admins may have seen Copilot Chat reports delayed by up to one day within the Microsoft 365 admin center.",
-          "scopeOfImpact": "Any admin accessing Copilot Chat reports within the Microsoft 365 admin center may be impacted.\r\n\r\nStart time: Thursday, May 07, 2026, at 12:00 AM UTC",
-          "rootCause": "An issue within an upstream service supporting Copilot Chat reporting functionality is causing impact.",
-          "nextUpdateBy": "Saturday, May 09, 2026, at 11:00 PM UTC",
-          "feature": "General",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-05-08T22:14:43.693Z",
-              "postType": "regular",
-              "content": "Title: Admins may see Microsoft 365 Copilot Chat reports delayed by up to one day within the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see Copilot Chat reports delayed by up to one day within the Microsoft 365 admin center.\r\n\r\nCurrent status: We've identified that an issue within an upstream service supporting Copilot Chat reporting functionality that's causing impact. While we gather more contextual details regarding how the specific issue is causing impact, we're determining our next steps to restore the upstream service to expected functionality.\r\n\r\nScope of impact: Any admin accessing Copilot Chat reports within the Microsoft 365 admin center may be impacted.\r\n\r\nStart time: Thursday, May 07, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: An issue within an upstream service supporting Copilot Chat reporting functionality is causing impact.\r\n\r\nNext update by: Saturday, May 09, 2026, at 11:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-05-08T21:40:58.843Z",
-              "postType": "regular",
-              "content": "Title: We're looking into a potential problem impacting Microsoft 365 Copilot chat\r\n\r\nUser impact: We're checking for potential impact to your users.\r\n\r\nCurrent status:  We're investigating a potential issue impacting Microsoft 365 Copilot Chat and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Microsoft 365 Copilot Chat"
-          ]
         }
       ]
     }
   ],
   "history": [
+    {
+      "id": "CW1304234",
+      "title": "Admins may see Microsoft 365 Copilot Chat reports delayed by up to one day within the Microsoft 365 admin center",
+      "startTime": "2026-05-08T00:00:00Z",
+      "endTime": "2026-05-09T04:00:00Z",
+      "lastModified": "2026-05-09T20:15:37.487Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Admins may have seen Copilot Chat reports delayed by up to one day within the Microsoft 365 admin center.",
+      "scopeOfImpact": "Any admin accessing Copilot Chat reports within the Microsoft 365 admin center may have been impacted.\r\n\r\nStart time: Thursday, May 07, 2026, at 12:00 AM UTC\r\n\r\nEnd time: Saturday, May 09, 2026, at 4:00 AM UTC",
+      "rootCause": "An issue within an upstream service supporting Copilot Chat reporting functionality was causing impact.\r\n\r\nNext steps: We're investigating how an issue within an upstream service supporting Copilot Chat reporting functionality was causing impact to prevent this problem from happening again.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "General",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-05-09T20:08:04.16Z",
+          "postType": "regular",
+          "content": "Title: Admins may see Microsoft 365 Copilot Chat reports delayed by up to one day within the Microsoft 365 admin center\r\n\r\nUser impact: Admins may have seen Copilot Chat reports delayed by up to one day within the Microsoft 365 admin center.\r\n\r\nFinal status: We’ve restarted the affected upstream data pipeline, and after monitoring the service, we’ve verified that this action successfully resolved the issue.\r\n\r\nScope of impact: Any admin accessing Copilot Chat reports within the Microsoft 365 admin center may have been impacted.\r\n\r\nStart time: Thursday, May 07, 2026, at 12:00 AM UTC\r\n\r\nEnd time: Saturday, May 09, 2026, at 4:00 AM UTC\r\n\r\nRoot cause: An issue within an upstream service supporting Copilot Chat reporting functionality was causing impact.\r\n\r\nNext steps: We're investigating how an issue within an upstream service supporting Copilot Chat reporting functionality was causing impact to prevent this problem from happening again.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-05-08T22:14:43.693Z",
+          "postType": "regular",
+          "content": "Title: Admins may see Microsoft 365 Copilot Chat reports delayed by up to one day within the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see Copilot Chat reports delayed by up to one day within the Microsoft 365 admin center.\r\n\r\nCurrent status: We've identified that an issue within an upstream service supporting Copilot Chat reporting functionality that's causing impact. While we gather more contextual details regarding how the specific issue is causing impact, we're determining our next steps to restore the upstream service to expected functionality.\r\n\r\nScope of impact: Any admin accessing Copilot Chat reports within the Microsoft 365 admin center may be impacted.\r\n\r\nStart time: Thursday, May 07, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: An issue within an upstream service supporting Copilot Chat reporting functionality is causing impact.\r\n\r\nNext update by: Saturday, May 09, 2026, at 11:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-05-08T21:40:58.843Z",
+          "postType": "regular",
+          "content": "Title: We're looking into a potential problem impacting Microsoft 365 Copilot chat\r\n\r\nUser impact: We're checking for potential impact to your users.\r\n\r\nCurrent status:  We're investigating a potential issue impacting Microsoft 365 Copilot Chat and checking for impact to your organization. We'll provide an update within 30 minutes."
+        }
+      ],
+      "serviceName": "Microsoft 365 Copilot Chat",
+      "affectedServices": [
+        "Microsoft 365 Copilot Chat"
+      ]
+    },
     {
       "id": "EX1254044",
       "title": "Some users may have been unable to use classic Outlook when the Teams Meeting Add-in was enabled",
@@ -1932,52 +1938,6 @@
       "serviceName": "Power BI",
       "affectedServices": [
         "Power BI"
-      ]
-    },
-    {
-      "id": "IT1272653",
-      "title": "Users may be unable to install user targeted apps that have been made available in the Intune Company Portal",
-      "startTime": "2026-04-02T03:30:00Z",
-      "endTime": "2026-04-09T20:30:00Z",
-      "lastModified": "2026-04-14T18:57:57.417Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users may have been unable to install user targeted apps that have been made available in the Intune Company Portal.",
-      "scopeOfImpact": "Impact was specific to some users attempting to install user targeted apps in the Intune Company Portal. \n \nStart time: Thursday, April 2, 2026, at 3:30 AM UTC\n \nEnd time: Thursday, April 9, 2026, at 8:30 PM UTC",
-      "rootCause": "A recent service update introduced a regression that prevented app installations from progressing as expected which changed how a required configuration file was packaged, resulting in the file not being available and preventing app downloads from completing.\n \nNext steps:\n- We're further analyzing the offending service update and the introduced regression so we can improve our internal testing and validation processes.\n\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Microsoft Intune",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-04-14T18:57:57.417Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to install user targeted apps that have been made available in the Intune Company Portal\n\nUser impact: Users may have been unable to install user targeted apps that have been made available in the Intune Company Portal.\n\nMore info: Affected users may have observed that app installations in the Intune Company Portal were stuck in a “Download Pending” state. A fix has been deployed, and impacted devices have been upgraded to version 1.101.109.0.\n\nUsers who attempted to install user targeted apps while their device was running Intune Management Extension (IME) were impacted by this issue and group memberships that were modified by an administrator before the fixed IME version was deployed, may have continued to experience the issue. \n \nFinal status: Following the deployment of our fix, our internal service telemetry has verified that targeted apps are available in the Intune Company Portal, and that the impact has been remediated. \n \nScope of impact: Impact was specific to some users attempting to install user targeted apps in the Intune Company Portal. \n \nStart time: Thursday, April 2, 2026, at 3:30 AM UTC\n \nEnd time: Thursday, April 9, 2026, at 8:30 PM UTC\n \nRoot cause: A recent service update introduced a regression that prevented app installations from progressing as expected which changed how a required configuration file was packaged, resulting in the file not being available and preventing app downloads from completing.\n \nNext steps:\n- We're further analyzing the offending service update and the introduced regression so we can improve our internal testing and validation processes.\n\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-04-14T02:25:57.637Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to install user targeted apps that have been made available in the Intune Company Portal\n\nUser impact: Users may be unable to install user targeted apps that have been made available in the Intune Company Portal.\n\nMore info: Affected users may observe that app installations in the Intune Company Portal are stuck in a “Download Pending” state. A fix is currently being deployed, and impacted devices will receive an Intune client upgrade to version 1.101.109.0.\n\nUsers who attempted to install user targeted apps while their device was running a version of the IME impacted by this issue and whose group memberships were modified by an administrator before the fixed IME version was deployed, may continue to experience the issue. We’re actively working on an additional fix to remediate this subset of users.\n\nCurrent status: Deployment of our supplemental fix is ongoing and we’re continuing to review our options to fully resolve this issue for all affected devices. We anticipate having an estimation for impact resolution by our next scheduled update. \n\nScope of impact: Impact is specific to some users attempting to install user targeted apps in the Intune Company Portal. This information may be updated as our investigation continues.\n\nStart time: Thursday, April 2, 2026, at 3:30 AM UTC\n\nRoot cause: A recent service update introduced a regression that prevented app installations from progressing as expected which changed how a required configuration file was packaged, resulting in the file not being available and preventing app downloads from completing.\n\nNext update by: Tuesday, April 14, 2026, at 7:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-04-13T21:08:28.54Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to install user targeted apps that have been made available in the Intune Company Portal\n\nUser impact: Users may be unable to install user targeted apps that have been made available in the Intune Company Portal.\n\nMore info: Affected users may observe that app installations in the Intune Company Portal are stuck in a “Download Pending” state. A fix is currently being deployed, and impacted devices will receive an Intune client upgrade to version 1.101.109.0.\nUsers who attempted to install user targeted apps while their device was running a version of the IME impacted by this issue and whose group memberships were modified by an administrator before the fixed IME version was deployed, may continue to experience the issue. We’re actively working on an additional fix to remediate this subset of users.\n\nCurrent status: We're continuing to monitor as the supplemental fix progresses however our testing indicates that this doesn't resolve all devices in the company portal. While users will continue to see relief as the fix progresses and we're continuing our analysis of the remaining affected devices to identify and remediate them.\n\nScope of impact: Impact is specific to some users attempting to install user targeted apps in the Intune Company Portal. This information may be updated as our investigation continues.\n\nStart time: Thursday, April 2, 2026, at 3:30 AM UTC\n\nRoot cause: A recent service update introduced a regression that prevented app installations from progressing as expected which changed how a required configuration file was packaged, resulting in the file not being available and preventing app downloads from completing.\n\nNext update by: Tuesday, April 14, 2026, at 3:30 AM UTC"
-        },
-        {
-          "createdAt": "2026-04-10T20:00:40.997Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to install user targeted apps that have been made available in the Intune Company Portal\n\nUser impact: Users may be unable to install user targeted apps that have been made available in the Intune Company Portal.\n\nMore info: Affected users may observe that app installations in the Intune Company Portal are stuck in a “Download Pending” state. A fix is currently being deployed, and impacted devices will receive an Intune client upgrade to version 1.101.109.0.\nUsers who attempted to install user targeted apps while their device was running a version of the IME impacted by this issue and whose group memberships were modified by an administrator before the fixed IME version was deployed, may continue to experience the issue. We’re actively working on an additional fix to remediate this subset of users.\n \nCurrent status: We've completed the deployment of our fix but review of service health telemetry identified a subset of affected users that remain impacted due to user targeted app installation attempts during the impact period. We've developed a supplemental fix to restore functionality for the remaining impacted users, which we've begun deploying to the affected environment. We anticipate the supplemental fix will complete deployment and fully remediate the impact by our next scheduled communications update.\n \nScope of impact: Impact is specific to some users attempting to install user targeted apps in the Intune Company Portal. This information may be updated as our investigation continues.\n \nStart time: Thursday, April 2, 2026, at 3:30 AM UTC\n \nRoot cause: A recent service update introduced a regression that prevented app installations from progressing as expected which changed how a required configuration file was packaged, resulting in the file not being available and preventing app downloads from completing.\n \nNext update by: Monday, April 13, 2026, at 9:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-04-10T00:36:52.733Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to install user targeted apps that have been made available in the Intune Company Portal\n\nUser impact: Users may be unable to install user targeted apps that have been made available in the Intune Company Portal.\n\nMore info: Affected users may observe that app installations in the Intune Company Portal are stuck in a “Download Pending” state. A fix is currently being deployed, and impacted devices will receive an Intune client upgrade to version 1.101.109.0.\nUsers who attempted to install user targeted apps while their device was running a version of the IME impacted by this issue and whose group memberships were modified by an administrator before the fixed IME version was deployed, may continue to experience the issue. We’re actively working on an additional fix to remediate this subset of users.\n\n Current status: Although it’s taking longer than we previously anticipated, the fix has nearly completed saturating throughout the affected environment, thus we expect some users may see remediation at this time. We'll continue to monitor the remainder of the deployment, and we anticipate that it will be completed by the time of our next scheduled update.\n \nScope of impact: Impact is specific to some users attempting to install user targeted apps in the Intune Company Portal. This information may be updated as our investigation continues.\n \nStart time: Thursday, April 2, 2026, at 3:30 AM UTC\n \nRoot cause: A recent service update introduced a regression that prevented app installations from progressing as expected which changed how a required configuration file was packaged, resulting in the file not being available and preventing app downloads from completing.\n \nNext update by: Friday, April 10, 2026, at 9:30 PM UTC"
-        }
-      ],
-      "serviceName": "Microsoft Intune",
-      "affectedServices": [
-        "Microsoft Intune"
       ]
     }
   ]
