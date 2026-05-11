@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-11T14:20:40.657Z",
+  "lastUpdated": "2026-05-11T14:50:47.865Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -131,7 +131,7 @@
           "title": "Some users may be unable to view on-premises or cross-tenant free/busy availability when scheduling meetings",
           "startTime": "2026-05-09T07:14:55Z",
           "endTime": null,
-          "lastModified": "2026-05-11T12:08:04.233Z",
+          "lastModified": "2026-05-11T14:42:23.487Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to view on-premises or cross-tenant free/busy availability when scheduling meetings.",
@@ -144,7 +144,7 @@
             {
               "createdAt": "2026-05-11T11:55:16.867Z",
               "postType": "regular",
-              "content": "Title: Some users may be unable to view on-premises or cross-tenant free/busy availability when scheduling meetings\n\nUser impact: Users may be unable to view on-premises or cross-tenant free/busy availability when scheduling meetings.\n\nMore info: Cross-tenant or on-premises free/busy lookups via the Outlook Scheduling Assistant fail for attendees in a specific domain. As a result, availability consistently appears as “Unknown,” preventing effective meeting scheduling. \n \nCurrent status: We’ve identified a recent service update inadvertently enabled a new authentication pathway that had not yet been fully validated, leading to failures in processing requests. We’re reverting the offending update and backporting the fix across the affected environments to restore normal request processing. We're expecting the reversion and backporting of the fix to complete by Wednesday, May 20, 2026. \n \nScope of impact: Impact is specific to some users attempting to view free/busy availability. This information may be updated as our investigation continues.\n \nRoot cause: A recent service update inadvertently enabled a new authentication pathway that had not yet been fully validated, leading to failures in processing requests. \n \nNext update by: Friday, May 15, 2026, at 12:00 AM UTC"
+              "content": "Title: Some users may be unable to view on-premises or cross-tenant free/busy availability when scheduling meetings\n\nUser impact: Users may be unable to view on-premises or cross-tenant free/busy availability when scheduling meetings.\n\nMore info: Cross-tenant or on-premises free/busy lookups via the Outlook Scheduling Assistant fail for attendees in a specific domain. As a result, availability consistently appears as “Unknown,” preventing effective meeting scheduling. \n \nCurrent status: We’ve identified a recent service update inadvertently enabled a new authentication pathway that had not yet been fully validated, leading to failures in processing requests. We’re reverting the offending update and backporting the fix across the affected environments to restore normal request processing, and we expect to share a completion timeline when one becomes available. \n \nScope of impact: Impact is specific to some users attempting to view free/busy availability. This information may be updated as our investigation continues.\n \nRoot cause: A recent service update inadvertently enabled a new authentication pathway that had not yet been fully validated, leading to failures in processing requests. \n \nNext update by: Friday, May 15, 2026, at 12:00 AM UTC"
             },
             {
               "createdAt": "2026-05-10T20:22:42.19Z",
