@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-10T23:47:03.195Z",
+  "lastUpdated": "2026-05-11T00:17:10.136Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1937,52 +1937,6 @@
       "serviceName": "Microsoft Purview",
       "affectedServices": [
         "Microsoft Purview"
-      ]
-    },
-    {
-      "id": "PB1224494",
-      "title": "Users may be unable to send subscription email messages to external users in Power BI",
-      "startTime": "2026-01-29T18:45:00Z",
-      "endTime": "2026-04-11T00:00:00Z",
-      "lastModified": "2026-04-20T21:54:14.467Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users may be unable to send subscription email messages to external users in Power BI.",
-      "scopeOfImpact": "Impact may have occurred for all users attempting to send subscription email messages to external users in Power BI.\n\nStart time: Thursday, January 29, 2026, at 6:45 PM UTC\n\nEnd time: Saturday, April 11, 2026, at 12:00 AM UTC",
-      "rootCause": "An influx of automated email traffic from Power BI subscriptions was resulting in impact to external subscription email delivery.\n\nNext steps: \n- We're reviewing the influx of automated email traffic to better understand what led to the error that resulted in impact and prevent similar future occurrences.\n\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "General",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-04-20T21:54:14.467Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to send subscription email messages to external users in Power BI\n\nUser impact: Users may be unable to send subscription email messages to external users in Power BI.\n\nFinal status: Our fix completed its deployment, and we were able to confirm that the event has been resolved through service health telemetry.\n\nScope of impact: Impact may have occurred for all users attempting to send subscription email messages to external users in Power BI.\n\nStart time: Thursday, January 29, 2026, at 6:45 PM UTC\n\nEnd time: Saturday, April 11, 2026, at 12:00 AM UTC\n\nRoot cause: An influx of automated email traffic from Power BI subscriptions was resulting in impact to external subscription email delivery.\n\nNext steps: \n- We're reviewing the influx of automated email traffic to better understand what led to the error that resulted in impact and prevent similar future occurrences.\n\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-04-06T22:13:25.837Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to send subscription email messages to external users in Power BI\n\nUser impact: Users may be unable to send subscription email messages to external users in Power BI.\n\nCurrent status: We've started the deployment of the fix, which we anticipate may be fully deployed by May 2026. We'll aim to provide an updated resolution timeline by our next scheduled update.\n \nScope of impact: Impact may occur for all users attempting to send subscription email messages to external users in Power BI.\n \nStart time: Thursday, January 29, 2026, at 6:45 PM UTC\n \nRoot cause: An influx of automated email traffic from Power BI subscriptions is resulting in impact to external subscription email delivery.\n \nNext update by: Monday, April 20, 2026, at 11:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-03-26T21:36:36.223Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to send subscription email messages to external users in Power BI\n\nUser impact: Users may be unable to send subscription email messages to external users in Power BI.\n\nCurrent status: We're validating the efficacy of our developed code fix through additional testing within our testing environment prior to deployment, which we expect to begin by Wednesday, April 8, 2026. We’ll provide a timeline for full remediation as one becomes available.\n \nScope of impact: Impact may occur for all users attempting to send subscription email messages to external users in Power BI.\n \nStart time: Thursday, January 29, 2026, at 6:45 PM UTC\n \nRoot cause: An influx of automated email traffic from Power BI subscriptions is resulting in impact to external subscription email delivery.\n \nNext update by: Monday, April 6, 2026, at 11:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-03-23T21:54:15.897Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to send subscription emails to external users in Power BI\n\nUser impact: Users may be unable to send subscription emails to external users in Power BI.\n\nCurrent status: We've developed our code fix and are testing its efficacy within our testing environment. We expect to begin deploying the fix before the time of our next update.\n\nScope of impact: Impact may occur for all users attempting to send subscription emails to external users in Power BI.\n\nStart time: Thursday, January 29, 2026, at 6:45 PM UTC\n\nRoot cause: An influx of automated email traffic from Power BI subscriptions is resulting in impact to external subscription email delivery.\n\nNext update by: Friday, March 27, 2026, at 11:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-03-09T21:48:06.87Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to send subscription emails to external users in Power BI\n\nUser impact: Users may be unable to send subscription emails to external users in Power BI.\n\nCurrent status: Due to the complexity of the issue, the development of our code fix to restore subscription mail flow is taking an extended period of time to complete. We'll provide a timeline for its completion and deployment as one becomes available.\n\nScope of impact: Impact may occur for all users attempting to send subscription emails to external users in Power BI.\n\nStart time: Thursday, January 29, 2026, at 6:45 PM UTC\n\nRoot cause: An influx of automated email traffic from Power BI subscriptions is resulting in impact to external subscription email delivery.\n\nNext update by: Monday, March 23, 2026, at 11:30 PM UTC"
-        }
-      ],
-      "serviceName": "Power BI",
-      "affectedServices": [
-        "Power BI"
       ]
     }
   ]
