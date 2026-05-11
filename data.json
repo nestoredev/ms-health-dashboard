@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-11T19:52:08.958Z",
+  "lastUpdated": "2026-05-11T20:22:16.563Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -469,31 +469,6 @@
           "affectedServices": [
             "Microsoft Viva"
           ]
-        },
-        {
-          "id": "MV1307639",
-          "title": "Some users may not be able to load the Microsoft Viva Engage home feed and see delays with some operations",
-          "startTime": "2026-05-11T16:45:42.25Z",
-          "endTime": null,
-          "lastModified": "2026-05-11T17:16:24.077Z",
-          "status": "investigating",
-          "severity": "advisory",
-          "userImpact": "Users may not be able to load the Viva Engage home feed and see delays with some operations.",
-          "scopeOfImpact": "",
-          "rootCause": "",
-          "nextUpdateBy": "",
-          "feature": "Post/Reply/Like",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-05-11T17:14:10.363Z",
-              "postType": "regular",
-              "content": "Title: Some users may not be able to load the Microsoft Viva Engage home feed and see delays with some operations\r\n\r\nUser impact: Users may not be able to load the Viva Engage home feed and see delays with some operations.\r\n\r\nMore info: Affected user operations may include but aren't limited to the following:\n\n- Creating a post\n- Editing a post\n- Replying to a post\r\n\r\nCurrent status: We've investigated a problem in which some users may not have been able to load the Microsoft Viva Engage home feed and saw delays with some operations as mentioned in the More info section of this communication. We've confirmed that service is now restored and we'll provide additional information in a closure summary within the “History” section of the “Service health” dashboard shortly."
-            }
-          ],
-          "affectedServices": [
-            "Microsoft Viva"
-          ]
         }
       ]
     },
@@ -604,6 +579,37 @@
       "serviceName": "Microsoft 365 suite",
       "affectedServices": [
         "Microsoft 365 suite"
+      ]
+    },
+    {
+      "id": "MV1307639",
+      "title": "Some users may not be able to load the Microsoft Viva Engage home feed and see delays with some operations",
+      "startTime": "2026-05-11T15:19:00Z",
+      "endTime": "2026-05-11T15:56:00Z",
+      "lastModified": "2026-05-11T19:59:10.613Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may not have been able to load the Viva Engage home feed and saw delays with some operations.",
+      "scopeOfImpact": "Some users in the United States region attempting to load the Microsoft Viva Engage home feed or perform some user operations as mentioned in the More info section of this communication may have been impacted by this event.\r\n\r\nStart time: Monday, May 11, 2026, at 3:19 PM UTC\r\n\r\nEnd time: Monday, May 11, 2026, at 3:56 PM UTC",
+      "rootCause": "A caching issue within the affected infrastructure was causing an unexpected traffic spike in get user profile API requests, which resulted in impact.\r\n\r\nNext steps: \n- We're reviewing our automated recovery and redirection processes for the affected portion of infrastructure in order to understand how to better detect, prevent, and respond to similar service incidents in the future.\n \n- We're continuing to assess and address the underlying caching issue that caused this unexpected traffic spike in get user profiles API requests to avoid reintroductions of impact for this event.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Post/Reply/Like",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-05-11T19:50:55.497Z",
+          "postType": "regular",
+          "content": "Title: Some users may not be able to load the Microsoft Viva Engage home feed and see delays with some operations\r\n\r\nUser impact: Users may not have been able to load the Viva Engage home feed and saw delays with some operations.\r\n\r\nMore info: Affected user operations may have included but weren't limited to the following:\n\n- Creating a post\n- Editing a post\n- Replying to a post\n\nAffected users may have seen delays up to 37 minutes with these operations.\r\n\r\nFinal status: We've determined that this event was due to a caching issue within the affected infrastructure that caused an unexpected traffic spike in get user profile API requests and resulted in impact. We've confirmed that performing a manual restart within the affected portion of infrastructure successfully remediated all impact.\r\n\r\nScope of impact: Some users in the United States region attempting to load the Microsoft Viva Engage home feed or perform some user operations as mentioned in the More info section of this communication may have been impacted by this event.\r\n\r\nStart time: Monday, May 11, 2026, at 3:19 PM UTC\r\n\r\nEnd time: Monday, May 11, 2026, at 3:56 PM UTC\r\n\r\nRoot cause: A caching issue within the affected infrastructure was causing an unexpected traffic spike in get user profile API requests, which resulted in impact.\r\n\r\nNext steps: \n- We're reviewing our automated recovery and redirection processes for the affected portion of infrastructure in order to understand how to better detect, prevent, and respond to similar service incidents in the future.\n \n- We're continuing to assess and address the underlying caching issue that caused this unexpected traffic spike in get user profiles API requests to avoid reintroductions of impact for this event.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-05-11T17:14:10.363Z",
+          "postType": "regular",
+          "content": "Title: Some users may not be able to load the Microsoft Viva Engage home feed and see delays with some operations\r\n\r\nUser impact: Users may not be able to load the Viva Engage home feed and see delays with some operations.\r\n\r\nMore info: Affected user operations may include but aren't limited to the following:\n\n- Creating a post\n- Editing a post\n- Replying to a post\r\n\r\nCurrent status: We've investigated a problem in which some users may not have been able to load the Microsoft Viva Engage home feed and saw delays with some operations as mentioned in the More info section of this communication. We've confirmed that service is now restored and we'll provide additional information in a closure summary within the “History” section of the “Service health” dashboard shortly."
+        }
+      ],
+      "serviceName": "Microsoft Viva",
+      "affectedServices": [
+        "Microsoft Viva"
       ]
     },
     {
