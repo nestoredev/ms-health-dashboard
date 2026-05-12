@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-12T17:57:48.551Z",
+  "lastUpdated": "2026-05-12T18:27:56.903Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -199,9 +199,9 @@
         {
           "id": "EX1307899",
           "title": "Users’ text may turn blank when translated from the reading pane in Outlook desktop and Outlook on the web",
-          "startTime": "2026-05-11T23:05:19.263Z",
+          "startTime": "2026-05-04T15:00:00Z",
           "endTime": null,
-          "lastModified": "2026-05-12T01:30:11.417Z",
+          "lastModified": "2026-05-12T18:06:41.387Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users’ text may turn blank when translated from the reading pane in Outlook desktop and Outlook on the web.",
@@ -247,9 +247,9 @@
         {
           "id": "MO1308654",
           "title": "Some admins may experience delays of up to 72 hours receiving app usage reports in the Microsoft 365 admin center",
-          "startTime": "2026-05-12T17:40:58.807Z",
+          "startTime": "2026-05-12T00:00:00Z",
           "endTime": null,
-          "lastModified": "2026-05-12T17:51:38.197Z",
+          "lastModified": "2026-05-12T18:22:16.88Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may experience delays of up to 72 hours receiving app usage reports in the Microsoft 365 admin center.",
@@ -279,40 +279,9 @@
     },
     {
       "service": "Dynamics 365 Apps",
-      "status": "serviceDegradation",
+      "status": "serviceOperational",
       "id": "DynamicsCRM",
-      "issues": [
-        {
-          "id": "CR1308631",
-          "title": "Queried data from computed columns return duplicate fields where the logical/physical names differ",
-          "startTime": "2026-05-02T18:00:00Z",
-          "endTime": null,
-          "lastModified": "2026-05-12T17:18:30.043Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Queried data from computed columns return duplicate fields where the logical/physical names differ.",
-          "scopeOfImpact": "",
-          "rootCause": "",
-          "nextUpdateBy": "",
-          "feature": "Other",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-05-12T17:13:02.647Z",
-              "postType": "regular",
-              "content": "Title: Queried data from computed columns return duplicate fields where the logical/physical names differ\n\nUser impact: Queried data from computed columns return duplicate fields where the logical/physical names differ.\n\nMore Info: One of the duplicate fields will contain a null value, while the other contains the actual value.\n\nCurrent Status: After our investigation, we identified that a recent deployment introduced a misconfiguration to a portion of the service infrastructure responsible for properly querying data. We are reviewing service diagnostics and are preparing to revert this change. \n\nNext Update: Tuesday, May 12, 2026, at 7:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-05-12T17:03:03.717Z",
-              "postType": "regular",
-              "content": "Title: Queried data from computed columns return duplicate fields where the logical/physical names differ\n\nUser impact: Queried data from computed columns return duplicate fields where the logical/physical names differ.\n\nCurrent Status: We are aware of an emerging issue where users are experiencing an issue in which queried data from computed columns return duplicate fields where the logical/physical names differ. We are investigating the issue and will provide another update within the next 30 minutes.\n \nThis information is preliminary and may be subject to changes, corrections, and updates."
-            }
-          ],
-          "affectedServices": [
-            "Dynamics 365 Apps"
-          ]
-        }
-      ]
+      "issues": []
     },
     {
       "service": "Basic Mobility and Security",
@@ -577,6 +546,42 @@
     }
   ],
   "history": [
+    {
+      "id": "CR1308631",
+      "title": "Queried data from computed columns return duplicate fields where the logical/physical names differ",
+      "startTime": "2026-05-02T18:00:00Z",
+      "endTime": "2026-05-12T05:30:00Z",
+      "lastModified": "2026-05-12T18:00:56.193Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Queried data from computed columns had returned duplicate fields where the logical/physical names differ.",
+      "scopeOfImpact": "",
+      "rootCause": "A recent deployment introduced a misconfiguration to a portion of the service infrastructure responsible for properly querying data.\n\nNext Steps: We're reviewing our standard service update procedures to avoid similar impact in the future.",
+      "nextUpdateBy": "",
+      "feature": "Other",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-05-12T18:00:56.193Z",
+          "postType": "regular",
+          "content": "Title: Queried data from computed columns return duplicate fields where the logical/physical names differ\n\nUser impact: Queried data from computed columns had returned duplicate fields where the logical/physical names differ.\n\nMore Info: One of the duplicate fields contained a null value, while the other contained the actual value.\n\nFinal Status: We have reverted the deployment. After monitoring service diagnostics, we have confirmed that queried data from computed columns are no longer duplicating where logical/physical names differ.\n\nThis is the final update on the incident. \n\nPreliminary Root Cause: A recent deployment introduced a misconfiguration to a portion of the service infrastructure responsible for properly querying data.\n\nNext Steps: We're reviewing our standard service update procedures to avoid similar impact in the future."
+        },
+        {
+          "createdAt": "2026-05-12T17:13:02.647Z",
+          "postType": "regular",
+          "content": "Title: Queried data from computed columns return duplicate fields where the logical/physical names differ\n\nUser impact: Queried data from computed columns return duplicate fields where the logical/physical names differ.\n\nMore Info: One of the duplicate fields will contain a null value, while the other contains the actual value.\n\nCurrent Status: After our investigation, we identified that a recent deployment introduced a misconfiguration to a portion of the service infrastructure responsible for properly querying data. We are reviewing service diagnostics and are preparing to revert this change. \n\nNext Update: Tuesday, May 12, 2026, at 7:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-05-12T17:03:03.717Z",
+          "postType": "regular",
+          "content": "Title: Queried data from computed columns return duplicate fields where the logical/physical names differ\n\nUser impact: Queried data from computed columns return duplicate fields where the logical/physical names differ.\n\nCurrent Status: We are aware of an emerging issue where users are experiencing an issue in which queried data from computed columns return duplicate fields where the logical/physical names differ. We are investigating the issue and will provide another update within the next 30 minutes.\n \nThis information is preliminary and may be subject to changes, corrections, and updates."
+        }
+      ],
+      "serviceName": "Dynamics 365 Apps",
+      "affectedServices": [
+        "Dynamics 365 Apps"
+      ]
+    },
     {
       "id": "MO1297751",
       "title": "Some users may not receive results when performing searches in SharePoint Online",
