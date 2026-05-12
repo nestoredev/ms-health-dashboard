@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-12T17:27:40.666Z",
+  "lastUpdated": "2026-05-12T17:57:48.551Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -241,9 +241,35 @@
     },
     {
       "service": "Microsoft 365 suite",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "OSDPPlatform",
-      "issues": []
+      "issues": [
+        {
+          "id": "MO1308654",
+          "title": "Some admins may experience delays of up to 72 hours receiving app usage reports in the Microsoft 365 admin center",
+          "startTime": "2026-05-12T17:40:58.807Z",
+          "endTime": null,
+          "lastModified": "2026-05-12T17:51:38.197Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Admins may experience delays of up to 72 hours receiving app usage reports in the Microsoft 365 admin center.",
+          "scopeOfImpact": "Some admins in the Asia Pacific and North America regions may experience delays of up to 72 hours receiving app usage reports in the Microsoft 365 admin center.\r\n\r\nStart time: Tuesday, May 12, 2026, at 12:00 AM UTC",
+          "rootCause": "Pipelines utilized to compile and provide updated app usage data are operating in an unhealthy state, resulting in impact.",
+          "nextUpdateBy": "Wednesday, May 13, 2026, at 8:00 PM UTC",
+          "feature": "Access",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-05-12T17:51:38.197Z",
+              "postType": "regular",
+              "content": "Title: Some admins may experience delays of up to 72 hours receiving app usage reports in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may experience delays of up to 72 hours receiving app usage reports in the Microsoft 365 admin center.\r\n\r\nCurrent status: Our service monitoring has alerted us to ongoing delays of up to 72 hours for app usage reports in the Microsoft 365 admin center. We've isolated that our pipelines utilized to compile and provide updated app usage data are operating in an unhealthy state, resulting in impact. We're working to restore the affected data pipelines to a healthy state and we anticipate this action to be completed by our next scheduled update.\r\n\r\nScope of impact: Some admins in the Asia Pacific and North America regions may experience delays of up to 72 hours receiving app usage reports in the Microsoft 365 admin center.\r\n\r\nStart time: Tuesday, May 12, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: Pipelines utilized to compile and provide updated app usage data are operating in an unhealthy state, resulting in impact.\r\n\r\nNext update by: Wednesday, May 13, 2026, at 8:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite"
+          ]
+        }
+      ]
     },
     {
       "service": "SharePoint Online",
