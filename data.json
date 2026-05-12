@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-12T00:23:19.940Z",
+  "lastUpdated": "2026-05-12T00:53:27.130Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -245,6 +245,36 @@
               "createdAt": "2026-04-14T16:23:28.13Z",
               "postType": "regular",
               "content": "Title: Admins' search parameters may be missing after performing a group search in the Exchange admin center\n\nUser impact: Admins' search parameters may be missing after performing a group search in the Exchange admin center.\n\nMore info: Specifically, the search terms are removed upon initiating a group searches. \n\nOther searches do not appear to be affected.\n\nCurrent status: We're investigating a potential issue with the Exchange admin center and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online"
+          ]
+        },
+        {
+          "id": "EX1307899",
+          "title": "Users’ text may turn blank when translated from the reading pane in Outlook desktop and Outlook on the web",
+          "startTime": "2026-05-11T23:05:19.263Z",
+          "endTime": null,
+          "lastModified": "2026-05-12T00:04:17.257Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users’ text may turn blank when translated from the reading pane in Outlook desktop and Outlook on the web.",
+          "scopeOfImpact": "Your organization is affected by this event, and any users’ text may turn blank when translated from the reading pane in Outlook desktop and Outlook on the web. This information may be updated as our investigation continues.",
+          "rootCause": "",
+          "nextUpdateBy": "Tuesday, May 12, 2026, at 1:30 AM UTC",
+          "feature": "OWA - poor customer experience",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-05-11T23:29:41.383Z",
+              "postType": "regular",
+              "content": "Title: Users’ text may turn blank when translated from the reading pane in Outlook desktop and Outlook on the web\n\nUser impact: Users’ text may turn blank when translated from the reading pane in Outlook desktop and Outlook on the web.\n\nCurrent status: We're reviewing system logs and samples provided by affected users to isolate the origin of this issue.\n\nScope of impact: Your organization is affected by this event, and any users’ text may turn blank when translated from the reading pane in Outlook desktop and Outlook on the web. This information may be updated as our investigation continues.\n\nNext update by: Tuesday, May 12, 2026, at 1:30 AM UTC"
+            },
+            {
+              "createdAt": "2026-05-11T23:06:17.18Z",
+              "postType": "regular",
+              "content": "Title: Users’ text may turn blank when translated from the reading pane in Outlook desktop and Outlook on the web\n\nUser impact: Users’ text may turn blank when translated from the reading pane in Outlook desktop and Outlook on the web.\n\nCurrent status: We're investigating a potential issue in which users’ text turns blank when translated from the reading pane in Outlook desktop and Outlook on the web and checking for impact to your organization. We'll provide an update within 30 minutes."
             }
           ],
           "affectedServices": [
