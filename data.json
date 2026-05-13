@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-13T15:03:56.143Z",
+  "lastUpdated": "2026-05-13T15:34:05.264Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -219,16 +219,26 @@
           "title": "Users are unable to access Microsoft 365 services in South America",
           "startTime": "2026-05-13T14:36:32Z",
           "endTime": null,
-          "lastModified": "2026-05-13T14:59:24.31Z",
+          "lastModified": "2026-05-13T15:29:36.08Z",
           "status": "investigating",
           "severity": "incident",
           "userImpact": "Some users are unable to access Microsoft 365 services.",
-          "scopeOfImpact": "Some users in South America attempting to access Microsoft 365 services may be impacted.",
-          "rootCause": "",
-          "nextUpdateBy": "Wednesday, May 13, 2026, at 3:30 PM UTC",
+          "scopeOfImpact": "Some users in South America attempting to access Microsoft 365 services may be impacted.\n\nPreliminary",
+          "rootCause": "Intermittent network connectivity issues are causing certain network paths to become unstable, resulting in increased traffic being routed through alternate paths and leading to impact.",
+          "nextUpdateBy": "Wednesday, May 13, 2026, at 4:00 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-05-13T15:19:59.66Z",
+              "postType": "regular",
+              "content": "Title: Users are unable to access Microsoft 365 services in South America\n\nUser impact: Some users are unable to access Microsoft 365 services.\n\nMore info: Users may experience email delivery delays and intermittent connection disruptions when connecting to Outlook and Teams. Additionally, users may be unable to access SharePoint sites and OneDrive content.\n\nCurrent status: We’re taking mitigative actions which include bringing affected network paths back online and redirecting traffic to healthy network infrastructure. We’re continuing to monitor the impact and working to restore service while further isolating the underlying cause.\n\nScope of impact: Some users in South America attempting to access Microsoft 365 services may be impacted.\n\nPreliminary root cause: Intermittent network connectivity issues are causing certain network paths to become unstable, resulting in increased traffic being routed through alternate paths and leading to impact.\n\nNext update by: Wednesday, May 13, 2026, at 4:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-05-13T15:01:05.8Z",
+              "postType": "quick",
+              "content": "We've identified a network connection issue in South America affecting connections for users hosted primarily in that region. We're working to bring additional network resources online to mitigate impact.\n\nThis quick update is designed to give the latest information on this issue."
+            },
             {
               "createdAt": "2026-05-13T14:59:24.31Z",
               "postType": "regular",
