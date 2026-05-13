@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-13T14:33:47.685Z",
+  "lastUpdated": "2026-05-13T15:03:56.143Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -214,6 +214,36 @@
       "status": "serviceDegradation",
       "id": "OSDPPlatform",
       "issues": [
+        {
+          "id": "MO1309330",
+          "title": "Users are unable to access Microsoft 365 services in South America",
+          "startTime": "2026-05-13T14:36:32Z",
+          "endTime": null,
+          "lastModified": "2026-05-13T14:59:24.31Z",
+          "status": "investigating",
+          "severity": "incident",
+          "userImpact": "Some users are unable to access Microsoft 365 services.",
+          "scopeOfImpact": "Some users in South America attempting to access Microsoft 365 services may be impacted.",
+          "rootCause": "",
+          "nextUpdateBy": "Wednesday, May 13, 2026, at 3:30 PM UTC",
+          "feature": "Access",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-05-13T14:59:24.31Z",
+              "postType": "regular",
+              "content": "Title: Users are unable to access Microsoft 365 services in South America\n\nUser impact: Some users are unable to access Microsoft 365 services.\n\nMore info: Users may experience email delivery delays and intermittent connection disruptions when connecting to Outlook, Teams, and other Microsoft 365 services.\n \nCurrent status: We’re examining network health and investigating errors observed in internal telemetry to isolate the root cause and determine our next steps.\n \nScope of impact: Some users in South America attempting to access Microsoft 365 services may be impacted.\n \nNext update by: Wednesday, May 13, 2026, at 3:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-05-13T14:40:25.687Z",
+              "postType": "regular",
+              "content": "Title: Users are unable to access Microsoft 365 services in South America\n\nUser impact: Some users are unable to access Microsoft 365 services.\n\nMore info: User reports indicate that impact is primarily to Outlook, though other Microsoft 365 services and features may be affected.\n \nCurrent Status: We are aware of an emerging issue where some users are unable to access Microsoft 365 services. We are investigating the issue and will provide another update within the next 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite"
+          ]
+        },
         {
           "id": "MO1308654",
           "title": "Some admins may experience delays of up to 72 hours receiving app usage reports in the Microsoft 365 admin center",
