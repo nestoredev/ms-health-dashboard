@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-13T18:34:57.788Z",
+  "lastUpdated": "2026-05-13T19:05:06.431Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -219,16 +219,21 @@
           "title": "Some admins may experience delays of up to 72 hours receiving app usage reports in the Microsoft 365 admin center",
           "startTime": "2026-05-12T00:00:00Z",
           "endTime": null,
-          "lastModified": "2026-05-12T18:22:16.88Z",
+          "lastModified": "2026-05-13T18:32:17.257Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may experience delays of up to 72 hours receiving app usage reports in the Microsoft 365 admin center.",
           "scopeOfImpact": "Some admins in the Asia Pacific and North America regions may experience delays of up to 72 hours receiving app usage reports in the Microsoft 365 admin center.\r\n\r\nStart time: Tuesday, May 12, 2026, at 12:00 AM UTC",
           "rootCause": "Pipelines utilized to compile and provide updated app usage data are operating in an unhealthy state, resulting in impact.",
-          "nextUpdateBy": "Wednesday, May 13, 2026, at 8:00 PM UTC",
+          "nextUpdateBy": "Thursday, May 14, 2026, at 8:00 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-05-13T18:32:17.257Z",
+              "postType": "regular",
+              "content": "Title: Some admins may experience delays of up to 72 hours receiving app usage reports in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may experience delays of up to 72 hours receiving app usage reports in the Microsoft 365 admin center.\r\n\r\nCurrent status: We've restored our pipelines to a healthy state and confirmed that the app usage data is now being compiled as expected. The backlog of data is now processing, and we expect that all app usage data will be available to admins by the time of our next update.\r\n\r\nScope of impact: Some admins in the Asia Pacific and North America regions may experience delays of up to 72 hours receiving app usage reports in the Microsoft 365 admin center.\r\n\r\nStart time: Tuesday, May 12, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: Pipelines utilized to compile and provide updated app usage data are operating in an unhealthy state, resulting in impact.\r\n\r\nNext update by: Thursday, May 14, 2026, at 8:00 PM UTC"
+            },
             {
               "createdAt": "2026-05-12T17:51:38.197Z",
               "postType": "regular",
@@ -492,10 +497,10 @@
           "title": "Some users may be unable to access links to other apps provided by Microsoft 365 Copilot Chat prompts",
           "startTime": "2026-04-29T00:00:00Z",
           "endTime": null,
-          "lastModified": "2026-05-07T18:41:56.29Z",
+          "lastModified": "2026-05-13T18:35:55.907Z",
           "status": "serviceDegradation",
           "severity": "incident",
-          "userImpact": "Users may be unable to access links to other apps provided by Copilot Chat prompts.",
+          "userImpact": "Users may have been unable to access links to other apps provided by Copilot Chat prompts.",
           "scopeOfImpact": "This issue impacts users attempting to click or access app links provided by Copilot Chat prompts who may not be redirected as expected. This section may be updated as the investigation progresses.\r\n\r\nStart time: Wednesday, April 29, 2026, at 12:00 AM UTC",
           "rootCause": "A new update to increase the number of URLs allowed when routing universal links has introduced a code error, which results in users being unable to access app links provided by Copilot Chat prompts.",
           "nextUpdateBy": "Wednesday, May 13, 2026, at 8:00 PM UTC",
