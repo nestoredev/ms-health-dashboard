@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-13T15:34:05.264Z",
+  "lastUpdated": "2026-05-13T16:04:15.048Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -211,49 +211,9 @@
     },
     {
       "service": "Microsoft 365 suite",
-      "status": "serviceDegradation",
+      "status": "restoringService",
       "id": "OSDPPlatform",
       "issues": [
-        {
-          "id": "MO1309330",
-          "title": "Users are unable to access Microsoft 365 services in South America",
-          "startTime": "2026-05-13T14:36:32Z",
-          "endTime": null,
-          "lastModified": "2026-05-13T15:29:36.08Z",
-          "status": "investigating",
-          "severity": "incident",
-          "userImpact": "Some users are unable to access Microsoft 365 services.",
-          "scopeOfImpact": "Some users in South America attempting to access Microsoft 365 services may be impacted.\n\nPreliminary",
-          "rootCause": "Intermittent network connectivity issues are causing certain network paths to become unstable, resulting in increased traffic being routed through alternate paths and leading to impact.",
-          "nextUpdateBy": "Wednesday, May 13, 2026, at 4:00 PM UTC",
-          "feature": "Access",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-05-13T15:19:59.66Z",
-              "postType": "regular",
-              "content": "Title: Users are unable to access Microsoft 365 services in South America\n\nUser impact: Some users are unable to access Microsoft 365 services.\n\nMore info: Users may experience email delivery delays and intermittent connection disruptions when connecting to Outlook and Teams. Additionally, users may be unable to access SharePoint sites and OneDrive content.\n\nCurrent status: We’re taking mitigative actions which include bringing affected network paths back online and redirecting traffic to healthy network infrastructure. We’re continuing to monitor the impact and working to restore service while further isolating the underlying cause.\n\nScope of impact: Some users in South America attempting to access Microsoft 365 services may be impacted.\n\nPreliminary root cause: Intermittent network connectivity issues are causing certain network paths to become unstable, resulting in increased traffic being routed through alternate paths and leading to impact.\n\nNext update by: Wednesday, May 13, 2026, at 4:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-05-13T15:01:05.8Z",
-              "postType": "quick",
-              "content": "We've identified a network connection issue in South America affecting connections for users hosted primarily in that region. We're working to bring additional network resources online to mitigate impact.\n\nThis quick update is designed to give the latest information on this issue."
-            },
-            {
-              "createdAt": "2026-05-13T14:59:24.31Z",
-              "postType": "regular",
-              "content": "Title: Users are unable to access Microsoft 365 services in South America\n\nUser impact: Some users are unable to access Microsoft 365 services.\n\nMore info: Users may experience email delivery delays and intermittent connection disruptions when connecting to Outlook, Teams, and other Microsoft 365 services.\n \nCurrent status: We’re examining network health and investigating errors observed in internal telemetry to isolate the root cause and determine our next steps.\n \nScope of impact: Some users in South America attempting to access Microsoft 365 services may be impacted.\n \nNext update by: Wednesday, May 13, 2026, at 3:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-05-13T14:40:25.687Z",
-              "postType": "regular",
-              "content": "Title: Users are unable to access Microsoft 365 services in South America\n\nUser impact: Some users are unable to access Microsoft 365 services.\n\nMore info: User reports indicate that impact is primarily to Outlook, though other Microsoft 365 services and features may be affected.\n \nCurrent Status: We are aware of an emerging issue where some users are unable to access Microsoft 365 services. We are investigating the issue and will provide another update within the next 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Microsoft 365 suite"
-          ]
-        },
         {
           "id": "MO1308654",
           "title": "Some admins may experience delays of up to 72 hours receiving app usage reports in the Microsoft 365 admin center",
@@ -2041,37 +2001,6 @@
       "serviceName": "SharePoint Online",
       "affectedServices": [
         "SharePoint Online"
-      ]
-    },
-    {
-      "id": "EX1278714",
-      "title": "Some users may be unable to access email messages in Outlook Mobile when connecting to Exchange on‑premises",
-      "startTime": "2026-04-10T17:30:00Z",
-      "endTime": "2026-04-13T16:00:00Z",
-      "lastModified": "2026-04-13T17:16:15.133Z",
-      "status": "serviceRestored",
-      "severity": "incident",
-      "userImpact": "Users may have been unable to access email messages in Outlook Mobile when connecting to Exchange on‑premises.",
-      "scopeOfImpact": "Your organization was affected by this event, and some users attempting to access email messages in Outlook Mobile when connecting to Exchange on‑premises may have been impacted.\n\nStart time: Friday, April 10, 2026, at 5:30 PM UTC\n\nEnd time: Monday, April 13, 2026, at 4:00 PM UTC",
-      "rootCause": "An authentication component misconfiguration was impacting the Autodiscover flow for Exchange on‑premises connections, which was preventing Outlook Mobile from automatically establishing access for affected users.\n\nNext steps: \n - We’ll continue to review the component configuration to understand the misconfiguration in an effort to prevent future similar events.\n\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "User sign-in failures or client authentication issues",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-04-13T17:16:15.133Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to access email messages in Outlook Mobile when connecting to Exchange on‑premises\n\nUser impact: Users may have been unable to access email messages in Outlook Mobile when connecting to Exchange on‑premises.\n\nFinal status: The fix to correct the misconfiguration has been deployed and we've confirmed through various user testing that this has successfully mitigated this issue and service has been restored. Users need to re-add their account in Outlook Mobile so that the Autodiscover flow for Exchange on-premises connections will once again connect correctly.\n\nScope of impact: Your organization was affected by this event, and some users attempting to access email messages in Outlook Mobile when connecting to Exchange on‑premises may have been impacted.\n\nStart time: Friday, April 10, 2026, at 5:30 PM UTC\n\nEnd time: Monday, April 13, 2026, at 4:00 PM UTC\n\nRoot cause: An authentication component misconfiguration was impacting the Autodiscover flow for Exchange on‑premises connections, which was preventing Outlook Mobile from automatically establishing access for affected users.\n\nNext steps: \n - We’ll continue to review the component configuration to understand the misconfiguration in an effort to prevent future similar events.\n\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-04-13T13:45:20.887Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to access email messages in Outlook Mobile when connecting to Exchange on‑premises \n\nUser impact: Users may be unable to access email messages in Outlook Mobile when connecting to Exchange on‑premises. \n\nCurrent status: We've identified that an authentication component misconfiguration is impacting the Autodiscover flow for Exchange on‑premises connections, which is preventing Outlook Mobile from automatically establishing access for affected users. We're developing a fix to correct misconfiguration and once complete, we'll validate its efficacy before deploying to affected environments.  \n \nScope of impact: Your organization is affected by this event, and some users attempting to access email messages in Outlook Mobile when connecting to Exchange on‑premises may be impacted. This information may be updated as our investigation continues. \n \nStart time: Friday, April 10, 2026, at 5:30 PM UTC\n \nRoot cause: An authentication component misconfiguration is impacting the Autodiscover flow for Exchange on‑premises connections, which is preventing Outlook Mobile from automatically establishing access for affected users. \n \nNext update by: Monday, April 13, 2026, at 6:00 PM UTC"
-        }
-      ],
-      "serviceName": "Exchange Online",
-      "affectedServices": [
-        "Exchange Online"
       ]
     }
   ]
