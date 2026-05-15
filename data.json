@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-15T22:49:43.211Z",
+  "lastUpdated": "2026-05-15T23:19:50.099Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1869,52 +1869,6 @@
           "createdAt": "2026-04-15T00:50:52.633Z",
           "postType": "regular",
           "content": "Title: Admins may experience failures when running admin operations the admin portal in Exchange Online\n\nUser impact: Admins may experience failures when running admin operations the admin portal in Exchange Online.\n\nCurrent status: We determined that a recent build update contained a regression to running PowerShell scripts, resulting in this impact. We're completing validations on a fix to address this issue and restore impact and will provide an update on its deployment timeline as soon as one becomes available.\n\nScope of impact: This event impacts any admin attempting to run admin operations through the Exchange Online admin portal, and any admin may see failures. This section may be updated as our investigation continues.\n\nStart time: Monday, April 13, 2026, at 10:00 PM UTC\n\nRoot cause: A recent build update contained a regression to running PowerShell scripts, resulting in this impact.\n\nNext update by: Wednesday, April 15, 2026, at 8:00 AM UTC"
-        }
-      ],
-      "serviceName": "Exchange Online",
-      "affectedServices": [
-        "Exchange Online"
-      ]
-    },
-    {
-      "id": "EX1268771",
-      "title": "Users may be intermittently unable to access their Exchange Online mailboxes in some connection methods.",
-      "startTime": "2026-03-17T14:00:00Z",
-      "endTime": "2026-04-15T23:00:00Z",
-      "lastModified": "2026-04-16T18:20:30.32Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users may have been intermittently unable to access their Exchange Online mailboxes in some connection methods.",
-      "scopeOfImpact": "This issue intermittently impacted some users attempting to access their Exchange Online mailboxes, with a smaller subset of users persistently unable to access their Exchange Online mailboxes in the Outlook mobile apps or the new Outlook for Mac desktop client.\n \nStart time: Tuesday, March 17, 2026, at 2:00 PM UTC\n \nEnd time: Wednesday, April 15, 2026, at 11:00 PM UTC",
-      "rootCause": "A service component that facilitates notification generation and delivery wasn't processing requests as expected, which resulted in impact.\n \nNext steps:\n- We're entering an extended period of monitoring to ensure the program we've implemented to identify and restart the notification service when persistent errors are detected successfully prevents this issue from reoccurring.\n \nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Performance degradation",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-04-16T17:16:04.87Z",
-          "postType": "regular",
-          "content": "Title: Users may be intermittently unable to access their Exchange Online mailboxes in some connection methods.\n\nUser impact: Users may have been intermittently unable to access their Exchange Online mailboxes in some connection methods.\n\nMore info: This issue may have intermittently impacted some users who attempted to access the Exchange Online service through the Outlook mobile apps or the new Outlook for Mac desktop client.\n \nFinal status: We've confirmed that the deployment of the code change has completed saturation, and after a period of monitoring service health telemetry, we've observed the errors associated with the impact have ceased and the issue is resolved.\n \nScope of impact: This issue intermittently impacted some users attempting to access their Exchange Online mailboxes, with a smaller subset of users persistently unable to access their Exchange Online mailboxes in the Outlook mobile apps or the new Outlook for Mac desktop client.\n \nStart time: Tuesday, March 17, 2026, at 2:00 PM UTC\n \nEnd time: Wednesday, April 15, 2026, at 11:00 PM UTC\n \nRoot cause: A service component that facilitates notification generation and delivery wasn't processing requests as expected, which resulted in impact.\n \nNext steps:\n- We're entering an extended period of monitoring to ensure the program we've implemented to identify and restart the notification service when persistent errors are detected successfully prevents this issue from reoccurring.\n \nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-04-14T18:48:08.293Z",
-          "postType": "regular",
-          "content": "Title: Users may be intermittently unable to access their Exchange Online mailboxes in some connection methods.\n\nUser impact: Users may be intermittently unable to access their Exchange Online mailboxes in some connection methods.\n\nMore info: This issue may intermittently impact some users attempting to access the Exchange Online service through the Outlook mobile apps or the new Outlook for Mac desktop client.\n\nCurrent status: We're continuing to monitor our fix deployment as it saturates throughout the remaining 10 percent of the affected environment. Many previously impacted users will begin to experience significant impact relief as this saturation finalizes. In tandem, we're implementing a program to identify and restart the Notification service as persistent errors are identified. \n\nScope of impact: This issue intermittently impacts some users attempting to access their Exchange Online mailboxes, with a smaller subset of users persistently unable to access their Exchange Online mailboxes in the Outlook mobile apps or the new Outlook for Mac desktop client. This section may be updated as our investigation progresses.\n\nStart time: Tuesday, March 17, 2026, at 2:00 PM UTC\n\nRoot cause: A service component that facilitates notification generation and delivery isn't processing requests as expected, which is resulting in impact.\n\nNext update by: Friday, April 17, 2026, at 8:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-04-13T18:34:10.327Z",
-          "postType": "regular",
-          "content": "Title: Users may be intermittently unable to access their Exchange Online mailboxes in some connection methods.\n\nUser impact: Users may be intermittently unable to access their Exchange Online mailboxes in some connection methods.\n\nMore info: This issue may intermittently impact some users who attempt to access the Exchange Online service through the Outlook mobile apps or the new Outlook for Mac desktop client.\n \nCurrent status: Our deployment has reached 90 percent of the affected environment and we expect it will complete by our next scheduled update. We'll monitor the results of this fix while continuing to implement a program to identify and restart the Notification service as errors are identified.\n \nScope of impact: Impact may occur intermittently for some users with a smaller small set of users persistently being unable to access their Exchange Online mailboxes in the Outlook mobile apps or the new Outlook for Mac desktop client. This section may be updated as our investigation progresses.\n \nRoot cause: A service that facilitates notification generation and delivery isn't processing requests as expected, resulting in impact.\n \nNext update by: Tuesday, April 14, 2026, at 8:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-04-10T19:22:11.987Z",
-          "postType": "regular",
-          "content": "Title: Users may be intermittently unable to access their Exchange Online mailboxes in some connection methods.\n\nUser impact: Users may be intermittently unable to access their Exchange Online mailboxes in some connection methods.\n\nMore info: This issue may intermittently impact some users who attempt to access the Exchange Online service through the Outlook mobile apps or the new Outlook for Mac desktop client.\n \nCurrent status: We're continuing to monitor the deployment of our long-term fix while we also continue to implement a program to identify and restart the Notification service as errors are identified. These actions will help us limit further impact while the fix deploys and we'll provide a resolution timeline once available. \n \nScope of impact: Impact may occur intermittently for approximately 3,000 users with a smaller set of users persistently being unable to access their Exchange Online mailboxes in the Outlook mobile apps or the new Outlook for Mac desktop client. This section may be updated as our investigation progresses.\n \nRoot cause: A service that facilitates notification generation and delivery isn't processing requests as expected, resulting in impact.\n \nNext update by: Monday, April 13, 2026, at 6:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-04-09T15:42:51.627Z",
-          "postType": "regular",
-          "content": "Title: Users may be intermittently unable to access their Exchange Online mailboxes in some connection methods.\n\nUser impact: Users may be intermittently unable to access their Exchange Online mailboxes in some connection methods.\n\nMore info: This issue may intermittently impact some users who attempt to access the Exchange Online service through the Outlook mobile apps or the new Outlook for Mac desktop client.\n\nCurrent status: After further analysis, we've isolated that this issue intermittently impacts approximately 3,000 users with a smaller set of users persistently impacted, and we've updated the \"Scope of impact\" in our communications to reflect this new scope. We're continuing to monitor the deployment of our long-term fix while we also continue to implement a program to identify and restart the Notification service as errors are identified. These actions will help us limit further impact while the fix deploys.\n\nScope of impact: Impact may occur intermittently for approximately 3,000 users with a smaller set of users persistently being unable to access their Exchange Online mailboxes in the Outlook mobile apps or the new Outlook for Mac desktop client. This section may be updated as our investigation progresses.\n\nEstimated time to resolve: We expect the fix deployment to complete by Friday, April 17, 2026.\n \nRoot cause: A service that facilitates notification generation and delivery isn't processing requests as expected, resulting in impact.\n \nNext update by: Friday, April 10, 2026, at 8:00 PM UTC"
         }
       ],
       "serviceName": "Exchange Online",
