@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-15T19:48:55.104Z",
+  "lastUpdated": "2026-05-15T20:19:03.523Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -224,16 +224,21 @@
           "title": "Admins may see stale or delayed report data in the Microsoft 365 admin center",
           "startTime": "2026-05-15T00:00:00Z",
           "endTime": null,
-          "lastModified": "2026-05-15T03:17:43.323Z",
+          "lastModified": "2026-05-15T20:08:31.847Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may see stale or delayed report data in the Microsoft 365 admin center.",
-          "scopeOfImpact": "Any admins located in the North America, Asia-Pacific, and Europe regions may be affected by this issue and see stale or delayed report data in the Microsoft 365 admin center. This section may be updated as our investigation continues.\n\nStart time: Friday, May 15, 2026, at 12:00 AM UTC",
+          "scopeOfImpact": "Any admins located in the North America, Asia-Pacific, and Europe regions may be affected by this issue and see stale or delayed report data in the Microsoft 365 admin center. \r\n\r\nStart time: Friday, May 15, 2026, at 12:00 AM UTC",
           "rootCause": "A portion of infrastructure that supports and provides report data to the Microsoft 365 admin center is performing below expected thresholds, leading to report data being stale and delayed.",
-          "nextUpdateBy": "Friday, May 15, 2026, at 8:00 PM UTC",
+          "nextUpdateBy": "Friday, May 15, 2026, at 10:00 PM UTC",
           "feature": "Company or User Administration",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-05-15T20:08:31.847Z",
+              "postType": "regular",
+              "content": "Title: Admins may see stale or delayed report data in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see stale or delayed report data in the Microsoft 365 admin center.\r\n\r\nMore info: The reports that may be affected include:\n- Copilot Readiness Activity\n- Microsoft 365 App Usage\n- Project Activity\n- Visio Activity\r\n\r\nCurrent status: We've confirmed that the backlog of data has completed processing in the Asia-Pacific region. We're monitoring this process as it continues through the remaining impacted environments and anticipate its completion by our next scheduled update.\r\n\r\nScope of impact: Any admins located in the North America, Asia-Pacific, and Europe regions may be affected by this issue and see stale or delayed report data in the Microsoft 365 admin center. \r\n\r\nStart time: Friday, May 15, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: A portion of infrastructure that supports and provides report data to the Microsoft 365 admin center is performing below expected thresholds, leading to report data being stale and delayed.\r\n\r\nNext update by: Friday, May 15, 2026, at 10:00 PM UTC"
+            },
             {
               "createdAt": "2026-05-15T03:17:43.323Z",
               "postType": "regular",
@@ -1946,47 +1951,6 @@
       "serviceName": "Microsoft 365 suite",
       "affectedServices": [
         "Microsoft 365 suite"
-      ]
-    },
-    {
-      "id": "IT1281088",
-      "title": "Users may be unable to access the Microsoft Intune web app from a managed Microsoft Edge iOS browser",
-      "startTime": "2026-04-15T14:43:06Z",
-      "endTime": "2026-04-15T20:00:42Z",
-      "lastModified": "2026-04-15T20:01:52.813Z",
-      "status": "serviceRestored",
-      "severity": "incident",
-      "userImpact": "Users may be unable to access the Microsoft Intune web app from a managed Microsoft Edge iOS browser.",
-      "scopeOfImpact": "",
-      "rootCause": "",
-      "nextUpdateBy": "",
-      "feature": "Microsoft Intune",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-04-15T20:01:16.023Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to access the Microsoft Intune web app from a managed Microsoft Edge iOS browser\n\nUser impact: Users may be unable to access the Microsoft Intune web app from a managed Microsoft Edge iOS browser.\n\nMore info: The managed Microsoft Edge iOS browser may display an error stating “Action Not Allowed” when trying to launch the Microsoft Intune web app.\n \nFinal status: The investigation is complete and we've determined the service is healthy. A service incident didn't actually occur. This communication will expire in 24 hours.\n \nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-04-15T17:55:11.937Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to access the Microsoft Intune web app from a managed Microsoft Edge iOS browser\n\nUser impact: Users may be unable to access the Microsoft Intune web app from a managed Microsoft Edge iOS browser.\n\nMore info: The managed Microsoft Edge iOS browser may display an error stating “Action Not Allowed” when trying to launch the Microsoft Intune web app.\n\nCurrent status: We're continuing to creating a new build of the Microsoft Edge iOS browser that has the account management feature disabled to remediate impact.\n\nScope of impact: Any user attempting to access the Microsoft Intune web app from a managed Microsoft Edge iOS browser may be impacted.\n\nRoot cause: A code issue in the MAM SDK conflicts with a recently enabled account management feature, resulting in impact.\n\nNext update by: Wednesday, April 15, 2026, at 8:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-04-15T16:17:41.92Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to access the Microsoft Intune web app from a managed Microsoft Edge iOS browser\n\nUser impact: Users may be unable to access the Microsoft Intune web app from a managed Microsoft Edge iOS browser.\n\nMore info: The managed Microsoft Edge iOS browser may display an error stating “Action Not Allowed” when trying to launch the Microsoft Intune web app.\n\nCurrent status: We've identified that a code issue in the Mobile Application Management (MAM) SDK conflicts with a recently enabled account management feature, resulting in impact. We're creating a new build of the Microsoft Edge iOS browser that has this feature disabled to remediate impact.\n\nScope of impact: Any user attempting to access the Microsoft Intune web app from a managed Microsoft Edge iOS browser may be impacted.\n\nRoot cause: A code issue in the MAM SDK conflicts with a recently enabled account management feature, resulting in impact.\n\nNext update by: Wednesday, April 15, 2026, at 6:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-04-15T15:38:24.81Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to access the Microsoft Intune web app from a managed Microsoft Edge iOS browser\n\nUser impact: Users may be unable to access the Microsoft Intune web app from a managed Microsoft Edge iOS browser.\n\nMore info: The managed Microsoft Edge iOS browser may display an error stating “Action Not Allowed” when trying to launch the Microsoft Intune web app.\n \nCurrent status: We're investigating a potential issue with Microsoft Intune and checking for impact to your organization. We'll provide an update within 30 minutes."
-        }
-      ],
-      "serviceName": "Microsoft Intune",
-      "affectedServices": [
-        "Microsoft Intune"
       ]
     }
   ]
