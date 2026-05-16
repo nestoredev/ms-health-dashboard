@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-16T11:52:53.560Z",
+  "lastUpdated": "2026-05-16T12:23:01.310Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1787,52 +1787,6 @@
       "serviceName": "Microsoft Intune",
       "affectedServices": [
         "Microsoft Intune"
-      ]
-    },
-    {
-      "id": "MO1281730",
-      "title": "Users may have been unable to access Microsoft 365 web-based services correctly when using Google Chrome",
-      "startTime": "2026-04-15T19:00:00Z",
-      "endTime": "2026-04-16T11:56:00Z",
-      "lastModified": "2026-04-23T23:48:41.97Z",
-      "status": "postIncidentReviewPublished",
-      "severity": "incident",
-      "userImpact": "Users may have been unable to access Microsoft 365 web-based services correctly when using Google Chrome.",
-      "scopeOfImpact": "",
-      "rootCause": "",
-      "nextUpdateBy": "",
-      "feature": "Access",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-04-23T23:48:09.73Z",
-          "postType": "regular",
-          "content": "A post-incident report has been published."
-        },
-        {
-          "createdAt": "2026-04-21T11:22:32.62Z",
-          "postType": "regular",
-          "content": "A post-incident report has been published."
-        },
-        {
-          "createdAt": "2026-04-20T17:50:25.963Z",
-          "postType": "regular",
-          "content": "A post-incident report has been published."
-        },
-        {
-          "createdAt": "2026-04-16T13:21:11.633Z",
-          "postType": "regular",
-          "content": "Title: Users may have been unable to access Microsoft 365 web-based services correctly when using Google Chrome\n\nUser impact: Users may have been unable to access Microsoft 365 web-based services correctly when using Google Chrome.\n\nMore info: Impacted users may have experienced Microsoft 365 web apps and portals not rendering as expected when accessed via the Google Chrome browsers. This may have included, but was not limited to:\n- Microsoft 365 admin center failing to load or missing UI elements such as search bars or pages \n- An inability to open Excel or PowerPoint files through Microsoft 365 web pages\n- Issues accessing apps such as OneDrive and Planner through the browser\n \nThis issue only impacted the latest version of Google Chrome (Version 147).\nOther browsers, including Microsoft Edge, were unaffected. As a workaround, impacted users could have used the Microsoft Edge browser.\n\nAdditionally, desktop based clients were unaffected, and users may have been able to leverage these services.\n\nFinal status: We've completed the mitigation actions, and telemetry showed that the issue is resolved. Users may need to refresh their browser pages to experience relief.\n\nScope of impact: Some users attempting to access Microsoft 365 web-based services via Google Chrome (version 147) may have been impacted.\n\nStart time: Wednesday, April 15, 2026, at 7:00 PM UTC\n\nEnd time: Thursday, April 16, 2026, at 11:56 AM UTC\n\nPreliminary root cause: As part of broad changes related to DigiCert Global Root CA (G1), Google Chrome no longer trusts these authentication configurations (more information can be found https://knowledge.digicert.com/alerts/digicert-root-strategy-aligning-with-industry-standards). In preparation, most Microsoft 365 web-based services had transitioned to an alternate authentication configuration authorities, however, a small number were not fully addressed. Once the Google Chrome change occurred, the authentication configurations were no longer accepted, resulting in impact. \n\nNext steps:\n- For a more comprehensive list of next steps and actions, please refer to the Post Incident Report document."
-        },
-        {
-          "createdAt": "2026-04-16T12:40:06.713Z",
-          "postType": "quick",
-          "content": "We believe this issue only impacts the latest versions of Google Chrome (Version 147). We continue to take action to identify impacted authentication configurations and take the relevant actions. Users may need to refresh their browser page to experience relief.\n\nThis quick update is designed to give the latest information on this issue."
-        }
-      ],
-      "serviceName": "Microsoft 365 suite",
-      "affectedServices": [
-        "Microsoft 365 suite"
       ]
     }
   ]
