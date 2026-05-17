@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-17T22:17:44.941Z",
+  "lastUpdated": "2026-05-17T22:47:51.738Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -418,9 +418,35 @@
     },
     {
       "service": "Microsoft 365 Copilot Chat",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "CopilotChat",
-      "issues": []
+      "issues": [
+        {
+          "id": "CW1314072",
+          "title": "Users may be unable to access Copilot Voice in Microsoft 365 Copilot Chat or conduct voice conversations",
+          "startTime": "2026-05-17T03:30:00Z",
+          "endTime": null,
+          "lastModified": "2026-05-17T22:19:12.693Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to access Copilot Voice in Copilot Chat or conduct voice conversations.",
+          "scopeOfImpact": "This issue may prevent any user from accessing Copilot Voice in Copilot Chat or conducting voice conversations.\r\n\r\nStart time: Sunday, May 17, 2026, at 3:30 AM UTC",
+          "rootCause": "",
+          "nextUpdateBy": "Monday, May 18, 2026, at 12:00 AM UTC",
+          "feature": "General",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-05-17T22:19:12.693Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to access Copilot Voice in Microsoft 365 Copilot Chat or conduct voice conversations\r\n\r\nUser impact: Users may be unable to access Copilot Voice in Copilot Chat or conduct voice conversations.\r\n\r\nCurrent status: Our internal service monitoring has identified an issue that may be preventing users from accessing Copilot Voice in Copilot Chat or conducting voice conversations. We're analyzing recent service updates as we isolate the source for the issue and determine our next troubleshooting steps for remediating the impact.\r\n\r\nScope of impact: This issue may prevent any user from accessing Copilot Voice in Copilot Chat or conducting voice conversations.\r\n\r\nStart time: Sunday, May 17, 2026, at 3:30 AM UTC\r\n\r\nNext update by: Monday, May 18, 2026, at 12:00 AM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 Copilot Chat"
+          ]
+        }
+      ]
     }
   ],
   "history": [
