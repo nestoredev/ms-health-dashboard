@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-18T18:22:44.136Z",
+  "lastUpdated": "2026-05-18T18:52:52.228Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -306,16 +306,21 @@
           "title": "Users may be unable to access or may experience delays when accessing Microsoft Fabric",
           "startTime": "2026-05-18T12:24:00Z",
           "endTime": null,
-          "lastModified": "2026-05-18T18:11:06.87Z",
+          "lastModified": "2026-05-18T18:43:56.953Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to access or may experience delays when accessing Microsoft Fabric.",
-          "scopeOfImpact": "Any user attempting to access Microsoft Fabric may be impacted.\r\n\r\nStart time: Monday, May 18, 2026, at 12:24 PM UTC",
+          "scopeOfImpact": "",
           "rootCause": "",
-          "nextUpdateBy": "Monday, May 18, 2026, at 7:30 PM UTC",
+          "nextUpdateBy": "",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-05-18T18:31:10.673Z",
+              "postType": "quick",
+              "content": "We're applying the fix to balance the impacting request traffic to a subset of the affected infrastructure. Once deployed, we will validate it fully resolves impact before deploying more broadly.\n\nThis quick update is designed to give the latest information on this issue."
+            },
             {
               "createdAt": "2026-05-18T18:11:06.87Z",
               "postType": "regular",
