@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-18T21:53:39.728Z",
+  "lastUpdated": "2026-05-18T22:23:49.329Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -311,16 +311,21 @@
           "title": "Users may be unable to access or may experience delays when accessing Microsoft Fabric",
           "startTime": "2026-05-18T12:24:00Z",
           "endTime": null,
-          "lastModified": "2026-05-18T21:25:42.24Z",
+          "lastModified": "2026-05-18T21:58:12.413Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to access or may experience delays when accessing Microsoft Fabric.",
-          "scopeOfImpact": "",
-          "rootCause": "",
-          "nextUpdateBy": "",
+          "scopeOfImpact": "Any user attempting to access Microsoft Fabric may be impacted.\r\n\r\nStart time: Monday, May 18, 2026, at 12:24 PM UTC",
+          "rootCause": "An unexpected increase in request traffic is causing the portion of infrastructure that handles Microsoft Fabric access to operate in a suboptimal state, resulting in impact.",
+          "nextUpdateBy": "Wednesday, May 20, 2026, at 2:00 AM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-05-18T21:58:12.413Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to access or may experience delays when accessing Microsoft Fabric\r\n\r\nUser impact: Users may be unable to access or may experience delays when accessing Microsoft Fabric.\r\n\r\nCurrent status: The service remains healthy at this time and we're continuing to monitor telemetry and assess overall service stability to determine whether any additional actions to fully resolve the issue may be required.\r\n\r\nScope of impact: Any user attempting to access Microsoft Fabric may be impacted.\r\n\r\nStart time: Monday, May 18, 2026, at 12:24 PM UTC\r\n\r\nRoot cause: An unexpected increase in request traffic is causing the portion of infrastructure that handles Microsoft Fabric access to operate in a suboptimal state, resulting in impact.\r\n\r\nNext update by: Wednesday, May 20, 2026, at 2:00 AM UTC"
+            },
             {
               "createdAt": "2026-05-18T21:22:02.023Z",
               "postType": "quick",
