@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-18T20:23:15.275Z",
+  "lastUpdated": "2026-05-18T20:53:23.088Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -311,16 +311,21 @@
           "title": "Users may be unable to access or may experience delays when accessing Microsoft Fabric",
           "startTime": "2026-05-18T12:24:00Z",
           "endTime": null,
-          "lastModified": "2026-05-18T19:49:11.93Z",
+          "lastModified": "2026-05-18T20:45:59.44Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to access or may experience delays when accessing Microsoft Fabric.",
-          "scopeOfImpact": "",
-          "rootCause": "",
-          "nextUpdateBy": "",
+          "scopeOfImpact": "Any user attempting to access Microsoft Fabric may be impacted.\n\nStart time: Monday, May 18, 2026, at 12:24 PM UTC\n\nPreliminary",
+          "rootCause": "An unexpected increase in request traffic is causing the portion of infrastructure that handles Microsoft Fabric access to operate in a suboptimal state, resulting in impact.",
+          "nextUpdateBy": "Monday, May 18, 2026, at 9:30 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-05-18T20:22:13.16Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to access or may experience delays when accessing Microsoft Fabric\n\nUser impact: Users may be unable to access or may experience delays when accessing Microsoft Fabric.\n\nCurrent status: We’re continuing to see improvements in the regions where our fix is deployed, and we're applying additional targeted mitigations to resolve the issues with residual traffic, which is contributing to a slower recovery for some users.\n\nScope of impact: Any user attempting to access Microsoft Fabric may be impacted.\n\nStart time: Monday, May 18, 2026, at 12:24 PM UTC\n\nPreliminary root cause: An unexpected increase in request traffic is causing the portion of infrastructure that handles Microsoft Fabric access to operate in a suboptimal state, resulting in impact.\n\nNext update by: Monday, May 18, 2026, at 9:30 PM UTC"
+            },
             {
               "createdAt": "2026-05-18T19:49:11.93Z",
               "postType": "quick",
