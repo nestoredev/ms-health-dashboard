@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-18T15:21:52.615Z",
+  "lastUpdated": "2026-05-18T15:51:59.849Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -298,24 +298,29 @@
     },
     {
       "service": "Power BI",
-      "status": "investigating",
+      "status": "serviceDegradation",
       "id": "PowerBIcom",
       "issues": [
         {
           "id": "PB1314779",
           "title": "Users may be unable to access or may experience delays when accessing Microsoft Fabric",
-          "startTime": "2026-05-18T15:00:45.397Z",
+          "startTime": "2026-05-18T12:24:00Z",
           "endTime": null,
-          "lastModified": "2026-05-18T15:08:06.45Z",
-          "status": "investigating",
+          "lastModified": "2026-05-18T15:21:06.887Z",
+          "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to access or may experience delays when accessing Microsoft Fabric.",
           "scopeOfImpact": "",
           "rootCause": "",
-          "nextUpdateBy": "",
+          "nextUpdateBy": "Monday, May 18, 2026, at 4:30 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-05-18T15:17:25.847Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to access or may experience delays when accessing Microsoft Fabric\r\n\r\nUser impact: Users may be unable to access or may experience delays when accessing Microsoft Fabric.\r\n\r\nCurrent status: Our service health monitoring has alerted us to increased failures occurring when users attempt to access Microsoft Fabric. We're investigating the call requests to the portion of service infrastructure responsible for facilitating access to Microsoft Fabric to identify the source of the failures.\r\n\r\nStart time: Monday, May 18, 2026, at 12:24 PM UTC\r\n\r\nNext update by: Monday, May 18, 2026, at 4:30 PM UTC"
+            },
             {
               "createdAt": "2026-05-18T15:08:06.45Z",
               "postType": "regular",
