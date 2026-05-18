@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-18T19:22:59.292Z",
+  "lastUpdated": "2026-05-18T19:53:07.003Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -224,16 +224,21 @@
           "title": "Admins may see stale or delayed report data in the Microsoft 365 admin center",
           "startTime": "2026-05-15T00:00:00Z",
           "endTime": null,
-          "lastModified": "2026-05-16T16:52:29.66Z",
+          "lastModified": "2026-05-18T19:20:51.403Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may see stale or delayed report data in the Microsoft 365 admin center.",
-          "scopeOfImpact": "Any admins located in the North America, Asia-Pacific, and Europe regions who are attempting to view-up-to-date report data for the listed reports in the More info for Monday, May 11, 2026, or Tuesday, May 12, 2026, in the Microsoft 365 admin center may be affected by this issue. This section may be updated as our investigation continues.\r\n\r\nStart time: Friday, May 15, 2026, at 12:00 AM UTC",
+          "scopeOfImpact": "Any admins located in the North America, Asia-Pacific, and Europe regions who are attempting to view-up-to-date report data for the listed reports in the More info for Monday, May 11, 2026, Tuesday, May 12, 2026, or Friday, May 15, 2026, in the Microsoft 365 admin center may be affected by this issue. This section may be updated as our investigation continues.\r\n\r\nStart time: Friday, May 15, 2026, at 12:00 AM UTC",
           "rootCause": "A portion of infrastructure that supports and provides report data to the Microsoft 365 admin center is performing below expected thresholds is leading to report data being stale and delayed.",
-          "nextUpdateBy": "Monday, May 18, 2026, at 5:30 PM UTC",
+          "nextUpdateBy": "Tuesday, May 19, 2026, at 7:30 PM UTC",
           "feature": "Company or User Administration",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-05-18T19:20:51.403Z",
+              "postType": "regular",
+              "content": "Title: Admins may see stale or delayed report data in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see stale or delayed report data in the Microsoft 365 admin center.\r\n\r\nMore info: The affected reports for Monday, May 11, 2026, Tuesday, May 12, 2026, or Friday, May 15, 2026, include the following:\n- Copilot Readiness Activity\n- Microsoft 365 App Usage\n- Project Activity\n- Visio Activity\r\n\r\nCurrent status:  After completing our processing of the backlog of report data for Tuesday, May 12, 2026, reports are now showing accurate data. However, we’ve since isolated a backlog of report data for Friday, May 15, 2026, which we’re now processing to address the problem in full.   \r\n\r\nScope of impact: Any admins located in the North America, Asia-Pacific, and Europe regions who are attempting to view-up-to-date report data for the listed reports in the More info for Monday, May 11, 2026, Tuesday, May 12, 2026, or Friday, May 15, 2026, in the Microsoft 365 admin center may be affected by this issue. This section may be updated as our investigation continues.\r\n\r\nStart time: Friday, May 15, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: A portion of infrastructure that supports and provides report data to the Microsoft 365 admin center is performing below expected thresholds is leading to report data being stale and delayed.\r\n\r\nNext update by: Tuesday, May 19, 2026, at 7:30 PM UTC"
+            },
             {
               "createdAt": "2026-05-16T16:41:43.37Z",
               "postType": "regular",
@@ -306,16 +311,21 @@
           "title": "Users may be unable to access or may experience delays when accessing Microsoft Fabric",
           "startTime": "2026-05-18T12:24:00Z",
           "endTime": null,
-          "lastModified": "2026-05-18T19:18:05.653Z",
+          "lastModified": "2026-05-18T19:49:11.93Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to access or may experience delays when accessing Microsoft Fabric.",
-          "scopeOfImpact": "Any user attempting to access Microsoft Fabric may be impacted.\n\nStart time: Monday, May 18, 2026, at 12:24 PM UTC\n\nPreliminary",
-          "rootCause": "An unexpected increase in request traffic is causing the portion of infrastructure that handles Microsoft Fabric access to operate in a suboptimal state, resulting in impact.",
-          "nextUpdateBy": "Monday, May 18, 2026, at 8:30 PM UTC",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-05-18T19:49:11.93Z",
+              "postType": "quick",
+              "content": "We’re continuing to see improvements in the regions where our fix is deployed. We’ve identified some residual traffic which is slowing recovery in some regions and are investigating additional targeted mitigations. \n\nThis quick update is designed to give the latest information on this issue."
+            },
             {
               "createdAt": "2026-05-18T19:16:56.837Z",
               "postType": "regular",
