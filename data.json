@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-19T01:24:35.752Z",
+  "lastUpdated": "2026-05-19T01:54:42.706Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -469,40 +469,9 @@
     },
     {
       "service": "Microsoft Viva",
-      "status": "investigating",
+      "status": "serviceOperational",
       "id": "Viva",
-      "issues": [
-        {
-          "id": "MV1315266",
-          "title": "Some users may see that some Viva Engage message posting operations are failing",
-          "startTime": "2026-05-18T23:32:12.097Z",
-          "endTime": null,
-          "lastModified": "2026-05-19T00:16:40.37Z",
-          "status": "investigating",
-          "severity": "advisory",
-          "userImpact": "Users may see that some Viva Engage message posting operations are failing.",
-          "scopeOfImpact": "Some users performing Viva Engage message posting operations may be affected. This information may be updated as our investigation continues.",
-          "rootCause": "",
-          "nextUpdateBy": "Tuesday, May 19, 2026, at 1:30 AM UTC",
-          "feature": "Upload files/notes/documents",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-05-19T00:15:42.393Z",
-              "postType": "regular",
-              "content": "Title: Some users may see that some Viva Engage message posting operations are failing\r\n\r\nUser impact: Users may see that some Viva Engage message posting operations are failing.\r\n\r\nMore info: Specifically, links created in Viva Engage containing images, videos, or links may not be shared and attached successfully when added to a message post. Additionally, message posts with only a GIF as content or subsequent attempts to edit messages may also fail.\r\n\r\nCurrent status: We're reviewing service side telemetry and whether any recent changes may have occurred which could be contributing to impact to help with identifying the root cause and formulating a fix.\r\n\r\nScope of impact: Some users performing Viva Engage message posting operations may be affected. This information may be updated as our investigation continues.\r\n\r\nNext update by: Tuesday, May 19, 2026, at 1:30 AM UTC"
-            },
-            {
-              "createdAt": "2026-05-18T23:46:10.593Z",
-              "postType": "regular",
-              "content": "Title: Some users may see that some Viva Engage message posting operations are failing\r\n\r\nUser impact: Users may see that some Viva Engage message posting operations are failing.\r\n\r\nMore info: Specifically, links created in Viva Engage containing images, videos, or links may not be shared and attached successfully when added to a message post. Additionally, message posts with only a GIF as content or subsequent attempts to edit messages may also fail.\r\n\r\nCurrent status: We're investigating a potential issue with Viva Engage and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Microsoft Viva"
-          ]
-        }
-      ]
+      "issues": []
     },
     {
       "service": "Microsoft Dataverse",
@@ -536,6 +505,42 @@
     }
   ],
   "history": [
+    {
+      "id": "MV1315266",
+      "title": "Some users may see that some Viva Engage message posting operations are failing",
+      "startTime": "2026-05-16T22:00:00Z",
+      "endTime": "2026-05-19T00:05:00Z",
+      "lastModified": "2026-05-19T01:45:55.983Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have seen that some Viva Engage message posting operations were failing.",
+      "scopeOfImpact": "Some users that performed Viva Engage message posting operations may have been affected.\r\n\r\nStart time: Saturday, May 16, 2026, at 10:00 PM UTC\r\n\r\nEnd time: Tuesday, May 19, 2026, at 12:05 AM UTC",
+      "rootCause": "A recent deployment introduced a compatibility issue between message posting operations that resulted in impact.\r\n\r\nNext steps: \n- We're further reviewing the recent deployment to understand how the compatibility issue was introduced, and to understand what prevented it from being detected in our update testing and validation procedures, which will allow us to prevent similar issues in future deployments.",
+      "nextUpdateBy": "",
+      "feature": "Upload files/notes/documents",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-05-19T01:27:54.207Z",
+          "postType": "regular",
+          "content": "Title: Some users may see that some Viva Engage message posting operations are failing\r\n\r\nUser impact: Users may have see that some Viva Engage message posting operations were failing.\r\n\r\nFinal status: We've determined that a recent deployment introduced a compatibility issue between message posting operations that resulted in impact. We've deployed a code change to resolve the compatibility issue, and we've confirmed with internal monitoring and testing that the issue is resolved.\r\n\r\nScope of impact: Some users that performed Viva Engage message posting operations may have been affected.\r\n\r\nStart time: Saturday, May 16, 2026, at 10:00 PM UTC\r\n\r\nEnd time: Tuesday, May 19, 2026, at 12:05 AM UTC\r\n\r\nRoot cause: A recent deployment introduced a compatibility issue between message posting operations that resulted in impact.\r\n\r\nNext steps: \n- We're further reviewing the recent deployment to understand how the compatibility issue was introduced, and to understand what prevented it from being detected in our update testing and validation procedures, which will allow us to prevent similar issues in future deployments."
+        },
+        {
+          "createdAt": "2026-05-19T00:15:42.393Z",
+          "postType": "regular",
+          "content": "Title: Some users may see that some Viva Engage message posting operations are failing\r\n\r\nUser impact: Users may see that some Viva Engage message posting operations are failing.\r\n\r\nMore info: Specifically, links created in Viva Engage containing images, videos, or links may not be shared and attached successfully when added to a message post. Additionally, message posts with only a GIF as content or subsequent attempts to edit messages may also fail.\r\n\r\nCurrent status: We're reviewing service side telemetry and whether any recent changes may have occurred which could be contributing to impact to help with identifying the root cause and formulating a fix.\r\n\r\nScope of impact: Some users performing Viva Engage message posting operations may be affected. This information may be updated as our investigation continues.\r\n\r\nNext update by: Tuesday, May 19, 2026, at 1:30 AM UTC"
+        },
+        {
+          "createdAt": "2026-05-18T23:46:10.593Z",
+          "postType": "regular",
+          "content": "Title: Some users may see that some Viva Engage message posting operations are failing\r\n\r\nUser impact: Users may see that some Viva Engage message posting operations are failing.\r\n\r\nMore info: Specifically, links created in Viva Engage containing images, videos, or links may not be shared and attached successfully when added to a message post. Additionally, message posts with only a GIF as content or subsequent attempts to edit messages may also fail.\r\n\r\nCurrent status: We're investigating a potential issue with Viva Engage and checking for impact to your organization. We'll provide an update within 30 minutes."
+        }
+      ],
+      "serviceName": "Microsoft Viva",
+      "affectedServices": [
+        "Microsoft Viva"
+      ]
+    },
     {
       "id": "CW1314072",
       "title": "Users may be unable to access Copilot Voice in Microsoft 365 Copilot Chat or conduct voice conversations",
