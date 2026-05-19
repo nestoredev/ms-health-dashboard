@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-18T23:54:12.532Z",
+  "lastUpdated": "2026-05-19T00:24:20.196Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -477,16 +477,21 @@
           "title": "Some users may see that some Viva Engage message posting operations are failing",
           "startTime": "2026-05-18T23:32:12.097Z",
           "endTime": null,
-          "lastModified": "2026-05-18T23:46:10.593Z",
+          "lastModified": "2026-05-19T00:16:40.37Z",
           "status": "investigating",
           "severity": "advisory",
           "userImpact": "Users may see that some Viva Engage message posting operations are failing.",
-          "scopeOfImpact": "",
+          "scopeOfImpact": "Some users performing Viva Engage message posting operations may be affected. This information may be updated as our investigation continues.",
           "rootCause": "",
-          "nextUpdateBy": "",
+          "nextUpdateBy": "Tuesday, May 19, 2026, at 1:30 AM UTC",
           "feature": "Upload files/notes/documents",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-05-19T00:15:42.393Z",
+              "postType": "regular",
+              "content": "Title: Some users may see that some Viva Engage message posting operations are failing\r\n\r\nUser impact: Users may see that some Viva Engage message posting operations are failing.\r\n\r\nMore info: Specifically, links created in Viva Engage containing images, videos, or links may not be shared and attached successfully when added to a message post. Additionally, message posts with only a GIF as content or subsequent attempts to edit messages may also fail.\r\n\r\nCurrent status: We're reviewing service side telemetry and whether any recent changes may have occurred which could be contributing to impact to help with identifying the root cause and formulating a fix.\r\n\r\nScope of impact: Some users performing Viva Engage message posting operations may be affected. This information may be updated as our investigation continues.\r\n\r\nNext update by: Tuesday, May 19, 2026, at 1:30 AM UTC"
+            },
             {
               "createdAt": "2026-05-18T23:46:10.593Z",
               "postType": "regular",
@@ -659,16 +664,21 @@
       "title": "Some users may be unable to access Microsoft 365 Copilot Chat via any connection method",
       "startTime": "2026-05-14T01:40:00Z",
       "endTime": "2026-05-14T15:35:00Z",
-      "lastModified": "2026-05-14T21:37:07.667Z",
-      "status": "serviceRestored",
+      "lastModified": "2026-05-18T23:58:35.747Z",
+      "status": "postIncidentReviewPublished",
       "severity": "incident",
       "userImpact": "Users may have been unable to access Microsoft 365 Copilot Chat via any connection method.",
-      "scopeOfImpact": "Impact was specific to users attempting to access Microsoft 365 Copilot Chat via any connection method.\n\nStart time: Thursday, May 14, 2026, at 1:40 AM UTC\n\nEnd time: Thursday, May 14, 2026, at 3:35 PM UTC",
-      "rootCause": "A recent configuration change to the authentication component altered how user sign in requests were processed. This introduced a mismatch in expected authentication behavior, causing authentication requests to fail.\n\nNext steps: We're examining our configuration change process so we can identify areas for process improvement in future deployments. \n\nA preliminary post incident report (PIR) Will be published within 2 business days from closure, and a final PIR will be published within 5 business days from closure.",
+      "scopeOfImpact": "",
+      "rootCause": "",
       "nextUpdateBy": "",
       "feature": "General",
       "isResolved": true,
       "posts": [
+        {
+          "createdAt": "2026-05-18T23:58:35.747Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        },
         {
           "createdAt": "2026-05-14T16:20:17.937Z",
           "postType": "regular",
