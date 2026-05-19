@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-19T13:57:50.900Z",
+  "lastUpdated": "2026-05-19T14:27:58.838Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -421,18 +421,23 @@
         {
           "id": "OP1315796",
           "title": "Some users may see repeated location prompts in Microsoft Teams for Mac",
-          "startTime": "2026-05-19T12:34:45.77Z",
+          "startTime": "2026-05-11T00:00:00Z",
           "endTime": null,
-          "lastModified": "2026-05-19T12:56:37.757Z",
+          "lastModified": "2026-05-19T14:17:01.913Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may see repeated location prompts in Microsoft Teams for Mac.",
-          "scopeOfImpact": "This issue impacts some Microsoft Teams for Mac users who have location access enabled in Teams settings.\n\nStart time: Monday, May 11, 2026, at 12:00 AM UTC",
-          "rootCause": "A recent macOS security update doesn’t store users’ location permission selections for Teams as expected, resulting in repeated location prompts.",
-          "nextUpdateBy": "Tuesday, May 19, 2026, at 2:30 PM UTC",
+          "scopeOfImpact": "This issue impacts some Microsoft Teams for Mac users who have location access enabled in Microsoft Teams settings.\r\n\r\nStart time: Monday, May 11, 2026, at 12:00 AM UTC",
+          "rootCause": "A recent macOS security update doesn’t store users’ location permission selections for Microsoft Teams as expected, resulting in repeated location prompts.",
+          "nextUpdateBy": "Wednesday, May 20, 2026, at 3:00 PM UTC",
           "feature": "Outlook",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-05-19T14:17:01.913Z",
+              "postType": "regular",
+              "content": "Title: Some users may see repeated location prompts in Microsoft Teams for Mac\r\n\r\nUser impact: Users may see repeated location prompts in Microsoft Teams for Mac.\r\n\r\nMore info: Impacted users are unable to dismiss the following location prompt by clicking \"Allow\" or \"Don't allow.\":\n \n\"Microsoft Teams Modulehost would like to use your current location\"\n \nWorkaround: Impacted users may be able to resolve the issue by manually enabling location access for Microsoft Teams within macOS settings. To do so, go to \"System Settings\" > \"Privacy & Security\" > \"Location Services\". Locate \"Microsoft Teams\" and \"Microsoft Teams ModuleHost\" and cycle the toggles on/off, then set it back to desired setting.\r\n\r\nCurrent status: We’re working with Apple to better understand the change and identify a resolution. In parallel, we’re investigating a potential fix within Teams to mitigate the repeated prompts. Additionally, we've provided a workaround for this issue in the \"More info\" section of this communication.\r\n\r\nScope of impact: This issue impacts some Microsoft Teams for Mac users who have location access enabled in Microsoft Teams settings.\r\n\r\nStart time: Monday, May 11, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: A recent macOS security update doesn’t store users’ location permission selections for Microsoft Teams as expected, resulting in repeated location prompts.\r\n\r\nNext update by: Wednesday, May 20, 2026, at 3:00 PM UTC"
+            },
             {
               "createdAt": "2026-05-19T12:39:13.293Z",
               "postType": "regular",
