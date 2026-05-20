@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-20T18:05:49.784Z",
+  "lastUpdated": "2026-05-20T18:35:58.488Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -224,16 +224,21 @@
           "title": "Admins may see stale or delayed report data in the Microsoft 365 admin center",
           "startTime": "2026-05-15T00:00:00Z",
           "endTime": null,
-          "lastModified": "2026-05-19T18:27:30.973Z",
+          "lastModified": "2026-05-20T18:30:25.133Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may see stale or delayed report data in the Microsoft 365 admin center.",
-          "scopeOfImpact": "Any admins located in the North America, Asia-Pacific, and Europe regions who are attempting to view-up-to-date report data for the listed reports in the More info for Monday, May 11, 2026, Tuesday, May 12, 2026, or Friday, May 15, 2026, in the Microsoft 365 admin center may be affected by this issue. This section may be updated as our investigation continues.\r\n\r\nStart time: Friday, May 15, 2026, at 12:00 AM UTC",
-          "rootCause": "A portion of infrastructure that supports and provides report data to the Microsoft 365 admin center is performing below expected thresholds is leading to report data being stale and delayed.",
-          "nextUpdateBy": "Wednesday, May 20, 2026, at 8:00 PM UTC",
+          "scopeOfImpact": "Any admin located in the North America, Asia-Pacific, and Europe regions who are attempting to view-up-to-date report data for the listed reports in the More info for Monday, May 11, 2026, Tuesday, May 12, 2026, or Friday, May 15, 2026, in the Microsoft 365 admin center may be affected by this issue. This section may be updated as our investigation continues.\r\n\r\nStart time: Friday, May 15, 2026, at 12:00 AM UTC",
+          "rootCause": "A portion of infrastructure that supports and provides report data to the Microsoft 365 admin center is performing below expected thresholds, which is leading to report data being stale and delayed.",
+          "nextUpdateBy": "Wednesday, May 20, 2026, at 11:30 PM UTC",
           "feature": "Company or User Administration",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-05-20T18:30:25.133Z",
+              "postType": "regular",
+              "content": "Title: Admins may see stale or delayed report data in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see stale or delayed report data in the Microsoft 365 admin center.\r\n\r\nMore info: The affected reports for Monday, May 11, 2026, Tuesday, May 12, 2026, or Friday, May 15, 2026, include the following:\n- Copilot Readiness Activity\n- Microsoft 365 App Usage\n- Project Activity\n- Visio Activity\r\n\r\nCurrent status: We've completed backlog processing through May 14, 2026, for all regions. We're continuing to monitor as backlog processing continues in the final region, Europe, for the final impacted day, May 15, to confirm full resolution for all impacted admins. \r\n\r\nScope of impact: Any admin located in the North America, Asia-Pacific, and Europe regions who are attempting to view-up-to-date report data for the listed reports in the More info for Monday, May 11, 2026, Tuesday, May 12, 2026, or Friday, May 15, 2026, in the Microsoft 365 admin center may be affected by this issue. This section may be updated as our investigation continues.\r\n\r\nStart time: Friday, May 15, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: A portion of infrastructure that supports and provides report data to the Microsoft 365 admin center is performing below expected thresholds, which is leading to report data being stale and delayed.\r\n\r\nNext update by: Wednesday, May 20, 2026, at 11:30 PM UTC"
+            },
             {
               "createdAt": "2026-05-19T18:27:30.973Z",
               "postType": "regular",
