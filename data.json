@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-21T23:14:16.916Z",
+  "lastUpdated": "2026-05-21T23:44:27.110Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -811,8 +811,8 @@
       "id": "CW1310341",
       "title": "Some users may be unable to access Microsoft 365 Copilot Chat via any connection method",
       "startTime": "2026-05-14T01:40:00Z",
-      "endTime": "2026-05-14T15:35:00Z",
-      "lastModified": "2026-05-18T23:58:35.747Z",
+      "endTime": "2026-05-14T15:30:00Z",
+      "lastModified": "2026-05-21T23:14:50.697Z",
       "status": "postIncidentReviewPublished",
       "severity": "incident",
       "userImpact": "Users may have been unable to access Microsoft 365 Copilot Chat via any connection method.",
@@ -822,6 +822,11 @@
       "feature": "General",
       "isResolved": true,
       "posts": [
+        {
+          "createdAt": "2026-05-21T23:14:19.607Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        },
         {
           "createdAt": "2026-05-18T23:58:35.747Z",
           "postType": "regular",
@@ -841,11 +846,6 @@
           "createdAt": "2026-05-14T14:40:37.207Z",
           "postType": "regular",
           "content": "Title: Some users may be unable to access Microsoft 365 Copilot Chat via any connection method\r\n\r\nUser impact: Users may be unable to access Microsoft 365 Copilot Chat via any connection method.\r\n\r\nCurrent status: We've identified a potentially impacting IP classification dataset version, which we're preparing to revert to a version prior to the suspected impacting change window to unblock ECS access as an initial mitigation. We're monitoring service telemetry and error logs to validate this and to help identify the root cause of impact.\r\n\r\nScope of impact: Impact is specific to users attempting to access Microsoft 365 Copilot Chat via any connection method.\r\n\r\nStart time: Thursday, May 14, 2026, at 12:40 AM UTC\r\n\r\nNext update by: Thursday, May 14, 2026, at 5:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-05-14T12:48:28.057Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to access Microsoft 365 Copilot Chat via any connection method\r\n\r\nUser impact: Users may be unable to access Microsoft 365 Copilot Chat via any connection method.\r\n\r\nCurrent status: We’re reviewing service telemetry and recent service deployments to isolate the root cause of the issue and determine a fix.\r\n\r\nScope of impact: Impact is specific to users attempting to access Microsoft 365 Copilot Chat via any connection method.\r\n\r\nNext update by: Thursday, May 14, 2026, at 3:00 PM UTC"
         }
       ],
       "serviceName": "Microsoft 365 Copilot Chat",
