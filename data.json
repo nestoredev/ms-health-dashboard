@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-21T15:41:55.310Z",
+  "lastUpdated": "2026-05-21T16:12:04.823Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -423,16 +423,21 @@
           "title": "Some users' Microsoft Intune devices may be unable to retrieve Intune Management Agent scripts from the service",
           "startTime": "2026-05-21T15:12:13.187Z",
           "endTime": null,
-          "lastModified": "2026-05-21T15:29:08.27Z",
+          "lastModified": "2026-05-21T16:02:56.917Z",
           "status": "investigating",
           "severity": "advisory",
           "userImpact": "Users' Microsoft Intune devices may be unable to retrieve Intune Management Agent scripts from the service.",
-          "scopeOfImpact": "",
+          "scopeOfImpact": "Some users and admins in North America, Europe, Middle East, and Africa attempting to retrieve Intune Management Agent scripts from the service on Microsoft Intune devices or load the Intune Admin console 'Scripts and Remediations' blade may be impacted.",
           "rootCause": "",
-          "nextUpdateBy": "",
+          "nextUpdateBy": "Thursday, May 21, 2026, at 5:30 PM UTC",
           "feature": "Microsoft Intune",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-05-21T16:02:56.917Z",
+              "postType": "regular",
+              "content": "Title: Some users' Microsoft Intune devices may be unable to retrieve Intune Management Agent scripts from the service\r\n\r\nUser impact: Users' Microsoft Intune devices may be unable to retrieve Intune Management Agent scripts from the service.\r\n\r\nMore info: Additionally, some admins may be unable to load the Intune Admin console 'Scripts and Remediations' blade and get a \"Request policy is null\" error.\r\n\r\nCurrent status: After our analysis of service health telemetry, we suspect that an authentication component has been misconfigured, and we're confirming this is the source of the impact in order to develop a solution to resolve the issue.\r\n\r\nScope of impact: Some users and admins in North America, Europe, Middle East, and Africa attempting to retrieve Intune Management Agent scripts from the service on Microsoft Intune devices or load the Intune Admin console 'Scripts and Remediations' blade may be impacted.\r\n\r\nNext update by: Thursday, May 21, 2026, at 5:30 PM UTC"
+            },
             {
               "createdAt": "2026-05-21T15:29:08.27Z",
               "postType": "regular",
