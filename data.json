@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-21T14:41:35.440Z",
+  "lastUpdated": "2026-05-21T15:11:44.595Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -374,16 +374,21 @@
           "title": "Some users may encounter issues accessing features in the Microsoft Planner application",
           "startTime": "2026-05-21T13:19:09.407Z",
           "endTime": null,
-          "lastModified": "2026-05-21T13:34:15.44Z",
+          "lastModified": "2026-05-21T15:01:58.55Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may encounter issues accessing features in the Microsoft Planner application.",
-          "scopeOfImpact": "Impact is specific to some users attempting to access features in the Microsoft Planner application.",
+          "scopeOfImpact": "Some users attempting to access features in the Microsoft Planner app may be impacted.",
           "rootCause": "",
-          "nextUpdateBy": "Thursday, May 21, 2026, at 3:30 PM UTC",
+          "nextUpdateBy": "Thursday, May 21, 2026, at 5:30 PM UTC",
           "feature": "My tasks",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-05-21T15:01:58.55Z",
+              "postType": "regular",
+              "content": "Title: Some users may encounter issues accessing features in the Microsoft Planner application\r\n\r\nUser impact: Users may encounter issues accessing features in the Microsoft Planner application.\r\n\r\nCurrent status: We’ve deployed targeted mitigation actions to reduce the impact, increasing the time between background data refreshes and extending caching durations for Microsoft Planner. Service-side telemetry shows improvements from these changes, and we continue working on additional steps to further stabilize the experience while the root cause investigation progresses.\r\n\r\nScope of impact: Some users attempting to access features in the Microsoft Planner app may be impacted.\n\n\r\n\r\nNext update by: Thursday, May 21, 2026, at 5:30 PM UTC"
+            },
             {
               "createdAt": "2026-05-21T13:34:15.44Z",
               "postType": "regular",
