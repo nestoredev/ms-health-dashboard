@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-21T00:07:33.129Z",
+  "lastUpdated": "2026-05-21T00:37:40.038Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -335,18 +335,23 @@
         {
           "id": "IT1316808",
           "title": "Users’ mobile application management (MAM) apps may crash if launched on devices running Android 17 QRP1 beta 3",
-          "startTime": "2026-05-20T15:52:42.133Z",
+          "startTime": "2026-05-19T20:00:00Z",
           "endTime": null,
-          "lastModified": "2026-05-20T19:52:39.633Z",
+          "lastModified": "2026-05-21T00:27:56.437Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users’ MAM apps may crash if launched on an Android device with the Android 17 QRP1 beta 3 update.",
-          "scopeOfImpact": "Any user attempting to access MAM apps launched on an Android device with the Android 17 QRP1 beta 3 update is impacted.",
+          "scopeOfImpact": "Any user attempting to access MAM apps launched on an Android device with the Android 17 QRP1 beta 3 update is impacted. This section may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, May 19, 2026, at 8:00 PM UTC",
           "rootCause": "A code issue was introduced with the Android 17 QRP1 beta 3 version, resulting in impact.",
-          "nextUpdateBy": "Thursday, May 21, 2026, at 2:00 AM UTC",
+          "nextUpdateBy": "Thursday, May 21, 2026, at 3:30 AM UTC",
           "feature": "Microsoft Intune",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-05-21T00:27:20.803Z",
+              "postType": "regular",
+              "content": "Title: Users’ mobile application management (MAM) apps may crash if launched on devices running Android 17 QRP1 beta 3\r\n\r\nUser impact: Users’ MAM apps may crash if launched on an Android device with the Android 17 QRP1 beta 3 update.\r\n\r\nMore info: We recommend that users don't update their Android devices with the Android 17 QRP1 beta 3 update.\r\n\r\nCurrent status: We've completed the development of our code fix and are preparing it for deployment to all affected environments as part of a new build version of the Microsoft Intune Company Portal beta. We anticipate this deployment may complete by our next scheduled update.\r\n\r\nScope of impact: Any user attempting to access MAM apps launched on an Android device with the Android 17 QRP1 beta 3 update is impacted. This section may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, May 19, 2026, at 8:00 PM UTC\r\n\r\nRoot cause: A code issue was introduced with the Android 17 QRP1 beta 3 version, resulting in impact.\r\n\r\nNext update by: Thursday, May 21, 2026, at 3:30 AM UTC"
+            },
             {
               "createdAt": "2026-05-20T19:52:39.633Z",
               "postType": "regular",
