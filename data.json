@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-22T19:21:18.116Z",
+  "lastUpdated": "2026-05-22T19:51:26.962Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -318,9 +318,35 @@
     },
     {
       "service": "Microsoft Intune",
-      "status": "serviceOperational",
+      "status": "investigating",
       "id": "Intune",
-      "issues": []
+      "issues": [
+        {
+          "id": "IT1319078",
+          "title": "Some admins may be unable to apply policies using filters with Declarative Device Management (DDM) in Microsoft Intune",
+          "startTime": "2026-05-22T19:42:45.097Z",
+          "endTime": null,
+          "lastModified": "2026-05-22T19:43:54.257Z",
+          "status": "investigating",
+          "severity": "advisory",
+          "userImpact": "Admins on Apple devices may be unable to apply policies using filters with DDM in Microsoft Intune.",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
+          "feature": "Microsoft Intune",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-05-22T19:43:54.257Z",
+              "postType": "regular",
+              "content": "Title: Some admins may be unable to apply policies using filters with Declarative Device Management (DDM) in Microsoft Intune\r\n\r\nUser impact: Admins on Apple devices may be unable to apply policies using filters with DDM in Microsoft Intune.\r\n\r\nMore info: This only impacts admins using model name assignment filters for Apple devices.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Intune and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Intune"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft OneDrive",
