@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-22T17:50:54.522Z",
+  "lastUpdated": "2026-05-22T18:21:02.324Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -141,16 +141,21 @@
           "title": " Users may be unable to view free/busy status for Gmail users within the Exchange Online calendar",
           "startTime": "2026-05-11T07:01:00Z",
           "endTime": null,
-          "lastModified": "2026-05-21T09:32:26.597Z",
+          "lastModified": "2026-05-22T17:54:48.707Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": " Users may be unable to view free/busy status for Gmail users within the Exchange Online calendar.",
-          "scopeOfImpact": "Impact is specific to any user attempting to view free/busy status for Gmail contacts in their Exchange Online calendars.\n\nStart time: Monday, May 11, 2026, at 7:01 AM UTC",
+          "scopeOfImpact": "Impact is specific to any user attempting to view free/busy status for Gmail contacts in their Exchange Online calendars.\r\n\r\nStart time: Monday, May 11, 2026, at 7:01 AM UTC",
           "rootCause": "A feature was recently disabled to mitigate an unrelated event, resulting in this impact.",
-          "nextUpdateBy": "Friday, May 22, 2026, at 7:30 PM UTC",
+          "nextUpdateBy": "Tuesday, May 26, 2026, at 7:30 PM UTC",
           "feature": "Reports of an Incident",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-05-22T17:54:48.707Z",
+              "postType": "regular",
+              "content": "Title:  Users may be unable to view free/busy status for Gmail users within the Exchange Online calendar\r\n\r\nUser impact:  Users may be unable to view free/busy status for Gmail users within the Exchange Online calendar.\r\n\r\nMore info: Affected users may see an \"Unknown\" status for the external Gmail contacts.\r\n\r\nCurrent status: We've initiated the deployment of our fix to our internal environment for final validations. Once complete, we'll proceed with deploying the fix to the broader affected environment. We anticipate this may take until Wednesday, May 27, 2026 to complete, and will provide an update on the deployment timeline with our next scheduled communication update. \r\n\r\nScope of impact: Impact is specific to any user attempting to view free/busy status for Gmail contacts in their Exchange Online calendars.\r\n\r\nStart time: Monday, May 11, 2026, at 7:01 AM UTC\r\n\r\nRoot cause: A feature was recently disabled to mitigate an unrelated event, resulting in this impact.\r\n\r\nNext update by: Tuesday, May 26, 2026, at 7:30 PM UTC"
+            },
             {
               "createdAt": "2026-05-20T18:17:54.27Z",
               "postType": "regular",
