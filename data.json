@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-23T22:58:26.125Z",
+  "lastUpdated": "2026-05-23T23:28:33.384Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -318,50 +318,9 @@
     },
     {
       "service": "Microsoft Intune",
-      "status": "serviceDegradation",
+      "status": "serviceOperational",
       "id": "Intune",
-      "issues": [
-        {
-          "id": "IT1319078",
-          "title": "Some admins may be unable to apply policies using filters with Declarative Device Management (DDM) in Microsoft Intune",
-          "startTime": "2026-05-22T19:42:45.097Z",
-          "endTime": null,
-          "lastModified": "2026-05-23T01:18:55.59Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Admins on Apple devices may be unable to apply policies using filters with DDM in Microsoft Intune.",
-          "scopeOfImpact": "This event may impact any admin attempting to use model name assignment filters to apply policies with DDM in Microsoft Intune. This information may be updated as our investigation continues.\n\nStart time: Tuesday, April 14, 2026, at 12:17 PM UTC",
-          "rootCause": "A latent code issue within our assignment filter logic is causing an issue within a device model validation process and resulting in impact.",
-          "nextUpdateBy": "Sunday, May 24, 2026, at 5:00 AM UTC",
-          "feature": "Microsoft Intune",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-05-23T01:18:55.59Z",
-              "postType": "regular",
-              "content": "Title: Some admins may be unable to apply policies using filters with Declarative Device Management (DDM) in Microsoft Intune\n\nUser impact: Admins on Apple devices may be unable to apply policies using filters with DDM in Microsoft Intune.\n\nMore info: This only impacts admins using model name assignment filters for Apple devices.\n\nCurrent status: We’ve completed our validations to ensure that the aforementioned code fix will resolve the issue and we’ve initiated the deployment process. Additionally, we anticipate that a remediation timeline will be provided by our next scheduled update. \n\nScope of impact: This event may impact any admin attempting to use model name assignment filters to apply policies with DDM in Microsoft Intune. This information may be updated as our investigation continues.\n\nStart time: Tuesday, April 14, 2026, at 12:17 PM UTC\n\nRoot cause: A latent code issue within our assignment filter logic is causing an issue within a device model validation process and resulting in impact.\n\nNext update by: Sunday, May 24, 2026, at 5:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-05-22T21:54:41.003Z",
-              "postType": "regular",
-              "content": "Title: Some admins may be unable to apply policies using filters with Declarative Device Management (DDM) in Microsoft Intune\r\n\r\nUser impact: Admins on Apple devices may be unable to apply policies using filters with DDM in Microsoft Intune.\r\n\r\nMore info: This only impacts admins using model name assignment filters for Apple devices.\r\n\r\nCurrent status: We're still in the process of validating and testing our code fix to correct this logic path error to ensure that it successfully remediates the issue for all users. We'll provide an estimate on our fix deployment timeline when the validation process has completed.\r\n\r\nScope of impact: This event may impact any admin attempting to use model name assignment filters to apply policies with DDM in Microsoft Intune. This information may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, April 14, 2026, at 12:17 PM UTC\r\n\r\nRoot cause: A latent code issue within our assignment filter logic is causing an issue within a device model validation process and resulting in impact.\r\n\r\nNext update by: Saturday, May 23, 2026, at 3:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-05-22T20:21:33.727Z",
-              "postType": "regular",
-              "content": "Title: Some admins may be unable to apply policies using filters with Declarative Device Management (DDM) in Microsoft Intune\r\n\r\nUser impact: Admins on Apple devices may be unable to apply policies using filters with DDM in Microsoft Intune.\r\n\r\nMore info: This only impacts admins using model name assignment filters for Apple devices.\r\n\r\nCurrent status: We've determined that a latent code issue within our assignment filter logic is causing an issue within a device model validation process and resulting in impact. We're validating a code fix to correct this logic path and will provide an update on its deployment timeline as soon as one becomes available.\r\n\r\nScope of impact: This event may impact any admin attempting to use model name assignment filters to apply policies with DDM in Microsoft Intune. This information may be updated as our investigation continues.\r\n\r\nRoot cause: A latent code issue within our assignment filter logic is causing an issue within a device model validation process and resulting in impact.\r\n\r\nNext update by: Friday, May 22, 2026, at 11:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-05-22T19:43:54.257Z",
-              "postType": "regular",
-              "content": "Title: Some admins may be unable to apply policies using filters with Declarative Device Management (DDM) in Microsoft Intune\r\n\r\nUser impact: Admins on Apple devices may be unable to apply policies using filters with DDM in Microsoft Intune.\r\n\r\nMore info: This only impacts admins using model name assignment filters for Apple devices.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Intune and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Microsoft Intune"
-          ]
-        }
-      ]
+      "issues": []
     },
     {
       "service": "Microsoft OneDrive",
@@ -479,6 +438,52 @@
     }
   ],
   "history": [
+    {
+      "id": "IT1319078",
+      "title": "Some admins may be unable to apply policies using filters with Declarative Device Management (DDM) in Microsoft Intune",
+      "startTime": "2026-04-14T18:00:00Z",
+      "endTime": "2026-05-23T18:00:00Z",
+      "lastModified": "2026-05-23T23:22:32.797Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Admins on Apple devices may have been unable to apply policies using filters with DDM in Microsoft Intune.",
+      "scopeOfImpact": "This event may have impacted any admin who attempted to use model name assignment filters to apply policies with DDM in Microsoft Intune. \n\nStart time: Tuesday, April 14, 2026, at 12:17 PM UTC\n\nEnd time: Sunday, May 24, 2026, at 6:00 PM UTC",
+      "rootCause": "A latent code issue within our assignment filter logic was causing an issue within a device model validation process and resulting in impact.\n\nNext steps: \n- We’re continuing to analyze how the latent code issue within our assignment filter logic manifested, as these actions will help us to clarify what actions we can take to ensure similar impact doesn't occur in future and to continue our ongoing mission to improve the resilience of our service for all Microsoft Intune users.\n \nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Microsoft Intune",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-05-23T23:22:32.797Z",
+          "postType": "regular",
+          "content": "Title: Some admins may be unable to apply policies using filters with Declarative Device Management (DDM) in Microsoft Intune\n\nUser impact: Admins on Apple devices may have been unable to apply policies using filters with DDM in Microsoft Intune.\n\nMore info: This only impacted admins who used model name assignment filters for Apple devices.\n\nFinal status: Following the completion of our deployment process, we’ve confirmed that impact has been remediated after monitoring an extended period of monitoring the affected service infrastructure. \n\nScope of impact: This event may have impacted any admin who attempted to use model name assignment filters to apply policies with DDM in Microsoft Intune. \n\nStart time: Tuesday, April 14, 2026, at 12:17 PM UTC\n\nEnd time: Sunday, May 24, 2026, at 6:00 PM UTC\n\nRoot cause: A latent code issue within our assignment filter logic was causing an issue within a device model validation process and resulting in impact.\n\nNext steps: \n- We’re continuing to analyze how the latent code issue within our assignment filter logic manifested, as these actions will help us to clarify what actions we can take to ensure similar impact doesn't occur in future and to continue our ongoing mission to improve the resilience of our service for all Microsoft Intune users.\n \nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-05-23T01:18:55.59Z",
+          "postType": "regular",
+          "content": "Title: Some admins may be unable to apply policies using filters with Declarative Device Management (DDM) in Microsoft Intune\n\nUser impact: Admins on Apple devices may be unable to apply policies using filters with DDM in Microsoft Intune.\n\nMore info: This only impacts admins using model name assignment filters for Apple devices.\n\nCurrent status: We’ve completed our validations to ensure that the aforementioned code fix will resolve the issue and we’ve initiated the deployment process. Additionally, we anticipate that a remediation timeline will be provided by our next scheduled update. \n\nScope of impact: This event may impact any admin attempting to use model name assignment filters to apply policies with DDM in Microsoft Intune. This information may be updated as our investigation continues.\n\nStart time: Tuesday, April 14, 2026, at 12:17 PM UTC\n\nRoot cause: A latent code issue within our assignment filter logic is causing an issue within a device model validation process and resulting in impact.\n\nNext update by: Sunday, May 24, 2026, at 5:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-05-22T21:54:41.003Z",
+          "postType": "regular",
+          "content": "Title: Some admins may be unable to apply policies using filters with Declarative Device Management (DDM) in Microsoft Intune\r\n\r\nUser impact: Admins on Apple devices may be unable to apply policies using filters with DDM in Microsoft Intune.\r\n\r\nMore info: This only impacts admins using model name assignment filters for Apple devices.\r\n\r\nCurrent status: We're still in the process of validating and testing our code fix to correct this logic path error to ensure that it successfully remediates the issue for all users. We'll provide an estimate on our fix deployment timeline when the validation process has completed.\r\n\r\nScope of impact: This event may impact any admin attempting to use model name assignment filters to apply policies with DDM in Microsoft Intune. This information may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, April 14, 2026, at 12:17 PM UTC\r\n\r\nRoot cause: A latent code issue within our assignment filter logic is causing an issue within a device model validation process and resulting in impact.\r\n\r\nNext update by: Saturday, May 23, 2026, at 3:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-05-22T20:21:33.727Z",
+          "postType": "regular",
+          "content": "Title: Some admins may be unable to apply policies using filters with Declarative Device Management (DDM) in Microsoft Intune\r\n\r\nUser impact: Admins on Apple devices may be unable to apply policies using filters with DDM in Microsoft Intune.\r\n\r\nMore info: This only impacts admins using model name assignment filters for Apple devices.\r\n\r\nCurrent status: We've determined that a latent code issue within our assignment filter logic is causing an issue within a device model validation process and resulting in impact. We're validating a code fix to correct this logic path and will provide an update on its deployment timeline as soon as one becomes available.\r\n\r\nScope of impact: This event may impact any admin attempting to use model name assignment filters to apply policies with DDM in Microsoft Intune. This information may be updated as our investigation continues.\r\n\r\nRoot cause: A latent code issue within our assignment filter logic is causing an issue within a device model validation process and resulting in impact.\r\n\r\nNext update by: Friday, May 22, 2026, at 11:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-05-22T19:43:54.257Z",
+          "postType": "regular",
+          "content": "Title: Some admins may be unable to apply policies using filters with Declarative Device Management (DDM) in Microsoft Intune\r\n\r\nUser impact: Admins on Apple devices may be unable to apply policies using filters with DDM in Microsoft Intune.\r\n\r\nMore info: This only impacts admins using model name assignment filters for Apple devices.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Intune and checking for impact to your organization. We'll provide an update within 30 minutes."
+        }
+      ],
+      "serviceName": "Microsoft Intune",
+      "affectedServices": [
+        "Microsoft Intune"
+      ]
+    },
     {
       "id": "IT1317808",
       "title": "Some users' Microsoft Intune devices may be unable to retrieve Intune Management Agent scripts from the service",
