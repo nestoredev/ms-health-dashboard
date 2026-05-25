@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-25T05:06:08.303Z",
+  "lastUpdated": "2026-05-25T05:36:15.976Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -130,6 +130,46 @@
               "createdAt": "2026-02-16T05:07:28.317Z",
               "postType": "regular",
               "content": "Title: Some users may see that when selecting a meeting room when scheduling meetings, it changes from available to unavailable\n\nUser impact: Users may see that after selecting a meeting room when scheduling meetings, it changes from available to unavailable.\n\nMore info: Specifically, the meeting room selected is incorrectly changing from available to unavailable in Exchange Online. \n\nCurrent status: We're investigating a potential issue with Exchange Online and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online"
+          ]
+        },
+        {
+          "id": "EX1321282",
+          "title": "Users may intermittently be unable to access Exchange Online",
+          "startTime": "2026-05-24T23:21:27Z",
+          "endTime": null,
+          "lastModified": "2026-05-25T05:21:07.183Z",
+          "status": "serviceDegradation",
+          "severity": "incident",
+          "userImpact": "Users may intermittently be unable to access Exchange Online. ",
+          "scopeOfImpact": "This issue may impact users worldwide that are routed through the impacted infrastructure. This information may be updated as our investigation continues.\r\n\r\nStart time: Sunday, May 24, 2026, at 11:00 PM UTC",
+          "rootCause": "A portion of the structured query language infrastructure responsible for accessing Exchange Online isn't performing as efficiently as expected, resulting in impact.",
+          "nextUpdateBy": "Monday, May 25, 2026, at 6:30 AM UTC",
+          "feature": "OWA - problem connecting",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-05-25T04:17:30.64Z",
+              "postType": "regular",
+              "content": "Title: Users may intermittently be unable to access Exchange Online\r\n\r\nUser impact: Users may intermittently be unable to access Exchange Online. \r\n\r\nCurrent status: In an attempt to alleviate impact, we've restarted some of the affected infrastructure with mixed results. We're continuing our root cause investigation using all available diagnostic data to help determine our next steps towards remediation.\r\n\r\nScope of impact: This issue may impact users worldwide that are routed through the impacted infrastructure. This information may be updated as our investigation continues.\r\n\r\nStart time: Sunday, May 24, 2026, at 11:00 PM UTC\r\n\r\nRoot cause: A portion of the structured query language infrastructure responsible for accessing Exchange Online isn't performing as efficiently as expected, resulting in impact.\r\n\r\nNext update by: Monday, May 25, 2026, at 6:30 AM UTC"
+            },
+            {
+              "createdAt": "2026-05-25T02:09:02.713Z",
+              "postType": "regular",
+              "content": "Title: Users may intermittently be unable to access Exchange Online\r\n\r\nUser impact: Users may intermittently be unable to access Exchange Online. \r\n\r\nCurrent status: We've confirmed that faulty authentication components within the infrastructure caused impact. We're developing and deploying a fix we anticipate will alleviate impact. \r\n\r\nScope of impact: This issue may impact users worldwide that are routed through the impacted infrastructure. This information may be updated as our investigation continues.\r\n\r\nStart time: Sunday, May 24, 2026, at 11:00 PM UTC\r\n\r\nRoot cause: A portion of the structured query language infrastructure responsible for accessing Exchange Online isn't performing as efficiently as expected, resulting in impact.\r\n\r\nNext update by: Monday, May 25, 2026, at 4:30 AM UTC"
+            },
+            {
+              "createdAt": "2026-05-25T00:22:56.383Z",
+              "postType": "regular",
+              "content": "Title: Users may intermittently be unable to access Exchange Online\r\n\r\nUser impact: Users may intermittently be unable to access Exchange Online. \r\n\r\nCurrent status: We were alerted that a portion of the SQL infrastructure responsible for accessing Exchange Online isn't performing as efficiently as expected which resulted in impact. We're investigating different troubleshooting methods to alleviate impact.\r\n\r\nScope of impact: This issue may impact users worldwide that are routed through the impacted infrastructure. This information may be updated as our investigation continues.\r\n\r\nStart time: Sunday, May 24, 2026, at 11:00 PM UTC\r\n\r\nRoot cause: A portion of the structured query language infrastructure responsible for accessing Exchange Online isn't performing as efficiently as expected, resulting in impact.\r\n\r\nNext update by: Monday, May 25, 2026, at 2:30 AM UTC"
+            },
+            {
+              "createdAt": "2026-05-24T23:22:54.527Z",
+              "postType": "regular",
+              "content": "Title: Potential issues accessing mailboxes via one or more connection methods\n\nUser impact: Users may experience errors or failures when accessing their mailbox via one or more Exchange Online connection methods.\n\nCurrent status: We're investigating a potential issue and checking for impact to your organization. We'll provide an update within 60 minutes."
             }
           ],
           "affectedServices": [
