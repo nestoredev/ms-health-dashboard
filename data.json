@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-26T08:13:04.011Z",
+  "lastUpdated": "2026-05-26T08:43:13.882Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -130,6 +130,31 @@
               "createdAt": "2026-02-16T05:07:28.317Z",
               "postType": "regular",
               "content": "Title: Some users may see that when selecting a meeting room when scheduling meetings, it changes from available to unavailable\n\nUser impact: Users may see that after selecting a meeting room when scheduling meetings, it changes from available to unavailable.\n\nMore info: Specifically, the meeting room selected is incorrectly changing from available to unavailable in Exchange Online. \n\nCurrent status: We're investigating a potential issue with Exchange Online and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online"
+          ]
+        },
+        {
+          "id": "EX1322762",
+          "title": "Some users may see older draft email messages appear as recently modified in Exchange Online",
+          "startTime": "2026-05-26T08:15:52.11Z",
+          "endTime": null,
+          "lastModified": "2026-05-26T08:27:31.253Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may see older draft email messages appear as recently modified in Exchange Online.",
+          "scopeOfImpact": "Impact is specific to some users attempting to view draft email messages in Exchange Online.",
+          "rootCause": "Annotation-only updates performed by the specific workload is incorrectly updating the LastModificationTime property on draft email messages, causing draft email messages to be incorrectly updated and resulting in older drafts appearing as recently modified in users’ mailboxes.",
+          "nextUpdateBy": "Tuesday, May 26, 2026, at 10:30 AM UTC",
+          "feature": "Reports of an Incident",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-05-26T08:18:36.723Z",
+              "postType": "regular",
+              "content": "Title: Some users may see older draft email messages appear as recently modified in Exchange Online\r\n\r\nUser impact: Users may see older draft email messages appear as recently modified in Exchange Online.\r\n\r\nMore info: Users may notice that previously created draft email messages appear with a recent modification date, even when no visible changes have been made. This behaviour can affect multiple draft items, where older drafts appear as if they were modified recently, leading to confusion when trying to determine when a draft was originally created or last edited.\r\n\r\nCurrent status: We’re analyzing reported behaviour to better understand the issue and to determine the cause of impact.\r\n\r\nScope of impact: Impact is specific to some users attempting to view draft email messages in Exchange Online.\r\n\r\nRoot cause: Annotation-only updates performed by the specific workload is incorrectly updating the LastModificationTime property on draft email messages, causing draft email messages to be incorrectly updated and resulting in older drafts appearing as recently modified in users’ mailboxes.\r\n\r\nNext update by: Tuesday, May 26, 2026, at 10:30 AM UTC"
             }
           ],
           "affectedServices": [
