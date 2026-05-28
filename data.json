@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-28T11:30:29.748Z",
+  "lastUpdated": "2026-05-28T12:00:37.775Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -840,9 +840,9 @@
     {
       "id": "PB1314779",
       "title": "Users may be unable to access or may experience delays when accessing Microsoft Fabric",
-      "startTime": "2026-05-18T12:24:00Z",
-      "endTime": "2026-05-19T18:30:11Z",
-      "lastModified": "2026-05-26T23:49:00.36Z",
+      "startTime": "2026-05-18T13:53:00Z",
+      "endTime": "2026-05-19T20:59:00Z",
+      "lastModified": "2026-05-28T11:46:02.18Z",
       "status": "postIncidentReviewPublished",
       "severity": "incident",
       "userImpact": "Users may have been unable to access or may have experienced delays when accessing Microsoft Fabric.",
@@ -865,7 +865,7 @@
         {
           "createdAt": "2026-05-19T18:30:25.103Z",
           "postType": "regular",
-          "content": "Title: Users may be unable to access or may experience delays when accessing Microsoft Fabric\n\nUser impact: Users may have been unable to access or may have experienced delays when accessing Microsoft Fabric.\n\nFinal status: After a period of extended monitoring, we confirmed that the issue is resolved. \n \nScope of impact: Any user attempting to access Microsoft Fabric may have been impacted.\n \nStart time: Monday, May 18, 2026, at 1:53 PM UTC\n \nEnd time: Monday, May 18, 2026, at 8:59 PM UTC\n \nPreliminary root cause: An unexpected increase in request traffic caused a portion of infrastructure that handles Microsoft Fabric access to operate in a suboptimal state, resulting in impact.\n \nNext steps: \nWe're reviewing Microsoft Fabric request handling pathways to ensure similar future events don't occur. \n \nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days."
+          "content": "Title: Users may be unable to access or may experience delays when accessing Microsoft Fabric\n\nUser impact: Users may have been unable to access or may have experienced delays when accessing Microsoft Fabric.\n\nFinal status: After a period of extended monitoring, we confirmed that the issue is resolved. \n \nScope of impact: Any user attempting to access Microsoft Fabric may have been impacted.\n \nStart time: Monday, May 18, 2026, at 1:53 PM UTC\n \nEnd time: Monday, May 18, 2026, at 8:59 PM UTC\n \nRoot cause: On May 18, 2026, Microsoft identified elevated fraudulent traffic volumes for the Microsoft Fabric service. This resulted in increased load on portions of the front-end infrastructure, leading to intermittent service degradation. The traffic exhibited characteristics outside of typical usage patterns, which contributed to resource saturation before mitigation controls were fully optimized, leading to increased request failures.\n \nNext steps: \n- For a more comprehensive list of next steps and actions, please refer to the Post Incident Report document.\n \nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days."
         },
         {
           "createdAt": "2026-05-18T21:58:12.413Z",
