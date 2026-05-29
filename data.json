@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-29T21:09:56.630Z",
+  "lastUpdated": "2026-05-29T21:40:04.132Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -342,19 +342,24 @@
       "issues": [
         {
           "id": "PB1326495",
-          "title": "Some users may experience errors when performing actions in Microsoft Fabric Notebooks",
+          "title": "Users may be unable to initiate Spark sessions or open and perform actions in Microsoft Fabric Notebooks",
           "startTime": "2026-05-29T19:37:36.723Z",
           "endTime": null,
-          "lastModified": "2026-05-29T20:21:40.187Z",
+          "lastModified": "2026-05-29T21:14:58.217Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "userImpact": "Users may experience errors when performing actions in Microsoft Fabric Notebooks",
-          "scopeOfImpact": "Some users may experience errors when performing actions in Microsoft Fabric Notebooks during this impacting event. \r\n\r\nStart time: Friday, May 29, 2026, at 6:55 PM UTC",
-          "rootCause": "",
-          "nextUpdateBy": "Friday, May 29, 2026, at 9:30 PM UTC",
+          "userImpact": "Users may be unable to initiate Spark sessions or open and perform actions in Microsoft Fabric Notebooks.",
+          "scopeOfImpact": "Users attempting to initiate Spark sessions or open and perform actions within Microsoft Fabric Notebooks may be impacted.\r\n\r\nStart time: Friday, May 29, 2026, at 6:55 PM UTC",
+          "rootCause": "An issue with a routine maintenance procedure on an upstream supporting service is causing it to perform at suboptimal levels, resulting in impact.",
+          "nextUpdateBy": "Friday, May 29, 2026, at 11:30 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-05-29T21:14:58.217Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to initiate Spark sessions or open and perform actions in Microsoft Fabric Notebooks\r\n\r\nUser impact: Users may be unable to initiate Spark sessions or open and perform actions in Microsoft Fabric Notebooks.\r\n\r\nCurrent status: We've confirmed that an issue with a routine maintenance procedure on an upstream supporting service is causing it to perform at suboptimal levels, resulting in impact to Spark sessions and Notebook operations, and we've updated the Title, User impact, and Scope of impact fields of this communication accordingly. We're manually restoring the upstream service to a healthy state and anticipate impact may be fully remediated by our next scheduled communications update, at which point we'll verify the issue is resolved through internal telemetry.\r\n\r\nScope of impact: Users attempting to initiate Spark sessions or open and perform actions within Microsoft Fabric Notebooks may be impacted.\r\n\r\nStart time: Friday, May 29, 2026, at 6:55 PM UTC\r\n\r\nRoot cause: An issue with a routine maintenance procedure on an upstream supporting service is causing it to perform at suboptimal levels, resulting in impact.\r\n\r\nNext update by: Friday, May 29, 2026, at 11:30 PM UTC"
+            },
             {
               "createdAt": "2026-05-29T20:11:05.39Z",
               "postType": "regular",
