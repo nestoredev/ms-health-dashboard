@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-29T23:10:25.233Z",
+  "lastUpdated": "2026-05-29T23:40:32.480Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1237,7 +1237,7 @@
       "title": "Users are unable to access Microsoft 365 services in South America",
       "startTime": "2026-05-13T13:30:00Z",
       "endTime": "2026-05-13T16:30:00Z",
-      "lastModified": "2026-05-21T22:52:34.06Z",
+      "lastModified": "2026-05-29T23:31:49.4Z",
       "status": "postIncidentReviewPublished",
       "severity": "incident",
       "userImpact": "Some users were unable to access Microsoft 365 services.",
@@ -1247,6 +1247,11 @@
       "feature": "Access",
       "isResolved": true,
       "posts": [
+        {
+          "createdAt": "2026-05-29T23:31:49.4Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        },
         {
           "createdAt": "2026-05-21T22:52:34.06Z",
           "postType": "regular",
@@ -1266,11 +1271,6 @@
           "createdAt": "2026-05-13T19:29:26.367Z",
           "postType": "regular",
           "content": "Title: Users are unable to access Microsoft 365 services in South America\n\nUser impact: Some users are unable to access Microsoft 365 services.\n\nMore info: Users may experience email delivery delays. intermittent connection disruptions, and encounter service unavailability (503) errors when connecting to Outlook and Teams. Additionally, users may be unable to access SharePoint sites and OneDrive content.\n\nCurrent status: The vast majority of users are no longer affected by this event. We're continuing to employ infrastructure optimizations to address full resolution for any users still residually affected. \n\nScope of impact: Some users in South America attempting to access Microsoft 365 services may be impacted.\n\nStart time: Wednesday, May 13, 2026, at 1:30 PM UTC\n\nPreliminary root cause: Intermittent network connectivity issues are causing certain network paths to become unstable, resulting in increased traffic being routed through alternate paths and leading to impact.\n\nNext update by: Wednesday, May 13, 2026, at 8:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-05-13T18:10:54.233Z",
-          "postType": "regular",
-          "content": "Title: Users are unable to access Microsoft 365 services in South America\n\nUser impact: Some users are unable to access Microsoft 365 services.\n\nMore info: Users may experience email delivery delays. intermittent connection disruptions, and encounter service unavailability (503) errors when connecting to Outlook and Teams. Additionally, users may be unable to access SharePoint sites and OneDrive content.\n\nCurrent status: While the service remains stable for the majority of users, we’re taking steps to further manage traffic and reduce demand on portions of the service that are experiencing high load. By optimizing how data is processed, we’re working to stabilize performance across the environment.\n\nScope of impact: Some users in South America attempting to access Microsoft 365 services may be impacted.\n\nStart time: Wednesday, May 13, 2026, at 1:30 PM UTC\n\nPreliminary root cause: Intermittent network connectivity issues are causing certain network paths to become unstable, resulting in increased traffic being routed through alternate paths and leading to impact.\n\nNext update by: Wednesday, May 13, 2026, at 7:30 PM UTC"
         }
       ],
       "serviceName": "Microsoft 365 suite",
