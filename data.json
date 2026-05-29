@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-29T20:09:40.721Z",
+  "lastUpdated": "2026-05-29T20:39:49.377Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -146,20 +146,25 @@
           "title": "Users may be unable to view free/busy status for Gmail users within the Exchange Online calendar",
           "startTime": "2026-05-11T07:01:00Z",
           "endTime": null,
-          "lastModified": "2026-05-28T23:03:57.74Z",
+          "lastModified": "2026-05-29T20:26:43.777Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to view free/busy status for Gmail users within the Exchange Online calendar.",
           "scopeOfImpact": "Impact is specific to any user attempting to view free/busy status for Gmail contacts in their Exchange Online calendars.\r\n\r\nStart time: Monday, May 11, 2026, at 7:01 AM UTC",
-          "rootCause": "",
-          "nextUpdateBy": "Friday, May 29, 2026, at 10:00 PM UTC",
+          "rootCause": "A feature was recently disabled to mitigate an unrelated event, resulting in this impact.",
+          "nextUpdateBy": "Monday, June 01, 2026, at 10:30 PM UTC",
           "feature": "Reports of an Incident",
           "isResolved": false,
           "posts": [
             {
+              "createdAt": "2026-05-29T20:14:50.843Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to view free/busy status for Gmail users within the Exchange Online calendar\r\n\r\nUser impact: Users may be unable to view free/busy status for Gmail users within the Exchange Online calendar.\r\n\r\nMore info: Affected users may see an \"Unknown\" status for the external Gmail contacts.\r\n\r\nCurrent status: We've identified an authentication workflow issue within the affected infrastructure that is contributing to impact for this event. We're validating a potential fix aimed at correcting this additional issue within our internal testing environment and will provide timeline for its safe deployment and subsequent impact remediation as one becomes available.\r\n\r\nScope of impact: Impact is specific to any user attempting to view free/busy status for Gmail contacts in their Exchange Online calendars.\r\n\r\nStart time: Monday, May 11, 2026, at 7:01 AM UTC\r\n\r\nRoot cause: A feature was recently disabled to mitigate an unrelated event, resulting in this impact.\r\n\r\nNext update by: Monday, June 01, 2026, at 10:30 PM UTC"
+            },
+            {
               "createdAt": "2026-05-28T23:03:57.74Z",
               "postType": "regular",
-              "content": "Title: Users may be unable to view free/busy status for Gmail users within the Exchange Online calendar\r\n\r\nUser impact: Users may be unable to view free/busy status for Gmail users within the Exchange Online calendar.\r\n\r\nMore info: Affected users may see an \"Unknown\" status for the external Gmail contacts.\r\n\r\nCurrent status: We've confirmed the full deployment of our solution; however, we've identified through internal metrics and user feedback that impact is persisting. We're examining fresh logs from a subset of affected users to gain further insight and inform our next steps.\r\n\r\nScope of impact: Impact is specific to any user attempting to view free/busy status for Gmail contacts in their Exchange Online calendars.\r\n\r\nStart time: Monday, May 11, 2026, at 7:01 AM UTC\r\n\r\nNext update by: Friday, May 29, 2026, at 10:00 PM UTC"
+              "content": "Title: Users may be unable to view free/busy status for Gmail users within the Exchange Online calendar\r\n\r\nUser impact: Users may be unable to view free/busy status for Gmail users within the Exchange Online calendar.\r\n\r\nMore info: Affected users may see an \"Unknown\" status for the external Gmail contacts.\r\n\r\nCurrent status: We've confirmed the full deployment of our solution; however, we've identified through internal metrics and user feedback that impact is persisting. We're examining fresh logs from a subset of affected users to gain further insight and inform our next steps.\r\n\r\nScope of impact: Impact is specific to any user attempting to view free/busy status for Gmail contacts in their Exchange Online calendars.\r\n\r\nStart time: Monday, May 11, 2026, at 7:01 AM UTC\r\n\r\nRoot cause: A feature was recently disabled to mitigate an unrelated event, resulting in this impact.\r\n\r\nNext update by: Friday, May 29, 2026, at 10:00 PM UTC"
             },
             {
               "createdAt": "2026-05-28T17:54:37.427Z",
@@ -332,7 +337,7 @@
     },
     {
       "service": "Power BI",
-      "status": "investigating",
+      "status": "serviceDegradation",
       "id": "PowerBIcom",
       "issues": [
         {
@@ -340,16 +345,21 @@
           "title": "Some users may experience errors when performing actions in Microsoft Fabric Notebooks",
           "startTime": "2026-05-29T19:37:36.723Z",
           "endTime": null,
-          "lastModified": "2026-05-29T19:48:39.83Z",
-          "status": "investigating",
+          "lastModified": "2026-05-29T20:21:40.187Z",
+          "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may experience errors when performing actions in Microsoft Fabric Notebooks",
-          "scopeOfImpact": "",
+          "scopeOfImpact": "Some users may experience errors when performing actions in Microsoft Fabric Notebooks during this impacting event. \r\n\r\nStart time: Friday, May 29, 2026, at 6:55 PM UTC",
           "rootCause": "",
-          "nextUpdateBy": "",
+          "nextUpdateBy": "Friday, May 29, 2026, at 9:30 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-05-29T20:11:05.39Z",
+              "postType": "regular",
+              "content": "Title: Some users may experience errors when performing actions in Microsoft Fabric Notebooks\r\n\r\nUser impact: Users may experience errors when performing actions in Microsoft Fabric Notebooks\r\n\r\nCurrent status: We've identified a supporting upstream service is performing at suboptimal levels, resulting in poor performance when completing actions in Microsoft Fabric Notebooks. We're working to identify any possible mitigation options while in parallel investigating the root cause of the upstream impact.\r\n\r\nScope of impact: Some users may experience errors when performing actions in Microsoft Fabric Notebooks during this impacting event. \r\n\r\nStart time: Friday, May 29, 2026, at 6:55 PM UTC\r\n\r\nNext update by: Friday, May 29, 2026, at 9:30 PM UTC"
+            },
             {
               "createdAt": "2026-05-29T19:48:39.83Z",
               "postType": "regular",
