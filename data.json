@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-30T03:41:35.601Z",
+  "lastUpdated": "2026-05-30T04:11:42.812Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -466,9 +466,9 @@
     {
       "id": "PB1326627",
       "title": "Users may be unable to perform control plane operations on their capacities in Microsoft Fabric",
-      "startTime": "2026-05-30T00:23:27Z",
-      "endTime": "2026-05-30T03:37:13Z",
-      "lastModified": "2026-05-30T03:37:30.78Z",
+      "startTime": "2026-05-29T17:25:00Z",
+      "endTime": "2026-05-30T03:20:00Z",
+      "lastModified": "2026-05-30T03:39:29.407Z",
       "status": "serviceRestored",
       "severity": "advisory",
       "userImpact": "Users may have been unable to perform control plane operations on their capacities in Microsoft Fabric.",
@@ -481,7 +481,7 @@
         {
           "createdAt": "2026-05-30T03:37:30.78Z",
           "postType": "regular",
-          "content": "Title: Users may be unable to perform control plane operations on their capacities in Microsoft Fabric\n\nUser impact: Users may have been unable to perform control plane operations on their capacities in Microsoft Fabric.\n\nMore info: The affected control plane operations may have consisted of the following:\n \n- Deprovisioning \n- Pausing \n- Deleting \n\nCurrent status: We've completed the re-enabling process for the affected first party app and confirmed with our service telemetry that the issue is resolved. \n\nScope of impact: Any user who attempted to perform the control plane operations listed in the more info section on their capacities in Microsoft Fabric may have been affected. \n\nStart time: Friday, May 29, 2026, at 5:25 PM UTC\n\nEnd time: Saturday, May 30, 2026, at 3:20 AM UTC\n\nRoot cause: A first party app that facilitates the impacted operations was disabled and caused impact.\n\nNext steps:\n- We've investigating the impacted first party app which facilitates control plane operations to better understand why it was disabled so that we can prevent similar impact to Microsoft Fabric capacities in the future.\n \nThis is the final update for the event."
+          "content": "Title: Users may be unable to perform control plane operations on their capacities in Microsoft Fabric\n\nUser impact: Users may have been unable to perform control plane operations on their capacities in Microsoft Fabric.\n\nMore info: The affected control plane operations may have consisted of the following:\n \n- Deprovisioning \n- Pausing \n- Deleting \n\nFinal status: We've completed the re-enabling process for the affected first party app and confirmed with our service telemetry that the issue is resolved. \n\nScope of impact: Any user who attempted to perform the control plane operations listed in the more info section on their capacities in Microsoft Fabric may have been affected. \n\nStart time: Friday, May 29, 2026, at 5:25 PM UTC\n\nEnd time: Saturday, May 30, 2026, at 3:20 AM UTC\n\nRoot cause: A first party app that facilitates the impacted operations was disabled and caused impact.\n\nNext steps:\n- We've investigating the impacted first party app which facilitates control plane operations to better understand why it was disabled so that we can prevent similar impact to Microsoft Fabric capacities in the future.\n \nThis is the final update for the event."
         },
         {
           "createdAt": "2026-05-30T01:56:24.477Z",
