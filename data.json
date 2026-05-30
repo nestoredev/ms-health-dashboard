@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-30T00:40:46.387Z",
+  "lastUpdated": "2026-05-30T01:10:54.466Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -345,16 +345,21 @@
           "title": "Users may be unable to perform control plane operations on their capacities in Microsoft Fabric",
           "startTime": "2026-05-30T00:23:27Z",
           "endTime": null,
-          "lastModified": "2026-05-30T00:27:29.853Z",
-          "status": "investigating",
+          "lastModified": "2026-05-30T00:48:55.43Z",
+          "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to perform control plane operations on their capacities in Microsoft Fabric.",
-          "scopeOfImpact": "",
+          "scopeOfImpact": "Any user attempting to perform the control plane operations listed in the more info section on their capacities in Microsoft Fabric may be affected. This section may be updated as our investigation continues.",
           "rootCause": "",
-          "nextUpdateBy": "",
+          "nextUpdateBy": "Saturday, May 30, 2026, at 2:00 AM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-05-30T00:48:55.43Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to perform control plane operations on their capacities in Microsoft Fabric\n\nUser impact: Users may be unable to perform control plane operations on their capacities in Microsoft Fabric.\n\nCurrent status: We're reviewing the service telemetry to isolate any failures or errors that can help point to its underlying root cause and identify a remediation plan.\n\nScope of impact: Any user attempting to perform the control plane operations listed in the more info section on their capacities in Microsoft Fabric may be affected. This section may be updated as our investigation continues.\n\nNext update by: Saturday, May 30, 2026, at 2:00 AM UTC"
+            },
             {
               "createdAt": "2026-05-30T00:27:29.853Z",
               "postType": "regular",
