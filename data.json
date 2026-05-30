@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-30T18:15:25.408Z",
+  "lastUpdated": "2026-05-30T18:45:33.237Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -143,33 +143,38 @@
         },
         {
           "id": "EX1327187",
-          "title": "Some users may be unable to create online meetings from shared calendar events in Exchange Online",
+          "title": "Some users may be unable to create new online meetings from shared calendar events in Exchange Online",
           "startTime": "2026-05-30T09:11:59.853Z",
           "endTime": null,
-          "lastModified": "2026-05-30T13:29:10.273Z",
+          "lastModified": "2026-05-30T18:40:06.587Z",
           "status": "serviceDegradation",
           "severity": "incident",
-          "userImpact": "Users may be unable to create online meetings from shared calendar events in Exchange Online.",
-          "scopeOfImpact": "Impact is specific to some users attempting to create online meetings from shared calendar events in Exchange Online.\r\n\r\nStart time: Tuesday, May 26, 2026, at 12:00 AM UTC",
-          "rootCause": "",
-          "nextUpdateBy": "Saturday, May 30, 2026, at 8:00 PM UTC",
+          "userImpact": "Users may be unable to create new online meetings from shared calendar events in Exchange Online.",
+          "scopeOfImpact": "Impact is specific to some users attempting to create new online meetings from shared calendar events in Exchange Online.\r\n\r\nStart time: Tuesday, May 26, 2026, at 12:00 AM UTC",
+          "rootCause": "A recent service update in Exchange Online introduced an issue within an authorization component of the calendar service, resulting in impact.",
+          "nextUpdateBy": "Monday, June 01, 2026, at 6:00 PM UTC",
           "feature": "Performance degradation",
           "isResolved": false,
           "posts": [
             {
+              "createdAt": "2026-05-30T18:40:06.587Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to create new online meetings from shared calendar events in Exchange Online\r\n\r\nUser impact: Users may be unable to create new online meetings from shared calendar events in Exchange Online.\r\n\r\nMore info: Affected users can create online meetings from their personal calendars as an alternative method, and existing shared calendar events remain unaffected.\r\n\r\nCurrent status: We've identified that a recent service update in Exchange Online introduced an issue within an authorization component of the calendar service, resulting in impact. We're developing and validating a code fix to address the issue and will provide a deployment timeline once it becomes available.\r\n\r\nScope of impact: Impact is specific to some users attempting to create new online meetings from shared calendar events in Exchange Online.\r\n\r\nStart time: Tuesday, May 26, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: A recent service update in Exchange Online introduced an issue within an authorization component of the calendar service, resulting in impact.\r\n\r\nNext update by: Monday, June 01, 2026, at 6:00 PM UTC"
+            },
+            {
               "createdAt": "2026-05-30T13:28:14.73Z",
               "postType": "regular",
-              "content": "Title: Some users may be unable to create online meetings from shared calendar events in Exchange Online\r\n\r\nUser impact: Users may be unable to create online meetings from shared calendar events in Exchange Online.\r\n\r\nCurrent status: We’re continuing to investigate the issue that is causing failures when obtaining authentication tokens within the calendar service. We’re also continually working to validate if the aforementioned service update is contributing to impact, and what remediation actions are required.\r\n\r\nScope of impact: Impact is specific to some users attempting to create online meetings from shared calendar events in Exchange Online.\r\n\r\nStart time: Tuesday, May 26, 2026, at 12:00 AM UTC\r\n\r\nNext update by: Saturday, May 30, 2026, at 8:00 PM UTC"
+              "content": "Title: Some users may be unable to create new online meetings from shared calendar events in Exchange Online\r\n\r\nUser impact: Users may be unable to create new online meetings from shared calendar events in Exchange Online.\r\n\r\nCurrent status: We’re continuing to investigate the issue that is causing failures when obtaining authentication tokens within the calendar service. We’re also continually working to validate if the aforementioned service update is contributing to impact, and what remediation actions are required.\r\n\r\nScope of impact: Impact is specific to some users attempting to create new online meetings from shared calendar events in Exchange Online.\r\n\r\nStart time: Tuesday, May 26, 2026, at 12:00 AM UTC\r\n\r\nNext update by: Saturday, May 30, 2026, at 8:00 PM UTC"
             },
             {
               "createdAt": "2026-05-30T11:20:43.123Z",
               "postType": "regular",
-              "content": "Title: Some users may be unable to create online meetings from shared calendar events in Exchange Online\r\n\r\nUser impact: Users may be unable to create online meetings from shared calendar events in Exchange Online.\r\n\r\nCurrent status: We’re investigating an issue that is causing failures when obtaining authentication tokens within the calendar service. We’ve identified a potential correlation with a recent service update and are testing mitigation actions to validate impact and confirm a resolution path.\r\n\r\nScope of impact: Impact is specific to some users attempting to create online meetings from shared calendar events in Exchange Online.\r\n\r\nNext update by: Saturday, May 30, 2026, at 1:30 PM UTC"
+              "content": "Title: Some users may be unable to create new online meetings from shared calendar events in Exchange Online\r\n\r\nUser impact: Users may be unable to create new online meetings from shared calendar events in Exchange Online.\r\n\r\nCurrent status: We’re investigating an issue that is causing failures when obtaining authentication tokens within the calendar service. We’ve identified a potential correlation with a recent service update and are testing mitigation actions to validate impact and confirm a resolution path.\r\n\r\nScope of impact: Impact is specific to some users attempting to create new online meetings from shared calendar events in Exchange Online.\r\n\r\nNext update by: Saturday, May 30, 2026, at 1:30 PM UTC"
             },
             {
               "createdAt": "2026-05-30T09:13:46.043Z",
               "postType": "regular",
-              "content": "Title: Some users may be unable to create online meetings from shared calendar events in Exchange Online\r\n\r\nUser impact: Users may be unable to create online meetings from shared calendar events in Exchange Online.\r\n\r\nCurrent status: We’re reviewing service telemetry to isolate the root cause of the issue and determine a fix.\r\n\r\nScope of impact: Impact is specific to some users attempting to create online meetings from shared calendar events in Exchange Online.\r\n\r\nNext update by: Saturday, May 30, 2026, at 11:30 AM UTC"
+              "content": "Title: Some users may be unable to create new online meetings from shared calendar events in Exchange Online\r\n\r\nUser impact: Users may be unable to create new online meetings from shared calendar events in Exchange Online.\r\n\r\nCurrent status: We’re reviewing service telemetry to isolate the root cause of the issue and determine a fix.\r\n\r\nScope of impact: Impact is specific to some users attempting to create new online meetings from shared calendar events in Exchange Online.\r\n\r\nNext update by: Saturday, May 30, 2026, at 11:30 AM UTC"
             }
           ],
           "affectedServices": [
@@ -1978,83 +1983,6 @@
       "serviceName": "Exchange Online",
       "affectedServices": [
         "Exchange Online"
-      ]
-    },
-    {
-      "id": "SP1296487",
-      "title": "Users may not be able to load the search bar in SharePoint Online sites",
-      "startTime": "2026-04-30T07:30:00Z",
-      "endTime": "2026-04-30T18:45:00Z",
-      "lastModified": "2026-04-30T20:17:40.603Z",
-      "status": "serviceRestored",
-      "severity": "incident",
-      "userImpact": "Users may not have been able to load the search bar in SharePoint Online sites.",
-      "scopeOfImpact": "This event impacted any user attempting to use the search bar in SharePoint Online.\n\nStart time: Thursday, April 30, 2026, at 7:30 AM UTC\n\nEnd time: Thursday, April 30, 2026, at 6:45 PM UTC",
-      "rootCause": "A recent service update contained a regression that resulted in this impact.\n\nNext steps: \n- We're reviewing the responsible change to better understand what led to the error that resulted in impact and prevent similar future occurrences by improving our service update testing and validation phases.\n\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "SharePoint Online all features",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-04-30T20:17:40.603Z",
-          "postType": "regular",
-          "content": "Title: Users may not be able to load the search bar in SharePoint Online sites\n\nUser impact: Users may not have been able to load the search bar in SharePoint Online sites.\n\nFinal status: We’ve confirmed that the recent change that we rolled back contained a regression that resulted in this impact. After completing this rollback, we were able to confirm that this action resolved the through service health telemetry and confirmation from a subset of affected users.\n\nScope of impact: This event impacted any user attempting to use the search bar in SharePoint Online.\n\nStart time: Thursday, April 30, 2026, at 7:30 AM UTC\n\nEnd time: Thursday, April 30, 2026, at 6:45 PM UTC\n\nRoot cause: A recent service update contained a regression that resulted in this impact.\n\nNext steps: \n- We're reviewing the responsible change to better understand what led to the error that resulted in impact and prevent similar future occurrences by improving our service update testing and validation phases.\n\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-04-30T18:30:20.72Z",
-          "postType": "regular",
-          "content": "Title: Users may not be able to load the search bar in SharePoint Online sites\n\nUser impact: Users may not be able to load the search bar in SharePoint Online sites.\n\nCurrent status: We've discovered a recent change that may be contributing to this event. We’ve rolled it back and our monitoring service health to determine whether this mitigates the event, which will help us confirm our hypothesis on the root cause of impact.\n\nScope of impact: This event impacts any user attempting to use the search bar in SharePoint Online.\n\nNext update by: Thursday, April 30, 2026, at 8:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-04-30T17:17:55.183Z",
-          "postType": "regular",
-          "content": "Title: Users may not be able to load the search bar in SharePoint Online sites\n\nUser impact: Users may not be able to load the search bar in SharePoint Online sites.\n\nCurrent status: We've reproduced the issue in our environment, and we're reviewing traces collected while the issue is occurring to pinpoint the source of the failure.\n \nScope of impact: This event impacts any user attempting to use the search bar in SharePoint Online.\n\nNext update by: Thursday, April 30, 2026, at 6:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-04-30T16:20:51.01Z",
-          "postType": "regular",
-          "content": "Title: Possible delays or problems when accessing SharePoint Online\n\nUser impact: Some customers have reported issues with accessing the service, or using features in SharePoint Online.\n\nCurrent status: We’re looking into your reported issue and checking for impact to your organization. We'll provide an update within one hour."
-        }
-      ],
-      "serviceName": "SharePoint Online",
-      "affectedServices": [
-        "SharePoint Online"
-      ]
-    },
-    {
-      "id": "OD1296516",
-      "title": "Users may not be able to load the search bar in Microsoft OneDrive",
-      "startTime": "2026-04-30T07:30:00Z",
-      "endTime": "2026-04-30T18:45:00Z",
-      "lastModified": "2026-04-30T20:20:24.253Z",
-      "status": "serviceRestored",
-      "severity": "incident",
-      "userImpact": "Users may not have been able to load the search bar in OneDrive.",
-      "scopeOfImpact": "This event impacted any user attempting to use the search bar in OneDrive.\n\nStart time: Thursday, April 30, 2026, at 7:30 AM UTC\n\nEnd time: Thursday, April 30, 2026, at 6:45 PM UTC",
-      "rootCause": "A recent service update contained a regression that resulted in this impact.\n\nNext steps: \n- We're reviewing the responsible change to better understand what led to the error that resulted in impact and prevent similar future occurrences by improving our service update testing and validation phases.\n\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "OneDrive for Business",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-04-30T20:20:24.253Z",
-          "postType": "regular",
-          "content": "Title: Users may not be able to load the search bar in Microsoft OneDrive\n\nUser impact: Users may not have been able to load the search bar in OneDrive.\n\nFinal status: We’ve confirmed that the recent change that we rolled back contained a regression that resulted in this impact. After completing this rollback, we were able to confirm that this action resolved the through service health telemetry and confirmation from a subset of affected users.\n\nScope of impact: This event impacted any user attempting to use the search bar in OneDrive.\n\nStart time: Thursday, April 30, 2026, at 7:30 AM UTC\n\nEnd time: Thursday, April 30, 2026, at 6:45 PM UTC\n\nRoot cause: A recent service update contained a regression that resulted in this impact.\n\nNext steps: \n- We're reviewing the responsible change to better understand what led to the error that resulted in impact and prevent similar future occurrences by improving our service update testing and validation phases.\n\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-04-30T18:30:54.577Z",
-          "postType": "regular",
-          "content": "Title: Users may not be able to load the search bar in Microsoft OneDrive\n\nUser impact: Users may not be able to load the search bar in Microsoft OneDrive.\n\nCurrent status: We've discovered a recent change that may be contributing to this event. We’ve rolled it back and our monitoring service health to determine whether this mitigates the event, which will help us confirm our hypothesis on the root cause of impact.\n\nScope of impact: This event impacts any user attempting to use the search bar in OneDrive.\n\nNext update by: Thursday, April 30, 2026, at 8:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-04-30T17:16:17.19Z",
-          "postType": "regular",
-          "content": "Title: Users may not be able to load the search bar in Microsoft OneDrive\n\nUser impact: Users may not be able to load the search bar in Microsoft OneDrive.\n\nCurrent status: We've reproduced the issue in our environment, and we're reviewing traces collected while the issue is occurring to pinpoint the source of the failure.\n\nScope of impact: This event impacts any user attempting to use the search bar in Microsoft OneDrive.\n\nNext update by: Thursday, April 30, 2026, at 6:30 PM UTC"
-        }
-      ],
-      "serviceName": "Microsoft OneDrive",
-      "affectedServices": [
-        "Microsoft OneDrive"
       ]
     }
   ]
