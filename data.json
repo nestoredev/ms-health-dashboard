@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-30T11:13:32.922Z",
+  "lastUpdated": "2026-05-30T11:43:41.071Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -146,16 +146,21 @@
           "title": "Some users may be unable to create online meetings from shared calendar events in Exchange Online",
           "startTime": "2026-05-30T09:11:59.853Z",
           "endTime": null,
-          "lastModified": "2026-05-30T09:13:46.043Z",
+          "lastModified": "2026-05-30T11:20:43.123Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to create online meetings from shared calendar events in Exchange Online.",
           "scopeOfImpact": "Impact is specific to some users attempting to create online meetings from shared calendar events in Exchange Online.",
           "rootCause": "",
-          "nextUpdateBy": "Saturday, May 30, 2026, at 11:30 AM UTC",
+          "nextUpdateBy": "Saturday, May 30, 2026, at 1:30 PM UTC",
           "feature": "Performance degradation",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-05-30T11:20:43.123Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to create online meetings from shared calendar events in Exchange Online\r\n\r\nUser impact: Users may be unable to create online meetings from shared calendar events in Exchange Online.\r\n\r\nCurrent status: We’re investigating an issue that is causing failures when obtaining authentication tokens within the calendar service. We’ve identified a potential correlation with a recent service update and are testing mitigation actions to validate impact and confirm a resolution path.\r\n\r\nScope of impact: Impact is specific to some users attempting to create online meetings from shared calendar events in Exchange Online.\r\n\r\nNext update by: Saturday, May 30, 2026, at 1:30 PM UTC"
+            },
             {
               "createdAt": "2026-05-30T09:13:46.043Z",
               "postType": "regular",
