@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-01T09:25:27.406Z",
+  "lastUpdated": "2026-06-01T09:55:35.791Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -409,16 +409,21 @@
           "title": "Some users may be unable to setup Multi-Factor Authentication (MFA) or access the mysignins.microsoft.com website",
           "startTime": "2026-06-01T08:51:41Z",
           "endTime": null,
-          "lastModified": "2026-06-01T09:16:43.41Z",
+          "lastModified": "2026-06-01T09:40:54.987Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to setup MFA or access the mysignins.microsoft.com website.",
-          "scopeOfImpact": "Some users attempting to setup MFA or accessing the mysignins.microsoft.com website may be impacted.",
+          "scopeOfImpact": "",
           "rootCause": "",
-          "nextUpdateBy": "Monday, June 01, 2026, at 11:00 AM UTC",
+          "nextUpdateBy": "",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-06-01T09:32:42.543Z",
+              "postType": "quick",
+              "content": "Upon an initial review of service telemetry, we've identified cache failures as a potential root cause for impact, and we're continuing to investigate this further to verify this theory. In parallel, we're conducting a failover to healthy infrastructure in an attempt to provide relief.\n\nThis quick update is designed to give the latest information on this issue."
+            },
             {
               "createdAt": "2026-06-01T09:16:43.41Z",
               "postType": "regular",
