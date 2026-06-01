@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-01T10:55:54.397Z",
+  "lastUpdated": "2026-06-01T11:26:01.727Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -409,16 +409,21 @@
           "title": "Some users may be unable to setup Multi-Factor Authentication (MFA) or access the mysignins.microsoft.com website",
           "startTime": "2026-06-01T08:51:41Z",
           "endTime": null,
-          "lastModified": "2026-06-01T10:27:12.257Z",
+          "lastModified": "2026-06-01T10:51:57.857Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to setup MFA or access the mysignins.microsoft.com website.",
-          "scopeOfImpact": "",
+          "scopeOfImpact": "Some users attempting to setup MFA or accessing the mysignins.microsoft.com website may be impacted.",
           "rootCause": "",
-          "nextUpdateBy": "Monday, June 1, 2026, at 11:00 AM UTC",
+          "nextUpdateBy": "Monday, June 1, 2026, at 12:00 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-06-01T10:51:57.857Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to setup Multi-Factor Authentication (MFA) or access the mysignins.microsoft.com website\n\nUser impact: Users may be unable to setup MFA or access the mysignins.microsoft.com website.\n\nMore info: Users may encounter 504 Gateway Timeout errors when trying to access mysignins.microsoft.com\n \nCurrent status: We've completed mitigation actions, including failing over to alternate infrastructure, and are continuing to monitor service health. As elevated error rates persist, we're actively evaluating additional mitigation options, including optimizing how service requests are processed to further stabilize the service.\n \nScope of impact: Some users attempting to setup MFA or accessing the mysignins.microsoft.com website may be impacted.\n \nNext update by: Monday, June 1, 2026, at 12:00 PM UTC"
+            },
             {
               "createdAt": "2026-06-01T10:27:12.257Z",
               "postType": "quick",
