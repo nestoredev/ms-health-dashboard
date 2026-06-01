@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-01T18:28:20.998Z",
+  "lastUpdated": "2026-06-01T18:58:31.920Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -261,12 +261,12 @@
           "title": "Users may be unable to view free/busy status for Gmail users within the Exchange Online calendar",
           "startTime": "2026-05-11T07:01:00Z",
           "endTime": null,
-          "lastModified": "2026-06-01T18:18:45.097Z",
+          "lastModified": "2026-06-01T18:33:24.76Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to view free/busy status for Gmail users within the Exchange Online calendar.",
-          "scopeOfImpact": "Impact is specific to any user attempting to view free/busy status for Gmail contacts in their Exchange Online calendars.\n\nStart time: Monday, May 11, 2026, at 7:01 AM UTC",
-          "rootCause": "An authentication workflow issue within the affected infrastructure that is causing to impact for this event.",
+          "scopeOfImpact": "Impact is specific to any user attempting to view free/busy status for Gmail contacts in their Exchange Online calendars.\r\n\r\nStart time: Monday, May 11, 2026, at 7:01 AM UTC",
+          "rootCause": "Basic Authentication credentials aren’t being correctly forwarded to the third-party service, resulting in the failures to obtain free/busy status responses and causing impact.",
           "nextUpdateBy": "Monday, June 01, 2026, at 10:30 PM UTC",
           "feature": "Reports of an Incident",
           "isResolved": false,
@@ -274,7 +274,7 @@
             {
               "createdAt": "2026-05-29T20:14:50.843Z",
               "postType": "regular",
-              "content": "Title: Users may be unable to view free/busy status for Gmail users within the Exchange Online calendar\n\nUser impact: Users may be unable to view free/busy status for Gmail users within the Exchange Online calendar.\n\nMore info: Affected users may see an \"Unknown\" status for the external Gmail contacts.\n\nCurrent status: We've identified an authentication workflow issue within the affected infrastructure that is contributing to impact for this event. We're validating a potential fix aimed at correcting this additional issue within our internal testing environment and will provide timeline for its safe deployment and subsequent impact remediation as one becomes available.\n\nScope of impact: Impact is specific to any user attempting to view free/busy status for Gmail contacts in their Exchange Online calendars.\n\nStart time: Monday, May 11, 2026, at 7:01 AM UTC\n\nRoot cause:  An authentication workflow issue within the affected infrastructure that is causing to impact for this event.\n\nNext update by: Monday, June 01, 2026, at 10:30 PM UTC"
+              "content": "Title: Users may be unable to view free/busy status for Gmail users within the Exchange Online calendar\r\n\r\nUser impact: Users may be unable to view free/busy status for Gmail users within the Exchange Online calendar.\r\n\r\nMore info: Affected users may see an \"Unknown\" status for the external Gmail contacts.\r\n\r\nCurrent status: We've identified that Basic Authentication credentials aren’t being correctly forwarded to the third-party service, resulting in the failures to obtain free/busy status responses and causing impact. We’ve updated the Root cause section of this communication to more accurately reflect this source of impact. We're validating a fix in our internal testing environment aimed at correcting the credential forwarding problem and will provide a timeline for its safe deployment and subsequent impact remediation as one becomes available.\r\n\r\nScope of impact: Impact is specific to any user attempting to view free/busy status for Gmail contacts in their Exchange Online calendars.\r\n\r\nStart time: Monday, May 11, 2026, at 7:01 AM UTC\r\n\r\nRoot cause: Basic Authentication credentials aren’t being correctly forwarded to the third-party service, resulting in the failures to obtain free/busy status responses and causing impact.\r\n\r\nNext update by: Monday, June 01, 2026, at 10:30 PM UTC"
             },
             {
               "createdAt": "2026-05-28T23:03:57.74Z",
@@ -464,9 +464,40 @@
     },
     {
       "service": "Microsoft OneDrive",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "OneDriveForBusiness",
-      "issues": []
+      "issues": [
+        {
+          "id": "OD1329835",
+          "title": "Some users at Microsoft may be unable to access internal Microsoft OneDrive content",
+          "startTime": "2026-06-01T17:37:03.537Z",
+          "endTime": null,
+          "lastModified": "2026-06-01T18:31:59.6Z",
+          "status": "serviceDegradation",
+          "severity": "incident",
+          "userImpact": "Users at Microsoft may be unable to access internal OneDrive content.",
+          "scopeOfImpact": "Some users at Microsoft may be unable to access internal OneDrive content and are returned an error message stating, \"Sorry, something went wrong.\"",
+          "rootCause": "",
+          "nextUpdateBy": "Monday, June 01, 2026, at 8:30 PM UTC",
+          "feature": "OneDrive for Business",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-06-01T18:30:13.293Z",
+              "postType": "regular",
+              "content": "Title: Some users at Microsoft may be unable to access internal Microsoft OneDrive content\r\n\r\nUser impact: Users at Microsoft may be unable to access internal OneDrive content.\r\n\r\nMore info: Users are returned an error message stating \"Sorry, something went wrong\" when accessing internal OneDrive content.\r\n\r\nCurrent status: We're analyzing recent updates deployed to Service Dog Food (SDF) or Microsoft's internal environments that may be contributing to impact, which will help us determine our next troubleshooting steps.\r\n\r\nScope of impact: Some users at Microsoft may be unable to access internal OneDrive content and are returned an error message stating, \"Sorry, something went wrong.\"\r\n\r\nNext update by: Monday, June 01, 2026, at 8:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-06-01T17:37:04.987Z",
+              "postType": "regular",
+              "content": "Title: Potential issues accessing Microsoft OneDrive content\r\n\r\nUser impact: Users may be unable to access OneDrive content and may notice delays or navigation errors.\r\n\r\nCurrent Status: We're investigating a potential issue and checking for impact to your organization. We'll provide an update within one hour."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft OneDrive"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft Teams",
