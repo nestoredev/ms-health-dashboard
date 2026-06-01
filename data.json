@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-01T13:56:47.105Z",
+  "lastUpdated": "2026-06-01T14:26:55.507Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -406,26 +406,32 @@
       "issues": [
         {
           "id": "MO1329446",
-          "title": "Unable to open files in Office for the web.",
+          "title": "Unable to open files in Office for the web or Microsoft Teams",
           "startTime": "2026-06-01T13:46:45Z",
           "endTime": null,
-          "lastModified": "2026-06-01T13:49:06.943Z",
+          "lastModified": "2026-06-01T14:20:31.477Z",
           "status": "serviceDegradation",
           "severity": "incident",
-          "userImpact": "Users may be unable to open files in Office for the web.",
-          "scopeOfImpact": "This issue could impact any user attempting to access Office Apps using Office for the web.",
+          "userImpact": "Users may be unable to open files in Office for the web or Microsoft Teams.",
+          "scopeOfImpact": "",
           "rootCause": "",
           "nextUpdateBy": "Monday, June 1, 2026, at 2:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
             {
+              "createdAt": "2026-06-01T14:06:31.32Z",
+              "postType": "quick",
+              "content": "Initial analysis indicates a potential cross-service issue impacting Office for the web experiences. We’re continuing to investigate service telemetry to isolate the source of the issue.\n \nThis quick update is designed to give the latest information on this issue.\n\nNext update by: Monday, June 1, 2026, at 2:30 PM UTC"
+            },
+            {
               "createdAt": "2026-06-01T13:49:06.943Z",
               "postType": "regular",
-              "content": "Title: Unable to open files in Office for the web.\n\nUser impact: Users may be unable to open files in Office for the web.\n\nMore info: Impacted Office Apps include, but are not limited to: \n- Excel\n\nWhen users open documents, impacted users are shown the following the following error message \"Office Online services aren't available right now. We're working to restore all services as soon as possible. Please check back soon.\"\n \nCurrent status: We're investigating service telemetry to isolate the source of the issue.\n \nScope of impact: This issue could impact any user attempting to access Office Apps using Office for the web.\n \nNext update by: Monday, June 1, 2026, at 2:30 PM UTC"
+              "content": "Title: Unable to open files in Office for the web.\n\nUser impact: Users may be unable to open files in Office for the web.\n\nMore info: Impacted Office Apps include, but are not limited to: \n- Excel\n\nWhen users open documents, impacted users are shown the following the following error message \"Office Online services aren't available right now. We're working to restore all services as soon as possible. Please check back soon.\"\n \nCurrent status: We're investigating service telemetry to isolate the source of the issue.\n \nScope of impact: This issue could impact any user attempting to access Office Apps using Office for the web or Microsoft Teams.\n \nNext update by: Monday, June 1, 2026, at 2:30 PM UTC"
             }
           ],
           "affectedServices": [
+            "Microsoft 365 suite",
             "SharePoint Online",
             "Microsoft OneDrive",
             "Microsoft Teams"
@@ -439,57 +445,33 @@
       "id": "SharePoint",
       "issues": [
         {
-          "id": "SP1329374",
-          "title": "Unable to open files in Office for the web.",
-          "startTime": "2026-06-01T12:42:01Z",
-          "endTime": null,
-          "lastModified": "2026-06-01T13:43:17.327Z",
-          "status": "serviceDegradation",
-          "severity": "incident",
-          "userImpact": "Users may be unable to open files in Office for the web.",
-          "scopeOfImpact": "This issue could impact any user attempting to access Office Apps using Office for the web.",
-          "rootCause": "",
-          "nextUpdateBy": "Monday, June 1, 2026, at 2:30 PM UTC",
-          "feature": "SharePoint Online all features",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-06-01T13:43:17.327Z",
-              "postType": "regular",
-              "content": "Title: Unable to open files in Office for the web.\n\nUser impact: Users may be unable to open files in Office for the web.\n\nMore info: Impacted Office Apps include, but are not limited to: \n- Excel\n\nWhen users open documents, impacted users are shown the following the following error message \"Office Online services aren't available right now. We're working to restore all services as soon as possible. Please check back soon.\"\n \nCurrent status: We're investigating service telemetry to isolate the source of the issue.\n \nScope of impact: This issue could impact any user attempting to access Office Apps using Office for the web.\n \nNext update by: Monday, June 1, 2026, at 2:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-06-01T12:42:02.25Z",
-              "postType": "regular",
-              "content": "Title: Possible delays or problems when accessing SharePoint Online\n\nUser impact: Some customers have reported issues with accessing the service, or using features in SharePoint Online.\n\nCurrent status: We’re looking into your reported issue and checking for impact to your organization. We'll provide an update within one hour."
-            }
-          ],
-          "affectedServices": [
-            "SharePoint Online"
-          ]
-        },
-        {
           "id": "MO1329446",
-          "title": "Unable to open files in Office for the web.",
+          "title": "Unable to open files in Office for the web or Microsoft Teams",
           "startTime": "2026-06-01T13:46:45Z",
           "endTime": null,
-          "lastModified": "2026-06-01T13:49:06.943Z",
+          "lastModified": "2026-06-01T14:20:31.477Z",
           "status": "serviceDegradation",
           "severity": "incident",
-          "userImpact": "Users may be unable to open files in Office for the web.",
-          "scopeOfImpact": "This issue could impact any user attempting to access Office Apps using Office for the web.",
+          "userImpact": "Users may be unable to open files in Office for the web or Microsoft Teams.",
+          "scopeOfImpact": "",
           "rootCause": "",
           "nextUpdateBy": "Monday, June 1, 2026, at 2:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
             {
+              "createdAt": "2026-06-01T14:06:31.32Z",
+              "postType": "quick",
+              "content": "Initial analysis indicates a potential cross-service issue impacting Office for the web experiences. We’re continuing to investigate service telemetry to isolate the source of the issue.\n \nThis quick update is designed to give the latest information on this issue.\n\nNext update by: Monday, June 1, 2026, at 2:30 PM UTC"
+            },
+            {
               "createdAt": "2026-06-01T13:49:06.943Z",
               "postType": "regular",
-              "content": "Title: Unable to open files in Office for the web.\n\nUser impact: Users may be unable to open files in Office for the web.\n\nMore info: Impacted Office Apps include, but are not limited to: \n- Excel\n\nWhen users open documents, impacted users are shown the following the following error message \"Office Online services aren't available right now. We're working to restore all services as soon as possible. Please check back soon.\"\n \nCurrent status: We're investigating service telemetry to isolate the source of the issue.\n \nScope of impact: This issue could impact any user attempting to access Office Apps using Office for the web.\n \nNext update by: Monday, June 1, 2026, at 2:30 PM UTC"
+              "content": "Title: Unable to open files in Office for the web.\n\nUser impact: Users may be unable to open files in Office for the web.\n\nMore info: Impacted Office Apps include, but are not limited to: \n- Excel\n\nWhen users open documents, impacted users are shown the following the following error message \"Office Online services aren't available right now. We're working to restore all services as soon as possible. Please check back soon.\"\n \nCurrent status: We're investigating service telemetry to isolate the source of the issue.\n \nScope of impact: This issue could impact any user attempting to access Office Apps using Office for the web or Microsoft Teams.\n \nNext update by: Monday, June 1, 2026, at 2:30 PM UTC"
             }
           ],
           "affectedServices": [
+            "Microsoft 365 suite",
             "SharePoint Online",
             "Microsoft OneDrive",
             "Microsoft Teams"
@@ -540,26 +522,32 @@
       "issues": [
         {
           "id": "MO1329446",
-          "title": "Unable to open files in Office for the web.",
+          "title": "Unable to open files in Office for the web or Microsoft Teams",
           "startTime": "2026-06-01T13:46:45Z",
           "endTime": null,
-          "lastModified": "2026-06-01T13:49:06.943Z",
+          "lastModified": "2026-06-01T14:20:31.477Z",
           "status": "serviceDegradation",
           "severity": "incident",
-          "userImpact": "Users may be unable to open files in Office for the web.",
-          "scopeOfImpact": "This issue could impact any user attempting to access Office Apps using Office for the web.",
+          "userImpact": "Users may be unable to open files in Office for the web or Microsoft Teams.",
+          "scopeOfImpact": "",
           "rootCause": "",
           "nextUpdateBy": "Monday, June 1, 2026, at 2:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
             {
+              "createdAt": "2026-06-01T14:06:31.32Z",
+              "postType": "quick",
+              "content": "Initial analysis indicates a potential cross-service issue impacting Office for the web experiences. We’re continuing to investigate service telemetry to isolate the source of the issue.\n \nThis quick update is designed to give the latest information on this issue.\n\nNext update by: Monday, June 1, 2026, at 2:30 PM UTC"
+            },
+            {
               "createdAt": "2026-06-01T13:49:06.943Z",
               "postType": "regular",
-              "content": "Title: Unable to open files in Office for the web.\n\nUser impact: Users may be unable to open files in Office for the web.\n\nMore info: Impacted Office Apps include, but are not limited to: \n- Excel\n\nWhen users open documents, impacted users are shown the following the following error message \"Office Online services aren't available right now. We're working to restore all services as soon as possible. Please check back soon.\"\n \nCurrent status: We're investigating service telemetry to isolate the source of the issue.\n \nScope of impact: This issue could impact any user attempting to access Office Apps using Office for the web.\n \nNext update by: Monday, June 1, 2026, at 2:30 PM UTC"
+              "content": "Title: Unable to open files in Office for the web.\n\nUser impact: Users may be unable to open files in Office for the web.\n\nMore info: Impacted Office Apps include, but are not limited to: \n- Excel\n\nWhen users open documents, impacted users are shown the following the following error message \"Office Online services aren't available right now. We're working to restore all services as soon as possible. Please check back soon.\"\n \nCurrent status: We're investigating service telemetry to isolate the source of the issue.\n \nScope of impact: This issue could impact any user attempting to access Office Apps using Office for the web or Microsoft Teams.\n \nNext update by: Monday, June 1, 2026, at 2:30 PM UTC"
             }
           ],
           "affectedServices": [
+            "Microsoft 365 suite",
             "SharePoint Online",
             "Microsoft OneDrive",
             "Microsoft Teams"
@@ -574,26 +562,32 @@
       "issues": [
         {
           "id": "MO1329446",
-          "title": "Unable to open files in Office for the web.",
+          "title": "Unable to open files in Office for the web or Microsoft Teams",
           "startTime": "2026-06-01T13:46:45Z",
           "endTime": null,
-          "lastModified": "2026-06-01T13:49:06.943Z",
+          "lastModified": "2026-06-01T14:20:31.477Z",
           "status": "serviceDegradation",
           "severity": "incident",
-          "userImpact": "Users may be unable to open files in Office for the web.",
-          "scopeOfImpact": "This issue could impact any user attempting to access Office Apps using Office for the web.",
+          "userImpact": "Users may be unable to open files in Office for the web or Microsoft Teams.",
+          "scopeOfImpact": "",
           "rootCause": "",
           "nextUpdateBy": "Monday, June 1, 2026, at 2:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
             {
+              "createdAt": "2026-06-01T14:06:31.32Z",
+              "postType": "quick",
+              "content": "Initial analysis indicates a potential cross-service issue impacting Office for the web experiences. We’re continuing to investigate service telemetry to isolate the source of the issue.\n \nThis quick update is designed to give the latest information on this issue.\n\nNext update by: Monday, June 1, 2026, at 2:30 PM UTC"
+            },
+            {
               "createdAt": "2026-06-01T13:49:06.943Z",
               "postType": "regular",
-              "content": "Title: Unable to open files in Office for the web.\n\nUser impact: Users may be unable to open files in Office for the web.\n\nMore info: Impacted Office Apps include, but are not limited to: \n- Excel\n\nWhen users open documents, impacted users are shown the following the following error message \"Office Online services aren't available right now. We're working to restore all services as soon as possible. Please check back soon.\"\n \nCurrent status: We're investigating service telemetry to isolate the source of the issue.\n \nScope of impact: This issue could impact any user attempting to access Office Apps using Office for the web.\n \nNext update by: Monday, June 1, 2026, at 2:30 PM UTC"
+              "content": "Title: Unable to open files in Office for the web.\n\nUser impact: Users may be unable to open files in Office for the web.\n\nMore info: Impacted Office Apps include, but are not limited to: \n- Excel\n\nWhen users open documents, impacted users are shown the following the following error message \"Office Online services aren't available right now. We're working to restore all services as soon as possible. Please check back soon.\"\n \nCurrent status: We're investigating service telemetry to isolate the source of the issue.\n \nScope of impact: This issue could impact any user attempting to access Office Apps using Office for the web or Microsoft Teams.\n \nNext update by: Monday, June 1, 2026, at 2:30 PM UTC"
             }
           ],
           "affectedServices": [
+            "Microsoft 365 suite",
             "SharePoint Online",
             "Microsoft OneDrive",
             "Microsoft Teams"
