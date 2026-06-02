@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-02T13:34:21.772Z",
+  "lastUpdated": "2026-06-02T14:04:31.442Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -421,9 +421,35 @@
     },
     {
       "service": "Microsoft 365 suite",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "OSDPPlatform",
-      "issues": []
+      "issues": [
+        {
+          "id": "MO1331639",
+          "title": "Issue with webhook-based task notifications in Microsoft To Do",
+          "startTime": "2026-06-02T13:55:00Z",
+          "endTime": null,
+          "lastModified": "2026-06-02T13:57:01.693Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users are unable to receive webhook-based task notifications in Microsoft To Do.",
+          "scopeOfImpact": "Your organization is impacted by this event, and this issue may affect any user within your organization.",
+          "rootCause": "",
+          "nextUpdateBy": "Wednesday, June 10, 2026, at 12:00 PM UTC",
+          "feature": "Access",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-06-02T13:55:50.833Z",
+              "postType": "regular",
+              "content": "Title: Issue with webhook-based task notifications in Microsoft To Do\n\nUser impact: Users are unable to receive webhook-based task notifications in Microsoft To Do.\n\nMore info: This issue may affect any webhook-based task notification in Microsoft To Do:\n\n- Any webhook notification delivery to your organization's registered notificationUrl endpoints that was setup using MSGraph: https://learn.microsoft.com/en-us/graph/change-notifications-with-resource-data?tabs=csharp\n- Any automation or workflow that depends on receiving real-time task change callbacks\n\nIf your organization relies on webhook notifications for task automation:\n- Consider temporary polling via GET requests to /me/todo/lists/{listId}/tasks as a workaround: https://learn.microsoft.com/en-us/graph/api/resources/todo-overview?view=graph-rest-1.0\n\nCurrent status: We've identified a configuration issue affecting webhook-based task notifications in Microsoft To Do. We're developing a long-term fix to restore functionality, and we'll provide additional updates as this progresses.\n \nScope of impact: Your organization is impacted by this event, and this issue may affect any user within your organization.\n\nNext update by: Wednesday, June 10, 2026, at 12:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite"
+          ]
+        }
+      ]
     },
     {
       "service": "SharePoint Online",
