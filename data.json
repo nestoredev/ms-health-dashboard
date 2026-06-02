@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-02T22:37:23.808Z",
+  "lastUpdated": "2026-06-02T23:07:32.891Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -434,6 +434,41 @@
       "status": "serviceDegradation",
       "id": "OSDPPlatform",
       "issues": [
+        {
+          "id": "MO1332784",
+          "title": "Some users' Windows devices with policies configured to prevent auto updates may be installing drivers",
+          "startTime": "2026-06-02T20:30:15.323Z",
+          "endTime": null,
+          "lastModified": "2026-06-02T22:41:27.013Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users' Windows devices with configured policies to prevent auto updates might be installing drivers. ",
+          "scopeOfImpact": "This issue may cause drivers to be installed for users with a Windows device configured to prevent auto updates.",
+          "rootCause": "",
+          "nextUpdateBy": "Wednesday, June 03, 2026, at 12:30 AM UTC",
+          "feature": "Company or User Administration",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-06-02T22:39:10.097Z",
+              "postType": "regular",
+              "content": "Title: Some users' Windows devices with policies configured to prevent auto updates may be installing drivers\n\nUser impact: Users' Windows devices with configured policies to prevent auto updates may be installing drivers.\n\nMore info: As we work to remediate the impact, we've determined that the drivers being installed are Microsoft approved/signed and that they don't pose a security threat.\n\nCurrent status: We've identified a potential service cache misconfiguration that we believe could be causing drivers to become unexpectedly installed when policies are configured to prevent it. We're further analyzing our service cache configurations to confirm our findings, and so we can determine the next steps for remediating the impact.\n\nScope of impact: This issue may cause drivers to be installed for users with a Windows device configured to prevent auto updates.\n\nNext update by: Wednesday, June 03, 2026, at 12:30 AM UTC"
+            },
+            {
+              "createdAt": "2026-06-02T22:20:41.957Z",
+              "postType": "regular",
+              "content": "Title: Some users' Windows devices with policies configured to prevent auto updates are installing drivers\r\n\r\nUser impact: Users' Windows devices with configured policies to prevent auto updates are installing drivers. \r\n\r\nMore info: As we work to remediate the impact, we've determined that the drivers being installed are Microsoft approved/signed and that they don't pose a security threat.\r\n\r\nCurrent status: We've focused our investigation on a potential service cache misconfiguration that we believe could be causing drivers to become unexpectedly installed when policies are configured to prevent it. We're further analyzing our service cache configurations to confirm our findings, and so we can determine the next steps for remediating the impact.\r\n\r\nScope of impact: Your organization is impacted by this event, and some users with a Windows device have their drivers unexpectedly installed.\r\n\r\nNext update by: Wednesday, June 03, 2026, at 12:30 AM UTC"
+            },
+            {
+              "createdAt": "2026-06-02T20:48:00.03Z",
+              "postType": "regular",
+              "content": "Title: Some users' Windows devices with policies configured to prevent auto updates are installing drivers\r\n\r\nUser impact: Users' Windows devices with configured policies to prevent auto updates are installing drivers. \r\n\r\nMore info: As we work to remediate the impact, we've determined that the drivers being installed are Microsoft approved/signed and that they don't pose a security threat.\r\n\r\nCurrent status: We've received a report of an issue where users' Windows devices that have configured policies to prevent auto updates are installing drivers. We're analyzing internal service telemetry and an affected device ID as we isolate the source for this event, and to determine our next troubleshooting steps for remediating the impact.\r\n\r\nScope of impact: Your organization is impacted by this event, and some users with a Windows device have their drivers unexpectedly installed.\r\n\r\nNext update by: Tuesday, June 02, 2026, at 10:30 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite"
+          ]
+        },
         {
           "id": "MO1331639",
           "title": "Issue with webhook-based task notifications in Microsoft To Do",
