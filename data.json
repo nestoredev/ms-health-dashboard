@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-03T14:12:08.923Z",
+  "lastUpdated": "2026-06-03T14:42:19.196Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -708,22 +708,27 @@
     {
       "id": "MO1329260",
       "title": "Some users may have been unable to setup Multi-Factor Authentication (MFA) or access the mysignins.microsoft.com website",
-      "startTime": "2026-06-01T05:50:00Z",
+      "startTime": "2026-06-01T07:05:00Z",
       "endTime": "2026-06-01T09:50:00Z",
-      "lastModified": "2026-06-01T15:17:11.293Z",
-      "status": "serviceRestored",
+      "lastModified": "2026-06-03T14:15:06.763Z",
+      "status": "postIncidentReviewPublished",
       "severity": "incident",
       "userImpact": "Users may have been unable to setup MFA or access the mysignins.microsoft.com website.",
-      "scopeOfImpact": "Some users attempting to setup MFA or accessing the mysignins.microsoft.com website may have been impacted.\n \nStart time: Monday, June 1, 2026, at 5:50 AM UTC\n \nEnd time: Monday, June 1, 2026, at 9:50 AM UTC",
-      "rootCause": "A recent cache configuration change required a failover. During the failover, the service encountered high CPU and memory utilization as peak EU traffic increased, which prevented the MySignIn service from handling the volume of requests.\n \nNext steps:\n- We're continuing to monitor the service and will complete a thorough post-incident review to help prevent similar issues in the future.\n \nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days.",
+      "scopeOfImpact": "",
+      "rootCause": "",
       "nextUpdateBy": "",
       "feature": "Access",
       "isResolved": true,
       "posts": [
         {
+          "createdAt": "2026-06-03T14:15:06.763Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        },
+        {
           "createdAt": "2026-06-01T11:43:26.367Z",
           "postType": "regular",
-          "content": "Title: Some users may have been unable to setup Multi-Factor Authentication (MFA) or access the mysignins.microsoft.com website\n\nUser impact: Users may have been unable to setup MFA or access the mysignins.microsoft.com website.\n\nMore info: Users may have encountered 504 Gateway Timeout errors when trying to access mysignins.microsoft.com\n \nFinal status: We've identified a recent cache configuration change required a failover. During the failover, the service experienced high CPU and memory utilization as EU traffic peaked, which prevented the MySignIn service from processing the volume of requests. Mitigation actions have since been rolled back, and traffic has been restored to the original infrastructure.\n \nScope of impact: Some users attempting to setup MFA or accessing the mysignins.microsoft.com website may have been impacted.\n \nStart time: Monday, June 1, 2026, at 5:50 AM UTC\n \nEnd time: Monday, June 1, 2026, at 9:50 AM UTC\n \nRoot cause: A recent cache configuration change required a failover. During the failover, the service encountered high CPU and memory utilization as peak EU traffic increased, which prevented the MySignIn service from handling the volume of requests.\n \nNext steps:\n- We're continuing to monitor the service and will complete a thorough post-incident review to help prevent similar issues in the future.\n \nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days."
+          "content": "Title: Some users may have been unable to setup Multi-Factor Authentication (MFA) or access the mysignins.microsoft.com website\n\nUser impact: Users may have been unable to setup MFA or access the mysignins.microsoft.com website.\n\nMore info: Users may have encountered 504 Gateway Timeout errors when trying to access mysignins.microsoft.com\n \nFinal status: We've identified a recent cache configuration change required a failover. During the failover, the service experienced high CPU and memory utilization as EU traffic peaked, which prevented the MySignIn service from processing the volume of requests. Mitigation actions have since been rolled back, and traffic has been restored to the original infrastructure.\n \nScope of impact: Some users attempting to setup MFA or accessing the mysignins.microsoft.com website may have been impacted.\n \nStart time: Monday, June 1, 2026, at 7:05 AM UTC\n \nEnd time: Monday, June 1, 2026, at 9:50 AM UTC\n \nRoot cause: A recent configuration change within the Redis cache layer required a failover before it could be fully applied to the production environment. When that failover occurred, it coincided with peak traffic levels in Europe, which increased demand on the MySignIn service. Under this elevated load, the service experienced high Central Processing Unit (CPU) and memory utilization and was unable to process requests at the expected rate. As a result, some users encountered 504 Gateway Timeout errors when attempting to set up Multi-Factor Authentication (MFA) or access mysignins.microsoft.com.\n \nNext steps:\n- For a more comprehensive list of next steps and actions, please refer to the Post Incident Report document.\n \nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days."
         },
         {
           "createdAt": "2026-06-01T10:51:57.857Z",
@@ -739,11 +744,6 @@
           "createdAt": "2026-06-01T09:59:02.633Z",
           "postType": "quick",
           "content": "We’ve completed a failover to healthy infrastructure and are closely monitoring service telemetry to confirm recovery. In parallel, we’re continuing to investigate the underlying cache-related issues that may be contributing to impact.\n\nThis quick update is designed to give the latest information on this issue."
-        },
-        {
-          "createdAt": "2026-06-01T09:32:42.543Z",
-          "postType": "quick",
-          "content": "Upon an initial review of service telemetry, we've identified cache failures as a potential root cause for impact, and we're continuing to investigate this further to verify this theory. In parallel, we're conducting a failover to healthy infrastructure in an attempt to provide relief.\n\nThis quick update is designed to give the latest information on this issue."
         }
       ],
       "serviceName": "Microsoft 365 suite",
