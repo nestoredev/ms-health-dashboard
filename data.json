@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-04T20:51:05.086Z",
+  "lastUpdated": "2026-06-04T21:21:13.915Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -900,7 +900,7 @@
       "title": "Some admins may be unable to view usage reports in the Microsoft 365 admin center",
       "startTime": "2026-05-18T23:00:00Z",
       "endTime": "2026-05-28T22:15:00Z",
-      "lastModified": "2026-06-01T16:45:36.383Z",
+      "lastModified": "2026-06-04T21:03:24.463Z",
       "status": "postIncidentReviewPublished",
       "severity": "incident",
       "userImpact": "Admins were unable to view usage reports in the Microsoft 365 admin center.",
@@ -910,6 +910,11 @@
       "feature": "Access",
       "isResolved": true,
       "posts": [
+        {
+          "createdAt": "2026-06-04T21:03:24.463Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        },
         {
           "createdAt": "2026-06-01T16:45:36.383Z",
           "postType": "regular",
@@ -929,11 +934,6 @@
           "createdAt": "2026-05-27T23:59:01.247Z",
           "postType": "regular",
           "content": "Title: Some admins may be unable to view usage reports in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may be unable to view usage reports in the Microsoft 365 admin center.\r\n\r\nCurrent status: We're continuing to deploy our fix via staged roll out. Based on our current progress, we expect the issue to be fully resolved within the next 24 hours. We expect admins to be able to view usage reports as the fix propagates throughout the affected environments. \r\n\r\nScope of impact: Some admins attempting to view usage reports in the Microsoft 365 admin center may be impacted.\r\n\r\nEstimated time to resolve: We estimate that this issue will be resolved in the next 24 hours. \r\n\r\nRoot cause: A recent service change related to a backend infrastructure migration contained a code issue which is causing impact. \r\n\r\nNext update by: Thursday, May 28, 2026, at 7:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-05-27T18:14:42.587Z",
-          "postType": "regular",
-          "content": "Title: Some admins may be unable to view usage reports in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may be unable to view usage reports in the Microsoft 365 admin center.\r\n\r\nCurrent status: We identified a recent service change related to a backend infrastructure migration that contained a code issue, which is causing impact. We've validated a fix in our internal testing environment and have begun rolling it out to the affected environments. We'll continue to closely monitor this deployment and provide an estimated time to resolution as soon as it is available.\r\n\r\nScope of impact: Some admins attempting to view usage reports in the Microsoft 365 admin center may be impacted.\r\n\r\nRoot cause: A recent service change related to a backend infrastructure migration contained a code issue which is causing impact. \r\n\r\nNext update by: Thursday, May 28, 2026, at 1:30 AM UTC"
         }
       ],
       "serviceName": "Microsoft 365 suite",
