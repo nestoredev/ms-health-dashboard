@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-04T21:51:23.463Z",
+  "lastUpdated": "2026-06-04T22:21:33.425Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -628,9 +628,50 @@
     },
     {
       "service": "Microsoft 365 Copilot Chat",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "CopilotChat",
-      "issues": []
+      "issues": [
+        {
+          "id": "CW1352001",
+          "title": "Users may receive no response when prompting Microsoft 365 Copilot Chat using the Claude Opus model ",
+          "startTime": "2026-06-04T20:35:37.707Z",
+          "endTime": null,
+          "lastModified": "2026-06-04T22:16:42.37Z",
+          "status": "serviceDegradation",
+          "severity": "incident",
+          "userImpact": "Users may receive no response when prompting Copilot Chat using the Claude Opus model.",
+          "scopeOfImpact": "Any user prompting Copilot Chat using the Claude Opus model may be impacted.\r\n\r\nStart time: Monday, June 01, 2026, at 1:00 PM UTC",
+          "rootCause": "An increase in request traffic is causing the portion of infrastructure responsible for facilitating the responses to prompts using Claude Opus in Copilot Chat to operate in a suboptimal state.",
+          "nextUpdateBy": "Friday, June 05, 2026, at 6:30 PM UTC",
+          "feature": "General",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-06-04T22:16:42.37Z",
+              "postType": "regular",
+              "content": "Title: Users may receive no response when prompting Microsoft 365 Copilot Chat using the Claude Opus model \r\n\r\nUser impact: Users may receive no response when prompting Copilot Chat using the Claude Opus model.\r\n\r\nMore info: When users attempt to prompt Copilot Chat using the Claude Opus model, they may receive an error that states, \"We're experiencing high demand. Please try again later.\"\r\n\r\nCurrent status: We've applied configuration changes to rebalance the request traffic and are monitoring our service health telemetry to confirm whether the impact is remediated. \r\n\r\nScope of impact: Any user prompting Copilot Chat using the Claude Opus model may be impacted.\r\n\r\nStart time: Monday, June 01, 2026, at 1:00 PM UTC\r\n\r\nRoot cause: An increase in request traffic is causing the portion of infrastructure responsible for facilitating the responses to prompts using Claude Opus in Copilot Chat to operate in a suboptimal state. \r\n\r\nNext update by: Friday, June 05, 2026, at 6:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-06-04T21:55:30.293Z",
+              "postType": "regular",
+              "content": "Title: Users may receive no response when prompting Microsoft 365 Copilot Chat using the Claude Opus model \r\n\r\nUser impact: Users may receive no response when prompting Copilot Chat using the Claude Opus model.\r\n\r\nMore info: When users attempt to prompt Copilot Chat using the Claude Opus model, they may receive an error that states, \"We're experiencing high demand. Please try again later.\"\r\n\r\nCurrent status: We've identified that an increase in request traffic is causing the portion of infrastructure responsible for facilitating the responses to prompts using Claude Opus in Copilot Chat to operate in a suboptimal state. We're evaluating our options to rebalance the request traffic and remediate the impact.\r\n\r\nScope of impact: Any user prompting Copilot Chat using the Claude Opus model may be impacted.\r\n\r\nRoot cause: An increase in request traffic is causing the portion of infrastructure responsible for facilitating the responses to prompts using Claude Opus in Copilot Chat to operate in a suboptimal state. \r\n\r\nNext update by: Friday, June 05, 2026, at 12:00 AM UTC"
+            },
+            {
+              "createdAt": "2026-06-04T20:59:21.713Z",
+              "postType": "regular",
+              "content": "Title: Users may receive no response when prompting Microsoft 365 Copilot Chat using the Claude Opus model \r\n\r\nUser impact: Users may receive no response when prompting Copilot Chat using the Claude Opus model.\r\n\r\nMore info: When users attempt to prompt Copilot Chat using the Claude Opus model, they may receive an error that states, \"We're experiencing high demand. Please try again later.\"\r\n\r\nCurrent status: We're reviewing provided HTTP Archive format (HAR) logs to gain clarity on the issue and determine the next steps to isolate the root cause. \r\n\r\nScope of impact: Any user prompting Copilot Chat using the Claude Opus model may be impacted.\r\n\r\nNext update by: Thursday, June 04, 2026, at 10:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-06-04T20:41:47.507Z",
+              "postType": "regular",
+              "content": "Title: We're looking into a potential problem impacting Microsoft 365 Copilot Chat\r\n\r\nUser impact: We're checking for potential impact to your users.\r\n\r\nCurrent status: We're investigating a potential issue impacting Microsoft 365 Copilot Chat and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 Copilot Chat"
+          ]
+        }
+      ]
     }
   ],
   "history": [
