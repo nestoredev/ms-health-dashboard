@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-04T00:15:30.995Z",
+  "lastUpdated": "2026-06-04T00:45:38.855Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -2058,52 +2058,6 @@
       "serviceName": "SharePoint Online",
       "affectedServices": [
         "SharePoint Online"
-      ]
-    },
-    {
-      "id": "IT1298282",
-      "title": "Some users' Windows Intune devices may intermittently drop device policy assignments",
-      "startTime": "2026-04-28T12:30:00Z",
-      "endTime": "2026-05-05T00:30:00Z",
-      "lastModified": "2026-05-05T02:06:48.083Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users' Windows Intune devices may have intermittently dropped specific policy assignments.",
-      "scopeOfImpact": "This issue may intermittently impacted some users' Windows Intune devices between policy check-ins.\r\n\r\nStart time: Tuesday, April 28, 2026, at 12:30 PM UTC\r\n\r\nEnd time: Tuesday, May 05, 2026, at 12:30 AM UTC",
-      "rootCause": "A code regression introduced during the rollout of a recent update associated with a new preview feature was resulted in impact.\r\n\r\nNext steps: We're reviewing how the code regression was introduced during the rollout of a recent update and are revitalizing our check in process for updates in an effort to avoid impact in like this the future.\r\n\r\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Microsoft Intune",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-05-05T01:57:45.233Z",
-          "postType": "regular",
-          "content": "Title: Some users' Windows Intune devices may intermittently drop device policy assignments\r\n\r\nUser impact: Users' Windows Intune devices may have intermittently dropped specific policy assignments.\r\n\r\nMore info: The affected device policies included but weren't limited to:\n\n- Endpoint Privilege Management\n- Microsoft Defender for Endpoint\n- Device Inventory\r\n\r\nFinal status: We've confirmed that a code regression introduced during the rollout of a recent update associated with a new preview feature caused impact. We've developed and deployed a fix to correct the offending update. After a period of monitoring the service health telemetry, we've confirmed that the errors associated with impact were resolved and the issue has been remediated.\r\n\r\nScope of impact: This issue may intermittently impacted some users' Windows Intune devices between policy check-ins.\r\n\r\nStart time: Tuesday, April 28, 2026, at 12:30 PM UTC\r\n\r\nEnd time: Tuesday, May 05, 2026, at 12:30 AM UTC\r\n\r\nRoot cause: A code regression introduced during the rollout of a recent update associated with a new preview feature was resulted in impact.\r\n\r\nNext steps: We're reviewing how the code regression was introduced during the rollout of a recent update and are revitalizing our check in process for updates in an effort to avoid impact in like this the future.\r\n\r\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-05-04T22:05:06.483Z",
-          "postType": "regular",
-          "content": "Title: Some users' Windows Intune devices may intermittently drop device policy assignments\r\n\r\nUser impact: Users' Windows Intune devices may intermittently drop specific policy assignments.\r\n\r\nMore info: The affected device policies include but aren't limited to:\n\n- Endpoint Privilege Management\n- Microsoft Defender for Endpoint\n- Device Inventory\r\n\r\nCurrent status: The fix has been applied to approximately 75 percent of the affected infrastructure and we expect to have a complete remediation timeline by the next scheduled update. \r\n\r\nScope of impact: This issue may intermittently impact some users' Windows Intune devices between policy check-ins.\r\n\r\nStart time: Tuesday, April 28, 2026, at 12:30 PM UTC\r\n\r\nRoot cause: A code regression introduced during the rollout of a recent update associated with a new preview feature is resulting in impact.\r\n\r\nNext update by: Tuesday, May 05, 2026, at 3:30 AM UTC"
-        },
-        {
-          "createdAt": "2026-05-04T15:13:21.133Z",
-          "postType": "regular",
-          "content": "Title: Some users' Windows Intune devices may intermittently drop device policy assignments\r\n\r\nUser impact: Users' Windows Intune devices may intermittently drop specific policy assignments.\r\n\r\nMore info: The affected device policies include but aren't limited to:\n\n- Endpoint Privilege Management\n- Microsoft Defender for Endpoint\n- Device Inventory\r\n\r\nCurrent status: We're progressing with the deployment of the validated fix across the affected environments, with a portion of environments already updated and showing signs of improvement. We expect this deployment to complete by our next scheduled update.\r\n\r\nScope of impact: This issue may intermittently impact some users' Windows Intune devices between policy check-ins.\r\n\r\nStart time: Tuesday, April 28, 2026, at 12:30 PM UTC\r\n\r\nRoot cause: A code regression introduced during the rollout of a recent update associated with a new preview feature is resulting in impact.\r\n\r\nNext update by: Monday, May 04, 2026, at 11:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-05-04T03:18:48.75Z",
-          "postType": "regular",
-          "content": "Title: Some users' Windows Intune devices may intermittently drop device policy assignments\r\n\r\nUser impact: Users' Windows Intune devices may intermittently drop specific policy assignments.\r\n\r\nMore info: The affected device policies include but aren't limited to:\n\n- Endpoint Privilege Management\n- Microsoft Defender for Endpoint\n- Device Inventory\r\n\r\nCurrent status: We've completed deploying the fix to our testing environment, and have validated that it remediates impact as expected. We've started deploying the fix to the impacted environments, and we anticipate the saturation will have completed and the issue will be fully resolved by our next scheduled update by Monday, May 4, 2026.\r\n\r\nScope of impact: This issue may intermittently impact some users' Windows Intune devices between check-ins. This information may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, April 28, 2026, at 12:30 PM UTC\r\n\r\nRoot cause: A code regression introduced during the rollout of a recent update associated with a new preview feature is causing impact to occur.\r\n\r\nNext update by: Monday, May 04, 2026, at 2:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-05-03T23:12:16.443Z",
-          "postType": "regular",
-          "content": "Title: Some users' Windows Intune devices may intermittently drop device policy assignments\r\n\r\nUser impact: Users' Windows Intune devices may intermittently drop specific policy assignments.\r\n\r\nMore info: The affected device policies include but aren't limited to:\n\n- Endpoint Privilege Management\n- Microsoft Defender for Endpoint\n- Device Inventory\r\n\r\nCurrent status: We're furthering our analysis on the developed fix to address the code regression and internal validations before deployment. We aim to provide a timeline of the deployment by our next scheduled update. \r\n\r\nScope of impact: This issue may intermittently impact some users' Windows Intune devices between check-ins.  This information may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, April 28, 2026, at 12:30 PM UTC\r\n\r\nRoot cause: A code regression introduced during the rollout of a recent update associated with a new preview feature is causing impact to occur.\r\n\r\nNext update by: Monday, May 04, 2026, at 5:00 AM UTC"
-        }
-      ],
-      "serviceName": "Microsoft Intune",
-      "affectedServices": [
-        "Microsoft Intune"
       ]
     }
   ]
