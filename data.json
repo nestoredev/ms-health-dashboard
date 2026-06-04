@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-03T23:45:22.974Z",
+  "lastUpdated": "2026-06-04T00:15:30.995Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -440,36 +440,6 @@
       "id": "OSDPPlatform",
       "issues": [
         {
-          "id": "MO1338742",
-          "title": "Users may fail to retrieve Microsoft OneNote content using Microsoft Graph APIs",
-          "startTime": "2026-06-03T18:30:00Z",
-          "endTime": null,
-          "lastModified": "2026-06-03T20:08:29.823Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may fail to retrieve Microsoft OneNote content using Microsoft Graph APIs.",
-          "scopeOfImpact": "This issue may affect some users of Microsoft Graph APIs retrieving Microsoft OneNote content.\r\n\r\nStart time: Wednesday, June 03, 2026, at 6:30 PM UTC",
-          "rootCause": "A recent build deployment introduced an issue which is causing failures when utilizing impacted APIs to retrieve Microsoft OneNote content.",
-          "nextUpdateBy": "Thursday, June 04, 2026, at 1:00 AM UTC",
-          "feature": "Company or User Administration",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-06-03T20:04:49.01Z",
-              "postType": "regular",
-              "content": "Title: Users may fail to retrieve Microsoft OneNote content using Microsoft Graph APIs\r\n\r\nUser impact: Users may fail to retrieve Microsoft OneNote content using Microsoft Graph APIs.\r\n\r\nMore info: Impacted APIs include:\nGET-recentnotebooks\nGET-notebooks\t\nGET-sections\t\nGET-pages\t\nPOST-pages\t\nPOST-sections\t\nGET-sectiongroups\t\t\r\n\r\nCurrent status: We've identified that a recent build deployment introduced an issue which is causing failures when attempting to utilize impacted APIs to retrieve Microsoft OneNote content. We've begun deployment of the previous known good build as a means of remediating impact. We anticipate this deployment will be complete, resolving the issue, by our next scheduled communication update.\r\n\r\nScope of impact: This issue may affect some users of Microsoft Graph APIs retrieving Microsoft OneNote content.\r\n\r\nStart time: Wednesday, June 03, 2026, at 6:30 PM UTC\r\n\r\nRoot cause: A recent build deployment introduced an issue which is causing failures when utilizing impacted APIs to retrieve Microsoft OneNote content.\r\n\r\nNext update by: Thursday, June 04, 2026, at 1:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-06-03T19:54:22.42Z",
-              "postType": "regular",
-              "content": "Title: Users may fail to retrieve Microsoft OneNote content using Microsoft Graph APIs\r\n\r\nUser impact: Users may fail to retrieve Microsoft OneNote content using Microsoft Graph APIs.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Graph and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Microsoft 365 suite"
-          ]
-        },
-        {
           "id": "MO1331639",
           "title": "Issue with webhook-based task notifications in Microsoft To Do",
           "startTime": "2026-06-02T13:55:00Z",
@@ -655,6 +625,42 @@
   ],
   "history": [
     {
+      "id": "MO1338742",
+      "title": "Users may fail to retrieve Microsoft OneNote content using Microsoft Graph APIs",
+      "startTime": "2026-06-03T18:30:00Z",
+      "endTime": "2026-06-03T23:49:48.837Z",
+      "lastModified": "2026-06-03T23:51:33.453Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have failed to retrieve Microsoft OneNote content using Microsoft Graph APIs.",
+      "scopeOfImpact": "This issue may have affected some users attempting to utilize Microsoft Graph APIs to retrieve Microsoft OneNote content.\r\n\r\nStart time: Wednesday, June 03, 2026, at 6:30 PM UTC\r\n\r\nEnd time: Wednesday, June 03, 2026, at 10:30 PM UTC",
+      "rootCause": "A recent build deployment introduced an issue which is causing failures when utilizing impacted APIs to retrieve Microsoft OneNote content.\r\n\r\nNext steps: \n- We're continuing to monitor service health to ensure that this impact does not reoccur.\n- We're analyzing our internal validation processes to identify any avenues for enhancing quality assurance to ensure that potential issues are preemptively remediated.",
+      "nextUpdateBy": "",
+      "feature": "Company or User Administration",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-06-03T23:51:12.933Z",
+          "postType": "regular",
+          "content": "Title: Users may fail to retrieve Microsoft OneNote content using Microsoft Graph APIs\r\n\r\nUser impact: Users may have failed to retrieve Microsoft OneNote content using Microsoft Graph APIs.\r\n\r\nMore info: Impacted APIs include:\nGET-recentnotebooks\nGET-notebooks\t\nGET-sections\t\nGET-pages\t\nPOST-pages\t\nPOST-sections\t\nGET-sectiongroups\t\t\r\n\r\nFinal status: We've confirmed that our deployment of the previous unimpacted service build version has completed, and that the impact has been fully remediated for all affected users.\r\n\r\nScope of impact: This issue may have affected some users attempting to utilize Microsoft Graph APIs to retrieve Microsoft OneNote content.\r\n\r\nStart time: Wednesday, June 03, 2026, at 6:30 PM UTC\r\n\r\nEnd time: Wednesday, June 03, 2026, at 10:30 PM UTC\r\n\r\nRoot cause: A recent build deployment introduced an issue which is causing failures when utilizing impacted APIs to retrieve Microsoft OneNote content.\r\n\r\nNext steps: \n- We're continuing to monitor service health to ensure that this impact does not reoccur.\n- We're analyzing our internal validation processes to identify any avenues for enhancing quality assurance to ensure that potential issues are preemptively remediated."
+        },
+        {
+          "createdAt": "2026-06-03T20:04:49.01Z",
+          "postType": "regular",
+          "content": "Title: Users may fail to retrieve Microsoft OneNote content using Microsoft Graph APIs\r\n\r\nUser impact: Users may fail to retrieve Microsoft OneNote content using Microsoft Graph APIs.\r\n\r\nMore info: Impacted APIs include:\nGET-recentnotebooks\nGET-notebooks\t\nGET-sections\t\nGET-pages\t\nPOST-pages\t\nPOST-sections\t\nGET-sectiongroups\t\t\r\n\r\nCurrent status: We've identified that a recent build deployment introduced an issue which is causing failures when attempting to utilize impacted APIs to retrieve Microsoft OneNote content. We've begun deployment of the previous known good build as a means of remediating impact. We anticipate this deployment will be complete, resolving the issue, by our next scheduled communication update.\r\n\r\nScope of impact: This issue may affect some users of Microsoft Graph APIs retrieving Microsoft OneNote content.\r\n\r\nStart time: Wednesday, June 03, 2026, at 6:30 PM UTC\r\n\r\nRoot cause: A recent build deployment introduced an issue which is causing failures when utilizing impacted APIs to retrieve Microsoft OneNote content.\r\n\r\nNext update by: Thursday, June 04, 2026, at 1:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-06-03T19:54:22.42Z",
+          "postType": "regular",
+          "content": "Title: Users may fail to retrieve Microsoft OneNote content using Microsoft Graph APIs\r\n\r\nUser impact: Users may fail to retrieve Microsoft OneNote content using Microsoft Graph APIs.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Graph and checking for impact to your organization. We'll provide an update within 30 minutes."
+        }
+      ],
+      "serviceName": "Microsoft 365 suite",
+      "affectedServices": [
+        "Microsoft 365 suite"
+      ]
+    },
+    {
       "id": "MO1332784",
       "title": "Some users' Windows devices with policies configured to prevent auto updates may be installing drivers",
       "startTime": "2026-06-02T13:00:00Z",
@@ -705,16 +711,21 @@
       "title": "Unable to open files in Office for the web or Microsoft Teams",
       "startTime": "2026-06-01T12:43:00Z",
       "endTime": "2026-06-01T14:27:00Z",
-      "lastModified": "2026-06-01T15:28:18.823Z",
-      "status": "serviceRestored",
+      "lastModified": "2026-06-03T23:48:39.777Z",
+      "status": "postIncidentReviewPublished",
       "severity": "incident",
       "userImpact": "Users may have been unable to open files in Office for the web or Microsoft Teams.",
-      "scopeOfImpact": "This issue could have impacted any user attempting to access Office Apps using Office for the web or Microsoft Teams.\n \nStart time: Monday, June 1, 2026, at 12:43 PM UTC\n \nEnd time: Monday, June 1, 2026, at 2:27 PM UTC",
-      "rootCause": "We're reviewing service telemetry, diagnostics logs and recent changes to isolate the root cause. We'll provide more details within the Post-Incident Report.\n \nNext steps:\n- We're continuing to monitor the service and will complete a thorough post-incident review to help prevent similar issues in the future.\n\nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days.",
+      "scopeOfImpact": "",
+      "rootCause": "",
       "nextUpdateBy": "",
       "feature": "Access",
       "isResolved": true,
       "posts": [
+        {
+          "createdAt": "2026-06-03T23:48:39.777Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        },
         {
           "createdAt": "2026-06-01T15:26:52.567Z",
           "postType": "regular",
@@ -734,11 +745,6 @@
           "createdAt": "2026-06-01T14:06:31.32Z",
           "postType": "quick",
           "content": "Initial analysis indicates a potential cross-service issue impacting Office for the web experiences. We’re continuing to investigate service telemetry to isolate the source of the issue.\n \nThis quick update is designed to give the latest information on this issue.\n\nNext update by: Monday, June 1, 2026, at 2:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-06-01T13:49:06.943Z",
-          "postType": "regular",
-          "content": "Title: Unable to open files in Office for the web.\n\nUser impact: Users may be unable to open files in Office for the web.\n\nMore info: Impacted Office Apps include, but are not limited to: \n- Excel\n\nWhen users open documents, impacted users are shown the following the following error message \"Office Online services aren't available right now. We're working to restore all services as soon as possible. Please check back soon.\"\n \nCurrent status: We're investigating service telemetry to isolate the source of the issue.\n \nScope of impact: This issue could impact any user attempting to access Office Apps using Office for the web or Microsoft Teams.\n \nNext update by: Monday, June 1, 2026, at 2:30 PM UTC"
         }
       ],
       "serviceName": "Microsoft 365 suite",
