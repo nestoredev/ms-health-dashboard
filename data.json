@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-05T21:28:05.317Z",
+  "lastUpdated": "2026-06-05T21:58:13.202Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -582,14 +582,14 @@
     {
       "id": "EX1318421",
       "title": "Users may be unable to view the body of edited Exchange Online email messages from the Sent folder",
-      "startTime": "2026-05-20T23:12:00Z",
-      "endTime": "2026-06-05T21:19:20.62Z",
-      "lastModified": "2026-06-05T21:20:49.773Z",
+      "startTime": "2026-04-15T10:36:00Z",
+      "endTime": "2026-06-05T19:18:00Z",
+      "lastModified": "2026-06-05T21:29:12.95Z",
       "status": "serviceRestored",
       "severity": "advisory",
       "userImpact": "Users may have been unable to view the body of edited Exchange Online email messages from the Sent folder.",
-      "scopeOfImpact": "Users attempting to view the body of edited Exchange Online email messages from the Sent folder may have been impacted.\r\n\r\nStart time: Wednesday, May 20, 2026, at 11:12 PM UTC\r\n\r\nEnd time: Friday, June 05, 2026, at 7:18 PM UTC",
-      "rootCause": "A code issue occurred when an email message was saved to drafts and it created a local copy. When a user edited the email message in drafts, sent it, and then viewed the email message from their sent folder, it attempted to reference the stale local copy instead of the edited version. As a result, the attempt to fetch the body failed and caused impact.\r\n\r\nNext steps: \n- We're reviewing the offending code issue to determine how it was introduced into the service, so that we can prevent similar instances of impact from occurring in the future.\r\n\r\nThis is the final update for the event.",
+      "scopeOfImpact": "Users attempting to view the body of edited Exchange Online email messages from the Sent folder may have been impacted.\r\n\r\nStart time: Wednesday, April 15, 2026, at 10:36 AM UTC\r\n\r\nEnd time: Friday, June 05, 2026, at 7:18 PM UTC",
+      "rootCause": "A code issue occurred when an email message was saved to drafts and it created a local copy. When a user edited the email message in drafts, sent it, and then viewed the email message from their sent folder, it attempted to reference the stale local copy instead of the edited version. As a result, the attempt to fetch the body failed and caused impact.\r\n\r\nNext steps: - We're reviewing the offending code issue to determine how it was introduced into the service, so that we can prevent similar instances of impact from occurring in the future.\r\n\r\nThis is the final update for the event.",
       "nextUpdateBy": "",
       "feature": "Outlook - poor customer experience",
       "isResolved": true,
@@ -597,7 +597,7 @@
         {
           "createdAt": "2026-06-05T21:20:31.86Z",
           "postType": "regular",
-          "content": "Title: Users may be unable to view the body of edited Exchange Online email messages from the Sent folder\r\n\r\nUser impact: Users may have been unable to view the body of edited Exchange Online email messages from the Sent folder.\r\n\r\nMore info: When a user opened and edited an email message in the draft folder, sent it, and then viewed it from their sent folder, the edited portion may have appeared blank in the message preview.\n \nImpact only occurred for users utilizing the \"Show email as individual messages\" Message organization setting. While we worked on mitigating this issue, users could utilize the \"Show email grouped by conversation\" message organization setting to avoid this issue.\r\n\r\nFinal status: We've completed the deployment of our fix and confirmed through testing with a subset of affected users that the impact has been remediated.\r\n\r\nScope of impact: Users attempting to view the body of edited Exchange Online email messages from the Sent folder may have been impacted.\r\n\r\nStart time: Wednesday, May 20, 2026, at 11:12 PM UTC\r\n\r\nEnd time: Friday, June 05, 2026, at 7:18 PM UTC\r\n\r\nRoot cause: A code issue occurred when an email message was saved to drafts and it created a local copy. When a user edited the email message in drafts, sent it, and then viewed the email message from their sent folder, it attempted to reference the stale local copy instead of the edited version. As a result, the attempt to fetch the body failed and caused impact.\r\n\r\nNext steps: \n- We're reviewing the offending code issue to determine how it was introduced into the service, so that we can prevent similar instances of impact from occurring in the future.\r\n\r\nThis is the final update for the event."
+          "content": "Title: Users may be unable to view the body of edited Exchange Online email messages from the Sent folder\r\n\r\nUser impact: Users may have been unable to view the body of edited Exchange Online email messages from the Sent folder.\r\n\r\nMore info: When a user opened and edited an email message in the draft folder, sent it, and then viewed it from their sent folder, the edited portion may have appeared blank in the message preview.\n \nImpact only occurred for users utilizing the \"Show email as individual messages\" Message organization setting. While we worked on mitigating this issue, users could utilize the \"Show email grouped by conversation\" message organization setting to avoid this issue.\r\n\r\nFinal status: We've completed the deployment of our fix and confirmed through testing with a subset of affected users that the impact has been remediated.\r\n\r\nScope of impact: Users attempting to view the body of edited Exchange Online email messages from the Sent folder may have been impacted.\r\n\r\nStart time: Wednesday, April 15, 2026, at 10:36 AM UTC\r\n\r\nEnd time: Friday, June 05, 2026, at 7:18 PM UTC\r\n\r\nRoot cause: A code issue occurred when an email message was saved to drafts and it created a local copy. When a user edited the email message in drafts, sent it, and then viewed the email message from their sent folder, it attempted to reference the stale local copy instead of the edited version. As a result, the attempt to fetch the body failed and caused impact.\r\n\r\nNext steps: - We're reviewing the offending code issue to determine how it was introduced into the service, so that we can prevent similar instances of impact from occurring in the future.\r\n\r\nThis is the final update for the event."
         },
         {
           "createdAt": "2026-05-26T21:10:55.597Z",
