@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-05T16:26:41.499Z",
+  "lastUpdated": "2026-06-05T16:56:49.221Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -633,13 +633,13 @@
       "issues": [
         {
           "id": "CW1352001",
-          "title": "Users may receive no response when prompting Microsoft 365 Copilot Chat using the Claude Opus model ",
-          "startTime": "2026-06-04T20:35:37.707Z",
+          "title": "Users may have received no response when prompting Microsoft 365 Copilot Chat using the Claude Opus model ",
+          "startTime": "2026-06-01T13:00:00Z",
           "endTime": null,
-          "lastModified": "2026-06-04T22:16:42.37Z",
+          "lastModified": "2026-06-05T16:41:16.157Z",
           "status": "serviceDegradation",
           "severity": "incident",
-          "userImpact": "Users may receive no response when prompting Copilot Chat using the Claude Opus model.",
+          "userImpact": "Users may have received no response when prompting Copilot Chat using the Claude Opus model.",
           "scopeOfImpact": "Any user prompting Copilot Chat using the Claude Opus model may be impacted.\r\n\r\nStart time: Monday, June 01, 2026, at 1:00 PM UTC",
           "rootCause": "An increase in request traffic is causing the portion of infrastructure responsible for facilitating the responses to prompts using Claude Opus in Copilot Chat to operate in a suboptimal state.",
           "nextUpdateBy": "Friday, June 05, 2026, at 6:30 PM UTC",
