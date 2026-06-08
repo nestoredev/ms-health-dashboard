@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-08T16:16:24.001Z",
+  "lastUpdated": "2026-06-08T16:46:32.308Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -146,16 +146,21 @@
           "title": "Some users may be unable to create new online meetings from shared calendar events in Exchange Online",
           "startTime": "2026-05-30T09:11:59.853Z",
           "endTime": null,
-          "lastModified": "2026-06-04T16:22:04.457Z",
+          "lastModified": "2026-06-08T16:32:39.33Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to create new online meetings from shared calendar events in Exchange Online.",
           "scopeOfImpact": "Impact is specific to some users attempting to create new online meetings from shared calendar events in Exchange Online.\r\n\r\nStart time: Tuesday, May 26, 2026, at 12:00 AM UTC",
           "rootCause": "A recent service update in Exchange Online introduced an issue within an authorization component of the calendar service, resulting in impact.",
-          "nextUpdateBy": "Monday, June 08, 2026, at 6:00 PM UTC",
+          "nextUpdateBy": "Tuesday, June 09, 2026, at 7:00 PM UTC",
           "feature": "Performance degradation",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-06-08T16:32:39.33Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to create new online meetings from shared calendar events in Exchange Online\r\n\r\nUser impact: Users may be unable to create new online meetings from shared calendar events in Exchange Online.\r\n\r\nMore info: Affected users can create online meetings from their personal calendars as an alternative method, and existing shared calendar events remain unaffected.\r\n\r\nCurrent status: We've completed our validation of the fix, and it is currently deployed with a saturation progress of 87 percent. Some users may already see the issue mitigated as this continues to saturate all affected areas. We're continuing to monitor the deployment and anticipate having an update on its completion timeline at our next communication.\r\n\r\nScope of impact: Impact is specific to some users attempting to create new online meetings from shared calendar events in Exchange Online.\r\n\r\nStart time: Tuesday, May 26, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: A recent service update in Exchange Online introduced an issue within an authorization component of the calendar service, resulting in impact.\r\n\r\nNext update by: Tuesday, June 09, 2026, at 7:00 PM UTC"
+            },
             {
               "createdAt": "2026-06-04T16:19:19.34Z",
               "postType": "regular",
