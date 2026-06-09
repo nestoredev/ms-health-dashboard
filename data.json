@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-09T22:55:54.395Z",
+  "lastUpdated": "2026-06-09T23:26:03.978Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -410,6 +410,32 @@
       "id": "OSDPPlatform",
       "issues": [
         {
+          "id": "MO1385600",
+          "title": "Users can’t access some Assignment features in multiple M365 apps",
+          "startTime": "2026-06-09T23:16:30.777Z",
+          "endTime": null,
+          "lastModified": "2026-06-09T23:19:54.543Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users can’t access some Assignment features in multiple M365 apps.",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
+          "feature": "Company or User Administration",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-06-09T23:19:54.543Z",
+              "postType": "regular",
+              "content": "Title: Users can’t access some Assignment features in multiple M365 apps\r\n\r\nUser impact: Users can’t access some Assignment features in multiple M365 apps.\r\n\r\nMore info: Affected M365 Assignment features include, Reading Progress in Microsoft Teams, Speaker Progress in Microsoft Teams, Teach in the Microsoft 365 Copilot app. \n\n\nAffected teachers may be unable to create Reading Progress or Speaker Progress assignments, view history in Teach for Microsoft Copilot, save artifacts created in Teach, or save artifacts created in Learn. Teachers may also see failures with Study Guide and the Study and Learn Agent, and the Learning Activities Web App may fail to load the home page.\n\nAffected students may be unable to access or turn in Reading Progress or Speaker Progress assignments.\n\r\n\r\nCurrent status: We're investigating a potential issue in which users can’t access some Assignment features in multiple M365 apps and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite",
+            "Microsoft Teams"
+          ]
+        },
+        {
           "id": "MO1331639",
           "title": "Issue with webhook-based task notifications in Microsoft To Do",
           "startTime": "2026-06-02T13:55:00Z",
@@ -486,9 +512,36 @@
     },
     {
       "service": "Microsoft Teams",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "microsoftteams",
-      "issues": []
+      "issues": [
+        {
+          "id": "MO1385600",
+          "title": "Users can’t access some Assignment features in multiple M365 apps",
+          "startTime": "2026-06-09T23:16:30.777Z",
+          "endTime": null,
+          "lastModified": "2026-06-09T23:19:54.543Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users can’t access some Assignment features in multiple M365 apps.",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
+          "feature": "Company or User Administration",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-06-09T23:19:54.543Z",
+              "postType": "regular",
+              "content": "Title: Users can’t access some Assignment features in multiple M365 apps\r\n\r\nUser impact: Users can’t access some Assignment features in multiple M365 apps.\r\n\r\nMore info: Affected M365 Assignment features include, Reading Progress in Microsoft Teams, Speaker Progress in Microsoft Teams, Teach in the Microsoft 365 Copilot app. \n\n\nAffected teachers may be unable to create Reading Progress or Speaker Progress assignments, view history in Teach for Microsoft Copilot, save artifacts created in Teach, or save artifacts created in Learn. Teachers may also see failures with Study Guide and the Study and Learn Agent, and the Learning Activities Web App may fail to load the home page.\n\nAffected students may be unable to access or turn in Reading Progress or Speaker Progress assignments.\n\r\n\r\nCurrent status: We're investigating a potential issue in which users can’t access some Assignment features in multiple M365 apps and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite",
+            "Microsoft Teams"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft Bookings",
