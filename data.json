@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-09T23:26:03.978Z",
+  "lastUpdated": "2026-06-09T23:56:13.176Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -410,29 +410,28 @@
       "id": "OSDPPlatform",
       "issues": [
         {
-          "id": "MO1385600",
-          "title": "Users can’t access some Assignment features in multiple M365 apps",
-          "startTime": "2026-06-09T23:16:30.777Z",
+          "id": "MO1385610",
+          "title": "Admins' Microsoft 365 Copilot usage reports within the Microsoft 365 admin center may be delayed",
+          "startTime": "2026-06-09T22:54:13Z",
           "endTime": null,
-          "lastModified": "2026-06-09T23:19:54.543Z",
+          "lastModified": "2026-06-09T23:46:12.533Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "userImpact": "Users can’t access some Assignment features in multiple M365 apps.",
-          "scopeOfImpact": "",
-          "rootCause": "",
-          "nextUpdateBy": "",
+          "userImpact": "Admins' Microsoft 365 Copilot usage reports within the Microsoft 365 admin center may be delayed.",
+          "scopeOfImpact": "Any admin located in North America and Asia Pacific regions attempting to view up to date affected Copilot usage reports through the Microsoft 365 admin center listed in the more info section may be impacted by this event. This section may be updated as our investigation continues.",
+          "rootCause": "A delay in our upstream process for Copilot source data is preventing Copilot usage reports from publishing up-to-date data and is resulting in delayed reporting.",
+          "nextUpdateBy": "Wednesday, June 10, 2026, at 10:30 AM UTC",
           "feature": "Company or User Administration",
           "isResolved": false,
           "posts": [
             {
-              "createdAt": "2026-06-09T23:19:54.543Z",
+              "createdAt": "2026-06-09T23:46:12.533Z",
               "postType": "regular",
-              "content": "Title: Users can’t access some Assignment features in multiple M365 apps\r\n\r\nUser impact: Users can’t access some Assignment features in multiple M365 apps.\r\n\r\nMore info: Affected M365 Assignment features include, Reading Progress in Microsoft Teams, Speaker Progress in Microsoft Teams, Teach in the Microsoft 365 Copilot app. \n\n\nAffected teachers may be unable to create Reading Progress or Speaker Progress assignments, view history in Teach for Microsoft Copilot, save artifacts created in Teach, or save artifacts created in Learn. Teachers may also see failures with Study Guide and the Study and Learn Agent, and the Learning Activities Web App may fail to load the home page.\n\nAffected students may be unable to access or turn in Reading Progress or Speaker Progress assignments.\n\r\n\r\nCurrent status: We're investigating a potential issue in which users can’t access some Assignment features in multiple M365 apps and checking for impact to your organization. We'll provide an update within 30 minutes."
+              "content": "Title: Admins' Microsoft 365 Copilot usage reports within the Microsoft 365 admin center may be delayed \n\nUser impact: Admins' Microsoft 365 Copilot usage reports within the Microsoft 365 admin center may be delayed.\n\nMore info: The affected Copilot usage reports consist of the following:\n-Microsoft 365 Copilot usage reports\n-Microsoft 365 Copilot Chat usage reports\n-Microsoft Graph API Copilot usage reports\n \nThese reports will be delayed beginning Wednesday, June 10, 2026, at 12:00 AM UTC.\n\nCurrent status: Our service telemetry alerted us to an issue in which admins in North America and Asia Pacific regions may receive Copilot usage reports delayed through the Microsoft admin center. We've identified that a delay in our upstream process for Copilot source data is preventing Copilot usage reports from publishing up-to-date data and is resulting in delayed reporting. We're examining this affected upstream process to pinpoint the underlying cause for the delay and to develop a remediation strategy.\n\nScope of impact: Any admin located in North America and Asia Pacific regions attempting to view up to date affected Copilot usage reports through the Microsoft 365 admin center listed in the more info section may be impacted by this event. This section may be updated as our investigation continues.\n\nRoot cause: A delay in our upstream process for Copilot source data is preventing Copilot usage reports from publishing up-to-date data and is resulting in delayed reporting. \n\nNext update by: Wednesday, June 10, 2026, at 10:30 AM UTC"
             }
           ],
           "affectedServices": [
-            "Microsoft 365 suite",
-            "Microsoft Teams"
+            "Microsoft 365 suite"
           ]
         },
         {
@@ -512,36 +511,9 @@
     },
     {
       "service": "Microsoft Teams",
-      "status": "serviceDegradation",
+      "status": "serviceOperational",
       "id": "microsoftteams",
-      "issues": [
-        {
-          "id": "MO1385600",
-          "title": "Users can’t access some Assignment features in multiple M365 apps",
-          "startTime": "2026-06-09T23:16:30.777Z",
-          "endTime": null,
-          "lastModified": "2026-06-09T23:19:54.543Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users can’t access some Assignment features in multiple M365 apps.",
-          "scopeOfImpact": "",
-          "rootCause": "",
-          "nextUpdateBy": "",
-          "feature": "Company or User Administration",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-06-09T23:19:54.543Z",
-              "postType": "regular",
-              "content": "Title: Users can’t access some Assignment features in multiple M365 apps\r\n\r\nUser impact: Users can’t access some Assignment features in multiple M365 apps.\r\n\r\nMore info: Affected M365 Assignment features include, Reading Progress in Microsoft Teams, Speaker Progress in Microsoft Teams, Teach in the Microsoft 365 Copilot app. \n\n\nAffected teachers may be unable to create Reading Progress or Speaker Progress assignments, view history in Teach for Microsoft Copilot, save artifacts created in Teach, or save artifacts created in Learn. Teachers may also see failures with Study Guide and the Study and Learn Agent, and the Learning Activities Web App may fail to load the home page.\n\nAffected students may be unable to access or turn in Reading Progress or Speaker Progress assignments.\n\r\n\r\nCurrent status: We're investigating a potential issue in which users can’t access some Assignment features in multiple M365 apps and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Microsoft 365 suite",
-            "Microsoft Teams"
-          ]
-        }
-      ]
+      "issues": []
     },
     {
       "service": "Microsoft Bookings",
