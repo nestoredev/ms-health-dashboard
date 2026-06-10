@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-10T17:01:21.516Z",
+  "lastUpdated": "2026-06-10T17:31:31.560Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -435,31 +435,6 @@
           ]
         },
         {
-          "id": "MO1386431",
-          "title": "We're looking into a potential problem impacting Microsoft 365 Copilot Chat",
-          "startTime": "2026-06-10T16:30:21.223Z",
-          "endTime": null,
-          "lastModified": "2026-06-10T16:38:41.643Z",
-          "status": "investigating",
-          "severity": "advisory",
-          "userImpact": "We're checking for potential impact to your users.",
-          "scopeOfImpact": "",
-          "rootCause": "",
-          "nextUpdateBy": "",
-          "feature": "Company or User Administration",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-06-10T16:38:41.643Z",
-              "postType": "regular",
-              "content": "Title: We're looking into a potential problem impacting Microsoft 365 Copilot Chat\r\n\r\nUser impact: We're checking for potential impact to your users.\r\n\r\nCurrent status: We're investigating a potential issue with Copilot Chat and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Microsoft 365 suite"
-          ]
-        },
-        {
           "id": "MO1331639",
           "title": "Issue with webhook-based task notifications in Microsoft To Do",
           "startTime": "2026-06-02T13:55:00Z",
@@ -679,9 +654,35 @@
     },
     {
       "service": "Microsoft 365 Copilot Chat",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "CopilotChat",
-      "issues": []
+      "issues": [
+        {
+          "id": "CW1386443",
+          "title": "Some users may experience degradation with Microsoft 365 Copilot Chat responses after uploading a file",
+          "startTime": "2026-06-10T16:39:09.86Z",
+          "endTime": null,
+          "lastModified": "2026-06-10T17:14:51.713Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may experience degradation with Copilot Chat responses after uploading a file.",
+          "scopeOfImpact": "Some users may experience degradation with Copilot Chat responses after uploading a file. This section may be updated as the investigation progresses.",
+          "rootCause": "",
+          "nextUpdateBy": "Wednesday, June 10, 2026, at 6:30 PM UTC",
+          "feature": "General",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-06-10T17:14:51.713Z",
+              "postType": "regular",
+              "content": "Title: Some users may experience degradation with Microsoft 365 Copilot Chat responses after uploading a file\r\n\r\nUser impact: Users may experience degradation with Copilot Chat responses after uploading a file.\r\n\r\nMore info: Affected users may be returned an error message stating, \"Oops! Something happened. Can you try again?\"\n\nUsers report low-quality responses or hallucinations when Copilot Chat is prompted to respond on content within uploaded files.\r\n\r\nCurrent status: We're analyzing service telemetry for file upload scenarios for Copilot Chat to isolate when the degradation started and to determine our next troubleshooting steps.\r\n\r\nScope of impact: Some users may experience degradation with Copilot Chat responses after uploading a file. This section may be updated as the investigation progresses.\r\n\r\nNext update by: Wednesday, June 10, 2026, at 6:30 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 Copilot Chat"
+          ]
+        }
+      ]
     }
   ],
   "history": [
