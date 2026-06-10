@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-10T20:32:31.138Z",
+  "lastUpdated": "2026-06-10T21:02:39.191Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -11,16 +11,21 @@
           "title": "Some users may see that when selecting a meeting room when scheduling meetings, it changes from available to unavailable",
           "startTime": "2025-12-08T03:04:00Z",
           "endTime": null,
-          "lastModified": "2026-05-28T21:17:08.27Z",
+          "lastModified": "2026-06-10T20:51:18.72Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may see that after selecting a meeting room when scheduling meetings, it changes from available to unavailable.",
           "scopeOfImpact": "Any users that are trying to select a meeting room when scheduling meetings outside the room's working hours in Exchange Online may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Monday, December 08, 2025, at 3:04 AM UTC",
           "rootCause": "A recent expansion of the feature logic used to book rooms for scheduled meetings contains a code complication which automatically sets the meeting rooms' default working hours to appear in Pacific Standard Time instead of their accurate time zone.",
-          "nextUpdateBy": "Wednesday, June 10, 2026, at 10:00 PM UTC",
+          "nextUpdateBy": "Wednesday, June 17, 2026, at 10:00 PM UTC",
           "feature": "Reports of an Incident",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-06-10T20:51:18.72Z",
+              "postType": "regular",
+              "content": "Title: Some users may see that when selecting a meeting room when scheduling meetings, it changes from available to unavailable\r\n\r\nUser impact: Users may see that after selecting a meeting room when scheduling meetings, it changes from available to unavailable.\r\n\r\nMore info: While we are working to remediate the impact, admins can circumvent the issue by assigning the desired working hours and the time zone for the meeting rooms.\r\n\r\nCurrent status: While performing internal testing of our solution to correct the problematic code, we determined a change was needed to ensure the fix fully remediates the impact. We've made this change to the fix and we're progressing with our validations ahead of deployment. We now anticipate our deployment will complete by June 26, 2026, and we'll continue to assess our projected timeline as internal testing continues.\r\n\r\nScope of impact: Any users that are trying to select a meeting room when scheduling meetings outside the room's working hours in Exchange Online may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Monday, December 08, 2025, at 3:04 AM UTC\r\n\r\nRoot cause: A recent expansion of the feature logic used to book rooms for scheduled meetings contains a code complication which automatically sets the meeting rooms' default working hours to appear in Pacific Standard Time instead of their accurate time zone.\r\n\r\nNext update by: Wednesday, June 17, 2026, at 10:00 PM UTC"
+            },
             {
               "createdAt": "2026-05-28T21:17:08.27Z",
               "postType": "regular",
@@ -412,18 +417,23 @@
         {
           "id": "MO1385610",
           "title": "Admins' Microsoft 365 Copilot usage reports within the Microsoft 365 admin center may be delayed",
-          "startTime": "2026-06-09T22:54:13Z",
+          "startTime": "2026-06-10T00:00:00Z",
           "endTime": null,
-          "lastModified": "2026-06-10T00:33:55.5Z",
+          "lastModified": "2026-06-10T20:46:31.6Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins' Microsoft 365 Copilot usage reports within the Microsoft 365 admin center may be delayed.",
-          "scopeOfImpact": "Any admin located in North America and Asia Pacific regions attempting to view up to date affected Copilot usage reports through the Microsoft 365 admin center listed in the more info section may be impacted by this event. This section may be updated as our investigation continues.",
+          "scopeOfImpact": "Any admin located in North America and Asia Pacific regions attempting to view up to date affected Copilot usage reports through the Microsoft 365 admin center listed in the more info section may be impacted by this event. This section may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, June 10, 2026, at 12:00 AM UTC",
           "rootCause": "A delay in our upstream process for Copilot source data is preventing Copilot usage reports from publishing up-to-date data and is resulting in delayed reporting.",
-          "nextUpdateBy": "Wednesday, June 10, 2026, at 10:30 PM UTC",
+          "nextUpdateBy": "Thursday, June 11, 2026, at 10:30 PM UTC",
           "feature": "Company or User Administration",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-06-10T20:46:31.6Z",
+              "postType": "regular",
+              "content": "Title: Admins' Microsoft 365 Copilot usage reports within the Microsoft 365 admin center may be delayed\r\n\r\nUser impact: Admins' Microsoft 365 Copilot usage reports within the Microsoft 365 admin center may be delayed.\r\n\r\nMore info: The affected Copilot usage reports consist of the following:\n-Microsoft 365 Copilot usage reports\n-Microsoft 365 Copilot Chat usage reports\n-Microsoft Graph API Copilot usage reports\n \nThese reports will be delayed beginning Wednesday, June 10, 2026, at 12:00 AM UTC.\r\n\r\nCurrent status: As our investigation into the source of the delay in our upstream process is ongoing, we've begun a restatement process on affected data as a means to remediate impact. Once this restatement process is complete, we'll work to establish a timeline for data backfill to complete and issue resolution. \r\n\r\nScope of impact: Any admin located in North America and Asia Pacific regions attempting to view up to date affected Copilot usage reports through the Microsoft 365 admin center listed in the more info section may be impacted by this event. This section may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, June 10, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: A delay in our upstream process for Copilot source data is preventing Copilot usage reports from publishing up-to-date data and is resulting in delayed reporting.\r\n\r\nNext update by: Thursday, June 11, 2026, at 10:30 PM UTC"
+            },
             {
               "createdAt": "2026-06-09T23:46:12.533Z",
               "postType": "regular",
@@ -476,16 +486,21 @@
           "title": "Users may be unable to access Excel files through browser from SharePoint Online",
           "startTime": "2026-06-10T14:50:49.277Z",
           "endTime": null,
-          "lastModified": "2026-06-10T18:42:06.783Z",
+          "lastModified": "2026-06-10T20:49:54.977Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to access Excel files through browser from SharePoint Online.",
           "scopeOfImpact": "Users accessing subsites with unique permissions not inherited from the parent site on SharePoint Online aren't able to access files in Excel for the web browser.",
           "rootCause": "",
-          "nextUpdateBy": "Wednesday, June 10, 2026, at 9:00 PM UTC",
+          "nextUpdateBy": "Wednesday, June 10, 2026, at 11:30 PM UTC",
           "feature": "Visio Services",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-06-10T20:49:54.977Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to access Excel files through browser from SharePoint Online\r\n\r\nUser impact: Users may be unable to access Excel files through browser from SharePoint Online.\r\n\r\nMore info: As a workaround, users can open the file in the Excel desktop app instead.\r\n\r\nCurrent status: We've determined that the recent update isn't the cause of impact. We're analyzing other recent updates along with testing additional service-side reproductions of this issue to isolate the root cause.\r\n\r\nScope of impact: Users accessing subsites with unique permissions not inherited from the parent site on SharePoint Online aren't able to access files in Excel for the web browser.\r\n\r\nNext update by: Wednesday, June 10, 2026, at 11:30 PM UTC"
+            },
             {
               "createdAt": "2026-06-10T18:42:06.783Z",
               "postType": "regular",
