@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-10T16:31:12.335Z",
+  "lastUpdated": "2026-06-10T17:01:21.516Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -146,7 +146,7 @@
           "title": "Some users may be unable to create new online meetings from shared calendar events in Exchange Online",
           "startTime": "2026-05-30T09:11:59.853Z",
           "endTime": null,
-          "lastModified": "2026-06-09T17:40:51.663Z",
+          "lastModified": "2026-06-10T16:42:26.697Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to create new online meetings from shared calendar events in Exchange Online.",
@@ -435,6 +435,31 @@
           ]
         },
         {
+          "id": "MO1386431",
+          "title": "We're looking into a potential problem impacting Microsoft 365 Copilot Chat",
+          "startTime": "2026-06-10T16:30:21.223Z",
+          "endTime": null,
+          "lastModified": "2026-06-10T16:38:41.643Z",
+          "status": "investigating",
+          "severity": "advisory",
+          "userImpact": "We're checking for potential impact to your users.",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
+          "feature": "Company or User Administration",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-06-10T16:38:41.643Z",
+              "postType": "regular",
+              "content": "Title: We're looking into a potential problem impacting Microsoft 365 Copilot Chat\r\n\r\nUser impact: We're checking for potential impact to your users.\r\n\r\nCurrent status: We're investigating a potential issue with Copilot Chat and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite"
+          ]
+        },
+        {
           "id": "MO1331639",
           "title": "Issue with webhook-based task notifications in Microsoft To Do",
           "startTime": "2026-06-02T13:55:00Z",
@@ -473,19 +498,24 @@
       "issues": [
         {
           "id": "SP1386381",
-          "title": "Users can't access Excel files through browser from SharePoint Online",
+          "title": "Users may be unable to access Excel files through browser from SharePoint Online",
           "startTime": "2026-06-10T14:50:49.277Z",
           "endTime": null,
-          "lastModified": "2026-06-10T16:21:19.98Z",
+          "lastModified": "2026-06-10T16:52:31.33Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "userImpact": "Users can't access Excel files through browser from SharePoint Online.",
+          "userImpact": "Users may be unable to access Excel files through browser from SharePoint Online.",
           "scopeOfImpact": "Users accessing subsites with unique permissions not inherited from the parent site on SharePoint Online aren't able to access files in Excel for the web browser.",
           "rootCause": "",
-          "nextUpdateBy": "Wednesday, June 10, 2026, at 5:00 PM UTC",
-          "feature": "InfoPath Online",
+          "nextUpdateBy": "Wednesday, June 10, 2026, at 7:00 PM UTC",
+          "feature": "Visio Services",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-06-10T16:52:31.33Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to access Excel files through browser from SharePoint Online\r\n\r\nUser impact: Users may be unable to access Excel files through browser from SharePoint Online.\r\n\r\nMore info: As a workaround, users can open the file in the Excel desktop app instead.\r\n\r\nCurrent status: Our investigation continues into our reproduction of the event and log review. In parallel, we're also reviewing if any recent updates or changes could be contributing to impact.\r\n\r\nScope of impact: Users accessing subsites with unique permissions not inherited from the parent site on SharePoint Online aren't able to access files in Excel for the web browser.\r\n\r\nNext update by: Wednesday, June 10, 2026, at 7:00 PM UTC"
+            },
             {
               "createdAt": "2026-06-10T15:38:12.693Z",
               "postType": "regular",
