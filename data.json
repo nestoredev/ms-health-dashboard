@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-10T09:59:15.570Z",
+  "lastUpdated": "2026-06-10T10:29:24.347Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -439,16 +439,21 @@
           "title": "Issue with webhook-based task notifications in Microsoft To Do",
           "startTime": "2026-06-02T13:55:00Z",
           "endTime": null,
-          "lastModified": "2026-06-02T13:57:01.693Z",
+          "lastModified": "2026-06-10T10:08:39.36Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users are unable to receive webhook-based task notifications in Microsoft To Do.",
           "scopeOfImpact": "Your organization is impacted by this event, and this issue may affect any user within your organization.",
           "rootCause": "",
-          "nextUpdateBy": "Wednesday, June 10, 2026, at 12:00 PM UTC",
+          "nextUpdateBy": "Wednesday, June 17, 2026, at 12:00 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-06-10T10:08:39.36Z",
+              "postType": "regular",
+              "content": "Title: Issue with webhook-based task notifications in Microsoft To Do\n\nUser impact: Users are unable to receive webhook-based task notifications in Microsoft To Do.\n\nMore info: This issue may affect any webhook-based task notification in Microsoft To Do:\n \n- Any webhook notification delivery to your organization's registered notificationUrl endpoints that was setup using MSGraph: https://learn.microsoft.com/en-us/graph/change-notifications-with-resource-data?tabs=csharp\n- Any automation or workflow that depends on receiving real-time task change callbacks\n \nIf your organization relies on webhook notifications for task automation:\n- Consider temporary polling via GET requests to /me/todo/lists/{listId}/tasks as a workaround: https://learn.microsoft.com/en-us/graph/api/resources/todo-overview?view=graph-rest-1.0\n \nCurrent status: We've completed the development of the long-term fix to restore webhook-based task notifications in Microsoft To Do, and we're now conducting a period of internal testing to ensure the fix produces the expected resolution. Once complete, we'll begin deploying the fix to the affected infrastructure.\n \nScope of impact: Your organization is impacted by this event, and this issue may affect any user within your organization.\n \nNext update by: Wednesday, June 17, 2026, at 12:00 PM UTC"
+            },
             {
               "createdAt": "2026-06-02T13:55:50.833Z",
               "postType": "regular",
