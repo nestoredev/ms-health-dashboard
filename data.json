@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-10T20:02:18.923Z",
+  "lastUpdated": "2026-06-10T20:32:31.138Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -667,16 +667,21 @@
           "title": "Some users may experience degradation with Microsoft 365 Copilot Chat responses after uploading a file",
           "startTime": "2026-06-09T06:00:00Z",
           "endTime": null,
-          "lastModified": "2026-06-10T19:44:18.167Z",
+          "lastModified": "2026-06-10T20:23:51.677Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may experience degradation with Copilot Chat responses after uploading a file.",
-          "scopeOfImpact": "Some users may experience degradation with Copilot Chat responses after uploading a file. This section may be updated as the investigation progresses.",
+          "scopeOfImpact": "Some users may experience degradation with Copilot Chat responses after uploading a file. This section may be updated as the investigation progresses.\r\n\r\nStart time: Tuesday, June 09, 2026, at 6:00 AM UTC",
           "rootCause": "",
-          "nextUpdateBy": "Wednesday, June 10, 2026, at 8:30 PM UTC",
+          "nextUpdateBy": "Thursday, June 11, 2026, at 1:00 AM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-06-10T20:23:51.677Z",
+              "postType": "regular",
+              "content": "Title: Some users may experience degradation with Microsoft 365 Copilot Chat responses after uploading a file\r\n\r\nUser impact: Users may experience degradation with Copilot Chat responses after uploading a file.\r\n\r\nMore info: Affected users may be returned an error message stating, \"Oops! Something happened. Can you try again?\"\n\nUsers report low-quality responses or hallucinations when Copilot Chat is prompted to respond on content within uploaded files.\r\n\r\nCurrent status: We're implementing a configuration change to prevent indefinite retries from occurring during OneDrive or SharePoint Online file uploads along with implementing performance optimizations on affected service infrastructure to assist with processing the requests.\r\n\r\nScope of impact: Some users may experience degradation with Copilot Chat responses after uploading a file. This section may be updated as the investigation progresses.\r\n\r\nStart time: Tuesday, June 09, 2026, at 6:00 AM UTC\r\n\r\nNext update by: Thursday, June 11, 2026, at 1:00 AM UTC"
+            },
             {
               "createdAt": "2026-06-10T18:18:49.263Z",
               "postType": "regular",
