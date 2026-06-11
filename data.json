@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-11T13:07:18.608Z",
+  "lastUpdated": "2026-06-11T13:37:26.826Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -140,6 +140,36 @@
               "createdAt": "2026-02-16T05:07:28.317Z",
               "postType": "regular",
               "content": "Title: Some users may see that when selecting a meeting room when scheduling meetings, it changes from available to unavailable\n\nUser impact: Users may see that after selecting a meeting room when scheduling meetings, it changes from available to unavailable.\n\nMore info: Specifically, the meeting room selected is incorrectly changing from available to unavailable in Exchange Online. \n\nCurrent status: We're investigating a potential issue with Exchange Online and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online"
+          ]
+        },
+        {
+          "id": "EX1387205",
+          "title": "Some users may encounter an error when using the Copilot rewrite feature in Classic Outlook",
+          "startTime": "2026-06-11T11:04:47.993Z",
+          "endTime": null,
+          "lastModified": "2026-06-11T13:26:23.07Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may encounter an error when using the Copilot rewrite feature in Classic Outlook.",
+          "scopeOfImpact": "Impact is specific to some users attempting to utilize Copilot rewrite feature in Classic Outlook.",
+          "rootCause": "",
+          "nextUpdateBy": "Thursday, June 11, 2026, at 3:30 PM UTC",
+          "feature": "Outlook Desktop",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-06-11T13:21:51.417Z",
+              "postType": "regular",
+              "content": "Title: Some users may encounter an error when using the Copilot rewrite feature in Classic Outlook\r\n\r\nUser impact: Users may encounter an error when using the Copilot rewrite feature in Classic Outlook.\r\n\r\nMore info: Copilot rewrite feature functionality works as expected in Outlook on the web and new Outlook.\n \nAffected users when selecting text and using the Copilot rewrite option in Classic Outlook, may encounter the following error message  \"Sorry, something went wrong. Copilot is working on it.\"\r\n\r\nCurrent status: We suspect a potential regression in the Outlook client is contributing to the issue and are actively analyzing telemetry data and comparing behaviour across different client versions to determine the source of impact.\r\n\r\nScope of impact: Impact is specific to some users attempting to utilize Copilot rewrite feature in Classic Outlook.\r\n\r\nNext update by: Thursday, June 11, 2026, at 3:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-06-11T11:28:15.777Z",
+              "postType": "regular",
+              "content": "Title: Users are seeing an error when using the Copilot rewrite feature in Classic Outlook\r\n\r\nUser impact: Users are seeing an error when using the Copilot rewrite feature in Classic Outlook.\r\n\r\nMore info:  Copilot rewrite feature functionality works as expected in Outlook on the web and the new Outlook.\n\nAffected users when selecting text and using the Copilot rewrite option in Classic Outlook, are seeing the following error message  \"Sorry, something went wrong. Copilot is working on it.\"\r\n\r\nCurrent status: We’re reviewing associated support case details to understand more about the issue, and determine our next troubleshooting steps.\r\n\r\nScope of impact: Your organization is affected by this event, and some users attempting to utilize Copilot rewrite feature are impacted.\r\n\r\nNext update by: Thursday, June 11, 2026, at 1:30 PM UTC"
             }
           ],
           "affectedServices": [
@@ -1922,42 +1952,6 @@
       "serviceName": "Exchange Online",
       "affectedServices": [
         "Exchange Online"
-      ]
-    },
-    {
-      "id": "CW1300750",
-      "title": "Some users may be unable to access links to other apps provided by Microsoft 365 Copilot Chat prompts",
-      "startTime": "2026-04-29T00:00:00Z",
-      "endTime": "2026-05-12T13:30:00Z",
-      "lastModified": "2026-05-13T19:13:43.063Z",
-      "status": "serviceRestored",
-      "severity": "incident",
-      "userImpact": "Users may have been unable to access links to other apps provided by Copilot Chat prompts.",
-      "scopeOfImpact": "This issue impacted users attempting to click or access app links provided by Copilot Chat prompts who may not be redirected as expected.\r\n\r\nStart time: Wednesday, April 29, 2026, at 12:00 AM UTC\r\n\r\nEnd time: Tuesday, May 12, 2026, at 1:30 PM UTC",
-      "rootCause": "A new update to increase the number of URLs allowed when routing universal links had introduced a code error, which resulted in users being unable to access app links provided by Copilot Chat prompts.\r\n\r\nNext steps: We're analyzing the impacting update to isolate why the code error wasn't caught during our internal testing and validation stages. This analysis will help us to improve our update implementation processes moving forward to ensure similar impact scenarios don't occur in the future.\r\n\r\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "General",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-05-13T19:13:23.82Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to access links to other apps provided by Microsoft 365 Copilot Chat prompts\r\n\r\nUser impact: Users may have been unable to access links to other apps provided by Copilot Chat prompts.\r\n\r\nMore info: Users may have received an error or were directed to a page that never loaded when clicking links to other apps provided by Copilot Chat prompts.\n\nThis issue impacts any service where Copilot Chat can be utilized, which includes but may not be limited to the following:\n-\tMicrosoft Teams\n-\tWord\n-\tExcel\n-\tPowerPoint\n-\tOutlook\n-\tOneNote\r\n\r\nFinal status: We've validated that our deployment of the fix to address code errors causing users to be unable to access links to other apps provided by Copilot Chat prompts has completed. We've validated from our monitors that impact is remediated.\r\n\r\nScope of impact: This issue impacted users attempting to click or access app links provided by Copilot Chat prompts who may not be redirected as expected.\r\n\r\nStart time: Wednesday, April 29, 2026, at 12:00 AM UTC\r\n\r\nEnd time: Tuesday, May 12, 2026, at 1:30 PM UTC\r\n\r\nRoot cause: A new update to increase the number of URLs allowed when routing universal links had introduced a code error, which resulted in users being unable to access app links provided by Copilot Chat prompts.\r\n\r\nNext steps: We're analyzing the impacting update to isolate why the code error wasn't caught during our internal testing and validation stages. This analysis will help us to improve our update implementation processes moving forward to ensure similar impact scenarios don't occur in the future.\r\n\r\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-05-07T18:41:56.29Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to access links to other apps provided by Microsoft 365 Copilot Chat prompts\r\n\r\nUser impact: Users may be unable to access links to other apps provided by Copilot Chat prompts.\r\n\r\nMore info: Users may receive an error or be directed to a page that never loads when clicking links to other apps provided by Copilot Chat prompts.\n\nThis issue impacts any service where Copilot Chat can be utilized, which includes but may not be limited to the following:\n-\tMicrosoft Teams\n-\tWord\n-\tExcel\n-\tPowerPoint\n-\tOutlook\n-\tOneNote\r\n\r\nCurrent status: Our deployment of a code fix to address a code error causing users to be unable to access links to other apps provided by Copilot Chat prompts is at 10 percent saturation but progressing slower than initially anticipated. At the current rate, we believe full saturation will occur by Sunday, May 17, 2026, and we are determining what actions we can take to expedite our deployment to affected users.\r\n\r\nScope of impact: This issue impacts users attempting to click or access app links provided by Copilot Chat prompts who may not be redirected as expected. This section may be updated as the investigation progresses.\r\n\r\nStart time: Wednesday, April 29, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: A new update to increase the number of URLs allowed when routing universal links has introduced a code error, which results in users being unable to access app links provided by Copilot Chat prompts.\r\n\r\nNext update by: Wednesday, May 13, 2026, at 8:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-05-04T19:17:29.267Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to access links to other apps provided by Microsoft 365 Copilot Chat prompts\n\nUser impact: Users may be unable to access links to other apps provided by Copilot Chat prompts.\n\nMore info: Users may receive an error or be directed to a page that never loads when clicking links to other apps provided by Copilot Chat prompts.\n\nThis issue impacts any service where Copilot Chat can be utilized, which includes but may not be limited to the following:\n-\tMicrosoft Teams\n-\tWord\n-\tExcel\n-\tPowerPoint\n-\tOutlook\n-\tOneNote\n\nCurrent status: During our internal testing of a new update to increase the number of URLs allowed when routing universal links, we identified that a code error was introduced which results in users being unable to access links to other apps generated by Copilot Chat prompts. We've created and completed validations of a code fix to remediate impact, and we anticipate our code fix reaching all affected users by Wednesday, May 13, 2026. We aim to provide updates on our timeline to remediation as the deployment progresses.\n\nScope of impact: This issue impacts users attempting to click or access app links provided by Copilot Chat prompts who may not be redirected as expected. This section may be updated as the investigation progresses.\n\nStart time: Wednesday, April 29, 2026, at 12:00 AM UTC\n\nRoot cause: A new update to increase the number of URLs allowed when routing universal links has introduced a code error, which results in users being unable to access app links provided by Copilot Chat prompts.\n\nNext update by: Thursday, May 07, 2026, at 8:00 PM UTC"
-        }
-      ],
-      "serviceName": "Microsoft 365 Copilot Chat",
-      "affectedServices": [
-        "Microsoft 365 Copilot Chat"
       ]
     }
   ]
