@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-11T22:09:54.954Z",
+  "lastUpdated": "2026-06-11T22:40:02.314Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -450,36 +450,6 @@
           ]
         },
         {
-          "id": "MO1387691",
-          "title": "Users are unable to access Microsoft 365 Copilot Chat or portal.office.com",
-          "startTime": "2026-06-11T21:12:12Z",
-          "endTime": null,
-          "lastModified": "2026-06-11T21:57:09.633Z",
-          "status": "serviceDegradation",
-          "severity": "incident",
-          "userImpact": "Users are unable to access Microsoft 365 Copilot Chat or portal.office.com.",
-          "scopeOfImpact": "Our investigation indicates that any user or admin may be affected by this event. This section is subject to change as the investigation continues.\n\nStart time: Thursday, June 11, 2026, at 8:00 PM UTC\n\nPreliminary",
-          "rootCause": "We've identified an issue with a recent deployment which is contributing to impact. We will continue to perform a root cause analysis to identify how this occurred and how we can prevent this from happening in the future.",
-          "nextUpdateBy": "Thursday, June 11, 2026, at 11:00 PM UTC",
-          "feature": "Access",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-06-11T21:54:45.837Z",
-              "postType": "regular",
-              "content": "Title: Users are unable to access Microsoft 365 Copilot Chat or portal.office.com\n\nUser impact: Users are unable to access Microsoft 365 Copilot Chat or portal.office.com.\n\nMore info: Admins may be able to access the Microsoft 365 admin center via admin.cloud.microsoft as a temporary solution. Additionally, Copilot in Microsoft Teams is not expected to be impacted and can be leveraged in the interim while we mitigate the issue.\n\nCurrent status: We have successfully reverted the change for 97 percent of the affected infrastructure. We're continuing to monitor the progress of the reversion and we're also observing an uptick in service availability. Additionally, we've started to receive confirmation that service availability is returning for some users. In parallel, we're investigating the underlying cause of the problem and will provide more information when available.\n\nScope of impact: Our investigation indicates that any user or admin may be affected by this event. This section is subject to change as the investigation continues.\n\nStart time: Thursday, June 11, 2026, at 8:00 PM UTC\n\nPreliminary root cause: We've identified an issue with a recent deployment which is contributing to impact. We will continue to perform a root cause analysis to identify how this occurred and how we can prevent this from happening in the future.\n\nNext update by: Thursday, June 11, 2026, at 11:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-06-11T21:20:21.143Z",
-              "postType": "regular",
-              "content": "Title: Users are unable to access Microsoft 365 Copilot Chat or portal.office.com\n\nUser impact: Users are unable to access Microsoft 365 Copilot Chat or portal.office.com.\n\nMore info: Admins may be able to access the Microsoft 365 admin center via admin.cloud.microsoft as a temporary solution. Additionally, Copilot in Microsoft Teams is not expected to be impacted and can be leveraged in the interim while we mitigate the issue.\n \nCurrent status: This is a continuation of a communication posted under CW1387674. We’ve identified an issue with a recent deployment for Microsoft Copilot. We’re reverting to a previous build to remediate impact as soon as possible. We expect this to be completed in the next 30 minutes.\n\nScope of impact: Our investigation indicates that any user or admin may be affected by this event. This section is subject to change as the investigation continues. \n\nStart time: Thursday, June 11, 2026, at 8:00 PM UTC\n\nEstimated time to resolve: We expect the reversion to be complete in the next 30 minutes. \n\nRoot cause: The root cause is still being investigated. We will provide more information in our next update. \n\nNext update by: Thursday, June 11, 2026, at 10:00 PM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Microsoft 365 suite"
-          ]
-        },
-        {
           "id": "MO1331639",
           "title": "Issue with webhook-based task notifications in Microsoft To Do",
           "startTime": "2026-06-02T13:55:00Z",
@@ -724,63 +694,94 @@
     },
     {
       "service": "Microsoft 365 Copilot Chat",
-      "status": "serviceDegradation",
+      "status": "serviceOperational",
       "id": "CopilotChat",
-      "issues": [
-        {
-          "id": "CW1386443",
-          "title": "Some users may experience degradation with Microsoft 365 Copilot Chat responses after uploading a file",
-          "startTime": "2026-06-09T06:00:00Z",
-          "endTime": null,
-          "lastModified": "2026-06-11T21:46:06.883Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may have experienced degradation with Copilot Chat responses after uploading a file.",
-          "scopeOfImpact": "Some users may experience degradation with Copilot Chat responses after uploading a file. This section may be updated as the investigation progresses.\r\n\r\nStart time: Tuesday, June 09, 2026, at 6:00 AM UTC",
-          "rootCause": "Normal growth in Microsoft 365 Copilot usage exceeded the available resources needed to process OneDrive and SharePoint Online file upload requests, causing some requests to process slower or fail.",
-          "nextUpdateBy": "Thursday, June 11, 2026, at 11:00 PM UTC",
-          "feature": "General",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-06-11T18:11:10.64Z",
-              "postType": "regular",
-              "content": "Title: Some users may experience degradation with Microsoft 365 Copilot Chat responses after uploading a file\r\n\r\nUser impact: Users may experience degradation with Copilot Chat responses after uploading a file.\r\n\r\nMore info: Affected users may be returned an error message stating, \"Oops! Something happened. Can you try again?\"\n\nUsers report low-quality or inaccurate responses when Copilot Chat is prompted to respond on content within uploaded files.\n\nAdditionally, users attempting to send a message with file grounding may receive the following response, \"I tried to open your file {file name}, but I’m currently unable to retrieve its contents due to an access/activity limit on the file.\"\r\n\r\nCurrent status: We've identified another facet of the impacted user experience in that users sending messages with file grounding may receive a response noting Copilot Chat can't retrieve contents due to an access or activity limit, and we've updated the More info section of this communication with this information. Our previously communicated status remains accurate, as we monitor file upload traffic across affected regions to confirm our changes are remediating the impact and scale out our configuration change to prevent retries from adding more load during OneDrive or SharePoint Online file uploads.\r\n\r\nScope of impact: Some users may experience degradation with Copilot Chat responses after uploading a file. This section may be updated as the investigation progresses.\r\n\r\nStart time: Tuesday, June 09, 2026, at 6:00 AM UTC\r\n\r\nRoot cause: Normal growth in Microsoft 365 Copilot usage exceeded the available resources needed to process OneDrive and SharePoint Online file upload requests, causing some requests to process slower or fail.\r\n\r\nNext update by: Thursday, June 11, 2026, at 11:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-06-11T15:55:30.26Z",
-              "postType": "regular",
-              "content": "Title: Some users may experience degradation with Microsoft 365 Copilot Chat responses after uploading a file\r\n\r\nUser impact: Users may experience degradation with Copilot Chat responses after uploading a file.\r\n\r\nMore info: Affected users may be returned an error message stating, \"Oops! Something happened. Can you try again?\"\n\nUsers report low-quality or inaccurate responses when Copilot Chat is prompted to respond on content within uploaded files.\r\n\r\nCurrent status: We've added additional resources to regions that were experiencing high demand, and we're monitoring file upload traffic over the next 12-14 hours across affected regions to confirm if our changes are assisting with remediation. Simultaneously, we’re also scaling out a configuration change to prevent retries from adding more load during OneDrive or SharePoint Online file uploads to additional affected regions to assist with our remediation efforts.\r\n\r\nScope of impact: Some users may experience degradation with Copilot Chat responses after uploading a file. This section may be updated as the investigation progresses.\r\n\r\nStart time: Tuesday, June 09, 2026, at 6:00 AM UTC\r\n\r\nRoot cause: Normal growth in Microsoft 365 Copilot usage exceeded the available resources needed to process OneDrive and SharePoint Online file upload requests, causing some requests to process slower or fail.\r\n\r\nNext update by: Thursday, June 11, 2026, at 11:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-06-11T01:00:53.913Z",
-              "postType": "regular",
-              "content": "Title: Some users may experience degradation with Microsoft 365 Copilot Chat responses after uploading a file\n\nUser impact: Users may experience degradation with Copilot Chat responses after uploading a file.\n\nMore info: Affected users may be returned an error message stating, \"Oops! Something happened. Can you try again?\"\n\nUsers report low-quality or inaccurate responses when Copilot Chat is prompted to respond on content within uploaded files.\n\nCurrent status: We’re adding resources in regions that were experiencing high demand and gradually allowing more file upload traffic to resume. We’re also implementing a configuration change to prevent retries from adding more load during OneDrive or SharePoint Online file uploads. We’ll monitor the affected environment during peak usage periods to confirm whether the added resources are sufficient to fully mitigate impact.\n\nScope of impact: Some users may experience degradation with Copilot Chat responses after uploading a file. This section may be updated as the investigation progresses.\n\nStart time: Tuesday, June 09, 2026, at 6:00 AM UTC\n\nRoot cause: We’ve determined that normal growth in Microsoft 365 Copilot usage exceeded the available resources needed to process OneDrive and SharePoint Online file upload requests, causing some requests to process slower or fail.\n\nNext update by: Thursday, June 11, 2026, at 5:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-06-10T20:23:51.677Z",
-              "postType": "regular",
-              "content": "Title: Some users may experience degradation with Microsoft 365 Copilot Chat responses after uploading a file\r\n\r\nUser impact: Users may experience degradation with Copilot Chat responses after uploading a file.\r\n\r\nMore info: Affected users may be returned an error message stating, \"Oops! Something happened. Can you try again?\"\n\nUsers report low-quality responses or hallucinations when Copilot Chat is prompted to respond on content within uploaded files.\r\n\r\nCurrent status: We're implementing a configuration change to prevent indefinite retries from occurring during OneDrive or SharePoint Online file uploads along with implementing performance optimizations on affected service infrastructure to assist with processing the requests.\r\n\r\nScope of impact: Some users may experience degradation with Copilot Chat responses after uploading a file. This section may be updated as the investigation progresses.\r\n\r\nStart time: Tuesday, June 09, 2026, at 6:00 AM UTC\r\n\r\nNext update by: Thursday, June 11, 2026, at 1:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-06-10T18:18:49.263Z",
-              "postType": "regular",
-              "content": "Title: Some users may experience degradation with Microsoft 365 Copilot Chat responses after uploading a file\r\n\r\nUser impact: Users may experience degradation with Copilot Chat responses after uploading a file.\r\n\r\nMore info: Affected users may be returned an error message stating, \"Oops! Something happened. Can you try again?\"\n\nUsers report low-quality responses or hallucinations when Copilot Chat is prompted to respond on content within uploaded files.\r\n\r\nCurrent status: After analyzing service telemetry for file upload scenarios for Copilot Chat, we've isolated that unexpected increased request volume is causing our retry logic for Microsoft OneDrive and SharePoint Online file uploads to retry indefinitely, causing degradation in Copilot Chat responses. We're working to isolate the source of the increased traffic to validate the root cause of impact and to determine our next remediation actions.\r\n\r\nScope of impact: Some users may experience degradation with Copilot Chat responses after uploading a file. This section may be updated as the investigation progresses.\r\n\r\nNext update by: Wednesday, June 10, 2026, at 8:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-06-10T17:14:51.713Z",
-              "postType": "regular",
-              "content": "Title: Some users may experience degradation with Microsoft 365 Copilot Chat responses after uploading a file\r\n\r\nUser impact: Users may experience degradation with Copilot Chat responses after uploading a file.\r\n\r\nMore info: Affected users may be returned an error message stating, \"Oops! Something happened. Can you try again?\"\n\nUsers report low-quality responses or hallucinations when Copilot Chat is prompted to respond on content within uploaded files.\r\n\r\nCurrent status: We're analyzing service telemetry for file upload scenarios for Copilot Chat to isolate when the degradation started and to determine our next troubleshooting steps.\r\n\r\nScope of impact: Some users may experience degradation with Copilot Chat responses after uploading a file. This section may be updated as the investigation progresses.\r\n\r\nNext update by: Wednesday, June 10, 2026, at 6:30 PM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Microsoft 365 Copilot Chat"
-          ]
-        }
-      ]
+      "issues": []
     }
   ],
   "history": [
+    {
+      "id": "MO1387691",
+      "title": "Users are unable to access Microsoft 365 Copilot Chat or portal.office.com",
+      "startTime": "2026-06-11T21:12:12Z",
+      "endTime": "2026-06-11T22:01:25Z",
+      "lastModified": "2026-06-11T22:06:46.807Z",
+      "status": "serviceRestored",
+      "severity": "incident",
+      "userImpact": "Users may have been unable to access Microsoft 365 Copilot Chat or portal.office.com.",
+      "scopeOfImpact": "Any user or admin may have been affected by this event. \n\nStart time: Thursday, June 11, 2026, at 8:00 PM UTC\n\nEnd time: Thursday, June 11, 2026, at 9:56 PM UTC\n\nPreliminary",
+      "rootCause": "We've identified an issue with a recent deployment which is contributing to impact. We will provide more information in our Post-Incident Report.\n\nNext steps: - We're analyzing the recent deployment to identify why this issue occurred and how to prevent it from happening again in the future. \n- We're reviewing our change management processes to determine areas of improvement. \n\nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days.",
+      "nextUpdateBy": "",
+      "feature": "Access",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-06-11T22:05:51.407Z",
+          "postType": "regular",
+          "content": "Title: Users are unable to access Microsoft 365 Copilot Chat or portal.office.com\n\nUser impact: Users are unable to access Microsoft 365 Copilot Chat or portal.office.com.\n\nMore info: Admins may have been able to access the Microsoft 365 admin center via admin.cloud.microsoft as a temporary solution. Additionally, Copilot in Microsoft Teams was not impacted and could have been leveraged in the interim while we mitigated the issue.\n\nFinal status: We’ve successfully rolled back the change throughout the affected infrastructure, and we've confirmed with previously affected users that the impact is mitigated. \n\nScope of impact: Any user or admin may have been affected by this event. \n\nStart time: Thursday, June 11, 2026, at 8:00 PM UTC\n\nEnd time: Thursday, June 11, 2026, at 9:56 PM UTC\n\nPreliminary root cause: We've identified an issue with a recent deployment which is contributing to impact. We will provide more information in our Post-Incident Report.\n\nNext steps: - We're analyzing the recent deployment to identify why this issue occurred and how to prevent it from happening again in the future. \n- We're reviewing our change management processes to determine areas of improvement. \n\nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days."
+        },
+        {
+          "createdAt": "2026-06-11T21:54:45.837Z",
+          "postType": "regular",
+          "content": "Title: Users are unable to access Microsoft 365 Copilot Chat or portal.office.com\n\nUser impact: Users are unable to access Microsoft 365 Copilot Chat or portal.office.com.\n\nMore info: Admins may be able to access the Microsoft 365 admin center via admin.cloud.microsoft as a temporary solution. Additionally, Copilot in Microsoft Teams is not expected to be impacted and can be leveraged in the interim while we mitigate the issue.\n\nCurrent status: We have successfully reverted the change for 97 percent of the affected infrastructure. We're continuing to monitor the progress of the reversion and we're also observing an uptick in service availability. Additionally, we've started to receive confirmation that service availability is returning for some users. In parallel, we're investigating the underlying cause of the problem and will provide more information when available.\n\nScope of impact: Our investigation indicates that any user or admin may be affected by this event. This section is subject to change as the investigation continues.\n\nStart time: Thursday, June 11, 2026, at 8:00 PM UTC\n\nPreliminary root cause: We've identified an issue with a recent deployment which is contributing to impact. We will continue to perform a root cause analysis to identify how this occurred and how we can prevent this from happening in the future.\n\nNext update by: Thursday, June 11, 2026, at 11:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-06-11T21:20:21.143Z",
+          "postType": "regular",
+          "content": "Title: Users are unable to access Microsoft 365 Copilot Chat or portal.office.com\n\nUser impact: Users are unable to access Microsoft 365 Copilot Chat or portal.office.com.\n\nMore info: Admins may be able to access the Microsoft 365 admin center via admin.cloud.microsoft as a temporary solution. Additionally, Copilot in Microsoft Teams is not expected to be impacted and can be leveraged in the interim while we mitigate the issue.\n \nCurrent status: This is a continuation of a communication posted under CW1387674. We’ve identified an issue with a recent deployment for Microsoft Copilot. We’re reverting to a previous build to remediate impact as soon as possible. We expect this to be completed in the next 30 minutes.\n\nScope of impact: Our investigation indicates that any user or admin may be affected by this event. This section is subject to change as the investigation continues. \n\nStart time: Thursday, June 11, 2026, at 8:00 PM UTC\n\nEstimated time to resolve: We expect the reversion to be complete in the next 30 minutes. \n\nRoot cause: The root cause is still being investigated. We will provide more information in our next update. \n\nNext update by: Thursday, June 11, 2026, at 10:00 PM UTC"
+        }
+      ],
+      "serviceName": "Microsoft 365 suite",
+      "affectedServices": [
+        "Microsoft 365 suite"
+      ]
+    },
+    {
+      "id": "CW1386443",
+      "title": "Some users may experience degradation with Microsoft 365 Copilot Chat responses after uploading a file",
+      "startTime": "2026-06-09T06:00:00Z",
+      "endTime": "2026-06-11T18:10:00Z",
+      "lastModified": "2026-06-11T22:18:20.533Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have experienced degradation with Copilot Chat responses after uploading a file.",
+      "scopeOfImpact": "Some users may have experienced degradation with Copilot Chat responses after uploading a file. \r\n\r\nStart time: Tuesday, June 9, 2026, at 6:00 AM UTC\r\n\r\nEnd time: Thursday, June 11, 2026, at 6:10 PM UTC",
+      "rootCause": "Normal growth in Microsoft 365 Copilot Chat usage exceeded the available resources needed to process OneDrive and SharePoint Online file upload requests, causing some requests to process slower or fail.\r\n\r\nNext steps: \n- We're continuing to monitor previously affected traffic to confirm what additional performance optimizations we can implement to further improve the resiliency of our service to prevent similar impact scenarios from occurring in the future.",
+      "nextUpdateBy": "",
+      "feature": "General",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-06-11T22:17:43.82Z",
+          "postType": "regular",
+          "content": "Title: Some users may experience degradation with Microsoft 365 Copilot Chat responses after uploading a file\r\n\r\nUser impact: Users may have experienced degradation with Copilot Chat responses after uploading a file.\r\n\r\nMore info: Affected users may have been returned an error message stating, \"Oops! Something happened. Can you try again?\"\n \nUsers reported low-quality or inaccurate responses when Copilot Chat was prompted to respond on content within uploaded files.\n \nAdditionally, users who attempted to send a message with file grounding may have  received the following response, \"I tried to open your file {file name}, but I’m currently unable to retrieve its contents due to an access/activity limit on the file.\"\r\n\r\nFinal status: We've completed the scale-out of our configuration change to prevent retries from adding more load during OneDrive or SharePoint Online file uploads. After a period of monitoring for file upload traffic across affected regions, we've confirmed that our actions successfully remediated impact.\r\n\r\nScope of impact: Some users may have experienced degradation with Copilot Chat responses after uploading a file. \r\n\r\nStart time: Tuesday, June 9, 2026, at 6:00 AM UTC\r\n\r\nEnd time: Thursday, June 11, 2026, at 6:10 PM UTC\r\n\r\nRoot cause: Normal growth in Microsoft 365 Copilot Chat usage exceeded the available resources needed to process OneDrive and SharePoint Online file upload requests, causing some requests to process slower or fail.\r\n\r\nNext steps: \n- We're continuing to monitor previously affected traffic to confirm what additional performance optimizations we can implement to further improve the resiliency of our service to prevent similar impact scenarios from occurring in the future."
+        },
+        {
+          "createdAt": "2026-06-11T18:11:10.64Z",
+          "postType": "regular",
+          "content": "Title: Some users may experience degradation with Microsoft 365 Copilot Chat responses after uploading a file\r\n\r\nUser impact: Users may experience degradation with Copilot Chat responses after uploading a file.\r\n\r\nMore info: Affected users may be returned an error message stating, \"Oops! Something happened. Can you try again?\"\n\nUsers report low-quality or inaccurate responses when Copilot Chat is prompted to respond on content within uploaded files.\n\nAdditionally, users attempting to send a message with file grounding may receive the following response, \"I tried to open your file {file name}, but I’m currently unable to retrieve its contents due to an access/activity limit on the file.\"\r\n\r\nCurrent status: We've identified another facet of the impacted user experience in that users sending messages with file grounding may receive a response noting Copilot Chat can't retrieve contents due to an access or activity limit, and we've updated the More info section of this communication with this information. Our previously communicated status remains accurate, as we monitor file upload traffic across affected regions to confirm our changes are remediating the impact and scale out our configuration change to prevent retries from adding more load during OneDrive or SharePoint Online file uploads.\r\n\r\nScope of impact: Some users may experience degradation with Copilot Chat responses after uploading a file. This section may be updated as the investigation progresses.\r\n\r\nStart time: Tuesday, June 09, 2026, at 6:00 AM UTC\r\n\r\nRoot cause: Normal growth in Microsoft 365 Copilot usage exceeded the available resources needed to process OneDrive and SharePoint Online file upload requests, causing some requests to process slower or fail.\r\n\r\nNext update by: Thursday, June 11, 2026, at 11:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-06-11T15:55:30.26Z",
+          "postType": "regular",
+          "content": "Title: Some users may experience degradation with Microsoft 365 Copilot Chat responses after uploading a file\r\n\r\nUser impact: Users may experience degradation with Copilot Chat responses after uploading a file.\r\n\r\nMore info: Affected users may be returned an error message stating, \"Oops! Something happened. Can you try again?\"\n\nUsers report low-quality or inaccurate responses when Copilot Chat is prompted to respond on content within uploaded files.\r\n\r\nCurrent status: We've added additional resources to regions that were experiencing high demand, and we're monitoring file upload traffic over the next 12-14 hours across affected regions to confirm if our changes are assisting with remediation. Simultaneously, we’re also scaling out a configuration change to prevent retries from adding more load during OneDrive or SharePoint Online file uploads to additional affected regions to assist with our remediation efforts.\r\n\r\nScope of impact: Some users may experience degradation with Copilot Chat responses after uploading a file. This section may be updated as the investigation progresses.\r\n\r\nStart time: Tuesday, June 09, 2026, at 6:00 AM UTC\r\n\r\nRoot cause: Normal growth in Microsoft 365 Copilot usage exceeded the available resources needed to process OneDrive and SharePoint Online file upload requests, causing some requests to process slower or fail.\r\n\r\nNext update by: Thursday, June 11, 2026, at 11:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-06-11T01:00:53.913Z",
+          "postType": "regular",
+          "content": "Title: Some users may experience degradation with Microsoft 365 Copilot Chat responses after uploading a file\n\nUser impact: Users may experience degradation with Copilot Chat responses after uploading a file.\n\nMore info: Affected users may be returned an error message stating, \"Oops! Something happened. Can you try again?\"\n\nUsers report low-quality or inaccurate responses when Copilot Chat is prompted to respond on content within uploaded files.\n\nCurrent status: We’re adding resources in regions that were experiencing high demand and gradually allowing more file upload traffic to resume. We’re also implementing a configuration change to prevent retries from adding more load during OneDrive or SharePoint Online file uploads. We’ll monitor the affected environment during peak usage periods to confirm whether the added resources are sufficient to fully mitigate impact.\n\nScope of impact: Some users may experience degradation with Copilot Chat responses after uploading a file. This section may be updated as the investigation progresses.\n\nStart time: Tuesday, June 09, 2026, at 6:00 AM UTC\n\nRoot cause: We’ve determined that normal growth in Microsoft 365 Copilot usage exceeded the available resources needed to process OneDrive and SharePoint Online file upload requests, causing some requests to process slower or fail.\n\nNext update by: Thursday, June 11, 2026, at 5:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-06-10T20:23:51.677Z",
+          "postType": "regular",
+          "content": "Title: Some users may experience degradation with Microsoft 365 Copilot Chat responses after uploading a file\r\n\r\nUser impact: Users may experience degradation with Copilot Chat responses after uploading a file.\r\n\r\nMore info: Affected users may be returned an error message stating, \"Oops! Something happened. Can you try again?\"\n\nUsers report low-quality responses or hallucinations when Copilot Chat is prompted to respond on content within uploaded files.\r\n\r\nCurrent status: We're implementing a configuration change to prevent indefinite retries from occurring during OneDrive or SharePoint Online file uploads along with implementing performance optimizations on affected service infrastructure to assist with processing the requests.\r\n\r\nScope of impact: Some users may experience degradation with Copilot Chat responses after uploading a file. This section may be updated as the investigation progresses.\r\n\r\nStart time: Tuesday, June 09, 2026, at 6:00 AM UTC\r\n\r\nNext update by: Thursday, June 11, 2026, at 1:00 AM UTC"
+        }
+      ],
+      "serviceName": "Microsoft 365 Copilot Chat",
+      "affectedServices": [
+        "Microsoft 365 Copilot Chat"
+      ]
+    },
     {
       "id": "EX1318421",
       "title": "Users may be unable to view the body of edited Exchange Online email messages from the Sent folder",
