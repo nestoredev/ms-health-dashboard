@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-11T05:04:59.533Z",
+  "lastUpdated": "2026-06-11T05:35:06.947Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1958,42 +1958,6 @@
       "serviceName": "Microsoft 365 Copilot Chat",
       "affectedServices": [
         "Microsoft 365 Copilot Chat"
-      ]
-    },
-    {
-      "id": "CR1308631",
-      "title": "Queried data from computed columns return duplicate fields where the logical/physical names differ",
-      "startTime": "2026-05-02T18:00:00Z",
-      "endTime": "2026-05-12T05:30:00Z",
-      "lastModified": "2026-05-12T18:00:56.193Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Queried data from computed columns had returned duplicate fields where the logical/physical names differ.",
-      "scopeOfImpact": "",
-      "rootCause": "A recent deployment introduced a misconfiguration to a portion of the service infrastructure responsible for properly querying data.\n\nNext Steps: We're reviewing our standard service update procedures to avoid similar impact in the future.",
-      "nextUpdateBy": "",
-      "feature": "Other",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-05-12T18:00:56.193Z",
-          "postType": "regular",
-          "content": "Title: Queried data from computed columns return duplicate fields where the logical/physical names differ\n\nUser impact: Queried data from computed columns had returned duplicate fields where the logical/physical names differ.\n\nMore Info: One of the duplicate fields contained a null value, while the other contained the actual value.\n\nFinal Status: We have reverted the deployment. After monitoring service diagnostics, we have confirmed that queried data from computed columns are no longer duplicating where logical/physical names differ.\n\nThis is the final update on the incident. \n\nPreliminary Root Cause: A recent deployment introduced a misconfiguration to a portion of the service infrastructure responsible for properly querying data.\n\nNext Steps: We're reviewing our standard service update procedures to avoid similar impact in the future."
-        },
-        {
-          "createdAt": "2026-05-12T17:13:02.647Z",
-          "postType": "regular",
-          "content": "Title: Queried data from computed columns return duplicate fields where the logical/physical names differ\n\nUser impact: Queried data from computed columns return duplicate fields where the logical/physical names differ.\n\nMore Info: One of the duplicate fields will contain a null value, while the other contains the actual value.\n\nCurrent Status: After our investigation, we identified that a recent deployment introduced a misconfiguration to a portion of the service infrastructure responsible for properly querying data. We are reviewing service diagnostics and are preparing to revert this change. \n\nNext Update: Tuesday, May 12, 2026, at 7:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-05-12T17:03:03.717Z",
-          "postType": "regular",
-          "content": "Title: Queried data from computed columns return duplicate fields where the logical/physical names differ\n\nUser impact: Queried data from computed columns return duplicate fields where the logical/physical names differ.\n\nCurrent Status: We are aware of an emerging issue where users are experiencing an issue in which queried data from computed columns return duplicate fields where the logical/physical names differ. We are investigating the issue and will provide another update within the next 30 minutes.\n \nThis information is preliminary and may be subject to changes, corrections, and updates."
-        }
-      ],
-      "serviceName": "Dynamics 365 Apps",
-      "affectedServices": [
-        "Dynamics 365 Apps"
       ]
     }
   ]
