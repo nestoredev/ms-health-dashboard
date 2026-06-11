@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-11T18:08:50.105Z",
+  "lastUpdated": "2026-06-11T18:39:00.359Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -511,16 +511,21 @@
           "title": "Users may be unable to access Excel files through browser from SharePoint Online",
           "startTime": "2026-06-10T14:50:49.277Z",
           "endTime": null,
-          "lastModified": "2026-06-11T01:16:13.533Z",
+          "lastModified": "2026-06-11T18:13:27.563Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to access Excel files through browser from SharePoint Online.",
           "scopeOfImpact": "Users accessing subsites with unique permissions not inherited from the parent site on SharePoint Online aren't able to access files in Excel for the web browser.",
           "rootCause": "A code issue during the request flow for opening Excel files in SharePoint Online is causing errors.",
-          "nextUpdateBy": "Wednesday, June 17, 2026, at 2:00 AM UTC",
+          "nextUpdateBy": "Friday, June 12, 2026, at 9:30 PM UTC",
           "feature": "Visio Services",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-06-11T18:11:49.11Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to access Excel files through browser from SharePoint Online\r\n\r\nUser impact: Users may be unable to access Excel files through browser from SharePoint Online.\r\n\r\nMore info: As a workaround, users can open the file in the Excel desktop app instead.\r\n\r\nCurrent status: We've confirmed that the code fix is ready for testing and validation. Once completed, we'll provide a more detailed update regarding the deployment schedule.\n \r\n\r\nScope of impact: Users accessing subsites with unique permissions not inherited from the parent site on SharePoint Online aren't able to access files in Excel for the web browser.\r\n\r\nRoot cause: A code issue during the request flow for opening Excel files in SharePoint Online is causing errors.\r\n\r\nNext update by: Friday, June 12, 2026, at 9:30 PM UTC"
+            },
             {
               "createdAt": "2026-06-11T01:16:13.533Z",
               "postType": "regular",
@@ -717,7 +722,7 @@
           "title": "Some users may experience degradation with Microsoft 365 Copilot Chat responses after uploading a file",
           "startTime": "2026-06-09T06:00:00Z",
           "endTime": null,
-          "lastModified": "2026-06-11T15:55:30.26Z",
+          "lastModified": "2026-06-11T18:11:10.64Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may experience degradation with Copilot Chat responses after uploading a file.",
@@ -727,6 +732,11 @@
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-06-11T18:11:10.64Z",
+              "postType": "regular",
+              "content": "Title: Some users may experience degradation with Microsoft 365 Copilot Chat responses after uploading a file\r\n\r\nUser impact: Users may experience degradation with Copilot Chat responses after uploading a file.\r\n\r\nMore info: Affected users may be returned an error message stating, \"Oops! Something happened. Can you try again?\"\n\nUsers report low-quality or inaccurate responses when Copilot Chat is prompted to respond on content within uploaded files.\n\nAdditionally, users attempting to send a message with file grounding may receive the following response, \"I tried to open your file {file name}, but I’m currently unable to retrieve its contents due to an access/activity limit on the file.\"\r\n\r\nCurrent status: We've identified another facet of the impacted user experience in that users sending messages with file grounding may receive a response noting Copilot Chat can't retrieve contents due to an access or activity limit, and we've updated the More info section of this communication with this information. Our previously communicated status remains accurate, as we monitor file upload traffic across affected regions to confirm our changes are remediating the impact and scale out our configuration change to prevent retries from adding more load during OneDrive or SharePoint Online file uploads.\r\n\r\nScope of impact: Some users may experience degradation with Copilot Chat responses after uploading a file. This section may be updated as the investigation progresses.\r\n\r\nStart time: Tuesday, June 09, 2026, at 6:00 AM UTC\r\n\r\nRoot cause: Normal growth in Microsoft 365 Copilot usage exceeded the available resources needed to process OneDrive and SharePoint Online file upload requests, causing some requests to process slower or fail.\r\n\r\nNext update by: Thursday, June 11, 2026, at 11:00 PM UTC"
+            },
             {
               "createdAt": "2026-06-11T15:55:30.26Z",
               "postType": "regular",
