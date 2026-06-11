@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-11T15:38:06.180Z",
+  "lastUpdated": "2026-06-11T16:08:14.493Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -140,36 +140,6 @@
               "createdAt": "2026-02-16T05:07:28.317Z",
               "postType": "regular",
               "content": "Title: Some users may see that when selecting a meeting room when scheduling meetings, it changes from available to unavailable\n\nUser impact: Users may see that after selecting a meeting room when scheduling meetings, it changes from available to unavailable.\n\nMore info: Specifically, the meeting room selected is incorrectly changing from available to unavailable in Exchange Online. \n\nCurrent status: We're investigating a potential issue with Exchange Online and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Exchange Online"
-          ]
-        },
-        {
-          "id": "EX1387205",
-          "title": "Some users may encounter an error when using the Copilot rewrite feature in Classic Outlook",
-          "startTime": "2026-06-11T11:04:47.993Z",
-          "endTime": null,
-          "lastModified": "2026-06-11T13:26:23.07Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may encounter an error when using the Copilot rewrite feature in Classic Outlook.",
-          "scopeOfImpact": "Impact is specific to some users attempting to utilize Copilot rewrite feature in Classic Outlook.",
-          "rootCause": "",
-          "nextUpdateBy": "Thursday, June 11, 2026, at 3:30 PM UTC",
-          "feature": "Outlook Desktop",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-06-11T13:21:51.417Z",
-              "postType": "regular",
-              "content": "Title: Some users may encounter an error when using the Copilot rewrite feature in Classic Outlook\r\n\r\nUser impact: Users may encounter an error when using the Copilot rewrite feature in Classic Outlook.\r\n\r\nMore info: Copilot rewrite feature functionality works as expected in Outlook on the web and new Outlook.\n \nAffected users when selecting text and using the Copilot rewrite option in Classic Outlook, may encounter the following error message  \"Sorry, something went wrong. Copilot is working on it.\"\r\n\r\nCurrent status: We suspect a potential regression in the Outlook client is contributing to the issue and are actively analyzing telemetry data and comparing behaviour across different client versions to determine the source of impact.\r\n\r\nScope of impact: Impact is specific to some users attempting to utilize Copilot rewrite feature in Classic Outlook.\r\n\r\nNext update by: Thursday, June 11, 2026, at 3:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-06-11T11:28:15.777Z",
-              "postType": "regular",
-              "content": "Title: Users are seeing an error when using the Copilot rewrite feature in Classic Outlook\r\n\r\nUser impact: Users are seeing an error when using the Copilot rewrite feature in Classic Outlook.\r\n\r\nMore info:  Copilot rewrite feature functionality works as expected in Outlook on the web and the new Outlook.\n\nAffected users when selecting text and using the Copilot rewrite option in Classic Outlook, are seeing the following error message  \"Sorry, something went wrong. Copilot is working on it.\"\r\n\r\nCurrent status: We’re reviewing associated support case details to understand more about the issue, and determine our next troubleshooting steps.\r\n\r\nScope of impact: Your organization is affected by this event, and some users attempting to utilize Copilot rewrite feature are impacted.\r\n\r\nNext update by: Thursday, June 11, 2026, at 1:30 PM UTC"
             }
           ],
           "affectedServices": [
@@ -747,16 +717,21 @@
           "title": "Some users may experience degradation with Microsoft 365 Copilot Chat responses after uploading a file",
           "startTime": "2026-06-09T06:00:00Z",
           "endTime": null,
-          "lastModified": "2026-06-11T01:06:59.02Z",
+          "lastModified": "2026-06-11T15:55:30.26Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may experience degradation with Copilot Chat responses after uploading a file.",
-          "scopeOfImpact": "Some users may experience degradation with Copilot Chat responses after uploading a file. This section may be updated as the investigation progresses.\n\nStart time: Tuesday, June 09, 2026, at 6:00 AM UTC",
-          "rootCause": "We’ve determined that normal growth in Microsoft 365 Copilot usage exceeded the available resources needed to process OneDrive and SharePoint Online file upload requests, causing some requests to process slower or fail.",
-          "nextUpdateBy": "Thursday, June 11, 2026, at 5:00 PM UTC",
+          "scopeOfImpact": "Some users may experience degradation with Copilot Chat responses after uploading a file. This section may be updated as the investigation progresses.\r\n\r\nStart time: Tuesday, June 09, 2026, at 6:00 AM UTC",
+          "rootCause": "Normal growth in Microsoft 365 Copilot usage exceeded the available resources needed to process OneDrive and SharePoint Online file upload requests, causing some requests to process slower or fail.",
+          "nextUpdateBy": "Thursday, June 11, 2026, at 11:00 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-06-11T15:55:30.26Z",
+              "postType": "regular",
+              "content": "Title: Some users may experience degradation with Microsoft 365 Copilot Chat responses after uploading a file\r\n\r\nUser impact: Users may experience degradation with Copilot Chat responses after uploading a file.\r\n\r\nMore info: Affected users may be returned an error message stating, \"Oops! Something happened. Can you try again?\"\n\nUsers report low-quality or inaccurate responses when Copilot Chat is prompted to respond on content within uploaded files.\r\n\r\nCurrent status: We've added additional resources to regions that were experiencing high demand, and we're monitoring file upload traffic over the next 12-14 hours across affected regions to confirm if our changes are assisting with remediation. Simultaneously, we’re also scaling out a configuration change to prevent retries from adding more load during OneDrive or SharePoint Online file uploads to additional affected regions to assist with our remediation efforts.\r\n\r\nScope of impact: Some users may experience degradation with Copilot Chat responses after uploading a file. This section may be updated as the investigation progresses.\r\n\r\nStart time: Tuesday, June 09, 2026, at 6:00 AM UTC\r\n\r\nRoot cause: Normal growth in Microsoft 365 Copilot usage exceeded the available resources needed to process OneDrive and SharePoint Online file upload requests, causing some requests to process slower or fail.\r\n\r\nNext update by: Thursday, June 11, 2026, at 11:00 PM UTC"
+            },
             {
               "createdAt": "2026-06-11T01:00:53.913Z",
               "postType": "regular",
