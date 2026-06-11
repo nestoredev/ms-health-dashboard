@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-11T21:09:39.081Z",
+  "lastUpdated": "2026-06-11T21:39:47.657Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -445,6 +445,31 @@
           ]
         },
         {
+          "id": "MO1387691",
+          "title": "Users are unable to access Microsoft 365 Copilot Chat or portal.office.com",
+          "startTime": "2026-06-11T21:12:12Z",
+          "endTime": null,
+          "lastModified": "2026-06-11T21:31:41.38Z",
+          "status": "serviceDegradation",
+          "severity": "incident",
+          "userImpact": "Users are unable to access Microsoft 365 Copilot Chat or portal.office.com.",
+          "scopeOfImpact": "Our investigation indicates that any user or admin may be affected by this event. This section is subject to change as the investigation continues. \n\nStart time: Thursday, June 11, 2026, at 8:00 PM UTC\n\nEstimated time to resolve: We expect the reversion to be complete in the next 30 minutes.",
+          "rootCause": "The root cause is still being investigated. We will provide more information in our next update.",
+          "nextUpdateBy": "Thursday, June 11, 2026, at 10:00 PM UTC",
+          "feature": "Access",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-06-11T21:20:21.143Z",
+              "postType": "regular",
+              "content": "Title: Users are unable to access Microsoft 365 Copilot Chat or portal.office.com\n\nUser impact: Users are unable to access Microsoft 365 Copilot Chat or portal.office.com.\n\nMore info: Admins may be able to access the Microsoft 365 admin center via admin.cloud.microsoft as a temporary solution. Additionally, Copilot in Microsoft Teams is not expected to be impacted and can be leveraged in the interim while we mitigate the issue.\n \nCurrent status: This is a continuation of a communication posted under CW1387674. We’ve identified an issue with a recent deployment for Microsoft Copilot. We’re reverting to a previous build to remediate impact as soon as possible. We expect this to be completed in the next 30 minutes.\n\nScope of impact: Our investigation indicates that any user or admin may be affected by this event. This section is subject to change as the investigation continues. \n\nStart time: Thursday, June 11, 2026, at 8:00 PM UTC\n\nEstimated time to resolve: We expect the reversion to be complete in the next 30 minutes. \n\nRoot cause: The root cause is still being investigated. We will provide more information in our next update. \n\nNext update by: Thursday, June 11, 2026, at 10:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite"
+          ]
+        },
+        {
           "id": "MO1331639",
           "title": "Issue with webhook-based task notifications in Microsoft To Do",
           "startTime": "2026-06-02T13:55:00Z",
@@ -744,19 +769,24 @@
         },
         {
           "id": "CW1387674",
-          "title": "We're looking into a potential problem impacting Microsoft 365 Copilot chat",
+          "title": "Users cannot access Microsoft 365 Copilot Chat",
           "startTime": "2026-06-11T20:40:56.467Z",
           "endTime": null,
-          "lastModified": "2026-06-11T20:53:46.3Z",
+          "lastModified": "2026-06-11T21:17:51.877Z",
           "status": "investigating",
-          "severity": "advisory",
-          "userImpact": "We're checking for potential impact to your users.",
-          "scopeOfImpact": "",
+          "severity": "incident",
+          "userImpact": "Users cannot access Microsoft 365 Copilot Chat.",
+          "scopeOfImpact": "All Microsoft 365 Copilot users are not able to access Copilot. This section may be updated as our investigation progresses.\r\n\r\nStart time: Thursday, June 11, 2026, at 8:00 PM UTC",
           "rootCause": "",
-          "nextUpdateBy": "",
+          "nextUpdateBy": "Thursday, June 11, 2026, at 10:30 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-06-11T21:17:51.877Z",
+              "postType": "regular",
+              "content": "Title: Users cannot access Microsoft 365 Copilot Chat\r\n\r\nUser impact: Users cannot access Microsoft 365 Copilot Chat.\r\n\r\nCurrent status: We’ve identified an issue with a recent deployment for Microsoft Copilot. We’re reverting to a previous build to remediate impact as soon as possible. We expect this to be completed in the next 30 minutes.\r\n\r\nScope of impact: All Microsoft 365 Copilot users are not able to access Copilot. This section may be updated as our investigation progresses.\r\n\r\nStart time: Thursday, June 11, 2026, at 8:00 PM UTC\r\n\r\nNext update by: Thursday, June 11, 2026, at 10:30 PM UTC"
+            },
             {
               "createdAt": "2026-06-11T20:42:48.68Z",
               "postType": "regular",
