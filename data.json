@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-12T20:16:46.694Z",
+  "lastUpdated": "2026-06-12T20:46:54.636Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -421,16 +421,21 @@
           "title": "Users may be unable to access Excel files through browser from SharePoint Online",
           "startTime": "2026-06-10T14:50:49.277Z",
           "endTime": null,
-          "lastModified": "2026-06-11T18:13:27.563Z",
+          "lastModified": "2026-06-12T20:25:42.147Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to access Excel files through browser from SharePoint Online.",
           "scopeOfImpact": "Users accessing subsites with unique permissions not inherited from the parent site on SharePoint Online aren't able to access files in Excel for the web browser.",
           "rootCause": "A code issue during the request flow for opening Excel files in SharePoint Online is causing errors.",
-          "nextUpdateBy": "Friday, June 12, 2026, at 9:30 PM UTC",
+          "nextUpdateBy": "Monday, June 15, 2026, at 9:30 PM UTC",
           "feature": "Visio Services",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-06-12T20:25:42.147Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to access Excel files through browser from SharePoint Online\r\n\r\nUser impact: Users may be unable to access Excel files through browser from SharePoint Online.\r\n\r\nMore info: As a workaround, users can open the file in the Excel desktop app instead.\r\n\r\nCurrent status: We've completed the validation of the fix and have initiated the release. We expect to have a remediation timeline by the next scheduled update. \r\n\r\nScope of impact: Users accessing subsites with unique permissions not inherited from the parent site on SharePoint Online aren't able to access files in Excel for the web browser.\r\n\r\nRoot cause: A code issue during the request flow for opening Excel files in SharePoint Online is causing errors.\r\n\r\nNext update by: Monday, June 15, 2026, at 9:30 PM UTC"
+            },
             {
               "createdAt": "2026-06-11T18:11:49.11Z",
               "postType": "regular",
