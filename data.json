@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-12T20:46:54.636Z",
+  "lastUpdated": "2026-06-12T21:17:04.074Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -344,6 +344,31 @@
       "status": "serviceDegradation",
       "id": "OSDPPlatform",
       "issues": [
+        {
+          "id": "MO1388943",
+          "title": "Users may not see accurate usage data for Copilot Chat in usage reports within the admin center",
+          "startTime": "2026-06-12T20:43:26.26Z",
+          "endTime": null,
+          "lastModified": "2026-06-12T21:08:58.283Z",
+          "status": "investigating",
+          "severity": "advisory",
+          "userImpact": "Users may not see accurate usage data for Copilot Chat in usage reports within the admin center.",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
+          "feature": "Company or User Administration",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-06-12T21:08:58.283Z",
+              "postType": "regular",
+              "content": "Title: Users may not see accurate usage data for Copilot Chat in usage reports within the admin center\r\n\r\nUser impact: Users may not see accurate usage data for Copilot Chat in usage reports within the admin center.\r\n\r\nMore info: This issue only affects usage data for unlicensed Copilot Chat users. Admins may see lower than expected data reported for unlicensed Copilot Chat users.\r\n\r\nCurrent status: We're investigating a potential issue with Copilot Chat usage data display in activity reports and are checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite"
+          ]
+        },
         {
           "id": "MO1385610",
           "title": "Admins' Microsoft 365 Copilot usage reports within the Microsoft 365 admin center may be delayed",
