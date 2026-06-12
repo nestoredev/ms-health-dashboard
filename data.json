@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-12T21:47:14.405Z",
+  "lastUpdated": "2026-06-12T22:17:22.970Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -349,16 +349,21 @@
           "title": "Users may not see accurate usage data for Copilot Chat in usage reports within the admin center",
           "startTime": "2026-06-12T20:43:26.26Z",
           "endTime": null,
-          "lastModified": "2026-06-12T21:08:58.283Z",
-          "status": "investigating",
+          "lastModified": "2026-06-12T21:57:45.07Z",
+          "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may not see accurate usage data for Copilot Chat in usage reports within the admin center.",
-          "scopeOfImpact": "",
-          "rootCause": "",
-          "nextUpdateBy": "",
+          "scopeOfImpact": "This issue affects any user attempting to view reports for Copilot Chat through the admin center.",
+          "rootCause": "A recent upgrade to unlicensed users' capabilities in the Copilot Chat was not included in current usage logging logic, resulting in exclusion of that data from usage reports.",
+          "nextUpdateBy": "Saturday, June 13, 2026, at 11:00 PM UTC",
           "feature": "Company or User Administration",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-06-12T21:41:58.547Z",
+              "postType": "regular",
+              "content": "Title: Users may not see accurate usage data for Copilot Chat in usage reports within the admin center\r\n\r\nUser impact: Users may not see accurate usage data for Copilot Chat in usage reports within the admin center.\r\n\r\nMore info: This issue only affects usage data for unlicensed Copilot Chat users. Users may see lower than expected data reported for unlicensed Copilot Chat users.\r\n\r\nCurrent status: We've determined that the under-reporting of usage data is being caused by a recent upgrade to the functionality of Copilot Chat for unlicensed users, which was not accounted for in current usage logging logic. We're investigating the recent upgrade to determine the next best steps for remediation.\r\n\r\nScope of impact: This issue affects any user attempting to view reports for Copilot Chat through the admin center.\r\n\r\nRoot cause: A recent upgrade to unlicensed users' capabilities in the Copilot Chat was not included in current usage logging logic, resulting in exclusion of that data from usage reports.\r\n\r\nNext update by: Saturday, June 13, 2026, at 11:00 PM UTC"
+            },
             {
               "createdAt": "2026-06-12T21:08:58.283Z",
               "postType": "regular",
