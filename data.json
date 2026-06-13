@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-13T14:22:35.667Z",
+  "lastUpdated": "2026-06-13T14:52:43.309Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -378,17 +378,22 @@
           "id": "MO1385610",
           "title": "Admins' Microsoft 365 Copilot usage reports within the Microsoft 365 admin center may be delayed",
           "startTime": "2026-06-10T00:00:00Z",
-          "endTime": null,
-          "lastModified": "2026-06-12T21:16:56.177Z",
-          "status": "serviceDegradation",
+          "endTime": "2026-06-13T14:46:21.173Z",
+          "lastModified": "2026-06-13T14:47:46.82Z",
+          "status": "serviceRestored",
           "severity": "advisory",
-          "userImpact": "Admins' Microsoft 365 Copilot usage reports within the Microsoft 365 admin center may be delayed.",
-          "scopeOfImpact": "Any admin located in North America and Asia Pacific regions attempting to view up to date affected Copilot usage reports through the Microsoft 365 admin center listed in the more info section may be impacted by this event. This section may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, June 10, 2026, at 12:00 AM UTC",
-          "rootCause": "A delay in our upstream process for Copilot source data is preventing Copilot usage reports from publishing up-to-date data and is resulting in delayed reporting.",
-          "nextUpdateBy": "Saturday, June 13, 2026, at 6:00 PM UTC",
+          "userImpact": "Admins' Copilot usage reports within the Microsoft 365 admin center may have been delayed.",
+          "scopeOfImpact": "Any admin located in North America and Asia Pacific regions attempting to view up to date affected Copilot usage reports through the Microsoft 365 admin center listed in the more info section may have been impacted by this event.\r\n\r\nStart time: Wednesday, June 10, 2026, at 12:00 AM UTC\r\n\r\nEnd time: Saturday, June 13, 2026, at 3:00 AM UTC",
+          "rootCause": "A delay in our upstream process for Copilot source data was preventing Copilot usage reports from publishing up-to-date data and was resulting in delayed reporting.\r\n\r\nNext steps: \n- We're reviewing our upstream Copilot source data processes to determine what caused the delay, so that we can prevent similar instance of impact from occurring in the future.\r\n\r\nThis is the final update for the event.",
+          "nextUpdateBy": "",
           "feature": "Company or User Administration",
-          "isResolved": false,
+          "isResolved": true,
           "posts": [
+            {
+              "createdAt": "2026-06-13T14:47:43.683Z",
+              "postType": "regular",
+              "content": "Title: Admins' Microsoft 365 Copilot usage reports within the Microsoft 365 admin center may be delayed\r\n\r\nUser impact: Admins' Copilot usage reports within the Microsoft 365 admin center may have been delayed.\r\n\r\nMore info: The affected Copilot usage reports consisted of the following:\n-Microsoft 365 Copilot usage reports\n-Microsoft 365 Copilot Chat usage reports\n-Microsoft Graph API Copilot usage reports\n \nThese reports may have been delayed as of Wednesday, June 10, 2026, at 12:00 AM UTC.\r\n\r\nFinal status: We've completed the restatement process to backfill delayed data and confirmed through monitoring service health telemetry that the impact has been remediated.\r\n\r\nScope of impact: Any admin located in North America and Asia Pacific regions attempting to view up to date affected Copilot usage reports through the Microsoft 365 admin center listed in the more info section may have been impacted by this event.\r\n\r\nStart time: Wednesday, June 10, 2026, at 12:00 AM UTC\r\n\r\nEnd time: Saturday, June 13, 2026, at 3:00 AM UTC\r\n\r\nRoot cause: A delay in our upstream process for Copilot source data was preventing Copilot usage reports from publishing up-to-date data and was resulting in delayed reporting.\r\n\r\nNext steps: \n- We're reviewing our upstream Copilot source data processes to determine what caused the delay, so that we can prevent similar instance of impact from occurring in the future.\r\n\r\nThis is the final update for the event."
+            },
             {
               "createdAt": "2026-06-12T21:16:56.177Z",
               "postType": "regular",
