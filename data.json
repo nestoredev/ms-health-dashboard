@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-15T13:48:59.042Z",
+  "lastUpdated": "2026-06-15T14:19:09.461Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -632,16 +632,21 @@
           "title": "Users are unable to submit a prompt in Microsoft 365 Copilot Chat and receive an error message",
           "startTime": "2026-06-15T06:12:24.447Z",
           "endTime": null,
-          "lastModified": "2026-06-15T13:01:27.33Z",
+          "lastModified": "2026-06-15T13:59:49.663Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users are unable to submit a prompt in Microsoft 365 Copilot Chat and receive an error message.",
           "scopeOfImpact": "This issue may affect some users when trying to submit a prompt in Microsoft 365 Copilot Chat. This section may be updated as our investigation continues.",
           "rootCause": "A recent token authorization configuration change was applied that introduced a misconfiguration to the app id, resulting in impact.",
-          "nextUpdateBy": "Monday, June 15, 2026, at 2:00 PM UTC",
+          "nextUpdateBy": "Monday, June 15, 2026, at 3:00 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-06-15T13:59:49.663Z",
+              "postType": "regular",
+              "content": "Title: Users are unable to submit a prompt in Microsoft 365 Copilot Chat and receive an error message\r\n\r\nUser impact: Users are unable to submit a prompt in Microsoft 365 Copilot Chat and receive an error message.\r\n\r\nMore info: Microsoft 365 Copilot Chat returns the following error message \"Something went wrong.\" for users when they submit a prompt.\r\n\r\nCurrent status: We’ve encountered an issue with reverting the change causing it to take longer than we expected. We’ve successfully reverted the change within our internal test environment and are in the process of validating its effectiveness. When this is complete, we will revert the change more broadly.\r\n\r\nScope of impact: This issue may affect some users when trying to submit a prompt in Microsoft 365 Copilot Chat. This section may be updated as our investigation continues.\r\n\r\nRoot cause: A recent token authorization configuration change was applied that introduced a misconfiguration to the app id, resulting in impact.\r\n\r\nNext update by: Monday, June 15, 2026, at 3:00 PM UTC"
+            },
             {
               "createdAt": "2026-06-15T13:01:27.33Z",
               "postType": "regular",
