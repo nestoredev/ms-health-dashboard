@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-15T22:51:19.102Z",
+  "lastUpdated": "2026-06-15T23:21:25.846Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -558,16 +558,21 @@
           "title": "Users are unable to submit a prompt in Microsoft 365 Copilot Chat and receive an error message",
           "startTime": "2026-06-12T04:00:00Z",
           "endTime": null,
-          "lastModified": "2026-06-15T20:55:01.35Z",
+          "lastModified": "2026-06-15T22:51:33.783Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users are unable to submit a prompt in Microsoft 365 Copilot Chat and receive an error message.",
           "scopeOfImpact": "This issue may affect some users when trying to submit a prompt in Microsoft 365 Copilot Chat. This section may be updated as our investigation continues.\r\n\r\nStart time: Friday, June 12, 2026, at 4:00 AM UTC",
           "rootCause": "A recently deployed build was identified to be causing impact, and our investigation into the root cause within this build remains ongoing. The previously outlined token authorization configuration change was not directly related to the root cause for this issue.",
-          "nextUpdateBy": "Monday, June 15, 2026, at 11:00 PM UTC",
+          "nextUpdateBy": "Tuesday, June 16, 2026, at 12:00 AM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-06-15T22:51:33.783Z",
+              "postType": "regular",
+              "content": "Title: Users are unable to submit a prompt in Microsoft 365 Copilot Chat and receive an error message\r\n\r\nUser impact: Users are unable to submit a prompt in Microsoft 365 Copilot Chat and receive an error message.\r\n\r\nMore info: Microsoft 365 Copilot Chat returns the following error message \"Something went wrong.\" Some users are unable to submit a prompt in Microsoft 365 Copilot Chat and receive an error message. Some users may see Copilot responses being provided successfully at first but then see an error message that overrides and removes the response after it is initially generated successfully.\r\n\r\nCurrent status: We've identified that a recent change within the service was causing impact. We've deployed a configuration change to disable the offending portion of code, and we're observing positive improvements in service availability. We're currently monitoring the service and reaching out to affected users to confirm that the issue is fully resolved.\r\n\r\nScope of impact: This issue may affect some users when trying to submit a prompt in Microsoft 365 Copilot Chat. This section may be updated as our investigation continues.\r\n\r\nStart time: Friday, June 12, 2026, at 4:00 AM UTC\r\n\r\nRoot cause: A recently deployed build was identified to be causing impact, and our investigation into the root cause within this build remains ongoing. The previously outlined token authorization configuration change was not directly related to the root cause for this issue.\r\n\r\nNext update by: Tuesday, June 16, 2026, at 12:00 AM UTC"
+            },
             {
               "createdAt": "2026-06-15T20:55:01.35Z",
               "postType": "regular",
