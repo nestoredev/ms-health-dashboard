@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-15T09:47:57.380Z",
+  "lastUpdated": "2026-06-15T10:18:04.563Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -621,6 +621,61 @@
               "createdAt": "2026-06-13T21:19:31.613Z",
               "postType": "regular",
               "content": "Title: Users may not see accurate usage data for Microsoft 365 Copilot Chat in the Microsoft 365 admin center\r\n\r\nUser impact: Users may not see accurate usage data for Copilot Chat in usage reports within the Microsoft 365 admin center.\r\n\r\nMore info: This issue strictly affects usage data for unlicensed Copilot Chat users. Users may see lower than expected data reported for unlicensed Copilot Chat users.\r\n\r\nCurrent status: This is a continuation of MO1388943. We're continuing to review a recent upgrade to identify a viable method to restate the affected data and remediate the impact.\r\n\r\nScope of impact: This issue may affect any user attempting to view reports for Copilot Chat through the Microsoft 365 admin center.\r\n\r\nRoot cause: A recent upgrade to unlicensed users' capabilities in the Copilot Chat wasn't included in current usage logging logic, resulting in exclusion of that data from usage reports.\r\n\r\nNext update by: Sunday, June 14, 2026, at 9:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 Copilot Chat"
+          ]
+        },
+        {
+          "id": "CW1391746",
+          "title": "Users are unable to submit a prompt in Microsoft 365 Copilot Chat and receive an error message",
+          "startTime": "2026-06-15T06:12:24.447Z",
+          "endTime": null,
+          "lastModified": "2026-06-15T10:00:09.177Z",
+          "status": "serviceDegradation",
+          "severity": "incident",
+          "userImpact": "Users are unable to submit a prompt in Microsoft 365 Copilot Chat and receive an error message.",
+          "scopeOfImpact": "This issue may affect some users when trying to submit a prompt in Microsoft 365 Copilot Chat. This section may be updated as our investigation continues.",
+          "rootCause": "",
+          "nextUpdateBy": "Monday, June 15, 2026, at 11:00 AM UTC",
+          "feature": "General",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-06-15T10:00:09.177Z",
+              "postType": "regular",
+              "content": "Title: Users are unable to submit a prompt in Microsoft 365 Copilot Chat and receive an error message\r\n\r\nUser impact: Users are unable to submit a prompt in Microsoft 365 Copilot Chat and receive an error message.\r\n\r\nMore info: Microsoft 365 Copilot Chat returns the following error message \"Something went wrong.\" for users when they submit a prompt.\r\n\r\nCurrent status: While we continue to analyze the newly obtained HTTP Archive format (HAR) logs, we’ve identified a specific failure from service side telemetry and are looking into this further to determine the next steps required.\r\n\r\nScope of impact: This issue may affect some users when trying to submit a prompt in Microsoft 365 Copilot Chat. This section may be updated as our investigation continues.\r\n\r\nNext update by: Monday, June 15, 2026, at 11:00 AM UTC"
+            },
+            {
+              "createdAt": "2026-06-15T09:34:20.79Z",
+              "postType": "quick",
+              "content": "Our analysis of HTTP Archive format (HAR) logs has so far been inconclusive. We’re reviewing newly obtained logs to assist in progressing the investigation.\n\nNext update by: Monday, June 15, 2026, at 10:00 AM UTC\n\nThis quick update is designed to give the latest information on this issue."
+            },
+            {
+              "createdAt": "2026-06-15T08:57:32.47Z",
+              "postType": "regular",
+              "content": "Title: Users are unable to submit a prompt in Microsoft 365 Copilot Chat and receive an error message\r\n\r\nUser impact: Users are unable to submit a prompt in Microsoft 365 Copilot Chat and receive an error message.\r\n\r\nMore info: Microsoft 365 Copilot Chat returns the following error message \"Something went wrong.\" for users when they submit a prompt.\r\n\r\nCurrent status: Our analysis is continuing into impacted users logs and recent changes that align with the impact start time to help identify the next troubleshooting steps required to resolve the issue. While this continues, we’ve requested additional HTTP Archive format (HAR) files to assist in our investigation.\r\n\r\nScope of impact: Your organization is impacted by this event, and users are unable to submit a prompt in Microsoft 365 Copilot Chat and receive an error message. This section may be updated as our investigation continues.\r\n\r\nNext update by: Monday, June 15, 2026, at 10:00 AM UTC"
+            },
+            {
+              "createdAt": "2026-06-15T08:31:15.17Z",
+              "postType": "quick",
+              "content": "In addition to our analysis of service telemetry and client-side logs from impacted users, we’re reviewing recent changes which may have resulted in impact. \n\nNext update by: Monday, June 15, 2026, at 9:00 AM UTC\n\nThis quick update is designed to give the latest information on this issue."
+            },
+            {
+              "createdAt": "2026-06-15T07:24:42.193Z",
+              "postType": "quick",
+              "content": "We're continuing our analysis of HTTP Archive format (HAR) files and service telemetry. In addition, we're attempting to reproduce the issue internally to determine the next steps required to resolve the issue.\n\nNext update by: Monday, June 15, 2026, at 9:00 AM UTC\n\nThis quick update is designed to give the latest information on this issue."
+            },
+            {
+              "createdAt": "2026-06-15T06:47:12.51Z",
+              "postType": "regular",
+              "content": "Title: Users are unable to submit a prompt in Microsoft 365 Copilot Chat and receive an error message\r\n\r\nUser impact: Users are unable to submit a prompt in Microsoft 365 Copilot Chat and receive an error message.\r\n\r\nMore info: Microsoft 365 Copilot Chat returns the following error message \"Something went wrong.\" for users when they submit a prompt.\r\n\r\nCurrent status: We're reviewing the provided case details and HTTP Archive format (HAR) files to help inform our next troubleshooting steps for pinpointing the underlying cause of the error message.\r\n\r\nScope of impact: Your organization is impacted by this event, and users are unable to submit a prompt in Microsoft 365 Copilot Chat and receive an error message. This section may be updated as our investigation continues.\r\n\r\nNext update by: Monday, June 15, 2026, at 9:00 AM UTC"
+            },
+            {
+              "createdAt": "2026-06-15T06:17:02.223Z",
+              "postType": "regular",
+              "content": "Title: Users are unable to submit a prompt in Microsoft 365 Copilot Chat and receive an error message\r\n\r\nUser impact: Users are unable to submit a prompt in Microsoft 365 Copilot Chat and receive an error message.\r\n\r\nCurrent status: We're investigating a potential issue impacting Microsoft 365 Copilot Chat and checking for impact to your organization. We'll provide an update within 30 minutes."
             }
           ],
           "affectedServices": [
