@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-15T20:50:51.328Z",
+  "lastUpdated": "2026-06-15T21:20:58.446Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -520,13 +520,13 @@
       "issues": [
         {
           "id": "CW1390285",
-          "title": "Admins may not see accurate usage data for Microsoft 365 Copilot Chat in the Microsoft 365 admin center and Viva Insight",
+          "title": "Admins may not see accurate usage data for Microsoft 365 Copilot Chat in the Microsoft 365 admin center",
           "startTime": "2026-06-02T10:05:00Z",
           "endTime": null,
-          "lastModified": "2026-06-15T20:39:28.213Z",
+          "lastModified": "2026-06-15T20:57:45.21Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "userImpact": "Admins may not see accurate usage data for Copilot Chat in the Microsoft 365 admin center and Viva Insights.",
+          "userImpact": "Admins may not see accurate usage data for Copilot Chat in the Microsoft 365 admin center.",
           "scopeOfImpact": "This issue may affect any admin attempting to view reports for Copilot Chat through the Microsoft 365 admin center.",
           "rootCause": "A recent upgrade to unlicensed users' capabilities in the Copilot Chat wasn't included in current usage logging logic, resulting in exclusion of that data from usage reports.",
           "nextUpdateBy": "Tuesday, June 16, 2026, at 12:00 AM UTC",
@@ -558,16 +558,21 @@
           "title": "Users are unable to submit a prompt in Microsoft 365 Copilot Chat and receive an error message",
           "startTime": "2026-06-12T04:00:00Z",
           "endTime": null,
-          "lastModified": "2026-06-15T18:58:20.65Z",
+          "lastModified": "2026-06-15T20:55:01.35Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users are unable to submit a prompt in Microsoft 365 Copilot Chat and receive an error message.",
           "scopeOfImpact": "This issue may affect some users when trying to submit a prompt in Microsoft 365 Copilot Chat. This section may be updated as our investigation continues.\r\n\r\nStart time: Friday, June 12, 2026, at 4:00 AM UTC",
           "rootCause": "A recently deployed build was identified to be causing impact, and our investigation into the root cause within this build remains ongoing. The previously outlined token authorization configuration change was not directly related to the root cause for this issue.",
-          "nextUpdateBy": "Monday, June 15, 2026, at 9:00 PM UTC",
+          "nextUpdateBy": "Monday, June 15, 2026, at 11:00 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-06-15T20:55:01.35Z",
+              "postType": "regular",
+              "content": "Title: Users are unable to submit a prompt in Microsoft 365 Copilot Chat and receive an error message\r\n\r\nUser impact: Users are unable to submit a prompt in Microsoft 365 Copilot Chat and receive an error message.\r\n\r\nMore info: Microsoft 365 Copilot Chat returns the following error message \"Something went wrong.\" Some users are unable to submit a prompt in Microsoft 365 Copilot Chat and receive an error message. Some users may see Copilot responses being provided successfully at first but then see an error message that overrides and removes the response after it is initially generated successfully.\r\n\r\nCurrent status: We’ve encountered an issue within our deployment pipeline that’s preventing a roll back to the last healthy build. We’re working to unblock the pipeline with urgency and once completed, we’ll proceed with the roll back across all impacted infrastructure to the last known healthy build. We understand how much issues like this can affect your organization, and we appreciate your partnership as we work to remediate impact.\r\n\r\nScope of impact: This issue may affect some users when trying to submit a prompt in Microsoft 365 Copilot Chat. This section may be updated as our investigation continues.\r\n\r\nStart time: Friday, June 12, 2026, at 4:00 AM UTC\r\n\r\nRoot cause: A recently deployed build was identified to be causing impact, and our investigation into the root cause within this build remains ongoing. The previously outlined token authorization configuration change was not directly related to the root cause for this issue.\r\n\r\nNext update by: Monday, June 15, 2026, at 11:00 PM UTC"
+            },
             {
               "createdAt": "2026-06-15T18:58:20.65Z",
               "postType": "regular",
