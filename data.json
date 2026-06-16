@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-16T21:57:12.114Z",
+  "lastUpdated": "2026-06-16T22:27:21.621Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -367,39 +367,14 @@
           ]
         },
         {
-          "id": "SP1393751",
-          "title": "Potential issues accessing SharePoint Online sites",
-          "startTime": "2026-06-16T21:15:26.24Z",
-          "endTime": null,
-          "lastModified": "2026-06-16T21:15:27.843Z",
-          "status": "investigating",
-          "severity": "advisory",
-          "userImpact": "Users may be unable to access SharePoint Online sites and may notice delays or navigation errors.",
-          "scopeOfImpact": "",
-          "rootCause": "",
-          "nextUpdateBy": "",
-          "feature": "SharePoint Online all features",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-06-16T21:15:27.843Z",
-              "postType": "regular",
-              "content": "Title: Potential issues accessing SharePoint Online sites\r\n\r\nUser impact: Users may be unable to access SharePoint Online sites and may notice delays or navigation errors.\r\n\r\nCurrent Status: We're investigating a potential issue and checking for impact to your organization. We'll provide an update within one hour."
-            }
-          ],
-          "affectedServices": [
-            "SharePoint Online"
-          ]
-        },
-        {
           "id": "SP1393771",
-          "title": "Users may intermittently be unable to access SharePoint sites",
+          "title": "Users may intermittently be unable to access SharePoint Online sites",
           "startTime": "2026-06-16T21:31:22.733Z",
           "endTime": null,
-          "lastModified": "2026-06-16T21:39:46.203Z",
+          "lastModified": "2026-06-16T22:19:43.613Z",
           "status": "investigating",
           "severity": "incident",
-          "userImpact": "Users may have intermittently been unable to access SharePoint sites.",
+          "userImpact": "Users may have intermittently been unable to access SharePoint Online sites.",
           "scopeOfImpact": "",
           "rootCause": "",
           "nextUpdateBy": "",
@@ -409,7 +384,7 @@
             {
               "createdAt": "2026-06-16T21:36:38.52Z",
               "postType": "regular",
-              "content": "Title: Users may intermittently be unable to access SharePoint sites\r\n\r\nUser impact: Users may have intermittently been unable to access SharePoint sites.\r\n\r\nCurrent status: We've investigated a problem in which users may have intermittently been unable to access SharePoint sites, and confirmed that service is now restored. We'll provide additional information in a closure summary within the \"History\" section of the \"Service health\" dashboard shortly."
+              "content": "Title: Users may intermittently be unable to access SharePoint Online sites\r\n\r\nUser impact: Users may have intermittently been unable to access SharePoint Online sites.\r\n\r\nCurrent status: We've investigated a problem in which users may have intermittently been unable to access SharePoint Online sites, and confirmed that service is now restored. We'll provide additional information in a closure summary within the \"History\" section of the \"Service health\" dashboard shortly."
             }
           ],
           "affectedServices": [
@@ -478,31 +453,6 @@
               "createdAt": "2026-06-16T21:39:19.103Z",
               "postType": "regular",
               "content": "Title: Users may intermittently be unable to access Microsoft OneDrive content\r\n\r\nUser impact: Users may have intermittently been unable to access OneDrive content.\r\n\r\nCurrent status: We've investigated a problem in which users may have intermittently been unable to access OneDrive, and confirmed that service is now restored. We'll provide additional information in a closure summary within the \"History\" section of the \"Service health\" dashboard shortly."
-            }
-          ],
-          "affectedServices": [
-            "Microsoft OneDrive"
-          ]
-        },
-        {
-          "id": "OD1393754",
-          "title": "Potential issues accessing Microsoft OneDrive content",
-          "startTime": "2026-06-16T21:15:38.95Z",
-          "endTime": null,
-          "lastModified": "2026-06-16T21:15:40.447Z",
-          "status": "investigating",
-          "severity": "advisory",
-          "userImpact": "Users may be unable to access OneDrive content and may notice delays or navigation errors.",
-          "scopeOfImpact": "",
-          "rootCause": "",
-          "nextUpdateBy": "",
-          "feature": "OneDrive for Business",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-06-16T21:15:40.447Z",
-              "postType": "regular",
-              "content": "Title: Potential issues accessing Microsoft OneDrive content\r\n\r\nUser impact: Users may be unable to access OneDrive content and may notice delays or navigation errors.\r\n\r\nCurrent Status: We're investigating a potential issue and checking for impact to your organization. We'll provide an update within one hour."
             }
           ],
           "affectedServices": [
@@ -667,6 +617,68 @@
     }
   ],
   "history": [
+    {
+      "id": "OD1393754",
+      "title": "Potential issues accessing Microsoft OneDrive content",
+      "startTime": "2026-06-16T21:15:38.95Z",
+      "endTime": "2026-06-16T22:19:01.383Z",
+      "lastModified": "2026-06-16T22:19:02.303Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may be unable to access OneDrive content and may notice delays or navigation errors.",
+      "scopeOfImpact": "A very limited number of customers and users appeared to have been impacted. For most customers, it's unlikely that many users would have reported impact related to this event.\n\r\nStart time: 2026-06-16T21:15:38.950Z UTC\r\n\r\nEnd time: 2026-06-16T22:19:01.383Z UTC\r\n\r\nThis is the final update for the event.",
+      "rootCause": "",
+      "nextUpdateBy": "",
+      "feature": "OneDrive for Business",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-06-16T22:19:02.303Z",
+          "postType": "regular",
+          "content": "Title: Delays or problems loading OneDrive for Business content\n\r\nUser impact: Users may have experienced intermittent delays or navigation errors when accessing OneDrive for Business content.\n\r\nFinal status: By design, our automated recovery features detected and repaired this problem and our monitoring systems have reported that service has been restored.\n\r\nScope of impact: A very limited number of customers and users appeared to have been impacted. For most customers, it's unlikely that many users would have reported impact related to this event.\n\r\nStart time: 2026-06-16T21:15:38.950Z UTC\r\n\r\nEnd time: 2026-06-16T22:19:01.383Z UTC\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-06-16T21:15:40.447Z",
+          "postType": "regular",
+          "content": "Title: Potential issues accessing Microsoft OneDrive content\r\n\r\nUser impact: Users may be unable to access OneDrive content and may notice delays or navigation errors.\r\n\r\nCurrent Status: We're investigating a potential issue and checking for impact to your organization. We'll provide an update within one hour."
+        }
+      ],
+      "serviceName": "Microsoft OneDrive",
+      "affectedServices": [
+        "Microsoft OneDrive"
+      ]
+    },
+    {
+      "id": "SP1393751",
+      "title": "Potential issues accessing SharePoint Online sites",
+      "startTime": "2026-06-16T21:15:26.24Z",
+      "endTime": "2026-06-16T22:18:54.763Z",
+      "lastModified": "2026-06-16T22:18:55.72Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may be unable to access SharePoint Online sites and may notice delays or navigation errors.",
+      "scopeOfImpact": "A very limited number of customers and users appeared to have been impacted. For most customers, it's unlikely that many users would have reported impact related to this event.\n\r\nStart time: 2026-06-16T21:15:26.240Z UTC\r\n\r\nEnd time: 2026-06-16T22:18:54.761Z UTC\r\n\r\nThis is the final update for the event.",
+      "rootCause": "",
+      "nextUpdateBy": "",
+      "feature": "SharePoint Online all features",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-06-16T22:18:55.72Z",
+          "postType": "regular",
+          "content": "Title: Delays or problems loading SharePoint Online sites\n\r\nUser impact: Users may have experienced intermittent delays or navigation errors when accessing SharePoint sites.\n\r\nFinal status: By design, our automated recovery features detected and repaired this problem and our monitoring systems have reported that service has been restored.\n\r\nScope of impact: A very limited number of customers and users appeared to have been impacted. For most customers, it's unlikely that many users would have reported impact related to this event.\n\r\nStart time: 2026-06-16T21:15:26.240Z UTC\r\n\r\nEnd time: 2026-06-16T22:18:54.761Z UTC\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-06-16T21:15:27.843Z",
+          "postType": "regular",
+          "content": "Title: Potential issues accessing SharePoint Online sites\r\n\r\nUser impact: Users may be unable to access SharePoint Online sites and may notice delays or navigation errors.\r\n\r\nCurrent Status: We're investigating a potential issue and checking for impact to your organization. We'll provide an update within one hour."
+        }
+      ],
+      "serviceName": "SharePoint Online",
+      "affectedServices": [
+        "SharePoint Online"
+      ]
+    },
     {
       "id": "MV1392264",
       "title": "Users may see stale data in Copilot dashboards and analyst workbench reports in Microsoft Viva Insights",
