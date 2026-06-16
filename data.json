@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-16T20:56:56.672Z",
+  "lastUpdated": "2026-06-16T21:27:04.377Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -365,6 +365,31 @@
           "affectedServices": [
             "SharePoint Online"
           ]
+        },
+        {
+          "id": "SP1393751",
+          "title": "Potential issues accessing SharePoint Online sites",
+          "startTime": "2026-06-16T21:15:26.24Z",
+          "endTime": null,
+          "lastModified": "2026-06-16T21:15:27.843Z",
+          "status": "investigating",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to access SharePoint Online sites and may notice delays or navigation errors.",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
+          "feature": "SharePoint Online all features",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-06-16T21:15:27.843Z",
+              "postType": "regular",
+              "content": "Title: Potential issues accessing SharePoint Online sites\r\n\r\nUser impact: Users may be unable to access SharePoint Online sites and may notice delays or navigation errors.\r\n\r\nCurrent Status: We're investigating a potential issue and checking for impact to your organization. We'll provide an update within one hour."
+            }
+          ],
+          "affectedServices": [
+            "SharePoint Online"
+          ]
         }
       ]
     },
@@ -406,9 +431,35 @@
     },
     {
       "service": "Microsoft OneDrive",
-      "status": "serviceOperational",
+      "status": "investigating",
       "id": "OneDriveForBusiness",
-      "issues": []
+      "issues": [
+        {
+          "id": "OD1393754",
+          "title": "Potential issues accessing Microsoft OneDrive content",
+          "startTime": "2026-06-16T21:15:38.95Z",
+          "endTime": null,
+          "lastModified": "2026-06-16T21:15:40.447Z",
+          "status": "investigating",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to access OneDrive content and may notice delays or navigation errors.",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
+          "feature": "OneDrive for Business",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-06-16T21:15:40.447Z",
+              "postType": "regular",
+              "content": "Title: Potential issues accessing Microsoft OneDrive content\r\n\r\nUser impact: Users may be unable to access OneDrive content and may notice delays or navigation errors.\r\n\r\nCurrent Status: We're investigating a potential issue and checking for impact to your organization. We'll provide an update within one hour."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft OneDrive"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft Teams",
