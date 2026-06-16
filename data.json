@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-16T21:27:04.377Z",
+  "lastUpdated": "2026-06-16T21:57:12.114Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -390,6 +390,31 @@
           "affectedServices": [
             "SharePoint Online"
           ]
+        },
+        {
+          "id": "SP1393771",
+          "title": "Users may intermittently be unable to access SharePoint sites",
+          "startTime": "2026-06-16T21:31:22.733Z",
+          "endTime": null,
+          "lastModified": "2026-06-16T21:39:46.203Z",
+          "status": "investigating",
+          "severity": "incident",
+          "userImpact": "Users may have intermittently been unable to access SharePoint sites.",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
+          "feature": "Access Services",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-06-16T21:36:38.52Z",
+              "postType": "regular",
+              "content": "Title: Users may intermittently be unable to access SharePoint sites\r\n\r\nUser impact: Users may have intermittently been unable to access SharePoint sites.\r\n\r\nCurrent status: We've investigated a problem in which users may have intermittently been unable to access SharePoint sites, and confirmed that service is now restored. We'll provide additional information in a closure summary within the \"History\" section of the \"Service health\" dashboard shortly."
+            }
+          ],
+          "affectedServices": [
+            "SharePoint Online"
+          ]
         }
       ]
     },
@@ -434,6 +459,31 @@
       "status": "investigating",
       "id": "OneDriveForBusiness",
       "issues": [
+        {
+          "id": "OD1393773",
+          "title": "Users may intermittently be unable to access Microsoft OneDrive content",
+          "startTime": "2026-06-16T21:36:47.39Z",
+          "endTime": null,
+          "lastModified": "2026-06-16T21:39:19.103Z",
+          "status": "investigating",
+          "severity": "incident",
+          "userImpact": "Users may have intermittently been unable to access OneDrive content.",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
+          "feature": "OneDrive for Business",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-06-16T21:39:19.103Z",
+              "postType": "regular",
+              "content": "Title: Users may intermittently be unable to access Microsoft OneDrive content\r\n\r\nUser impact: Users may have intermittently been unable to access OneDrive content.\r\n\r\nCurrent status: We've investigated a problem in which users may have intermittently been unable to access OneDrive, and confirmed that service is now restored. We'll provide additional information in a closure summary within the \"History\" section of the \"Service health\" dashboard shortly."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft OneDrive"
+          ]
+        },
         {
           "id": "OD1393754",
           "title": "Potential issues accessing Microsoft OneDrive content",
