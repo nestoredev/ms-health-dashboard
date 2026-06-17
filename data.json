@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-17T02:58:43.917Z",
+  "lastUpdated": "2026-06-17T03:28:52.410Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -210,6 +210,41 @@
               "createdAt": "2026-04-14T16:23:28.13Z",
               "postType": "regular",
               "content": "Title: Admins' search parameters may be missing after performing a group search in the Exchange admin center\n\nUser impact: Admins' search parameters may be missing after performing a group search in the Exchange admin center.\n\nMore info: Specifically, the search terms are removed upon initiating a group searches. \n\nOther searches do not appear to be affected.\n\nCurrent status: We're investigating a potential issue with the Exchange admin center and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online"
+          ]
+        },
+        {
+          "id": "EX1386636",
+          "title": "Users may be unable to see the free/busy status of multiple cross-tenant mailboxes in Exchange Online",
+          "startTime": "2026-05-14T00:00:00Z",
+          "endTime": null,
+          "lastModified": "2026-06-17T03:05:13.773Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to see the free/busy status of multiple cross-tenant mailboxes in Exchange Online.",
+          "scopeOfImpact": "Users attempting to access the free/busy status of multiple mailboxes at once may be impacted.\n\nStart time: Thursday, May 14, 2026, at 12:00 AM UTC",
+          "rootCause": "A NetCore deployment introduced a regression where headers were being dropped during free/busy status requests for cross-tenant scenarios, resulting in back-end authentication requests failing.",
+          "nextUpdateBy": "Wednesday, June 17, 2026, at 8:30 PM UTC",
+          "feature": "Reports of an Incident",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-06-16T19:51:25.82Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to see the free/busy status of multiple cross-tenant mailboxes in Exchange Online\n\nUser impact: Users may be unable to see the free/busy status of multiple cross-tenant mailboxes in Exchange Online.\n\nMore info: This impact occurs only when two or more mailbox statuses are requested.\n\nCurrent status: We've validated that the source of impact was a NetCore deployment, which introduced a regression where headers were being dropped during free/busy status requests for cross-tenant scenarios, resulting in back-end authentication requests failing. Our fix to address the regression is currently at 90 percent saturation in the affected environment, and we've reached out to affected users to begin testing for remediation.\n\nScope of impact: Users attempting to access the free/busy status of multiple mailboxes at once may be impacted.\n\nStart time: Thursday, May 14, 2026, at 12:00 AM UTC\n\nRoot cause: A NetCore deployment introduced a regression where headers were being dropped during free/busy status requests for cross-tenant scenarios, resulting in back-end authentication requests failing.\n\nNext update by: Wednesday, June 17, 2026, at 8:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-06-11T19:19:09.463Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to see the free/busy status of multiple cross-tenant mailboxes in Exchange Online\n\nUser impact: Users may be unable to see the free/busy status of multiple cross-tenant mailboxes in Exchange Online.\n\nMore info: This impact occurs only when two or more mailbox statuses are requested.\n\nCurrent status: We've confirmed that it may take until our next scheduled update for this fix to saturate and remediate impact. We'll monitor the fix deployment and update the expected timeline of remediation as it progresses.\n\nScope of impact: Users attempting to access the free/busy status of multiple mailboxes at once may be impacted.\n\nNext update by: Tuesday, June 16, 2026, at 8:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-06-10T20:34:38.913Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to see the free/busy status of multiple cross-tenant mailboxes in Exchange Online\n\nUser impact: Users may be unable to see the free/busy status of multiple cross-tenant mailboxes in Exchange Online.\n\nMore info: This impact occurs only when two or more mailbox statuses are requested.\n\nCurrent status: We've determined that our previous fix will not effectively remediate impact. We're creating a secondary targeted fix that we expect to address the issue and are confirming the timeline for deployment.\n\nScope of impact: Users attempting to access the free/busy status of multiple mailboxes at once may be impacted.\n\nNext update by: Thursday, June 11, 2026, at 8:30 PM UTC"
             }
           ],
           "affectedServices": [
