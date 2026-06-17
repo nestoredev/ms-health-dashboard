@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-17T15:02:17.725Z",
+  "lastUpdated": "2026-06-17T15:32:27.826Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -547,9 +547,35 @@
     },
     {
       "service": "Microsoft Purview",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "Purview",
-      "issues": []
+      "issues": [
+        {
+          "id": "MP1394693",
+          "title": "Users may experience delays in Data Loss Prevention (DLP) alerts being generated or delivered in Microsoft Purview",
+          "startTime": "2026-06-17T14:26:53.747Z",
+          "endTime": null,
+          "lastModified": "2026-06-17T15:00:11.04Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may experience delays in Data Loss Prevention (DLP) alerts being generated or delivered in Microsoft Purview.",
+          "scopeOfImpact": "Impact is specific to users experiencing delays in Data Loss Prevention (DLP) alerts being generated or delivered in Microsoft Purview.",
+          "rootCause": "",
+          "nextUpdateBy": "Wednesday, June 17, 2026, at 5:00 PM UTC",
+          "feature": "General",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-06-17T15:00:11.04Z",
+              "postType": "regular",
+              "content": "Title: Users may experience delays in Data Loss Prevention (DLP) alerts being generated or delivered in Microsoft Purview\r\n\r\nUser impact: Users may experience delays in Data Loss Prevention (DLP) alerts being generated or delivered in Microsoft Purview.\r\n\r\nMore info: Some users may experience delays of up to two hours between DLP activity detection and alert generation in Microsoft Purview.\r\n\r\nCurrent status: We're reviewing support provided information to determine our next troubleshooting steps.\r\n\r\nScope of impact: Impact is specific to users experiencing delays in Data Loss Prevention (DLP) alerts being generated or delivered in Microsoft Purview.\r\n\r\nNext update by: Wednesday, June 17, 2026, at 5:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Purview"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft Clipchamp ",
@@ -1231,7 +1257,7 @@
       "title": "Unable to open files in Office for the web or Microsoft Teams",
       "startTime": "2026-06-01T12:43:00Z",
       "endTime": "2026-06-01T14:27:00Z",
-      "lastModified": "2026-06-17T14:35:25.44Z",
+      "lastModified": "2026-06-17T15:23:04.713Z",
       "status": "postIncidentReviewPublished",
       "severity": "incident",
       "userImpact": "Users may have been unable to open files in Office for the web or Microsoft Teams.",
@@ -1254,7 +1280,7 @@
         {
           "createdAt": "2026-06-01T15:26:52.567Z",
           "postType": "regular",
-          "content": "Title: Unable to open files in Office for the web or Microsoft Teams\n\nUser impact: Users may have been unable to open files in Office for the web or Microsoft Teams.\n\nMore info: Impacted Office Apps included, but were not limited to: \n- Excel\n- PowerPoint\n\nWhen users opened documents, impacted users were shown the following error message \"Office Online services aren't available right now. We're working to restore all services as soon as possible. Please check back soon.\"\n \nFinal status: We've confirmed through customer reports and service telemetry that the impact has been resolved, and the service has remained stable for an extended period of time. As the issue recovered without any specific engineering actions being implemented, engineer teams continue to investigate the underlying root cause so actions can be taken to prevent the issue from reoccurring.\n \nScope of impact: This issue could have impacted any user attempting to access Office Apps using Office for the web or Microsoft Teams.\n \nStart time: Monday, June 1, 2026, at 12:43 PM UTC\n \nEnd time: Monday, June 1, 2026, at 2:27 PM UTC\n \nRoot cause: We're reviewing service telemetry, diagnostics logs and recent changes to isolate the root cause. We'll provide more details within the Post-Incident Report.\n \nNext steps:\n- We're continuing to monitor the service and will complete a thorough post-incident review to help prevent similar issues in the future.\n\nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days."
+          "content": "Title: Unable to open files in Office for the web or Microsoft Teams\n\nUser impact: Users may have been unable to open files in Office for the web or Microsoft Teams.\n\nMore info: Impacted Office Apps included, but were not limited to: \n- Excel\n- PowerPoint\n\nWhen users opened documents, impacted users were shown the following error message \"Office Online services aren't available right now. We're working to restore all services as soon as possible. Please check back soon.\"\n \nFinal status: We've confirmed through customer reports and service telemetry that the impact has been resolved, and the service has remained stable for an extended period of time. As the issue recovered without any specific engineering actions being implemented, engineer teams continue to investigate the underlying root cause so actions can be taken to prevent the issue from reoccurring.\n \nScope of impact: This issue could have impacted any user attempting to access Office Apps using Office for the web or Microsoft Teams.\n \nStart time: Monday, June 1, 2026, at 12:43 PM UTC\n \nEnd time: Monday, June 1, 2026, at 2:27 PM UTC\n \nRoot cause: During a routine service deployment, a software compatibility issue affected how a subset of servers reported operational health information within the service. As a result, traffic was not distributed as intended, causing some servers to receive a higher volume of requests than they could efficiently process. The increased load led to elevated request processing times and intermittent failures for some SharePoint and OneDrive operations, including file access, file uploads, and related service requests. \n \nNext steps:\n- Please see the Post-Incident Report (PIR) for completed list of next steps."
         },
         {
           "createdAt": "2026-06-01T15:09:52.793Z",
