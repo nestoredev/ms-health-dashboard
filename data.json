@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-17T16:02:38.317Z",
+  "lastUpdated": "2026-06-17T16:32:46.423Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -555,16 +555,21 @@
           "title": "Users may experience delays in Data Loss Prevention (DLP) alerts being generated or delivered in Microsoft Purview",
           "startTime": "2026-06-17T14:26:53.747Z",
           "endTime": null,
-          "lastModified": "2026-06-17T15:00:11.04Z",
+          "lastModified": "2026-06-17T16:17:48.673Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may experience delays in Data Loss Prevention (DLP) alerts being generated or delivered in Microsoft Purview.",
-          "scopeOfImpact": "Impact is specific to users experiencing delays in Data Loss Prevention (DLP) alerts being generated or delivered in Microsoft Purview.",
-          "rootCause": "",
-          "nextUpdateBy": "Wednesday, June 17, 2026, at 5:00 PM UTC",
+          "scopeOfImpact": "Impact is specific to users experiencing delays in Data Loss Prevention (DLP) alerts being generated or delivered in Microsoft Purview.\r\n\r\nStart time: Wednesday, June 17, 2026, at 7:51 AM UTC",
+          "rootCause": "A subset of Microsoft Purview service infrastructure utilized to process and deliver DLP alerts was operating in an unhealthy state, resulting in impact.",
+          "nextUpdateBy": "Wednesday, June 17, 2026, at 6:30 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-06-17T16:17:48.673Z",
+              "postType": "regular",
+              "content": "Title: Users may experience delays in Data Loss Prevention (DLP) alerts being generated or delivered in Microsoft Purview\r\n\r\nUser impact: Users may experience delays in Data Loss Prevention (DLP) alerts being generated or delivered in Microsoft Purview.\r\n\r\nMore info: Some users may experience delays of up to two hours between DLP activity detection and alert generation in Microsoft Purview.\r\n\r\nCurrent status: After reviewing reports of impact, we've isolated that a subset of Microsoft Purview service infrastructure utilized to process and deliver DLP alerts was operating in an unhealthy state, resulting in impact. We've implemented performance optimizations on the affected infrastrucutre to remediate impact, and we're monitoring service availability to confirm DLP alerts are being generated and delivered as expected.\r\n\r\nScope of impact: Impact is specific to users experiencing delays in Data Loss Prevention (DLP) alerts being generated or delivered in Microsoft Purview.\r\n\r\nStart time: Wednesday, June 17, 2026, at 7:51 AM UTC\r\n\r\nRoot cause: A subset of Microsoft Purview service infrastructure utilized to process and deliver DLP alerts was operating in an unhealthy state, resulting in impact. \r\n\r\nNext update by: Wednesday, June 17, 2026, at 6:30 PM UTC"
+            },
             {
               "createdAt": "2026-06-17T15:00:11.04Z",
               "postType": "regular",
