@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-17T18:03:12.783Z",
+  "lastUpdated": "2026-06-17T18:33:24.468Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -573,40 +573,9 @@
     },
     {
       "service": "Microsoft Purview",
-      "status": "serviceDegradation",
+      "status": "serviceOperational",
       "id": "Purview",
-      "issues": [
-        {
-          "id": "MP1394693",
-          "title": "Users may experience delays in Data Loss Prevention (DLP) alerts being generated or delivered in Microsoft Purview",
-          "startTime": "2026-06-17T07:51:00Z",
-          "endTime": null,
-          "lastModified": "2026-06-17T16:37:25.233Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may experience delays in Data Loss Prevention (DLP) alerts being generated or delivered in Microsoft Purview.",
-          "scopeOfImpact": "Impact is specific to users experiencing delays in Data Loss Prevention (DLP) alerts being generated or delivered in Microsoft Purview.\r\n\r\nStart time: Wednesday, June 17, 2026, at 7:51 AM UTC",
-          "rootCause": "A subset of Microsoft Purview service infrastructure utilized to process and deliver DLP alerts was operating in an unhealthy state, resulting in impact.",
-          "nextUpdateBy": "Wednesday, June 17, 2026, at 6:30 PM UTC",
-          "feature": "General",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-06-17T16:17:48.673Z",
-              "postType": "regular",
-              "content": "Title: Users may experience delays in Data Loss Prevention (DLP) alerts being generated or delivered in Microsoft Purview\r\n\r\nUser impact: Users may experience delays in Data Loss Prevention (DLP) alerts being generated or delivered in Microsoft Purview.\r\n\r\nMore info: Some users may experience delays of up to two hours between DLP activity detection and alert generation in Microsoft Purview.\r\n\r\nCurrent status: After reviewing reports of impact, we've isolated that a subset of Microsoft Purview service infrastructure utilized to process and deliver DLP alerts was operating in an unhealthy state, resulting in impact. We've implemented performance optimizations on the affected infrastrucutre to remediate impact, and we're monitoring service availability to confirm DLP alerts are being generated and delivered as expected.\r\n\r\nScope of impact: Impact is specific to users experiencing delays in Data Loss Prevention (DLP) alerts being generated or delivered in Microsoft Purview.\r\n\r\nStart time: Wednesday, June 17, 2026, at 7:51 AM UTC\r\n\r\nRoot cause: A subset of Microsoft Purview service infrastructure utilized to process and deliver DLP alerts was operating in an unhealthy state, resulting in impact. \r\n\r\nNext update by: Wednesday, June 17, 2026, at 6:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-06-17T15:00:11.04Z",
-              "postType": "regular",
-              "content": "Title: Users may experience delays in Data Loss Prevention (DLP) alerts being generated or delivered in Microsoft Purview\r\n\r\nUser impact: Users may experience delays in Data Loss Prevention (DLP) alerts being generated or delivered in Microsoft Purview.\r\n\r\nMore info: Some users may experience delays of up to two hours between DLP activity detection and alert generation in Microsoft Purview.\r\n\r\nCurrent status: We're reviewing support provided information to determine our next troubleshooting steps.\r\n\r\nScope of impact: Impact is specific to users experiencing delays in Data Loss Prevention (DLP) alerts being generated or delivered in Microsoft Purview.\r\n\r\nNext update by: Wednesday, June 17, 2026, at 5:00 PM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Microsoft Purview"
-          ]
-        }
-      ]
+      "issues": []
     },
     {
       "service": "Microsoft Clipchamp ",
@@ -668,6 +637,42 @@
     }
   ],
   "history": [
+    {
+      "id": "MP1394693",
+      "title": "Users may experience delays in Data Loss Prevention (DLP) alerts being generated or delivered in Microsoft Purview",
+      "startTime": "2026-06-17T07:51:00Z",
+      "endTime": "2026-06-17T17:33:00Z",
+      "lastModified": "2026-06-17T18:16:58.863Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have experienced delays in Data Loss Prevention alerts being generated or delivered in Microsoft Purview.",
+      "scopeOfImpact": "Impact was specific to users experiencing delays in DLP alerts being generated or delivered in Microsoft Purview.\r\n\r\nStart time: Wednesday, June 17, 2026, at 7:51 AM UTC\r\n\r\nEnd time: Wednesday, June 17, 2026, at 5:33 PM UTC",
+      "rootCause": "A subset of Microsoft Purview service infrastructure utilized to process and deliver DLP alerts was operating in an unhealthy state, resulting in impact. \r\n\r\nNext steps: \n- We're analyzing the offending service infrastructure to isolate why it was unable to process and deliver DLP alerts as expected to further our understanding of the underlying impact scenario to determine what actions we can take to ensure similar impact scenarios don't occur in the future.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "General",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-06-17T18:14:33.08Z",
+          "postType": "regular",
+          "content": "Title: Users may experience delays in Data Loss Prevention (DLP) alerts being generated or delivered in Microsoft Purview\r\n\r\nUser impact: Users may have experienced delays in Data Loss Prevention alerts being generated or delivered in Microsoft Purview.\r\n\r\nMore info: Some users may have experienced delays of up to two hours between DLP activity detection and alert generation in Microsoft Purview.\r\n\r\nFinal status: We've completed our monitoring period and confirmed that our performance optimizations have successfully remediated the delays in DLP alerts being generated and delivered.\r\n\r\nScope of impact: Impact was specific to users experiencing delays in DLP alerts being generated or delivered in Microsoft Purview.\r\n\r\nStart time: Wednesday, June 17, 2026, at 7:51 AM UTC\r\n\r\nEnd time: Wednesday, June 17, 2026, at 5:33 PM UTC\r\n\r\nRoot cause: A subset of Microsoft Purview service infrastructure utilized to process and deliver DLP alerts was operating in an unhealthy state, resulting in impact. \r\n\r\nNext steps: \n- We're analyzing the offending service infrastructure to isolate why it was unable to process and deliver DLP alerts as expected to further our understanding of the underlying impact scenario to determine what actions we can take to ensure similar impact scenarios don't occur in the future.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-06-17T16:17:48.673Z",
+          "postType": "regular",
+          "content": "Title: Users may experience delays in Data Loss Prevention (DLP) alerts being generated or delivered in Microsoft Purview\r\n\r\nUser impact: Users may experience delays in Data Loss Prevention (DLP) alerts being generated or delivered in Microsoft Purview.\r\n\r\nMore info: Some users may experience delays of up to two hours between DLP activity detection and alert generation in Microsoft Purview.\r\n\r\nCurrent status: After reviewing reports of impact, we've isolated that a subset of Microsoft Purview service infrastructure utilized to process and deliver DLP alerts was operating in an unhealthy state, resulting in impact. We've implemented performance optimizations on the affected infrastrucutre to remediate impact, and we're monitoring service availability to confirm DLP alerts are being generated and delivered as expected.\r\n\r\nScope of impact: Impact is specific to users experiencing delays in Data Loss Prevention (DLP) alerts being generated or delivered in Microsoft Purview.\r\n\r\nStart time: Wednesday, June 17, 2026, at 7:51 AM UTC\r\n\r\nRoot cause: A subset of Microsoft Purview service infrastructure utilized to process and deliver DLP alerts was operating in an unhealthy state, resulting in impact. \r\n\r\nNext update by: Wednesday, June 17, 2026, at 6:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-06-17T15:00:11.04Z",
+          "postType": "regular",
+          "content": "Title: Users may experience delays in Data Loss Prevention (DLP) alerts being generated or delivered in Microsoft Purview\r\n\r\nUser impact: Users may experience delays in Data Loss Prevention (DLP) alerts being generated or delivered in Microsoft Purview.\r\n\r\nMore info: Some users may experience delays of up to two hours between DLP activity detection and alert generation in Microsoft Purview.\r\n\r\nCurrent status: We're reviewing support provided information to determine our next troubleshooting steps.\r\n\r\nScope of impact: Impact is specific to users experiencing delays in Data Loss Prevention (DLP) alerts being generated or delivered in Microsoft Purview.\r\n\r\nNext update by: Wednesday, June 17, 2026, at 5:00 PM UTC"
+        }
+      ],
+      "serviceName": "Microsoft Purview",
+      "affectedServices": [
+        "Microsoft Purview"
+      ]
+    },
     {
       "id": "OD1393773",
       "title": "Users may intermittently be unable to access Microsoft OneDrive content",
@@ -843,20 +848,25 @@
       "title": "Users are unable to submit a prompt in Microsoft 365 Copilot Chat and receive an error message",
       "startTime": "2026-06-12T04:00:00Z",
       "endTime": "2026-06-15T22:53:00.87Z",
-      "lastModified": "2026-06-16T00:05:43.747Z",
-      "status": "serviceRestored",
+      "lastModified": "2026-06-17T18:22:43.793Z",
+      "status": "postIncidentReviewPublished",
       "severity": "incident",
       "userImpact": "Users are unable to submit a prompt in Microsoft 365 Copilot Chat and receive an error message.",
-      "scopeOfImpact": "This issue affected some users when they tried to submit a prompt in Microsoft 365 Copilot Chat. This section was updated as our investigation continued.\n\nStart time: Friday, June 12, 2026, at 4:00 AM UTC\n\nEnd time: Monday, June 15, 2026, at 10:40 PM UTC\n\nPreliminary",
-      "rootCause": "We've identified a code regression which was causing impact during prompt submission. We subsequently fixed the issue via a configuration update to disable the impacting portion of code. \n\nNext steps: \n- We're reviewing our change management practices to identify areas of improvement to prevent similar events from occurring in the future.\n- We're analyzing our incident response readiness to find methods to reduce the time to mitigate and improve pre-incident detection signals. \n\nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days.",
+      "scopeOfImpact": "",
+      "rootCause": "",
       "nextUpdateBy": "",
       "feature": "General",
       "isResolved": true,
       "posts": [
         {
+          "createdAt": "2026-06-17T18:20:06.193Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        },
+        {
           "createdAt": "2026-06-15T23:54:28.35Z",
           "postType": "regular",
-          "content": "Title: Users are unable to submit a prompt in Microsoft 365 Copilot Chat and receive an error message\n\nUser impact: Users are unable to submit a prompt in Microsoft 365 Copilot Chat and receive an error message.\n\nMore info: Microsoft 365 Copilot Chat returned the following error message: \"Something went wrong.\" Some users were unable to submit a prompt in Microsoft 365 Copilot Chat and received an error message. Some users saw Copilot responses being provided successfully at first but then encountered an error message that overridden and removed the response after it had initially been generated successfully.\n\nFinal status: We have confirmed with impacted users that the issue has been fully resolved. We appreciate your organization's understanding and patience while we worked on addressing this incident. \n\nScope of impact: This issue affected some users when they tried to submit a prompt in Microsoft 365 Copilot Chat. This section was updated as our investigation continued.\n\nStart time: Friday, June 12, 2026, at 4:00 AM UTC\n\nEnd time: Monday, June 15, 2026, at 10:40 PM UTC\n\nPreliminary root cause: We've identified a code regression which was causing impact during prompt submission. We subsequently fixed the issue via a configuration update to disable the impacting portion of code. \n\nNext steps: \n- We're reviewing our change management practices to identify areas of improvement to prevent similar events from occurring in the future.\n- We're analyzing our incident response readiness to find methods to reduce the time to mitigate and improve pre-incident detection signals. \n\nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days."
+          "content": "Title: Users are unable to submit a prompt in Microsoft 365 Copilot Chat and receive an error message\n\nUser impact: Users are unable to submit a prompt in Microsoft 365 Copilot Chat and receive an error message.\n\nMore info: Microsoft 365 Copilot Chat returned the following error message: \"Something went wrong.\" Some users were unable to submit a prompt in Microsoft 365 Copilot Chat and received an error message. Some users saw Copilot responses being provided successfully at first but then encountered an error message that overridden and removed the response after it had initially been generated successfully.\n\nFinal status: We have confirmed with impacted users that the issue has been fully resolved. We appreciate your organization's understanding and patience while we worked on addressing this incident. \n\nScope of impact: This issue affected some users when they tried to submit a prompt in Microsoft 365 Copilot Chat. This section was updated as our investigation continued.\n\nStart time: Friday, June 12, 2026, at 4:00 AM UTC\n\nEnd time: Monday, June 15, 2026, at 10:40 PM UTC\n\nRoot cause: A recently deployed service change in Microsoft 365 Copilot Chat introduced an issue in the request processing path that caused some users successful chat responses to be incorrectly treated as failures. As a result, affected users would see a \"Something went wrong\" message instead of the response that had originally been generated. Existing monitoring did not detect this scenario because the responses were created and stored successfully before the later error occurred. We mitigated the issue by disabling the affected code path, which restored normal service behavior.\n\nNext steps: \n- For a more comprehensive list of next steps and actions, please refer to the Post Incident Report document.\n\nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days."
         },
         {
           "createdAt": "2026-06-15T22:51:33.783Z",
@@ -872,11 +882,6 @@
           "createdAt": "2026-06-15T18:58:20.65Z",
           "postType": "regular",
           "content": "Title: Users are unable to submit a prompt in Microsoft 365 Copilot Chat and receive an error message\r\n\r\nUser impact: Users are unable to submit a prompt in Microsoft 365 Copilot Chat and receive an error message.\r\n\r\nMore info: Microsoft 365 Copilot Chat returns the following error message \"Something went wrong.\" Some users are unable to submit a prompt in Microsoft 365 Copilot Chat and receive an error message. Some users may see Copilot responses being provided successfully at first but then see an error message that overrides and removes the response after it is initially generated successfully.\r\n\r\nCurrent status: Our investigation has identified a specific internal telemetry log matching the reports of this issue, beginning around Friday, June 12, 2026, at 4:00 AM UTC. From this, we’ve identified an internal service build that is causing the issue. We’re rolling back to the last known good build on a small portion of infrastructure to confirm the issue is resolved. Once validated, we’ll proceed with the rollback across all impacted infrastructure.\r\n\r\nScope of impact: This issue may affect some users when trying to submit a prompt in Microsoft 365 Copilot Chat. This section may be updated as our investigation continues.\r\n\r\nStart time: Friday, June 12, 2026, at 4:00 AM UTC\r\n\r\nRoot cause: A recently deployed build was identified to be causing impact, and our investigation into the root cause within this build remains ongoing. The previously outlined token authorization configuration change was not directly related to the root cause for this issue.\r\n\r\nNext update by: Monday, June 15, 2026, at 9:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-06-15T16:55:45.937Z",
-          "postType": "regular",
-          "content": "Title: Users are unable to submit a prompt in Microsoft 365 Copilot Chat and receive an error message\r\n\r\nUser impact: Users are unable to submit a prompt in Microsoft 365 Copilot Chat and receive an error message.\r\n\r\nMore info: Microsoft 365 Copilot Chat returns the following error message \"Something went wrong.\" Some users are unable to submit a prompt in Microsoft 365 Copilot Chat and receive an error message. Some users may see Copilot responses being provided successfully at first but then see an error message that overrides and removes the response after it is initially generated successfully.\r\n\r\nCurrent status: We’re continuing to see failures in error logs provided by customers and internal service logs after the change reversion. While our review of the fresh set of error logs and our internal service health signals is ongoing, we’ll open more workstreams to mitigate the remaining impact based on our findings.\r\n\r\nScope of impact: This issue may affect some users when trying to submit a prompt in Microsoft 365 Copilot Chat. This section may be updated as our investigation continues.\r\n\r\nRoot cause: A recent token authorization configuration change was applied that introduced a misconfiguration to the app id, resulting in impact.\r\n\r\nNext update by: Monday, June 15, 2026, at 7:00 PM UTC"
         }
       ],
       "serviceName": "Microsoft 365 Copilot Chat",
