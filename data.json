@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-17T20:03:48.691Z",
+  "lastUpdated": "2026-06-17T20:33:57.922Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -11,16 +11,21 @@
           "title": "Some users may see that when selecting a meeting room when scheduling meetings, it changes from available to unavailable",
           "startTime": "2025-12-08T03:04:00Z",
           "endTime": null,
-          "lastModified": "2026-06-10T20:51:18.72Z",
+          "lastModified": "2026-06-17T20:20:04.127Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may see that after selecting a meeting room when scheduling meetings, it changes from available to unavailable.",
-          "scopeOfImpact": "Any users that are trying to select a meeting room when scheduling meetings outside the room's working hours in Exchange Online may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Monday, December 08, 2025, at 3:04 AM UTC",
+          "scopeOfImpact": "Any users that are trying to select a meeting room when scheduling meetings outside the room's working hours in Exchange Online may be impacted. \r\n\r\nStart time: Monday, December 8, 2025, at 3:04 AM UTC",
           "rootCause": "A recent expansion of the feature logic used to book rooms for scheduled meetings contains a code complication which automatically sets the meeting rooms' default working hours to appear in Pacific Standard Time instead of their accurate time zone.",
-          "nextUpdateBy": "Wednesday, June 17, 2026, at 10:00 PM UTC",
+          "nextUpdateBy": "Friday, June 26, 2026, at 8:30 PM UTC",
           "feature": "Reports of an Incident",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-06-17T20:20:04.127Z",
+              "postType": "regular",
+              "content": "Title: Some users may see that when selecting a meeting room when scheduling meetings, it changes from available to unavailable\r\n\r\nUser impact: Users may see that after selecting a meeting room when scheduling meetings, it changes from available to unavailable.\r\n\r\nMore info: While we're working to remediate the impact, admins can circumvent the issue by assigning the desired working hours and the time zone for the meeting rooms.\r\n\r\nCurrent status: We've validated the code solution that includes the required fix and have resumed deployment, which is on schedule for our anticipated completion date of Friday, June 26, 2026. We're reaching out to a subset of affected users to validate the fix ahead of schedule to further streamline the deployment process.\r\n\r\nScope of impact: Any users that are trying to select a meeting room when scheduling meetings outside the room's working hours in Exchange Online may be impacted. \r\n\r\nStart time: Monday, December 8, 2025, at 3:04 AM UTC\r\n\r\nRoot cause: A recent expansion of the feature logic used to book rooms for scheduled meetings contains a code complication which automatically sets the meeting rooms' default working hours to appear in Pacific Standard Time instead of their accurate time zone.\r\n\r\nNext update by: Friday, June 26, 2026, at 8:30 PM UTC"
+            },
             {
               "createdAt": "2026-06-10T20:51:18.72Z",
               "postType": "regular",
@@ -269,18 +274,23 @@
         {
           "id": "SP1386381",
           "title": "Users may be unable to access Excel files through browser from SharePoint Online",
-          "startTime": "2026-06-10T14:50:49.277Z",
+          "startTime": "2026-06-08T03:43:00Z",
           "endTime": null,
-          "lastModified": "2026-06-15T20:10:18.413Z",
+          "lastModified": "2026-06-17T20:08:41.873Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to access Excel files through browser from SharePoint Online.",
           "scopeOfImpact": "Users accessing subsites with unique permissions not inherited from the parent site on SharePoint Online aren't able to access files in Excel for the web browser.",
           "rootCause": "A code issue during the request flow for opening Excel files in SharePoint Online is causing errors, which is resulting in impact.",
-          "nextUpdateBy": "Wednesday, June 17, 2026, at 9:30 PM UTC",
+          "nextUpdateBy": "Thursday, June 18, 2026, at 9:30 PM UTC",
           "feature": "Visio Services",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-06-17T20:08:32.07Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to access Excel files through browser from SharePoint Online\r\n\r\nUser impact: Users may be unable to access Excel files through browser from SharePoint Online.\r\n\r\nMore info: Users can open the file in the Excel desktop app to circumvent impact.\r\n\r\nCurrent status: Our deployment is taking longer than initially expected, and we're isolating ways to expedite the remainder of our deployment to remediate impact as swiftly as possible.\r\n\r\nScope of impact: Users accessing subsites with unique permissions not inherited from the parent site on SharePoint Online aren't able to access files in Excel for the web browser.\r\n\r\nRoot cause: A code issue during the request flow for opening Excel files in SharePoint Online is causing errors, which is resulting in impact.\r\n\r\nNext update by: Thursday, June 18, 2026, at 9:30 PM UTC"
+            },
             {
               "createdAt": "2026-06-15T20:10:18.413Z",
               "postType": "regular",
