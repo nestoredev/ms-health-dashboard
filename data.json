@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-17T14:32:01.516Z",
+  "lastUpdated": "2026-06-17T15:02:17.725Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1231,7 +1231,7 @@
       "title": "Unable to open files in Office for the web or Microsoft Teams",
       "startTime": "2026-06-01T12:43:00Z",
       "endTime": "2026-06-01T14:27:00Z",
-      "lastModified": "2026-06-03T23:48:39.777Z",
+      "lastModified": "2026-06-17T14:35:25.44Z",
       "status": "postIncidentReviewPublished",
       "severity": "incident",
       "userImpact": "Users may have been unable to open files in Office for the web or Microsoft Teams.",
@@ -1241,6 +1241,11 @@
       "feature": "Access",
       "isResolved": true,
       "posts": [
+        {
+          "createdAt": "2026-06-17T14:35:25.44Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        },
         {
           "createdAt": "2026-06-03T23:48:39.777Z",
           "postType": "regular",
@@ -1260,11 +1265,6 @@
           "createdAt": "2026-06-01T14:27:25.653Z",
           "postType": "regular",
           "content": "Title: Unable to open files in Office for the web or Microsoft Teams\n\nUser impact: Users may be unable to open files in Office for the web or Microsoft Teams.\n\nMore info: Impacted Office Apps include, but are not limited to: \n- Excel\n- PowerPoint\n\nWhen users open documents, impacted users are shown the following the following error message \"Office Online services aren't available right now. We're working to restore all services as soon as possible. Please check back soon.\"\n \nCurrent status: We’re continuing to analyze service telemetry and have identified elevated error rates across Office for the web experiences. We’re correlating these error patterns across service dependencies to further isolate the source of impact and determine appropriate mitigation steps.\n \nScope of impact: This issue could impact any user attempting to access Office Apps using Office for the web or Microsoft Teams.\n \nNext update by: Monday, June 1, 2026, at 3:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-06-01T14:06:31.32Z",
-          "postType": "quick",
-          "content": "Initial analysis indicates a potential cross-service issue impacting Office for the web experiences. We’re continuing to investigate service telemetry to isolate the source of the issue.\n \nThis quick update is designed to give the latest information on this issue.\n\nNext update by: Monday, June 1, 2026, at 2:30 PM UTC"
         }
       ],
       "serviceName": "Microsoft 365 suite",
