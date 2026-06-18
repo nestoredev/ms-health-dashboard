@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-18T00:04:59.462Z",
+  "lastUpdated": "2026-06-18T00:35:07.499Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -607,6 +607,31 @@
               "createdAt": "2026-06-13T21:19:31.613Z",
               "postType": "regular",
               "content": "Title: Users may not see accurate usage data for Microsoft 365 Copilot Chat in the Microsoft 365 admin center\r\n\r\nUser impact: Users may not see accurate usage data for Copilot Chat in usage reports within the Microsoft 365 admin center.\r\n\r\nMore info: This issue strictly affects usage data for unlicensed Copilot Chat users. Users may see lower than expected data reported for unlicensed Copilot Chat users.\r\n\r\nCurrent status: This is a continuation of MO1388943. We're continuing to review a recent upgrade to identify a viable method to restate the affected data and remediate the impact.\r\n\r\nScope of impact: This issue may affect any user attempting to view reports for Copilot Chat through the Microsoft 365 admin center.\r\n\r\nRoot cause: A recent upgrade to unlicensed users' capabilities in the Copilot Chat wasn't included in current usage logging logic, resulting in exclusion of that data from usage reports.\r\n\r\nNext update by: Sunday, June 14, 2026, at 9:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 Copilot Chat"
+          ]
+        },
+        {
+          "id": "CW1395054",
+          "title": "Some users may see multiple impact scenarios for Microsoft Copilot Researcher",
+          "startTime": "2026-06-18T00:07:59.44Z",
+          "endTime": null,
+          "lastModified": "2026-06-18T00:14:25.833Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may see multiple impact scenarios for Microsoft Copilot Researcher.",
+          "scopeOfImpact": "Impact is limited to a small subset of users hosted on the affected infrastructure. This information may be updated as our investigation continues.",
+          "rootCause": "",
+          "nextUpdateBy": "Thursday, June 18, 2026, at 2:00 AM UTC",
+          "feature": "General",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-06-18T00:14:25.833Z",
+              "postType": "regular",
+              "content": "Title: Some users may see multiple impact scenarios for Microsoft Copilot Researcher\r\n\r\nUser impact: Users may see multiple impact scenarios for Microsoft Copilot Researcher.\r\n\r\nMore info: Specifically, users may see reauthentication prompts, failed queries, incomplete grounding, or query latency in Microsoft Copilot Researcher \r\n\r\nCurrent status: We're reviewing system logs to isolate the origin of this issue.\r\n\r\nScope of impact: Impact is limited to a small subset of users hosted on the affected infrastructure. This information may be updated as our investigation continues. \r\n\r\nNext update by: Thursday, June 18, 2026, at 2:00 AM UTC"
             }
           ],
           "affectedServices": [
@@ -1916,42 +1941,6 @@
       "serviceName": "Power BI",
       "affectedServices": [
         "Power BI"
-      ]
-    },
-    {
-      "id": "MV1315266",
-      "title": "Some users may see that some Viva Engage message posting operations are failing",
-      "startTime": "2026-05-16T22:00:00Z",
-      "endTime": "2026-05-19T00:05:00Z",
-      "lastModified": "2026-05-19T01:45:55.983Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users may have seen that some Viva Engage message posting operations were failing.",
-      "scopeOfImpact": "Some users that performed Viva Engage message posting operations may have been affected.\r\n\r\nStart time: Saturday, May 16, 2026, at 10:00 PM UTC\r\n\r\nEnd time: Tuesday, May 19, 2026, at 12:05 AM UTC",
-      "rootCause": "A recent deployment introduced a compatibility issue between message posting operations that resulted in impact.\r\n\r\nNext steps: \n- We're further reviewing the recent deployment to understand how the compatibility issue was introduced, and to understand what prevented it from being detected in our update testing and validation procedures, which will allow us to prevent similar issues in future deployments.",
-      "nextUpdateBy": "",
-      "feature": "Upload files/notes/documents",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-05-19T01:27:54.207Z",
-          "postType": "regular",
-          "content": "Title: Some users may see that some Viva Engage message posting operations are failing\r\n\r\nUser impact: Users may have see that some Viva Engage message posting operations were failing.\r\n\r\nFinal status: We've determined that a recent deployment introduced a compatibility issue between message posting operations that resulted in impact. We've deployed a code change to resolve the compatibility issue, and we've confirmed with internal monitoring and testing that the issue is resolved.\r\n\r\nScope of impact: Some users that performed Viva Engage message posting operations may have been affected.\r\n\r\nStart time: Saturday, May 16, 2026, at 10:00 PM UTC\r\n\r\nEnd time: Tuesday, May 19, 2026, at 12:05 AM UTC\r\n\r\nRoot cause: A recent deployment introduced a compatibility issue between message posting operations that resulted in impact.\r\n\r\nNext steps: \n- We're further reviewing the recent deployment to understand how the compatibility issue was introduced, and to understand what prevented it from being detected in our update testing and validation procedures, which will allow us to prevent similar issues in future deployments."
-        },
-        {
-          "createdAt": "2026-05-19T00:15:42.393Z",
-          "postType": "regular",
-          "content": "Title: Some users may see that some Viva Engage message posting operations are failing\r\n\r\nUser impact: Users may see that some Viva Engage message posting operations are failing.\r\n\r\nMore info: Specifically, links created in Viva Engage containing images, videos, or links may not be shared and attached successfully when added to a message post. Additionally, message posts with only a GIF as content or subsequent attempts to edit messages may also fail.\r\n\r\nCurrent status: We're reviewing service side telemetry and whether any recent changes may have occurred which could be contributing to impact to help with identifying the root cause and formulating a fix.\r\n\r\nScope of impact: Some users performing Viva Engage message posting operations may be affected. This information may be updated as our investigation continues.\r\n\r\nNext update by: Tuesday, May 19, 2026, at 1:30 AM UTC"
-        },
-        {
-          "createdAt": "2026-05-18T23:46:10.593Z",
-          "postType": "regular",
-          "content": "Title: Some users may see that some Viva Engage message posting operations are failing\r\n\r\nUser impact: Users may see that some Viva Engage message posting operations are failing.\r\n\r\nMore info: Specifically, links created in Viva Engage containing images, videos, or links may not be shared and attached successfully when added to a message post. Additionally, message posts with only a GIF as content or subsequent attempts to edit messages may also fail.\r\n\r\nCurrent status: We're investigating a potential issue with Viva Engage and checking for impact to your organization. We'll provide an update within 30 minutes."
-        }
-      ],
-      "serviceName": "Microsoft Viva",
-      "affectedServices": [
-        "Microsoft Viva"
       ]
     }
   ]
