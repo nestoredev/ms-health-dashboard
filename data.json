@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-18T18:43:28.763Z",
+  "lastUpdated": "2026-06-18T19:13:38.873Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -511,19 +511,24 @@
       "issues": [
         {
           "id": "IT1396117",
-          "title": "We're looking into a potential problem impacting Microsoft Intune",
+          "title": "Admins can't interact with Microsoft Intune Suite features in the Intune admin center",
           "startTime": "2026-06-18T17:59:19Z",
           "endTime": null,
-          "lastModified": "2026-06-18T18:00:10.963Z",
+          "lastModified": "2026-06-18T18:37:10.507Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "userImpact": "We're checking for potential impact to your users.",
-          "scopeOfImpact": "",
-          "rootCause": "",
-          "nextUpdateBy": "",
+          "userImpact": "Admins can't interact with Intune Suite features in the Intune admin center.",
+          "scopeOfImpact": "Your organization is affected by this event, and admins see Intune Suite features in the Intune admin center that they're unable to access. This section may be updated as the investigation progresses.",
+          "rootCause": "A code issue introduced within a recent rollout of Intune Suite features to new license types is impacting the UI flow for organizations still being validated for these features, resulting in features being displayed to admins that aren't yet able to utilize them.",
+          "nextUpdateBy": "Thursday, June 18, 2026, at 8:30 PM UTC",
           "feature": "Microsoft Intune",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-06-18T18:37:10.507Z",
+              "postType": "regular",
+              "content": "Title: Admins can't interact with Microsoft Intune Suite features in the Intune admin center\r\n\r\nUser impact: Admins can't interact with Intune Suite features in the Intune admin center.\r\n\r\nMore info: Affected admins may see Intune Suite features are available within the Intune admin center user interface but will be unable to utilize these features.\r\n\r\nCurrent status: We've determined that a code issue introduced within a recent rollout of Intune Suite features to new license types is impacting the UI flow for organizations still being validated for these features, resulting in features being displayed to admins that aren't yet able to utilize them. We're implementing code changes to address this discrepancy and we aim to provide a timeline to remediation as soon as possible.\r\n\r\nScope of impact: Your organization is affected by this event, and admins see Intune Suite features in the Intune admin center that they're unable to access. This section may be updated as the investigation progresses.\r\n\r\nRoot cause: A code issue introduced within a recent rollout of Intune Suite features to new license types is impacting the UI flow for organizations still being validated for these features, resulting in features being displayed to admins that aren't yet able to utilize them.\r\n\r\nNext update by: Thursday, June 18, 2026, at 8:30 PM UTC"
+            },
             {
               "createdAt": "2026-06-18T18:00:10.963Z",
               "postType": "regular",
@@ -654,10 +659,10 @@
           "title": "Admins may not see accurate usage data for Microsoft 365 Copilot Chat in the Microsoft 365 admin center",
           "startTime": "2026-06-02T10:05:00Z",
           "endTime": null,
-          "lastModified": "2026-06-17T19:54:37.47Z",
+          "lastModified": "2026-06-18T19:05:36.69Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "userImpact": "Admins may not see accurate usage data for Copilot Chat in the Microsoft 365 admin center.",
+          "userImpact": "Admins may not have seen accurate usage data for Copilot Chat in the Microsoft 365 admin center.",
           "scopeOfImpact": "This issue may affect any admin attempting to view reports for Copilot Chat through the Microsoft 365 admin center.\r\n\r\nStart time: Tuesday, June 2, 2026, at 10:05 AM UTC",
           "rootCause": "A recent upgrade to unlicensed users' capabilities within Copilot Chat wasn't included in current usage logging logic, causing exclusion of that data from usage reports, which is resulting in impact.",
           "nextUpdateBy": "Thursday, June 18, 2026, at 9:00 PM UTC",
