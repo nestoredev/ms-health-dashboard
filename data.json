@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-19T02:46:02.983Z",
+  "lastUpdated": "2026-06-19T03:16:11.814Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -389,16 +389,21 @@
           "title": "Admins can't interact with Microsoft Intune Suite features in the Intune admin center",
           "startTime": "2026-06-15T18:00:00Z",
           "endTime": null,
-          "lastModified": "2026-06-18T23:00:50.353Z",
+          "lastModified": "2026-06-19T02:55:31.067Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins can't interact with Intune Suite features in the Intune admin center.",
           "scopeOfImpact": "Your organization is affected by this event, and admins see Intune Suite features in the Intune admin center that they're unable to access. This section may be updated as the investigation progresses.\r\n\r\nStart time: Monday, June 15, 2026, at 6:00 PM UTC",
           "rootCause": "A code issue introduced within a recent rollout of Intune Suite features to new license types is impacting the UI flow for organizations still being validated for these features, resulting in features being displayed to admins that aren't yet able to utilize them.",
-          "nextUpdateBy": "Friday, June 19, 2026, at 3:00 AM UTC",
+          "nextUpdateBy": "Friday, June 19, 2026, at 5:30 AM UTC",
           "feature": "Microsoft Intune",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-06-19T02:55:31.067Z",
+              "postType": "regular",
+              "content": "Title: Admins can't interact with Microsoft Intune Suite features in the Intune admin center\r\n\r\nUser impact: Admins can't interact with Intune Suite features in the Intune admin center.\r\n\r\nMore info: Affected admins may see Intune Suite features are available within the Intune admin center user interface but will be unable to utilize these features.\r\n\r\nCurrent status: The process of validating and testing our code fix is in the final stages and we’re reviewing options for its deployment to the affected environment. We’ll provide a timeline for the deployment when available. \r\n\r\nScope of impact: Your organization is affected by this event, and admins see Intune Suite features in the Intune admin center that they're unable to access. This section may be updated as the investigation progresses.\r\n\r\nStart time: Monday, June 15, 2026, at 6:00 PM UTC\r\n\r\nRoot cause: A code issue introduced within a recent rollout of Intune Suite features to new license types is impacting the UI flow for organizations still being validated for these features, resulting in features being displayed to admins that aren't yet able to utilize them.\r\n\r\nNext update by: Friday, June 19, 2026, at 5:30 AM UTC"
+            },
             {
               "createdAt": "2026-06-18T22:10:03.377Z",
               "postType": "regular",
