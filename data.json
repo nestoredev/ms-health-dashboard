@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-20T08:55:57.743Z",
+  "lastUpdated": "2026-06-20T09:26:06.770Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -156,16 +156,21 @@
           "title": "Admins may be unable to perform actions involving Domain Name System (DNS) records within the Exchange admin center",
           "startTime": "2026-06-17T06:00:00Z",
           "endTime": null,
-          "lastModified": "2026-06-19T20:04:30.24Z",
+          "lastModified": "2026-06-20T08:55:43.793Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may be unable to perform actions involving DNS records within the Exchange admin center.",
           "scopeOfImpact": "Admins attempting to perform actions involving DNS records within the Exchange admin center may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, June 17, 2026, at 6:00 AM UTC",
           "rootCause": "A recently enabled provisioning feature introduced a large number of synchronization divergences, resulting in repeated cmdlet executions that's causing resource contention and impact.",
-          "nextUpdateBy": "Saturday, June 20, 2026, at 9:00 AM UTC",
+          "nextUpdateBy": "Saturday, June 20, 2026, at 2:30 PM UTC",
           "feature": "Connectivity Issues",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-06-20T08:55:43.793Z",
+              "postType": "regular",
+              "content": "Title: Admins may be unable to perform actions involving Domain Name System (DNS) records within the Exchange admin center\r\n\r\nUser impact: Admins may be unable to perform actions involving DNS records within the Exchange admin center.\r\n\r\nMore info: This issue may impact admins attempting to perform any actions involving DNS records within the Exchange admin center, such as provisioning new domains or mailboxes, accessing the Exchange admin center, or changing domains from IPv6 to IPv4.\r\n\r\nCurrent status: We’re continuing to monitor service health telemetry to validate that the backlog of accumulated requests has fully processed. Service health remains stable following the disablement of the offending provisioning feature and we’re maintaining an extended monitoring period to confirm sustained service stability and ensure no further impact is observed before concluding our mitigation efforts.\r\n\r\nScope of impact: Admins attempting to perform actions involving DNS records within the Exchange admin center may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, June 17, 2026, at 6:00 AM UTC\r\n\r\nRoot cause: A recently enabled provisioning feature introduced a large number of synchronization divergences, resulting in repeated cmdlet executions that's causing resource contention and impact.\r\n\r\nNext update by: Saturday, June 20, 2026, at 2:30 PM UTC"
+            },
             {
               "createdAt": "2026-06-19T20:04:30.24Z",
               "postType": "regular",
