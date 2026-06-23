@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-23T16:49:32.641Z",
+  "lastUpdated": "2026-06-23T17:19:41.901Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -368,36 +368,6 @@
       "id": "PowerBIcom",
       "issues": [
         {
-          "id": "PB1402061",
-          "title": "Users may be intermittently unable to export reports with sensitivity labels in Power BI",
-          "startTime": "2026-06-23T15:27:40.497Z",
-          "endTime": null,
-          "lastModified": "2026-06-23T15:58:38.813Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may be intermittently unable to export reports with sensitivity labels in Power BI.",
-          "scopeOfImpact": "This issue may affect any user attempting to export reports with sensitivity labels in Power BI.",
-          "rootCause": "",
-          "nextUpdateBy": "Tuesday, June 23, 2026, at 5:30 PM UTC",
-          "feature": "Data Integration",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-06-23T15:58:12.807Z",
-              "postType": "regular",
-              "content": "Title: Users may be intermittently unable to export reports with sensitivity labels in Power BI\r\n\r\nUser impact: Users may be intermittently unable to export reports with sensitivity labels in Power BI.\r\n\r\nMore info: As a result of impact, users’ exports may fail or have incomplete export operations. Export operations may succeed on retry.\r\n\r\nCurrent status: We're reviewing service health telemetry information to identify and isolate potential sources of impact for further investigation.\r\n\r\nScope of impact: This issue may affect any user attempting to export reports with sensitivity labels in Power BI.\r\n\r\nNext update by: Tuesday, June 23, 2026, at 5:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-06-23T15:37:51.603Z",
-              "postType": "regular",
-              "content": "Title: Users may be intermittently unable to export reports with sensitivity labels in Power BI\r\n\r\nUser impact: Users may be intermittently unable to export reports with sensitivity labels in Power BI.\r\n\r\nMore info: As a result of impact, users’ exports may fail or have incomplete export operations. Export operations may succeed on retry. \r\n\r\nCurrent status: We're investigating a potential issue with Power BI and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Power BI"
-          ]
-        },
-        {
           "id": "PB1394805",
           "title": "Users may see blank reports when downloading PBIX files from semantic models within Power BI",
           "startTime": "2026-06-17T07:55:00Z",
@@ -546,6 +516,42 @@
     }
   ],
   "history": [
+    {
+      "id": "PB1402061",
+      "title": "Users may be intermittently unable to export reports with sensitivity labels in Power BI",
+      "startTime": "2026-06-23T13:50:00Z",
+      "endTime": "2026-06-23T17:07:42.337Z",
+      "lastModified": "2026-06-23T17:07:51.747Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have been intermittently unable to export reports with sensitivity labels in Power BI.",
+      "scopeOfImpact": "This issue may have affected any user attempting to export reports with sensitivity labels in Power BI.\r\n\r\nStart time: Tuesday, June 23, 2026, at 1:50 PM UTC\r\n\r\nEnd time: Tuesday, June 23, 2026, at 5:07 PM UTC",
+      "rootCause": "Service infrastructure which Power BI relies on for processing export requests experienced an issue resulting in suboptimal performance and impact.\r\n\r\nNext steps: \n- We're investigating why the affected infrastructure was performing at suboptimal thresolds to better understand and prevent similar future impact.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Data Integration",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-06-23T17:07:47.617Z",
+          "postType": "regular",
+          "content": "Title: Users may be intermittently unable to export reports with sensitivity labels in Power BI\r\n\r\nUser impact: Users may have been intermittently unable to export reports with sensitivity labels in Power BI.\r\n\r\nMore info: As a result of impact, users’ exports may have failed or had incomplete export operations. Export operations may have succeeded on retry.\r\n\r\nFinal status: After reviewing service health telemetry, we confirmed that service infrastructure which Power BI relies on for processing export requests experienced an issue resulting in suboptimal performance and impact. To remediate impact, we've routed export request traffic to alternate infrastructure while applying optimizations to the impacted infrastructure so requests could process properly. We've rerouted traffic back to the original infrastructure at this time and confirmed impact was successfully remediated.\r\n\r\nScope of impact: This issue may have affected any user attempting to export reports with sensitivity labels in Power BI.\r\n\r\nStart time: Tuesday, June 23, 2026, at 1:50 PM UTC\r\n\r\nEnd time: Tuesday, June 23, 2026, at 5:07 PM UTC\r\n\r\nRoot cause: Service infrastructure which Power BI relies on for processing export requests experienced an issue resulting in suboptimal performance and impact.\r\n\r\nNext steps: \n- We're investigating why the affected infrastructure was performing at suboptimal thresolds to better understand and prevent similar future impact.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-06-23T15:58:12.807Z",
+          "postType": "regular",
+          "content": "Title: Users may be intermittently unable to export reports with sensitivity labels in Power BI\r\n\r\nUser impact: Users may be intermittently unable to export reports with sensitivity labels in Power BI.\r\n\r\nMore info: As a result of impact, users’ exports may fail or have incomplete export operations. Export operations may succeed on retry.\r\n\r\nCurrent status: We're reviewing service health telemetry information to identify and isolate potential sources of impact for further investigation.\r\n\r\nScope of impact: This issue may affect any user attempting to export reports with sensitivity labels in Power BI.\r\n\r\nNext update by: Tuesday, June 23, 2026, at 5:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-06-23T15:37:51.603Z",
+          "postType": "regular",
+          "content": "Title: Users may be intermittently unable to export reports with sensitivity labels in Power BI\r\n\r\nUser impact: Users may be intermittently unable to export reports with sensitivity labels in Power BI.\r\n\r\nMore info: As a result of impact, users’ exports may fail or have incomplete export operations. Export operations may succeed on retry. \r\n\r\nCurrent status: We're investigating a potential issue with Power BI and checking for impact to your organization. We'll provide an update within 30 minutes."
+        }
+      ],
+      "serviceName": "Power BI",
+      "affectedServices": [
+        "Power BI"
+      ]
+    },
     {
       "id": "IT1396117",
       "title": "Admins can't interact with Microsoft Intune Suite features in the Intune admin center",
