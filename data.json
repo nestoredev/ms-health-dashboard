@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-24T17:57:13.169Z",
+  "lastUpdated": "2026-06-24T18:27:23.051Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -462,9 +462,40 @@
     },
     {
       "service": "Microsoft Defender XDR",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "Microsoft365Defender",
-      "issues": []
+      "issues": [
+        {
+          "id": "DZ1403296",
+          "title": "Users' file policy evaluation in Microsoft Defender for Cloud Apps may be delayed",
+          "startTime": "2026-06-15T10:27:00Z",
+          "endTime": null,
+          "lastModified": "2026-06-24T18:06:37.487Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users' file policy evaluation in Microsoft Defender for Cloud Apps may be delayed.",
+          "scopeOfImpact": "This issue may affect any user with files undergoing policy evaluations.",
+          "rootCause": "",
+          "nextUpdateBy": "Wednesday, June 24, 2026, at 7:30 PM UTC",
+          "feature": "Microsoft Cloud App Security",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-06-24T18:06:15.397Z",
+              "postType": "regular",
+              "content": "Title: Users' file policy evaluation in Microsoft Defender for Cloud Apps may be delayed\r\n\r\nUser impact: Users' file policy evaluation in Microsoft Defender for Cloud Apps may be delayed.\r\n\r\nCurrent status: We're investigating service health telemetry in parallel with change logs to identify and isolate potential sources of impact. In parallel, we're performing restarts on service infrastructure responsible for facilitating file policy evaluation as a potential mitigation. \r\n\r\nScope of impact: This issue may affect any user with files undergoing policy evaluations.\r\n\r\nNext update by: Wednesday, June 24, 2026, at 7:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-06-24T17:51:56.89Z",
+              "postType": "regular",
+              "content": "Title: Users' file policy evaluation in Microsoft Defender for Cloud Apps may be delayed\r\n\r\nUser impact: Users' file policy evaluation in Microsoft Defender for Cloud Apps may be delayed.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Defender for Cloud Apps and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Defender XDR"
+          ]
+        }
+      ]
     },
     {
       "service": "Project for the web",
