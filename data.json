@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-24T18:57:36.313Z",
+  "lastUpdated": "2026-06-24T19:27:46.703Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -470,16 +470,21 @@
           "title": "Users' file policy evaluation in Microsoft Defender for Cloud Apps may be delayed",
           "startTime": "2026-06-15T10:27:00Z",
           "endTime": null,
-          "lastModified": "2026-06-24T18:06:37.487Z",
+          "lastModified": "2026-06-24T19:02:46.683Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users' file policy evaluation in Microsoft Defender for Cloud Apps may be delayed.",
-          "scopeOfImpact": "This issue may affect any user with files undergoing policy evaluations.",
-          "rootCause": "",
-          "nextUpdateBy": "Wednesday, June 24, 2026, at 7:30 PM UTC",
+          "scopeOfImpact": "This issue may affect any user with files undergoing policy evaluations.\r\n\r\nStart time: Monday, June 15, 2026, at 10:27 AM UTC",
+          "rootCause": "A component of the policy evaluation query isn't processing requests as efficiently as expected, resulting in delays as the requests queue.",
+          "nextUpdateBy": "Thursday, June 25, 2026, at 6:00 AM UTC",
           "feature": "Microsoft Cloud App Security",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-06-24T19:02:46.683Z",
+              "postType": "regular",
+              "content": "Title: Users' file policy evaluation in Microsoft Defender for Cloud Apps may be delayed\r\n\r\nUser impact: Users' file policy evaluation in Microsoft Defender for Cloud Apps may be delayed.\r\n\r\nCurrent status: We've identified that a component of the policy evaluation query isn't processing requests as efficiently as expected, resulting in delays as the requests queue. We're reviewing options to mitigate this issue including a configuration change to route some requests to additional components for processing.\r\n\r\nScope of impact: This issue may affect any user with files undergoing policy evaluations.\r\n\r\nStart time: Monday, June 15, 2026, at 10:27 AM UTC\r\n\r\nRoot cause: A component of the policy evaluation query isn't processing requests as efficiently as expected, resulting in delays as the requests queue.\r\n\r\nNext update by: Thursday, June 25, 2026, at 6:00 AM UTC"
+            },
             {
               "createdAt": "2026-06-24T18:06:15.397Z",
               "postType": "regular",
