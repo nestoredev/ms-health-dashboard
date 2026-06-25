@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-25T04:47:55.314Z",
+  "lastUpdated": "2026-06-25T05:18:03.062Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -470,16 +470,26 @@
           "title": "Users' file policy evaluation in Microsoft Defender for Cloud Apps may be delayed",
           "startTime": "2026-06-15T10:27:00Z",
           "endTime": null,
-          "lastModified": "2026-06-24T19:02:46.683Z",
+          "lastModified": "2026-06-25T05:06:18.033Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users' file policy evaluation in Microsoft Defender for Cloud Apps may be delayed.",
           "scopeOfImpact": "This issue may affect any user with files undergoing policy evaluations.\r\n\r\nStart time: Monday, June 15, 2026, at 10:27 AM UTC",
           "rootCause": "A component of the policy evaluation query isn't processing requests as efficiently as expected, resulting in delays as the requests queue.",
-          "nextUpdateBy": "Thursday, June 25, 2026, at 6:00 AM UTC",
+          "nextUpdateBy": "Thursday, June 25, 2026, at 12:00 PM UTC",
           "feature": "Microsoft Cloud App Security",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-06-25T05:03:09.797Z",
+              "postType": "regular",
+              "content": "Title: Users' file policy evaluation in Microsoft Defender for Cloud Apps may be delayed\r\n\r\nUser impact: Users' file policy evaluation in Microsoft Defender for Cloud Apps may be delayed.\r\n\r\nCurrent status: We’re developing and validating a fix to make the configuration change necessary to route some requests to additional components for processing and remediate the impact. We anticipate that we’ll have an estimation for the completion of this process by our next scheduled update.\r\n\r\nScope of impact: This issue may affect any user with files undergoing policy evaluations.\r\n\r\nStart time: Monday, June 15, 2026, at 10:27 AM UTC\r\n\r\nRoot cause: A component of the policy evaluation query isn't processing requests as efficiently as expected, resulting in delays as the requests queue.\r\n\r\nNext update by: Thursday, June 25, 2026, at 12:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-06-25T05:03:09.523Z",
+              "postType": "regular",
+              "content": "Title: Users' file policy evaluation in Microsoft Defender for Cloud Apps may be delayed\r\n\r\nUser impact: Users' file policy evaluation in Microsoft Defender for Cloud Apps may be delayed.\r\n\r\nCurrent status: We’re developing and validating a fix to make the configuration change necessary to route some requests to additional components for processing and remediate the impact. We anticipate that we’ll have an estimation for the completion of this process by our next scheduled update.\r\n\r\nScope of impact: This issue may affect any user with files undergoing policy evaluations.\r\n\r\nStart time: Monday, June 15, 2026, at 10:27 AM UTC\r\n\r\nRoot cause: A component of the policy evaluation query isn't processing requests as efficiently as expected, resulting in delays as the requests queue.\r\n\r\nNext update by: Thursday, June 25, 2026, at 6:00 PM UTC"
+            },
             {
               "createdAt": "2026-06-24T19:02:46.683Z",
               "postType": "regular",
