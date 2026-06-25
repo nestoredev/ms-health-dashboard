@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-25T12:50:17.975Z",
+  "lastUpdated": "2026-06-25T13:20:25.641Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -531,9 +531,35 @@
     },
     {
       "service": "Microsoft Viva",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "Viva",
-      "issues": []
+      "issues": [
+        {
+          "id": "MV1403883",
+          "title": "Some users may experience failures in Microsoft Viva Engage",
+          "startTime": "2026-06-25T12:49:15.58Z",
+          "endTime": null,
+          "lastModified": "2026-06-25T12:51:45.587Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may experience failures in Microsoft Viva Engage.",
+          "scopeOfImpact": "Impact is specific to some users in the United States who are attempting to use Microsoft Viva Engage.\r\n\r\nStart time: Thursday, June 25, 2026, at 10:55 AM UTC",
+          "rootCause": "",
+          "nextUpdateBy": "Thursday, June 25, 2026, at 3:00 PM UTC",
+          "feature": "Post/Reply/Like",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-06-25T12:51:45.587Z",
+              "postType": "regular",
+              "content": "Title: Some users may experience failures in Microsoft Viva Engage\r\n\r\nUser impact: Users may experience failures in Microsoft Viva Engage.\r\n\r\nMore info: Users experience failures with specific read and write operations such as posting messages or loading Engage feeds.\r\n\r\nCurrent status: We're reviewing service telemetry to isolate the source of this issue and determine appropriate remediation actions.\r\n\r\nScope of impact: Impact is specific to some users in the United States who are attempting to use Microsoft Viva Engage.\r\n\r\nStart time: Thursday, June 25, 2026, at 10:55 AM UTC\r\n\r\nNext update by: Thursday, June 25, 2026, at 3:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Viva"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft Dataverse",
