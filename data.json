@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-25T18:22:03.487Z",
+  "lastUpdated": "2026-06-25T18:52:10.595Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -400,20 +400,25 @@
           "title": "Users' file policy evaluation in Microsoft Defender for Cloud Apps may be delayed",
           "startTime": "2026-06-15T10:27:00Z",
           "endTime": null,
-          "lastModified": "2026-06-25T16:06:27.83Z",
+          "lastModified": "2026-06-25T18:31:56.353Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users' file policy evaluation in Microsoft Defender for Cloud Apps may be delayed.",
           "scopeOfImpact": "This issue may affect any user with files undergoing policy evaluations.\r\n\r\nStart time: Monday, June 15, 2026, at 10:27 AM UTC",
           "rootCause": "A component of the policy evaluation query isn't processing requests as efficiently as expected, resulting in delays as the requests queue.",
-          "nextUpdateBy": "Thursday, June 25, 2026, at 7:30 PM UTC",
+          "nextUpdateBy": "Friday, June 26, 2026, at 6:00 AM UTC",
           "feature": "Microsoft Cloud App Security",
           "isResolved": false,
           "posts": [
             {
+              "createdAt": "2026-06-25T18:31:56.353Z",
+              "postType": "regular",
+              "content": "Title: Users' file policy evaluation in Microsoft Defender for Cloud Apps may be delayed\r\n\r\nUser impact: Users' file policy evaluation in Microsoft Defender for Cloud Apps may be delayed.\r\n\r\nCurrent status: We're progressing with our internal validations so we can ensure that our solution addresses the policy evaluation query request processing without introducing any unexpected problems to other aspects of the service. We'll provide an estimated timeline for our completed mitigations once its become available. \r\n\r\nScope of impact: This issue may affect any user with files undergoing policy evaluations.\r\n\r\nStart time: Monday, June 15, 2026, at 10:27 AM UTC\r\n\r\nRoot cause: A component of the policy evaluation query isn't processing requests as efficiently as expected, resulting in delays as the requests queue.\r\n\r\nNext update by: Friday, June 26, 2026, at 6:00 AM UTC"
+            },
+            {
               "createdAt": "2026-06-25T16:06:27.83Z",
               "postType": "regular",
-              "content": "Title: Users' file policy evaluation in Microsoft Defender for Cloud Apps may be delayed\r\n\r\nUser impact: Users' file policy evaluation in Microsoft Defender for Cloud Apps may be delayed.\r\n\r\nCurrent status: Current status: Prior to releasing the fix to the broader service environment, we're opting to complete additional validations within a portion of our testing environment to ensure the issue is resolved in full. \n \r\n\r\nScope of impact: This issue may affect any user with files undergoing policy evaluations.\r\n\r\nStart time: Monday, June 15, 2026, at 10:27 AM UTC\r\n\r\nRoot cause: A component of the policy evaluation query isn't processing requests as efficiently as expected, resulting in delays as the requests queue.\r\n\r\nNext update by: Thursday, June 25, 2026, at 7:30 PM UTC"
+              "content": "Title: Users' file policy evaluation in Microsoft Defender for Cloud Apps may be delayed\r\n\r\nUser impact: Users' file policy evaluation in Microsoft Defender for Cloud Apps may be delayed.\r\n\r\nCurrent status: Prior to releasing the fix to the broader service environment, we're opting to complete additional validations within a portion of our testing environment to ensure the issue is resolved in full. \n \r\n\r\nScope of impact: This issue may affect any user with files undergoing policy evaluations.\r\n\r\nStart time: Monday, June 15, 2026, at 10:27 AM UTC\r\n\r\nRoot cause: A component of the policy evaluation query isn't processing requests as efficiently as expected, resulting in delays as the requests queue.\r\n\r\nNext update by: Thursday, June 25, 2026, at 7:30 PM UTC"
             },
             {
               "createdAt": "2026-06-25T11:47:52.167Z",
