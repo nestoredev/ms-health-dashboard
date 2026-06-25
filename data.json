@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-25T16:21:27.066Z",
+  "lastUpdated": "2026-06-25T16:51:35.940Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -536,40 +536,9 @@
     },
     {
       "service": "Microsoft Viva",
-      "status": "serviceDegradation",
+      "status": "serviceOperational",
       "id": "Viva",
-      "issues": [
-        {
-          "id": "MV1403883",
-          "title": "Some users may experience read and write operation failures in Microsoft Viva Engage",
-          "startTime": "2026-06-25T10:55:00Z",
-          "endTime": null,
-          "lastModified": "2026-06-25T15:43:06.767Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may have experienced read and write operation failures in Microsoft Viva Engage.",
-          "scopeOfImpact": "Impact is specific to some users in the United States who are attempting to use Microsoft Viva Engage.\r\n\r\nStart time: Thursday, June 25, 2026, at 10:55 AM UTC",
-          "rootCause": "",
-          "nextUpdateBy": "Thursday, June 25, 2026, at 5:00 PM UTC",
-          "feature": "Post/Reply/Like",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-06-25T14:57:01.677Z",
-              "postType": "regular",
-              "content": "Title: Some users may experience read and write operation failures in Microsoft Viva Engage\r\n\r\nUser impact: Users may experience read and write operation failures in Microsoft Viva Engage.\r\n\r\nMore info: Users experience failures with specific read and write operations such as posting messages or loading Engage feeds.\r\n\r\nCurrent status: Our automated recovery mechanisms are actively mitigating impact by optimizing cache population and distributing service load more effectively throughout the infrastructure. We're monitoring service telemetry to verify its success in mitigating impact.\r\n\r\nScope of impact: Impact is specific to some users in the United States who are attempting to use Microsoft Viva Engage.\r\n\r\nStart time: Thursday, June 25, 2026, at 10:55 AM UTC\r\n\r\nNext update by: Thursday, June 25, 2026, at 5:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-06-25T12:51:45.587Z",
-              "postType": "regular",
-              "content": "Title: Some users may experience failures in Microsoft Viva Engage\r\n\r\nUser impact: Users may experience failures in Microsoft Viva Engage.\r\n\r\nMore info: Users experience failures with specific read and write operations such as posting messages or loading Engage feeds.\r\n\r\nCurrent status: We're reviewing service telemetry to isolate the source of this issue and determine appropriate remediation actions.\r\n\r\nScope of impact: Impact is specific to some users in the United States who are attempting to use Microsoft Viva Engage.\r\n\r\nStart time: Thursday, June 25, 2026, at 10:55 AM UTC\r\n\r\nNext update by: Thursday, June 25, 2026, at 3:00 PM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Microsoft Viva"
-          ]
-        }
-      ]
+      "issues": []
     },
     {
       "service": "Microsoft Dataverse",
@@ -603,6 +572,42 @@
     }
   ],
   "history": [
+    {
+      "id": "MV1403883",
+      "title": "Some users may experience read and write operation failures in Microsoft Viva Engage",
+      "startTime": "2026-06-25T10:55:00Z",
+      "endTime": "2026-06-25T15:55:44.247Z",
+      "lastModified": "2026-06-25T16:20:50.273Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have experienced read and write operation failures in Microsoft Viva Engage.",
+      "scopeOfImpact": "The impact was specific to some users in the United States who attempted to use Microsoft Viva Engage.\r\n\r\nStart time: Thursday, June 25, 2026, at 10:55 AM UTC\r\n\r\nEnd time: Thursday, June 25, 2026, at 3:25 PM UTC",
+      "rootCause": "A recent service deployment produced an infrastructure restart that caused a subset of service infrastructure to fall below our manageable service performance thresholds, producing read and write failures. \r\n\r\nNext steps: \n- We're further analyzing the subset of affected Viva Engage service infrastructure and the deployment that produced infrastructure restarts to help us prevent similar problems in the future. \n\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Post/Reply/Like",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-06-25T16:20:46.897Z",
+          "postType": "regular",
+          "content": "Title: Some users may experience read and write operation failures in Microsoft Viva Engage\r\n\r\nUser impact: Users may have experienced read and write operation failures in Microsoft Viva Engage.\r\n\r\nMore info: Users experienced failures with specific read and write operations such as posting messages or loading Engage feeds.\r\n\r\nFinal status: Our service monitoring has confirmed that our optimizations on the cache population and redistributed service load has remediated the impact.\r\n\r\nScope of impact: The impact was specific to some users in the United States who attempted to use Microsoft Viva Engage.\r\n\r\nStart time: Thursday, June 25, 2026, at 10:55 AM UTC\r\n\r\nEnd time: Thursday, June 25, 2026, at 3:25 PM UTC\r\n\r\nRoot cause: A recent service deployment produced an infrastructure restart that caused a subset of service infrastructure to fall below our manageable service performance thresholds, producing read and write failures. \r\n\r\nNext steps: \n- We're further analyzing the subset of affected Viva Engage service infrastructure and the deployment that produced infrastructure restarts to help us prevent similar problems in the future. \n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-06-25T14:57:01.677Z",
+          "postType": "regular",
+          "content": "Title: Some users may experience read and write operation failures in Microsoft Viva Engage\r\n\r\nUser impact: Users may experience read and write operation failures in Microsoft Viva Engage.\r\n\r\nMore info: Users experience failures with specific read and write operations such as posting messages or loading Engage feeds.\r\n\r\nCurrent status: Our automated recovery mechanisms are actively mitigating impact by optimizing cache population and distributing service load more effectively throughout the infrastructure. We're monitoring service telemetry to verify its success in mitigating impact.\r\n\r\nScope of impact: Impact is specific to some users in the United States who are attempting to use Microsoft Viva Engage.\r\n\r\nStart time: Thursday, June 25, 2026, at 10:55 AM UTC\r\n\r\nNext update by: Thursday, June 25, 2026, at 5:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-06-25T12:51:45.587Z",
+          "postType": "regular",
+          "content": "Title: Some users may experience failures in Microsoft Viva Engage\r\n\r\nUser impact: Users may experience failures in Microsoft Viva Engage.\r\n\r\nMore info: Users experience failures with specific read and write operations such as posting messages or loading Engage feeds.\r\n\r\nCurrent status: We're reviewing service telemetry to isolate the source of this issue and determine appropriate remediation actions.\r\n\r\nScope of impact: Impact is specific to some users in the United States who are attempting to use Microsoft Viva Engage.\r\n\r\nStart time: Thursday, June 25, 2026, at 10:55 AM UTC\r\n\r\nNext update by: Thursday, June 25, 2026, at 3:00 PM UTC"
+        }
+      ],
+      "serviceName": "Microsoft Viva",
+      "affectedServices": [
+        "Microsoft Viva"
+      ]
+    },
     {
       "id": "PB1402061",
       "title": "Users may be intermittently unable to export reports with sensitivity labels in Power BI",
