@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-26T19:29:01.752Z",
+  "lastUpdated": "2026-06-26T19:59:10.525Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -11,16 +11,21 @@
           "title": "Some users may see that when selecting a meeting room when scheduling meetings, it changes from available to unavailable",
           "startTime": "2025-12-08T03:04:00Z",
           "endTime": null,
-          "lastModified": "2026-06-17T20:20:04.127Z",
+          "lastModified": "2026-06-26T19:28:51.68Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may see that after selecting a meeting room when scheduling meetings, it changes from available to unavailable.",
           "scopeOfImpact": "Any users that are trying to select a meeting room when scheduling meetings outside the room's working hours in Exchange Online may be impacted. \r\n\r\nStart time: Monday, December 8, 2025, at 3:04 AM UTC",
           "rootCause": "A recent expansion of the feature logic used to book rooms for scheduled meetings contains a code complication which automatically sets the meeting rooms' default working hours to appear in Pacific Standard Time instead of their accurate time zone.",
-          "nextUpdateBy": "Friday, June 26, 2026, at 8:30 PM UTC",
+          "nextUpdateBy": "Thursday, July 2, 2026, at 8:30 PM UTC",
           "feature": "Reports of an Incident",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-06-26T19:28:51.68Z",
+              "postType": "regular",
+              "content": "Title: Some users may see that when selecting a meeting room when scheduling meetings, it changes from available to unavailable\r\n\r\nUser impact: Users may see that after selecting a meeting room when scheduling meetings, it changes from available to unavailable.\r\n\r\nMore info: While we're working to remediate the impact, admins can circumvent the issue by assigning the desired working hours and the time zone for the meeting rooms.\r\n\r\nCurrent status: We’ve confirmed that our fix encountered a deployment blocker that slowed progress. We've addressed the blocker and confirmed that the fix is deploying at a normal rate and has reached 25 percent of the affected environment. We’ll continue monitoring its progress to ensure it completes as expected by our next scheduled update. We’re also reaching out to a subset of affected users to validate the fix ahead of schedule to expedite the deployment process.\r\n\r\nScope of impact: Any users that are trying to select a meeting room when scheduling meetings outside the room's working hours in Exchange Online may be impacted. \r\n\r\nStart time: Monday, December 8, 2025, at 3:04 AM UTC\r\n\r\nRoot cause: A recent expansion of the feature logic used to book rooms for scheduled meetings contains a code complication which automatically sets the meeting rooms' default working hours to appear in Pacific Standard Time instead of their accurate time zone.\r\n\r\nNext update by: Thursday, July 2, 2026, at 8:30 PM UTC"
+            },
             {
               "createdAt": "2026-06-17T20:20:04.127Z",
               "postType": "regular",
