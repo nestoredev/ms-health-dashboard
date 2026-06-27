@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-27T22:05:39.025Z",
+  "lastUpdated": "2026-06-27T22:35:47.037Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1745,52 +1745,6 @@
       "serviceName": "Power BI",
       "affectedServices": [
         "Power BI"
-      ]
-    },
-    {
-      "id": "MO1321911",
-      "title": "Some admins may be unable to view usage reports in the Microsoft 365 admin center",
-      "startTime": "2026-05-18T23:00:00Z",
-      "endTime": "2026-05-28T22:15:00Z",
-      "lastModified": "2026-06-04T21:03:24.463Z",
-      "status": "postIncidentReviewPublished",
-      "severity": "incident",
-      "userImpact": "Admins were unable to view usage reports in the Microsoft 365 admin center.",
-      "scopeOfImpact": "",
-      "rootCause": "",
-      "nextUpdateBy": "",
-      "feature": "Access",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-06-04T21:03:24.463Z",
-          "postType": "regular",
-          "content": "A post-incident report has been published."
-        },
-        {
-          "createdAt": "2026-06-01T16:45:36.383Z",
-          "postType": "regular",
-          "content": "A post-incident report has been published."
-        },
-        {
-          "createdAt": "2026-05-28T22:41:24.233Z",
-          "postType": "regular",
-          "content": "Title: Some admins may be unable to view usage reports in the Microsoft 365 admin center\r\n\r\nUser impact: Admins were unable to view usage reports in the Microsoft 365 admin center.\r\n\r\nFinal status: The deployment of the fix has completed and we've confirmed it successfully resolved the issue. \r\n\r\nScope of impact: Some admins attempting to view usage reports in the Microsoft 365 admin center may have been impacted.\r\n\r\nStart time: Monday, May 18, 2026, at 11:00 PM UTC\r\n\r\nEnd time: Thursday, May 28, 2026, at 10:15 PM UTC\r\n\r\nRoot cause: A recent service change related to a backend infrastructure migration contained a code issue which was causing impact. \r\n\r\nNext steps: - We're reviewing our service change procedures to better understand why the code issue wasn't detected prior to the migration. \r\n\r\nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days."
-        },
-        {
-          "createdAt": "2026-05-28T16:59:51.077Z",
-          "postType": "regular",
-          "content": "Title: Some admins may be unable to view usage reports in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may be unable to view usage reports in the Microsoft 365 admin center.\r\n\r\nCurrent status: Our fix is progressing as expected, and telemetry indicates that the issue is resolved for a majority of admins. We're continuing to closely monitor the rollout and expect it be fully saturated within the next 12 hours or sooner. \r\n\r\nScope of impact: Some admins attempting to view usage reports in the Microsoft 365 admin center may be impacted.\r\n\r\nStart time: Monday, May 18, 2026, at 11:00 PM UTC\r\n\r\nEstimated time to resolve: We estimate that this issue will be resolved in the next 12 hours. \r\n\r\nRoot cause: A recent service change related to a backend infrastructure migration contained a code issue which is causing impact. \r\n\r\nNext update by: Friday, May 29, 2026, at 12:30 AM UTC"
-        },
-        {
-          "createdAt": "2026-05-27T23:59:01.247Z",
-          "postType": "regular",
-          "content": "Title: Some admins may be unable to view usage reports in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may be unable to view usage reports in the Microsoft 365 admin center.\r\n\r\nCurrent status: We're continuing to deploy our fix via staged roll out. Based on our current progress, we expect the issue to be fully resolved within the next 24 hours. We expect admins to be able to view usage reports as the fix propagates throughout the affected environments. \r\n\r\nScope of impact: Some admins attempting to view usage reports in the Microsoft 365 admin center may be impacted.\r\n\r\nEstimated time to resolve: We estimate that this issue will be resolved in the next 24 hours. \r\n\r\nRoot cause: A recent service change related to a backend infrastructure migration contained a code issue which is causing impact. \r\n\r\nNext update by: Thursday, May 28, 2026, at 7:00 PM UTC"
-        }
-      ],
-      "serviceName": "Microsoft 365 suite",
-      "affectedServices": [
-        "Microsoft 365 suite"
       ]
     }
   ]
