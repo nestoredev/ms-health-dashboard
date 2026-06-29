@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-29T16:16:46.603Z",
+  "lastUpdated": "2026-06-29T16:46:53.767Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -445,6 +445,32 @@
     }
   ],
   "history": [
+    {
+      "id": "CW1409007",
+      "title": "Users had access to scheduled prompts in Microsoft 365 Copilot Chat when they shouldn't have",
+      "startTime": "2026-06-29T15:40:37Z",
+      "endTime": "2026-06-29T16:14:29.84Z",
+      "lastModified": "2026-06-29T16:14:29.84Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users had access to scheduled prompts in Copilot Chat when they shouldn't have.",
+      "scopeOfImpact": "Users without an add-on Copilot license had access to scheduled prompts in Copilot Chat when they shouldn't have.\r\n\r\nStart time: Tuesday, April 21, 2026, at 12:00 AM UTC\r\n\r\nEnd time: Wednesday, June 10, 2026, at 2:06 PM UTC",
+      "rootCause": "A related service update incorrectly allowed access to the paid service of scheduled prompts in Copilot Chat causing this event.\r\n\r\nNext steps: - We'll continue to review our update process to improve our pre-deployment testing and validation phases with the goal of preventing future reoccurrences.\n\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "General",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-06-29T16:14:29.84Z",
+          "postType": "regular",
+          "content": "Title: Users had access to scheduled prompts in Microsoft 365 Copilot Chat when they shouldn't have\r\n\r\nUser impact: Users had access to scheduled prompts in Copilot Chat when they shouldn't have.\r\n\r\nCurrent status: We identified that an update to a related service incorrectly allowed access to the paid service feature of scheduled prompts for users without an add-on Copilot license in Copilot Chat. A fix was applied to the service to correct this by changing the scope of users allowed to see the feature. This change removed the scheduled prompts feature from Microsoft 365 Copilot chat users.\r\n\r\nScope of impact: Users without an add-on Copilot license had access to scheduled prompts in Copilot Chat when they shouldn't have.\r\n\r\nStart time: Tuesday, April 21, 2026, at 12:00 AM UTC\r\n\r\nEnd time: Wednesday, June 10, 2026, at 2:06 PM UTC\r\n\r\nRoot cause: A related service update incorrectly allowed access to the paid service of scheduled prompts in Copilot Chat causing this event.\r\n\r\nNext steps: - We'll continue to review our update process to improve our pre-deployment testing and validation phases with the goal of preventing future reoccurrences.\n\nThis is the final update for the event."
+        }
+      ],
+      "serviceName": "Microsoft 365 Copilot Chat",
+      "affectedServices": [
+        "Microsoft 365 Copilot Chat"
+      ]
+    },
     {
       "id": "DZ1403296",
       "title": "Users' file policy evaluation in Microsoft Defender for Cloud Apps may be delayed",
