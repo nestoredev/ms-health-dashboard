@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-29T18:17:21.138Z",
+  "lastUpdated": "2026-06-29T18:47:31.740Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -330,9 +330,40 @@
     },
     {
       "service": "Microsoft Defender XDR",
-      "status": "serviceOperational",
+      "status": "investigating",
       "id": "Microsoft365Defender",
-      "issues": []
+      "issues": [
+        {
+          "id": "DZ1409118",
+          "title": "Some admins’ Microsoft Defender for Cloud Apps activities may be delayed for more than two hours",
+          "startTime": "2026-06-29T18:07:58.363Z",
+          "endTime": null,
+          "lastModified": "2026-06-29T18:38:44.84Z",
+          "status": "investigating",
+          "severity": "advisory",
+          "userImpact": "Admins’ Microsoft Defender for Cloud Apps activities may be delayed for more than two hours.",
+          "scopeOfImpact": "Some admins who are attempting to view some alerts and activities in Microsoft Defender for Cloud Apps may be impacted.\r\n\r\nStart time: Monday, June 29, 2026, at 12:30 AM UTC",
+          "rootCause": "A recent deployment to Microsoft Defender for Cloud Apps contains a code issue that's causing admins to see delays of some alerts and activities.",
+          "nextUpdateBy": "Monday, June 29, 2026, at 8:00 PM UTC",
+          "feature": "Cloud App Security Discovery",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-06-29T18:38:44.84Z",
+              "postType": "regular",
+              "content": "Title: Some admins’ Microsoft Defender for Cloud Apps activities may be delayed for more than two hours\r\n\r\nUser impact: Admins’ Microsoft Defender for Cloud Apps activities may be delayed for more than two hours.\r\n\r\nMore info: Impacted scenarios include:\n- Anomaly detection triggering delayed alerts \n- Activity policy triggering delayed alerts  \n- CloudAppEvents are delayed and custom detections might be inaccurate in Microsoft Sentinel\r\n\r\nCurrent status: We've identified a recent deployment to Microsoft Defender for Cloud Apps contains a code issue that's causing some admins to see delays for some alerts and activities. We've rolled back the offending change, and we're monitoring as the increase in backlogged data is being processed to ensure the alerts and activities are up to date, and the underlying issue is resolved.\r\n\r\nScope of impact: Some admins who are attempting to view some alerts and activities in Microsoft Defender for Cloud Apps may be impacted.\r\n\r\nStart time: Monday, June 29, 2026, at 12:30 AM UTC\r\n\r\nRoot cause: A recent deployment to Microsoft Defender for Cloud Apps contains a code issue that's causing admins to see delays of some alerts and activities.\r\n\r\nNext update by: Monday, June 29, 2026, at 8:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-06-29T18:14:04.61Z",
+              "postType": "regular",
+              "content": "Title: Some admins’ Microsoft Defender for Cloud Apps activities may be delayed for more than two hours\r\n\r\nUser impact: Admins’ Microsoft Defender for Cloud Apps activities may be delayed for more than two hours.\r\n\r\nMore info: Impacted scenarios include, but aren't limited to:\n- Anomaly detection triggering delayed alerts \n- Activity policy triggering delayed alerts  \n- CloudAppEvents are delayed and custom detections might be inaccurate in Microsoft Sentinel\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Defender for Cloud Apps and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Defender XDR"
+          ]
+        }
+      ]
     },
     {
       "service": "Project for the web",
