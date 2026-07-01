@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-01T08:57:56.847Z",
+  "lastUpdated": "2026-07-01T09:28:07.059Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -384,6 +384,32 @@
     }
   ],
   "history": [
+    {
+      "id": "MO1410980",
+      "title": "Users may have been unable to access sign-out button or account details across multiple Microsoft 365 web services",
+      "startTime": "2026-07-01T08:47:40.747Z",
+      "endTime": "2026-07-01T09:18:01.06Z",
+      "lastModified": "2026-07-01T09:20:30.927Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have been unable to access sign-out button or account details across multiple Microsoft 365 web services.",
+      "scopeOfImpact": "Impact was specific to some users attempting to access the sign-out button and account details in multiple Microsoft 365 services on the web.\r\n\r\nStart time: Tuesday, June 30, 2026, at 5:22 PM UTC\r\n\r\nEnd time: Wednesday, July 1, 2026, at 9:18 AM UTC",
+      "rootCause": "A recent service migration between infrastructure environments introduced an issue that resulted in service impact. \r\n\r\nNext steps: \n-We're reviewing our deployment processes to implement corrective measures in order to help prevent similar issues from reoccurring during future infrastructure migrations.\n\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Access",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-07-01T09:06:24.49Z",
+          "postType": "regular",
+          "content": "Title: Users may have been unable to access sign-out button or account details across multiple Microsoft 365 web services\r\n\r\nUser impact: Users may have been unable to access sign-out button or account details across multiple Microsoft 365 web services.\r\n\r\nMore info: Affected Microsoft 365 services on the web included but weren't limited to Outlook on the web, OneDrive web, and SharePoint Online web where users may have been unable to access the account drop-down in the top right of the web client, preventing them from accessing the sign-out button and account details in this location.\r\n\r\nFinal status: We've determined that a recent service migration between infrastructure environments introduced an issue that resulted in service impact. To restore service, we've reverted the change and rolled the affected service back to the previous infrastructure. Following the rollback and continued monitoring of service telemetry, we've confirmed that service functionality has been fully restored and the issue is no longer occurring.\r\n\r\nScope of impact: Impact was specific to some users attempting to access the sign-out button and account details in multiple Microsoft 365 services on the web.\r\n\r\nStart time: Tuesday, June 30, 2026, at 5:22 PM UTC\r\n\r\nEnd time: Wednesday, July 1, 2026, at 9:18 AM UTC\r\n\r\nRoot cause: A recent service migration between infrastructure environments introduced an issue that resulted in service impact. \r\n\r\nNext steps: \n-We're reviewing our deployment processes to implement corrective measures in order to help prevent similar issues from reoccurring during future infrastructure migrations.\n\nThis is the final update for the event."
+        }
+      ],
+      "serviceName": "Microsoft 365 suite",
+      "affectedServices": [
+        "Microsoft 365 suite"
+      ]
+    },
     {
       "id": "DZ1409118",
       "title": "Some admins’ Microsoft Defender for Cloud Apps activities may be delayed for more than two hours",
