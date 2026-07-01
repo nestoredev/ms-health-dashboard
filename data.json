@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-01T09:28:07.059Z",
+  "lastUpdated": "2026-07-01T09:58:15.333Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -389,12 +389,12 @@
       "title": "Users may have been unable to access sign-out button or account details across multiple Microsoft 365 web services",
       "startTime": "2026-07-01T08:47:40.747Z",
       "endTime": "2026-07-01T09:18:01.06Z",
-      "lastModified": "2026-07-01T09:20:30.927Z",
+      "lastModified": "2026-07-01T09:35:37.73Z",
       "status": "serviceRestored",
       "severity": "advisory",
       "userImpact": "Users may have been unable to access sign-out button or account details across multiple Microsoft 365 web services.",
-      "scopeOfImpact": "Impact was specific to some users attempting to access the sign-out button and account details in multiple Microsoft 365 services on the web.\r\n\r\nStart time: Tuesday, June 30, 2026, at 5:22 PM UTC\r\n\r\nEnd time: Wednesday, July 1, 2026, at 9:18 AM UTC",
-      "rootCause": "A recent service migration between infrastructure environments introduced an issue that resulted in service impact. \r\n\r\nNext steps: \n-We're reviewing our deployment processes to implement corrective measures in order to help prevent similar issues from reoccurring during future infrastructure migrations.\n\nThis is the final update for the event.",
+      "scopeOfImpact": "Impact was specific to some users attempting to access the sign-out button and account details in multiple Microsoft 365 services on the web.\r\n\r\nStart time: Tuesday, June 30, 2026, at 5:22 PM UTC\r\n\r\nEnd time: Wednesday, July 1, 2026, at 7:37 AM UTC",
+      "rootCause": "A recent service migration between infrastructure environments introduced an issue that resulted in service impact.\r\n\r\nNext steps: -We're reviewing our deployment processes to implement corrective measures in order to help prevent similar issues from reoccurring during future infrastructure migrations.\n\nThis is the final update for the event.",
       "nextUpdateBy": "",
       "feature": "Access",
       "isResolved": true,
@@ -402,7 +402,7 @@
         {
           "createdAt": "2026-07-01T09:06:24.49Z",
           "postType": "regular",
-          "content": "Title: Users may have been unable to access sign-out button or account details across multiple Microsoft 365 web services\r\n\r\nUser impact: Users may have been unable to access sign-out button or account details across multiple Microsoft 365 web services.\r\n\r\nMore info: Affected Microsoft 365 services on the web included but weren't limited to Outlook on the web, OneDrive web, and SharePoint Online web where users may have been unable to access the account drop-down in the top right of the web client, preventing them from accessing the sign-out button and account details in this location.\r\n\r\nFinal status: We've determined that a recent service migration between infrastructure environments introduced an issue that resulted in service impact. To restore service, we've reverted the change and rolled the affected service back to the previous infrastructure. Following the rollback and continued monitoring of service telemetry, we've confirmed that service functionality has been fully restored and the issue is no longer occurring.\r\n\r\nScope of impact: Impact was specific to some users attempting to access the sign-out button and account details in multiple Microsoft 365 services on the web.\r\n\r\nStart time: Tuesday, June 30, 2026, at 5:22 PM UTC\r\n\r\nEnd time: Wednesday, July 1, 2026, at 9:18 AM UTC\r\n\r\nRoot cause: A recent service migration between infrastructure environments introduced an issue that resulted in service impact. \r\n\r\nNext steps: \n-We're reviewing our deployment processes to implement corrective measures in order to help prevent similar issues from reoccurring during future infrastructure migrations.\n\nThis is the final update for the event."
+          "content": "Title: Users may have been unable to access sign-out button or account details across multiple Microsoft 365 web services\r\n\r\nUser impact: Users may have been unable to access sign-out button or account details across multiple Microsoft 365 web services.\r\n\r\nMore info: Affected Microsoft 365 services on the web included but weren't limited to Outlook on the web, OneDrive web, and SharePoint Online web where users may have been unable to access the account drop-down in the top right of the web client, preventing them from accessing the sign-out button and account details in this location.\r\n\r\nFinal status: We've determined that a recent service migration between infrastructure environments introduced an issue that resulted in service impact. To restore service, we've reverted the change and rolled the affected service back to the previous infrastructure. Following the rollback and continued monitoring of service telemetry, we've confirmed that service functionality has been fully restored and the issue is no longer occurring.\r\n\r\nScope of impact: Impact was specific to some users attempting to access the sign-out button and account details in multiple Microsoft 365 services on the web.\r\n\r\nStart time: Tuesday, June 30, 2026, at 5:22 PM UTC\r\n\r\nEnd time: Wednesday, July 1, 2026, at 7:37 AM UTC\r\n\r\nRoot cause: A recent service migration between infrastructure environments introduced an issue that resulted in service impact.\r\n\r\nNext steps: -We're reviewing our deployment processes to implement corrective measures in order to help prevent similar issues from reoccurring during future infrastructure migrations.\n\nThis is the final update for the event."
         }
       ],
       "serviceName": "Microsoft 365 suite",
@@ -1700,52 +1700,6 @@
           "createdAt": "2026-06-01T14:27:25.653Z",
           "postType": "regular",
           "content": "Title: Unable to open files in Office for the web or Microsoft Teams\n\nUser impact: Users may be unable to open files in Office for the web or Microsoft Teams.\n\nMore info: Impacted Office Apps include, but are not limited to: \n- Excel\n- PowerPoint\n\nWhen users open documents, impacted users are shown the following the following error message \"Office Online services aren't available right now. We're working to restore all services as soon as possible. Please check back soon.\"\n \nCurrent status: We’re continuing to analyze service telemetry and have identified elevated error rates across Office for the web experiences. We’re correlating these error patterns across service dependencies to further isolate the source of impact and determine appropriate mitigation steps.\n \nScope of impact: This issue could impact any user attempting to access Office Apps using Office for the web or Microsoft Teams.\n \nNext update by: Monday, June 1, 2026, at 3:30 PM UTC"
-        }
-      ],
-      "serviceName": "Microsoft 365 suite",
-      "affectedServices": [
-        "Microsoft 365 suite"
-      ]
-    },
-    {
-      "id": "MO1329260",
-      "title": "Some users may have been unable to setup Multi-Factor Authentication (MFA) or access the mysignins.microsoft.com website",
-      "startTime": "2026-06-01T07:10:00Z",
-      "endTime": "2026-06-01T09:50:00Z",
-      "lastModified": "2026-06-08T13:26:25.807Z",
-      "status": "postIncidentReviewPublished",
-      "severity": "incident",
-      "userImpact": "Users may have been unable to setup MFA or access the mysignins.microsoft.com website.",
-      "scopeOfImpact": "",
-      "rootCause": "",
-      "nextUpdateBy": "",
-      "feature": "Access",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-06-08T13:23:44.523Z",
-          "postType": "regular",
-          "content": "A post-incident report has been published."
-        },
-        {
-          "createdAt": "2026-06-03T14:15:06.763Z",
-          "postType": "regular",
-          "content": "A post-incident report has been published."
-        },
-        {
-          "createdAt": "2026-06-01T11:43:26.367Z",
-          "postType": "regular",
-          "content": "Title: Some users may have been unable to setup Multi-Factor Authentication (MFA) or access the mysignins.microsoft.com website\n\nUser impact: Users may have been unable to setup MFA or access the mysignins.microsoft.com website.\n\nMore info: Users may have encountered 504 Gateway Timeout errors when trying to access mysignins.microsoft.com\n \nFinal status: We've identified a recent cache configuration change required a failover. During the failover, the service experienced high CPU and memory utilization as EU traffic peaked, which prevented the MySignIn service from processing the volume of requests. Mitigation actions have since been rolled back, and traffic has been restored to the original infrastructure.\n \nScope of impact: Some users attempting to setup MFA or accessing the mysignins.microsoft.com website may have been impacted.\n \nStart time: Monday, June 1, 2026, at 7:10 AM UTC\n \nEnd time: Monday, June 1, 2026, at 9:50 AM UTC\n \nRoot cause: A recent configuration change within the Redis cache layer required a failover before it could be fully applied to the production environment. When that failover occurred, it coincided with peak traffic levels in Europe, which increased demand on the remaining MySignIn service infrastructure. Under this elevated load, the service experienced high Central Processing Unit (CPU) and memory utilization and was unable to process requests at the expected rate. As a result, some users encountered 504 Gateway Timeout errors when attempting to set up Multi-Factor Authentication (MFA) or access mysignins.microsoft.com.\n \nNext steps:\n- For a more comprehensive list of next steps and actions, please refer to the Post Incident Report document."
-        },
-        {
-          "createdAt": "2026-06-01T10:51:57.857Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to setup Multi-Factor Authentication (MFA) or access the mysignins.microsoft.com website\n\nUser impact: Users may be unable to setup MFA or access the mysignins.microsoft.com website.\n\nMore info: Users may encounter 504 Gateway Timeout errors when trying to access mysignins.microsoft.com\n \nCurrent status: We've completed mitigation actions, including failing over to alternate infrastructure, and are continuing to monitor service health. As elevated error rates persist, we're actively evaluating additional mitigation options, including optimizing how service requests are processed to further stabilize the service.\n \nScope of impact: Some users attempting to setup MFA or accessing the mysignins.microsoft.com website may be impacted.\n \nNext update by: Monday, June 1, 2026, at 12:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-06-01T10:27:12.257Z",
-          "postType": "quick",
-          "content": "We’ve completed the failover and while we initially observed improvement, we’re continuing to see elevated error rates. We’re actively implementing additional mitigation actions to stabilize the service as we continue our investigation into a potential underlying cache-related issue.\n \nThis quick update is designed to provide the latest information on this issue.\n \nNext update by: Monday, June 1, 2026, at 11:00 AM UTC"
         }
       ],
       "serviceName": "Microsoft 365 suite",
