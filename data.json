@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-03T05:10:03.053Z",
+  "lastUpdated": "2026-07-03T05:40:10.219Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -171,35 +171,9 @@
     },
     {
       "service": "Microsoft 365 suite",
-      "status": "investigating",
+      "status": "serviceOperational",
       "id": "OSDPPlatform",
-      "issues": [
-        {
-          "id": "MO1413447",
-          "title": "Users in Japan may experience issues accessing Microsoft services including Microsoft Teams and Microsoft 365",
-          "startTime": "2026-07-03T04:44:52Z",
-          "endTime": null,
-          "lastModified": "2026-07-03T04:53:10.45Z",
-          "status": "investigating",
-          "severity": "incident",
-          "userImpact": "Users in Japan may have experienced issues accessing Microsoft Teams and Microsoft 365 services.",
-          "scopeOfImpact": "",
-          "rootCause": "",
-          "nextUpdateBy": "",
-          "feature": "Sign-in",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-07-03T04:45:54.427Z",
-              "postType": "regular",
-              "content": "Title: Users in Japan may experience issues accessing Microsoft services including Microsoft Teams and Microsoft 365\n\nUser impact: Users in Japan may have experienced issues accessing Microsoft Teams and Microsoft 365 services.\n\nCurrent status: We've investigated a problem in which users may have experienced issues accessing Microsoft 365 services including Microsoft Teams and confirmed that service is now restored. We'll provide additional information in a closure summary within the \"History\" section of the \"Service health\" dashboard shortly."
-            }
-          ],
-          "affectedServices": [
-            "Microsoft 365 suite"
-          ]
-        }
-      ]
+      "issues": []
     },
     {
       "service": "SharePoint Online",
@@ -415,6 +389,37 @@
     }
   ],
   "history": [
+    {
+      "id": "MO1413447",
+      "title": "Users in Japan may experience issues accessing Microsoft services including Microsoft Teams and Microsoft 365",
+      "startTime": "2026-07-03T03:55:00Z",
+      "endTime": "2026-07-03T04:40:00Z",
+      "lastModified": "2026-07-03T05:10:34.807Z",
+      "status": "serviceRestored",
+      "severity": "incident",
+      "userImpact": "Users in Japan may have experienced issues accessing Microsoft Teams and Microsoft 365 services.",
+      "scopeOfImpact": "Users in Japan attempting to access Microsoft Teams and other Microsoft 365 services may have been impacted.\n\nStart time: Friday, July 3, 2026, at 3:55 AM UTC\n\nEnd time: Friday, July 3, 2026, at 4:40 AM UTC",
+      "rootCause": "A transient issue affecting a network component leveraged to facilitate Microsoft 365 service access resulted in impact.\n\nNext steps: \n - We're continuing to monitor the involved network component closely to gain further insight into the source of the underlying issue and identify ways we can better prevent similar issues prior to impact.\n\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Sign-in",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-07-03T05:10:34.807Z",
+          "postType": "regular",
+          "content": "Title: Users in Japan may experience issues accessing Microsoft services including Microsoft Teams and Microsoft 365\n\nUser impact: Users in Japan may have experienced issues accessing Microsoft Teams and Microsoft 365 services.\n\nFinal status: We've identified that a transient issue affecting a network component leveraged to facilitate Microsoft 365 service access resulted in impact. Our automated recovery system repaired this problem before we had the opportunity to manually intervene, and we confirmed that service was restored after monitoring the environment.\n\nScope of impact: Users in Japan attempting to access Microsoft Teams and other Microsoft 365 services may have been impacted.\n\nStart time: Friday, July 3, 2026, at 3:55 AM UTC\n\nEnd time: Friday, July 3, 2026, at 4:40 AM UTC\n\nRoot cause: A transient issue affecting a network component leveraged to facilitate Microsoft 365 service access resulted in impact.\n\nNext steps: \n - We're continuing to monitor the involved network component closely to gain further insight into the source of the underlying issue and identify ways we can better prevent similar issues prior to impact.\n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-07-03T04:45:54.427Z",
+          "postType": "regular",
+          "content": "Title: Users in Japan may experience issues accessing Microsoft services including Microsoft Teams and Microsoft 365\n\nUser impact: Users in Japan may have experienced issues accessing Microsoft Teams and Microsoft 365 services.\n\nCurrent status: We've investigated a problem in which users may have experienced issues accessing Microsoft 365 services including Microsoft Teams and confirmed that service is now restored. We'll provide additional information in a closure summary within the \"History\" section of the \"Service health\" dashboard shortly."
+        }
+      ],
+      "serviceName": "Microsoft 365 suite",
+      "affectedServices": [
+        "Microsoft 365 suite"
+      ]
+    },
     {
       "id": "MO1411776",
       "title": "Due to a third-party networking issue, users in Australia may be unable to access Microsoft 365 services",
