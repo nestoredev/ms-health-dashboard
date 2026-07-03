@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-03T04:39:54.171Z",
+  "lastUpdated": "2026-07-03T05:10:03.053Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -171,9 +171,35 @@
     },
     {
       "service": "Microsoft 365 suite",
-      "status": "serviceOperational",
+      "status": "investigating",
       "id": "OSDPPlatform",
-      "issues": []
+      "issues": [
+        {
+          "id": "MO1413447",
+          "title": "Users in Japan may experience issues accessing Microsoft services including Microsoft Teams and Microsoft 365",
+          "startTime": "2026-07-03T04:44:52Z",
+          "endTime": null,
+          "lastModified": "2026-07-03T04:53:10.45Z",
+          "status": "investigating",
+          "severity": "incident",
+          "userImpact": "Users in Japan may have experienced issues accessing Microsoft Teams and Microsoft 365 services.",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
+          "feature": "Sign-in",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-07-03T04:45:54.427Z",
+              "postType": "regular",
+              "content": "Title: Users in Japan may experience issues accessing Microsoft services including Microsoft Teams and Microsoft 365\n\nUser impact: Users in Japan may have experienced issues accessing Microsoft Teams and Microsoft 365 services.\n\nCurrent status: We've investigated a problem in which users may have experienced issues accessing Microsoft 365 services including Microsoft Teams and confirmed that service is now restored. We'll provide additional information in a closure summary within the \"History\" section of the \"Service health\" dashboard shortly."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite"
+          ]
+        }
+      ]
     },
     {
       "service": "SharePoint Online",
