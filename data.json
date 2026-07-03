@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-03T17:43:26.561Z",
+  "lastUpdated": "2026-07-03T18:13:33.943Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1721,52 +1721,6 @@
           "createdAt": "2026-06-03T19:54:22.42Z",
           "postType": "regular",
           "content": "Title: Users may fail to retrieve Microsoft OneNote content using Microsoft Graph APIs\r\n\r\nUser impact: Users may fail to retrieve Microsoft OneNote content using Microsoft Graph APIs.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Graph and checking for impact to your organization. We'll provide an update within 30 minutes."
-        }
-      ],
-      "serviceName": "Microsoft 365 suite",
-      "affectedServices": [
-        "Microsoft 365 suite"
-      ]
-    },
-    {
-      "id": "MO1332784",
-      "title": "Some users' Windows devices with policies configured to prevent auto updates may be installing drivers",
-      "startTime": "2026-06-02T13:00:00Z",
-      "endTime": "2026-06-03T18:08:07.197Z",
-      "lastModified": "2026-06-03T18:09:17.727Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users' Windows devices with configured policies to prevent auto updates might have been installing drivers. ",
-      "scopeOfImpact": "This issue may have caused drivers to be installed for users with a Windows device configured to prevent auto updates.\r\n\r\nStart time: Tuesday, June 02, 2026, at 1:00 PM UTC\r\n\r\nEnd time: Wednesday, June 03, 2026, at 5:30 AM UTC",
-      "rootCause": "A caching service used by the Windows Update service temporarily dropped device enrollment information. As a result, affected Windows devices were briefly treated as non-enrolled, preventing the expected driver-approval controls being applied.\r\n\r\nNext steps: \n- We're continuing to review how this caching service temporarily dropped Windows device enrollment information to better inform how to detect, prevent, and respond to similar service issues in the future.\r\n\r\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Company or User Administration",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-06-03T18:09:14.773Z",
-          "postType": "regular",
-          "content": "Title: Some users' Windows devices with policies configured to prevent auto updates may be installing drivers\r\n\r\nUser impact: Users' Windows devices with configured policies to prevent auto updates might have been installing drivers. \r\n\r\nMore info: As we worked to remediate the impact, we determined that the drivers installed were Microsoft approved/signed and that they didn't pose a security threat.\r\n\r\nFinal status: We've validated that this issue is resolved following impact remediation confirmation from a subset of previously affected users.\r\n\r\nScope of impact: This issue may have caused drivers to be installed for users with a Windows device configured to prevent auto updates.\r\n\r\nStart time: Tuesday, June 02, 2026, at 1:00 PM UTC\r\n\r\nEnd time: Wednesday, June 03, 2026, at 5:30 AM UTC\r\n\r\nRoot cause: A caching service used by the Windows Update service temporarily dropped device enrollment information. As a result, affected Windows devices were briefly treated as non-enrolled, preventing the expected driver-approval controls being applied.\r\n\r\nNext steps: \n- We're continuing to review how this caching service temporarily dropped Windows device enrollment information to better inform how to detect, prevent, and respond to similar service issues in the future.\r\n\r\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-06-03T17:05:36.113Z",
-          "postType": "regular",
-          "content": "Title: Some users' Windows devices with policies configured to prevent auto updates may be installing drivers\r\n\r\nUser impact: Users' Windows devices with configured policies to prevent auto updates might be installing drivers. \r\n\r\nMore info: As we work to remediate the impact, we've determined that the drivers being installed are Microsoft approved/signed and that they don't pose a security threat.\r\n\r\nCurrent status: We've validated that updating the affected service cache and enrollment status for affected devices has mitigated impact for this issue. We're reaching out to a subset of affected users to likewise validate this impact remediation and confirm this issue is fully resolved. \r\n\r\nScope of impact: This issue may cause drivers to be installed for users with a Windows device configured to prevent auto updates.\r\n\r\nStart time: Tuesday, June 02, 2026, at 1:00 PM UTC\r\n\r\nRoot cause: A caching service used by the Windows Update service temporarily dropped device enrollment information. As a result, affected Windows devices were briefly treated as non-enrolled, preventing the expected driver-approval controls being applied.\r\n\r\nNext update by: Thursday, June 04, 2026, at 6:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-06-02T23:34:56.67Z",
-          "postType": "regular",
-          "content": "Title: Some users' Windows devices with policies configured to prevent auto updates may be installing drivers\r\n\r\nUser impact: Users' Windows devices with configured policies to prevent auto updates might be installing drivers. \r\n\r\nMore info: As we work to remediate the impact, we've determined that the drivers being installed are Microsoft approved/signed and that they don't pose a security threat.\r\n\r\nCurrent status: We've confirmed that a caching service used by the Windows Update service temporarily dropped device enrollment information. As a result, affected Windows devices were briefly treated as non-enrolled, preventing the expected driver-approval controls being applied. We're updating the affected service cache and the enrollment status for affected devices to remediate the impact and anticipate this process may complete by our next scheduled update, at which point we'll monitor to confirm full remediation.\r\n\r\nScope of impact: This issue may cause drivers to be installed for users with a Windows device configured to prevent auto updates.\r\n\r\nStart time: Tuesday, June 02, 2026, at 1:00 PM UTC\r\n\r\nRoot cause: A caching service used by the Windows Update service temporarily dropped device enrollment information. As a result, affected Windows devices were briefly treated as non-enrolled, preventing the expected driver-approval controls being applied.\r\n\r\nNext update by: Wednesday, June 03, 2026, at 6:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-06-02T22:39:10.097Z",
-          "postType": "regular",
-          "content": "Title: Some users' Windows devices with policies configured to prevent auto updates may be installing drivers\n\nUser impact: Users' Windows devices with configured policies to prevent auto updates may be installing drivers.\n\nMore info: As we work to remediate the impact, we've determined that the drivers being installed are Microsoft approved/signed and that they don't pose a security threat.\n\nCurrent status: We've identified a potential service cache misconfiguration that we believe could be causing drivers to become unexpectedly installed when policies are configured to prevent it. We're further analyzing our service cache configurations to confirm our findings, and so we can determine the next steps for remediating the impact.\n\nScope of impact: This issue may cause drivers to be installed for users with a Windows device configured to prevent auto updates.\n\nNext update by: Wednesday, June 03, 2026, at 12:30 AM UTC"
-        },
-        {
-          "createdAt": "2026-06-02T22:20:41.957Z",
-          "postType": "regular",
-          "content": "Title: Some users' Windows devices with policies configured to prevent auto updates are installing drivers\r\n\r\nUser impact: Users' Windows devices with configured policies to prevent auto updates are installing drivers. \r\n\r\nMore info: As we work to remediate the impact, we've determined that the drivers being installed are Microsoft approved/signed and that they don't pose a security threat.\r\n\r\nCurrent status: We've focused our investigation on a potential service cache misconfiguration that we believe could be causing drivers to become unexpectedly installed when policies are configured to prevent it. We're further analyzing our service cache configurations to confirm our findings, and so we can determine the next steps for remediating the impact.\r\n\r\nScope of impact: Your organization is impacted by this event, and some users with a Windows device have their drivers unexpectedly installed.\r\n\r\nNext update by: Wednesday, June 03, 2026, at 12:30 AM UTC"
         }
       ],
       "serviceName": "Microsoft 365 suite",
