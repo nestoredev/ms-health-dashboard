@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-03T23:45:01.786Z",
+  "lastUpdated": "2026-07-04T00:15:09.369Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1690,42 +1690,6 @@
       "serviceName": "Microsoft 365 Copilot Chat",
       "affectedServices": [
         "Microsoft 365 Copilot Chat"
-      ]
-    },
-    {
-      "id": "MO1338742",
-      "title": "Users may fail to retrieve Microsoft OneNote content using Microsoft Graph APIs",
-      "startTime": "2026-06-03T18:30:00Z",
-      "endTime": "2026-06-03T23:49:48.837Z",
-      "lastModified": "2026-06-03T23:51:33.453Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users may have failed to retrieve Microsoft OneNote content using Microsoft Graph APIs.",
-      "scopeOfImpact": "This issue may have affected some users attempting to utilize Microsoft Graph APIs to retrieve Microsoft OneNote content.\r\n\r\nStart time: Wednesday, June 03, 2026, at 6:30 PM UTC\r\n\r\nEnd time: Wednesday, June 03, 2026, at 10:30 PM UTC",
-      "rootCause": "A recent build deployment introduced an issue which is causing failures when utilizing impacted APIs to retrieve Microsoft OneNote content.\r\n\r\nNext steps: \n- We're continuing to monitor service health to ensure that this impact does not reoccur.\n- We're analyzing our internal validation processes to identify any avenues for enhancing quality assurance to ensure that potential issues are preemptively remediated.",
-      "nextUpdateBy": "",
-      "feature": "Company or User Administration",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-06-03T23:51:12.933Z",
-          "postType": "regular",
-          "content": "Title: Users may fail to retrieve Microsoft OneNote content using Microsoft Graph APIs\r\n\r\nUser impact: Users may have failed to retrieve Microsoft OneNote content using Microsoft Graph APIs.\r\n\r\nMore info: Impacted APIs include:\nGET-recentnotebooks\nGET-notebooks\t\nGET-sections\t\nGET-pages\t\nPOST-pages\t\nPOST-sections\t\nGET-sectiongroups\t\t\r\n\r\nFinal status: We've confirmed that our deployment of the previous unimpacted service build version has completed, and that the impact has been fully remediated for all affected users.\r\n\r\nScope of impact: This issue may have affected some users attempting to utilize Microsoft Graph APIs to retrieve Microsoft OneNote content.\r\n\r\nStart time: Wednesday, June 03, 2026, at 6:30 PM UTC\r\n\r\nEnd time: Wednesday, June 03, 2026, at 10:30 PM UTC\r\n\r\nRoot cause: A recent build deployment introduced an issue which is causing failures when utilizing impacted APIs to retrieve Microsoft OneNote content.\r\n\r\nNext steps: \n- We're continuing to monitor service health to ensure that this impact does not reoccur.\n- We're analyzing our internal validation processes to identify any avenues for enhancing quality assurance to ensure that potential issues are preemptively remediated."
-        },
-        {
-          "createdAt": "2026-06-03T20:04:49.01Z",
-          "postType": "regular",
-          "content": "Title: Users may fail to retrieve Microsoft OneNote content using Microsoft Graph APIs\r\n\r\nUser impact: Users may fail to retrieve Microsoft OneNote content using Microsoft Graph APIs.\r\n\r\nMore info: Impacted APIs include:\nGET-recentnotebooks\nGET-notebooks\t\nGET-sections\t\nGET-pages\t\nPOST-pages\t\nPOST-sections\t\nGET-sectiongroups\t\t\r\n\r\nCurrent status: We've identified that a recent build deployment introduced an issue which is causing failures when attempting to utilize impacted APIs to retrieve Microsoft OneNote content. We've begun deployment of the previous known good build as a means of remediating impact. We anticipate this deployment will be complete, resolving the issue, by our next scheduled communication update.\r\n\r\nScope of impact: This issue may affect some users of Microsoft Graph APIs retrieving Microsoft OneNote content.\r\n\r\nStart time: Wednesday, June 03, 2026, at 6:30 PM UTC\r\n\r\nRoot cause: A recent build deployment introduced an issue which is causing failures when utilizing impacted APIs to retrieve Microsoft OneNote content.\r\n\r\nNext update by: Thursday, June 04, 2026, at 1:00 AM UTC"
-        },
-        {
-          "createdAt": "2026-06-03T19:54:22.42Z",
-          "postType": "regular",
-          "content": "Title: Users may fail to retrieve Microsoft OneNote content using Microsoft Graph APIs\r\n\r\nUser impact: Users may fail to retrieve Microsoft OneNote content using Microsoft Graph APIs.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Graph and checking for impact to your organization. We'll provide an update within 30 minutes."
-        }
-      ],
-      "serviceName": "Microsoft 365 suite",
-      "affectedServices": [
-        "Microsoft 365 suite"
       ]
     }
   ]
