@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-08T14:46:52.682Z",
+  "lastUpdated": "2026-07-08T15:17:02.502Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -232,35 +232,9 @@
     },
     {
       "service": "Microsoft 365 Copilot Chat",
-      "status": "serviceDegradation",
+      "status": "serviceOperational",
       "id": "CopilotChat",
-      "issues": [
-        {
-          "id": "CW1420563",
-          "title": "Users may be unable to view or select specific GPT-based models in Microsoft 365 Copilot chat ",
-          "startTime": "2026-07-08T01:29:00Z",
-          "endTime": null,
-          "lastModified": "2026-07-08T13:17:52.863Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may be unable to view or select specific GPT-based models in Microsoft 365 Copilot chat. ",
-          "scopeOfImpact": "Impact is specific to some users attempting to view or select specific GPT-based models in Microsoft 365 Copilot chat.",
-          "rootCause": "",
-          "nextUpdateBy": "Wednesday, July 8, 2026, at 3:00 PM UTC",
-          "feature": "General",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-07-08T12:52:47.937Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to view or select specific GPT-based models in Microsoft 365 Copilot chat \r\n\r\nUser impact: Users may be unable to view or select specific GPT-based models in Microsoft 365 Copilot chat. \r\n\r\nMore info: Affected users may notice that the model selector from Microsoft 365 Copilot chat is missing some GPT options. \n\nThe Auto, Quick Response, and Think Deeper options are available and working as expected, while the rest of the Copilot functionality remains unaffected.\r\n\r\nCurrent status: We're investigating reports that certain model selector options aren't being returned, which is preventing affected users from selecting some GPT models in Microsoft 365 Copilot. We're reviewing service monitoring telemetry alongside support provided information to isolate the root cause and determine our next troubleshooting steps.\r\n\r\nScope of impact: Impact is specific to some users attempting to view or select specific GPT-based models in Microsoft 365 Copilot chat. \r\n\r\nNext update by: Wednesday, July 8, 2026, at 3:00 PM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Microsoft 365 Copilot Chat"
-          ]
-        }
-      ]
+      "issues": []
     }
   ],
   "history": [
