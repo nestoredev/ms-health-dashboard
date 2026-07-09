@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-09T18:24:40.932Z",
+  "lastUpdated": "2026-07-09T18:54:52.524Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -15,7 +15,7 @@
     },
     {
       "service": "Microsoft 365 suite",
-      "status": "investigating",
+      "status": "serviceDegradation",
       "id": "OSDPPlatform",
       "issues": [
         {
@@ -23,16 +23,21 @@
           "title": "Admin's Microsoft 365 Groups, Teams user, and Teams device reports may be delayed in the Microsoft 365 admin center",
           "startTime": "2026-07-09T17:54:56.313Z",
           "endTime": null,
-          "lastModified": "2026-07-09T18:02:14.967Z",
-          "status": "investigating",
+          "lastModified": "2026-07-09T18:37:32.547Z",
+          "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admin's Microsoft 365 Groups, Teams user, and Teams device reports may be delayed in the Microsoft 365 admin center.",
-          "scopeOfImpact": "",
+          "scopeOfImpact": "Any admin viewing Microsoft 365 Groups, Teams user, or Teams device reports in the Microsoft 365 admin center may be impacted.\r\n\r\nStart time: Wednesday, July 8, 2026, at 12:00 AM UTC",
           "rootCause": "",
-          "nextUpdateBy": "",
+          "nextUpdateBy": "Friday, July 10, 2026, at 6:00 PM UTC",
           "feature": "Company or User Administration",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-07-09T18:35:31.18Z",
+              "postType": "regular",
+              "content": "Title: Admin's Microsoft 365 Groups, Teams user, and Teams device reports may be delayed in the Microsoft 365 admin center\r\n\r\nUser impact: Admin's Microsoft 365 Groups, Teams user, and Teams device reports may be delayed in the Microsoft 365 admin center.\r\n\r\nMore info: The last refresh date for these reports is Friday, July 3, 2026.\r\n\r\nCurrent status: Our service health monitoring alerted us to delays occurring when publishing Microsoft 365 Groups, Teams user, and Teams device reporting data to the Microsoft 365 admin center. While we investigate the portion of service infrastructure responsible for relaying this reporting data to the Microsoft 365 admin center to isolate the source of the delays, our service health telemetry indicates the data has begun processing. We're monitoring the data to ensure that it continues to process while we determine a strategy to expedite its processing.\r\n\r\nScope of impact: Any admin viewing Microsoft 365 Groups, Teams user, or Teams device reports in the Microsoft 365 admin center may be impacted.\r\n\r\nStart time: Wednesday, July 8, 2026, at 12:00 AM UTC\r\n\r\nNext update by: Friday, July 10, 2026, at 6:00 PM UTC"
+            },
             {
               "createdAt": "2026-07-09T18:02:14.967Z",
               "postType": "regular",
