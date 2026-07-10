@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-10T17:01:23.019Z",
+  "lastUpdated": "2026-07-10T17:31:32.132Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -20,19 +20,24 @@
       "issues": [
         {
           "id": "MO1421789",
-          "title": "Admin's Microsoft 365 Groups, Teams user, and Teams device reports may be delayed in the Microsoft 365 admin center",
-          "startTime": "2026-07-09T17:54:56.313Z",
+          "title": "Admins' Microsoft 365 Groups, Teams user, and Teams device reports may be delayed in the Microsoft 365 admin center",
+          "startTime": "2026-07-08T00:00:00Z",
           "endTime": null,
-          "lastModified": "2026-07-09T18:37:32.547Z",
+          "lastModified": "2026-07-10T16:58:32.277Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "userImpact": "Admin's Microsoft 365 Groups, Teams user, and Teams device reports may be delayed in the Microsoft 365 admin center.",
+          "userImpact": "Admins' Microsoft 365 Groups, Teams user, and Teams device reports may be delayed in the Microsoft 365 admin center.",
           "scopeOfImpact": "Any admin viewing Microsoft 365 Groups, Teams user, or Teams device reports in the Microsoft 365 admin center may be impacted.\r\n\r\nStart time: Wednesday, July 8, 2026, at 12:00 AM UTC",
-          "rootCause": "",
-          "nextUpdateBy": "Friday, July 10, 2026, at 6:00 PM UTC",
+          "rootCause": "The report source data, which provides Microsoft 365 group information, is delayed and causing overall report publishing to be delayed for Microsoft 365 Groups, Teams user, and Teams device reports, resulting in impact.",
+          "nextUpdateBy": "Saturday, July 11, 2026, at 6:00 PM UTC",
           "feature": "Company or User Administration",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-07-10T16:58:32.277Z",
+              "postType": "regular",
+              "content": "Title: Admins' Microsoft 365 Groups, Teams user, and Teams device reports may be delayed in the Microsoft 365 admin center\r\n\r\nUser impact: Admins' Microsoft 365 Groups, Teams user, and Teams device reports may be delayed in the Microsoft 365 admin center.\r\n\r\nMore info: The last refresh date for Teams device and Teams user reports is Tuesday, July 7, 2026. The last refresh date for Microsoft 365 Groups reports is Friday, July 3, 2026.\r\n\r\nCurrent status: We've determined that the report source data, which provides Microsoft 365 group information, is delayed and causing overall report publishing to be delayed for Microsoft 365 Groups, Teams user, and Teams device reports. We've since confirmed that our data pipelines have received and processed the necessary source data required for these reports. We're monitoring as our service streams for each mentioned report type obtain this data and subsequently remediates impact.\r\n\r\nScope of impact: Any admin viewing Microsoft 365 Groups, Teams user, or Teams device reports in the Microsoft 365 admin center may be impacted.\r\n\r\nStart time: Wednesday, July 8, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: The report source data, which provides Microsoft 365 group information, is delayed and causing overall report publishing to be delayed for Microsoft 365 Groups, Teams user, and Teams device reports, resulting in impact.\r\n\r\nNext update by: Saturday, July 11, 2026, at 6:00 PM UTC"
+            },
             {
               "createdAt": "2026-07-09T18:35:31.18Z",
               "postType": "regular",
