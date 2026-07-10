@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-10T09:59:12.738Z",
+  "lastUpdated": "2026-07-10T10:29:20.509Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -42,6 +42,41 @@
               "createdAt": "2026-07-09T18:02:14.967Z",
               "postType": "regular",
               "content": "Title: Admin's Microsoft 365 Groups, Teams user, and Teams device reports may be delayed in the Microsoft 365 admin center\r\n\r\nUser impact: Admin's Microsoft 365 Groups, Teams user, and Teams device reports may be delayed in the Microsoft 365 admin center.\r\n\r\nMore info: The last refresh date for these reports is Friday, July 3, 2026.\r\n\r\nCurrent status: We're investigating a potential issue with reports in the Microsoft 365 admin center and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite"
+          ]
+        },
+        {
+          "id": "MO1420954",
+          "title": "Some users are intermittently unable to access the Microsoft 365 suite portal",
+          "startTime": "2026-07-09T01:27:54.56Z",
+          "endTime": null,
+          "lastModified": "2026-07-10T09:57:18.803Z",
+          "status": "serviceDegradation",
+          "severity": "incident",
+          "userImpact": "Users are intermittently unable to access the Microsoft 365 suite portal.",
+          "scopeOfImpact": "Your organization is affected by this event, and some users are intermittently unable to access the Microsoft 365 suite portal.",
+          "rootCause": "",
+          "nextUpdateBy": "Friday, July 10, 2026, at 8:30 PM UTC",
+          "feature": "Access",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-07-09T19:04:19.783Z",
+              "postType": "regular",
+              "content": "Title: Some users are intermittently unable to access the Microsoft 365 suite portal\r\n\r\nUser impact: Users are intermittently unable to access the Microsoft 365 suite portal.\r\n\r\nMore info: Access eventually times out with an error message stating, \"Bad Request - Header Field Too Long. HTTP Error 400. A request field is too long.\"\r\n\r\nCurrent status: Our investigation into the authorization flow has identified that tokens utilized by OAuthentication contain a \"groups\" claim which includes group memberships for users attempting to authentication. We suspect that due to the inclusion of group memberships, this may be resulting in the generation of larger than expected headers, resulting in impact. We're working on a fix that would disable or remove the code which requests the groups claim within the token as a potential remediation, and working to confirm a timeline for fix deployment. \r\n\r\nScope of impact: Your organization is affected by this event, and some users are intermittently unable to access the Microsoft 365 suite portal.\r\n\r\nNext update by: Friday, July 10, 2026, at 8:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-07-09T02:00:47.55Z",
+              "postType": "regular",
+              "content": "Title: Some users are intermittently unable to access the Microsoft 365 suite portal\r\n\r\nUser impact: Users are intermittently unable to access the Microsoft 365 suite portal.\r\n\r\nMore info: Access eventually times out with an error message stating, \"Bad Request - Header Field Too Long. HTTP Error 400. A request field is too long.\"\r\n\r\nCurrent status: We're analyzing the authorization flow to understand why the generated large headers that are responsible for the associated error message are being created and are determining the next best steps for remediation.\r\n\r\nScope of impact: Your organization is affected by this event, and some users are intermittently unable to access the Microsoft 365 suite portal.\r\n\r\nNext update by: Thursday, July 9, 2026, at 8:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-07-09T01:49:09.62Z",
+              "postType": "regular",
+              "content": "Title: Some users are intermittently unable to access the Microsoft 365 suite portal\r\n\r\nUser impact: Users are intermittently unable to access the Microsoft 365 suite portal.\r\n\r\nMore info: Access eventually times out with an error message stating, \"Bad Request - Header Field Too Long. HTTP Error 400. A request field is too long.\"\r\n\r\nCurrent status: We're investigating a potential issue with intermittent failures when accessing the Microsoft 365 suite portal and checking for impact to your organization. We'll provide an update within 30 minutes."
             }
           ],
           "affectedServices": [
