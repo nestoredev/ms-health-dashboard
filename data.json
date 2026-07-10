@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-10T16:01:02.010Z",
+  "lastUpdated": "2026-07-10T16:31:13.259Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -53,16 +53,21 @@
           "title": "Users are unable to access Microsoft Copilot web and m365.cloud.microsoft",
           "startTime": "2026-07-09T01:27:54Z",
           "endTime": null,
-          "lastModified": "2026-07-10T15:55:47.293Z",
+          "lastModified": "2026-07-10T16:01:54.963Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be intermittently unable to access Copilot web and other pages that redirect to the m365.cloud.microsoft URL.",
           "scopeOfImpact": "This issue could impact any user attempting to access Copilot web, or a URL which redirects to m365.cloud.microsoft.",
           "rootCause": "",
-          "nextUpdateBy": "Friday, July 10, 2026, at 4:00 PM UTC",
+          "nextUpdateBy": "Friday, July 10, 2026, at 6:00 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-07-10T16:01:54.963Z",
+              "postType": "regular",
+              "content": "Title: Users are unable to access Microsoft Copilot web and m365.cloud.microsoft\n\nUser impact: Users may be intermittently unable to access Copilot web and other pages that redirect to the m365.cloud.microsoft URL.\n\nMore info: Access eventually times out with an error message stating, \"Bad Request - Header Field Too Long. HTTP Error 400. A request field is too long.\"\n\nThe impacted URL is m365.cloud.microsoft and other URLs which redirect to this page, including but not limited to:\n- office.com\n- portal.microsoft.com \n\nUsers may be using URLs such as office.com and the navigation Waffle to access M365 applications in the browser, such as Outlook. For this scenario, when the URL redirects to m365.cloud.microsoft they may experience impact, however, users can access M365 applications in the browser directly through the product’s specific URL (such as: outlook.office.com).\n\nAs a potential workaround, users can use the desktop version of the Microsoft 365 applications. Additionally, users may experience temporary relief by refreshing the cache when trying to access through the browser.\n\nCurrent status: We are performing final validations to roll back the recent change we suspect is contributing to impact. This change modified the route that back-end service calls take when users access the affected apps. Once the rollback is initiated, we expect it to take approximately one hour to complete. We'll provide an update as soon as this process has started. \n\nIn parallel, our investigation into the oversized cookies and the underlying root cause is ongoing. We continue to pursue additional mitigation paths, including a fix to adjust the cookie size to expected thresholds. \n\nScope of impact: This issue could impact any user attempting to access Copilot web, or a URL which redirects to m365.cloud.microsoft.\n\nNext update by: Friday, July 10, 2026, at 6:00 PM UTC"
+            },
             {
               "createdAt": "2026-07-10T14:20:32.263Z",
               "postType": "regular",
@@ -332,16 +337,21 @@
           "title": "Users are unable to access Microsoft Copilot web and m365.cloud.microsoft",
           "startTime": "2026-07-09T01:27:54Z",
           "endTime": null,
-          "lastModified": "2026-07-10T15:55:47.293Z",
+          "lastModified": "2026-07-10T16:01:54.963Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be intermittently unable to access Copilot web and other pages that redirect to the m365.cloud.microsoft URL.",
           "scopeOfImpact": "This issue could impact any user attempting to access Copilot web, or a URL which redirects to m365.cloud.microsoft.",
           "rootCause": "",
-          "nextUpdateBy": "Friday, July 10, 2026, at 4:00 PM UTC",
+          "nextUpdateBy": "Friday, July 10, 2026, at 6:00 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-07-10T16:01:54.963Z",
+              "postType": "regular",
+              "content": "Title: Users are unable to access Microsoft Copilot web and m365.cloud.microsoft\n\nUser impact: Users may be intermittently unable to access Copilot web and other pages that redirect to the m365.cloud.microsoft URL.\n\nMore info: Access eventually times out with an error message stating, \"Bad Request - Header Field Too Long. HTTP Error 400. A request field is too long.\"\n\nThe impacted URL is m365.cloud.microsoft and other URLs which redirect to this page, including but not limited to:\n- office.com\n- portal.microsoft.com \n\nUsers may be using URLs such as office.com and the navigation Waffle to access M365 applications in the browser, such as Outlook. For this scenario, when the URL redirects to m365.cloud.microsoft they may experience impact, however, users can access M365 applications in the browser directly through the product’s specific URL (such as: outlook.office.com).\n\nAs a potential workaround, users can use the desktop version of the Microsoft 365 applications. Additionally, users may experience temporary relief by refreshing the cache when trying to access through the browser.\n\nCurrent status: We are performing final validations to roll back the recent change we suspect is contributing to impact. This change modified the route that back-end service calls take when users access the affected apps. Once the rollback is initiated, we expect it to take approximately one hour to complete. We'll provide an update as soon as this process has started. \n\nIn parallel, our investigation into the oversized cookies and the underlying root cause is ongoing. We continue to pursue additional mitigation paths, including a fix to adjust the cookie size to expected thresholds. \n\nScope of impact: This issue could impact any user attempting to access Copilot web, or a URL which redirects to m365.cloud.microsoft.\n\nNext update by: Friday, July 10, 2026, at 6:00 PM UTC"
+            },
             {
               "createdAt": "2026-07-10T14:20:32.263Z",
               "postType": "regular",
