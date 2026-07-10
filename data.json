@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-10T11:59:49.109Z",
+  "lastUpdated": "2026-07-10T12:29:58.165Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -53,16 +53,21 @@
           "title": "Unable to access Microsoft Copilot web and the m365.cloud.microsoft URL",
           "startTime": "2026-07-09T01:27:54Z",
           "endTime": null,
-          "lastModified": "2026-07-10T11:49:39.377Z",
+          "lastModified": "2026-07-10T12:18:27.98Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be intermittently unable to access Copilot web and other pages that redirect to the m365.cloud.microsoft URL.",
-          "scopeOfImpact": "",
+          "scopeOfImpact": "This issue could impact any user attempting to access Copilot web, or a URL which redirects to m365.cloud.microsoft.",
           "rootCause": "",
-          "nextUpdateBy": "",
+          "nextUpdateBy": "Friday, July 10, 2026, at 2:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-07-10T12:18:27.98Z",
+              "postType": "regular",
+              "content": "Title: Unable to access Microsoft Copilot web and the m365.cloud.microsoft URL\r\n\r\nUser impact: Users may be intermittently unable to access Copilot web and other pages that redirect to the m365.cloud.microsoft URL.\r\n\r\nMore info: Access eventually times out with an error message stating, \"Bad Request - Header Field Too Long. HTTP Error 400. A request field is too long.\"\n\nThe impacted URL is m365.cloud.microsoft and other URLs which redirect to this page, including but not limited to:\n- office.com\n- portal.microsoft.com \n\nUsers may be using URLs such as office.com and the navigation Waffle to access M365 applications in the browser, such as Outlook. For this scenario, when the URL redirects to m365.cloud.microsoft they may experience impact. Users can access M365 applications in the browser direct through the product’s specific URL (eg outlook.office.com).\n\nAs a potential workaround, users can use the desktop version of the Microsoft 365 applications. Additionally, users may experience temporary relief by refreshing the cache when trying to access through the browser.\r\n\r\nCurrent status: We’ve identified a recent change that occurred around the time that impact was first reported. The change is related to URL redirects that occur for specific services after the authentication process completes. Out of an abundance of caution, we’re reverting this change as a potential expedited mitigation strategy, whilst in parallel, we continue to investigate the underlying cause.\r\n\r\nScope of impact: This issue could impact any user attempting to access Copilot web, or a URL which redirects to m365.cloud.microsoft.\r\n\r\nNext update by: Friday, July 10, 2026, at 2:30 PM UTC"
+            },
             {
               "createdAt": "2026-07-10T11:49:39.377Z",
               "postType": "quick",
@@ -317,16 +322,21 @@
           "title": "Unable to access Microsoft Copilot web and the m365.cloud.microsoft URL",
           "startTime": "2026-07-09T01:27:54Z",
           "endTime": null,
-          "lastModified": "2026-07-10T11:49:39.377Z",
+          "lastModified": "2026-07-10T12:18:27.98Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be intermittently unable to access Copilot web and other pages that redirect to the m365.cloud.microsoft URL.",
-          "scopeOfImpact": "",
+          "scopeOfImpact": "This issue could impact any user attempting to access Copilot web, or a URL which redirects to m365.cloud.microsoft.",
           "rootCause": "",
-          "nextUpdateBy": "",
+          "nextUpdateBy": "Friday, July 10, 2026, at 2:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-07-10T12:18:27.98Z",
+              "postType": "regular",
+              "content": "Title: Unable to access Microsoft Copilot web and the m365.cloud.microsoft URL\r\n\r\nUser impact: Users may be intermittently unable to access Copilot web and other pages that redirect to the m365.cloud.microsoft URL.\r\n\r\nMore info: Access eventually times out with an error message stating, \"Bad Request - Header Field Too Long. HTTP Error 400. A request field is too long.\"\n\nThe impacted URL is m365.cloud.microsoft and other URLs which redirect to this page, including but not limited to:\n- office.com\n- portal.microsoft.com \n\nUsers may be using URLs such as office.com and the navigation Waffle to access M365 applications in the browser, such as Outlook. For this scenario, when the URL redirects to m365.cloud.microsoft they may experience impact. Users can access M365 applications in the browser direct through the product’s specific URL (eg outlook.office.com).\n\nAs a potential workaround, users can use the desktop version of the Microsoft 365 applications. Additionally, users may experience temporary relief by refreshing the cache when trying to access through the browser.\r\n\r\nCurrent status: We’ve identified a recent change that occurred around the time that impact was first reported. The change is related to URL redirects that occur for specific services after the authentication process completes. Out of an abundance of caution, we’re reverting this change as a potential expedited mitigation strategy, whilst in parallel, we continue to investigate the underlying cause.\r\n\r\nScope of impact: This issue could impact any user attempting to access Copilot web, or a URL which redirects to m365.cloud.microsoft.\r\n\r\nNext update by: Friday, July 10, 2026, at 2:30 PM UTC"
+            },
             {
               "createdAt": "2026-07-10T11:49:39.377Z",
               "postType": "quick",
@@ -367,12 +377,12 @@
       "title": "Some users may have been unable to schedule Microsoft Teams meetings through the classic Outlook desktop client",
       "startTime": "2026-06-22T01:16:00Z",
       "endTime": "2026-07-09T12:45:00Z",
-      "lastModified": "2026-07-10T09:39:27.627Z",
+      "lastModified": "2026-07-10T12:18:13.84Z",
       "status": "serviceRestored",
       "severity": "advisory",
       "userImpact": "Users may have been unable to schedule Microsoft Teams meetings through the classic Outlook desktop client.",
-      "scopeOfImpact": "Users on Microsoft Teams version 26149.1205.4798.6437 and attempting to create and schedule Microsoft Teams meetings through the classic Outlook desktop client may have been impacted.\r\n\r\nStart time: Monday, June 22, 2026, at 1:16 AM UTC\r\n\r\nEnd time: Thursday, July 9, 2026, at 12:45 PM UTC\r\n\r\nEstimated time to resolve: Friday, July 3, 2026",
-      "rootCause": "A recent service update introduced an incompatibility affecting how the Teams Meeting add-in identified the appropriate Teams client during initialization in newly configured Outlook environments impact, resulting in impact.\r\n\r\nNext steps: We're reviewing our update procedures to better identify similar issues during our development and testing cycles.\r\n\r\nThis is the final update for the event.",
+      "scopeOfImpact": "Users on Microsoft Teams version 26149.1205.4798.6437 and attempting to create and schedule Microsoft Teams meetings through the classic Outlook desktop client may have been impacted.\n\nStart time: Monday, June 22, 2026, at 1:16 AM UTC\n\nEnd time: Thursday, July 9, 2026, at 12:45 PM UTC",
+      "rootCause": "A recent service update introduced an incompatibility affecting how the Teams Meeting add-in identified the appropriate Teams client during initialization in newly configured Outlook environments impact, resulting in impact.\n\nNext steps: We're reviewing our update procedures to better identify similar issues during our development and testing cycles.\n\nThis is the final update for the event.",
       "nextUpdateBy": "",
       "feature": "Meetings",
       "isResolved": true,
@@ -380,7 +390,7 @@
         {
           "createdAt": "2026-07-10T09:39:12.487Z",
           "postType": "regular",
-          "content": "Title: Some users may have been unable to schedule Microsoft Teams meetings through the classic Outlook desktop client\r\n\r\nUser impact: Users may have been unable to schedule Microsoft Teams meetings through the classic Outlook desktop client.\r\n\r\nMore info: Impact was specific to Microsoft Teams version 26149.1205.4798.6437. The Teams Meeting add-in appeared to have been installed and enabled in classic Outlook; however, it wasn't being displayed, preventing affected users from scheduling Teams meetings directly from the Outlook ribbon.\r\n\r\nFinal status: We've confirmed that the deployment has successfully completed and validated through service health telemetry that the issue has been resolved and impact no longer persists.\r\n\r\nScope of impact: Users on Microsoft Teams version 26149.1205.4798.6437 and attempting to create and schedule Microsoft Teams meetings through the classic Outlook desktop client may have been impacted.\r\n\r\nStart time: Monday, June 22, 2026, at 1:16 AM UTC\r\n\r\nEnd time: Thursday, July 9, 2026, at 12:45 PM UTC\r\n\r\nEstimated time to resolve: Friday, July 3, 2026\r\n\r\nRoot cause: A recent service update introduced an incompatibility affecting how the Teams Meeting add-in identified the appropriate Teams client during initialization in newly configured Outlook environments impact, resulting in impact.\r\n\r\nNext steps: We're reviewing our update procedures to better identify similar issues during our development and testing cycles.\r\n\r\nThis is the final update for the event."
+          "content": "Title: Some users may have been unable to schedule Microsoft Teams meetings through the classic Outlook desktop client\n\nUser impact: Users may have been unable to schedule Microsoft Teams meetings through the classic Outlook desktop client.\n\nMore info: Impact was specific to Microsoft Teams version 26149.1205.4798.6437. The Teams Meeting add-in appeared to have been installed and enabled in classic Outlook; however, it wasn't being displayed, preventing affected users from scheduling Teams meetings directly from the Outlook ribbon.\n\nFinal status: We've confirmed that the deployment has successfully completed and validated through service health telemetry that the issue has been resolved and impact no longer persists.\n\nScope of impact: Users on Microsoft Teams version 26149.1205.4798.6437 and attempting to create and schedule Microsoft Teams meetings through the classic Outlook desktop client may have been impacted.\n\nStart time: Monday, June 22, 2026, at 1:16 AM UTC\n\nEnd time: Thursday, July 9, 2026, at 12:45 PM UTC\n\nRoot cause: A recent service update introduced an incompatibility affecting how the Teams Meeting add-in identified the appropriate Teams client during initialization in newly configured Outlook environments impact, resulting in impact.\n\nNext steps: We're reviewing our update procedures to better identify similar issues during our development and testing cycles.\n\nThis is the final update for the event."
         },
         {
           "createdAt": "2026-07-06T10:46:33.637Z",
