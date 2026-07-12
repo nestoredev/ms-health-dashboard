@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-12T10:43:04.623Z",
+  "lastUpdated": "2026-07-12T11:13:13.372Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -83,6 +83,36 @@
           "affectedServices": [
             "SharePoint Online"
           ]
+        },
+        {
+          "id": "SP1424849",
+          "title": "Some users may be unable to access SharePoint Online sites and may notice delays or navigation errors",
+          "startTime": "2026-07-12T10:30:40.417Z",
+          "endTime": null,
+          "lastModified": "2026-07-12T10:44:53.997Z",
+          "status": "serviceDegradation",
+          "severity": "incident",
+          "userImpact": "Users may be unable to access SharePoint Online sites and may notice delays or navigation errors.",
+          "scopeOfImpact": "This issue impacts internal Microsoft users only.\r\n\r\nStart time: Sunday, July 12, 2026, at 10:20 AM UTC",
+          "rootCause": "A section of SQL database infrastructure is performing below acceptable performance thresholds and resulting in impact.",
+          "nextUpdateBy": "Sunday, July 12, 2026, at 1:00 PM UTC",
+          "feature": "SharePoint Online all features",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-07-12T10:43:06.993Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to access SharePoint Online sites and may notice delays or navigation errors\r\n\r\nUser impact: Users may be unable to access SharePoint Online sites and may notice delays or navigation errors.\r\n\r\nCurrent status: We’ve identified that a section of SQL database infrastructure is performing below acceptable performance thresholds and resulting in impact. We’ve redirected user traffic to alternate infrastructure in attempt to restore the service.\r\n\r\nScope of impact: This issue impacts internal Microsoft users only.\r\n\r\nStart time: Sunday, July 12, 2026, at 10:20 AM UTC\r\n\r\nRoot cause: A section of SQL database infrastructure is performing below acceptable performance thresholds and resulting in impact.\r\n\r\nNext update by: Sunday, July 12, 2026, at 1:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-07-12T10:30:41.15Z",
+              "postType": "regular",
+              "content": "Title: Potential issues accessing SharePoint Online sites\r\n\r\nUser impact: Users may be unable to access SharePoint Online sites and may notice delays or navigation errors.\r\n\r\nCurrent Status: We're investigating a potential issue and checking for impact to your organization. We'll provide an update within one hour."
+            }
+          ],
+          "affectedServices": [
+            "SharePoint Online"
+          ]
         }
       ]
     },
@@ -124,9 +154,40 @@
     },
     {
       "service": "Microsoft OneDrive",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "OneDriveForBusiness",
-      "issues": []
+      "issues": [
+        {
+          "id": "OD1424850",
+          "title": "Some users may be unable to access Microsoft OneDrive content and may notice delays or navigation errors",
+          "startTime": "2026-07-12T10:30:44.963Z",
+          "endTime": null,
+          "lastModified": "2026-07-12T10:44:35.527Z",
+          "status": "serviceDegradation",
+          "severity": "incident",
+          "userImpact": "Users may be unable to access OneDrive content and may notice delays or navigation errors.",
+          "scopeOfImpact": "This issue impacts internal Microsoft users only.\r\n\r\nStart time: Sunday, July 12, 2026, at 10:20 AM UTC",
+          "rootCause": "A section of SQL database infrastructure is performing below acceptable performance thresholds and resulting in impact.",
+          "nextUpdateBy": "Sunday, July 12, 2026, at 1:00 PM UTC",
+          "feature": "OneDrive for Business",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-07-12T10:44:11.15Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to access Microsoft OneDrive content and may notice delays or navigation errors\r\n\r\nUser impact: Users may be unable to access OneDrive content and may notice delays or navigation errors.\r\n\r\nCurrent status: We’ve identified that a section of SQL database infrastructure is performing below acceptable performance thresholds and resulting in impact. We’ve redirected user traffic to alternate infrastructure in attempt to restore the service.\r\n\r\nScope of impact: This issue impacts internal Microsoft users only.\r\n\r\nStart time: Sunday, July 12, 2026, at 10:20 AM UTC\r\n\r\nRoot cause: A section of SQL database infrastructure is performing below acceptable performance thresholds and resulting in impact.\r\n\r\nNext update by: Sunday, July 12, 2026, at 1:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-07-12T10:30:45.58Z",
+              "postType": "regular",
+              "content": "Title: Potential issues accessing Microsoft OneDrive content\r\n\r\nUser impact: Users may be unable to access OneDrive content and may notice delays or navigation errors.\r\n\r\nCurrent Status: We're investigating a potential issue and checking for impact to your organization. We'll provide an update within one hour."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft OneDrive"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft Teams",
