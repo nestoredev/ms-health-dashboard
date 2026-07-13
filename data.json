@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-13T19:22:23.522Z",
+  "lastUpdated": "2026-07-13T19:52:30.950Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -329,42 +329,6 @@
     }
   ],
   "history": [
-    {
-      "id": "SP1424849",
-      "title": "Some users may have been unable to access SharePoint Online sites and may have noticed delays or navigation errors",
-      "startTime": "2026-07-12T10:20:00Z",
-      "endTime": "2026-07-12T10:44:00Z",
-      "lastModified": "2026-07-12T11:42:27.8Z",
-      "status": "serviceRestored",
-      "severity": "incident",
-      "userImpact": "Users may have been unable to access SharePoint Online sites and may have noticed delays or navigation errors.",
-      "scopeOfImpact": "This issue impacted internal Microsoft users only.\r\n\r\nStart time: Sunday, July 12, 2026, at 10:20 AM UTC\r\n\r\nEnd time: Sunday, July 12, 2026, at 10:44 AM UTC",
-      "rootCause": "A section of SQL database infrastructure was performing below acceptable performance thresholds and resulting in impact.\r\n\r\nNext steps: We're analyzing performance data and trends on the affected infrastructure to help prevent this problem from happening again.\r\n\r\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "SharePoint Online all features",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-07-12T11:39:01.613Z",
-          "postType": "regular",
-          "content": "Title: Some users may have been unable to access SharePoint Online sites and may have noticed delays or navigation errors\r\n\r\nUser impact: Users may have been unable to access SharePoint Online sites and may have noticed delays or navigation errors.\r\n\r\nFinal status: We’ve confirmed, following a period of monitoring service telemetry, that redirecting user traffic to alternate infrastructure successfully resolved the issue.\r\n\r\nScope of impact: This issue impacted internal Microsoft users only.\r\n\r\nStart time: Sunday, July 12, 2026, at 10:20 AM UTC\r\n\r\nEnd time: Sunday, July 12, 2026, at 10:44 AM UTC\r\n\r\nRoot cause: A section of SQL database infrastructure was performing below acceptable performance thresholds and resulting in impact.\r\n\r\nNext steps: We're analyzing performance data and trends on the affected infrastructure to help prevent this problem from happening again.\r\n\r\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-07-12T10:43:06.993Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to access SharePoint Online sites and may notice delays or navigation errors\r\n\r\nUser impact: Users may be unable to access SharePoint Online sites and may notice delays or navigation errors.\r\n\r\nCurrent status: We’ve identified that a section of SQL database infrastructure is performing below acceptable performance thresholds and resulting in impact. We’ve redirected user traffic to alternate infrastructure in attempt to restore the service.\r\n\r\nScope of impact: This issue impacts internal Microsoft users only.\r\n\r\nStart time: Sunday, July 12, 2026, at 10:20 AM UTC\r\n\r\nRoot cause: A section of SQL database infrastructure is performing below acceptable performance thresholds and resulting in impact.\r\n\r\nNext update by: Sunday, July 12, 2026, at 1:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-07-12T10:30:41.15Z",
-          "postType": "regular",
-          "content": "Title: Potential issues accessing SharePoint Online sites\r\n\r\nUser impact: Users may be unable to access SharePoint Online sites and may notice delays or navigation errors.\r\n\r\nCurrent Status: We're investigating a potential issue and checking for impact to your organization. We'll provide an update within one hour."
-        }
-      ],
-      "serviceName": "SharePoint Online",
-      "affectedServices": [
-        "SharePoint Online"
-      ]
-    },
     {
       "id": "OD1424850",
       "title": "Some users may have been unable to access Microsoft OneDrive content and may have noticed delays or navigation errors",
