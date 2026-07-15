@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-15T06:02:47.352Z",
+  "lastUpdated": "2026-07-15T06:32:55.028Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -298,7 +298,7 @@
       "title": "Some admins may be unable to make changes to distribution lists in Exchange Online and receive an error",
       "startTime": "2026-07-12T23:00:00Z",
       "endTime": "2026-07-15T05:33:30Z",
-      "lastModified": "2026-07-15T05:34:17.013Z",
+      "lastModified": "2026-07-15T05:58:44.38Z",
       "status": "serviceRestored",
       "severity": "advisory",
       "userImpact": "Admins may have been unable to make changes to distribution lists in Exchange Online and received an error.",
@@ -311,7 +311,7 @@
         {
           "createdAt": "2026-07-15T05:34:17.013Z",
           "postType": "regular",
-          "content": "Title: Some admins may be unable to make changes to distribution lists in Exchange Online and receive an error\n\nUser impact: Admins may have been unable to make changes to distribution lists in Exchange Online and received an error.\n\nMore info: Affected admins may have been unable to view, add, remove, or edit users associated with distribution lists in Exchange Online and received the following error message:\n \n\"You don't have permission to access this page or perform this action\".\n \nThis issue affected both the Exchange admin center and the Microsoft 365 admin center.\n \nAs a workaround, affected admins could’ve used the Exchange Online PowerShell cmdlet “Set-DistributionGroup” to manage distribution lists.\n \nCurrent status: We’ve confirmed with affected users that this issue is resolved as a result of our reverting the offending service update.\n \nScope of impact: Some admins attempting to modify Exchange Online distribution lists through the Microsoft 365 admin center or Exchange admin center that are served by the affected infrastructure in the West UK, West Europe, India, Southeast Asia, West Japan, or East Australia regions may have been impacted.\n \nStart time: Sunday, July 12, 2026, at 11:00 PM UTC\n \nEnd time: Wednesday, July 15, 2026, at 1:00 AM UTC\n \nRoot cause: A recent update to distribution list management functionality inadvertently created a configuration conflict within a subset of the service infrastructure, resulting in impact.\n \nNext steps:\n- We’re reviewing our validation and updating procedures to better detect and prevent issues like this prior to deployment in the future.\n \nThis is the final update for the event."
+          "content": "Title: Some admins may be unable to make changes to distribution lists in Exchange Online and receive an error\n\nUser impact: Admins may have been unable to make changes to distribution lists in Exchange Online and received an error.\n\nMore info: Affected admins may have been unable to view, add, remove, or edit users associated with distribution lists in Exchange Online and received the following error message:\n \n\"You don't have permission to access this page or perform this action\".\n \nThis issue affected both the Exchange admin center and the Microsoft 365 admin center.\n \nAs a workaround, affected admins could’ve used the Exchange Online PowerShell cmdlet “Set-DistributionGroup” to manage distribution lists.\n \nFinal status: We’ve confirmed with affected users that this issue is resolved as a result of our reverting the offending service update.\n \nScope of impact: Some admins attempting to modify Exchange Online distribution lists through the Microsoft 365 admin center or Exchange admin center that are served by the affected infrastructure in the West UK, West Europe, India, Southeast Asia, West Japan, or East Australia regions may have been impacted.\n \nStart time: Sunday, July 12, 2026, at 11:00 PM UTC\n \nEnd time: Wednesday, July 15, 2026, at 1:00 AM UTC\n \nRoot cause: A recent update to distribution list management functionality inadvertently created a configuration conflict within a subset of the service infrastructure, resulting in impact.\n \nNext steps:\n- We’re reviewing our validation and updating procedures to better detect and prevent issues like this prior to deployment in the future.\n \nThis is the final update for the event."
         },
         {
           "createdAt": "2026-07-15T03:04:04.64Z",
