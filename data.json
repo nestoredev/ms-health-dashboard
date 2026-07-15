@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-15T18:06:38.388Z",
+  "lastUpdated": "2026-07-15T18:36:48.356Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -15,24 +15,29 @@
     },
     {
       "service": "Microsoft 365 suite",
-      "status": "investigating",
+      "status": "serviceDegradation",
       "id": "OSDPPlatform",
       "issues": [
         {
           "id": "MO1428775",
-          "title": "We're looking into a potential problem impacting the Microsoft 365 suite",
-          "startTime": "2026-07-15T17:42:00.887Z",
+          "title": "Some admins may see incorrect classifications of Cowork Tasks in Microsoft 365 Copilot Cowork usage reports ",
+          "startTime": "2026-06-17T22:07:00Z",
           "endTime": null,
-          "lastModified": "2026-07-15T17:43:05.763Z",
-          "status": "investigating",
+          "lastModified": "2026-07-15T18:18:10.727Z",
+          "status": "serviceDegradation",
           "severity": "advisory",
-          "userImpact": "We're checking for potential impact to your users.",
-          "scopeOfImpact": "",
-          "rootCause": "",
-          "nextUpdateBy": "",
+          "userImpact": "Admins may see incorrect classifications of Cowork Tasks in Copilot Cowork usage reports.",
+          "scopeOfImpact": "Some admins may see that Cowork Tasks that should be categorized as \"Scheduled\" are reported as \"User-Initiated\" in Microsoft 365 Copilot Cowork usage reports in the Microsoft 365 admin center.\r\n\r\nStart time: Wednesday, June 17, 2026, at 10:07 PM UTC\r\n\r\nEstimated time to resolve: We anticipate impact to be resolved by Friday, July 17, 2026, at 4:00 AM UTC.",
+          "rootCause": "The classification logic utilized to apply labels to affected tasks is incorrectly classifying \"Scheduled\" tasks as \"User-Initiated\".",
+          "nextUpdateBy": "Friday, July 17, 2026, at 1:00 AM UTC",
           "feature": "Company or User Administration",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-07-15T18:16:15.927Z",
+              "postType": "regular",
+              "content": "Title: Some admins may see incorrect classifications of Cowork Tasks in Microsoft 365 Copilot Cowork usage reports \r\n\r\nUser impact: Admins may see incorrect classifications of Cowork Tasks in Copilot Cowork usage reports.\r\n\r\nMore info: Admins may see that Cowork Tasks that should be categorized as \"Scheduled\" are currently being reported as \"User-Initiated\". These usage reports are found within the Microsoft 365 admin center.\r\n\r\nCurrent status: e've received reports from a subset of admins that they're receiving incorrect usage classifications of Cowork Tasks for Copilot Cowork usage reports in the Microsoft 365 admin center. Specifically, admins see tasks that should be categorized as \"Scheduled\" are reported as \"User-Initiated\". We identified that the classification logic utilized to apply labels to affected tasks is incorrectly classifying \"Scheduled\" tasks as \"User-Initiated\". We've corrected the offending classification logic and we're backfilling impacted reports to have them reflect the correct usage classification label. We anticipate this process to be completed by Friday, July 17, 2026, at 4:00 AM UTC and we aim to provide updates on our timeline to remediation as the backfill progresses.\r\n\r\nScope of impact: Some admins may see that Cowork Tasks that should be categorized as \"Scheduled\" are reported as \"User-Initiated\" in Microsoft 365 Copilot Cowork usage reports in the Microsoft 365 admin center.\r\n\r\nStart time: Wednesday, June 17, 2026, at 10:07 PM UTC\r\n\r\nEstimated time to resolve: We anticipate impact to be resolved by Friday, July 17, 2026, at 4:00 AM UTC.\r\n\r\nRoot cause: The classification logic utilized to apply labels to affected tasks is incorrectly classifying \"Scheduled\" tasks as \"User-Initiated\".\r\n\r\nNext update by: Friday, July 17, 2026, at 1:00 AM UTC"
+            },
             {
               "createdAt": "2026-07-15T17:43:05.763Z",
               "postType": "regular",
