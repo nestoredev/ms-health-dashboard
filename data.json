@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-15T17:36:30.155Z",
+  "lastUpdated": "2026-07-15T18:06:38.388Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -15,9 +15,35 @@
     },
     {
       "service": "Microsoft 365 suite",
-      "status": "serviceOperational",
+      "status": "investigating",
       "id": "OSDPPlatform",
-      "issues": []
+      "issues": [
+        {
+          "id": "MO1428775",
+          "title": "We're looking into a potential problem impacting the Microsoft 365 suite",
+          "startTime": "2026-07-15T17:42:00.887Z",
+          "endTime": null,
+          "lastModified": "2026-07-15T17:43:05.763Z",
+          "status": "investigating",
+          "severity": "advisory",
+          "userImpact": "We're checking for potential impact to your users.",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
+          "feature": "Company or User Administration",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-07-15T17:43:05.763Z",
+              "postType": "regular",
+              "content": "Title: We're looking into a potential problem impacting the Microsoft 365 suite\r\n\r\nUser impact: We're checking for potential impact to your users.\r\n\r\nCurrent status: We're investigating a potential issue with the Microsoft 365 suite and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite"
+          ]
+        }
+      ]
     },
     {
       "service": "SharePoint Online",
@@ -1707,52 +1733,6 @@
           "createdAt": "2026-06-10T20:34:38.913Z",
           "postType": "regular",
           "content": "Title: Users may be unable to see the free/busy status of multiple cross-tenant mailboxes in Exchange Online\n\nUser impact: Users may be unable to see the free/busy status of multiple cross-tenant mailboxes in Exchange Online.\n\nMore info: This impact occurs only when two or more mailbox statuses are requested.\n\nCurrent status: We've determined that our previous fix will not effectively remediate impact. We're creating a secondary targeted fix that we expect to address the issue and are confirming the timeline for deployment.\n\nScope of impact: Users attempting to access the free/busy status of multiple mailboxes at once may be impacted.\n\nNext update by: Thursday, June 11, 2026, at 8:30 PM UTC"
-        }
-      ],
-      "serviceName": "Exchange Online",
-      "affectedServices": [
-        "Exchange Online"
-      ]
-    },
-    {
-      "id": "EX1310533",
-      "title": "Users may be unable to view free/busy status for Gmail users within the Exchange Online calendar",
-      "startTime": "2026-05-11T07:01:00Z",
-      "endTime": "2026-06-15T17:59:37.853Z",
-      "lastModified": "2026-06-15T18:01:01.147Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users may have been unable to view free/busy status for Gmail users within the Exchange Online calendar.",
-      "scopeOfImpact": "Impact was specific to any user attempting to view free/busy status for Gmail contacts in their Exchange Online calendars.\r\n\r\nStart time: Monday, May 11, 2026, at 7:01 AM UTC\r\n\r\nEnd time: Friday, June 12, 2026, at 10:00 AM UTC",
-      "rootCause": "Basic Authentication credentials weren’t being correctly forwarded to the third-party service, resulting in failures when obtaining free/busy status responses, which resulted in impact.\r\n\r\nNext steps: - We're reviewing the flow of Basic Authentication credentials to better understand this impact and prevent similar future occurrences.\r\n\r\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Reports of an Incident",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-06-15T18:00:51.813Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to view free/busy status for Gmail users within the Exchange Online calendar\r\n\r\nUser impact: Users may have been unable to view free/busy status for Gmail users within the Exchange Online calendar.\r\n\r\nMore info: Affected users may have seen an \"Unknown\" status for the external Gmail contacts.\r\n\r\nFinal status: We've received confirmation from additional users that were previously reporting this issue that our mitigation steps have successfully resolved this event.\r\n\r\nScope of impact: Impact was specific to any user attempting to view free/busy status for Gmail contacts in their Exchange Online calendars.\r\n\r\nStart time: Monday, May 11, 2026, at 7:01 AM UTC\r\n\r\nEnd time: Friday, June 12, 2026, at 10:00 AM UTC\r\n\r\nRoot cause: Basic Authentication credentials weren’t being correctly forwarded to the third-party service, resulting in failures when obtaining free/busy status responses, which resulted in impact.\r\n\r\nNext steps: - We're reviewing the flow of Basic Authentication credentials to better understand this impact and prevent similar future occurrences.\r\n\r\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-06-12T17:40:49.51Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to view free/busy status for Gmail users within the Exchange Online calendar\r\n\r\nUser impact: Users may be unable to view free/busy status for Gmail users within the Exchange Online calendar.\r\n\r\nMore info: Affected users may see an \"Unknown\" status for the external Gmail contacts.\r\n\r\nCurrent status: The deployment of our fix has completed as expected and we've received confirmation from a subset of users that this has successfully resolved impact. We're reaching out to additional users that were previously reporting this issue to ensure that this event has been fully remediated.\r\n\r\nScope of impact: Impact is specific to any user attempting to view free/busy status for Gmail contacts in their Exchange Online calendars.\r\n\r\nStart time: Monday, May 11, 2026, at 7:01 AM UTC\r\n\r\nRoot cause: Basic Authentication credentials aren’t being correctly forwarded to the third-party service, resulting in failures when obtaining free/busy status responses, and resulting in impact.\r\n\r\nNext update by: Monday, June 15, 2026, at 7:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-06-09T18:19:24.803Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to view free/busy status for Gmail users within the Exchange Online calendar\r\n\r\nUser impact: Users may be unable to view free/busy status for Gmail users within the Exchange Online calendar.\r\n\r\nMore info: Affected users may see an \"Unknown\" status for the external Gmail contacts.\r\n\r\nCurrent status: Following our successful internal testing and validations we've deployed our solution. The deployment is approximately 81 percent complete, and user impact is expected to be addressed as it progresses. Our fix deployment timeline estimates it will have completed and that the impact will be remediated by our next scheduled communication update.\r\n\r\nScope of impact: Impact is specific to any user attempting to view free/busy status for Gmail contacts in their Exchange Online calendars.\r\n\r\nStart time: Monday, May 11, 2026, at 7:01 AM UTC\r\n\r\nRoot cause: Basic Authentication credentials aren’t being correctly forwarded to the third-party service, resulting in failures when obtaining free/busy status responses, and resulting in impact.\r\n\r\nNext update by: Friday, June 12, 2026, at 8:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-06-05T18:59:17.92Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to view free/busy status for Gmail users within the Exchange Online calendar\r\n\r\nUser impact: Users may be unable to view free/busy status for Gmail users within the Exchange Online calendar.\r\n\r\nMore info: Affected users may see an \"Unknown\" status for the external Gmail contacts.\r\n\r\nCurrent status: We’ve initiated the deployment of our fix to our internal testing environment after addressing a previous blocker, which caused some delay. We're anticipating the validation process should complete by our next scheduled update, at which point we'll look to confirm a timeline for the full deployment.\r\n\r\nScope of impact: Impact is specific to any user attempting to view free/busy status for Gmail contacts in their Exchange Online calendars.\r\n\r\nStart time: Monday, May 11, 2026, at 7:01 AM UTC\r\n\r\nRoot cause: Basic Authentication credentials aren’t being correctly forwarded to the third-party service, resulting in failures when obtaining free/busy status responses, and resulting in impact.\r\n\r\nNext update by: Tuesday, June 09, 2026, at 8:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-06-04T19:28:58.477Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to view free/busy status for Gmail users within the Exchange Online calendar\r\n\r\nUser impact: Users may be unable to view free/busy status for Gmail users within the Exchange Online calendar.\r\n\r\nMore info: Affected users may see an \"Unknown\" status for the external Gmail contacts.\r\n\r\nCurrent status: After identifying a new path for our deployment, we've determined that our fix will require an additional level of validations so we can ensure its deployment doesn't introduce any unexpected problems to the service. We're expecting more clarity into the timeline for our fix deployment and the remediation of the impact will be available once these tests have confirmed its viability. \r\n\r\nScope of impact: Impact is specific to any user attempting to view free/busy status for Gmail contacts in their Exchange Online calendars.\r\n\r\nStart time: Monday, May 11, 2026, at 7:01 AM UTC\r\n\r\nRoot cause: Basic Authentication credentials aren’t being correctly forwarded to the third-party service, resulting in failures when obtaining free/busy status responses, and resulting in impact.\r\n\r\nNext update by: Friday, June 05, 2026, at 8:30 PM UTC"
         }
       ],
       "serviceName": "Exchange Online",
