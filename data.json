@@ -1,11 +1,42 @@
 {
-  "lastUpdated": "2026-07-16T03:09:11.436Z",
+  "lastUpdated": "2026-07-16T03:39:19.461Z",
   "services": [
     {
       "service": "Exchange Online",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "Exchange",
-      "issues": []
+      "issues": [
+        {
+          "id": "EX1428537",
+          "title": "Some users may be unable to view mailbox storage data in Outlook and Outlook on the web",
+          "startTime": "2026-07-15T11:35:17.093Z",
+          "endTime": null,
+          "lastModified": "2026-07-16T03:31:09.08Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to view mailbox storage data in Outlook and Outlook on the web.",
+          "scopeOfImpact": "Some users attempting to view mailbox storage data in Outlook and Outlook on the web may be impacted. This information may be updated as our investigation continues.",
+          "rootCause": "A recent service build introduced an unsupported property into mailbox statistics data returned by a backend process. When the service attempted to retrieve mailbox storage information, the unsupported property caused the request to fail and prevented mailbox storage data from being displayed.",
+          "nextUpdateBy": "Wednesday, July 22, 2026, at 1:30 PM UTC",
+          "feature": "OWA - poor customer experience",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-07-15T13:03:13.75Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to view mailbox storage data in Outlook and Outlook on the web\r\n\r\nUser impact: Users may be unable to view mailbox storage data in Outlook and Outlook on the web.\r\n\r\nMore info: Affected users are shown the following error message \"Storage data is temporarily unavailable\"  when trying to view mailbox storage data for multiple mailboxes.\r\n\r\nCurrent status: We've identified that a recent service build introduced an unsupported property into mailbox statistics data. When the service attempted to retrieve mailbox storage information, the unsupported property caused the request to fail and prevented mailbox storage data from being displayed. We've deployed a code fix to remove the unsupported property and are monitoring service telemetry to verify its success in fixing the issue.\r\n\r\nScope of impact: Some users attempting to view mailbox storage data in Outlook and Outlook on the web may be impacted. This information may be updated as our investigation continues.\r\n\r\nRoot cause: A recent service build introduced an unsupported property into mailbox statistics data returned by a backend process. When the service attempted to retrieve mailbox storage information, the unsupported property caused the request to fail and prevented mailbox storage data from being displayed.\r\n\r\nNext update by: Wednesday, July 22, 2026, at 1:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-07-15T11:37:17.26Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to view mailbox storage data in Outlook and Outlook on the web\r\n\r\nUser impact: Users may be unable to view mailbox storage data in Outlook and Outlook on the web.\r\n\r\nMore info: Users are shown the following error message \"Storage data is temporarily unavailable\"  when trying to view mailbox storage data for multiple mailboxes.\r\n\r\nCurrent status: We're reviewing support case details to determine our next troubleshooting steps.\r\n\r\nScope of impact: Some users attempting to view mailbox storage data in Outlook and Outlook on the web may be impacted. This information may be updated as our investigation continues. \r\n\r\nNext update by: Wednesday, July 15, 2026, at 1:30 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft Entra",
