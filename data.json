@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-16T17:13:25.766Z",
+  "lastUpdated": "2026-07-16T17:43:34.334Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -653,7 +653,7 @@
       "title": "Users are unable to access Microsoft Copilot web and m365.cloud.microsoft",
       "startTime": "2026-07-07T17:00:00Z",
       "endTime": "2026-07-10T18:00:00Z",
-      "lastModified": "2026-07-14T21:55:36.17Z",
+      "lastModified": "2026-07-16T17:37:12.45Z",
       "status": "postIncidentReviewPublished",
       "severity": "incident",
       "userImpact": "Users were intermittently unable to access Copilot web and other pages that redirect to the m365.cloud.microsoft URL.",
@@ -663,6 +663,11 @@
       "feature": "Access",
       "isResolved": true,
       "posts": [
+        {
+          "createdAt": "2026-07-16T17:37:12.45Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        },
         {
           "createdAt": "2026-07-14T21:55:36.17Z",
           "postType": "regular",
@@ -682,11 +687,6 @@
           "createdAt": "2026-07-10T17:33:26.697Z",
           "postType": "quick",
           "content": "We've completed the aforementioned rollback and as such, no new users will experience this issue and previously affected users are able to clear their browser cookies to mitigate impact. \n \nWe're continuing to pursue the traffic rerouting strategy which will allow for larger cookies and ultimately fully remediate this problem without users needing to take action. \n\nThis quick update is designed to give the latest information on this issue."
-        },
-        {
-          "createdAt": "2026-07-10T16:41:21.913Z",
-          "postType": "quick",
-          "content": "We're exploring a different fix which involves rerouting traffic through alternate infrastructure that can support the larger cookie size. We aim to pursue the most expedient fix option while ensuring no adverse impact is introduced.\n\nThis quick update is designed to give the latest information on this issue."
         }
       ],
       "serviceName": "Microsoft 365 suite",
