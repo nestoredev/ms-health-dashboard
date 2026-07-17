@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-17T18:20:40.340Z",
+  "lastUpdated": "2026-07-17T18:50:49.582Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -11,16 +11,21 @@
           "title": "Some users may be unable to view mailbox storage data in Outlook and Outlook on the web",
           "startTime": "2026-07-15T11:35:17.093Z",
           "endTime": null,
-          "lastModified": "2026-07-16T22:03:48.773Z",
+          "lastModified": "2026-07-17T18:19:38.487Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to view mailbox storage data in Outlook and Outlook on the web.",
           "scopeOfImpact": "Some users attempting to view mailbox storage data in Outlook and Outlook on the web may be impacted. This information may be updated as our investigation continues.",
           "rootCause": "A recent service build introduced an unsupported property into mailbox statistics data returned by a backend process. When the service attempted to retrieve mailbox storage information, the unsupported property caused the request to fail and prevented mailbox storage data from being displayed.",
-          "nextUpdateBy": "Friday, July 17, 2026, at 7:00 PM UTC",
+          "nextUpdateBy": "Monday, July 20, 2026, at 7:00 PM UTC",
           "feature": "OWA - poor customer experience",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-07-17T18:19:38.487Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to view mailbox storage data in Outlook and Outlook on the web\r\n\r\nUser impact: Users may be unable to view mailbox storage data in Outlook and Outlook on the web.\r\n\r\nMore info: Affected users are shown the following error message \"Storage data is temporarily unavailable\"  when trying to view mailbox storage data for multiple mailboxes.\r\n\r\nCurrent status: We've completed validation and initiated the release of the fix. Currently at approximately 30 percent, we're monitoring as it progresses and expect to have a complete remediation timeline by the next scheduled update. \r\n\r\nScope of impact: Some users attempting to view mailbox storage data in Outlook and Outlook on the web may be impacted. This information may be updated as our investigation continues.\r\n\r\nRoot cause: A recent service build introduced an unsupported property into mailbox statistics data returned by a backend process. When the service attempted to retrieve mailbox storage information, the unsupported property caused the request to fail and prevented mailbox storage data from being displayed.\r\n\r\nNext update by: Monday, July 20, 2026, at 7:00 PM UTC"
+            },
             {
               "createdAt": "2026-07-16T22:02:00.377Z",
               "postType": "regular",
