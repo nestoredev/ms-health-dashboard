@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-18T17:56:47.016Z",
+  "lastUpdated": "2026-07-18T18:26:54.326Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1457,52 +1457,6 @@
       "serviceName": "SharePoint Online",
       "affectedServices": [
         "SharePoint Online"
-      ]
-    },
-    {
-      "id": "EX1392948",
-      "title": "Users' Input Method Editor (IME) for Japanese/Korean input may be disabled and may switch to English in Exchange Online",
-      "startTime": "2026-06-16T00:51:00Z",
-      "endTime": "2026-06-18T17:57:00Z",
-      "lastModified": "2026-06-18T23:00:17.837Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users' IME for Japanese/Korean input may have been disabled and may have switched to English in Exchange Online.",
-      "scopeOfImpact": "Users attempting to use their IME for Japanese/Korean input may have been impacted.\r\n\r\nStart time: Friday, June 12, 2026, at 12:51 AM UTC\r\n\r\nEnd time: Thursday, June 18, 2026, at 5:57 PM UTC",
-      "rootCause": "A recent service update, intended to modify which touch keyboard appears when users enter email address in the recipient field, was causing issues within the IME flow, resulting in impact.\r\n\r\nNext steps: We’re reviewing our validation and updating procedures to better detect and prevent issues like this prior to deployment in the future.\r\n\r\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "OWA - poor customer experience",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-06-18T22:59:12.587Z",
-          "postType": "regular",
-          "content": "Title: Users' Input Method Editor (IME) for Japanese/Korean input may be disabled and may switch to English in Exchange Online\r\n\r\nUser impact: Users' IME for Japanese/Korean input may have been disabled and may have switched to English in Exchange Online.\r\n\r\nFinal status: We’ve confirmed with affected users that this issue is resolved following the deployment of our fix.\r\n\r\nScope of impact: Users attempting to use their IME for Japanese/Korean input may have been impacted.\r\n\r\nStart time: Friday, June 12, 2026, at 12:51 AM UTC\r\n\r\nEnd time: Thursday, June 18, 2026, at 5:57 PM UTC\r\n\r\nRoot cause: A recent service update, intended to modify which touch keyboard appears when users enter email address in the recipient field, was causing issues within the IME flow, resulting in impact.\r\n\r\nNext steps: We’re reviewing our validation and updating procedures to better detect and prevent issues like this prior to deployment in the future.\r\n\r\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-06-17T23:08:06.08Z",
-          "postType": "regular",
-          "content": "Title: Users' Input Method Editor (IME) for Japanese/Korean input may be disabled and may switch to English in Exchange Online\n\nUser impact: Users' IME for Japanese/Korean input may be disabled and may switch to English in Exchange Online.\n\nCurrent status: Our updated fix deployment has completed and we're reaching out to affected users to confirm that this fix has fully remediated the event.\n\nScope of impact: Users attempting to use their IME for Japanese/Korean input may be impacted. This is subject to change while our investigation continues.\n\nStart time: Friday, June 12, 2026, at 12:51 AM UTC\n\nRoot cause: A recent service update, intended to modify which touch keyboard appears when users enter email address in the recipient field, is causing issues within the IME flow, resulting in impact.\n\nNext update by: Friday, June 19, 2026, at 12:30 AM UTC"
-        },
-        {
-          "createdAt": "2026-06-17T18:30:12.007Z",
-          "postType": "regular",
-          "content": "Title: Users' Input Method Editor (IME) for Japanese/Korean input may be disabled and may switch to English in Exchange Online\n\nUser impact: Users' IME for Japanese/Korean input may be disabled and may switch to English in Exchange Online.\n\nCurrent status: We've confirmed that our fix aimed at reverting the offending service update didn't include all necessary components required to remediate impact for this issue. We've corrected this fix and have placed it back in queue for safe deployment, which we expect will initiate by our next scheduled communications update. Once deployed, we'll monitor saturation progress and provide a timeline for its completion as one becomes available.\n\nScope of impact: Users attempting to use their IME for Japanese/Korean input may be impacted. This is subject to change while our investigation continues.\n\nStart time: Friday, June 12, 2026, at 12:51 AM UTC\n\nRoot cause: A recent service update, intended to modify which touch keyboard appears when users enter email address in the recipient field, is causing issues within the IME flow, resulting in impact.\n\nNext update by: Thursday, June 18, 2026, at 12:30 AM UTC"
-        },
-        {
-          "createdAt": "2026-06-17T08:25:01.09Z",
-          "postType": "regular",
-          "content": "Title: Users' Input Method Editor (IME) for Japanese/Korean input may be disabled and may switch to English in Exchange Online\n\nUser impact: Users' IME for Japanese/Korean input may be disabled and may switch to English in Exchange Online.\n\nCurrent status: We've received confirmation from affected users that impact persists following the completed reversion. We're investigating why the reversion has not fully alleviated the issue and are assessing why users have not yet received the updated client version containing the fix. \n\nScope of impact: Users attempting to use their IME for Japanese/Korean input may be impacted. This is subject to change while our investigation continues.\n\nStart time: Friday, June 12, 2026, at 12:51 AM UTC\n\nRoot cause: A recent service update, intended to modify which touch keyboard appears when users enter email address in the recipient field, is causing issues within the IME flow, resulting in impact.\n\nNext update by: Wednesday, June 17, 2026, at 7:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-06-17T03:43:54.76Z",
-          "postType": "regular",
-          "content": "Title: Users' Input Method Editor (IME) for Japanese/Korean input may be disabled and may switch to English in Exchange Online\n\nUser impact: Users' IME for Japanese/Korean input may be disabled and may switch to English in Exchange Online.\n\nCurrent status: We're continuing our efforts to reach out to affected users to confirm if impact has ceased after our deployed fix. \n\nScope of impact: Users attempting to use their IME for Japanese/Korean input may be impacted. This is subject to change while our investigation continues.\n\nStart time: Friday, June 12, 2026, at 12:51 AM UTC\n\nRoot cause: A recent service update, intended to modify which touch keyboard appears when users enter email address in the recipient field, is causing issues within the IME flow, resulting in impact.\n\nNext update by: Wednesday, June 17, 2026, at 9:00 AM UTC"
-        }
-      ],
-      "serviceName": "Exchange Online",
-      "affectedServices": [
-        "Exchange Online"
       ]
     }
   ]
