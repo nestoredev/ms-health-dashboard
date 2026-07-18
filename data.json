@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-18T16:56:32.932Z",
+  "lastUpdated": "2026-07-18T17:26:40.037Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1503,52 +1503,6 @@
       "serviceName": "Exchange Online",
       "affectedServices": [
         "Exchange Online"
-      ]
-    },
-    {
-      "id": "CW1390285",
-      "title": "Admins may not see accurate usage data for Microsoft 365 Copilot Chat in the Microsoft 365 admin center",
-      "startTime": "2026-06-02T10:05:00Z",
-      "endTime": "2026-06-18T17:04:00Z",
-      "lastModified": "2026-06-18T20:21:25.83Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Admins may not have seen accurate usage data for Copilot Chat in the Microsoft 365 admin center.",
-      "scopeOfImpact": "This issue may have affected any admin attempting to view reports for Copilot Chat through the Microsoft 365 admin center.\n\nStart time: Tuesday, June 2, 2026, at 10:05 AM UTC\n\nEnd time: Thursday, June 18, 2026, at 5:04 PM UTC",
-      "rootCause": "A recent upgrade to unlicensed users' capabilities within Copilot Chat wasn't included in current usage logging logic, causing exclusion of that data from usage reports, which resulted in impact.\n\nNext steps: We're reviewing and improving our update validation procedures to detect and prevent similar data exclusions in usage reports in the future.\n\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "General",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-06-18T19:31:40.17Z",
-          "postType": "regular",
-          "content": "Title: Admins may not see accurate usage data for Microsoft 365 Copilot Chat in the Microsoft 365 admin center\n\nUser impact: Admins may not have seen accurate usage data for Copilot Chat in the Microsoft 365 admin center.\n\nMore info: Admins may have seen lower than expected data reported for Copilot Chat users who didn't have a Microsoft 365 Copilot standalone license assigned.\n\nFinal status: We've confirmed after a period of monitoring that the data restatement process has completed and impact is fully remediated.\n\nScope of impact: This issue may have affected any admin attempting to view reports for Copilot Chat through the Microsoft 365 admin center.\n\nStart time: Tuesday, June 2, 2026, at 10:05 AM UTC\n\nEnd time: Thursday, June 18, 2026, at 5:04 PM UTC\n\nRoot cause: A recent upgrade to unlicensed users' capabilities within Copilot Chat wasn't included in current usage logging logic, causing exclusion of that data from usage reports, which resulted in impact.\n\nNext steps: We're reviewing and improving our update validation procedures to detect and prevent similar data exclusions in usage reports in the future.\n\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-06-17T19:54:37.47Z",
-          "postType": "regular",
-          "content": "Title: Admins may not see accurate usage data for Microsoft 365 Copilot Chat in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may not see accurate usage data for Copilot Chat in the Microsoft 365 admin center.\r\n\r\nMore info: Admins may see lower than expected data reported for Copilot Chat users who don't have a Microsoft 365 Copilot standalone license assigned.\r\n\r\nCurrent status: We're monitoring the final stages of the data restatement process for the organizational level trend view to validate that this issue is fully resolved.\r\n\r\nScope of impact: This issue may affect any admin attempting to view reports for Copilot Chat through the Microsoft 365 admin center.\r\n\r\nStart time: Tuesday, June 2, 2026, at 10:05 AM UTC\r\n\r\nRoot cause: A recent upgrade to unlicensed users' capabilities within Copilot Chat wasn't included in current usage logging logic, causing exclusion of that data from usage reports, which is resulting in impact.\r\n\r\nNext update by: Thursday, June 18, 2026, at 9:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-06-16T19:55:53.86Z",
-          "postType": "regular",
-          "content": "Title: Admins may not see accurate usage data for Microsoft 365 Copilot Chat in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may not see accurate usage data for Copilot Chat in the Microsoft 365 admin center.\r\n\r\nMore info: Admins may see lower than expected data reported for Copilot Chat users who don't have a Microsoft 365 Copilot standalone license assigned.\r\n\r\nCurrent status: The backlogged data has completed restatement for active days metrics, which has restored user level details for this event. We're continuing to monitor the final stages of the restatement process for the organizational level trend view to ensure that all usage data is fully restored.\r\n\r\nScope of impact: This issue may affect any admin attempting to view reports for Copilot Chat through the Microsoft 365 admin center.\r\n\r\nStart time: Tuesday, June 2, 2026, at 10:05 AM UTC\r\n\r\nRoot cause: A recent upgrade to unlicensed users' capabilities in the Copilot Chat wasn't included in current usage logging logic, resulting in exclusion of that data from usage reports.\r\n\r\nNext update by: Wednesday, June 17, 2026, at 9:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-06-15T23:59:33.503Z",
-          "postType": "regular",
-          "content": "Title: Admins may not see accurate usage data for Microsoft 365 Copilot Chat in the Microsoft 365 admin center\n\nUser impact: Admins may not see accurate usage data for Copilot Chat in the Microsoft 365 admin center.\n\nMore info: Admins may see lower than expected data reported for Copilot Chat users who don't have a Microsoft 365 Copilot standalone license assigned.\n\nCurrent status: We're continuing to monitor as the backlogged data such as Organization level trend views and Active days metrics in the user level table of Copilot chat usage reports are being processed to ensure all data is included in the reports.\n\nScope of impact: This issue may affect any admin attempting to view reports for Copilot Chat through the Microsoft 365 admin center.\n\nRoot cause: A recent upgrade to unlicensed users' capabilities in the Copilot Chat wasn't included in current usage logging logic, resulting in exclusion of that data from usage reports.\n\nNext update by: Tuesday, June 16, 2026, at 9:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-06-15T19:59:21.953Z",
-          "postType": "regular",
-          "content": "Title: Admins may not see accurate usage data for Microsoft 365 Copilot Chat in the Microsoft 365 admin center\n\nUser impact: Admins may not see accurate usage data for Copilot Chat in the Microsoft 365 admin center.\n\nMore info: Admins may see lower than expected data reported for Copilot Chat users who don't have a Microsoft 365 Copilot standalone license assigned.\n\nCurrent status: We've confirmed that all necessary fixes for usage metrics have been successfully deployed. Admins may start seeing an increase in active usage for Copilot Chat. Additionally, we're monitoring as backlogged data is being drained to ensure all previous impacted usage data during the duration of this event is fully restored.\n\nScope of impact: This issue may affect any admin attempting to view reports for Copilot Chat through the Microsoft 365 admin center.\n\nRoot cause: A recent upgrade to unlicensed users' capabilities in the Copilot Chat wasn't included in current usage logging logic, resulting in exclusion of that data from usage reports.\n\nNext update by: Tuesday, June 16, 2026, at 12:00 AM UTC"
-        }
-      ],
-      "serviceName": "Microsoft 365 Copilot Chat",
-      "affectedServices": [
-        "Microsoft 365 Copilot Chat"
       ]
     }
   ]
