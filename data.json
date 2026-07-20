@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-20T20:39:24.347Z",
+  "lastUpdated": "2026-07-20T21:09:32.415Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -61,9 +61,35 @@
     },
     {
       "service": "Microsoft 365 suite",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "OSDPPlatform",
-      "issues": []
+      "issues": [
+        {
+          "id": "MO1434392",
+          "title": "Admins may be unable to track open email counts in the Microsoft 365 admin center organizational messages",
+          "startTime": "2026-07-20T20:27:05.233Z",
+          "endTime": null,
+          "lastModified": "2026-07-20T21:00:00.783Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Admins may be unable to track open email counts in the Microsoft 365 admin center organizational messages.",
+          "scopeOfImpact": "Any admin attempting to view open counts for their emails sent with Organizational messages in the Microsoft 365 admin center may be impacted. This information may be updated as our investigation continues.",
+          "rootCause": "",
+          "nextUpdateBy": "Wednesday, July 22, 2026, at 1:30 AM UTC",
+          "feature": "Company or User Administration",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-07-20T21:00:00.783Z",
+              "postType": "regular",
+              "content": "Title: Admins may be unable to track open email counts in the Microsoft 365 admin center organizational messages\r\n\r\nUser impact: Admins may be unable to track open email counts in the Microsoft 365 admin center organizational messages.\r\n\r\nCurrent status: We've disabled the capability to track open counts for all emails sent with Organizational messages in the Microsoft 365 admin center. Admins will be able to view the open counts of any Organizational message emails sent before the disablement; however, the open counts of any Organizational message emails sent after the disablement will be unavailable to admins. In the near future, we will update our public documentation to reflect this as well as provide an in-app banner within Organizational Messages experiences (under Reports in Microsoft 365 admin center) to notify admins of this change.\r\n\r\nScope of impact: Any admin attempting to view open counts for their emails sent with Organizational messages in the Microsoft 365 admin center may be impacted. This information may be updated as our investigation continues.\r\n\r\nNext update by: Wednesday, July 22, 2026, at 1:30 AM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite"
+          ]
+        }
+      ]
     },
     {
       "service": "SharePoint Online",
