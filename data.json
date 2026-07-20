@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-20T15:38:02.435Z",
+  "lastUpdated": "2026-07-20T16:08:10.624Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1370,98 +1370,6 @@
       "serviceName": "Power BI",
       "affectedServices": [
         "Power BI"
-      ]
-    },
-    {
-      "id": "IT1396117",
-      "title": "Admins can't interact with Microsoft Intune Suite features in the Intune admin center",
-      "startTime": "2026-06-15T18:00:00Z",
-      "endTime": "2026-06-20T16:05:00Z",
-      "lastModified": "2026-06-20T19:06:25.397Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Admins couldn't interact with Intune Suite features in the Intune admin center.",
-      "scopeOfImpact": "Your organization was affected by this event, and admins saw Intune Suite features in the Intune admin center that they were unable to access.\r\n\r\nStart time: Monday, June 15, 2026, at 6:00 PM UTC\r\n\r\nEnd time: Saturday, June 20, 2026, at 4:05 PM UTC",
-      "rootCause": "A code issue introduced within a recent rollout of Intune Suite features to new license types was impacting the UI flow for organizations still being validated for these features, resulting in features being displayed to admins that weren't yet usable.\r\n\r\nNext steps: \n- We're reviewing the offending Intune Suite rollout to determine why the code issue wasn't identified within our pre-deployment testing processes, so that we can prevent similar issues form occurring in the future.\r\n\r\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Microsoft Intune",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-06-20T19:03:56.997Z",
-          "postType": "regular",
-          "content": "Title: Admins can't interact with Microsoft Intune Suite features in the Intune admin center\r\n\r\nUser impact: Admins couldn't interact with Intune Suite features in the Intune admin center.\r\n\r\nMore info: Affected admins may have seen Intune Suite features were available within the Intune admin center user interface but would have been unable to utilize these features.\r\n\r\nFinal status: We've completed the deployment of our code fix and confirmed through monitoring service health telemetry that the impact has been remediated.\r\n\r\nScope of impact: Your organization was affected by this event, and admins saw Intune Suite features in the Intune admin center that they were unable to access.\r\n\r\nStart time: Monday, June 15, 2026, at 6:00 PM UTC\r\n\r\nEnd time: Saturday, June 20, 2026, at 4:05 PM UTC\r\n\r\nRoot cause: A code issue introduced within a recent rollout of Intune Suite features to new license types was impacting the UI flow for organizations still being validated for these features, resulting in features being displayed to admins that weren't yet usable.\r\n\r\nNext steps: \n- We're reviewing the offending Intune Suite rollout to determine why the code issue wasn't identified within our pre-deployment testing processes, so that we can prevent similar issues form occurring in the future.\r\n\r\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-06-19T15:50:45.383Z",
-          "postType": "regular",
-          "content": "Title: Admins can't interact with Microsoft Intune Suite features in the Intune admin center\r\n\r\nUser impact: Admins can't interact with Intune Suite features in the Intune admin center.\r\n\r\nMore info: Affected admins may see Intune Suite features are available within the Intune admin center user interface but will be unable to utilize these features.\r\n\r\nCurrent status: We're continuing to monitor the deployment of our code fix which we anticipate will complete and remediate the impact by our next scheduled communications update.\r\n\r\nScope of impact: Your organization is affected by this event, and admins see Intune Suite features in the Intune admin center that they're unable to access. This section may be updated as the investigation progresses.\r\n\r\nStart time: Monday, June 15, 2026, at 6:00 PM UTC\r\n\r\nEstimated time to resolve: We anticipate our code fix will complete deployment and remediate the impact by Saturday, June 20, 2026, at 9:00 PM UTC.\r\n\r\nRoot cause: A code issue introduced within a recent rollout of Intune Suite features to new license types is impacting the UI flow for organizations still being validated for these features, resulting in features being displayed to admins that aren't yet able to utilize them.\r\n\r\nNext update by: Saturday, June 20, 2026, at 9:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-06-19T05:27:02.107Z",
-          "postType": "regular",
-          "content": "Title: Admins can't interact with Microsoft Intune Suite features in the Intune admin center\r\n\r\nUser impact: Admins can't interact with Intune Suite features in the Intune admin center.\r\n\r\nMore info: Affected admins may see Intune Suite features are available within the Intune admin center user interface but will be unable to utilize these features.\r\n\r\nCurrent status: We’ve initiated the deployment of our code fix to the affected environment and we’re monitoring to ensure it’s progressing as expected. Affected users should experience impact resolution as the fix reaches them and we expect that we’ll have an estimation for the completion of the deployment by our next scheduled update.  \r\n\r\nScope of impact: Your organization is affected by this event, and admins see Intune Suite features in the Intune admin center that they're unable to access. This section may be updated as the investigation progresses.\r\n\r\nStart time: Monday, June 15, 2026, at 6:00 PM UTC\r\n\r\nRoot cause: A code issue introduced within a recent rollout of Intune Suite features to new license types is impacting the UI flow for organizations still being validated for these features, resulting in features being displayed to admins that aren't yet able to utilize them.\r\n\r\nNext update by: Friday, June 19, 2026, at 5:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-06-19T02:55:31.067Z",
-          "postType": "regular",
-          "content": "Title: Admins can't interact with Microsoft Intune Suite features in the Intune admin center\r\n\r\nUser impact: Admins can't interact with Intune Suite features in the Intune admin center.\r\n\r\nMore info: Affected admins may see Intune Suite features are available within the Intune admin center user interface but will be unable to utilize these features.\r\n\r\nCurrent status: The process of validating and testing our code fix is in the final stages and we’re reviewing options for its deployment to the affected environment. We’ll provide a timeline for the deployment when available. \r\n\r\nScope of impact: Your organization is affected by this event, and admins see Intune Suite features in the Intune admin center that they're unable to access. This section may be updated as the investigation progresses.\r\n\r\nStart time: Monday, June 15, 2026, at 6:00 PM UTC\r\n\r\nRoot cause: A code issue introduced within a recent rollout of Intune Suite features to new license types is impacting the UI flow for organizations still being validated for these features, resulting in features being displayed to admins that aren't yet able to utilize them.\r\n\r\nNext update by: Friday, June 19, 2026, at 5:30 AM UTC"
-        },
-        {
-          "createdAt": "2026-06-18T22:10:03.377Z",
-          "postType": "regular",
-          "content": "Title: Admins can't interact with Microsoft Intune Suite features in the Intune admin center\r\n\r\nUser impact: Admins can't interact with Intune Suite features in the Intune admin center.\r\n\r\nMore info: Affected admins may see Intune Suite features are available within the Intune admin center user interface but will be unable to utilize these features.\r\n\r\nCurrent status: We're implementing additional changes to our code fix to address additional Intune Suite features that weren't corrected in our original fix. We aim to provide a timeline for fix deployment as soon as testing and validation within our internal testing environment is complete and confirmed to fully address the problem.\r\n\r\nScope of impact: Your organization is affected by this event, and admins see Intune Suite features in the Intune admin center that they're unable to access. This section may be updated as the investigation progresses.\r\n\r\nStart time: Monday, June 15, 2026, at 6:00 PM UTC\r\n\r\nRoot cause: A code issue introduced within a recent rollout of Intune Suite features to new license types is impacting the UI flow for organizations still being validated for these features, resulting in features being displayed to admins that aren't yet able to utilize them.\r\n\r\nNext update by: Friday, June 19, 2026, at 3:00 AM UTC"
-        }
-      ],
-      "serviceName": "Microsoft Intune",
-      "affectedServices": [
-        "Microsoft Intune"
-      ]
-    },
-    {
-      "id": "EX1394927",
-      "title": "Admins may be unable to perform actions involving Domain Name System (DNS) records within the Exchange admin center",
-      "startTime": "2026-06-17T06:00:00Z",
-      "endTime": "2026-06-20T16:00:00Z",
-      "lastModified": "2026-06-20T16:30:46.6Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Admins may have been unable to perform actions involving DNS records within the Exchange admin center.",
-      "scopeOfImpact": "Admins attempting to perform actions involving DNS records within the Exchange admin center may have been impacted.\r\n\r\nStart time: Wednesday, June 17, 2026, at 6:00 AM UTC\r\n\r\nEnd time: Saturday, June 20, 2026, at 4:00 PM UTC",
-      "rootCause": "A recently enabled provisioning feature introduced a large number of synchronization divergences, resulting in repeated cmdlet executions that was causing resource contention and impact.\r\n\r\nNext steps: \n- We're reviewing the offending provisioning feature to determine why it introduced a large number of synchronization divergences once implemented, so that we can prevent similar issues from occurring in the future.\r\n\r\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Connectivity Issues",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-06-20T16:26:39.087Z",
-          "postType": "regular",
-          "content": "Title: Admins may be unable to perform actions involving Domain Name System (DNS) records within the Exchange admin center\r\n\r\nUser impact: Admins may have been unable to perform actions involving DNS records within the Exchange admin center.\r\n\r\nMore info: This issue may have impacted admins attempting to perform any actions involving DNS records within the Exchange admin center, such as provisioning new domains or mailboxes, accessing the Exchange admin center, or changing domains from IPv6 to IPv4.\r\n\r\nFinal status: We've processed the backlog of accumulated requests and confirmed through monitoring service health telemetry that the impact has been remediated.\r\n\r\nScope of impact: Admins attempting to perform actions involving DNS records within the Exchange admin center may have been impacted.\r\n\r\nStart time: Wednesday, June 17, 2026, at 6:00 AM UTC\r\n\r\nEnd time: Saturday, June 20, 2026, at 4:00 PM UTC\r\n\r\nRoot cause: A recently enabled provisioning feature introduced a large number of synchronization divergences, resulting in repeated cmdlet executions that was causing resource contention and impact.\r\n\r\nNext steps: \n- We're reviewing the offending provisioning feature to determine why it introduced a large number of synchronization divergences once implemented, so that we can prevent similar issues from occurring in the future.\r\n\r\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-06-20T13:32:42.83Z",
-          "postType": "regular",
-          "content": "Title: Admins may be unable to perform actions involving Domain Name System (DNS) records within the Exchange admin center\r\n\r\nUser impact: Admins may be unable to perform actions involving DNS records within the Exchange admin center.\r\n\r\nMore info: This issue may impact admins attempting to perform any actions involving DNS records within the Exchange admin center, such as provisioning new domains or mailboxes, accessing the Exchange admin center, or changing domains from IPv6 to IPv4.\r\n\r\nCurrent status: Our efforts to monitor service health telemetry to validate that the backlog of accumulated requests has fully processed is ongoing. We expect to be able to provide confirmation that the issue is resolved by our next scheduled update.\r\n\r\nScope of impact: Admins attempting to perform actions involving DNS records within the Exchange admin center may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, June 17, 2026, at 6:00 AM UTC\r\n\r\nRoot cause: A recently enabled provisioning feature introduced a large number of synchronization divergences, resulting in repeated cmdlet executions that's causing resource contention and impact.\r\n\r\nNext update by: Saturday, June 20, 2026, at 6:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-06-20T08:55:43.793Z",
-          "postType": "regular",
-          "content": "Title: Admins may be unable to perform actions involving Domain Name System (DNS) records within the Exchange admin center\r\n\r\nUser impact: Admins may be unable to perform actions involving DNS records within the Exchange admin center.\r\n\r\nMore info: This issue may impact admins attempting to perform any actions involving DNS records within the Exchange admin center, such as provisioning new domains or mailboxes, accessing the Exchange admin center, or changing domains from IPv6 to IPv4.\r\n\r\nCurrent status: We’re continuing to monitor service health telemetry to validate that the backlog of accumulated requests has fully processed. Service health remains stable following the disablement of the offending provisioning feature and we’re maintaining an extended monitoring period to confirm sustained service stability and ensure no further impact is observed before concluding our mitigation efforts.\r\n\r\nScope of impact: Admins attempting to perform actions involving DNS records within the Exchange admin center may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, June 17, 2026, at 6:00 AM UTC\r\n\r\nRoot cause: A recently enabled provisioning feature introduced a large number of synchronization divergences, resulting in repeated cmdlet executions that's causing resource contention and impact.\r\n\r\nNext update by: Saturday, June 20, 2026, at 2:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-06-19T20:04:30.24Z",
-          "postType": "regular",
-          "content": "Title: Admins may be unable to perform actions involving Domain Name System (DNS) records within the Exchange admin center\r\n\r\nUser impact: Admins may be unable to perform actions involving DNS records within the Exchange admin center.\r\n\r\nMore info: This issue may impact admins attempting to perform any actions involving DNS records within the Exchange admin center, such as provisioning new domains or mailboxes, accessing the Exchange admin center, or changing domains from IPv6 to IPv4.\r\n\r\nCurrent status: We've confirmed that disabling the offending provisioning feature successfully helped to stabilize the affected service infrastructure and alleviate impact. We're continuing to monitor service health telemetry in order to validate that the backlog of accumulated requests fully processes, which we anticipate will complete and remediate all impact by our next scheduled update.\r\n\r\nScope of impact: Admins attempting to perform actions involving DNS records within the Exchange admin center may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, June 17, 2026, at 6:00 AM UTC\r\n\r\nRoot cause: A recently enabled provisioning feature introduced a large number of synchronization divergences, resulting in repeated cmdlet executions that's causing resource contention and impact.\r\n\r\nNext update by: Saturday, June 20, 2026, at 9:00 AM UTC"
-        },
-        {
-          "createdAt": "2026-06-19T17:33:44.843Z",
-          "postType": "regular",
-          "content": "Title: Admins may be unable to perform actions involving Domain Name System (DNS) records within the Exchange admin center\r\n\r\nUser impact: Admins may be unable to perform actions involving DNS records within the Exchange admin center.\r\n\r\nMore info: This issue may impact admins attempting to perform any actions involving DNS records within the Exchange admin center, such as provisioning new domains or mailboxes, accessing the Exchange admin center, or changing domains from IPv6 to IPv4.\r\n\r\nCurrent status: We've continuing to disable the offending provisioning feature and clear the backlog of accumulated requests, and we anticipate both these processes will complete and remediate the impact by our next scheduled communications update.\r\n\r\nScope of impact: Admins attempting to perform actions involving DNS records within the Exchange admin center may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, June 17, 2026, at 6:00 AM UTC\r\n\r\nEstimated time to resolve: We anticipate the offending provisioning feature will be disabled and the backlog of accumulated requests processed by Friday, June 19, 2026, at 9:30 PM UTC.\r\n\r\nRoot cause: A recently enabled provisioning feature introduced a large number of synchronization divergences, resulting in repeated cmdlet executions that's causing resource contention and impact.\r\n\r\nNext update by: Friday, June 19, 2026, at 9:30 PM UTC"
-        }
-      ],
-      "serviceName": "Exchange Online",
-      "affectedServices": [
-        "Exchange Online"
       ]
     }
   ]
