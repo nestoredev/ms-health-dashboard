@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-20T08:06:01.795Z",
+  "lastUpdated": "2026-07-20T08:36:09.937Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -189,9 +189,35 @@
     },
     {
       "service": "Power BI",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "PowerBIcom",
-      "issues": []
+      "issues": [
+        {
+          "id": "PB1433864",
+          "title": "Users' filters in Excel PivotTables connected to Microsoft Fabric Semantic Models may reset after a refresh",
+          "startTime": "2026-07-20T08:17:45.96Z",
+          "endTime": null,
+          "lastModified": "2026-07-20T08:27:10.96Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users' filters in Excel PivotTables connected to Microsoft Fabric Semantic Models may reset after a refresh.",
+          "scopeOfImpact": "Any user with Excel PivotTables connected to Microsoft Fabric Semantic Models may be affected by this issue.",
+          "rootCause": "",
+          "nextUpdateBy": "Monday, July 20, 2026, at 10:30 AM UTC",
+          "feature": "General",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-07-20T08:27:10.96Z",
+              "postType": "regular",
+              "content": "Title: Users' filters in Excel PivotTables connected to Microsoft Fabric Semantic Models may reset after a refresh\r\n\r\nUser impact: Users' filters in Excel PivotTables connected to Microsoft Fabric Semantic Models may reset after a refresh.\r\n\r\nMore info: After refreshing a Microsoft Fabric Semantic Model and the associated Excel PivotTable, previously selected filter values may be cleared and reset to default selections. No data loss has been identified; the impact is limited to retained filter selections within affected PivotTables.\r\n\r\nCurrent status: We're investigating reports of previously applied filters resetting in Excel PivotTables connected to Microsoft Fabric Semantic Models after refresh operations. We've identified a recent service change associated with this behavior and are deploying a fix while monitoring its progress and effectiveness.\r\n\r\nScope of impact: Any user with Excel PivotTables connected to Microsoft Fabric Semantic Models may be affected by this issue.\r\n\r\nNext update by: Monday, July 20, 2026, at 10:30 AM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Power BI"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft Intune",
