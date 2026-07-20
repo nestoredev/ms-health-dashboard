@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-20T17:38:34.514Z",
+  "lastUpdated": "2026-07-20T18:08:41.395Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -11,16 +11,21 @@
           "title": "Some users may be unable to view mailbox storage data in Outlook and Outlook on the web",
           "startTime": "2026-07-15T11:35:17.093Z",
           "endTime": null,
-          "lastModified": "2026-07-20T12:17:06.383Z",
+          "lastModified": "2026-07-20T17:37:34.77Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to view mailbox storage data in Outlook and Outlook on the web.",
           "scopeOfImpact": "Some users attempting to view mailbox storage data in Outlook and Outlook on the web may be impacted. This information may be updated as our investigation continues.",
           "rootCause": "A recent service build introduced an unsupported property into mailbox statistics data returned by a backend process. When the service attempted to retrieve mailbox storage information, the unsupported property caused the request to fail and prevented mailbox storage data from being displayed.",
-          "nextUpdateBy": "Monday, July 20, 2026, at 7:00 PM UTC",
+          "nextUpdateBy": "Thursday, July 23, 2026, at 7:00 PM UTC",
           "feature": "OWA - poor customer experience",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-07-20T17:37:34.77Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to view mailbox storage data in Outlook and Outlook on the web\r\n\r\nUser impact: Users may be unable to view mailbox storage data in Outlook and Outlook on the web.\r\n\r\nMore info: Affected users are shown the following error message \"Storage data is temporarily unavailable\" when trying to view mailbox storage data for multiple mailboxes.\r\n\r\nCurrent status: Our fix has completed approximately 94 percent of its deployment within the affected environment, and our timeline projects it will have completed and that the impact will be remediated by our next scheduled communication update.\r\n\r\nScope of impact: Some users attempting to view mailbox storage data in Outlook and Outlook on the web may be impacted. This information may be updated as our investigation continues.\r\n\r\nRoot cause: A recent service build introduced an unsupported property into mailbox statistics data returned by a backend process. When the service attempted to retrieve mailbox storage information, the unsupported property caused the request to fail and prevented mailbox storage data from being displayed.\r\n\r\nNext update by: Thursday, July 23, 2026, at 7:00 PM UTC"
+            },
             {
               "createdAt": "2026-07-17T18:19:38.487Z",
               "postType": "regular",
@@ -56,40 +61,9 @@
     },
     {
       "service": "Microsoft 365 suite",
-      "status": "serviceDegradation",
+      "status": "serviceOperational",
       "id": "OSDPPlatform",
-      "issues": [
-        {
-          "id": "MO1431590",
-          "title": "Admins may see stale non-Copilot usage reports in the Microsoft 365 admin center in the Europe and Asia Pacific region",
-          "startTime": "2026-07-18T00:00:00Z",
-          "endTime": null,
-          "lastModified": "2026-07-20T17:33:31.553Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Admins may have seen stale non-Copilot usage reports in the M365 admin center in the Europe and Asia Pacific region.",
-          "scopeOfImpact": "This issue may impact any admin in the Asia Pacific and Europe regions attempting to view non-Copilot usage reports in the Microsoft 365 admin center. This information may be updated as our investigation continues.\r\n\r\nStart time: Saturday, July 18, 2026, at 12:00 AM UTC",
-          "rootCause": "A recent service update triggered delays with upstream availability which is resulting in stale data being displayed in non-Copilot usage reports.",
-          "nextUpdateBy": "Monday, July 20, 2026, at 7:30 PM UTC",
-          "feature": "Access",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-07-18T21:33:44.187Z",
-              "postType": "regular",
-              "content": "Title: Admins may see stale non-Copilot usage reports in the Microsoft 365 admin center in the Europe and Asia Pacific region\r\n\r\nUser impact: Admins may see stale non-Copilot usage reports in the Microsoft 365 admin center in the Europe and Asia Pacific region.\r\n\r\nCurrent status: We're continuing to monitor the service as the backfill continues to process. Some non-Copilot usage reports have already been refreshed with the latest data, while the remaining reports continue to be refreshed as the backfill progresses. We'll provide a resolution timeline once it's available.\r\n\r\nScope of impact: This issue may impact any admin in the Asia Pacific and Europe regions attempting to view non-Copilot usage reports in the Microsoft 365 admin center. This information may be updated as our investigation continues.\r\n\r\nStart time: Saturday, July 18, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: A recent service update triggered delays with upstream availability which is resulting in stale data being displayed in non-Copilot usage reports.\r\n\r\nNext update by: Monday, July 20, 2026, at 7:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-07-18T02:24:34.373Z",
-              "postType": "regular",
-              "content": "Title: Admins may see stale non-Copilot usage reports in the Microsoft 365 admin center in the Europe and Asia Pacific region\n\nUser impact: Admins may see stale non-Copilot usage reports in the Microsoft 365 admin center in the Europe and Asia Pacific region.\n\nCurrent status: We've identified a delay in report data processing caused by an upstream delay. As a result, non-Copilot usage reports in the Microsoft 365 admin center are displaying stale data. The impacted upstream services have recovered and are currently backfilling data. Report freshness is expected to improve as backfill processing progresses.\n\nScope of impact: This issue may impact any admin in the Asia Pacific and Europe regions attempting to view non-Copilot usage reports in the Microsoft 365 admin center. This information may be updated as our investigation continues.\n\nStart time: Saturday, July 18, 2026, at 12:00 AM UTC\n\nRoot cause: A recent service update triggered delays with upstream availability which is resulting in stale data being displayed in non-Copilot usage reports.\n\nNext update by: Saturday, July 18, 2026, at 11:00 PM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Microsoft 365 suite"
-          ]
-        }
-      ]
+      "issues": []
     },
     {
       "service": "SharePoint Online",
@@ -233,16 +207,21 @@
           "title": "Microsoft 365 Apps usage reports from the Microsoft 365 admin center may be delayed for admins and users",
           "startTime": "2026-07-19T00:00:00Z",
           "endTime": null,
-          "lastModified": "2026-07-19T21:18:21.933Z",
+          "lastModified": "2026-07-20T17:50:11.113Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Microsoft 365 Apps usage reports from the Microsoft 365 admin center may be delayed for admins and users.",
           "scopeOfImpact": "This issue may potentially affect any admin attempting to view Microsoft 365 Apps usage reports in the Microsoft 365 admin center.\r\n\r\nStart time: Sunday, July 19, 2026, at 12:00 AM UTC",
           "rootCause": "An issue with the pipeline for our upstream data source responsible for timely report data in the Microsoft 365 admin center is causing Microsoft 365 Apps usage report delays.",
-          "nextUpdateBy": "Monday, July 20, 2026, at 6:30 PM UTC",
+          "nextUpdateBy": "Monday, July 20, 2026, at 11:00 PM UTC",
           "feature": "Reports of an incident",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-07-20T17:50:11.113Z",
+              "postType": "regular",
+              "content": "Title: Microsoft 365 Apps usage reports from the Microsoft 365 admin center may be delayed for admins and users\r\n\r\nUser impact: Microsoft 365 Apps usage reports from the Microsoft 365 admin center may be delayed for admins and users.\r\n\r\nCurrent status: We've applied a fix to correct the issues with the pipeline for our upstream data source and the delayed reports for the majority of affected admins and users have completed processing except for those that're located in Europe. We're continuing to monitor as the remaining data is processed.\r\n\r\nScope of impact: This issue may potentially affect any admin attempting to view Microsoft 365 Apps usage reports in the Microsoft 365 admin center.\r\n\r\nStart time: Sunday, July 19, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: An issue with the pipeline for our upstream data source responsible for timely report data in the Microsoft 365 admin center is causing Microsoft 365 Apps usage report delays.\r\n\r\nNext update by: Monday, July 20, 2026, at 11:00 PM UTC"
+            },
             {
               "createdAt": "2026-07-19T21:18:21.933Z",
               "postType": "regular",
@@ -346,6 +325,42 @@
     }
   ],
   "history": [
+    {
+      "id": "MO1431590",
+      "title": "Admins may see stale non-Copilot usage reports in the Microsoft 365 admin center in the Europe and Asia Pacific region",
+      "startTime": "2026-07-18T00:00:00Z",
+      "endTime": "2026-07-20T17:42:14.39Z",
+      "lastModified": "2026-07-20T17:42:51.11Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Admins may have seen stale non-Copilot usage reports in the Microsoft 365 admin center for Europe and Asia Pacific.",
+      "scopeOfImpact": "This issue may have impacted any admin in the Asia Pacific and Europe regions attempting to view non-Copilot usage reports in the Microsoft 365 admin center.\r\n\r\nStart time: Saturday, July 18, 2026, at 12:00 AM UTC\r\n\r\nEnd time: Sunday, July 19, 2026, at 11:00 AM UTC",
+      "rootCause": "A recent service update triggered delays with upstream availability which was resulting in stale data being displayed in non-Copilot usage reports.\r\n\r\nNext steps: \n- We're reviewing our service update testing and validation procedures to identify opportunities to improve impact detection and better prevent similar future occurrences.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Access",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-07-20T17:42:48.067Z",
+          "postType": "regular",
+          "content": "Title: Admins may see stale non-Copilot usage reports in the Microsoft 365 admin center in the Europe and Asia Pacific region\r\n\r\nUser impact: Admins may have seen stale non-Copilot usage reports in the Microsoft 365 admin center for Europe and Asia Pacific.\r\n\r\nFinal status: We've confirmed the backfill has completed and impact is fully remediated.\r\n\r\nScope of impact: This issue may have impacted any admin in the Asia Pacific and Europe regions attempting to view non-Copilot usage reports in the Microsoft 365 admin center.\r\n\r\nStart time: Saturday, July 18, 2026, at 12:00 AM UTC\r\n\r\nEnd time: Sunday, July 19, 2026, at 11:00 AM UTC\r\n\r\nRoot cause: A recent service update triggered delays with upstream availability which was resulting in stale data being displayed in non-Copilot usage reports.\r\n\r\nNext steps: \n- We're reviewing our service update testing and validation procedures to identify opportunities to improve impact detection and better prevent similar future occurrences.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-07-18T21:33:44.187Z",
+          "postType": "regular",
+          "content": "Title: Admins may see stale non-Copilot usage reports in the Microsoft 365 admin center in the Europe and Asia Pacific region\r\n\r\nUser impact: Admins may see stale non-Copilot usage reports in the Microsoft 365 admin center in the Europe and Asia Pacific region.\r\n\r\nCurrent status: We're continuing to monitor the service as the backfill continues to process. Some non-Copilot usage reports have already been refreshed with the latest data, while the remaining reports continue to be refreshed as the backfill progresses. We'll provide a resolution timeline once it's available.\r\n\r\nScope of impact: This issue may impact any admin in the Asia Pacific and Europe regions attempting to view non-Copilot usage reports in the Microsoft 365 admin center. This information may be updated as our investigation continues.\r\n\r\nStart time: Saturday, July 18, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: A recent service update triggered delays with upstream availability which is resulting in stale data being displayed in non-Copilot usage reports.\r\n\r\nNext update by: Monday, July 20, 2026, at 7:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-07-18T02:24:34.373Z",
+          "postType": "regular",
+          "content": "Title: Admins may see stale non-Copilot usage reports in the Microsoft 365 admin center in the Europe and Asia Pacific region\n\nUser impact: Admins may see stale non-Copilot usage reports in the Microsoft 365 admin center in the Europe and Asia Pacific region.\n\nCurrent status: We've identified a delay in report data processing caused by an upstream delay. As a result, non-Copilot usage reports in the Microsoft 365 admin center are displaying stale data. The impacted upstream services have recovered and are currently backfilling data. Report freshness is expected to improve as backfill processing progresses.\n\nScope of impact: This issue may impact any admin in the Asia Pacific and Europe regions attempting to view non-Copilot usage reports in the Microsoft 365 admin center. This information may be updated as our investigation continues.\n\nStart time: Saturday, July 18, 2026, at 12:00 AM UTC\n\nRoot cause: A recent service update triggered delays with upstream availability which is resulting in stale data being displayed in non-Copilot usage reports.\n\nNext update by: Saturday, July 18, 2026, at 11:00 PM UTC"
+        }
+      ],
+      "serviceName": "Microsoft 365 suite",
+      "affectedServices": [
+        "Microsoft 365 suite"
+      ]
+    },
     {
       "id": "IT1431577",
       "title": "Users' newly enrolled Windows devices are marked as non-compliant in Microsoft Intune",
