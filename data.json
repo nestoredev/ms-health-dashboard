@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-21T16:44:49.767Z",
+  "lastUpdated": "2026-07-21T17:14:57.950Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -207,9 +207,35 @@
     },
     {
       "service": "Microsoft Teams",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "microsoftteams",
-      "issues": []
+      "issues": [
+        {
+          "id": "TM1435242",
+          "title": "Some users may experience delays receiving notifications for Teams Recap Podcasts in Microsoft Teams",
+          "startTime": "2026-07-21T04:00:00Z",
+          "endTime": null,
+          "lastModified": "2026-07-21T17:03:12.61Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may experience delays receiving notifications for Teams Recap Podcasts in Microsoft Teams.",
+          "scopeOfImpact": "Impact is specific to users in North America and South America who are attempting to receive notifications for Teams Recap Podcasts in Microsoft Teams.",
+          "rootCause": "",
+          "nextUpdateBy": "Tuesday, July 21, 2026, at 6:30 PM UTC",
+          "feature": "Calendar",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-07-21T12:38:11.073Z",
+              "postType": "regular",
+              "content": "Title: Some users may experience delays receiving notifications for Teams Recap Podcasts in Microsoft Teams\r\n\r\nUser impact: Users may experience delays receiving notifications for Teams Recap Podcasts in Microsoft Teams.\r\n\r\nMore info: Users may experience delays receiving reminder notifications that prompt them to generate Teams Recap Podcasts. Notifications sent after a podcast has already been generated aren't impacted.\r\n\r\nCurrent status: We're reviewing service telemetry to isolate the source of this issue and determine appropriate remediation actions.\r\n\r\nScope of impact: Impact is specific to users in North America and South America who are attempting to receive notifications for Teams Recap Podcasts in Microsoft Teams.\r\n\r\nNext update by: Tuesday, July 21, 2026, at 6:30 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Teams"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft Bookings",
