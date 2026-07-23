@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-23T16:28:12.243Z",
+  "lastUpdated": "2026-07-23T16:58:21.028Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -79,16 +79,21 @@
           "title": "Issues accessing or using Microsoft 365 services in the North America region. ",
           "startTime": "2026-07-23T15:06:42Z",
           "endTime": null,
-          "lastModified": "2026-07-23T16:18:57.337Z",
+          "lastModified": "2026-07-23T16:48:46.36Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be experiencing issues accessing or using Microsoft 365 services in the North America region.",
-          "scopeOfImpact": "",
+          "scopeOfImpact": "Users accessing Microsoft 365 services through affected network paths in the North America region may be impacted.\n\nStart time: Thursday, July 23, 2026, at 2:44 PM UTC",
           "rootCause": "",
-          "nextUpdateBy": "Thursday, July 23, 2026, at 5:00 PM UTC",
+          "nextUpdateBy": "Thursday, July 23, 2026, at 6:00 PM UTC",
           "feature": "Company or User Administration",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-07-23T16:47:24.187Z",
+              "postType": "regular",
+              "content": "Title: Issues accessing or using Microsoft 365 services in the North America region. \n\nUser impact: Users may be experiencing issues accessing or using Microsoft 365 services in the North America region.\n\nMore info: We've confirmed that multiple Microsoft 365 services are degraded, including but not limited to:\n-Microsoft OneDrive - Access to OneDrive is intermittent.\n-SharePoint Online - Error message, “Something went wrong”\n-Microsoft Teams - Degraded chat functionality, including images not loading.\n-Microsoft 365 Admin Center - Admin Center is loading slowly or not at all.\n-Power Automate - Automate flows not loading.\n-Copilot Chat - Intermittent delays or failures in any Copilot Chat action and query.\n-Microsoft Loop - Unable to open or load Loop pages.\n\nCurrent status: We performed traffic rerouting for some of the affected infrastructure and our initial telemetry indicates that these actions have contributed to partial recovery for some users. We're scaling up our rerouting efforts while continuing to evaluate additional mitigation actions.\n\nScope of impact: Users accessing Microsoft 365 services through affected network paths in the North America region may be impacted.\n\nStart time: Thursday, July 23, 2026, at 2:44 PM UTC\n\nNext update by: Thursday, July 23, 2026, at 6:00 PM UTC"
+            },
             {
               "createdAt": "2026-07-23T16:18:22.45Z",
               "postType": "quick",
@@ -116,7 +121,12 @@
             }
           ],
           "affectedServices": [
-            "Microsoft 365 suite"
+            "Microsoft 365 suite",
+            "SharePoint Online",
+            "Microsoft OneDrive",
+            "Microsoft Teams",
+            "Microsoft Power Automate in Microsoft 365",
+            "Microsoft 365 Copilot Chat"
           ]
         },
         {
@@ -215,6 +225,61 @@
           "affectedServices": [
             "SharePoint Online"
           ]
+        },
+        {
+          "id": "MO1437424",
+          "title": "Issues accessing or using Microsoft 365 services in the North America region. ",
+          "startTime": "2026-07-23T15:06:42Z",
+          "endTime": null,
+          "lastModified": "2026-07-23T16:48:46.36Z",
+          "status": "serviceDegradation",
+          "severity": "incident",
+          "userImpact": "Users may be experiencing issues accessing or using Microsoft 365 services in the North America region.",
+          "scopeOfImpact": "Users accessing Microsoft 365 services through affected network paths in the North America region may be impacted.\n\nStart time: Thursday, July 23, 2026, at 2:44 PM UTC",
+          "rootCause": "",
+          "nextUpdateBy": "Thursday, July 23, 2026, at 6:00 PM UTC",
+          "feature": "Company or User Administration",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-07-23T16:47:24.187Z",
+              "postType": "regular",
+              "content": "Title: Issues accessing or using Microsoft 365 services in the North America region. \n\nUser impact: Users may be experiencing issues accessing or using Microsoft 365 services in the North America region.\n\nMore info: We've confirmed that multiple Microsoft 365 services are degraded, including but not limited to:\n-Microsoft OneDrive - Access to OneDrive is intermittent.\n-SharePoint Online - Error message, “Something went wrong”\n-Microsoft Teams - Degraded chat functionality, including images not loading.\n-Microsoft 365 Admin Center - Admin Center is loading slowly or not at all.\n-Power Automate - Automate flows not loading.\n-Copilot Chat - Intermittent delays or failures in any Copilot Chat action and query.\n-Microsoft Loop - Unable to open or load Loop pages.\n\nCurrent status: We performed traffic rerouting for some of the affected infrastructure and our initial telemetry indicates that these actions have contributed to partial recovery for some users. We're scaling up our rerouting efforts while continuing to evaluate additional mitigation actions.\n\nScope of impact: Users accessing Microsoft 365 services through affected network paths in the North America region may be impacted.\n\nStart time: Thursday, July 23, 2026, at 2:44 PM UTC\n\nNext update by: Thursday, July 23, 2026, at 6:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-07-23T16:18:22.45Z",
+              "postType": "quick",
+              "content": "We've identified alternate network paths and are validating the best next steps to improve service availability. We're continuing to monitor telemetry to assess whether we can take additional actions to expedite recovery for impacted users.\n \nThis quick update is designed to give the latest information on this issue.\n \nNext update by: Thursday, July 23, 2026, at 5:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-07-23T16:04:48.193Z",
+              "postType": "regular",
+              "content": "Title: Issues accessing or using Microsoft 365 services in the North America region. \n\nUser impact: Users may be experiencing issues accessing or using Microsoft 365 services in the North America region.\n\nMore info: We've confirmed that the issue may affect multiple Microsoft 365 services, including but not limited to:\n- OneDrive for Business\n- SharePoint Online \n- Microsoft Teams\n- Microsoft365 Admin Center\n- Power Automate\n \nCurrent status: We’ve identified specific network paths as a focus area and are using diagnostic data from affected infrastructure to determine the source of impact and plan mitigation actions.\n \nScope of impact: Users accessing Microsoft 365 services through affected network paths in the North America region may be impacted.\n\nStart time: Thursday, July 23, 2026, at 2:44 PM UTC\n \nNext update by: Thursday, July 23, 2026, at 5:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-07-23T15:57:23.3Z",
+              "postType": "regular",
+              "content": "Title: Issues accessing or using Microsoft 365 services in the North America region. \n\nUser impact: Users may be experiencing issues accessing or using Microsoft 365 services in the North America region.\n\nMore info: We've confirmed that the issue may affect multiple Microsoft 365 services, including but not limited to:\n- SharePoint Online \n- Microsoft Teams\n- Microsoft365 Admin Center\n- Power Automate\n \nCurrent status: We’ve identified specific network paths as a focus area and are using diagnostic data from affected infrastructure to determine the source of impact and plan mitigation actions.\n \nScope of impact: Users accessing Microsoft 365 services through affected network paths in the North America region may be impacted.\n\nStart time: Thursday, July 23, 2026, at 2:44 PM UTC\n \nNext update by: Thursday, July 23, 2026, at 5:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-07-23T15:44:33.767Z",
+              "postType": "regular",
+              "content": "Title: Issues accessing or using Microsoft 365 services in the North America region\n\nUser impact: Users may be experiencing issues accessing or using Microsoft 365 services in the North America region.\n\nCurrent status: We are continuing our investigation and are reviewing recent changes for potential correlation while we analyze service telemetry and available diagnostic data.\n\nScope of impact: Users accessing Microsoft 365 services through affected network paths in the North America region may be impacted.\n \nStart time: Thursday, July 23, 2026, at 2:44 PM UTC\n\nNext update by: Thursday, July 23, 2026, at 5:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-07-23T15:15:50.177Z",
+              "postType": "regular",
+              "content": "Title: Investigating user reports of Microsoft 365 issues\n\nUser impact: We don't have detail on impact yet. We're seeing an increase in user reported issues above our alerting threshold.\n\nCurrent status: We are reviewing service telemetry and available information to determine if there is an issue happening and we'll update this message shortly with our latest findings.\n\nThis communication serves as a preliminary notification about a potential issue affecting your service. We'll provide an update in 30 minutes.\n "
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite",
+            "SharePoint Online",
+            "Microsoft OneDrive",
+            "Microsoft Teams",
+            "Microsoft Power Automate in Microsoft 365",
+            "Microsoft 365 Copilot Chat"
+          ]
         }
       ]
     },
@@ -256,9 +321,65 @@
     },
     {
       "service": "Microsoft OneDrive",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "OneDriveForBusiness",
-      "issues": []
+      "issues": [
+        {
+          "id": "MO1437424",
+          "title": "Issues accessing or using Microsoft 365 services in the North America region. ",
+          "startTime": "2026-07-23T15:06:42Z",
+          "endTime": null,
+          "lastModified": "2026-07-23T16:48:46.36Z",
+          "status": "serviceDegradation",
+          "severity": "incident",
+          "userImpact": "Users may be experiencing issues accessing or using Microsoft 365 services in the North America region.",
+          "scopeOfImpact": "Users accessing Microsoft 365 services through affected network paths in the North America region may be impacted.\n\nStart time: Thursday, July 23, 2026, at 2:44 PM UTC",
+          "rootCause": "",
+          "nextUpdateBy": "Thursday, July 23, 2026, at 6:00 PM UTC",
+          "feature": "Company or User Administration",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-07-23T16:47:24.187Z",
+              "postType": "regular",
+              "content": "Title: Issues accessing or using Microsoft 365 services in the North America region. \n\nUser impact: Users may be experiencing issues accessing or using Microsoft 365 services in the North America region.\n\nMore info: We've confirmed that multiple Microsoft 365 services are degraded, including but not limited to:\n-Microsoft OneDrive - Access to OneDrive is intermittent.\n-SharePoint Online - Error message, “Something went wrong”\n-Microsoft Teams - Degraded chat functionality, including images not loading.\n-Microsoft 365 Admin Center - Admin Center is loading slowly or not at all.\n-Power Automate - Automate flows not loading.\n-Copilot Chat - Intermittent delays or failures in any Copilot Chat action and query.\n-Microsoft Loop - Unable to open or load Loop pages.\n\nCurrent status: We performed traffic rerouting for some of the affected infrastructure and our initial telemetry indicates that these actions have contributed to partial recovery for some users. We're scaling up our rerouting efforts while continuing to evaluate additional mitigation actions.\n\nScope of impact: Users accessing Microsoft 365 services through affected network paths in the North America region may be impacted.\n\nStart time: Thursday, July 23, 2026, at 2:44 PM UTC\n\nNext update by: Thursday, July 23, 2026, at 6:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-07-23T16:18:22.45Z",
+              "postType": "quick",
+              "content": "We've identified alternate network paths and are validating the best next steps to improve service availability. We're continuing to monitor telemetry to assess whether we can take additional actions to expedite recovery for impacted users.\n \nThis quick update is designed to give the latest information on this issue.\n \nNext update by: Thursday, July 23, 2026, at 5:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-07-23T16:04:48.193Z",
+              "postType": "regular",
+              "content": "Title: Issues accessing or using Microsoft 365 services in the North America region. \n\nUser impact: Users may be experiencing issues accessing or using Microsoft 365 services in the North America region.\n\nMore info: We've confirmed that the issue may affect multiple Microsoft 365 services, including but not limited to:\n- OneDrive for Business\n- SharePoint Online \n- Microsoft Teams\n- Microsoft365 Admin Center\n- Power Automate\n \nCurrent status: We’ve identified specific network paths as a focus area and are using diagnostic data from affected infrastructure to determine the source of impact and plan mitigation actions.\n \nScope of impact: Users accessing Microsoft 365 services through affected network paths in the North America region may be impacted.\n\nStart time: Thursday, July 23, 2026, at 2:44 PM UTC\n \nNext update by: Thursday, July 23, 2026, at 5:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-07-23T15:57:23.3Z",
+              "postType": "regular",
+              "content": "Title: Issues accessing or using Microsoft 365 services in the North America region. \n\nUser impact: Users may be experiencing issues accessing or using Microsoft 365 services in the North America region.\n\nMore info: We've confirmed that the issue may affect multiple Microsoft 365 services, including but not limited to:\n- SharePoint Online \n- Microsoft Teams\n- Microsoft365 Admin Center\n- Power Automate\n \nCurrent status: We’ve identified specific network paths as a focus area and are using diagnostic data from affected infrastructure to determine the source of impact and plan mitigation actions.\n \nScope of impact: Users accessing Microsoft 365 services through affected network paths in the North America region may be impacted.\n\nStart time: Thursday, July 23, 2026, at 2:44 PM UTC\n \nNext update by: Thursday, July 23, 2026, at 5:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-07-23T15:44:33.767Z",
+              "postType": "regular",
+              "content": "Title: Issues accessing or using Microsoft 365 services in the North America region\n\nUser impact: Users may be experiencing issues accessing or using Microsoft 365 services in the North America region.\n\nCurrent status: We are continuing our investigation and are reviewing recent changes for potential correlation while we analyze service telemetry and available diagnostic data.\n\nScope of impact: Users accessing Microsoft 365 services through affected network paths in the North America region may be impacted.\n \nStart time: Thursday, July 23, 2026, at 2:44 PM UTC\n\nNext update by: Thursday, July 23, 2026, at 5:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-07-23T15:15:50.177Z",
+              "postType": "regular",
+              "content": "Title: Investigating user reports of Microsoft 365 issues\n\nUser impact: We don't have detail on impact yet. We're seeing an increase in user reported issues above our alerting threshold.\n\nCurrent status: We are reviewing service telemetry and available information to determine if there is an issue happening and we'll update this message shortly with our latest findings.\n\nThis communication serves as a preliminary notification about a potential issue affecting your service. We'll provide an update in 30 minutes.\n "
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite",
+            "SharePoint Online",
+            "Microsoft OneDrive",
+            "Microsoft Teams",
+            "Microsoft Power Automate in Microsoft 365",
+            "Microsoft 365 Copilot Chat"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft Teams",
@@ -309,6 +430,61 @@
           "affectedServices": [
             "Microsoft Teams"
           ]
+        },
+        {
+          "id": "MO1437424",
+          "title": "Issues accessing or using Microsoft 365 services in the North America region. ",
+          "startTime": "2026-07-23T15:06:42Z",
+          "endTime": null,
+          "lastModified": "2026-07-23T16:48:46.36Z",
+          "status": "serviceDegradation",
+          "severity": "incident",
+          "userImpact": "Users may be experiencing issues accessing or using Microsoft 365 services in the North America region.",
+          "scopeOfImpact": "Users accessing Microsoft 365 services through affected network paths in the North America region may be impacted.\n\nStart time: Thursday, July 23, 2026, at 2:44 PM UTC",
+          "rootCause": "",
+          "nextUpdateBy": "Thursday, July 23, 2026, at 6:00 PM UTC",
+          "feature": "Company or User Administration",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-07-23T16:47:24.187Z",
+              "postType": "regular",
+              "content": "Title: Issues accessing or using Microsoft 365 services in the North America region. \n\nUser impact: Users may be experiencing issues accessing or using Microsoft 365 services in the North America region.\n\nMore info: We've confirmed that multiple Microsoft 365 services are degraded, including but not limited to:\n-Microsoft OneDrive - Access to OneDrive is intermittent.\n-SharePoint Online - Error message, “Something went wrong”\n-Microsoft Teams - Degraded chat functionality, including images not loading.\n-Microsoft 365 Admin Center - Admin Center is loading slowly or not at all.\n-Power Automate - Automate flows not loading.\n-Copilot Chat - Intermittent delays or failures in any Copilot Chat action and query.\n-Microsoft Loop - Unable to open or load Loop pages.\n\nCurrent status: We performed traffic rerouting for some of the affected infrastructure and our initial telemetry indicates that these actions have contributed to partial recovery for some users. We're scaling up our rerouting efforts while continuing to evaluate additional mitigation actions.\n\nScope of impact: Users accessing Microsoft 365 services through affected network paths in the North America region may be impacted.\n\nStart time: Thursday, July 23, 2026, at 2:44 PM UTC\n\nNext update by: Thursday, July 23, 2026, at 6:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-07-23T16:18:22.45Z",
+              "postType": "quick",
+              "content": "We've identified alternate network paths and are validating the best next steps to improve service availability. We're continuing to monitor telemetry to assess whether we can take additional actions to expedite recovery for impacted users.\n \nThis quick update is designed to give the latest information on this issue.\n \nNext update by: Thursday, July 23, 2026, at 5:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-07-23T16:04:48.193Z",
+              "postType": "regular",
+              "content": "Title: Issues accessing or using Microsoft 365 services in the North America region. \n\nUser impact: Users may be experiencing issues accessing or using Microsoft 365 services in the North America region.\n\nMore info: We've confirmed that the issue may affect multiple Microsoft 365 services, including but not limited to:\n- OneDrive for Business\n- SharePoint Online \n- Microsoft Teams\n- Microsoft365 Admin Center\n- Power Automate\n \nCurrent status: We’ve identified specific network paths as a focus area and are using diagnostic data from affected infrastructure to determine the source of impact and plan mitigation actions.\n \nScope of impact: Users accessing Microsoft 365 services through affected network paths in the North America region may be impacted.\n\nStart time: Thursday, July 23, 2026, at 2:44 PM UTC\n \nNext update by: Thursday, July 23, 2026, at 5:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-07-23T15:57:23.3Z",
+              "postType": "regular",
+              "content": "Title: Issues accessing or using Microsoft 365 services in the North America region. \n\nUser impact: Users may be experiencing issues accessing or using Microsoft 365 services in the North America region.\n\nMore info: We've confirmed that the issue may affect multiple Microsoft 365 services, including but not limited to:\n- SharePoint Online \n- Microsoft Teams\n- Microsoft365 Admin Center\n- Power Automate\n \nCurrent status: We’ve identified specific network paths as a focus area and are using diagnostic data from affected infrastructure to determine the source of impact and plan mitigation actions.\n \nScope of impact: Users accessing Microsoft 365 services through affected network paths in the North America region may be impacted.\n\nStart time: Thursday, July 23, 2026, at 2:44 PM UTC\n \nNext update by: Thursday, July 23, 2026, at 5:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-07-23T15:44:33.767Z",
+              "postType": "regular",
+              "content": "Title: Issues accessing or using Microsoft 365 services in the North America region\n\nUser impact: Users may be experiencing issues accessing or using Microsoft 365 services in the North America region.\n\nCurrent status: We are continuing our investigation and are reviewing recent changes for potential correlation while we analyze service telemetry and available diagnostic data.\n\nScope of impact: Users accessing Microsoft 365 services through affected network paths in the North America region may be impacted.\n \nStart time: Thursday, July 23, 2026, at 2:44 PM UTC\n\nNext update by: Thursday, July 23, 2026, at 5:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-07-23T15:15:50.177Z",
+              "postType": "regular",
+              "content": "Title: Investigating user reports of Microsoft 365 issues\n\nUser impact: We don't have detail on impact yet. We're seeing an increase in user reported issues above our alerting threshold.\n\nCurrent status: We are reviewing service telemetry and available information to determine if there is an issue happening and we'll update this message shortly with our latest findings.\n\nThis communication serves as a preliminary notification about a potential issue affecting your service. We'll provide an update in 30 minutes.\n "
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite",
+            "SharePoint Online",
+            "Microsoft OneDrive",
+            "Microsoft Teams",
+            "Microsoft Power Automate in Microsoft 365",
+            "Microsoft 365 Copilot Chat"
+          ]
         }
       ]
     },
@@ -350,9 +526,65 @@
     },
     {
       "service": "Microsoft Power Automate in Microsoft 365",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "MicrosoftFlowM365",
-      "issues": []
+      "issues": [
+        {
+          "id": "MO1437424",
+          "title": "Issues accessing or using Microsoft 365 services in the North America region. ",
+          "startTime": "2026-07-23T15:06:42Z",
+          "endTime": null,
+          "lastModified": "2026-07-23T16:48:46.36Z",
+          "status": "serviceDegradation",
+          "severity": "incident",
+          "userImpact": "Users may be experiencing issues accessing or using Microsoft 365 services in the North America region.",
+          "scopeOfImpact": "Users accessing Microsoft 365 services through affected network paths in the North America region may be impacted.\n\nStart time: Thursday, July 23, 2026, at 2:44 PM UTC",
+          "rootCause": "",
+          "nextUpdateBy": "Thursday, July 23, 2026, at 6:00 PM UTC",
+          "feature": "Company or User Administration",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-07-23T16:47:24.187Z",
+              "postType": "regular",
+              "content": "Title: Issues accessing or using Microsoft 365 services in the North America region. \n\nUser impact: Users may be experiencing issues accessing or using Microsoft 365 services in the North America region.\n\nMore info: We've confirmed that multiple Microsoft 365 services are degraded, including but not limited to:\n-Microsoft OneDrive - Access to OneDrive is intermittent.\n-SharePoint Online - Error message, “Something went wrong”\n-Microsoft Teams - Degraded chat functionality, including images not loading.\n-Microsoft 365 Admin Center - Admin Center is loading slowly or not at all.\n-Power Automate - Automate flows not loading.\n-Copilot Chat - Intermittent delays or failures in any Copilot Chat action and query.\n-Microsoft Loop - Unable to open or load Loop pages.\n\nCurrent status: We performed traffic rerouting for some of the affected infrastructure and our initial telemetry indicates that these actions have contributed to partial recovery for some users. We're scaling up our rerouting efforts while continuing to evaluate additional mitigation actions.\n\nScope of impact: Users accessing Microsoft 365 services through affected network paths in the North America region may be impacted.\n\nStart time: Thursday, July 23, 2026, at 2:44 PM UTC\n\nNext update by: Thursday, July 23, 2026, at 6:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-07-23T16:18:22.45Z",
+              "postType": "quick",
+              "content": "We've identified alternate network paths and are validating the best next steps to improve service availability. We're continuing to monitor telemetry to assess whether we can take additional actions to expedite recovery for impacted users.\n \nThis quick update is designed to give the latest information on this issue.\n \nNext update by: Thursday, July 23, 2026, at 5:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-07-23T16:04:48.193Z",
+              "postType": "regular",
+              "content": "Title: Issues accessing or using Microsoft 365 services in the North America region. \n\nUser impact: Users may be experiencing issues accessing or using Microsoft 365 services in the North America region.\n\nMore info: We've confirmed that the issue may affect multiple Microsoft 365 services, including but not limited to:\n- OneDrive for Business\n- SharePoint Online \n- Microsoft Teams\n- Microsoft365 Admin Center\n- Power Automate\n \nCurrent status: We’ve identified specific network paths as a focus area and are using diagnostic data from affected infrastructure to determine the source of impact and plan mitigation actions.\n \nScope of impact: Users accessing Microsoft 365 services through affected network paths in the North America region may be impacted.\n\nStart time: Thursday, July 23, 2026, at 2:44 PM UTC\n \nNext update by: Thursday, July 23, 2026, at 5:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-07-23T15:57:23.3Z",
+              "postType": "regular",
+              "content": "Title: Issues accessing or using Microsoft 365 services in the North America region. \n\nUser impact: Users may be experiencing issues accessing or using Microsoft 365 services in the North America region.\n\nMore info: We've confirmed that the issue may affect multiple Microsoft 365 services, including but not limited to:\n- SharePoint Online \n- Microsoft Teams\n- Microsoft365 Admin Center\n- Power Automate\n \nCurrent status: We’ve identified specific network paths as a focus area and are using diagnostic data from affected infrastructure to determine the source of impact and plan mitigation actions.\n \nScope of impact: Users accessing Microsoft 365 services through affected network paths in the North America region may be impacted.\n\nStart time: Thursday, July 23, 2026, at 2:44 PM UTC\n \nNext update by: Thursday, July 23, 2026, at 5:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-07-23T15:44:33.767Z",
+              "postType": "regular",
+              "content": "Title: Issues accessing or using Microsoft 365 services in the North America region\n\nUser impact: Users may be experiencing issues accessing or using Microsoft 365 services in the North America region.\n\nCurrent status: We are continuing our investigation and are reviewing recent changes for potential correlation while we analyze service telemetry and available diagnostic data.\n\nScope of impact: Users accessing Microsoft 365 services through affected network paths in the North America region may be impacted.\n \nStart time: Thursday, July 23, 2026, at 2:44 PM UTC\n\nNext update by: Thursday, July 23, 2026, at 5:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-07-23T15:15:50.177Z",
+              "postType": "regular",
+              "content": "Title: Investigating user reports of Microsoft 365 issues\n\nUser impact: We don't have detail on impact yet. We're seeing an increase in user reported issues above our alerting threshold.\n\nCurrent status: We are reviewing service telemetry and available information to determine if there is an issue happening and we'll update this message shortly with our latest findings.\n\nThis communication serves as a preliminary notification about a potential issue affecting your service. We'll provide an update in 30 minutes.\n "
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite",
+            "SharePoint Online",
+            "Microsoft OneDrive",
+            "Microsoft Teams",
+            "Microsoft Power Automate in Microsoft 365",
+            "Microsoft 365 Copilot Chat"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft Forms",
@@ -410,9 +642,65 @@
     },
     {
       "service": "Microsoft 365 Copilot Chat",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "CopilotChat",
-      "issues": []
+      "issues": [
+        {
+          "id": "MO1437424",
+          "title": "Issues accessing or using Microsoft 365 services in the North America region. ",
+          "startTime": "2026-07-23T15:06:42Z",
+          "endTime": null,
+          "lastModified": "2026-07-23T16:48:46.36Z",
+          "status": "serviceDegradation",
+          "severity": "incident",
+          "userImpact": "Users may be experiencing issues accessing or using Microsoft 365 services in the North America region.",
+          "scopeOfImpact": "Users accessing Microsoft 365 services through affected network paths in the North America region may be impacted.\n\nStart time: Thursday, July 23, 2026, at 2:44 PM UTC",
+          "rootCause": "",
+          "nextUpdateBy": "Thursday, July 23, 2026, at 6:00 PM UTC",
+          "feature": "Company or User Administration",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-07-23T16:47:24.187Z",
+              "postType": "regular",
+              "content": "Title: Issues accessing or using Microsoft 365 services in the North America region. \n\nUser impact: Users may be experiencing issues accessing or using Microsoft 365 services in the North America region.\n\nMore info: We've confirmed that multiple Microsoft 365 services are degraded, including but not limited to:\n-Microsoft OneDrive - Access to OneDrive is intermittent.\n-SharePoint Online - Error message, “Something went wrong”\n-Microsoft Teams - Degraded chat functionality, including images not loading.\n-Microsoft 365 Admin Center - Admin Center is loading slowly or not at all.\n-Power Automate - Automate flows not loading.\n-Copilot Chat - Intermittent delays or failures in any Copilot Chat action and query.\n-Microsoft Loop - Unable to open or load Loop pages.\n\nCurrent status: We performed traffic rerouting for some of the affected infrastructure and our initial telemetry indicates that these actions have contributed to partial recovery for some users. We're scaling up our rerouting efforts while continuing to evaluate additional mitigation actions.\n\nScope of impact: Users accessing Microsoft 365 services through affected network paths in the North America region may be impacted.\n\nStart time: Thursday, July 23, 2026, at 2:44 PM UTC\n\nNext update by: Thursday, July 23, 2026, at 6:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-07-23T16:18:22.45Z",
+              "postType": "quick",
+              "content": "We've identified alternate network paths and are validating the best next steps to improve service availability. We're continuing to monitor telemetry to assess whether we can take additional actions to expedite recovery for impacted users.\n \nThis quick update is designed to give the latest information on this issue.\n \nNext update by: Thursday, July 23, 2026, at 5:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-07-23T16:04:48.193Z",
+              "postType": "regular",
+              "content": "Title: Issues accessing or using Microsoft 365 services in the North America region. \n\nUser impact: Users may be experiencing issues accessing or using Microsoft 365 services in the North America region.\n\nMore info: We've confirmed that the issue may affect multiple Microsoft 365 services, including but not limited to:\n- OneDrive for Business\n- SharePoint Online \n- Microsoft Teams\n- Microsoft365 Admin Center\n- Power Automate\n \nCurrent status: We’ve identified specific network paths as a focus area and are using diagnostic data from affected infrastructure to determine the source of impact and plan mitigation actions.\n \nScope of impact: Users accessing Microsoft 365 services through affected network paths in the North America region may be impacted.\n\nStart time: Thursday, July 23, 2026, at 2:44 PM UTC\n \nNext update by: Thursday, July 23, 2026, at 5:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-07-23T15:57:23.3Z",
+              "postType": "regular",
+              "content": "Title: Issues accessing or using Microsoft 365 services in the North America region. \n\nUser impact: Users may be experiencing issues accessing or using Microsoft 365 services in the North America region.\n\nMore info: We've confirmed that the issue may affect multiple Microsoft 365 services, including but not limited to:\n- SharePoint Online \n- Microsoft Teams\n- Microsoft365 Admin Center\n- Power Automate\n \nCurrent status: We’ve identified specific network paths as a focus area and are using diagnostic data from affected infrastructure to determine the source of impact and plan mitigation actions.\n \nScope of impact: Users accessing Microsoft 365 services through affected network paths in the North America region may be impacted.\n\nStart time: Thursday, July 23, 2026, at 2:44 PM UTC\n \nNext update by: Thursday, July 23, 2026, at 5:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-07-23T15:44:33.767Z",
+              "postType": "regular",
+              "content": "Title: Issues accessing or using Microsoft 365 services in the North America region\n\nUser impact: Users may be experiencing issues accessing or using Microsoft 365 services in the North America region.\n\nCurrent status: We are continuing our investigation and are reviewing recent changes for potential correlation while we analyze service telemetry and available diagnostic data.\n\nScope of impact: Users accessing Microsoft 365 services through affected network paths in the North America region may be impacted.\n \nStart time: Thursday, July 23, 2026, at 2:44 PM UTC\n\nNext update by: Thursday, July 23, 2026, at 5:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-07-23T15:15:50.177Z",
+              "postType": "regular",
+              "content": "Title: Investigating user reports of Microsoft 365 issues\n\nUser impact: We don't have detail on impact yet. We're seeing an increase in user reported issues above our alerting threshold.\n\nCurrent status: We are reviewing service telemetry and available information to determine if there is an issue happening and we'll update this message shortly with our latest findings.\n\nThis communication serves as a preliminary notification about a potential issue affecting your service. We'll provide an update in 30 minutes.\n "
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite",
+            "SharePoint Online",
+            "Microsoft OneDrive",
+            "Microsoft Teams",
+            "Microsoft Power Automate in Microsoft 365",
+            "Microsoft 365 Copilot Chat"
+          ]
+        }
+      ]
     }
   ],
   "history": [
