@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-23T17:58:40.106Z",
+  "lastUpdated": "2026-07-23T18:28:48.108Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -79,16 +79,26 @@
           "title": "Issues accessing or using Microsoft 365 services in the North America region. ",
           "startTime": "2026-07-23T15:06:42Z",
           "endTime": null,
-          "lastModified": "2026-07-23T17:20:24.553Z",
+          "lastModified": "2026-07-23T18:09:29.847Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be experiencing issues accessing or using Microsoft 365 services in the North America region.",
-          "scopeOfImpact": "",
+          "scopeOfImpact": "Users accessing Microsoft 365 services through affected network paths in the North America region may be impacted. Users from other regions who are served by this infrastructure may also experience impact.\n\nStart time: Thursday, July 23, 2026, at 2:44 PM UTC",
           "rootCause": "",
-          "nextUpdateBy": "Thursday, July 23, 2026, at 6:00 PM UTC",
+          "nextUpdateBy": "Thursday, July 23, 2026, at 7:00 PM UTC",
           "feature": "Company or User Administration",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-07-23T18:05:19.233Z",
+              "postType": "regular",
+              "content": "Title: Issues accessing or using Microsoft 365 services in the North America region. \n\nUser impact: Users may be experiencing issues accessing or using Microsoft 365 services in the North America region.\n\nMore info: We've confirmed that the issue may affect multiple Microsoft 365 services, including but not limited to:\n- Microsoft OneDrive: Intermittent connection issues.\n- SharePoint Online: Intermittent connection issues. Some users are receiving “Something went wrong” errors.\n- Microsoft Teams: Degraded chat functionality, including images not loading. Additionally, real-time voice apps reporting and historical reporting are not functioning as expected.\n- Copilot Chat: Intermittent delays using Copilot Chat and failures in query actions.\n- Microsoft 365 Admin Center: Latency and intermittent inability to access features\n- Power Automate: Automate flows not loading.\n- Microsoft Loop: Unable to open or load Loop pages.\n- Microsoft Purview: Degraded Purview DLP Agent response time. eDiscovery and Data Security Investigations failures when submitting new jobs and delays in processing existing jobs.\n- Fabric/Power BI: Users in the West US region may encounter issues accessing Publish to Web reports. Some users in Europe and Asia Pacific regions may also be intermittently delayed when accessing Fabric artifacts due to service dependencies in West US.\n\nCurrent status: Our service telemetry indicates that rerouting traffic has provided some relief across affected services. We’re continuing to perform targeted traffic-routing actions while we revert the networking change mentioned in our last update. We're monitoring our telemetry and working directly with some impacted customers to ensure our actions are effectively addressing impact. We expect the configuration change reversion to complete by our next scheduled update, and we’re evaluating other pathways to expedite recovery. \n\nScope of impact: Users accessing Microsoft 365 services through affected network paths in the North America region may be impacted. Users from other regions who are served by this infrastructure may also experience impact.\n\nStart time: Thursday, July 23, 2026, at 2:44 PM UTC\n\nNext update by: Thursday, July 23, 2026, at 7:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-07-23T17:52:54.837Z",
+              "postType": "quick",
+              "content": "We've identified a recent network configuration change that may be contributing to impact. We're reverting this change in parallel to our ongoing traffic rerouting actions.\n\nThis quick update is designed to give the latest information on this issue."
+            },
             {
               "createdAt": "2026-07-23T17:04:04.227Z",
               "postType": "quick",
@@ -236,16 +246,26 @@
           "title": "Issues accessing or using Microsoft 365 services in the North America region. ",
           "startTime": "2026-07-23T15:06:42Z",
           "endTime": null,
-          "lastModified": "2026-07-23T17:20:24.553Z",
+          "lastModified": "2026-07-23T18:09:29.847Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be experiencing issues accessing or using Microsoft 365 services in the North America region.",
-          "scopeOfImpact": "",
+          "scopeOfImpact": "Users accessing Microsoft 365 services through affected network paths in the North America region may be impacted. Users from other regions who are served by this infrastructure may also experience impact.\n\nStart time: Thursday, July 23, 2026, at 2:44 PM UTC",
           "rootCause": "",
-          "nextUpdateBy": "Thursday, July 23, 2026, at 6:00 PM UTC",
+          "nextUpdateBy": "Thursday, July 23, 2026, at 7:00 PM UTC",
           "feature": "Company or User Administration",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-07-23T18:05:19.233Z",
+              "postType": "regular",
+              "content": "Title: Issues accessing or using Microsoft 365 services in the North America region. \n\nUser impact: Users may be experiencing issues accessing or using Microsoft 365 services in the North America region.\n\nMore info: We've confirmed that the issue may affect multiple Microsoft 365 services, including but not limited to:\n- Microsoft OneDrive: Intermittent connection issues.\n- SharePoint Online: Intermittent connection issues. Some users are receiving “Something went wrong” errors.\n- Microsoft Teams: Degraded chat functionality, including images not loading. Additionally, real-time voice apps reporting and historical reporting are not functioning as expected.\n- Copilot Chat: Intermittent delays using Copilot Chat and failures in query actions.\n- Microsoft 365 Admin Center: Latency and intermittent inability to access features\n- Power Automate: Automate flows not loading.\n- Microsoft Loop: Unable to open or load Loop pages.\n- Microsoft Purview: Degraded Purview DLP Agent response time. eDiscovery and Data Security Investigations failures when submitting new jobs and delays in processing existing jobs.\n- Fabric/Power BI: Users in the West US region may encounter issues accessing Publish to Web reports. Some users in Europe and Asia Pacific regions may also be intermittently delayed when accessing Fabric artifacts due to service dependencies in West US.\n\nCurrent status: Our service telemetry indicates that rerouting traffic has provided some relief across affected services. We’re continuing to perform targeted traffic-routing actions while we revert the networking change mentioned in our last update. We're monitoring our telemetry and working directly with some impacted customers to ensure our actions are effectively addressing impact. We expect the configuration change reversion to complete by our next scheduled update, and we’re evaluating other pathways to expedite recovery. \n\nScope of impact: Users accessing Microsoft 365 services through affected network paths in the North America region may be impacted. Users from other regions who are served by this infrastructure may also experience impact.\n\nStart time: Thursday, July 23, 2026, at 2:44 PM UTC\n\nNext update by: Thursday, July 23, 2026, at 7:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-07-23T17:52:54.837Z",
+              "postType": "quick",
+              "content": "We've identified a recent network configuration change that may be contributing to impact. We're reverting this change in parallel to our ongoing traffic rerouting actions.\n\nThis quick update is designed to give the latest information on this issue."
+            },
             {
               "createdAt": "2026-07-23T17:04:04.227Z",
               "postType": "quick",
@@ -339,16 +359,26 @@
           "title": "Issues accessing or using Microsoft 365 services in the North America region. ",
           "startTime": "2026-07-23T15:06:42Z",
           "endTime": null,
-          "lastModified": "2026-07-23T17:20:24.553Z",
+          "lastModified": "2026-07-23T18:09:29.847Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be experiencing issues accessing or using Microsoft 365 services in the North America region.",
-          "scopeOfImpact": "",
+          "scopeOfImpact": "Users accessing Microsoft 365 services through affected network paths in the North America region may be impacted. Users from other regions who are served by this infrastructure may also experience impact.\n\nStart time: Thursday, July 23, 2026, at 2:44 PM UTC",
           "rootCause": "",
-          "nextUpdateBy": "Thursday, July 23, 2026, at 6:00 PM UTC",
+          "nextUpdateBy": "Thursday, July 23, 2026, at 7:00 PM UTC",
           "feature": "Company or User Administration",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-07-23T18:05:19.233Z",
+              "postType": "regular",
+              "content": "Title: Issues accessing or using Microsoft 365 services in the North America region. \n\nUser impact: Users may be experiencing issues accessing or using Microsoft 365 services in the North America region.\n\nMore info: We've confirmed that the issue may affect multiple Microsoft 365 services, including but not limited to:\n- Microsoft OneDrive: Intermittent connection issues.\n- SharePoint Online: Intermittent connection issues. Some users are receiving “Something went wrong” errors.\n- Microsoft Teams: Degraded chat functionality, including images not loading. Additionally, real-time voice apps reporting and historical reporting are not functioning as expected.\n- Copilot Chat: Intermittent delays using Copilot Chat and failures in query actions.\n- Microsoft 365 Admin Center: Latency and intermittent inability to access features\n- Power Automate: Automate flows not loading.\n- Microsoft Loop: Unable to open or load Loop pages.\n- Microsoft Purview: Degraded Purview DLP Agent response time. eDiscovery and Data Security Investigations failures when submitting new jobs and delays in processing existing jobs.\n- Fabric/Power BI: Users in the West US region may encounter issues accessing Publish to Web reports. Some users in Europe and Asia Pacific regions may also be intermittently delayed when accessing Fabric artifacts due to service dependencies in West US.\n\nCurrent status: Our service telemetry indicates that rerouting traffic has provided some relief across affected services. We’re continuing to perform targeted traffic-routing actions while we revert the networking change mentioned in our last update. We're monitoring our telemetry and working directly with some impacted customers to ensure our actions are effectively addressing impact. We expect the configuration change reversion to complete by our next scheduled update, and we’re evaluating other pathways to expedite recovery. \n\nScope of impact: Users accessing Microsoft 365 services through affected network paths in the North America region may be impacted. Users from other regions who are served by this infrastructure may also experience impact.\n\nStart time: Thursday, July 23, 2026, at 2:44 PM UTC\n\nNext update by: Thursday, July 23, 2026, at 7:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-07-23T17:52:54.837Z",
+              "postType": "quick",
+              "content": "We've identified a recent network configuration change that may be contributing to impact. We're reverting this change in parallel to our ongoing traffic rerouting actions.\n\nThis quick update is designed to give the latest information on this issue."
+            },
             {
               "createdAt": "2026-07-23T17:04:04.227Z",
               "postType": "quick",
@@ -406,16 +436,21 @@
           "title": "Some users may not receive notifications in the Microsoft Teams desktop client",
           "startTime": "2026-07-23T11:10:28.387Z",
           "endTime": null,
-          "lastModified": "2026-07-23T17:22:53.363Z",
+          "lastModified": "2026-07-23T18:23:06.423Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may not receive notifications in the Microsoft Teams desktop client.",
           "scopeOfImpact": "Some users receiving incoming calls or messages and are expecting to receive notifications in the Microsoft Teams desktop client for Windows may be impacted. This information may be updated as our investigation continues.",
           "rootCause": "",
-          "nextUpdateBy": "Thursday, July 23, 2026, at 7:00 PM UTC",
+          "nextUpdateBy": "Thursday, July 23, 2026, at 10:00 PM UTC",
           "feature": "Calling",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-07-23T18:23:06.423Z",
+              "postType": "regular",
+              "content": "Title: Some users may not receive notifications in the Microsoft Teams desktop client\r\n\r\nUser impact: Users may not receive notifications in the Microsoft Teams desktop client.\r\n\r\nMore info: This issue appears to be specific to the Microsoft Teams desktop client for Windows. Some affected users may hear an incoming call ringtone but not receive the associated notification, while other affected users may not receive notifications for chat messages.\r\n\r\nCurrent status: We're continuing to deploy the configuration change to the subset of affected users, after which we'll test to confirm it was effective at remedating the impact.\r\n\r\nScope of impact: Some users receiving incoming calls or messages and are expecting to receive notifications in the Microsoft Teams desktop client for Windows may be impacted. This information may be updated as our investigation continues.\r\n\r\nNext update by: Thursday, July 23, 2026, at 10:00 PM UTC"
+            },
             {
               "createdAt": "2026-07-23T17:21:41.853Z",
               "postType": "regular",
@@ -456,16 +491,26 @@
           "title": "Issues accessing or using Microsoft 365 services in the North America region. ",
           "startTime": "2026-07-23T15:06:42Z",
           "endTime": null,
-          "lastModified": "2026-07-23T17:20:24.553Z",
+          "lastModified": "2026-07-23T18:09:29.847Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be experiencing issues accessing or using Microsoft 365 services in the North America region.",
-          "scopeOfImpact": "",
+          "scopeOfImpact": "Users accessing Microsoft 365 services through affected network paths in the North America region may be impacted. Users from other regions who are served by this infrastructure may also experience impact.\n\nStart time: Thursday, July 23, 2026, at 2:44 PM UTC",
           "rootCause": "",
-          "nextUpdateBy": "Thursday, July 23, 2026, at 6:00 PM UTC",
+          "nextUpdateBy": "Thursday, July 23, 2026, at 7:00 PM UTC",
           "feature": "Company or User Administration",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-07-23T18:05:19.233Z",
+              "postType": "regular",
+              "content": "Title: Issues accessing or using Microsoft 365 services in the North America region. \n\nUser impact: Users may be experiencing issues accessing or using Microsoft 365 services in the North America region.\n\nMore info: We've confirmed that the issue may affect multiple Microsoft 365 services, including but not limited to:\n- Microsoft OneDrive: Intermittent connection issues.\n- SharePoint Online: Intermittent connection issues. Some users are receiving “Something went wrong” errors.\n- Microsoft Teams: Degraded chat functionality, including images not loading. Additionally, real-time voice apps reporting and historical reporting are not functioning as expected.\n- Copilot Chat: Intermittent delays using Copilot Chat and failures in query actions.\n- Microsoft 365 Admin Center: Latency and intermittent inability to access features\n- Power Automate: Automate flows not loading.\n- Microsoft Loop: Unable to open or load Loop pages.\n- Microsoft Purview: Degraded Purview DLP Agent response time. eDiscovery and Data Security Investigations failures when submitting new jobs and delays in processing existing jobs.\n- Fabric/Power BI: Users in the West US region may encounter issues accessing Publish to Web reports. Some users in Europe and Asia Pacific regions may also be intermittently delayed when accessing Fabric artifacts due to service dependencies in West US.\n\nCurrent status: Our service telemetry indicates that rerouting traffic has provided some relief across affected services. We’re continuing to perform targeted traffic-routing actions while we revert the networking change mentioned in our last update. We're monitoring our telemetry and working directly with some impacted customers to ensure our actions are effectively addressing impact. We expect the configuration change reversion to complete by our next scheduled update, and we’re evaluating other pathways to expedite recovery. \n\nScope of impact: Users accessing Microsoft 365 services through affected network paths in the North America region may be impacted. Users from other regions who are served by this infrastructure may also experience impact.\n\nStart time: Thursday, July 23, 2026, at 2:44 PM UTC\n\nNext update by: Thursday, July 23, 2026, at 7:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-07-23T17:52:54.837Z",
+              "postType": "quick",
+              "content": "We've identified a recent network configuration change that may be contributing to impact. We're reverting this change in parallel to our ongoing traffic rerouting actions.\n\nThis quick update is designed to give the latest information on this issue."
+            },
             {
               "createdAt": "2026-07-23T17:04:04.227Z",
               "postType": "quick",
@@ -559,16 +604,26 @@
           "title": "Issues accessing or using Microsoft 365 services in the North America region. ",
           "startTime": "2026-07-23T15:06:42Z",
           "endTime": null,
-          "lastModified": "2026-07-23T17:20:24.553Z",
+          "lastModified": "2026-07-23T18:09:29.847Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be experiencing issues accessing or using Microsoft 365 services in the North America region.",
-          "scopeOfImpact": "",
+          "scopeOfImpact": "Users accessing Microsoft 365 services through affected network paths in the North America region may be impacted. Users from other regions who are served by this infrastructure may also experience impact.\n\nStart time: Thursday, July 23, 2026, at 2:44 PM UTC",
           "rootCause": "",
-          "nextUpdateBy": "Thursday, July 23, 2026, at 6:00 PM UTC",
+          "nextUpdateBy": "Thursday, July 23, 2026, at 7:00 PM UTC",
           "feature": "Company or User Administration",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-07-23T18:05:19.233Z",
+              "postType": "regular",
+              "content": "Title: Issues accessing or using Microsoft 365 services in the North America region. \n\nUser impact: Users may be experiencing issues accessing or using Microsoft 365 services in the North America region.\n\nMore info: We've confirmed that the issue may affect multiple Microsoft 365 services, including but not limited to:\n- Microsoft OneDrive: Intermittent connection issues.\n- SharePoint Online: Intermittent connection issues. Some users are receiving “Something went wrong” errors.\n- Microsoft Teams: Degraded chat functionality, including images not loading. Additionally, real-time voice apps reporting and historical reporting are not functioning as expected.\n- Copilot Chat: Intermittent delays using Copilot Chat and failures in query actions.\n- Microsoft 365 Admin Center: Latency and intermittent inability to access features\n- Power Automate: Automate flows not loading.\n- Microsoft Loop: Unable to open or load Loop pages.\n- Microsoft Purview: Degraded Purview DLP Agent response time. eDiscovery and Data Security Investigations failures when submitting new jobs and delays in processing existing jobs.\n- Fabric/Power BI: Users in the West US region may encounter issues accessing Publish to Web reports. Some users in Europe and Asia Pacific regions may also be intermittently delayed when accessing Fabric artifacts due to service dependencies in West US.\n\nCurrent status: Our service telemetry indicates that rerouting traffic has provided some relief across affected services. We’re continuing to perform targeted traffic-routing actions while we revert the networking change mentioned in our last update. We're monitoring our telemetry and working directly with some impacted customers to ensure our actions are effectively addressing impact. We expect the configuration change reversion to complete by our next scheduled update, and we’re evaluating other pathways to expedite recovery. \n\nScope of impact: Users accessing Microsoft 365 services through affected network paths in the North America region may be impacted. Users from other regions who are served by this infrastructure may also experience impact.\n\nStart time: Thursday, July 23, 2026, at 2:44 PM UTC\n\nNext update by: Thursday, July 23, 2026, at 7:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-07-23T17:52:54.837Z",
+              "postType": "quick",
+              "content": "We've identified a recent network configuration change that may be contributing to impact. We're reverting this change in parallel to our ongoing traffic rerouting actions.\n\nThis quick update is designed to give the latest information on this issue."
+            },
             {
               "createdAt": "2026-07-23T17:04:04.227Z",
               "postType": "quick",
@@ -680,16 +735,26 @@
           "title": "Issues accessing or using Microsoft 365 services in the North America region. ",
           "startTime": "2026-07-23T15:06:42Z",
           "endTime": null,
-          "lastModified": "2026-07-23T17:20:24.553Z",
+          "lastModified": "2026-07-23T18:09:29.847Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be experiencing issues accessing or using Microsoft 365 services in the North America region.",
-          "scopeOfImpact": "",
+          "scopeOfImpact": "Users accessing Microsoft 365 services through affected network paths in the North America region may be impacted. Users from other regions who are served by this infrastructure may also experience impact.\n\nStart time: Thursday, July 23, 2026, at 2:44 PM UTC",
           "rootCause": "",
-          "nextUpdateBy": "Thursday, July 23, 2026, at 6:00 PM UTC",
+          "nextUpdateBy": "Thursday, July 23, 2026, at 7:00 PM UTC",
           "feature": "Company or User Administration",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-07-23T18:05:19.233Z",
+              "postType": "regular",
+              "content": "Title: Issues accessing or using Microsoft 365 services in the North America region. \n\nUser impact: Users may be experiencing issues accessing or using Microsoft 365 services in the North America region.\n\nMore info: We've confirmed that the issue may affect multiple Microsoft 365 services, including but not limited to:\n- Microsoft OneDrive: Intermittent connection issues.\n- SharePoint Online: Intermittent connection issues. Some users are receiving “Something went wrong” errors.\n- Microsoft Teams: Degraded chat functionality, including images not loading. Additionally, real-time voice apps reporting and historical reporting are not functioning as expected.\n- Copilot Chat: Intermittent delays using Copilot Chat and failures in query actions.\n- Microsoft 365 Admin Center: Latency and intermittent inability to access features\n- Power Automate: Automate flows not loading.\n- Microsoft Loop: Unable to open or load Loop pages.\n- Microsoft Purview: Degraded Purview DLP Agent response time. eDiscovery and Data Security Investigations failures when submitting new jobs and delays in processing existing jobs.\n- Fabric/Power BI: Users in the West US region may encounter issues accessing Publish to Web reports. Some users in Europe and Asia Pacific regions may also be intermittently delayed when accessing Fabric artifacts due to service dependencies in West US.\n\nCurrent status: Our service telemetry indicates that rerouting traffic has provided some relief across affected services. We’re continuing to perform targeted traffic-routing actions while we revert the networking change mentioned in our last update. We're monitoring our telemetry and working directly with some impacted customers to ensure our actions are effectively addressing impact. We expect the configuration change reversion to complete by our next scheduled update, and we’re evaluating other pathways to expedite recovery. \n\nScope of impact: Users accessing Microsoft 365 services through affected network paths in the North America region may be impacted. Users from other regions who are served by this infrastructure may also experience impact.\n\nStart time: Thursday, July 23, 2026, at 2:44 PM UTC\n\nNext update by: Thursday, July 23, 2026, at 7:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-07-23T17:52:54.837Z",
+              "postType": "quick",
+              "content": "We've identified a recent network configuration change that may be contributing to impact. We're reverting this change in parallel to our ongoing traffic rerouting actions.\n\nThis quick update is designed to give the latest information on this issue."
+            },
             {
               "createdAt": "2026-07-23T17:04:04.227Z",
               "postType": "quick",
