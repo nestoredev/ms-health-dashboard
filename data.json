@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-23T15:27:55.409Z",
+  "lastUpdated": "2026-07-23T15:58:04.024Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -76,19 +76,24 @@
       "issues": [
         {
           "id": "MO1437424",
-          "title": "Investigating user reports of Microsoft 365 issues",
+          "title": "Issues accessing or using Microsoft 365 services in the North America region. ",
           "startTime": "2026-07-23T15:06:42Z",
           "endTime": null,
-          "lastModified": "2026-07-23T15:16:22.36Z",
-          "status": "investigating",
+          "lastModified": "2026-07-23T15:48:39.473Z",
+          "status": "serviceDegradation",
           "severity": "incident",
-          "userImpact": "We don't have detail on impact yet. We're seeing an increase in user reported issues above our alerting threshold.",
-          "scopeOfImpact": "",
+          "userImpact": "Users may be experiencing issues accessing or using Microsoft 365 services in the North America region.",
+          "scopeOfImpact": "Users accessing Microsoft 365 services through affected network paths in the North America region may be impacted.\n \nStart time: Thursday, July 23, 2026, at 2:44 PM UTC",
           "rootCause": "",
-          "nextUpdateBy": "",
+          "nextUpdateBy": "Thursday, July 23, 2026, at 5:00 PM UTC",
           "feature": "Company or User Administration",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-07-23T15:44:33.767Z",
+              "postType": "regular",
+              "content": "Title: Issues accessing or using Microsoft 365 services in the North America region\n\nUser impact: Users may be experiencing issues accessing or using Microsoft 365 services in the North America region.\n\nCurrent status: We are continuing our investigation and are reviewing recent changes for potential correlation while we analyze service telemetry and available diagnostic data.\n\nScope of impact: Users accessing Microsoft 365 services through affected network paths in the North America region may be impacted.\n \nStart time: Thursday, July 23, 2026, at 2:44 PM UTC\n\nNext update by: Thursday, July 23, 2026, at 5:00 PM UTC"
+            },
             {
               "createdAt": "2026-07-23T15:15:50.177Z",
               "postType": "regular",
