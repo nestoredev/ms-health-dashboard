@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-23T12:57:06.738Z",
+  "lastUpdated": "2026-07-23T13:27:14.966Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -217,9 +217,50 @@
     },
     {
       "service": "Microsoft Teams",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "microsoftteams",
-      "issues": []
+      "issues": [
+        {
+          "id": "TM1437339",
+          "title": "Some users may not receive notifications in the Microsoft Teams desktop client",
+          "startTime": "2026-07-23T11:10:28.387Z",
+          "endTime": null,
+          "lastModified": "2026-07-23T13:11:44.447Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may not receive notifications in the Microsoft Teams desktop client.",
+          "scopeOfImpact": "Some users expecting to receive notifications in the Microsoft Teams desktop client for Windows may be impacted.",
+          "rootCause": "",
+          "nextUpdateBy": "Thursday, July 23, 2026, at 3:00 PM UTC",
+          "feature": "Calling",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-07-23T13:11:05.623Z",
+              "postType": "regular",
+              "content": "Title: Some users may not receive notifications in the Microsoft Teams desktop client\r\n\r\nUser impact: Users may not receive notifications in the Microsoft Teams desktop client.\r\n\r\nMore info: This issue appears to be specific to the Microsoft Teams desktop client for Windows. Some affected users may hear an incoming call ringtone but not receive the associated notification, while other affected users may not receive notifications for chat messages.\r\n\r\nCurrent status: We're analyzing diagnostic data from a sample of affected users to investigate the root cause of the issue and identify a mitigation strategy. In parallel, we're reviewing recent Teams client updates to determine whether a recent change may be contributing to the impact.\r\n\r\nScope of impact: Some users expecting to receive notifications in the Microsoft Teams desktop client for Windows may be impacted.\r\n\r\nNext update by: Thursday, July 23, 2026, at 3:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-07-23T13:11:03.657Z",
+              "postType": "regular",
+              "content": "Title: Some users may not receive notifications in the Microsoft Teams desktop client\r\n\r\nUser impact: Users may not receive notifications in the Microsoft Teams desktop client.\r\n\r\nMore info: This issue appears to be specific to the Microsoft Teams desktop client for Windows. Some affected users may hear an incoming call ringtone but not receive the associated notification, while other affected users may not receive notifications for chat messages.\r\n\r\nCurrent status: We're analyzing diagnostic data from a sample of affected users to investigate the root cause of the issue and identify a mitigation strategy. In parallel, we're reviewing recent Teams client updates to determine whether a recent change may be contributing to the impact.\r\n\r\nScope of impact: Some users expecting to receive notifications in the Microsoft Teams desktop client for Windows may be impacted.\r\n\r\nNext update by: Thursday, July 23, 2026, at 3:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-07-23T12:27:27.67Z",
+              "postType": "regular",
+              "content": "Title: Some users may not see incoming call notifications in Microsoft Teams\r\n\r\nUser impact: Users may not see incoming call notifications in Microsoft Teams.\r\n\r\nMore info: Affected users may hear the incoming call ringtone but not see the incoming call notification toast. Reports indicate the issue occurs consistently for affected users and may result in missed calls, despite the incoming call reaching the client.\r\n\r\nCurrent status: We're analyzing diagnostic data from affected users and reviewing the results of ongoing testing. We've observed that one affected user no longer experiences the issue after reverting to an earlier version of the Teams desktop client. We're investigating the root cause of the issue, including whether it may be related to a recent Teams client update.\r\n\r\nScope of impact: Your organization is affected by this event, and some users attempting to receive incoming Microsoft Teams calls are impacted.\r\n\r\nNext update by: Thursday, July 23, 2026, at 2:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-07-23T11:12:06.61Z",
+              "postType": "regular",
+              "content": "Title: Some users may not see incoming call notifications in Microsoft Teams\r\n\r\nUser impact: Users may not see incoming call notifications in Microsoft Teams.\r\n\r\nMore info: Affected users may hear the incoming call ringtone but not see the incoming call notification toast. Reports indicate the issue occurs consistently for affected users and may result in missed calls, despite the incoming call reaching the client.\r\n\r\nCurrent status: We're reviewing client telemetry and diagnostic logs to identify what prevented the incoming call notification from appearing and to determine the next steps required to mitigate impact.\r\n\r\nScope of impact: Your organization is affected by this event, and some users attempting to receive incoming Microsoft Teams calls are impacted.\r\n\r\nNext update by: Thursday, July 23, 2026, at 1:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Teams"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft Bookings",
