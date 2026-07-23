@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-23T05:54:41.917Z",
+  "lastUpdated": "2026-07-23T06:24:49.673Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -319,43 +319,48 @@
     },
     {
       "service": "Microsoft 365 Copilot Chat",
-      "status": "serviceDegradation",
+      "status": "serviceOperational",
       "id": "CopilotChat",
-      "issues": [
-        {
-          "id": "CW1436954",
-          "title": "Some users may see an error when sending messages through the BizChat and the side BizChat pane in multiple M365 apps",
-          "startTime": "2026-07-23T03:19:34.423Z",
-          "endTime": null,
-          "lastModified": "2026-07-23T05:40:10.05Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Some users may see an error when sending messages through the BizChat and the side BizChat pane in multiple M365 apps.",
-          "scopeOfImpact": "Some users located in the Asia Pacific or South America regions sending messages from the BizChat side pane from an affected M365 app may see an error stating “something went wrong.”  This information may be updated as our investigation continues.",
-          "rootCause": "",
-          "nextUpdateBy": "Thursday, July 23, 2026, at 6:00 AM UTC",
-          "feature": "General",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-07-23T03:43:58.227Z",
-              "postType": "regular",
-              "content": "Title: Some users may see an error when sending messages through the BizChat side pane in multiple M365 apps\r\n\r\nUser impact: Some users may see an error when sending messages through the BizChat side pane in multiple M365 apps.\r\n\r\nMore info: Affected M363 apps include, but may not be limited to:\n \nOutlook on the web \nOutlook desktop\nMicrosoft Teams\n \nAffected users may see an error stating “something went wrong.”\r\n\r\nCurrent status: We're investigating a potential issue in which some users may see an error when sending messages through the BizChat side pane in Outlook on the web and Outlook desktop and checking for impact to your organization. We'll provide an update within 30 minutes.\r\n\r\nScope of impact: Some users located in the Asia Pacific or South America regions sending messages from the BizChat side pane from an affected M365 app may see an error stating “something went wrong.”  This information may be updated as our investigation continues.\r\n\r\nNext update by: Thursday, July 23, 2026, at 6:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-07-23T03:35:21.667Z",
-              "postType": "regular",
-              "content": "Title: Some users may receive an error when sending messages with the Microsoft Copilot Chat side pane\r\n\r\nUser impact: Users may receive an error when sending messages with the Microsoft Copilot Chat side pane.\r\n\r\nMore info: Specifically, when attempting to send messages within the Copilot Chat side pane in Outlook on the web and Outlook desktop users receive an error that states, “Something went wrong.”\r\n\r\nCurrent status: We're investigating a potential issue in which some users may see an error when sending messages through the Copilot Chat side pane in Outlook on the web and Outlook desktop and are checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Microsoft 365 Copilot Chat"
-          ]
-        }
-      ]
+      "issues": []
     }
   ],
   "history": [
+    {
+      "id": "CW1436954",
+      "title": "Some users may see an error when sending messages from BizChat and the BizChat side pane in Microsoft 365 apps.",
+      "startTime": "2026-07-23T03:19:34.423Z",
+      "endTime": "2026-07-23T06:11:58.313Z",
+      "lastModified": "2026-07-23T06:13:35.16Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Some users may have seen an error when sending messages from BizChat and the BizChat side pane in Microsoft 365 apps.",
+      "scopeOfImpact": "Some users located in the Asia Pacific or South America regions sending messages from BizChat and the BizChat side pane from an affected M365 app may have been impacted.\r\n\r\nStart time: Thursday, July 23, 2026, at 1:23 AM UTC\r\n\r\nEnd time: Thursday, July 23, 2026, at 4:38 AM UTC",
+      "rootCause": "A recent update intended to enable an updated AI model used to process chat requests and generate responses, Opus 4.8, caused an unexpected influx of service requests that led to the impact.\r\n\r\nNext steps: We’re reviewing our validation and updating procedures to better detect and prevent issues like this prior to deployment in the future.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "General",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-07-23T06:13:32.01Z",
+          "postType": "regular",
+          "content": "Title: Some users may see an error when sending messages from BizChat and the BizChat side pane in Microsoft 365 apps.\r\n\r\nUser impact: Some users may have seen an error when sending messages from BizChat and the BizChat side pane in Microsoft 365 apps.\r\n\r\nMore info: More info: Affected Microsoft 365 apps included:\nOutlook on the web \nOutlook desktop\nMicrosoft Teams\nAffected users may have seen an error stating “something went wrong.”\n \nThis issue affected users that had selected the Opus 4.8 model.\r\n\r\nFinal status: We’ve determined that a recent update intended to enable an updated AI model used to process chat requests and generate responses, Opus 4.8, caused an unexpected influx of service requests that led to the impact. We’ve reverted the offending update and confirmed from service telemetry that this issue is resolved.\r\n\r\nScope of impact: Some users located in the Asia Pacific or South America regions sending messages from BizChat and the BizChat side pane from an affected M365 app may have been impacted.\r\n\r\nStart time: Thursday, July 23, 2026, at 1:23 AM UTC\r\n\r\nEnd time: Thursday, July 23, 2026, at 4:38 AM UTC\r\n\r\nRoot cause: A recent update intended to enable an updated AI model used to process chat requests and generate responses, Opus 4.8, caused an unexpected influx of service requests that led to the impact.\r\n\r\nNext steps: We’re reviewing our validation and updating procedures to better detect and prevent issues like this prior to deployment in the future.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-07-23T03:43:58.227Z",
+          "postType": "regular",
+          "content": "Title: Some users may see an error when sending messages through the BizChat side pane in multiple M365 apps\r\n\r\nUser impact: Some users may see an error when sending messages through the BizChat side pane in multiple M365 apps.\r\n\r\nMore info: Affected M363 apps include, but may not be limited to:\n \nOutlook on the web \nOutlook desktop\nMicrosoft Teams\n \nAffected users may see an error stating “something went wrong.”\r\n\r\nCurrent status: We're investigating a potential issue in which some users may see an error when sending messages through the BizChat side pane in Outlook on the web and Outlook desktop and checking for impact to your organization. We'll provide an update within 30 minutes.\r\n\r\nScope of impact: Some users located in the Asia Pacific or South America regions sending messages from the BizChat side pane from an affected M365 app may see an error stating “something went wrong.”  This information may be updated as our investigation continues.\r\n\r\nNext update by: Thursday, July 23, 2026, at 6:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-07-23T03:35:21.667Z",
+          "postType": "regular",
+          "content": "Title: Some users may receive an error when sending messages with the Microsoft Copilot Chat side pane\r\n\r\nUser impact: Users may receive an error when sending messages with the Microsoft Copilot Chat side pane.\r\n\r\nMore info: Specifically, when attempting to send messages within the Copilot Chat side pane in Outlook on the web and Outlook desktop users receive an error that states, “Something went wrong.”\r\n\r\nCurrent status: We're investigating a potential issue in which some users may see an error when sending messages through the Copilot Chat side pane in Outlook on the web and Outlook desktop and are checking for impact to your organization. We'll provide an update within 30 minutes."
+        }
+      ],
+      "serviceName": "Microsoft 365 Copilot Chat",
+      "affectedServices": [
+        "Microsoft 365 Copilot Chat"
+      ]
+    },
     {
       "id": "TM1436888",
       "title": "Admins may be unable to enforce Data Loss Prevention (DLP) policies in Microsoft Teams",
