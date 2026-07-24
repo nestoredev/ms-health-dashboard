@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-24T02:00:55.261Z",
+  "lastUpdated": "2026-07-24T02:31:02.706Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -222,9 +222,50 @@
     },
     {
       "service": "Microsoft Teams",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "microsoftteams",
-      "issues": []
+      "issues": [
+        {
+          "id": "TM1437780",
+          "title": "Some users may be unable to join or create Microsoft Teams meetings or calls",
+          "startTime": "2026-07-24T00:54:54Z",
+          "endTime": null,
+          "lastModified": "2026-07-24T02:18:31.383Z",
+          "status": "serviceDegradation",
+          "severity": "incident",
+          "userImpact": "Users may be unable to join or create Microsoft Teams meetings or calls.",
+          "scopeOfImpact": "Any Microsoft Teams users in the Asia-Pacific region may be impacted when attempting to create or join meetings or calls. This information may be updated as our investigation continues.\n\nStart time: Friday, July 24, 2026, at 12:25 AM UTC",
+          "rootCause": "",
+          "nextUpdateBy": "Friday, July 24, 2026, at 3:00 AM UTC",
+          "feature": "Meetings",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-07-24T01:59:17.363Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to join or create Microsoft Teams meetings or calls\n\nUser impact: Users may be unable to join or create Microsoft Teams meetings or calls.\n\nMore info: According to our initial impact analysis, the following scenarios are among those most impacted:\n-Transcriptions\n-1:1 Calling\n-Group calling\n-Meeting join\n-Meeting scheduling and creation\n-Public switched telephone network (PSTN) calls\n\nCurrent status: Our telemetry affirms that the impacted scenarios are nearly recovered. In parallel, we're recursively reviewing the health of the overall service environment, including dependent networking components, to better understand the cause and determine whether any mitigation actions are required to ensure the service remains healthy and available to users. In the interim, users' calls and meetings which were previously affected may need to be ended and restarted to see recovery. \n\nScope of impact: Any Microsoft Teams users in the Asia-Pacific region may be impacted when attempting to create or join meetings or calls. This information may be updated as our investigation continues.\n\nStart time: Friday, July 24, 2026, at 12:25 AM UTC\n\nNext update by: Friday, July 24, 2026, at 3:00 AM UTC"
+            },
+            {
+              "createdAt": "2026-07-24T01:39:49.383Z",
+              "postType": "quick",
+              "content": "While we're observing recovery across a majority of affected scenarios, we're closely analyzing the service telemetry to isolate the source of the issue and ensure withstanding recovery. \n\nThis quick update is designed to give the latest information on this issue."
+            },
+            {
+              "createdAt": "2026-07-24T01:26:59.88Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to join or create Microsoft Teams meetings or calls\n\nUser impact: Users may be unable to join or create Microsoft Teams meetings or calls.\n\nMore info: According to our initial impact analysis, the following scenarios are among those most impacted:\n-Transcriptions\n-1:1 Calling\n-Group calling\n-Meeting join\n-Meeting scheduling and creation\n-Public switched telephone network (PSTN) calls\n\nCurrent status: We're investigating a potential networking issue which we suspect is associated with the impact, and we're working to identify the most expeditious mitigation approach.\n\nScope of impact: Any Microsoft Teams users may be impacted when attempting to create or join meetings or calls. \n\nNext update by: Friday, July 24, 2026, at 2:00 AM UTC"
+            },
+            {
+              "createdAt": "2026-07-24T01:02:55.477Z",
+              "postType": "regular",
+              "content": "Title: We're investigating a potential issue with Microsoft Teams\n\nUser impact: Users are reporting issues joining Microsoft Teams meetings.\n\nCurrent status: We're investigating a potential issue which is preventing users from joining Microsoft Teams meetings and/or is causing disconnections, and we're checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Teams"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft Bookings",
