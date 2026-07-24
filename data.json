@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-24T18:44:48.782Z",
+  "lastUpdated": "2026-07-24T19:14:56.973Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -210,35 +210,9 @@
     },
     {
       "service": "Microsoft Intune",
-      "status": "investigating",
+      "status": "serviceOperational",
       "id": "Intune",
-      "issues": [
-        {
-          "id": "IT1438439",
-          "title": "Intune admins may intermittently be unable to complete actions that require Multi Admin Approval",
-          "startTime": "2026-07-24T18:17:20.123Z",
-          "endTime": null,
-          "lastModified": "2026-07-24T18:28:33.553Z",
-          "status": "investigating",
-          "severity": "advisory",
-          "userImpact": "Intune admins may intermittently be unable to complete actions that require Multi Admin Approval.",
-          "scopeOfImpact": "",
-          "rootCause": "",
-          "nextUpdateBy": "",
-          "feature": "Microsoft Intune",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-07-24T18:28:33.553Z",
-              "postType": "regular",
-              "content": "Title: Intune admins may intermittently be unable to complete actions that require Multi Admin Approval\r\n\r\nUser impact: Intune admins may intermittently be unable to complete actions that require Multi Admin Approval.\r\n\r\nCurrent status: We're investigating a potential issue with completing actions that require Multi Admin Approval and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Microsoft Intune"
-          ]
-        }
-      ]
+      "issues": []
     },
     {
       "service": "Microsoft OneDrive",
