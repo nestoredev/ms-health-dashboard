@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-24T22:15:50.218Z",
+  "lastUpdated": "2026-07-24T22:45:58.165Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -81,23 +81,28 @@
       "issues": [
         {
           "id": "MO1438482",
-          "title": "Some admins may see inaccurate status information in the service health section in the Microsoft admin center",
+          "title": "Some admins may see inaccurate status information in the service health section in the Microsoft 365 admin center",
           "startTime": "2026-07-24T20:13:54Z",
           "endTime": null,
-          "lastModified": "2026-07-24T21:52:06.123Z",
+          "lastModified": "2026-07-24T22:25:00.73Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "userImpact": "Admins may see inaccurate status information in the service health section in the Microsoft admin center.",
-          "scopeOfImpact": "Admins in the West US, UK South, and France Central regions attempting to view the accurate status of incident and advisory communications in the Microsoft admin center may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, July 21, 2026, at 7:45 PM UTC",
-          "rootCause": "A code defect introduced by a recent deployment to the Microsoft admin center caused the systems to resolve status conflicts by severity rather than status change was made resulted in the status showing as active instead of resolved for some communications.",
-          "nextUpdateBy": "Friday, July 24, 2026, at 10:30 PM UTC",
+          "userImpact": "Admins may see inaccurate status information in the service health section in the Microsoft 365 admin center.",
+          "scopeOfImpact": "Admins in the West US, UK South, and France Central regions attempting to view the accurate status of incident and advisory communications in the Microsoft 365 admin center may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, July 21, 2026, at 7:45 PM UTC",
+          "rootCause": "A code defect introduced by a recent deployment to the Microsoft 365 admin center caused the systems to resolve status conflicts by severity rather than status change was made resulted in the status showing as active instead of resolved for some communications.",
+          "nextUpdateBy": "Saturday, July 25, 2026, at 8:00 PM UTC",
           "feature": "Company or User Administration",
           "isResolved": false,
           "posts": [
             {
+              "createdAt": "2026-07-24T22:24:09.237Z",
+              "postType": "regular",
+              "content": "Title: Some admins may see inaccurate status information in the service health section in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see inaccurate status information in the service health section in the Microsoft 365 admin center.\r\n\r\nMore info: Specifically, admins may see resolved incidents and advisories incorrectly displayed as active.\r\n\r\nCurrent status: We're continuing to monitor the reversion of the responsible deployment to remediate the impact and expect this process to complete for all remaining impacted admins by our next scheduled update.\r\n\r\nScope of impact: Admins in the West US, UK South, and France Central regions attempting to view the accurate status of incident and advisory communications in the Microsoft 365 admin center may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, July 21, 2026, at 7:45 PM UTC\r\n\r\nRoot cause: A code defect introduced by a recent deployment to the Microsoft 365 admin center caused the systems to resolve status conflicts by severity rather than status change was made resulted in the status showing as active instead of resolved for some communications.\r\n\r\nNext update by: Saturday, July 25, 2026, at 8:00 PM UTC"
+            },
+            {
               "createdAt": "2026-07-24T20:48:09.047Z",
               "postType": "regular",
-              "content": "Title: Some admins may see inaccurate status information in the service health section in the Microsoft admin center\r\n\r\nUser impact: Admins may see inaccurate status information in the service health section in the Microsoft admin center.\r\n\r\nMore info: Specifically, admins may see resolved incidents and advisories incorrectly displayed as active.\r\n\r\nCurrent status: We've identified that a code defect was introduced by a recent deployment to the service health feature of the Microsoft admin center which caused the systems to resolve status conflicts by severity rather than how recent a status change was made, resulting in the impact. We're reverting the offending deployment to remediate the impact, which completed for a majority of admins.\r\n\r\nScope of impact: Admins in the West US, UK South, and France Central regions attempting to view the accurate status of incident and advisory communications in the Microsoft admin center may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, July 21, 2026, at 7:45 PM UTC\r\n\r\nRoot cause: A code defect introduced by a recent deployment to the Microsoft admin center caused the systems to resolve status conflicts by severity rather than status change was made resulted in the status showing as active instead of resolved for some communications.\r\n\r\nNext update by: Friday, July 24, 2026, at 10:30 PM UTC"
+              "content": "Title: Some admins may see inaccurate status information in the service health section in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see inaccurate status information in the service health section in the Microsoft 365 admin center.\r\n\r\nMore info: Specifically, admins may see resolved incidents and advisories incorrectly displayed as active.\r\n\r\nCurrent status: We've identified that a code defect was introduced by a recent deployment to the service health feature of the Microsoft admin center which caused the systems to resolve status conflicts by severity rather than how recent a status change was made, resulting in the impact. We're reverting the offending deployment to remediate the impact, which completed for a majority of admins.\r\n\r\nScope of impact: Admins in the West US, UK South, and France Central regions attempting to view the accurate status of incident and advisory communications in the Microsoft 365 admin center may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, July 21, 2026, at 7:45 PM UTC\r\n\r\nRoot cause: A code defect introduced by a recent deployment to the Microsoft 365 admin center caused the systems to resolve status conflicts by severity rather than status change was made resulted in the status showing as active instead of resolved for some communications.\r\n\r\nNext update by: Friday, July 24, 2026, at 10:30 PM UTC"
             }
           ],
           "affectedServices": [
@@ -342,7 +347,7 @@
     },
     {
       "service": "Microsoft Purview",
-      "status": "investigating",
+      "status": "serviceDegradation",
       "id": "Purview",
       "issues": [
         {
@@ -350,16 +355,21 @@
           "title": "Admins may not receive alerts for Microsoft Purview Communication Compliance policies that contain conditions",
           "startTime": "2026-07-24T21:56:40.497Z",
           "endTime": null,
-          "lastModified": "2026-07-24T22:04:25.28Z",
-          "status": "investigating",
+          "lastModified": "2026-07-24T22:29:29.3Z",
+          "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may not receive alerts for Microsoft Purview Communication Compliance policies that contain conditions. ",
-          "scopeOfImpact": "",
+          "scopeOfImpact": "This issue may affect any admin.",
           "rootCause": "",
-          "nextUpdateBy": "",
+          "nextUpdateBy": "Saturday, July 25, 2026, at 12:30 AM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-07-24T22:29:06.883Z",
+              "postType": "regular",
+              "content": "Title: Admins may not receive alerts for Microsoft Purview Communication Compliance policies that contain conditions\r\n\r\nUser impact: Admins may not receive alerts for Microsoft Purview Communication Compliance policies that contain conditions. \r\n\r\nMore info: As a result of this issue, admins should not create or update any Microsoft Purview Communication Compliance policies that contain conditions to avoid becoming impacted. \r\n\r\nCurrent status: We're investigating a recent change which we suspect is responsible for impact to confirm our theory and determine next steps for impact remediation. \r\n\r\nScope of impact: This issue may affect any admin. \r\n\r\nNext update by: Saturday, July 25, 2026, at 12:30 AM UTC"
+            },
             {
               "createdAt": "2026-07-24T22:04:25.28Z",
               "postType": "regular",
