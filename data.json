@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-24T21:15:32.632Z",
+  "lastUpdated": "2026-07-24T21:45:41.794Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -76,14 +76,14 @@
       "issues": [
         {
           "id": "MO1438482",
-          "title": "Admins may see inaccurate status information in the service health section in the Microsoft admin center",
-          "startTime": "2026-07-24T20:13:54.33Z",
+          "title": "Some admins may see inaccurate status information in the service health section in the Microsoft admin center",
+          "startTime": "2026-07-24T20:13:54Z",
           "endTime": null,
-          "lastModified": "2026-07-24T20:48:09.047Z",
+          "lastModified": "2026-07-24T21:26:31.5Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may see inaccurate status information in the service health section in the Microsoft admin center.",
-          "scopeOfImpact": "Admins attempting to view the accurate status of incident and advisory communications in the Microsoft admin center may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, July 21, 2026, at 7:45 PM UTC",
+          "scopeOfImpact": "Some admins in the West US and UK South regions attempting to view the accurate status of incident and advisory communications in the Microsoft admin center may be impacted. This information may be updated as our investigation continues.\n\nStart time: Tuesday, July 21, 2026, at 7:45 PM UTC",
           "rootCause": "A code defect introduced by a recent deployment to the Microsoft admin center caused the systems to resolve status conflicts by severity rather than status change was made resulted in the status showing as active instead of resolved for some communications.",
           "nextUpdateBy": "Friday, July 24, 2026, at 10:30 PM UTC",
           "feature": "Company or User Administration",
@@ -92,7 +92,7 @@
             {
               "createdAt": "2026-07-24T20:48:09.047Z",
               "postType": "regular",
-              "content": "Title: Admins may see inaccurate status information in the service health section in the Microsoft admin center\r\n\r\nUser impact: Admins may see inaccurate status information in the service health section in the Microsoft admin center.\r\n\r\nMore info: Specifically, admins may see resolved incidents and advisories incorrectly displayed as active.\r\n\r\nCurrent status: We've identified that a code defect was introduced by a recent deployment to the service health feature of the Microsoft admin center which caused the systems to resolve status conflicts by severity rather than how recent a status change was made, resulting in the impact. We're reverting the offending deployment to remediate the impact, which completed for a majority of admins.\r\n\r\nScope of impact: Admins attempting to view the accurate status of incident and advisory communications in the Microsoft admin center may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, July 21, 2026, at 7:45 PM UTC\r\n\r\nRoot cause: A code defect introduced by a recent deployment to the Microsoft admin center caused the systems to resolve status conflicts by severity rather than status change was made resulted in the status showing as active instead of resolved for some communications.\r\n\r\nNext update by: Friday, July 24, 2026, at 10:30 PM UTC"
+              "content": "Title: Some admins may see inaccurate status information in the service health section in the Microsoft admin center\n\nUser impact: Admins may see inaccurate status information in the service health section in the Microsoft admin center.\n\nMore info: Specifically, admins may see resolved incidents and advisories incorrectly displayed as active.\n\nCurrent status: We've identified that a code defect was introduced by a recent deployment to the service health feature of the Microsoft admin center which caused the systems to resolve status conflicts by severity rather than how recent a status change was made, resulting in the impact. We're reverting the offending deployment to remediate the impact, which completed for a majority of admins.\n\nScope of impact: Some admins in the West US and UK South regions attempting to view the accurate status of incident and advisory communications in the Microsoft admin center may be impacted. This information may be updated as our investigation continues.\n\nStart time: Tuesday, July 21, 2026, at 7:45 PM UTC\n\nRoot cause: A code defect introduced by a recent deployment to the Microsoft admin center caused the systems to resolve status conflicts by severity rather than status change was made resulted in the status showing as active instead of resolved for some communications.\n\nNext update by: Friday, July 24, 2026, at 10:30 PM UTC"
             }
           ],
           "affectedServices": [
@@ -430,13 +430,13 @@
     {
       "id": "TM1437339",
       "title": "Some users may not receive notifications in the Microsoft Teams desktop client",
-      "startTime": "2026-07-17T06:41:00Z",
+      "startTime": "2026-07-15T23:34:00Z",
       "endTime": "2026-07-23T20:30:00Z",
-      "lastModified": "2026-07-24T02:32:52.423Z",
+      "lastModified": "2026-07-24T21:37:11.763Z",
       "status": "serviceRestored",
       "severity": "advisory",
       "userImpact": "Users may have not received notifications in the Microsoft Teams desktop client.",
-      "scopeOfImpact": "Some users who received incoming calls or messages and who were expecting to receive notifications in the Microsoft Teams desktop client for Windows may have been impacted. \n\nStart time: Friday, July 17, 2026, at 6:41 AM UTC\n\nEnd time: Thursday, July 23, 2026, at 8:30 PM UTC",
+      "scopeOfImpact": "Some users who received incoming calls or messages and who were expecting to receive notifications in the Microsoft Teams desktop client for Windows may have been impacted. \n\nStart time: Wednesday, July 15, 2026, at 11:34 PM UTC\n\nEnd time: Thursday, July 23, 2026, at 8:30 PM UTC",
       "rootCause": "A recent configuration change intended to address a parallel impact changed the behavior of the notification window, which resulted in notifications not being displayed as expected.\n\nNext steps: - We've deployed a pre-emptive remediation which will ensure that users do not see service interruptions when receiving this update.\n- We're continuing to optimize our deployment pipeline to ensure that similar issues do not reoccur.\n\nThis is the final update for the event.",
       "nextUpdateBy": "",
       "feature": "Calling",
@@ -445,7 +445,7 @@
         {
           "createdAt": "2026-07-24T01:26:32.16Z",
           "postType": "regular",
-          "content": "Title: Some users may not receive notifications in the Microsoft Teams desktop client\n\nUser impact: Users may not receive notifications in the Microsoft Teams desktop client.\n\nMore info: This issue appeared to be specific to the Microsoft Teams desktop client for Windows. Some affected users may have heard an incoming call ringtone but not received the associated notification, while other affected users may have not received notifications for chat messages.\n\nFinal status: We've confirmed that deployment of both of our remediation efforts completed for all affected users and the offending configuration change was reverted. We monitored this solution as it progressed and verified that impact was resolved by our actions. \n\nScope of impact: Some users who received incoming calls or messages and who were expecting to receive notifications in the Microsoft Teams desktop client for Windows may have been impacted. \n\nStart time: Friday, July 17, 2026, at 6:41 AM UTC\n\nEnd time: Thursday, July 23, 2026, at 8:30 PM UTC\n\nRoot cause: A recent configuration change intended to address a parallel impact changed the behavior of the notification window, which resulted in notifications not being displayed as expected.\n\nNext steps: - We've deployed a pre-emptive remediation which will ensure that users do not see service interruptions when receiving this update.\n- We're continuing to optimize our deployment pipeline to ensure that similar issues do not reoccur.\n\nThis is the final update for the event."
+          "content": "Title: Some users may not receive notifications in the Microsoft Teams desktop client\n\nUser impact: Users may not receive notifications in the Microsoft Teams desktop client.\n\nMore info: This issue appeared to be specific to the Microsoft Teams desktop client for Windows. Some affected users may have heard an incoming call ringtone but not received the associated notification, while other affected users may have not received notifications for chat messages.\n\nFinal status: We've confirmed that deployment of both of our remediation efforts completed for all affected users and the offending configuration change was reverted. We monitored this solution as it progressed and verified that impact was resolved by our actions. \n\nScope of impact: Some users who received incoming calls or messages and who were expecting to receive notifications in the Microsoft Teams desktop client for Windows may have been impacted. \n\nStart time: Wednesday, July 15, 2026, at 11:34 PM UTC\n\nEnd time: Thursday, July 23, 2026, at 8:30 PM UTC\n\nRoot cause: A recent configuration change intended to address a parallel impact changed the behavior of the notification window, which resulted in notifications not being displayed as expected.\n\nNext steps: - We've deployed a pre-emptive remediation which will ensure that users do not see service interruptions when receiving this update.\n- We're continuing to optimize our deployment pipeline to ensure that similar issues do not reoccur.\n\nThis is the final update for the event."
         },
         {
           "createdAt": "2026-07-23T21:44:24.423Z",
