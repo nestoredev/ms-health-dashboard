@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-25T04:47:42.217Z",
+  "lastUpdated": "2026-07-25T05:17:50.080Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -355,16 +355,21 @@
           "title": "Admins may not receive alerts for Microsoft Purview Communication Compliance policies that contain conditions",
           "startTime": "2026-07-24T21:56:40.497Z",
           "endTime": null,
-          "lastModified": "2026-07-25T02:01:24.82Z",
+          "lastModified": "2026-07-25T04:56:37.783Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may not receive alerts for Microsoft Purview Communication Compliance policies that contain conditions. ",
           "scopeOfImpact": "This issue may affect any admin. This section may be updated as the investigation continues.",
           "rootCause": "",
-          "nextUpdateBy": "Saturday, July 25, 2026, at 3:30 AM UTC",
+          "nextUpdateBy": "Saturday, July 25, 2026, at 5:00 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-07-25T04:55:19.463Z",
+              "postType": "regular",
+              "content": "Title: Admins may not receive alerts for Microsoft Purview Communication Compliance policies that contain conditions\n\nUser impact: Admins may not receive alerts for Microsoft Purview Communication Compliance policies that contain conditions. \n\nMore info: As a result of this issue, admins should not create or update any Microsoft Purview Communication Compliance policies that contain conditions to avoid becoming impacted. Additionally, Data Loss Prevention (DLP) policy changes in Microsoft Purview may not take effect as expected until the issue is resolved.\n \nCurrent status: We’re continuing to apply a set of configuration changes to ensure that further impact is prevented and anticipate that these changes will take effect prior to our next scheduled update.  Additionally, we’re continuing our efforts to initiate the deployment of the corrective service change to address the issues within the aforementioned recent change which we suspect is responsible for causing this issue.\n \nScope of impact: This issue may affect any admin. This section may be updated as the investigation continues.\n \nNext update by: Saturday, July 25, 2026, at 5:00 PM UTC"
+            },
             {
               "createdAt": "2026-07-25T01:18:15.77Z",
               "postType": "regular",
