@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-27T09:32:53.797Z",
+  "lastUpdated": "2026-07-27T10:03:02.793Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -317,75 +317,9 @@
     },
     {
       "service": "Microsoft Purview",
-      "status": "serviceDegradation",
+      "status": "serviceOperational",
       "id": "Purview",
-      "issues": [
-        {
-          "id": "MP1438577",
-          "title": "Admins may not receive alerts for Microsoft Purview Communication Compliance policies that contain conditions",
-          "startTime": "2026-07-24T21:56:40.497Z",
-          "endTime": null,
-          "lastModified": "2026-07-27T06:23:24.513Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Admins may not receive alerts for Microsoft Purview Communication Compliance policies that contain conditions. ",
-          "scopeOfImpact": "This issue may affect any admin. This section may be updated as the investigation continues.\r\n\r\nEstimated time to resolve: We anticipate impact to be resolved by Monday, July 27, 2026, at 10:00 AM UTC.",
-          "rootCause": "",
-          "nextUpdateBy": "Monday, July 27, 2026, at 10:00 AM UTC",
-          "feature": "General",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-07-27T06:23:24.513Z",
-              "postType": "regular",
-              "content": "Title: Admins may not receive alerts for Microsoft Purview Communication Compliance policies that contain conditions\r\n\r\nUser impact: Admins may not receive alerts for Microsoft Purview Communication Compliance policies that contain conditions. \r\n\r\nMore info: As a result of this issue, admins should not create or update any Microsoft Purview Communication Compliance policies that contain conditions to avoid becoming impacted. Additionally, Data Loss Prevention (DLP) policy changes in Microsoft Purview may not take effect as expected until the issue is resolved.\r\n\r\nCurrent status: We've completed the deployment of the configuration changes and corrective service updates to the affected service environment and we're monitoring to ensure it has the desired effect of resolving impact.\r\n\r\nScope of impact: This issue may affect any admin. This section may be updated as the investigation continues.\r\n\r\nEstimated time to resolve: We anticipate impact to be resolved by Monday, July 27, 2026, at 10:00 AM UTC.\r\n\r\nNext update by: Monday, July 27, 2026, at 10:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-07-26T22:09:44.6Z",
-              "postType": "regular",
-              "content": "Title: Admins may not receive alerts for Microsoft Purview Communication Compliance policies that contain conditions\r\n\r\nUser impact: Admins may not receive alerts for Microsoft Purview Communication Compliance policies that contain conditions. \r\n\r\nMore info: As a result of this issue, admins should not create or update any Microsoft Purview Communication Compliance policies that contain conditions to avoid becoming impacted. Additionally, Data Loss Prevention (DLP) policy changes in Microsoft Purview may not take effect as expected until the issue is resolved.\r\n\r\nCurrent status: We've completed validations of our configuration changes and corrective service updates and have initiated deployment to the affected service environment. We anticipate the deployment to be completed by our next scheduled update.\r\n\r\nScope of impact: This issue may affect any admin. This section may be updated as the investigation continues.\r\n\r\nEstimated time to resolve: We anticipate impact to be resolved by Monday, July 27, 2026, at 7:00 AM UTC.\r\n\r\nNext update by: Monday, July 27, 2026, at 7:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-07-26T15:37:23.393Z",
-              "postType": "regular",
-              "content": "Title: Admins may not receive alerts for Microsoft Purview Communication Compliance policies that contain conditions\r\n\r\nUser impact: Admins may not receive alerts for Microsoft Purview Communication Compliance policies that contain conditions. \r\n\r\nMore info: As a result of this issue, admins should not create or update any Microsoft Purview Communication Compliance policies that contain conditions to avoid becoming impacted. Additionally, Data Loss Prevention (DLP) policy changes in Microsoft Purview may not take effect as expected until the issue is resolved.\r\n\r\nCurrent status: We're continuing to prepare the configuration changes and corrective service updates for deployment, and our latest estimate is that we expect to complete the deployment by the time of our next communication update.\r\n\r\nScope of impact: This issue may affect any admin. This section may be updated as the investigation continues.\r\n\r\nNext update by: Monday, July 27, 2026, at 12:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-07-25T15:16:16.98Z",
-              "postType": "regular",
-              "content": "Title: Admins may not receive alerts for Microsoft Purview Communication Compliance policies that contain conditions\r\n\r\nUser impact: Admins may not receive alerts for Microsoft Purview Communication Compliance policies that contain conditions. \r\n\r\nMore info: As a result of this issue, admins should not create or update any Microsoft Purview Communication Compliance policies that contain conditions to avoid becoming impacted. Additionally, Data Loss Prevention (DLP) policy changes in Microsoft Purview may not take effect as expected until the issue is resolved.\r\n\r\nCurrent status: The configuration changes and corrective service updates is taking longer than initially expected to apply, as we work to validate that the alterations won't cause any further problems within the service.\r\n\r\nScope of impact: This issue may affect any admin. This section may be updated as the investigation continues.\r\n\r\nNext update by: Sunday, July 26, 2026, at 5:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-07-25T04:55:19.463Z",
-              "postType": "regular",
-              "content": "Title: Admins may not receive alerts for Microsoft Purview Communication Compliance policies that contain conditions\n\nUser impact: Admins may not receive alerts for Microsoft Purview Communication Compliance policies that contain conditions. \n\nMore info: As a result of this issue, admins should not create or update any Microsoft Purview Communication Compliance policies that contain conditions to avoid becoming impacted. Additionally, Data Loss Prevention (DLP) policy changes in Microsoft Purview may not take effect as expected until the issue is resolved.\n \nCurrent status: We’re continuing to apply a set of configuration changes to ensure that further impact is prevented and anticipate that these changes will take effect prior to our next scheduled update.  Additionally, we’re continuing our efforts to initiate the deployment of the corrective service change to address the issues within the aforementioned recent change which we suspect is responsible for causing this issue.\n \nScope of impact: This issue may affect any admin. This section may be updated as the investigation continues.\n \nNext update by: Saturday, July 25, 2026, at 5:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-07-25T01:18:15.77Z",
-              "postType": "regular",
-              "content": "Title: Admins may not receive alerts for Microsoft Purview Communication Compliance policies that contain conditions\n\nUser impact: Admins may not receive alerts for Microsoft Purview Communication Compliance policies that contain conditions. \n\nMore info: As a result of this issue, admins should not create or update any Microsoft Purview Communication Compliance policies that contain conditions to avoid becoming impacted. Additionally, Data Loss Prevention (DLP) policy changes in Microsoft Purview may not take effect as expected until the issue is resolved.\n \nCurrent status: We're in the process of deploying a corrective service change to address the issues within the aforementioned recent change which we suspect is responsible for impact. We anticipate that these actions will validate our theory and determine whether additional troubleshooting actions will be necessary.\n \nScope of impact: This issue may affect any admin. This section may be updated as the investigation continues.\n \nNext update by: Saturday, July 25, 2026, at 3:30 AM UTC"
-            },
-            {
-              "createdAt": "2026-07-25T00:22:57.753Z",
-              "postType": "regular",
-              "content": "Title: Admins may not receive alerts for Microsoft Purview Communication Compliance policies that contain conditions\n\nUser impact: Admins may not receive alerts for Microsoft Purview Communication Compliance policies that contain conditions. \n\nMore info: As a result of this issue, admins should not create or update any Microsoft Purview Communication Compliance policies that contain conditions to avoid becoming impacted.\n \nCurrent status: We're continuing our analysis on the recent change which we suspect is responsible for impact to validate our theory and cultivate our next troubleshooting actions. \n \nScope of impact: This issue may affect any admin. This section may be updated as the investigation continues.\n \nNext update by: Saturday, July 25, 2026, at 2:30 AM UTC"
-            },
-            {
-              "createdAt": "2026-07-24T22:29:06.883Z",
-              "postType": "regular",
-              "content": "Title: Admins may not receive alerts for Microsoft Purview Communication Compliance policies that contain conditions\n\nUser impact: Admins may not receive alerts for Microsoft Purview Communication Compliance policies that contain conditions. \n\nMore info: As a result of this issue, admins should not create or update any Microsoft Purview Communication Compliance policies that contain conditions to avoid becoming impacted. \n\nCurrent status: We're investigating a recent change which we suspect is responsible for impact to confirm our theory and determine next steps for impact remediation. \n\nScope of impact: This issue may affect any admin. This section may be updated as the investigation continues.\n\nNext update by: Saturday, July 25, 2026, at 12:30 AM UTC"
-            },
-            {
-              "createdAt": "2026-07-24T22:04:25.28Z",
-              "postType": "regular",
-              "content": "Title: Admins may not receive alerts for Microsoft Purview Communication Compliance policies that contain conditions\r\n\r\nUser impact: Admins may not receive alerts for Microsoft Purview Communication Compliance policies that contain conditions. \r\n\r\nMore info: As a result of this issue, admins should not create or update any Microsoft Purview Communication Compliance policies that contain conditions to avoid becoming impacted. \r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Purview and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Microsoft Purview"
-          ]
-        }
-      ]
+      "issues": []
     },
     {
       "service": "Microsoft Clipchamp ",
@@ -401,6 +335,52 @@
     }
   ],
   "history": [
+    {
+      "id": "MP1438577",
+      "title": "Admins may not have received alerts for Microsoft Purview Communication Compliance policies that contain conditions",
+      "startTime": "2026-07-21T02:00:00Z",
+      "endTime": "2026-07-27T06:30:00Z",
+      "lastModified": "2026-07-27T09:53:04.523Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Admins may not have received alerts for Microsoft Purview Communication Compliance policies that contain conditions.",
+      "scopeOfImpact": "This issue may have affected any admin.\r\n\r\nStart time: Tuesday, July 21, 2026, at 2:00 AM UTC\r\n\r\nEnd time: Monday, July 27, 2026, at 9:52 AM UTC",
+      "rootCause": "An unintended side effect of a policy management engine change caused the \"contains words and phrases\" condition to fail in newly created or edited policies, resulting in missed policy matches.\r\n\r\nNext steps: We're reviewing our policy management change procedure to help prevent this problem from happening again.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "General",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-07-27T09:52:45.187Z",
+          "postType": "regular",
+          "content": "Title: Admins may not have received alerts for Microsoft Purview Communication Compliance policies that contain conditions\r\n\r\nUser impact: Admins may not have received alerts for Microsoft Purview Communication Compliance policies that contain conditions.\r\n\r\nMore info: As a result of this issue, admins shouldn't have created or updated any Microsoft Purview Communication Compliance policies that contained conditions to avoid becoming impacted. Additionally, Data Loss Prevention (DLP) policy changes in Microsoft Purview may have not taken effect as expected until the issue was resolved.\r\n\r\nFinal status: We've monitored the affected service environment and confirmed that impact is no longer occurring.\r\n\r\nScope of impact: This issue may have affected any admin.\r\n\r\nStart time: Tuesday, July 21, 2026, at 2:00 AM UTC\r\n\r\nEnd time: Monday, July 27, 2026, at 9:52 AM UTC\r\n\r\nRoot cause: An unintended side effect of a policy management engine change caused the \"contains words and phrases\" condition to fail in newly created or edited policies, resulting in missed policy matches.\r\n\r\nNext steps: We're reviewing our policy management change procedure to help prevent this problem from happening again.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-07-27T06:23:24.513Z",
+          "postType": "regular",
+          "content": "Title: Admins may not receive alerts for Microsoft Purview Communication Compliance policies that contain conditions\r\n\r\nUser impact: Admins may not receive alerts for Microsoft Purview Communication Compliance policies that contain conditions. \r\n\r\nMore info: As a result of this issue, admins should not create or update any Microsoft Purview Communication Compliance policies that contain conditions to avoid becoming impacted. Additionally, Data Loss Prevention (DLP) policy changes in Microsoft Purview may not take effect as expected until the issue is resolved.\r\n\r\nCurrent status: We've completed the deployment of the configuration changes and corrective service updates to the affected service environment and we're monitoring to ensure it has the desired effect of resolving impact.\r\n\r\nScope of impact: This issue may affect any admin. This section may be updated as the investigation continues.\r\n\r\nEstimated time to resolve: We anticipate impact to be resolved by Monday, July 27, 2026, at 10:00 AM UTC.\r\n\r\nNext update by: Monday, July 27, 2026, at 10:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-07-26T22:09:44.6Z",
+          "postType": "regular",
+          "content": "Title: Admins may not receive alerts for Microsoft Purview Communication Compliance policies that contain conditions\r\n\r\nUser impact: Admins may not receive alerts for Microsoft Purview Communication Compliance policies that contain conditions. \r\n\r\nMore info: As a result of this issue, admins should not create or update any Microsoft Purview Communication Compliance policies that contain conditions to avoid becoming impacted. Additionally, Data Loss Prevention (DLP) policy changes in Microsoft Purview may not take effect as expected until the issue is resolved.\r\n\r\nCurrent status: We've completed validations of our configuration changes and corrective service updates and have initiated deployment to the affected service environment. We anticipate the deployment to be completed by our next scheduled update.\r\n\r\nScope of impact: This issue may affect any admin. This section may be updated as the investigation continues.\r\n\r\nEstimated time to resolve: We anticipate impact to be resolved by Monday, July 27, 2026, at 7:00 AM UTC.\r\n\r\nNext update by: Monday, July 27, 2026, at 7:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-07-26T15:37:23.393Z",
+          "postType": "regular",
+          "content": "Title: Admins may not receive alerts for Microsoft Purview Communication Compliance policies that contain conditions\r\n\r\nUser impact: Admins may not receive alerts for Microsoft Purview Communication Compliance policies that contain conditions. \r\n\r\nMore info: As a result of this issue, admins should not create or update any Microsoft Purview Communication Compliance policies that contain conditions to avoid becoming impacted. Additionally, Data Loss Prevention (DLP) policy changes in Microsoft Purview may not take effect as expected until the issue is resolved.\r\n\r\nCurrent status: We're continuing to prepare the configuration changes and corrective service updates for deployment, and our latest estimate is that we expect to complete the deployment by the time of our next communication update.\r\n\r\nScope of impact: This issue may affect any admin. This section may be updated as the investigation continues.\r\n\r\nNext update by: Monday, July 27, 2026, at 12:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-07-25T15:16:16.98Z",
+          "postType": "regular",
+          "content": "Title: Admins may not receive alerts for Microsoft Purview Communication Compliance policies that contain conditions\r\n\r\nUser impact: Admins may not receive alerts for Microsoft Purview Communication Compliance policies that contain conditions. \r\n\r\nMore info: As a result of this issue, admins should not create or update any Microsoft Purview Communication Compliance policies that contain conditions to avoid becoming impacted. Additionally, Data Loss Prevention (DLP) policy changes in Microsoft Purview may not take effect as expected until the issue is resolved.\r\n\r\nCurrent status: The configuration changes and corrective service updates is taking longer than initially expected to apply, as we work to validate that the alterations won't cause any further problems within the service.\r\n\r\nScope of impact: This issue may affect any admin. This section may be updated as the investigation continues.\r\n\r\nNext update by: Sunday, July 26, 2026, at 5:00 PM UTC"
+        }
+      ],
+      "serviceName": "Microsoft Purview",
+      "affectedServices": [
+        "Microsoft Purview"
+      ]
+    },
     {
       "id": "MO1438482",
       "title": "Some admins may see inaccurate status information in the service health section in the Microsoft 365 admin center",
