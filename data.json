@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-27T22:37:07.700Z",
+  "lastUpdated": "2026-07-27T23:07:15.661Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -23,16 +23,21 @@
           "title": "Some users may be unable to share files with external recipients through SharePoint Online and Microsoft OneDrive",
           "startTime": "2026-07-27T14:10:34.93Z",
           "endTime": null,
-          "lastModified": "2026-07-27T19:18:11.53Z",
+          "lastModified": "2026-07-27T22:33:41.96Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to share files with external recipients through SharePoint Online and OneDrive.",
           "scopeOfImpact": "Some users attempting to share files with external recipients through SharePoint Online and OneDrive may be impacted.",
           "rootCause": "",
-          "nextUpdateBy": "Monday, July 27, 2026, at 9:30 PM UTC",
+          "nextUpdateBy": "Tuesday, July 28, 2026, at 12:30 AM UTC",
           "feature": "Company or User Administration",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-07-27T22:33:41.96Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to share files with external recipients through SharePoint Online and Microsoft OneDrive\r\n\r\nUser impact: Users may be unable to share files with external recipients through SharePoint Online and OneDrive.\r\n\r\nMore info: Affected users may be unable to send external sharing invitations from SharePoint Online sites and OneDrive locations, despite external sharing being enabled at both the tenant and site levels.\r\n\r\nCurrent status: We're continuing our investigation into associated configuration changes in parallel with analyzing recent network trace logs from a portion of affected users in order to determine the next steps for remediation.\r\n\r\nScope of impact: Some users attempting to share files with external recipients through SharePoint Online and OneDrive may be impacted.\r\n\r\nNext update by: Tuesday, July 28, 2026, at 12:30 AM UTC"
+            },
             {
               "createdAt": "2026-07-27T19:18:11.53Z",
               "postType": "regular",
@@ -504,16 +509,21 @@
       "title": "Some users may be unable to join or create Microsoft Teams meetings or calls",
       "startTime": "2026-07-24T00:25:00Z",
       "endTime": "2026-07-24T01:27:00Z",
-      "lastModified": "2026-07-27T20:46:08.063Z",
-      "status": "serviceRestored",
+      "lastModified": "2026-07-27T22:36:11.607Z",
+      "status": "postIncidentReviewPublished",
       "severity": "incident",
       "userImpact": "Users may be unable to join or create Microsoft Teams meetings or calls.",
-      "scopeOfImpact": "Any Microsoft Teams users in the Asia-Pacific region may have been impacted when attempting to create or join meetings or calls.\n\nStart time: Friday, July 24, 2026, at 12:25 AM UTC\n\nEnd time: Friday, July 24, 2026, at 1:27 AM UTC\n\nPreliminary",
-      "rootCause": "A recent change associated with our ongoing service resilience efforts overloaded our traffic management processes and caused impact.\n\nNext steps: \n- We're conducting an analysis of the recent service configuration change to gain additional clarity into the root cause and identify any further measures we can enact to enhance infrastructure safeguards and avoid the recurrence of this issue.\n\nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days.",
+      "scopeOfImpact": "",
+      "rootCause": "",
       "nextUpdateBy": "",
       "feature": "Meetings",
       "isResolved": true,
       "posts": [
+        {
+          "createdAt": "2026-07-27T22:36:11.607Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        },
         {
           "createdAt": "2026-07-24T03:08:49.513Z",
           "postType": "regular",
@@ -533,11 +543,6 @@
           "createdAt": "2026-07-24T01:26:59.88Z",
           "postType": "regular",
           "content": "Title: Some users may be unable to join or create Microsoft Teams meetings or calls\n\nUser impact: Users may be unable to join or create Microsoft Teams meetings or calls.\n\nMore info: According to our initial impact analysis, the following scenarios are among those most impacted:\n-Transcriptions\n-1:1 Calling\n-Group calling\n-Meeting join\n-Meeting scheduling and creation\n-Public switched telephone network (PSTN) calls\n\nCurrent status: We're investigating a potential networking issue which we suspect is associated with the impact, and we're working to identify the most expeditious mitigation approach.\n\nScope of impact: Any Microsoft Teams users may be impacted when attempting to create or join meetings or calls. \n\nNext update by: Friday, July 24, 2026, at 2:00 AM UTC"
-        },
-        {
-          "createdAt": "2026-07-24T01:02:55.477Z",
-          "postType": "regular",
-          "content": "Title: We're investigating a potential issue with Microsoft Teams\n\nUser impact: Users are reporting issues joining Microsoft Teams meetings.\n\nCurrent status: We're investigating a potential issue which is preventing users from joining Microsoft Teams meetings and/or is causing disconnections, and we're checking for impact to your organization. We'll provide an update within 30 minutes."
         }
       ],
       "serviceName": "Microsoft Teams",
@@ -596,16 +601,21 @@
       "title": "Issues accessing or using Microsoft 365 services routed through the North America region. ",
       "startTime": "2026-07-23T14:44:00Z",
       "endTime": "2026-07-23T18:26:00Z",
-      "lastModified": "2026-07-23T22:37:00.133Z",
-      "status": "serviceRestored",
+      "lastModified": "2026-07-27T22:53:46.68Z",
+      "status": "postIncidentReviewPublished",
       "severity": "incident",
       "userImpact": "Users may have experienced issues accessing or using Microsoft 365 services routed through the North America region.",
-      "scopeOfImpact": "Users accessing Microsoft 365 services through affected network paths in the North America region may have been impacted. Users from other regions who were served by this infrastructure may also have experienced impact.\n\nStart time: Thursday, July 23, 2026, at 2:44 PM UTC\n\nEnd time: Thursday, July 23, 2026, at 6:26 PM UTC\n\nPreliminary",
-      "rootCause": "A recent update to a portion of network infrastructure in the US West region introduced a misconfiguration which interrupted the process by which IP ranges connect requests with downstream services, leading to impact.\n\nNext steps:\n-We’re assessing our traffic routing change processes to ensure similar changes don’t introduce future issues.\n\nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days.",
+      "scopeOfImpact": "",
+      "rootCause": "",
       "nextUpdateBy": "",
       "feature": "Company or User Administration",
       "isResolved": true,
       "posts": [
+        {
+          "createdAt": "2026-07-27T22:53:46.68Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        },
         {
           "createdAt": "2026-07-23T20:05:38.507Z",
           "postType": "regular",
@@ -625,11 +635,6 @@
           "createdAt": "2026-07-23T18:05:19.233Z",
           "postType": "regular",
           "content": "Title: Issues accessing or using Microsoft 365 services routed through the North America region. \n\nUser impact: Users experiencing issues accessing or using Microsoft 365 services routed through the North America region.\n\nMore info: We've confirmed that the issue may affect multiple Microsoft 365 services, including but not limited to:\n- Microsoft OneDrive: Intermittent connection issues.\n- SharePoint Online: Intermittent connection issues. Some users are receiving “Something went wrong” errors.\n- Microsoft Teams: Degraded chat functionality, including images not loading. Additionally, real-time voice apps reporting and historical reporting are not functioning as expected.\n- Copilot Chat: Intermittent delays using Copilot Chat and failures in query actions.\n- Microsoft 365 Admin Center: Latency and intermittent inability to access features\n- Power Automate: Automate flows not loading.\n- Microsoft Loop: Unable to open or load Loop pages.\n- Microsoft Purview: Degraded Purview DLP Agent response time. eDiscovery and Data Security Investigations failures when submitting new jobs and delays in processing existing jobs.\n- Fabric/Power BI: Users in the West US region may encounter issues accessing Publish to Web reports. Some users in Europe and Asia Pacific regions may also be intermittently delayed when accessing Fabric artifacts due to service dependencies in West US.\n-Power Apps: Users may experience some issues accessing the Power Apps Portal and may also experience Canvas Apps not loading and data sources failing to connect.\n-Copilot Studio: Users may be unable to load the Copilot Studio Portal and data sources may also fail to connect.\n-Windows 365: Users may be unable to select a non-English (United States) language for their Cloud PC post provisioning. They can try reprovisioning and language selection again and it may succeed on retry.\n\nCurrent status: Our service telemetry indicates that rerouting traffic has provided some relief across affected services. We’re continuing to perform targeted traffic-routing actions while we revert the networking change mentioned in our last update. We're monitoring our telemetry and working directly with some impacted customers to ensure our actions are effectively addressing impact. We expect the configuration change reversion to complete by our next scheduled update, and we’re evaluating other pathways to expedite recovery. \n\nScope of impact: Users accessing Microsoft 365 services through affected network paths in the North America region may be impacted. Users from other regions who are served by this infrastructure may also experience impact.\n\nStart time: Thursday, July 23, 2026, at 2:44 PM UTC\n\nNext update by: Thursday, July 23, 2026, at 7:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-07-23T17:52:54.837Z",
-          "postType": "quick",
-          "content": "We've identified a recent network configuration change that may be contributing to impact. We're reverting this change in parallel to our ongoing traffic rerouting actions.\n\nThis quick update is designed to give the latest information on this issue."
         }
       ],
       "serviceName": "Microsoft 365 suite",
