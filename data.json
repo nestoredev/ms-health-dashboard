@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-28T08:10:17.775Z",
+  "lastUpdated": "2026-07-28T08:40:31.632Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -216,19 +216,24 @@
       "issues": [
         {
           "id": "TM1441044",
-          "title": "Users' email messages sent to Microsoft Teams channel email addresses may not display the correct formatting",
+          "title": "Users' email messages sent to Microsoft Teams channels may not be formatted correctly",
           "startTime": "2026-07-28T01:36:53.87Z",
           "endTime": null,
-          "lastModified": "2026-07-28T07:12:39.7Z",
+          "lastModified": "2026-07-28T08:21:46.493Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "userImpact": "Users' email messages sent to Microsoft Teams channel email addresses may not display the correct formatting.",
-          "scopeOfImpact": "Some users' email messages sent to Microsoft Teams channel email addresses may not display the correct formatting. This section may be updated as our investigation continues.",
+          "userImpact": "Users' email messages sent to Microsoft Teams channels may not be formatted correctly.",
+          "scopeOfImpact": "Some users sending plain text email messages to Microsoft Teams channel email addresses may be impacted.",
           "rootCause": "",
-          "nextUpdateBy": "Tuesday, July 28, 2026, at 9:00 AM UTC",
+          "nextUpdateBy": "Wednesday, July 29, 2026, at 9:00 AM UTC",
           "feature": "Teams and Channels",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-07-28T08:21:27.453Z",
+              "postType": "regular",
+              "content": "Title: Users' email messages sent to Microsoft Teams channels may not be formatted correctly\r\n\r\nUser impact: Users' email messages sent to Microsoft Teams channels may not be formatted correctly.\r\n\r\nMore info: Specifically, line breaks in the email messages may be missing when sent to Microsoft Teams channel email addresses, displaying as a single block of text in the channel. This issue affects plain text messages; HTML-formatted messages aren't affected.\r\n\r\nCurrent status: We're awaiting confirmation from a sample of affected users that reverting the aforementioned update successfully resolved the issue. New email messages sent to Microsoft Teams channels are expected to display correctly following the revert; however, messages processed before the revert aren't expected to be corrected retrospectively.\r\n\r\nScope of impact: Some users sending plain text email messages to Microsoft Teams channel email addresses may be impacted.\r\n\r\nNext update by: Wednesday, July 29, 2026, at 9:00 AM UTC"
+            },
             {
               "createdAt": "2026-07-28T05:28:11.473Z",
               "postType": "regular",
