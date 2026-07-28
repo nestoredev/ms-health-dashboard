@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-28T14:12:22.233Z",
+  "lastUpdated": "2026-07-28T14:42:31.989Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -57,36 +57,6 @@
               "createdAt": "2026-07-27T14:14:16.57Z",
               "postType": "regular",
               "content": "Title: Some users are unable to share files with external recipients through SharePoint Online and Microsoft OneDrive\r\n\r\nUser impact: Users are unable to share files with external recipients through SharePoint Online and OneDrive.\r\n\r\nMore info: Affected users are unable to send external sharing invitations from SharePoint Online sites and OneDrive locations, despite external sharing being enabled at both the tenant and site levels.\r\n\r\nCurrent status: We're reviewing HTTP Archive (HAR) files alongside API call patterns to help identify the root cause and next steps required to mitigate impact.\r\n\r\nScope of impact: Your organization is affected by this event, and some users attempting to share files with external recipients through SharePoint Online and OneDrive are impacted. This information may be updated as our investigation continues.\r\n\r\nNext update by: Monday, July 27, 2026, at 7:30 PM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Microsoft 365 suite"
-          ]
-        },
-        {
-          "id": "MO1441391",
-          "title": "Admins can't locate or disable the MailerLite and Miro connectors in the Microsoft 365 admin center ",
-          "startTime": "2026-07-28T11:09:22.82Z",
-          "endTime": null,
-          "lastModified": "2026-07-28T13:19:12.623Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Admins can't locate or disable the MailerLite and Miro connectors in the Microsoft 365 admin center. ",
-          "scopeOfImpact": "Impact is specific to admins attempting to manage or disable the affected MailerLite and Miro connectors within the Microsoft 365 admin center. This section may be updated as our investigation continues. \r\n\r\nStart time: Thursday, July 23, 2026, at 1:00 PM UTC",
-          "rootCause": "",
-          "nextUpdateBy": "Tuesday, July 28, 2026, at 3:30 PM UTC",
-          "feature": "Company or User Administration",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-07-28T13:19:03.057Z",
-              "postType": "regular",
-              "content": "Title: Admins can't locate or disable the MailerLite and Miro connectors in the Microsoft 365 admin center \r\n\r\nUser impact: Admins can't locate or disable the MailerLite and Miro connectors in the Microsoft 365 admin center. \r\n\r\nMore info: The MailerLite and Miro connectors remain available to users in Microsoft Copilot; however, affected admins may be unable to locate these connectors within the Microsoft 365 admin center when attempting to manage, restrict, or disable them. \r\n\r\nCurrent status: We're continuing to deploy configuration changes to restore the expected visibility and manageability of the affected connectors within the Microsoft 365 admin center. We expect deployment of these changes to be completed by our next scheduled update. \r\n\r\nScope of impact: Impact is specific to admins attempting to manage or disable the affected MailerLite and Miro connectors within the Microsoft 365 admin center. This section may be updated as our investigation continues. \r\n\r\nStart time: Thursday, July 23, 2026, at 1:00 PM UTC\r\n\r\nNext update by: Tuesday, July 28, 2026, at 3:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-07-28T11:12:42.93Z",
-              "postType": "regular",
-              "content": "Title: Admins can't locate or disable the MailerLite and Miro connectors in the Microsoft 365 admin center \r\n\r\nUser impact: Admins can't locate or disable the MailerLite and Miro connectors in the Microsoft 365 admin center. \r\n\r\nMore info: The MailerLite and Miro connectors remain available to users in Microsoft Copilot; however, affected admins may be unable to locate these connectors within the Microsoft 365 admin center when attempting to manage, restrict, or disable them. \r\n\r\nCurrent status: We're investigating an issue affecting connector management in the Microsoft 365 admin center. We've reproduced the behavior and have initiated configuration changes to restore the expected management experience for the affected connectors. As part of this effort, we're reverting recent changes and applying updated configuration changes to help ensure both connectors can be managed as expected. \r\n\r\nScope of impact: Impact is specific to admins attempting to manage or disable the affected MailerLite and Miro connectors within the Microsoft 365 admin center. This section may be updated as our investigation continues. \r\n\r\nNext update by: Tuesday, July 28, 2026, at 1:30 PM UTC"
             }
           ],
           "affectedServices": [
@@ -476,6 +446,42 @@
     }
   ],
   "history": [
+    {
+      "id": "MO1441391",
+      "title": "Admins couldn't locate or disable the MailerLite and Miro connectors in the Microsoft 365 admin center ",
+      "startTime": "2026-07-28T11:09:22.82Z",
+      "endTime": "2026-07-28T12:44:00Z",
+      "lastModified": "2026-07-28T14:28:16.997Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Admins couldn't locate or disable the MailerLite and Miro connectors in the Microsoft 365 admin center. ",
+      "scopeOfImpact": "Impact was specific to admins attempting to manage or disable the affected MailerLite and Miro connectors within the Microsoft 365 admin center. \r\n\r\nStart time: Thursday, July 23, 2026, at 1:00 PM UTC\r\n\r\nEnd time: Tuesday, July 28, 2026, at 12:44 PM UTC",
+      "rootCause": "A recent configuration change introduced to optimize connector manifest management and improve performance affected how connector metadata was surfaced after connector configuration data was reorganized into separate groupings, which resulted in impact. \r\n\r\nNext steps: \n- We're reviewing our configuration change and related validation procedures to help prevent similar problems in the future.  \r\n\r\nthis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Company or User Administration",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-07-28T14:27:53.633Z",
+          "postType": "regular",
+          "content": "Title: Admins couldn't locate or disable the MailerLite and Miro connectors in the Microsoft 365 admin center \r\n\r\nUser impact: Admins couldn't locate or disable the MailerLite and Miro connectors in the Microsoft 365 admin center. \r\n\r\nMore info: The MailerLite and Miro connectors remained available to users in Microsoft Copilot; however, affected admins were unable to locate these connectors within the Microsoft 365 admin center when attempting to manage, restrict, or disable them. \r\n\r\nFinal status: We've determined that a recent configuration change introduced to optimize connector manifest management and improve performance affected how connector metadata was surfaced after connector configuration data was reorganized into separate groupings, resulting in the MailerLite and Miro connectors not appearing as expected for administrative management. We've confirmed that deployment of our corrective changes have completed and normal service functionality has been restored.\r\n\r\nScope of impact: Impact was specific to admins attempting to manage or disable the affected MailerLite and Miro connectors within the Microsoft 365 admin center. \r\n\r\nStart time: Thursday, July 23, 2026, at 1:00 PM UTC\r\n\r\nEnd time: Tuesday, July 28, 2026, at 12:44 PM UTC\r\n\r\nRoot cause: A recent configuration change introduced to optimize connector manifest management and improve performance affected how connector metadata was surfaced after connector configuration data was reorganized into separate groupings, which resulted in impact. \r\n\r\nNext steps: \n- We're reviewing our configuration change and related validation procedures to help prevent similar problems in the future.  \r\n\r\nthis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-07-28T13:19:03.057Z",
+          "postType": "regular",
+          "content": "Title: Admins can't locate or disable the MailerLite and Miro connectors in the Microsoft 365 admin center \r\n\r\nUser impact: Admins can't locate or disable the MailerLite and Miro connectors in the Microsoft 365 admin center. \r\n\r\nMore info: The MailerLite and Miro connectors remain available to users in Microsoft Copilot; however, affected admins may be unable to locate these connectors within the Microsoft 365 admin center when attempting to manage, restrict, or disable them. \r\n\r\nCurrent status: We're continuing to deploy configuration changes to restore the expected visibility and manageability of the affected connectors within the Microsoft 365 admin center. We expect deployment of these changes to be completed by our next scheduled update. \r\n\r\nScope of impact: Impact is specific to admins attempting to manage or disable the affected MailerLite and Miro connectors within the Microsoft 365 admin center. This section may be updated as our investigation continues. \r\n\r\nStart time: Thursday, July 23, 2026, at 1:00 PM UTC\r\n\r\nNext update by: Tuesday, July 28, 2026, at 3:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-07-28T11:12:42.93Z",
+          "postType": "regular",
+          "content": "Title: Admins can't locate or disable the MailerLite and Miro connectors in the Microsoft 365 admin center \r\n\r\nUser impact: Admins can't locate or disable the MailerLite and Miro connectors in the Microsoft 365 admin center. \r\n\r\nMore info: The MailerLite and Miro connectors remain available to users in Microsoft Copilot; however, affected admins may be unable to locate these connectors within the Microsoft 365 admin center when attempting to manage, restrict, or disable them. \r\n\r\nCurrent status: We're investigating an issue affecting connector management in the Microsoft 365 admin center. We've reproduced the behavior and have initiated configuration changes to restore the expected management experience for the affected connectors. As part of this effort, we're reverting recent changes and applying updated configuration changes to help ensure both connectors can be managed as expected. \r\n\r\nScope of impact: Impact is specific to admins attempting to manage or disable the affected MailerLite and Miro connectors within the Microsoft 365 admin center. This section may be updated as our investigation continues. \r\n\r\nNext update by: Tuesday, July 28, 2026, at 1:30 PM UTC"
+        }
+      ],
+      "serviceName": "Microsoft 365 suite",
+      "affectedServices": [
+        "Microsoft 365 suite"
+      ]
+    },
     {
       "id": "EX1435168",
       "title": "Some users may be unable to view location and subject details for other users' Exchange Online calendar items",
