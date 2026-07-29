@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-29T07:17:28.050Z",
+  "lastUpdated": "2026-07-29T07:47:36.350Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -236,13 +236,13 @@
         },
         {
           "id": "TM1440450",
-          "title": "Users may be unable to run run-only workflows from Microsoft Teams",
+          "title": "Users may have been unable to run run-only workflows from Microsoft Teams",
           "startTime": "2026-06-30T07:00:00Z",
           "endTime": null,
-          "lastModified": "2026-07-28T18:13:09.537Z",
+          "lastModified": "2026-07-29T07:39:22.41Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "userImpact": "Users may be unable to run run-only workflows from Microsoft Teams.",
+          "userImpact": "Users may have been unable to run run-only workflows from Microsoft Teams.",
           "scopeOfImpact": "Users attempting to run run-only workflows from Microsoft Teams may be impacted.\r\n\r\nStart time: Tuesday, June 30, 2026, at 7:00 AM UTC",
           "rootCause": "A recent service update introduced a code regression that affects how Microsoft Teams processes shared workflow requests, preventing some users from running workflows from Microsoft Teams.",
           "nextUpdateBy": "Wednesday, July 29, 2026, at 8:30 AM UTC",
@@ -268,6 +268,31 @@
               "createdAt": "2026-07-27T12:02:26.883Z",
               "postType": "regular",
               "content": "Title: All users are unable to run Microsoft Teams workflows used to create incidents internally\r\n\r\nUser impact: Users are unable to run Microsoft Teams workflows used to create incidents internally.\r\n\r\nMore info: Users receive the following error message when attempting to create incidents:\n \n\"Missing Trigger URI\"\r\n\r\nCurrent status: We're reviewing HTTP Archive (HAR) logs and Teams logs to help identify the root cause and next steps required to mitigate impact.\r\n\r\nScope of impact: Users attempting to run run-only workflows from Microsoft Teams may be impacted.\r\n\r\nNext update by: Monday, July 27, 2026, at 7:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Teams"
+          ]
+        },
+        {
+          "id": "TM1442034",
+          "title": "Some users may be unable to create or publish Microsoft Teams town hall or webinar events that include guest users",
+          "startTime": "2026-07-29T07:29:23.003Z",
+          "endTime": null,
+          "lastModified": "2026-07-29T07:32:00.16Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to create or publish Microsoft Teams town hall or webinar events that include guest users. ",
+          "scopeOfImpact": "Impact is specific to some users attempting to create or publish Microsoft Teams town hall or webinar events that include guest users.",
+          "rootCause": "",
+          "nextUpdateBy": "Wednesday, July 29, 2026, at 9:30 AM UTC",
+          "feature": "Meetings",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-07-29T07:32:00.16Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to create or publish Microsoft Teams town hall or webinar events that include guest users\r\n\r\nUser impact: Users may be unable to create or publish Microsoft Teams town hall or webinar events that include guest users. \r\n\r\nCurrent status: We're reviewing service monitoring telemetry to isolate the source of the issue and establish a fix.\r\n\r\nScope of impact: Impact is specific to some users attempting to create or publish Microsoft Teams town hall or webinar events that include guest users.\r\n\r\nNext update by: Wednesday, July 29, 2026, at 9:30 AM UTC"
             }
           ],
           "affectedServices": [
