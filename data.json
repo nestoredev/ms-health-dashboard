@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-29T08:17:44.847Z",
+  "lastUpdated": "2026-07-29T08:47:52.883Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -191,13 +191,13 @@
       "issues": [
         {
           "id": "TM1441044",
-          "title": "Users' email messages sent to Microsoft Teams channels may not be formatted correctly",
-          "startTime": "2026-07-28T01:36:53.87Z",
+          "title": "Users' email messages sent to Microsoft Teams channels may have been incorrectly formatted ",
+          "startTime": "2026-07-20T14:23:00Z",
           "endTime": null,
-          "lastModified": "2026-07-28T08:21:46.493Z",
+          "lastModified": "2026-07-29T08:34:55.71Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "userImpact": "Users' email messages sent to Microsoft Teams channels may not be formatted correctly.",
+          "userImpact": "Users' email messages sent to Microsoft Teams channels may have been incorrectly formatted.",
           "scopeOfImpact": "Some users sending plain text email messages to Microsoft Teams channel email addresses may be impacted.",
           "rootCause": "",
           "nextUpdateBy": "Wednesday, July 29, 2026, at 9:00 AM UTC",
@@ -239,16 +239,21 @@
           "title": "Users may have been unable to run run-only workflows from Microsoft Teams",
           "startTime": "2026-06-30T07:00:00Z",
           "endTime": null,
-          "lastModified": "2026-07-29T07:39:22.41Z",
+          "lastModified": "2026-07-29T08:32:49.733Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may have been unable to run run-only workflows from Microsoft Teams.",
           "scopeOfImpact": "Users attempting to run run-only workflows from Microsoft Teams may be impacted.\r\n\r\nStart time: Tuesday, June 30, 2026, at 7:00 AM UTC",
-          "rootCause": "A recent service update introduced a code regression that affects how Microsoft Teams processes shared workflow requests, preventing some users from running workflows from Microsoft Teams.",
-          "nextUpdateBy": "Wednesday, July 29, 2026, at 8:30 AM UTC",
+          "rootCause": "A recent service update introduced a code regression that affects how Microsoft Teams processes shared workflow requests, preventing some users from running run-only workflows from Microsoft Teams.",
+          "nextUpdateBy": "Thursday, July 30, 2026, at 1:30 AM UTC",
           "feature": "Teams and Channels",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-07-29T08:15:06.693Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to run run-only workflows from Microsoft Teams\r\n\r\nUser impact: Users may be unable to run run-only workflows from Microsoft Teams.\r\n\r\nMore info: Affected users are unable to run workflows in Teams when those workflows are configured to be executed by designated users without requiring those users to own or edit the workflow. Users receive the following error message:\n\n\"Missing Trigger URI\"\n\nAs a workaround, impacted users can be granted Owner or Co-owner permissions for the affected workflow.\r\n\r\nCurrent status: We've received confirmation from some affected users that the issue has been mitigated. However, our telemetry indicates that some users are still encountering errors. We're continuing to monitor the telemetry over an extended period to determine when the fix has reached all affected users and fully mitigated the impact. We'll also assess whether any additional mitigation actions are required.\r\n\r\nScope of impact: Users attempting to run run-only workflows from Microsoft Teams may be impacted.\r\n\r\nStart time: Tuesday, June 30, 2026, at 7:00 AM UTC\r\n\r\nRoot cause: A recent service update introduced a code regression that affects how Microsoft Teams processes shared workflow requests, preventing some users from running run-only workflows from Microsoft Teams.\r\n\r\nNext update by: Thursday, July 30, 2026, at 1:30 AM UTC"
+            },
             {
               "createdAt": "2026-07-28T18:13:09.537Z",
               "postType": "regular",
