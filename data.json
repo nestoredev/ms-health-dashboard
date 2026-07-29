@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-29T16:50:22.367Z",
+  "lastUpdated": "2026-07-29T17:20:34.977Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -270,16 +270,21 @@
           "title": "Some users may be unable to create or publish Microsoft Teams town hall or webinar events that include guest users",
           "startTime": "2026-07-29T07:29:23.003Z",
           "endTime": null,
-          "lastModified": "2026-07-29T13:51:49.463Z",
+          "lastModified": "2026-07-29T17:14:54.653Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to create or publish Microsoft Teams town hall or webinar events that include guest users. ",
           "scopeOfImpact": "Impact is specific to some users attempting to create or publish Microsoft Teams town hall or webinar events that include guest users.\r\n\r\nStart time: Tuesday, July 28, 2026, at 4:02 PM UTC",
-          "rootCause": "A recent standard service update contains a code regression, which is resulting in impact.",
-          "nextUpdateBy": "Wednesday, July 29, 2026, at 6:30 PM UTC",
+          "rootCause": "A recent service update contains a code regression, which is resulting in impact.",
+          "nextUpdateBy": "Thursday, July 30, 2026, at 6:30 PM UTC",
           "feature": "Meetings",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-07-29T17:14:54.653Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to create or publish Microsoft Teams town hall or webinar events that include guest users\r\n\r\nUser impact: Users may be unable to create or publish Microsoft Teams town hall or webinar events that include guest users. \r\n\r\nCurrent status: We've completed the validation of our fix and started deployment to a subset of the affected environment, although the deployment failed to initiate as expected. We're working to address the issues preventing our deployment from initiating so that we can apply our fix and remediate impact as soon as possible.\r\n\r\nScope of impact: Impact is specific to some users attempting to create or publish Microsoft Teams town hall or webinar events that include guest users.\r\n\r\nStart time: Tuesday, July 28, 2026, at 4:02 PM UTC\r\n\r\nRoot cause: A recent service update contains a code regression, which is resulting in impact.\r\n\r\nNext update by: Thursday, July 30, 2026, at 6:30 PM UTC"
+            },
             {
               "createdAt": "2026-07-29T13:51:49.463Z",
               "postType": "regular",
