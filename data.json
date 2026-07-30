@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-29T23:52:40.606Z",
+  "lastUpdated": "2026-07-30T00:22:49.133Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -54,7 +54,7 @@
           "title": "Some users may be unable to share files with external recipients through SharePoint Online and Microsoft OneDrive",
           "startTime": "2026-07-27T14:10:34.93Z",
           "endTime": null,
-          "lastModified": "2026-07-29T21:55:02.82Z",
+          "lastModified": "2026-07-30T00:12:10.447Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to share files with external recipients through SharePoint Online and OneDrive.",
@@ -67,7 +67,7 @@
             {
               "createdAt": "2026-07-29T21:55:02.82Z",
               "postType": "regular",
-              "content": "Title: Some users may be unable to share files with external recipients through SharePoint Online and Microsoft OneDrive\r\n\r\nUser impact: Users may be unable to share files with external recipients through SharePoint Online and OneDrive.\r\n\r\nMore info: Affected users may be unable to send external sharing invitations from SharePoint Online sites and OneDrive locations, despite external sharing being enabled at both the tenant and site levels.\r\n\r\nCurrent status: We're continuing to obtain data such as Trace logs and specific User Principal Names (UPNs) from various affected users to assist in furthering our understanding of the full scope of this issue. The development of effective remediation steps is taking longer than anticipated as we allow time for this this thorough root cause analysis.\r\n\r\nScope of impact: Some users attempting to share files with external recipients through SharePoint Online and OneDrive may be impacted. This information may be updated as our investigation continues.\r\n\r\nNext update by: Thursday, July 30, 2026, at 10:30 PM UTC"
+              "content": "Title: Some users may be unable to share files with external recipients through SharePoint Online and Microsoft OneDrive\r\n\r\nUser impact: Users may be unable to share files with external recipients through SharePoint Online and OneDrive.\r\n\r\nMore info: Affected users may be unable to send external sharing invitations from SharePoint Online sites and OneDrive locations, despite external sharing being enabled at both the tenant and site levels. Upon failure, affected users encounter the following error: \"That didn't work: We couldn't find a valid SharePoint Online license...\"\r\n\r\nCurrent status: We're continuing to obtain data such as Trace logs and specific User Principal Names (UPNs) from various affected users to assist in furthering our understanding of the full scope of this issue. The development of effective remediation steps is taking longer than anticipated as we allow time for this this thorough root cause analysis.\r\n\r\nScope of impact: Some users attempting to share files with external recipients through SharePoint Online and OneDrive may be impacted. This information may be updated as our investigation continues.\r\n\r\nNext update by: Thursday, July 30, 2026, at 10:30 PM UTC"
             },
             {
               "createdAt": "2026-07-28T21:47:03.28Z",
@@ -260,16 +260,21 @@
           "title": "Users may have been unable to run run-only workflows from Microsoft Teams",
           "startTime": "2026-06-30T07:00:00Z",
           "endTime": null,
-          "lastModified": "2026-07-29T23:31:50.537Z",
+          "lastModified": "2026-07-30T00:06:22.73Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "userImpact": "Users may have been unable to run run-only workflows from Microsoft Teams.",
+          "userImpact": "Users may be unable to run run-only workflows from Microsoft Teams.",
           "scopeOfImpact": "Users attempting to run run-only workflows from Microsoft Teams may be impacted. This section may be updated as the investigation progresses.\n\nStart time: Tuesday, June 30, 2026, at 7:00 AM UTC",
           "rootCause": "A recent service update introduced a code regression that affects how Microsoft Teams processes shared workflow requests, preventing some users from running run-only workflows from Microsoft Teams.",
-          "nextUpdateBy": "Thursday, July 30, 2026, at 1:30 AM UTC",
+          "nextUpdateBy": "Thursday, July 30, 2026, at 7:30 PM UTC",
           "feature": "Teams and Channels",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-07-30T00:06:22.73Z",
+              "postType": "regular",
+              "content": "Title: Users may have been unable to run run-only workflows from Microsoft Teams\n\nUser impact: Users may be unable to run run-only workflows from Microsoft Teams.\n\nMore info: Affected users are unable to run workflows in Teams when those workflows are configured to be executed by designated users without requiring those users to own or edit the workflow. Users receive the following error message:\n\n\"Missing Trigger URI\"\n\nAs a workaround, impacted users can be granted Owner or Co-owner permissions for the affected workflow.\n\nCurrent status: We’re performing an extended period of monitoring the telemetry to ensure that our fix has reached all affected users.\n\nScope of impact: Users attempting to run run-only workflows from Microsoft Teams may be impacted. This section may be updated as the investigation progresses.\n\nStart time: Tuesday, June 30, 2026, at 7:00 AM UTC\n\nRoot cause: A recent service update introduced a code regression that affects how Microsoft Teams processes shared workflow requests, preventing some users from running run-only workflows from Microsoft Teams.\n\nNext update by: Thursday, July 30, 2026, at 7:30 PM UTC"
+            },
             {
               "createdAt": "2026-07-29T08:15:06.693Z",
               "postType": "regular",
