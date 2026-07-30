@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-30T14:57:10.587Z",
+  "lastUpdated": "2026-07-30T15:27:20.247Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -234,9 +234,35 @@
     },
     {
       "service": "Power BI",
-      "status": "serviceOperational",
+      "status": "investigating",
       "id": "PowerBIcom",
-      "issues": []
+      "issues": [
+        {
+          "id": "PB1443105",
+          "title": "Users may be unable to access Plan artifacts and PowerTable sheets within shared report in Microsoft Fabric\n\n",
+          "startTime": "2026-07-30T14:42:45.57Z",
+          "endTime": null,
+          "lastModified": "2026-07-30T15:20:57.647Z",
+          "status": "investigating",
+          "severity": "advisory",
+          "userImpact": "Users may have been unable to access Plan artifacts and PowerTable sheets within shared report in Microsoft Fabric.\n\n",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
+          "feature": "General",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-07-30T14:55:38.49Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to access Plan artifacts in Microsoft Fabric\n\n\r\n\r\nUser impact: Users may have been unable to access Plan artifacts in Microsoft Fabric.\n\n\r\n\r\nCurrent status: We've investigated a problem with Microsoft Fabric in which users may have been unable to access Plan artifacts, and we’ve confirmed that service is now restored. We'll provide additional information in a closure summary within the “History” section of the “Service health” dashboard shortly."
+            }
+          ],
+          "affectedServices": [
+            "Power BI"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft Intune",
