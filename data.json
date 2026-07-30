@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-30T17:58:09.756Z",
+  "lastUpdated": "2026-07-30T18:28:18.857Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -98,36 +98,6 @@
               "createdAt": "2026-07-27T14:14:16.57Z",
               "postType": "regular",
               "content": "Title: Some users are unable to share files with external recipients through SharePoint Online and Microsoft OneDrive\r\n\r\nUser impact: Users are unable to share files with external recipients through SharePoint Online and OneDrive.\r\n\r\nMore info: Affected users are unable to send external sharing invitations from SharePoint Online sites and OneDrive locations, despite external sharing being enabled at both the tenant and site levels.\r\n\r\nCurrent status: We're reviewing HTTP Archive (HAR) files alongside API call patterns to help identify the root cause and next steps required to mitigate impact.\r\n\r\nScope of impact: Your organization is affected by this event, and some users attempting to share files with external recipients through SharePoint Online and OneDrive are impacted. This information may be updated as our investigation continues.\r\n\r\nNext update by: Monday, July 27, 2026, at 7:30 PM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Microsoft 365 suite"
-          ]
-        },
-        {
-          "id": "MO1442357",
-          "title": "Admins may be unable to export reports to comma separated values (CSVs) in the Microsoft 365 admin center",
-          "startTime": "2026-07-22T00:00:00Z",
-          "endTime": null,
-          "lastModified": "2026-07-29T17:49:59.217Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Admins may be unable to export reports to CSVs in the Microsoft 365 admin center.",
-          "scopeOfImpact": "This issue affects admins performing export operations of large CSVs from the Microsoft 365 admin center.\r\n\r\nStart time: Wednesday, July 22, 2026, at 12:00 AM UTC",
-          "rootCause": "A recent update to the CSV export pipeline has introduced an error that's resulting in large CSV exports potentially failing under certain conditions.",
-          "nextUpdateBy": "Tuesday, August 4, 2026, at 11:00 PM UTC",
-          "feature": "Company or User Administration",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-07-29T17:46:11.657Z",
-              "postType": "regular",
-              "content": "Title: Admins may be unable to export reports to comma separated values (CSVs) in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may be unable to export reports to CSVs in the Microsoft 365 admin center.\r\n\r\nMore info: This issue affects export to CSV operations, such as exporting Active Users, Group Memberships, and Role Assignments. Admins encounter an error that states, \"We are sorry, something went wrong. Please try refreshing the page in a few minutes.\"\r\n\r\nCurrent status: We've identified a recent update to the CSV export pipeline has introduced an error that's resulting in large CSV exports potentially failing under certain conditions. We've developed a fix to restore the previous behavior used by the export controller and validated it resolves the failures. We've scheduled the fix for deployment and anticipate it will resolve the issue by Tuesday, August 4, 2026.\r\n\r\nScope of impact: This issue affects admins performing export operations of large CSVs from the Microsoft 365 admin center.\r\n\r\nStart time: Wednesday, July 22, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: A recent update to the CSV export pipeline has introduced an error that's resulting in large CSV exports potentially failing under certain conditions.\r\n\r\nNext update by: Tuesday, August 4, 2026, at 11:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-07-29T16:40:20.68Z",
-              "postType": "regular",
-              "content": "Title: Admins can't export the Active Users report in the Microsoft 365 admin center\r\n\r\nUser impact: Admins can't export the Active Users report in the Microsoft 365 admin center.\r\n\r\nMore info: Admins encounter an error that states, \"We are sorry, something went wrong. Please try refreshing the page in a few minutes.\"\r\n\r\nCurrent status: We're investigating a potential issue with Active User report exports in the Microsoft 365 admin center and checking for impact to your organization. We'll provide an update within 60 minutes."
             }
           ],
           "affectedServices": [
@@ -411,6 +381,42 @@
     }
   ],
   "history": [
+    {
+      "id": "MO1442357",
+      "title": "Admins may be unable to export reports to comma separated values (CSVs) in the Microsoft 365 admin center",
+      "startTime": "2026-07-22T00:00:00Z",
+      "endTime": "2026-07-30T18:00:27.21Z",
+      "lastModified": "2026-07-30T18:01:45.057Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Admins may have been unable to export reports to CSVs in the Microsoft 365 admin center.",
+      "scopeOfImpact": "This issue affected admins performing export operations of large CSVs from the Microsoft 365 admin center.\r\n\r\nStart time: Wednesday, July 22, 2026, at 12:00 AM UTC\r\n\r\nEnd time: Thursday, July 30, 2026, at 3:00 AM UTC",
+      "rootCause": "A recent update to the CSV export pipeline introduced an error that resulted in large CSV exports potentially failing under certain conditions.\r\n\r\nNext steps: - We're reviewing the responsible CSV export pipeline update to better understand what led to the error that resulted in impact and prevent similar future occurrences.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Company or User Administration",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-07-30T18:01:41.887Z",
+          "postType": "regular",
+          "content": "Title: Admins may be unable to export reports to comma separated values (CSVs) in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may have been unable to export reports to CSVs in the Microsoft 365 admin center.\r\n\r\nMore info: This issue affected export to CSV operations, such as exporting Active Users, Group Memberships, and Role Assignments. Admins encountered an error that stated, \"We were sorry, something went wrong. Please try refreshing the page in a few minutes.\"\r\n\r\nFinal status: We've confirmed that the fix deployment has completed sooner than anticipated and have confirmed that it has resolved the event through service health telemetry.\r\n\r\nScope of impact: This issue affected admins performing export operations of large CSVs from the Microsoft 365 admin center.\r\n\r\nStart time: Wednesday, July 22, 2026, at 12:00 AM UTC\r\n\r\nEnd time: Thursday, July 30, 2026, at 3:00 AM UTC\r\n\r\nRoot cause: A recent update to the CSV export pipeline introduced an error that resulted in large CSV exports potentially failing under certain conditions.\r\n\r\nNext steps: - We're reviewing the responsible CSV export pipeline update to better understand what led to the error that resulted in impact and prevent similar future occurrences.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-07-29T17:46:11.657Z",
+          "postType": "regular",
+          "content": "Title: Admins may be unable to export reports to comma separated values (CSVs) in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may be unable to export reports to CSVs in the Microsoft 365 admin center.\r\n\r\nMore info: This issue affects export to CSV operations, such as exporting Active Users, Group Memberships, and Role Assignments. Admins encounter an error that states, \"We are sorry, something went wrong. Please try refreshing the page in a few minutes.\"\r\n\r\nCurrent status: We've identified a recent update to the CSV export pipeline has introduced an error that's resulting in large CSV exports potentially failing under certain conditions. We've developed a fix to restore the previous behavior used by the export controller and validated it resolves the failures. We've scheduled the fix for deployment and anticipate it will resolve the issue by Tuesday, August 4, 2026.\r\n\r\nScope of impact: This issue affects admins performing export operations of large CSVs from the Microsoft 365 admin center.\r\n\r\nStart time: Wednesday, July 22, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: A recent update to the CSV export pipeline has introduced an error that's resulting in large CSV exports potentially failing under certain conditions.\r\n\r\nNext update by: Tuesday, August 4, 2026, at 11:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-07-29T16:40:20.68Z",
+          "postType": "regular",
+          "content": "Title: Admins can't export the Active Users report in the Microsoft 365 admin center\r\n\r\nUser impact: Admins can't export the Active Users report in the Microsoft 365 admin center.\r\n\r\nMore info: Admins encounter an error that states, \"We are sorry, something went wrong. Please try refreshing the page in a few minutes.\"\r\n\r\nCurrent status: We're investigating a potential issue with Active User report exports in the Microsoft 365 admin center and checking for impact to your organization. We'll provide an update within 60 minutes."
+        }
+      ],
+      "serviceName": "Microsoft 365 suite",
+      "affectedServices": [
+        "Microsoft 365 suite"
+      ]
+    },
     {
       "id": "TM1442034",
       "title": "Some users may be unable to create or publish Microsoft Teams town hall or webinar events that include guest users",
