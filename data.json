@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-30T00:22:49.133Z",
+  "lastUpdated": "2026-07-30T00:52:57.664Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -450,9 +450,35 @@
     },
     {
       "service": "Microsoft 365 Copilot Chat",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "CopilotChat",
-      "issues": []
+      "issues": [
+        {
+          "id": "CW1442650",
+          "title": "Some users may receive an error when they initiate Microsoft 365 Copilot Chat requests",
+          "startTime": "2026-07-29T22:45:00Z",
+          "endTime": null,
+          "lastModified": "2026-07-30T00:41:12.873Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may receive an error when they initiate Microsoft 365 Copilot Chat requests. ",
+          "scopeOfImpact": "Some users attempting to initiate Microsoft 365 Copilot Chat requests may be impacted. This section may be updated as our investigation continues. \r\n\r\nStart time: Wednesday, July 29, 2026, at 10:45 PM UTC",
+          "rootCause": "",
+          "nextUpdateBy": "Thursday, July 30, 2026, at 2:30 AM UTC",
+          "feature": "General",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-07-30T00:36:52.457Z",
+              "postType": "regular",
+              "content": "Title: Some users may receive an error when they initiate Microsoft 365 Copilot Chat requests\r\n\r\nUser impact: Users may receive an error when they initiate Microsoft 365 Copilot Chat requests. \r\n\r\nMore info: The error that impacted users may receive states \"Something went wrong, please try again.\"\r\n\r\nCurrent status: We've been alerted to an issue where some users may receive an error stating \"Something went wrong, please try again.\" when they initiate Microsoft 365 Copilot Chat requests. While we investigate the issue to confirm the underlying root cause, we're preparing to revert a recent configuration change, which we're anticipating may be able to restore service for affected users.\r\n\r\nScope of impact: Some users attempting to initiate Microsoft 365 Copilot Chat requests may be impacted. This section may be updated as our investigation continues. \r\n\r\nStart time: Wednesday, July 29, 2026, at 10:45 PM UTC\r\n\r\nNext update by: Thursday, July 30, 2026, at 2:30 AM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 Copilot Chat"
+          ]
+        }
+      ]
     }
   ],
   "history": [
