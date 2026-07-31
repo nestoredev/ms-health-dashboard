@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-31T15:05:09.502Z",
+  "lastUpdated": "2026-07-31T15:35:18.487Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -213,6 +213,31 @@
               "createdAt": "2026-07-27T12:02:26.883Z",
               "postType": "regular",
               "content": "Title: All users are unable to run Microsoft Teams workflows used to create incidents internally\n\nUser impact: Users are unable to run Microsoft Teams workflows used to create incidents internally.\n\nMore info: Users receive the following error message when attempting to create incidents:\n \n\"Missing Trigger URI\"\n\nCurrent status: We're reviewing HTTP Archive (HAR) logs and Teams logs to help identify the root cause and next steps required to mitigate impact.\n\nScope of impact: Users attempting to run run-only workflows from Microsoft Teams may be impacted. This section may be updated as the investigation progresses.\n\nNext update by: Monday, July 27, 2026, at 7:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Teams"
+          ]
+        },
+        {
+          "id": "TM1444037",
+          "title": "Users may see a banner in the Microsoft Teams desktop app mistakenly stating they are on an old version",
+          "startTime": "2026-07-31T14:53:54.997Z",
+          "endTime": null,
+          "lastModified": "2026-07-31T15:03:04.003Z",
+          "status": "investigating",
+          "severity": "advisory",
+          "userImpact": "Users may see a banner in the Microsoft Teams desktop app mistakenly stating they are on an old version.",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
+          "feature": "General",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-07-31T15:03:04.003Z",
+              "postType": "regular",
+              "content": "Title: Users may see a banner in the Microsoft Teams desktop app mistakenly stating they are on an old version\r\n\r\nUser impact: Users may see a banner in the Microsoft Teams desktop app mistakenly stating they are on an old version.\r\n\r\nMore info: The error states \"You're using an old version of Teams. Update the app to continue using Teams on this device\". This banner appears in the Microsoft Teams desktop app regardless of the version being used.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Teams and checking for impact to your organization. We'll provide an update within 30 minutes."
             }
           ],
           "affectedServices": [
