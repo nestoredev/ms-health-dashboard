@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-01T08:10:52.922Z",
+  "lastUpdated": "2026-08-01T08:41:01.934Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -294,40 +294,9 @@
     },
     {
       "service": "Microsoft Viva",
-      "status": "serviceDegradation",
+      "status": "serviceOperational",
       "id": "Viva",
-      "issues": [
-        {
-          "id": "MV1444510",
-          "title": "Some users may have experienced access issues or transient errors when accessing the Microsoft Viva Insight web app",
-          "startTime": "2026-08-01T02:43:00Z",
-          "endTime": null,
-          "lastModified": "2026-08-01T08:05:22.393Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may have experienced access issues or transient errors when accessing the Microsoft Viva Insights web app.",
-          "scopeOfImpact": "The problem impacts some users trying to access the Viva Insights web app. This section may be updated as our investigation progresses.",
-          "rootCause": "A planned backend infrastructure upgrade temporarily is affecting service availability, resulting in transient access issues for some users during the deployment window.",
-          "nextUpdateBy": "Saturday, August 1, 2026, at 8:30 AM UTC",
-          "feature": "Single sign-in",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-08-01T04:41:57.503Z",
-              "postType": "regular",
-              "content": "Title: Some users may experience intermittent access issues or transient errors when accessing the Microsoft Viva Insights web app\r\n\r\nUser impact: Users may experience intermittent access issues or transient errors when accessing the Microsoft Viva Insights web app.\r\n\r\nCurrent status: We’re continuing to monitor as the deployment completes throughout the affected service infrastructure to ensure that additional mitigative actions will not be required.\r\n\r\nScope of impact: The problem impacts some users trying to access the Viva Insights web app. This section may be updated as our investigation progresses.\r\n\r\nRoot cause: A planned backend infrastructure upgrade temporarily is affecting service availability, resulting in transient access issues for some users during the deployment window.\r\n\r\nNext update by: Saturday, August 1, 2026, at 8:30 AM UTC"
-            },
-            {
-              "createdAt": "2026-08-01T03:27:35.49Z",
-              "postType": "regular",
-              "content": "Title: Some users may experience intermittent access issues or transient errors when accessing the Microsoft Viva Insights web app\r\n\r\nUser impact: Users may experience intermittent access issues or transient errors when accessing the Microsoft Viva Insights web app.\r\n\r\nCurrent status: We’ve determined that a planned backend infrastructure upgrade temporarily is affecting service availability, resulting in transient access issues for some users during the deployment window. We’re monitoring as the deployment completes to ensure that additional mitigative actions will not be required.\r\n\r\nScope of impact: The problem impacts some users trying to access the Viva Insights web app. This section may be updated as our investigation progresses.\r\n\r\nRoot cause: A planned backend infrastructure upgrade temporarily is affecting service availability, resulting in transient access issues for some users during the deployment window."
-            }
-          ],
-          "affectedServices": [
-            "Microsoft Viva"
-          ]
-        }
-      ]
+      "issues": []
     },
     {
       "service": "Microsoft Dataverse",
@@ -361,6 +330,42 @@
     }
   ],
   "history": [
+    {
+      "id": "MV1444510",
+      "title": "Some users may have experienced access issues or transient errors when accessing the Microsoft Viva Insight web app",
+      "startTime": "2026-08-01T02:43:00Z",
+      "endTime": "2026-08-01T05:26:00Z",
+      "lastModified": "2026-08-01T08:09:59.053Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have experienced access issues or transient errors when accessing the Microsoft Viva Insights web app.",
+      "scopeOfImpact": "Impact was specific to some users trying to access the Microsoft Viva Insights web app.\r\n\r\nStart time: Saturday, August 1, 2026, at 2:43 AM UTC\r\n\r\nEnd time: Saturday, August 1, 2026, at 5:26 AM UTC",
+      "rootCause": "A planned backend infrastructure upgrade was temporarily affecting service availability, resulting in transient access issues for some users during the deployment window.\r\n\r\nNext steps: We're reviewing our planned backend infrastructure upgrade procedures to help prevent this problem from happening again.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Single sign-in",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-08-01T08:08:57.207Z",
+          "postType": "regular",
+          "content": "Title: Some users may have experienced access issues or transient errors when accessing the Microsoft Viva Insight web app\r\n\r\nUser impact: Users may have experienced access issues or transient errors when accessing the Microsoft Viva Insights web app.\r\n\r\nFinal status: The deployment of the planned backend infrastructure upgrade is complete and no further actions are required. We've confirmed impact is remediated after a period of monitoring service telemetry.\r\n\r\nScope of impact: Impact was specific to some users trying to access the Microsoft Viva Insights web app.\r\n\r\nStart time: Saturday, August 1, 2026, at 2:43 AM UTC\r\n\r\nEnd time: Saturday, August 1, 2026, at 5:26 AM UTC\r\n\r\nRoot cause: A planned backend infrastructure upgrade was temporarily affecting service availability, resulting in transient access issues for some users during the deployment window.\r\n\r\nNext steps: We're reviewing our planned backend infrastructure upgrade procedures to help prevent this problem from happening again.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-08-01T04:41:57.503Z",
+          "postType": "regular",
+          "content": "Title: Some users may experience intermittent access issues or transient errors when accessing the Microsoft Viva Insights web app\r\n\r\nUser impact: Users may experience intermittent access issues or transient errors when accessing the Microsoft Viva Insights web app.\r\n\r\nCurrent status: We’re continuing to monitor as the deployment completes throughout the affected service infrastructure to ensure that additional mitigative actions will not be required.\r\n\r\nScope of impact: The problem impacts some users trying to access the Viva Insights web app. This section may be updated as our investigation progresses.\r\n\r\nRoot cause: A planned backend infrastructure upgrade temporarily is affecting service availability, resulting in transient access issues for some users during the deployment window.\r\n\r\nNext update by: Saturday, August 1, 2026, at 8:30 AM UTC"
+        },
+        {
+          "createdAt": "2026-08-01T03:27:35.49Z",
+          "postType": "regular",
+          "content": "Title: Some users may experience intermittent access issues or transient errors when accessing the Microsoft Viva Insights web app\r\n\r\nUser impact: Users may experience intermittent access issues or transient errors when accessing the Microsoft Viva Insights web app.\r\n\r\nCurrent status: We’ve determined that a planned backend infrastructure upgrade temporarily is affecting service availability, resulting in transient access issues for some users during the deployment window. We’re monitoring as the deployment completes to ensure that additional mitigative actions will not be required.\r\n\r\nScope of impact: The problem impacts some users trying to access the Viva Insights web app. This section may be updated as our investigation progresses.\r\n\r\nRoot cause: A planned backend infrastructure upgrade temporarily is affecting service availability, resulting in transient access issues for some users during the deployment window."
+        }
+      ],
+      "serviceName": "Microsoft Viva",
+      "affectedServices": [
+        "Microsoft Viva"
+      ]
+    },
     {
       "id": "TM1444037",
       "title": "Users may see a banner in the Microsoft Teams desktop app mistakenly stating they are on an old version",
