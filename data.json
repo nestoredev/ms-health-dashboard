@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-01T04:39:41.061Z",
+  "lastUpdated": "2026-08-01T05:09:54.180Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -289,24 +289,29 @@
     },
     {
       "service": "Microsoft Viva",
-      "status": "investigating",
+      "status": "serviceDegradation",
       "id": "Viva",
       "issues": [
         {
           "id": "MV1444510",
           "title": "Some users may experience intermittent access issues or transient errors when accessing the Microsoft Viva Insights web",
-          "startTime": "2026-08-01T03:22:27Z",
+          "startTime": "2026-08-01T02:43:00Z",
           "endTime": null,
-          "lastModified": "2026-08-01T03:27:35.49Z",
-          "status": "investigating",
+          "lastModified": "2026-08-01T04:41:57.503Z",
+          "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may experience intermittent access issues or transient errors when accessing the Microsoft Viva Insights web app.",
-          "scopeOfImpact": "The problem impacts some users trying to access the Viva Insights web app. This section may be updated as our investigation progresses.",
+          "scopeOfImpact": "The problem impacts some users trying to access the Viva Insights web app. This section may be updated as our investigation progresses.\n\nStart time: Saturday, August 1, 2026, at 2:43 AM UTC",
           "rootCause": "A planned backend infrastructure upgrade temporarily is affecting service availability, resulting in transient access issues for some users during the deployment window.",
-          "nextUpdateBy": "Saturday, August 1, 2026, at 5:00 AM UTC",
+          "nextUpdateBy": "Saturday, August 1, 2026, at 8:30 AM UTC",
           "feature": "Single sign-in",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-01T04:41:57.503Z",
+              "postType": "regular",
+              "content": "Title: Some users may experience intermittent access issues or transient errors when accessing the Microsoft Viva Insights web\n\nUser impact: Users may experience intermittent access issues or transient errors when accessing the Microsoft Viva Insights web app.\n\nCurrent status: We’re continuing to monitor as the deployment completes throughout the affected service infrastructure to ensure that additional mitigative actions will not be required. \n \nScope of impact: The problem impacts some users trying to access the Viva Insights web app. This section may be updated as our investigation progresses.\n\nStart time: Saturday, August 1, 2026, at 2:43 AM UTC\n\nRoot cause: A planned backend infrastructure upgrade temporarily is affecting service availability, resulting in transient access issues for some users during the deployment window.\n \nNext update by: Saturday, August 1, 2026, at 8:30 AM UTC"
+            },
             {
               "createdAt": "2026-08-01T03:27:35.49Z",
               "postType": "regular",
