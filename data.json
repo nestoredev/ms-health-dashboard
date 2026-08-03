@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-03T15:30:27.326Z",
+  "lastUpdated": "2026-08-03T16:00:36.554Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -169,31 +169,6 @@
       "status": "serviceDegradation",
       "id": "microsoftteams",
       "issues": [
-        {
-          "id": "TM1446407",
-          "title": "Some users may be unable to launch the Microsoft Teams Windows desktop client",
-          "startTime": "2026-08-03T14:15:52.51Z",
-          "endTime": null,
-          "lastModified": "2026-08-03T14:22:10.18Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may be unable to launch the Microsoft Teams Windows desktop client.",
-          "scopeOfImpact": "Users running the Microsoft Edge WebView2 Canary build and attempting to launch the Microsoft Teams Windows desktop client are impacted.",
-          "rootCause": "A regression introduced in the latest Edge WebView2 Canary version is preventing the Microsoft Teams Windows desktop client from starting, resulting in impact.",
-          "nextUpdateBy": "Thursday, August 6, 2026, at 3:00 PM UTC",
-          "feature": "App Start",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-08-03T14:22:10.18Z",
-              "postType": "regular",
-              "content": "Title: Some users may be unable to launch the Microsoft Teams Windows desktop client\r\n\r\nUser impact: Users may be unable to launch the Microsoft Teams Windows desktop client.\r\n\r\nMore info: This issue specifically affects users who are running the latest Microsoft Edge WebView2 Canary version (v152.0.4190.0).\n\nAs a workaround, affected users can switch from Canary to the Stable version of Edge WebView2.\r\n\r\nCurrent status: We’ve identified that a regression introduced in the latest Edge WebView2 Canary version is preventing the Microsoft Teams Windows desktop client from starting, resulting in impact. We’re working on a fix to restore normal client startup behavior.\r\n\r\nScope of impact: Users running the Microsoft Edge WebView2 Canary build and attempting to launch the Microsoft Teams Windows desktop client are impacted.\r\n\r\nRoot cause: A regression introduced in the latest Edge WebView2 Canary version is preventing the Microsoft Teams Windows desktop client from starting, resulting in impact.\r\n\r\nNext update by: Thursday, August 6, 2026, at 3:00 PM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Microsoft Teams"
-          ]
-        },
         {
           "id": "TM1440450",
           "title": "Users may have been unable to run run-only workflows from Microsoft Teams",
