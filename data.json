@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-03T19:31:48.200Z",
+  "lastUpdated": "2026-08-03T20:01:59.384Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -226,19 +226,24 @@
         },
         {
           "id": "TM1446653",
-          "title": "Some users may receive failures when creating channels with Channel Capabilities or shared channels in Microsoft Teams",
+          "title": "Some users may receive failures when creating channels or adding members to shared channels in Microsoft Teams",
           "startTime": "2026-08-01T01:35:00Z",
           "endTime": null,
-          "lastModified": "2026-08-03T18:44:40.93Z",
+          "lastModified": "2026-08-03T19:42:35.67Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "userImpact": "Users may receive failures when creating channels with Channel Capabilities or shared channels in Microsoft Teams.",
-          "scopeOfImpact": "Your organization is affected by this event, and some users may receive failures when creating channels with Channel Capabilities or shared channels in Microsoft Teams. This section may be updated as the investigation progresses.\r\n\r\nStart time: Saturday, August 1, 2026, at 1:35 AM UTC",
-          "rootCause": "A recent service update migrated JavaScript Object Notation (JSON) deserialization behavior, resulting in scenarios that rely on deserialization to utilize incorrect values and causing users to receive failures, such as when creating channels with Channel Capabilities or shared channels in Microsoft Teams.",
-          "nextUpdateBy": "Monday, August 3, 2026, at 8:00 PM UTC",
+          "userImpact": "Users may receive failures when creating channels or adding members to shared channels in Microsoft Teams.",
+          "scopeOfImpact": "Your organization is affected by this event, and some users may receive failures when creating channels or adding members to shared channels in Microsoft Teams. This section may be updated as the investigation progresses.\r\n\r\nStart time: Saturday, August 1, 2026, at 1:35 AM UTC",
+          "rootCause": "A recent service update migrated JavaScript Object Notation (JSON) deserialization behavior, resulting in scenarios that rely on deserialization to utilize incorrect values and causing users to receive failures, such as when creating channels or adding users to shared channels in Microsoft Teams.",
+          "nextUpdateBy": "Tuesday, August 4, 2026, at 12:30 AM UTC",
           "feature": "Teams and Channels",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-03T19:42:35.67Z",
+              "postType": "regular",
+              "content": "Title: Some users may receive failures when creating channels or adding members to shared channels in Microsoft Teams\r\n\r\nUser impact: Users may receive failures when creating channels or adding members to shared channels in Microsoft Teams.\r\n\r\nCurrent status: After further analysis, we've validated that users can still create shared channels but may be unable to add new users to these channels. We've updated the \"Title\", \"User impact\", \"Scope of impact\", and “Root cause” fields to reflect this. We've rolled back the offending service update and are monitoring service availability to validate remediation. Simultaneously, we're analyzing additional recent updates to validate if there is still potential for residual impact or if the issue is fully remediated.\r\n\r\nScope of impact: Your organization is affected by this event, and some users may receive failures when creating channels or adding members to shared channels in Microsoft Teams. This section may be updated as the investigation progresses.\r\n\r\nStart time: Saturday, August 1, 2026, at 1:35 AM UTC\r\n\r\nRoot cause: A recent service update migrated JavaScript Object Notation (JSON) deserialization behavior, resulting in scenarios that rely on deserialization to utilize incorrect values and causing users to receive failures, such as when creating channels or adding users to shared channels in Microsoft Teams.\r\n\r\nNext update by: Tuesday, August 4, 2026, at 12:30 AM UTC"
+            },
             {
               "createdAt": "2026-08-03T18:44:40.93Z",
               "postType": "regular",
