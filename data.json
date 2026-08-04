@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-04T00:03:23.486Z",
+  "lastUpdated": "2026-08-04T00:33:33.440Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -159,9 +159,35 @@
     },
     {
       "service": "Microsoft Intune",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "Intune",
-      "issues": []
+      "issues": [
+        {
+          "id": "IT1446841",
+          "title": "Users may be unable to access Wi-Fi or VPN on Android devices",
+          "startTime": "2026-07-09T22:25:00Z",
+          "endTime": null,
+          "lastModified": "2026-08-04T00:12:19.297Z",
+          "status": "serviceDegradation",
+          "severity": "incident",
+          "userImpact": "Users may be unable to access their Wi-Fi or VPN on Android devices that require a certificate from Microsoft Intune.",
+          "scopeOfImpact": "Any user or admin may be affected by this event, and may be unable to access their Wi-Fi or VPN on Android devices that require a certificate from Microsoft Intune. This section may be updated as our investigation continues.\r\n\r\nStart time: Thursday, July 9, 2026, at 10:25 PM UTC",
+          "rootCause": "A recent change to the Microsoft Intune service intended to improve reliability and make certificate delivery more resilient contained a code regression, which is impacting certificate delivery and leading to impact.",
+          "nextUpdateBy": "Tuesday, August 4, 2026, at 2:00 AM UTC",
+          "feature": "Microsoft Intune",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-08-04T00:11:54.693Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to access Wi-Fi or VPN on Android devices\r\n\r\nUser impact: Users may be unable to access their Wi-Fi or VPN on Android devices that require a certificate from Microsoft Intune.\r\n\r\nMore info: Users may be affected if they require a new SCEP certificate delivery from Microsoft Intune to access their Wi-Fi or VPN on newly targeted Android devices that don't already have a valid certificate. Users with existing valid SCEP certificates aren't affected by this behavior and are able to access network connections as expected. \n \nHowever, regardless of whether certificates already exist on the device, users on Android devices leveraging SCEP certificate profiles may be blocked from receiving any other targeted configuration policy. Admins may also be affected and may see errors in the SCEP policy console for the associated policy status in Microsoft Intune.\r\n\r\nCurrent status: We've identified an issue affecting the Microsoft Intune service after receiving reports of impact from users and admins. Our analysis has determined that a recent change to the Microsoft Intune service intended to improve reliability and make certificate delivery more resilient contained a code regression, which is impacting certificate delivery and leading to impact. We're initiating a fix to roll back this change and resolve impact for all users and admins.\r\n\r\nScope of impact: Any user or admin may be affected by this event, and may be unable to access their Wi-Fi or VPN on Android devices that require a certificate from Microsoft Intune. This section may be updated as our investigation continues.\r\n\r\nStart time: Thursday, July 9, 2026, at 10:25 PM UTC\r\n\r\nRoot cause: A recent change to the Microsoft Intune service intended to improve reliability and make certificate delivery more resilient contained a code regression, which is impacting certificate delivery and leading to impact.\r\n\r\nNext update by: Tuesday, August 4, 2026, at 2:00 AM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Intune"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft OneDrive",
@@ -223,36 +249,6 @@
               "createdAt": "2026-07-27T12:02:26.883Z",
               "postType": "regular",
               "content": "Title: All users are unable to run Microsoft Teams workflows used to create incidents internally\n\nUser impact: Users are unable to run Microsoft Teams workflows used to create incidents internally.\n\nMore info: Users receive the following error message when attempting to create incidents:\n \n\"Missing Trigger URI\"\n\nCurrent status: We're reviewing HTTP Archive (HAR) logs and Teams logs to help identify the root cause and next steps required to mitigate impact.\n\nScope of impact: Users attempting to run run-only workflows from Microsoft Teams may be impacted. This section may be updated as the investigation progresses.\n\nNext update by: Monday, July 27, 2026, at 7:00 PM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Microsoft Teams"
-          ]
-        },
-        {
-          "id": "TM1446653",
-          "title": "Some users may receive failures when creating channels or adding members to shared channels in Microsoft Teams",
-          "startTime": "2026-08-01T01:35:00Z",
-          "endTime": null,
-          "lastModified": "2026-08-03T19:42:35.67Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may receive failures when creating channels or adding members to shared channels in Microsoft Teams.",
-          "scopeOfImpact": "Your organization is affected by this event, and some users may receive failures when creating channels or adding members to shared channels in Microsoft Teams. This section may be updated as the investigation progresses.\r\n\r\nStart time: Saturday, August 1, 2026, at 1:35 AM UTC",
-          "rootCause": "A recent service update migrated JavaScript Object Notation (JSON) deserialization behavior, resulting in scenarios that rely on deserialization to utilize incorrect values and causing users to receive failures, such as when creating channels or adding users to shared channels in Microsoft Teams.",
-          "nextUpdateBy": "Tuesday, August 4, 2026, at 12:30 AM UTC",
-          "feature": "Teams and Channels",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-08-03T19:42:35.67Z",
-              "postType": "regular",
-              "content": "Title: Some users may receive failures when creating channels or adding members to shared channels in Microsoft Teams\r\n\r\nUser impact: Users may receive failures when creating channels or adding members to shared channels in Microsoft Teams.\r\n\r\nCurrent status: After further analysis, we've validated that users can still create shared channels but may be unable to add new users to these channels. We've updated the \"Title\", \"User impact\", \"Scope of impact\", and “Root cause” fields to reflect this. We've rolled back the offending service update and are monitoring service availability to validate remediation. Simultaneously, we're analyzing additional recent updates to validate if there is still potential for residual impact or if the issue is fully remediated.\r\n\r\nScope of impact: Your organization is affected by this event, and some users may receive failures when creating channels or adding members to shared channels in Microsoft Teams. This section may be updated as the investigation progresses.\r\n\r\nStart time: Saturday, August 1, 2026, at 1:35 AM UTC\r\n\r\nRoot cause: A recent service update migrated JavaScript Object Notation (JSON) deserialization behavior, resulting in scenarios that rely on deserialization to utilize incorrect values and causing users to receive failures, such as when creating channels or adding users to shared channels in Microsoft Teams.\r\n\r\nNext update by: Tuesday, August 4, 2026, at 12:30 AM UTC"
-            },
-            {
-              "createdAt": "2026-08-03T18:44:40.93Z",
-              "postType": "regular",
-              "content": "Title: Some users may receive failures when creating channels with Channel Capabilities or shared channels in Microsoft Teams\r\n\r\nUser impact: Users may receive failures when creating channels with Channel Capabilities or shared channels in Microsoft Teams.\r\n\r\nCurrent status: After an internal review, we've isolated that a recent service update migrated JavaScript Object Notation (JSON) deserialization behavior, resulting in scenarios that rely on deserialization to utilize incorrect values and causing users to receive failures, such as when creating channels with Channel Capabilities or shared channels in Microsoft Teams. We're evaluating potential remediation strategies to resolve user impact as soon as possible.\r\n\r\nScope of impact: Your organization is affected by this event, and some users may receive failures when creating channels with Channel Capabilities or shared channels in Microsoft Teams. This section may be updated as the investigation progresses.\r\n\r\nStart time: Saturday, August 1, 2026, at 1:35 AM UTC\r\n\r\nRoot cause: A recent service update migrated JavaScript Object Notation (JSON) deserialization behavior, resulting in scenarios that rely on deserialization to utilize incorrect values and causing users to receive failures, such as when creating channels with Channel Capabilities or shared channels in Microsoft Teams.\r\n\r\nNext update by: Monday, August 3, 2026, at 8:00 PM UTC"
             }
           ],
           "affectedServices": [
@@ -365,6 +361,42 @@
     }
   ],
   "history": [
+    {
+      "id": "TM1446653",
+      "title": "Some users may receive failures when creating channels or adding members to shared channels in Microsoft Teams",
+      "startTime": "2026-08-01T01:35:00Z",
+      "endTime": "2026-08-04T00:07:10.173Z",
+      "lastModified": "2026-08-04T00:08:10.793Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have received failures when creating channels or adding members to shared channels in Microsoft Teams.",
+      "scopeOfImpact": "Your organization was affected by this event, and some users may have received failures when creating channels or adding members to shared channels in Microsoft Teams. \r\n\r\nStart time: Saturday, August 1, 2026, at 1:35 AM UTC\r\n\r\nEnd time: Monday, August 3, 2026, at 7:07 PM UTC",
+      "rootCause": "A recent service update migrated JavaScript Object Notation (JSON) deserialization behavior, resulting in scenarios that rely on deserialization to utilize incorrect values and causing users to receive failures, such as when creating channels or adding users to shared channels in Microsoft Teams.\r\n\r\nNext steps: \n- To help prevent similar impact in the future, we're further reviewing our update release procedures to ensure we're able to better identify issues before changes are deployed.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Teams and Channels",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-08-04T00:08:07.867Z",
+          "postType": "regular",
+          "content": "Title: Some users may receive failures when creating channels or adding members to shared channels in Microsoft Teams\r\n\r\nUser impact: Users may have received failures when creating channels or adding members to shared channels in Microsoft Teams.\r\n\r\nFinal status: After a period of monitoring, we confirmed that rolling back the offending update remediated impact. \r\n\r\nScope of impact: Your organization was affected by this event, and some users may have received failures when creating channels or adding members to shared channels in Microsoft Teams. \r\n\r\nStart time: Saturday, August 1, 2026, at 1:35 AM UTC\r\n\r\nEnd time: Monday, August 3, 2026, at 7:07 PM UTC\r\n\r\nRoot cause: A recent service update migrated JavaScript Object Notation (JSON) deserialization behavior, resulting in scenarios that rely on deserialization to utilize incorrect values and causing users to receive failures, such as when creating channels or adding users to shared channels in Microsoft Teams.\r\n\r\nNext steps: \n- To help prevent similar impact in the future, we're further reviewing our update release procedures to ensure we're able to better identify issues before changes are deployed.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-08-03T19:42:35.67Z",
+          "postType": "regular",
+          "content": "Title: Some users may receive failures when creating channels or adding members to shared channels in Microsoft Teams\r\n\r\nUser impact: Users may receive failures when creating channels or adding members to shared channels in Microsoft Teams.\r\n\r\nCurrent status: After further analysis, we've validated that users can still create shared channels but may be unable to add new users to these channels. We've updated the \"Title\", \"User impact\", \"Scope of impact\", and “Root cause” fields to reflect this. We've rolled back the offending service update and are monitoring service availability to validate remediation. Simultaneously, we're analyzing additional recent updates to validate if there is still potential for residual impact or if the issue is fully remediated.\r\n\r\nScope of impact: Your organization is affected by this event, and some users may receive failures when creating channels or adding members to shared channels in Microsoft Teams. This section may be updated as the investigation progresses.\r\n\r\nStart time: Saturday, August 1, 2026, at 1:35 AM UTC\r\n\r\nRoot cause: A recent service update migrated JavaScript Object Notation (JSON) deserialization behavior, resulting in scenarios that rely on deserialization to utilize incorrect values and causing users to receive failures, such as when creating channels or adding users to shared channels in Microsoft Teams.\r\n\r\nNext update by: Tuesday, August 4, 2026, at 12:30 AM UTC"
+        },
+        {
+          "createdAt": "2026-08-03T18:44:40.93Z",
+          "postType": "regular",
+          "content": "Title: Some users may receive failures when creating channels with Channel Capabilities or shared channels in Microsoft Teams\r\n\r\nUser impact: Users may receive failures when creating channels with Channel Capabilities or shared channels in Microsoft Teams.\r\n\r\nCurrent status: After an internal review, we've isolated that a recent service update migrated JavaScript Object Notation (JSON) deserialization behavior, resulting in scenarios that rely on deserialization to utilize incorrect values and causing users to receive failures, such as when creating channels with Channel Capabilities or shared channels in Microsoft Teams. We're evaluating potential remediation strategies to resolve user impact as soon as possible.\r\n\r\nScope of impact: Your organization is affected by this event, and some users may receive failures when creating channels with Channel Capabilities or shared channels in Microsoft Teams. This section may be updated as the investigation progresses.\r\n\r\nStart time: Saturday, August 1, 2026, at 1:35 AM UTC\r\n\r\nRoot cause: A recent service update migrated JavaScript Object Notation (JSON) deserialization behavior, resulting in scenarios that rely on deserialization to utilize incorrect values and causing users to receive failures, such as when creating channels with Channel Capabilities or shared channels in Microsoft Teams.\r\n\r\nNext update by: Monday, August 3, 2026, at 8:00 PM UTC"
+        }
+      ],
+      "serviceName": "Microsoft Teams",
+      "affectedServices": [
+        "Microsoft Teams"
+      ]
+    },
     {
       "id": "MV1444510",
       "title": "Some users may have experienced access issues or transient errors when accessing the Microsoft Viva Insight web app",
