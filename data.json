@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-04T09:06:06.335Z",
+  "lastUpdated": "2026-08-04T09:36:14.874Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -337,16 +337,21 @@
           "title": "Users may be unable to access Microsoft Copilot Chat in the browser and may encounter a 400 Request Header error",
           "startTime": "2026-07-31T20:00:00Z",
           "endTime": null,
-          "lastModified": "2026-08-04T07:49:39.36Z",
+          "lastModified": "2026-08-04T09:28:37.327Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to access Microsoft Copilot Chat in the browser and may encounter a 400 Request Header error.",
-          "scopeOfImpact": "Impact is specific to some users attempting to access Microsoft Copilot Chat in the browser.",
-          "rootCause": "",
-          "nextUpdateBy": "Tuesday, August 4, 2026, at 9:30 AM UTC",
+          "scopeOfImpact": "Impact is specific to some users attempting to access Microsoft Copilot Chat in the browser.\r\n\r\nStart time: Friday, July 31, 2026, at 8:00 PM UTC",
+          "rootCause": "A recent service change introduced an issue affecting how browser authentication information is stored when accessing Microsoft Copilot Chat, which is causing some browser requests to become larger than expected.",
+          "nextUpdateBy": "Tuesday, August 4, 2026, at 11:00 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-04T09:28:37.327Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to access Microsoft Copilot Chat in the browser and may encounter a 400 Request Header error\r\n\r\nUser impact: Users may be unable to access Microsoft Copilot Chat in the browser and may encounter a 400 Request Header error.\r\n\r\nMore info: As a temporary workaround, some users may be able to mitigate the impact by clearing their browser cookies and then retrying access to Microsoft Copilot Chat.\r\n\r\nCurrent status: We've identified that a recent service change introduced an issue affecting how browser authentication information is stored when accessing Microsoft Copilot Chat, which is causing some browser requests to become larger than expected and preventing users from accessing the service. We're deploying a fix to address the issue and restore normal access, and we expect to provide a deployment timeline in our next scheduled update.\r\n\r\nScope of impact: Impact is specific to some users attempting to access Microsoft Copilot Chat in the browser.\r\n\r\nStart time: Friday, July 31, 2026, at 8:00 PM UTC\r\n\r\nRoot cause: A recent service change introduced an issue affecting how browser authentication information is stored when accessing Microsoft Copilot Chat, which is causing some browser requests to become larger than expected.\r\n\r\nNext update by: Tuesday, August 4, 2026, at 11:00 PM UTC"
+            },
             {
               "createdAt": "2026-08-04T07:28:25.053Z",
               "postType": "regular",
