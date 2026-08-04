@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-04T03:34:26.937Z",
+  "lastUpdated": "2026-08-04T04:04:35.147Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -167,16 +167,21 @@
           "title": "Users may be unable to access Wi-Fi or VPN on Android devices",
           "startTime": "2026-07-09T22:25:00Z",
           "endTime": null,
-          "lastModified": "2026-08-04T01:53:12.133Z",
+          "lastModified": "2026-08-04T03:56:34.95Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to access their Wi-Fi or VPN on Android devices that require a certificate from Microsoft Intune.",
           "scopeOfImpact": "Any user or admin may be affected by this event, and may be unable to access their Wi-Fi or VPN on Android devices that require a certificate from Microsoft Intune. This section may be updated as our investigation continues.\r\n\r\nStart time: Thursday, July 9, 2026, at 10:25 PM UTC",
           "rootCause": "A recent change to the Microsoft Intune service intended to improve reliability and make certificate delivery more resilient contained a code regression, which is impacting certificate delivery and leading to impact.",
-          "nextUpdateBy": "Tuesday, August 4, 2026, at 4:00 AM UTC",
+          "nextUpdateBy": "Tuesday, August 4, 2026, at 6:00 AM UTC",
           "feature": "Microsoft Intune",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-04T03:56:34.95Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to access Wi-Fi or VPN on Android devices\r\n\r\nUser impact: Users may be unable to access their Wi-Fi or VPN on Android devices that require a certificate from Microsoft Intune.\r\n\r\nMore info: Users may be affected if they require a new SCEP certificate delivery from Microsoft Intune to access their Wi-Fi or VPN on newly targeted Android devices that don't already have a valid certificate. Users with existing valid SCEP certificates aren't affected by this behavior and are able to access network connections as expected. \n \nHowever, regardless of whether certificates already exist on the device, users on Android devices leveraging SCEP certificate profiles may be blocked from receiving any other targeted configuration policy. Admins may also be affected and may see errors in the SCEP policy console for the associated policy status in Microsoft Intune.\r\n\r\nCurrent status: We've completed all of the needed validations to ensure the fix deployment to roll back the previous change works as expected. We've now deployed this fix to all affected environments and we're monitoring the progress to ensure its completion and subsequent remediation of impact.\r\n\r\nScope of impact: Any user or admin may be affected by this event, and may be unable to access their Wi-Fi or VPN on Android devices that require a certificate from Microsoft Intune. This section may be updated as our investigation continues.\r\n\r\nStart time: Thursday, July 9, 2026, at 10:25 PM UTC\r\n\r\nRoot cause: A recent change to the Microsoft Intune service intended to improve reliability and make certificate delivery more resilient contained a code regression, which is impacting certificate delivery and leading to impact.\r\n\r\nNext update by: Tuesday, August 4, 2026, at 6:00 AM UTC"
+            },
             {
               "createdAt": "2026-08-04T01:53:12.133Z",
               "postType": "regular",
