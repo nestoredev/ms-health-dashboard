@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-05T23:50:07.484Z",
+  "lastUpdated": "2026-08-06T00:20:18.362Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -206,7 +206,7 @@
           "title": "Users may be unable to close the share tray when using the \"Share window\" feature in Microsoft Teams Town Halls",
           "startTime": "2026-08-05T18:39:54.207Z",
           "endTime": null,
-          "lastModified": "2026-08-05T23:43:25.94Z",
+          "lastModified": "2026-08-05T23:51:16.86Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to close the share tray when using the \"Share window\" feature in Microsoft Teams Town Halls.",
@@ -224,7 +224,7 @@
             {
               "createdAt": "2026-08-05T18:51:23.127Z",
               "postType": "regular",
-              "content": "Title: Users can't close the share tray when using the \"Share window\" feature in Microsoft Teams Town Halls\r\n\r\nUser impact: Users can't close the share tray when using the \"Share window\" feature in Microsoft Teams Town Halls.\r\n\r\nMore info: While we work towards full remediation, impacted users may do any of the following as a temporary alternative:\n \n-Stop window sharing, click \"Back\" on the share tray, then resume sharing\n- Leave the Town Hall and rejoin\n- Use the \"share screen\" feature instead of the \"share window\" feature, which will not display the share tray\r\n\r\nCurrent status: We've identified a recent feature change in an ongoing deployment which is responsible for this issue. We're in the process of developing and deploying a code change which we expect will resolve this issue.\r\n\r\nScope of impact: Your organization is affected by this event, and users who use the \"share window\" feature in Microsoft Teams Town Halls are unable to close the share tray feature while window sharing.\r\n\r\nRoot cause: A recent deployment of a feature change introduced a code conflict, which resulted in users being unable to close the share tray when using the \"share window\" feature in Microsoft Teams Town Halls.\r\n\r\nNext update by: Thursday, August 6, 2026, at 1:00 AM UTC"
+              "content": "Title: Users may be unable to close the share tray when using the \"Share window\" feature in Microsoft Teams Town Halls\r\n\r\nUser impact: Users may be unable to close the share tray when using the \"Share window\" feature in Microsoft Teams Town Halls.\r\n\r\nMore info: While we work towards full remediation, impacted users may do any of the following as a temporary alternative:\n \n-Stop window sharing, click \"Back\" on the share tray, then resume sharing\n- Leave the Town Hall and rejoin\n- Use the \"share screen\" feature instead of the \"share window\" feature, which will not display the share tray\r\n\r\nCurrent status: We've identified a recent feature change in an ongoing deployment which is responsible for this issue. We're in the process of developing and deploying a code change which we expect will resolve this issue.\r\n\r\nScope of impact: Any user who uses the \"share window\" feature in Microsoft Teams Town Halls may be affected and may be unable to close the share tray feature while window sharing. This section may be updated as our investigation continues.\r\n\r\nRoot cause: A recent deployment of a feature change introduced a code conflict, which resulted in users being unable to close the share tray when using the \"share window\" feature in Microsoft Teams Town Halls.\r\n\r\nNext update by: Thursday, August 6, 2026, at 1:00 AM UTC"
             }
           ],
           "affectedServices": [
