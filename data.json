@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-06T16:26:21.657Z",
+  "lastUpdated": "2026-08-06T16:56:33.753Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -216,28 +216,33 @@
       "issues": [
         {
           "id": "TM1448902",
-          "title": "Admins may be unable to assign Microsoft Teams numbers to resources accounts using multiple methods",
-          "startTime": "2026-08-06T15:06:09.213Z",
+          "title": "Admins may be unable to assign Microsoft Teams numbers to resource accounts using multiple methods",
+          "startTime": "2026-08-06T07:00:00Z",
           "endTime": null,
-          "lastModified": "2026-08-06T16:22:45.187Z",
+          "lastModified": "2026-08-06T16:46:49.183Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "userImpact": "Admins may be unable to assign Microsoft Teams numbers to resources accounts using multiple methods.",
-          "scopeOfImpact": "Your organization is impacted by this event, and all admins attempting to apply numbers to resource accounts are affected.",
-          "rootCause": "",
-          "nextUpdateBy": "Thursday, August 6, 2026, at 5:00 PM UTC",
+          "userImpact": "Admins may be unable to assign Microsoft Teams numbers to resource accounts using multiple methods.",
+          "scopeOfImpact": "All admins attempting to apply numbers to resource accounts are affected.\r\n\r\nStart time: Thursday, August 6, 2026, at 7:00 AM UTC",
+          "rootCause": "A configuration issue within a recent update contains an error causing the Resource Provider service to return a null value, causing the requests to fail, resulting in impact.",
+          "nextUpdateBy": "Thursday, August 6, 2026, at 7:00 PM UTC",
           "feature": "Assignment",
           "isResolved": false,
           "posts": [
             {
+              "createdAt": "2026-08-06T16:44:05.813Z",
+              "postType": "regular",
+              "content": "Title: Admins may be unable to assign Microsoft Teams numbers to resource accounts using multiple methods\r\n\r\nUser impact: Admins may be unable to assign Microsoft Teams numbers to resource accounts using multiple methods.\r\n\r\nMore info: Affected methods include:\n\n- Direct routing\n- Operator connect\n- PowerShell\r\n\r\nCurrent status: Our analysis of provided correlation IDs and service telemetry has identified that a configuration issue within a recent update contains an error causing the Resource Provider service to return a null value, causing the requests to fail, resulting in impact. We're in the process of rolling back this change to remediate impact and will provide a remediation timeline once available. \r\n\r\nScope of impact: All admins attempting to apply numbers to resource accounts are affected.\r\n\r\nStart time: Thursday, August 6, 2026, at 7:00 AM UTC\r\n\r\nRoot cause: A configuration issue within a recent update contains an error causing the Resource Provider service to return a null value, causing the requests to fail, resulting in impact.\r\n\r\nNext update by: Thursday, August 6, 2026, at 7:00 PM UTC"
+            },
+            {
               "createdAt": "2026-08-06T15:31:34.797Z",
               "postType": "regular",
-              "content": "Title: Admins may be unable to assign numbers to resources accounts using multiple methods\r\n\r\nUser impact: Admins may be unable to assign numbers to resources accounts using multiple methods.\r\n\r\nMore info: Affected methods include:\n\n- Direct routing\n- Operator connect\n- PowerShell\n\nAffected admins are seeing the following message:\n\n\"Service is unavailable. Please try again\"\r\n\r\nCurrent status: We've received reports of admins encountering errors when attempting to apply numbers to resource accounts in Microsoft Teams. We're reviewing provided correlation IDs to better understand the impact scenario and determine our next steps.\r\n\r\nScope of impact: Your organization is impacted by this event, and all admins attempting to apply numbers to resource accounts are affected.\r\n\r\nNext update by: Thursday, August 6, 2026, at 5:00 PM UTC"
+              "content": "Title: Admins may be unable to assign Microsoft Teams numbers to resource accounts using multiple methods\r\n\r\nUser impact: Admins may be unable to assign Microsoft Teams numbers to resource accounts using multiple methods.\r\n\r\nMore info: Affected methods include:\n\n- Direct routing\n- Operator connect\n- PowerShell\r\n\r\nCurrent status: We've received reports of admins encountering errors when attempting to apply numbers to resource accounts in Microsoft Teams. We're reviewing provided correlation IDs to better understand the impact scenario and determine our next steps.\r\n\r\nScope of impact: All admins attempting to apply numbers to resource accounts are affected."
             },
             {
               "createdAt": "2026-08-06T15:14:14.23Z",
               "postType": "regular",
-              "content": "Title: Admins may be unable to assign numbers to resources accounts using multiple methods\r\n\r\nUser impact: Admins may be unable to assign numbers to resources accounts using multiple methods.\r\n\r\nMore info: Affected methods include:\n\n- Direct routing\n- Operator connect\n- PowerShell\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Teams and checking for impact to your organization. We'll provide an update within 30 minutes."
+              "content": "Title: Admins may be unable to assign Microsoft Teams numbers to resource accounts using multiple methods\r\n\r\nUser impact: Admins may be unable to assign Microsoft Teams numbers to resource accounts using multiple methods.\r\n\r\nMore info: Affected methods include:\n\n- Direct routing\n- Operator connect\n- PowerShell\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Teams and checking for impact to your organization. We'll provide an update within 30 minutes."
             }
           ],
           "affectedServices": [
