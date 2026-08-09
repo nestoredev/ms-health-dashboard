@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-09T09:48:37.986Z",
+  "lastUpdated": "2026-08-09T10:18:47.507Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -193,9 +193,45 @@
     },
     {
       "service": "Power BI",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "PowerBIcom",
-      "issues": []
+      "issues": [
+        {
+          "id": "PB1451187",
+          "title": "Users may be unable to refresh some Power BI dataflows",
+          "startTime": "2026-08-02T04:00:00Z",
+          "endTime": null,
+          "lastModified": "2026-08-09T10:06:07.637Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to refresh some Power BI dataflows.",
+          "scopeOfImpact": "Users attempting to refresh some Power BI (Gen1) dataflows may be impacted.\r\n\r\nStart time: Sunday, August 2, 2026, at 4:00 AM UTC",
+          "rootCause": "A recent service update designed to improve Power BI service monitoring and observability inadvertently introduced a regression that is preventing some Gen1 dataflow refresh operations from completing successfully.",
+          "nextUpdateBy": "Sunday, August 9, 2026, at 5:30 PM UTC",
+          "feature": "General",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-08-09T10:05:09.63Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to refresh some Power BI dataflows\r\n\r\nUser impact: Users may be unable to refresh some Power BI dataflows.\r\n\r\nMore info: Affected users see that their refresh operations remain stuck in an \"In Progress\" state. This issue impacts a subset of Power BI dataflows (Gen1).\r\n\r\nCurrent status: We’ve determined that a recent service update designed to improve Power BI service monitoring and observability inadvertently introduced a regression that is preventing some Gen1 dataflow refresh operations from completing successfully. We’ve implemented a fix to mitigate the impact and have received confirmation from a subset of affected users that it successfully restores dataflow refresh operations. We’re continuing to apply the fix across affected environments while monitoring service telemetry to confirm recovery.\r\n\r\nScope of impact: Users attempting to refresh some Power BI (Gen1) dataflows may be impacted.\r\n\r\nStart time: Sunday, August 2, 2026, at 4:00 AM UTC\r\n\r\nRoot cause: A recent service update designed to improve Power BI service monitoring and observability inadvertently introduced a regression that is preventing some Gen1 dataflow refresh operations from completing successfully.\r\n\r\nNext update by: Sunday, August 9, 2026, at 5:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-08-09T08:30:01.96Z",
+              "postType": "regular",
+              "content": "Title: Users are unable to refresh some Power BI dataflows\r\n\r\nUser impact: Users are unable to refresh some Power BI dataflows.\r\n\r\nMore info: Affected users see that their refresh operations remain stuck in an \"In Progress\" state. This issue impacts a subset of Power BI dataflows (Gen1).\r\n\r\nCurrent status: We've identified that a recent service update designed to improve Power BI service monitoring and observability may be contributing to the issue. We're evaluating mitigation options to restore affected dataflow refresh operations while continuing to validate the root cause.\r\n\r\nScope of impact: Your organization is affected by this event, and users attempting to refresh some Power BI (Gen1) dataflows are impacted. This section may be updated as our investigation continues.\r\n\r\nNext update by: Sunday, August 9, 2026, at 10:30 AM UTC"
+            },
+            {
+              "createdAt": "2026-08-09T06:08:51.24Z",
+              "postType": "regular",
+              "content": "Title: Users are unable to refresh Gen1 dataflows in Power BI\n\nUser impact: Users are unable to refresh Gen1 dataflows in Power BI.\n\nMore info: Affected users see that their refresh operations remain stuck in an \"In Progress\" state.\n \nCurrent status: We've received support cases indicating that users are unable to refresh Gen1 dataflows in Power BI. We're reviewing the support case details along with any recent service changes to isolate the root cause of the issue and identify our next troubleshooting steps.\n \nScope of impact: Your organization is affected by this event, and users attempting to refresh Gen1 dataflows in Power BI are impacted. This section may be updated as our investigation continues.\n \nNext update by: Sunday, August 9, 2026, at 8:30 AM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Power BI"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft Intune",
