@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-10T12:57:46.496Z",
+  "lastUpdated": "2026-08-10T13:27:57.557Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -298,6 +298,31 @@
               "createdAt": "2026-07-27T12:02:26.883Z",
               "postType": "regular",
               "content": "Title: All users are unable to run Microsoft Teams workflows used to create incidents internally\n\nUser impact: Users are unable to run Microsoft Teams workflows used to create incidents internally.\n\nMore info: Users receive the following error message when attempting to create incidents:\n \n\"Missing Trigger URI\"\n\nCurrent status: We're reviewing HTTP Archive (HAR) logs and Teams logs to help identify the root cause and next steps required to mitigate impact.\n\nScope of impact: Users attempting to run run-only workflows from Microsoft Teams may be impacted. This section may be updated as the investigation progresses.\n\nNext update by: Monday, July 27, 2026, at 7:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Teams"
+          ]
+        },
+        {
+          "id": "TM1451939",
+          "title": "Users' locations may not be accurate during iOS Microsoft Teams emergency calls",
+          "startTime": "2026-08-10T12:44:26.077Z",
+          "endTime": null,
+          "lastModified": "2026-08-10T12:52:01.09Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users' locations may not be accurate during iOS Microsoft Teams emergency calls.",
+          "scopeOfImpact": "Impact is specific to any user on iOS 26 or newer making emergency calls using the Microsoft Teams application.",
+          "rootCause": "Changes to iOS API infrastructure has inadvertently resulted in user location data to become inaccurate during iOS emergency calls.",
+          "nextUpdateBy": "Tuesday, August 11, 2026, at 1:00 PM UTC",
+          "feature": "Calling",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-08-10T12:52:01.09Z",
+              "postType": "regular",
+              "content": "Title: Users' locations may not be accurate during iOS Microsoft Teams emergency calls\r\n\r\nUser impact: Users' locations may not be accurate during iOS Microsoft Teams emergency calls.\r\n\r\nMore info: Affected users are still able to make iOS emergency calls but their location may be inaccurate to the responder. This is specific to users on iOS version 26 and newer.\r\n\r\nCurrent status: We've identified that changes to iOS API infrastructure has inadvertently resulted in user location data to become inaccurate during iOS emergency calls. We're developing a fix in our internal environment to remediate impact and restore location data functionality.\r\n\r\nScope of impact: Impact is specific to any user on iOS 26 or newer making emergency calls using the Microsoft Teams application.\r\n\r\nRoot cause: Changes to iOS API infrastructure has inadvertently resulted in user location data to become inaccurate during iOS emergency calls.\r\n\r\nNext update by: Tuesday, August 11, 2026, at 1:00 PM UTC"
             }
           ],
           "affectedServices": [
