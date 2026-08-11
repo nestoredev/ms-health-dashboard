@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-11T12:36:10.088Z",
+  "lastUpdated": "2026-08-11T13:06:22.787Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -305,16 +305,21 @@
           "title": "Some users may be unable to access the Share tab in Microsoft Teams on Android devices",
           "startTime": "2026-08-10T17:30:00Z",
           "endTime": null,
-          "lastModified": "2026-08-11T11:44:41.69Z",
+          "lastModified": "2026-08-11T12:38:44.867Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to access the Share tab in Microsoft Teams on Android devices.",
           "scopeOfImpact": "Impact is specific to some users attempting to access the Share tab in Microsoft Teams on Android devices.\r\n\r\nStart time: Monday, August 10, 2026, at 5:30 PM UTC",
           "rootCause": "A recent compliance update introduced a code issue, resulting in a service regression and causing impact.",
-          "nextUpdateBy": "Tuesday, August 11, 2026, at 2:00 PM UTC",
+          "nextUpdateBy": "Sunday, August 16, 2026, at 2:00 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-11T12:38:44.867Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to access the Share tab in Microsoft Teams on Android devices\r\n\r\nUser impact: Users may be unable to access the Share tab in Microsoft Teams on Android devices.\r\n\r\nMore info: Affected users may be unable to access sharing functionality because the Share tab is missing in Microsoft Teams on Android devices.\r\n\r\nCurrent status: We've begun reverting the offending change to remediate the impact. We expect this process to complete and the impact to be fully resolved by our next scheduled update.\r\n\r\nScope of impact: Impact is specific to some users attempting to access the Share tab in Microsoft Teams on Android devices.\r\n\r\nStart time: Monday, August 10, 2026, at 5:30 PM UTC\r\n\r\nRoot cause: A recent compliance update introduced a code issue, resulting in a service regression and causing impact.\r\n\r\nNext update by: Sunday, August 16, 2026, at 2:00 PM UTC"
+            },
             {
               "createdAt": "2026-08-11T11:44:41.69Z",
               "postType": "regular",
@@ -335,16 +340,21 @@
           "title": "Users' locations may not be accurate during iOS Microsoft Teams emergency calls",
           "startTime": "2026-08-10T12:44:26.077Z",
           "endTime": null,
-          "lastModified": "2026-08-10T12:52:01.09Z",
+          "lastModified": "2026-08-11T12:49:31.877Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users' locations may not be accurate during iOS Microsoft Teams emergency calls.",
           "scopeOfImpact": "Impact is specific to any user on iOS 26 or newer making emergency calls using the Microsoft Teams application.",
-          "rootCause": "Changes to iOS API infrastructure has inadvertently resulted in user location data to become inaccurate during iOS emergency calls.",
-          "nextUpdateBy": "Tuesday, August 11, 2026, at 1:00 PM UTC",
+          "rootCause": "Changes to iOS API infrastructure has resulted in user location data to become inaccurate during iOS emergency calls.",
+          "nextUpdateBy": "Tuesday, August 11, 2026, at 7:30 PM UTC",
           "feature": "Calling",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-11T12:49:31.877Z",
+              "postType": "regular",
+              "content": "Title: Users' locations may not be accurate during iOS Microsoft Teams emergency calls\r\n\r\nUser impact: Users' locations may not be accurate during iOS Microsoft Teams emergency calls.\r\n\r\nMore info: Affected users are still able to make iOS emergency calls but their location may be inaccurate to the responder. This is specific to users on iOS version 26 and newer.\r\n\r\nCurrent status: We're continuing to develop a fix in our internal environment to remediate impact and restore location data functionality. We expect this to be ready to be deployed by our next scheduled update.\r\n\r\nScope of impact: Impact is specific to any user on iOS 26 or newer making emergency calls using the Microsoft Teams application.\r\n\r\nRoot cause: Changes to iOS API infrastructure has resulted in user location data to become inaccurate during iOS emergency calls.\r\n\r\nNext update by: Tuesday, August 11, 2026, at 7:30 PM UTC"
+            },
             {
               "createdAt": "2026-08-10T12:52:01.09Z",
               "postType": "regular",
