@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-11T09:35:02.479Z",
+  "lastUpdated": "2026-08-11T10:05:12.088Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -294,6 +294,31 @@
               "createdAt": "2026-07-27T12:02:26.883Z",
               "postType": "regular",
               "content": "Title: All users are unable to run Microsoft Teams workflows used to create incidents internally\n\nUser impact: Users are unable to run Microsoft Teams workflows used to create incidents internally.\n\nMore info: Users receive the following error message when attempting to create incidents:\n \n\"Missing Trigger URI\"\n\nCurrent status: We're reviewing HTTP Archive (HAR) logs and Teams logs to help identify the root cause and next steps required to mitigate impact.\n\nScope of impact: Users attempting to run run-only workflows from Microsoft Teams may be impacted. This section may be updated as the investigation progresses.\n\nNext update by: Monday, July 27, 2026, at 7:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Teams"
+          ]
+        },
+        {
+          "id": "TM1452695",
+          "title": "Some users may be unable to access the Share tab in Microsoft Teams on Android devices",
+          "startTime": "2026-08-11T09:46:12.943Z",
+          "endTime": null,
+          "lastModified": "2026-08-11T09:47:35.573Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to access the Share tab in Microsoft Teams on Android devices.",
+          "scopeOfImpact": "Impact is specific to some users who are served through the affected infrastructure, attempting to access the Share tab in Microsoft Teams on Android devices.",
+          "rootCause": "",
+          "nextUpdateBy": "Tuesday, August 11, 2026, at 12:00 PM UTC",
+          "feature": "General",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-08-11T09:47:35.573Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to access the Share tab in Microsoft Teams on Android devices\r\n\r\nUser impact: Users may be unable to access the Share tab in Microsoft Teams on Android devices.\r\n\r\nMore info: Affected users may be unable to access sharing functionality because the Share tab is missing in Microsoft Teams on Android devices.\r\n\r\nCurrent status: We're reviewing service monitoring telemetry to isolate the source of the issue and establish a fix.\r\n\r\nScope of impact: Impact is specific to some users who are served through the affected infrastructure, attempting to access the Share tab in Microsoft Teams on Android devices. \r\n\r\nNext update by: Tuesday, August 11, 2026, at 12:00 PM UTC"
             }
           ],
           "affectedServices": [
