@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-12T14:45:48.684Z",
+  "lastUpdated": "2026-08-12T15:15:59.308Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -149,18 +149,23 @@
         {
           "id": "EX1442215",
           "title": "Admins are unable to complete some cross-tenant mailbox migrations in Exchange Online",
-          "startTime": "2026-07-29T13:29:41.22Z",
+          "startTime": "2026-02-14T00:48:00Z",
           "endTime": null,
-          "lastModified": "2026-08-12T13:08:46.443Z",
+          "lastModified": "2026-08-12T14:54:00.343Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may be unable to perform tenant to tenant migrations and offboarding moves in the Exchange admin center.",
           "scopeOfImpact": "Some admins attempting to perform tenant to tenant migrations and offboarding moves in the Exchange admin center may be impacted.\r\n\r\nStart time: Saturday, February 14, 2026, at 12:48 AM UTC",
           "rootCause": "A change introduced a code regression to Mailbox Replication Service (MRS), which is causing intermittent failures for tenant-to-tenant migration actions or offboarding moves as the property tags needed to complete the request are not being properly configured.",
-          "nextUpdateBy": "Wednesday, August 12, 2026, at 3:00 PM UTC",
+          "nextUpdateBy": "Thursday, August 13, 2026, at 9:00 PM UTC",
           "feature": "Performance degradation",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-12T14:47:06.523Z",
+              "postType": "regular",
+              "content": "Title: Admins are unable to complete some cross-tenant mailbox migrations in Exchange Online\r\n\r\nUser impact: Admins may be unable to perform tenant to tenant migrations and offboarding moves in the Exchange admin center.\r\n\r\nMore info: While we work on developing a long-term solution, admins may be able to use PowerShell for the affected migrations and moves with the following cmdlet against the affected mailboxes:\n\nSet-MoveRequest \"user@yourdomain.com\" -SkipMoving FolderRestrictions\n\nNext, the tenant admin may have resume the move request using the cmdlet:\nResume-MoveRequest \"user@yourdomain.com\"\n\nThis would allow the affected move jobs to continue to make progress.\r\n\r\nCurrent status: We're awaiting feedback from a subset of affected admins to validate if our fix successfully remediated impact.\r\n\r\nScope of impact: Some admins attempting to perform tenant to tenant migrations and offboarding moves in the Exchange admin center may be impacted.\r\n\r\nStart time: Saturday, February 14, 2026, at 12:48 AM UTC\r\n\r\nRoot cause: A change introduced a code regression to Mailbox Replication Service (MRS), which is causing intermittent failures for tenant-to-tenant migration actions or offboarding moves as the property tags needed to complete the request are not being properly configured.\r\n\r\nNext update by: Thursday, August 13, 2026, at 9:00 PM UTC"
+            },
             {
               "createdAt": "2026-08-12T12:57:36.19Z",
               "postType": "regular",
