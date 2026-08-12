@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-12T21:48:36.402Z",
+  "lastUpdated": "2026-08-12T22:18:46.902Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -2219,47 +2219,6 @@
       "serviceName": "Exchange Online",
       "affectedServices": [
         "Exchange Online"
-      ]
-    },
-    {
-      "id": "TM1411708",
-      "title": "Users may not receive the join option in Teams iOS for meetings or calls active on another device",
-      "startTime": "2026-06-11T00:00:00Z",
-      "endTime": "2026-07-13T22:14:56.93Z",
-      "lastModified": "2026-07-13T22:16:12.32Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users may not have received the join option in Teams iOS for meetings or calls active on another device.",
-      "scopeOfImpact": "Impact may have occurred for users when attempting to join Teams meetings or calls from the Microsoft Teams iOS app on a secondary device.\r\n\r\nStart time: Thursday, June 11, 2026, at 12:00 AM UTC\r\n\r\nEnd time: Monday, July 13, 2026, at 6:00 PM UTC",
-      "rootCause": "A latent code issue introduced a dependency on an authentication configuration, preventing the companion join banner from functioning as expected.\r\n\r\nNext steps: \n- We're reviewing opportunities to improve our code review to better detect similar latent issues and prevent future occurrences.\r\n\r\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Calling",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-07-13T22:16:09.267Z",
-          "postType": "regular",
-          "content": "Title: Users may not receive the join option in Teams iOS for meetings or calls active on another device\r\n\r\nUser impact: Users may not have received the join option in Teams iOS for meetings or calls active on another device.\r\n\r\nFinal status: We've completed the deployment of our fix and confirmed impact was successfully remediated.\r\n\r\nScope of impact: Impact may have occurred for users when attempting to join Teams meetings or calls from the Microsoft Teams iOS app on a secondary device.\r\n\r\nStart time: Thursday, June 11, 2026, at 12:00 AM UTC\r\n\r\nEnd time: Monday, July 13, 2026, at 6:00 PM UTC\r\n\r\nRoot cause: A latent code issue introduced a dependency on an authentication configuration, preventing the companion join banner from functioning as expected.\r\n\r\nNext steps: \n- We're reviewing opportunities to improve our code review to better detect similar latent issues and prevent future occurrences.\r\n\r\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-07-08T23:30:24.557Z",
-          "postType": "regular",
-          "content": "Title: Users may not receive the join option in Teams iOS for meetings or calls active on another device\n\nUser impact: Users may not receive the join option in Teams iOS for meetings or calls active on another device.\n\nCurrent status: Our efforts to apply the developed configuration change across the affected environment is ongoing and progressing, though it’s taking longer than initially anticipated. Based on our revised current estimations, we now anticipate this application process will be completed and issue will be resolved by our next scheduled communications update.\n \nScope of impact: Impact may occur for users when attempting to join Teams meetings or calls from the Microsoft Teams iOS app on a secondary device. This section may be updated as our investigation continues.\n \nStart time: Thursday, June 11, 2026, at 12:00 AM UTC\n \nRoot cause: A latent code issue introduced a dependency on an authentication configuration, preventing the companion join banner from functioning as expected.\n \nNext update by: Tuesday, July 14, 2026, at 12:00 AM UTC"
-        },
-        {
-          "createdAt": "2026-07-01T23:23:59.327Z",
-          "postType": "regular",
-          "content": "Title: Users may not receive the join option in Teams iOS for meetings or calls active on another device\n\nUser impact: Users may not receive the join option in Teams iOS for meetings or calls active on another device.\n\nCurrent status: We’re continuing to apply the aforementioned configuration and as this deployment process progresses across the affected environments, users should start seeing mitigation. We anticipate this deployment process will be completed by our next scheduled communications update.\n \nScope of impact: Impact may occur for users joining Teams meetings or calls from the Microsoft Teams iOS app on a secondary device. This section may be updated as our investigation continues.\n \nStart time: Thursday, June 11, 2026, at 12:00 AM UTC\n \nRoot cause: A latent code issue introduced a dependency on an authentication configuration, preventing the companion join banner from functioning as expected.\n \nNext update by: Thursday, July 9, 2026, at 12:00 AM UTC"
-        },
-        {
-          "createdAt": "2026-07-01T22:05:53.233Z",
-          "postType": "regular",
-          "content": "Title: Users may not receive the join option in Teams iOS for meetings or calls active on another device\r\n\r\nUser impact: Users may not receive the join option in Teams iOS for meetings or calls active on another device.\r\n\r\nCurrent status: We've received reports from affected users that users may not receive the join option in the Microsoft Teams iOS app for meetings or calls active on another device. Our analysis has identified that a latent code issue introduced a dependency on an authentication configuration, preventing the companion join banner from functioning as expected. We've developed a configuration change, which we're applying across all affected environments while monitoring the deployment to ensure successful remediation.\r\n\r\nScope of impact: Impact may occur for users joining Teams meetings or calls from the Microsoft Teams iOS app on a secondary device.\r\n\r\nStart time: Thursday, June 11, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: A latent code issue introduced a dependency on an authentication configuration, preventing the companion join banner from functioning as expected.\r\n\r\nNext update by: Wednesday, July 1, 2026, at 11:30 PM UTC"
-        }
-      ],
-      "serviceName": "Microsoft Teams",
-      "affectedServices": [
-        "Microsoft Teams"
       ]
     }
   ]
