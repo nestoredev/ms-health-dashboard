@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-11T23:40:19.154Z",
+  "lastUpdated": "2026-08-12T00:10:30.028Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -350,16 +350,21 @@
           "title": "Admins may see incorrect Teams membership information for users in the Teams Admin Center ",
           "startTime": "2026-08-11T23:14:25.303Z",
           "endTime": null,
-          "lastModified": "2026-08-11T23:22:42.787Z",
+          "lastModified": "2026-08-12T00:01:07Z",
           "status": "investigating",
           "severity": "advisory",
           "userImpact": "Admins may see incorrect Teams membership information for users in the Teams Admin Center.",
-          "scopeOfImpact": "",
-          "rootCause": "",
-          "nextUpdateBy": "",
+          "scopeOfImpact": "This issue may impact any admins viewing Teams membership information for users in the Teams Admin Center.",
+          "rootCause": "A code issue contained in a recent service update is causing the display of incorrect Teams membership information in the Teams Admin Center.",
+          "nextUpdateBy": "Wednesday, August 12, 2026, at 3:00 AM UTC",
           "feature": "Teams Admin Center",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-12T00:01:07Z",
+              "postType": "regular",
+              "content": "Title: Admins may see incorrect Teams membership information for users in the Teams Admin Center \r\n\r\nUser impact: Admins may see incorrect Teams membership information for users in the Teams Admin Center.\r\n\r\nCurrent status: We identified that a code issue in a recent service update is causing the display of incorrect Teams membership information. We're working to revert the code changes to remediate the impact. \r\n\r\nScope of impact: This issue may impact any admins viewing Teams membership information for users in the Teams Admin Center.\r\n\r\nRoot cause: A code issue contained in a recent service update is causing the display of incorrect Teams membership information in the Teams Admin Center. \r\n\r\nNext update by: Wednesday, August 12, 2026, at 3:00 AM UTC"
+            },
             {
               "createdAt": "2026-08-11T23:22:42.787Z",
               "postType": "regular",
