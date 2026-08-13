@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-13T20:26:41.296Z",
+  "lastUpdated": "2026-08-13T20:56:50.935Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -2143,52 +2143,6 @@
           "createdAt": "2026-07-14T05:44:54.963Z",
           "postType": "regular",
           "content": "Title: Some admins may be unable to make changes to distribution lists in Exchange Online and receive an error\n\nUser impact: Admins may be unable to make changes to distribution lists in Exchange Online and receive an error.\n\nMore info: Affected admins report being unable to view, add, remove, or edit users associated with distribution lists in Exchange Online and receiving \"Unauthorized: You don't have permission to access this page or perform this action\" permissions errors, even when using global administrator accounts. This affects both the Exchange admin center and the Microsoft 365 admin center.\n\nCurrent status: We've identified that an API configuration conflict is affecting the permissions flow leveraged for distribution list administrative operations and resulting in impact. We're proceeding with further review of the impacted flow and details provided by affected users to determine our next steps towards remediation.\n\nScope of impact: Any admins attempting to make changes to Exchange Online distribution lists through the Microsoft 365 admin center or Exchange admin center may be impacted.\n\nNext update by: Tuesday, July 14, 2026, at 10:30 AM UTC"
-        }
-      ],
-      "serviceName": "Exchange Online",
-      "affectedServices": [
-        "Exchange Online"
-      ]
-    },
-    {
-      "id": "EX1426511",
-      "title": "Users may be unable to drag and drop email messages between folders in new Outlook and Outlook on the web",
-      "startTime": "2026-02-10T01:00:00Z",
-      "endTime": "2026-07-14T20:30:00Z",
-      "lastModified": "2026-07-14T22:57:44.873Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users may have been unable to drag and drop email messages between folders in new Outlook and Outlook on the web.",
-      "scopeOfImpact": "Users may have been unable to drag and drop email messages between folders in new Outlook and Outlook on the web.\n \nStart time: Tuesday, February 10, 2026, at 1:00 AM UTC\n \nEnd time: Tuesday, July 14, 2026, at 8:30 PM UTC",
-      "rootCause": "A service-side update added additional items to the target locations of the My Day pane, which resulted in the impact.\n \nNext steps: \n- We're reviewing our update release standards to ensure similar issues are identified and corrected ahead of deployment to prevent this from reoccurring.\n \nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Reports of an Incident",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-07-14T22:57:23.237Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to drag and drop email messages between folders in new Outlook and Outlook on the web\n\nUser impact: Users may have been unable to drag and drop email messages between folders in new Outlook and Outlook on the web.\n\nMore info: Users were still able to move email messages by right clicking and selecting the desired folder or they could close the My Day pane when completing drag and drop.\n \nFinal status: We've validated that the fix to correct the impact caused by the update to the My Day pane has completed deployment and the impact has been remediated.\n \nScope of impact: Users may have been unable to drag and drop email messages between folders in new Outlook and Outlook on the web.\n \nStart time: Tuesday, February 10, 2026, at 1:00 AM UTC\n \nEnd time: Tuesday, July 14, 2026, at 8:30 PM UTC\n \nRoot cause: A service-side update added additional items to the target locations of the My Day pane, which resulted in the impact.\n \nNext steps: \n- We're reviewing our update release standards to ensure similar issues are identified and corrected ahead of deployment to prevent this from reoccurring.\n \nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-07-14T20:54:28.357Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to drag and drop email messages between folders in new Outlook and Outlook on the web\n\nUser impact: Users may be unable to drag and drop email messages between folders in new Outlook and Outlook on the web.\n\nMore info: Users are still able to move email messages by right clicking and selecting the desired folder or they can close the My Day pane when completing drag and drop.\n\nCurrent status: We've initialized the deployment of the fix, and we anticipate it will have fully saturated in the affected environment by the time of our next scheduled update.\n\nScope of impact: Users may be unable to drag and drop email messages between folders in new Outlook and Outlook on the web. This information may be updated as the investigation continues.\n\nStart time: Tuesday, February 10, 2026, at 1:00 AM UTC\n\nRoot cause: A service-side update added additional items to the target locations of the My Day pane, resulting in this impacting event.\n\nNext update by: Tuesday, July 14, 2026, at 11:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-07-14T16:18:53.28Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to drag and drop email messages between folders in new Outlook and Outlook on the web\n\nUser impact: Users may be unable to drag and drop email messages between folders in new Outlook and Outlook on the web.\n\nMore info: Users are still able to move email messages by right clicking and selecting the desired folder or they can close the My Day pane when completing drag and drop.\n\nCurrent status: We've identified a service-side update that added additional items to the target location of the My Day pane, resulting in this impacting event. We've created a fix and are validating it before it’s deployed. We anticipate having an update on the deployment timeline at next communication time.\n\nScope of impact: Users may be unable to drag and drop email messages between folders in new Outlook and Outlook on the web. This information may be updated as the investigation continues.\n\nStart time: Tuesday, February 10, 2026, at 1:00 AM UTC\n\nRoot cause: A service-side update added additional items to the target locations of the My Day pane, resulting in this impacting event.\n\nNext update by: Tuesday, July 14, 2026, at 9:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-07-13T21:30:03.747Z",
-          "postType": "regular",
-          "content": "Title: Users are unable to drag and drop email messages between folders in new Outlook and Outlook on the web\n\nUser impact: Users are unable to drag and drop email messages between folders in new Outlook and Outlook on the web.\n\nMore info: Users are still able to move email messages by right clicking and selecting the desired folder.\n\nCurrent status: We're continuing to review the screen recordings and HTTP Archive format (HAR) traces provided by a subset of affected users alongside recent service-side changes in order further our understanding of this impact to assist in the development of remediation steps.\n \nScope of impact: Your organization is impacted by this event, and users are unable to drag and drop email messages between folders in new Outlook and Outlook on the web. This information may be updated as the investigation continues.\n \nNext update by: Tuesday, July 14, 2026, at 5:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-07-13T20:21:09.587Z",
-          "postType": "regular",
-          "content": "Title: Users are unable to drag and drop email messages between folders in new Outlook and Outlook on the web\n\nUser impact: Users are unable to drag and drop email messages between folders in new Outlook and Outlook on the web.\n\nCurrent status: We're reviewing documentation of impact, including screen recordings and HTTP Archive format (HAR) traces, provided by a subset of affected users to assist in our investigation into the underlying root cause of this event.\n \nScope of impact: Your organization is impacted by this event, and users are unable to drag and drop email messages between folders in new Outlook and Outlook on the web. This information may be updated as the investigation continues.\n \nNext update by: Monday, July 13, 2026, at 9:30 PM UTC"
         }
       ],
       "serviceName": "Exchange Online",
