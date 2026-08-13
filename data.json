@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-13T03:20:30.085Z",
+  "lastUpdated": "2026-08-13T03:50:39.781Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -329,6 +329,31 @@
       "status": "serviceDegradation",
       "id": "microsoftteams",
       "issues": [
+        {
+          "id": "TM1453882",
+          "title": "Admins may see that Auto Attendant is not visible in the Teams Admin Center (TAC)",
+          "startTime": "2026-08-13T03:32:44.437Z",
+          "endTime": null,
+          "lastModified": "2026-08-13T03:40:29.283Z",
+          "status": "investigating",
+          "severity": "advisory",
+          "userImpact": "Admins may see that Auto Attendant is not visible in the TAC.",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
+          "feature": "Calling",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-08-13T03:40:29.283Z",
+              "postType": "regular",
+              "content": "Title: Admins may see that Auto Attendant is not visible in the Teams Admin Center (TAC)\r\n\r\nUser impact: Admins may see that Auto Attendant is not visible in the TAC.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Teams and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Teams"
+          ]
+        },
         {
           "id": "TM1440450",
           "title": "Users may have been unable to run run-only workflows from Microsoft Teams",
