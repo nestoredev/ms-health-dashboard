@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-13T19:56:30.717Z",
+  "lastUpdated": "2026-08-13T20:26:41.296Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -100,51 +100,6 @@
               "createdAt": "2026-07-28T15:15:49.05Z",
               "postType": "regular",
               "content": "Title: Some users may see unwanted add-ins appearing automatically across all Outlook clients\n\nUser impact: Users may see unwanted add-ins appearing automatically across all Outlook clients.\n\nMore info: These add-ins are configured to be available to users by admins but aren’t expected to be automatically installed.\n\nCurrent status: We're investigating a potential issue with Exchange Online and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Exchange Online"
-          ]
-        },
-        {
-          "id": "EX1442253",
-          "title": "Users may be unable to add their personal Google or Gmail calendars in Outlook on the web",
-          "startTime": "2026-02-24T10:16:00Z",
-          "endTime": null,
-          "lastModified": "2026-08-05T23:15:22.433Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may be unable to add their personal Google or Gmail calendars in Outlook on the web.",
-          "scopeOfImpact": "Users attempting to add their personal Google or Gmail calendars in Outlook on the web may be impacted. This section may be updated as our investigation progresses.\r\n\r\nStart time: Tuesday, February 24, 2026, at 10:16 AM UTC",
-          "rootCause": "The URLs being utilized to issue the necessary authentication component to add Google or Gmail calendars in Outlook on the web don't match, resulting in authentication failing.",
-          "nextUpdateBy": "Thursday, August 13, 2026, at 10:00 PM UTC",
-          "feature": "OWA - poor customer experience",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-08-05T23:09:33.777Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to add their personal Google or Gmail calendars in Outlook on the web\r\n\r\nUser impact: Users may be unable to add their personal Google or Gmail calendars in Outlook on the web.\r\n\r\nMore info: Affected users may report that they receive a blank page when attempting to add their personal Google or Gmail calendars in Outlook on the web when navigating to Settings -> Calendar -> Accounts -> Google -> Add personal calendar.\r\n\r\nCurrent status: We can confirm that our fix has been deployed and has saturated 30 percent of the affected environment. We'll continue to monitor as the fix progresses to ensure the impact is fully remediated.\r\n\r\nScope of impact: Users attempting to add their personal Google or Gmail calendars in Outlook on the web may be impacted. This section may be updated as our investigation progresses.\r\n\r\nStart time: Tuesday, February 24, 2026, at 10:16 AM UTC\r\n\r\nRoot cause:  The URLs being utilized to issue the necessary authentication component to add Google or Gmail calendars in Outlook on the web don't match, resulting in authentication failing.\r\n\r\nNext update by: Thursday, August 13, 2026, at 10:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-07-29T20:19:16.857Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to add their personal Google or Gmail calendars in Outlook on the web\n\nUser impact: Users may be unable to add their personal Google or Gmail calendars in Outlook on the web.\n\nMore info: Affected users may report that they receive a blank page when attempting to add their personal Google or Gmail calendars in Outlook on the web when navigating to Settings -> Calendar -> Accounts -> Google -> Add personal calendar.\n\nCurrent status: After analyzing provided HAR files and screenshots of impact, we've isolated that the URLs being utilized to issue the necessary authentication component to add Google or Gmail calendars in Outlook on the web don't match, resulting in authentication failing. We're developing a fix to remediate the mismatch and we aim to provide a timeline to remediation in our next scheduled update.\n\nScope of impact: Users attempting to add their personal Google or Gmail calendars in Outlook on the web may be impacted. This section may be updated as our investigation progresses.\n\nStart time: Tuesday, February 24, 2026, at 10:16 AM UTC\n\nRoot cause:  The URLs being utilized to issue the necessary authentication component to add Google or Gmail calendars in Outlook on the web don't match, resulting in authentication failing.\n\nNext update by: Thursday, August 13, 2026, at 10:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-07-29T17:20:34.357Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to add their personal Google or Gmail calendars in Outlook on the web\n\nUser impact: Users may be unable to add their personal Google or Gmail calendars in Outlook on the web.\n\nMore info: Affected users may report that they receive a blank page when attempting to add their personal Google or Gmail calendars in Outlook on the web when navigating to Settings -> Calendar -> Accounts -> Google -> Add personal calendar.\n\nCurrent status: We're continuing our analysis of HAR logs and screenshots of impact from affected users to further investigate this issue and determine our next troubleshooting steps.\n\nScope of impact: Users attempting to add their personal Google or Gmail calendars in Outlook on the web may be impacted. This section may be updated as our investigation progresses.\n\nNext update by: Wednesday, July 29, 2026, at 9:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-07-29T15:35:28.237Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to add their personal Google or Gmail calendars in Outlook on the web\n\nUser impact: Users may be unable to add their personal Google or Gmail calendars in Outlook on the web.\n\nMore info: Affected users may report that they receive a blank page when attempting to add their personal Google or Gmail calendars in Outlook on the web when navigating to Settings -> Calendar -> Accounts -> Google -> Add personal calendar.\n\nCurrent status: We're reviewing support provided data from affected users, including HTTP Archive format (HAR) logs and screenshots of impact, to investigate into this issue's root cause.\n\nScope of impact: Users attempting to add their personal Google or Gmail calendars in Outlook on the web may be impacted. This section may be updated as our investigation progresses.\n\nNext update by: Wednesday, July 29, 2026, at 6:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-07-29T15:09:17.087Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to add their personal Google or Gmail calendars in Outlook on the web\n\nUser impact: Users may be unable to add their personal Google or Gmail calendars in Outlook on the web.\n\nCurrent status: We're investigating a potential issue impacting Exchange Online in which users can't add personal Google or Gmail Calendars in Outlook on the web. We're checking for impact to your organization and will provide an update in approximately 30 minutes."
             }
           ],
           "affectedServices": [
@@ -834,6 +789,52 @@
       "serviceName": "Power BI",
       "affectedServices": [
         "Power BI"
+      ]
+    },
+    {
+      "id": "EX1442253",
+      "title": "Users may be unable to add their personal Google or Gmail calendars in Outlook on the web",
+      "startTime": "2026-02-24T10:16:00Z",
+      "endTime": "2026-08-07T11:20:00Z",
+      "lastModified": "2026-08-13T20:17:31.037Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have been unable to add their personal Google or Gmail calendars in Outlook on the web.",
+      "scopeOfImpact": "Users attempting to add their personal Google or Gmail calendars in Outlook on the web may have been impacted. \r\n\r\nStart time: Tuesday, February 24, 2026, at 10:16 AM UTC\r\n\r\nEnd time: Friday, August 7, 2026, at 11:20 AM UTC",
+      "rootCause": "The URLs being utilized to issue the necessary authentication component to add Google or Gmail calendars in Outlook on the web didn't match, resulting in authentication failing.\r\n\r\nNext steps: \n- We're validating how the URL mismatch was first introduced into our service to further our understanding of the impact scenario and to confirm what actions we can take to ensure similar impact scenarios don't occur in the future.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "OWA - poor customer experience",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-08-13T20:16:56.753Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to add their personal Google or Gmail calendars in Outlook on the web\r\n\r\nUser impact: Users may have been unable to add their personal Google or Gmail calendars in Outlook on the web.\r\n\r\nMore info: Affected users reported that they received a blank page when attempting to add their personal Google or Gmail calendars in Outlook on the web when navigating to Settings -> Calendar -> Accounts -> Google -> Add personal calendar.\r\n\r\nFinal status: We've completed deployment of our fix to address a URL mismatch and validated both internally and with a subset of affected users that our actions successfully remediated impact.\r\n\r\nScope of impact: Users attempting to add their personal Google or Gmail calendars in Outlook on the web may have been impacted. \r\n\r\nStart time: Tuesday, February 24, 2026, at 10:16 AM UTC\r\n\r\nEnd time: Friday, August 7, 2026, at 11:20 AM UTC\r\n\r\nRoot cause:  The URLs being utilized to issue the necessary authentication component to add Google or Gmail calendars in Outlook on the web didn't match, resulting in authentication failing.\r\n\r\nNext steps: \n- We're validating how the URL mismatch was first introduced into our service to further our understanding of the impact scenario and to confirm what actions we can take to ensure similar impact scenarios don't occur in the future.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-08-05T23:09:33.777Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to add their personal Google or Gmail calendars in Outlook on the web\r\n\r\nUser impact: Users may be unable to add their personal Google or Gmail calendars in Outlook on the web.\r\n\r\nMore info: Affected users may report that they receive a blank page when attempting to add their personal Google or Gmail calendars in Outlook on the web when navigating to Settings -> Calendar -> Accounts -> Google -> Add personal calendar.\r\n\r\nCurrent status: We can confirm that our fix has been deployed and has saturated 30 percent of the affected environment. We'll continue to monitor as the fix progresses to ensure the impact is fully remediated.\r\n\r\nScope of impact: Users attempting to add their personal Google or Gmail calendars in Outlook on the web may be impacted. This section may be updated as our investigation progresses.\r\n\r\nStart time: Tuesday, February 24, 2026, at 10:16 AM UTC\r\n\r\nRoot cause:  The URLs being utilized to issue the necessary authentication component to add Google or Gmail calendars in Outlook on the web don't match, resulting in authentication failing.\r\n\r\nNext update by: Thursday, August 13, 2026, at 10:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-07-29T20:19:16.857Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to add their personal Google or Gmail calendars in Outlook on the web\n\nUser impact: Users may be unable to add their personal Google or Gmail calendars in Outlook on the web.\n\nMore info: Affected users may report that they receive a blank page when attempting to add their personal Google or Gmail calendars in Outlook on the web when navigating to Settings -> Calendar -> Accounts -> Google -> Add personal calendar.\n\nCurrent status: After analyzing provided HAR files and screenshots of impact, we've isolated that the URLs being utilized to issue the necessary authentication component to add Google or Gmail calendars in Outlook on the web don't match, resulting in authentication failing. We're developing a fix to remediate the mismatch and we aim to provide a timeline to remediation in our next scheduled update.\n\nScope of impact: Users attempting to add their personal Google or Gmail calendars in Outlook on the web may be impacted. This section may be updated as our investigation progresses.\n\nStart time: Tuesday, February 24, 2026, at 10:16 AM UTC\n\nRoot cause:  The URLs being utilized to issue the necessary authentication component to add Google or Gmail calendars in Outlook on the web don't match, resulting in authentication failing.\n\nNext update by: Thursday, August 13, 2026, at 10:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-07-29T17:20:34.357Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to add their personal Google or Gmail calendars in Outlook on the web\n\nUser impact: Users may be unable to add their personal Google or Gmail calendars in Outlook on the web.\n\nMore info: Affected users may report that they receive a blank page when attempting to add their personal Google or Gmail calendars in Outlook on the web when navigating to Settings -> Calendar -> Accounts -> Google -> Add personal calendar.\n\nCurrent status: We're continuing our analysis of HAR logs and screenshots of impact from affected users to further investigate this issue and determine our next troubleshooting steps.\n\nScope of impact: Users attempting to add their personal Google or Gmail calendars in Outlook on the web may be impacted. This section may be updated as our investigation progresses.\n\nNext update by: Wednesday, July 29, 2026, at 9:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-07-29T15:35:28.237Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to add their personal Google or Gmail calendars in Outlook on the web\n\nUser impact: Users may be unable to add their personal Google or Gmail calendars in Outlook on the web.\n\nMore info: Affected users may report that they receive a blank page when attempting to add their personal Google or Gmail calendars in Outlook on the web when navigating to Settings -> Calendar -> Accounts -> Google -> Add personal calendar.\n\nCurrent status: We're reviewing support provided data from affected users, including HTTP Archive format (HAR) logs and screenshots of impact, to investigate into this issue's root cause.\n\nScope of impact: Users attempting to add their personal Google or Gmail calendars in Outlook on the web may be impacted. This section may be updated as our investigation progresses.\n\nNext update by: Wednesday, July 29, 2026, at 6:00 PM UTC"
+        }
+      ],
+      "serviceName": "Exchange Online",
+      "affectedServices": [
+        "Exchange Online"
       ]
     },
     {
