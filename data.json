@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-14T16:03:21.632Z",
+  "lastUpdated": "2026-08-14T16:33:34.976Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -445,9 +445,45 @@
     },
     {
       "service": "Microsoft 365 apps",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "O365Client",
-      "issues": []
+      "issues": [
+        {
+          "id": "OP1454727",
+          "title": "Users may be unable to sign in to OneNote using iOS devices",
+          "startTime": "2026-08-14T11:51:32.013Z",
+          "endTime": null,
+          "lastModified": "2026-08-14T16:00:46.833Z",
+          "status": "serviceDegradation",
+          "severity": "incident",
+          "userImpact": "Users may be unable to sign in to OneNote using iOS devices.",
+          "scopeOfImpact": "Any user attempting to sign in to OneNote build 16.112.717.0 or higher using iOS devices is impacted.\r\n\r\nStart time: Monday, July 20, 2026, at 4:36 AM UTC",
+          "rootCause": "A code change included in OneNote builds 16.112.717.0 and above, designed to change how authentication requests are routed, introduced an issue with OneNote iOS Authenticator broker sign-in and is causing impact.",
+          "nextUpdateBy": "Tuesday, August 18, 2026, at 6:00 AM UTC",
+          "feature": "OneNote",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-08-14T15:55:05.997Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to sign in to OneNote using iOS devices\r\n\r\nUser impact: Users may be unable to sign in to OneNote using iOS devices.\r\n\r\nMore info: Impact is specific to users with OneNote build 16.112.717.0 or higher.\n \nWhilst we work on remediation, impacted users may be able to utilize OneNote on the web or remove Authenticator so that authentication falls back to the in-app webview. Users may also be able to sign in to any other Microsoft 365 apps first (e.g. PowerPoint), then attempt to sign in again in OneNote.\r\n\r\nCurrent status: We've identified that a code change included in OneNote builds 16.112.717.0 and above, designed to change how authentication requests are routed, introduced an issue with OneNote iOS Authenticator broker sign-in and is causing impact. We're deploying a code fix to correct this issue and expect that it'll complete deployment by the time of our next update.\r\n\r\nScope of impact: Any user attempting to sign in to OneNote build 16.112.717.0 or higher using iOS devices is impacted.\r\n\r\nStart time: Monday, July 20, 2026, at 4:36 AM UTC\r\n\r\nRoot cause: A code change included in OneNote builds 16.112.717.0 and above, designed to change how authentication requests are routed, introduced an issue with OneNote iOS Authenticator broker sign-in and is causing impact.\r\n\r\nNext update by: Tuesday, August 18, 2026, at 6:00 AM UTC"
+            },
+            {
+              "createdAt": "2026-08-14T13:49:58.927Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to sign in to OneNote using iOS devices\r\n\r\nUser impact: Users may be unable to sign in to OneNote using iOS devices.\r\n\r\nMore info: Impact is specific to users with OneNote build 16.112.717.0 or higher.\n \nWhilst we work on remediation, impacted users may be able to utilize OneNote on the web or remove Authenticator so that authentication falls back to the in-app webview. Users may also be able to sign in to any other Microsoft 365 apps first (e.g. PowerPoint), then attempt to sign in again in OneNote.\r\n\r\nCurrent status: We've identified an issue with the OneNote iOS Authenticator broker sign-in and are working on developing and validating a fix to remediate impact.\r\n\r\nScope of impact: Any user attempting to sign in to OneNote build 16.112.717.0 or higher using iOS devices is impacted.\r\n\r\nRoot cause: An issue with the OneNote iOS Authenticator broker sign-in is preventing users from signing in to OneNote using iOS devices.\r\n\r\nNext update by: Friday, August 14, 2026, at 4:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-08-14T11:53:15.813Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to sign in to OneNote using iOS devices\r\n\r\nUser impact: Users may be unable to sign in to OneNote using iOS devices.\r\n\r\nCurrent status: We've identified that a recent change to the sign in flow may be causing impact to occur. We've reverted the change but this did not resolve the issue. We're analyzing OneNote logs from impacted users as well as OneNote logs from our internal reproduction of the issue to assist us in identifying the underlying root cause of impact.\r\n\r\nScope of impact: Any user attempting to sign in to OneNote build 16.112.717.0 or higher using iOS devices is impacted.\r\n\r\nNext update by: Friday, August 14, 2026, at 2:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 apps"
+          ]
+        }
+      ]
     },
     {
       "service": "Power Apps",
@@ -537,16 +573,21 @@
           "title": "Some users may be intermittently unable to access Microsoft 365 Copilot Chat in Outlook on the web",
           "startTime": "2026-08-13T20:06:28.547Z",
           "endTime": null,
-          "lastModified": "2026-08-14T09:24:44.343Z",
+          "lastModified": "2026-08-14T16:00:20.07Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be intermittently unable to access Copilot Chat in Outlook on the web.",
-          "scopeOfImpact": "Impact is specific to some users attempting to access Copilot Chat in Outlook on the web.",
+          "scopeOfImpact": "Impact is specific to some users attempting to access Copilot Chat in Outlook on the web. This section may be updated as the investigation progresses.",
           "rootCause": "An underlying client rendering issue within Copilot Studio is intermittently preventing Copilot Chat from rendering correctly in Outlook on the web.",
-          "nextUpdateBy": "Friday, August 14, 2026, at 5:00 PM UTC",
+          "nextUpdateBy": "Friday, August 14, 2026, at 10:00 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-14T15:59:28.863Z",
+              "postType": "regular",
+              "content": "Title: Some users may be intermittently unable to access Microsoft 365 Copilot Chat in Outlook on the web\r\n\r\nUser impact: Users may be intermittently unable to access Copilot Chat in Outlook on the web.\r\n\r\nMore info: When some users attempt to access Copilot Chat in Outlook on the web, they may intermittently receive an error that states, \"Something went wrong. An error occurred. Please try again.\"\r\n\r\nCurrent status: We’ve deployed the fix to a subset of the affected environments and are preparing to begin deployment to the remaining affected environments. Once available, we’ll provide a deployment completion timeline.\r\n\r\nScope of impact: Impact is specific to some users attempting to access Copilot Chat in Outlook on the web. This section may be updated as the investigation progresses.\r\n\r\nRoot cause: An underlying client rendering issue within Copilot Studio is intermittently preventing Copilot Chat from rendering correctly in Outlook on the web.\r\n\r\nNext update by: Friday, August 14, 2026, at 10:00 PM UTC"
+            },
             {
               "createdAt": "2026-08-14T09:24:44.343Z",
               "postType": "regular",
