@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-17T19:59:02.616Z",
+  "lastUpdated": "2026-08-17T20:29:13.717Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -324,16 +324,21 @@
           "title": "Users are experiencing license syncing issues in Microsoft Teams Rooms Pro Management Portal reports",
           "startTime": "2026-08-17T10:02:26.713Z",
           "endTime": null,
-          "lastModified": "2026-08-17T12:07:12.453Z",
+          "lastModified": "2026-08-17T20:12:55.363Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users are experiencing license syncing issues in Microsoft Teams Rooms Pro Management Portal reports.",
-          "scopeOfImpact": "Impact is specific to some users experiencing license syncing issues in Microsoft Teams Rooms Pro Management Portal reports.",
-          "rootCause": "",
-          "nextUpdateBy": "Monday, August 17, 2026, at 9:00 PM UTC",
+          "scopeOfImpact": "Impact is specific to some users experiencing license syncing issues in Microsoft Teams Rooms Pro Management Portal reports.\r\n\r\nStart time: Thursday, July 23, 2026, at 12:00 AM UTC",
+          "rootCause": "A recent update to the reporting infrastructure is leading to a sync issue, resulting in this impact.",
+          "nextUpdateBy": "Monday, August 17, 2026, at 11:00 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-17T20:12:55.363Z",
+              "postType": "regular",
+              "content": "Title: Users are experiencing license syncing issues in Microsoft Teams Rooms Pro Management Portal reports\r\n\r\nUser impact: Users are experiencing license syncing issues in Microsoft Teams Rooms Pro Management Portal reports.\r\n\r\nMore info: When viewing Health reports in Microsoft Teams Rooms Pro Management Portal, the License Type column may display \"syncing\" instead of the expected license type for affected devices. The issue may also be present in exported reports.\n \nAs a workaround, users can view accurate license information through alternate report views or by accessing the applicable room management pages within the portal.\r\n\r\nCurrent status: We identified that a recent update to the reporting infrastructure is leading to a sync issue, resulting in this impact. We've validated and deployed a fix for this issue, and we anticipate that it should be completely rolled out to all affected environments by our next scheduled update.\r\n\r\nScope of impact: Impact is specific to some users experiencing license syncing issues in Microsoft Teams Rooms Pro Management Portal reports.\r\n\r\nStart time: Thursday, July 23, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: A recent update to the reporting infrastructure is leading to a sync issue, resulting in this impact.\r\n\r\nNext update by: Monday, August 17, 2026, at 11:00 PM UTC"
+            },
             {
               "createdAt": "2026-08-17T12:03:08.677Z",
               "postType": "regular",
