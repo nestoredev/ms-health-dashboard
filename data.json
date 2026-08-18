@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-18T05:02:11.031Z",
+  "lastUpdated": "2026-08-18T05:32:21.149Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -11,16 +11,21 @@
           "title": "Some users may be unable to send or receive new Exchange Online email through the native iOS mail app",
           "startTime": "2026-08-18T03:25:40.21Z",
           "endTime": null,
-          "lastModified": "2026-08-18T03:41:55.803Z",
+          "lastModified": "2026-08-18T05:06:54.763Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to send or receive new Exchange Online email through the native iOS mail app.",
           "scopeOfImpact": "Some users attempting to send or receive new Exchange Online email through the native iOS mail app may be impacted. This information may be updated as our investigation continues.",
           "rootCause": "",
-          "nextUpdateBy": "Tuesday, August 18, 2026, at 5:00 AM UTC",
+          "nextUpdateBy": "Tuesday, August 18, 2026, at 7:00 AM UTC",
           "feature": "ActiveSync devices - problem connecting or using",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-18T05:06:54.763Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to send or receive new Exchange Online email through the native iOS mail app\r\n\r\nUser impact: Users may be unable to send or receive new Exchange Online email through the native iOS mail app.\r\n\r\nCurrent status: We're continuing our analysis of service-side logs and Exchange ActiveSync logs collected from impacted users to understand the source of the issue and determine our next troubleshooting steps.\r\n\r\nScope of impact: Some users attempting to send or receive new Exchange Online email through the native iOS mail app may be impacted. This information may be updated as our investigation continues.\r\n\r\nNext update by: Tuesday, August 18, 2026, at 7:00 AM UTC"
+            },
             {
               "createdAt": "2026-08-18T03:27:53.53Z",
               "postType": "regular",
@@ -488,16 +493,21 @@
           "title": "Users may be unable to sign in to OneNote using iOS devices",
           "startTime": "2026-08-14T11:51:32.013Z",
           "endTime": null,
-          "lastModified": "2026-08-14T16:00:46.833Z",
+          "lastModified": "2026-08-18T05:00:52.063Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to sign in to OneNote using iOS devices.",
-          "scopeOfImpact": "Any user attempting to sign in to OneNote build 16.112.717.0 or higher using iOS devices is impacted.\r\n\r\nStart time: Monday, July 20, 2026, at 4:36 AM UTC",
+          "scopeOfImpact": "Any user attempting to sign in to OneNote build 16.112.717.0 or higher using iOS devices is impacted.\n\nStart time: Monday, July 20, 2026, at 4:36 AM UTC",
           "rootCause": "A code change included in OneNote builds 16.112.717.0 and above, designed to change how authentication requests are routed, introduced an issue with OneNote iOS Authenticator broker sign-in and is causing impact.",
-          "nextUpdateBy": "Tuesday, August 18, 2026, at 6:00 AM UTC",
+          "nextUpdateBy": "Friday, August 21, 2026, at 4:00 AM UTC",
           "feature": "OneNote",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-18T04:57:55.433Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to sign in to OneNote using iOS devices\n\nUser impact: Users may be unable to sign in to OneNote using iOS devices.\n\nMore info: Impact is specific to users with OneNote build 16.112.717.0 or higher.\n \nWhilst we work on remediation, impacted users may be able to utilize OneNote on the web or remove Authenticator so that authentication falls back to the in-app webview. Users may also be able to sign in to any other Microsoft 365 apps first (e.g. PowerPoint), then attempt to sign in again in OneNote.\n\nCurrent status: Our fix deployment is taking longer than anticipated but is ongoing. We're continuing to monitor as it progresses to establish a completion timeline.\n\nScope of impact: Any user attempting to sign in to OneNote build 16.112.717.0 or higher using iOS devices is impacted.\n\nStart time: Monday, July 20, 2026, at 4:36 AM UTC\n\nRoot cause: A code change included in OneNote builds 16.112.717.0 and above, designed to change how authentication requests are routed, introduced an issue with OneNote iOS Authenticator broker sign-in and is causing impact.\n\nNext update by: Friday, August 21, 2026, at 4:00 AM UTC"
+            },
             {
               "createdAt": "2026-08-14T15:55:05.997Z",
               "postType": "regular",
