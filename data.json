@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-18T06:32:42.151Z",
+  "lastUpdated": "2026-08-18T07:02:52.647Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -11,16 +11,21 @@
           "title": "Some users may be unable to send or receive new Exchange Online email through the native iOS mail app",
           "startTime": "2026-08-18T03:25:40.21Z",
           "endTime": null,
-          "lastModified": "2026-08-18T05:06:54.763Z",
+          "lastModified": "2026-08-18T06:48:28.763Z",
           "status": "serviceDegradation",
-          "severity": "advisory",
+          "severity": "incident",
           "userImpact": "Users may be unable to send or receive new Exchange Online email through the native iOS mail app.",
-          "scopeOfImpact": "Some users attempting to send or receive new Exchange Online email through the native iOS mail app may be impacted. This information may be updated as our investigation continues.",
-          "rootCause": "",
-          "nextUpdateBy": "Tuesday, August 18, 2026, at 7:00 AM UTC",
+          "scopeOfImpact": "Some users attempting to send or receive new Exchange Online email through the native iOS mail app are impacted.\r\n\r\nStart time: Monday, August 17, 2026, at 11:38 PM UTC",
+          "rootCause": "Recent changes to an authentication component utilized for Exchange ActiveSync are causing connection failures.",
+          "nextUpdateBy": "Tuesday, August 18, 2026, at 9:00 AM UTC",
           "feature": "ActiveSync devices - problem connecting or using",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-18T06:48:06.003Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to send or receive new Exchange Online email through the native iOS mail app\r\n\r\nUser impact: Users may be unable to send or receive new Exchange Online email through the native iOS mail app.\r\n\r\nCurrent status: After reviewing the logs, we identified that there were recent changes to an authentication component utilized for Exchange ActiveSync that is causing connection failures. We're working to revert the problematic changes, which we anticipate should remediate the impact by the time of our next scheduled update, at which point we'll reach out to confirm with a subset of impacted users.\r\n\r\nScope of impact: Some users attempting to send or receive new Exchange Online email through the native iOS mail app are impacted.\r\n\r\nStart time: Monday, August 17, 2026, at 11:38 PM UTC\r\n\r\nRoot cause: Recent changes to an authentication component utilized for Exchange ActiveSync are causing connection failures.\r\n\r\nNext update by: Tuesday, August 18, 2026, at 9:00 AM UTC"
+            },
             {
               "createdAt": "2026-08-18T05:06:54.763Z",
               "postType": "regular",
