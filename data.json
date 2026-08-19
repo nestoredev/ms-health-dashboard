@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-19T20:17:03.187Z",
+  "lastUpdated": "2026-08-19T20:47:14.898Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -518,6 +518,36 @@
       "status": "serviceDegradation",
       "id": "O365Client",
       "issues": [
+        {
+          "id": "OP1457784",
+          "title": "Admins may not see data in multiple tabs within the Microsoft 365 apps admin center",
+          "startTime": "2026-08-19T19:58:14.883Z",
+          "endTime": null,
+          "lastModified": "2026-08-19T20:37:57.357Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Admins may not see data in multiple tabs within the Microsoft 365 apps admin center.",
+          "scopeOfImpact": "Some admins may not see data in the Home page, Cloud update, Inventory, or Security update status sections in the Microsoft 365 apps admin center. This section may be updated as the investigation progresses.",
+          "rootCause": "",
+          "nextUpdateBy": "Wednesday, August 19, 2026, at 9:30 PM UTC",
+          "feature": "Access",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-08-19T20:37:27.65Z",
+              "postType": "regular",
+              "content": "Title: Admins may not see data in multiple tabs within the Microsoft 365 apps admin center\r\n\r\nUser impact: Admins may not see data in multiple tabs within the Microsoft 365 apps admin center.\r\n\r\nMore info: Admins may not see data in the following locations in the Microsoft 365 apps admin center:\n- Home page\n- Cloud update\n- Inventory \n- Security Update Status\n\nAdmins may receive an error message stating, “There was a problem retrieving data for this page. Please refresh the page or try again later.”\r\n\r\nCurrent status: Our service monitors have alerted us to ongoing impact to a subset of admins who may not see data in the tabs outlined in the \"More info\" section of this communication within the Microsoft 365 apps admin center. We're reviewing reports of impact to further our understanding of the current impact scenario and to determine our next troubleshooting steps.\r\n\r\nScope of impact: Some admins may not see data in the Home page, Cloud update, Inventory, or Security update status sections in the Microsoft 365 apps admin center. This section may be updated as the investigation progresses.\r\n\r\nNext update by: Wednesday, August 19, 2026, at 9:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-08-19T20:17:41.43Z",
+              "postType": "regular",
+              "content": "Title: We're looking into a potential problem impacting Microsoft 365 apps\r\n\r\nUser impact: We're checking for potential impact to your users.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft 365 apps and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 apps"
+          ]
+        },
         {
           "id": "OP1454727",
           "title": "Users may be unable to sign in to OneNote using iOS devices",
