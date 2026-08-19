@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-19T15:45:16.714Z",
+  "lastUpdated": "2026-08-19T16:15:28.509Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -198,46 +198,6 @@
               "createdAt": "2026-08-17T12:49:09.937Z",
               "postType": "regular",
               "content": "Title: Some users may be unable to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop\r\n\r\nUser impact: Users may be unable to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop.\r\n\r\nCurrent status: We're reviewing service monitoring telemetry and support provided information to determine our next troubleshooting steps.\r\n\r\nScope of impact: Impact is specific to some users served through the affected infrastructure who are attempting to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop.\r\n\r\nNext update by: Monday, August 17, 2026, at 3:00 PM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Microsoft 365 suite"
-          ]
-        },
-        {
-          "id": "MO1457636",
-          "title": "Users in South America may have been unable to use multiple Microsoft 365 services",
-          "startTime": "2026-08-19T14:34:10Z",
-          "endTime": null,
-          "lastModified": "2026-08-19T15:34:49.82Z",
-          "status": "serviceDegradation",
-          "severity": "incident",
-          "userImpact": "Users in South America may have been unable to access or experience degraded functionality with multiple services.",
-          "scopeOfImpact": "The majority of reports are from users in Colombia. We're still assessing the scope of the issue and will update this section as we know more information.\r\n\r\nStart time: Wednesday, August 19, 2026, at 2:14 PM UTC",
-          "rootCause": "",
-          "nextUpdateBy": "Wednesday, August 19, 2026, at 4:30 PM UTC",
-          "feature": "Sign-in",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-08-19T15:17:12.573Z",
-              "postType": "regular",
-              "content": "Title: Users in South America may be unable to use multiple Microsoft 365 services\r\n\r\nUser impact: Users in South America may be unable to access or experience degraded functionality with multiple Microsoft 365 services\r\n\r\nMore info: Impacted services include, but are not limited to:\n- Microsoft Teams\n- Outlook\n- Office Online Apps\r\n\r\nCurrent status: We've rerouted traffic through alternate network paths and telemetry shows the service had recovered by 2:50 PM UTC. We're monitoring to validate full recovery.\r\n\r\nScope of impact: The majority of reports are from users in Colombia. We're still assessing the scope of the issue and will update this section as we know more information.\r\n\r\nStart time: Wednesday, August 19, 2026, at 2:14 PM UTC\r\n\r\nNext update by: Wednesday, August 19, 2026, at 4:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-08-19T15:00:52.593Z",
-              "postType": "quick",
-              "content": "Telemetry is showing improvement as our mitigation actions progress. This is in line with a reduction in user reports of impact.\n\nThis quick update is designed to give the latest information on this issue.\n\nNext update by: Wednesday, August 19, 2026, at 4:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-08-19T14:53:47.263Z",
-              "postType": "regular",
-              "content": "Title: Users in South America may be unable to use multiple Microsoft 365 services\n\nUser impact: Users in South America may be unable to access or experience degraded functionality with multiple Microsoft 365 services\n\nMore info: Impacted services include, but are not limited to:\n- Microsoft Teams\n- Outlook\n- Office Online Apps\n\nCurrent status: We've identified an issue with network paths in the South America region. We're currently rerouting traffic to alternate network paths to remediate impact.\n\nScope of impact: The majority of reports are from users in Colombia. We're still assessing the scope of the issue and will update this section as we know more information.\n\nNext update by: Wednesday, August 19, 2026, at 4:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-08-19T14:40:14.18Z",
-              "postType": "regular",
-              "content": "Title: Users in South America may be unable to use multiple Microsoft 365 services\n\nUser impact: Users in South America may be unable to access or experience degraded functionality with multiple Microsoft 365 services\n\nMore info: Impacted services include, but are not limited to:\n- Microsoft Teams\n- Outlook\n- Office Online Apps\n\nCurrent status: We are reviewing service telemetry and available information to determine if there is an issue happening and we'll update this message shortly with our latest findings. This communication serves as a preliminary notification about a potential issue affecting your service. We'll provide an update in 30 minutes.\n\nScope of impact: The majority of reports are from users in Colombia. We're still assessing the scope of the issue and will update this section as we know more information."
             }
           ],
           "affectedServices": [
@@ -676,6 +636,52 @@
     }
   ],
   "history": [
+    {
+      "id": "MO1457636",
+      "title": "Users in South America may have been unable to use multiple Microsoft 365 services",
+      "startTime": "2026-08-19T14:15:00Z",
+      "endTime": "2026-08-19T14:39:00Z",
+      "lastModified": "2026-08-19T15:52:07.36Z",
+      "status": "serviceRestored",
+      "severity": "incident",
+      "userImpact": "Users in South America may have been unable to access or experience degraded functionality with multiple services.",
+      "scopeOfImpact": "The majority of reports were from users in Colombia.\r\n\r\nStart time: Wednesday, August 19, 2026, at 2:15 PM UTC\r\n\r\nEnd time: Wednesday, August 19, 2026, at 2:39 PM UTC",
+      "rootCause": "A fiber event in the Colombia region shifted traffic onto a alternate network path, which became congested. This resulted in intermittent packet loss, traffic drops, slower connectivity, and/or higher latency. We're still investigating the full details and will provide more information within the Post Incident Report.\r\n\r\nNext steps: - We're reviewing the networking infrastructure to better understand impact and develop action items to prevent the issue happening again.\r\n\r\nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days.",
+      "nextUpdateBy": "",
+      "feature": "Sign-in",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-08-19T15:51:23.013Z",
+          "postType": "regular",
+          "content": "Title: Users in South America may have been unable to use multiple Microsoft 365 services\r\n\r\nUser impact: Users in South America may have been unable to access or experience degraded functionality with multiple services.\r\n\r\nMore info: Impacted services included, but were not limited to:\n- Microsoft Teams\n- Outlook\n- Office Online Apps\r\n\r\nFinal status: We've confirmed that the issue is resolved after an extended period of monitoring.\r\n\r\nScope of impact: The majority of reports were from users in Colombia.\r\n\r\nStart time: Wednesday, August 19, 2026, at 2:15 PM UTC\r\n\r\nEnd time: Wednesday, August 19, 2026, at 2:39 PM UTC\r\n\r\nRoot cause: A fiber event in the Colombia region shifted traffic onto a alternate network path, which became congested. This resulted in intermittent packet loss, traffic drops, slower connectivity, and/or higher latency. We're still investigating the full details and will provide more information within the Post Incident Report.\r\n\r\nNext steps: - We're reviewing the networking infrastructure to better understand impact and develop action items to prevent the issue happening again.\r\n\r\nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days."
+        },
+        {
+          "createdAt": "2026-08-19T15:17:12.573Z",
+          "postType": "regular",
+          "content": "Title: Users in South America may be unable to use multiple Microsoft 365 services\r\n\r\nUser impact: Users in South America may be unable to access or experience degraded functionality with multiple Microsoft 365 services\r\n\r\nMore info: Impacted services include, but are not limited to:\n- Microsoft Teams\n- Outlook\n- Office Online Apps\r\n\r\nCurrent status: We've rerouted traffic through alternate network paths and telemetry shows the service had recovered by 2:50 PM UTC. We're monitoring to validate full recovery.\r\n\r\nScope of impact: The majority of reports are from users in Colombia. We're still assessing the scope of the issue and will update this section as we know more information.\r\n\r\nStart time: Wednesday, August 19, 2026, at 2:14 PM UTC\r\n\r\nNext update by: Wednesday, August 19, 2026, at 4:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-08-19T15:00:52.593Z",
+          "postType": "quick",
+          "content": "Telemetry is showing improvement as our mitigation actions progress. This is in line with a reduction in user reports of impact.\n\nThis quick update is designed to give the latest information on this issue.\n\nNext update by: Wednesday, August 19, 2026, at 4:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-08-19T14:53:47.263Z",
+          "postType": "regular",
+          "content": "Title: Users in South America may be unable to use multiple Microsoft 365 services\n\nUser impact: Users in South America may be unable to access or experience degraded functionality with multiple Microsoft 365 services\n\nMore info: Impacted services include, but are not limited to:\n- Microsoft Teams\n- Outlook\n- Office Online Apps\n\nCurrent status: We've identified an issue with network paths in the South America region. We're currently rerouting traffic to alternate network paths to remediate impact.\n\nScope of impact: The majority of reports are from users in Colombia. We're still assessing the scope of the issue and will update this section as we know more information.\n\nNext update by: Wednesday, August 19, 2026, at 4:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-08-19T14:40:14.18Z",
+          "postType": "regular",
+          "content": "Title: Users in South America may be unable to use multiple Microsoft 365 services\n\nUser impact: Users in South America may be unable to access or experience degraded functionality with multiple Microsoft 365 services\n\nMore info: Impacted services include, but are not limited to:\n- Microsoft Teams\n- Outlook\n- Office Online Apps\n\nCurrent status: We are reviewing service telemetry and available information to determine if there is an issue happening and we'll update this message shortly with our latest findings. This communication serves as a preliminary notification about a potential issue affecting your service. We'll provide an update in 30 minutes.\n\nScope of impact: The majority of reports are from users in Colombia. We're still assessing the scope of the issue and will update this section as we know more information."
+        }
+      ],
+      "serviceName": "Microsoft 365 suite",
+      "affectedServices": [
+        "Microsoft 365 suite"
+      ]
+    },
     {
       "id": "EX1456866",
       "title": "Some users may be unable to send or receive new Exchange Online email through the native iOS mail app",
