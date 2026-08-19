@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-19T16:45:39.427Z",
+  "lastUpdated": "2026-08-19T17:15:51.417Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -11,16 +11,21 @@
           "title": "Some users may see unwanted add-ins appearing automatically across all Outlook clients",
           "startTime": "2026-07-17T10:26:00Z",
           "endTime": null,
-          "lastModified": "2026-08-12T17:29:56.543Z",
+          "lastModified": "2026-08-19T16:58:57.79Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may see unwanted add-ins appearing automatically across all Outlook clients.",
           "scopeOfImpact": "Impact may occur for some users that may see unwanted add-ins appearing automatically across all Outlook clients. This section may be updated as the investigation progresses.\r\n\r\nStart time: Friday, July 17, 2026, at 10:26 AM UTC",
           "rootCause": "A portion of the Exchange Online add-in sync pipeline isn't processing add-in state information as expected. This is causing incorrect EnabledStatus values being returned and Outlook automatically displaying add-ins configured as Available, which is resulting in impact.",
-          "nextUpdateBy": "Wednesday, August 19, 2026, at 6:30 PM UTC",
+          "nextUpdateBy": "Monday, August 24, 2026, at 6:30 PM UTC",
           "feature": "Outlook - poor customer experience",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-19T16:58:57.79Z",
+              "postType": "regular",
+              "content": "Title: Some users may see unwanted add-ins appearing automatically across all Outlook clients\r\n\r\nUser impact: Users may see unwanted add-ins appearing automatically across all Outlook clients.\r\n\r\nMore info: These add-ins are configured to be available to users by admins but aren’t expected to be automatically installed.\r\n\r\nCurrent status: Based on the rate of the deployment progression, we now anticipate the fix will be available on August 22, 2026. We're continuing to monitor as the process nears completion and will begin reaching out to a subset of affected users once the fix is fully saturated to begin verifying impact remediation.\r\n\r\nScope of impact: Impact may occur for some users that may see unwanted add-ins appearing automatically across all Outlook clients. This section may be updated as the investigation progresses.\r\n\r\nStart time: Friday, July 17, 2026, at 10:26 AM UTC\r\n\r\nRoot cause: A portion of the Exchange Online add-in sync pipeline isn't processing add-in state information as expected. This is causing incorrect EnabledStatus values being returned and Outlook automatically displaying add-ins configured as Available, which is resulting in impact.\r\n\r\nNext update by: Monday, August 24, 2026, at 6:30 PM UTC"
+            },
             {
               "createdAt": "2026-08-12T17:29:56.543Z",
               "postType": "regular",
