@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-19T11:43:41.647Z",
+  "lastUpdated": "2026-08-19T12:13:53.576Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -329,16 +329,21 @@
           "title": "Some users may experience degraded video quality when screen sharing using the Microsoft Teams web client",
           "startTime": "2026-08-18T15:33:13.637Z",
           "endTime": null,
-          "lastModified": "2026-08-18T17:12:30.913Z",
+          "lastModified": "2026-08-19T12:07:06.773Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may experience degraded video quality when screen sharing using the Microsoft Teams web client.",
           "scopeOfImpact": "Impact is limited to approximately four percent of users initiating screen sharing from the Microsoft Teams web client.",
-          "rootCause": "",
-          "nextUpdateBy": "Wednesday, August 19, 2026, at 12:00 PM UTC",
+          "rootCause": "A recent configuration change to the video processing pipeline contains an error, which is resulting in impact.",
+          "nextUpdateBy": "Wednesday, August 19, 2026, at 2:00 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-19T11:59:52.96Z",
+              "postType": "regular",
+              "content": "Title: Some users may experience degraded video quality when screen sharing using the Microsoft Teams web client\r\n\r\nUser impact: Users may experience degraded video quality when screen sharing using the Microsoft Teams web client.\r\n\r\nMore info: Impact is specific to approximately four percent of screen sharing sessions initiated by users from the Microsoft Teams web client. \n\nWhile we're working to remediate impact, users can initiate unaffected screen sharing sessions using the desktop or mobile apps.\r\n\r\nCurrent status: We've validated that reverting the previously identified change did not resolve the issue. As a result, we've deployed an additional configuration update for the web client which has completed deployment. Once the fix is fully propagated, we'll confirm with affected users whether the update has successfully mitigated the impact.\r\n\r\nScope of impact: Impact is limited to approximately four percent of users initiating screen sharing from the Microsoft Teams web client.\r\n\r\nRoot cause: A recent configuration change to the video processing pipeline contains an error, which is resulting in impact.\r\n\r\nNext update by: Wednesday, August 19, 2026, at 2:00 PM UTC"
+            },
             {
               "createdAt": "2026-08-18T16:57:26.85Z",
               "postType": "regular",
