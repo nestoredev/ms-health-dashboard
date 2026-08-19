@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-19T22:17:46.447Z",
+  "lastUpdated": "2026-08-19T22:47:58.516Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -165,15 +165,72 @@
     },
     {
       "service": "Microsoft Entra",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "OrgLiveID",
-      "issues": []
+      "issues": [
+        {
+          "id": "MO1457843",
+          "title": "Admins can't identify who deleted a Viva Engage community or its Microsoft 365 Group in Microsoft Entra ID audit logs",
+          "startTime": "2026-08-19T22:38:36.783Z",
+          "endTime": null,
+          "lastModified": "2026-08-19T22:38:40.473Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Admins can't identify who deleted a Viva Engage community or its Microsoft 365 Group in Entra ID audit logs.",
+          "scopeOfImpact": "This issue is preventing all admins from identifying who deleted Viva Engage communities or their connected Microsoft 365 Group in Microsoft Entra ID audit logs.",
+          "rootCause": "A recent update to improve group deletions of Viva Engage communities within Microsoft Teams is resulting in impact.",
+          "nextUpdateBy": "Wednesday, September 2, 2026, at 11:00 PM UTC",
+          "feature": "Company or User Administration",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-08-19T22:38:40.473Z",
+              "postType": "regular",
+              "content": "Title: Admins can't identify who deleted a Viva Engage community or its Microsoft 365 Group in Microsoft Entra ID audit logs\r\n\r\nUser impact: Admins can't identify who deleted a Viva Engage community or its Microsoft 365 Group in Entra ID audit logs.\r\n\r\nMore info: Impact applies to deletions initiated from both the Viva Engage web experience and the Viva Engage app in Microsoft Teams.\n\nAdmins needing to identify who deleted a specific community or group during the affected period should open a Microsoft support case with the deletion date and group/community details so support can trace the initiating user through service-side logs.\r\n\r\nCurrent status: We've identified an update to our Viva Engage communities that’s preventing admins from identifying users who deleted a Viva Engage community or its connected Microsoft 365 Group in Microsoft Entra ID audit logs. We've developed and are internally validating a fix to remediate the impact. We'll provide an updated timeline for the deployment of our solution and the remediation of the impact once it has become available.\r\n\r\nScope of impact: This issue is preventing all admins from identifying who deleted Viva Engage communities or their connected Microsoft 365 Group in Microsoft Entra ID audit logs.\r\n\r\nRoot cause: A recent update to improve group deletions of Viva Engage communities within Microsoft Teams is resulting in impact. \r\n\r\nNext update by: Wednesday, September 2, 2026, at 11:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Entra",
+            "Microsoft 365 suite",
+            "Microsoft Teams",
+            "Microsoft Viva"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft 365 suite",
       "status": "serviceDegradation",
       "id": "OSDPPlatform",
       "issues": [
+        {
+          "id": "MO1457843",
+          "title": "Admins can't identify who deleted a Viva Engage community or its Microsoft 365 Group in Microsoft Entra ID audit logs",
+          "startTime": "2026-08-19T22:38:36.783Z",
+          "endTime": null,
+          "lastModified": "2026-08-19T22:38:40.473Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Admins can't identify who deleted a Viva Engage community or its Microsoft 365 Group in Entra ID audit logs.",
+          "scopeOfImpact": "This issue is preventing all admins from identifying who deleted Viva Engage communities or their connected Microsoft 365 Group in Microsoft Entra ID audit logs.",
+          "rootCause": "A recent update to improve group deletions of Viva Engage communities within Microsoft Teams is resulting in impact.",
+          "nextUpdateBy": "Wednesday, September 2, 2026, at 11:00 PM UTC",
+          "feature": "Company or User Administration",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-08-19T22:38:40.473Z",
+              "postType": "regular",
+              "content": "Title: Admins can't identify who deleted a Viva Engage community or its Microsoft 365 Group in Microsoft Entra ID audit logs\r\n\r\nUser impact: Admins can't identify who deleted a Viva Engage community or its Microsoft 365 Group in Entra ID audit logs.\r\n\r\nMore info: Impact applies to deletions initiated from both the Viva Engage web experience and the Viva Engage app in Microsoft Teams.\n\nAdmins needing to identify who deleted a specific community or group during the affected period should open a Microsoft support case with the deletion date and group/community details so support can trace the initiating user through service-side logs.\r\n\r\nCurrent status: We've identified an update to our Viva Engage communities that’s preventing admins from identifying users who deleted a Viva Engage community or its connected Microsoft 365 Group in Microsoft Entra ID audit logs. We've developed and are internally validating a fix to remediate the impact. We'll provide an updated timeline for the deployment of our solution and the remediation of the impact once it has become available.\r\n\r\nScope of impact: This issue is preventing all admins from identifying who deleted Viva Engage communities or their connected Microsoft 365 Group in Microsoft Entra ID audit logs.\r\n\r\nRoot cause: A recent update to improve group deletions of Viva Engage communities within Microsoft Teams is resulting in impact. \r\n\r\nNext update by: Wednesday, September 2, 2026, at 11:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Entra",
+            "Microsoft 365 suite",
+            "Microsoft Teams",
+            "Microsoft Viva"
+          ]
+        },
         {
           "id": "MO1456424",
           "title": "Some users may be unable to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop",
@@ -498,6 +555,34 @@
           "affectedServices": [
             "Microsoft Teams"
           ]
+        },
+        {
+          "id": "MO1457843",
+          "title": "Admins can't identify who deleted a Viva Engage community or its Microsoft 365 Group in Microsoft Entra ID audit logs",
+          "startTime": "2026-08-19T22:38:36.783Z",
+          "endTime": null,
+          "lastModified": "2026-08-19T22:38:40.473Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Admins can't identify who deleted a Viva Engage community or its Microsoft 365 Group in Entra ID audit logs.",
+          "scopeOfImpact": "This issue is preventing all admins from identifying who deleted Viva Engage communities or their connected Microsoft 365 Group in Microsoft Entra ID audit logs.",
+          "rootCause": "A recent update to improve group deletions of Viva Engage communities within Microsoft Teams is resulting in impact.",
+          "nextUpdateBy": "Wednesday, September 2, 2026, at 11:00 PM UTC",
+          "feature": "Company or User Administration",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-08-19T22:38:40.473Z",
+              "postType": "regular",
+              "content": "Title: Admins can't identify who deleted a Viva Engage community or its Microsoft 365 Group in Microsoft Entra ID audit logs\r\n\r\nUser impact: Admins can't identify who deleted a Viva Engage community or its Microsoft 365 Group in Entra ID audit logs.\r\n\r\nMore info: Impact applies to deletions initiated from both the Viva Engage web experience and the Viva Engage app in Microsoft Teams.\n\nAdmins needing to identify who deleted a specific community or group during the affected period should open a Microsoft support case with the deletion date and group/community details so support can trace the initiating user through service-side logs.\r\n\r\nCurrent status: We've identified an update to our Viva Engage communities that’s preventing admins from identifying users who deleted a Viva Engage community or its connected Microsoft 365 Group in Microsoft Entra ID audit logs. We've developed and are internally validating a fix to remediate the impact. We'll provide an updated timeline for the deployment of our solution and the remediation of the impact once it has become available.\r\n\r\nScope of impact: This issue is preventing all admins from identifying who deleted Viva Engage communities or their connected Microsoft 365 Group in Microsoft Entra ID audit logs.\r\n\r\nRoot cause: A recent update to improve group deletions of Viva Engage communities within Microsoft Teams is resulting in impact. \r\n\r\nNext update by: Wednesday, September 2, 2026, at 11:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Entra",
+            "Microsoft 365 suite",
+            "Microsoft Teams",
+            "Microsoft Viva"
+          ]
         }
       ]
     },
@@ -610,9 +695,38 @@
     },
     {
       "service": "Microsoft Viva",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "Viva",
-      "issues": []
+      "issues": [
+        {
+          "id": "MO1457843",
+          "title": "Admins can't identify who deleted a Viva Engage community or its Microsoft 365 Group in Microsoft Entra ID audit logs",
+          "startTime": "2026-08-19T22:38:36.783Z",
+          "endTime": null,
+          "lastModified": "2026-08-19T22:38:40.473Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Admins can't identify who deleted a Viva Engage community or its Microsoft 365 Group in Entra ID audit logs.",
+          "scopeOfImpact": "This issue is preventing all admins from identifying who deleted Viva Engage communities or their connected Microsoft 365 Group in Microsoft Entra ID audit logs.",
+          "rootCause": "A recent update to improve group deletions of Viva Engage communities within Microsoft Teams is resulting in impact.",
+          "nextUpdateBy": "Wednesday, September 2, 2026, at 11:00 PM UTC",
+          "feature": "Company or User Administration",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-08-19T22:38:40.473Z",
+              "postType": "regular",
+              "content": "Title: Admins can't identify who deleted a Viva Engage community or its Microsoft 365 Group in Microsoft Entra ID audit logs\r\n\r\nUser impact: Admins can't identify who deleted a Viva Engage community or its Microsoft 365 Group in Entra ID audit logs.\r\n\r\nMore info: Impact applies to deletions initiated from both the Viva Engage web experience and the Viva Engage app in Microsoft Teams.\n\nAdmins needing to identify who deleted a specific community or group during the affected period should open a Microsoft support case with the deletion date and group/community details so support can trace the initiating user through service-side logs.\r\n\r\nCurrent status: We've identified an update to our Viva Engage communities that’s preventing admins from identifying users who deleted a Viva Engage community or its connected Microsoft 365 Group in Microsoft Entra ID audit logs. We've developed and are internally validating a fix to remediate the impact. We'll provide an updated timeline for the deployment of our solution and the remediation of the impact once it has become available.\r\n\r\nScope of impact: This issue is preventing all admins from identifying who deleted Viva Engage communities or their connected Microsoft 365 Group in Microsoft Entra ID audit logs.\r\n\r\nRoot cause: A recent update to improve group deletions of Viva Engage communities within Microsoft Teams is resulting in impact. \r\n\r\nNext update by: Wednesday, September 2, 2026, at 11:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Entra",
+            "Microsoft 365 suite",
+            "Microsoft Teams",
+            "Microsoft Viva"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft Dataverse",
