@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-21T17:34:30.692Z",
+  "lastUpdated": "2026-08-21T18:04:41.717Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -226,6 +226,33 @@
           ],
           "affectedServices": [
             "Microsoft Entra",
+            "Microsoft 365 suite",
+            "Microsoft Teams",
+            "Microsoft Viva"
+          ]
+        },
+        {
+          "id": "MO1458983",
+          "title": "Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights",
+          "startTime": "2026-08-21T00:00:00Z",
+          "endTime": null,
+          "lastModified": "2026-08-21T17:31:50.35Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights.",
+          "scopeOfImpact": "Any admin expecting reports from the affected scenarios as outlined in the More info section may be affected. \r\n\r\nStart time: Friday, August 21, 2026, at 12:00 AM UTC",
+          "rootCause": "",
+          "nextUpdateBy": "Monday, August 24, 2026, at 6:30 PM UTC",
+          "feature": "Access",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-08-21T17:31:50.35Z",
+              "postType": "regular",
+              "content": "Title: Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights\r\n\r\nUser impact: Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights.\r\n\r\nMore info: Affected reports include, but aren't limited to:\n\n- Copilot Usage report in Microsoft 365 admin center\n- Copilot Chat Usage report in Microsoft 365 admin center\n- Copilot Readiness reports in Microsoft 365 admin center and Viva Insights\n- Copilot Adoption report in Viva Insights\n- Microsoft 365 Apps and Active users reports in Microsoft 365 admin center\n- Teams App reports in Microsoft 365 admin center and Microsoft Teams admin center\r\n\r\nCurrent status: Our monitoring has identified an increase report generation delays and our investigation has identified that an upstream component that facilitates report data access and generation isn't responding as expected, resulting in impact. We're in the process of identifying the underlying cause of impact and develop a remediation strategy.\r\n\r\nScope of impact: Any admin expecting reports from the affected scenarios as outlined in the More info section may be affected. \r\n\r\nStart time: Friday, August 21, 2026, at 12:00 AM UTC\r\n\r\nNext update by: Monday, August 24, 2026, at 6:30 PM UTC"
+            }
+          ],
+          "affectedServices": [
             "Microsoft 365 suite",
             "Microsoft Teams",
             "Microsoft Viva"
@@ -518,6 +545,33 @@
             "Microsoft Teams",
             "Microsoft Viva"
           ]
+        },
+        {
+          "id": "MO1458983",
+          "title": "Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights",
+          "startTime": "2026-08-21T00:00:00Z",
+          "endTime": null,
+          "lastModified": "2026-08-21T17:31:50.35Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights.",
+          "scopeOfImpact": "Any admin expecting reports from the affected scenarios as outlined in the More info section may be affected. \r\n\r\nStart time: Friday, August 21, 2026, at 12:00 AM UTC",
+          "rootCause": "",
+          "nextUpdateBy": "Monday, August 24, 2026, at 6:30 PM UTC",
+          "feature": "Access",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-08-21T17:31:50.35Z",
+              "postType": "regular",
+              "content": "Title: Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights\r\n\r\nUser impact: Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights.\r\n\r\nMore info: Affected reports include, but aren't limited to:\n\n- Copilot Usage report in Microsoft 365 admin center\n- Copilot Chat Usage report in Microsoft 365 admin center\n- Copilot Readiness reports in Microsoft 365 admin center and Viva Insights\n- Copilot Adoption report in Viva Insights\n- Microsoft 365 Apps and Active users reports in Microsoft 365 admin center\n- Teams App reports in Microsoft 365 admin center and Microsoft Teams admin center\r\n\r\nCurrent status: Our monitoring has identified an increase report generation delays and our investigation has identified that an upstream component that facilitates report data access and generation isn't responding as expected, resulting in impact. We're in the process of identifying the underlying cause of impact and develop a remediation strategy.\r\n\r\nScope of impact: Any admin expecting reports from the affected scenarios as outlined in the More info section may be affected. \r\n\r\nStart time: Friday, August 21, 2026, at 12:00 AM UTC\r\n\r\nNext update by: Monday, August 24, 2026, at 6:30 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite",
+            "Microsoft Teams",
+            "Microsoft Viva"
+          ]
         }
       ]
     },
@@ -543,9 +597,9 @@
           "title": "Users may be unable to sign in to OneNote using iOS devices",
           "startTime": "2026-08-14T11:51:32.013Z",
           "endTime": null,
-          "lastModified": "2026-08-18T05:00:52.063Z",
+          "lastModified": "2026-08-21T17:49:52.383Z",
           "status": "serviceDegradation",
-          "severity": "incident",
+          "severity": "advisory",
           "userImpact": "Users may be unable to sign in to OneNote using iOS devices.",
           "scopeOfImpact": "Any user attempting to sign in to OneNote build 16.112.717.0 or higher using iOS devices is impacted.\n\nStart time: Monday, July 20, 2026, at 4:36 AM UTC",
           "rootCause": "A code change included in OneNote builds 16.112.717.0 and above, designed to change how authentication requests are routed, introduced an issue with OneNote iOS Authenticator broker sign-in and is causing impact.",
@@ -656,6 +710,33 @@
           ],
           "affectedServices": [
             "Microsoft Entra",
+            "Microsoft 365 suite",
+            "Microsoft Teams",
+            "Microsoft Viva"
+          ]
+        },
+        {
+          "id": "MO1458983",
+          "title": "Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights",
+          "startTime": "2026-08-21T00:00:00Z",
+          "endTime": null,
+          "lastModified": "2026-08-21T17:31:50.35Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights.",
+          "scopeOfImpact": "Any admin expecting reports from the affected scenarios as outlined in the More info section may be affected. \r\n\r\nStart time: Friday, August 21, 2026, at 12:00 AM UTC",
+          "rootCause": "",
+          "nextUpdateBy": "Monday, August 24, 2026, at 6:30 PM UTC",
+          "feature": "Access",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-08-21T17:31:50.35Z",
+              "postType": "regular",
+              "content": "Title: Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights\r\n\r\nUser impact: Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights.\r\n\r\nMore info: Affected reports include, but aren't limited to:\n\n- Copilot Usage report in Microsoft 365 admin center\n- Copilot Chat Usage report in Microsoft 365 admin center\n- Copilot Readiness reports in Microsoft 365 admin center and Viva Insights\n- Copilot Adoption report in Viva Insights\n- Microsoft 365 Apps and Active users reports in Microsoft 365 admin center\n- Teams App reports in Microsoft 365 admin center and Microsoft Teams admin center\r\n\r\nCurrent status: Our monitoring has identified an increase report generation delays and our investigation has identified that an upstream component that facilitates report data access and generation isn't responding as expected, resulting in impact. We're in the process of identifying the underlying cause of impact and develop a remediation strategy.\r\n\r\nScope of impact: Any admin expecting reports from the affected scenarios as outlined in the More info section may be affected. \r\n\r\nStart time: Friday, August 21, 2026, at 12:00 AM UTC\r\n\r\nNext update by: Monday, August 24, 2026, at 6:30 PM UTC"
+            }
+          ],
+          "affectedServices": [
             "Microsoft 365 suite",
             "Microsoft Teams",
             "Microsoft Viva"
