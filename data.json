@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-21T03:29:05.467Z",
+  "lastUpdated": "2026-08-21T03:59:16.552Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -229,41 +229,6 @@
             "Microsoft 365 suite",
             "Microsoft Teams",
             "Microsoft Viva"
-          ]
-        },
-        {
-          "id": "MO1456424",
-          "title": "Some users may be unable to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop",
-          "startTime": "2026-08-17T12:46:14.987Z",
-          "endTime": null,
-          "lastModified": "2026-08-18T03:41:11.443Z",
-          "status": "serviceDegradation",
-          "severity": "incident",
-          "userImpact": "Users may be unable to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop.",
-          "scopeOfImpact": "Impact is specific to some users served through the affected infrastructure who are attempting to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop. This section may be updated as our investigation continues.\n\nStart time: Friday, August 14, 2026, at 5:00 AM UTC",
-          "rootCause": "A recent deployment introduced a resource utilization inefficiency issue, leading to impact.",
-          "nextUpdateBy": "Friday, August 21, 2026, at 4:00 AM UTC",
-          "feature": "Company or User Administration",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-08-18T03:41:11.443Z",
-              "postType": "regular",
-              "content": "Title: Some users may be unable to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop\n\nUser impact: Users may be unable to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop.\n\nCurrent status: Our investigation identified that a recent deployment introduced a resource utilization inefficiency issue, leading to impact. We've developed and are deploying a fix to reduce the resource pressure and restore service. We're monitoring as this progresses to identify a completion timeline.\n\nScope of impact: Impact is specific to some users served through the affected infrastructure who are attempting to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop. This section may be updated as our investigation continues.\n\nStart time: Friday, August 14, 2026, at 5:00 AM UTC\n\nRoot cause: A recent deployment introduced a resource utilization inefficiency issue, leading to impact.\n\nNext update by: Friday, August 21, 2026, at 4:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-08-17T14:15:32.913Z",
-              "postType": "regular",
-              "content": "Title: Some users may be unable to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop\r\n\r\nUser impact: Users may be unable to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop.\r\n\r\nCurrent status: We're analyzing service telemetry and reviewing recent service changes to determine the cause of impact. We've identified indicators of increased service restarts within a portion of the affected infrastructure, which may be contributing to the issue. We're validating potential remediation options while continuing our investigation into the root cause.\r\n\r\nScope of impact: Impact is specific to some users served through the affected infrastructure who are attempting to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop.\r\n\r\nNext update by: Tuesday, August 18, 2026, at 4:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-08-17T12:49:09.937Z",
-              "postType": "regular",
-              "content": "Title: Some users may be unable to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop\r\n\r\nUser impact: Users may be unable to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop.\r\n\r\nCurrent status: We're reviewing service monitoring telemetry and support provided information to determine our next troubleshooting steps.\r\n\r\nScope of impact: Impact is specific to some users served through the affected infrastructure who are attempting to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop.\r\n\r\nNext update by: Monday, August 17, 2026, at 3:00 PM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Microsoft 365 suite"
           ]
         },
         {
@@ -785,6 +750,47 @@
     }
   ],
   "history": [
+    {
+      "id": "MO1456424",
+      "title": "Some users may be unable to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop",
+      "startTime": "2026-08-17T12:46:14.987Z",
+      "endTime": "2026-08-21T03:38:16.36Z",
+      "lastModified": "2026-08-21T03:46:17.143Z",
+      "status": "serviceRestored",
+      "severity": "incident",
+      "userImpact": "Users may have been unable to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop.",
+      "scopeOfImpact": "Impact was specific to some users served through the affected infrastructure who were attempting to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop.\r\n\r\nStart time: Friday, August 14, 2026, at 5:00 AM UTC\r\n\r\nEnd time: Tuesday, August 18, 2026, at 12:00 AM UTC",
+      "rootCause": "A recent deployment introduced a resource utilization inefficiency issue and affected the search functionality in SharePoint Online, OneDrive, Outlook on the web, and the Outlook desktop client.\r\n\r\nNext steps: \n- We're further reviewing the recent deployment to understand how the resource utilization inefficiency issue was introduced, and to understand what prevented it from being detected in our update testing and validation procedures, which will allow us to prevent similar issues in future deployments.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Company or User Administration",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-08-21T03:46:13.777Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop\r\n\r\nUser impact: Users may have been unable to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop.\r\n\r\nFinal status: We've completed deploying the fix to reduce the resource pressure, and we've validated by monitoring internal telemetry that the issue is resolved.\r\n\r\nScope of impact: Impact was specific to some users served through the affected infrastructure who were attempting to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop.\r\n\r\nStart time: Friday, August 14, 2026, at 5:00 AM UTC\r\n\r\nEnd time: Tuesday, August 18, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: A recent deployment introduced a resource utilization inefficiency issue and affected the search functionality in SharePoint Online, OneDrive, Outlook on the web, and the Outlook desktop client.\r\n\r\nNext steps: \n- We're further reviewing the recent deployment to understand how the resource utilization inefficiency issue was introduced, and to understand what prevented it from being detected in our update testing and validation procedures, which will allow us to prevent similar issues in future deployments.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-08-18T03:41:11.443Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop\n\nUser impact: Users may be unable to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop.\n\nCurrent status: Our investigation identified that a recent deployment introduced a resource utilization inefficiency issue, leading to impact. We've developed and are deploying a fix to reduce the resource pressure and restore service. We're monitoring as this progresses to identify a completion timeline.\n\nScope of impact: Impact is specific to some users served through the affected infrastructure who are attempting to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop. This section may be updated as our investigation continues.\n\nStart time: Friday, August 14, 2026, at 5:00 AM UTC\n\nRoot cause: A recent deployment introduced a resource utilization inefficiency issue, leading to impact.\n\nNext update by: Friday, August 21, 2026, at 4:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-08-17T14:15:32.913Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop\r\n\r\nUser impact: Users may be unable to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop.\r\n\r\nCurrent status: We're analyzing service telemetry and reviewing recent service changes to determine the cause of impact. We've identified indicators of increased service restarts within a portion of the affected infrastructure, which may be contributing to the issue. We're validating potential remediation options while continuing our investigation into the root cause.\r\n\r\nScope of impact: Impact is specific to some users served through the affected infrastructure who are attempting to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop.\r\n\r\nNext update by: Tuesday, August 18, 2026, at 4:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-08-17T12:49:09.937Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop\r\n\r\nUser impact: Users may be unable to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop.\r\n\r\nCurrent status: We're reviewing service monitoring telemetry and support provided information to determine our next troubleshooting steps.\r\n\r\nScope of impact: Impact is specific to some users served through the affected infrastructure who are attempting to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop.\r\n\r\nNext update by: Monday, August 17, 2026, at 3:00 PM UTC"
+        }
+      ],
+      "serviceName": "Microsoft 365 suite",
+      "affectedServices": [
+        "Microsoft 365 suite"
+      ]
+    },
     {
       "id": "OP1457784",
       "title": "Admins may not see data in multiple tabs within the Microsoft 365 apps admin center",
