@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-21T16:34:03.265Z",
+  "lastUpdated": "2026-08-21T17:04:15.629Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -352,66 +352,6 @@
       "id": "microsoftteams",
       "issues": [
         {
-          "id": "TM1457081",
-          "title": "Some users may experience degraded video quality when screen sharing using the Microsoft Teams web client and VDI",
-          "startTime": "2026-08-13T08:21:00Z",
-          "endTime": null,
-          "lastModified": "2026-08-20T17:26:40.377Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may experience degraded video quality when screen sharing using the Microsoft Teams web client and VDI.",
-          "scopeOfImpact": "Impact is limited to approximately four percent of users initiating screen sharing from the Microsoft Teams web client and VDI. This information may be updated as our investigation continues.\r\n\r\nStart time: Thursday, August 13, 2026, at 8:21 AM UTC",
-          "rootCause": "A recent configuration change to the video processing pipeline contains an error, which is resulting in impact.",
-          "nextUpdateBy": "Friday, August 21, 2026, at 5:00 PM UTC",
-          "feature": "General",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-08-20T17:14:52.757Z",
-              "postType": "regular",
-              "content": "Title: Some users may experience degraded video quality when screen sharing using the Microsoft Teams web client and VDI\r\n\r\nUser impact: Users may experience degraded video quality when screen sharing using the Microsoft Teams web client and VDI.\r\n\r\nMore info: Impact is specific to approximately four percent of screen sharing sessions initiated by users from the Microsoft Teams web client. This may also impact users attempting to screenshare through VDI.\n\nWhile we're working to remediate impact, users can initiate unaffected screen sharing sessions using the desktop or mobile apps.\r\n\r\nCurrent status: We've deployed our fix to 10 percent of the affected environment. We're monitoring service health telemetry for a period to ensure no regressions occur, after which we'll proceed with deploying to the remaining affected environment.\r\n\r\nScope of impact: Impact is limited to approximately four percent of users initiating screen sharing from the Microsoft Teams web client and VDI. This information may be updated as our investigation continues.\r\n\r\nStart time: Thursday, August 13, 2026, at 8:21 AM UTC\r\n\r\nRoot cause: A recent configuration change to the video processing pipeline contains an error, which is resulting in impact.\r\n\r\nNext update by: Friday, August 21, 2026, at 5:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-08-20T09:00:39.58Z",
-              "postType": "regular",
-              "content": "Title: Some users may experience degraded video quality when screen sharing using the Microsoft Teams web client and VDI\r\n\r\nUser impact: Users may experience degraded video quality when screen sharing using the Microsoft Teams web client and VDI.\r\n\r\nMore info: Impact is specific to approximately four percent of screen sharing sessions initiated by users from the Microsoft Teams web client. This may also impact users attempting to screenshare through VDI.\n\nWhile we're working to remediate impact, users can initiate unaffected screen sharing sessions using the desktop or mobile apps.\r\n\r\nCurrent status: We've confirmed with a subset of affected users that the issue has been mitigated following the deployment of the fix. The fix is now being deployed across the remaining environments and we expect to provide a confirmed completion timeline in our next scheduled update.\r\n\r\nScope of impact: Impact is limited to approximately four percent of users initiating screen sharing from the Microsoft Teams web client and VDI. This information may be updated as our investigation continues.\r\n\r\nRoot cause: A recent configuration change to the video processing pipeline contains an error, which is resulting in impact.\r\n\r\nNext update by: Thursday, August 20, 2026, at 5:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-08-20T04:37:08.793Z",
-              "postType": "regular",
-              "content": "Title: Some users may experience degraded video quality when screen sharing using the Microsoft Teams web client\n\nUser impact: Users may experience degraded video quality when screen sharing using the Microsoft Teams web client.\n\nMore info: Impact is specific to approximately four percent of screen sharing sessions initiated by users from the Microsoft Teams web client. \n\nWhile we're working to remediate impact, users can initiate unaffected screen sharing sessions using the desktop or mobile apps.\n\nCurrent status: We're working with your representatives to ensure that affected users have received the fix and that impact is fully resolved. \n\nScope of impact: Impact is limited to approximately four percent of users initiating screen sharing from the Microsoft Teams web client. This information may be updated as our investigation continues.\n\nRoot cause: A recent configuration change to the video processing pipeline contains an error, which is resulting in impact.\n\nNext update by: Thursday, August 20, 2026, at 9:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-08-19T14:00:12.853Z",
-              "postType": "regular",
-              "content": "Title: Some users may experience degraded video quality when screen sharing using the Microsoft Teams web client\n\nUser impact: Users may experience degraded video quality when screen sharing using the Microsoft Teams web client.\n\nMore info: Impact is specific to approximately four percent of screen sharing sessions initiated by users from the Microsoft Teams web client. \n\nWhile we're working to remediate impact, users can initiate unaffected screen sharing sessions using the desktop or mobile apps.\n\nCurrent status: We're reaching out to affected users to confirm that the fix has been effective and that the issue has been mitigated.\n\nScope of impact: Impact is limited to approximately four percent of users initiating screen sharing from the Microsoft Teams web client. This information may be updated as our investigation continues.\n\nRoot cause: A recent configuration change to the video processing pipeline contains an error, which is resulting in impact.\n\nNext update by: Thursday, August 20, 2026, at 6:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-08-19T11:59:52.96Z",
-              "postType": "regular",
-              "content": "Title: Some users may experience degraded video quality when screen sharing using the Microsoft Teams web client\n\nUser impact: Users may experience degraded video quality when screen sharing using the Microsoft Teams web client.\n\nMore info: Impact is specific to approximately four percent of screen sharing sessions initiated by users from the Microsoft Teams web client. \n\nWhile we're working to remediate impact, users can initiate unaffected screen sharing sessions using the desktop or mobile apps.\n\nCurrent status: We've validated that reverting the previously identified change did not resolve the issue. As a result, we've deployed an additional configuration update for the web client which has completed deployment. Once the fix is fully propagated, we'll confirm with affected users whether the update has successfully mitigated the impact.\n\nScope of impact: Impact is limited to approximately four percent of users initiating screen sharing from the Microsoft Teams web client. This information may be updated as our investigation continues.\n\nRoot cause: A recent configuration change to the video processing pipeline contains an error, which is resulting in impact.\n\nNext update by: Wednesday, August 19, 2026, at 2:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-08-18T16:57:26.85Z",
-              "postType": "regular",
-              "content": "Title: Some users may experience degraded video quality when screen sharing using the Microsoft Teams web client\n\nUser impact: Users may experience degraded video quality when screen sharing using the Microsoft Teams web client.\n\nMore info: Impact is specific to approximately four percent of screen sharing sessions initiated by users from the Microsoft Teams web client. \n\nWhile we're working to remediate impact, users can initiate unaffected screen sharing sessions using the desktop or mobile apps.\n\nCurrent status: Our investigation has identified a recent configuration change to the video processing pipeline contains an error, resulting in impact. We've reverted this change and are working to validate this issue is no longer occurring. \n\nScope of impact: Impact is limited to approximately four percent of users initiating screen sharing from the Microsoft Teams web client. This information may be updated as our investigation continues.\n\nNext update by: Wednesday, August 19, 2026, at 12:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-08-18T15:59:48.97Z",
-              "postType": "regular",
-              "content": "Title: Some users may experience degraded video quality when screen sharing using the Microsoft Teams web client\n\nUser impact: Users may experience degraded video quality when screen sharing using the Microsoft Teams web client.\n\nMore info: Impact is specific to approximately four percent of screen sharing sessions initiated by users from the Microsoft Teams web client. \n\nWhile we're working to remediate impact, users can initiate unaffected screen sharing sessions using the desktop or mobile apps.\n\nCurrent status: We're analyzing service telemetry to better understand the impact scenario and determine our next diagnostic steps. \n\nScope of impact: Impact is limited to approximately four percent of users initiating screen sharing from the Microsoft Teams web client. This information may be updated as our investigation continues.\n\nNext update by: Tuesday, August 18, 2026, at 5:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-08-18T15:36:11.83Z",
-              "postType": "regular",
-              "content": "Title: Some users may experience degraded video quality when screen sharing using the Microsoft Teams web client\r\n\r\nUser impact: Users may experience degraded video quality when screen sharing using the Microsoft Teams web client.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Teams and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Microsoft Teams"
-          ]
-        },
-        {
           "id": "TM1440450",
           "title": "Users may have been unable to run run-only workflows from Microsoft Teams",
           "startTime": "2026-06-30T07:00:00Z",
@@ -756,6 +696,52 @@
   ],
   "history": [
     {
+      "id": "TM1457081",
+      "title": "Some users may experience degraded video quality when screen sharing using the Microsoft Teams web client and VDI",
+      "startTime": "2026-08-13T08:21:00Z",
+      "endTime": "2026-08-21T16:42:42.36Z",
+      "lastModified": "2026-08-21T16:52:00.147Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may experience degraded video quality when screen sharing using the Microsoft Teams web client and VDI.",
+      "scopeOfImpact": "Impact was limited to approximately four percent of users initiating screen sharing from the Microsoft Teams web client and VDI. \r\n\r\nStart time: Thursday, August 13, 2026, at 8:21 AM UTC\r\n\r\nEnd time: Friday, August 21, 2026, at 3:00 PM UTC",
+      "rootCause": "A recent configuration change to the video processing pipeline contains an error, which resulted in impact.\r\n\r\nNext steps: \n- We're continuing our analysis of the impacting configuration change to better identify and prevent similar impact in the future. \r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "General",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-08-21T16:51:56.757Z",
+          "postType": "regular",
+          "content": "Title: Some users may experience degraded video quality when screen sharing using the Microsoft Teams web client and VDI\r\n\r\nUser impact: Users may experience degraded video quality when screen sharing using the Microsoft Teams web client and VDI.\r\n\r\nMore info: Impact was specific to approximately four percent of screen sharing sessions initiated by users from the Microsoft Teams web client. This may also have impacted users attempting to screenshare through VDI.\n\nWhile we're working to remediate impact, users can initiate unaffected screen sharing sessions using the desktop or mobile apps.\r\n\r\nFinal status: We've confirmed that the fix has completed its deployment and validated that this issue has been remediated using service telemetry. \r\n\r\nScope of impact: Impact was limited to approximately four percent of users initiating screen sharing from the Microsoft Teams web client and VDI. \r\n\r\nStart time: Thursday, August 13, 2026, at 8:21 AM UTC\r\n\r\nEnd time: Friday, August 21, 2026, at 3:00 PM UTC\r\n\r\nRoot cause: A recent configuration change to the video processing pipeline contains an error, which resulted in impact.\r\n\r\nNext steps: \n- We're continuing our analysis of the impacting configuration change to better identify and prevent similar impact in the future. \r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-08-20T17:14:52.757Z",
+          "postType": "regular",
+          "content": "Title: Some users may experience degraded video quality when screen sharing using the Microsoft Teams web client and VDI\r\n\r\nUser impact: Users may experience degraded video quality when screen sharing using the Microsoft Teams web client and VDI.\r\n\r\nMore info: Impact is specific to approximately four percent of screen sharing sessions initiated by users from the Microsoft Teams web client. This may also impact users attempting to screenshare through VDI.\n\nWhile we're working to remediate impact, users can initiate unaffected screen sharing sessions using the desktop or mobile apps.\r\n\r\nCurrent status: We've deployed our fix to 10 percent of the affected environment. We're monitoring service health telemetry for a period to ensure no regressions occur, after which we'll proceed with deploying to the remaining affected environment.\r\n\r\nScope of impact: Impact is limited to approximately four percent of users initiating screen sharing from the Microsoft Teams web client and VDI. This information may be updated as our investigation continues.\r\n\r\nStart time: Thursday, August 13, 2026, at 8:21 AM UTC\r\n\r\nRoot cause: A recent configuration change to the video processing pipeline contains an error, which is resulting in impact.\r\n\r\nNext update by: Friday, August 21, 2026, at 5:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-08-20T09:00:39.58Z",
+          "postType": "regular",
+          "content": "Title: Some users may experience degraded video quality when screen sharing using the Microsoft Teams web client and VDI\r\n\r\nUser impact: Users may experience degraded video quality when screen sharing using the Microsoft Teams web client and VDI.\r\n\r\nMore info: Impact is specific to approximately four percent of screen sharing sessions initiated by users from the Microsoft Teams web client. This may also impact users attempting to screenshare through VDI.\n\nWhile we're working to remediate impact, users can initiate unaffected screen sharing sessions using the desktop or mobile apps.\r\n\r\nCurrent status: We've confirmed with a subset of affected users that the issue has been mitigated following the deployment of the fix. The fix is now being deployed across the remaining environments and we expect to provide a confirmed completion timeline in our next scheduled update.\r\n\r\nScope of impact: Impact is limited to approximately four percent of users initiating screen sharing from the Microsoft Teams web client and VDI. This information may be updated as our investigation continues.\r\n\r\nRoot cause: A recent configuration change to the video processing pipeline contains an error, which is resulting in impact.\r\n\r\nNext update by: Thursday, August 20, 2026, at 5:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-08-20T04:37:08.793Z",
+          "postType": "regular",
+          "content": "Title: Some users may experience degraded video quality when screen sharing using the Microsoft Teams web client\n\nUser impact: Users may experience degraded video quality when screen sharing using the Microsoft Teams web client.\n\nMore info: Impact is specific to approximately four percent of screen sharing sessions initiated by users from the Microsoft Teams web client. \n\nWhile we're working to remediate impact, users can initiate unaffected screen sharing sessions using the desktop or mobile apps.\n\nCurrent status: We're working with your representatives to ensure that affected users have received the fix and that impact is fully resolved. \n\nScope of impact: Impact is limited to approximately four percent of users initiating screen sharing from the Microsoft Teams web client. This information may be updated as our investigation continues.\n\nRoot cause: A recent configuration change to the video processing pipeline contains an error, which is resulting in impact.\n\nNext update by: Thursday, August 20, 2026, at 9:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-08-19T14:00:12.853Z",
+          "postType": "regular",
+          "content": "Title: Some users may experience degraded video quality when screen sharing using the Microsoft Teams web client\n\nUser impact: Users may experience degraded video quality when screen sharing using the Microsoft Teams web client.\n\nMore info: Impact is specific to approximately four percent of screen sharing sessions initiated by users from the Microsoft Teams web client. \n\nWhile we're working to remediate impact, users can initiate unaffected screen sharing sessions using the desktop or mobile apps.\n\nCurrent status: We're reaching out to affected users to confirm that the fix has been effective and that the issue has been mitigated.\n\nScope of impact: Impact is limited to approximately four percent of users initiating screen sharing from the Microsoft Teams web client. This information may be updated as our investigation continues.\n\nRoot cause: A recent configuration change to the video processing pipeline contains an error, which is resulting in impact.\n\nNext update by: Thursday, August 20, 2026, at 6:00 AM UTC"
+        }
+      ],
+      "serviceName": "Microsoft Teams",
+      "affectedServices": [
+        "Microsoft Teams"
+      ]
+    },
+    {
       "id": "TM1452826",
       "title": "Some users may see outdated activity data in Microsoft Teams usage reports",
       "startTime": "2026-07-23T00:00:00Z",
@@ -888,16 +874,21 @@
       "title": "Users in South America may have been unable to use multiple Microsoft 365 services",
       "startTime": "2026-08-19T14:15:00Z",
       "endTime": "2026-08-19T14:39:00Z",
-      "lastModified": "2026-08-19T15:52:07.36Z",
-      "status": "serviceRestored",
+      "lastModified": "2026-08-21T16:25:25.323Z",
+      "status": "postIncidentReviewPublished",
       "severity": "incident",
       "userImpact": "Users in South America may have been unable to access or experience degraded functionality with multiple services.",
-      "scopeOfImpact": "The majority of reports were from users in Colombia.\r\n\r\nStart time: Wednesday, August 19, 2026, at 2:15 PM UTC\r\n\r\nEnd time: Wednesday, August 19, 2026, at 2:39 PM UTC",
-      "rootCause": "A fiber event in the Colombia region shifted traffic onto a alternate network path, which became congested. This resulted in intermittent packet loss, traffic drops, slower connectivity, and/or higher latency. We're still investigating the full details and will provide more information within the Post Incident Report.\r\n\r\nNext steps: - We're reviewing the networking infrastructure to better understand impact and develop action items to prevent the issue happening again.\r\n\r\nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days.",
+      "scopeOfImpact": "",
+      "rootCause": "",
       "nextUpdateBy": "",
       "feature": "Sign-in",
       "isResolved": true,
       "posts": [
+        {
+          "createdAt": "2026-08-21T16:25:25.323Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        },
         {
           "createdAt": "2026-08-19T15:51:23.013Z",
           "postType": "regular",
@@ -917,11 +908,6 @@
           "createdAt": "2026-08-19T14:53:47.263Z",
           "postType": "regular",
           "content": "Title: Users in South America may be unable to use multiple Microsoft 365 services\n\nUser impact: Users in South America may be unable to access or experience degraded functionality with multiple Microsoft 365 services\n\nMore info: Impacted services include, but are not limited to:\n- Microsoft Teams\n- Outlook\n- Office Online Apps\n\nCurrent status: We've identified an issue with network paths in the South America region. We're currently rerouting traffic to alternate network paths to remediate impact.\n\nScope of impact: The majority of reports are from users in Colombia. We're still assessing the scope of the issue and will update this section as we know more information.\n\nNext update by: Wednesday, August 19, 2026, at 4:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-08-19T14:40:14.18Z",
-          "postType": "regular",
-          "content": "Title: Users in South America may be unable to use multiple Microsoft 365 services\n\nUser impact: Users in South America may be unable to access or experience degraded functionality with multiple Microsoft 365 services\n\nMore info: Impacted services include, but are not limited to:\n- Microsoft Teams\n- Outlook\n- Office Online Apps\n\nCurrent status: We are reviewing service telemetry and available information to determine if there is an issue happening and we'll update this message shortly with our latest findings. This communication serves as a preliminary notification about a potential issue affecting your service. We'll provide an update in 30 minutes.\n\nScope of impact: The majority of reports are from users in Colombia. We're still assessing the scope of the issue and will update this section as we know more information."
         }
       ],
       "serviceName": "Microsoft 365 suite",
