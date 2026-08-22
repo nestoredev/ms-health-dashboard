@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-22T00:06:58.058Z",
+  "lastUpdated": "2026-08-22T00:37:09.104Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -433,16 +433,21 @@
           "title": "Users may be unable to join shared channels using some links to messages in Microsoft Teams",
           "startTime": "2026-08-21T23:42:31Z",
           "endTime": null,
-          "lastModified": "2026-08-21T23:43:37.807Z",
+          "lastModified": "2026-08-22T00:12:52.29Z",
           "status": "investigating",
           "severity": "advisory",
           "userImpact": "Users may be unable to join shared channels using some links to messages in Microsoft Teams.",
-          "scopeOfImpact": "",
-          "rootCause": "",
-          "nextUpdateBy": "",
+          "scopeOfImpact": "Users joining channels or generating channels links using the “Copy Link” options within the three dots menu located at the top right of shared Microsoft Teams channels may be impacted.",
+          "rootCause": "A recent update intended to improve the data pathways leveraged to facilitate channel link generation is causing the affected links to be malformed, leading to impact.",
+          "nextUpdateBy": "Tuesday, August 25, 2026, at 1:30 AM UTC",
           "feature": "Teams and Channels",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-22T00:12:52.29Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to join shared channels using some links to messages in Microsoft Teams\n\nUser impact: Users may be unable to join shared channels using some links to messages in Microsoft Teams.\n\nMore info: This issue specifically affects links generated using the “Copy Link” option through the three dots menu located at the top right of the shared channel. Users can bypass this impact by generating links to channels using any alternate method, such as by right-clicking on the channel in the left rail menu or any specific message within the shared channel and choosing the “Copy Link” option there.\n\nCurrent status: We've determined that a recent update intended to improve the data pathways leveraged to facilitate channel link generation is causing the affected links to be malformed, leading to impact. We've developed a fix to resolve this issue, and we're initiating deployment of this fix to the impacted service environments.\n\nScope of impact: Users joining channels or generating channels links using the “Copy Link” options within the three dots menu located at the top right of shared Microsoft Teams channels may be impacted.\n\nRoot cause: A recent update intended to improve the data pathways leveraged to facilitate channel link generation is causing the affected links to be malformed, leading to impact.\n\nNext update by: Tuesday, August 25, 2026, at 1:30 AM UTC"
+            },
             {
               "createdAt": "2026-08-21T23:43:37.807Z",
               "postType": "regular",
