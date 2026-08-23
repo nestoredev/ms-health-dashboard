@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-23T04:16:26.657Z",
+  "lastUpdated": "2026-08-23T04:46:35.747Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -711,6 +711,31 @@
               "createdAt": "2026-08-14T11:53:15.813Z",
               "postType": "regular",
               "content": "Title: Users may be unable to sign in to OneNote using iOS devices\r\n\r\nUser impact: Users may be unable to sign in to OneNote using iOS devices.\r\n\r\nCurrent status: We've identified that a recent change to the sign in flow may be causing impact to occur. We've reverted the change but this did not resolve the issue. We're analyzing OneNote logs from impacted users as well as OneNote logs from our internal reproduction of the issue to assist us in identifying the underlying root cause of impact.\r\n\r\nScope of impact: Any user attempting to sign in to OneNote build 16.112.717.0 or higher using iOS devices is impacted.\r\n\r\nNext update by: Friday, August 14, 2026, at 2:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 apps"
+          ]
+        },
+        {
+          "id": "OP1459987",
+          "title": "Some admins may see outdated device inventory and update status information in the Microsoft 365 Apps admin center",
+          "startTime": "2026-08-20T00:00:00Z",
+          "endTime": null,
+          "lastModified": "2026-08-23T04:18:44.13Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Admins may see outdated device inventory and update status information in the Microsoft 365 Apps admin center.",
+          "scopeOfImpact": "Admins attempting to view device inventory and update status information in the Microsoft 365 Apps admin center may be affected. This information may be updated as our investigation continues.\n\nStart time: Thursday, August 19, 2026, at 12:00 AM UTC",
+          "rootCause": "",
+          "nextUpdateBy": "Sunday, August 23, 2026, at 9:00 PM UTC",
+          "feature": "Reports of an incident",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-08-23T04:18:44.13Z",
+              "postType": "regular",
+              "content": "Title: Some admins may see outdated device inventory and update status information in the Microsoft 365 Apps admin center\n\nUser impact: Admins may see outdated device inventory and update status information in the Microsoft 365 Apps admin center.\n\nMore info: Device updates are continuing as expected, but the reported status and insights may not reflect the latest device state.\n\nCurrent status: We’ve been alerted through our internal monitors and a subset of affected users to an issue in which admins may see outdated device inventory and update status information in the Microsoft 365 Apps admin center. We’re reviewing service health telemetry specific to when impact first occurred so that we can refine our understanding of how impact arose, which we anticipate will help ascertain our next troubleshooting actions.\n\nScope of impact: Admins attempting to view device inventory and update status information in the Microsoft 365 Apps admin center may be affected. This information may be updated as our investigation continues.\n\nStart time: Thursday, August 19, 2026, at 12:00 AM UTC\n\nNext update by: Sunday, August 23, 2026, at 9:00 PM UTC\n"
             }
           ],
           "affectedServices": [
