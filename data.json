@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-24T15:28:21.183Z",
+  "lastUpdated": "2026-08-24T15:58:33.383Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -538,16 +538,21 @@
           "title": "Some users may experience degraded video quality when screensharing in Microsoft Teams",
           "startTime": "2026-08-24T05:22:24.403Z",
           "endTime": null,
-          "lastModified": "2026-08-24T14:57:49.507Z",
+          "lastModified": "2026-08-24T15:41:58.82Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may experience degraded video quality when screensharing in Microsoft Teams.",
           "scopeOfImpact": "Impact is specific to some users attempting to screenshare in Microsoft Teams. This information may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, August 18, 2026, at 5:56 AM UTC",
           "rootCause": "A recent update related to meeting performance optimization is causing impact to some users.",
-          "nextUpdateBy": "Monday, August 24, 2026, at 4:00 PM UTC",
+          "nextUpdateBy": "Monday, August 24, 2026, at 6:00 PM UTC",
           "feature": "Meetings",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-24T15:41:58.82Z",
+              "postType": "regular",
+              "content": "Title: Some users may experience degraded video quality when screensharing in Microsoft Teams\r\n\r\nUser impact: Users may experience degraded video quality when screensharing in Microsoft Teams.\r\n\r\nCurrent status: We've completed the deployment of our configuration update and are validating with a subset of affected users that impact was successfully remediated. \r\n\r\nScope of impact: Impact is specific to some users attempting to screenshare in Microsoft Teams. This information may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, August 18, 2026, at 5:56 AM UTC\r\n\r\nRoot cause: A recent update related to meeting performance optimization is causing impact to some users.\r\n\r\nNext update by: Monday, August 24, 2026, at 6:00 PM UTC"
+            },
             {
               "createdAt": "2026-08-24T14:00:11.423Z",
               "postType": "regular",
@@ -819,19 +824,24 @@
         },
         {
           "id": "OP1460815",
-          "title": "Some users may be unable to activate new Office 365 licenses",
+          "title": "Some users may be unable to activate new or refresh existing Office 365 licenses",
           "startTime": "2026-08-24T14:22:02.317Z",
           "endTime": null,
-          "lastModified": "2026-08-24T15:19:52.547Z",
+          "lastModified": "2026-08-24T15:49:02.15Z",
           "status": "serviceDegradation",
           "severity": "incident",
-          "userImpact": "Users may be unable to activate new Office 365 licenses.",
-          "scopeOfImpact": "Some users attempting to sign into Office 365 applications may be impacted.",
+          "userImpact": "Users may be unable to activate new or refresh existing Office 365 licenses.",
+          "scopeOfImpact": "Some users attempting to activate new Office 365 licenses may be impacted. This section may be updated as the investigation progresses.",
           "rootCause": "",
-          "nextUpdateBy": "Monday, August 24, 2026, at 5:00 PM UTC",
+          "nextUpdateBy": "Monday, August 24, 2026, at 5:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-24T15:24:00.497Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to activate new or refresh existing Office 365 licenses\r\n\r\nUser impact: Users may be unable to activate new or refresh existing Office 365 licenses.\r\n\r\nMore info: For the users who are unable to activate or refresh Office 365 licenses, this prevents them from signing in or accessing Office 365 applications.\n \nUsers may receive multiple prompts; however, the activation process may fail when they attempt to sign in.\r\n\r\nCurrent status: After further review of customer reports and our service monitoring telemetry, we've confirmed that impact is occurring for users attempting to activate new Office 365 licenses, which prevents them from being able to sign-in or access Office 365 applications. We've updated the \"Title\", \"User impact\", and \"Scope of impact\" fields of our communications to reflect this change. We're reviewing recent service updates to isolate potential sources of impact or discrepancies that could be causing this impact to users.\r\n\r\nScope of impact: Some users attempting to activate new Office 365 licenses may be impacted. This section may be updated as the investigation progresses.\r\n\r\nNext update by: Monday, August 24, 2026, at 5:30 PM UTC"
+            },
             {
               "createdAt": "2026-08-24T14:40:03.66Z",
               "postType": "regular",
@@ -973,9 +983,35 @@
     },
     {
       "service": "Microsoft Purview",
-      "status": "serviceOperational",
+      "status": "investigating",
       "id": "Purview",
-      "issues": []
+      "issues": [
+        {
+          "id": "MP1460870",
+          "title": "Admins may be unable to access Content Explorer or Data Explorer in Microsoft Purview",
+          "startTime": "2026-08-24T15:26:38.2Z",
+          "endTime": null,
+          "lastModified": "2026-08-24T15:29:56.047Z",
+          "status": "investigating",
+          "severity": "advisory",
+          "userImpact": "Admins may be unable to access Content Explorer or Data Explorer in Microsoft Purview.",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
+          "feature": "General",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-08-24T15:29:56.047Z",
+              "postType": "regular",
+              "content": "Title: Admins may be unable to access Content Explorer or Data Explorer in Microsoft Purview\r\n\r\nUser impact: Admins may be unable to access Content Explorer or Data Explorer in Microsoft Purview.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Purview and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Purview"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft Clipchamp ",
