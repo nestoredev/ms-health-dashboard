@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-24T05:24:41.846Z",
+  "lastUpdated": "2026-08-24T05:54:51.269Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -677,16 +677,21 @@
           "title": "Users may be unable to sign in to OneNote using iOS devices",
           "startTime": "2026-08-14T11:51:32.013Z",
           "endTime": null,
-          "lastModified": "2026-08-21T22:43:26.707Z",
+          "lastModified": "2026-08-24T05:21:03.68Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to sign in to OneNote using iOS devices.",
-          "scopeOfImpact": "Any user attempting to sign in to OneNote build 16.112.717.0 or higher using iOS devices is impacted.\n\nStart time: Monday, July 20, 2026, at 4:36 AM UTC",
+          "scopeOfImpact": "Any user attempting to sign in to OneNote build 16.112.717.0 or higher using iOS devices is impacted.\r\n\r\nStart time: Monday, July 20, 2026, at 4:36 AM UTC",
           "rootCause": "A code change included in OneNote builds 16.112.717.0 and above, designed to change how authentication requests are routed, introduced an issue with OneNote iOS Authenticator broker sign-in and is causing impact.",
-          "nextUpdateBy": "Monday, August 24, 2026, at 6:00 AM UTC",
+          "nextUpdateBy": "Tuesday, August 25, 2026, at 6:00 AM UTC",
           "feature": "OneNote",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-24T05:21:03.68Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to sign in to OneNote using iOS devices\r\n\r\nUser impact: Users may be unable to sign in to OneNote using iOS devices.\r\n\r\nMore info: Impact is specific to users with OneNote build 16.112.717.0 or higher.\n \nWhilst we work on remediation, impacted users may be able to utilize OneNote on the web or remove Authenticator so that authentication falls back to the in-app webview. Users may also be able to sign in to any other Microsoft 365 apps first (e.g. PowerPoint), then attempt to sign in again in OneNote.\r\n\r\nCurrent status: We confirmed that the fix will be part of the updated version of the OneNote app on iOS and are monitoring its implementation on the App Store. Once available, we'll confirm that the updated version remediates the impact. \r\n\r\nScope of impact: Any user attempting to sign in to OneNote build 16.112.717.0 or higher using iOS devices is impacted.\r\n\r\nStart time: Monday, July 20, 2026, at 4:36 AM UTC\r\n\r\nRoot cause: A code change included in OneNote builds 16.112.717.0 and above, designed to change how authentication requests are routed, introduced an issue with OneNote iOS Authenticator broker sign-in and is causing impact.\r\n\r\nNext update by: Tuesday, August 25, 2026, at 6:00 AM UTC"
+            },
             {
               "createdAt": "2026-08-21T22:43:26.707Z",
               "postType": "regular",
