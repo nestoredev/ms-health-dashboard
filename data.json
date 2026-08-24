@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-24T20:30:18.877Z",
+  "lastUpdated": "2026-08-24T21:00:30.844Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -160,56 +160,6 @@
               "createdAt": "2026-07-28T15:15:49.05Z",
               "postType": "regular",
               "content": "Title: Some users may see unwanted add-ins appearing automatically across all Outlook clients\n\nUser impact: Users may see unwanted add-ins appearing automatically across all Outlook clients.\n\nMore info: These add-ins are configured to be available to users by admins but aren’t expected to be automatically installed.\n\nCurrent status: We're investigating a potential issue with Exchange Online and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Exchange Online"
-          ]
-        },
-        {
-          "id": "EX1442215",
-          "title": "Admins are unable to complete some cross-tenant mailbox migrations in Exchange Online",
-          "startTime": "2026-02-14T00:48:00Z",
-          "endTime": null,
-          "lastModified": "2026-08-13T19:05:59.203Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Admins may be unable to perform tenant to tenant migrations and offboarding moves in the Exchange admin center.",
-          "scopeOfImpact": "Some admins attempting to perform tenant to tenant migrations and offboarding moves in the Exchange admin center may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Saturday, February 14, 2026, at 12:48 AM UTC",
-          "rootCause": "A change introduced a code regression to Mailbox Replication Service (MRS), which is causing intermittent failures for tenant-to-tenant migration actions or offboarding moves as the property tags needed to complete the request are not being properly configured.",
-          "nextUpdateBy": "Monday, August 24, 2026, at 9:00 PM UTC",
-          "feature": "Performance degradation",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-08-13T19:04:43.57Z",
-              "postType": "regular",
-              "content": "Title: Admins are unable to complete some cross-tenant mailbox migrations in Exchange Online\r\n\r\nUser impact: Admins may be unable to perform tenant to tenant migrations and offboarding moves in the Exchange admin center.\r\n\r\nMore info: While we work on developing a long-term solution, admins may be able to use PowerShell for the affected migrations and moves with the following cmdlet against the affected mailboxes:\n\nSet-MoveRequest \"user@yourdomain.com\" -SkipMoving FolderRestrictions\n\nNext, the tenant admin may have resume the move request using the cmdlet:\nResume-MoveRequest \"user@yourdomain.com\"\n\nThis would allow the affected move jobs to continue to make progress.\r\n\r\nCurrent status: We're coordinating with a subset of affected admins who are in the process of completing a cross-tenant mailbox migration to monitor progress, which will help us validate remediation for all impacted admins.\r\n\r\nScope of impact: Some admins attempting to perform tenant to tenant migrations and offboarding moves in the Exchange admin center may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Saturday, February 14, 2026, at 12:48 AM UTC\r\n\r\nRoot cause: A change introduced a code regression to Mailbox Replication Service (MRS), which is causing intermittent failures for tenant-to-tenant migration actions or offboarding moves as the property tags needed to complete the request are not being properly configured.\r\n\r\nNext update by: Monday, August 24, 2026, at 9:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-08-12T14:47:06.523Z",
-              "postType": "regular",
-              "content": "Title: Admins are unable to complete some cross-tenant mailbox migrations in Exchange Online\r\n\r\nUser impact: Admins may be unable to perform tenant to tenant migrations and offboarding moves in the Exchange admin center.\r\n\r\nMore info: While we work on developing a long-term solution, admins may be able to use PowerShell for the affected migrations and moves with the following cmdlet against the affected mailboxes:\n\nSet-MoveRequest \"user@yourdomain.com\" -SkipMoving FolderRestrictions\n\nNext, the tenant admin may have resume the move request using the cmdlet:\nResume-MoveRequest \"user@yourdomain.com\"\n\nThis would allow the affected move jobs to continue to make progress.\r\n\r\nCurrent status: We're awaiting feedback from a subset of affected admins to validate if our fix successfully remediated impact.\r\n\r\nScope of impact: Some admins attempting to perform tenant to tenant migrations and offboarding moves in the Exchange admin center may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Saturday, February 14, 2026, at 12:48 AM UTC\r\n\r\nRoot cause: A change introduced a code regression to Mailbox Replication Service (MRS), which is causing intermittent failures for tenant-to-tenant migration actions or offboarding moves as the property tags needed to complete the request are not being properly configured.\r\n\r\nNext update by: Thursday, August 13, 2026, at 9:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-08-12T12:57:36.19Z",
-              "postType": "regular",
-              "content": "Title: Admins are unable to complete some cross-tenant mailbox migrations in Exchange Online\r\n\r\nUser impact: Admins may be unable to perform tenant to tenant migrations and offboarding moves in the Exchange admin center.\r\n\r\nMore info: While we work on developing a long-term solution, admins may be able to use PowerShell for the affected migrations and moves with the following cmdlet against the affected mailboxes:\n\nSet-MoveRequest \"user@yourdomain.com\" -SkipMoving FolderRestrictions\n\nNext, the tenant admin may have resume the move request using the cmdlet:\nResume-MoveRequest \"user@yourdomain.com\"\n\nThis would allow the affected move jobs to continue to make progress.\r\n\r\nCurrent status: We've validated and deployed the fix across the affected infrastructure, enabling the mailbox move to complete successfully. During validation, we've identified that the affected folder was processed as a folder creation bad item and therefore could not be migrated intact. We're validating the overall outcome with the affected users to confirm full mitigation.\r\n\r\nScope of impact: Some admins attempting to perform tenant to tenant migrations and offboarding moves in the Exchange admin center may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Saturday, February 14, 2026, at 12:48 AM UTC\r\n\r\nRoot cause: A change introduced a code regression to Mailbox Replication Service (MRS), which is causing intermittent failures for tenant-to-tenant migration actions or offboarding moves as the property tags needed to complete the request are not being properly configured.\r\n\r\nNext update by: Wednesday, August 12, 2026, at 3:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-08-12T12:57:27.003Z",
-              "postType": "regular",
-              "content": "Title: Admins are unable to complete some cross-tenant mailbox migrations in Exchange Online\r\n\r\nUser impact: Admins may be unable to perform tenant to tenant migrations and offboarding moves in the Exchange admin center.\r\n\r\nMore info: While we work on developing a long-term solution, admins may be able to use PowerShell for the affected migrations and moves with the following cmdlet against the affected mailboxes:\n \nSet-MoveRequest \"user@yourdomain.com\" -SkipMoving FolderRestrictions\n \nNext, the tenant admin may have resume the move request using the cmdlet:\nResume-MoveRequest \"user@yourdomain.com\"\n \nThis would allow the affected move jobs to continue to make progress.\n \nAdmins may be able to run the following PowerShell cmdlets sequentially for migration batches:\n \nSet-MigrationBatch batchname -SkipMoving FolderRestrictions\nStart-MigrationBatch \"BatchName\"\n \nAdmins attempting to complete a tenant-to-tenant migration or an offboarding move in Exchange Online receive the following error \n\"PropTagToPropertyDefinitionConversionException\"\r\n\r\nCurrent status: We've validated and deployed the fix across the affected infrastructure, enabling the mailbox move to complete successfully. During validation, we identified that the affected folder was processed as a folder creation bad item and therefore could not be migrated intact. We're validating the overall outcome with the affected users and continuing to monitor the environment to ensure the mitigation remains effective.\r\n\r\nScope of impact: Some admins attempting to perform tenant to tenant migrations and offboarding moves in the Exchange admin center may be affected. This information may be updated as our investigation continues.\r\n\r\nStart time: Saturday, February 14, 2026, at 12:48 AM UTC\r\n\r\nRoot cause: A change introduced a code regression to Mailbox Replication Service (MRS), which is causing intermittent failures for tenant-to-tenant migration actions or offboarding moves as the property tags needed to complete the request are not being properly configured.\r\n\r\nNext update by: Wednesday, August 12, 2026, at 3:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-07-29T14:25:30.017Z",
-              "postType": "regular",
-              "content": "Title: Admins are unable to complete some cross-tenant mailbox migrations in Exchange Online\r\n\r\nUser impact: Admins may be unable to perform tenant to tenant migrations and offboarding moves in the Exchange admin center.\r\n\r\nMore info: While we work on developing a long-term solution, admins may be able to use PowerShell for the affected migrations and moves with the following cmdlet against the affected mailboxes:\n \nSet-MoveRequest \"user@yourdomain.com\" -SkipMoving FolderRestrictions\n \nNext, the tenant admin may have resume the move request using the cmdlet:\nResume-MoveRequest \"user@yourdomain.com\"\n \nThis would allow the affected move jobs to continue to make progress.\n \nAdmins may be able to run the following PowerShell cmdlets sequentially for migration batches:\n \nSet-MigrationBatch batchname -SkipMoving FolderRestrictions\nStart-MigrationBatch \"BatchName\"\n \nAdmins attempting to complete a tenant-to-tenant migration or an offboarding move in Exchange Online receive the following error \n\"PropTagToPropertyDefinitionConversionException\"\r\n\r\nCurrent status: We've received reports that impact associated with EX1232513 persists. We've resumed our investigation of the issue and have developed and are validating a fix to remediate impact.\r\n\r\nScope of impact: Some admins attempting to perform tenant to tenant migrations and offboarding moves in the Exchange admin center may be affected. This information may be updated as our investigation continues.\r\n\r\nStart time: Saturday, February 14, 2026, at 12:48 AM UTC\r\n\r\nRoot cause: A change introduced a code regression to Mailbox Replication Service (MRS), which is causing intermittent failures for tenant-to-tenant migration actions or offboarding moves as the property tags needed to complete the request are not being properly configured.\r\n\r\nNext update by: Wednesday, August 12, 2026, at 1:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-07-29T13:32:01.623Z",
-              "postType": "regular",
-              "content": "Title: Admins are unable to complete some cross-tenant mailbox migrations in Exchange Online\r\n\r\nUser impact: Admins are unable to complete some cross-tenant mailbox migrations in Exchange Online.\r\n\r\nCurrent status: We're reviewing support provided information to determine our next troubleshooting steps.\r\n\r\nScope of impact: Your organization is affected by this event, and admins attempting to complete some cross-tenant mailbox migrations in Exchange Online are impacted. This information may be updated as our investigation continues.\r\n\r\nNext update by: Wednesday, July 29, 2026, at 3:30 PM UTC"
             }
           ],
           "affectedServices": [
@@ -858,41 +808,6 @@
       "id": "Viva",
       "issues": [
         {
-          "id": "MV1461005",
-          "title": "Some users may be unable to access Microsoft Viva Glint services",
-          "startTime": "2026-08-24T18:16:48.303Z",
-          "endTime": null,
-          "lastModified": "2026-08-24T19:34:54.267Z",
-          "status": "investigating",
-          "severity": "incident",
-          "userImpact": "Users may be unable to access Viva Glint services.",
-          "scopeOfImpact": "Some users attempting to access Microsoft Viva Glint services may be impacted. This section may be updated as our investigation continues.\r\n\r\nStart time: Monday, August 24, 2026, at 5:20 PM UTC",
-          "rootCause": "A recent build release contains a regression which is causing the impact.",
-          "nextUpdateBy": "Monday, August 24, 2026, at 10:00 PM UTC",
-          "feature": "General",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-08-24T19:34:54.267Z",
-              "postType": "regular",
-              "content": "Title: Some users may be unable to access Microsoft Viva Glint services\r\n\r\nUser impact: Users may be unable to access Viva Glint services.\r\n\r\nMore info: Affected users are able to sign in as expected but may see a blank page and won't be able to access any Viva Glint services.\r\n\r\nCurrent status: We're monitoring as the release containing the regression is rolled back to ensure the issue is remediated and no further actions are necessary to fully resolve the impact.\r\n\r\nScope of impact: Some users attempting to access Microsoft Viva Glint services may be impacted. This section may be updated as our investigation continues.\r\n\r\nStart time: Monday, August 24, 2026, at 5:20 PM UTC\r\n\r\nRoot cause: A recent build release contains a regression which is causing the impact.\r\n\r\nNext update by: Monday, August 24, 2026, at 10:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-08-24T18:44:35.227Z",
-              "postType": "regular",
-              "content": "Title: Some users may be unable to access Microsoft Viva Glint services\r\n\r\nUser impact: Users may be unable to access Viva Glint services.\r\n\r\nMore info: Affected users are able to sign in as expected but may see a blank page and won't be able to access any Viva Glint services.\r\n\r\nCurrent status: Our investigation determined that a recent build release contains a regression which is causing the impact. We're rolling this release back to remediate the issue.\r\n\r\nScope of impact: Some users attempting to access Microsoft Viva Glint services may be impacted. This section may be updated as our investigation continues.\r\n\r\nStart time: Monday, August 24, 2026, at 5:20 PM UTC\r\n\r\nRoot cause: A recent build release contains a regression which is causing the impact.\r\n\r\nNext update by: Monday, August 24, 2026, at 8:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-08-24T18:24:18.977Z",
-              "postType": "regular",
-              "content": "Title: Some users may be unable to access Microsoft Viva Glint services\r\n\r\nUser impact: Users may be unable to access Viva Glint services.\r\n\r\nMore info: Affected users are able to log in as expected but may see a blank page and won't be able to access any Viva Glint services.\r\n\r\nCurrent status: We're investigating a potential issue with Viva Glint and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Microsoft Viva"
-          ]
-        },
-        {
           "id": "MO1457843",
           "title": "Admins can't identify who deleted a Viva Engage community or its Microsoft 365 Group in Microsoft Entra ID audit logs",
           "startTime": "2026-08-19T22:38:36.783Z",
@@ -986,6 +901,93 @@
     }
   ],
   "history": [
+    {
+      "id": "EX1442215",
+      "title": "Admins are unable to complete some cross-tenant mailbox migrations in Exchange Online",
+      "startTime": "2026-02-14T00:48:00Z",
+      "endTime": "2026-08-24T20:35:37.187Z",
+      "lastModified": "2026-08-24T20:37:41.04Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Admins may have been unable to perform tenant to tenant migrations and offboarding moves in the Exchange admin center.",
+      "scopeOfImpact": "Some admins attempting to perform tenant to tenant migrations and offboarding moves in the Exchange admin center may have been impacted.\r\n\r\nStart time: Saturday, February 14, 2026, at 12:48 AM UTC\r\n\r\nEnd time: Friday, August 14, 2026, at 5:24 PM UTC",
+      "rootCause": "A change introduced a code regression to Mailbox Replication Service (MRS) caused intermittent failures for tenant-to-tenant migration actions or offboarding moves as the property tags needed to complete the request were not being properly configured.\r\n\r\nNext steps: - We're reviewing the responsible change to better understand what led to the configuration error that resulted in impact and prevent similar future occurrences.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Performance degradation",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-08-24T20:37:40.353Z",
+          "postType": "regular",
+          "content": "Title: Admins are unable to complete some cross-tenant mailbox migrations in Exchange Online\r\n\r\nUser impact: Admins may have been unable to perform tenant to tenant migrations and offboarding moves in the Exchange admin center.\r\n\r\nMore info: While we worked on developing a long-term solution, admins may have been able to use PowerShell for the affected migrations and moves with the following cmdlet against the affected mailboxes:\n \nSet-MoveRequest \"user@yourdomain.com\" -SkipMoving FolderRestrictions\n \nNext, the tenant admin could have resumed the move request using the cmdlet:\nResume-MoveRequest \"user@yourdomain.com\"\n \nThis would allow the affected move jobs to continue to make progress.\r\n\r\nFinal status: We confirmed that the cross-tenant migration process has successfully completed for a subset of affected admins, validating that our configuration change has resolved the event.\r\n\r\nScope of impact: Some admins attempting to perform tenant to tenant migrations and offboarding moves in the Exchange admin center may have been impacted.\r\n\r\nStart time: Saturday, February 14, 2026, at 12:48 AM UTC\r\n\r\nEnd time: Friday, August 14, 2026, at 5:24 PM UTC\r\n\r\nRoot cause: A change introduced a code regression to Mailbox Replication Service (MRS) caused intermittent failures for tenant-to-tenant migration actions or offboarding moves as the property tags needed to complete the request were not being properly configured.\r\n\r\nNext steps: - We're reviewing the responsible change to better understand what led to the configuration error that resulted in impact and prevent similar future occurrences.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-08-24T20:37:30.707Z",
+          "postType": "regular",
+          "content": "Title: Admins are unable to complete some cross-tenant mailbox migrations in Exchange Online\r\n\r\nUser impact: Admins may have been unable to perform tenant to tenant migrations and offboarding moves in the Exchange admin center.\r\n\r\nMore info: While we worked on developing a long-term solution, admins may have been able to use PowerShell for the affected migrations and moves with the following cmdlet against the affected mailboxes:\n \nSet-MoveRequest \"user@yourdomain.com\" -SkipMoving FolderRestrictions\n \nNext, the tenant admin could have resumed the move request using the cmdlet:\nResume-MoveRequest \"user@yourdomain.com\"\n \nThis would allow the affected move jobs to continue to make progress.\r\n\r\nFinal status: We confirmed that the cross-tenant migration process has successfully completed for a subset of affected admins, validating that our configuration change has resolved the event.\r\n\r\nScope of impact: Some admins attempting to perform tenant to tenant migrations and offboarding moves in the Exchange admin center may have been impacted.\r\n\r\nStart time: Saturday, February 14, 2026, at 12:48 AM UTC\r\n\r\nEnd time: Friday, August 14, 2026, at 5:24 PM UTC\r\n\r\nRoot cause: A change introduced a code regression to Mailbox Replication Service (MRS) caused intermittent failures for tenant-to-tenant migration actions or offboarding moves as the property tags needed to complete the request were not being properly configured.\r\n\r\nNext steps: - We're reviewing the responsible change to better understand what led to the configuration error that resulted in impact and prevent similar future occurrences.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-08-13T19:04:43.57Z",
+          "postType": "regular",
+          "content": "Title: Admins are unable to complete some cross-tenant mailbox migrations in Exchange Online\r\n\r\nUser impact: Admins may be unable to perform tenant to tenant migrations and offboarding moves in the Exchange admin center.\r\n\r\nMore info: While we work on developing a long-term solution, admins may be able to use PowerShell for the affected migrations and moves with the following cmdlet against the affected mailboxes:\n\nSet-MoveRequest \"user@yourdomain.com\" -SkipMoving FolderRestrictions\n\nNext, the tenant admin may have resume the move request using the cmdlet:\nResume-MoveRequest \"user@yourdomain.com\"\n\nThis would allow the affected move jobs to continue to make progress.\r\n\r\nCurrent status: We're coordinating with a subset of affected admins who are in the process of completing a cross-tenant mailbox migration to monitor progress, which will help us validate remediation for all impacted admins.\r\n\r\nScope of impact: Some admins attempting to perform tenant to tenant migrations and offboarding moves in the Exchange admin center may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Saturday, February 14, 2026, at 12:48 AM UTC\r\n\r\nRoot cause: A change introduced a code regression to Mailbox Replication Service (MRS), which is causing intermittent failures for tenant-to-tenant migration actions or offboarding moves as the property tags needed to complete the request are not being properly configured.\r\n\r\nNext update by: Monday, August 24, 2026, at 9:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-08-12T14:47:06.523Z",
+          "postType": "regular",
+          "content": "Title: Admins are unable to complete some cross-tenant mailbox migrations in Exchange Online\r\n\r\nUser impact: Admins may be unable to perform tenant to tenant migrations and offboarding moves in the Exchange admin center.\r\n\r\nMore info: While we work on developing a long-term solution, admins may be able to use PowerShell for the affected migrations and moves with the following cmdlet against the affected mailboxes:\n\nSet-MoveRequest \"user@yourdomain.com\" -SkipMoving FolderRestrictions\n\nNext, the tenant admin may have resume the move request using the cmdlet:\nResume-MoveRequest \"user@yourdomain.com\"\n\nThis would allow the affected move jobs to continue to make progress.\r\n\r\nCurrent status: We're awaiting feedback from a subset of affected admins to validate if our fix successfully remediated impact.\r\n\r\nScope of impact: Some admins attempting to perform tenant to tenant migrations and offboarding moves in the Exchange admin center may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Saturday, February 14, 2026, at 12:48 AM UTC\r\n\r\nRoot cause: A change introduced a code regression to Mailbox Replication Service (MRS), which is causing intermittent failures for tenant-to-tenant migration actions or offboarding moves as the property tags needed to complete the request are not being properly configured.\r\n\r\nNext update by: Thursday, August 13, 2026, at 9:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-08-12T12:57:36.19Z",
+          "postType": "regular",
+          "content": "Title: Admins are unable to complete some cross-tenant mailbox migrations in Exchange Online\r\n\r\nUser impact: Admins may be unable to perform tenant to tenant migrations and offboarding moves in the Exchange admin center.\r\n\r\nMore info: While we work on developing a long-term solution, admins may be able to use PowerShell for the affected migrations and moves with the following cmdlet against the affected mailboxes:\n\nSet-MoveRequest \"user@yourdomain.com\" -SkipMoving FolderRestrictions\n\nNext, the tenant admin may have resume the move request using the cmdlet:\nResume-MoveRequest \"user@yourdomain.com\"\n\nThis would allow the affected move jobs to continue to make progress.\r\n\r\nCurrent status: We've validated and deployed the fix across the affected infrastructure, enabling the mailbox move to complete successfully. During validation, we've identified that the affected folder was processed as a folder creation bad item and therefore could not be migrated intact. We're validating the overall outcome with the affected users to confirm full mitigation.\r\n\r\nScope of impact: Some admins attempting to perform tenant to tenant migrations and offboarding moves in the Exchange admin center may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Saturday, February 14, 2026, at 12:48 AM UTC\r\n\r\nRoot cause: A change introduced a code regression to Mailbox Replication Service (MRS), which is causing intermittent failures for tenant-to-tenant migration actions or offboarding moves as the property tags needed to complete the request are not being properly configured.\r\n\r\nNext update by: Wednesday, August 12, 2026, at 3:00 PM UTC"
+        }
+      ],
+      "serviceName": "Exchange Online",
+      "affectedServices": [
+        "Exchange Online"
+      ]
+    },
+    {
+      "id": "MV1461005",
+      "title": "Some users may be unable to access Microsoft Viva Glint services",
+      "startTime": "2026-08-24T18:16:48.303Z",
+      "endTime": "2026-08-24T20:34:47.427Z",
+      "lastModified": "2026-08-24T20:41:43.133Z",
+      "status": "serviceRestored",
+      "severity": "incident",
+      "userImpact": "Users may have been unable to access Viva Glint services.",
+      "scopeOfImpact": "Some users who attempted to access Microsoft Viva Glint services may have been impacted.\r\n\r\nStart time: Monday, August 24, 2026, at 5:20 PM UTC\r\n\r\nEnd time: Monday, August 24, 2026, at 7:47 PM UTC",
+      "rootCause": "A recent build release contained a regression which caused the impact.\r\n\r\nNext steps: \n- We're reviewing our build update standards to ensure similar regressions are identified and corrected ahead of deployment to ensure this doesn't reoccur.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "General",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-08-24T20:41:32.603Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to access Microsoft Viva Glint services\r\n\r\nUser impact: Users may have been unable to access Viva Glint services.\r\n\r\nMore info: Affected users were able to sign in as expected but may have seen a blank page and weren't able to access any Viva Glint services.\r\n\r\nFinal status: We've completed rolling back the offending build and after monitoring service health metrics, confirmed the impact is remediated.\r\n\r\nScope of impact: Some users who attempted to access Microsoft Viva Glint services may have been impacted.\r\n\r\nStart time: Monday, August 24, 2026, at 5:20 PM UTC\r\n\r\nEnd time: Monday, August 24, 2026, at 7:47 PM UTC\r\n\r\nRoot cause: A recent build release contained a regression which caused the impact.\r\n\r\nNext steps: \n- We're reviewing our build update standards to ensure similar regressions are identified and corrected ahead of deployment to ensure this doesn't reoccur.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-08-24T19:34:54.267Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to access Microsoft Viva Glint services\r\n\r\nUser impact: Users may be unable to access Viva Glint services.\r\n\r\nMore info: Affected users are able to sign in as expected but may see a blank page and won't be able to access any Viva Glint services.\r\n\r\nCurrent status: We're monitoring as the release containing the regression is rolled back to ensure the issue is remediated and no further actions are necessary to fully resolve the impact.\r\n\r\nScope of impact: Some users attempting to access Microsoft Viva Glint services may be impacted. This section may be updated as our investigation continues.\r\n\r\nStart time: Monday, August 24, 2026, at 5:20 PM UTC\r\n\r\nRoot cause: A recent build release contains a regression which is causing the impact.\r\n\r\nNext update by: Monday, August 24, 2026, at 10:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-08-24T18:44:35.227Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to access Microsoft Viva Glint services\r\n\r\nUser impact: Users may be unable to access Viva Glint services.\r\n\r\nMore info: Affected users are able to sign in as expected but may see a blank page and won't be able to access any Viva Glint services.\r\n\r\nCurrent status: Our investigation determined that a recent build release contains a regression which is causing the impact. We're rolling this release back to remediate the issue.\r\n\r\nScope of impact: Some users attempting to access Microsoft Viva Glint services may be impacted. This section may be updated as our investigation continues.\r\n\r\nStart time: Monday, August 24, 2026, at 5:20 PM UTC\r\n\r\nRoot cause: A recent build release contains a regression which is causing the impact.\r\n\r\nNext update by: Monday, August 24, 2026, at 8:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-08-24T18:24:18.977Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to access Microsoft Viva Glint services\r\n\r\nUser impact: Users may be unable to access Viva Glint services.\r\n\r\nMore info: Affected users are able to log in as expected but may see a blank page and won't be able to access any Viva Glint services.\r\n\r\nCurrent status: We're investigating a potential issue with Viva Glint and checking for impact to your organization. We'll provide an update within 30 minutes."
+        }
+      ],
+      "serviceName": "Microsoft Viva",
+      "affectedServices": [
+        "Microsoft Viva"
+      ]
+    },
     {
       "id": "OP1460815",
       "title": "Some users may be unable to activate new or refresh existing Office 365 licenses",
