@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-25T20:39:15.335Z",
+  "lastUpdated": "2026-08-25T21:09:28.028Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -11,16 +11,21 @@
           "title": "Users may be unable to complete mailbox offboarding because the migration task is blocked and can’t finish",
           "startTime": "2026-08-20T12:23:15Z",
           "endTime": null,
-          "lastModified": "2026-08-25T19:56:38.987Z",
+          "lastModified": "2026-08-25T20:54:12.917Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to complete mailbox offboarding because the migration task is blocked and can’t finish.",
           "scopeOfImpact": "Users attempting to complete mailbox offboarding in Exchange Online may be impacted by this issue. This section may be updated as our investigation continues.",
           "rootCause": "The mailbox migration task is being delayed due to the integrity validation process remaining pending at the completion stage, resulting in impact.",
-          "nextUpdateBy": "Tuesday, August 25, 2026, at 10:00 PM UTC",
+          "nextUpdateBy": "Wednesday, August 26, 2026, at 7:30 PM UTC",
           "feature": "Mailbox Migrations",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-25T20:54:12.917Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to complete mailbox offboarding because the migration task is blocked and can’t finish\r\n\r\nUser impact: Users may be unable to complete mailbox offboarding because the migration task is blocked and can’t finish.\r\n\r\nCurrent status: Additional review indicates the issue isn't resolved for all affected users. We're continuing to prepare our code fix for deployment, and we'll aim to provide a timeline for it to begin by our next scheduled communications update.\r\n\r\nScope of impact: Users attempting to complete mailbox offboarding in Exchange Online may be impacted by this issue. This section may be updated as our investigation continues.\r\n\r\nRoot cause: The mailbox migration task is being delayed due to the integrity validation process remaining pending at the completion stage, resulting in impact.\r\n\r\nNext update by: Wednesday, August 26, 2026, at 7:30 PM UTC"
+            },
             {
               "createdAt": "2026-08-25T19:56:38.987Z",
               "postType": "regular",
