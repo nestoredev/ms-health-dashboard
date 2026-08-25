@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-25T13:06:09.413Z",
+  "lastUpdated": "2026-08-25T13:36:20.508Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -433,9 +433,35 @@
     },
     {
       "service": "Power BI",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "PowerBIcom",
-      "issues": []
+      "issues": [
+        {
+          "id": "PB1461484",
+          "title": "Some admins may be unable to view the current state of workspace settings in the Power BI or Microsoft Fabric service",
+          "startTime": "2026-08-25T13:18:32.1Z",
+          "endTime": null,
+          "lastModified": "2026-08-25T13:21:03.51Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Admins may be unable to view the current state of workspace settings in the Power BI or Microsoft Fabric service.",
+          "scopeOfImpact": "Impact is specific to some admins attempting to view the current state of workspace settings in the Power BI or Microsoft Fabric service.",
+          "rootCause": "",
+          "nextUpdateBy": "Tuesday, August 25, 2026, at 3:30 PM UTC",
+          "feature": "General",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-08-25T13:21:03.51Z",
+              "postType": "regular",
+              "content": "Title: Some admins may be unable to view the current state of workspace settings in the Power BI or Microsoft Fabric service\r\n\r\nUser impact: Admins may be unable to view the current state of workspace settings in the Power BI or Microsoft Fabric service.\r\n\r\nMore info: Workspace settings may display outdated information for some Workspace Admins. \r\n\r\nCurrent status: We're reviewing service monitoring telemetry to isolate the source of the issue and establish a fix.\r\n\r\nScope of impact: Impact is specific to some admins attempting to view the current state of workspace settings in the Power BI or Microsoft Fabric service.\r\n\r\nNext update by: Tuesday, August 25, 2026, at 3:30 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Power BI"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft Intune",
