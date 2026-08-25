@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-25T12:35:58.759Z",
+  "lastUpdated": "2026-08-25T13:06:09.413Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -345,16 +345,21 @@
           "title": "Guest users are unable to access SharePoint Online sites connected to Microsoft Teams",
           "startTime": "2026-08-25T01:58:05Z",
           "endTime": null,
-          "lastModified": "2026-08-25T12:17:07.88Z",
+          "lastModified": "2026-08-25T12:53:54.397Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Guest users are unable to access SharePoint Online sites connected to Microsoft Teams.",
-          "scopeOfImpact": "",
+          "scopeOfImpact": "This issue could impact any guest users attempting to access SharePoint Online sites where access is granted through Microsoft 365 Groups. This information may be updated as our investigation continues.",
           "rootCause": "",
-          "nextUpdateBy": "Tuesday, August 25, 2026, at 1:00 PM UTC",
+          "nextUpdateBy": "Tuesday, August 25, 2026, at 2:30 PM UTC",
           "feature": "SharePoint Online all features",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-25T12:53:54.397Z",
+              "postType": "regular",
+              "content": "Title: Guest users are unable to access SharePoint Online sites connected to Microsoft Teams\r\n\r\nUser impact: Guest users are unable to access SharePoint Online sites connected to Microsoft Teams.\r\n\r\nMore info: Specifically, guest users are redirected to an AccessDenied.aspx page when attempting to access SharePoint Online sites where access is granted through Microsoft 365 Groups.\n\nAs a potential workaround, admins can manually add affected guest users directly to the SharePoint Members group instead of relying on Microsoft 365 Group membership propagation.\r\n\r\nCurrent status: We've identified a recently deployed change which interacted with dynamic claims process and out of an abundance of caution, we've reverted this change. We're contacting impacted organizations to confirm that this rollback has resolved the issue.\r\n\r\nScope of impact: This issue could impact any guest users attempting to access SharePoint Online sites where access is granted through Microsoft 365 Groups. This information may be updated as our investigation continues.\r\n\r\nNext update by: Tuesday, August 25, 2026, at 2:30 PM UTC"
+            },
             {
               "createdAt": "2026-08-25T12:17:07.88Z",
               "postType": "quick",
@@ -985,9 +990,9 @@
     {
       "id": "CW1461372",
       "title": "Some users may be unable to receive responses when using Microsoft 365 Copilot Chat",
-      "startTime": "2026-08-25T08:17:39Z",
+      "startTime": "2026-08-24T22:50:00Z",
       "endTime": "2026-08-25T10:20:00Z",
-      "lastModified": "2026-08-25T12:02:43.083Z",
+      "lastModified": "2026-08-25T12:42:47.773Z",
       "status": "serviceRestored",
       "severity": "incident",
       "userImpact": "Users may be unable to receive responses when using Copilot Chat.",
