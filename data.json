@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-25T19:38:49.765Z",
+  "lastUpdated": "2026-08-25T20:09:04.144Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -11,16 +11,21 @@
           "title": "Users may be unable to complete mailbox offboarding because the migration task is blocked and can’t finish",
           "startTime": "2026-08-20T12:23:15Z",
           "endTime": null,
-          "lastModified": "2026-08-21T18:54:07.673Z",
+          "lastModified": "2026-08-25T19:56:38.987Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to complete mailbox offboarding because the migration task is blocked and can’t finish.",
           "scopeOfImpact": "Users attempting to complete mailbox offboarding in Exchange Online may be impacted by this issue. This section may be updated as our investigation continues.",
-          "rootCause": "The mailbox migration task is being delayed due to the integrity validation process remained pending at the completion stage, resulting in impact.",
-          "nextUpdateBy": "Tuesday, August 25, 2026, at 8:00 PM UTC",
+          "rootCause": "The mailbox migration task is being delayed due to the integrity validation process remaining pending at the completion stage, resulting in impact.",
+          "nextUpdateBy": "Tuesday, August 25, 2026, at 10:00 PM UTC",
           "feature": "Mailbox Migrations",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-25T19:56:38.987Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to complete mailbox offboarding because the migration task is blocked and can’t finish\r\n\r\nUser impact: Users may be unable to complete mailbox offboarding because the migration task is blocked and can’t finish.\r\n\r\nCurrent status: While we're preparing our code fix for deployment, we're monitoring service health telemetry to confirm whether the mitigation we implemented to disable the affected integrity validation process has resolved the issue for all affected users.\r\n\r\nScope of impact: Users attempting to complete mailbox offboarding in Exchange Online may be impacted by this issue. This section may be updated as our investigation continues.\r\n\r\nRoot cause: The mailbox migration task is being delayed due to the integrity validation process remaining pending at the completion stage, resulting in impact.\r\n\r\nNext update by: Tuesday, August 25, 2026, at 10:00 PM UTC"
+            },
             {
               "createdAt": "2026-08-21T18:54:07.673Z",
               "postType": "regular",
