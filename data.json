@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-25T21:09:28.028Z",
+  "lastUpdated": "2026-08-25T21:39:42.648Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -357,19 +357,24 @@
       "issues": [
         {
           "id": "SP1461580",
-          "title": "Some users may not be returned results when searching on SharePoint Online sites",
+          "title": "Some users may not receive results when searching on SharePoint Online sites",
           "startTime": "2026-08-25T16:58:38.313Z",
           "endTime": null,
-          "lastModified": "2026-08-25T19:06:57.083Z",
+          "lastModified": "2026-08-25T21:09:34.243Z",
           "status": "serviceDegradation",
           "severity": "incident",
-          "userImpact": "Users may not be returned results when searching on SharePoint Online sites.",
-          "scopeOfImpact": "Some users may not be returned results and may see a blank screen when searching on SharePoint Online sites. This section may be updated as the investigation progresses.",
+          "userImpact": "Users may not receive results when searching on SharePoint Online sites.",
+          "scopeOfImpact": "Some users may not receive results and may see a blank screen when searching on SharePoint Online sites. This section may be updated as the investigation progresses.",
           "rootCause": "",
-          "nextUpdateBy": "Tuesday, August 25, 2026, at 9:30 PM UTC",
+          "nextUpdateBy": "Tuesday, August 25, 2026, at 11:30 PM UTC",
           "feature": "SharePoint Search (Query)",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-25T21:09:34.243Z",
+              "postType": "regular",
+              "content": "Title: Some users may not receive results when searching on SharePoint Online sites\r\n\r\nUser impact: Users may not receive results when searching on SharePoint Online sites.\r\n\r\nMore info: Users may see a blank screen when searching on affected SharePoint Online sites.\r\n\r\nCurrent status: We're continuing to analyze Substrate search failures and 500 \"NoSupportException\" errors to isolate the underlying source of impact.\r\n\r\nScope of impact: Some users may not receive results and may see a blank screen when searching on SharePoint Online sites. This section may be updated as the investigation progresses.\r\n\r\nNext update by: Tuesday, August 25, 2026, at 11:30 PM UTC"
+            },
             {
               "createdAt": "2026-08-25T19:06:57.083Z",
               "postType": "regular",
@@ -389,6 +394,36 @@
               "createdAt": "2026-08-25T17:01:28.26Z",
               "postType": "regular",
               "content": "Title: Users aren't returned results when searching on SharePoint Online sites\r\n\r\nUser impact: Users aren't returned results when searching on SharePoint Online sites.\r\n\r\nCurrent status: We're investigating a potential issue with SharePoint Online and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "SharePoint Online"
+          ]
+        },
+        {
+          "id": "SP1461655",
+          "title": "Users may not see the controls in the file and media webpart for embedded PowerPoint files in SharePoint Online",
+          "startTime": "2026-08-25T19:47:30.973Z",
+          "endTime": null,
+          "lastModified": "2026-08-25T21:06:11.06Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may not see the controls in the file and media webpart for embedded PowerPoint files in SharePoint Online.",
+          "scopeOfImpact": "Any user may not see the controls in the file and media webpart for embedded PowerPoint files in SharePoint Online. This information may be updated as our investigation continues.",
+          "rootCause": "",
+          "nextUpdateBy": "Tuesday, August 25, 2026, at 10:30 PM UTC",
+          "feature": "SharePoint Online all features",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-08-25T20:25:36.413Z",
+              "postType": "regular",
+              "content": "Title: Users may not see the controls in the file and media webpart for embedded PowerPoint files in SharePoint Online\r\n\r\nUser impact: Users may not see the controls in the file and media webpart for embedded PowerPoint files in SharePoint Online.\r\n\r\nCurrent status: We're reviewing a reproduction of impact provided by a subset of affected users to assist in our investigation into the underlying root cause of this event.\r\n\r\nScope of impact: Any user may not see the controls in the file and media webpart for embedded PowerPoint files in SharePoint Online. This information may be updated as our investigation continues.\r\n\r\nNext update by: Tuesday, August 25, 2026, at 10:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-08-25T19:52:55.96Z",
+              "postType": "regular",
+              "content": "Title: Users may not see the controls in the file and media webpart for embedded PowerPoint files in SharePoint Online\r\n\r\nUser impact: Users may not see the controls in the file and media webpart for embedded PowerPoint files in SharePoint Online.\r\n\r\nCurrent status: We're investigating a potential issue with SharePoint Online and checking for impact to your organization. We'll provide an update within 30 minutes."
             }
           ],
           "affectedServices": [
