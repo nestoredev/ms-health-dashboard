@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-25T03:32:47.588Z",
+  "lastUpdated": "2026-08-25T04:02:57.987Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -503,16 +503,21 @@
           "title": "Users' locations may not be accurate during iOS Microsoft Teams emergency calls",
           "startTime": "2026-08-10T12:44:26.077Z",
           "endTime": null,
-          "lastModified": "2026-08-24T19:13:07.823Z",
+          "lastModified": "2026-08-25T03:44:23.913Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users' locations may not be accurate during iOS Microsoft Teams emergency calls.",
           "scopeOfImpact": "Impact is specific to any user on iOS 26 or newer making emergency calls using the Microsoft Teams application. This information may be updated as our investigation continues.",
           "rootCause": "A change within iOS API infrastructure is resulting in inaccurate user location data being reported during iOS emergency calls.",
-          "nextUpdateBy": "Tuesday, August 25, 2026, at 5:00 AM UTC",
+          "nextUpdateBy": "Tuesday, September 1, 2026, at 12:30 PM UTC",
           "feature": "Calling",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-25T03:44:23.913Z",
+              "postType": "regular",
+              "content": "Title: Users' locations may not be accurate during iOS Microsoft Teams emergency calls\r\n\r\nUser impact: Users' locations may not be accurate during iOS Microsoft Teams emergency calls.\r\n\r\nMore info: Affected users are still able to make iOS emergency calls but their location may be inaccurate to the responder. This is specific to users on iOS version 26 and newer.\r\n\r\nCurrent status: The deployment of the fix in the latest version of the Microsoft Teams app is in progress. We estimate that the deployment will complete by August 31, 2026. Users with automatic updates enabled in the App Store should see their Microsoft Teams app automatically updated over the course of the deployment. Users may also be able to manually download the latest version through the App Store. We'll continue monitoring the deployment progress to ensure that the impact is remediated. \r\n\r\nScope of impact: Impact is specific to any user on iOS 26 or newer making emergency calls using the Microsoft Teams application. This information may be updated as our investigation continues.\r\n\r\nRoot cause: A change within iOS API infrastructure is resulting in inaccurate user location data being reported during iOS emergency calls.\r\n\r\nNext update by: Tuesday, September 1, 2026, at 12:30 PM UTC"
+            },
             {
               "createdAt": "2026-08-24T19:13:07.823Z",
               "postType": "regular",
