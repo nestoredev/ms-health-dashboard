@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-25T19:08:36.676Z",
+  "lastUpdated": "2026-08-25T19:38:49.765Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -347,19 +347,24 @@
       "issues": [
         {
           "id": "SP1461580",
-          "title": "Users aren't returned results when searching on SharePoint Online sites",
+          "title": "Some users may not be returned results when searching on SharePoint Online sites",
           "startTime": "2026-08-25T16:58:38.313Z",
           "endTime": null,
-          "lastModified": "2026-08-25T17:58:53.387Z",
+          "lastModified": "2026-08-25T19:06:57.083Z",
           "status": "serviceDegradation",
           "severity": "incident",
-          "userImpact": "Users aren't returned results when searching on SharePoint Online sites.",
-          "scopeOfImpact": "Your organization is affected by this event, and approximately 400 users aren't returned results and see a blank screen when searching on SharePoint Online sites. This section may be updated as the investigation progresses.",
+          "userImpact": "Users may not be returned results when searching on SharePoint Online sites.",
+          "scopeOfImpact": "Some users may not be returned results and may see a blank screen when searching on SharePoint Online sites. This section may be updated as the investigation progresses.",
           "rootCause": "",
-          "nextUpdateBy": "Tuesday, August 25, 2026, at 8:30 PM UTC",
+          "nextUpdateBy": "Tuesday, August 25, 2026, at 9:30 PM UTC",
           "feature": "SharePoint Search (Query)",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-25T19:06:57.083Z",
+              "postType": "regular",
+              "content": "Title: Some users may not be returned results when searching on SharePoint Online sites\r\n\r\nUser impact: Users may not be returned results when searching on SharePoint Online sites.\r\n\r\nMore info: Users may be returned a blank screen when searching on affected SharePoint Online sites.\r\n\r\nCurrent status: We've updated the \"Title\", \"User impact\", \"More info\", and \"Scope of impact\" fields to reflect our updated understanding of impact. We're analyzing Substrate search failures occurring during impacted SharePoint Online searches to isolate the underlying source of impact.\r\n\r\nScope of impact: Some users may not be returned results and may see a blank screen when searching on SharePoint Online sites. This section may be updated as the investigation progresses.\r\n\r\nNext update by: Tuesday, August 25, 2026, at 9:30 PM UTC"
+            },
             {
               "createdAt": "2026-08-25T17:58:53.387Z",
               "postType": "regular",
@@ -864,10 +869,10 @@
           "title": "Some admins may see outdated device inventory and update status information in the Microsoft 365 Apps admin center",
           "startTime": "2026-08-20T00:00:00Z",
           "endTime": null,
-          "lastModified": "2026-08-24T21:09:04.287Z",
+          "lastModified": "2026-08-25T19:19:22.103Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "userImpact": "Admins may see outdated device inventory and update status information in the Microsoft 365 Apps admin center.",
+          "userImpact": "Admins may have seen outdated device inventory and update status information in the Microsoft 365 Apps admin center.",
           "scopeOfImpact": "Admins attempting to view device inventory and update status information in the Microsoft 365 Apps admin center may be affected. This information may be updated as our investigation continues.\r\n\r\nStart time: Thursday, August 20, 2026, at 12:00 AM UTC",
           "rootCause": "",
           "nextUpdateBy": "Tuesday, August 25, 2026, at 9:00 PM UTC",
