@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-25T15:37:08.311Z",
+  "lastUpdated": "2026-08-25T16:07:20.257Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -241,16 +241,21 @@
           "title": "Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights",
           "startTime": "2026-08-21T00:00:00Z",
           "endTime": null,
-          "lastModified": "2026-08-24T17:53:52.3Z",
+          "lastModified": "2026-08-25T15:56:45.347Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights.",
           "scopeOfImpact": "Any admin expecting reports from the affected scenarios as outlined in the More info section may be affected.\r\n\r\nStart time: Friday, August 21, 2026, at 12:00 AM UTC",
           "rootCause": "",
-          "nextUpdateBy": "Tuesday, August 25, 2026, at 5:00 PM UTC",
+          "nextUpdateBy": "Wednesday, August 26, 2026, at 5:00 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-25T15:56:45.347Z",
+              "postType": "regular",
+              "content": "Title: Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights\r\n\r\nUser impact: Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights.\r\n\r\nMore info: Affected reports include, but aren't limited to:\n\n- Copilot Usage report in Microsoft 365 admin center\n- Copilot Chat Usage report in Microsoft 365 admin center\n- Copilot Readiness reports in Microsoft 365 admin center and Viva Insights\n- Copilot Adoption report in Viva Insights\n- Microsoft 365 Apps and Active users reports in Microsoft 365 admin center\n- Teams App reports in Microsoft 365 admin center and Microsoft Teams admin center\r\n\r\nCurrent status: We're progressing with our upstream data pipeline adjustments to address the remaining reporting delays admins are encountering. Copilot Usage and Copilot Chat Usage reports delays have subsided and we're completing our mitigations for Copilot Readiness reports, Copilot Adoption reports, Microsoft 365 App & Active user reports, and Teams App reports. We're expecting an estimated timeline for the remediation of the impact for all reports will be available by our next scheduled communication update. \r\n\r\nScope of impact: Any admin expecting reports from the affected scenarios as outlined in the More info section may be affected.\r\n\r\nStart time: Friday, August 21, 2026, at 12:00 AM UTC\r\n\r\nNext update by: Wednesday, August 26, 2026, at 5:00 PM UTC"
+            },
             {
               "createdAt": "2026-08-24T17:53:52.3Z",
               "postType": "regular",
@@ -446,20 +451,20 @@
           "title": "Some Workspace Admins see outdated/incomplete information in workspace settings of Power BI or Microsoft Fabric services",
           "startTime": "2026-08-02T04:12:00Z",
           "endTime": null,
-          "lastModified": "2026-08-25T15:14:41.197Z",
+          "lastModified": "2026-08-25T15:37:18.217Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Workspace Admins see outdated/incomplete information in workspace settings of Power BI or Microsoft Fabric services.",
           "scopeOfImpact": "Impact is specific to some admins attempting to view the current state of workspace settings in the Power BI or Microsoft Fabric service. This section may be updated as the investigation progresses.\r\n\r\nStart time: Sunday, August 2, 2026, at 4:12 AM UTC",
           "rootCause": "A code regression is causing workspace settings requests to incorrectly identify the caller for the request as a tenant admin instead of a workspace admin, resulting in the authorization check being rejected.",
-          "nextUpdateBy": "Tuesday, August 25, 2026, at 5:30 PM UTC",
+          "nextUpdateBy": "Wednesday, August 26, 2026, at 5:30 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
             {
               "createdAt": "2026-08-25T15:14:41.197Z",
               "postType": "regular",
-              "content": "Title: Some Workspace Admins see outdated/incomplete information in workspace settings of Power BI or Microsoft Fabric services\r\n\r\nUser impact: Workspace Admins see outdated/incomplete information in workspace settings of Power BI or Microsoft Fabric services.\r\n\r\nMore info: Workspace Admins may see outdated or incomplete information when viewing workspace settings, including Capacity Details, Domain settings, Contacts, OneDrive settings, and Semantic Model Storage Format. Configuration changes continue to be applied successfully; however, updated values may not be reflected in workspace settings after changes are saved or the page is refreshed.\r\n\r\nCurrent status: After further analysis of service monitoring telemetry, we’ve isolated that impact is caused by a code regression causing workspace settings requests to incorrectly identify the caller for the request as a tenant admin instead of a workspace admin. This causes the authorization check to be rejected, resulting in impact. We’re validating and testing a code fix to correct this regression, and we aim to provide a timeline to remediation as soon as possible.\r\n\r\nScope of impact: Impact is specific to some admins attempting to view the current state of workspace settings in the Power BI or Microsoft Fabric service. This section may be updated as the investigation progresses.\r\n\r\nStart time: Sunday, August 2, 2026, at 4:12 AM UTC\r\n\r\nRoot cause: A code regression is causing workspace settings requests to incorrectly identify the caller for the request as a tenant admin instead of a workspace admin, resulting in the authorization check being rejected.\r\n\r\nNext update by: Tuesday, August 25, 2026, at 5:30 PM UTC"
+              "content": "Title: Some Workspace Admins see outdated/incomplete information in workspace settings of Power BI or Microsoft Fabric services\r\n\r\nUser impact: Workspace Admins see outdated/incomplete information in workspace settings of Power BI or Microsoft Fabric services.\r\n\r\nMore info: Workspace Admins may see outdated or incomplete information when viewing workspace settings, including Capacity Details, Domain settings, Contacts, OneDrive settings, and Semantic Model Storage Format. Configuration changes continue to be applied successfully; however, updated values may not be reflected in workspace settings after changes are saved or the page is refreshed.\r\n\r\nCurrent status: After further analysis of service monitoring telemetry, we’ve isolated that impact is caused by a code regression causing workspace settings requests to incorrectly identify the caller for the request as a tenant admin instead of a workspace admin. This causes the authorization check to be rejected, resulting in impact. We’re validating and testing a code fix to correct this regression, and we aim to provide a timeline to remediation as soon as possible.\r\n\r\nScope of impact: Impact is specific to some admins attempting to view the current state of workspace settings in the Power BI or Microsoft Fabric service. This section may be updated as the investigation progresses.\r\n\r\nStart time: Sunday, August 2, 2026, at 4:12 AM UTC\r\n\r\nRoot cause: A code regression is causing workspace settings requests to incorrectly identify the caller for the request as a tenant admin instead of a workspace admin, resulting in the authorization check being rejected.\r\n\r\nNext update by: Wednesday, August 26, 2026, at 5:30 PM UTC"
             },
             {
               "createdAt": "2026-08-25T13:21:03.51Z",
@@ -713,16 +718,21 @@
           "title": "Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights",
           "startTime": "2026-08-21T00:00:00Z",
           "endTime": null,
-          "lastModified": "2026-08-24T17:53:52.3Z",
+          "lastModified": "2026-08-25T15:56:45.347Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights.",
           "scopeOfImpact": "Any admin expecting reports from the affected scenarios as outlined in the More info section may be affected.\r\n\r\nStart time: Friday, August 21, 2026, at 12:00 AM UTC",
           "rootCause": "",
-          "nextUpdateBy": "Tuesday, August 25, 2026, at 5:00 PM UTC",
+          "nextUpdateBy": "Wednesday, August 26, 2026, at 5:00 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-25T15:56:45.347Z",
+              "postType": "regular",
+              "content": "Title: Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights\r\n\r\nUser impact: Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights.\r\n\r\nMore info: Affected reports include, but aren't limited to:\n\n- Copilot Usage report in Microsoft 365 admin center\n- Copilot Chat Usage report in Microsoft 365 admin center\n- Copilot Readiness reports in Microsoft 365 admin center and Viva Insights\n- Copilot Adoption report in Viva Insights\n- Microsoft 365 Apps and Active users reports in Microsoft 365 admin center\n- Teams App reports in Microsoft 365 admin center and Microsoft Teams admin center\r\n\r\nCurrent status: We're progressing with our upstream data pipeline adjustments to address the remaining reporting delays admins are encountering. Copilot Usage and Copilot Chat Usage reports delays have subsided and we're completing our mitigations for Copilot Readiness reports, Copilot Adoption reports, Microsoft 365 App & Active user reports, and Teams App reports. We're expecting an estimated timeline for the remediation of the impact for all reports will be available by our next scheduled communication update. \r\n\r\nScope of impact: Any admin expecting reports from the affected scenarios as outlined in the More info section may be affected.\r\n\r\nStart time: Friday, August 21, 2026, at 12:00 AM UTC\r\n\r\nNext update by: Wednesday, August 26, 2026, at 5:00 PM UTC"
+            },
             {
               "createdAt": "2026-08-24T17:53:52.3Z",
               "postType": "regular",
@@ -962,16 +972,21 @@
           "title": "Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights",
           "startTime": "2026-08-21T00:00:00Z",
           "endTime": null,
-          "lastModified": "2026-08-24T17:53:52.3Z",
+          "lastModified": "2026-08-25T15:56:45.347Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights.",
           "scopeOfImpact": "Any admin expecting reports from the affected scenarios as outlined in the More info section may be affected.\r\n\r\nStart time: Friday, August 21, 2026, at 12:00 AM UTC",
           "rootCause": "",
-          "nextUpdateBy": "Tuesday, August 25, 2026, at 5:00 PM UTC",
+          "nextUpdateBy": "Wednesday, August 26, 2026, at 5:00 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-25T15:56:45.347Z",
+              "postType": "regular",
+              "content": "Title: Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights\r\n\r\nUser impact: Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights.\r\n\r\nMore info: Affected reports include, but aren't limited to:\n\n- Copilot Usage report in Microsoft 365 admin center\n- Copilot Chat Usage report in Microsoft 365 admin center\n- Copilot Readiness reports in Microsoft 365 admin center and Viva Insights\n- Copilot Adoption report in Viva Insights\n- Microsoft 365 Apps and Active users reports in Microsoft 365 admin center\n- Teams App reports in Microsoft 365 admin center and Microsoft Teams admin center\r\n\r\nCurrent status: We're progressing with our upstream data pipeline adjustments to address the remaining reporting delays admins are encountering. Copilot Usage and Copilot Chat Usage reports delays have subsided and we're completing our mitigations for Copilot Readiness reports, Copilot Adoption reports, Microsoft 365 App & Active user reports, and Teams App reports. We're expecting an estimated timeline for the remediation of the impact for all reports will be available by our next scheduled communication update. \r\n\r\nScope of impact: Any admin expecting reports from the affected scenarios as outlined in the More info section may be affected.\r\n\r\nStart time: Friday, August 21, 2026, at 12:00 AM UTC\r\n\r\nNext update by: Wednesday, August 26, 2026, at 5:00 PM UTC"
+            },
             {
               "createdAt": "2026-08-24T17:53:52.3Z",
               "postType": "regular",
