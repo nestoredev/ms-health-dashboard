@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-25T14:36:44.257Z",
+  "lastUpdated": "2026-08-25T15:06:55.847Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -443,13 +443,13 @@
       "issues": [
         {
           "id": "PB1461484",
-          "title": "Some admins may be unable to view the current state of workspace settings in the Power BI or Microsoft Fabric service",
-          "startTime": "2026-08-25T13:18:32.1Z",
+          "title": "Some Workspace Admins see outdated/incomplete information in workspace settings of Power BI or Microsoft Fabric services",
+          "startTime": "2026-08-02T04:12:00Z",
           "endTime": null,
-          "lastModified": "2026-08-25T14:01:23.583Z",
+          "lastModified": "2026-08-25T14:58:25.37Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "userImpact": "Admins may be unable to view the current state of workspace settings in the Power BI or Microsoft Fabric service.",
+          "userImpact": "Workspace Admins see outdated/incomplete information in workspace settings of Power BI or Microsoft Fabric services.",
           "scopeOfImpact": "Impact is specific to some admins attempting to view the current state of workspace settings in the Power BI or Microsoft Fabric service.",
           "rootCause": "",
           "nextUpdateBy": "Tuesday, August 25, 2026, at 3:30 PM UTC",
@@ -459,7 +459,7 @@
             {
               "createdAt": "2026-08-25T13:21:03.51Z",
               "postType": "regular",
-              "content": "Title: Some admins may be unable to view the current state of workspace settings in the Power BI or Microsoft Fabric service\r\n\r\nUser impact: Admins may be unable to view the current state of workspace settings in the Power BI or Microsoft Fabric service.\r\n\r\nMore info: Workspace settings may display outdated information for some Workspace Admins. \r\n\r\nCurrent status: We're reviewing service monitoring telemetry to isolate the source of the issue and establish a fix.\r\n\r\nScope of impact: Impact is specific to some admins attempting to view the current state of workspace settings in the Power BI or Microsoft Fabric service.\r\n\r\nNext update by: Tuesday, August 25, 2026, at 3:30 PM UTC"
+              "content": "Title: Some Workspace Admins see outdated/incomplete information in workspace settings of Power BI or Microsoft Fabric services\r\n\r\nUser impact: Workspace Admins see outdated/incomplete information in workspace settings of Power BI or Microsoft Fabric services.\r\n\r\nMore info: Workspace Admins may see outdated or incomplete information when viewing workspace settings, including Capacity Details, Domain settings, Contacts, OneDrive settings, and Semantic Model Storage Format. Configuration changes continue to be applied successfully; however, updated values may not be reflected in workspace settings after changes are saved or the page is refreshed.\r\n\r\nCurrent status: We're reviewing service monitoring telemetry to isolate the source of the issue and establish a fix.\r\n\r\nScope of impact: Impact is specific to some admins attempting to view the current state of workspace settings in the Power BI or Microsoft Fabric service.\r\n\r\nNext update by: Tuesday, August 25, 2026, at 3:30 PM UTC"
             }
           ],
           "affectedServices": [
