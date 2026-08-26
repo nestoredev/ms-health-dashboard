@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-26T05:43:00.648Z",
+  "lastUpdated": "2026-08-26T06:13:14.353Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -455,16 +455,21 @@
           "title": "Guest users are unable to access SharePoint Online sites connected to Microsoft Teams",
           "startTime": "2026-08-25T01:58:05Z",
           "endTime": null,
-          "lastModified": "2026-08-26T01:47:35.947Z",
+          "lastModified": "2026-08-26T05:45:51.307Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Guest users are unable to access SharePoint Online sites connected to Microsoft Teams.",
           "scopeOfImpact": "This issue could impact any guest users attempting to access SharePoint Online sites where access is granted through Microsoft 365 Groups. \r\n\r\nStart time: Thursday, August 20, 2026, at 7:30 AM UTC",
           "rootCause": "A recently deployed change interacted with dynamic claims process, causing impact.",
-          "nextUpdateBy": "Wednesday, August 26, 2026, at 7:30 AM UTC",
+          "nextUpdateBy": "Wednesday, August 26, 2026, at 9:30 AM UTC",
           "feature": "SharePoint Online all features",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-26T05:45:51.307Z",
+              "postType": "regular",
+              "content": "Title: Guest users are unable to access SharePoint Online sites connected to Microsoft Teams\r\n\r\nUser impact: Guest users are unable to access SharePoint Online sites connected to Microsoft Teams.\r\n\r\nMore info: Specifically, guest users are redirected to an AccessDenied.aspx page when attempting to access SharePoint Online sites where access is granted through Microsoft 365 Groups.\n\nAs a potential workaround, admins can manually add affected guest users directly to the SharePoint Members group instead of relying on Microsoft 365 Group membership propagation.\r\n\r\nCurrent status: We're continuing to engage in extended monitoring while we work with reporting organizations to confirm that the issue is fully resolved. If your organization has reported this problem, we request that you follow-up with the support case owner so we can confirm that the impact has been remediated.\r\n\r\nScope of impact: This issue could impact any guest users attempting to access SharePoint Online sites where access is granted through Microsoft 365 Groups. \r\n\r\nStart time: Thursday, August 20, 2026, at 7:30 AM UTC\r\n\r\nRoot cause: A recently deployed change interacted with dynamic claims process, causing impact.\r\n\r\nNext update by: Wednesday, August 26, 2026, at 9:30 AM UTC"
+            },
             {
               "createdAt": "2026-08-26T01:47:35.947Z",
               "postType": "regular",
