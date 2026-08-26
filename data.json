@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-26T18:48:32.539Z",
+  "lastUpdated": "2026-08-26T19:18:44.639Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -11,16 +11,21 @@
           "title": "Users may be unable to complete mailbox offboarding because the migration task is blocked and can’t finish",
           "startTime": "2026-08-20T12:23:15Z",
           "endTime": null,
-          "lastModified": "2026-08-25T20:54:12.917Z",
+          "lastModified": "2026-08-26T18:53:24.34Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to complete mailbox offboarding because the migration task is blocked and can’t finish.",
           "scopeOfImpact": "Users attempting to complete mailbox offboarding in Exchange Online may be impacted by this issue. This section may be updated as our investigation continues.",
           "rootCause": "The mailbox migration task is being delayed due to the integrity validation process remaining pending at the completion stage, resulting in impact.",
-          "nextUpdateBy": "Wednesday, August 26, 2026, at 7:30 PM UTC",
+          "nextUpdateBy": "Thursday, August 27, 2026, at 7:30 PM UTC",
           "feature": "Mailbox Migrations",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-26T18:53:24.34Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to complete mailbox offboarding because the migration task is blocked and can’t finish\r\n\r\nUser impact: Users may be unable to complete mailbox offboarding because the migration task is blocked and can’t finish.\r\n\r\nCurrent status: We've initiated release of the subsequent fix and users should see relief as it progresses. We'll expect to provide a complete remediation timeline by the next scheduled update. \r\n\r\nScope of impact: Users attempting to complete mailbox offboarding in Exchange Online may be impacted by this issue. This section may be updated as our investigation continues.\r\n\r\nRoot cause: The mailbox migration task is being delayed due to the integrity validation process remaining pending at the completion stage, resulting in impact.\r\n\r\nNext update by: Thursday, August 27, 2026, at 7:30 PM UTC"
+            },
             {
               "createdAt": "2026-08-25T20:54:12.917Z",
               "postType": "regular",
@@ -590,16 +595,21 @@
           "title": "Users may have been unable to run run-only workflows from Microsoft Teams",
           "startTime": "2026-06-30T07:00:00Z",
           "endTime": null,
-          "lastModified": "2026-08-20T19:36:09.39Z",
+          "lastModified": "2026-08-26T18:49:52.76Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to run run-only workflows from Microsoft Teams.",
           "scopeOfImpact": "Users attempting to run run-only workflows from Microsoft Teams may be impacted. This section may be updated as the investigation progresses.\r\n\r\nStart time: Tuesday, June 30, 2026, at 7:00 AM UTC",
           "rootCause": "A recent service update introduced a code regression that affects how Microsoft Teams processes shared workflow requests, preventing some users from running run-only workflows from Microsoft Teams.",
-          "nextUpdateBy": "Wednesday, August 26, 2026, at 8:30 PM UTC",
+          "nextUpdateBy": "Friday, August 28, 2026, at 8:30 PM UTC",
           "feature": "Teams and Channels",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-26T18:49:52.76Z",
+              "postType": "regular",
+              "content": "Title: Users may have been unable to run run-only workflows from Microsoft Teams\r\n\r\nUser impact: Users may be unable to run run-only workflows from Microsoft Teams.\r\n\r\nMore info: As a result of our initial fix deployment, users are now able to run run-only workflows through the \"workflows\" button in Microsoft Teams. However, running run-only workflows by hovering and selecting \"More actions\" > \"Create workflows\" is still an impacted scenario.\n\nAffected users are unable to run workflows in Teams when those workflows are configured to be executed by designated users without requiring those users to own or edit the workflow. Users receive the following error message:\n\n\"Missing Trigger URI\"\n\nAs a way to avoid this issue, impacted users can be granted Owner or Co-owner permissions for the affected workflow.\r\n\r\nCurrent status: Our process to validate and confirm efficacy of the fix is ongoing, as we work to both ensure successful impact remediation and that there are no adverse effects. \r\n\r\nScope of impact: Users attempting to run run-only workflows from Microsoft Teams may be impacted. This section may be updated as the investigation progresses.\r\n\r\nStart time: Tuesday, June 30, 2026, at 7:00 AM UTC\r\n\r\nRoot cause: A recent service update introduced a code regression that affects how Microsoft Teams processes shared workflow requests, preventing some users from running run-only workflows from Microsoft Teams.\r\n\r\nNext update by: Friday, August 28, 2026, at 8:30 PM UTC"
+            },
             {
               "createdAt": "2026-08-20T19:36:09.39Z",
               "postType": "regular",
