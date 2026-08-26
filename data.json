@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-26T01:41:25.729Z",
+  "lastUpdated": "2026-08-26T02:11:36.419Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -445,16 +445,21 @@
           "title": "Guest users are unable to access SharePoint Online sites connected to Microsoft Teams",
           "startTime": "2026-08-25T01:58:05Z",
           "endTime": null,
-          "lastModified": "2026-08-25T13:29:59.893Z",
+          "lastModified": "2026-08-26T01:47:35.947Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Guest users are unable to access SharePoint Online sites connected to Microsoft Teams.",
           "scopeOfImpact": "This issue could impact any guest users attempting to access SharePoint Online sites where access is granted through Microsoft 365 Groups. \r\n\r\nStart time: Thursday, August 20, 2026, at 7:30 AM UTC",
-          "rootCause": "",
-          "nextUpdateBy": "Wednesday, August 26, 2026, at 3:00 AM UTC",
+          "rootCause": "A recently deployed change interacted with dynamic claims process, causing impact.",
+          "nextUpdateBy": "Wednesday, August 26, 2026, at 7:30 AM UTC",
           "feature": "SharePoint Online all features",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-26T01:47:35.947Z",
+              "postType": "regular",
+              "content": "Title: Guest users are unable to access SharePoint Online sites connected to Microsoft Teams\r\n\r\nUser impact: Guest users are unable to access SharePoint Online sites connected to Microsoft Teams.\r\n\r\nMore info: Specifically, guest users are redirected to an AccessDenied.aspx page when attempting to access SharePoint Online sites where access is granted through Microsoft 365 Groups.\n\nAs a potential workaround, admins can manually add affected guest users directly to the SharePoint Members group instead of relying on Microsoft 365 Group membership propagation.\r\n\r\nCurrent status: We've received some feedback indicating the impact is now resolved after we reverted the change. We're conducting persistent monitoring of the affected environment to ensure customers who previously reported the issue are seeing withstanding recovery. \r\n\r\nScope of impact: This issue could impact any guest users attempting to access SharePoint Online sites where access is granted through Microsoft 365 Groups. \r\n\r\nStart time: Thursday, August 20, 2026, at 7:30 AM UTC\r\n\r\nRoot cause: A recently deployed change interacted with dynamic claims process, causing impact.\r\n\r\nNext update by: Wednesday, August 26, 2026, at 7:30 AM UTC"
+            },
             {
               "createdAt": "2026-08-25T13:29:59.893Z",
               "postType": "regular",
@@ -627,19 +632,29 @@
         },
         {
           "id": "TM1461801",
-          "title": "Users may be unable to join and create Microsoft Teams meetings",
-          "startTime": "2026-08-26T01:22:31.727Z",
+          "title": "Users may be unable to use multiple Microsoft Teams features",
+          "startTime": "2026-08-26T01:00:00Z",
           "endTime": null,
-          "lastModified": "2026-08-26T01:31:00.407Z",
-          "status": "investigating",
-          "severity": "advisory",
-          "userImpact": "Users may be unable to join and create Microsoft Teams meetings.",
+          "lastModified": "2026-08-26T01:56:42.79Z",
+          "status": "serviceDegradation",
+          "severity": "incident",
+          "userImpact": "Users may be unable to use multiple Microsoft Teams features. ",
           "scopeOfImpact": "",
           "rootCause": "",
           "nextUpdateBy": "",
           "feature": "Meetings",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-26T01:56:42.79Z",
+              "postType": "quick",
+              "content": "Our monitoring indicates that the issue is largely mitigated. We are continuing to monitor the service for the next 15 to 30 minutes to ensure there is no reoccurrence of this issue. \n\nThis quick update is designed to give the latest information on this issue."
+            },
+            {
+              "createdAt": "2026-08-26T01:41:45.517Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to use multiple Microsoft Teams features\n\nUser impact: Users may be unable to use multiple Microsoft Teams features. \n\nMore info: Based on our telemetry, multiple Microsoft Teams features are affected:\n- Live Events\n- 1:1 Calling\n- PSTN Calling\n- Joining Meetings\n- Creating Meetings\n- Meeting General Functionality\n- Town Hall Functionality\n\nCurrent status: We have determined that maintenance related work was being conducted on the infrastructure based in Asia-Pacific. As an unintended result of this maintenance work, service health was impacted. We have paused our maintenance work and our telemetry indicates that the issue is no longer occurring. We're continuing to monitor service health and work with reporting users that the issue is no longer occurring. \n\n\nScope of impact: This issue could affect any user located in Asia-Pacific. This section is subject to change as our investigation continues. \n\nStart time: Wednesday, August 26, 2026, at 1:00 AM UTC\n\nRoot cause: Maintenance related work in the region is inadvertently causing impact to service health. We will provide more information regarding the root cause as soon as possible. \n\nNext update by: Wednesday, August 26, 2026, at 3:00 AM UTC"
+            },
             {
               "createdAt": "2026-08-26T01:26:48.09Z",
               "postType": "regular",
