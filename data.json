@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-26T16:17:31.048Z",
+  "lastUpdated": "2026-08-26T16:47:42.317Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -493,19 +493,24 @@
       "issues": [
         {
           "id": "PB1461484",
-          "title": "Some Workspace Admins see outdated/incomplete information in workspace settings of Power BI or Microsoft Fabric services",
+          "title": "Some workspace admins see outdated/incomplete information in workspace settings of Power BI or Microsoft Fabric services",
           "startTime": "2026-08-02T04:12:00Z",
           "endTime": null,
-          "lastModified": "2026-08-25T15:37:18.217Z",
+          "lastModified": "2026-08-26T16:16:03.013Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "userImpact": "Workspace Admins see outdated/incomplete information in workspace settings of Power BI or Microsoft Fabric services.",
-          "scopeOfImpact": "Impact is specific to some admins attempting to view the current state of workspace settings in the Power BI or Microsoft Fabric service. This section may be updated as the investigation progresses.\r\n\r\nStart time: Sunday, August 2, 2026, at 4:12 AM UTC",
+          "userImpact": "Workspace admins see outdated/incomplete information in workspace settings of Power BI or Microsoft Fabric services.",
+          "scopeOfImpact": "Impact is specific to some admins attempting to view the current state of workspace settings in the Power BI or Microsoft Fabric service. This section may be updated as the investigation progresses.",
           "rootCause": "A code regression is causing workspace settings requests to incorrectly identify the caller for the request as a tenant admin instead of a workspace admin, resulting in the authorization check being rejected.",
-          "nextUpdateBy": "Wednesday, August 26, 2026, at 5:30 PM UTC",
+          "nextUpdateBy": "Thursday, August 27, 2026, at 5:30 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-26T16:16:03.013Z",
+              "postType": "regular",
+              "content": "Title: Some workspace admins see outdated/incomplete information in workspace settings of Power BI or Microsoft Fabric services\r\n\r\nUser impact: Workspace admins see outdated/incomplete information in workspace settings of Power BI or Microsoft Fabric services.\r\n\r\nMore info: Workspace admins may see outdated or incomplete information when viewing workspace settings, including Capacity Details, Domain settings, Contacts, OneDrive settings, and Semantic Model Storage Format. Configuration changes continue to be applied successfully; however, updated values may not be reflected in workspace settings after changes are saved or the page is refreshed.\r\n\r\nCurrent status: We're continuing to test and validate the effectiveness of our code fix within our internal testing environment prior to initiating a wider deployment. We aim to provide a timeline to remediation as soon as possible.\r\n\r\nScope of impact: Impact is specific to some admins attempting to view the current state of workspace settings in the Power BI or Microsoft Fabric service. This section may be updated as the investigation progresses.\r\n\r\nRoot cause: A code regression is causing workspace settings requests to incorrectly identify the caller for the request as a tenant admin instead of a workspace admin, resulting in the authorization check being rejected.\r\n\r\nNext update by: Thursday, August 27, 2026, at 5:30 PM UTC"
+            },
             {
               "createdAt": "2026-08-25T15:14:41.197Z",
               "postType": "regular",
