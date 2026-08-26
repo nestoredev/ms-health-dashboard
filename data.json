@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-26T22:50:21.636Z",
+  "lastUpdated": "2026-08-26T23:20:33.645Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1329,16 +1329,21 @@
       "title": "Some users may be unable to activate new or refresh existing Office 365 licenses",
       "startTime": "2026-08-24T13:00:00Z",
       "endTime": "2026-08-24T19:40:00Z",
-      "lastModified": "2026-08-24T22:39:05.743Z",
-      "status": "serviceRestored",
+      "lastModified": "2026-08-26T23:12:45.863Z",
+      "status": "postIncidentReviewPublished",
       "severity": "incident",
       "userImpact": "Users may have been unable to activate new or refresh existing Office 365 licenses.",
-      "scopeOfImpact": "Some users attempting to activate new or refresh existing Office 365 licenses may have been impacted.\n\nStart time: Monday, August 24, 2026, at 1:00 PM UTC\n\nEnd time: Monday, August 24, 2026, at 7:40 PM UTC\n\nPreliminary",
-      "rootCause": "A processing bottleneck within the service reduced its ability to handle incoming requests efficiently. As request volume accumulated, some requests experienced delays or timed out before they could be completed. \n\nNext steps:\n-We’re further investigating the bottleneck so we can determine what originally caused it and prevent similar future issues from leading to service impact.\n \nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days.",
+      "scopeOfImpact": "",
+      "rootCause": "",
       "nextUpdateBy": "",
       "feature": "Access",
       "isResolved": true,
       "posts": [
+        {
+          "createdAt": "2026-08-26T23:12:45.863Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        },
         {
           "createdAt": "2026-08-24T20:08:51.493Z",
           "postType": "regular",
@@ -1358,11 +1363,6 @@
           "createdAt": "2026-08-24T17:17:38.3Z",
           "postType": "regular",
           "content": "Title: Some users may be unable to activate new or refresh existing Office 365 licenses\r\n\r\nUser impact: Users may be unable to activate new or refresh existing Office 365 licenses.\r\n\r\nMore info: For the users who are unable to activate or refresh Office 365 licenses, this prevents them from signing in or accessing Office 365 applications.\n \nUsers may receive multiple prompts; however, the activation process may fail when they attempt to sign in.\r\n\r\nCurrent status: We're implementing performance optimizations on affected Office 365 service infrastructure to assist with processing the activation backlog and to assist with recovering service reliability while we continue to isolate the underlying root cause.\r\n\r\nScope of impact: Some users attempting to activate new Office 365 licenses may be impacted. This section may be updated as the investigation progresses.\r\n\r\nStart time: Monday, August 24, 2026, at 1:00 PM UTC\r\n\r\nNext update by: Monday, August 24, 2026, at 7:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-08-24T15:24:00.497Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to activate new or refresh existing Office 365 licenses\r\n\r\nUser impact: Users may be unable to activate new or refresh existing Office 365 licenses.\r\n\r\nMore info: For the users who are unable to activate or refresh Office 365 licenses, this prevents them from signing in or accessing Office 365 applications.\n \nUsers may receive multiple prompts; however, the activation process may fail when they attempt to sign in.\r\n\r\nCurrent status: After further review of customer reports and our service monitoring telemetry, we've confirmed that impact is occurring for users attempting to activate new Office 365 licenses, which prevents them from being able to sign-in or access Office 365 applications. We've updated the \"Title\", \"User impact\", and \"Scope of impact\" fields of our communications to reflect this change. We're reviewing recent service updates to isolate potential sources of impact or discrepancies that could be causing this impact to users.\r\n\r\nScope of impact: Some users attempting to activate new Office 365 licenses may be impacted. This section may be updated as the investigation progresses.\r\n\r\nNext update by: Monday, August 24, 2026, at 5:30 PM UTC"
         }
       ],
       "serviceName": "Microsoft 365 apps",
