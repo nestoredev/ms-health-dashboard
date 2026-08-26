@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-26T02:11:36.419Z",
+  "lastUpdated": "2026-08-26T02:41:47.468Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -631,41 +631,6 @@
           ]
         },
         {
-          "id": "TM1461801",
-          "title": "Users may be unable to use multiple Microsoft Teams features",
-          "startTime": "2026-08-26T01:00:00Z",
-          "endTime": null,
-          "lastModified": "2026-08-26T01:56:42.79Z",
-          "status": "serviceDegradation",
-          "severity": "incident",
-          "userImpact": "Users may be unable to use multiple Microsoft Teams features. ",
-          "scopeOfImpact": "",
-          "rootCause": "",
-          "nextUpdateBy": "",
-          "feature": "Meetings",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-08-26T01:56:42.79Z",
-              "postType": "quick",
-              "content": "Our monitoring indicates that the issue is largely mitigated. We are continuing to monitor the service for the next 15 to 30 minutes to ensure there is no reoccurrence of this issue. \n\nThis quick update is designed to give the latest information on this issue."
-            },
-            {
-              "createdAt": "2026-08-26T01:41:45.517Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to use multiple Microsoft Teams features\n\nUser impact: Users may be unable to use multiple Microsoft Teams features. \n\nMore info: Based on our telemetry, multiple Microsoft Teams features are affected:\n- Live Events\n- 1:1 Calling\n- PSTN Calling\n- Joining Meetings\n- Creating Meetings\n- Meeting General Functionality\n- Town Hall Functionality\n\nCurrent status: We have determined that maintenance related work was being conducted on the infrastructure based in Asia-Pacific. As an unintended result of this maintenance work, service health was impacted. We have paused our maintenance work and our telemetry indicates that the issue is no longer occurring. We're continuing to monitor service health and work with reporting users that the issue is no longer occurring. \n\n\nScope of impact: This issue could affect any user located in Asia-Pacific. This section is subject to change as our investigation continues. \n\nStart time: Wednesday, August 26, 2026, at 1:00 AM UTC\n\nRoot cause: Maintenance related work in the region is inadvertently causing impact to service health. We will provide more information regarding the root cause as soon as possible. \n\nNext update by: Wednesday, August 26, 2026, at 3:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-08-26T01:26:48.09Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to join and create Microsoft Teams meetings\r\n\r\nUser impact: Users may be unable to join and create Microsoft Teams meetings.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Teams and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Microsoft Teams"
-          ]
-        },
-        {
           "id": "TM1440450",
           "title": "Users may have been unable to run run-only workflows from Microsoft Teams",
           "startTime": "2026-06-30T07:00:00Z",
@@ -1113,6 +1078,47 @@
     }
   ],
   "history": [
+    {
+      "id": "TM1461801",
+      "title": "Users may be unable to use multiple Microsoft Teams features",
+      "startTime": "2026-08-26T01:00:00Z",
+      "endTime": "2026-08-26T02:16:57Z",
+      "lastModified": "2026-08-26T02:23:42.95Z",
+      "status": "serviceRestored",
+      "severity": "incident",
+      "userImpact": "Users may have been unable to use multiple Microsoft Teams features.",
+      "scopeOfImpact": "This issue could have affected any user located in Asia-Pacific. \n\nStart time: Wednesday, August 26, 2026, at 1:00 AM UTC\n\nEnd time: Wednesday, August 26, 2026, at 2:00 AM UTC",
+      "rootCause": "We determined that maintenance related work in the region was inadvertently causing impact to service health. We will provide more information regarding the root cause within our Post-Incident Report. \n\nNext steps: We're actively reviewing the maintenance work that resulted in this issue to identify the underlying cause and how to prevent it from occurring again.\n\nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days.",
+      "nextUpdateBy": "",
+      "feature": "Meetings",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-08-26T02:23:15.317Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to use multiple Microsoft Teams features\n\nUser impact: Users may have been unable to use multiple Microsoft Teams features.\n\nMore info: Based on our telemetry, multiple Microsoft Teams features were affected such as:\n- Live Events\n- 1:1 Calling\n- PSTN Calling\n- Joining Meetings\n- Creating Meetings\n- Meeting General Functionality\n- Town Hall Functionality\n\nFinal status: After a period of extended monitoring, we have confirmed that the issue is resolved. \n\nScope of impact: This issue could have affected any user located in Asia-Pacific. \n\nStart time: Wednesday, August 26, 2026, at 1:00 AM UTC\n\nEnd time: Wednesday, August 26, 2026, at 2:00 AM UTC\n\nRoot cause: We determined that maintenance related work in the region was inadvertently causing impact to service health. We will provide more information regarding the root cause within our Post-Incident Report. \n\nNext steps: We're actively reviewing the maintenance work that resulted in this issue to identify the underlying cause and how to prevent it from occurring again.\n\nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days."
+        },
+        {
+          "createdAt": "2026-08-26T01:56:42.79Z",
+          "postType": "quick",
+          "content": "Our monitoring indicates that the issue is largely mitigated. We are continuing to monitor the service for the next 15 to 30 minutes to ensure there is no reoccurrence of this issue. \n\nThis quick update is designed to give the latest information on this issue."
+        },
+        {
+          "createdAt": "2026-08-26T01:41:45.517Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to use multiple Microsoft Teams features\n\nUser impact: Users may be unable to use multiple Microsoft Teams features. \n\nMore info: Based on our telemetry, multiple Microsoft Teams features are affected:\n- Live Events\n- 1:1 Calling\n- PSTN Calling\n- Joining Meetings\n- Creating Meetings\n- Meeting General Functionality\n- Town Hall Functionality\n\nCurrent status: We have determined that maintenance related work was being conducted on the infrastructure based in Asia-Pacific. As an unintended result of this maintenance work, service health was impacted. We have paused our maintenance work and our telemetry indicates that the issue is no longer occurring. We're continuing to monitor service health and work with reporting users that the issue is no longer occurring. \n\n\nScope of impact: This issue could affect any user located in Asia-Pacific. This section is subject to change as our investigation continues. \n\nStart time: Wednesday, August 26, 2026, at 1:00 AM UTC\n\nPreliminary root cause: Maintenance related work in the region is inadvertently causing impact to service health. We will provide more information regarding the root cause as soon as possible. \n\nNext update by: Wednesday, August 26, 2026, at 3:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-08-26T01:26:48.09Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to join and create Microsoft Teams meetings\r\n\r\nUser impact: Users may be unable to join and create Microsoft Teams meetings.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Teams and checking for impact to your organization. We'll provide an update within 30 minutes."
+        }
+      ],
+      "serviceName": "Microsoft Teams",
+      "affectedServices": [
+        "Microsoft Teams"
+      ]
+    },
     {
       "id": "OP1459987",
       "title": "Some admins may see outdated device inventory and update status information in the Microsoft 365 Apps admin center",
