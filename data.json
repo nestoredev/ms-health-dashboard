@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-27T17:28:07.048Z",
+  "lastUpdated": "2026-08-27T17:58:20.572Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -433,18 +433,23 @@
         {
           "id": "SP1461655",
           "title": "Users may not see the controls in the file and media webpart for embedded PowerPoint files in SharePoint Online",
-          "startTime": "2026-08-25T19:47:30.973Z",
+          "startTime": "2026-08-05T22:29:00Z",
           "endTime": null,
-          "lastModified": "2026-08-27T11:52:57.117Z",
+          "lastModified": "2026-08-27T17:46:35.197Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may not see the controls in the file and media webpart for embedded PowerPoint files in SharePoint Online.",
-          "scopeOfImpact": "Users may not see the controls in the file and media webpart for embedded PowerPoint files in SharePoint Online. This information may be updated as our investigation continues.",
+          "scopeOfImpact": "Users may not see the controls in the file and media webpart for embedded PowerPoint files in SharePoint Online. This information may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, August 5, 2026, at 10:29 PM UTC",
           "rootCause": "An automated code update intended to upgrade supporting software packages removed a required feature gate, leading to the impact.",
-          "nextUpdateBy": "Thursday, August 27, 2026, at 6:30 PM UTC",
+          "nextUpdateBy": "Thursday, August 27, 2026, at 11:00 PM UTC",
           "feature": "SharePoint Online all features",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-27T17:45:41.123Z",
+              "postType": "regular",
+              "content": "Title: Users may not see the controls in the file and media webpart for embedded PowerPoint files in SharePoint Online\r\n\r\nUser impact: Users may not see the controls in the file and media webpart for embedded PowerPoint files in SharePoint Online.\r\n\r\nCurrent status: We've completed our validation of the necessary changes and have initiated the deployment of our fix to the affected environment. We anticipate this deployment will complete, remediating impact for all users, by our next scheduled communication update. \r\n\r\nScope of impact: Users may not see the controls in the file and media webpart for embedded PowerPoint files in SharePoint Online. This information may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, August 5, 2026, at 10:29 PM UTC\r\n\r\nRoot cause: An automated code update intended to upgrade supporting software packages removed a required feature gate, leading to the impact.\r\n\r\nNext update by: Thursday, August 27, 2026, at 11:00 PM UTC"
+            },
             {
               "createdAt": "2026-08-27T11:52:57.117Z",
               "postType": "regular",
@@ -526,10 +531,10 @@
           "title": "Some users may experience intermittent failures or delays when accessing Microsoft Power BI or Microsoft Fabric",
           "startTime": "2026-08-27T15:15:00Z",
           "endTime": null,
-          "lastModified": "2026-08-27T17:17:01.417Z",
+          "lastModified": "2026-08-27T17:51:57.087Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "userImpact": "Users may experience intermittent failures or delays when accessing Microsoft Power BI or Microsoft Fabric.",
+          "userImpact": "Users may have experienced intermittent failures or delays when accessing Microsoft Power BI or Microsoft Fabric.",
           "scopeOfImpact": "This incident impacts some users, who may experience intermittent failures or delays when accessing Microsoft Power BI or Microsoft Fabric. This section may be updated as the investigation progresses.\r\n\r\nStart time: Thursday, August 27, 2026, at 3:15 PM UTC",
           "rootCause": "An unexpected influx in user traffic caused our service infrastructure to begin operating in an unhealthy state, delaying the processing of user requests.",
           "nextUpdateBy": "Thursday, August 27, 2026, at 6:30 PM UTC",
