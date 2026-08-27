@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-27T16:57:54.529Z",
+  "lastUpdated": "2026-08-27T17:28:07.048Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -522,20 +522,55 @@
       "id": "PowerBIcom",
       "issues": [
         {
+          "id": "PB1462800",
+          "title": "Some users may experience intermittent failures or delays when accessing Microsoft Power BI or Microsoft Fabric",
+          "startTime": "2026-08-27T15:15:00Z",
+          "endTime": null,
+          "lastModified": "2026-08-27T17:17:01.417Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may experience intermittent failures or delays when accessing Microsoft Power BI or Microsoft Fabric.",
+          "scopeOfImpact": "This incident impacts some users, who may experience intermittent failures or delays when accessing Microsoft Power BI or Microsoft Fabric. This section may be updated as the investigation progresses.\r\n\r\nStart time: Thursday, August 27, 2026, at 3:15 PM UTC",
+          "rootCause": "An unexpected influx in user traffic caused our service infrastructure to begin operating in an unhealthy state, delaying the processing of user requests.",
+          "nextUpdateBy": "Thursday, August 27, 2026, at 6:30 PM UTC",
+          "feature": "General",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-08-27T17:16:48.86Z",
+              "postType": "regular",
+              "content": "Title: Some users may experience intermittent failures or delays when accessing Microsoft Power BI or Microsoft Fabric\r\n\r\nUser impact: Users may experience intermittent failures or delays when accessing Microsoft Power BI or Microsoft Fabric.\r\n\r\nCurrent status: Our service monitors have alerted us to an availability drop affecting some users accessing Microsoft Power BI or Microsoft Fabric, who may experience intermittent failures or delays accessing our services. We've validated that impact was caused by an unexpected influx in user traffic, which caused our service infrastructure to begin operating in an unhealthy state and delaying the processing of user requests. We've implemented performance optimizations to recover affected infrastructure and are monitoring service availability to confirm impact is remediated.\r\n\r\nScope of impact: This incident impacts some users, who may experience intermittent failures or delays when accessing Microsoft Power BI or Microsoft Fabric. This section may be updated as the investigation progresses.\r\n\r\nStart time: Thursday, August 27, 2026, at 3:15 PM UTC\r\n\r\nRoot cause: An unexpected influx in user traffic caused our service infrastructure to begin operating in an unhealthy state, delaying the processing of user requests.\r\n\r\nNext update by: Thursday, August 27, 2026, at 6:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-08-27T17:03:48.187Z",
+              "postType": "regular",
+              "content": "Title: We're looking into a potential problem impacting Microsoft Fabric and Microsoft Power BI\r\n\r\nUser impact: We're checking for potential impact to your users.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Fabric and Microsoft Power BI and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Power BI"
+          ]
+        },
+        {
           "id": "PB1461484",
           "title": "Some workspace admins see outdated/incomplete information in workspace settings of Power BI or Microsoft Fabric services",
           "startTime": "2026-08-02T04:12:00Z",
           "endTime": null,
-          "lastModified": "2026-08-26T16:16:03.013Z",
+          "lastModified": "2026-08-27T17:12:47.59Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Workspace admins see outdated/incomplete information in workspace settings of Power BI or Microsoft Fabric services.",
           "scopeOfImpact": "Impact is specific to some admins attempting to view the current state of workspace settings in the Power BI or Microsoft Fabric service. This section may be updated as the investigation progresses.",
           "rootCause": "A code regression is causing workspace settings requests to incorrectly identify the caller for the request as a tenant admin instead of a workspace admin, resulting in the authorization check being rejected.",
-          "nextUpdateBy": "Thursday, August 27, 2026, at 5:30 PM UTC",
+          "nextUpdateBy": "Monday, August 31, 2026, at 5:30 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-27T17:12:47.59Z",
+              "postType": "regular",
+              "content": "Title: Some workspace admins see outdated/incomplete information in workspace settings of Power BI or Microsoft Fabric services\r\n\r\nUser impact: Workspace admins see outdated/incomplete information in workspace settings of Power BI or Microsoft Fabric services.\r\n\r\nMore info: Workspace admins may see outdated or incomplete information when viewing workspace settings, including Capacity Details, Domain settings, Contacts, OneDrive settings, and Semantic Model Storage Format. Configuration changes continue to be applied successfully; however, updated values may not be reflected in workspace settings after changes are saved or the page is refreshed.\r\n\r\nCurrent status: Our validation of the fix has completed successfully and we're scheduling a broad release to remediate impact. We expect to have a complete mitigation timeline by the next scheduled update. \r\n\r\nScope of impact: Impact is specific to some admins attempting to view the current state of workspace settings in the Power BI or Microsoft Fabric service. This section may be updated as the investigation progresses.\r\n\r\nRoot cause: A code regression is causing workspace settings requests to incorrectly identify the caller for the request as a tenant admin instead of a workspace admin, resulting in the authorization check being rejected.\r\n\r\nNext update by: Monday, August 31, 2026, at 5:30 PM UTC"
+            },
             {
               "createdAt": "2026-08-26T16:16:03.013Z",
               "postType": "regular",
