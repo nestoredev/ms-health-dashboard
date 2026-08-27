@@ -1,76 +1,11 @@
 {
-  "lastUpdated": "2026-08-27T17:58:20.572Z",
+  "lastUpdated": "2026-08-27T18:28:34.886Z",
   "services": [
     {
       "service": "Exchange Online",
       "status": "serviceDegradation",
       "id": "Exchange",
       "issues": [
-        {
-          "id": "EX1458145",
-          "title": "Users may be unable to complete mailbox offboarding because the migration task is blocked and can’t finish",
-          "startTime": "2026-08-20T12:23:15Z",
-          "endTime": null,
-          "lastModified": "2026-08-26T18:53:24.34Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may be unable to complete mailbox offboarding because the migration task is blocked and can’t finish.",
-          "scopeOfImpact": "Users attempting to complete mailbox offboarding in Exchange Online may be impacted by this issue. This section may be updated as our investigation continues.",
-          "rootCause": "The mailbox migration task is being delayed due to the integrity validation process remaining pending at the completion stage, resulting in impact.",
-          "nextUpdateBy": "Thursday, August 27, 2026, at 7:30 PM UTC",
-          "feature": "Mailbox Migrations",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-08-26T18:53:24.34Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to complete mailbox offboarding because the migration task is blocked and can’t finish\r\n\r\nUser impact: Users may be unable to complete mailbox offboarding because the migration task is blocked and can’t finish.\r\n\r\nCurrent status: We've initiated release of the subsequent fix and users should see relief as it progresses. We'll expect to provide a complete remediation timeline by the next scheduled update. \r\n\r\nScope of impact: Users attempting to complete mailbox offboarding in Exchange Online may be impacted by this issue. This section may be updated as our investigation continues.\r\n\r\nRoot cause: The mailbox migration task is being delayed due to the integrity validation process remaining pending at the completion stage, resulting in impact.\r\n\r\nNext update by: Thursday, August 27, 2026, at 7:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-08-25T20:54:12.917Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to complete mailbox offboarding because the migration task is blocked and can’t finish\r\n\r\nUser impact: Users may be unable to complete mailbox offboarding because the migration task is blocked and can’t finish.\r\n\r\nCurrent status: Additional review indicates the issue isn't resolved for all affected users. We're continuing to prepare our code fix for deployment, and we'll aim to provide a timeline for it to begin by our next scheduled communications update.\r\n\r\nScope of impact: Users attempting to complete mailbox offboarding in Exchange Online may be impacted by this issue. This section may be updated as our investigation continues.\r\n\r\nRoot cause: The mailbox migration task is being delayed due to the integrity validation process remaining pending at the completion stage, resulting in impact.\r\n\r\nNext update by: Wednesday, August 26, 2026, at 7:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-08-25T19:56:38.987Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to complete mailbox offboarding because the migration task is blocked and can’t finish\r\n\r\nUser impact: Users may be unable to complete mailbox offboarding because the migration task is blocked and can’t finish.\r\n\r\nCurrent status: While we're preparing our code fix for deployment, we're monitoring service health telemetry to confirm whether the mitigation we implemented to disable the affected integrity validation process has resolved the issue for all affected users.\r\n\r\nScope of impact: Users attempting to complete mailbox offboarding in Exchange Online may be impacted by this issue. This section may be updated as our investigation continues.\r\n\r\nRoot cause: The mailbox migration task is being delayed due to the integrity validation process remaining pending at the completion stage, resulting in impact.\r\n\r\nNext update by: Tuesday, August 25, 2026, at 10:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-08-21T18:54:07.673Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to complete mailbox offboarding because the migration task is blocked and can’t finish\r\n\r\nUser impact: Users may be unable to complete mailbox offboarding because the migration task is blocked and can’t finish.\r\n\r\nCurrent status: We've been able to successfully disable the affected integrity validation process and resolve this issue for the majority of users. We're in the process of developing a code fix for the remaining impacted users and will provide an updated timeline on this final step in the remediation process as soon as it becomes available.\r\n\r\nScope of impact: Users attempting to complete mailbox offboarding in Exchange Online may be impacted by this issue. This section may be updated as our investigation continues.\r\n\r\nRoot cause: The mailbox migration task is being delayed due to the integrity validation process remained pending at the completion stage, resulting in impact.\r\n\r\nNext update by: Tuesday, August 25, 2026, at 8:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-08-21T07:45:35.917Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to complete mailbox offboarding because the migration task is blocked and can’t finish\n\nUser impact: Users may be unable to complete mailbox offboarding because the migration task is blocked and can’t finish.\n\nCurrent status: We're continuing to run the commandlet to help disable the aforementioned integrity validation process. We'll share a completion timeline when one becomes available.\n\nScope of impact: Users attempting to complete mailbox offboarding in Exchange Online may be impacted by this issue. This section may be updated as our investigation continues.\n\nRoot cause: The mailbox migration task is being delayed due to the integrity validation process remained pending at the completion stage, resulting in impact.\n\nNext update by: Friday, August 21, 2026, at 7:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-08-21T03:47:18.913Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to complete mailbox offboarding because the migration task is blocked and can’t finish\r\n\r\nUser impact: Users may be unable to complete mailbox offboarding because the migration task is blocked and can’t finish.\r\n\r\nCurrent status: We’re running a commandlet to help disable the aforementioned integrity validation process and anticipate by our next scheduled communications update that this process has completed.\r\n\r\nScope of impact: Users attempting to complete mailbox offboarding in Exchange Online may be impacted by this issue. This section may be updated as our investigation continues.\r\n\r\nRoot cause: The mailbox migration task is being delayed due to the integrity validation process remained pending at the completion stage, resulting in impact.\r\n\r\nNext update by: Friday, August 21, 2026, at 9:30 AM UTC"
-            },
-            {
-              "createdAt": "2026-08-20T20:21:36.103Z",
-              "postType": "regular",
-              "content": "Title: Users may experience delays completing mailbox offboarding because the migration task is blocked and cannot finish\r\n\r\nUser impact: Users may experience delays completing mailbox offboarding because the migration task is blocked and cannot finish.\r\n\r\nCurrent status: We're progressing with our analysis into the observed behavior and verifying the source for the unsuccessful completions of integrity validations. In parallel, we're determining the best option for disabling the “IsInteg” process, which is the integrity validation, in our effort to remediate the impact.\r\n\r\nScope of impact: Impact is specific to some users in Asia Pacific region attempting to completing mailbox offboarding.\r\n\r\nRoot cause: The mailbox migration task is being delayed due to the integrity validation process remained pending at the completion stage, resulting in impact.\r\n\r\nNext update by: Friday, August 21, 2026, at 4:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-08-20T14:31:04.58Z",
-              "postType": "regular",
-              "content": "Title: Users may experience delays completing mailbox offboarding because the migration task is blocked and cannot finish\r\n\r\nUser impact: Users may experience delays completing mailbox offboarding because the migration task is blocked and cannot finish.\r\n\r\nCurrent status: We're continuing our investigation and evaluating mitigation options before proceeding with a broader disablement of the IsInteg process. In parallel, we're assessing whether the observed behaviour is the result of a recent regression to better understand the underlying issue and determine the most appropriate path forward.\r\n\r\nScope of impact: Impact is specific to some users in Asia Pacific region attempting to completing mailbox offboarding.\r\n\r\nRoot cause: The mailbox migration task is being delayed due to the integrity validation process remained pending at the completion stage, resulting in impact.\r\n\r\nNext update by: Thursday, August 20, 2026, at 9:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-08-20T12:38:55.753Z",
-              "postType": "regular",
-              "content": "Title: Users may experience delays completing mailbox offboarding because the migration task is blocked and cannot finish\r\n\r\nUser impact: Users may experience delays completing mailbox offboarding because the migration task is blocked and cannot finish.\r\n\r\nCurrent status: We've identified that the mailbox migration task is being delayed due to the integrity validation process remained pending at the completion stage. We're disabling the integrity check for the affected mailboxes to remediate impact. We're monitoring the migration to confirm successful completion and validate that offboarding can proceed as expected.\r\n\r\nScope of impact: Impact is specific to some users in Asia Pacific region attempting to completing mailbox offboarding.\r\n\r\nRoot cause: The mailbox migration task is being delayed due to the integrity validation process remained pending at the completion stage, resulting in impact.\r\n\r\nNext update by: Thursday, August 20, 2026, at 2:30 PM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Exchange Online"
-          ]
-        },
         {
           "id": "EX1441488",
           "title": "Some users may see unwanted add-ins appearing automatically across all Outlook clients",
@@ -261,16 +196,21 @@
           "title": "Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights",
           "startTime": "2026-08-21T00:00:00Z",
           "endTime": null,
-          "lastModified": "2026-08-26T15:33:13.61Z",
+          "lastModified": "2026-08-27T18:16:33.39Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights.",
           "scopeOfImpact": "Any admin expecting reports from the affected scenarios as outlined in the More info section may be affected.\r\n\r\nStart time: Friday, August 21, 2026, at 12:00 AM UTC",
           "rootCause": "",
-          "nextUpdateBy": "Thursday, August 27, 2026, at 8:00 PM UTC",
+          "nextUpdateBy": "Monday, August 31, 2026, at 8:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-27T18:16:33.39Z",
+              "postType": "regular",
+              "content": "Title: Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights\r\n\r\nUser impact: Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights.\r\n\r\nMore info: Affected reports include but aren't limited to:\n\n- Copilot Usage report in Microsoft 365 admin center\n- Copilot Chat Usage report in Microsoft 365 admin center\n- Copilot Readiness reports in Microsoft 365 admin center and Viva Insights\n- Copilot Adoption report in Viva Insights\n- Microsoft 365 Apps and Active users reports in Microsoft 365 admin center\n- Teams App reports in Microsoft 365 admin center and Microsoft Teams admin center\r\n\r\nCurrent status: Our efforts to make upstream data pipeline adjustments and report migrations to address the remaining reporting delays are ongoing, and at this time most affected data pipelines and reports have already been restored. Additionally, we've further confirmed no usage report data was lost as a result of this issue. We are continuing to monitor recovery until data freshness is fully restored across all remaining reports and are implementing preventive measures to help avoid similar issues in the future.\r\n\r\nScope of impact: Any admin expecting reports from the affected scenarios as outlined in the More info section may be affected.\r\n\r\nStart time: Friday, August 21, 2026, at 12:00 AM UTC\r\n\r\nNext update by: Monday, August 31, 2026, at 8:30 PM UTC"
+            },
             {
               "createdAt": "2026-08-26T15:33:13.61Z",
               "postType": "regular",
@@ -526,36 +466,6 @@
       "status": "serviceDegradation",
       "id": "PowerBIcom",
       "issues": [
-        {
-          "id": "PB1462800",
-          "title": "Some users may experience intermittent failures or delays when accessing Microsoft Power BI or Microsoft Fabric",
-          "startTime": "2026-08-27T15:15:00Z",
-          "endTime": null,
-          "lastModified": "2026-08-27T17:51:57.087Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may have experienced intermittent failures or delays when accessing Microsoft Power BI or Microsoft Fabric.",
-          "scopeOfImpact": "This incident impacts some users, who may experience intermittent failures or delays when accessing Microsoft Power BI or Microsoft Fabric. This section may be updated as the investigation progresses.\r\n\r\nStart time: Thursday, August 27, 2026, at 3:15 PM UTC",
-          "rootCause": "An unexpected influx in user traffic caused our service infrastructure to begin operating in an unhealthy state, delaying the processing of user requests.",
-          "nextUpdateBy": "Thursday, August 27, 2026, at 6:30 PM UTC",
-          "feature": "General",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-08-27T17:16:48.86Z",
-              "postType": "regular",
-              "content": "Title: Some users may experience intermittent failures or delays when accessing Microsoft Power BI or Microsoft Fabric\r\n\r\nUser impact: Users may experience intermittent failures or delays when accessing Microsoft Power BI or Microsoft Fabric.\r\n\r\nCurrent status: Our service monitors have alerted us to an availability drop affecting some users accessing Microsoft Power BI or Microsoft Fabric, who may experience intermittent failures or delays accessing our services. We've validated that impact was caused by an unexpected influx in user traffic, which caused our service infrastructure to begin operating in an unhealthy state and delaying the processing of user requests. We've implemented performance optimizations to recover affected infrastructure and are monitoring service availability to confirm impact is remediated.\r\n\r\nScope of impact: This incident impacts some users, who may experience intermittent failures or delays when accessing Microsoft Power BI or Microsoft Fabric. This section may be updated as the investigation progresses.\r\n\r\nStart time: Thursday, August 27, 2026, at 3:15 PM UTC\r\n\r\nRoot cause: An unexpected influx in user traffic caused our service infrastructure to begin operating in an unhealthy state, delaying the processing of user requests.\r\n\r\nNext update by: Thursday, August 27, 2026, at 6:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-08-27T17:03:48.187Z",
-              "postType": "regular",
-              "content": "Title: We're looking into a potential problem impacting Microsoft Fabric and Microsoft Power BI\r\n\r\nUser impact: We're checking for potential impact to your users.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Fabric and Microsoft Power BI and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Power BI"
-          ]
-        },
         {
           "id": "PB1461484",
           "title": "Some workspace admins see outdated/incomplete information in workspace settings of Power BI or Microsoft Fabric services",
@@ -873,16 +783,21 @@
           "title": "Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights",
           "startTime": "2026-08-21T00:00:00Z",
           "endTime": null,
-          "lastModified": "2026-08-26T15:33:13.61Z",
+          "lastModified": "2026-08-27T18:16:33.39Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights.",
           "scopeOfImpact": "Any admin expecting reports from the affected scenarios as outlined in the More info section may be affected.\r\n\r\nStart time: Friday, August 21, 2026, at 12:00 AM UTC",
           "rootCause": "",
-          "nextUpdateBy": "Thursday, August 27, 2026, at 8:00 PM UTC",
+          "nextUpdateBy": "Monday, August 31, 2026, at 8:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-27T18:16:33.39Z",
+              "postType": "regular",
+              "content": "Title: Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights\r\n\r\nUser impact: Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights.\r\n\r\nMore info: Affected reports include but aren't limited to:\n\n- Copilot Usage report in Microsoft 365 admin center\n- Copilot Chat Usage report in Microsoft 365 admin center\n- Copilot Readiness reports in Microsoft 365 admin center and Viva Insights\n- Copilot Adoption report in Viva Insights\n- Microsoft 365 Apps and Active users reports in Microsoft 365 admin center\n- Teams App reports in Microsoft 365 admin center and Microsoft Teams admin center\r\n\r\nCurrent status: Our efforts to make upstream data pipeline adjustments and report migrations to address the remaining reporting delays are ongoing, and at this time most affected data pipelines and reports have already been restored. Additionally, we've further confirmed no usage report data was lost as a result of this issue. We are continuing to monitor recovery until data freshness is fully restored across all remaining reports and are implementing preventive measures to help avoid similar issues in the future.\r\n\r\nScope of impact: Any admin expecting reports from the affected scenarios as outlined in the More info section may be affected.\r\n\r\nStart time: Friday, August 21, 2026, at 12:00 AM UTC\r\n\r\nNext update by: Monday, August 31, 2026, at 8:30 PM UTC"
+            },
             {
               "createdAt": "2026-08-26T15:33:13.61Z",
               "postType": "regular",
@@ -1072,16 +987,21 @@
           "title": "Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights",
           "startTime": "2026-08-21T00:00:00Z",
           "endTime": null,
-          "lastModified": "2026-08-26T15:33:13.61Z",
+          "lastModified": "2026-08-27T18:16:33.39Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights.",
           "scopeOfImpact": "Any admin expecting reports from the affected scenarios as outlined in the More info section may be affected.\r\n\r\nStart time: Friday, August 21, 2026, at 12:00 AM UTC",
           "rootCause": "",
-          "nextUpdateBy": "Thursday, August 27, 2026, at 8:00 PM UTC",
+          "nextUpdateBy": "Monday, August 31, 2026, at 8:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-27T18:16:33.39Z",
+              "postType": "regular",
+              "content": "Title: Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights\r\n\r\nUser impact: Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights.\r\n\r\nMore info: Affected reports include but aren't limited to:\n\n- Copilot Usage report in Microsoft 365 admin center\n- Copilot Chat Usage report in Microsoft 365 admin center\n- Copilot Readiness reports in Microsoft 365 admin center and Viva Insights\n- Copilot Adoption report in Viva Insights\n- Microsoft 365 Apps and Active users reports in Microsoft 365 admin center\n- Teams App reports in Microsoft 365 admin center and Microsoft Teams admin center\r\n\r\nCurrent status: Our efforts to make upstream data pipeline adjustments and report migrations to address the remaining reporting delays are ongoing, and at this time most affected data pipelines and reports have already been restored. Additionally, we've further confirmed no usage report data was lost as a result of this issue. We are continuing to monitor recovery until data freshness is fully restored across all remaining reports and are implementing preventive measures to help avoid similar issues in the future.\r\n\r\nScope of impact: Any admin expecting reports from the affected scenarios as outlined in the More info section may be affected.\r\n\r\nStart time: Friday, August 21, 2026, at 12:00 AM UTC\r\n\r\nNext update by: Monday, August 31, 2026, at 8:30 PM UTC"
+            },
             {
               "createdAt": "2026-08-26T15:33:13.61Z",
               "postType": "regular",
@@ -1144,6 +1064,42 @@
   ],
   "history": [
     {
+      "id": "PB1462800",
+      "title": "Some users may experience intermittent failures or delays when accessing Microsoft Power BI or Microsoft Fabric",
+      "startTime": "2026-08-27T15:15:00Z",
+      "endTime": "2026-08-27T16:47:00Z",
+      "lastModified": "2026-08-27T17:58:10.607Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have experienced intermittent failures or delays when accessing Microsoft Power BI or Microsoft Fabric.",
+      "scopeOfImpact": "This incident impacted some users, who may have experienced intermittent failures or delays when accessing Microsoft Power BI or Microsoft Fabric. \r\n\r\nStart time: Thursday, August 27, 2026, at 3:15 PM UTC\r\n\r\nEnd time: Thursday, August 27, 2026, at 4:47 PM UTC",
+      "rootCause": "An unexpected influx in user traffic caused our service infrastructure to begin operating in an unhealthy state, delaying the processing of user requests.\r\n\r\nNext steps: \n- We're analyzing the affected service infrastructure to validate what additional performance optimizations we can implement to bolster the resiliency of our service and to prevent similar impact scenarios from occurring in the future.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "General",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-08-27T17:57:57.993Z",
+          "postType": "regular",
+          "content": "Title: Some users may experience intermittent failures or delays when accessing Microsoft Power BI or Microsoft Fabric\r\n\r\nUser impact: Users may have experienced intermittent failures or delays when accessing Microsoft Power BI or Microsoft Fabric.\r\n\r\nFinal status: We've completed our monitoring period of service availability and confirmed that our performance optimizations successfully remediated impact.\r\n\r\nScope of impact: This incident impacted some users, who may have experienced intermittent failures or delays when accessing Microsoft Power BI or Microsoft Fabric. \r\n\r\nStart time: Thursday, August 27, 2026, at 3:15 PM UTC\r\n\r\nEnd time: Thursday, August 27, 2026, at 4:47 PM UTC\r\n\r\nRoot cause: An unexpected influx in user traffic caused our service infrastructure to begin operating in an unhealthy state, delaying the processing of user requests.\r\n\r\nNext steps: \n- We're analyzing the affected service infrastructure to validate what additional performance optimizations we can implement to bolster the resiliency of our service and to prevent similar impact scenarios from occurring in the future.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-08-27T17:16:48.86Z",
+          "postType": "regular",
+          "content": "Title: Some users may experience intermittent failures or delays when accessing Microsoft Power BI or Microsoft Fabric\r\n\r\nUser impact: Users may experience intermittent failures or delays when accessing Microsoft Power BI or Microsoft Fabric.\r\n\r\nCurrent status: Our service monitors have alerted us to an availability drop affecting some users accessing Microsoft Power BI or Microsoft Fabric, who may experience intermittent failures or delays accessing our services. We've validated that impact was caused by an unexpected influx in user traffic, which caused our service infrastructure to begin operating in an unhealthy state and delaying the processing of user requests. We've implemented performance optimizations to recover affected infrastructure and are monitoring service availability to confirm impact is remediated.\r\n\r\nScope of impact: This incident impacts some users, who may experience intermittent failures or delays when accessing Microsoft Power BI or Microsoft Fabric. This section may be updated as the investigation progresses.\r\n\r\nStart time: Thursday, August 27, 2026, at 3:15 PM UTC\r\n\r\nRoot cause: An unexpected influx in user traffic caused our service infrastructure to begin operating in an unhealthy state, delaying the processing of user requests.\r\n\r\nNext update by: Thursday, August 27, 2026, at 6:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-08-27T17:03:48.187Z",
+          "postType": "regular",
+          "content": "Title: We're looking into a potential problem impacting Microsoft Fabric and Microsoft Power BI\r\n\r\nUser impact: We're checking for potential impact to your users.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Fabric and Microsoft Power BI and checking for impact to your organization. We'll provide an update within 30 minutes."
+        }
+      ],
+      "serviceName": "Power BI",
+      "affectedServices": [
+        "Power BI"
+      ]
+    },
+    {
       "id": "MB1462509",
       "title": "Users may have seen blank pages when opening Microsoft Bookings",
       "startTime": "2026-08-26T04:00:00Z",
@@ -1182,6 +1138,52 @@
       "serviceName": "Microsoft Bookings",
       "affectedServices": [
         "Microsoft Bookings"
+      ]
+    },
+    {
+      "id": "EX1458145",
+      "title": "Users may be unable to complete mailbox offboarding because the migration task is blocked and can’t finish",
+      "startTime": "2026-08-11T01:00:00Z",
+      "endTime": "2026-08-27T01:00:00Z",
+      "lastModified": "2026-08-27T18:14:36.357Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have been unable to complete mailbox offboarding because the migration task is blocked and couldn’t finish.",
+      "scopeOfImpact": "Users attempting to complete mailbox offboarding in Exchange Online may have been impacted by this issue. \r\n\r\nStart time: Tuesday, August 11, 2026, at 1:00 AM UTC\r\n\r\nEnd time: Thursday, August 27, 2026, at 1:00 AM UTC",
+      "rootCause": "The mailbox migration task was being delayed due to the integrity validation process remaining pending at the completion stage, resulting in impact.\r\n\r\nNext steps: \n- We're analyzing the offending integrity validation process to validate how it was introduced into our service and to confirm what actions we can take to prevent similar impact scenarios from occurring in the future.",
+      "nextUpdateBy": "",
+      "feature": "Mailbox Migrations",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-08-27T18:10:25.927Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to complete mailbox offboarding because the migration task is blocked and can’t finish\r\n\r\nUser impact: Users may have been unable to complete mailbox offboarding because the migration task is blocked and couldn’t finish.\r\n\r\nFinal status: We've completed deployment of our fix faster than initially anticipated and validated after a period of monitoring service availability that our actions successfully remediated impact.\r\n\r\nScope of impact: Users attempting to complete mailbox offboarding in Exchange Online may have been impacted by this issue. \r\n\r\nStart time: Tuesday, August 11, 2026, at 1:00 AM UTC\r\n\r\nEnd time: Thursday, August 27, 2026, at 1:00 AM UTC\r\n\r\nRoot cause: The mailbox migration task was being delayed due to the integrity validation process remaining pending at the completion stage, resulting in impact.\r\n\r\nNext steps: \n- We're analyzing the offending integrity validation process to validate how it was introduced into our service and to confirm what actions we can take to prevent similar impact scenarios from occurring in the future."
+        },
+        {
+          "createdAt": "2026-08-26T18:53:24.34Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to complete mailbox offboarding because the migration task is blocked and can’t finish\r\n\r\nUser impact: Users may be unable to complete mailbox offboarding because the migration task is blocked and can’t finish.\r\n\r\nCurrent status: We've initiated release of the subsequent fix and users should see relief as it progresses. We'll expect to provide a complete remediation timeline by the next scheduled update. \r\n\r\nScope of impact: Users attempting to complete mailbox offboarding in Exchange Online may be impacted by this issue. This section may be updated as our investigation continues.\r\n\r\nRoot cause: The mailbox migration task is being delayed due to the integrity validation process remaining pending at the completion stage, resulting in impact.\r\n\r\nNext update by: Thursday, August 27, 2026, at 7:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-08-25T20:54:12.917Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to complete mailbox offboarding because the migration task is blocked and can’t finish\r\n\r\nUser impact: Users may be unable to complete mailbox offboarding because the migration task is blocked and can’t finish.\r\n\r\nCurrent status: Additional review indicates the issue isn't resolved for all affected users. We're continuing to prepare our code fix for deployment, and we'll aim to provide a timeline for it to begin by our next scheduled communications update.\r\n\r\nScope of impact: Users attempting to complete mailbox offboarding in Exchange Online may be impacted by this issue. This section may be updated as our investigation continues.\r\n\r\nRoot cause: The mailbox migration task is being delayed due to the integrity validation process remaining pending at the completion stage, resulting in impact.\r\n\r\nNext update by: Wednesday, August 26, 2026, at 7:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-08-25T19:56:38.987Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to complete mailbox offboarding because the migration task is blocked and can’t finish\r\n\r\nUser impact: Users may be unable to complete mailbox offboarding because the migration task is blocked and can’t finish.\r\n\r\nCurrent status: While we're preparing our code fix for deployment, we're monitoring service health telemetry to confirm whether the mitigation we implemented to disable the affected integrity validation process has resolved the issue for all affected users.\r\n\r\nScope of impact: Users attempting to complete mailbox offboarding in Exchange Online may be impacted by this issue. This section may be updated as our investigation continues.\r\n\r\nRoot cause: The mailbox migration task is being delayed due to the integrity validation process remaining pending at the completion stage, resulting in impact.\r\n\r\nNext update by: Tuesday, August 25, 2026, at 10:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-08-21T18:54:07.673Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to complete mailbox offboarding because the migration task is blocked and can’t finish\r\n\r\nUser impact: Users may be unable to complete mailbox offboarding because the migration task is blocked and can’t finish.\r\n\r\nCurrent status: We've been able to successfully disable the affected integrity validation process and resolve this issue for the majority of users. We're in the process of developing a code fix for the remaining impacted users and will provide an updated timeline on this final step in the remediation process as soon as it becomes available.\r\n\r\nScope of impact: Users attempting to complete mailbox offboarding in Exchange Online may be impacted by this issue. This section may be updated as our investigation continues.\r\n\r\nRoot cause: The mailbox migration task is being delayed due to the integrity validation process remained pending at the completion stage, resulting in impact.\r\n\r\nNext update by: Tuesday, August 25, 2026, at 8:00 PM UTC"
+        }
+      ],
+      "serviceName": "Exchange Online",
+      "affectedServices": [
+        "Exchange Online"
       ]
     },
     {
