@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-28T01:31:39.223Z",
+  "lastUpdated": "2026-08-28T02:01:52.895Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -546,19 +546,24 @@
         },
         {
           "id": "TM1462874",
-          "title": "Users may be unable to access or manage Microsoft Teams channels",
+          "title": "Users may be unable to access or manage some Microsoft Teams channels features",
           "startTime": "2026-08-27T19:22:00Z",
           "endTime": null,
-          "lastModified": "2026-08-28T00:17:11.583Z",
+          "lastModified": "2026-08-28T01:34:35.59Z",
           "status": "serviceDegradation",
           "severity": "incident",
-          "userImpact": "Users may be unable to access or manage Microsoft Teams channels.",
-          "scopeOfImpact": "This issue may impact any user in North America who is attempting to interact with Microsoft Teams channels. This information may be updated as our investigation continues.\r\n\r\nStart time: Thursday, August 27, 2026, at 7:22 PM UTC",
+          "userImpact": "Users may be unable to access or manage some Microsoft Teams channels features.",
+          "scopeOfImpact": "This issue may impact any user in North America who is attempting to interact with some features of Microsoft Teams channels. This information may be updated as our investigation continues.\r\n\r\nStart time: Thursday, August 27, 2026, at 7:22 PM UTC",
           "rootCause": "A large number of user channel membership requests made to an API that handles Microsoft Teams channel information created a heavy load on service infrastructure, resulting in users in North America not being able to access or manage channels.",
-          "nextUpdateBy": "Friday, August 28, 2026, at 2:30 AM UTC",
+          "nextUpdateBy": "Friday, August 28, 2026, at 4:30 AM UTC",
           "feature": "Teams and Channels",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-28T01:34:35.59Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to access or manage some Microsoft Teams channels features\r\n\r\nUser impact: Users may be unable to access or manage some Microsoft Teams channels features.\r\n\r\nMore info: The currently impacted features include, but are not limited to:\n- Viewing shared and private channel membership in the Microsoft Teams Admin Center\n- Viewing shared and private channel membership in Microsoft Teams apps\r\n\r\nCurrent status: We've updated the title, user impact, and scope of impact fields to reflect that we've confirmed that the majority of features related to Microsoft Teams channel access and management have recovered. However, our monitoring indicates that features related to user channel membership are still impacted due to the ongoing processing of the requests made to the managing API. We're continuing to analyze the reliability of this feature to determine if expediting remediation will be feasible.\r\n\r\nScope of impact: This issue may impact any user in North America who is attempting to interact with some features of Microsoft Teams channels. This information may be updated as our investigation continues.\r\n\r\nStart time: Thursday, August 27, 2026, at 7:22 PM UTC\r\n\r\nRoot cause: A large number of user channel membership requests made to an API that handles Microsoft Teams channel information created a heavy load on service infrastructure, resulting in users in North America not being able to access or manage channels.\r\n\r\nNext update by: Friday, August 28, 2026, at 4:30 AM UTC"
+            },
             {
               "createdAt": "2026-08-28T00:17:11.583Z",
               "postType": "regular",
