@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-29T15:16:34.278Z",
+  "lastUpdated": "2026-08-29T15:46:46.173Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -2696,37 +2696,6 @@
       "serviceName": "Microsoft Teams",
       "affectedServices": [
         "Microsoft Teams"
-      ]
-    },
-    {
-      "id": "PB1443105",
-      "title": "Some users may be unable to access Plan artifacts and PowerTable sheets within shared reports in Microsoft Fabric",
-      "startTime": "2026-07-30T14:42:45.57Z",
-      "endTime": "2026-07-30T15:37:03.66Z",
-      "lastModified": "2026-07-30T15:39:33.853Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users may have been unable to access Plan artifacts and PowerTable sheets within shared reports in Microsoft Fabric.",
-      "scopeOfImpact": "Some users attempting to access Plan artifacts and PowerTable sheets within shared reports in Microsoft Fabric were impacted.\r\n\r\nStart time: Thursday, July 23, 2026, at 12:00 PM UTC\r\n\r\nEnd time: Thursday, July 30, 2026, at 2:43 PM UTC",
-      "rootCause": "A recently deployed feature update meant to introduce connection validations may have prevented some users from accessing Plan artifacts and PowerTable sheets within shared reports in Microsoft Fabric.\r\n\r\nNext steps: - We're reviewing and improving our feature update validation procedure to detect and prevent similar issues before they cause impact in the future.\r\n\r\nThis is the final update for this event.",
-      "nextUpdateBy": "",
-      "feature": "General",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-07-30T15:39:30.657Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to access Plan artifacts and PowerTable sheets within shared reports in Microsoft Fabric\r\n\r\nUser impact: Users may have been unable to access Plan artifacts and PowerTable sheets within shared reports in Microsoft Fabric.\r\n\r\nFinal status: We've determined that a recently deployed feature update meant to introduce connection validations may have prevented some users from accessing Plan artifacts and PowerTable sheets within shared reports in Microsoft Fabric. We've disabled this feature update and confirmed using our internal telemetry data that impact is remediated.\r\n\r\nScope of impact: Some users attempting to access Plan artifacts and PowerTable sheets within shared reports in Microsoft Fabric were impacted.\r\n\r\nStart time: Thursday, July 23, 2026, at 12:00 PM UTC\r\n\r\nEnd time: Thursday, July 30, 2026, at 2:43 PM UTC\r\n\r\nRoot cause: A recently deployed feature update meant to introduce connection validations may have prevented some users from accessing Plan artifacts and PowerTable sheets within shared reports in Microsoft Fabric.\r\n\r\nNext steps: - We're reviewing and improving our feature update validation procedure to detect and prevent similar issues before they cause impact in the future.\r\n\r\nThis is the final update for this event."
-        },
-        {
-          "createdAt": "2026-07-30T14:55:38.49Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to access Plan artifacts in Microsoft Fabric\n\n\r\n\r\nUser impact: Users may have been unable to access Plan artifacts in Microsoft Fabric.\n\n\r\n\r\nCurrent status: We've investigated a problem with Microsoft Fabric in which users may have been unable to access Plan artifacts, and we’ve confirmed that service is now restored. We'll provide additional information in a closure summary within the “History” section of the “Service health” dashboard shortly."
-        }
-      ],
-      "serviceName": "Power BI",
-      "affectedServices": [
-        "Power BI"
       ]
     }
   ]
