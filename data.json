@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-28T23:40:56.288Z",
+  "lastUpdated": "2026-08-29T00:11:07.123Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -2794,52 +2794,6 @@
       "serviceName": "Microsoft 365 Copilot Chat",
       "affectedServices": [
         "Microsoft 365 Copilot Chat"
-      ]
-    },
-    {
-      "id": "SP1393483",
-      "title": "Admins may have been unable to see the configuration search schema mappings in SharePoint Online",
-      "startTime": "2026-06-08T03:50:00Z",
-      "endTime": "2026-07-29T23:58:00Z",
-      "lastModified": "2026-07-31T08:21:00.14Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Admins may have been unable to see the configuration search schema mappings in SharePoint Online.",
-      "scopeOfImpact": "This issue may have affected any admin attempting to configure search schema mappings in SharePoint Online.\r\n\r\nStart time: Monday, June 8, 2026, at 3:50 AM UTC\r\n\r\nEnd time: Wednesday, July 29, 2026, at 11:58 PM UTC",
-      "rootCause": "A recent migration introduced a configuration issue, resulting in a regression that was causing impact.\r\n\r\nNext steps: \n- We're reviewing our migration procedures to help prevent similar problems in the future.\r\n\r\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Tenant Admin - General",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-07-31T08:20:47.193Z",
-          "postType": "regular",
-          "content": "Title: Admins may have been unable to see the configuration search schema mappings in SharePoint Online\r\n\r\nUser impact: Admins may have been unable to see the configuration search schema mappings in SharePoint Online.\r\n\r\nMore info: As a workaround, administrators may have been able to refresh the affected SharePoint Online search configuration settings by opening them, making any small update, and saving them again. This triggered the configuration settings to be rewritten and may have provided immediate relief whilst we developed a long-term fix. \r\n\r\nFinal status: We've confirmed that the deployment and backfill activities have completed successfully, and service monitoring indicates that the impact has been remediated.\r\n\r\nScope of impact: This issue may have affected any admin attempting to configure search schema mappings in SharePoint Online.\r\n\r\nStart time: Monday, June 8, 2026, at 3:50 AM UTC\r\n\r\nEnd time: Wednesday, July 29, 2026, at 11:58 PM UTC\r\n\r\nRoot cause: A recent migration introduced a configuration issue, resulting in a regression that was causing impact.\r\n\r\nNext steps: \n- We're reviewing our migration procedures to help prevent similar problems in the future.\r\n\r\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-07-16T07:05:28.217Z",
-          "postType": "regular",
-          "content": "Title: Admins may be unable to see the configuration search schema mappings in SharePoint Online\r\n\r\nUser impact: Admins may be unable to see the configuration search schema mappings in SharePoint Online.\r\n\r\nMore info: As a workaround, administrators may be able to refresh the affected SharePoint Online search configuration settings by opening them, making any small update, and saving them again. This can trigger the configuration settings to be rewritten and may provide immediate relief while we develop a long-term fix. \r\n\r\nCurrent status: We've determined that additional time is required to complete deployment of the remediation worldwide. Supporting code has been deployed to most affected environments, and we're preparing to initiate a backfill process to apply the necessary updates to existing data. We're expecting the backfill process to take an additional one to two weeks to complete and will provide further updates as progress continues.\r\n\r\nScope of impact: This issue may affect any admin attempting to configure search schema mappings in SharePoint Online. This section may be updated as our investigation proceeds.\r\n\r\nStart time: Monday, June 8, 2026, at 3:50 AM UTC\r\n\r\nRoot cause: A recent migration introduced a configuration issue, resulting in a regression that is causing impact.\r\n\r\nNext update by: Friday, July 31, 2026, at 10:00 AM UTC"
-        },
-        {
-          "createdAt": "2026-07-06T08:36:36.63Z",
-          "postType": "regular",
-          "content": "Title: Admins may be unable to see the configuration search schema mappings in SharePoint Online\r\n\r\nUser impact: Admins may be unable to see the configuration search schema mappings in SharePoint Online.\r\n\r\nMore info: As a workaround, administrators may be able to refresh the affected SharePoint Online search configuration settings by opening them, making any small update, and saving them again. This can trigger the configuration settings to be rewritten and may provide immediate relief while we develop a long-term fix. \r\n\r\nCurrent status: We've updated the affected index settings and are preparing to deploy a long-term fix worldwide. The deployment is expected to begin later this week, and based on our assessment of the affected settings, we expect the remaining impact to be resolved within approximately one week of rollout completion. We're monitoring deployment progress and will provide an update as more information becomes available.\r\n\r\nScope of impact: This issue may affect any admin attempting to configure search schema mappings in SharePoint Online. This section may be updated as our investigation proceeds.\r\n\r\nStart time: Monday, June 8, 2026, at 3:50 AM UTC\r\n\r\nRoot cause: A recent migration introduced a configuration issue, resulting in a regression that is causing impact.\r\n\r\nNext update by: Thursday, July 16, 2026, at 10:00 AM UTC"
-        },
-        {
-          "createdAt": "2026-06-22T09:18:10.04Z",
-          "postType": "regular",
-          "content": "Title: Admins may be unable to see the configuration search schema mappings in SharePoint Online\r\n\r\nUser impact: Admins may be unable to see the configuration search schema mappings in SharePoint Online.\r\n\r\nMore info: As a workaround, administrators may be able to refresh the affected SharePoint Online search configuration settings by opening them, making any small update, and saving them again. This can trigger the configuration settings to be rewritten and may provide immediate relief while we develop a long-term fix. \r\n\r\nCurrent status: We've determined that a recent migration introduced a configuration issue, resulting in a regression that is causing impact. As part of our mitigation efforts, we've reverted traffic to the previous pathway and are working with your representatives to implement the workaround steps detailed in the More info section, which can provide immediate relief. Meanwhile, we're continuing to develop and validate a long-term fix.\r\n\r\nScope of impact: This issue may affect any admin attempting to configure search schema mappings in SharePoint Online. This section may be updated as our investigation proceeds.\r\n\r\nStart time: Monday, June 8, 2026, at 3:50 AM UTC\r\n\r\nRoot cause: A recent migration introduced a configuration issue, resulting in a regression that is causing impact.\r\n\r\nNext update by: Monday, July 6, 2026, at 10:00 AM UTC"
-        },
-        {
-          "createdAt": "2026-06-19T09:51:54.683Z",
-          "postType": "regular",
-          "content": "Title: Admins may be unable to see the configuration search schema mappings in SharePoint Online\r\n\r\nUser impact: Admins may be unable to see the configuration search schema mappings in SharePoint Online.\r\n\r\nCurrent status: We're continuing to debug service code to help identify why the configuration search schema mappings in SharePoint Online are not being returned as expected for admins. These mapping and managed properties are working as expected in data ingestion and query.\r\n\r\nScope of impact: This issue may affect any admin attempting to configure search schema mappings in SharePoint Online. This section may be updated as our investigation proceeds.\r\n\r\nNext update by: Monday, June 22, 2026, at 10:00 AM UTC"
-        }
-      ],
-      "serviceName": "SharePoint Online",
-      "affectedServices": [
-        "SharePoint Online"
       ]
     }
   ]
