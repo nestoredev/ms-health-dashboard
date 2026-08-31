@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-31T14:03:39.833Z",
+  "lastUpdated": "2026-08-31T14:33:51.619Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -384,9 +384,45 @@
     },
     {
       "service": "Microsoft Intune",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "Intune",
-      "issues": []
+      "issues": [
+        {
+          "id": "IT1464731",
+          "title": "Some admins may be unable to view device information in the Microsoft Intune admin center",
+          "startTime": "2026-08-31T09:09:53.29Z",
+          "endTime": null,
+          "lastModified": "2026-08-31T14:04:06.807Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Admins may be unable to view device information in the Microsoft Intune admin center.",
+          "scopeOfImpact": "Impact is specific to some admins attempting to view device inventory and reporting information in the Microsoft Intune admin center. This section may be updated as the investigation continues.",
+          "rootCause": "A portion of the reporting infrastructure referenced an outdated data source, resulting in device information not displaying as expected in affected reports.",
+          "nextUpdateBy": "Monday, August 31, 2026, at 3:30 PM UTC",
+          "feature": "Microsoft Intune",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-08-31T13:18:37.773Z",
+              "postType": "regular",
+              "content": "Title: Some admins may be unable to view device information in the Microsoft Intune admin center\r\n\r\nUser impact: Admins may be unable to view device information in the Microsoft Intune admin center.\r\n\r\nCurrent status: We've identified that the reporting infrastructure was referencing outdated data, causing device information to not display as expected in affected reports. Administrators with limited administrative privileges may not see expected devices, while some data may be missing for global administrators. We're validating a fix through manual mitigation efforts before deploying it to the impacted environment.\r\n\r\nScope of impact: Impact is specific to some admins attempting to view device inventory and reporting information in the Microsoft Intune admin center. This section may be updated as the investigation continues.\r\n\r\nRoot cause: A portion of the reporting infrastructure referenced an outdated data source, resulting in device information not displaying as expected in affected reports.\r\n\r\nNext update by: Monday, August 31, 2026, at 3:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-08-31T10:47:51.533Z",
+              "postType": "regular",
+              "content": "Title: Some admins may be unable to view device information in the Microsoft Intune admin center\r\n\r\nUser impact: Admins may be unable to view device information in the Microsoft Intune admin center.\r\n\r\nCurrent status: We've identified that device data remains available within the service; however, some device information isn't being displayed as expected in reporting views after devices check in. We're continuing our investigation by analyzing reporting telemetry and data processing behavior to determine why certain device attributes aren't being populated correctly and to develop a remediation plan.\r\n\r\nScope of impact: Impact is specific to some admins attempting to view device inventory and reporting information in the Microsoft Intune admin center. This section may be updated as the investigation continues.\r\n\r\nNext update by: Monday, August 31, 2026, at 1:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-08-31T09:52:07.707Z",
+              "postType": "regular",
+              "content": "Title: Some admins may be unable to view device information in the Microsoft Intune admin center\r\n\r\nUser impact: Admins may be unable to view device information in the Microsoft Intune admin center.\r\n\r\nCurrent status: We've identified a reporting issue affecting some admins in the Asia Pacific and Australia regions. Affected admins may not see expected device information in device inventory lists and dashboards. We're reviewing telemetry and service data from the affected environments to determine the source of impact.\r\n\r\nScope of impact: Impact is specific to some admins in the Asia Pacific and Australia regions attempting to view device inventory and reporting information in the Microsoft Intune admin center. This section may be updated as the investigation continues.\r\n\r\nNext update by: Monday, August 31, 2026, at 11:30 AM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Intune"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft OneDrive",
