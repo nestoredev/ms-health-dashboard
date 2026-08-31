@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-31T16:04:30.883Z",
+  "lastUpdated": "2026-08-31T16:34:41.527Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -123,19 +123,24 @@
         },
         {
           "id": "EX1464935",
-          "title": "Investigating user reports of Exchange Online issues",
+          "title": "Users may be unable to connect to, or experience degraded functionality with Exchange Online",
           "startTime": "2026-08-31T15:53:22Z",
           "endTime": null,
-          "lastModified": "2026-08-31T15:55:30.413Z",
+          "lastModified": "2026-08-31T16:16:11.56Z",
           "status": "investigating",
           "severity": "incident",
-          "userImpact": "We don't have details on impact yet. We're seeing an increase in user reported issues above our alerting threshold.",
-          "scopeOfImpact": "",
+          "userImpact": "Users may be unable to connect to, or experience degraded functionality with Exchange Online.",
+          "scopeOfImpact": "This issue may impact users attempting to send or receive email messages through Exchange Online. We're continuing our investigation to determine the full scope of affected scenarios and will provide additional information as it becomes available.",
           "rootCause": "",
-          "nextUpdateBy": "",
+          "nextUpdateBy": "Monday, August 31, 2026, at 5:30 PM UTC",
           "feature": "All clients",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-31T16:16:11.56Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to connect to, or experience degraded functionality with Exchange Online\n\nUser impact: Users may be unable to connect to, or experience degraded functionality with Exchange Online.\n\nMore info: More info: Users may experience a variety of symptoms related to this event, including but not limited to:\nDelays or failures when sending or receiving email messages.\nAuthentication-related errors when accessing Exchange Online services.\nDifficulties accessing or performing actions within Exchange administration experiences.\nIntermittent failures affecting mailbox operations and message delivery workflows.\n \nCurrent status: We're reviewing service telemetry and diagnostic data to isolate the source of the issue after receiving an increase in user-reported issues affecting Exchange Online. We'll keep refining the 'more info' section as additional impacts are identified.\n \nScope of impact: This issue may impact users attempting to send or receive email messages through Exchange Online. We're continuing our investigation to determine the full scope of affected scenarios and will provide additional information as it becomes available.\n \nNext update by: Monday, August 31, 2026, at 5:30 PM UTC"
+            },
             {
               "createdAt": "2026-08-31T15:55:01.83Z",
               "postType": "regular",
