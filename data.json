@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-31T18:05:20.631Z",
+  "lastUpdated": "2026-08-31T18:35:33.548Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -126,20 +126,20 @@
           "title": "Users may be unable to connect to, or experience degraded functionality with Exchange Online",
           "startTime": "2026-08-31T15:53:22Z",
           "endTime": null,
-          "lastModified": "2026-08-31T17:46:38.41Z",
+          "lastModified": "2026-08-31T18:18:57.963Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to connect to, or experience degraded functionality with Exchange Online.",
           "scopeOfImpact": "",
           "rootCause": "",
-          "nextUpdateBy": "Monday, August 31, 2026, at 6:30 PM UTC",
+          "nextUpdateBy": "",
           "feature": "All clients",
           "isResolved": false,
           "posts": [
             {
-              "createdAt": "2026-08-31T17:40:42.42Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to connect to, or experience degraded functionality with Exchange Online\n\nUser impact: Users may be unable to connect to, or experience degraded functionality with Exchange Online.\n\nWe've identified issues related to a core authentication configuration used by multiple internal services within the Exchange Online infrastructure. We're performing a manual test on the individual server level to reset to configurations to validate if this resolves the issue.\n\nThis update is designed to give additional details on our remediation effort.\n \nNext update by: Monday, August 31, 2026, at 6:30 PM UTC"
+              "createdAt": "2026-08-31T18:18:57.963Z",
+              "postType": "quick",
+              "content": "We're continuing to test our remediation strategy and in parallel we're working to confirm whether other services are impacted so we can expand our communications accordingly.\n\nThis quick update is designed to give the latest information on this issue."
             },
             {
               "createdAt": "2026-08-31T17:23:38.197Z",
@@ -284,6 +284,31 @@
           ]
         },
         {
+          "id": "MO1465074",
+          "title": "Users may experience issues when utilizing multiple Microsoft 365 services",
+          "startTime": "2026-08-31T18:22:40Z",
+          "endTime": null,
+          "lastModified": "2026-08-31T18:27:54.39Z",
+          "status": "serviceDegradation",
+          "severity": "incident",
+          "userImpact": "Users may experience issues when utilizing multiple Microsoft 365 services.",
+          "scopeOfImpact": "Users attempting to perform any of the outlined impact scenarios may be affected by this event.",
+          "rootCause": "An issue within a core authentication configuration used by multiple Microsoft 365 services is resulting in impact.",
+          "nextUpdateBy": "Monday, August 31, 2026, at 6:30 PM UTC",
+          "feature": "Company or User Administration",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-08-31T18:25:35.45Z",
+              "postType": "regular",
+              "content": "Title: Users may experience issues when utilizing multiple Microsoft 365 services\n\nUser impact: Users may experience issues when utilizing multiple Microsoft 365 services. \n\nMore info: Impact includes, but may not be limited to, the below services and scenarios. We will update this list as our understanding of the issue progresses.\n \nOneDrive for Business and SharePoint Online:\n-Users may be unable to load or refresh portions of OneDrive and SharePoint, including account and storage information, search results, Favorites, Followed and Shared With Me content, recent files, lists, and news.\nSome users may also experience delayed or failed file opening, Office policy-label retrieval, OneDrive synchronization, mobile camera upload, and video playback.\nUsers may see partial page failures, missing or stale content, repeated retries, and operation timeouts rather than a complete platform outage.      \n \nExchange Online:\n-Users may be unable to connect to, or experience degraded functionality, with Exchange Online. All connection methods are affected.\n \nMicrosoft Teams:\n-Users may experience issues with calendar functionality and search.\n \nMicrosoft Purview:\n-Users may face intermittent authorization failures across solutions in Purview. Purview admins can’t access the portal.\nAdditionally, in Microsoft Purview Communication Compliance, users may see errors when loading Communication Compliance policies and Data Loss Prevention (DLP) policies. Communication Compliance policy creation and evaluation may be delayed.\n \nMicrosoft Defender XDR:\n-Users may experience intermittent authorization failures across solutions in Defender.\n\nCurrent status: We've identified issues related to a core authentication configuration used by multiple Microsoft 365 services which is resulting in the impact outlined above. We've identified a potential remediation and we're performing tests to ensure its efficacy before applying it more broadly.\n \nScope of impact: Users attempting to perform any of the outlined impact scenarios may be affected by this event.\n \nNext update by: Monday, August 31, 2026, at 6:30 PM UTC\n \nPreliminary root cause: An issue within a core authentication configuration used by multiple Microsoft 365 services is resulting in impact.\n \nNext update by: Monday, August 31, 2026, at 7:30 PM UTC\n\n"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite"
+          ]
+        },
+        {
           "id": "MO1447619",
           "title": "Users may have been unable to sign into the OneNote Web Clipper",
           "startTime": "2026-07-24T08:06:00Z",
@@ -352,9 +377,50 @@
     },
     {
       "service": "SharePoint Online",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "SharePoint",
-      "issues": []
+      "issues": [
+        {
+          "id": "SP1464785",
+          "title": "Some users may be unable to access SharePoint Online sites configured with Authentication Context",
+          "startTime": "2026-08-28T00:00:00Z",
+          "endTime": null,
+          "lastModified": "2026-08-31T18:09:45.543Z",
+          "status": "serviceDegradation",
+          "severity": "incident",
+          "userImpact": "Users may be unable to access SharePoint Online sites configured with Authentication Context.",
+          "scopeOfImpact": "Some users attempting to access SharePoint Online sites configured with Authentication Context through sensitivity labels may be impacted.\r\n\r\nStart time: Friday, August 28, 2026, at 12:00 AM UTC",
+          "rootCause": "",
+          "nextUpdateBy": "Monday, August 31, 2026, at 8:00 PM UTC",
+          "feature": "Access Services",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-08-31T18:05:46.6Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to access SharePoint Online sites configured with Authentication Context\r\n\r\nUser impact: Users may be unable to access SharePoint Online sites configured with Authentication Context.\r\n\r\nMore info: Specifically, users are unable to access SharePoint Online sites configured with Authentication Context through sensitivity labels.\n\nUsers receive the following error message:\n \n\"Server Error in '/' Application.\"\n\nAs a workaround, users may be able to temporarily access the affected content by first clearing internet browser cookies and navigating to the root site collection before opening the direct link. Users could also open a new browser tab on the same session and access the site. The link may work as well.\r\n\r\nCurrent status: Our investigation of the Authentication Context configuration is ongoing as we work to confirm the source of the impact before we can begin to develop a mitigation strategy.\r\n\r\nScope of impact: Some users attempting to access SharePoint Online sites configured with Authentication Context through sensitivity labels may be impacted.\r\n\r\nStart time: Friday, August 28, 2026, at 12:00 AM UTC\r\n\r\nNext update by: Monday, August 31, 2026, at 8:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-08-31T16:11:52.877Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to access SharePoint Online sites configured with Authentication Context\r\n\r\nUser impact: Users may be unable to access SharePoint Online sites configured with Authentication Context.\r\n\r\nMore info: Specifically, users are unable to access SharePoint Online sites configured with Authentication Context through sensitivity labels.\n\nUsers receive the following error message:\n \n\"Server Error in '/' Application.\"\n\nAs a workaround, users may be able to temporarily access the affected content by first clearing internet browser cookies and navigating to the root site collection before opening the direct link. Users could also open a new browser tab on the same session and access the site. The link may work as well.\r\n\r\nCurrent status: In addition to our HAR analysis, we're further reviewing the Authentication Context configuration to understand whether this is where the impact originates.\r\n\r\nScope of impact: Some users attempting to access SharePoint Online sites configured with Authentication Context through sensitivity labels may be impacted.\r\n\r\nStart time: Friday, August 28, 2026, at 12:00 AM UTC\r\n\r\nNext update by: Monday, August 31, 2026, at 6:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-08-31T13:56:25.49Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to access SharePoint Online sites configured with Authentication Context\r\n\r\nUser impact: Users may be unable to access SharePoint Online sites configured with Authentication Context.\r\n\r\nMore info: Specifically, users are unable to access SharePoint Online sites configured with Authentication Context through sensitivity labels.\r\n\r\nCurrent status: We're reviewing HAR files that compare successful access requests initiated through the root site collection with failing direct-link requests to determine why the behavior differs and identify next steps to mitigate impact.\r\n\r\nScope of impact: Some users attempting to access SharePoint Online sites configured with Authentication Context through sensitivity labels may be impacted.\r\n\r\nStart time: Friday, August 28, 2026, at 12:00 AM UTC\r\n\r\nNext update by: Monday, August 31, 2026, at 4:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-08-31T12:36:00.857Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to access SharePoint Online sites configured with Authentication Context\r\n\r\nUser impact: Users may be unable to access SharePoint Online sites configured with Authentication Context.\r\n\r\nMore info: Specifically, users are unable to access SharePoint Online sites configured with Authentication Context through sensitivity labels.\r\n\r\nCurrent status: We've reproduced the issue in our testing environment and are reviewing HTTP Archive (HAR) logs to determine why direct links fail when Authentication Context is enabled through sensitivity labels.\r\n\r\nScope of impact: Some users attempting to access SharePoint Online sites configured with Authentication Context through sensitivity labels may be impacted.\r\n\r\nNext update by: Monday, August 31, 2026, at 2:30 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "SharePoint Online"
+          ]
+        }
+      ]
     },
     {
       "service": "Dynamics 365 Apps",
@@ -442,16 +508,21 @@
           "title": "Some admins may be unable to view device information in the Microsoft Intune admin center",
           "startTime": "2026-08-31T09:09:53.29Z",
           "endTime": null,
-          "lastModified": "2026-08-31T17:29:32.533Z",
+          "lastModified": "2026-08-31T18:14:58.877Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may be unable to view device information in the Microsoft Intune admin center.",
           "scopeOfImpact": "Impact is specific to some admins attempting to view device inventory and reporting information in the Microsoft Intune admin center. This section may be updated as the investigation continues.",
           "rootCause": "A portion of the reporting infrastructure referenced an outdated data source, resulting in device information not displaying as expected in affected reports.",
-          "nextUpdateBy": "Monday, August 31, 2026, at 7:30 PM UTC",
+          "nextUpdateBy": "Tuesday, September 1, 2026, at 8:00 AM UTC",
           "feature": "Microsoft Intune",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-31T18:14:58.877Z",
+              "postType": "regular",
+              "content": "Title: Some admins may be unable to view device information in the Microsoft Intune admin center\r\n\r\nUser impact: Admins may be unable to view device information in the Microsoft Intune admin center.\r\n\r\nCurrent status: The fix is progressing as expected, and we expect it to complete and remediate impact by the next scheduled update. \r\n\r\nScope of impact: Impact is specific to some admins attempting to view device inventory and reporting information in the Microsoft Intune admin center. This section may be updated as the investigation continues.\r\n\r\nRoot cause: A portion of the reporting infrastructure referenced an outdated data source, resulting in device information not displaying as expected in affected reports.\r\n\r\nNext update by: Tuesday, September 1, 2026, at 8:00 AM UTC"
+            },
             {
               "createdAt": "2026-08-31T17:29:32.533Z",
               "postType": "regular",
