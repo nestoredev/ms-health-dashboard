@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-31T15:04:03.159Z",
+  "lastUpdated": "2026-08-31T15:34:20.143Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -392,16 +392,21 @@
           "title": "Some admins may be unable to view device information in the Microsoft Intune admin center",
           "startTime": "2026-08-31T09:09:53.29Z",
           "endTime": null,
-          "lastModified": "2026-08-31T14:04:06.807Z",
+          "lastModified": "2026-08-31T15:22:12.93Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may be unable to view device information in the Microsoft Intune admin center.",
           "scopeOfImpact": "Impact is specific to some admins attempting to view device inventory and reporting information in the Microsoft Intune admin center. This section may be updated as the investigation continues.",
           "rootCause": "A portion of the reporting infrastructure referenced an outdated data source, resulting in device information not displaying as expected in affected reports.",
-          "nextUpdateBy": "Monday, August 31, 2026, at 3:30 PM UTC",
+          "nextUpdateBy": "Monday, August 31, 2026, at 5:30 PM UTC",
           "feature": "Microsoft Intune",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-31T15:22:12.93Z",
+              "postType": "regular",
+              "content": "Title: Some admins may be unable to view device information in the Microsoft Intune admin center\r\n\r\nUser impact: Admins may be unable to view device information in the Microsoft Intune admin center.\r\n\r\nCurrent status: We've completed the internal validation of a fix and are working to apply the mitigation more broadly. \r\n\r\nScope of impact: Impact is specific to some admins attempting to view device inventory and reporting information in the Microsoft Intune admin center. This section may be updated as the investigation continues.\r\n\r\nRoot cause: A portion of the reporting infrastructure referenced an outdated data source, resulting in device information not displaying as expected in affected reports.\r\n\r\nNext update by: Monday, August 31, 2026, at 5:30 PM UTC"
+            },
             {
               "createdAt": "2026-08-31T13:18:37.773Z",
               "postType": "regular",
