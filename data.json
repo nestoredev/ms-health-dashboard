@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-31T16:34:41.527Z",
+  "lastUpdated": "2026-08-31T17:04:52.064Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -126,16 +126,21 @@
           "title": "Users may be unable to connect to, or experience degraded functionality with Exchange Online",
           "startTime": "2026-08-31T15:53:22Z",
           "endTime": null,
-          "lastModified": "2026-08-31T16:16:11.56Z",
-          "status": "investigating",
+          "lastModified": "2026-08-31T16:51:25.11Z",
+          "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to connect to, or experience degraded functionality with Exchange Online.",
-          "scopeOfImpact": "This issue may impact users attempting to send or receive email messages through Exchange Online. We're continuing our investigation to determine the full scope of affected scenarios and will provide additional information as it becomes available.",
+          "scopeOfImpact": "",
           "rootCause": "",
           "nextUpdateBy": "Monday, August 31, 2026, at 5:30 PM UTC",
           "feature": "All clients",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-31T16:33:59.277Z",
+              "postType": "quick",
+              "content": "We’ve isolated a common failure pattern across affected Exchange Online requests that is associated with authentication and protocol connectivity. We're analyzing service telemetry to identify the underlying source of impact and validate potential remediation options. Additionally, we’re continuing to assess the scope of impact and monitor for additional affected scenarios.\n\nThis quick update is designed to give the latest information on this issue.\n\nNext update by: Monday, August 31, 2026, at 5:30 PM UTC"
+            },
             {
               "createdAt": "2026-08-31T16:16:11.56Z",
               "postType": "regular",
