@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-31T06:00:31.755Z",
+  "lastUpdated": "2026-08-31T06:30:42.794Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -374,6 +374,31 @@
               "createdAt": "2026-08-25T13:21:03.51Z",
               "postType": "regular",
               "content": "Title: Some Workspace Admins see outdated/incomplete information in workspace settings of Power BI or Microsoft Fabric services\r\n\r\nUser impact: Workspace Admins see outdated/incomplete information in workspace settings of Power BI or Microsoft Fabric services.\r\n\r\nMore info: Workspace Admins may see outdated or incomplete information when viewing workspace settings, including Capacity Details, Domain settings, Contacts, OneDrive settings, and Semantic Model Storage Format. Configuration changes continue to be applied successfully; however, updated values may not be reflected in workspace settings after changes are saved or the page is refreshed.\r\n\r\nCurrent status: We're reviewing service monitoring telemetry to isolate the source of the issue and establish a fix.\r\n\r\nScope of impact: Impact is specific to some admins attempting to view the current state of workspace settings in the Power BI or Microsoft Fabric service.\r\n\r\nNext update by: Tuesday, August 25, 2026, at 3:30 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Power BI"
+          ]
+        },
+        {
+          "id": "PB1464659",
+          "title": "Some users may be unable to access the Power BI Data Agent or Microsoft Fabric Environment extensions",
+          "startTime": "2026-08-31T06:08:21.12Z",
+          "endTime": null,
+          "lastModified": "2026-08-31T06:22:30.073Z",
+          "status": "investigating",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to access the Power BI Data Agent or Microsoft Fabric Environment extensions.",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
+          "feature": "General",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-08-31T06:22:30.073Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to access the Power BI Data Agent or Microsoft Fabric Environment extensions\r\n\r\nUser impact: Users may be unable to access the Power BI Data Agent or Microsoft Fabric Environment extensions.\r\n\r\nMore info: Additionally, impacted users may see blank reports rendering.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Fabric and Power BI and checking for impact to your organization. We'll provide an update within 30 minutes."
             }
           ],
           "affectedServices": [
