@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-31T17:35:03.119Z",
+  "lastUpdated": "2026-08-31T18:05:20.631Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -126,20 +126,25 @@
           "title": "Users may be unable to connect to, or experience degraded functionality with Exchange Online",
           "startTime": "2026-08-31T15:53:22Z",
           "endTime": null,
-          "lastModified": "2026-08-31T17:23:38.197Z",
+          "lastModified": "2026-08-31T17:46:38.41Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to connect to, or experience degraded functionality with Exchange Online.",
-          "scopeOfImpact": "This issue may impact users attempting to send or receive email messages through Exchange Online. We're continuing our investigation to determine the full scope of affected scenarios and will provide additional information as it becomes available.",
+          "scopeOfImpact": "",
           "rootCause": "",
           "nextUpdateBy": "Monday, August 31, 2026, at 6:30 PM UTC",
           "feature": "All clients",
           "isResolved": false,
           "posts": [
             {
+              "createdAt": "2026-08-31T17:40:42.42Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to connect to, or experience degraded functionality with Exchange Online\n\nUser impact: Users may be unable to connect to, or experience degraded functionality with Exchange Online.\n\nWe've identified issues related to a core authentication configuration used by multiple internal services within the Exchange Online infrastructure. We're performing a manual test on the individual server level to reset to configurations to validate if this resolves the issue.\n\nThis update is designed to give additional details on our remediation effort.\n \nNext update by: Monday, August 31, 2026, at 6:30 PM UTC"
+            },
+            {
               "createdAt": "2026-08-31T17:23:38.197Z",
               "postType": "regular",
-              "content": "Title: Users may be unable to connect to, or experience degraded functionality with Exchange Online\n\nUser impact: Users may be unable to connect to, or experience degraded functionality with Exchange Online.\n\nMore info: Users may experience a variety of symptoms related to this event, including but not limited to:\n- Delays, failures, or incomplete results when searching for content within Exchange Online mailboxes.\n- Delays or failures when sending or receiving email messages.\n- Authentication-related errors when accessing Exchange Online services.\n- Difficulties accessing or performing actions within Exchange administration experiences.\n- Intermittent failures affecting mailbox operations and message delivery workflows.\n \nCurrent status: We've identified a potential corrective action for the affected infrastructure and are evaluating deployment options. We're monitoring service telemetry and affected Exchange Online transactions to determine whether the action is reducing impact and to better understand the scope of affected scenarios.\n \nScope of impact: This issue may impact users attempting to send or receive email messages through Exchange Online. We're continuing our investigation to determine the full scope of affected scenarios and will provide additional information as it becomes available.\n \nNext update by: Monday, August 31, 2026, at 6:30 PM UTC"
+              "content": "Title: Users may be unable to connect to, or experience degraded functionality with Exchange Online\n\nUser impact: Users may be unable to connect to, or experience degraded functionality with Exchange Online.\n\nMore info: Users may experience a variety of symptoms related to this event, including but not limited to:\n- Delays, failures, or incomplete results when searching for content within Exchange Online mailboxes.\n- Delays or failures when sending or receiving email messages.\n- Authentication-related errors when accessing Exchange Online services.\n- Difficulties accessing or performing actions within Exchange administration experiences.\n- Intermittent failures affecting mailbox operations and message delivery workflows.\n \nCurrent status: We've identified a potential corrective action for the affected infrastructure and are evaluating deployment options. We're monitoring service telemetry and affected Exchange Online transactions to determine whether the action is reducing impact and to better understand the scope of affected scenarios.\n \nScope of impact: This issue may impact users attempting to send or receive email messages through Exchange Online. We're continuing our investigation to determine the full scope of affected scenarios and will provide additional information as it becomes available.\n\nStart Time: Monday, August 31, 2026, at 3:08 PM UTC\n \nNext update by: Monday, August 31, 2026, at 6:30 PM UTC"
             },
             {
               "createdAt": "2026-08-31T16:33:59.277Z",
@@ -437,16 +442,21 @@
           "title": "Some admins may be unable to view device information in the Microsoft Intune admin center",
           "startTime": "2026-08-31T09:09:53.29Z",
           "endTime": null,
-          "lastModified": "2026-08-31T15:22:12.93Z",
+          "lastModified": "2026-08-31T17:29:32.533Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may be unable to view device information in the Microsoft Intune admin center.",
           "scopeOfImpact": "Impact is specific to some admins attempting to view device inventory and reporting information in the Microsoft Intune admin center. This section may be updated as the investigation continues.",
           "rootCause": "A portion of the reporting infrastructure referenced an outdated data source, resulting in device information not displaying as expected in affected reports.",
-          "nextUpdateBy": "Monday, August 31, 2026, at 5:30 PM UTC",
+          "nextUpdateBy": "Monday, August 31, 2026, at 7:30 PM UTC",
           "feature": "Microsoft Intune",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-31T17:29:32.533Z",
+              "postType": "regular",
+              "content": "Title: Some admins may be unable to view device information in the Microsoft Intune admin center\r\n\r\nUser impact: Admins may be unable to view device information in the Microsoft Intune admin center.\r\n\r\nCurrent status: We're initiating a staged roll out of the fix and will provide a remediation timeline once available. \r\n\r\nScope of impact: Impact is specific to some admins attempting to view device inventory and reporting information in the Microsoft Intune admin center. This section may be updated as the investigation continues.\r\n\r\nRoot cause: A portion of the reporting infrastructure referenced an outdated data source, resulting in device information not displaying as expected in affected reports.\r\n\r\nNext update by: Monday, August 31, 2026, at 7:30 PM UTC"
+            },
             {
               "createdAt": "2026-08-31T15:22:12.93Z",
               "postType": "regular",
