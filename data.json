@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-01T17:45:18.814Z",
+  "lastUpdated": "2026-09-01T18:15:29.979Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -136,16 +136,21 @@
           "title": "Users may be unable to connect to, or experience degraded functionality with Exchange Online",
           "startTime": "2026-08-31T15:08:00Z",
           "endTime": null,
-          "lastModified": "2026-09-01T16:59:48.223Z",
+          "lastModified": "2026-09-01T18:00:57.5Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to connect to, or experience degraded functionality with Exchange Online.",
-          "scopeOfImpact": "Users attempting to perform any of the outlined impact scenarios may be affected by this event.\n \nStart time: Monday, August 31, 2026, at 3:08 PM UTC",
+          "scopeOfImpact": "Users attempting to perform any of the outlined impact scenarios may be affected by this event.\r\n\r\nStart time: Monday, August 31, 2026, at 3:08 PM UTC",
           "rootCause": "An issue within a core authentication configuration used by multiple Microsoft 365 services is resulting in impact.",
-          "nextUpdateBy": "Tuesday, September 1, 2026, at 6:00 PM UTC",
+          "nextUpdateBy": "Tuesday, September 1, 2026, at 7:00 PM UTC",
           "feature": "All clients",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-01T18:00:57.5Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to connect to, or experience degraded functionality with Exchange Online\r\n\r\nUser impact: Users may be unable to connect to, or experience degraded functionality with Exchange Online.\r\n\r\nMore info: We've confirmed that the authentication component issue impacts other services beyond Exchange Online. For more information regarding other impact scenarios, please see: MO1465074. \n\nWe've opted to keep this post (EX1464935) open as Exchange Online remains the most predominantly impacted service.\n\nUsers may experience a variety of symptoms related to this event, including but not limited to:\n- Delays, failures, or incomplete results when searching for content within Exchange Online mailboxes.\n- Delays or failures when sending or receiving email messages.\n- Authentication-related errors when accessing Exchange Online services.\n- Difficulties accessing or performing actions within Exchange administration experiences.\n- Intermittent failures affecting mailbox operations and message delivery work\n- Delays or failures when sending or receiving email messages via Outlook for iOS and Android.\r\n\r\nCurrent status: We are carefully implementing corrective actions while maintaining enhanced monitoring to ensure services remain stable as recovery progresses.\r\n\r\nScope of impact: Users attempting to perform any of the outlined impact scenarios may be affected by this event.\r\n\r\nStart time: Monday, August 31, 2026, at 3:08 PM UTC\r\n\r\nRoot cause: An issue within a core authentication configuration used by multiple Microsoft 365 services is resulting in impact.\r\n\r\nNext update by: Tuesday, September 1, 2026, at 7:00 PM UTC"
+            },
             {
               "createdAt": "2026-09-01T16:59:48.223Z",
               "postType": "regular",
@@ -441,16 +446,21 @@
           "title": "Users may experience issues when utilizing multiple Microsoft 365 services",
           "startTime": "2026-08-31T15:08:00Z",
           "endTime": null,
-          "lastModified": "2026-09-01T16:58:26.397Z",
+          "lastModified": "2026-09-01T18:01:13.203Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may experience issues when utilizing multiple Microsoft 365 services.",
-          "scopeOfImpact": "Users attempting to perform any of the outlined impact scenarios may be affected by this event.\n \nStart time: Monday, August 31, 2026, at 3:08 PM UTC",
+          "scopeOfImpact": "Users attempting to perform any of the outlined impact scenarios may be affected by this event.\r\n\r\nStart time: Monday, August 31, 2026, at 3:08 PM UTC",
           "rootCause": "An issue within a core authentication configuration used by multiple Microsoft 365 services is resulting in impact.",
-          "nextUpdateBy": "Tuesday, September 1, 2026, at 6:00 PM UTC",
+          "nextUpdateBy": "Tuesday, September 1, 2026, at 7:00 PM UTC",
           "feature": "Company or User Administration",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-01T18:01:13.203Z",
+              "postType": "regular",
+              "content": "Title: Users may experience issues when utilizing multiple Microsoft 365 services\r\n\r\nUser impact: Users may experience issues when utilizing multiple Microsoft 365 services.\r\n\r\nMore info: Impact includes, but may not be limited to, the below services and scenarios. We will update this list as our understanding of the issue progresses.\n\nMicrosoft 365 Copilot: \n- Users' Copilot prompts that require Microsoft 365 grounding, such as email content, may fail.\n- Users may experience failures for scenarios that rely on access to Exchange Online data.\r\n\r\nCurrent status: We are carefully implementing corrective actions while maintaining enhanced monitoring to ensure services remain stable as recovery progresses.\r\n\r\nScope of impact: Users attempting to perform any of the outlined impact scenarios may be affected by this event.\r\n\r\nStart time: Monday, August 31, 2026, at 3:08 PM UTC\r\n\r\nRoot cause: An issue within a core authentication configuration used by multiple Microsoft 365 services is resulting in impact.\r\n\r\nNext update by: Tuesday, September 1, 2026, at 7:00 PM UTC"
+            },
             {
               "createdAt": "2026-09-01T16:58:26.397Z",
               "postType": "regular",
@@ -646,18 +656,23 @@
         {
           "id": "SP1464785",
           "title": "Some users may be unable to access SharePoint Online sites configured with Authentication Context",
-          "startTime": "2026-08-28T00:00:00Z",
+          "startTime": "2026-08-23T02:38:00Z",
           "endTime": null,
-          "lastModified": "2026-08-31T21:49:50.103Z",
+          "lastModified": "2026-09-01T18:05:23.687Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to access SharePoint Online sites configured with Authentication Context.",
-          "scopeOfImpact": "Some users attempting to access SharePoint Online sites configured with Authentication Context through sensitivity labels may be impacted.",
-          "rootCause": "",
-          "nextUpdateBy": "Tuesday, September 1, 2026, at 7:00 PM UTC",
+          "scopeOfImpact": "Some users attempting to access SharePoint Online sites configured with Authentication Context through sensitivity labels may be impacted.\r\n\r\nStart time: Sunday, August 23, 2026, at 2:38 AM UTC",
+          "rootCause": "A recent SharePoint Online code change intended to update authentication processing resulted in Authentication Context requests not being processed as expected, preventing some users from accessing affected sites.",
+          "nextUpdateBy": "Wednesday, September 2, 2026, at 7:00 PM UTC",
           "feature": "Access Services",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-01T18:04:34.06Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to access SharePoint Online sites configured with Authentication Context\r\n\r\nUser impact: Users may be unable to access SharePoint Online sites configured with Authentication Context.\r\n\r\nMore info: Specifically, users are unable to access SharePoint Online sites configured with Authentication Context through sensitivity labels.\n \nUsers receive the following error message:\n\"Server Error in '/' Application.\"\n \nAs a workaround, users may be able to temporarily access the affected content by first clearing internet browser cookies and navigating to the root site collection before opening the direct link. Users can also open a new browser tab on the same session and access the site. The link may work as well.\r\n\r\nCurrent status: We've identified that a recent SharePoint Online code change intended to update authentication processing resulted in Authentication Context requests not being processed as expected, preventing some users from accessing affected sites. We've developed a fix to revert the offending change and have initiated deployment to the affected environments. We're monitoring the deployment to ensure successful completion, and as the fix progresses, some users may experience impact relief. We'll provide a resolution timeline once available.\r\n\r\nScope of impact: Some users attempting to access SharePoint Online sites configured with Authentication Context through sensitivity labels may be impacted.\r\n\r\nStart time: Sunday, August 23, 2026, at 2:38 AM UTC\r\n\r\nRoot cause: A recent SharePoint Online code change intended to update authentication processing resulted in Authentication Context requests not being processed as expected, preventing some users from accessing affected sites.\r\n\r\nNext update by: Wednesday, September 2, 2026, at 7:00 PM UTC"
+            },
             {
               "createdAt": "2026-08-31T21:49:50.103Z",
               "postType": "regular",
@@ -1017,9 +1032,9 @@
         {
           "id": "TM1451939",
           "title": "Users' locations may not be accurate during iOS Microsoft Teams emergency calls",
-          "startTime": "2026-08-10T12:44:26.077Z",
+          "startTime": "2026-07-02T15:09:00Z",
           "endTime": null,
-          "lastModified": "2026-09-01T12:08:39.84Z",
+          "lastModified": "2026-09-01T18:07:12.487Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users' locations may not be accurate during iOS Microsoft Teams emergency calls.",
