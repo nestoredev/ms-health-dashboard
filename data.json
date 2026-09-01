@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-31T23:37:32.794Z",
+  "lastUpdated": "2026-09-01T00:07:43.638Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -126,16 +126,21 @@
           "title": "Users may be unable to connect to, or experience degraded functionality with Exchange Online",
           "startTime": "2026-08-31T15:08:00Z",
           "endTime": null,
-          "lastModified": "2026-08-31T22:58:27.447Z",
+          "lastModified": "2026-08-31T23:33:55.433Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to connect to, or experience degraded functionality with Exchange Online.",
-          "scopeOfImpact": "This issue may impact users attempting to send or receive email messages through Exchange Online. We're continuing our investigation to determine the full scope of affected scenarios and will provide additional information as it becomes available.\n\nStart time: Monday, August 31, 2026, at 3:08 PM UTC\n\nPreliminary",
-          "rootCause": "An issue within a core authentication configuration used by multiple Microsoft 365 services is resulting in impact.",
+          "scopeOfImpact": "",
+          "rootCause": "",
           "nextUpdateBy": "Tuesday, September 1, 2026, at 12:00 AM UTC",
           "feature": "All clients",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-31T23:33:55.433Z",
+              "postType": "quick",
+              "content": "We're expanding the aforementioned mitigation action more widely across the affected environments as we closely track the recovery of affected scenarios. Users should primarily begin to see gradual recovery to mail flow. Secondarily, and in parallel to the primary mitigation action previously described, we're restarting targeted sections of affected infrastructure to ensure the acceptance of the re-applied authentication components across affected services and aid the recovery of the downstream scenarios.\n\nThis quick update is designed to give the latest information on this issue.\n\nNext update by: Tuesday, September 1, 2026, at 12:00 AM UTC"
+            },
             {
               "createdAt": "2026-08-31T22:57:55.097Z",
               "postType": "regular",
@@ -321,16 +326,26 @@
           "title": "Users may experience issues when utilizing multiple Microsoft 365 services",
           "startTime": "2026-08-31T15:08:00Z",
           "endTime": null,
-          "lastModified": "2026-08-31T23:05:03.817Z",
+          "lastModified": "2026-08-31T23:58:05.793Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may experience issues when utilizing multiple Microsoft 365 services.",
-          "scopeOfImpact": "Users attempting to perform any of the outlined impact scenarios may be affected by this event.\n\nStart time: Monday, August 31, 2026, at 3:08 PM UTC\n\nPreliminary",
+          "scopeOfImpact": "Users attempting to perform any of the outlined impact scenarios may be affected by this event.\r\n\r\nStart time: Monday, August 31, 2026, at 3:08 PM UTC",
           "rootCause": "An issue within a core authentication configuration used by multiple Microsoft 365 services is resulting in impact.",
-          "nextUpdateBy": "Tuesday, September 1, 2026, at 12:00 AM UTC",
+          "nextUpdateBy": "Tuesday, September 1, 2026, at 1:00 AM UTC",
           "feature": "Company or User Administration",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-08-31T23:58:05.793Z",
+              "postType": "regular",
+              "content": "Title: Users may experience issues when utilizing multiple Microsoft 365 services\r\n\r\nUser impact: Users may experience issues when utilizing multiple Microsoft 365 services.\r\n\r\nMore info: Impact includes, but may not be limited to, the below services and scenarios. We will update this list as our understanding of the issue progresses.\n \nOneDrive for Business and SharePoint Online:\n-Users may be unable to load or refresh portions of OneDrive and SharePoint, including account and storage information, search results, Favorites, Followed and Shared With Me content, recent files, lists, and news.\n-Some users may also experience delayed or failed file opening, Office policy-label retrieval, OneDrive synchronization, mobile camera upload, and video playback.\n-Users may see partial page failures, missing or stale content, repeated retries, and operation timeouts rather than a complete platform outage.      \n \nExchange Online:\n-Users may be unable to connect to, or experience degraded functionality, with Exchange Online. All connection methods are affected.\n \nMicrosoft Teams:\n-Users may experience issues with calendar functionality and search. Users’ presence may be stale and not update automatically or through manual adjustment. User location adjustment may fail.\n-Microsoft Teams Room (MTR) devices and desktop phones display as offline in the Teams admin center.\n \nMicrosoft Purview:\n-Users may face intermittent authorization failures across solutions in Purview. Purview admins can’t access the portal.\nAdditionally, in Microsoft Purview Communication Compliance, users may see errors when loading Communication Compliance policies and Data Loss Prevention (DLP) policies. Communication Compliance policy creation and evaluation may be delayed.\n \nMicrosoft Defender XDR:\n-Users may experience intermittent authorization failures across solutions in Defender.\n\nMicrosoft 365 Admin Center:\n-Admins may experience issues authenticating into the admin center. \n\nUniversal Print: \n-Users may be unable to create, upload, or retrieve print jobs.\r\n\r\nCurrent status: We're progressively restarting targeted sections of affected infrastructure to ensure the re-applied authentication components are effectively implemented across affected services. We expect this will aid the recovery of affected scenarios. Users should expect delayed delivery of backlogged messages and residual impact across downstream scenarios as these actions are continuing. We'll provide an expected recovery time as soon as one becomes available to us.\r\n\r\nScope of impact: Users attempting to perform any of the outlined impact scenarios may be affected by this event.\r\n\r\nStart time: Monday, August 31, 2026, at 3:08 PM UTC\r\n\r\nRoot cause: An issue within a core authentication configuration used by multiple Microsoft 365 services is resulting in impact.\r\n\r\nNext update by: Tuesday, September 1, 2026, at 1:00 AM UTC"
+            },
+            {
+              "createdAt": "2026-08-31T23:32:35.137Z",
+              "postType": "quick",
+              "content": "We're expanding the aforementioned mitigation action more widely across the affected environments as we closely track the recovery of affected scenarios. Users should primarily begin to see gradual recovery to mail flow. Secondarily, and in parallel to the primary mitigation action previously described, we're restarting targeted sections of affected infrastructure to ensure the acceptance of the re-applied authentication components across affected services and aid the recovery of the downstream scenarios.\n\nThis quick update is designed to give the latest information on this issue.\n\nNext update by: Tuesday, September 1, 2026, at 12:00 AM UTC"
+            },
             {
               "createdAt": "2026-08-31T22:53:24.443Z",
               "postType": "regular",
@@ -1031,6 +1046,31 @@
       "status": "serviceDegradation",
       "id": "Viva",
       "issues": [
+        {
+          "id": "MV1465260",
+          "title": "Some users may be unable to perform searches in Microsoft Viva Engage",
+          "startTime": "2026-08-31T23:50:13.277Z",
+          "endTime": null,
+          "lastModified": "2026-08-31T23:59:59.303Z",
+          "status": "investigating",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to perform searches in Microsoft Viva Engage.",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
+          "feature": "Upload files/notes/documents",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-08-31T23:59:59.303Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to perform searches in Microsoft Viva Engage\r\n\r\nUser impact: Users may be unable to perform searches in Microsoft Viva Engage.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Viva Engage and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Viva"
+          ]
+        },
         {
           "id": "MO1457843",
           "title": "Admins can't identify who deleted a Viva Engage community or its Microsoft 365 Group in Microsoft Entra ID audit logs",
