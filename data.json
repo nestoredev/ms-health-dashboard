@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-01T00:07:43.638Z",
+  "lastUpdated": "2026-09-01T00:37:54.175Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -126,16 +126,21 @@
           "title": "Users may be unable to connect to, or experience degraded functionality with Exchange Online",
           "startTime": "2026-08-31T15:08:00Z",
           "endTime": null,
-          "lastModified": "2026-08-31T23:33:55.433Z",
+          "lastModified": "2026-09-01T00:02:39.057Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to connect to, or experience degraded functionality with Exchange Online.",
-          "scopeOfImpact": "",
-          "rootCause": "",
-          "nextUpdateBy": "Tuesday, September 1, 2026, at 12:00 AM UTC",
+          "scopeOfImpact": "This issue may impact users attempting to send or receive email messages through Exchange Online. We're continuing our investigation to determine the full scope of affected scenarios and will provide additional information as it becomes available.\n\nStart time: Monday, August 31, 2026, at 3:08 PM UTC\n\nPreliminary",
+          "rootCause": "An issue within a core authentication configuration used by multiple Microsoft 365 services is resulting in impact.",
+          "nextUpdateBy": "Tuesday, September 1, 2026, at 1:00 AM UTC",
           "feature": "All clients",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-01T00:01:08.077Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to connect to, or experience degraded functionality with Exchange Online\n\nUser impact: Users may be unable to connect to, or experience degraded functionality with Exchange Online.\n\nMore info: We've confirmed that the authentication component issue impacts other services beyond Exchange Online. For more information regarding other impact scenarios, please see: MO1465074. \n \nWe've opted to keep this post (EX1464935) open as Exchange Online remains the most predominantly impacted service.\n\nUsers may experience a variety of symptoms related to this event, including but not limited to:\n- Delays, failures, or incomplete results when searching for content within Exchange Online mailboxes.\n- Delays or failures when sending or receiving email messages.\n- Authentication-related errors when accessing Exchange Online services.\n- Difficulties accessing or performing actions within Exchange administration experiences.\n- Intermittent failures affecting mailbox operations and message delivery work\n\nCurrent status: We're progressively restarting targeted sections of affected infrastructure to ensure the re-applied authentication components are effectively implemented across affected services. We expect this will aid the recovery of affected scenarios. Users should expect delayed delivery of backlogged messages and residual impact across downstream scenarios as these actions are continuing. We'll provide an expected recovery time as soon as one becomes available to us.\n\nScope of impact: This issue may impact users attempting to send or receive email messages through Exchange Online. We're continuing our investigation to determine the full scope of affected scenarios and will provide additional information as it becomes available.\n\nStart time: Monday, August 31, 2026, at 3:08 PM UTC\n\nPreliminary root cause: An issue within a core authentication configuration used by multiple Microsoft 365 services is resulting in impact.\n\nNext update by: Tuesday, September 1, 2026, at 1:00 AM UTC"
+            },
             {
               "createdAt": "2026-08-31T23:33:55.433Z",
               "postType": "quick",
@@ -322,15 +327,40 @@
           ]
         },
         {
+          "id": "MO1465286",
+          "title": "Admins' may see delays in Copilot usage report data in a Microsoft 365 admin center",
+          "startTime": "2026-09-01T00:25:42.8Z",
+          "endTime": null,
+          "lastModified": "2026-09-01T00:27:59.957Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Admins' may see delays in Copilot usage report data in a Microsoft 365 admin center.",
+          "scopeOfImpact": "This event impacts any admin attempting to access Copilot usage report data in a Microsoft 365 admin center. This information may be updated as our investigation continues.\r\n\r\nStart time: Monday, August 31, 2026, at 4:00 PM UTC",
+          "rootCause": "A component utilized in the flow of this functionality was deprecated, resulting in impact.",
+          "nextUpdateBy": "Tuesday, September 1, 2026, at 6:00 PM UTC",
+          "feature": "Company or User Administration",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-09-01T00:27:59.957Z",
+              "postType": "regular",
+              "content": "Title: Admins' may see delays in Copilot usage report data in a Microsoft 365 admin center\r\n\r\nUser impact: Admins' may see delays in Copilot usage report data in a Microsoft 365 admin center.\r\n\r\nCurrent status: We determined that a component utilized in the flow of this functionality was deprecated, resulting in impact. We're reinstating this component and anticipate that this process should be complete by our next scheduled update.\r\n\r\nScope of impact: This event impacts any admin attempting to access Copilot usage report data in a Microsoft 365 admin center. This information may be updated as our investigation continues.\r\n\r\nStart time: Monday, August 31, 2026, at 4:00 PM UTC\r\n\r\nRoot cause: A component utilized in the flow of this functionality was deprecated, resulting in impact.\r\n\r\nNext update by: Tuesday, September 1, 2026, at 6:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite"
+          ]
+        },
+        {
           "id": "MO1465074",
           "title": "Users may experience issues when utilizing multiple Microsoft 365 services",
           "startTime": "2026-08-31T15:08:00Z",
           "endTime": null,
-          "lastModified": "2026-08-31T23:58:05.793Z",
+          "lastModified": "2026-09-01T00:03:15.847Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may experience issues when utilizing multiple Microsoft 365 services.",
-          "scopeOfImpact": "Users attempting to perform any of the outlined impact scenarios may be affected by this event.\r\n\r\nStart time: Monday, August 31, 2026, at 3:08 PM UTC",
+          "scopeOfImpact": "Users attempting to perform any of the outlined impact scenarios may be affected by this event.\n\nStart time: Monday, August 31, 2026, at 3:08 PM UTC\n\nPreliminary",
           "rootCause": "An issue within a core authentication configuration used by multiple Microsoft 365 services is resulting in impact.",
           "nextUpdateBy": "Tuesday, September 1, 2026, at 1:00 AM UTC",
           "feature": "Company or User Administration",
@@ -339,7 +369,7 @@
             {
               "createdAt": "2026-08-31T23:58:05.793Z",
               "postType": "regular",
-              "content": "Title: Users may experience issues when utilizing multiple Microsoft 365 services\r\n\r\nUser impact: Users may experience issues when utilizing multiple Microsoft 365 services.\r\n\r\nMore info: Impact includes, but may not be limited to, the below services and scenarios. We will update this list as our understanding of the issue progresses.\n \nOneDrive for Business and SharePoint Online:\n-Users may be unable to load or refresh portions of OneDrive and SharePoint, including account and storage information, search results, Favorites, Followed and Shared With Me content, recent files, lists, and news.\n-Some users may also experience delayed or failed file opening, Office policy-label retrieval, OneDrive synchronization, mobile camera upload, and video playback.\n-Users may see partial page failures, missing or stale content, repeated retries, and operation timeouts rather than a complete platform outage.      \n \nExchange Online:\n-Users may be unable to connect to, or experience degraded functionality, with Exchange Online. All connection methods are affected.\n \nMicrosoft Teams:\n-Users may experience issues with calendar functionality and search. Users’ presence may be stale and not update automatically or through manual adjustment. User location adjustment may fail.\n-Microsoft Teams Room (MTR) devices and desktop phones display as offline in the Teams admin center.\n \nMicrosoft Purview:\n-Users may face intermittent authorization failures across solutions in Purview. Purview admins can’t access the portal.\nAdditionally, in Microsoft Purview Communication Compliance, users may see errors when loading Communication Compliance policies and Data Loss Prevention (DLP) policies. Communication Compliance policy creation and evaluation may be delayed.\n \nMicrosoft Defender XDR:\n-Users may experience intermittent authorization failures across solutions in Defender.\n\nMicrosoft 365 Admin Center:\n-Admins may experience issues authenticating into the admin center. \n\nUniversal Print: \n-Users may be unable to create, upload, or retrieve print jobs.\r\n\r\nCurrent status: We're progressively restarting targeted sections of affected infrastructure to ensure the re-applied authentication components are effectively implemented across affected services. We expect this will aid the recovery of affected scenarios. Users should expect delayed delivery of backlogged messages and residual impact across downstream scenarios as these actions are continuing. We'll provide an expected recovery time as soon as one becomes available to us.\r\n\r\nScope of impact: Users attempting to perform any of the outlined impact scenarios may be affected by this event.\r\n\r\nStart time: Monday, August 31, 2026, at 3:08 PM UTC\r\n\r\nRoot cause: An issue within a core authentication configuration used by multiple Microsoft 365 services is resulting in impact.\r\n\r\nNext update by: Tuesday, September 1, 2026, at 1:00 AM UTC"
+              "content": "Title: Users may experience issues when utilizing multiple Microsoft 365 services\n\nUser impact: Users may experience issues when utilizing multiple Microsoft 365 services.\n\nMore info: Impact includes, but may not be limited to, the below services and scenarios. We will update this list as our understanding of the issue progresses.\n \nOneDrive for Business and SharePoint Online:\n-Users may be unable to load or refresh portions of OneDrive and SharePoint, including account and storage information, search results, Favorites, Followed and Shared With Me content, recent files, lists, and news.\n-Some users may also experience delayed or failed file opening, Office policy-label retrieval, OneDrive synchronization, mobile camera upload, and video playback.\n-Users may see partial page failures, missing or stale content, repeated retries, and operation timeouts rather than a complete platform outage.      \n \nExchange Online:\n-Users may be unable to connect to, or experience degraded functionality, with Exchange Online. All connection methods are affected.\n \nMicrosoft Teams:\n-Users may experience issues with calendar functionality and search. Users’ presence may be stale and not update automatically or through manual adjustment. User location adjustment may fail.\n-Microsoft Teams Room (MTR) devices and desktop phones display as offline in the Teams admin center.\n \nMicrosoft Purview:\n-Users may face intermittent authorization failures across solutions in Purview. Purview admins can’t access the portal.\nAdditionally, in Microsoft Purview Communication Compliance, users may see errors when loading Communication Compliance policies and Data Loss Prevention (DLP) policies. Communication Compliance policy creation and evaluation may be delayed.\n \nMicrosoft Defender XDR:\n-Users may experience intermittent authorization failures across solutions in Defender.\n\nMicrosoft 365 Admin Center:\n-Admins may experience issues authenticating into the admin center. \n\nUniversal Print: \n-Users may be unable to create, upload, or retrieve print jobs.\n\nCurrent status: We're progressively restarting targeted sections of affected infrastructure to ensure the re-applied authentication components are effectively implemented across affected services. We expect this will aid the recovery of affected scenarios. Users should expect delayed delivery of backlogged messages and residual impact across downstream scenarios as these actions are continuing. We'll provide an expected recovery time as soon as one becomes available to us.\n\nScope of impact: Users attempting to perform any of the outlined impact scenarios may be affected by this event.\n\nStart time: Monday, August 31, 2026, at 3:08 PM UTC\n\nPreliminary root cause: An issue within a core authentication configuration used by multiple Microsoft 365 services is resulting in impact.\n\nNext update by: Tuesday, September 1, 2026, at 1:00 AM UTC"
             },
             {
               "createdAt": "2026-08-31T23:32:35.137Z",
