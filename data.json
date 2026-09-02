@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-02T00:18:02.394Z",
+  "lastUpdated": "2026-09-02T00:48:14.602Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -826,16 +826,21 @@
           "title": "Some admins may be unable to view device information in the Microsoft Intune admin center",
           "startTime": "2026-08-31T09:09:53.29Z",
           "endTime": null,
-          "lastModified": "2026-09-01T21:24:39.023Z",
+          "lastModified": "2026-09-02T00:39:30.8Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may be unable to view device information in the Microsoft Intune admin center.",
           "scopeOfImpact": "Impact is specific to some admins attempting to view device inventory and reporting information in the Microsoft Intune admin center. This section may be updated as the investigation continues.",
           "rootCause": "A portion of the reporting infrastructure referenced an outdated data source, resulting in device information not displaying as expected in affected reports.",
-          "nextUpdateBy": "Wednesday, September 2, 2026, at 1:00 AM UTC",
+          "nextUpdateBy": "Wednesday, September 2, 2026, at 3:00 AM UTC",
           "feature": "Microsoft Intune",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-02T00:39:30.8Z",
+              "postType": "regular",
+              "content": "Title: Some admins may be unable to view device information in the Microsoft Intune admin center\r\n\r\nUser impact: Admins may be unable to view device information in the Microsoft Intune admin center.\r\n\r\nCurrent status: We've identified that an increase of backlogged data is preventing the issue from being fully resolved. We're closely monitoring as it's being processed to ensure the impact is remediated for all impacted admins.\r\n\r\nScope of impact: Impact is specific to some admins attempting to view device inventory and reporting information in the Microsoft Intune admin center. This section may be updated as the investigation continues.\r\n\r\nRoot cause: A portion of the reporting infrastructure referenced an outdated data source, resulting in device information not displaying as expected in affected reports.\r\n\r\nNext update by: Wednesday, September 2, 2026, at 3:00 AM UTC"
+            },
             {
               "createdAt": "2026-09-01T21:24:39.023Z",
               "postType": "regular",
