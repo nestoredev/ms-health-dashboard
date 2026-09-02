@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-02T04:19:36.176Z",
+  "lastUpdated": "2026-09-02T04:49:48.204Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -136,16 +136,21 @@
           "title": "Users may be unable to connect to, or experience degraded functionality with Exchange Online",
           "startTime": "2026-08-31T15:08:00Z",
           "endTime": null,
-          "lastModified": "2026-09-02T03:34:47.093Z",
+          "lastModified": "2026-09-02T04:39:37.073Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to connect to, or experience degraded functionality with Exchange Online.",
-          "scopeOfImpact": "Users attempting to perform any of the outlined impact scenarios may be affected by this event.\n\nStart time: Monday, August 31, 2026, at 3:08 PM UTC\n\nPreliminary",
-          "rootCause": "An issue within a core authentication configuration used by multiple Microsoft 365 services is resulting in impact.",
+          "scopeOfImpact": "",
+          "rootCause": "",
           "nextUpdateBy": "Wednesday, September 2, 2026, at 4:30 PM UTC",
           "feature": "All clients",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-02T04:39:37.073Z",
+              "postType": "quick",
+              "content": "We're observing service availability recovering to above 99 percent across the affected environments, and we expect the majority of previously affected users should no longer be seeing impact from this issue. Our continued focus is on balancing the implementation of our fixes across remaining portions of affected infrastructure to ensure persistent recovery.\n\nThis quick update is designed to give the latest information on this issue.\n\nNext update by: Wednesday, September 2, 2026, at 4:30 PM UTC"
+            },
             {
               "createdAt": "2026-09-02T03:31:34.117Z",
               "postType": "regular",
@@ -471,16 +476,21 @@
           "title": "Users may experience issues when utilizing multiple Microsoft 365 services",
           "startTime": "2026-08-31T15:08:00Z",
           "endTime": null,
-          "lastModified": "2026-09-02T03:31:59.56Z",
+          "lastModified": "2026-09-02T04:39:19.94Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may experience issues when utilizing multiple Microsoft 365 services.",
-          "scopeOfImpact": "Users attempting to perform any of the outlined impact scenarios may be affected by this event.\n\nStart time: Monday, August 31, 2026, at 3:08 PM UTC\n\nPreliminary",
-          "rootCause": "An issue within a core authentication configuration used by multiple Microsoft 365 services is resulting in impact.",
+          "scopeOfImpact": "",
+          "rootCause": "",
           "nextUpdateBy": "Wednesday, September 2, 2026, at 4:30 PM UTC",
           "feature": "Company or User Administration",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-02T04:39:19.94Z",
+              "postType": "quick",
+              "content": "We're observing service availability recovering to above 99 percent across the affected environments, and we expect the majority of previously affected users should no longer be seeing impact from this issue. Our continued focus is on balancing the implementation of our fixes across remaining portions of affected infrastructure to ensure persistent recovery.\n\nThis quick update is designed to give the latest information on this issue.\n\nNext update by: Wednesday, September 2, 2026, at 4:30 PM UTC"
+            },
             {
               "createdAt": "2026-09-02T03:30:21.12Z",
               "postType": "regular",
