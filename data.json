@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-02T19:56:18.766Z",
+  "lastUpdated": "2026-09-02T20:26:34.081Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -501,16 +501,21 @@
           "title": "Users may experience issues when utilizing multiple Microsoft 365 services",
           "startTime": "2026-08-31T15:08:00Z",
           "endTime": null,
-          "lastModified": "2026-09-02T18:30:14.577Z",
+          "lastModified": "2026-09-02T20:03:04.76Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may experience issues when utilizing multiple Microsoft 365 services.",
           "scopeOfImpact": "Users attempting to perform any of the outlined impact scenarios may be affected by this event.\n\nStart time: Monday, August 31, 2026, at 3:08 PM UTC\n\nPreliminary",
           "rootCause": "An issue within a core authentication configuration used by multiple Microsoft 365 services is resulting in impact.",
-          "nextUpdateBy": "Wednesday, September 2, 2026, at 8:30 PM UTC",
+          "nextUpdateBy": "Wednesday, September 2, 2026, at 10:30 PM UTC",
           "feature": "Company or User Administration",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-02T20:03:04.76Z",
+              "postType": "regular",
+              "content": "Title: Users may experience issues when utilizing multiple Microsoft 365 services\n\nUser impact: Users may experience issues when utilizing multiple Microsoft 365 services.\n\nMore info: Impact includes, but may not be limited to, the below services and scenarios. We will update this list as our understanding of the issue progresses.\n \nExchange Online:\n- Users can't download email message attachments through any Exchange Online connection method.\n- Users may be unable to sign in to Outlook on the web.\n \nRECOVERED\n \nMicrosoft Graph:\n- Users may have experienced failures for scenarios that rely on access to Exchange Online data.\n \nExchange Online:\n- Service telemetry indicates recovery of core mail flow and search functionality.\n- Service telemetry indicates recovery of the majority of previously impacted authentication and protocol connectivity scenarios.\n- Users may have been unable to connect to, or experience degraded functionality, such as failures when attempting to use the search function, within Exchange Online. All connection methods are affected.\n- Users may have been unable to connect to Exchange Web Services (EWS)\n- Users may have been unable to use room finder in Outlook calendars.\n \nOutlook for iOS and Android:\n- Users may have experienced delays or failures when sending or receiving email messages via Outlook for iOS and Android.\n \nMicrosoft 365 Admin Center:\n- Admins may have experienced issues authenticating into the admin center.\n \nMicrosoft Purview:\n- Users can now access the Microsoft Purview portal.\n- Any policy hits, alerts, or processing activities delayed during the event are expected to appear over the next 24 to 48 hours as recovery validation continues.\n- Additionally, in Microsoft Purview Communication Compliance, users may have experienced errors when loading Communication Compliance policies and Data Loss Prevention (DLP) policies, and policy creation or evaluation delays.\n\nMicrosoft Defender XDR:\n- Users may have experienced intermittent authorization failures across solutions in Defender.\n \nMicrosoft Teams:\n- Users may have experienced issues with search and users’ presence may be stale and not update automatically or through manual adjustment. User location adjustment may have failed.\n- Users may have experienced issues with Microsoft Teams Room (MTR) devices and desktop phones displayed offline in the Teams admin center.\n- Users may have experienced issues creating, deleting, and editing Teams channels.\n- Users may have experienced issues with calendar functionality.\n \nMicrosoft 365 Copilot: \n- Users' Copilot prompts that required Microsoft 365 grounding, such as email content, may have failed.\n- Users may have experienced failures for scenarios that rely on access to Exchange Online data.\n- Users prompts may have failed or they may have experienced degradation when utilizing Cowork.\n\nOneDrive for Business and SharePoint Online:\n- Users may have been unable to load or refresh portions of OneDrive and SharePoint, including account and storage information, search results, Favorites, Followed and Shared With Me content, recent files, lists, and news.\n- Some users may have also experience delayed or failed file opening, Office policy-label retrieval, OneDrive synchronization, mobile camera upload, and video playback.\n- Users may have seen partial page failures, missing or stale content, repeated retries, and operation timeouts rather than a complete platform outage.\n\nUniversal Print: \n- Users may have been unable to create, upload, or retrieve print jobs.\n \nCurrent status: The majority of services are restored for most users, and we continue to observe broad service recovery. We recognize that some users may still experience residual impact, and addressing these remaining scenarios continues to be our highest priority. We’re actively progressing our mitigation efforts and closely monitoring service health as we work to ensure full recovery for all users.\n\nScope of impact: Users attempting to perform any of the outlined impact scenarios may be affected by this event.\n\nStart time: Monday, August 31, 2026, at 3:08 PM UTC\n\nPreliminary root cause: An issue within a core authentication configuration used by multiple Microsoft 365 services is resulting in impact.\n\nNext update by: Wednesday, September 2, 2026, at 10:30 PM UTC"
+            },
             {
               "createdAt": "2026-09-02T18:30:14.577Z",
               "postType": "regular",
@@ -1002,16 +1007,21 @@
           "title": "Some users attempting to view their Microsoft Teams contact lists may experience latency",
           "startTime": "2026-07-29T00:00:00Z",
           "endTime": null,
-          "lastModified": "2026-08-27T16:27:31.64Z",
+          "lastModified": "2026-09-02T20:06:54.043Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users attempting to view their Microsoft Teams contact lists may experience latency.",
-          "scopeOfImpact": "Some users who are attempting to view their Microsoft Teams contact lists may be affected. This information may be updated as our investigation continues.\n\nStart time: Wednesday, July 29, 2026, at 12:00 AM UTC",
+          "scopeOfImpact": "Some users who are attempting to view their Microsoft Teams contact lists may be affected. This information may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, July 29, 2026, at 12:00 AM UTC",
           "rootCause": "A recent service update to improve the user interface of Microsoft Teams contact lists contained a code regression and is resulting in impact.",
-          "nextUpdateBy": "Wednesday, September 2, 2026, at 9:00 PM UTC",
+          "nextUpdateBy": "Monday, September 7, 2026, at 9:00 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-02T20:06:54.043Z",
+              "postType": "regular",
+              "content": "Title: Some users attempting to view their Microsoft Teams contact lists may experience latency\r\n\r\nUser impact: Users attempting to view their Microsoft Teams contact lists may experience latency.\r\n\r\nMore info: Users attempting to view their Microsoft Teams contact lists may experience latency and their contact list may not appear for up to 15 minutes.\r\n\r\nCurrent status: The deployment of the code fix has begun, and we anticipate it being fully deployed to all affected environments by the time of our next communication.\r\n\r\nScope of impact: Some users who are attempting to view their Microsoft Teams contact lists may be affected. This information may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, July 29, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: A recent service update to improve the user interface of Microsoft Teams contact lists contained a code regression and is resulting in impact.\r\n\r\nNext update by: Monday, September 7, 2026, at 9:00 PM UTC"
+            },
             {
               "createdAt": "2026-08-27T00:56:42.97Z",
               "postType": "regular",
