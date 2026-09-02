@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-02T17:55:15.689Z",
+  "lastUpdated": "2026-09-02T18:25:30.316Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -758,16 +758,21 @@
           "title": "Some users may be unable to access SharePoint Online sites configured with Authentication Context",
           "startTime": "2026-08-23T02:38:00Z",
           "endTime": null,
-          "lastModified": "2026-09-01T18:05:23.687Z",
+          "lastModified": "2026-09-02T17:55:53.827Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to access SharePoint Online sites configured with Authentication Context.",
-          "scopeOfImpact": "Some users attempting to access SharePoint Online sites configured with Authentication Context through sensitivity labels may be impacted.\r\n\r\nStart time: Sunday, August 23, 2026, at 2:38 AM UTC",
+          "scopeOfImpact": "Some users attempting to access SharePoint Online sites configured with Authentication Context through sensitivity labels may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Sunday, August 23, 2026, at 2:38 AM UTC",
           "rootCause": "A recent SharePoint Online code change intended to update authentication processing resulted in Authentication Context requests not being processed as expected, preventing some users from accessing affected sites.",
-          "nextUpdateBy": "Wednesday, September 2, 2026, at 7:00 PM UTC",
+          "nextUpdateBy": "Friday, September 4, 2026, at 7:00 PM UTC",
           "feature": "Access Services",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-02T17:55:53.827Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to access SharePoint Online sites configured with Authentication Context\r\n\r\nUser impact: Users may be unable to access SharePoint Online sites configured with Authentication Context.\r\n\r\nMore info: Specifically, users are unable to access SharePoint Online sites configured with Authentication Context through sensitivity labels.\n \nUsers receive the following error message:\n\"Server Error in '/' Application.\"\n \nAs a workaround, users may be able to temporarily access the affected content by first clearing internet browser cookies and navigating to the root site collection before opening the direct link. Users can also open a new browser tab on the same session and access the site. The link may work as well.\r\n\r\nCurrent status: The deployment is progressing as expected and users will see relief as it progresses. We expect the release to complete, mitigating impact for all users by the next scheduled update.\r\n\r\nScope of impact: Some users attempting to access SharePoint Online sites configured with Authentication Context through sensitivity labels may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Sunday, August 23, 2026, at 2:38 AM UTC\r\n\r\nRoot cause: A recent SharePoint Online code change intended to update authentication processing resulted in Authentication Context requests not being processed as expected, preventing some users from accessing affected sites.\r\n\r\nNext update by: Friday, September 4, 2026, at 7:00 PM UTC"
+            },
             {
               "createdAt": "2026-09-01T18:04:34.06Z",
               "postType": "regular",
