@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-02T18:25:30.316Z",
+  "lastUpdated": "2026-09-02T18:55:49.073Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -136,16 +136,21 @@
           "title": "Users may be unable to connect to, or experience degraded functionality with Exchange Online",
           "startTime": "2026-08-31T15:08:00Z",
           "endTime": null,
-          "lastModified": "2026-09-02T17:26:01.7Z",
+          "lastModified": "2026-09-02T18:29:53.193Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to connect to, or experience degraded functionality with Exchange Online.",
           "scopeOfImpact": "Users attempting to perform any of the outlined impact scenarios may be affected by this event.\n\nStart time: Monday, August 31, 2026, at 3:08 PM UTC\n\nPreliminary",
           "rootCause": "An issue within a core authentication configuration used by multiple Microsoft 365 services is resulting in impact.",
-          "nextUpdateBy": "Wednesday, September 2, 2026, at 6:30 PM UTC",
+          "nextUpdateBy": "Wednesday, September 2, 2026, at 8:30 PM UTC",
           "feature": "All clients",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-02T18:29:53.193Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to connect to, or experience degraded functionality with Exchange Online\n\nUser impact: Users may be unable to connect to, or experience degraded functionality with Exchange Online.\n\nMore info: We've confirmed that the authentication component issue impacts other services beyond Exchange Online. For more information regarding other impact scenarios, please see: MO1465074. \n\nWe've opted to keep this post (EX1464935) open as Exchange Online remains the most predominantly impacted service.\n\nUsers may experience a variety of symptoms related to this event, including but not limited to:\n- Users can't download email message attachments through any Exchange Online connection method.\n- Delays, failures, or incomplete results when searching for content within Exchange Online mailboxes.\n- Delays or failures when sending or receiving email messages.\n- Authentication-related errors when accessing Exchange Online services.\n- Difficulties accessing or performing actions within Exchange administration experiences.\n- Intermittent failures affecting mailbox operations and message delivery work\n- Delays or failures when sending or receiving email messages via Outlook for iOS and Android.\n- Users may be unable to use room finder in Outlook calendars.\n- Users may be unable to sign in to Outlook on the web.\n\nCurrent status: We recognize that while service is restored for most customers, the remaining issues are disruptive for those still impacted. We are prioritizing fully resolving the issue for all customers.\n\nScope of impact: Users attempting to perform any of the outlined impact scenarios may be affected by this event.\n\nStart time: Monday, August 31, 2026, at 3:08 PM UTC\n\nPreliminary root cause: An issue within a core authentication configuration used by multiple Microsoft 365 services is resulting in impact.\n\nNext update by: Wednesday, September 2, 2026, at 8:30 PM UTC"
+            },
             {
               "createdAt": "2026-09-02T17:23:19.77Z",
               "postType": "regular",
@@ -496,16 +501,21 @@
           "title": "Users may experience issues when utilizing multiple Microsoft 365 services",
           "startTime": "2026-08-31T15:08:00Z",
           "endTime": null,
-          "lastModified": "2026-09-02T17:36:24.18Z",
+          "lastModified": "2026-09-02T18:30:14.577Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may experience issues when utilizing multiple Microsoft 365 services.",
-          "scopeOfImpact": "",
-          "rootCause": "",
-          "nextUpdateBy": "Wednesday, September 2, 2026, at 6:30 PM UTC",
+          "scopeOfImpact": "Users attempting to perform any of the outlined impact scenarios may be affected by this event.\n\nStart time: Monday, August 31, 2026, at 3:08 PM UTC\n\nPreliminary",
+          "rootCause": "An issue within a core authentication configuration used by multiple Microsoft 365 services is resulting in impact.",
+          "nextUpdateBy": "Wednesday, September 2, 2026, at 8:30 PM UTC",
           "feature": "Company or User Administration",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-02T18:30:14.577Z",
+              "postType": "regular",
+              "content": "Title: Users may experience issues when utilizing multiple Microsoft 365 services\n\nUser impact: Users may experience issues when utilizing multiple Microsoft 365 services.\n\nMore info: Impact includes, but may not be limited to, the below services and scenarios. We will update this list as our understanding of the issue progresses.\n \nExchange Online:\n- Users can't download email message attachments through any Exchange Online connection method.\n- Users may be unable to sign in to Outlook on the web.\n \nRECOVERED\n \nMicrosoft Graph:\n- Users may have experienced failures for scenarios that rely on access to Exchange Online data.\n \nExchange Online:\n- Service telemetry indicates recovery of core mail flow and search functionality.\n- Service telemetry indicates recovery of the majority of previously impacted authentication and protocol connectivity scenarios.\n- Users may have been unable to connect to, or experience degraded functionality, such as failures when attempting to use the search function, within Exchange Online. All connection methods are affected.\n- Users may have been unable to connect to Exchange Web Services (EWS)\n- Users may have been unable to use room finder in Outlook calendars.\n \nOutlook for iOS and Android:\n- Users may have experienced delays or failures when sending or receiving email messages via Outlook for iOS and Android.\n \nMicrosoft 365 Admin Center:\n- Admins may have experienced issues authenticating into the admin center.\n \nMicrosoft Purview:\n- Users can now access the Microsoft Purview portal.\n- Any policy hits, alerts, or processing activities delayed during the event are expected to appear over the next 24 to 48 hours as recovery validation continues.\n- Additionally, in Microsoft Purview Communication Compliance, users may have experienced errors when loading Communication Compliance policies and Data Loss Prevention (DLP) policies, and policy creation or evaluation delays.\n\nMicrosoft Defender XDR:\n- Users may have experienced intermittent authorization failures across solutions in Defender.\n \nMicrosoft Teams:\n- Users may have experienced issues with search and users’ presence may be stale and not update automatically or through manual adjustment. User location adjustment may have failed.\n- Users may have experienced issues with Microsoft Teams Room (MTR) devices and desktop phones displayed offline in the Teams admin center.\n- Users may have experienced issues creating, deleting, and editing Teams channels.\n- Users may have experienced issues with calendar functionality.\n \nMicrosoft 365 Copilot: \n- Users' Copilot prompts that required Microsoft 365 grounding, such as email content, may have failed.\n- Users may have experienced failures for scenarios that rely on access to Exchange Online data.\n- Users prompts may have failed or they may have experienced degradation when utilizing Cowork.\n\nOneDrive for Business and SharePoint Online:\n- Users may have been unable to load or refresh portions of OneDrive and SharePoint, including account and storage information, search results, Favorites, Followed and Shared With Me content, recent files, lists, and news.\n- Some users may have also experience delayed or failed file opening, Office policy-label retrieval, OneDrive synchronization, mobile camera upload, and video playback.\n- Users may have seen partial page failures, missing or stale content, repeated retries, and operation timeouts rather than a complete platform outage.\n\nUniversal Print: \n- Users may have been unable to create, upload, or retrieve print jobs.\n \nCurrent status: We've confirmed that impact related to OneDrive for Business, SharePoint Online, and Universal Print are now resolved. We recognize that while the majority of services are restored for most users, the remaining issues are disruptive for those still impacted. We're continuing to address residual impact with the highest priority so we can ensure resolution for all users.\n\nScope of impact: Users attempting to perform any of the outlined impact scenarios may be affected by this event.\n\nStart time: Monday, August 31, 2026, at 3:08 PM UTC\n\nPreliminary root cause: An issue within a core authentication configuration used by multiple Microsoft 365 services is resulting in impact.\n\nNext update by: Wednesday, September 2, 2026, at 8:30 PM UTC"
+            },
             {
               "createdAt": "2026-09-02T17:36:24.18Z",
               "postType": "quick",
@@ -1891,7 +1901,7 @@
       "title": "Guest users were unable to access SharePoint Online sites connected to Microsoft Teams",
       "startTime": "2026-08-20T07:30:00Z",
       "endTime": "2026-08-25T12:47:00Z",
-      "lastModified": "2026-08-28T12:15:49.063Z",
+      "lastModified": "2026-09-02T18:30:25.87Z",
       "status": "postIncidentReviewPublished",
       "severity": "incident",
       "userImpact": "Guest users were unable to access SharePoint Online sites connected to Microsoft Teams.",
@@ -1902,6 +1912,11 @@
       "isResolved": true,
       "posts": [
         {
+          "createdAt": "2026-09-02T18:27:39.383Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        },
+        {
           "createdAt": "2026-08-28T12:15:49.063Z",
           "postType": "regular",
           "content": "A post-incident report has been published."
@@ -1909,7 +1924,7 @@
         {
           "createdAt": "2026-08-26T09:14:27.943Z",
           "postType": "regular",
-          "content": "Title: Guest users were unable to access SharePoint Online sites connected to Microsoft Teams\n\nUser impact: Guest users were unable to access SharePoint Online sites connected to Microsoft Teams.\n\nMore info: Specifically, guest users were redirected to an AccessDenied.aspx page when attempting to access SharePoint Online sites where access is granted through Microsoft 365 Groups.\n \nAs a potential workaround, admins could have manually add affected guest users directly to the SharePoint Members group instead of relying on Microsoft 365 Group membership propagation.\n\nFinal status: We've completed a period of monitoring service telemetry, and we've observed the restoration of service availability to normal levels. Additionally, during this time, we've received multiple reports from previously affected customers that they're experiencing relief from impact, and as such, we've determined this incident is resolved.\n\nScope of impact: This issue could have impacted any guest users attempting to access SharePoint Online sites where access is granted through Microsoft 365 Groups.\n\nStart time: Thursday, August 20, 2026, at 7:30 AM UTC\n\nEnd time: Tuesday, August 25, 2026, at 12:47 PM UTC\n\nRoot cause: A recently deployed change interacted with dynamic claims process, causing impact. More information is provided within the Post-Incident Report. \n\nNext steps:\n- For a more comprehensive list of next steps and actions, please refer to the Post Incident Report document.\n \nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days."
+          "content": "Title: Guest users were unable to access SharePoint Online sites connected to Microsoft Teams\n\nUser impact: Guest users were unable to access SharePoint Online sites connected to Microsoft Teams.\n\nMore info: Specifically, guest users were redirected to an AccessDenied.aspx page when attempting to access SharePoint Online sites where access is granted through Microsoft 365 Groups.\n \nAs a potential workaround, admins could have manually add affected guest users directly to the SharePoint Members group instead of relying on Microsoft 365 Group membership propagation.\n\nFinal status: We've completed a period of monitoring service telemetry, and we've observed the restoration of service availability to normal levels. Additionally, during this time, we've received multiple reports from previously affected customers that they're experiencing relief from impact, and as such, we've determined this incident is resolved.\n\nScope of impact: This issue could have impacted any guest users attempting to access SharePoint Online sites where access is granted through Microsoft 365 Groups.\n\nStart time: Thursday, August 20, 2026, at 7:30 AM UTC\n\nEnd time: Tuesday, August 25, 2026, at 12:47 PM UTC\n\nRoot cause: A change was made to significantly reduce request latency across almost all SPO requests by optimizing how the Dynamic Claims system retrieves and caches information through asynchronous tasks.\n\nThere was a latent bug within the initial Dynamic Claims flow where the service checks if the organization allows guest users for M365 group memberships. The pre-check did not force App-only credential requests to MS Graph and instead relied on the absence of user context in the thread to make the call app-only. This worked previously because the user context was not correctly propagated. However, in the new asynchronous tasks, the user context was correctly propagated, and this resulted in the failure to obtain the relevant token due to the service classifying the request as App+user. In this scenario, the service logic failed silently and put an empty value (i.e. the user is not a member of any M365 group) into the Dynamic Claims cache. This resulted in Dynamic Claims refresh call to fail for guest users and then being rejected from accessing the resources.\n\nThe issue was not detected by our monitoring systems in our early deployment rings (Microsoft’s internal organization etc.), as traffic for guest users is a small fraction of the overall dynamic traffic in these environments and therefore monitoring alerting thresholds were not met.\n\nNext steps:\n- For a more comprehensive list of next steps and actions, please refer to the Post Incident Report document.\n \nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days."
         },
         {
           "createdAt": "2026-08-26T05:45:51.307Z",
@@ -1920,11 +1935,6 @@
           "createdAt": "2026-08-26T01:47:35.947Z",
           "postType": "regular",
           "content": "Title: Guest users are unable to access SharePoint Online sites connected to Microsoft Teams\r\n\r\nUser impact: Guest users are unable to access SharePoint Online sites connected to Microsoft Teams.\r\n\r\nMore info: Specifically, guest users are redirected to an AccessDenied.aspx page when attempting to access SharePoint Online sites where access is granted through Microsoft 365 Groups.\n\nAs a potential workaround, admins can manually add affected guest users directly to the SharePoint Members group instead of relying on Microsoft 365 Group membership propagation.\r\n\r\nCurrent status: We've received some feedback indicating the impact is now resolved after we reverted the change. We're conducting persistent monitoring of the affected environment to ensure customers who previously reported the issue are seeing withstanding recovery. \r\n\r\nScope of impact: This issue could impact any guest users attempting to access SharePoint Online sites where access is granted through Microsoft 365 Groups. \r\n\r\nStart time: Thursday, August 20, 2026, at 7:30 AM UTC\r\n\r\nRoot cause: A recently deployed change interacted with dynamic claims process, causing impact.\r\n\r\nNext update by: Wednesday, August 26, 2026, at 7:30 AM UTC"
-        },
-        {
-          "createdAt": "2026-08-25T13:29:59.893Z",
-          "postType": "regular",
-          "content": "Title: Guest users are unable to access SharePoint Online sites connected to Microsoft Teams\r\n\r\nUser impact: Guest users are unable to access SharePoint Online sites connected to Microsoft Teams.\r\n\r\nMore info: Specifically, guest users are redirected to an AccessDenied.aspx page when attempting to access SharePoint Online sites where access is granted through Microsoft 365 Groups.\n\nAs a potential workaround, admins can manually add affected guest users directly to the SharePoint Members group instead of relying on Microsoft 365 Group membership propagation.\r\n\r\nCurrent status: We're continuing to contact organizations who previously reported the issue, to confirm that the impact has been resolved after reverting the change.\r\n\r\nScope of impact: This issue could impact any guest users attempting to access SharePoint Online sites where access is granted through Microsoft 365 Groups. \r\n\r\nStart time: Thursday, August 20, 2026, at 7:30 AM UTC\r\n\r\nNext update by: Wednesday, August 26, 2026, at 3:00 AM UTC"
         }
       ],
       "serviceName": "SharePoint Online",
