@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-02T08:21:11.883Z",
+  "lastUpdated": "2026-09-02T08:51:24.063Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -325,6 +325,34 @@
           "affectedServices": [
             "Exchange Online"
           ]
+        },
+        {
+          "id": "MO1465962",
+          "title": "Some users may be unable to open Google search links from email and Microsoft Teams messages",
+          "startTime": "2026-09-02T08:21:25.483Z",
+          "endTime": null,
+          "lastModified": "2026-09-02T08:28:49.09Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to open Google search links from email and Microsoft Teams messages.",
+          "scopeOfImpact": "Some users attempting to open Google search links from email and Microsoft Teams messages may be impacted.",
+          "rootCause": "",
+          "nextUpdateBy": "Wednesday, September 2, 2026, at 10:30 AM UTC",
+          "feature": "Directory Synchronization",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-09-02T08:25:05.507Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to open Google search links from email and Microsoft Teams messages\r\n\r\nUser impact: Users may be unable to open Google search links from email and Microsoft Teams messages.\r\n\r\nMore info: Microsoft Defender for Office 365 Safe Links may block the opening of Google search links (URLs), identifying them as malicious. In addition, admins may receive related alerts and incidents in the Microsoft Defender portal and Microsoft Sentinel as a result of these detections. Affected users receive the following message when attempting to open the Google search links:\n \n\"Opening this website might not be safe\"\n \nCopying the hyperlink and pasting it directly into a browser doesn't bypass the warning.\r\n\r\nCurrent status: We're reviewing affected alert IDs for a subset of impacted users, while also analyzing blocked links and their source, to determine why legitimate Google search URLs are being classified as malicious.\r\n\r\nScope of impact: Some users attempting to open Google search links from email and Microsoft Teams messages may be impacted.\r\n\r\nNext update by: Wednesday, September 2, 2026, at 10:30 AM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online",
+            "Microsoft 365 suite",
+            "Microsoft Teams",
+            "Microsoft Defender XDR"
+          ]
         }
       ]
     },
@@ -368,6 +396,34 @@
       "status": "serviceDegradation",
       "id": "OSDPPlatform",
       "issues": [
+        {
+          "id": "MO1465962",
+          "title": "Some users may be unable to open Google search links from email and Microsoft Teams messages",
+          "startTime": "2026-09-02T08:21:25.483Z",
+          "endTime": null,
+          "lastModified": "2026-09-02T08:28:49.09Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to open Google search links from email and Microsoft Teams messages.",
+          "scopeOfImpact": "Some users attempting to open Google search links from email and Microsoft Teams messages may be impacted.",
+          "rootCause": "",
+          "nextUpdateBy": "Wednesday, September 2, 2026, at 10:30 AM UTC",
+          "feature": "Directory Synchronization",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-09-02T08:25:05.507Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to open Google search links from email and Microsoft Teams messages\r\n\r\nUser impact: Users may be unable to open Google search links from email and Microsoft Teams messages.\r\n\r\nMore info: Microsoft Defender for Office 365 Safe Links may block the opening of Google search links (URLs), identifying them as malicious. In addition, admins may receive related alerts and incidents in the Microsoft Defender portal and Microsoft Sentinel as a result of these detections. Affected users receive the following message when attempting to open the Google search links:\n \n\"Opening this website might not be safe\"\n \nCopying the hyperlink and pasting it directly into a browser doesn't bypass the warning.\r\n\r\nCurrent status: We're reviewing affected alert IDs for a subset of impacted users, while also analyzing blocked links and their source, to determine why legitimate Google search URLs are being classified as malicious.\r\n\r\nScope of impact: Some users attempting to open Google search links from email and Microsoft Teams messages may be impacted.\r\n\r\nNext update by: Wednesday, September 2, 2026, at 10:30 AM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online",
+            "Microsoft 365 suite",
+            "Microsoft Teams",
+            "Microsoft Defender XDR"
+          ]
+        },
         {
           "id": "MO1457843",
           "title": "Admins can't identify who deleted a Viva Engage community or its Microsoft 365 Group in Microsoft Entra ID audit logs",
@@ -1029,6 +1085,34 @@
           ]
         },
         {
+          "id": "MO1465962",
+          "title": "Some users may be unable to open Google search links from email and Microsoft Teams messages",
+          "startTime": "2026-09-02T08:21:25.483Z",
+          "endTime": null,
+          "lastModified": "2026-09-02T08:28:49.09Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to open Google search links from email and Microsoft Teams messages.",
+          "scopeOfImpact": "Some users attempting to open Google search links from email and Microsoft Teams messages may be impacted.",
+          "rootCause": "",
+          "nextUpdateBy": "Wednesday, September 2, 2026, at 10:30 AM UTC",
+          "feature": "Directory Synchronization",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-09-02T08:25:05.507Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to open Google search links from email and Microsoft Teams messages\r\n\r\nUser impact: Users may be unable to open Google search links from email and Microsoft Teams messages.\r\n\r\nMore info: Microsoft Defender for Office 365 Safe Links may block the opening of Google search links (URLs), identifying them as malicious. In addition, admins may receive related alerts and incidents in the Microsoft Defender portal and Microsoft Sentinel as a result of these detections. Affected users receive the following message when attempting to open the Google search links:\n \n\"Opening this website might not be safe\"\n \nCopying the hyperlink and pasting it directly into a browser doesn't bypass the warning.\r\n\r\nCurrent status: We're reviewing affected alert IDs for a subset of impacted users, while also analyzing blocked links and their source, to determine why legitimate Google search URLs are being classified as malicious.\r\n\r\nScope of impact: Some users attempting to open Google search links from email and Microsoft Teams messages may be impacted.\r\n\r\nNext update by: Wednesday, September 2, 2026, at 10:30 AM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online",
+            "Microsoft 365 suite",
+            "Microsoft Teams",
+            "Microsoft Defender XDR"
+          ]
+        },
+        {
           "id": "MO1457843",
           "title": "Admins can't identify who deleted a Viva Engage community or its Microsoft 365 Group in Microsoft Entra ID audit logs",
           "startTime": "2026-08-19T22:38:36.783Z",
@@ -1174,9 +1258,38 @@
     },
     {
       "service": "Microsoft Defender XDR",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "Microsoft365Defender",
-      "issues": []
+      "issues": [
+        {
+          "id": "MO1465962",
+          "title": "Some users may be unable to open Google search links from email and Microsoft Teams messages",
+          "startTime": "2026-09-02T08:21:25.483Z",
+          "endTime": null,
+          "lastModified": "2026-09-02T08:28:49.09Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to open Google search links from email and Microsoft Teams messages.",
+          "scopeOfImpact": "Some users attempting to open Google search links from email and Microsoft Teams messages may be impacted.",
+          "rootCause": "",
+          "nextUpdateBy": "Wednesday, September 2, 2026, at 10:30 AM UTC",
+          "feature": "Directory Synchronization",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-09-02T08:25:05.507Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to open Google search links from email and Microsoft Teams messages\r\n\r\nUser impact: Users may be unable to open Google search links from email and Microsoft Teams messages.\r\n\r\nMore info: Microsoft Defender for Office 365 Safe Links may block the opening of Google search links (URLs), identifying them as malicious. In addition, admins may receive related alerts and incidents in the Microsoft Defender portal and Microsoft Sentinel as a result of these detections. Affected users receive the following message when attempting to open the Google search links:\n \n\"Opening this website might not be safe\"\n \nCopying the hyperlink and pasting it directly into a browser doesn't bypass the warning.\r\n\r\nCurrent status: We're reviewing affected alert IDs for a subset of impacted users, while also analyzing blocked links and their source, to determine why legitimate Google search URLs are being classified as malicious.\r\n\r\nScope of impact: Some users attempting to open Google search links from email and Microsoft Teams messages may be impacted.\r\n\r\nNext update by: Wednesday, September 2, 2026, at 10:30 AM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online",
+            "Microsoft 365 suite",
+            "Microsoft Teams",
+            "Microsoft Defender XDR"
+          ]
+        }
+      ]
     },
     {
       "service": "Project for the web",
