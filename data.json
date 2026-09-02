@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-01T23:47:48.652Z",
+  "lastUpdated": "2026-09-02T00:18:02.394Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1703,7 +1703,7 @@
       "title": "Users may be unable to use multiple Microsoft Teams features",
       "startTime": "2026-08-26T01:00:00Z",
       "endTime": "2026-08-26T02:00:00Z",
-      "lastModified": "2026-08-27T23:38:56.72Z",
+      "lastModified": "2026-09-01T23:55:58.693Z",
       "status": "postIncidentReviewPublished",
       "severity": "incident",
       "userImpact": "Users may have been unable to use multiple Microsoft Teams features.",
@@ -1713,6 +1713,11 @@
       "feature": "Meetings",
       "isResolved": true,
       "posts": [
+        {
+          "createdAt": "2026-09-01T23:55:58.693Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        },
         {
           "createdAt": "2026-08-27T23:38:56.72Z",
           "postType": "regular",
@@ -1732,11 +1737,6 @@
           "createdAt": "2026-08-26T01:41:45.517Z",
           "postType": "regular",
           "content": "Title: Users may be unable to use multiple Microsoft Teams features\n\nUser impact: Users may be unable to use multiple Microsoft Teams features. \n\nMore info: Based on our telemetry, multiple Microsoft Teams features are affected:\n- Live Events\n- 1:1 Calling\n- PSTN Calling\n- Joining Meetings\n- Creating Meetings\n- Meeting General Functionality\n- Town Hall Functionality\n\nCurrent status: We have determined that maintenance related work was being conducted on the infrastructure based in Asia-Pacific. As an unintended result of this maintenance work, service health was impacted. We have paused our maintenance work and our telemetry indicates that the issue is no longer occurring. We're continuing to monitor service health and work with reporting users that the issue is no longer occurring. \n\n\nScope of impact: This issue could affect any user located in Asia-Pacific. This section is subject to change as our investigation continues. \n\nStart time: Wednesday, August 26, 2026, at 1:00 AM UTC\n\nPreliminary root cause: Maintenance related work in the region is inadvertently causing impact to service health. We will provide more information regarding the root cause as soon as possible. \n\nNext update by: Wednesday, August 26, 2026, at 3:00 AM UTC"
-        },
-        {
-          "createdAt": "2026-08-26T01:26:48.09Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to join and create Microsoft Teams meetings\r\n\r\nUser impact: Users may be unable to join and create Microsoft Teams meetings.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Teams and checking for impact to your organization. We'll provide an update within 30 minutes."
         }
       ],
       "serviceName": "Microsoft Teams",
@@ -1841,7 +1841,7 @@
       "title": "Some users may be unable to receive responses when using Microsoft 365 Copilot Chat",
       "startTime": "2026-08-24T22:50:00Z",
       "endTime": "2026-08-25T10:20:00Z",
-      "lastModified": "2026-08-27T20:52:05.113Z",
+      "lastModified": "2026-09-02T00:09:20.967Z",
       "status": "postIncidentReviewPublished",
       "severity": "incident",
       "userImpact": "Users may be unable to receive responses when using Copilot Chat.",
@@ -1851,6 +1851,11 @@
       "feature": "General",
       "isResolved": true,
       "posts": [
+        {
+          "createdAt": "2026-09-02T00:09:20.967Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        },
         {
           "createdAt": "2026-08-27T20:52:05.113Z",
           "postType": "regular",
@@ -1870,11 +1875,6 @@
           "createdAt": "2026-08-25T10:25:49.817Z",
           "postType": "regular",
           "content": "Title: Some users may be unable to receive responses when using Microsoft 365 Copilot Chat\r\n\r\nUser impact: Users may be unable to receive responses when using Copilot Chat.\r\n\r\nMore info: Affected users may receive error messages stating that a problem has occurred or that Copilot could not respond.\r\n\r\nCurrent status: We've reverted the suspected change and are observing signs of recovery in service telemetry. We're engaging a sample of affected users to validate whether this action has successfully mitigated the issue and restored Chat functionality.\r\n\r\nScope of impact: This issue may impact any user attempting to use Copilot Chat. This information may be updated as our investigation continues.\r\n\r\nNext update by: Tuesday, August 25, 2026, at 12:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-08-25T10:08:54.413Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to receive responses when using Microsoft 365 Copilot Chat\r\n\r\nUser impact: Users may be unable to receive responses when using Copilot Chat.\r\n\r\nMore info: Affected users may receive error messages stating that a problem has occurred or that Copilot could not respond.\r\n\r\nCurrent status: We've identified a recent service update that may be contributing to impact. We're continuing to analyze service telemetry and diagnostic data to validate this correlation while evaluating mitigation actions to reduce impact and restore Chat functionality.\r\n\r\nScope of impact: This issue may impact any user attempting to use Copilot Chat. This information may be updated as our investigation continues.\r\n\r\nNext update by: Tuesday, August 25, 2026, at 12:00 PM UTC"
         }
       ],
       "serviceName": "Microsoft 365 Copilot Chat",
