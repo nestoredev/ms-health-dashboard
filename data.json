@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-03T19:06:39.939Z",
+  "lastUpdated": "2026-09-03T19:36:53.318Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1222,16 +1222,21 @@
           "title": "Users may be unable to join calls or meetings in Microsoft Teams for Mac",
           "startTime": "2026-09-03T18:57:00.007Z",
           "endTime": null,
-          "lastModified": "2026-09-03T18:59:28.39Z",
+          "lastModified": "2026-09-03T19:25:54.783Z",
           "status": "investigating",
           "severity": "advisory",
           "userImpact": "Users may be unable to join calls or meetings in Microsoft Teams for Mac. ",
-          "scopeOfImpact": "",
-          "rootCause": "",
-          "nextUpdateBy": "",
+          "scopeOfImpact": "Some users attempting to join calls or meetings in Microsoft Teams for Mac may be impacted. This section may be updated as our investigation continues.\r\n\r\nStart time: Thursday, July 2, 2026, at 3:09 PM UTC",
+          "rootCause": "A code change is causing the service infrastructure responsible for call and meeting functionality to fail to process some requests, resulting in impact.",
+          "nextUpdateBy": "Thursday, September 3, 2026, at 9:30 PM UTC",
           "feature": "Meetings",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-03T19:25:54.783Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to join calls or meetings in Microsoft Teams for Mac\r\n\r\nUser impact: Users may be unable to join calls or meetings in Microsoft Teams for Mac. \r\n\r\nCurrent status: We've identified a code change that's causing the service infrastructure responsible for call and meeting functionality to fail to process some requests, resulting in impact. We're assessing potential remediation actions to address the problematic code change and restore service functionality.\r\n\r\nScope of impact: Some users attempting to join calls or meetings in Microsoft Teams for Mac may be impacted. This section may be updated as our investigation continues.\r\n\r\nStart time: Thursday, July 2, 2026, at 3:09 PM UTC\r\n\r\nRoot cause: A code change is causing the service infrastructure responsible for call and meeting functionality to fail to process some requests, resulting in impact.\r\n\r\nNext update by: Thursday, September 3, 2026, at 9:30 PM UTC"
+            },
             {
               "createdAt": "2026-09-03T18:59:28.39Z",
               "postType": "regular",
