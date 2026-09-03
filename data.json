@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-02T23:58:03.171Z",
+  "lastUpdated": "2026-09-03T00:28:14.095Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -136,16 +136,21 @@
           "title": "Users may be unable to connect to, or experience degraded functionality with Exchange Online",
           "startTime": "2026-08-31T15:08:00Z",
           "endTime": null,
-          "lastModified": "2026-09-02T22:00:23.627Z",
+          "lastModified": "2026-09-03T00:21:16.903Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to connect to, or experience degraded functionality with Exchange Online.",
-          "scopeOfImpact": "Users attempting to perform any of the outlined impact scenarios may be affected by this event.\n\nStart time: Monday, August 31, 2026, at 3:08 PM UTC\n\nPreliminary",
+          "scopeOfImpact": "Users attempting to perform any of the outlined impact scenarios may be affected by this event.\n \nStart time: Monday, August 31, 2026, at 3:08 PM UTC\n \nPreliminary",
           "rootCause": "An issue within a core authentication configuration used by multiple Microsoft 365 services is resulting in impact.",
-          "nextUpdateBy": "Thursday, September 3, 2026, at 12:30 AM UTC",
+          "nextUpdateBy": "Thursday, September 3, 2026, at 2:30 AM UTC",
           "feature": "All clients",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-03T00:21:16.903Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to connect to, or experience degraded functionality with Exchange Online\n\nUser impact: Users may be unable to connect to, or experience degraded functionality with Exchange Online.\n\nMore info: We've confirmed that the authentication component issue impacts other services beyond Exchange Online. For more information regarding other impact scenarios, please see: MO1465074.\n \nWe've opted to keep this post (EX1464935) open as Exchange Online remains the most predominantly impacted service.\n \nUsers may experience a variety of symptoms related to this event, including but not limited to:\n- Users can't download email message attachments through any Exchange Online connection method.\n- Delays, failures, or incomplete results when searching for content within Exchange Online mailboxes.\n- Delays or failures when sending or receiving email messages.\n- Authentication-related errors when accessing Exchange Online services.\n- Difficulties accessing or performing actions within Exchange administration experiences.\n- Intermittent failures affecting mailbox operations and message delivery work\n- Delays or failures when sending or receiving email messages via Outlook for iOS and Android.\n- Users may be unable to use room finder in Outlook calendars.\n- Users may be unable to sign in to Outlook on the web.\n \nCurrent status: We continue to observe positive recovery trends through ongoing monitoring, with most affected users no longer experiencing disruption. We remain focused on identifying and resolving any remaining issues while implementing targeted mitigations to support a stable and consistent user experience.\n \nScope of impact: Users attempting to perform any of the outlined impact scenarios may be affected by this event.\n \nStart time: Monday, August 31, 2026, at 3:08 PM UTC\n \nPreliminary root cause: An issue within a core authentication configuration used by multiple Microsoft 365 services is resulting in impact.\n \nNext update by: Thursday, September 3, 2026, at 2:30 AM UTC"
+            },
             {
               "createdAt": "2026-09-02T22:00:23.627Z",
               "postType": "regular",
@@ -3177,42 +3182,6 @@
       "serviceName": "Microsoft Intune",
       "affectedServices": [
         "Microsoft Intune"
-      ]
-    },
-    {
-      "id": "TM1446653",
-      "title": "Some users may receive failures when creating channels or adding members to shared channels in Microsoft Teams",
-      "startTime": "2026-08-01T01:35:00Z",
-      "endTime": "2026-08-04T00:07:10.173Z",
-      "lastModified": "2026-08-04T00:08:10.793Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users may have received failures when creating channels or adding members to shared channels in Microsoft Teams.",
-      "scopeOfImpact": "Your organization was affected by this event, and some users may have received failures when creating channels or adding members to shared channels in Microsoft Teams. \r\n\r\nStart time: Saturday, August 1, 2026, at 1:35 AM UTC\r\n\r\nEnd time: Monday, August 3, 2026, at 7:07 PM UTC",
-      "rootCause": "A recent service update migrated JavaScript Object Notation (JSON) deserialization behavior, resulting in scenarios that rely on deserialization to utilize incorrect values and causing users to receive failures, such as when creating channels or adding users to shared channels in Microsoft Teams.\r\n\r\nNext steps: \n- To help prevent similar impact in the future, we're further reviewing our update release procedures to ensure we're able to better identify issues before changes are deployed.\r\n\r\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Teams and Channels",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-08-04T00:08:07.867Z",
-          "postType": "regular",
-          "content": "Title: Some users may receive failures when creating channels or adding members to shared channels in Microsoft Teams\r\n\r\nUser impact: Users may have received failures when creating channels or adding members to shared channels in Microsoft Teams.\r\n\r\nFinal status: After a period of monitoring, we confirmed that rolling back the offending update remediated impact. \r\n\r\nScope of impact: Your organization was affected by this event, and some users may have received failures when creating channels or adding members to shared channels in Microsoft Teams. \r\n\r\nStart time: Saturday, August 1, 2026, at 1:35 AM UTC\r\n\r\nEnd time: Monday, August 3, 2026, at 7:07 PM UTC\r\n\r\nRoot cause: A recent service update migrated JavaScript Object Notation (JSON) deserialization behavior, resulting in scenarios that rely on deserialization to utilize incorrect values and causing users to receive failures, such as when creating channels or adding users to shared channels in Microsoft Teams.\r\n\r\nNext steps: \n- To help prevent similar impact in the future, we're further reviewing our update release procedures to ensure we're able to better identify issues before changes are deployed.\r\n\r\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-08-03T19:42:35.67Z",
-          "postType": "regular",
-          "content": "Title: Some users may receive failures when creating channels or adding members to shared channels in Microsoft Teams\r\n\r\nUser impact: Users may receive failures when creating channels or adding members to shared channels in Microsoft Teams.\r\n\r\nCurrent status: After further analysis, we've validated that users can still create shared channels but may be unable to add new users to these channels. We've updated the \"Title\", \"User impact\", \"Scope of impact\", and “Root cause” fields to reflect this. We've rolled back the offending service update and are monitoring service availability to validate remediation. Simultaneously, we're analyzing additional recent updates to validate if there is still potential for residual impact or if the issue is fully remediated.\r\n\r\nScope of impact: Your organization is affected by this event, and some users may receive failures when creating channels or adding members to shared channels in Microsoft Teams. This section may be updated as the investigation progresses.\r\n\r\nStart time: Saturday, August 1, 2026, at 1:35 AM UTC\r\n\r\nRoot cause: A recent service update migrated JavaScript Object Notation (JSON) deserialization behavior, resulting in scenarios that rely on deserialization to utilize incorrect values and causing users to receive failures, such as when creating channels or adding users to shared channels in Microsoft Teams.\r\n\r\nNext update by: Tuesday, August 4, 2026, at 12:30 AM UTC"
-        },
-        {
-          "createdAt": "2026-08-03T18:44:40.93Z",
-          "postType": "regular",
-          "content": "Title: Some users may receive failures when creating channels with Channel Capabilities or shared channels in Microsoft Teams\r\n\r\nUser impact: Users may receive failures when creating channels with Channel Capabilities or shared channels in Microsoft Teams.\r\n\r\nCurrent status: After an internal review, we've isolated that a recent service update migrated JavaScript Object Notation (JSON) deserialization behavior, resulting in scenarios that rely on deserialization to utilize incorrect values and causing users to receive failures, such as when creating channels with Channel Capabilities or shared channels in Microsoft Teams. We're evaluating potential remediation strategies to resolve user impact as soon as possible.\r\n\r\nScope of impact: Your organization is affected by this event, and some users may receive failures when creating channels with Channel Capabilities or shared channels in Microsoft Teams. This section may be updated as the investigation progresses.\r\n\r\nStart time: Saturday, August 1, 2026, at 1:35 AM UTC\r\n\r\nRoot cause: A recent service update migrated JavaScript Object Notation (JSON) deserialization behavior, resulting in scenarios that rely on deserialization to utilize incorrect values and causing users to receive failures, such as when creating channels with Channel Capabilities or shared channels in Microsoft Teams.\r\n\r\nNext update by: Monday, August 3, 2026, at 8:00 PM UTC"
-        }
-      ],
-      "serviceName": "Microsoft Teams",
-      "affectedServices": [
-        "Microsoft Teams"
       ]
     }
   ]
