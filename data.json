@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-03T08:31:28.963Z",
+  "lastUpdated": "2026-09-03T09:01:43.963Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -136,16 +136,21 @@
           "title": "Users may be unable to load themes in Outlook on the web",
           "startTime": "2026-09-02T06:01:52Z",
           "endTime": null,
-          "lastModified": "2026-09-03T07:36:13.95Z",
+          "lastModified": "2026-09-03T08:49:26.217Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to load themes in Outlook on the web.",
           "scopeOfImpact": "Impact is specific to users attempting to load themes in Outlook on the web. This information may be updated as our investigation continues.",
           "rootCause": "",
-          "nextUpdateBy": "Thursday, September 3, 2026, at 9:00 AM UTC",
+          "nextUpdateBy": "Friday, September 4, 2026, at 3:00 AM UTC",
           "feature": "Reports of an Incident",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-03T08:49:26.217Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to load themes in Outlook on the web\r\n\r\nUser impact: Users may be unable to load themes in Outlook on the web.\r\n\r\nCurrent status: We've received confirmation from some affected users that impact is resolved. We're reaching out to additional impacted users to confirm that the issue is fully resolved. \r\n\r\nScope of impact: Impact is specific to users attempting to load themes in Outlook on the web. This information may be updated as our investigation continues.\r\n\r\nNext update by: Friday, September 4, 2026, at 3:00 AM UTC"
+            },
             {
               "createdAt": "2026-09-03T01:20:13.91Z",
               "postType": "regular",
@@ -591,7 +596,7 @@
           "title": "Users may experience issues when utilizing multiple Microsoft 365 services",
           "startTime": "2026-08-31T15:08:00Z",
           "endTime": null,
-          "lastModified": "2026-09-03T08:25:02.757Z",
+          "lastModified": "2026-09-03T08:25:42.317Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may experience issues when utilizing multiple Microsoft 365 services.",
@@ -604,7 +609,7 @@
             {
               "createdAt": "2026-09-03T08:25:02.757Z",
               "postType": "regular",
-              "content": "Title: Users may experience issues when utilizing multiple Microsoft 365 services\n\nUser impact: Users may experience issues when utilizing multiple Microsoft 365 services.\n\nMore info: Impact is currently limited to Microsoft Outlook on the web. Previously identified impact included the services and scenarios listed below. We will continue to update this list as our investigation progresses and our understanding of the issue evolves.\n\nExchange Online:\n- Users can't download email message attachments through any Exchange Online connection method.\n- Users may be unable to sign in to Outlook on the web.\n \nRECOVERED\n \nMicrosoft Graph:\n- Users may have experienced failures for scenarios that rely on access to Exchange Online data.\n \nExchange Online:\n- Service telemetry indicates recovery of core mail flow and search functionality.\n- Service telemetry indicates recovery of the majority of previously impacted authentication and protocol connectivity scenarios.\n- Users may have been unable to connect to, or experience degraded functionality, such as failures when attempting to use the search function, within Exchange Online. All connection methods are affected.\n- Users may have been unable to connect to Exchange Web Services (EWS)\n- Users may have been unable to use room finder in Outlook calendars.\n \nOutlook for iOS and Android:\n- Users may have experienced delays or failures when sending or receiving email messages via Outlook for iOS and Android.\n \nMicrosoft 365 Admin Center:\n- Admins may have experienced issues authenticating into the admin center.\n \nMicrosoft Purview:\n- Users can now access the Microsoft Purview portal.\n- Any policy hits, alerts, or processing activities delayed during the event are expected to appear over the next 24 to 48 hours as recovery validation continues.\n- From Purview Communications compliance perspective, this issue is mitigated. Customers should be able to use the portal. We are running backfill for any missed policy hits and those should appear in the next 24 to 48 hours.\n\nMicrosoft Defender XDR:\n- Users may have experienced intermittent authorization failures across solutions in Defender.\n \nMicrosoft Teams:\n- Users may have experienced issues with search and users’ presence may be stale and not update automatically or through manual adjustment. User location adjustment may have failed.\n- Users may have experienced issues with Microsoft Teams Room (MTR) devices and desktop phones displayed offline in the Teams admin center.\n- Users may have experienced issues creating, deleting, and editing Teams channels.\n- Users may have experienced issues with calendar functionality.\n \nMicrosoft 365 Copilot: \n- Users' Copilot prompts that required Microsoft 365 grounding, such as email content, may have failed.\n- Users may have experienced failures for scenarios that rely on access to Exchange Online data.\n- Users prompts may have failed or they may have experienced degradation when utilizing Cowork.\n\nOneDrive for Business and SharePoint Online:\n- Users may have been unable to load or refresh portions of OneDrive and SharePoint, including account and storage information, search results, Favorites, Followed and Shared With Me content, recent files, lists, and news.\n- Some users may have also experience delayed or failed file opening, Office policy-label retrieval, OneDrive synchronization, mobile camera upload, and video playback.\n- Users may have seen partial page failures, missing or stale content, repeated retries, and operation timeouts rather than a complete platform outage.\n\nUniversal Print: \n- Users may have been unable to create, upload, or retrieve print jobs.\n \nCurrent status: We've confirmed that our services remain stable, and both telemetry and customer reports indicate that the issue has been largely mitigated. We're continuing to address any lingering issues while we remain engaged in an extended monitoring period to validate sustained recovery.\n\nScope of impact: Users attempting to perform any of the outlined impact scenarios may be affected by this event.\n\nStart time: Monday, August 31, 2026, at 3:08 PM UTC\n\nPreliminary root cause: An issue within a core authentication configuration used by multiple Microsoft 365 services is resulting in impact.\n\nNext update by: Thursday, September 3, 2026, at 10:30 AM UTC"
+              "content": "Title: Users may experience issues when utilizing multiple Microsoft 365 services\n\nUser impact: Users may experience issues when utilizing multiple Microsoft 365 services.\n\nMore info: Impact is currently limited to Microsoft Outlook on the web. Previously identified impact included the services and scenarios listed below. We will continue to update this list as our investigation progresses and our understanding of the issue evolves.\n\nExchange Online:\n- Users can't download email message attachments through any Exchange Online connection method.\n- Users may be unable to sign in to Outlook on the web.\n \nRECOVERED\n \nMicrosoft Graph:\n- Users may have experienced failures for scenarios that rely on access to Exchange Online data.\n \nExchange Online:\n- Service telemetry indicates recovery of core mail flow and search functionality.\n- Service telemetry indicates recovery of the majority of previously impacted authentication and protocol connectivity scenarios.\n- Users may have been unable to connect to, or experience degraded functionality, such as failures when attempting to use the search function, within Exchange Online. All connection methods are affected.\n- Users may have been unable to connect to Exchange Web Services (EWS)\n- Users may have been unable to use room finder in Outlook calendars.\n \nOutlook for iOS and Android:\n- Users may have experienced delays or failures when sending or receiving email messages via Outlook for iOS and Android.\n \nMicrosoft 365 Admin Center:\n- Admins may have experienced issues authenticating into the admin center.\n \nMicrosoft Purview:\n- Users can now access the Microsoft Purview portal.\n- Any policy hits, alerts, or processing activities delayed during the event are expected to appear over the next 24 to 48 hours as recovery validation continues.\n- From Purview Communications compliance perspective, this issue is mitigated. Customers should be able to use the portal. We are running backfill for any missed policy hits and those should appear in the next 24 to 48 hours.\n\nMicrosoft Defender XDR:\n- Users may have experienced intermittent authorization failures across solutions in Defender.\n \nMicrosoft Teams:\n- Users may have experienced issues with search and users’ presence may be stale and not update automatically or through manual adjustment. User location adjustment may have failed.\n- Users may have experienced issues with Microsoft Teams Room (MTR) devices and desktop phones displayed offline in the Teams admin center.\n- Users may have experienced issues creating, deleting, and editing Teams channels.\n- Users may have experienced issues with calendar functionality.\n \nMicrosoft 365 Copilot: \n- Users' Copilot prompts that required Microsoft 365 grounding, such as email content, may have failed.\n- Users may have experienced failures for scenarios that rely on access to Exchange Online data.\n- Users prompts may have failed or they may have experienced degradation when utilizing Cowork.\n\nOneDrive for Business and SharePoint Online:\n- Users may have been unable to load or refresh portions of OneDrive and SharePoint, including account and storage information, search results, Favorites, Followed and Shared With Me content, recent files, lists, and news.\n- Some users may have also experience delayed or failed file opening, Office policy-label retrieval, OneDrive synchronization, mobile camera upload, and video playback.\n- Users may have seen partial page failures, missing or stale content, repeated retries, and operation timeouts rather than a complete platform outage.\n\nUniversal Print: \n- Users may have been unable to create, upload, or retrieve print jobs.\n \nCurrent status: We're continuing to closely monitor the service to ensure sustained stability, and signals from telemetry and customer feedback remain positive. In parallel, we're conducting additional remediation actions where required to resolve any lingering residual impact.\n\nScope of impact: Users attempting to perform any of the outlined impact scenarios may be affected by this event.\n\nStart time: Monday, August 31, 2026, at 3:08 PM UTC\n\nPreliminary root cause: An issue within a core authentication configuration used by multiple Microsoft 365 services is resulting in impact.\n\nNext update by: Thursday, September 3, 2026, at 10:30 AM UTC"
             },
             {
               "createdAt": "2026-09-03T06:20:32.653Z",
@@ -1031,6 +1036,31 @@
               "createdAt": "2026-08-21T23:43:37.807Z",
               "postType": "regular",
               "content": "Title: Users may be unable to join shared channels using some links to messages in Microsoft Teams\n\nUser impact: Users may be unable to join shared channels using some links to messages in Microsoft Teams.\n\nMore info: This issue specifically affects links generated using the “Copy Link” options within the three dots menu located at the top right of the shared channel. Users can bypass this impact by generating links to channels using any alternate method, such as by right-clicking on the channel in the left rail menu or any specific message within the shared channel and choosing the “Copy Link” option there.\n \nCurrent status: We're investigating a potential issue with the Microsoft Teams service and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Teams"
+          ]
+        },
+        {
+          "id": "TM1466441",
+          "title": "Users may be unable to access tabs beyond the Conversation tab in certain Microsoft Teams channels",
+          "startTime": "2026-09-03T08:43:30.317Z",
+          "endTime": null,
+          "lastModified": "2026-09-03T08:55:06.307Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to access tabs beyond the Conversation tab in certain Microsoft Teams channels.",
+          "scopeOfImpact": "Any user attempting to access tabs beyond the Conversation tab in Microsoft Teams channels with long channel names and/or associated sensitivity labels may be impacted.",
+          "rootCause": "",
+          "nextUpdateBy": "Thursday, September 3, 2026, at 11:00 AM UTC",
+          "feature": "Files",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-09-03T08:45:36.397Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to access tabs beyond the Conversation tab in certain Microsoft Teams channels\r\n\r\nUser impact: Users may be unable to access tabs beyond the Conversation tab in certain Microsoft Teams channels.\r\n\r\nMore info: Users may only see the Conversation tab in Microsoft Teams channels when channel names and associated sensitivity labels are long, particularly on smaller displays. As a result, other tabs such as Shared, Files, Notes, and custom tabs may not be visible.\n\nAs a workaround, impacted users can zoom out in Teams, use a larger display where available, or, in some cases, select the overflow arrow to access hidden tabs.\r\n\r\nCurrent status: We're reviewing HTTP Archive (HAR) files and Teams client logs from a number of impacted users to determine the root cause and identify mitigation options.\r\n\r\nScope of impact: Any user attempting to access tabs beyond the Conversation tab in Microsoft Teams channels with long channel names and/or associated sensitivity labels may be impacted.\r\n\r\nNext update by: Thursday, September 3, 2026, at 11:00 AM UTC"
             }
           ],
           "affectedServices": [
