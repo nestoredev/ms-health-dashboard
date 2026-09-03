@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-03T14:34:24.678Z",
+  "lastUpdated": "2026-09-03T15:04:42.756Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1122,16 +1122,21 @@
           "title": "Users may be unable to edit virtual invites in Microsoft Teams",
           "startTime": "2026-09-02T18:31:23.81Z",
           "endTime": null,
-          "lastModified": "2026-09-03T12:39:43.617Z",
+          "lastModified": "2026-09-03T14:57:20.787Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to edit virtual invites in Microsoft Teams. ",
-          "scopeOfImpact": "This issue may impact users attempting to edit virtual invites in Microsoft Teams. This information may be updated as our investigation continues.",
+          "scopeOfImpact": "Any user attempting to edit virtual invites in Microsoft Teams may be impacted. This information may be updated as our investigation continues.",
           "rootCause": "",
-          "nextUpdateBy": "Thursday, September 3, 2026, at 4:30 PM UTC",
+          "nextUpdateBy": "Friday, September 4, 2026, at 5:30 AM UTC",
           "feature": "Calendar",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-03T14:48:27.54Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to edit virtual invites in Microsoft Teams\r\n\r\nUser impact: Users may be unable to edit virtual invites in Microsoft Teams. \r\n\r\nMore info: When attempting to edit virtual event invites, the page may not load.\r\n\r\nCurrent status: We've identified the source of increased request traffic that may be preventing the portion of service infrastructure responsible for facilitating the editing of virtual invites from efficiently processing requests. We're rebalancing request traffic and will monitor our service health telemetry to determine whether this remediates the impact as expected.\r\n\r\nScope of impact: Any user attempting to edit virtual invites in Microsoft Teams may be impacted. This information may be updated as our investigation continues.\r\n\r\nNext update by: Friday, September 4, 2026, at 5:30 AM UTC"
+            },
             {
               "createdAt": "2026-09-03T12:39:43.617Z",
               "postType": "regular",
