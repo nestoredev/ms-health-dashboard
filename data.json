@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-03T15:34:55.318Z",
+  "lastUpdated": "2026-09-03T16:05:07.918Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1073,51 +1073,6 @@
           ]
         },
         {
-          "id": "TM1466441",
-          "title": "Users may be unable to access tabs beyond the Conversation tab in certain Microsoft Teams channels",
-          "startTime": "2026-08-18T13:30:00Z",
-          "endTime": null,
-          "lastModified": "2026-09-03T13:50:56.997Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may be unable to access tabs beyond the Conversation tab in certain Microsoft Teams channels.",
-          "scopeOfImpact": "Any user attempting to access tabs beyond the Conversation tab in Microsoft Teams channels with long channel names and/or associated sensitivity labels may be impacted.\r\n\r\nStart time: Tuesday, August 18, 2026, at 1:30 PM UTC",
-          "rootCause": "A recent configuration change associated with a user interface modernization effort inadvertently introduced a regression that is preventing Teams channel tabs from rendering correctly.",
-          "nextUpdateBy": "Thursday, September 3, 2026, at 4:00 PM UTC",
-          "feature": "Files",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-09-03T13:50:56.997Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to access tabs beyond the Conversation tab in certain Microsoft Teams channels\r\n\r\nUser impact: Users may be unable to access tabs beyond the Conversation tab in certain Microsoft Teams channels.\r\n\r\nMore info: Users may only see the Conversation tab in Microsoft Teams channels when channel names and associated sensitivity labels are long, particularly on smaller displays. As a result, other tabs such as Shared, Files, Notes, and custom tabs may not be visible.\n\nAs a workaround, impacted users can zoom out in Teams, use a larger display where available, or, in some cases, select the overflow arrow to access hidden tabs.\r\n\r\nCurrent status: We've completed the reversion of the offending configuration change and are reaching out to a number of impacted users to confirm that this action successfully resolved the issue.\r\n\r\nScope of impact: Any user attempting to access tabs beyond the Conversation tab in Microsoft Teams channels with long channel names and/or associated sensitivity labels may be impacted.\r\n\r\nStart time: Tuesday, August 18, 2026, at 1:30 PM UTC\r\n\r\nRoot cause: A recent configuration change associated with a user interface modernization effort inadvertently introduced a regression that is preventing Teams channel tabs from rendering correctly.\r\n\r\nNext update by: Thursday, September 3, 2026, at 4:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-09-03T12:26:42.677Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to access tabs beyond the Conversation tab in certain Microsoft Teams channels\n\nUser impact: Users may be unable to access tabs beyond the Conversation tab in certain Microsoft Teams channels.\n\nMore info: Users may only see the Conversation tab in Microsoft Teams channels when channel names and associated sensitivity labels are long, particularly on smaller displays. As a result, other tabs such as Shared, Files, Notes, and custom tabs may not be visible.\n\nAs a workaround, impacted users can zoom out in Teams, use a larger display where available, or, in some cases, select the overflow arrow to access hidden tabs.\n\nCurrent status: We’re working to revert the offending configuration change. We expect that this will process will be complete and the issue resolved by our next scheduled update.\n\nScope of impact: Any user attempting to access tabs beyond the Conversation tab in Microsoft Teams channels with long channel names and/or associated sensitivity labels may be impacted.\n\nStart time: Tuesday, August 18, 2026, at 1:30 PM UTC\n\nRoot cause: A recent configuration change associated with a user interface modernization effort inadvertently introduced a regression that is preventing Teams channel tabs from rendering correctly.\n\nNext update by: Thursday, September 3, 2026, at 2:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-09-03T12:26:41.66Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to access tabs beyond the Conversation tab in certain Microsoft Teams channels\r\n\r\nUser impact: Users may be unable to access tabs beyond the Conversation tab in certain Microsoft Teams channels.\r\n\r\nMore info: Users may only see the Conversation tab in Microsoft Teams channels when channel names and associated sensitivity labels are long, particularly on smaller displays. As a result, other tabs such as Shared, Files, Notes, and custom tabs may not be visible.\n\nAs a workaround, impacted users can zoom out in Teams, use a larger display where available, or, in some cases, select the overflow arrow to access hidden tabs.\r\n\r\nCurrent status:  We’re working to revert the offending configuration change. We expect that this will process will be complete and the issue resolved by our next scheduled update.\r\n\r\nScope of impact: Any user attempting to access tabs beyond the Conversation tab in Microsoft Teams channels with long channel names and/or associated sensitivity labels may be impacted.\r\n\r\nStart time: Tuesday, August 18, 2026, at 1:30 PM UTC\r\n\r\nRoot cause: A recent configuration change associated with a user interface modernization effort inadvertently introduced a regression that is preventing Teams channel tabs from rendering correctly.\r\n\r\nNext update by: Thursday, September 3, 2026, at 2:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-09-03T10:41:27.44Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to access tabs beyond the Conversation tab in certain Microsoft Teams channels\r\n\r\nUser impact: Users may be unable to access tabs beyond the Conversation tab in certain Microsoft Teams channels.\r\n\r\nMore info: Users may only see the Conversation tab in Microsoft Teams channels when channel names and associated sensitivity labels are long, particularly on smaller displays. As a result, other tabs such as Shared, Files, Notes, and custom tabs may not be visible.\n\nAs a workaround, impacted users can zoom out in Teams, use a larger display where available, or, in some cases, select the overflow arrow to access hidden tabs.\r\n\r\nCurrent status: We’ve determined that a recent configuration change associated with a user interface modernization effort inadvertently introduced a regression that is preventing Teams channel tabs from rendering correctly. We’re deploying a fix to mitigate the impact and conducting internal validation to confirm it successfully resolves the issue.\r\n\r\nScope of impact: Any user attempting to access tabs beyond the Conversation tab in Microsoft Teams channels with long channel names and/or associated sensitivity labels may be impacted.\r\n\r\nStart time: Tuesday, August 18, 2026, at 1:30 PM UTC\r\n\r\nRoot cause: A recent configuration change associated with a user interface modernization effort inadvertently introduced a regression that is preventing Teams channel tabs from rendering correctly.\r\n\r\nNext update by: Thursday, September 3, 2026, at 12:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-09-03T08:45:36.397Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to access tabs beyond the Conversation tab in certain Microsoft Teams channels\r\n\r\nUser impact: Users may be unable to access tabs beyond the Conversation tab in certain Microsoft Teams channels.\r\n\r\nMore info: Users may only see the Conversation tab in Microsoft Teams channels when channel names and associated sensitivity labels are long, particularly on smaller displays. As a result, other tabs such as Shared, Files, Notes, and custom tabs may not be visible.\n\nAs a workaround, impacted users can zoom out in Teams, use a larger display where available, or, in some cases, select the overflow arrow to access hidden tabs.\r\n\r\nCurrent status: We're reviewing HTTP Archive (HAR) files and Teams client logs from a number of impacted users to determine the root cause and identify mitigation options.\r\n\r\nScope of impact: Any user attempting to access tabs beyond the Conversation tab in Microsoft Teams channels with long channel names and/or associated sensitivity labels may be impacted.\r\n\r\nNext update by: Thursday, September 3, 2026, at 11:00 AM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Microsoft Teams"
-          ]
-        },
-        {
           "id": "TM1440450",
           "title": "Users may have been unable to run run-only workflows from Microsoft Teams",
           "startTime": "2026-06-30T07:00:00Z",
@@ -1481,6 +1436,52 @@
     }
   ],
   "history": [
+    {
+      "id": "TM1466441",
+      "title": "Users may be unable to access tabs beyond the Conversation tab in certain Microsoft Teams channels",
+      "startTime": "2026-08-18T13:30:00Z",
+      "endTime": "2026-09-03T15:48:47.69Z",
+      "lastModified": "2026-09-03T15:49:45.237Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have been unable to access tabs beyond the Conversation tab in certain Microsoft Teams channels.",
+      "scopeOfImpact": "Any user attempting to access tabs beyond the Conversation tab in Microsoft Teams channels with long channel names and/or associated sensitivity labels may have been impacted.\r\n\r\nStart time: Tuesday, August 18, 2026, at 1:30 PM UTC\r\n\r\nEnd time: Thursday, September 3, 2026, at 1:46 PM UTC",
+      "rootCause": "A recent configuration change associated with a user interface modernization effort inadvertently introduced a regression that was preventing Teams channel tabs from rendering correctly.\r\n\r\nNext steps: \n- We're reviewing the offending configuration change to understand why the regression wasn't identified during our pre-deployment testing processes, so that we can prevent similar issues from occurring in the future.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Files",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-09-03T15:49:42.037Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to access tabs beyond the Conversation tab in certain Microsoft Teams channels\r\n\r\nUser impact: Users may have been unable to access tabs beyond the Conversation tab in certain Microsoft Teams channels.\r\n\r\nMore info: Users may have only see the Conversation tab in Microsoft Teams channels when channel names and associated sensitivity labels were long, particularly on smaller displays. As a result, other tabs such as Shared, Files, Notes, and custom tabs may have not been visible.\n \nAs a workaround, impacted users could zoom out in Teams, use a larger display where available, or, in some cases, select the overflow arrow to access hidden tabs.\r\n\r\nFinal status: We've confirmed through testing with a subset of affected users that reverting the recent configuration change has remediated the impact.\r\n\r\nScope of impact: Any user attempting to access tabs beyond the Conversation tab in Microsoft Teams channels with long channel names and/or associated sensitivity labels may have been impacted.\r\n\r\nStart time: Tuesday, August 18, 2026, at 1:30 PM UTC\r\n\r\nEnd time: Thursday, September 3, 2026, at 1:46 PM UTC\r\n\r\nRoot cause: A recent configuration change associated with a user interface modernization effort inadvertently introduced a regression that was preventing Teams channel tabs from rendering correctly.\r\n\r\nNext steps: \n- We're reviewing the offending configuration change to understand why the regression wasn't identified during our pre-deployment testing processes, so that we can prevent similar issues from occurring in the future.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-09-03T13:50:56.997Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to access tabs beyond the Conversation tab in certain Microsoft Teams channels\r\n\r\nUser impact: Users may be unable to access tabs beyond the Conversation tab in certain Microsoft Teams channels.\r\n\r\nMore info: Users may only see the Conversation tab in Microsoft Teams channels when channel names and associated sensitivity labels are long, particularly on smaller displays. As a result, other tabs such as Shared, Files, Notes, and custom tabs may not be visible.\n\nAs a workaround, impacted users can zoom out in Teams, use a larger display where available, or, in some cases, select the overflow arrow to access hidden tabs.\r\n\r\nCurrent status: We've completed the reversion of the offending configuration change and are reaching out to a number of impacted users to confirm that this action successfully resolved the issue.\r\n\r\nScope of impact: Any user attempting to access tabs beyond the Conversation tab in Microsoft Teams channels with long channel names and/or associated sensitivity labels may be impacted.\r\n\r\nStart time: Tuesday, August 18, 2026, at 1:30 PM UTC\r\n\r\nRoot cause: A recent configuration change associated with a user interface modernization effort inadvertently introduced a regression that is preventing Teams channel tabs from rendering correctly.\r\n\r\nNext update by: Thursday, September 3, 2026, at 4:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-09-03T12:26:42.677Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to access tabs beyond the Conversation tab in certain Microsoft Teams channels\n\nUser impact: Users may be unable to access tabs beyond the Conversation tab in certain Microsoft Teams channels.\n\nMore info: Users may only see the Conversation tab in Microsoft Teams channels when channel names and associated sensitivity labels are long, particularly on smaller displays. As a result, other tabs such as Shared, Files, Notes, and custom tabs may not be visible.\n\nAs a workaround, impacted users can zoom out in Teams, use a larger display where available, or, in some cases, select the overflow arrow to access hidden tabs.\n\nCurrent status: We’re working to revert the offending configuration change. We expect that this will process will be complete and the issue resolved by our next scheduled update.\n\nScope of impact: Any user attempting to access tabs beyond the Conversation tab in Microsoft Teams channels with long channel names and/or associated sensitivity labels may be impacted.\n\nStart time: Tuesday, August 18, 2026, at 1:30 PM UTC\n\nRoot cause: A recent configuration change associated with a user interface modernization effort inadvertently introduced a regression that is preventing Teams channel tabs from rendering correctly.\n\nNext update by: Thursday, September 3, 2026, at 2:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-09-03T12:26:41.66Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to access tabs beyond the Conversation tab in certain Microsoft Teams channels\r\n\r\nUser impact: Users may be unable to access tabs beyond the Conversation tab in certain Microsoft Teams channels.\r\n\r\nMore info: Users may only see the Conversation tab in Microsoft Teams channels when channel names and associated sensitivity labels are long, particularly on smaller displays. As a result, other tabs such as Shared, Files, Notes, and custom tabs may not be visible.\n\nAs a workaround, impacted users can zoom out in Teams, use a larger display where available, or, in some cases, select the overflow arrow to access hidden tabs.\r\n\r\nCurrent status:  We’re working to revert the offending configuration change. We expect that this will process will be complete and the issue resolved by our next scheduled update.\r\n\r\nScope of impact: Any user attempting to access tabs beyond the Conversation tab in Microsoft Teams channels with long channel names and/or associated sensitivity labels may be impacted.\r\n\r\nStart time: Tuesday, August 18, 2026, at 1:30 PM UTC\r\n\r\nRoot cause: A recent configuration change associated with a user interface modernization effort inadvertently introduced a regression that is preventing Teams channel tabs from rendering correctly.\r\n\r\nNext update by: Thursday, September 3, 2026, at 2:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-09-03T10:41:27.44Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to access tabs beyond the Conversation tab in certain Microsoft Teams channels\r\n\r\nUser impact: Users may be unable to access tabs beyond the Conversation tab in certain Microsoft Teams channels.\r\n\r\nMore info: Users may only see the Conversation tab in Microsoft Teams channels when channel names and associated sensitivity labels are long, particularly on smaller displays. As a result, other tabs such as Shared, Files, Notes, and custom tabs may not be visible.\n\nAs a workaround, impacted users can zoom out in Teams, use a larger display where available, or, in some cases, select the overflow arrow to access hidden tabs.\r\n\r\nCurrent status: We’ve determined that a recent configuration change associated with a user interface modernization effort inadvertently introduced a regression that is preventing Teams channel tabs from rendering correctly. We’re deploying a fix to mitigate the impact and conducting internal validation to confirm it successfully resolves the issue.\r\n\r\nScope of impact: Any user attempting to access tabs beyond the Conversation tab in Microsoft Teams channels with long channel names and/or associated sensitivity labels may be impacted.\r\n\r\nStart time: Tuesday, August 18, 2026, at 1:30 PM UTC\r\n\r\nRoot cause: A recent configuration change associated with a user interface modernization effort inadvertently introduced a regression that is preventing Teams channel tabs from rendering correctly.\r\n\r\nNext update by: Thursday, September 3, 2026, at 12:30 PM UTC"
+        }
+      ],
+      "serviceName": "Microsoft Teams",
+      "affectedServices": [
+        "Microsoft Teams"
+      ]
+    },
     {
       "id": "PB1461484",
       "title": "Admins may see outdated/incomplete data in workspace settings of Power BI or Microsoft Fabric services",
