@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-03T17:05:34.049Z",
+  "lastUpdated": "2026-09-03T17:35:49.118Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1440,9 +1440,40 @@
     },
     {
       "service": "Microsoft 365 Copilot Chat",
-      "status": "serviceOperational",
+      "status": "investigating",
       "id": "CopilotChat",
-      "issues": []
+      "issues": [
+        {
+          "id": "CW1466621",
+          "title": "Users' queries to Microsoft 365 Copilot Chat may return no response, and users receive an error",
+          "startTime": "2026-09-03T17:12:29.117Z",
+          "endTime": null,
+          "lastModified": "2026-09-03T17:27:02.927Z",
+          "status": "investigating",
+          "severity": "advisory",
+          "userImpact": "Users' queries to Copilot Chat may return no response, and users receive an error.",
+          "scopeOfImpact": "Any user attempting to query Copilot Chat may be impacted.",
+          "rootCause": "",
+          "nextUpdateBy": "Thursday, September 3, 2026, at 6:30 PM UTC",
+          "feature": "General",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-09-03T17:27:02.927Z",
+              "postType": "regular",
+              "content": "Title: Users' queries to Microsoft 365 Copilot Chat may return no response, and users receive an error\r\n\r\nUser impact: Users' queries to Copilot Chat may return no response, and users receive an error.\r\n\r\nMore info: When users attempt to query Copilot Chat, some of their queries may return no response and instead, users may receive an error that states, \"Something went wrong.\"\r\n\r\nCurrent status: Our service health monitoring alerted us to an increase in failures occurring when users attempt to query Copilot Chat. We're reviewing our service health telemetry to isolate the source of the failures, so that we can developed a mitigation plan. \r\n\r\nScope of impact: Any user attempting to query Copilot Chat may be impacted. \r\n\r\nNext update by: Thursday, September 3, 2026, at 6:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-09-03T17:16:55.033Z",
+              "postType": "regular",
+              "content": "Title: We're looking into a potential problem impacting Microsoft 365 Copilot Chat\r\n\r\nUser impact: We're checking for potential impact to your users.\r\n\r\nCurrent status: We're investigating a potential issue impacting Microsoft 365 Copilot Chat and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 Copilot Chat"
+          ]
+        }
+      ]
     }
   ],
   "history": [
@@ -1450,8 +1481,8 @@
       "id": "TM1466441",
       "title": "Users may be unable to access tabs beyond the Conversation tab in certain Microsoft Teams channels",
       "startTime": "2026-08-18T13:30:00Z",
-      "endTime": "2026-09-03T15:48:47.69Z",
-      "lastModified": "2026-09-03T15:49:45.237Z",
+      "endTime": "2026-09-03T13:46:00Z",
+      "lastModified": "2026-09-03T17:29:12.943Z",
       "status": "serviceRestored",
       "severity": "advisory",
       "userImpact": "Users may have been unable to access tabs beyond the Conversation tab in certain Microsoft Teams channels.",
