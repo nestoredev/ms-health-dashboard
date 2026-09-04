@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-04T18:47:09.445Z",
+  "lastUpdated": "2026-09-04T19:17:23.359Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -234,6 +234,33 @@
       "id": "OSDPPlatform",
       "issues": [
         {
+          "id": "MO1467282",
+          "title": "Users may not be able to open support central in Microsoft Intune and Microsoft Defender portals",
+          "startTime": "2026-09-04T18:44:09.07Z",
+          "endTime": null,
+          "lastModified": "2026-09-04T18:47:26.93Z",
+          "status": "investigating",
+          "severity": "advisory",
+          "userImpact": "Users may not be able to open support central in Microsoft Intune and Microsoft Defender portals.",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
+          "feature": "Company or User Administration",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-09-04T18:46:09.41Z",
+              "postType": "regular",
+              "content": "Title: Users may not be able to open support central in Microsoft Intune and Microsoft Defender portals\r\n\r\nUser impact: Users may not be able to open support central in Microsoft Intune and Microsoft Defender portals.\r\n\r\nMore info: Users are able to open support tickets through the Microsoft 365 admin center to circumvent impact.\r\n\r\nCurrent status: We're investigating a potential issue with two different Microsoft 365 portals and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite",
+            "Microsoft Intune",
+            "Microsoft Defender XDR"
+          ]
+        },
+        {
           "id": "MO1457843",
           "title": "Admins can't identify who deleted a Viva Engage community or its Microsoft 365 Group in Microsoft Entra ID audit logs",
           "startTime": "2026-08-19T22:38:36.783Z",
@@ -421,9 +448,37 @@
     },
     {
       "service": "Microsoft Intune",
-      "status": "serviceOperational",
+      "status": "investigating",
       "id": "Intune",
-      "issues": []
+      "issues": [
+        {
+          "id": "MO1467282",
+          "title": "Users may not be able to open support central in Microsoft Intune and Microsoft Defender portals",
+          "startTime": "2026-09-04T18:44:09.07Z",
+          "endTime": null,
+          "lastModified": "2026-09-04T18:47:26.93Z",
+          "status": "investigating",
+          "severity": "advisory",
+          "userImpact": "Users may not be able to open support central in Microsoft Intune and Microsoft Defender portals.",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
+          "feature": "Company or User Administration",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-09-04T18:46:09.41Z",
+              "postType": "regular",
+              "content": "Title: Users may not be able to open support central in Microsoft Intune and Microsoft Defender portals\r\n\r\nUser impact: Users may not be able to open support central in Microsoft Intune and Microsoft Defender portals.\r\n\r\nMore info: Users are able to open support tickets through the Microsoft 365 admin center to circumvent impact.\r\n\r\nCurrent status: We're investigating a potential issue with two different Microsoft 365 portals and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite",
+            "Microsoft Intune",
+            "Microsoft Defender XDR"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft OneDrive",
@@ -486,16 +541,21 @@
           "title": "Users may have been unable to run run-only workflows from Microsoft Teams",
           "startTime": "2026-06-30T07:00:00Z",
           "endTime": null,
-          "lastModified": "2026-08-28T19:36:30.72Z",
+          "lastModified": "2026-09-04T19:03:11.407Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to run run-only workflows from Microsoft Teams.",
-          "scopeOfImpact": "Users attempting to run run-only workflows from Microsoft Teams may be impacted. This section may be updated as the investigation progresses.\r\n\r\nStart time: Tuesday, June 30, 2026, at 7:00 AM UTC",
+          "scopeOfImpact": "Users attempting to run run-only workflows from Microsoft Teams may be impacted. This section may be updated as the investigation progresses. This information may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, June 30, 2026, at 7:00 AM UTC",
           "rootCause": "A recent service update introduced a code regression that affects how Microsoft Teams processes shared workflow requests, preventing some users from running run-only workflows from Microsoft Teams.",
-          "nextUpdateBy": "Friday, September 4, 2026, at 8:30 PM UTC",
+          "nextUpdateBy": "Thursday, September 10, 2026, at 1:00 AM UTC",
           "feature": "Teams and Channels",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-04T19:02:42.77Z",
+              "postType": "regular",
+              "content": "Title: Users may have been unable to run run-only workflows from Microsoft Teams\r\n\r\nUser impact: Users may be unable to run run-only workflows from Microsoft Teams.\r\n\r\nMore info: As a result of our initial fix deployment, users are now able to run run-only workflows through the \"workflows\" button in Microsoft Teams. However, running run-only workflows by hovering and selecting \"More actions\" > \"Create workflows\" is still an impacted scenario.\n\nAffected users are unable to run workflows in Teams when those workflows are configured to be executed by designated users without requiring those users to own or edit the workflow. Users receive the following error message:\n\n\"Missing Trigger URI\"\n\nAs a way to avoid this issue, impacted users can be granted Owner or Co-owner permissions for the affected workflow.\r\n\r\nCurrent status: We’re continuing to perform final validations to ensure the fix fully remediates the impact without introducing any unintended effects. We’ll provide a resolution timeline once available.\r\n\r\nScope of impact: Users attempting to run run-only workflows from Microsoft Teams may be impacted. This section may be updated as the investigation progresses. This information may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, June 30, 2026, at 7:00 AM UTC\r\n\r\nRoot cause: A recent service update introduced a code regression that affects how Microsoft Teams processes shared workflow requests, preventing some users from running run-only workflows from Microsoft Teams.\r\n\r\nNext update by: Thursday, September 10, 2026, at 1:00 AM UTC"
+            },
             {
               "createdAt": "2026-08-28T19:36:30.72Z",
               "postType": "regular",
@@ -757,9 +817,37 @@
     },
     {
       "service": "Microsoft Defender XDR",
-      "status": "serviceOperational",
+      "status": "investigating",
       "id": "Microsoft365Defender",
-      "issues": []
+      "issues": [
+        {
+          "id": "MO1467282",
+          "title": "Users may not be able to open support central in Microsoft Intune and Microsoft Defender portals",
+          "startTime": "2026-09-04T18:44:09.07Z",
+          "endTime": null,
+          "lastModified": "2026-09-04T18:47:26.93Z",
+          "status": "investigating",
+          "severity": "advisory",
+          "userImpact": "Users may not be able to open support central in Microsoft Intune and Microsoft Defender portals.",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
+          "feature": "Company or User Administration",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-09-04T18:46:09.41Z",
+              "postType": "regular",
+              "content": "Title: Users may not be able to open support central in Microsoft Intune and Microsoft Defender portals\r\n\r\nUser impact: Users may not be able to open support central in Microsoft Intune and Microsoft Defender portals.\r\n\r\nMore info: Users are able to open support tickets through the Microsoft 365 admin center to circumvent impact.\r\n\r\nCurrent status: We're investigating a potential issue with two different Microsoft 365 portals and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite",
+            "Microsoft Intune",
+            "Microsoft Defender XDR"
+          ]
+        }
+      ]
     },
     {
       "service": "Project for the web",
