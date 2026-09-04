@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-04T14:45:20.468Z",
+  "lastUpdated": "2026-09-04T15:15:37.095Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -136,20 +136,25 @@
           "title": "Users may experience delays sending and receiving email messages from external domains in Exchange Online",
           "startTime": "2026-09-04T09:00:00Z",
           "endTime": null,
-          "lastModified": "2026-09-04T14:33:11.043Z",
+          "lastModified": "2026-09-04T15:09:41.613Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may experience a delay in sending and receiving email messages from external domains in Exchange Online.",
           "scopeOfImpact": "",
           "rootCause": "",
-          "nextUpdateBy": "",
+          "nextUpdateBy": "Friday, September 4, 2026, at 4:30 PM UTC",
           "feature": "Mailflow - delayed delivery from Internet",
           "isResolved": false,
           "posts": [
             {
+              "createdAt": "2026-09-04T15:08:34.08Z",
+              "postType": "quick",
+              "content": "Telemetry is trending in a positive direction and shows a reduction in the number of new emails getting impacted as the rule disablement progresses across the service. \n\nNext update by: Friday, September 4, 2026, at 4:30 PM UTC\n\nThis quick update is designed to give the latest information on this issue."
+            },
+            {
               "createdAt": "2026-09-04T14:33:11.043Z",
               "postType": "quick",
-              "content": "We've determined that a different machine level throttling rule within the anti-spam features is being incorrectly triggered for a small number of emails, resulting in the remaining impact. We're disabling this specific rule to provide relief and fully mitigate the issue. We expect this to complete within the next hour.\n\nFriday, September 4, 2026, at 4:30 PM UTC\n\nThis quick update is designed to give the latest information on this issue."
+              "content": "We've determined that a different machine level throttling rule within the anti-spam features is being incorrectly triggered for a small number of emails, resulting in the remaining impact. We're disabling this specific rule to provide relief and fully mitigate the issue. We expect this to complete within the next hour.\n\nNext update by: Friday, September 4, 2026, at 4:30 PM UTC\n\nThis quick update is designed to give the latest information on this issue."
             },
             {
               "createdAt": "2026-09-04T14:24:49.46Z",
@@ -716,41 +721,6 @@
               "createdAt": "2026-08-27T00:29:04.24Z",
               "postType": "regular",
               "content": "Title: Some users attempting to view their Microsoft Teams contact lists may experience latency\n\nUser impact: Users attempting to view their Microsoft Teams contact lists may experience latency.\n\nMore info: Users attempting to view their Microsoft Teams contact lists may experience latency and their contact list may appear for up to 15 minutes. \n\nCurrent status: We're investigating a potential issue with Microsoft Teams and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Microsoft Teams"
-          ]
-        },
-        {
-          "id": "TM1466659",
-          "title": "Users may be unable to join calls or meetings in Microsoft Teams for Mac",
-          "startTime": "2026-09-03T18:57:00Z",
-          "endTime": null,
-          "lastModified": "2026-09-04T04:38:46.473Z",
-          "status": "serviceDegradation",
-          "severity": "incident",
-          "userImpact": "Users may be unable to join calls or meetings in Microsoft Teams for Mac. ",
-          "scopeOfImpact": "Some users attempting to join calls or meetings in Microsoft Teams for Mac may be impacted. This section may be updated as our investigation continues.",
-          "rootCause": "",
-          "nextUpdateBy": "Friday, September 4, 2026, at 4:00 PM UTC",
-          "feature": "Meetings",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-09-03T20:13:51.06Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to join calls or meetings in Microsoft Teams for Mac\r\n\r\nUser impact: Users may be unable to join calls or meetings in Microsoft Teams for Mac. \r\n\r\nCurrent status: Further review of the suspected code change indicates it may not be the cause of impact for this event. We're reassessing our root cause understanding and reviewing service logs to isolate the source of impact, so that we can determine our next steps regarding impact remediation.\r\n\r\nScope of impact: Some users attempting to join calls or meetings in Microsoft Teams for Mac may be impacted. This section may be updated as our investigation continues.\r\n\r\nNext update by: Friday, September 4, 2026, at 4:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-09-03T19:25:54.783Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to join calls or meetings in Microsoft Teams for Mac\r\n\r\nUser impact: Users may be unable to join calls or meetings in Microsoft Teams for Mac. \r\n\r\nCurrent status: We've identified a code change that's causing the service infrastructure responsible for call and meeting functionality to fail to process some requests, resulting in impact. We're assessing potential remediation actions to address the problematic code change and restore service functionality.\r\n\r\nScope of impact: Some users attempting to join calls or meetings in Microsoft Teams for Mac may be impacted. This section may be updated as our investigation continues.\r\n\r\nStart time: Thursday, July 2, 2026, at 3:09 PM UTC\r\n\r\nRoot cause: A code change is causing the service infrastructure responsible for call and meeting functionality to fail to process some requests, resulting in impact.\r\n\r\nNext update by: Thursday, September 3, 2026, at 9:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-09-03T18:59:28.39Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to join calls or meetings in Microsoft Teams for Mac\r\n\r\nUser impact: Users may be unable to join calls or meetings in Microsoft Teams for Mac. \r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Teams and checking for impact to your organization. We'll provide an update within 30 minutes."
             }
           ],
           "affectedServices": [
@@ -1772,6 +1742,47 @@
       "serviceName": "Exchange Online",
       "affectedServices": [
         "Exchange Online"
+      ]
+    },
+    {
+      "id": "TM1466659",
+      "title": "Users may have been unable to join calls or meetings in Microsoft Teams for Mac",
+      "startTime": "2026-08-23T16:32:00Z",
+      "endTime": "2026-08-26T20:51:00Z",
+      "lastModified": "2026-09-04T14:55:00.707Z",
+      "status": "serviceRestored",
+      "severity": "incident",
+      "userImpact": "Users may have been unable to join calls or meetings in Microsoft Teams for Mac. ",
+      "scopeOfImpact": "Some users attempting to join calls or meetings in Microsoft Teams for Mac may have been impacted. \r\n\r\nStart time: Sunday, August 23, 2026, at 4:32 PM UTC\r\n\r\nEnd time: Wednesday, August 26, 2026, at 8:51 PM UTC",
+      "rootCause": "A code change caused the service infrastructure responsible for call and meeting functionality to fail to process some requests, which resulted in impact.\r\n\r\nNext steps: We're reviewing our update procedures to better identify similar issues during our development and testing cycles.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Meetings",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-09-04T14:49:44.32Z",
+          "postType": "regular",
+          "content": "Title: Users may have been unable to join calls or meetings in Microsoft Teams for Mac\r\n\r\nUser impact: Users may have been unable to join calls or meetings in Microsoft Teams for Mac. \r\n\r\nFinal status: We've determined that a code change caused the service infrastructure responsible for call and meeting functionality to fail to process some requests, which resulted in impact. We've deployed a fix and confirmed that impact has been resolved after an extended period of monitoring service availability.\r\n\r\nScope of impact: Some users attempting to join calls or meetings in Microsoft Teams for Mac may have been impacted. \r\n\r\nStart time: Sunday, August 23, 2026, at 4:32 PM UTC\r\n\r\nEnd time: Wednesday, August 26, 2026, at 8:51 PM UTC\r\n\r\nRoot cause: A code change caused the service infrastructure responsible for call and meeting functionality to fail to process some requests, which resulted in impact.\r\n\r\nNext steps: We're reviewing our update procedures to better identify similar issues during our development and testing cycles.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-09-03T20:13:51.06Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to join calls or meetings in Microsoft Teams for Mac\r\n\r\nUser impact: Users may be unable to join calls or meetings in Microsoft Teams for Mac. \r\n\r\nCurrent status: Further review of the suspected code change indicates it may not be the cause of impact for this event. We're reassessing our root cause understanding and reviewing service logs to isolate the source of impact, so that we can determine our next steps regarding impact remediation.\r\n\r\nScope of impact: Some users attempting to join calls or meetings in Microsoft Teams for Mac may be impacted. This section may be updated as our investigation continues.\r\n\r\nNext update by: Friday, September 4, 2026, at 4:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-09-03T19:25:54.783Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to join calls or meetings in Microsoft Teams for Mac\r\n\r\nUser impact: Users may be unable to join calls or meetings in Microsoft Teams for Mac. \r\n\r\nCurrent status: We've identified a code change that's causing the service infrastructure responsible for call and meeting functionality to fail to process some requests, resulting in impact. We're assessing potential remediation actions to address the problematic code change and restore service functionality.\r\n\r\nScope of impact: Some users attempting to join calls or meetings in Microsoft Teams for Mac may be impacted. This section may be updated as our investigation continues.\r\n\r\nStart time: Thursday, July 2, 2026, at 3:09 PM UTC\r\n\r\nRoot cause: A code change is causing the service infrastructure responsible for call and meeting functionality to fail to process some requests, resulting in impact.\r\n\r\nNext update by: Thursday, September 3, 2026, at 9:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-09-03T18:59:28.39Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to join calls or meetings in Microsoft Teams for Mac\r\n\r\nUser impact: Users may be unable to join calls or meetings in Microsoft Teams for Mac. \r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Teams and checking for impact to your organization. We'll provide an update within 30 minutes."
+        }
+      ],
+      "serviceName": "Microsoft Teams",
+      "affectedServices": [
+        "Microsoft Teams"
       ]
     },
     {
