@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-04T14:14:59.975Z",
+  "lastUpdated": "2026-09-04T14:45:20.468Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -134,18 +134,28 @@
         {
           "id": "EX1467029",
           "title": "Users may experience delays sending and receiving email messages from external domains in Exchange Online",
-          "startTime": "2026-09-04T10:19:12Z",
+          "startTime": "2026-09-04T09:00:00Z",
           "endTime": null,
-          "lastModified": "2026-09-04T13:28:48.097Z",
+          "lastModified": "2026-09-04T14:33:11.043Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may experience a delay in sending and receiving email messages from external domains in Exchange Online.",
-          "scopeOfImpact": "This issue impacts users who may be attempting to send and receive email messages from external domains in Exchange Online. This information may be updated as our investigation continues.\n\nStart time: Friday, September 4, 2026, at 9:00 AM UTC\n\nPreliminary",
-          "rootCause": "The enforcement of a specific anti-spam model is contributing to impact for a subset of email traffic.",
-          "nextUpdateBy": "Friday, September 4, 2026, at 3:00 PM UTC",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
           "feature": "Mailflow - delayed delivery from Internet",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-04T14:33:11.043Z",
+              "postType": "quick",
+              "content": "We've determined that a different machine level throttling rule within the anti-spam features is being incorrectly triggered for a small number of emails, resulting in the remaining impact. We're disabling this specific rule to provide relief and fully mitigate the issue. We expect this to complete within the next hour.\n\nFriday, September 4, 2026, at 4:30 PM UTC\n\nThis quick update is designed to give the latest information on this issue."
+            },
+            {
+              "createdAt": "2026-09-04T14:24:49.46Z",
+              "postType": "regular",
+              "content": "Title: Users may experience delays sending and receiving email messages from external domains in Exchange Online\n\nUser impact: Users may experience a delay in sending and receiving email messages from external domains in Exchange Online.\n\nMore info: Users may experience intermittent “Server busy” errors, affecting multiple mailboxes.\n \nDepending on the client, the service should attempt to periodically retry sending the email previously impacted by the issue. If the initial sender received an NDR after 24-72 hours (different clients or email providers can vary), they will need to send a new email.\n\nCurrent status: We've received a large number of confirmations that the issue is resolved, however, we're reviewing some isolated reports that some organizations are still experiencing delays in email delivery. We're reviewing example SMTP traces from those impacted users to isolate the source of the issue.\n\nScope of impact: This issue impacts users who may be attempting to send and receive email messages from external domains in Exchange Online. This information may be updated as our investigation continues.\n \nStart time: Friday, September 4, 2026, at 9:00 AM UTC\n \nPreliminary root cause: The enforcement of a specific anti-spam model is contributing to impact for a subset of email traffic.\n\nNext update by: Friday, September 4, 2026, at 4:30 PM UTC"
+            },
             {
               "createdAt": "2026-09-04T13:28:48.097Z",
               "postType": "regular",
