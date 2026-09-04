@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-04T20:48:03.510Z",
+  "lastUpdated": "2026-09-04T21:18:17.699Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -3024,52 +3024,6 @@
       "serviceName": "Microsoft Teams",
       "affectedServices": [
         "Microsoft Teams"
-      ]
-    },
-    {
-      "id": "MO1440526",
-      "title": "Some users may be unable to share files with external recipients through SharePoint Online and Microsoft OneDrive",
-      "startTime": "2026-07-23T00:26:00Z",
-      "endTime": "2026-08-05T20:53:46.3Z",
-      "lastModified": "2026-08-05T21:35:21.03Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users may have been unable to share files with external recipients through SharePoint Online and OneDrive.",
-      "scopeOfImpact": "Some users who attempted to share files with external recipients through SharePoint Online and OneDrive were impacted.\r\n\r\nStart time: Thursday, July 23, 2026, at 12:26 AM UTC\r\n\r\nEnd time: Wednesday, July 29, 2026, at 7:13 PM UTC",
-      "rootCause": "Organizations that requested we turn off Unlicensed User Access for their organization encountered this problem after OTP deprecation and unlicensed user check in the external sharing code became enforced.\r\n\r\nNext steps: \n- We're further analyzing our deprecation processes in our effort to prevent similar problems in the future.\n\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Company or User Administration",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-08-05T21:35:17.977Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to share files with external recipients through SharePoint Online and Microsoft OneDrive\r\n\r\nUser impact: Users may have been unable to share files with external recipients through SharePoint Online and OneDrive.\r\n\r\nMore info: Affected users were unable to send external sharing invitations from SharePoint Online sites and OneDrive locations, despite external sharing being enabled at both the tenant and site levels. Upon failure, affected users encountered the following error: \"That didn't work: We couldn't find a valid SharePoint Online license...\"\n\nWhile we worked to remediate the impact from this event, impacted organizations were able to bypass the impact in one of the following two ways:\n\n1) Create a support case and contact Microsoft to request that \"Unlicensed User Access\" be enabled for their tenant.\n\n2) Admins within the affected organizations could have assigned any license that included the SharePoint Online service to the external users they were attempting to share with to bypass the impact for those users.\n\nAdmins that made any licensing changes during this event should work with support representatives for any further assistance. \r\n\r\nFinal status: Our extended service monitoring has validated that our roll back of the recent change has remediated the impact. \r\n\r\nScope of impact: Some users who attempted to share files with external recipients through SharePoint Online and OneDrive were impacted.\r\n\r\nStart time: Thursday, July 23, 2026, at 12:26 AM UTC\r\n\r\nEnd time: Wednesday, July 29, 2026, at 7:13 PM UTC\r\n\r\nRoot cause: Organizations that requested we turn off Unlicensed User Access for their organization encountered this problem after OTP deprecation and unlicensed user check in the external sharing code became enforced.\r\n\r\nNext steps: \n- We're further analyzing our deprecation processes in our effort to prevent similar problems in the future.\n\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-08-03T20:58:31.13Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to share files with external recipients through SharePoint Online and Microsoft OneDrive\r\n\r\nUser impact: Users may be unable to share files with external recipients through SharePoint Online and OneDrive.\r\n\r\nMore info: Affected users may be unable to send external sharing invitations from SharePoint Online sites and OneDrive locations, despite external sharing being enabled at both the tenant and site levels. Upon failure, affected users encounter the following error: \"That didn't work: We couldn't find a valid SharePoint Online license...\"\n\nWhile we're working to resolve this issue, impacted organizations may be able to bypass the impact in one of the following two ways:\n\n1) Create a support case and contact Microsoft to request that \"Unlicensed User Access\" be enabled for their tenant. \n\n2) Admins within the affected organizations can assign any license that provides the SharePoint Online service to the external users they're attempting to share with to bypass the impact for those users.\r\n\r\nCurrent status: We've rolled back a recent service change that we believe may be contributing to this impact and have confirmed that this step has mitigated impact for a subset of users. We're continuing to monitor this rollback in order to validate full remediation for this event.\r\n\r\nScope of impact: Some users attempting to share files with external recipients through SharePoint Online and OneDrive may be impacted. This information may be updated as our investigation continues.\r\n\r\nRoot cause: Organizations that requested we turn off Unlicensed User Access for their organization are encountering this problem after OTP deprecation and unlicensed user check in the external sharing code is now being enforced.\r\n\r\nNext update by: Wednesday, August 5, 2026, at 10:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-08-01T05:41:33.13Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to share files with external recipients through SharePoint Online and Microsoft OneDrive\n\nUser impact: Users may be unable to share files with external recipients through SharePoint Online and OneDrive.\n\nMore info: Affected users may be unable to send external sharing invitations from SharePoint Online sites and OneDrive locations, despite external sharing being enabled at both the tenant and site levels. Upon failure, affected users encounter the following error: \"That didn't work: We couldn't find a valid SharePoint Online license...\"\n\nWhile we're working to resolve this issue, impacted organizations may be able to bypass the impact in one of the following two ways:\n\n1) Create a support case and contact Microsoft to request that \"Unlicensed User Access\" be enabled for their tenant. \n\n2) Admins within the affected organizations can assign any license that provides the SharePoint Online service to the external users they're attempting to share with to bypass the impact for those users.\n\nCurrent status: We're continuing to evaluate the data pathways responsible for providing file sharing to external users to assist us in identifying the most expedient path to complete remediation.\n\nScope of impact: Some users attempting to share files with external recipients through SharePoint Online and OneDrive may be impacted. This information may be updated as our investigation continues.\n\nRoot cause: Organizations that requested we turn off Unlicensed User Access for their organization are encountering this problem after OTP deprecation and unlicensed user check in the external sharing code is now being enforced.\n\nNext update by: Monday, August 3, 2026, at 10:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-07-30T21:46:48.687Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to share files with external recipients through SharePoint Online and Microsoft OneDrive\n\nUser impact: Users may be unable to share files with external recipients through SharePoint Online and OneDrive.\n\nMore info: Affected users may be unable to send external sharing invitations from SharePoint Online sites and OneDrive locations, despite external sharing being enabled at both the tenant and site levels. Upon failure, affected users encounter the following error: \"That didn't work: We couldn't find a valid SharePoint Online license...\"\n\nCurrent status: We've identified that this impact only occurs in a specific scenario: if your organization previously contacted Microsoft at some point in the past to specifically request that Microsoft turn off Unlicensed User Access for your organization. Otherwise, no impact is occurring. Furthermore, the reason why this was previously working, and is now not working, is we've identified that an unlicensed user check exists in the external sharing code that was previously not enforced, as one-time password (OTP) generation essentially rendered it unnecessary. However, with the recent deprecation of OTP, this check is now being enforced. We've identified two mitigations impacted organizations can take to relieve the issue:\n\n2) Admins within the affected organizations can assign any license that provides the SharePoint Online service to the external users they're attempting to share with to bypass the impact for those users.\n\n2) Impacted organizations can create a support case and contact Microsoft to request that \"Unlicensed User Access\" be enabled for their tenant. \n\nWe're continuing to evaluate how unlicensed user access should interact with external sharing. \n\nScope of impact: Some users attempting to share files with external recipients through SharePoint Online and OneDrive may be impacted. This information may be updated as our investigation continues.\n\nRoot cause: Organizations that requested we turn off Unlicensed User Access for their organization are encountering this problem after OTP deprecation and unlicensed user check in the external sharing code is now being enforced.\n\nNext update by: Wednesday, August 5, 2026, at 10:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-07-29T21:55:02.82Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to share files with external recipients through SharePoint Online and Microsoft OneDrive\r\n\r\nUser impact: Users may be unable to share files with external recipients through SharePoint Online and OneDrive.\r\n\r\nMore info: Affected users may be unable to send external sharing invitations from SharePoint Online sites and OneDrive locations, despite external sharing being enabled at both the tenant and site levels. Upon failure, affected users encounter the following error: \"That didn't work: We couldn't find a valid SharePoint Online license...\"\r\n\r\nCurrent status: We're continuing to obtain data such as Trace logs and specific User Principal Names (UPNs) from various affected users to assist in furthering our understanding of the full scope of this issue. The development of effective remediation steps is taking longer than anticipated as we allow time for this this thorough root cause analysis.\r\n\r\nScope of impact: Some users attempting to share files with external recipients through SharePoint Online and OneDrive may be impacted. This information may be updated as our investigation continues.\r\n\r\nNext update by: Thursday, July 30, 2026, at 10:30 PM UTC"
-        }
-      ],
-      "serviceName": "Microsoft 365 suite",
-      "affectedServices": [
-        "Microsoft 365 suite"
       ]
     }
   ]
