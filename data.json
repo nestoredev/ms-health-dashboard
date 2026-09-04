@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-04T13:14:32.846Z",
+  "lastUpdated": "2026-09-04T13:44:48.068Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -136,16 +136,21 @@
           "title": "Users may experience delays sending and receiving email messages from external domains in Exchange Online",
           "startTime": "2026-09-04T10:19:12Z",
           "endTime": null,
-          "lastModified": "2026-09-04T13:02:59.03Z",
+          "lastModified": "2026-09-04T13:28:48.097Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may experience a delay in sending and receiving email messages from external domains in Exchange Online.",
-          "scopeOfImpact": "",
-          "rootCause": "",
-          "nextUpdateBy": "Friday, September 4, 2026, at 1:30 PM UTC",
+          "scopeOfImpact": "This issue impacts users who may be attempting to send and receive email messages from external domains in Exchange Online. This information may be updated as our investigation continues.\n\nStart time: Friday, September 4, 2026, at 9:00 AM UTC\n\nPreliminary",
+          "rootCause": "The enforcement of a specific anti-spam model is contributing to impact for a subset of email traffic.",
+          "nextUpdateBy": "Friday, September 4, 2026, at 3:00 PM UTC",
           "feature": "Mailflow - delayed delivery from Internet",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-04T13:28:48.097Z",
+              "postType": "regular",
+              "content": "Title: Users may experience delays sending and receiving email messages from external domains in Exchange Online\n\nUser impact: Users may experience a delay in sending and receiving email messages from external domains in Exchange Online.\n\nMore info: Users may experience intermittent “Server busy” errors, affecting multiple mailboxes.\n\nDepending on the client, the service should attempt to periodically retry sending the email previously impacted by the issue. If the initial sender received an NDR after 24-72 hours (different clients or email providers can vary), they will need to send a new email.\n \nCurrent status: Telemetry shows that the service is performing as expected for new emails and this is in line with organizations confirming that the issue no longer occurring. We're monitoring email queues and performing final validations to confirm the issue is fully resolved.\n \nScope of impact: This issue impacts users who may be attempting to send and receive email messages from external domains in Exchange Online. This information may be updated as our investigation continues.\n\nStart time: Friday, September 4, 2026, at 9:00 AM UTC\n\nPreliminary root cause: The enforcement of a specific anti-spam model is contributing to impact for a subset of email traffic.\n \nNext update by: Friday, September 4, 2026, at 3:00 PM UTC"
+            },
             {
               "createdAt": "2026-09-04T13:02:32.617Z",
               "postType": "quick",
