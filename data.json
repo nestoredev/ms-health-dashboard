@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-04T16:16:03.027Z",
+  "lastUpdated": "2026-09-04T16:46:15.416Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -902,15 +902,51 @@
   ],
   "history": [
     {
+      "id": "TM1467148",
+      "title": "Users may be unable to access some third-party apps within Microsoft Teams",
+      "startTime": "2026-09-04T14:58:32.27Z",
+      "endTime": "2026-09-04T16:30:35.507Z",
+      "lastModified": "2026-09-04T16:31:21.167Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have been unable to access some third-party apps within Microsoft Teams.",
+      "scopeOfImpact": "Any user attempting to access a some third-party apps may have been impacted.\r\n\r\nStart time: Friday, September 4, 2026, at 2:53 AM UTC\r\n\r\nEnd time: Friday, September 4, 2026, at 3:14 PM UTC",
+      "rootCause": "A code issue occurring within an upstream service caused the third-party app to be removed from the app catalog, resulting in impact.\r\n\r\nNext steps: \n- We're reviewing the offending code issue to determine how it was introduced into the service, so that we can prevent similar issues from occurring in the future.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "General",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-09-04T16:31:17.243Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to access some third-party apps within Microsoft Teams\r\n\r\nUser impact: Users may have been unable to access some third-party apps within Microsoft Teams.\r\n\r\nFinal status: We've deployed our fix to address the upstream code issue and confirmed through monitoring service health telemetry that the impact has been remediated. Admins will need to restore the pre-impact app configurations within the Microsoft Teams admin center to have access restored. The pre-impact app configuration settings can be gathered from audit logs.\r\n\r\nScope of impact: Any user attempting to access a some third-party apps may have been impacted.\r\n\r\nStart time: Friday, September 4, 2026, at 2:53 AM UTC\r\n\r\nEnd time: Friday, September 4, 2026, at 3:14 PM UTC\r\n\r\nRoot cause: A code issue occurring within an upstream service caused the third-party app to be removed from the app catalog, resulting in impact.\r\n\r\nNext steps: \n- We're reviewing the offending code issue to determine how it was introduced into the service, so that we can prevent similar issues from occurring in the future.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-09-04T15:14:31.437Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to access some third-party apps within Microsoft Teams\r\n\r\nUser impact: Users may be unable to access some third-party apps within Microsoft Teams.\r\n\r\nCurrent status: We've identified that a code issue occurring within an upstream service caused the third-party app to be removed from the app catalog, resulting in impact. We've developed a fix to address the code issue and return the app to the catalog, and we'll aim to provide a timeline for the deployment of our fix to begin by our next schedule communications update. Once the fix has been deployed, admins will need to restore the pre-impact app configurations within the Microsoft Teams admin center to have access restored.\r\n\r\nScope of impact: Any user attempting to access some third-party apps may be impacted. This section may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 4, 2026, at 2:53 AM UTC\r\n\r\nRoot cause: A code issue occurring within an upstream service caused the third-party app to be removed from the app catalog, resulting in impact.\r\n\r\nNext update by: Friday, September 4, 2026, at 5:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-09-04T15:00:13.65Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to access some third-party apps within Microsoft Teams\r\n\r\nUser impact: Users may be unable to access some third-party apps within Microsoft Teams.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Teams and checking for impact to your organization. We'll provide an update within 30 minutes."
+        }
+      ],
+      "serviceName": "Microsoft Teams",
+      "affectedServices": [
+        "Microsoft Teams"
+      ]
+    },
+    {
       "id": "EX1467029",
       "title": "Users may experience delays sending and receiving email messages from external domains in Exchange Online",
       "startTime": "2026-09-04T09:00:00Z",
       "endTime": "2026-09-04T15:15:00Z",
-      "lastModified": "2026-09-04T16:05:15.857Z",
+      "lastModified": "2026-09-04T16:15:46.583Z",
       "status": "serviceRestored",
       "severity": "incident",
       "userImpact": "Users may have experienced a delay in sending and receiving email messages from external domains in Exchange Online.",
-      "scopeOfImpact": "This issue impacted users who may have been attempting to send and receive email messages from external domains in Exchange Online.\nStart time: Friday, September 4, 2026, at 9:00 AM UTC\n \nEnd time: Friday, September 4, 2026, at 3:15 PM UTC\nPreliminary",
+      "scopeOfImpact": "This issue impacted users who may have been attempting to send and receive email messages from external domains in Exchange Online.\n\nStart time: Friday, September 4, 2026, at 9:00 AM UTC\n \nEnd time: Friday, September 4, 2026, at 3:15 PM UTC\n\nPreliminary",
       "rootCause": "The enforcement of a specific anti-spam model contributed to impact for a subset of email traffic. We'll provide more details within the Post-Incident Report.\n \nNext Steps:\n- We're reviewing model classifications, rule configurations and upstream data pipelines to determine why the anti-spam model started to impact a subset of email traffic.\n \nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days.",
       "nextUpdateBy": "",
       "feature": "Mailflow - delayed delivery from Internet",
@@ -919,7 +955,7 @@
         {
           "createdAt": "2026-09-04T16:05:15.857Z",
           "postType": "regular",
-          "content": "Title: Users may experience delays sending and receiving email messages from external domains in Exchange Online\n\nUser impact: Users may have experienced a delay in sending and receiving email messages from external domains in Exchange Online.\n\nMore info: Users may have experienced intermittent “Server busy” errors, affecting multiple mailboxes.\nDepending on the client, the service should attempt to periodically retry sending the email previously impacted by the issue. If the initial sender received an NDR after 24-72 hours (different clients or email providers can vary), they will need to send a new email.\n \nFinal status: We've confirmed that the issue is resolved after an extended period of monitoring, and receiving additional confirmations from previously impacted organizations.\n \nScope of impact: This issue impacted users who may have been attempting to send and receive email messages from external domains in Exchange Online.\nStart time: Friday, September 4, 2026, at 9:00 AM UTC\n \nEnd time: Friday, September 4, 2026, at 3:15 PM UTC\nPreliminary root cause: The enforcement of a specific anti-spam model contributed to impact for a subset of email traffic. We'll provide more details within the Post-Incident Report.\n \nNext Steps:\n- We're reviewing model classifications, rule configurations and upstream data pipelines to determine why the anti-spam model started to impact a subset of email traffic.\n \nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days."
+          "content": "Title: Users may experience delays sending and receiving email messages from external domains in Exchange Online\n\nUser impact: Users may have experienced a delay in sending and receiving email messages from external domains in Exchange Online.\n\nMore info: Users may have experienced intermittent “Server busy” errors, affecting multiple mailboxes.\n\nDepending on the client, the service should attempt to periodically retry sending the email previously impacted by the issue. If the initial sender received an NDR after 24-72 hours (different clients or email providers can vary), they will need to send a new email.\n \nFinal status: We've confirmed that the issue is resolved after an extended period of monitoring, and receiving additional confirmations from previously impacted organizations.\n \nScope of impact: This issue impacted users who may have been attempting to send and receive email messages from external domains in Exchange Online.\n\nStart time: Friday, September 4, 2026, at 9:00 AM UTC\n \nEnd time: Friday, September 4, 2026, at 3:15 PM UTC\n\nPreliminary root cause: The enforcement of a specific anti-spam model contributed to impact for a subset of email traffic. We'll provide more details within the Post-Incident Report.\n \nNext Steps:\n- We're reviewing model classifications, rule configurations and upstream data pipelines to determine why the anti-spam model started to impact a subset of email traffic.\n \nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days."
         },
         {
           "createdAt": "2026-09-04T15:08:34.08Z",
