@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-04T20:17:49.804Z",
+  "lastUpdated": "2026-09-04T20:48:03.510Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -3070,37 +3070,6 @@
       "serviceName": "Microsoft 365 suite",
       "affectedServices": [
         "Microsoft 365 suite"
-      ]
-    },
-    {
-      "id": "TM1447500",
-      "title": "Admins may experience authentication issues or errors preventing access to the Microsoft Teams CQD",
-      "startTime": "2026-07-24T21:06:00Z",
-      "endTime": "2026-08-05T20:30:35.67Z",
-      "lastModified": "2026-08-05T20:32:42.55Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Admins may have experienced authentication issues or errors preventing access to the Microsoft Teams CQD.",
-      "scopeOfImpact": "This issue produced 400 errors or authentication problems for any admin, preventing their access to the Microsoft Teams Call Quality dashboard.\r\n\r\nStart time: Friday, July 24, 2026, at 9:06 PM UTC\r\n\r\nEnd time: Wednesday, August 5, 2026, at 12:18 AM UTC",
-      "rootCause": "A recent service update intending to improve service authentication produced an impacting token refresh issue that prevented admins' access to the Microsoft Teams Call Quality dashboard.\r\n\r\nNext steps: \n- We're further analyzing the offending service authentication update to help us improve our pre-deployment testing and validations.\n \nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Teams Admin Center",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-08-05T20:32:38.83Z",
-          "postType": "regular",
-          "content": "Title: Admins may experience authentication issues or errors preventing access to the Microsoft Teams CQD\r\n\r\nUser impact: Admins may have experienced authentication issues or errors preventing access to the Microsoft Teams CQD.\r\n\r\nMore info: This issue produced 400 errors or authentication problems for any admin, preventing their access to the Microsoft Teams Call Quality dashboard (CQD).\r\n\r\nFinal status: Following the deployment of our fix, we've validated with affected admins who confirmed the authentication issues and errors that had prevented access to the Microsoft Teams Call Quality dashboard have subsided, and that the impact has been remediated.\r\n\r\nScope of impact: This issue produced 400 errors or authentication problems for any admin, preventing their access to the Microsoft Teams Call Quality dashboard.\r\n\r\nStart time: Friday, July 24, 2026, at 9:06 PM UTC\r\n\r\nEnd time: Wednesday, August 5, 2026, at 12:18 AM UTC\r\n\r\nRoot cause: A recent service update intending to improve service authentication produced an impacting token refresh issue that prevented admins' access to the Microsoft Teams Call Quality dashboard.\r\n\r\nNext steps: \n- We're further analyzing the offending service authentication update to help us improve our pre-deployment testing and validations.\n \nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-08-04T19:28:18.047Z",
-          "postType": "regular",
-          "content": "Title: Admins may experience authentication issues or errors preventing access to the Microsoft Teams Call Quality dashboard\r\n\r\nUser impact: Admins may experience authentication issues or errors preventing access to the Microsoft Teams Call Quality dashboard. \r\n\r\nCurrent status: We've identified a recent update to service authentication that is producing an impacting authentication token refresh issue that's preventing admins' access to the Microsoft Teams Call Quality Dashboard. We're developing a fix to address the offending token refresh and to remediate the impact. We'll provide an updated timeline for our fix deployment once our internal testing and validations have completed.\r\n\r\nScope of impact: This issue may produce 400 errors or authentication problems for any admin, preventing them access to the Microsoft Teams Call Quality dashboard. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, July 24, 2026, at 9:06 PM UTC\r\n\r\nRoot cause: A recent service update intending to improve service authentication has produced an impacting token refresh issue, preventing admins' access to the Microsoft Teams Call Quality dashboard.\r\n\r\nNext update by: Thursday, August 6, 2026, at 12:00 AM UTC"
-        }
-      ],
-      "serviceName": "Microsoft Teams",
-      "affectedServices": [
-        "Microsoft Teams"
       ]
     }
   ]
