@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-04T06:11:21.596Z",
+  "lastUpdated": "2026-09-04T06:41:33.124Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -531,36 +531,6 @@
               "createdAt": "2026-08-21T23:43:37.807Z",
               "postType": "regular",
               "content": "Title: Users may be unable to join shared channels using some links to messages in Microsoft Teams\n\nUser impact: Users may be unable to join shared channels using some links to messages in Microsoft Teams.\n\nMore info: This issue specifically affects links generated using the “Copy Link” options within the three dots menu located at the top right of the shared channel. Users can bypass this impact by generating links to channels using any alternate method, such as by right-clicking on the channel in the left rail menu or any specific message within the shared channel and choosing the “Copy Link” option there.\n \nCurrent status: We're investigating a potential issue with the Microsoft Teams service and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Microsoft Teams"
-          ]
-        },
-        {
-          "id": "TM1466901",
-          "title": "Some users may see the Teams chat icon is missing when using the new chat and channels experience in Microsoft Teams",
-          "startTime": "2026-09-04T04:12:16.54Z",
-          "endTime": null,
-          "lastModified": "2026-09-04T04:58:47.06Z",
-          "status": "investigating",
-          "severity": "incident",
-          "userImpact": "Users may see the Teams chat icon is missing when using the new chat and channels experience in Microsoft Teams.",
-          "scopeOfImpact": "Some users who are using the new chat and channels experience in Microsoft Teams may be impacted. This information may be updated as our investigation continues.",
-          "rootCause": "A code issue in a recent deployment to the service app catalog is preventing some app icons from appearing when using the new chat and channels experience in Microsoft Teams.",
-          "nextUpdateBy": "Friday, September 4, 2026, at 6:30 AM UTC",
-          "feature": "App Start",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-09-04T04:58:47.06Z",
-              "postType": "regular",
-              "content": "Title: Some users may see the Teams chat icon is missing when using the new chat and channels experience in Microsoft Teams\r\n\r\nUser impact: Users may see the Teams chat icon is missing when using the new chat and channels experience in Microsoft Teams.\r\n\r\nMore info: Specifically, the Chats and Channels app icon may be missing from the pin bar when using the new chat and channels experience on any Microsoft Teams clients.\n\nTo avoid this issue, users can choose to separate Chats from Channels by enabling the \"separate\" view in Microsoft Teams.\r\n\r\nCurrent status: We've identified a code issue in a recent deployment to the service app catalog, which is preventing some app icons from appearing when using the new chat and channels experience in Microsoft Teams. We're reverting the offending deployment to remediate impact, and we'll aim to provide a resolution timeline once available. While impacted users wait for the fix to be deployed, we recommend users separate Chats from Channels by enabling the \"separate\" view in Microsoft Teams.\r\n\r\nScope of impact: Some users who are using the new chat and channels experience in Microsoft Teams may be impacted. This information may be updated as our investigation continues.\r\n\r\nRoot cause: A code issue in a recent deployment to the service app catalog is preventing some app icons from appearing when using the new chat and channels experience in Microsoft Teams. \r\n\r\nNext update by: Friday, September 4, 2026, at 6:30 AM UTC"
-            },
-            {
-              "createdAt": "2026-09-04T04:33:43.597Z",
-              "postType": "regular",
-              "content": "Title: Some users may see the Teams chat icon is missing when using the new chat and channels experience in Microsoft Teams\r\n\r\nUser impact: Users may see the Teams chat icon is missing when using the new chat and channels experience in Microsoft Teams.\r\n\r\nMore info: All Microsoft Teams clients are impacted.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Teams and checking for impact to your organization. We'll provide an update within 30 minutes."
             }
           ],
           "affectedServices": [
