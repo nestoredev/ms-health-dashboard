@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-05T04:21:14.936Z",
+  "lastUpdated": "2026-09-05T04:51:28.179Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -899,11 +899,11 @@
     {
       "id": "CW1467407",
       "title": "Users may be unable to query Microsoft 365 Copilot Chat and receive an error",
-      "startTime": "2026-09-05T01:45:26.467Z",
-      "endTime": "2026-09-05T02:34:49.68Z",
-      "lastModified": "2026-09-05T02:42:01.053Z",
+      "startTime": "2026-09-05T01:45:26Z",
+      "endTime": "2026-09-05T02:34:49Z",
+      "lastModified": "2026-09-05T04:18:53.19Z",
       "status": "serviceRestored",
-      "severity": "advisory",
+      "severity": "incident",
       "userImpact": "Users may be unable to query Copilot Chat and receive an error.",
       "scopeOfImpact": "Any user who attempted to query Copilot Chat may be impacted. \r\n\r\nStart time: Saturday, September 5, 2026, at 12:40 AM UTC\r\n\r\nEnd time: Saturday, September 5, 2026, at 2:09 AM UTC",
       "rootCause": "A recent configuration change caused a subset of query requests to be rejected, resulting in elevated error rates and resulted in impact.\r\n\r\nNext steps: We'll review our service update validation process to ensure similar instances aren't replicated in the future.\r\n\r\nThis is the final update for the event.",
