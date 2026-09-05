@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-05T15:55:51.761Z",
+  "lastUpdated": "2026-09-05T16:26:03.319Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1193,7 +1193,7 @@
       "title": "Users may be unable to connect to, or experience degraded functionality with Exchange Online",
       "startTime": "2026-08-31T14:56:00Z",
       "endTime": "2026-09-03T10:00:00Z",
-      "lastModified": "2026-09-05T12:31:11.46Z",
+      "lastModified": "2026-09-05T16:20:41.333Z",
       "status": "postIncidentReviewPublished",
       "severity": "incident",
       "userImpact": "Users may have been unable to connect to, or experienced degraded functionality with Exchange Online.",
@@ -1204,12 +1204,12 @@
       "isResolved": true,
       "posts": [
         {
-          "createdAt": "2026-09-05T12:31:11.46Z",
+          "createdAt": "2026-09-05T16:20:29.51Z",
           "postType": "regular",
           "content": "A post-incident report has been published."
         },
         {
-          "createdAt": "2026-09-05T12:30:56.223Z",
+          "createdAt": "2026-09-05T12:31:11.46Z",
           "postType": "regular",
           "content": "A post-incident report has been published."
         },
@@ -1239,7 +1239,7 @@
       "title": "Users may experience issues when utilizing multiple Microsoft 365 services",
       "startTime": "2026-08-31T14:56:00Z",
       "endTime": "2026-09-03T10:00:00Z",
-      "lastModified": "2026-09-05T12:31:49.307Z",
+      "lastModified": "2026-09-05T16:20:33.057Z",
       "status": "postIncidentReviewPublished",
       "severity": "incident",
       "userImpact": "Users may have experienced issues when utilizing multiple Microsoft 365 services.",
@@ -1249,6 +1249,11 @@
       "feature": "Company or User Administration",
       "isResolved": true,
       "posts": [
+        {
+          "createdAt": "2026-09-05T16:20:33.057Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        },
         {
           "createdAt": "2026-09-05T12:31:49.307Z",
           "postType": "regular",
@@ -1268,11 +1273,6 @@
           "createdAt": "2026-09-03T16:24:26.15Z",
           "postType": "regular",
           "content": "Title: Users may experience issues when utilizing multiple Microsoft 365 services\n\nUser impact: Users may experience issues when utilizing multiple Microsoft 365 services.\n\nMore info: Impact is currently limited to Outlook on the web, Outlook mobile apps, and Outlook for Mac. Previously identified impact included the services and scenarios listed below. We will continue to update this list as our investigation progresses and our understanding of the issue evolves.\n\nExchange Online:\n- Users can't download email message attachments through any Exchange Online connection method.\n- Users may be unable to sign in to Outlook on the web.\n \nRECOVERED\n \nMicrosoft Graph:\n- Users may have experienced failures for scenarios that rely on access to Exchange Online data.\n \nExchange Online:\n- Service telemetry indicates recovery of core mail flow and search functionality.\n- Service telemetry indicates recovery of the majority of previously impacted authentication and protocol connectivity scenarios.\n- Users may have been unable to connect to, or experience degraded functionality, such as failures when attempting to use the search function, within Exchange Online. All connection methods were affected.\n- Users may have been unable to connect to Exchange Web Services (EWS)\n- Users may have been unable to use room finder in Outlook calendars.\n \nOutlook for iOS and Android:\n- Users may have experienced delays or failures when sending or receiving email messages via Outlook for iOS and Android.\n \nMicrosoft 365 Admin Center:\n- Admins may have experienced issues authenticating into the admin center.\n \nMicrosoft Purview:\n- Users can now access the Microsoft Purview portal.\n- Any policy hits, alerts, or processing activities delayed during the event are expected to appear over the next 24 to 48 hours as recovery validation continues.\n- From a Microsoft Purview Communication Compliance perspective, the issue has been mitigated and customers should now be able to access and use the portal as expected. We are currently processing any policy activity that may have been delayed during the event, and any missed policy hits, alerts, or related results are expected to appear within the next 24 to 48 hours.\n\nMicrosoft Defender XDR:\n- Users may have experienced intermittent authorization failures across solutions in Defender.\n \nMicrosoft Teams:\n- Users may have experienced issues with search and users’ presence may be stale and not update automatically or through manual adjustment. User location adjustment may have failed.\n- Users may have experienced issues with Microsoft Teams Room (MTR) devices and desktop phones displayed offline in the Teams admin center.\n- Users may have experienced issues creating, deleting, and editing Teams channels.\n- Users may have experienced issues with calendar functionality.\n \nMicrosoft 365 Copilot: \n- Users' Copilot prompts that required Microsoft 365 grounding, such as email content, may have failed.\n- Users may have experienced failures for scenarios that rely on access to Exchange Online data.\n- Users prompts may have failed or they may have experienced degradation when utilizing Cowork.\n\nOneDrive for Business and SharePoint Online:\n- Users may have been unable to load or refresh portions of OneDrive and SharePoint, including account and storage information, search results, Favorites, Followed and Shared With Me content, recent files, lists, and news.\n- Some users may have also experience delayed or failed file opening, Office policy-label retrieval, OneDrive synchronization, mobile camera upload, and video playback.\n- Users may have seen partial page failures, missing or stale content, repeated retries, and operation timeouts rather than a complete platform outage.\n\nUniversal Print: \n- Users may have been unable to create, upload, or retrieve print jobs.\n \nCurrent status: We discovered an issue in less than one percent of our infrastructure, where our additional mitigation efforts to resolve impact for Exchange Online did not successfully deploy. The vast majority of impact remains remediated; however, those serviced from the impacted portion of infrastructure may be unable to access previously recovered Outlook connection methods. We remain committed to restoring all services to all users and will continue to carefully monitor our telemetry to ensure recovery.\n\nScope of impact: Users attempting to perform any of the outlined impact scenarios may be affected by this event.\n\nStart time: Monday, August 31, 2026, at 3:08 PM UTC\n\nPreliminary root cause: An issue within a core authentication configuration used by multiple Microsoft 365 services is resulting in impact.\n\nNext update by: Thursday, September 3, 2026, at 6:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-09-03T14:26:52.293Z",
-          "postType": "regular",
-          "content": "Title: Users may experience issues when utilizing multiple Microsoft 365 services\n\nUser impact: Users may experience issues when utilizing multiple Microsoft 365 services.\n\nMore info: Impact is currently limited to Microsoft Outlook on the web. Previously identified impact included the services and scenarios listed below. We will continue to update this list as our investigation progresses and our understanding of the issue evolves.\n\nExchange Online:\n- Users can't download email message attachments through any Exchange Online connection method.\n- Users may be unable to sign in to Outlook on the web.\n \nRECOVERED\n \nMicrosoft Graph:\n- Users may have experienced failures for scenarios that rely on access to Exchange Online data.\n \nExchange Online:\n- Service telemetry indicates recovery of core mail flow and search functionality.\n- Service telemetry indicates recovery of the majority of previously impacted authentication and protocol connectivity scenarios.\n- Users may have been unable to connect to, or experience degraded functionality, such as failures when attempting to use the search function, within Exchange Online. All connection methods are affected.\n- Users may have been unable to connect to Exchange Web Services (EWS)\n- Users may have been unable to use room finder in Outlook calendars.\n \nOutlook for iOS and Android:\n- Users may have experienced delays or failures when sending or receiving email messages via Outlook for iOS and Android.\n \nMicrosoft 365 Admin Center:\n- Admins may have experienced issues authenticating into the admin center.\n \nMicrosoft Purview:\n- Users can now access the Microsoft Purview portal.\n- Any policy hits, alerts, or processing activities delayed during the event are expected to appear over the next 24 to 48 hours as recovery validation continues.\n- From a Microsoft Purview Communication Compliance perspective, the issue has been mitigated and customers should now be able to access and use the portal as expected. We are currently processing any policy activity that may have been delayed during the event, and any missed policy hits, alerts, or related results are expected to appear within the next 24 to 48 hours.\n\nMicrosoft Defender XDR:\n- Users may have experienced intermittent authorization failures across solutions in Defender.\n \nMicrosoft Teams:\n- Users may have experienced issues with search and users’ presence may be stale and not update automatically or through manual adjustment. User location adjustment may have failed.\n- Users may have experienced issues with Microsoft Teams Room (MTR) devices and desktop phones displayed offline in the Teams admin center.\n- Users may have experienced issues creating, deleting, and editing Teams channels.\n- Users may have experienced issues with calendar functionality.\n \nMicrosoft 365 Copilot: \n- Users' Copilot prompts that required Microsoft 365 grounding, such as email content, may have failed.\n- Users may have experienced failures for scenarios that rely on access to Exchange Online data.\n- Users prompts may have failed or they may have experienced degradation when utilizing Cowork.\n\nOneDrive for Business and SharePoint Online:\n- Users may have been unable to load or refresh portions of OneDrive and SharePoint, including account and storage information, search results, Favorites, Followed and Shared With Me content, recent files, lists, and news.\n- Some users may have also experience delayed or failed file opening, Office policy-label retrieval, OneDrive synchronization, mobile camera upload, and video playback.\n- Users may have seen partial page failures, missing or stale content, repeated retries, and operation timeouts rather than a complete platform outage.\n\nUniversal Print: \n- Users may have been unable to create, upload, or retrieve print jobs.\n \nCurrent status: While monitoring service telemetry closely, we identified a small volume of errors affecting mail flow functionality. We're conducting targeted restarts to reduce the number of errors and alleviate impact. In parallel, we're continuing to analyze service health telemetry to determine if any additional mitigation actions are required to restore normal functionality.\n\nScope of impact: Users attempting to perform any of the outlined impact scenarios may be affected by this event.\n\nStart time: Monday, August 31, 2026, at 3:08 PM UTC\n\nPreliminary root cause: An issue within a core authentication configuration used by multiple Microsoft 365 services is resulting in impact.\n\nNext update by: Thursday, September 3, 2026, at 4:30 PM UTC"
         }
       ],
       "serviceName": "Microsoft 365 suite",
