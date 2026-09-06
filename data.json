@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-06T02:30:14.398Z",
+  "lastUpdated": "2026-09-06T03:00:26.498Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -233,6 +233,31 @@
       "status": "serviceDegradation",
       "id": "OSDPPlatform",
       "issues": [
+        {
+          "id": "MO1467962",
+          "title": "Some admins' Microsoft 365 admin center usage report data may be delayed",
+          "startTime": "2026-09-05T00:00:00Z",
+          "endTime": null,
+          "lastModified": "2026-09-06T02:30:16.497Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Admins' Microsoft 365 admin center usage report data may be delayed.",
+          "scopeOfImpact": "Admins attempting to view some usage report data in the Microsoft 365 admin center may be impacted. This section may be updated as our investigation continues.\r\n\r\nStart time: Saturday, September 5, 2026, at 12:00 AM UTC",
+          "rootCause": "An upstream data source pipeline issue is causing delays in some usage report data availability and is resulting in impact.",
+          "nextUpdateBy": "",
+          "feature": "Company or User Administration",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-09-06T02:30:16.497Z",
+              "postType": "regular",
+              "content": "Title: Some admins' Microsoft 365 admin center usage report data may be delayed\r\n\r\nUser impact: Admins' Microsoft 365 admin center usage report data may be delayed.\r\n\r\nMore info: Specifically, Microsoft 365 admin center usage reports include the following:\n \n- Microsoft 365 Copilot Readiness Reports may be delayed for admins in North America, Asia Pacific, Europe, and the latest data is from August 31, 2026.\n- Copilot Chat Reports may be delayed for admins in North America and the latest data is from September 3, 2026.\n- Microsoft 365 Apps usage Reports may be delayed for admins in North America, Asia Pacific, Europe, and the latest data is from August 31, 2026.\n- Microsoft Teams User Activity Reports may be delayed for admins in North America, Asia Pacific, and the latest data is from is from September 1, 2026.\r\n\r\nCurrent status: We've been made aware of an issue in which some admins' Microsoft 365 admin center usage report data may be delayed. We've identified that an upstream data source pipeline issue is causing delays in some usage report data availability and is resulting in impact. We've developed a solution and are applying it to the affected pipeline to address the issue. We anticipate that impact to Copilot chat report data will be resolved by Sunday, September 6, 2026, at 3:30 AM UTC, and in the interim, we're working on determining the timeline for resolution for the remaining affected reports, which we aim to provide by our next scheduled communications update.\r\n\r\nScope of impact: Admins attempting to view some usage report data in the Microsoft 365 admin center may be impacted. This section may be updated as our investigation continues.\r\n\r\nStart time: Saturday, September 5, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: An upstream data source pipeline issue is causing delays in some usage report data availability and is resulting in impact."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite"
+          ]
+        },
         {
           "id": "MO1457843",
           "title": "Admins can't identify who deleted a Viva Engage community or its Microsoft 365 Group in Microsoft Entra ID audit logs",
