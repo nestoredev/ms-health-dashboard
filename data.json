@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-08T16:26:02.860Z",
+  "lastUpdated": "2026-09-08T16:56:17.468Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -320,6 +320,36 @@
               "createdAt": "2026-08-21T17:31:50.35Z",
               "postType": "regular",
               "content": "Title: Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights\r\n\r\nUser impact: Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights.\r\n\r\nMore info: Affected reports include, but aren't limited to:\n\n- Copilot Usage report in Microsoft 365 admin center\n- Copilot Chat Usage report in Microsoft 365 admin center\n- Copilot Readiness reports in Microsoft 365 admin center and Viva Insights\n- Copilot Adoption report in Viva Insights\n- Microsoft 365 Apps and Active users reports in Microsoft 365 admin center\n- Teams App reports in Microsoft 365 admin center and Microsoft Teams admin center\r\n\r\nCurrent status: Our monitoring has identified an increase report generation delays and our investigation has identified that an upstream component that facilitates report data access and generation isn't responding as expected, resulting in impact. We're in the process of identifying the underlying cause of impact and develop a remediation strategy.\r\n\r\nScope of impact: Any admin expecting reports from the affected scenarios as outlined in the More info section may be affected. \r\n\r\nStart time: Friday, August 21, 2026, at 12:00 AM UTC\r\n\r\nNext update by: Monday, August 24, 2026, at 7:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite"
+          ]
+        },
+        {
+          "id": "MO1469271",
+          "title": "Some users may be unable to access https://m365.cloud.microsoft and receive an error",
+          "startTime": "2026-09-08T15:23:28.773Z",
+          "endTime": null,
+          "lastModified": "2026-09-08T16:44:49.67Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to access https://m365.cloud.microsoft and receive an error message.",
+          "scopeOfImpact": "This issue may affect some users attempting to access https://m365.cloud.microsoft.",
+          "rootCause": "",
+          "nextUpdateBy": "Tuesday, September 8, 2026, at 6:00 PM UTC",
+          "feature": "Access",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-09-08T16:06:42.897Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to access https://m365.cloud.microsoft and receive an error\r\n\r\nUser impact: Users may be unable to access https://m365.cloud.microsoft and receive an error message.\r\n\r\nMore info: Users receive either a 400 or 503 error code, or a \"GetSections returned no conversation history\" error message.\r\n\r\nCurrent status: We've received reports of an issue where users receive either a 400 or 503 error code, or a \"GetSections returned no conversation history\" error message when attempting to access https://m365.cloud.microsoft. We're reviewing a HTTP Archive (HAR) file from both working and non-working scenarios to assess where the issue lies.\r\n\r\nScope of impact: This issue may affect some users attempting to access https://m365.cloud.microsoft.\r\n\r\nNext update by: Tuesday, September 8, 2026, at 6:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-09-08T15:32:08.67Z",
+              "postType": "regular",
+              "content": "Title: Some users can't access https://m365.cloud.microsoft and receive an error\r\n\r\nUser impact: Users can't access https://m365.cloud.microsoft and receive a 400, 503 error code, or a specific error message.\r\n\r\nMore info: Users receive either a 400 or 503 error code, or a \"GetSections returned no conversation history\" error message.\r\n\r\nCurrent status: We're investigating a potential issue with accessing https://m365.cloud.microsoft and checking for impact to your organization. We'll provide an update within 30 minutes."
             }
           ],
           "affectedServices": [
