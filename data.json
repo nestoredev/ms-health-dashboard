@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-08T17:26:34.453Z",
+  "lastUpdated": "2026-09-08T17:56:50.858Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -320,36 +320,6 @@
               "createdAt": "2026-08-21T17:31:50.35Z",
               "postType": "regular",
               "content": "Title: Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights\r\n\r\nUser impact: Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights.\r\n\r\nMore info: Affected reports include, but aren't limited to:\n\n- Copilot Usage report in Microsoft 365 admin center\n- Copilot Chat Usage report in Microsoft 365 admin center\n- Copilot Readiness reports in Microsoft 365 admin center and Viva Insights\n- Copilot Adoption report in Viva Insights\n- Microsoft 365 Apps and Active users reports in Microsoft 365 admin center\n- Teams App reports in Microsoft 365 admin center and Microsoft Teams admin center\r\n\r\nCurrent status: Our monitoring has identified an increase report generation delays and our investigation has identified that an upstream component that facilitates report data access and generation isn't responding as expected, resulting in impact. We're in the process of identifying the underlying cause of impact and develop a remediation strategy.\r\n\r\nScope of impact: Any admin expecting reports from the affected scenarios as outlined in the More info section may be affected. \r\n\r\nStart time: Friday, August 21, 2026, at 12:00 AM UTC\r\n\r\nNext update by: Monday, August 24, 2026, at 7:00 PM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Microsoft 365 suite"
-          ]
-        },
-        {
-          "id": "MO1469271",
-          "title": "Some users may be unable to access https://m365.cloud.microsoft and receive an error",
-          "startTime": "2026-09-08T15:23:28.773Z",
-          "endTime": null,
-          "lastModified": "2026-09-08T16:44:49.67Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may be unable to access https://m365.cloud.microsoft and receive an error message.",
-          "scopeOfImpact": "This issue may affect some users attempting to access https://m365.cloud.microsoft.",
-          "rootCause": "",
-          "nextUpdateBy": "Tuesday, September 8, 2026, at 6:00 PM UTC",
-          "feature": "Access",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-09-08T16:06:42.897Z",
-              "postType": "regular",
-              "content": "Title: Some users may be unable to access https://m365.cloud.microsoft and receive an error\r\n\r\nUser impact: Users may be unable to access https://m365.cloud.microsoft and receive an error message.\r\n\r\nMore info: Users receive either a 400 or 503 error code, or a \"GetSections returned no conversation history\" error message.\r\n\r\nCurrent status: We've received reports of an issue where users receive either a 400 or 503 error code, or a \"GetSections returned no conversation history\" error message when attempting to access https://m365.cloud.microsoft. We're reviewing a HTTP Archive (HAR) file from both working and non-working scenarios to assess where the issue lies.\r\n\r\nScope of impact: This issue may affect some users attempting to access https://m365.cloud.microsoft.\r\n\r\nNext update by: Tuesday, September 8, 2026, at 6:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-09-08T15:32:08.67Z",
-              "postType": "regular",
-              "content": "Title: Some users can't access https://m365.cloud.microsoft and receive an error\r\n\r\nUser impact: Users can't access https://m365.cloud.microsoft and receive a 400, 503 error code, or a specific error message.\r\n\r\nMore info: Users receive either a 400 or 503 error code, or a \"GetSections returned no conversation history\" error message.\r\n\r\nCurrent status: We're investigating a potential issue with accessing https://m365.cloud.microsoft and checking for impact to your organization. We'll provide an update within 30 minutes."
             }
           ],
           "affectedServices": [
@@ -855,6 +825,42 @@
     }
   ],
   "history": [
+    {
+      "id": "MO1469271",
+      "title": "Some users may be unable to access https://m365.cloud.microsoft and receive an error",
+      "startTime": "2026-09-08T15:23:28.773Z",
+      "endTime": "2026-09-08T17:22:34.757Z",
+      "lastModified": "2026-09-08T17:28:08.41Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may be unable to access https://m365.cloud.microsoft and receive an error message.",
+      "scopeOfImpact": "This issue may have affected some users attempting to access https://m365.cloud.microsoft.\r\n\r\nStart time: Tuesday, September 8, 2026, at 4:30 AM UTC\r\n\r\nEnd time: Tuesday, September 8, 2026, at 5:15 PM UTC",
+      "rootCause": "A recent service update, intended to improve how chats are loaded when accessing m365.cloud.microsoft, rejected requests which resulted in https://m365.cloud.microsoft failing to load.\r\n\r\nNext steps: \n- We're reviewing our testing processes to determine how we can identify similar issues prior to deployment so we can resolve these issues beforehand.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Access",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-09-08T17:28:04.32Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to access https://m365.cloud.microsoft and receive an error\r\n\r\nUser impact: Users may be unable to access https://m365.cloud.microsoft and receive an error message.\r\n\r\nMore info: Users received a \"GetSections returned no conversation history\" error message.\r\n\r\nFinal status: Further analysis indicated that the previously referenced 400 and 503 error messages were unrelated to the issue described in this communication, and we've updated the communication accordingly. We reverted a recent service update that was intended to improve chat-loading functionality when accessing m365.cloud.microsoft and confirmed through service telemetry that the error rates have subsided and service is restored.\r\n\r\nScope of impact: This issue may have affected some users attempting to access https://m365.cloud.microsoft.\r\n\r\nStart time: Tuesday, September 8, 2026, at 4:30 AM UTC\r\n\r\nEnd time: Tuesday, September 8, 2026, at 5:15 PM UTC\r\n\r\nRoot cause: A recent service update, intended to improve how chats are loaded when accessing m365.cloud.microsoft, rejected requests which resulted in https://m365.cloud.microsoft failing to load.\r\n\r\nNext steps: \n- We're reviewing our testing processes to determine how we can identify similar issues prior to deployment so we can resolve these issues beforehand.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-09-08T16:06:42.897Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to access https://m365.cloud.microsoft and receive an error\r\n\r\nUser impact: Users may be unable to access https://m365.cloud.microsoft and receive an error message.\r\n\r\nMore info: Users receive either a 400 or 503 error code, or a \"GetSections returned no conversation history\" error message.\r\n\r\nCurrent status: We've received reports of an issue where users receive either a 400 or 503 error code, or a \"GetSections returned no conversation history\" error message when attempting to access https://m365.cloud.microsoft. We're reviewing a HTTP Archive (HAR) file from both working and non-working scenarios to assess where the issue lies.\r\n\r\nScope of impact: This issue may affect some users attempting to access https://m365.cloud.microsoft.\r\n\r\nNext update by: Tuesday, September 8, 2026, at 6:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-09-08T15:32:08.67Z",
+          "postType": "regular",
+          "content": "Title: Some users can't access https://m365.cloud.microsoft and receive an error\r\n\r\nUser impact: Users can't access https://m365.cloud.microsoft and receive a 400, 503 error code, or a specific error message.\r\n\r\nMore info: Users receive either a 400 or 503 error code, or a \"GetSections returned no conversation history\" error message.\r\n\r\nCurrent status: We're investigating a potential issue with accessing https://m365.cloud.microsoft and checking for impact to your organization. We'll provide an update within 30 minutes."
+        }
+      ],
+      "serviceName": "Microsoft 365 suite",
+      "affectedServices": [
+        "Microsoft 365 suite"
+      ]
+    },
     {
       "id": "TM1462514",
       "title": "Some users attempting to view their Microsoft Teams contact lists may experience latency",
@@ -2962,52 +2968,6 @@
       "serviceName": "Microsoft Teams",
       "affectedServices": [
         "Microsoft Teams"
-      ]
-    },
-    {
-      "id": "PB1451187",
-      "title": "Users may be unable to refresh some Power BI dataflows",
-      "startTime": "2026-08-02T04:00:00Z",
-      "endTime": "2026-08-09T23:21:32Z",
-      "lastModified": "2026-08-09T23:22:05.723Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users may be unable to refresh some Power BI dataflows.",
-      "scopeOfImpact": "Users that attempted to refresh some Power BI (Gen1) dataflows may have been impacted.\n\nStart time: Sunday, August 2, 2026, at 4:00 AM UTC\n\nEnd time: Sunday, August 9, 2026, at 10:56 PM UTC",
-      "rootCause": "A recent service update designed to improve Power BI service monitoring and observability introduced a regression that was preventing some Gen1 dataflow refresh operations from completing successfully.\n\nNext Steps:\n- We're further reviewing the service update to understand how the regression was introduced, and to understand what prevented it from being detected in our update testing and validation procedures, which will allow us to prevent similar issues in future updates.\n\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "General",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-08-09T23:21:36.767Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to refresh some Power BI dataflows\n\nUser impact: Users may have been unable to refresh some Power BI dataflows.\n\nMore info: Affected users saw that their refresh operations remained stuck in an \"In Progress\" state. This issue impacted a subset of Power BI dataflows (Gen1).\n\nFinal status: We've completed deploying the fix to the remaining impacted environment, and we've validated with internal monitoring that the issue is resolved.\n\nScope of impact: Users that attempted to refresh some Power BI (Gen1) dataflows may have been impacted.\n\nStart time: Sunday, August 2, 2026, at 4:00 AM UTC\n\nEnd time: Sunday, August 9, 2026, at 10:56 PM UTC\n\nRoot cause: A recent service update designed to improve Power BI service monitoring and observability introduced a regression that was preventing some Gen1 dataflow refresh operations from completing successfully.\n\nNext Steps:\n- We're further reviewing the service update to understand how the regression was introduced, and to understand what prevented it from being detected in our update testing and validation procedures, which will allow us to prevent similar issues in future updates.\n\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-08-09T21:18:25.763Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to refresh some Power BI dataflows\r\n\r\nUser impact: Users may be unable to refresh some Power BI dataflows.\r\n\r\nMore info: Affected users see that their refresh operations remain stuck in an \"In Progress\" state. This issue impacts a subset of Power BI dataflows (Gen1).\r\n\r\nCurrent status: The application of our fix to the remaining impacted environments is taking longer than anticipated. We'll provide a timeline for the completion of our mitigations once it has become available. \r\n\r\nScope of impact: Users attempting to refresh some Power BI (Gen1) dataflows may be impacted.\r\n\r\nStart time: Sunday, August 2, 2026, at 4:00 AM UTC\r\n\r\nRoot cause: A recent service update designed to improve Power BI service monitoring and observability introduced a regression that’s preventing some Gen1 dataflow refresh operations from completing successfully.\r\n\r\nNext update by: Monday, August 10, 2026, at 12:30 AM UTC"
-        },
-        {
-          "createdAt": "2026-08-09T19:13:50.02Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to refresh some Power BI dataflows\r\n\r\nUser impact: Users may be unable to refresh some Power BI dataflows.\r\n\r\nMore info: Affected users see that their refresh operations remain stuck in an \"In Progress\" state. This issue impacts a subset of Power BI dataflows (Gen1).\r\n\r\nCurrent status: We're continuing to make progress in applying the fix on the remaining portion of impacted environments.\r\n\r\nScope of impact: Users attempting to refresh some Power BI (Gen1) dataflows may be impacted.\r\n\r\nStart time: Sunday, August 2, 2026, at 4:00 AM UTC\r\n\r\nRoot cause: A recent service update designed to improve Power BI service monitoring and observability introduced a regression that’s preventing some Gen1 dataflow refresh operations from completing successfully.\r\n\r\nNext update by: Sunday, August 9, 2026, at 11:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-08-09T15:30:42.02Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to refresh some Power BI dataflows\r\n\r\nUser impact: Users may be unable to refresh some Power BI dataflows.\r\n\r\nMore info: Affected users see that their refresh operations remain stuck in an \"In Progress\" state. This issue impacts a subset of Power BI dataflows (Gen1).\r\n\r\nCurrent status: We applied the fix in approximately half of the affected environment, and our service telemetry monitoring has verified that it's addressing the introduced code regression and remediating the impact. We'll provide an updated timeline for the completion of our fix deployment once it’s available.\r\n\r\nScope of impact: Users attempting to refresh some Power BI (Gen1) dataflows may be impacted.\r\n\r\nStart time: Sunday, August 2, 2026, at 4:00 AM UTC\r\n\r\nRoot cause: A recent service update designed to improve Power BI service monitoring and observability introduced a regression that’s preventing some Gen1 dataflow refresh operations from completing successfully.\r\n\r\nNext update by: Sunday, August 9, 2026, at 9:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-08-09T10:05:09.63Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to refresh some Power BI dataflows\r\n\r\nUser impact: Users may be unable to refresh some Power BI dataflows.\r\n\r\nMore info: Affected users see that their refresh operations remain stuck in an \"In Progress\" state. This issue impacts a subset of Power BI dataflows (Gen1).\r\n\r\nCurrent status: We’ve determined that a recent service update designed to improve Power BI service monitoring and observability inadvertently introduced a regression that is preventing some Gen1 dataflow refresh operations from completing successfully. We’ve implemented a fix to mitigate the impact and have received confirmation from a subset of affected users that it successfully restores dataflow refresh operations. We’re continuing to apply the fix across affected environments while monitoring service telemetry to confirm recovery.\r\n\r\nScope of impact: Users attempting to refresh some Power BI (Gen1) dataflows may be impacted.\r\n\r\nStart time: Sunday, August 2, 2026, at 4:00 AM UTC\r\n\r\nRoot cause: A recent service update designed to improve Power BI service monitoring and observability inadvertently introduced a regression that is preventing some Gen1 dataflow refresh operations from completing successfully.\r\n\r\nNext update by: Sunday, August 9, 2026, at 5:30 PM UTC"
-        }
-      ],
-      "serviceName": "Power BI",
-      "affectedServices": [
-        "Power BI"
       ]
     }
   ]
