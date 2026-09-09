@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-09T18:07:42.034Z",
+  "lastUpdated": "2026-09-09T18:37:58.518Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -320,6 +320,31 @@
               "createdAt": "2026-08-21T17:31:50.35Z",
               "postType": "regular",
               "content": "Title: Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights\r\n\r\nUser impact: Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights.\r\n\r\nMore info: Affected reports include, but aren't limited to:\n\n- Copilot Usage report in Microsoft 365 admin center\n- Copilot Chat Usage report in Microsoft 365 admin center\n- Copilot Readiness reports in Microsoft 365 admin center and Viva Insights\n- Copilot Adoption report in Viva Insights\n- Microsoft 365 Apps and Active users reports in Microsoft 365 admin center\n- Teams App reports in Microsoft 365 admin center and Microsoft Teams admin center\r\n\r\nCurrent status: Our monitoring has identified an increase report generation delays and our investigation has identified that an upstream component that facilitates report data access and generation isn't responding as expected, resulting in impact. We're in the process of identifying the underlying cause of impact and develop a remediation strategy.\r\n\r\nScope of impact: Any admin expecting reports from the affected scenarios as outlined in the More info section may be affected. \r\n\r\nStart time: Friday, August 21, 2026, at 12:00 AM UTC\r\n\r\nNext update by: Monday, August 24, 2026, at 7:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite"
+          ]
+        },
+        {
+          "id": "MO1469836",
+          "title": "Some admins may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center",
+          "startTime": "2026-09-09T17:57:58.157Z",
+          "endTime": null,
+          "lastModified": "2026-09-09T18:11:19.417Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Admins may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center.",
+          "scopeOfImpact": "This incident impacts some admins, who may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center starting from August 25, 2026. This section may be updated as the investigation progresses.",
+          "rootCause": "",
+          "nextUpdateBy": "Thursday, September 10, 2026, at 11:00 PM UTC",
+          "feature": "Company or User Administration",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-09-09T18:11:19.417Z",
+              "postType": "regular",
+              "content": "Title: Some admins may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center.\r\n\r\nMore info: Admins may see the following inaccuracies in Microsoft Teams usage reports starting from August 25, 2026:\n- Teams Active Users may display as 0\n- Teams Chat Messages may display as 0\n- Teams Channel Messages may display as 0\r\n\r\nCurrent status: We've received reports from a subset of admins noting inaccuracies or discrepancies in Microsoft Teams usage reports in the Microsoft 365 admin center starting from August 25, 2026.  We're attempting to reproduce the issue to further our understanding of the current impact scenario and to determine our next troubleshooting steps.\r\n\r\nScope of impact: This incident impacts some admins, who may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center starting from August 25, 2026. This section may be updated as the investigation progresses.\r\n\r\nNext update by: Thursday, September 10, 2026, at 11:00 PM UTC"
             }
           ],
           "affectedServices": [
