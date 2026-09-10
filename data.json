@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-10T00:10:36.044Z",
+  "lastUpdated": "2026-09-10T00:40:49.778Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -526,16 +526,21 @@
           "title": "Users may have been unable to run run-only workflows from Microsoft Teams",
           "startTime": "2026-06-30T07:00:00Z",
           "endTime": null,
-          "lastModified": "2026-09-04T19:03:11.407Z",
+          "lastModified": "2026-09-10T00:20:15.783Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to run run-only workflows from Microsoft Teams.",
           "scopeOfImpact": "Users attempting to run run-only workflows from Microsoft Teams may be impacted. This section may be updated as the investigation progresses. This information may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, June 30, 2026, at 7:00 AM UTC",
           "rootCause": "A recent service update introduced a code regression that affects how Microsoft Teams processes shared workflow requests, preventing some users from running run-only workflows from Microsoft Teams.",
-          "nextUpdateBy": "Thursday, September 10, 2026, at 1:00 AM UTC",
+          "nextUpdateBy": "Tuesday, September 15, 2026, at 1:00 AM UTC",
           "feature": "Teams and Channels",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-10T00:20:15.783Z",
+              "postType": "regular",
+              "content": "Title: Users may have been unable to run run-only workflows from Microsoft Teams\r\n\r\nUser impact: Users may be unable to run run-only workflows from Microsoft Teams.\r\n\r\nMore info: As a result of our initial fix deployment, users are now able to run run-only workflows through the \"workflows\" button in Microsoft Teams. However, running run-only workflows by hovering and selecting \"More actions\" > \"Create workflows\" is still an impacted scenario.\n\nAffected users are unable to run workflows in Teams when those workflows are configured to be executed by designated users without requiring those users to own or edit the workflow. Users receive the following error message:\n\n\"Missing Trigger URI\"\n\nAs a way to avoid this issue, impacted users can be granted Owner or Co-owner permissions for the affected workflow.\r\n\r\nCurrent status: We're completing validation of our fix and preparing for deployment. Once validation activities are complete, we'll begin deployment and provide a more specific resolution timeline in the next scheduled update.\r\n\r\nScope of impact: Users attempting to run run-only workflows from Microsoft Teams may be impacted. This section may be updated as the investigation progresses. This information may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, June 30, 2026, at 7:00 AM UTC\r\n\r\nRoot cause: A recent service update introduced a code regression that affects how Microsoft Teams processes shared workflow requests, preventing some users from running run-only workflows from Microsoft Teams.\r\n\r\nNext update by: Tuesday, September 15, 2026, at 1:00 AM UTC"
+            },
             {
               "createdAt": "2026-09-04T19:02:42.77Z",
               "postType": "regular",
