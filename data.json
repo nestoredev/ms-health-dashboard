@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-10T14:16:49.089Z",
+  "lastUpdated": "2026-09-10T14:47:05.043Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -253,36 +253,6 @@
       "status": "serviceDegradation",
       "id": "OSDPPlatform",
       "issues": [
-        {
-          "id": "MO1470143",
-          "title": "Some users in the United Kingdom may be unable to access multiple Microsoft 365 services",
-          "startTime": "2026-09-10T11:40:31.003Z",
-          "endTime": null,
-          "lastModified": "2026-09-10T13:07:24.32Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users in the United Kingdom may be unable to access multiple Microsoft 365 services.",
-          "scopeOfImpact": "Impact is specific to some users in the United Kingdom attempting to access multiple Microsoft 365 services.",
-          "rootCause": "",
-          "nextUpdateBy": "Thursday, September 10, 2026, at 3:30 PM UTC",
-          "feature": "Access",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-09-10T13:07:01.683Z",
-              "postType": "regular",
-              "content": "Title: Some users in the United Kingdom may be unable to access multiple Microsoft 365 services\r\n\r\nUser impact: Users in the United Kingdom may be unable to access multiple Microsoft 365 services.\r\n\r\nMore info: Impacted services may include, but aren't limited to: \n\n- Microsoft Teams\n- Outlook\r\n\r\nCurrent status: We've identified that a recent authentication component change may be causing users to be unable to access Microsoft 365 services. We're redirecting affected traffic to alternate infrastructure to validate the root cause and provide mitigation. \r\n\r\nScope of impact: Impact is specific to some users in the United Kingdom attempting to access multiple Microsoft 365 services.\r\n\r\nNext update by: Thursday, September 10, 2026, at 3:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-09-10T11:42:20.727Z",
-              "postType": "regular",
-              "content": "Title: Some users in the United Kingdom may be unable to access multiple Microsoft 365 services\r\n\r\nUser impact: Users in the United Kingdom may be unable to access multiple Microsoft 365 services.\r\n\r\nMore info: Impacted services may include, but aren't limited to: \n\n- Microsoft Teams\n- Outlook\r\n\r\nCurrent status: We're proceeding with reviewing service monitoring telemetry to isolate the root cause and develop a remediation plan.\r\n\r\nScope of impact: Impact is specific to some users in the United Kingdom attempting to access multiple Microsoft 365 services.\r\n\r\nNext update by: Thursday, September 10, 2026, at 1:30 PM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Microsoft 365 suite"
-          ]
-        },
         {
           "id": "MO1457843",
           "title": "Admins can't identify who deleted a Viva Engage community or its Microsoft 365 Group in Microsoft Entra ID audit logs",
@@ -900,6 +870,42 @@
     }
   ],
   "history": [
+    {
+      "id": "MO1470143",
+      "title": "Some users in the United Kingdom may have been unable to access multiple Microsoft 365 services",
+      "startTime": "2026-09-10T11:40:31.003Z",
+      "endTime": "2026-09-10T14:15:06.82Z",
+      "lastModified": "2026-09-10T14:34:49.627Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users in the United Kingdom may have been unable to access multiple Microsoft 365 services.",
+      "scopeOfImpact": "Impact was specific to some users in the United Kingdom attempting to access multiple Microsoft 365 services.\r\n\r\nStart time: Thursday, September 10, 2026, at 8:10 AM UTC\r\n\r\nEnd time: Thursday, September 10, 2026, at 1:39 PM UTC",
+      "rootCause": "Some users may have been unable to access Microsoft 365 services due to facing authentication errors.\r\n\r\nNext steps: \n- We're reviewing service telemetry, authentication logs and recent service changes to isolate the root cause and prevent similar impact from happening again.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Access",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-09-10T14:22:56.177Z",
+          "postType": "regular",
+          "content": "Title: Some users in the United Kingdom may have been unable to access multiple Microsoft 365 services\r\n\r\nUser impact: Users in the United Kingdom may have been unable to access multiple Microsoft 365 services.\r\n\r\nMore info: Impacted services may have included, but weren't limited to: \n\n- Microsoft Teams\n- Outlook\r\n\r\nFinal status: While implementing traffic optimization actions within the affected environment, we observed service recovery and subsequently confirmed that users could successfully access impacted services. We're continuing to analyze service telemetry, authentication logs, and recent service changes to isolate the underlying cause and help prevent similar impact in the future.\r\n\r\nScope of impact: Impact was specific to some users in the United Kingdom attempting to access multiple Microsoft 365 services.\r\n\r\nStart time: Thursday, September 10, 2026, at 8:10 AM UTC\r\n\r\nEnd time: Thursday, September 10, 2026, at 1:39 PM UTC\r\n\r\nRoot cause: Some users may have been unable to access Microsoft 365 services due to facing authentication errors.\r\n\r\nNext steps: \n- We're reviewing service telemetry, authentication logs and recent service changes to isolate the root cause and prevent similar impact from happening again.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-09-10T13:07:01.683Z",
+          "postType": "regular",
+          "content": "Title: Some users in the United Kingdom may be unable to access multiple Microsoft 365 services\r\n\r\nUser impact: Users in the United Kingdom may be unable to access multiple Microsoft 365 services.\r\n\r\nMore info: Impacted services may include, but aren't limited to: \n\n- Microsoft Teams\n- Outlook\r\n\r\nCurrent status: We've identified that a recent authentication component change may be causing users to be unable to access Microsoft 365 services. We're redirecting affected traffic to alternate infrastructure to validate the root cause and provide mitigation. \r\n\r\nScope of impact: Impact is specific to some users in the United Kingdom attempting to access multiple Microsoft 365 services.\r\n\r\nNext update by: Thursday, September 10, 2026, at 3:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-09-10T11:42:20.727Z",
+          "postType": "regular",
+          "content": "Title: Some users in the United Kingdom may be unable to access multiple Microsoft 365 services\r\n\r\nUser impact: Users in the United Kingdom may be unable to access multiple Microsoft 365 services.\r\n\r\nMore info: Impacted services may include, but aren't limited to: \n\n- Microsoft Teams\n- Outlook\r\n\r\nCurrent status: We're proceeding with reviewing service monitoring telemetry to isolate the root cause and develop a remediation plan.\r\n\r\nScope of impact: Impact is specific to some users in the United Kingdom attempting to access multiple Microsoft 365 services.\r\n\r\nNext update by: Thursday, September 10, 2026, at 1:30 PM UTC"
+        }
+      ],
+      "serviceName": "Microsoft 365 suite",
+      "affectedServices": [
+        "Microsoft 365 suite"
+      ]
+    },
     {
       "id": "CW1469885",
       "title": "Users may be unable to see the suggestions pills after receiving a bot response in Microsoft 365 Copilot Chat",
@@ -2987,42 +2993,6 @@
           "createdAt": "2026-08-11T18:31:01.127Z",
           "postType": "regular",
           "content": "Title: Some users may experience failures when generating Microsoft Teams meeting attendance reports\r\n\r\nUser impact: Users may experience failures when generating Microsoft Teams meeting attendance reports.\r\n\r\nMore info: The affected meeting attendance reports are being generated internally, but due to the impact scenario, they're not being provided to the user who requested it.\r\n\r\nCurrent status: As we continue to implement additional performance optimizations to recover meeting attendance report availability, we can confirm that availability is trending upwards but not fully recovered at this time. We're continuing to monitor availability as we validate what additional actions we can take to remediate impact.\r\n\r\nScope of impact: Some users may experience failures generating Microsoft Teams meeting attendance reports. This section may be updated as the investigation progresses.\r\n\r\nStart time: Monday, August 10, 2026, at 4:00 PM UTC\r\n\r\nRoot cause: A recent first-party app rollout introduced a misconfiguration that caused app component calls to fail, resulting in impact.\r\n\r\nNext update by: Tuesday, August 11, 2026, at 8:30 PM UTC"
-        }
-      ],
-      "serviceName": "Microsoft Teams",
-      "affectedServices": [
-        "Microsoft Teams"
-      ]
-    },
-    {
-      "id": "TM1453149",
-      "title": "Admins may see incorrect Teams membership information for users in the Teams Admin Center ",
-      "startTime": "2026-08-11T23:14:25.303Z",
-      "endTime": "2026-08-12T01:28:17.773Z",
-      "lastModified": "2026-08-12T01:33:44.347Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Admins may have seen incorrect Teams membership information for users in the Teams Admin Center.",
-      "scopeOfImpact": "This issue may have impacted any admins viewing Teams membership information for users in the Teams Admin Center.\r\n\r\nStart time: Monday, July 13, 2026, at 9:09 PM UTC\r\n\r\nEnd time: Wednesday, August 12, 2026, at 1:00 AM UTC",
-      "rootCause": "A code issue contained in a recent service update caused the display of incorrect Teams membership information in the Teams Admin Center. \r\n\r\nNext steps: We're working to improve our code review procedures to better prevent similar issues from occurring during future service update deployments. \r\n\r\nThis is the final update for this event.",
-      "nextUpdateBy": "",
-      "feature": "Teams Admin Center",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-08-12T01:33:41.113Z",
-          "postType": "regular",
-          "content": "Title: Admins may see incorrect Teams membership information for users in the Teams Admin Center \r\n\r\nUser impact: Admins may have seen incorrect Teams membership information for users in the Teams Admin Center.\r\n\r\nFinal status: We reverted the recent service update containing the code issue and confirmed through telemetry that the impact was remediated.\r\n\r\nScope of impact: This issue may have impacted any admins viewing Teams membership information for users in the Teams Admin Center.\r\n\r\nStart time: Monday, July 13, 2026, at 9:09 PM UTC\r\n\r\nEnd time: Wednesday, August 12, 2026, at 1:00 AM UTC\r\n\r\nRoot cause: A code issue contained in a recent service update caused the display of incorrect Teams membership information in the Teams Admin Center. \r\n\r\nNext steps: We're working to improve our code review procedures to better prevent similar issues from occurring during future service update deployments. \r\n\r\nThis is the final update for this event."
-        },
-        {
-          "createdAt": "2026-08-12T00:01:07Z",
-          "postType": "regular",
-          "content": "Title: Admins may see incorrect Teams membership information for users in the Teams Admin Center \r\n\r\nUser impact: Admins may see incorrect Teams membership information for users in the Teams Admin Center.\r\n\r\nCurrent status: We identified that a code issue in a recent service update is causing the display of incorrect Teams membership information. We're working to revert the code changes to remediate the impact. \r\n\r\nScope of impact: This issue may impact any admins viewing Teams membership information for users in the Teams Admin Center.\r\n\r\nRoot cause: A code issue contained in a recent service update is causing the display of incorrect Teams membership information in the Teams Admin Center. \r\n\r\nNext update by: Wednesday, August 12, 2026, at 3:00 AM UTC"
-        },
-        {
-          "createdAt": "2026-08-11T23:22:42.787Z",
-          "postType": "regular",
-          "content": "Title: Admins may see incorrect Teams membership information for users in the Teams Admin Center \r\n\r\nUser impact: Admins may see incorrect Teams membership information for users in the Teams Admin Center.\r\n\r\nCurrent status: We're investigating a potential issue with the Microsoft Teams service and checking for impact to your organization. We'll provide an update within 30 minutes."
         }
       ],
       "serviceName": "Microsoft Teams",
