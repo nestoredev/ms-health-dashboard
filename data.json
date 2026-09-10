@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-10T08:14:07.281Z",
+  "lastUpdated": "2026-09-10T08:44:19.005Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -141,16 +141,21 @@
           "title": "Users may be unable to load themes in Outlook on the web",
           "startTime": "2026-09-02T06:01:52Z",
           "endTime": null,
-          "lastModified": "2026-09-08T07:12:40.407Z",
+          "lastModified": "2026-09-10T08:33:24.313Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to load themes in Outlook on the web.",
           "scopeOfImpact": "Some users attempting to load themes in Outlook on the web may be impacted.",
           "rootCause": "",
-          "nextUpdateBy": "Thursday, September 10, 2026, at 9:00 AM UTC",
+          "nextUpdateBy": "Thursday, September 10, 2026, at 11:00 AM UTC",
           "feature": "Reports of an Incident",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-10T08:33:24.313Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to load themes in Outlook on the web\r\n\r\nUser impact: Users may be unable to load themes in Outlook on the web.\r\n\r\nCurrent status: We've obtained the HAR logs provided by affected users and identified activity indicating theme data is being retrieved during client startup. We're correlating these findings with machine logs from the affected devices to determine whether this behavior is contributing to the reported impact and to isolate the underlying root cause. \r\n\r\nScope of impact: Some users attempting to load themes in Outlook on the web may be impacted.\r\n\r\nNext update by: Thursday, September 10, 2026, at 11:00 AM UTC"
+            },
             {
               "createdAt": "2026-09-08T07:12:40.407Z",
               "postType": "regular",
