@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-12T02:03:06.207Z",
+  "lastUpdated": "2026-09-12T02:33:19.160Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -897,16 +897,21 @@
           "title": "Some users' Exchange Online email messages may not be retrieved when prompting Microsoft 365 Copilot Chat",
           "startTime": "2026-07-22T22:07:00Z",
           "endTime": null,
-          "lastModified": "2026-09-11T22:27:43.337Z",
+          "lastModified": "2026-09-12T02:12:04.507Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users' Exchange Online email messages may not be retrieved when prompting Copilot Chat.",
           "scopeOfImpact": "Some users that are attempting to prompt Copilot Chat to retrieve details from Exchange Online email messages between July 22, 2026, and today may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, July 22, 2026, at 10:07 PM UTC",
           "rootCause": "A service change introduced a misconfiguration that prevented Exchange Online email messages between July 22, 2026, and today from being indexed by our semantic index model, causing impact.",
-          "nextUpdateBy": "Saturday, September 12, 2026, at 3:30 AM UTC",
+          "nextUpdateBy": "Saturday, September 12, 2026, at 5:00 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-12T02:12:04.507Z",
+              "postType": "regular",
+              "content": "Title: Some users' Exchange Online email messages may not be retrieved when prompting Microsoft 365 Copilot Chat\r\n\r\nUser impact: Users' Exchange Online email messages may not be retrieved when prompting Copilot Chat.\r\n\r\nMore info: Some Exchange Online email messages between July 22, 2026, and today may not be retrieved by Copilot Chat when prompted. While we index the affected email messages to our semantic index model, users can prompt Copilot Chat using exact wording to retrieve the email messages.\r\n\r\nCurrent status: We've validated our secondary fix and begun the first 10 percent of deployment. We'll monitor this initial deployment process in order to determine the estimated timeline for full remediation and provide those details as soon as they become available.\r\n\r\nScope of impact: Some users that are attempting to prompt Copilot Chat to retrieve details from Exchange Online email messages between July 22, 2026, and today may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, July 22, 2026, at 10:07 PM UTC\r\n\r\nRoot cause: A service change introduced a misconfiguration that prevented Exchange Online email messages between July 22, 2026, and today from being indexed by our semantic index model, causing impact.\r\n\r\nNext update by: Saturday, September 12, 2026, at 5:00 PM UTC"
+            },
             {
               "createdAt": "2026-09-11T22:27:43.337Z",
               "postType": "regular",
