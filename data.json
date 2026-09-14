@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-14T17:33:14.563Z",
+  "lastUpdated": "2026-09-14T18:03:26.667Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -807,6 +807,41 @@
               "createdAt": "2026-08-14T11:53:15.813Z",
               "postType": "regular",
               "content": "Title: Users may be unable to sign in to OneNote using iOS devices\r\n\r\nUser impact: Users may be unable to sign in to OneNote using iOS devices.\r\n\r\nCurrent status: We've identified that a recent change to the sign in flow may be causing impact to occur. We've reverted the change but this did not resolve the issue. We're analyzing OneNote logs from impacted users as well as OneNote logs from our internal reproduction of the issue to assist us in identifying the underlying root cause of impact.\r\n\r\nScope of impact: Any user attempting to sign in to OneNote build 16.112.717.0 or higher using iOS devices is impacted.\r\n\r\nNext update by: Friday, August 14, 2026, at 2:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 apps"
+          ]
+        },
+        {
+          "id": "OP1470668",
+          "title": "Users may be unable to copy, paste, drag, or duplicate cells and worksheets in Microsoft Excel",
+          "startTime": "2026-09-11T12:36:11.263Z",
+          "endTime": null,
+          "lastModified": "2026-09-14T17:55:20.973Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to copy, paste, drag, or duplicate cells and worksheets in Microsoft Excel.",
+          "scopeOfImpact": "Some users attempting to copy, paste, drag, or duplicate cells and worksheets in Microsoft Excel may be impacted. This section may be updated as our investigation continues.",
+          "rootCause": "A code regression contained within a recent service update is causing impact.",
+          "nextUpdateBy": "Tuesday, September 15, 2026, at 7:00 PM UTC",
+          "feature": "Excel",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-09-14T17:55:20.973Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to copy, paste, drag, or duplicate cells and worksheets in Microsoft Excel\r\n\r\nUser impact: Users may be unable to copy, paste, drag, or duplicate cells and worksheets in Microsoft Excel.\r\n\r\nMore info: This issue may specifically impact some users utilizing Microsoft Excel 2024, 2021, 2019, and 2016.\r\n\r\nCurrent status: Our development and validation of the individual fixes targeting each of the impacted versions is ongoing, and we'll provide an estimated timeline for resolution as one becomes available.\r\n\r\nScope of impact: Some users attempting to copy, paste, drag, or duplicate cells and worksheets in Microsoft Excel may be impacted. This section may be updated as our investigation continues.\r\n\r\nRoot cause: A code regression contained within a recent service update is causing impact.\r\n\r\nNext update by: Tuesday, September 15, 2026, at 7:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-09-11T22:18:02.767Z",
+              "postType": "regular",
+              "content": "Title: Some users can't copy, paste, drag, or duplicate cells and worksheets in Microsoft Excel\r\n\r\nUser impact: Users can't copy, paste, drag, or duplicate cells and worksheets in Microsoft Excel.\r\n\r\nMore info: This issue may specifically impact some users utilizing Microsoft Excel 2024, 2021, 2019, and 2016.\r\n\r\nCurrent status: We've identified a code regression contained within a recent service update that's causing impact. We're developing separate fixes for each of the four impacted Microsoft Excel versions, and we'll aim to provide a remediation timeline by our next scheduled communications update.\r\n\r\nScope of impact: Some users attempting to copy, paste, drag, or duplicate cells and worksheets in Microsoft Excel may be impacted. This section may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, September 8, 2026, at 10:00 AM UTC\r\n\r\nRoot cause: A code regression contained within a recent service update is causing impact.\r\n\r\nNext update by: Monday, September 14, 2026, at 6:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-09-11T12:44:51.203Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to copy, paste, drag, or duplicate cells and worksheets in Microsoft Excel\r\n\r\nUser impact: Users may be unable to copy, paste, drag, or duplicate cells and worksheets in Microsoft Excel.\r\n\r\nMore info: This issue may specifically impact some users utilizing Microsoft Excel 2024, 2021, 2019, and 2016.\r\n\r\nCurrent status: We're reviewing service monitoring telemetry to isolate the source of the issue and establish a fix.\r\n\r\nScope of impact: Some users attempting to copy, paste, drag, or duplicate cells and worksheets in Microsoft Excel may be impacted. This section may be updated as our investigation continues.\r\n\r\nNext update by: Friday, September 11, 2026, at 11:30 PM UTC"
             }
           ],
           "affectedServices": [
