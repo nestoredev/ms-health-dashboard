@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-14T17:03:00.996Z",
+  "lastUpdated": "2026-09-14T17:33:14.563Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -270,28 +270,33 @@
       "issues": [
         {
           "id": "MO1471241",
-          "title": "Some admins' Usage reports may contain stale data in Microsoft 365 admin center",
+          "title": "Some admins' usage reports may contain stale data in Microsoft 365 admin center",
           "startTime": "2026-09-13T04:56:15.767Z",
           "endTime": null,
-          "lastModified": "2026-09-13T05:18:58.77Z",
+          "lastModified": "2026-09-14T17:22:09.617Z",
           "status": "investigating",
           "severity": "advisory",
-          "userImpact": "Admins' Usage reports may contain stale data in Microsoft 365 admin center.",
+          "userImpact": "Admins' usage reports may contain stale data in Microsoft 365 admin center.",
           "scopeOfImpact": "Some admins and users in North America, Asia Pacific, and Europe attempting to see up-to-date data in the affected reports listed in the More info section may be impacted by this issue. This section may be updated as our investigation continues.\r\n\r\nStart time: Sunday, September 13, 2026, at 12:00 AM UTC",
           "rootCause": "Our upstream data pipeline is encountering refresh errors and failures when retrieving up-to-date data for the listed reports, which is resulting in this impact.",
-          "nextUpdateBy": "Monday, September 14, 2026, at 7:00 PM UTC",
+          "nextUpdateBy": "Monday, September 14, 2026, at 11:30 PM UTC",
           "feature": "Company or User Administration",
           "isResolved": false,
           "posts": [
             {
+              "createdAt": "2026-09-14T17:21:10.85Z",
+              "postType": "regular",
+              "content": "Title: Some admins' usage reports may contain stale data in Microsoft 365 admin center\r\n\r\nUser impact: Admins' usage reports may contain stale data in Microsoft 365 admin center.\r\n\r\nMore info: This usage data refresh issue affects the following reports:\n\n- OneDrive usage reports\n- SharePoint usage reports\n- Group Activity reports\n \nThese reports may not have refreshed since September 8, 2026.\r\n\r\nCurrent status: After implementing our solution to resolve the delays that are resulting from a portion of the upstream data processing pipeline, we're monitoring the refresh rate of the impacted reports to validate that our remediation is effective.\r\n\r\nScope of impact: Some admins and users in North America, Asia Pacific, and Europe attempting to see up-to-date data in the affected reports listed in the More info section may be impacted by this issue. This section may be updated as our investigation continues.\r\n\r\nStart time: Sunday, September 13, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: Our upstream data pipeline is encountering refresh errors and failures when retrieving up-to-date data for the listed reports, which is resulting in this impact. \r\n\r\nNext update by: Monday, September 14, 2026, at 11:30 PM UTC"
+            },
+            {
               "createdAt": "2026-09-13T05:18:58.77Z",
               "postType": "regular",
-              "content": "Title: Some admins' Usage reports may contain stale data in Microsoft 365 admin center\r\n\r\nUser impact: Admins' Usage reports may contain stale data in Microsoft 365 admin center.\r\n\r\nMore info: This Usage data refresh issue affects the following reports:\n\n- OneDrive Usage reports\n- SharePoint Usage reports\n- Group Activity reports\n \nThese reports may not have refreshed since September 8, 2026.\r\n\r\nCurrent status: We've identified that our upstream data pipeline is encountering refresh errors and failures when retrieving up-to-date data for the listed reports, which is resulting in this impact. We're implementing a solution to the affected pipeline to restore the normal processing flow and recover delayed data as swiftly as possible. We anticipate being able to provide a timeline for resolution by our next scheduled communications update.\r\n\r\nScope of impact: Some admins and users in North America, Asia Pacific, and Europe attempting to see up-to-date data in the affected reports listed in the More info section may be impacted by this issue. This section may be updated as our investigation continues.\r\n\r\nStart time: Sunday, September 13, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: Our upstream data pipeline is encountering refresh errors and failures when retrieving up-to-date data for the listed reports, which is resulting in this impact. \r\n\r\nNext update by: Monday, September 14, 2026, at 7:00 PM UTC"
+              "content": "Title: Some admins' usage reports may contain stale data in Microsoft 365 admin center\r\n\r\nUser impact: Admins' usage reports may contain stale data in Microsoft 365 admin center.\r\n\r\nMore info: This usage data refresh issue affects the following reports:\n\n- OneDrive usage reports\n- SharePoint usage reports\n- Group Activity reports\n \nThese reports may not have refreshed since September 8, 2026.\r\n\r\nCurrent status: We've identified that our upstream data pipeline is encountering refresh errors and failures when retrieving up-to-date data for the listed reports, which is resulting in this impact. We're implementing a solution to the affected pipeline to restore the normal processing flow and recover delayed data as swiftly as possible. We anticipate being able to provide a timeline for resolution by our next scheduled communications update.\r\n\r\nScope of impact: Some admins and users in North America, Asia Pacific, and Europe attempting to see up-to-date data in the affected reports listed in the More info section may be impacted by this issue. This section may be updated as our investigation continues.\r\n\r\nStart time: Sunday, September 13, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: Our upstream data pipeline is encountering refresh errors and failures when retrieving up-to-date data for the listed reports, which is resulting in this impact. \r\n\r\nNext update by: Monday, September 14, 2026, at 7:00 PM UTC"
             },
             {
               "createdAt": "2026-09-13T05:00:53.713Z",
               "postType": "regular",
-              "content": "Title: Some admins' Usage reports may contain stale data in Microsoft 365 admin center\r\n\r\nUser impact: Admins' Usage reports may contain stale data in Microsoft 365 admin center.\r\n\r\nMore info: This Usage data refresh issue affects the following reports:\n\n- OneDrive Usage reports\n- SharePoint Usage reports\n- Group Activity reports\n \r\n\r\nCurrent status: We're investigating a potential issue with Usage reports and checking for impact to your organization. We'll provide an update within 30 minutes."
+              "content": "Title: Some admins' usage reports may contain stale data in Microsoft 365 admin center\r\n\r\nUser impact: Admins' usage reports may contain stale data in Microsoft 365 admin center.\r\n\r\nMore info: This usage data refresh issue affects the following reports:\n\n- OneDrive Usage reports\n- SharePoint Usage reports\n- Group Activity reports\n \r\n\r\nCurrent status: We're investigating a potential issue with usage reports and checking for impact to your organization. We'll provide an update within 30 minutes."
             }
           ],
           "affectedServices": [
@@ -842,9 +847,35 @@
     },
     {
       "service": "Microsoft Defender XDR",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "Microsoft365Defender",
-      "issues": []
+      "issues": [
+        {
+          "id": "DZ1471853",
+          "title": "Some users with Conditional Access App Control (CAAC) experience failures using apps managed by Microsoft Defender XDR ",
+          "startTime": "2026-09-14T17:00:48.923Z",
+          "endTime": null,
+          "lastModified": "2026-09-14T17:20:48.723Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Some users with Conditional Access App Control (CAAC) experience failures using apps managed by Microsoft Defender XDR ",
+          "scopeOfImpact": "This issue may produce failures for any CAAC user when using apps managed by Microsoft Defender XDR. \r\n\r\nStart time: Monday, September 14, 2026, at 3:10 PM UTC",
+          "rootCause": "A recent service infrastructure migration issue has caused a subset of service infrastructure to drop below our manageable service performance thresholds, resulting in impact.",
+          "nextUpdateBy": "Monday, September 14, 2026, at 7:30 PM UTC",
+          "feature": "Microsoft Cloud App Security",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-09-14T17:20:48.723Z",
+              "postType": "regular",
+              "content": "Title: Some users with Conditional Access App Control (CAAC) experience failures using apps managed by Microsoft Defender XDR \r\n\r\nUser impact: Some users with Conditional Access App Control (CAAC) experience failures using apps managed by Microsoft Defender XDR \r\n\r\nMore info: - Users may experience latency when using web apps in the browser.\n- Policy enforcements may fallback to default policy settings.\n- Users may experience transient 5xx errors when attempting to access apps.\n- Any new policies created might not get enforced.\r\n\r\nCurrent status: We've identified a recent service infrastructure migration has caused a subset of service infrastructure to drop below our manageable service performance thresholds, resulting in impact. We're conducting our change reversion process and removing the recent migration which is expected to remediate the impact.\r\n\r\nScope of impact: This issue may produce failures for any CAAC user when using apps managed by Microsoft Defender XDR. \r\n\r\nStart time: Monday, September 14, 2026, at 3:10 PM UTC\r\n\r\nRoot cause: A recent service infrastructure migration issue has caused a subset of service infrastructure to drop below our manageable service performance thresholds, resulting in impact.\r\n\r\nNext update by: Monday, September 14, 2026, at 7:30 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Defender XDR"
+          ]
+        }
+      ]
     },
     {
       "service": "Project for the web",
@@ -920,9 +951,9 @@
           "title": "Some admins may receive failures creating or updating Communications Compliance policies in Microsoft Purview",
           "startTime": "2026-09-14T16:41:47.403Z",
           "endTime": null,
-          "lastModified": "2026-09-14T16:49:42.55Z",
+          "lastModified": "2026-09-14T17:21:42.767Z",
           "status": "serviceDegradation",
-          "severity": "advisory",
+          "severity": "incident",
           "userImpact": "Admins may receive failures creating or updating Communications Compliance policies in Microsoft Purview.",
           "scopeOfImpact": "Some admins may receive failures creating or updating Communications Compliance policies in Microsoft Purview with more than four classifiers. This section may be updated as the investigation progresses.\r\n\r\nEstimated time to resolve: We anticipate impact to be remediated by Monday, October 5, 2026.",
           "rootCause": "A recent update introduced operations with larger data size included a code error, causing size limitation issues.",
