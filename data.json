@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-14T18:33:44.915Z",
+  "lastUpdated": "2026-09-14T19:04:00.287Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -882,35 +882,9 @@
     },
     {
       "service": "Microsoft Defender XDR",
-      "status": "serviceDegradation",
+      "status": "serviceOperational",
       "id": "Microsoft365Defender",
-      "issues": [
-        {
-          "id": "DZ1471853",
-          "title": "Some users with Conditional Access App Control (CAAC) experience failures using apps managed by Microsoft Defender XDR ",
-          "startTime": "2026-09-14T17:00:48.923Z",
-          "endTime": null,
-          "lastModified": "2026-09-14T18:22:03.307Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Some users with Conditional Access App Control (CAAC) experienced failures using apps managed by Microsoft Defender XDR ",
-          "scopeOfImpact": "This issue may produce failures for any CAAC user when using apps managed by Microsoft Defender XDR. \r\n\r\nStart time: Monday, September 14, 2026, at 3:10 PM UTC",
-          "rootCause": "A recent service infrastructure migration issue has caused a subset of service infrastructure to drop below our manageable service performance thresholds, resulting in impact.",
-          "nextUpdateBy": "Monday, September 14, 2026, at 7:30 PM UTC",
-          "feature": "Microsoft Cloud App Security",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-09-14T17:20:48.723Z",
-              "postType": "regular",
-              "content": "Title: Some users with Conditional Access App Control (CAAC) experience failures using apps managed by Microsoft Defender XDR \r\n\r\nUser impact: Some users with Conditional Access App Control (CAAC) experience failures using apps managed by Microsoft Defender XDR \r\n\r\nMore info: - Users may experience latency when using web apps in the browser.\n- Policy enforcements may fallback to default policy settings.\n- Users may experience transient 5xx errors when attempting to access apps.\n- Any new policies created might not get enforced.\r\n\r\nCurrent status: We've identified a recent service infrastructure migration has caused a subset of service infrastructure to drop below our manageable service performance thresholds, resulting in impact. We're conducting our change reversion process and removing the recent migration which is expected to remediate the impact.\r\n\r\nScope of impact: This issue may produce failures for any CAAC user when using apps managed by Microsoft Defender XDR. \r\n\r\nStart time: Monday, September 14, 2026, at 3:10 PM UTC\r\n\r\nRoot cause: A recent service infrastructure migration issue has caused a subset of service infrastructure to drop below our manageable service performance thresholds, resulting in impact.\r\n\r\nNext update by: Monday, September 14, 2026, at 7:30 PM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Microsoft Defender XDR"
-          ]
-        }
-      ]
+      "issues": []
     },
     {
       "service": "Project for the web",
@@ -1088,6 +1062,37 @@
     }
   ],
   "history": [
+    {
+      "id": "DZ1471853",
+      "title": "Some users with Conditional Access App Control (CAAC) experience failures using apps managed by Microsoft Defender XDR ",
+      "startTime": "2026-09-14T17:00:48.923Z",
+      "endTime": "2026-09-14T18:22:12.897Z",
+      "lastModified": "2026-09-14T18:39:16.61Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Some users with Conditional Access App Control (CAAC) experienced failures using apps managed by Microsoft Defender XDR ",
+      "scopeOfImpact": "This issue may have produced failures for any CAAC user when using apps managed by Microsoft Defender XDR. \r\n\r\nStart time: Monday, September 14, 2026, at 3:10 PM UTC\r\n\r\nEnd time: Monday, September 14, 2026, at 5:30 PM UTC",
+      "rootCause": "A recent service infrastructure migration issue caused a subset of service infrastructure to drop below our manageable service performance thresholds, resulting in impact.\r\n\r\nNext steps: \n- We're further analyzing the subset of affected service infrastructure to help us isolate the source for the problems and to prevent similar impact in the future.\n\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Microsoft Cloud App Security",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-09-14T18:39:13.52Z",
+          "postType": "regular",
+          "content": "Title: Some users with Conditional Access App Control (CAAC) experience failures using apps managed by Microsoft Defender XDR \r\n\r\nUser impact: Some users with Conditional Access App Control (CAAC) experienced failures using apps managed by Microsoft Defender XDR \r\n\r\nMore info: - Users may have experienced latency when using web apps in the browser.\n- Policy enforcements may have fallen back to default policy settings.\n- Users may have experienced transient 5xx errors when attempting to access apps.\n- Any newly created policies may not have been enforced. \r\n\r\nFinal status: As we progress with our analysis into the source for the lower-than-expected service performance levels, our internal service telemetry has verified that our completed change reversion process has remediated the impact. \r\n\r\nScope of impact: This issue may have produced failures for any CAAC user when using apps managed by Microsoft Defender XDR. \r\n\r\nStart time: Monday, September 14, 2026, at 3:10 PM UTC\r\n\r\nEnd time: Monday, September 14, 2026, at 5:30 PM UTC\r\n\r\nRoot cause: A recent service infrastructure migration issue caused a subset of service infrastructure to drop below our manageable service performance thresholds, resulting in impact.\r\n\r\nNext steps: \n- We're further analyzing the subset of affected service infrastructure to help us isolate the source for the problems and to prevent similar impact in the future.\n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-09-14T17:20:48.723Z",
+          "postType": "regular",
+          "content": "Title: Some users with Conditional Access App Control (CAAC) experience failures using apps managed by Microsoft Defender XDR \r\n\r\nUser impact: Some users with Conditional Access App Control (CAAC) experience failures using apps managed by Microsoft Defender XDR \r\n\r\nMore info: - Users may experience latency when using web apps in the browser.\n- Policy enforcements may fallback to default policy settings.\n- Users may experience transient 5xx errors when attempting to access apps.\n- Any new policies created might not get enforced.\r\n\r\nCurrent status: We've identified a recent service infrastructure migration has caused a subset of service infrastructure to drop below our manageable service performance thresholds, resulting in impact. We're conducting our change reversion process and removing the recent migration which is expected to remediate the impact.\r\n\r\nScope of impact: This issue may produce failures for any CAAC user when using apps managed by Microsoft Defender XDR. \r\n\r\nStart time: Monday, September 14, 2026, at 3:10 PM UTC\r\n\r\nRoot cause: A recent service infrastructure migration issue has caused a subset of service infrastructure to drop below our manageable service performance thresholds, resulting in impact.\r\n\r\nNext update by: Monday, September 14, 2026, at 7:30 PM UTC"
+        }
+      ],
+      "serviceName": "Microsoft Defender XDR",
+      "affectedServices": [
+        "Microsoft Defender XDR"
+      ]
+    },
     {
       "id": "MO1470143",
       "title": "Some users in the United Kingdom may have been unable to access multiple Microsoft 365 services",
