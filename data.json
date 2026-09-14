@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-14T00:26:07.560Z",
+  "lastUpdated": "2026-09-14T00:56:20.041Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -2894,52 +2894,6 @@
       "serviceName": "Microsoft Teams",
       "affectedServices": [
         "Microsoft Teams"
-      ]
-    },
-    {
-      "id": "CW1454295",
-      "title": "Some users may be intermittently unable to access Microsoft 365 Copilot Chat in Outlook on the web",
-      "startTime": "2026-08-13T17:26:00Z",
-      "endTime": "2026-08-15T00:30:00Z",
-      "lastModified": "2026-08-15T01:32:12.807Z",
-      "status": "serviceRestored",
-      "severity": "incident",
-      "userImpact": "Users may have intermittently been unable to access Copilot Chat in Outlook on the web.",
-      "scopeOfImpact": "Impact was specific to some users who attempted to access Copilot Chat in Outlook on the web.\n\nStart time: Thursday, August 13, 2026, at 5:26 PM UTC\n\nEnd time: Saturday, August 15, 2026, at 12:30 AM UTC",
-      "rootCause": "A misconfiguration with the Agent Builder feature, which caused users to intermittently be unable to access Copilot Chat in Outlook on the web.\n\nNext steps: \n - To help prevent similar impact in the future, we're further reviewing the underlying cause of the misconfiguration.\n\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "General",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-08-15T01:32:12.807Z",
-          "postType": "regular",
-          "content": "Title: Some users may be intermittently unable to access Microsoft 365 Copilot Chat in Outlook on the web\n\nUser impact: Users may have intermittently been unable to access Copilot Chat in Outlook on the web.\n\nMore info: When some users attempted to access Copilot Chat in Outlook on the web, they may have intermittently received an error that stated, \"Something went wrong. An error occurred. Please try again.\"\n\nFinal status: Our investigation identified a misconfiguration with the Agent Builder feature, which caused users to intermittently be unable to access Copilot Chat in Outlook on the web. We disabled this configuration within the feature and confirmed with previously affected users that impact is remediated.\n\nScope of impact: Impact was specific to some users who attempted to access Copilot Chat in Outlook on the web.\n\nStart time: Thursday, August 13, 2026, at 5:26 PM UTC\n\nEnd time: Saturday, August 15, 2026, at 12:30 AM UTC\n\nRoot cause: A misconfiguration with the Agent Builder feature, which caused users to intermittently be unable to access Copilot Chat in Outlook on the web.\n\nNext steps: \n - To help prevent similar impact in the future, we're further reviewing the underlying cause of the misconfiguration.\n\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-08-14T23:39:11.593Z",
-          "postType": "regular",
-          "content": "Title: Some users may be intermittently unable to access Microsoft 365 Copilot Chat in Outlook on the web\n\nUser impact: Users may be intermittently unable to access Copilot Chat in Outlook on the web.\n\nMore info: When some users attempt to access Copilot Chat in Outlook on the web, they may intermittently receive an error that states, \"Something went wrong. An error occurred. Please try again.\"\n\nCurrent status: Our review of service logging to identify the source of impact and determine our next steps is ongoing.\n\nScope of impact: Impact is specific to some users attempting to access Copilot Chat in Outlook on the web. This section may be updated as the investigation progresses.\n\nNext update by: Saturday, August 15, 2026, at 2:00 AM UTC"
-        },
-        {
-          "createdAt": "2026-08-14T22:01:38.283Z",
-          "postType": "regular",
-          "content": "Title: Some users may be intermittently unable to access Microsoft 365 Copilot Chat in Outlook on the web\r\n\r\nUser impact: Users may be intermittently unable to access Copilot Chat in Outlook on the web.\r\n\r\nMore info: When some users attempt to access Copilot Chat in Outlook on the web, they may intermittently receive an error that states, \"Something went wrong. An error occurred. Please try again.\"\r\n\r\nCurrent status: We've deployed our fix to the affected environment; however, we found that impact persists. Further review confirmed our previous root cause understanding was incorrect, and we've resumed our review of service logging to isolate the source of impact, so we can determine which mitigative actions can be implemented to restore service functionality.\r\n\r\nScope of impact: Impact is specific to some users attempting to access Copilot Chat in Outlook on the web. This section may be updated as the investigation progresses.\r\n\r\nRoot cause: An underlying client rendering issue within Copilot Studio is intermittently preventing Copilot Chat from rendering correctly in Outlook on the web.\r\n\r\nNext update by: Saturday, August 15, 2026, at 12:00 AM UTC"
-        },
-        {
-          "createdAt": "2026-08-14T15:59:28.863Z",
-          "postType": "regular",
-          "content": "Title: Some users may be intermittently unable to access Microsoft 365 Copilot Chat in Outlook on the web\r\n\r\nUser impact: Users may be intermittently unable to access Copilot Chat in Outlook on the web.\r\n\r\nMore info: When some users attempt to access Copilot Chat in Outlook on the web, they may intermittently receive an error that states, \"Something went wrong. An error occurred. Please try again.\"\r\n\r\nCurrent status: We’ve deployed the fix to a subset of the affected environments and are preparing to begin deployment to the remaining affected environments. Once available, we’ll provide a deployment completion timeline.\r\n\r\nScope of impact: Impact is specific to some users attempting to access Copilot Chat in Outlook on the web. This section may be updated as the investigation progresses.\r\n\r\nRoot cause: An underlying client rendering issue within Copilot Studio is intermittently preventing Copilot Chat from rendering correctly in Outlook on the web.\r\n\r\nNext update by: Friday, August 14, 2026, at 10:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-08-14T09:24:44.343Z",
-          "postType": "regular",
-          "content": "Title: Some users may be intermittently unable to access Microsoft 365 Copilot Chat in Outlook on the web\r\n\r\nUser impact: Users may be intermittently unable to access Copilot Chat in Outlook on the web.\r\n\r\nMore info: When some users attempt to access Copilot Chat in Outlook on the web, they may intermittently receive an error that states, \"Something went wrong. An error occurred. Please try again.\"\r\n\r\nCurrent status: We've completed validation of the fix and have started deploying it to the affected environments. As deployment progresses, we're monitoring service telemetry and error rates to verify that Copilot Chat is loading successfully for affected users. We expect deployment to complete before our next scheduled update.\r\n\r\nScope of impact: Impact is specific to some users attempting to access Copilot Chat in Outlook on the web.\r\n\r\nRoot cause: An underlying client rendering issue within Copilot Studio is intermittently preventing Copilot Chat from rendering correctly in Outlook on the web.\r\n\r\nNext update by: Friday, August 14, 2026, at 5:00 PM UTC"
-        }
-      ],
-      "serviceName": "Microsoft 365 Copilot Chat",
-      "affectedServices": [
-        "Microsoft 365 Copilot Chat"
       ]
     }
   ]
