@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-15T22:21:09.327Z",
+  "lastUpdated": "2026-09-15T22:51:22.863Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -273,16 +273,21 @@
           "title": "Some admins' usage reports may contain stale data in Microsoft 365 admin center",
           "startTime": "2026-09-13T04:56:15.767Z",
           "endTime": null,
-          "lastModified": "2026-09-15T19:37:07.463Z",
+          "lastModified": "2026-09-15T22:41:42.067Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins' usage reports may contain stale data in Microsoft 365 admin center.",
           "scopeOfImpact": "Some admins and users in North America, Asia Pacific, and Europe attempting to see up-to-date data in the affected reports listed in the More info section may be impacted by this issue. This section may be updated as our investigation continues.\r\n\r\nStart time: Sunday, September 13, 2026, at 12:00 AM UTC",
           "rootCause": "Our upstream data pipeline is encountering refresh errors and failures when retrieving up-to-date data for the listed reports, which is resulting in this impact.",
-          "nextUpdateBy": "Wednesday, September 16, 2026, at 12:00 AM UTC",
+          "nextUpdateBy": "Wednesday, September 16, 2026, at 3:30 AM UTC",
           "feature": "Company or User Administration",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-15T22:41:30.22Z",
+              "postType": "regular",
+              "content": "Title: Some admins' usage reports may contain stale data in Microsoft 365 admin center\r\n\r\nUser impact: Admins' usage reports may contain stale data in Microsoft 365 admin center.\r\n\r\nMore info: Previously impacted report types included:\n- OneDrive usage reports in North America and Asia Pacific\n- SharePoint usage reports in North America, Asia Pacific, and Europe\n- Group Activity reports in North America, Asia Pacific, and Europe\r\n\r\nCurrent status: While the majority of the usage reports are no longer delayed, processing of the backlog of OneDrive usage reports for users in Europe is taking longer than previously expected. We're continuing to monitor its progress to ensure that the final subset of usage reports are created as expected.\r\n\r\nScope of impact: Some admins and users in North America, Asia Pacific, and Europe attempting to see up-to-date data in the affected reports listed in the More info section may be impacted by this issue. This section may be updated as our investigation continues.\r\n\r\nStart time: Sunday, September 13, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: Our upstream data pipeline is encountering refresh errors and failures when retrieving up-to-date data for the listed reports, which is resulting in this impact. \r\n\r\nNext update by: Wednesday, September 16, 2026, at 3:30 AM UTC"
+            },
             {
               "createdAt": "2026-09-15T19:37:07.463Z",
               "postType": "regular",
