@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-15T00:36:27.292Z",
+  "lastUpdated": "2026-09-15T01:06:41.093Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -273,16 +273,21 @@
           "title": "Some admins' usage reports may contain stale data in Microsoft 365 admin center",
           "startTime": "2026-09-13T04:56:15.767Z",
           "endTime": null,
-          "lastModified": "2026-09-14T21:48:53.817Z",
+          "lastModified": "2026-09-15T00:34:32.847Z",
           "status": "investigating",
           "severity": "advisory",
           "userImpact": "Admins' usage reports may contain stale data in Microsoft 365 admin center.",
           "scopeOfImpact": "Some admins and users in North America, Asia Pacific, and Europe attempting to see up-to-date data in the affected reports listed in the More info section may be impacted by this issue. This section may be updated as our investigation continues.\r\n\r\nStart time: Sunday, September 13, 2026, at 12:00 AM UTC",
           "rootCause": "Our upstream data pipeline is encountering refresh errors and failures when retrieving up-to-date data for the listed reports, which is resulting in this impact.",
-          "nextUpdateBy": "Tuesday, September 15, 2026, at 2:00 AM UTC",
+          "nextUpdateBy": "Tuesday, September 15, 2026, at 6:00 PM UTC",
           "feature": "Company or User Administration",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-15T00:34:32.847Z",
+              "postType": "regular",
+              "content": "Title: Some admins' usage reports may contain stale data in Microsoft 365 admin center\r\n\r\nUser impact: Admins' usage reports may contain stale data in Microsoft 365 admin center.\r\n\r\nMore info: This usage data refresh issue affects the following reports:\n\n- OneDrive usage reports\n- SharePoint usage reports\n- Group Activity reports\n \nThese reports may not have refreshed since September 8, 2026.\r\n\r\nCurrent status: Due the size of the data backlog, we've determined that we'll need to continue monitoring the report refresh rate for a longer period of time to ensure remediation. We expect to be able to provide a firm timeline by the time of our next scheduled communication update.\r\n\r\nScope of impact: Some admins and users in North America, Asia Pacific, and Europe attempting to see up-to-date data in the affected reports listed in the More info section may be impacted by this issue. This section may be updated as our investigation continues.\r\n\r\nStart time: Sunday, September 13, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: Our upstream data pipeline is encountering refresh errors and failures when retrieving up-to-date data for the listed reports, which is resulting in this impact. \r\n\r\nNext update by: Tuesday, September 15, 2026, at 6:00 PM UTC"
+            },
             {
               "createdAt": "2026-09-14T21:48:53.817Z",
               "postType": "regular",
@@ -396,16 +401,21 @@
           "title": "Some admins may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center",
           "startTime": "2026-09-09T17:57:58.157Z",
           "endTime": null,
-          "lastModified": "2026-09-12T01:16:58.913Z",
+          "lastModified": "2026-09-15T00:52:56.14Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center.",
           "scopeOfImpact": "This event impacts some admins, who may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center starting from August 25, 2026. This section may be updated as the investigation progresses.\r\n\r\nStart time: Friday, August 28, 2026, at 12:00 AM UTC",
           "rootCause": "An error occurred within the flow of service health telemetry data utilized by the service, resulting in this impact.",
-          "nextUpdateBy": "Tuesday, September 15, 2026, at 2:30 AM UTC",
+          "nextUpdateBy": "Wednesday, September 16, 2026, at 2:30 AM UTC",
           "feature": "Company or User Administration",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-15T00:52:56.14Z",
+              "postType": "regular",
+              "content": "Title: Some admins may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center.\r\n\r\nMore info: Admins may see the following inaccuracies in Microsoft Teams usage reports starting from August 25, 2026:\n\n- Teams Active Users may display as 0\n- Teams Chat Messages may display as 0\n- Teams Channel Messages may display as 0\r\n\r\nCurrent status: We're continuing to monitor the progress of the backfill processing as more time is needed to ensure its completion and confirm if impact is resolved.\r\n\r\nScope of impact: This event impacts some admins, who may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center starting from August 25, 2026. This section may be updated as the investigation progresses.\r\n\r\nStart time: Friday, August 28, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: An error occurred within the flow of service health telemetry data utilized by the service, resulting in this impact.\r\n\r\nNext update by: Wednesday, September 16, 2026, at 2:30 AM UTC"
+            },
             {
               "createdAt": "2026-09-12T01:16:58.913Z",
               "postType": "regular",
