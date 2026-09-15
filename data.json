@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-15T08:09:38.084Z",
+  "lastUpdated": "2026-09-15T08:39:52.419Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -540,35 +540,9 @@
     },
     {
       "service": "Power BI",
-      "status": "serviceDegradation",
+      "status": "serviceOperational",
       "id": "PowerBIcom",
-      "issues": [
-        {
-          "id": "PB1472181",
-          "title": "Microsoft Fabric users may experience issues with creating new support cases through the Contact support page",
-          "startTime": "2026-09-15T07:18:03.133Z",
-          "endTime": null,
-          "lastModified": "2026-09-15T07:23:09.193Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Microsoft Fabric users may experience issues with creating new support cases through the Contact support page.",
-          "scopeOfImpact": "Any user attempting to create a support request through the Microsoft Fabric Get Support experience may be affected.\r\n\r\nStart time: Tuesday, September 15, 2026, at 12:30 AM UTC",
-          "rootCause": "",
-          "nextUpdateBy": "Tuesday, September 15, 2026, at 9:30 AM UTC",
-          "feature": "General",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-09-15T07:23:09.193Z",
-              "postType": "regular",
-              "content": "Title: Microsoft Fabric users may experience issues with creating new support cases through the Contact support page\r\n\r\nUser impact: Microsoft Fabric users may experience issues with creating new support cases through the Contact support page.\r\n\r\nMore info: Users may experience an empty support plan list when attempting to create a support request through the Microsoft Fabric Get Support experience.\r\n\r\nCurrent status: We're investigating a potential issue affecting support plan selection in Microsoft Fabric and reviewing available diagnostic data to determine the cause and scope of impact.\r\n\r\nScope of impact: Any user attempting to create a support request through the Microsoft Fabric Get Support experience may be affected.\r\n\r\nStart time: Tuesday, September 15, 2026, at 12:30 AM UTC\r\n\r\nNext update by: Tuesday, September 15, 2026, at 9:30 AM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Power BI"
-          ]
-        }
-      ]
+      "issues": []
     },
     {
       "service": "Microsoft Intune",
@@ -1108,6 +1082,37 @@
     }
   ],
   "history": [
+    {
+      "id": "PB1472181",
+      "title": "Microsoft Fabric users may have experienced issues with creating new support cases through the Contact support page",
+      "startTime": "2026-09-15T07:18:03.133Z",
+      "endTime": "2026-09-15T08:14:15.44Z",
+      "lastModified": "2026-09-15T08:16:12.303Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Microsoft Fabric users may have experienced issues with creating new support cases through the Contact support page.",
+      "scopeOfImpact": "Any user attempting to create a support request through the Microsoft Fabric Get Support experience may have been affected.\r\n\r\nStart time: Tuesday, September 15, 2026, at 12:30 AM UTC\r\n\r\nEnd time: Tuesday, September 15, 2026, at 7:30 AM UTC",
+      "rootCause": "A recent change in an upstream API that PowerBI and Microsoft Fabric relies on for creating support tickets caused an internal server error that causing support ticket creation to fail.\r\n\r\nNext steps: \n- We're reviewing our upstream API change procedures to help prevent similar problems in the future.\r\n\r\nThis is the final update for this event.",
+      "nextUpdateBy": "",
+      "feature": "General",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-09-15T08:16:09.1Z",
+          "postType": "regular",
+          "content": "Title: Microsoft Fabric users may have experienced issues with creating new support cases through the Contact support page\r\n\r\nUser impact: Microsoft Fabric users may have experienced issues with creating new support cases through the Contact support page.\r\n\r\nMore info: Affected users may have experienced an empty support plan list when attempting to create a support request through the Microsoft Fabric Get Support experience.\r\n\r\nFinal status: We've determined that a recent change in an upstream API that PowerBI and Microsoft Fabric relies on for creating support tickets caused an internal server error that caused support ticket creation to fail. We've reverted the change and confirmed that the service has been restored and affected users should no longer experience impact.\r\n\r\nScope of impact: Any user attempting to create a support request through the Microsoft Fabric Get Support experience may have been affected.\r\n\r\nStart time: Tuesday, September 15, 2026, at 12:30 AM UTC\r\n\r\nEnd time: Tuesday, September 15, 2026, at 7:30 AM UTC\r\n\r\nRoot cause: A recent change in an upstream API that PowerBI and Microsoft Fabric relies on for creating support tickets caused an internal server error that causing support ticket creation to fail.\r\n\r\nNext steps: \n- We're reviewing our upstream API change procedures to help prevent similar problems in the future.\r\n\r\nThis is the final update for this event."
+        },
+        {
+          "createdAt": "2026-09-15T07:23:09.193Z",
+          "postType": "regular",
+          "content": "Title: Microsoft Fabric users may experience issues with creating new support cases through the Contact support page\r\n\r\nUser impact: Microsoft Fabric users may experience issues with creating new support cases through the Contact support page.\r\n\r\nMore info: Users may experience an empty support plan list when attempting to create a support request through the Microsoft Fabric Get Support experience.\r\n\r\nCurrent status: We're investigating a potential issue affecting support plan selection in Microsoft Fabric and reviewing available diagnostic data to determine the cause and scope of impact.\r\n\r\nScope of impact: Any user attempting to create a support request through the Microsoft Fabric Get Support experience may be affected.\r\n\r\nStart time: Tuesday, September 15, 2026, at 12:30 AM UTC\r\n\r\nNext update by: Tuesday, September 15, 2026, at 9:30 AM UTC"
+        }
+      ],
+      "serviceName": "Power BI",
+      "affectedServices": [
+        "Power BI"
+      ]
+    },
     {
       "id": "DZ1471853",
       "title": "Some users with Conditional Access App Control (CAAC) experience failures using apps managed by Microsoft Defender XDR ",
