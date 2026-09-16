@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-16T13:27:47.507Z",
+  "lastUpdated": "2026-09-16T13:58:03.143Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -330,6 +330,31 @@
               "createdAt": "2026-08-21T17:31:50.35Z",
               "postType": "regular",
               "content": "Title: Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights\r\n\r\nUser impact: Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights.\r\n\r\nMore info: Affected reports include, but aren't limited to:\n\n- Copilot Usage report in Microsoft 365 admin center\n- Copilot Chat Usage report in Microsoft 365 admin center\n- Copilot Readiness reports in Microsoft 365 admin center and Viva Insights\n- Copilot Adoption report in Viva Insights\n- Microsoft 365 Apps and Active users reports in Microsoft 365 admin center\n- Teams App reports in Microsoft 365 admin center and Microsoft Teams admin center\r\n\r\nCurrent status: Our monitoring has identified an increase report generation delays and our investigation has identified that an upstream component that facilitates report data access and generation isn't responding as expected, resulting in impact. We're in the process of identifying the underlying cause of impact and develop a remediation strategy.\r\n\r\nScope of impact: Any admin expecting reports from the affected scenarios as outlined in the More info section may be affected. \r\n\r\nStart time: Friday, August 21, 2026, at 12:00 AM UTC\r\n\r\nNext update by: Monday, August 24, 2026, at 7:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite"
+          ]
+        },
+        {
+          "id": "MO1472904",
+          "title": "Some users in the United States may be unable to access Microsoft 365 services",
+          "startTime": "2026-09-16T13:47:41.07Z",
+          "endTime": null,
+          "lastModified": "2026-09-16T13:49:36.327Z",
+          "status": "serviceDegradation",
+          "severity": "incident",
+          "userImpact": "Users in the United States may be unable to access Microsoft 365 services.",
+          "scopeOfImpact": "Impact is specific to users in the United States attempting to access Microsoft 365 services. This information may be updated as our investigation continues.",
+          "rootCause": "",
+          "nextUpdateBy": "Wednesday, September 16, 2026, at 3:30 PM UTC",
+          "feature": "Access",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-09-16T13:49:36.327Z",
+              "postType": "regular",
+              "content": "Title: Some users in the United States may be unable to access Microsoft 365 services\r\n\r\nUser impact: Users in the United States may be unable to access Microsoft 365 services.\r\n\r\nCurrent status: We're reviewing service monitoring telemetry and associated reports to isolate the root cause, in order to develop a remediation plan.\r\n\r\nScope of impact: Impact is specific to users in the United States attempting to access Microsoft 365 services. This information may be updated as our investigation continues.\r\n\r\nNext update by: Wednesday, September 16, 2026, at 3:30 PM UTC"
             }
           ],
           "affectedServices": [
