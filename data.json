@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-16T15:59:10.127Z",
+  "lastUpdated": "2026-09-16T16:29:27.011Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -341,16 +341,21 @@
           "title": "Some users in the United States and United Kingdom may be unable to access Microsoft 365 services",
           "startTime": "2026-09-16T13:47:41Z",
           "endTime": null,
-          "lastModified": "2026-09-16T15:42:52.413Z",
+          "lastModified": "2026-09-16T16:17:12.94Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users in the United States and United Kingdom may be unable to access Microsoft 365 services.",
           "scopeOfImpact": "",
           "rootCause": "",
-          "nextUpdateBy": "Wednesday, September 16, 2026, at 4:30 PM UTC",
+          "nextUpdateBy": "Wednesday, September 16, 2026, at 5:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-16T16:16:48.187Z",
+              "postType": "regular",
+              "content": "Title: Some users in the United States and United Kingdom may be unable to access Microsoft 365 services\n\nUser impact: Users in the United States and United Kingdom may be unable to access Microsoft 365 services.\n\nMore info: Impacted users may encounter 502 or 503 errors when attempting to access Microsoft 365 services.\n\nCurrent status: Impact reports continue to decrease. Our investigation has not identified any issues with core Microsoft 365 components. As part of our ongoing root cause analysis, we're focusing on the request paths and dependency conditions associated with the reported Single Sign-On (SSO) failures and 5xx errors, while continuing to monitor and confirm sustained recovery.\n\nStart time: Wednesday, September 16, 2026, at 1:22 PM UTC\n\nNext update by: Wednesday, September 16, 2026, at 5:30 PM UTC"
+            },
             {
               "createdAt": "2026-09-16T15:42:52.413Z",
               "postType": "quick",
@@ -508,16 +513,21 @@
           "title": "Users may be unable to load SharePoint Online sites or pages and receive an error message",
           "startTime": "2026-09-16T15:04:21.74Z",
           "endTime": null,
-          "lastModified": "2026-09-16T15:50:11.96Z",
+          "lastModified": "2026-09-16T16:15:40.537Z",
           "status": "serviceDegradation",
-          "severity": "advisory",
+          "severity": "incident",
           "userImpact": "Users may be unable to load SharePoint Online sites or pages and receive an error message.",
           "scopeOfImpact": "This issue may affect any user attempting to load SharePoint Online sites and pages.\r\n\r\nStart time: Tuesday, August 25, 2026, at 3:45 PM UTC",
           "rootCause": "A recent configuration change concerning how the server delivers code to site pages to render as content resulted in impact.",
-          "nextUpdateBy": "Wednesday, September 16, 2026, at 4:30 PM UTC",
+          "nextUpdateBy": "Wednesday, September 16, 2026, at 6:30 PM UTC",
           "feature": "MySites",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-16T16:15:40.537Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to load SharePoint Online sites or pages and receive an error message\r\n\r\nUser impact: Users may be unable to load SharePoint Online sites or pages and receive an error message.\r\n\r\nMore info: The error message states: \"Sorry, something went wrong: Thread was being aborted.\"\r\n\r\nCurrent status: Our rollback of the impacting change is ongoing, and we've received confirmation from a subset of users that this is successfully remediating impact. We're monitoring the rollback as it continues to ensure completion and full remediation for all affected users.\r\n\r\nScope of impact: This issue may affect any user attempting to load SharePoint Online sites and pages.\r\n\r\nStart time: Tuesday, August 25, 2026, at 3:45 PM UTC\r\n\r\nRoot cause: A recent configuration change concerning how the server delivers code to site pages to render as content resulted in impact.\r\n\r\nNext update by: Wednesday, September 16, 2026, at 6:30 PM UTC"
+            },
             {
               "createdAt": "2026-09-16T15:25:23.997Z",
               "postType": "regular",
