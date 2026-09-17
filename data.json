@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-17T18:41:46.376Z",
+  "lastUpdated": "2026-09-17T19:12:00.641Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -186,16 +186,21 @@
           "title": "Users are unable to access Outlook on the web from a specific Outlook link ",
           "startTime": "2026-09-15T15:00:00Z",
           "endTime": null,
-          "lastModified": "2026-09-16T20:25:27.723Z",
+          "lastModified": "2026-09-17T18:47:48.36Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users are unable to access Outlook on the web from a specific Outlook link. ",
-          "scopeOfImpact": "This issue may prevent any user attempting to access Outlook on the web from the specific link in the More Info portion of this communication. This information may be updated as our investigation continues. \r\n\r\nStart time: Tuesday, September 15, 2026, at 3:00 PM UTC",
+          "scopeOfImpact": "This issue may prevent any user attempting to access Outlook on the web from the specific link in the More Info portion of this communication. This information may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, September 15, 2026, at 3:00 PM UTC",
           "rootCause": "A recent code change is producing a code regression that is preventing users from accessing Outlook on the web from a specific link within Outlook.",
-          "nextUpdateBy": "Thursday, September 17, 2026, at 9:00 PM UTC",
+          "nextUpdateBy": "Friday, September 18, 2026, at 9:00 PM UTC",
           "feature": "Performance degradation",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-17T18:47:48.36Z",
+              "postType": "regular",
+              "content": "Title: Users are unable to access Outlook on the web from a specific Outlook link \r\n\r\nUser impact: Users are unable to access Outlook on the web from a specific Outlook link. \r\n\r\nMore info:  Users are unable to access Outlook on the web from a specific link within Outlook.\n\nUsers can access Outlook on the web by navigating to a direct URL with /mail/ appended. \nAs an example, some users can navigate to \"https://outlook.office365.com/mail/\" to \nsuccessfully access the client.\nDepartment of Defense customers: https://webmail.apps.mil/mail/\n\nGCCH customers: https://outlook.office365.us/mail/\r\n\r\nCurrent status: Our change reversion is approximately 82 percent complete, and our established timeline expects it will have completed by our next scheduled communication update.‌\r\n\r\nScope of impact: This issue may prevent any user attempting to access Outlook on the web from the specific link in the More Info portion of this communication. This information may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, September 15, 2026, at 3:00 PM UTC\r\n\r\nRoot cause: A recent code change is producing a code regression that is preventing users from accessing Outlook on the web from a specific link within Outlook.\r\n\r\nNext update by: Friday, September 18, 2026, at 9:00 PM UTC"
+            },
             {
               "createdAt": "2026-09-16T17:51:35.607Z",
               "postType": "regular",
