@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-17T21:43:12.614Z",
+  "lastUpdated": "2026-09-17T22:13:27.702Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -350,61 +350,6 @@
               "createdAt": "2026-08-21T17:31:50.35Z",
               "postType": "regular",
               "content": "Title: Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights\r\n\r\nUser impact: Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights.\r\n\r\nMore info: Affected reports include, but aren't limited to:\n\n- Copilot Usage report in Microsoft 365 admin center\n- Copilot Chat Usage report in Microsoft 365 admin center\n- Copilot Readiness reports in Microsoft 365 admin center and Viva Insights\n- Copilot Adoption report in Viva Insights\n- Microsoft 365 Apps and Active users reports in Microsoft 365 admin center\n- Teams App reports in Microsoft 365 admin center and Microsoft Teams admin center\r\n\r\nCurrent status: Our monitoring has identified an increase report generation delays and our investigation has identified that an upstream component that facilitates report data access and generation isn't responding as expected, resulting in impact. We're in the process of identifying the underlying cause of impact and develop a remediation strategy.\r\n\r\nScope of impact: Any admin expecting reports from the affected scenarios as outlined in the More info section may be affected. \r\n\r\nStart time: Friday, August 21, 2026, at 12:00 AM UTC\r\n\r\nNext update by: Monday, August 24, 2026, at 7:00 PM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Microsoft 365 suite"
-          ]
-        },
-        {
-          "id": "MO1469836",
-          "title": "Some admins may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center",
-          "startTime": "2026-08-28T00:00:00Z",
-          "endTime": null,
-          "lastModified": "2026-09-17T21:26:01.44Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Admins may have seen Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center.",
-          "scopeOfImpact": "This event impacts some admins, who may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center starting from August 25, 2026. This section may be updated as the investigation progresses.\r\n\r\nStart time: Friday, August 28, 2026, at 12:00 AM UTC",
-          "rootCause": "An error occurred within the flow of service health telemetry data utilized by the service, resulting in this impact.",
-          "nextUpdateBy": "Thursday, September 17, 2026, at 11:00 PM UTC",
-          "feature": "Company or User Administration",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-09-16T19:04:31.49Z",
-              "postType": "regular",
-              "content": "Title: Some admins may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center.\r\n\r\nMore info: Admins may see the following inaccuracies in Microsoft Teams usage reports starting from August 25, 2026:\n\n- Teams Active Users may display as 0\n- Teams Chat Messages may display as 0\n- Teams Channel Messages may display as 0\r\n\r\nCurrent status: We're continuing to validate with affected users that this issue has been successfully remediated for all impacted regions.\r\n\r\nScope of impact: This event impacts some admins, who may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center starting from August 25, 2026. This section may be updated as the investigation progresses.\r\n\r\nStart time: Friday, August 28, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: An error occurred within the flow of service health telemetry data utilized by the service, resulting in this impact.\r\n\r\nNext update by: Thursday, September 17, 2026, at 11:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-09-16T01:11:55.897Z",
-              "postType": "regular",
-              "content": "Title: Some admins may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center.\r\n\r\nMore info: Admins may see the following inaccuracies in Microsoft Teams usage reports starting from August 25, 2026:\n\n- Teams Active Users may display as 0\n- Teams Chat Messages may display as 0\n- Teams Channel Messages may display as 0\r\n\r\nCurrent status: We've confirmed that the backfill has processed as expected and are reaching out to a portion of impacted users to verify that the issue has been remediated.\r\n\r\nScope of impact: This event impacts some admins, who may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center starting from August 25, 2026. This section may be updated as the investigation progresses.\r\n\r\nStart time: Friday, August 28, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: An error occurred within the flow of service health telemetry data utilized by the service, resulting in this impact.\r\n\r\nNext update by: Wednesday, September 16, 2026, at 8:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-09-15T00:52:56.14Z",
-              "postType": "regular",
-              "content": "Title: Some admins may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center.\r\n\r\nMore info: Admins may see the following inaccuracies in Microsoft Teams usage reports starting from August 25, 2026:\n\n- Teams Active Users may display as 0\n- Teams Chat Messages may display as 0\n- Teams Channel Messages may display as 0\r\n\r\nCurrent status: We're continuing to monitor the progress of the backfill processing as more time is needed to ensure its completion and confirm if impact is resolved.\r\n\r\nScope of impact: This event impacts some admins, who may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center starting from August 25, 2026. This section may be updated as the investigation progresses.\r\n\r\nStart time: Friday, August 28, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: An error occurred within the flow of service health telemetry data utilized by the service, resulting in this impact.\r\n\r\nNext update by: Wednesday, September 16, 2026, at 2:30 AM UTC"
-            },
-            {
-              "createdAt": "2026-09-12T01:16:58.913Z",
-              "postType": "regular",
-              "content": "Title: Some admins may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center.\r\n\r\nMore info: Admins may see the following inaccuracies in Microsoft Teams usage reports starting from August 25, 2026:\n\n- Teams Active Users may display as 0\n- Teams Chat Messages may display as 0\n- Teams Channel Messages may display as 0\r\n\r\nCurrent status: The affected data backfill remains in progress and is taking longer than expected. We’re monitoring its progress and expect processing to complete to resolve the issue by our next scheduled update.\r\n\r\nScope of impact: This event impacts some admins, who may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center starting from August 25, 2026. This section may be updated as the investigation progresses.\r\n\r\nStart time: Friday, August 28, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: An error occurred within the flow of service health telemetry data utilized by the service, resulting in this impact.\r\n\r\nNext update by: Tuesday, September 15, 2026, at 2:30 AM UTC"
-            },
-            {
-              "createdAt": "2026-09-11T21:37:11.653Z",
-              "postType": "regular",
-              "content": "Title: Some admins may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center.\r\n\r\nMore info: Admins may see the following inaccuracies in Microsoft Teams usage reports starting from August 25, 2026:\n\n- Teams Active Users may display as 0\n- Teams Chat Messages may display as 0\n- Teams Channel Messages may display as 0\r\n\r\nCurrent status: We’re continuing to backfill the affected data to fully remediate this event. Based on current progress, we anticipate this process will complete by our next scheduled update.\r\n\r\nScope of impact: This event impacts some admins, who may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center starting from August 25, 2026. This section may be updated as the investigation progresses.\r\n\r\nStart time: Friday, August 28, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: An error occurred within the flow of service health telemetry data utilized by the service, resulting in this impact.\r\n\r\nNext update by: Saturday, September 12, 2026, at 2:30 AM UTC"
-            },
-            {
-              "createdAt": "2026-09-10T17:34:36.927Z",
-              "postType": "regular",
-              "content": "Title: Some admins may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center.\r\n\r\nMore info: Admins may see the following inaccuracies in Microsoft Teams usage reports starting from August 25, 2026:\n\n- Teams Active Users may display as 0\n- Teams Chat Messages may display as 0\n- Teams Channel Messages may display as 0\r\n\r\nCurrent status: We've determined that an error occurred within the flow of service health telemetry data utilized by the service, resulting in this impact. We've addressed the underlying issue and are currently in the process of backfilling the data to fully remediate this event.\r\n\r\nScope of impact: This event impacts some admins, who may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center starting from August 25, 2026. This section may be updated as the investigation progresses.\r\n\r\nStart time: Friday, August 28, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: An error occurred within the flow of service health telemetry data utilized by the service, resulting in this impact.\r\n\r\nNext update by: Friday, September 11, 2026, at 11:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-09-09T18:11:19.417Z",
-              "postType": "regular",
-              "content": "Title: Some admins may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center.\r\n\r\nMore info: Admins may see the following inaccuracies in Microsoft Teams usage reports starting from August 25, 2026:\n\n- Teams Active Users may display as 0\n- Teams Chat Messages may display as 0\n- Teams Channel Messages may display as 0\r\n\r\nCurrent status: We've received reports from a subset of admins noting inaccuracies or discrepancies in Microsoft Teams usage reports in the Microsoft 365 admin center starting from August 25, 2026.  We're attempting to reproduce the issue to further our understanding of the current impact scenario and to determine our next troubleshooting steps.\r\n\r\nScope of impact: This event impacts some admins, who may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center starting from August 25, 2026. This section may be updated as the investigation progresses.\r\n\r\nNext update by: Thursday, September 10, 2026, at 11:00 PM UTC"
             }
           ],
           "affectedServices": [
@@ -1047,6 +992,52 @@
     }
   ],
   "history": [
+    {
+      "id": "MO1469836",
+      "title": "Some admins may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center",
+      "startTime": "2026-08-28T00:00:00Z",
+      "endTime": "2026-09-17T21:26:14.303Z",
+      "lastModified": "2026-09-17T21:45:18.537Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Admins may have seen Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center.",
+      "scopeOfImpact": "This event impacted some admins, who may have seen Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center starting from August 25, 2026.\r\n\r\nStart time: Friday, August 28, 2026, at 12:00 AM UTC\r\n\r\nEnd time: Wednesday, September 16, 2026, at 7:20 PM UTC",
+      "rootCause": "An error occurred within the flow of service health telemetry data utilized by the service, resulting in this impact.\r\n\r\nNext steps: \n- We're further analyzing the isolated error within the flow of service health telemetry data to help us prevent similar impacting events in the future.\n\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Company or User Administration",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-09-17T21:45:15.607Z",
+          "postType": "regular",
+          "content": "Title: Some admins may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may have seen Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center.\r\n\r\nMore info: Admins may have seen the following inaccuracies in Microsoft Teams usage reports starting from August 25, 2026:\n\n- Teams Active Users displayed as 0\n- Teams Chat Messages displayed as 0\n- Teams Channel Messages displayed as 0\r\n\r\nFinal status: Our internal service telemetry has validated that the impacting error within the flow of service health telemetry data has been addressed, and that the impact has been resolved.\r\n\r\nScope of impact: This event impacted some admins, who may have seen Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center starting from August 25, 2026.\r\n\r\nStart time: Friday, August 28, 2026, at 12:00 AM UTC\r\n\r\nEnd time: Wednesday, September 16, 2026, at 7:20 PM UTC\r\n\r\nRoot cause: An error occurred within the flow of service health telemetry data utilized by the service, resulting in this impact.\r\n\r\nNext steps: \n- We're further analyzing the isolated error within the flow of service health telemetry data to help us prevent similar impacting events in the future.\n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-09-16T19:04:31.49Z",
+          "postType": "regular",
+          "content": "Title: Some admins may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center.\r\n\r\nMore info: Admins may see the following inaccuracies in Microsoft Teams usage reports starting from August 25, 2026:\n\n- Teams Active Users may display as 0\n- Teams Chat Messages may display as 0\n- Teams Channel Messages may display as 0\r\n\r\nCurrent status: We're continuing to validate with affected users that this issue has been successfully remediated for all impacted regions.\r\n\r\nScope of impact: This event impacts some admins, who may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center starting from August 25, 2026. This section may be updated as the investigation progresses.\r\n\r\nStart time: Friday, August 28, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: An error occurred within the flow of service health telemetry data utilized by the service, resulting in this impact.\r\n\r\nNext update by: Thursday, September 17, 2026, at 11:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-09-16T01:11:55.897Z",
+          "postType": "regular",
+          "content": "Title: Some admins may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center.\r\n\r\nMore info: Admins may see the following inaccuracies in Microsoft Teams usage reports starting from August 25, 2026:\n\n- Teams Active Users may display as 0\n- Teams Chat Messages may display as 0\n- Teams Channel Messages may display as 0\r\n\r\nCurrent status: We've confirmed that the backfill has processed as expected and are reaching out to a portion of impacted users to verify that the issue has been remediated.\r\n\r\nScope of impact: This event impacts some admins, who may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center starting from August 25, 2026. This section may be updated as the investigation progresses.\r\n\r\nStart time: Friday, August 28, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: An error occurred within the flow of service health telemetry data utilized by the service, resulting in this impact.\r\n\r\nNext update by: Wednesday, September 16, 2026, at 8:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-09-15T00:52:56.14Z",
+          "postType": "regular",
+          "content": "Title: Some admins may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center.\r\n\r\nMore info: Admins may see the following inaccuracies in Microsoft Teams usage reports starting from August 25, 2026:\n\n- Teams Active Users may display as 0\n- Teams Chat Messages may display as 0\n- Teams Channel Messages may display as 0\r\n\r\nCurrent status: We're continuing to monitor the progress of the backfill processing as more time is needed to ensure its completion and confirm if impact is resolved.\r\n\r\nScope of impact: This event impacts some admins, who may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center starting from August 25, 2026. This section may be updated as the investigation progresses.\r\n\r\nStart time: Friday, August 28, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: An error occurred within the flow of service health telemetry data utilized by the service, resulting in this impact.\r\n\r\nNext update by: Wednesday, September 16, 2026, at 2:30 AM UTC"
+        },
+        {
+          "createdAt": "2026-09-12T01:16:58.913Z",
+          "postType": "regular",
+          "content": "Title: Some admins may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center.\r\n\r\nMore info: Admins may see the following inaccuracies in Microsoft Teams usage reports starting from August 25, 2026:\n\n- Teams Active Users may display as 0\n- Teams Chat Messages may display as 0\n- Teams Channel Messages may display as 0\r\n\r\nCurrent status: The affected data backfill remains in progress and is taking longer than expected. We’re monitoring its progress and expect processing to complete to resolve the issue by our next scheduled update.\r\n\r\nScope of impact: This event impacts some admins, who may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center starting from August 25, 2026. This section may be updated as the investigation progresses.\r\n\r\nStart time: Friday, August 28, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: An error occurred within the flow of service health telemetry data utilized by the service, resulting in this impact.\r\n\r\nNext update by: Tuesday, September 15, 2026, at 2:30 AM UTC"
+        }
+      ],
+      "serviceName": "Microsoft 365 suite",
+      "affectedServices": [
+        "Microsoft 365 suite"
+      ]
+    },
     {
       "id": "MO1471241",
       "title": "Some admins' usage reports may contain stale data in Microsoft 365 admin center",
