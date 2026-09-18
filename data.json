@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-18T20:23:40.025Z",
+  "lastUpdated": "2026-09-18T20:53:55.698Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -145,41 +145,6 @@
               "createdAt": "2026-07-28T15:15:49.05Z",
               "postType": "regular",
               "content": "Title: Some users may see unwanted add-ins appearing automatically across all Outlook clients\n\nUser impact: Users may see unwanted add-ins appearing automatically across all Outlook clients.\n\nMore info: These add-ins are configured to be available to users by admins but aren’t expected to be automatically installed.\n\nCurrent status: We're investigating a potential issue with Exchange Online and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Exchange Online"
-          ]
-        },
-        {
-          "id": "EX1473059",
-          "title": "Users are unable to access Outlook on the web from a specific Outlook link ",
-          "startTime": "2026-09-15T15:00:00Z",
-          "endTime": null,
-          "lastModified": "2026-09-17T18:47:48.36Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users are unable to access Outlook on the web from a specific Outlook link. ",
-          "scopeOfImpact": "This issue may prevent any user attempting to access Outlook on the web from the specific link in the More Info portion of this communication. This information may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, September 15, 2026, at 3:00 PM UTC",
-          "rootCause": "A recent code change is producing a code regression that is preventing users from accessing Outlook on the web from a specific link within Outlook.",
-          "nextUpdateBy": "Friday, September 18, 2026, at 9:00 PM UTC",
-          "feature": "Performance degradation",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-09-17T18:47:48.36Z",
-              "postType": "regular",
-              "content": "Title: Users are unable to access Outlook on the web from a specific Outlook link \r\n\r\nUser impact: Users are unable to access Outlook on the web from a specific Outlook link. \r\n\r\nMore info:  Users are unable to access Outlook on the web from a specific link within Outlook.\n\nUsers can access Outlook on the web by navigating to a direct URL with /mail/ appended. \nAs an example, some users can navigate to \"https://outlook.office365.com/mail/\" to \nsuccessfully access the client.\nDepartment of Defense customers: https://webmail.apps.mil/mail/\n\nGCCH customers: https://outlook.office365.us/mail/\r\n\r\nCurrent status: Our change reversion is approximately 82 percent complete, and our established timeline expects it will have completed by our next scheduled communication update.‌\r\n\r\nScope of impact: This issue may prevent any user attempting to access Outlook on the web from the specific link in the More Info portion of this communication. This information may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, September 15, 2026, at 3:00 PM UTC\r\n\r\nRoot cause: A recent code change is producing a code regression that is preventing users from accessing Outlook on the web from a specific link within Outlook.\r\n\r\nNext update by: Friday, September 18, 2026, at 9:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-09-16T17:51:35.607Z",
-              "postType": "regular",
-              "content": "Title: Users are unable to access Outlook on the web from a specific Outlook link \r\n\r\nUser impact: Users are unable to access Outlook on the web from a specific Outlook link. \r\n\r\nMore info: Users are unable to access Outlook on the web from a specific link within Outlook.\n\nUsers can access Outlook on the web by navigating to a direct URL with /mail/ appended. \nAs an example, some users can navigate to \"https://outlook.office365.com/mail/\" to \nsuccessfully access the client.\nDepartment of Defense customers: https://webmail.apps.mil/mail/\n\nGCCH customers: https://outlook.office365.us/mail/\r\n\r\nCurrent status: We've determined that a recent code change is preventing users from accessing Outlook on the web from a specific link within Outlook. We've conducted our change reversion process to address the code issue and to remediate the impact. We're monitoring the environment to ensure no other impact persists and that the issue is resolved.\r\n\r\nScope of impact: This issue may prevent any user attempting to access Outlook on the web from the specific link in the More Info portion of this communication. This information may be updated as our investigation continues. \r\n\r\nStart time: Tuesday, September 15, 2026, at 3:00 PM UTC\r\n\r\nRoot cause: A recent code change is producing a code regression that is preventing users from accessing Outlook on the web from a specific link within Outlook.\r\n\r\nNext update by: Thursday, September 17, 2026, at 9:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-09-16T17:38:52.39Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to access Outlook on the web from a specific Outlook link \r\n\r\nUser impact: Users may be unable to access Outlook on the web from a specific Outlook link. \r\n\r\nCurrent status: We're investigating a potential issue with the Exchange Online service and are checking for impact to your organization. We'll provide an update within 30 minutes."
             }
           ],
           "affectedServices": [
@@ -850,20 +815,25 @@
           "title": "Some users may experience delays accessing audit logs through the Microsoft Purview Management API",
           "startTime": "2026-09-14T06:00:00Z",
           "endTime": null,
-          "lastModified": "2026-09-18T17:30:57.483Z",
+          "lastModified": "2026-09-18T20:45:11Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may experience delays accessing audit logs through the Microsoft Purview Management API.",
           "scopeOfImpact": "This issue may potentially impact a subset of Microsoft Purview users in the North America region utilizing the audit log feature of Microsoft Purview. This information may be updated as our investigation continues.",
           "rootCause": "An upstream service that assists in the processing of audit log data in Microsoft Purview is causing delays.",
-          "nextUpdateBy": "Friday, September 18, 2026, at 5:30 PM UTC",
+          "nextUpdateBy": "Friday, September 18, 2026, at 9:00 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
             {
+              "createdAt": "2026-09-18T20:45:11Z",
+              "postType": "regular",
+              "content": "Title: Some users may experience delays accessing audit logs through the Microsoft Purview Management API\r\n\r\nUser impact: Users may experience delays accessing audit logs through the Microsoft Purview Management API.\r\n\r\nMore info: This issue is specifically impacting Microsoft Purview users utilizing the Management Activity API and Search features to retrieve audit logs.\r\n\r\nCurrent status: We're continuing to investigate the reason the impacting upstream service is timing out the requests while we implement configuration changes to the affected infrastructure that'll increase the number of requests that can be completed. \r\n\r\nScope of impact: This issue may potentially impact a subset of Microsoft Purview users in the North America region utilizing the audit log feature of Microsoft Purview. This information may be updated as our investigation continues.\r\n\r\nRoot cause: An upstream service that assists in the processing of audit log data in Microsoft Purview is causing delays.\r\n\r\nNext update by: Friday, September 18, 2026, at 9:00 PM UTC"
+            },
+            {
               "createdAt": "2026-09-18T17:30:57.483Z",
               "postType": "regular",
-              "content": "Title: Some users may experience delays accessing audit logs through the Microsoft Purview Management API\r\n\r\nUser impact: Users may experience delays accessing audit logs through the Microsoft Purview Management API.\r\n\r\nMore info: This issue is specifically impacting Microsoft Purview users utilizing the Management Activity API and Search features to retrieve audit logs.\r\n\r\nCurrent status: We've determined that adjusting the rate at which request calls are processed has improved impact across portions of the affected infrastructure. However, some service components responsible for facilitating access to audit logs are continuing to experience increased timeouts and request failures. We're evaluating additional mitigation options, including rebalancing request traffic, while we continue investigating the upstream service responsible for processing audit log requests to determine why it's causing delays.\r\n\r\nScope of impact: This issue may potentially impact a subset of Microsoft Purview users in the North America region utilizing the audit log feature of Microsoft Purview. This information may be updated as our investigation continues.\r\n\r\nRoot cause: An upstream service that assists in the processing of audit log data in Microsoft Purview is causing delays.\r\n\r\nNext update by: Friday, September 18, 2026, at 5:30 PM UTC"
+              "content": "Title: Some users may experience delays accessing audit logs through the Microsoft Purview Management API\r\n\r\nUser impact: Users may experience delays accessing audit logs through the Microsoft Purview Management API.\r\n\r\nMore info: This issue is specifically impacting Microsoft Purview users utilizing the Management Activity API and Search features to retrieve audit logs.\r\n\r\nCurrent status: We've determined that adjusting the rate at which request calls are processed has improved impact across portions of the affected infrastructure. However, some service components responsible for facilitating access to audit logs are continuing to experience increased timeouts and request failures. We're evaluating additional mitigation options, including rebalancing request traffic, while we continue investigating the upstream service responsible for processing audit log requests to determine why it's causing delays.\r\n\r\nScope of impact: This issue may potentially impact a subset of Microsoft Purview users in the North America region utilizing the audit log feature of Microsoft Purview. This information may be updated as our investigation continues.\r\n\r\nRoot cause: An upstream service that assists in the processing of audit log data in Microsoft Purview is causing delays.\r\n\r\nNext update by: Friday, September 18, 2026, at 7:30 PM UTC"
             },
             {
               "createdAt": "2026-09-18T09:30:22.867Z",
@@ -962,6 +932,47 @@
     }
   ],
   "history": [
+    {
+      "id": "EX1473059",
+      "title": "Users may be unable to access Outlook on the web from a specific Outlook link",
+      "startTime": "2026-09-15T15:00:00Z",
+      "endTime": "2026-09-18T20:24:22.953Z",
+      "lastModified": "2026-09-18T20:24:37.09Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have been unable to access Outlook on the web from a specific Outlook link.",
+      "scopeOfImpact": "This issue may have prevented any user attempting to access Outlook on the web from the specific link in the More Info portion of this communication.\r\n\r\nStart time: Tuesday, September 15, 2026, at 3:00 PM UTC\r\n\r\nEnd time: Friday, September 18, 2026, at 3:40 PM UTC",
+      "rootCause": "A recent code change was producing a code regression that was preventing users from accessing Outlook on the web from a specific link within Outlook.\r\n\r\nNext steps: - We're reviewing our update procedures to understand why impact to Outlook on the web access wasn't caught during the testing phase. This will allow us to drive service improvements by proactively identifying similar issues in the future and improve our update testing processes.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Performance degradation",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-09-18T20:20:08.143Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to access Outlook on the web from a specific Outlook link\r\n\r\nUser impact: Users may have been unable to access Outlook on the web from a specific Outlook link.\r\n\r\nMore info: Users may have been unable to access Outlook on the web from a specific link within Outlook.\n \nUsers may have been access Outlook on the web by navigating to a direct URL with /mail/ appended. \nAs an example, some users could navigate to \"https://outlook.office365.com/mail/\" to \nsuccessfully access the client.\r\n\r\nFinal status: We've reverted the problematic code change, and confirmed through monitoring service health telemetry that the impact has been remediated.\r\n\r\nScope of impact: This issue may have prevented any user attempting to access Outlook on the web from the specific link in the More Info portion of this communication.\r\n\r\nStart time: Tuesday, September 15, 2026, at 3:00 PM UTC\r\n\r\nEnd time: Friday, September 18, 2026, at 3:40 PM UTC\r\n\r\nRoot cause: A recent code change was producing a code regression that was preventing users from accessing Outlook on the web from a specific link within Outlook.\r\n\r\nNext steps: - We're reviewing our update procedures to understand why impact to Outlook on the web access wasn't caught during the testing phase. This will allow us to drive service improvements by proactively identifying similar issues in the future and improve our update testing processes.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-09-17T18:47:48.36Z",
+          "postType": "regular",
+          "content": "Title: Users are unable to access Outlook on the web from a specific Outlook link \r\n\r\nUser impact: Users are unable to access Outlook on the web from a specific Outlook link. \r\n\r\nMore info:  Users are unable to access Outlook on the web from a specific link within Outlook.\n\nUsers can access Outlook on the web by navigating to a direct URL with /mail/ appended. \nAs an example, some users can navigate to \"https://outlook.office365.com/mail/\" to \nsuccessfully access the client.\nDepartment of Defense customers: https://webmail.apps.mil/mail/\n\nGCCH customers: https://outlook.office365.us/mail/\r\n\r\nCurrent status: Our change reversion is approximately 82 percent complete, and our established timeline expects it will have completed by our next scheduled communication update.‌\r\n\r\nScope of impact: This issue may prevent any user attempting to access Outlook on the web from the specific link in the More Info portion of this communication. This information may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, September 15, 2026, at 3:00 PM UTC\r\n\r\nRoot cause: A recent code change is producing a code regression that is preventing users from accessing Outlook on the web from a specific link within Outlook.\r\n\r\nNext update by: Friday, September 18, 2026, at 9:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-09-16T17:51:35.607Z",
+          "postType": "regular",
+          "content": "Title: Users are unable to access Outlook on the web from a specific Outlook link \r\n\r\nUser impact: Users are unable to access Outlook on the web from a specific Outlook link. \r\n\r\nMore info: Users are unable to access Outlook on the web from a specific link within Outlook.\n\nUsers can access Outlook on the web by navigating to a direct URL with /mail/ appended. \nAs an example, some users can navigate to \"https://outlook.office365.com/mail/\" to \nsuccessfully access the client.\nDepartment of Defense customers: https://webmail.apps.mil/mail/\n\nGCCH customers: https://outlook.office365.us/mail/\r\n\r\nCurrent status: We've determined that a recent code change is preventing users from accessing Outlook on the web from a specific link within Outlook. We've conducted our change reversion process to address the code issue and to remediate the impact. We're monitoring the environment to ensure no other impact persists and that the issue is resolved.\r\n\r\nScope of impact: This issue may prevent any user attempting to access Outlook on the web from the specific link in the More Info portion of this communication. This information may be updated as our investigation continues. \r\n\r\nStart time: Tuesday, September 15, 2026, at 3:00 PM UTC\r\n\r\nRoot cause: A recent code change is producing a code regression that is preventing users from accessing Outlook on the web from a specific link within Outlook.\r\n\r\nNext update by: Thursday, September 17, 2026, at 9:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-09-16T17:38:52.39Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to access Outlook on the web from a specific Outlook link \r\n\r\nUser impact: Users may be unable to access Outlook on the web from a specific Outlook link. \r\n\r\nCurrent status: We're investigating a potential issue with the Exchange Online service and are checking for impact to your organization. We'll provide an update within 30 minutes."
+        }
+      ],
+      "serviceName": "Exchange Online",
+      "affectedServices": [
+        "Exchange Online"
+      ]
+    },
     {
       "id": "EX1473520",
       "title": "Users may have encountered issues with the auto compose feature in Outlook mobile app for iOS",
@@ -3029,47 +3040,6 @@
       "serviceName": "Microsoft Teams",
       "affectedServices": [
         "Microsoft Teams"
-      ]
-    },
-    {
-      "id": "MO1456424",
-      "title": "Some users may be unable to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop",
-      "startTime": "2026-08-17T12:46:14.987Z",
-      "endTime": "2026-08-21T03:38:16.36Z",
-      "lastModified": "2026-08-21T03:46:17.143Z",
-      "status": "serviceRestored",
-      "severity": "incident",
-      "userImpact": "Users may have been unable to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop.",
-      "scopeOfImpact": "Impact was specific to some users served through the affected infrastructure who were attempting to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop.\r\n\r\nStart time: Friday, August 14, 2026, at 5:00 AM UTC\r\n\r\nEnd time: Tuesday, August 18, 2026, at 12:00 AM UTC",
-      "rootCause": "A recent deployment introduced a resource utilization inefficiency issue and affected the search functionality in SharePoint Online, OneDrive, Outlook on the web, and the Outlook desktop client.\r\n\r\nNext steps: \n- We're further reviewing the recent deployment to understand how the resource utilization inefficiency issue was introduced, and to understand what prevented it from being detected in our update testing and validation procedures, which will allow us to prevent similar issues in future deployments.\r\n\r\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Company or User Administration",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-08-21T03:46:13.777Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop\r\n\r\nUser impact: Users may have been unable to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop.\r\n\r\nFinal status: We've completed deploying the fix to reduce the resource pressure, and we've validated by monitoring internal telemetry that the issue is resolved.\r\n\r\nScope of impact: Impact was specific to some users served through the affected infrastructure who were attempting to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop.\r\n\r\nStart time: Friday, August 14, 2026, at 5:00 AM UTC\r\n\r\nEnd time: Tuesday, August 18, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: A recent deployment introduced a resource utilization inefficiency issue and affected the search functionality in SharePoint Online, OneDrive, Outlook on the web, and the Outlook desktop client.\r\n\r\nNext steps: \n- We're further reviewing the recent deployment to understand how the resource utilization inefficiency issue was introduced, and to understand what prevented it from being detected in our update testing and validation procedures, which will allow us to prevent similar issues in future deployments.\r\n\r\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-08-18T03:41:11.443Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop\n\nUser impact: Users may be unable to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop.\n\nCurrent status: Our investigation identified that a recent deployment introduced a resource utilization inefficiency issue, leading to impact. We've developed and are deploying a fix to reduce the resource pressure and restore service. We're monitoring as this progresses to identify a completion timeline.\n\nScope of impact: Impact is specific to some users served through the affected infrastructure who are attempting to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop. This section may be updated as our investigation continues.\n\nStart time: Friday, August 14, 2026, at 5:00 AM UTC\n\nRoot cause: A recent deployment introduced a resource utilization inefficiency issue, leading to impact.\n\nNext update by: Friday, August 21, 2026, at 4:00 AM UTC"
-        },
-        {
-          "createdAt": "2026-08-17T14:15:32.913Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop\r\n\r\nUser impact: Users may be unable to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop.\r\n\r\nCurrent status: We're analyzing service telemetry and reviewing recent service changes to determine the cause of impact. We've identified indicators of increased service restarts within a portion of the affected infrastructure, which may be contributing to the issue. We're validating potential remediation options while continuing our investigation into the root cause.\r\n\r\nScope of impact: Impact is specific to some users served through the affected infrastructure who are attempting to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop.\r\n\r\nNext update by: Tuesday, August 18, 2026, at 4:00 AM UTC"
-        },
-        {
-          "createdAt": "2026-08-17T12:49:09.937Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop\r\n\r\nUser impact: Users may be unable to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop.\r\n\r\nCurrent status: We're reviewing service monitoring telemetry and support provided information to determine our next troubleshooting steps.\r\n\r\nScope of impact: Impact is specific to some users served through the affected infrastructure who are attempting to search for content in SharePoint Online, OneDrive, Outlook on the web, or Outlook desktop.\r\n\r\nNext update by: Monday, August 17, 2026, at 3:00 PM UTC"
-        }
-      ],
-      "serviceName": "Microsoft 365 suite",
-      "affectedServices": [
-        "Microsoft 365 suite"
       ]
     }
   ]
