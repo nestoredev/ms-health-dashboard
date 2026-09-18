@@ -1,41 +1,11 @@
 {
-  "lastUpdated": "2026-09-18T14:20:43.855Z",
+  "lastUpdated": "2026-09-18T14:51:00.940Z",
   "services": [
     {
       "service": "Exchange Online",
       "status": "serviceDegradation",
       "id": "Exchange",
       "issues": [
-        {
-          "id": "EX1473520",
-          "title": "Users may encounter issues with the auto compose feature in Outlook mobile app for iOS",
-          "startTime": "2026-09-15T00:00:00Z",
-          "endTime": null,
-          "lastModified": "2026-09-17T16:49:20.383Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may encounter issues with the auto compose feature in Outlook mobile app for iOS.",
-          "scopeOfImpact": "Impact is limited to approximately 10 percent of users performing directory searches or expecting suggestions within Outlook mobile on iOS. \r\n\r\nStart time: Tuesday, September 15, 2026, at 12:00 AM UTC",
-          "rootCause": "A recent update to a search component that facilitates directory and suggestion requests contains a code error, resulting in impact.",
-          "nextUpdateBy": "Friday, September 18, 2026, at 3:00 PM UTC",
-          "feature": "Outlook - poor customer experience",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-09-17T16:39:44.807Z",
-              "postType": "regular",
-              "content": "Title: Users may encounter issues with the auto compose feature in the Outlook mobile app for iOS client\r\n\r\nUser impact: Users may encounter issues with the auto compose feature in the Outlook mobile app for iOS client.\r\n\r\nMore info: Impact is specific to directory searches, and suggestions when composing email messages from the Outlook app for IOS. \r\n\r\nCurrent status: We've identified that a recent update to a search component that facilitates directory and suggestion requests contains a code error, resulting in impact. We've developed a fix and are monitoring as it progresses. \r\n\r\nScope of impact: Impact is limited to approximately 10 percent of users performing directory searches or expecting suggestions within Outlook mobile on iOS. \r\n\r\nStart time: Tuesday, September 15, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: A recent update to a search component that facilitates directory and suggestion requests contains a code error, resulting in impact.\r\n\r\nNext update by: Friday, September 18, 2026, at 3:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-09-17T16:16:46.217Z",
-              "postType": "regular",
-              "content": "Title: Users may encounter issues with the auto compose feature in Outlook mobile app for iOS\r\n\r\nUser impact: Users may encounter issues with the auto compose feature in Outlook mobile app for iOS.\r\n\r\nCurrent status: We're investigating a potential issue with Exchange Online and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Exchange Online"
-          ]
-        },
         {
           "id": "EX1441488",
           "title": "Some users may see unwanted add-ins appearing automatically across all Outlook clients",
@@ -636,11 +606,11 @@
           "title": "Some users may experience unexpected application crashes for Microsoft Teams on macOS devices",
           "startTime": "2026-09-18T13:11:19.623Z",
           "endTime": null,
-          "lastModified": "2026-09-18T13:24:24.35Z",
+          "lastModified": "2026-09-18T14:29:51.98Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may experience unexpected application crashes for Microsoft Teams on macOS devices.",
-          "scopeOfImpact": "Impact is specific to users experiencing unexpected application crashes for Microsoft Teams on version 27.2 macOS devices.",
+          "scopeOfImpact": "Impact is specific to users experiencing unexpected application crashes for Microsoft Teams on version 27.2 beta macOS devices.",
           "rootCause": "",
           "nextUpdateBy": "Friday, September 18, 2026, at 3:30 PM UTC",
           "feature": "General",
@@ -649,7 +619,7 @@
             {
               "createdAt": "2026-09-18T13:24:24.35Z",
               "postType": "regular",
-              "content": "Title: Some users may experience unexpected application crashes for Microsoft Teams on macOS devices\r\n\r\nUser impact: Users may experience unexpected application crashes for Microsoft Teams on macOS devices.\r\n\r\nMore info: Impact is specific to users who have updated to their macOS devices to version 27.2.\r\n\r\nCurrent status: We've identified a significant increase in Microsoft Teams application crashes affecting macOS devices on version 27.2 and are investigating the underlying cause. We're continuing our analysis of crash telemetry and related diagnostic data to determine the source of impact and develop a remediation plan.\r\n\r\nScope of impact: Impact is specific to users experiencing unexpected application crashes for Microsoft Teams on version 27.2 macOS devices.\r\n\r\nNext update by: Friday, September 18, 2026, at 3:30 PM UTC"
+              "content": "Title: Some users may experience unexpected application crashes for Microsoft Teams on macOS devices\r\n\r\nUser impact: Users may experience unexpected application crashes for Microsoft Teams on macOS devices.\r\n\r\nMore info: Impact is specific to users who have updated to their macOS devices to version 27.2 beta.\r\n\r\nCurrent status: We've identified a significant increase in Microsoft Teams application crashes affecting macOS devices on version 27.2 beta and are investigating the underlying cause. We're continuing our analysis of crash telemetry and related diagnostic data to determine the source of impact and develop a remediation plan.\r\n\r\nScope of impact: Impact is specific to users experiencing unexpected application crashes for Microsoft Teams on version 27.2 beta macOS devices.\r\n\r\nNext update by: Friday, September 18, 2026, at 3:30 PM UTC"
             }
           ],
           "affectedServices": [
@@ -1012,6 +982,42 @@
     }
   ],
   "history": [
+    {
+      "id": "EX1473520",
+      "title": "Users may have encountered issues with the auto compose feature in Outlook mobile app for iOS",
+      "startTime": "2026-09-15T00:00:00Z",
+      "endTime": "2026-09-18T14:31:21.067Z",
+      "lastModified": "2026-09-18T14:33:33.263Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have encountered issues with the auto compose feature in Outlook mobile app for iOS.",
+      "scopeOfImpact": "Impact was limited to approximately 10 percent of users performing directory searches or expecting suggestions within Outlook mobile on iOS.\r\n\r\nStart time: Tuesday, September 15, 2026, at 12:00 AM UTC\r\n\r\nEnd time: Friday, September 18, 2026, at 5:00 AM UTC",
+      "rootCause": "A recent update to a search component that facilitates directory and suggestion requests contained a code error, resulting in impact.\r\n\r\nNext steps: We're reviewing our update procedures to better identify similar issues during our development and testing cycles.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Outlook - poor customer experience",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-09-18T14:33:21.913Z",
+          "postType": "regular",
+          "content": "Title: Users may have encountered issues with the auto compose feature in Outlook mobile app for iOS\r\n\r\nUser impact: Users may have encountered issues with the auto compose feature in Outlook mobile app for iOS.\r\n\r\nMore info: Impact was specific to directory searches, and suggestions when composing email messages from the Outlook app for IOS.\r\n\r\nFinal status: We've successfully deployed the fix and after an extended period of monitoring service health, we've confirmed that impact has been resolved.\r\n\r\nScope of impact: Impact was limited to approximately 10 percent of users performing directory searches or expecting suggestions within Outlook mobile on iOS.\r\n\r\nStart time: Tuesday, September 15, 2026, at 12:00 AM UTC\r\n\r\nEnd time: Friday, September 18, 2026, at 5:00 AM UTC\r\n\r\nRoot cause: A recent update to a search component that facilitates directory and suggestion requests contained a code error, resulting in impact.\r\n\r\nNext steps: We're reviewing our update procedures to better identify similar issues during our development and testing cycles.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-09-17T16:39:44.807Z",
+          "postType": "regular",
+          "content": "Title: Users may encounter issues with the auto compose feature in the Outlook mobile app for iOS client\r\n\r\nUser impact: Users may encounter issues with the auto compose feature in the Outlook mobile app for iOS client.\r\n\r\nMore info: Impact is specific to directory searches, and suggestions when composing email messages from the Outlook app for IOS. \r\n\r\nCurrent status: We've identified that a recent update to a search component that facilitates directory and suggestion requests contains a code error, resulting in impact. We've developed a fix and are monitoring as it progresses. \r\n\r\nScope of impact: Impact is limited to approximately 10 percent of users performing directory searches or expecting suggestions within Outlook mobile on iOS. \r\n\r\nStart time: Tuesday, September 15, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: A recent update to a search component that facilitates directory and suggestion requests contains a code error, resulting in impact.\r\n\r\nNext update by: Friday, September 18, 2026, at 3:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-09-17T16:16:46.217Z",
+          "postType": "regular",
+          "content": "Title: Users may encounter issues with the auto compose feature in Outlook mobile app for iOS\r\n\r\nUser impact: Users may encounter issues with the auto compose feature in Outlook mobile app for iOS.\r\n\r\nCurrent status: We're investigating a potential issue with Exchange Online and checking for impact to your organization. We'll provide an update within 30 minutes."
+        }
+      ],
+      "serviceName": "Exchange Online",
+      "affectedServices": [
+        "Exchange Online"
+      ]
+    },
     {
       "id": "TM1473237",
       "title": "Some users may intermittently be unable to launch Microsoft Teams from the web or desktop clients",
@@ -3084,47 +3090,6 @@
       "serviceName": "Microsoft 365 suite",
       "affectedServices": [
         "Microsoft 365 suite"
-      ]
-    },
-    {
-      "id": "OP1457784",
-      "title": "Admins may not see data in multiple tabs within the Microsoft 365 apps admin center",
-      "startTime": "2026-08-19T17:00:00Z",
-      "endTime": "2026-08-19T20:13:00Z",
-      "lastModified": "2026-08-19T21:38:30.5Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Admins may not have seen data in multiple tabs within the Microsoft 365 apps admin center.",
-      "scopeOfImpact": "Some admins may not have seen data in the Home page, Cloud update, Inventory, or Security update status sections in the Microsoft 365 apps admin center. \r\n\r\nStart time: Wednesday, August 19, 2026, at 5:00 PM UTC\r\n\r\nEnd time: Wednesday, August 19, 2026, at 8:13 PM UTC",
-      "rootCause": "A recent deployment to optimize Microsoft 365 apps service infrastructure incorrectly removed the Inventory apps and Shared Apps, resulting in impact.\r\n\r\nNext steps: \n- We're analyzing the offending deployment to isolate why the potential for impact wasn't caught prior to implementation. This further analysis will help us to ensure similar impact scenarios don't occur in the future.\r\n\r\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Access",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-08-19T21:38:12.747Z",
-          "postType": "regular",
-          "content": "Title: Admins may not see data in multiple tabs within the Microsoft 365 apps admin center\r\n\r\nUser impact: Admins may not have seen data in multiple tabs within the Microsoft 365 apps admin center.\r\n\r\nMore info: Admins may not have seen data in the following locations in the Microsoft 365 apps admin center:\n- Home page\n- Cloud update\n- Inventory \n- Security Update Status\n\nAdmins may have received an error message stating, “There was a problem retrieving data for this page. Please refresh the page or try again later.”\r\n\r\nFinal status: After further monitoring of service telemetry, we've validated that our deployment to reinstate the removed Inventory apps and Shared Apps successfully remediated impact.\r\n\r\nScope of impact: Some admins may not have seen data in the Home page, Cloud update, Inventory, or Security update status sections in the Microsoft 365 apps admin center. \r\n\r\nStart time: Wednesday, August 19, 2026, at 5:00 PM UTC\r\n\r\nEnd time: Wednesday, August 19, 2026, at 8:13 PM UTC\r\n\r\nRoot cause: A recent deployment to optimize Microsoft 365 apps service infrastructure incorrectly removed the Inventory apps and Shared Apps, resulting in impact.\r\n\r\nNext steps: \n- We're analyzing the offending deployment to isolate why the potential for impact wasn't caught prior to implementation. This further analysis will help us to ensure similar impact scenarios don't occur in the future.\r\n\r\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-08-19T21:01:49.087Z",
-          "postType": "regular",
-          "content": "Title: Admins may not see data in multiple tabs within the Microsoft 365 apps admin center\r\n\r\nUser impact: Admins may not see data in multiple tabs within the Microsoft 365 apps admin center.\r\n\r\nMore info: Admins may not see data in the following locations in the Microsoft 365 apps admin center:\n- Home page\n- Cloud update\n- Inventory \n- Security Update Status\n\nAdmins may receive an error message stating, “There was a problem retrieving data for this page. Please refresh the page or try again later.”\r\n\r\nCurrent status: After further analysis, we've isolated that impact was caused by a recent deployment to optimize Microsoft 365 apps service infrastructure that incorrectly removed the Inventory apps and Shared Apps, resulting in impact. We've added the missing applications back to affected service infrastructure and are monitoring telemetry for remediation.\r\n\r\nScope of impact: Some admins may not see data in the Home page, Cloud update, Inventory, or Security update status sections in the Microsoft 365 apps admin center. This section may be updated as the investigation progresses.\r\n\r\nStart time: Wednesday, August 19, 2026, at 5:00 PM UTC\r\n\r\nRoot cause: A recent deployment to optimize Microsoft 365 apps service infrastructure incorrectly removed the Inventory apps and Shared Apps, resulting in impact.\r\n\r\nNext update by: Wednesday, August 19, 2026, at 11:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-08-19T20:37:27.65Z",
-          "postType": "regular",
-          "content": "Title: Admins may not see data in multiple tabs within the Microsoft 365 apps admin center\r\n\r\nUser impact: Admins may not see data in multiple tabs within the Microsoft 365 apps admin center.\r\n\r\nMore info: Admins may not see data in the following locations in the Microsoft 365 apps admin center:\n- Home page\n- Cloud update\n- Inventory \n- Security Update Status\n\nAdmins may receive an error message stating, “There was a problem retrieving data for this page. Please refresh the page or try again later.”\r\n\r\nCurrent status: Our service monitors have alerted us to ongoing impact to a subset of admins who may not see data in the tabs outlined in the \"More info\" section of this communication within the Microsoft 365 apps admin center. We're reviewing reports of impact to further our understanding of the current impact scenario and to determine our next troubleshooting steps.\r\n\r\nScope of impact: Some admins may not see data in the Home page, Cloud update, Inventory, or Security update status sections in the Microsoft 365 apps admin center. This section may be updated as the investigation progresses.\r\n\r\nNext update by: Wednesday, August 19, 2026, at 9:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-08-19T20:17:41.43Z",
-          "postType": "regular",
-          "content": "Title: We're looking into a potential problem impacting Microsoft 365 apps\r\n\r\nUser impact: We're checking for potential impact to your users.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft 365 apps and checking for impact to your organization. We'll provide an update within 30 minutes."
-        }
-      ],
-      "serviceName": "Microsoft 365 apps",
-      "affectedServices": [
-        "Microsoft 365 apps"
       ]
     }
   ]
