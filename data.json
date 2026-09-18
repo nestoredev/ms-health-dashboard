@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-18T13:20:14.597Z",
+  "lastUpdated": "2026-09-18T13:50:29.391Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -625,6 +625,31 @@
               "createdAt": "2026-07-27T12:02:26.883Z",
               "postType": "regular",
               "content": "Title: All users are unable to run Microsoft Teams workflows used to create incidents internally\n\nUser impact: Users are unable to run Microsoft Teams workflows used to create incidents internally.\n\nMore info: Users receive the following error message when attempting to create incidents:\n \n\"Missing Trigger URI\"\n\nCurrent status: We're reviewing HTTP Archive (HAR) logs and Teams logs to help identify the root cause and next steps required to mitigate impact.\n\nScope of impact: Users attempting to run run-only workflows from Microsoft Teams may be impacted. This section may be updated as the investigation progresses.\n\nNext update by: Monday, July 27, 2026, at 7:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Teams"
+          ]
+        },
+        {
+          "id": "TM1474031",
+          "title": "Some users may experience unexpected application crashes for Microsoft Teams on macOS devices",
+          "startTime": "2026-09-18T13:11:19.623Z",
+          "endTime": null,
+          "lastModified": "2026-09-18T13:24:24.35Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may experience unexpected application crashes for Microsoft Teams on macOS devices.",
+          "scopeOfImpact": "Impact is specific to users experiencing unexpected application crashes for Microsoft Teams on version 27.2 macOS devices.",
+          "rootCause": "",
+          "nextUpdateBy": "Friday, September 18, 2026, at 3:30 PM UTC",
+          "feature": "General",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-09-18T13:24:24.35Z",
+              "postType": "regular",
+              "content": "Title: Some users may experience unexpected application crashes for Microsoft Teams on macOS devices\r\n\r\nUser impact: Users may experience unexpected application crashes for Microsoft Teams on macOS devices.\r\n\r\nMore info: Impact is specific to users who have updated to their macOS devices to version 27.2.\r\n\r\nCurrent status: We've identified a significant increase in Microsoft Teams application crashes affecting macOS devices on version 27.2 and are investigating the underlying cause. We're continuing our analysis of crash telemetry and related diagnostic data to determine the source of impact and develop a remediation plan.\r\n\r\nScope of impact: Impact is specific to users experiencing unexpected application crashes for Microsoft Teams on version 27.2 macOS devices.\r\n\r\nNext update by: Friday, September 18, 2026, at 3:30 PM UTC"
             }
           ],
           "affectedServices": [
