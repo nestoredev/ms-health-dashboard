@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-18T09:18:22.904Z",
+  "lastUpdated": "2026-09-18T09:48:35.270Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -880,16 +880,21 @@
           "title": "Some users may experience delays accessing audit logs through the Microsoft Purview Management API",
           "startTime": "2026-09-14T06:00:00Z",
           "endTime": null,
-          "lastModified": "2026-09-18T07:27:03.907Z",
+          "lastModified": "2026-09-18T09:39:39.617Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may experience delays accessing audit logs through the Microsoft Purview Management API.",
           "scopeOfImpact": "This issue may potentially impact a subset of Microsoft Purview users in the North America region utilizing the audit log feature of Microsoft Purview. \r\n\r\nStart time: Monday, September 14, 2026, at 6:00 AM UTC",
           "rootCause": "An upstream service that assists in the processing of audit log data in Microsoft Purview is causing delays.",
-          "nextUpdateBy": "Friday, September 18, 2026, at 9:30 AM UTC",
+          "nextUpdateBy": "Friday, September 18, 2026, at 5:30 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-18T09:30:22.867Z",
+              "postType": "regular",
+              "content": "Title: Some users may experience delays accessing audit logs through the Microsoft Purview Management API\r\n\r\nUser impact: Users may experience delays accessing audit logs through the Microsoft Purview Management API.\r\n\r\nMore info: This issue is specifically impacting Microsoft Purview users utilizing the Management Activity API and Search features to retrieve audit logs.\r\n\r\nCurrent status: We're continuing to assess mitigation options and are testing adjustments to improve the impact. We're monitoring the results to determine the most effective next steps.\r\n\r\nScope of impact: This issue may potentially impact a subset of Microsoft Purview users in the North America region utilizing the audit log feature of Microsoft Purview. \r\n\r\nStart time: Monday, September 14, 2026, at 6:00 AM UTC\r\n\r\nRoot cause: An upstream service that assists in the processing of audit log data in Microsoft Purview is causing delays.\r\n\r\nNext update by: Friday, September 18, 2026, at 5:30 PM UTC"
+            },
             {
               "createdAt": "2026-09-18T07:27:03.907Z",
               "postType": "regular",
