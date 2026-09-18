@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-18T16:51:58.405Z",
+  "lastUpdated": "2026-09-18T17:22:15.554Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -425,40 +425,9 @@
     },
     {
       "service": "Power BI",
-      "status": "serviceDegradation",
+      "status": "serviceOperational",
       "id": "PowerBIcom",
-      "issues": [
-        {
-          "id": "PB1474132",
-          "title": "Users may be unable to access Excel workbooks from Power BI and may receive an error message ",
-          "startTime": "2026-09-18T16:07:57.85Z",
-          "endTime": null,
-          "lastModified": "2026-09-18T16:39:58.903Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may be unable to access Excel workbooks from Power BI and may receive an error message.",
-          "scopeOfImpact": "Any user attempting to access Excel workbooks from the September 2026 release of the Power BI desktop client or Power BI on the web may be impacted.",
-          "rootCause": "",
-          "nextUpdateBy": "Friday, September 18, 2026, at 5:30 PM UTC",
-          "feature": "General",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-09-18T16:31:48.737Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to access Excel workbooks from Power BI and may receive an error message \r\n\r\nUser impact: Users may be unable to access Excel workbooks from Power BI and may receive an error message.\r\n\r\nMore info: Impact is specific to the September 2026 release of the Power BI desktop client and Power BI on the web.\n\nWhen users attempt to access Excel workbooks from Power BI, they may receive an error that states, \"The input couldn't be recognized as a valid Excel document.\"\r\n\r\nCurrent status: We're reproducing the impact using our internal testing environment to gain clarity on the issue, so that we can determine our next steps to isolate the root cause. \r\n\r\nScope of impact: Any user attempting to access Excel workbooks from the September 2026 release of the Power BI desktop client or Power BI on the web may be impacted.\r\n\r\nNext update by: Friday, September 18, 2026, at 5:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-09-18T16:15:46.997Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to access Excel workbooks from Power BI and may receive an error message \r\n\r\nUser impact: Users may be unable to access Excel workbooks from Power BI and may receive an error message.\r\n\r\nMore info: Impact is specific to the September 2026 release of the Power BI desktop client and Power BI on the web.\r\n\r\nCurrent status: We're investigating a potential issue with Power BI and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Power BI"
-          ]
-        }
-      ]
+      "issues": []
     },
     {
       "service": "Microsoft Intune",
