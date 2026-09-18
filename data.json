@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-18T15:21:13.769Z",
+  "lastUpdated": "2026-09-18T15:51:30.564Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -603,19 +603,24 @@
         },
         {
           "id": "TM1474031",
-          "title": "Some users may experience unexpected application crashes for Microsoft Teams on macOS devices",
+          "title": "Some users may experience unexpected application crashes for Microsoft Teams on MacOS devices",
           "startTime": "2026-09-18T13:11:19.623Z",
           "endTime": null,
-          "lastModified": "2026-09-18T14:55:33.033Z",
+          "lastModified": "2026-09-18T15:35:24.47Z",
           "status": "serviceDegradation",
           "severity": "incident",
-          "userImpact": "Users may experience unexpected application crashes for Microsoft Teams on macOS devices.",
+          "userImpact": "Users may experience unexpected application crashes for Microsoft Teams on MacOS devices.",
           "scopeOfImpact": "Impact is specific to users experiencing unexpected application crashes for Microsoft Teams on version 27.2 beta macOS devices.",
-          "rootCause": "",
-          "nextUpdateBy": "Friday, September 18, 2026, at 3:30 PM UTC",
+          "rootCause": "MacOS version 27.2 beta causes a regression for the video background effects and noise suppression functionalities in Microsoft Teams, resulting in impact.",
+          "nextUpdateBy": "Friday, September 18, 2026, at 8:00 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-18T15:34:51.44Z",
+              "postType": "regular",
+              "content": "Title: Some users may experience unexpected application crashes for Microsoft Teams on MacOS devices\r\n\r\nUser impact: Users may experience unexpected application crashes for Microsoft Teams on MacOS devices.\r\n\r\nMore info: Impact is specific to users who have updated their MacOS devices to version 27.2 beta.\r\n\r\nCurrent status: We've identified that the reported impact is limited to users running MacOS 27.2 beta. Our investigation indicates that the crashes are associated with video background effects and noise suppression functionality due to change in MacOS 27.2 beta that causes a regression in Microsoft Teams. We're creating a change to utilize an alternate code path for these features, which may potentially complete and remediate impact by our next scheduled update.\r\n\r\nScope of impact: Impact is specific to users experiencing unexpected application crashes for Microsoft Teams on version 27.2 beta macOS devices.\r\n\r\nRoot cause: MacOS version 27.2 beta causes a regression for the video background effects and noise suppression functionalities in Microsoft Teams, resulting in impact.\r\n\r\nNext update by: Friday, September 18, 2026, at 8:00 PM UTC"
+            },
             {
               "createdAt": "2026-09-18T13:24:24.35Z",
               "postType": "regular",
