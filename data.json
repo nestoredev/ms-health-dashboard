@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-21T14:20:19.017Z",
+  "lastUpdated": "2026-09-21T14:50:31.684Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -416,16 +416,21 @@
           "title": "Some users may be unable to access or use Microsoft Teams",
           "startTime": "2026-09-21T13:22:33Z",
           "endTime": null,
-          "lastModified": "2026-09-21T14:01:31.477Z",
+          "lastModified": "2026-09-21T14:27:59.757Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to access or use Microsoft Teams.",
-          "scopeOfImpact": "Impact is specific to some users whose connection requests are routed through Germany, United Kingdom and the United States who are unable to access or use Microsoft Teams.",
+          "scopeOfImpact": "",
           "rootCause": "",
           "nextUpdateBy": "Monday, September 21, 2026, at 3:30 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-21T14:27:59.757Z",
+              "postType": "quick",
+              "content": "User impact reports are decreasing, however, we continue to investigate and validate whether this trend reflects sustained recovery. We're continuing to narrow our investigation to the infrastructure component responsible for processing affected connection requests and are correlating diagnostic telemetry across impacted regions.\n\nThis quick update is designed to give the latest information on this issue.\n\nNext update by: Monday, September 21, 2026, at 3:30 PM UTC"
+            },
             {
               "createdAt": "2026-09-21T14:01:31.477Z",
               "postType": "regular",
