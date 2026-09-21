@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-21T13:50:05.156Z",
+  "lastUpdated": "2026-09-21T14:20:19.017Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -414,18 +414,23 @@
         {
           "id": "TM1475580",
           "title": "Some users may be unable to access or use Microsoft Teams",
-          "startTime": "2026-09-21T13:22:33.983Z",
+          "startTime": "2026-09-21T13:22:33Z",
           "endTime": null,
-          "lastModified": "2026-09-21T13:44:44.877Z",
+          "lastModified": "2026-09-21T14:01:31.477Z",
           "status": "serviceDegradation",
-          "severity": "advisory",
+          "severity": "incident",
           "userImpact": "Users may be unable to access or use Microsoft Teams.",
-          "scopeOfImpact": "Impact is specific to some users in Germany, United Kingdom and the United States who are unable to access or use Microsoft Teams.",
+          "scopeOfImpact": "Impact is specific to some users whose connection requests are routed through Germany, United Kingdom and the United States who are unable to access or use Microsoft Teams.",
           "rootCause": "",
           "nextUpdateBy": "Monday, September 21, 2026, at 3:30 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-21T14:01:31.477Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to access or use Microsoft Teams\n\nUser impact: Users may be unable to access or use Microsoft Teams.\n\nMore Info: Impact includes, but may not be limited to, audio and video calls, joining or initiating calls, and other calling-related functionality.\n \nCurrent status: We're analyzing a portion of the infrastructure responsible for processing connection requests. In parallel, we're reviewing diagnostic data to determine the source of impact and identify a remediation plan.\n \nScope of impact: Impact is specific to some users whose connection requests are routed through Germany, United Kingdom and the United States who are unable to access or use Microsoft Teams.\n \nNext update by: Monday, September 21, 2026, at 3:30 PM UTC"
+            },
             {
               "createdAt": "2026-09-21T13:44:44.877Z",
               "postType": "regular",
