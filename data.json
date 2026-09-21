@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-21T17:21:37.513Z",
+  "lastUpdated": "2026-09-21T17:51:55.286Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -578,16 +578,21 @@
           "title": "Users may be unable to copy, paste, drag, or duplicate cells and worksheets in Microsoft Excel",
           "startTime": "2026-09-08T10:00:00Z",
           "endTime": null,
-          "lastModified": "2026-09-21T16:51:53.74Z",
+          "lastModified": "2026-09-21T17:45:21.377Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to copy, paste, drag, or duplicate cells and worksheets in Microsoft Excel.",
           "scopeOfImpact": "Some users attempting to copy, paste, drag, or duplicate cells and worksheets in Microsoft Excel may be impacted. This section may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, September 8, 2026, at 10:00 AM UTC",
           "rootCause": "A code regression contained within a recent service update is causing impact.",
-          "nextUpdateBy": "Monday, September 21, 2026, at 7:00 PM UTC",
+          "nextUpdateBy": "Tuesday, September 22, 2026, at 7:30 PM UTC",
           "feature": "Excel",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-21T17:45:21.377Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to copy, paste, drag, or duplicate cells and worksheets in Microsoft Excel\r\n\r\nUser impact: Users may be unable to copy, paste, drag, or duplicate cells and worksheets in Microsoft Excel.\r\n\r\nMore info: This issue may specifically impact some users utilizing Microsoft Excel 2024, 2021, 2019, and 2016.\n\nFor impact to Microsoft Excel 2016, users can utilize the following link to download the latest version (KB5002665) containing a code fix to remediate impact with the exception of paste issues::\nhttps://support.microsoft.com/en-us/servicing/office/hotfix/excel/5002665\n\nFor additional updates on fix implementation for paste operations failing in Microsoft Excel, please refer to the following documentation:\nhttps://support.microsoft.com/en-us/support/known-issues/paste-not-work-excel\n\r\n\r\nCurrent status: After completing deployment of our fixes for Microsoft Excel 2021 and 2024, we've created an updated build of Excel 2016 to address most impact scenarios with the exception of paste issues that is linked in the \"More info\" section of this communication. We are initiating deployment of updated versions Excel 2016 and Excel 2019, which will also remediate impact Office Online Server (OOS) versions of Excel, which will address paste issues and other reported impact scenarios. We anticipate these builds to be deployed along with updated documentation by our next scheduled update.\r\n\r\nScope of impact: Some users attempting to copy, paste, drag, or duplicate cells and worksheets in Microsoft Excel may be impacted. This section may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, September 8, 2026, at 10:00 AM UTC\r\n\r\nRoot cause: A code regression contained within a recent service update is causing impact.\r\n\r\nNext update by: Tuesday, September 22, 2026, at 7:30 PM UTC"
+            },
             {
               "createdAt": "2026-09-17T19:11:02.553Z",
               "postType": "regular",
