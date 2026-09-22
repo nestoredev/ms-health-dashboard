@@ -1,11 +1,46 @@
 {
-  "lastUpdated": "2026-09-22T22:04:38.725Z",
+  "lastUpdated": "2026-09-22T22:34:52.845Z",
   "services": [
     {
       "service": "Exchange Online",
       "status": "serviceDegradation",
       "id": "Exchange",
       "issues": [
+        {
+          "id": "EX1476802",
+          "title": "Some users may be unable to open the account view in Outlook on the web",
+          "startTime": "2026-09-22T14:06:31.073Z",
+          "endTime": null,
+          "lastModified": "2026-09-22T22:06:14.737Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to open the account view in Outlook on the web.",
+          "scopeOfImpact": "Some users attempting to open the account view in Outlook on the web may be impacted. This section may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, September 22, 2026, at 12:44 PM UTC",
+          "rootCause": "A code misconfiguration was introduced by a recent service change intended to modernize the Outlook on the web header, resulting in impact.",
+          "nextUpdateBy": "Wednesday, September 23, 2026, at 6:00 PM UTC",
+          "feature": "OWA - poor customer experience",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-09-22T22:06:14.737Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to open the account view in Outlook on the web\r\n\r\nUser impact: Users may be unable to open the account view in Outlook on the web.\r\n\r\nMore info: When attempting to access the account page, the authentication flow fails with the following error: 'AADSTS90002: Tenant 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX' not found. Check to make sure you have the correct tenant ID and are signing into the correct cloud. Check with your subscription administrator, this may happen if there are no active subscriptions for the tenant.'\r\n\r\nCurrent status: We've identified that a code misconfiguration was introduced by a service change intended to modernize the Outlook on the web header, resulting in impact. We've developed and validated a fix to address the code misconfiguration, which we're preparing to deploy to the affected environment. We anticipate the deployment of our fix will begin by our next scheduled communications update.\r\n\r\nScope of impact: Some users attempting to open the account view in Outlook on the web may be impacted. This section may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, September 22, 2026, at 12:44 PM UTC\r\n\r\nRoot cause: A code misconfiguration was introduced by a recent service change intended to modernize the Outlook on the web header, resulting in impact.\r\n\r\nNext update by: Wednesday, September 23, 2026, at 6:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-09-22T18:20:06.823Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to open the account view in Outlook on the web\r\n\r\nUser impact: Users may be unable to open the account view in Outlook on the web.\r\n\r\nMore info: When attempting to access the account page, the authentication flow fails with the following error: 'AADSTS90002: Tenant 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX' not found. Check to make sure you have the correct tenant ID and are signing into the correct cloud. Check with your subscription administrator, this may happen if there are no active subscriptions for the tenant.'\r\n\r\nCurrent status: We're able to reproduce the issue within our internal testing environment, and we're gathering further diagnostic data to aid in our effort to uncover the source of the impact.\r\n\r\nScope of impact: Some users attempting to open the account view in Outlook on the web may be impacted. This section may be updated as our investigation continues.\r\n\r\nNext update by: Tuesday, September 22, 2026, at 11:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-09-22T14:08:32.067Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to open the account view in Outlook on the web\r\n\r\nUser impact: Users may be unable to open the account view in Outlook on the web.\r\n\r\nMore info: When attempting to access the account page, the authentication flow fails with the following error: 'AADSTS90002: Tenant 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX' not found. Check to make sure you have the correct tenant ID and are signing into the correct cloud. Check with your subscription administrator, this may happen if there are no active subscriptions for the tenant.'\r\n\r\nCurrent status: We're reviewing data provided by some affected users to determine our next troubleshooting steps.\r\n\r\nScope of impact: Some users attempting to open the account view in Outlook on the web may be impacted. This section may be updated as our investigation continues.\r\n\r\nNext update by: Tuesday, September 22, 2026, at 6:30 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online"
+          ]
+        },
         {
           "id": "EX1441488",
           "title": "Some users may see unwanted add-ins appearing automatically across all Outlook clients",
@@ -422,36 +457,6 @@
       "id": "microsoftteams",
       "issues": [
         {
-          "id": "TM1477123",
-          "title": "Some users of HP DirectConnect mode on Poly Microsoft Teams Rooms on Android (MTRA) devices may experience call drops",
-          "startTime": "2026-09-18T00:00:00Z",
-          "endTime": null,
-          "lastModified": "2026-09-22T21:50:30.24Z",
-          "status": "serviceDegradation",
-          "severity": "incident",
-          "userImpact": "Users of HP DirectConnect mode on Poly MTRA devices may experience call drops after 30 seconds.",
-          "scopeOfImpact": "This incident impacts some users of HP DirectConnect mode on Poly MTRA devices, who may experience call drops after 30 seconds and receive an error message stating, \"Different Versions on the Touch Panel detected, ending call shortly.\" This section may be updated as the investigation progresses.\r\n\r\nStart time: Friday, September 18, 2026, at 12:00 AM UTC",
-          "rootCause": "A recent Teams version update (1449/1.0.96.2026249711) introduced a Microsoft Teams version mismatch between the device console and MTRA device, resulting in calls being dropped as the paired devices need to be running the same Microsoft Teams version.",
-          "nextUpdateBy": "Tuesday, September 22, 2026, at 11:30 PM UTC",
-          "feature": "Calling",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-09-22T21:38:53.547Z",
-              "postType": "regular",
-              "content": "Title: Some users of HP DirectConnect mode on Poly Microsoft Teams Rooms on Android (MTRA) devices may experience call drops\r\n\r\nUser impact: Users of HP DirectConnect mode on Poly MTRA devices may experience call drops after 30 seconds.\r\n\r\nMore info: Users receive an error message stating, \"Different Versions on the Touch Panel detected, ending call shortly,\" before the call is dropped after approximately 30 seconds.\r\n\r\nCurrent status: We've received reports from a subset of affected users who state that when using HP DirectConnect mode on Poly Microsoft Teams Rooms on Android (MTRA) devices, their calls drop after approximately 30 seconds. We've isolated that a recent Teams version update (1449/1.0.96.2026249711) introduced a Microsoft Teams version mismatch between the device console and MTRA device, resulting in calls being dropped as the paired devices need to be running the same Microsoft Teams version. We've developed a remote configuration update to address the Microsoft Teams mismatch, and we anticipate the configuration change to be released by our next scheduled update.\r\n\r\nScope of impact: This incident impacts some users of HP DirectConnect mode on Poly MTRA devices, who may experience call drops after 30 seconds and receive an error message stating, \"Different Versions on the Touch Panel detected, ending call shortly.\" This section may be updated as the investigation progresses.\r\n\r\nStart time: Friday, September 18, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: A recent Teams version update (1449/1.0.96.2026249711) introduced a Microsoft Teams version mismatch between the device console and MTRA device, resulting in calls being dropped as the paired devices need to be running the same Microsoft Teams version.\r\n\r\nNext update by: Tuesday, September 22, 2026, at 11:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-09-22T20:58:22.213Z",
-              "postType": "regular",
-              "content": "Title: We're looking into a potential problem impacting Microsoft Teams\r\n\r\nUser impact: We're looking into a potential problem impacting Microsoft Teams\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Teams and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Microsoft Teams"
-          ]
-        },
-        {
           "id": "TM1440450",
           "title": "Users may have been unable to run run-only workflows from Microsoft Teams",
           "startTime": "2026-06-30T07:00:00Z",
@@ -724,20 +729,20 @@
           "title": "Some admins may receive failures creating or updating Communications Compliance policies in Microsoft Purview",
           "startTime": "2026-09-14T16:41:47.403Z",
           "endTime": null,
-          "lastModified": "2026-09-22T16:44:05.683Z",
+          "lastModified": "2026-09-22T22:28:47.01Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Admins may receive failures creating or updating Communications Compliance policies in Microsoft Purview.",
           "scopeOfImpact": "Some admins may receive failures creating or updating Communications Compliance policies in Microsoft Purview with more than four classifiers. This section may be updated as the investigation progresses.\r\n\r\nEstimated time to resolve: We anticipate impact to be remediated by Monday, October 5, 2026.",
           "rootCause": "A recent update introduced operations with larger data size included a code error, causing size limitation issues.",
-          "nextUpdateBy": "Monday, October 5, 2026, at 6:00 PM UTC",
+          "nextUpdateBy": "Tuesday, September 29, 2026, at 6:00 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
             {
               "createdAt": "2026-09-22T16:44:05.683Z",
               "postType": "regular",
-              "content": "Title: Some admins may receive failures creating or updating Communications Compliance policies in Microsoft Purview\r\n\r\nUser impact: Admins may receive failures creating or updating Communications Compliance policies in Microsoft Purview.\r\n\r\nMore info: Impact is limited to Communications Compliance policies with more than four classifiers.\n\nWe advise admins to keep classifiers to a maximum of four during this time and we anticipate the limit to be remediated by Monday, October 5, 2026.\r\n\r\nCurrent status: We've completed internal validations for our solution and have begun its deployment. Our fix deployment timeline projects the deployment will remediate the impact by Monday, October 5, 2026. Until this time, we advise users to keep Communications Compliance policies limited to under four classifiers in order to avoid impact.\r\n\r\nScope of impact: Some admins may receive failures creating or updating Communications Compliance policies in Microsoft Purview with more than four classifiers. This section may be updated as the investigation progresses.\r\n\r\nEstimated time to resolve: We anticipate impact to be remediated by Monday, October 5, 2026.\r\n\r\nRoot cause: A recent update introduced operations with larger data size included a code error, causing size limitation issues.\r\n\r\nNext update by: Monday, October 5, 2026, at 6:00 PM UTC"
+              "content": "Title: Some admins may receive failures creating or updating Communications Compliance policies in Microsoft Purview\r\n\r\nUser impact: Admins may receive failures creating or updating Communications Compliance policies in Microsoft Purview.\r\n\r\nMore info: Impact is limited to Communications Compliance policies with more than four classifiers.\n\nWe advise admins to keep classifiers to a maximum of four during this time and we anticipate the limit to be remediated by Monday, October 5, 2026.\r\n\r\nCurrent status: We've completed internal validations for our solution and have begun its deployment. Our fix deployment timeline projects the deployment will remediate the impact by Monday, October 5, 2026. Until this time, we advise users to keep Communications Compliance policies limited to under four classifiers in order to avoid impact.\r\n\r\nScope of impact: Some admins may receive failures creating or updating Communications Compliance policies in Microsoft Purview with more than four classifiers. This section may be updated as the investigation progresses.\r\n\r\nEstimated time to resolve: We anticipate impact to be remediated by Monday, October 5, 2026.\r\n\r\nRoot cause: A recent update introduced operations with larger data size included a code error, causing size limitation issues.\r\n\r\nNext update by: Tuesday, September 29, 2026, at 6:00 PM UTC"
             },
             {
               "createdAt": "2026-09-14T16:47:32.587Z",
@@ -836,6 +841,42 @@
     }
   ],
   "history": [
+    {
+      "id": "TM1477123",
+      "title": "Some users of HP DirectConnect mode on Poly Microsoft Teams Rooms on Android (MTRA) devices may experience call drops",
+      "startTime": "2026-09-18T00:00:00Z",
+      "endTime": "2026-09-22T22:00:00Z",
+      "lastModified": "2026-09-22T22:16:21.033Z",
+      "status": "serviceRestored",
+      "severity": "incident",
+      "userImpact": "Users of HP DirectConnect mode on Poly MTRA devices may have experienced call drops after 30 seconds.",
+      "scopeOfImpact": "This issue impacted some users of HP DirectConnect mode on Poly MTRA devices, who may have experienced call drops after 30 seconds.\r\n\r\nStart time: Friday, September 18, 2026, at 12:00 AM UTC\r\n\r\nEnd time: Tuesday, September 22, 2026, at 10:00 PM UTC",
+      "rootCause": "A recent Teams version update (1449/1.0.96.2026249711) introduced a Microsoft Teams version mismatch between the device console and MTRA device, resulting in calls being dropped as the paired devices need to be running the same Microsoft Teams version.\r\n\r\nNext steps: \n- We're analyzing the problematic Microsoft Teams version update to isolate why the potential for impact wasn't caught during our internal testing and validation phases. This analysis will help us to improve our update implementation process moving forward to ensure similar impact scenarios don't occur in the future.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Calling",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-09-22T22:16:08.79Z",
+          "postType": "regular",
+          "content": "Title: Some users of HP DirectConnect mode on Poly Microsoft Teams Rooms on Android (MTRA) devices may experience call drops\r\n\r\nUser impact: Users of HP DirectConnect mode on Poly MTRA devices may have experienced call drops after 30 seconds.\r\n\r\nMore info: Users received an error message stating, \"Different Versions on the Touch Panel detected, ending call shortly,\" before the call was dropped after approximately 30 seconds.\r\n\r\nFinal status: We've completed deployment of our remove configuration update to address the Microsoft Teams mismatch, and we've validated from internal testing that our update successfully remediated impact. We advise users to restart affected Poly MTRA devices to ensure they receive our update.\r\n\r\nScope of impact: This issue impacted some users of HP DirectConnect mode on Poly MTRA devices, who may have experienced call drops after 30 seconds.\r\n\r\nStart time: Friday, September 18, 2026, at 12:00 AM UTC\r\n\r\nEnd time: Tuesday, September 22, 2026, at 10:00 PM UTC\r\n\r\nRoot cause: A recent Teams version update (1449/1.0.96.2026249711) introduced a Microsoft Teams version mismatch between the device console and MTRA device, resulting in calls being dropped as the paired devices need to be running the same Microsoft Teams version.\r\n\r\nNext steps: \n- We're analyzing the problematic Microsoft Teams version update to isolate why the potential for impact wasn't caught during our internal testing and validation phases. This analysis will help us to improve our update implementation process moving forward to ensure similar impact scenarios don't occur in the future.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-09-22T21:38:53.547Z",
+          "postType": "regular",
+          "content": "Title: Some users of HP DirectConnect mode on Poly Microsoft Teams Rooms on Android (MTRA) devices may experience call drops\r\n\r\nUser impact: Users of HP DirectConnect mode on Poly MTRA devices may experience call drops after 30 seconds.\r\n\r\nMore info: Users receive an error message stating, \"Different Versions on the Touch Panel detected, ending call shortly,\" before the call is dropped after approximately 30 seconds.\r\n\r\nCurrent status: We've received reports from a subset of affected users who state that when using HP DirectConnect mode on Poly Microsoft Teams Rooms on Android (MTRA) devices, their calls drop after approximately 30 seconds. We've isolated that a recent Teams version update (1449/1.0.96.2026249711) introduced a Microsoft Teams version mismatch between the device console and MTRA device, resulting in calls being dropped as the paired devices need to be running the same Microsoft Teams version. We've developed a remote configuration update to address the Microsoft Teams mismatch, and we anticipate the configuration change to be released by our next scheduled update.\r\n\r\nScope of impact: This incident impacts some users of HP DirectConnect mode on Poly MTRA devices, who may experience call drops after 30 seconds and receive an error message stating, \"Different Versions on the Touch Panel detected, ending call shortly.\" This section may be updated as the investigation progresses.\r\n\r\nStart time: Friday, September 18, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: A recent Teams version update (1449/1.0.96.2026249711) introduced a Microsoft Teams version mismatch between the device console and MTRA device, resulting in calls being dropped as the paired devices need to be running the same Microsoft Teams version.\r\n\r\nNext update by: Tuesday, September 22, 2026, at 11:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-09-22T20:58:22.213Z",
+          "postType": "regular",
+          "content": "Title: We're looking into a potential problem impacting Microsoft Teams\r\n\r\nUser impact: We're looking into a potential problem impacting Microsoft Teams\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Teams and checking for impact to your organization. We'll provide an update within 30 minutes."
+        }
+      ],
+      "serviceName": "Microsoft Teams",
+      "affectedServices": [
+        "Microsoft Teams"
+      ]
+    },
     {
       "id": "OP1470668",
       "title": "Users may be unable to copy, paste, drag, or duplicate cells and worksheets in Microsoft Excel",
@@ -2908,47 +2949,6 @@
       "serviceName": "Exchange Online",
       "affectedServices": [
         "Exchange Online"
-      ]
-    },
-    {
-      "id": "MV1461005",
-      "title": "Some users may be unable to access Microsoft Viva Glint services",
-      "startTime": "2026-08-24T18:16:48.303Z",
-      "endTime": "2026-08-24T20:34:47.427Z",
-      "lastModified": "2026-08-24T20:41:43.133Z",
-      "status": "serviceRestored",
-      "severity": "incident",
-      "userImpact": "Users may have been unable to access Viva Glint services.",
-      "scopeOfImpact": "Some users who attempted to access Microsoft Viva Glint services may have been impacted.\r\n\r\nStart time: Monday, August 24, 2026, at 5:20 PM UTC\r\n\r\nEnd time: Monday, August 24, 2026, at 7:47 PM UTC",
-      "rootCause": "A recent build release contained a regression which caused the impact.\r\n\r\nNext steps: \n- We're reviewing our build update standards to ensure similar regressions are identified and corrected ahead of deployment to ensure this doesn't reoccur.\r\n\r\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "General",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-08-24T20:41:32.603Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to access Microsoft Viva Glint services\r\n\r\nUser impact: Users may have been unable to access Viva Glint services.\r\n\r\nMore info: Affected users were able to sign in as expected but may have seen a blank page and weren't able to access any Viva Glint services.\r\n\r\nFinal status: We've completed rolling back the offending build and after monitoring service health metrics, confirmed the impact is remediated.\r\n\r\nScope of impact: Some users who attempted to access Microsoft Viva Glint services may have been impacted.\r\n\r\nStart time: Monday, August 24, 2026, at 5:20 PM UTC\r\n\r\nEnd time: Monday, August 24, 2026, at 7:47 PM UTC\r\n\r\nRoot cause: A recent build release contained a regression which caused the impact.\r\n\r\nNext steps: \n- We're reviewing our build update standards to ensure similar regressions are identified and corrected ahead of deployment to ensure this doesn't reoccur.\r\n\r\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-08-24T19:34:54.267Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to access Microsoft Viva Glint services\r\n\r\nUser impact: Users may be unable to access Viva Glint services.\r\n\r\nMore info: Affected users are able to sign in as expected but may see a blank page and won't be able to access any Viva Glint services.\r\n\r\nCurrent status: We're monitoring as the release containing the regression is rolled back to ensure the issue is remediated and no further actions are necessary to fully resolve the impact.\r\n\r\nScope of impact: Some users attempting to access Microsoft Viva Glint services may be impacted. This section may be updated as our investigation continues.\r\n\r\nStart time: Monday, August 24, 2026, at 5:20 PM UTC\r\n\r\nRoot cause: A recent build release contains a regression which is causing the impact.\r\n\r\nNext update by: Monday, August 24, 2026, at 10:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-08-24T18:44:35.227Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to access Microsoft Viva Glint services\r\n\r\nUser impact: Users may be unable to access Viva Glint services.\r\n\r\nMore info: Affected users are able to sign in as expected but may see a blank page and won't be able to access any Viva Glint services.\r\n\r\nCurrent status: Our investigation determined that a recent build release contains a regression which is causing the impact. We're rolling this release back to remediate the issue.\r\n\r\nScope of impact: Some users attempting to access Microsoft Viva Glint services may be impacted. This section may be updated as our investigation continues.\r\n\r\nStart time: Monday, August 24, 2026, at 5:20 PM UTC\r\n\r\nRoot cause: A recent build release contains a regression which is causing the impact.\r\n\r\nNext update by: Monday, August 24, 2026, at 8:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-08-24T18:24:18.977Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to access Microsoft Viva Glint services\r\n\r\nUser impact: Users may be unable to access Viva Glint services.\r\n\r\nMore info: Affected users are able to log in as expected but may see a blank page and won't be able to access any Viva Glint services.\r\n\r\nCurrent status: We're investigating a potential issue with Viva Glint and checking for impact to your organization. We'll provide an update within 30 minutes."
-        }
-      ],
-      "serviceName": "Microsoft Viva",
-      "affectedServices": [
-        "Microsoft Viva"
       ]
     }
   ]
