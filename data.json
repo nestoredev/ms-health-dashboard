@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-23T18:43:51.343Z",
+  "lastUpdated": "2026-09-23T19:14:04.095Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -934,16 +934,21 @@
       "title": "Some users may be unable to access or use Microsoft Teams",
       "startTime": "2026-09-21T13:00:00Z",
       "endTime": "2026-09-21T13:49:00Z",
-      "lastModified": "2026-09-21T15:33:38.057Z",
-      "status": "serviceRestored",
+      "lastModified": "2026-09-23T19:06:28.49Z",
+      "status": "postIncidentReviewPublished",
       "severity": "incident",
       "userImpact": "Users may have been unable to access or use Microsoft Teams.",
-      "scopeOfImpact": "Impact was specific to some users whose connection requests were routed through Germany, the United Kingdom and the United States who were unable to access or use Microsoft Teams.\n\nPreliminary",
-      "rootCause": "We identified an issue affecting a subset of connection-processing workflows within Microsoft Teams infrastructure. The affected workflows recovered and impact reports subsequently declined. We're continuing to investigate what initially led to impact and will provide more information in our Post-Incident Report.",
+      "scopeOfImpact": "",
+      "rootCause": "",
       "nextUpdateBy": "",
       "feature": "General",
       "isResolved": true,
       "posts": [
+        {
+          "createdAt": "2026-09-23T19:06:28.49Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        },
         {
           "createdAt": "2026-09-21T15:32:45.147Z",
           "postType": "regular",
@@ -961,11 +966,6 @@
         },
         {
           "createdAt": "2026-09-21T13:44:44.877Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to access or use Microsoft Teams\r\n\r\nUser impact: Users may be unable to access or use Microsoft Teams.\r\n\r\nCurrent status: We're reviewing service monitoring telemetry and system logs to isolate the root cause, in order to develop a remediation plan.\r\n\r\nScope of impact: Impact is specific to some users in Germany, United Kingdom and the United States who are unable to access or use Microsoft Teams.\r\n\r\nNext update by: Monday, September 21, 2026, at 3:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-09-21T13:22:34.883Z",
           "postType": "regular",
           "content": "Title: Some users may be unable to access or use Microsoft Teams\r\n\r\nUser impact: Users may be unable to access or use Microsoft Teams.\r\n\r\nCurrent status: We're reviewing service monitoring telemetry and system logs to isolate the root cause, in order to develop a remediation plan.\r\n\r\nScope of impact: Impact is specific to some users in Germany, United Kingdom and the United States who are unable to access or use Microsoft Teams.\r\n\r\nNext update by: Monday, September 21, 2026, at 3:30 PM UTC"
         }
