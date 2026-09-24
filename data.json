@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-24T14:22:05.327Z",
+  "lastUpdated": "2026-09-24T14:52:18.473Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -8,19 +8,24 @@
       "issues": [
         {
           "id": "EX1478163",
-          "title": "Users may be unable to update delegates in their calendar within the classic Outlook desktop client",
+          "title": "Users may be unable to update calendar delegates in the classic Outlook desktop client ",
           "startTime": "2026-09-24T05:45:38.383Z",
           "endTime": null,
-          "lastModified": "2026-09-24T14:09:59.507Z",
+          "lastModified": "2026-09-24T14:39:41.113Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "userImpact": "Users may be unable to update delegates in their calendar within the classic Outlook desktop client.",
-          "scopeOfImpact": "Your organization is affected by this event, and users who are attempting to update delegates in their calendar within the classic Outlook desktop client are impacted. This section may be updated as our investigation continues.",
+          "userImpact": "Users may be unable to update calendar delegates in the classic Outlook desktop client.",
+          "scopeOfImpact": "Impact is specific to users that are unable to update calendar delegates in the classic Outlook desktop client.",
           "rootCause": "",
-          "nextUpdateBy": "Thursday, September 24, 2026, at 3:30 PM UTC",
+          "nextUpdateBy": "Thursday, September 24, 2026, at 4:30 PM UTC",
           "feature": "Tenant Administration (Provisioning, Remote PowerShell)",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-24T14:28:15.067Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to update calendar delegates in the classic Outlook desktop client \r\n\r\nUser impact: Users may be unable to update calendar delegates in the classic Outlook desktop client.\r\n\r\nMore info: As a workaround, affected users can manage delegate changes through Outlook on the web.\r\n\r\nCurrent status: We've identified that a recently enabled change may be causing authentication failures affecting delegate permission modification requests. We're reverting the change and are validating service telemetry to confirm recovery for affected users.\r\n\r\nScope of impact: Impact is specific to users that are unable to update calendar delegates in the classic Outlook desktop client.\r\n\r\nNext update by: Thursday, September 24, 2026, at 4:30 PM UTC"
+            },
             {
               "createdAt": "2026-09-24T13:41:29.897Z",
               "postType": "regular",
