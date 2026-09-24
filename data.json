@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-24T09:50:12.886Z",
+  "lastUpdated": "2026-09-24T10:20:24.656Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -2868,52 +2868,6 @@
       "serviceName": "SharePoint Online",
       "affectedServices": [
         "SharePoint Online"
-      ]
-    },
-    {
-      "id": "CW1461372",
-      "title": "Some users may be unable to receive responses when using Microsoft 365 Copilot Chat",
-      "startTime": "2026-08-24T22:50:00Z",
-      "endTime": "2026-08-25T10:20:00Z",
-      "lastModified": "2026-09-03T13:57:04.48Z",
-      "status": "postIncidentReviewPublished",
-      "severity": "incident",
-      "userImpact": "Users may be unable to receive responses when using Copilot Chat.",
-      "scopeOfImpact": "",
-      "rootCause": "",
-      "nextUpdateBy": "",
-      "feature": "General",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-09-03T13:57:04.48Z",
-          "postType": "regular",
-          "content": "A post-incident report has been published."
-        },
-        {
-          "createdAt": "2026-09-02T00:09:20.967Z",
-          "postType": "regular",
-          "content": "A post-incident report has been published."
-        },
-        {
-          "createdAt": "2026-08-27T20:52:05.113Z",
-          "postType": "regular",
-          "content": "A post-incident report has been published."
-        },
-        {
-          "createdAt": "2026-08-25T12:02:17.47Z",
-          "postType": "regular",
-          "content": "Title: Some users may have been unable to receive responses when using Microsoft 365 Copilot Chat\n\nUser impact: Users may have been unable to receive responses when using Copilot Chat.\n\nMore info: Affected users may have received error messages stating that a problem had occurred or that Copilot could not respond.\n \nFinal status: We've completed reverting the change that inadvertently led to impact. Upon completing a period of monitoring, we've determined service availability has returned to normal, and the issue is resolved.\n \nScope of impact: This issue may have impacted any user attempting to use Copilot Chat.\n \nStart time: Monday, August 24, 2026, at 10:50 PM UTC\n \nEnd time: Tuesday, August 25, 2026, at 10:20 AM UTC\n \nPreliminary root cause: A recent change designed to support metered access for certain scenarios did not deliver the expected outcome, inadvertently resulting in impact.\n \nNext steps:\n- We are reviewing our internal change management processes and controls to identify opportunities for improvement, and strengthen our safeguards around future changes.\n \nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days."
-        },
-        {
-          "createdAt": "2026-08-25T10:47:58.447Z",
-          "postType": "quick",
-          "content": "The roll back of the suspected change is continuing as expected. Early indications continue to show an improvement in service availability and we've received some reports from previously affected customers that the issue is resolved. We're continuing to monitor this rollback process closely to ensure a complete resolution is achieved.\n\nNext update by: Tuesday, August 25, 2026, at 12:30 PM UTC\n\nThis quick update is designed to give the latest information on this issue."
-        }
-      ],
-      "serviceName": "Microsoft 365 Copilot Chat",
-      "affectedServices": [
-        "Microsoft 365 Copilot Chat"
       ]
     }
   ]
