@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-24T19:54:27.894Z",
+  "lastUpdated": "2026-09-24T20:24:42.143Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -592,6 +592,31 @@
           ]
         },
         {
+          "id": "TM1478719",
+          "title": "Users may not be able to create, schedule, or update Microsoft Teams meetings",
+          "startTime": "2026-09-24T19:57:37.357Z",
+          "endTime": null,
+          "lastModified": "2026-09-24T19:58:53.303Z",
+          "status": "investigating",
+          "severity": "advisory",
+          "userImpact": "Users may not be able to create, schedule, or update Microsoft Teams meetings.",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
+          "feature": "Meetings",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-09-24T19:58:53.303Z",
+              "postType": "regular",
+              "content": "Title: Users may not be able to create, schedule, or update Microsoft Teams meetings\r\n\r\nUser impact: Users may not be able to create, schedule, or update Microsoft Teams meetings.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Teams and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Teams"
+          ]
+        },
+        {
           "id": "MO1457843",
           "title": "Admins can't identify who deleted a Viva Engage community or its Microsoft 365 Group in Microsoft Entra ID audit logs",
           "startTime": "2026-08-19T22:38:36.783Z",
@@ -702,31 +727,6 @@
       "status": "serviceDegradation",
       "id": "Viva",
       "issues": [
-        {
-          "id": "MV1478587",
-          "title": "Users may be unable to publish posts in Microsoft Viva Engage",
-          "startTime": "2026-09-24T19:28:47.477Z",
-          "endTime": null,
-          "lastModified": "2026-09-24T19:37:48.423Z",
-          "status": "investigating",
-          "severity": "advisory",
-          "userImpact": "Users may have been unable to publish posts in Viva Engage.",
-          "scopeOfImpact": "",
-          "rootCause": "",
-          "nextUpdateBy": "",
-          "feature": "Post/Reply/Like",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-09-24T19:33:05.437Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to publish posts in Microsoft Viva Engage\r\n\r\nUser impact: Users may have been unable to publish posts in Viva Engage.\r\n\r\nCurrent status: We've investigated a problem with the Viva Engage service in which users couldn't publish posts, and we’ve confirmed that service is now restored. We'll provide additional information in a closure summary within the “History” section of the “Service health” dashboard shortly."
-            }
-          ],
-          "affectedServices": [
-            "Microsoft Viva"
-          ]
-        },
         {
           "id": "MO1457843",
           "title": "Admins can't identify who deleted a Viva Engage community or its Microsoft 365 Group in Microsoft Entra ID audit logs",
@@ -931,6 +931,37 @@
     }
   ],
   "history": [
+    {
+      "id": "MV1478587",
+      "title": "Users may be unable to publish posts in Microsoft Viva Engage",
+      "startTime": "2026-09-24T18:49:00Z",
+      "endTime": "2026-09-24T19:23:00Z",
+      "lastModified": "2026-09-24T20:04:02.067Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have been unable to publish posts in Viva Engage.",
+      "scopeOfImpact": "This issue may have affected any user in North America attempting to publish posts in Viva Engage. \r\n\r\nStart time: Thursday, September 24, 2026, at 6:49 PM UTC\r\n\r\nEnd time: Thursday, September 24, 2026, at 7:23 PM UTC",
+      "rootCause": "A maintenance task which was running on a portion of relevant hardware prevented a server migration from taking place until it was completed, which further prevented the publishing of posts. Once the task finished, migration was able to take place, remediating impact.\r\n\r\nNext steps: \n- We're reviewing the circumstances behind the maintenance task to better understand the reason for the slow-down during server migration and prevent similar issues in the future.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Post/Reply/Like",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-09-24T19:56:44.277Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to publish posts in Microsoft Viva Engage\r\n\r\nUser impact: Users may have been unable to publish posts in Viva Engage.\r\n\r\nFinal status: After investigation, it was determined that an unrelated maintenance task was briefly running on a portion of hardware which was undergoing migration to a separate system, which was preventing posts from being published. The maintenance task completed shortly after start of impact, which released the lock on traffic and remediated impact without manual action.\r\n\r\nScope of impact: This issue may have affected any user in North America attempting to publish posts in Viva Engage. \r\n\r\nStart time: Thursday, September 24, 2026, at 6:49 PM UTC\r\n\r\nEnd time: Thursday, September 24, 2026, at 7:23 PM UTC\r\n\r\nRoot cause: A maintenance task which was running on a portion of relevant hardware prevented a server migration from taking place until it was completed, which further prevented the publishing of posts. Once the task finished, migration was able to take place, remediating impact.\r\n\r\nNext steps: \n- We're reviewing the circumstances behind the maintenance task to better understand the reason for the slow-down during server migration and prevent similar issues in the future.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-09-24T19:33:05.437Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to publish posts in Microsoft Viva Engage\r\n\r\nUser impact: Users may have been unable to publish posts in Viva Engage.\r\n\r\nCurrent status: We've investigated a problem with the Viva Engage service in which users couldn't publish posts, and we’ve confirmed that service is now restored. We'll provide additional information in a closure summary within the “History” section of the “Service health” dashboard shortly."
+        }
+      ],
+      "serviceName": "Microsoft Viva",
+      "affectedServices": [
+        "Microsoft Viva"
+      ]
+    },
     {
       "id": "EX1476802",
       "title": "Some users may be unable to open the account view in Outlook on the web",
