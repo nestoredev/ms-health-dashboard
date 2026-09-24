@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-24T15:52:43.826Z",
+  "lastUpdated": "2026-09-24T16:22:58.135Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -851,6 +851,31 @@
               "createdAt": "2026-09-11T17:51:24.8Z",
               "postType": "regular",
               "content": "Title: We're looking into a potential problem impacting Microsoft 365 Copilot Chat\r\n\r\nUser impact: We're checking for potential impact to your users.\r\n\r\nCurrent status: We're investigating a potential issue impacting Microsoft 365 Copilot Chat and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 Copilot Chat"
+          ]
+        },
+        {
+          "id": "CW1478470",
+          "title": "Some users may be unable to access or receive prompt responses with Microsoft 365 Copilot Chat or Copilot Notebooks",
+          "startTime": "2026-09-24T15:34:51.523Z",
+          "endTime": null,
+          "lastModified": "2026-09-24T16:00:33.283Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to access or receive prompt responses with Copilot Chat or Copilot Notebooks.",
+          "scopeOfImpact": "This incident impacts some users attempting to generate images or prompts using Copilot Chat or accessing Copilot notebooks. This section may be updated as the investigation progresses.",
+          "rootCause": "A licensing mismatch is causing Copilot to view affected users as unlicensed, preventing them from completing requests or accessing Notebooks.",
+          "nextUpdateBy": "Thursday, September 24, 2026, at 9:00 PM UTC",
+          "feature": "General",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-09-24T16:00:33.283Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to access or receive prompt responses with Microsoft 365 Copilot Chat or Copilot Notebooks\r\n\r\nUser impact: Users may be unable to access or receive prompt responses with Copilot Chat or Copilot Notebooks.\r\n\r\nMore info: Users may experience failing requests for the following scenarios:\n- Image generation requests in Copilot Chat\n- Prompt generation requests in Copilot Chat\n- Failures when attempting to access or view Copilot Notebooks\r\n\r\nCurrent status: We've received reports from a subset of affected users who have reported impact to prompt and image generation in Copilot Chat, as well as failures when accessing Copilot Notebooks. We've isolated that impact is caused by a licensing mismatch which is causing Copilot Chat to view affected users as unlicensed, preventing them from completing requests or accessing Notebooks. We're developing a fix to remediate the discrepancy, and we aim to provide more details on our fix and a timeline to release in our next scheduled update.\r\n\r\nScope of impact: This incident impacts some users attempting to generate images or prompts using Copilot Chat or accessing Copilot notebooks. This section may be updated as the investigation progresses.\r\n\r\nRoot cause: A licensing mismatch is causing Copilot to view affected users as unlicensed, preventing them from completing requests or accessing Notebooks. \r\n\r\nNext update by: Thursday, September 24, 2026, at 9:00 PM UTC"
             }
           ],
           "affectedServices": [
