@@ -1,11 +1,61 @@
 {
-  "lastUpdated": "2026-09-24T13:51:52.426Z",
+  "lastUpdated": "2026-09-24T14:22:05.327Z",
   "services": [
     {
       "service": "Exchange Online",
       "status": "serviceDegradation",
       "id": "Exchange",
       "issues": [
+        {
+          "id": "EX1478163",
+          "title": "Users may be unable to update delegates in their calendar within the classic Outlook desktop client",
+          "startTime": "2026-09-24T05:45:38.383Z",
+          "endTime": null,
+          "lastModified": "2026-09-24T14:09:59.507Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to update delegates in their calendar within the classic Outlook desktop client.",
+          "scopeOfImpact": "Your organization is affected by this event, and users who are attempting to update delegates in their calendar within the classic Outlook desktop client are impacted. This section may be updated as our investigation continues.",
+          "rootCause": "",
+          "nextUpdateBy": "Thursday, September 24, 2026, at 3:30 PM UTC",
+          "feature": "Tenant Administration (Provisioning, Remote PowerShell)",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-09-24T13:41:29.897Z",
+              "postType": "regular",
+              "content": "Title: Users can't update delegates in their calendar within the classic Outlook desktop client\r\n\r\nUser impact: Users can't update delegates in their calendar within the classic Outlook desktop client.\r\n\r\nCurrent status: We've identified that a recently enabled change may be causing authentication failures affecting delegate permission modification requests. We're reverting the change and are validating service telemetry to confirm recovery for affected users.\r\n\r\nScope of impact: Your organization is affected by this event, and users who are attempting to update delegates in their calendar within the classic Outlook desktop client are impacted. This section may be updated as our investigation continues.\r\n\r\nNext update by: Thursday, September 24, 2026, at 3:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-09-24T12:10:10.507Z",
+              "postType": "regular",
+              "content": "Title: Users can't update delegates in their calendar within the classic Outlook desktop client\r\n\r\nUser impact: Users can't update delegates in their calendar within the classic Outlook desktop client.\r\n\r\nCurrent status: We've identified authentication failures affecting delegate permission modification requests. Analysis shows that affected requests are being rejected with unauthorized responses, resulting in access denied errors. We're investigating why authentication tokens are being rejected and working to identify an appropriate mitigation path.\r\n\r\nScope of impact: Your organization is affected by this event, and users who are attempting to update delegates in their calendar within the classic Outlook desktop client are impacted. This section may be updated as our investigation continues.\r\n\r\nNext update by: Thursday, September 24, 2026, at 3:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-09-24T08:44:21.467Z",
+              "postType": "regular",
+              "content": "Title: Users can't update delegates in their calendar within the classic Outlook desktop client\r\n\r\nUser impact: Users can't update delegates in their calendar within the classic Outlook desktop client.\r\n\r\nCurrent status: We're reaching out to your organization to request additional network traces and Outlook client logs to support our next troubleshooting steps.\r\n\r\nScope of impact: Your organization is affected by this event, and users who are attempting to update delegates in their calendar within the classic Outlook desktop client are impacted. This section may be updated as our investigation continues.\r\n\r\nNext update by: Thursday, September 24, 2026, at 1:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-09-24T06:15:36.88Z",
+              "postType": "regular",
+              "content": "Title: Users can't update delegates in their calendar within the classic Outlook desktop client\r\n\r\nUser impact: Users can't update delegates in their calendar within the classic Outlook desktop client.\r\n\r\nCurrent status: We're reviewing support provided logs and available service side data to refine our understanding of the underlying cause of impact so we can determine our next troubleshooting steps.\r\n\r\nScope of impact: Your organization is impacted by this event, and users who are attempting to update delegates in their calendar within the classic Outlook desktop client are impacted. This section may be updated as our investigation continues.\r\n\r\nNext update by: Thursday, September 24, 2026, at 9:30 AM UTC"
+            },
+            {
+              "createdAt": "2026-09-24T06:15:35.383Z",
+              "postType": "regular",
+              "content": "Title: Users can't update delegates in their calendar within the classic Outlook desktop client\r\n\r\nUser impact: Users can't update delegates in their calendar within the classic Outlook desktop client.\r\n\r\nCurrent status: We're reviewing support provided logs and available service side data to refine our understanding of the underlying cause of impact so we can determine our next troubleshooting steps.\r\n\r\nScope of impact: Your organization is impacted by this event, and users who are attempting to update delegates in their calendar within the classic Outlook desktop client are impacted. This section may be updated as our investigation continues.\r\n\r\nNext update by: Thursday, September 24, 2026, at 9:30 AM UTC"
+            },
+            {
+              "createdAt": "2026-09-24T05:47:06.673Z",
+              "postType": "regular",
+              "content": "Title: Users can't update delegates in their calendar within the classic Outlook desktop client\r\n\r\nUser impact: Users can't update delegates in their calendar within the classic Outlook desktop client.\r\n\r\nCurrent status: We're investigating a potential issue with users being unable to update delegates in their calendar within the classic Outlook desktop client, and we're checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online"
+          ]
+        },
         {
           "id": "EX1441488",
           "title": "Some users may see unwanted add-ins appearing automatically across all Outlook clients",
