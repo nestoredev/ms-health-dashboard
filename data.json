@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-24T00:16:22.661Z",
+  "lastUpdated": "2026-09-24T00:46:33.470Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1333,20 +1333,25 @@
       "title": "Users may be unable to load SharePoint Online sites or pages and receive an error message",
       "startTime": "2026-09-16T15:04:21Z",
       "endTime": "2026-09-16T16:30:13Z",
-      "lastModified": "2026-09-16T16:30:34.353Z",
-      "status": "serviceRestored",
+      "lastModified": "2026-09-24T00:30:19.25Z",
+      "status": "postIncidentReviewPublished",
       "severity": "incident",
       "userImpact": "Users may have been unable to load SharePoint Online sites or pages and receive an error message.",
-      "scopeOfImpact": "This issue may have affected any user attempting to load SharePoint Online sites and pages.\n \nStart time: Tuesday, August 25, 2026, at 3:45 PM UTC\n \nEnd time: Wednesday, September 16, 2026, at 3:17 PM UTC\n \nPreliminary",
-      "rootCause": "A recent configuration change concerning how the server delivers code to site pages to render as content resulted in impact.\n \nNext steps: \n-We're further assessing the process by which we validate and deploy configuration changes to ensure future rollouts don't result in similar impact. \n \nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days.",
+      "scopeOfImpact": "",
+      "rootCause": "",
       "nextUpdateBy": "",
       "feature": "MySites",
       "isResolved": true,
       "posts": [
         {
+          "createdAt": "2026-09-24T00:27:08.99Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        },
+        {
           "createdAt": "2026-09-16T16:30:34.353Z",
           "postType": "regular",
-          "content": "Title: Users may be unable to load SharePoint Online sites or pages and receive an error message\n\nUser impact: Users may have been unable to load SharePoint Online sites or pages and receive an error message.\n\nMore info: The error message stated: \"Sorry, something went wrong: Thread was being aborted.\"\n \nFinal status: We reverted the change and confirmed through our service telemetry that impact is resolved. \n \nScope of impact: This issue may have affected any user attempting to load SharePoint Online sites and pages.\n \nStart time: Tuesday, August 25, 2026, at 3:45 PM UTC\n \nEnd time: Wednesday, September 16, 2026, at 3:17 PM UTC\n \nPreliminary root cause: A recent configuration change concerning how the server delivers code to site pages to render as content resulted in impact.\n \nNext steps: \n-We're further assessing the process by which we validate and deploy configuration changes to ensure future rollouts don't result in similar impact. \n \nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days."
+          "content": "Title: Users may be unable to load SharePoint Online sites or pages and receive an error message\n\nUser impact: Users may have been unable to load SharePoint Online sites or pages and receive an error message.\n\nMore info: The error message stated: \"Sorry, something went wrong: Thread was being aborted.\"\n \nFinal status: We reverted the change and confirmed through our service telemetry that impact is resolved. \n \nScope of impact: This issue may have affected any user attempting to load SharePoint Online sites and pages.\n \nStart time: Tuesday, August 25, 2026, at 3:45 PM UTC\n \nEnd time: Wednesday, September 16, 2026, at 3:17 PM UTC\n \nRoot cause: A change intended to improve how links within SharePoint Online pages are processed inadvertently introduced additional service requests when certain pages were loaded. For affected pages, the additional processing could interrupt page rendering and cause users to be redirected to an error page instead of seeing the requested content.\n \nNext steps: \n-Please see the post-incident report for more information about this event."
         },
         {
           "createdAt": "2026-09-16T16:15:40.537Z",
