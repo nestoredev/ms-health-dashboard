@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-25T20:34:45.806Z",
+  "lastUpdated": "2026-09-25T21:04:57.621Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -11,20 +11,20 @@
           "title": "Users may be unable to update calendar delegates in the classic Outlook desktop client ",
           "startTime": "2026-09-24T05:45:38.383Z",
           "endTime": null,
-          "lastModified": "2026-09-25T20:13:52.203Z",
+          "lastModified": "2026-09-25T20:47:40.627Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to update calendar delegates in the classic Outlook desktop client.",
           "scopeOfImpact": "Impact is specific to users that are unable to update calendar delegates in the classic Outlook desktop client.\r\n\r\nStart time: Wednesday, September 23, 2026, at 7:13 AM UTC",
           "rootCause": "A recent update to the service contained a regression, resulting in this impact.",
-          "nextUpdateBy": "Saturday, September 26, 2026, at 12:00 AM UTC",
+          "nextUpdateBy": "Saturday, September 26, 2026, at 1:30 AM UTC",
           "feature": "Tenant Administration (Provisioning, Remote PowerShell)",
           "isResolved": false,
           "posts": [
             {
               "createdAt": "2026-09-25T20:12:30.887Z",
               "postType": "regular",
-              "content": "Title: Users may be unable to update calendar delegates in the classic Outlook desktop client \r\n\r\nUser impact: Users may be unable to update calendar delegates in the classic Outlook desktop client.\r\n\r\nMore info: As a workaround, affected users can manage delegate changes through Outlook on the web.\r\n\r\nCurrent status: We've confirmed that reverting the responsible change is not a valid remediation pathway for this event and have instead developed a code fix to address the regression. We'll provide an update remediation timeline once we start deploying this fix.\r\n\r\nScope of impact: Impact is specific to users that are unable to update calendar delegates in the classic Outlook desktop client.\r\n\r\nStart time: Wednesday, September 23, 2026, at 7:13 AM UTC\r\n\r\nRoot cause: A recent update to the service contained a regression, resulting in this impact.\r\n\r\nNext update by: Saturday, September 26, 2026, at 12:00 AM UTC"
+              "content": "Title: Users may be unable to update calendar delegates in the classic Outlook desktop client\r\n\r\nUser impact: Users may be unable to update calendar delegates in the classic Outlook desktop client.\r\n\r\nMore info: As a workaround, affected users can manage delegate changes through Outlook on the web.\r\n\r\nCurrent status: We've confirmed that reverting the responsible change is not a valid remediation pathway for this event and have instead developed a code fix to address the regression. We'll provide an update remediation timeline once we start deploying this fix.\r\n\r\nScope of impact: Impact is specific to users that are unable to update calendar delegates in the classic Outlook desktop client.\r\n\r\nStart time: Wednesday, September 23, 2026, at 7:13 AM UTC\r\n\r\nRoot cause: A recent update to the service contained a regression, resulting in this impact.\r\n\r\nNext update by: Saturday, September 26, 2026, at 1:30 AM UTC"
             },
             {
               "createdAt": "2026-09-24T16:27:39.523Z",
@@ -230,6 +230,41 @@
               "createdAt": "2026-07-28T15:15:49.05Z",
               "postType": "regular",
               "content": "Title: Some users may see unwanted add-ins appearing automatically across all Outlook clients\n\nUser impact: Users may see unwanted add-ins appearing automatically across all Outlook clients.\n\nMore info: These add-ins are configured to be available to users by admins but aren’t expected to be automatically installed.\n\nCurrent status: We're investigating a potential issue with Exchange Online and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online"
+          ]
+        },
+        {
+          "id": "EX1479349",
+          "title": "Users may be unable to reply or reply-all to email messages sent to Microsoft 365 groups in Exchange Online",
+          "startTime": "2026-09-25T15:52:36.097Z",
+          "endTime": null,
+          "lastModified": "2026-09-25T20:57:43.017Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to reply or reply-all to email messages sent to Microsoft 365 groups in Exchange Online.",
+          "scopeOfImpact": "This issue impacts any user attempting to reply or reply-all to email messages sent to Microsoft 365 groups in Exchange Online.",
+          "rootCause": "",
+          "nextUpdateBy": "Friday, September 25, 2026, at 11:00 PM UTC",
+          "feature": "All clients",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-09-25T20:57:43.017Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to reply or reply-all to email messages sent to Microsoft 365 groups in Exchange Online\r\n\r\nUser impact: Users may be unable to reply or reply-all to email messages sent to Microsoft 365 groups in Exchange Online.\r\n\r\nMore info: As a temporary alternative, impacted users may reply or reply all to email messages through user inboxes.\r\n\r\nCurrent status: We've identified a recent code change which we believe may be responsible for this issue and are developing a targeted fix to verify.\r\n\r\nScope of impact: This issue impacts any user attempting to reply or reply-all to email messages sent to Microsoft 365 groups in Exchange Online.\r\n\r\nNext update by: Friday, September 25, 2026, at 11:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-09-25T16:22:57.24Z",
+              "postType": "regular",
+              "content": "Title: Users can't reply or reply-all to email messages sent to Microsoft 365 groups in Exchange Online\r\n\r\nUser impact: Users can't reply or reply-all to email messages sent to Microsoft 365 groups in Exchange Online. \r\n\r\nCurrent status: We're reviewing support case details to better understand the impact scenario and determine our next steps.\r\n\r\nScope of impact: Your organization is impacted by this event and all users attempting to reply to email messages sent to Microsoft 365 groups are affected. \r\n\r\nNext update by: Friday, September 25, 2026, at 6:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-09-25T15:56:45.17Z",
+              "postType": "regular",
+              "content": "Title: Users can't reply or reply-all to email messages sent to Microsoft 365 groups in Exchange Online\r\n\r\nUser impact: Users can't reply or reply-all to email messages sent to Microsoft 365 groups in Exchange Online. \r\n\r\nCurrent status: We're investigating a potential issue with Exchange Online and checking for impact to your organization. We'll provide an update within 30 minutes."
             }
           ],
           "affectedServices": [
@@ -2907,47 +2942,6 @@
       "serviceName": "Exchange Online",
       "affectedServices": [
         "Exchange Online"
-      ]
-    },
-    {
-      "id": "TM1466659",
-      "title": "Users may have been unable to join calls or meetings in Microsoft Teams for Mac",
-      "startTime": "2026-08-23T16:32:00Z",
-      "endTime": "2026-08-26T20:51:00Z",
-      "lastModified": "2026-09-04T14:55:00.707Z",
-      "status": "serviceRestored",
-      "severity": "incident",
-      "userImpact": "Users may have been unable to join calls or meetings in Microsoft Teams for Mac. ",
-      "scopeOfImpact": "Some users attempting to join calls or meetings in Microsoft Teams for Mac may have been impacted. \r\n\r\nStart time: Sunday, August 23, 2026, at 4:32 PM UTC\r\n\r\nEnd time: Wednesday, August 26, 2026, at 8:51 PM UTC",
-      "rootCause": "A code change caused the service infrastructure responsible for call and meeting functionality to fail to process some requests, which resulted in impact.\r\n\r\nNext steps: We're reviewing our update procedures to better identify similar issues during our development and testing cycles.\r\n\r\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Meetings",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-09-04T14:49:44.32Z",
-          "postType": "regular",
-          "content": "Title: Users may have been unable to join calls or meetings in Microsoft Teams for Mac\r\n\r\nUser impact: Users may have been unable to join calls or meetings in Microsoft Teams for Mac. \r\n\r\nFinal status: We've determined that a code change caused the service infrastructure responsible for call and meeting functionality to fail to process some requests, which resulted in impact. We've deployed a fix and confirmed that impact has been resolved after an extended period of monitoring service availability.\r\n\r\nScope of impact: Some users attempting to join calls or meetings in Microsoft Teams for Mac may have been impacted. \r\n\r\nStart time: Sunday, August 23, 2026, at 4:32 PM UTC\r\n\r\nEnd time: Wednesday, August 26, 2026, at 8:51 PM UTC\r\n\r\nRoot cause: A code change caused the service infrastructure responsible for call and meeting functionality to fail to process some requests, which resulted in impact.\r\n\r\nNext steps: We're reviewing our update procedures to better identify similar issues during our development and testing cycles.\r\n\r\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-09-03T20:13:51.06Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to join calls or meetings in Microsoft Teams for Mac\r\n\r\nUser impact: Users may be unable to join calls or meetings in Microsoft Teams for Mac. \r\n\r\nCurrent status: Further review of the suspected code change indicates it may not be the cause of impact for this event. We're reassessing our root cause understanding and reviewing service logs to isolate the source of impact, so that we can determine our next steps regarding impact remediation.\r\n\r\nScope of impact: Some users attempting to join calls or meetings in Microsoft Teams for Mac may be impacted. This section may be updated as our investigation continues.\r\n\r\nNext update by: Friday, September 4, 2026, at 4:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-09-03T19:25:54.783Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to join calls or meetings in Microsoft Teams for Mac\r\n\r\nUser impact: Users may be unable to join calls or meetings in Microsoft Teams for Mac. \r\n\r\nCurrent status: We've identified a code change that's causing the service infrastructure responsible for call and meeting functionality to fail to process some requests, resulting in impact. We're assessing potential remediation actions to address the problematic code change and restore service functionality.\r\n\r\nScope of impact: Some users attempting to join calls or meetings in Microsoft Teams for Mac may be impacted. This section may be updated as our investigation continues.\r\n\r\nStart time: Thursday, July 2, 2026, at 3:09 PM UTC\r\n\r\nRoot cause: A code change is causing the service infrastructure responsible for call and meeting functionality to fail to process some requests, resulting in impact.\r\n\r\nNext update by: Thursday, September 3, 2026, at 9:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-09-03T18:59:28.39Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to join calls or meetings in Microsoft Teams for Mac\r\n\r\nUser impact: Users may be unable to join calls or meetings in Microsoft Teams for Mac. \r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Teams and checking for impact to your organization. We'll provide an update within 30 minutes."
-        }
-      ],
-      "serviceName": "Microsoft Teams",
-      "affectedServices": [
-        "Microsoft Teams"
       ]
     }
   ]
