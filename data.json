@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-25T20:04:34.390Z",
+  "lastUpdated": "2026-09-25T20:34:45.806Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -11,16 +11,21 @@
           "title": "Users may be unable to update calendar delegates in the classic Outlook desktop client ",
           "startTime": "2026-09-24T05:45:38.383Z",
           "endTime": null,
-          "lastModified": "2026-09-24T16:27:39.523Z",
+          "lastModified": "2026-09-25T20:13:52.203Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to update calendar delegates in the classic Outlook desktop client.",
-          "scopeOfImpact": "Impact is specific to users that are unable to update calendar delegates in the classic Outlook desktop client.",
-          "rootCause": "",
-          "nextUpdateBy": "Friday, September 25, 2026, at 8:00 PM UTC",
+          "scopeOfImpact": "Impact is specific to users that are unable to update calendar delegates in the classic Outlook desktop client.\r\n\r\nStart time: Wednesday, September 23, 2026, at 7:13 AM UTC",
+          "rootCause": "A recent update to the service contained a regression, resulting in this impact.",
+          "nextUpdateBy": "Saturday, September 26, 2026, at 12:00 AM UTC",
           "feature": "Tenant Administration (Provisioning, Remote PowerShell)",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-25T20:12:30.887Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to update calendar delegates in the classic Outlook desktop client \r\n\r\nUser impact: Users may be unable to update calendar delegates in the classic Outlook desktop client.\r\n\r\nMore info: As a workaround, affected users can manage delegate changes through Outlook on the web.\r\n\r\nCurrent status: We've confirmed that reverting the responsible change is not a valid remediation pathway for this event and have instead developed a code fix to address the regression. We'll provide an update remediation timeline once we start deploying this fix.\r\n\r\nScope of impact: Impact is specific to users that are unable to update calendar delegates in the classic Outlook desktop client.\r\n\r\nStart time: Wednesday, September 23, 2026, at 7:13 AM UTC\r\n\r\nRoot cause: A recent update to the service contained a regression, resulting in this impact.\r\n\r\nNext update by: Saturday, September 26, 2026, at 12:00 AM UTC"
+            },
             {
               "createdAt": "2026-09-24T16:27:39.523Z",
               "postType": "regular",
