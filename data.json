@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-26T16:43:05.525Z",
+  "lastUpdated": "2026-09-26T17:13:18.610Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -2875,42 +2875,6 @@
       "serviceName": "SharePoint Online",
       "affectedServices": [
         "SharePoint Online"
-      ]
-    },
-    {
-      "id": "PB1462800",
-      "title": "Some users may experience intermittent failures or delays when accessing Microsoft Power BI or Microsoft Fabric",
-      "startTime": "2026-08-27T15:15:00Z",
-      "endTime": "2026-08-27T16:47:00Z",
-      "lastModified": "2026-08-27T17:58:10.607Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users may have experienced intermittent failures or delays when accessing Microsoft Power BI or Microsoft Fabric.",
-      "scopeOfImpact": "This incident impacted some users, who may have experienced intermittent failures or delays when accessing Microsoft Power BI or Microsoft Fabric. \r\n\r\nStart time: Thursday, August 27, 2026, at 3:15 PM UTC\r\n\r\nEnd time: Thursday, August 27, 2026, at 4:47 PM UTC",
-      "rootCause": "An unexpected influx in user traffic caused our service infrastructure to begin operating in an unhealthy state, delaying the processing of user requests.\r\n\r\nNext steps: \n- We're analyzing the affected service infrastructure to validate what additional performance optimizations we can implement to bolster the resiliency of our service and to prevent similar impact scenarios from occurring in the future.\r\n\r\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "General",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-08-27T17:57:57.993Z",
-          "postType": "regular",
-          "content": "Title: Some users may experience intermittent failures or delays when accessing Microsoft Power BI or Microsoft Fabric\r\n\r\nUser impact: Users may have experienced intermittent failures or delays when accessing Microsoft Power BI or Microsoft Fabric.\r\n\r\nFinal status: We've completed our monitoring period of service availability and confirmed that our performance optimizations successfully remediated impact.\r\n\r\nScope of impact: This incident impacted some users, who may have experienced intermittent failures or delays when accessing Microsoft Power BI or Microsoft Fabric. \r\n\r\nStart time: Thursday, August 27, 2026, at 3:15 PM UTC\r\n\r\nEnd time: Thursday, August 27, 2026, at 4:47 PM UTC\r\n\r\nRoot cause: An unexpected influx in user traffic caused our service infrastructure to begin operating in an unhealthy state, delaying the processing of user requests.\r\n\r\nNext steps: \n- We're analyzing the affected service infrastructure to validate what additional performance optimizations we can implement to bolster the resiliency of our service and to prevent similar impact scenarios from occurring in the future.\r\n\r\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-08-27T17:16:48.86Z",
-          "postType": "regular",
-          "content": "Title: Some users may experience intermittent failures or delays when accessing Microsoft Power BI or Microsoft Fabric\r\n\r\nUser impact: Users may experience intermittent failures or delays when accessing Microsoft Power BI or Microsoft Fabric.\r\n\r\nCurrent status: Our service monitors have alerted us to an availability drop affecting some users accessing Microsoft Power BI or Microsoft Fabric, who may experience intermittent failures or delays accessing our services. We've validated that impact was caused by an unexpected influx in user traffic, which caused our service infrastructure to begin operating in an unhealthy state and delaying the processing of user requests. We've implemented performance optimizations to recover affected infrastructure and are monitoring service availability to confirm impact is remediated.\r\n\r\nScope of impact: This incident impacts some users, who may experience intermittent failures or delays when accessing Microsoft Power BI or Microsoft Fabric. This section may be updated as the investigation progresses.\r\n\r\nStart time: Thursday, August 27, 2026, at 3:15 PM UTC\r\n\r\nRoot cause: An unexpected influx in user traffic caused our service infrastructure to begin operating in an unhealthy state, delaying the processing of user requests.\r\n\r\nNext update by: Thursday, August 27, 2026, at 6:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-08-27T17:03:48.187Z",
-          "postType": "regular",
-          "content": "Title: We're looking into a potential problem impacting Microsoft Fabric and Microsoft Power BI\r\n\r\nUser impact: We're checking for potential impact to your users.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Fabric and Microsoft Power BI and checking for impact to your organization. We'll provide an update within 30 minutes."
-        }
-      ],
-      "serviceName": "Power BI",
-      "affectedServices": [
-        "Power BI"
       ]
     }
   ]
