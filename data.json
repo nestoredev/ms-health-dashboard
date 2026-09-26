@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-25T23:36:00.709Z",
+  "lastUpdated": "2026-09-26T00:06:12.797Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -11,16 +11,26 @@
           "title": "Users may be unable to update calendar delegates in the classic Outlook desktop client ",
           "startTime": "2026-09-24T05:45:38.383Z",
           "endTime": null,
-          "lastModified": "2026-09-25T20:47:40.627Z",
+          "lastModified": "2026-09-25T23:54:56.487Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to update calendar delegates in the classic Outlook desktop client.",
           "scopeOfImpact": "Impact is specific to users that are unable to update calendar delegates in the classic Outlook desktop client.\r\n\r\nStart time: Wednesday, September 23, 2026, at 7:13 AM UTC",
           "rootCause": "A recent update to the service contained a regression, resulting in this impact.",
-          "nextUpdateBy": "Saturday, September 26, 2026, at 1:30 AM UTC",
+          "nextUpdateBy": "Monday, September 28, 2026, at 10:00 PM UTC",
           "feature": "Tenant Administration (Provisioning, Remote PowerShell)",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-25T23:54:56.487Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to update calendar delegates in the classic Outlook desktop client \r\n\r\nUser impact: Users may be unable to update calendar delegates in the classic Outlook desktop client.\r\n\r\nMore info: As a workaround, affected users can manage delegate changes through Outlook on the web.\r\n\r\nCurrent status: We’re in the testing and validation stages of our fix deployment procedures and we anticipate that these actions will be completed, as well as the subsequent deployment process prior to our next scheduled update. At which point, we aim to provide a remediation timeline. \r\n\r\nScope of impact: Impact is specific to users that are unable to update calendar delegates in the classic Outlook desktop client.\r\n\r\nStart time: Wednesday, September 23, 2026, at 7:13 AM UTC\r\n\r\nRoot cause: A recent update to the service contained a regression, resulting in this impact.\r\n\r\nNext update by: Monday, September 28, 2026, at 10:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-09-25T23:54:49.687Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to update calendar delegates in the classic Outlook desktop client \r\n\r\nUser impact: Users may be unable to update calendar delegates in the classic Outlook desktop client.\r\n\r\nMore info: As a workaround, affected users can manage delegate changes through Outlook on the web.\r\n\r\nCurrent status: We’re in the testing and validation stages of our fix deployment procedures and we anticipate that these actions will be completed, as well as the subsequent deployment process prior to our next scheduled update. At which point, we aim to provide a remediation timeline. \r\n\r\nScope of impact: Impact is specific to users that are unable to update calendar delegates in the classic Outlook desktop client.\r\n\r\nStart time: Wednesday, September 23, 2026, at 7:13 AM UTC\r\n\r\nRoot cause: A recent update to the service contained a regression, resulting in this impact.\r\n\r\nNext update by: Monday, September 28, 2026, at 10:00 PM UTC"
+            },
             {
               "createdAt": "2026-09-25T20:12:30.887Z",
               "postType": "regular",
@@ -410,6 +420,31 @@
               "createdAt": "2026-08-21T17:31:50.35Z",
               "postType": "regular",
               "content": "Title: Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights\r\n\r\nUser impact: Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights.\r\n\r\nMore info: Affected reports include, but aren't limited to:\n\n- Copilot Usage report in Microsoft 365 admin center\n- Copilot Chat Usage report in Microsoft 365 admin center\n- Copilot Readiness reports in Microsoft 365 admin center and Viva Insights\n- Copilot Adoption report in Viva Insights\n- Microsoft 365 Apps and Active users reports in Microsoft 365 admin center\n- Teams App reports in Microsoft 365 admin center and Microsoft Teams admin center\r\n\r\nCurrent status: Our monitoring has identified an increase report generation delays and our investigation has identified that an upstream component that facilitates report data access and generation isn't responding as expected, resulting in impact. We're in the process of identifying the underlying cause of impact and develop a remediation strategy.\r\n\r\nScope of impact: Any admin expecting reports from the affected scenarios as outlined in the More info section may be affected. \r\n\r\nStart time: Friday, August 21, 2026, at 12:00 AM UTC\r\n\r\nNext update by: Monday, August 24, 2026, at 7:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite"
+          ]
+        },
+        {
+          "id": "MO1479564",
+          "title": "Admins and users may be unable to access or utilize multiple features within some Microsoft 365 services",
+          "startTime": "2026-09-25T23:06:44.997Z",
+          "endTime": null,
+          "lastModified": "2026-09-25T23:50:30.9Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Admins and users may be unable to access or utilize multiple features within some Microsoft 365 services.",
+          "scopeOfImpact": "Admins and users attempting to access or utilize any of the features listed out in the More info section may be impacted by this event. This section may be updated as our investigation continues.",
+          "rootCause": "A recent roll out of an authentication configuration is causing failures when processing requests to the listed affected scenarios.",
+          "nextUpdateBy": "Saturday, September 26, 2026, at 2:00 AM UTC",
+          "feature": "Company or User Administration",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-09-25T23:50:30.9Z",
+              "postType": "regular",
+              "content": "Title: Admins and users may be unable to access or utilize multiple features within some Microsoft 365 services\r\n\r\nUser impact: Admins and users may be unable to access or utilize multiple features within some Microsoft 365 services.\r\n\r\nMore info: Specifically, Microsoft 365 for Education services, Microsoft Teams, and Microsoft 365 admin center are impacted and all the affected scenarios consist of the following:\n\n-Users cannot access Search Coach and Search Progress in Teams for Education; reports indicate it cannot be added as a Teams tab and existing experiences are failing. Lionel described it as a \"near total outage\" and later \"it just doesn't work.\"\n\n- Parent/guardian (\"related contact\") information can’t be retrieved through School Data Sync (SDS). Any scenarios depending on related contacts fail.\n\n-Education admins can’t trigger batch age-gating operations from SDS through the Microsoft admin center.\n\n- Admins and users can’t access Education configuration pages and see an error message \"cannot load page\" in Microsoft 365 admin center\n\n- Admins can’t create or manage Speaker Progress resources using Speaker Progress Graph APIs\n\n-Admins can’t access or utilize Assignments scenarios that call Related Contacts indirectly.\r\n\r\nCurrent status: We've been alerted through our service monitoring that an issue is affecting all education tenants. We've identified that a recent rollout of an authentication configuration is causing failures when processing requests to the listed affected scenarios. We've applied a change to the affected configuration and are working on validating that it resolves this issue.\r\n\r\nScope of impact: Admins and users attempting to access or utilize any of the features listed out in the More info section may be impacted by this event. This section may be updated as our investigation continues.\r\n\r\nRoot cause: A recent roll out of an authentication configuration is causing failures when processing requests to the listed affected scenarios. \r\n\r\nNext update by: Saturday, September 26, 2026, at 2:00 AM UTC"
             }
           ],
           "affectedServices": [
