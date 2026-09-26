@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-26T00:06:12.797Z",
+  "lastUpdated": "2026-09-26T00:36:27.079Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -251,16 +251,21 @@
           "title": "Users may be unable to reply or reply-all to email messages sent to Microsoft 365 groups in Exchange Online",
           "startTime": "2026-09-25T15:52:36.097Z",
           "endTime": null,
-          "lastModified": "2026-09-25T22:35:01.25Z",
+          "lastModified": "2026-09-26T00:24:06.843Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to reply or reply-all to email messages sent to Microsoft 365 groups in Exchange Online.",
           "scopeOfImpact": "This issue impacts any user attempting to reply or reply-all to email messages sent to Microsoft 365 groups in Exchange Online. This information may be updated as our investigation continues.",
           "rootCause": "",
-          "nextUpdateBy": "Saturday, September 26, 2026, at 12:30 AM UTC",
+          "nextUpdateBy": "Tuesday, September 29, 2026, at 1:00 AM UTC",
           "feature": "All clients",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-26T00:24:06.843Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to reply or reply-all to email messages sent to Microsoft 365 groups in Exchange Online\r\n\r\nUser impact: Users may be unable to reply or reply-all to email messages sent to Microsoft 365 groups in Exchange Online.\r\n\r\nMore info: As a temporary alternative, impacted users may reply or reply all to email messages through user inboxes.\r\n\r\nCurrent status: We've completed the validation of our planned fixes and are completing the final stages to prepare them for deployment. We anticipate that users will see progressive relief beginning Monday, September 28, 2026, up to our planned remediation date of Friday, October 2, 2026.\r\n\r\nScope of impact: This issue impacts any user attempting to reply or reply-all to email messages sent to Microsoft 365 groups in Exchange Online. This information may be updated as our investigation continues.\r\n\r\nNext update by: Tuesday, September 29, 2026, at 1:00 AM UTC"
+            },
             {
               "createdAt": "2026-09-25T22:33:44.55Z",
               "postType": "regular",
@@ -576,16 +581,21 @@
           "title": "Users may have been unable to run run-only workflows from Microsoft Teams",
           "startTime": "2026-06-30T07:00:00Z",
           "endTime": null,
-          "lastModified": "2026-09-14T23:21:15.52Z",
+          "lastModified": "2026-09-26T00:02:55.43Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to run run-only workflows from Microsoft Teams.",
           "scopeOfImpact": "Users attempting to run run-only workflows from Microsoft Teams may be impacted. This section may be updated as the investigation progresses. This information may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, June 30, 2026, at 7:00 AM UTC",
           "rootCause": "A recent service update introduced a code regression that affects how Microsoft Teams processes shared workflow requests, preventing some users from running run-only workflows from Microsoft Teams.",
-          "nextUpdateBy": "Saturday, September 26, 2026, at 1:00 AM UTC",
+          "nextUpdateBy": "Tuesday, September 29, 2026, at 1:00 AM UTC",
           "feature": "Teams and Channels",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-26T00:02:55.43Z",
+              "postType": "regular",
+              "content": "Title: Users may have been unable to run run-only workflows from Microsoft Teams\r\n\r\nUser impact: Users may be unable to run run-only workflows from Microsoft Teams.\r\n\r\nMore info: As a result of our initial fix deployment, users are now able to run run-only workflows through the \"workflows\" button in Microsoft Teams. However, running run-only workflows by hovering and selecting \"More actions\" > \"Create workflows\" is still an impacted scenario.\n\nAffected users are unable to run workflows in Teams when those workflows are configured to be executed by designated users without requiring those users to own or edit the workflow. Users receive the following error message:\n\n\"Missing Trigger URI\"\n\nAs a way to avoid this issue, impacted users can be granted Owner or Co-owner permissions for the affected workflow.\r\n\r\nCurrent status: We've identified that the deployment of the fix is taking longer than anticipated. It's currently 25 percent saturated, and we anticipate it will be complete and the issue fully resolved by our next scheduled update.\r\n\r\nScope of impact: Users attempting to run run-only workflows from Microsoft Teams may be impacted. This section may be updated as the investigation progresses. This information may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, June 30, 2026, at 7:00 AM UTC\r\n\r\nRoot cause: A recent service update introduced a code regression that affects how Microsoft Teams processes shared workflow requests, preventing some users from running run-only workflows from Microsoft Teams.\r\n\r\nNext update by: Tuesday, September 29, 2026, at 1:00 AM UTC"
+            },
             {
               "createdAt": "2026-09-14T23:21:15.52Z",
               "postType": "regular",
