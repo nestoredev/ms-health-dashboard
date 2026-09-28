@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-28T21:48:35.592Z",
+  "lastUpdated": "2026-09-28T22:18:46.605Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -782,6 +782,31 @@
       "status": "serviceDegradation",
       "id": "Viva",
       "issues": [
+        {
+          "id": "MV1481028",
+          "title": "Users may not be able to access Microsoft Viva Glint",
+          "startTime": "2026-09-28T21:48:07.58Z",
+          "endTime": null,
+          "lastModified": "2026-09-28T21:49:57.12Z",
+          "status": "serviceDegradation",
+          "severity": "incident",
+          "userImpact": "Users may not be able to access Viva Glint.",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
+          "feature": "General",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-09-28T21:49:57.12Z",
+              "postType": "regular",
+              "content": "Title: Users may not be able to access Microsoft Viva Glint\r\n\r\nUser impact: Users may not be able to access Viva Glint.\r\n\r\nCurrent status: We're investigating a potential issue with Viva Glint and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Viva"
+          ]
+        },
         {
           "id": "MO1457843",
           "title": "Admins can't identify who deleted a Viva Engage community or its Microsoft 365 Group in Microsoft Entra ID audit logs",
