@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-28T20:18:02.268Z",
+  "lastUpdated": "2026-09-28T20:48:13.261Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -11,16 +11,26 @@
           "title": "Users may be unable to update calendar delegates in the classic Outlook desktop client ",
           "startTime": "2026-09-24T05:45:38.383Z",
           "endTime": null,
-          "lastModified": "2026-09-25T23:54:56.487Z",
+          "lastModified": "2026-09-28T20:28:42.91Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to update calendar delegates in the classic Outlook desktop client.",
-          "scopeOfImpact": "Impact is specific to users that are unable to update calendar delegates in the classic Outlook desktop client.\r\n\r\nStart time: Wednesday, September 23, 2026, at 7:13 AM UTC",
+          "scopeOfImpact": "Impact is specific to users that are unable to update calendar delegates in the classic Outlook desktop client. This information may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, September 23, 2026, at 7:13 AM UTC",
           "rootCause": "A recent update to the service contained a regression, resulting in this impact.",
-          "nextUpdateBy": "Monday, September 28, 2026, at 10:00 PM UTC",
+          "nextUpdateBy": "Wednesday, September 30, 2026, at 10:00 PM UTC",
           "feature": "Tenant Administration (Provisioning, Remote PowerShell)",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-28T20:28:42.91Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to update calendar delegates in the classic Outlook desktop client \r\n\r\nUser impact: Users may be unable to update calendar delegates in the classic Outlook desktop client.\r\n\r\nMore info: As a workaround, affected users can manage delegate changes through Outlook on the web.\r\n\r\nCurrent status: We’ve validated our fix and started the deployment to the affected environment. We'll provide a timeline for the complete saturation of this fix if one becomes available. \r\n\r\nScope of impact: Impact is specific to users that are unable to update calendar delegates in the classic Outlook desktop client. This information may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, September 23, 2026, at 7:13 AM UTC\r\n\r\nRoot cause: A recent update to the service contained a regression, resulting in this impact.\r\n\r\nNext update by: Wednesday, September 30, 2026, at 10:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-09-28T20:28:33.86Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to update calendar delegates in the classic Outlook desktop client \r\n\r\nUser impact: Users may be unable to update calendar delegates in the classic Outlook desktop client.\r\n\r\nMore info: As a workaround, affected users can manage delegate changes through Outlook on the web.\r\n\r\nCurrent status: We’ve validated our fix and started the deployment to the affected environment. We'll provide a timeline for the complete saturation of this fix if one becomes available. \r\n\r\nScope of impact: Impact is specific to users that are unable to update calendar delegates in the classic Outlook desktop client. This information may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, September 23, 2026, at 7:13 AM UTC\r\n\r\nRoot cause: A recent update to the service contained a regression, resulting in this impact.\r\n\r\nNext update by: Wednesday, September 30, 2026, at 10:00 PM UTC"
+            },
             {
               "createdAt": "2026-09-25T23:54:56.487Z",
               "postType": "regular",
@@ -945,9 +955,9 @@
         {
           "id": "CW1478470",
           "title": "Some users may be unable to access or receive prompt responses with Microsoft 365 Copilot Chat or Copilot Notebooks",
-          "startTime": "2026-09-24T15:34:51.523Z",
+          "startTime": "2026-09-22T02:50:00Z",
           "endTime": null,
-          "lastModified": "2026-09-25T17:40:28.543Z",
+          "lastModified": "2026-09-28T20:42:58.41Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to access or receive prompt responses with Copilot Chat or Copilot Notebooks.",
