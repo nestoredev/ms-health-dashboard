@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-29T16:25:49.795Z",
+  "lastUpdated": "2026-09-29T16:56:00.545Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -916,16 +916,21 @@
           "title": "Some admins may receive failures creating or updating Communications Compliance policies in Microsoft Purview",
           "startTime": "2026-09-14T16:41:47.403Z",
           "endTime": null,
-          "lastModified": "2026-09-22T22:28:47.01Z",
+          "lastModified": "2026-09-29T16:35:01.517Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Admins may receive failures creating or updating Communications Compliance policies in Microsoft Purview.",
           "scopeOfImpact": "Some admins may receive failures creating or updating Communications Compliance policies in Microsoft Purview with more than four classifiers. This section may be updated as the investigation progresses.\r\n\r\nEstimated time to resolve: We anticipate impact to be remediated by Monday, October 5, 2026.",
-          "rootCause": "A recent update introduced operations with larger data size included a code error, causing size limitation issues.",
-          "nextUpdateBy": "Tuesday, September 29, 2026, at 6:00 PM UTC",
+          "rootCause": "A service update which intended to add operations with larger data sizes introduced a code error, causing size limitation issues.",
+          "nextUpdateBy": "Tuesday, October 6, 2026, at 6:00 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-29T16:35:01.517Z",
+              "postType": "regular",
+              "content": "Title: Some admins may receive failures creating or updating Communications Compliance policies in Microsoft Purview\r\n\r\nUser impact: Admins may receive failures creating or updating Communications Compliance policies in Microsoft Purview.\r\n\r\nMore info: Impact is limited to Communications Compliance policies with more than four classifiers.\n\nWe advise admins to keep classifiers to a maximum of four during this time and we anticipate the limit to be remediated by Monday, October 5, 2026.\r\n\r\nCurrent status: We've continuing to monitor the deployment of our fix which remains scheduled to complete by Monday, October 5, 2026.\r\n\r\nScope of impact: Some admins may receive failures creating or updating Communications Compliance policies in Microsoft Purview with more than four classifiers. This section may be updated as the investigation progresses.\r\n\r\nEstimated time to resolve: We anticipate impact to be remediated by Monday, October 5, 2026.\r\n\r\nRoot cause: A service update which intended to add operations with larger data sizes introduced a code error, causing size limitation issues.\r\n\r\nNext update by: Tuesday, October 6, 2026, at 6:00 PM UTC"
+            },
             {
               "createdAt": "2026-09-22T16:44:05.683Z",
               "postType": "regular",
