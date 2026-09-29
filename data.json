@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-29T20:27:29.791Z",
+  "lastUpdated": "2026-09-29T20:57:41.620Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -587,24 +587,29 @@
     },
     {
       "service": "Microsoft Intune",
-      "status": "investigating",
+      "status": "serviceDegradation",
       "id": "Intune",
       "issues": [
         {
           "id": "IT1482439",
-          "title": "We're looking into a potential problem impacting Microsoft Intune device registrations",
+          "title": "Some users may experience failures when registering devices in Microsoft Intune",
           "startTime": "2026-09-29T20:09:14.623Z",
           "endTime": null,
-          "lastModified": "2026-09-29T20:18:04.743Z",
-          "status": "investigating",
+          "lastModified": "2026-09-29T20:37:48.623Z",
+          "status": "serviceDegradation",
           "severity": "advisory",
-          "userImpact": "We're checking for potential impact to your users.",
-          "scopeOfImpact": "",
+          "userImpact": "Users may experience failures when registering devices in Microsoft Intune.",
+          "scopeOfImpact": "Some users in North America may experience failures when registering devices in Microsoft Intune. This section may be updated as the investigation progresses.",
           "rootCause": "",
-          "nextUpdateBy": "",
+          "nextUpdateBy": "Tuesday, September 29, 2026, at 9:30 PM UTC",
           "feature": "Microsoft Intune",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-29T20:37:32.017Z",
+              "postType": "regular",
+              "content": "Title: Some users may experience failures when registering devices in Microsoft Intune\r\n\r\nUser impact: Users may experience failures when registering devices in Microsoft Intune.\r\n\r\nCurrent status: Our service monitors have alerted us to a spike in failing registrations for a subset of users in North America. We're analyzing the Microsoft Intune service infrastructure that’s hosting affected users to isolate potential discrepancies or errors causing impact.\r\n\r\nScope of impact: Some users in North America may experience failures when registering devices in Microsoft Intune. This section may be updated as the investigation progresses.\r\n\r\nNext update by: Tuesday, September 29, 2026, at 9:30 PM UTC"
+            },
             {
               "createdAt": "2026-09-29T20:18:04.743Z",
               "postType": "regular",
