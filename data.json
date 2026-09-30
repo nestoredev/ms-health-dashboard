@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-30T02:29:46.255Z",
+  "lastUpdated": "2026-09-30T02:59:59.572Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -600,16 +600,21 @@
           "title": "Some users in North America may experience failures when registering devices in Microsoft Intune",
           "startTime": "2026-09-29T17:53:00Z",
           "endTime": null,
-          "lastModified": "2026-09-29T22:58:59.68Z",
+          "lastModified": "2026-09-30T02:28:31.93Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may experience failures when registering devices in Microsoft Intune.",
           "scopeOfImpact": "Some users in North America may experience failures when registering devices in Microsoft Intune. This section may be updated as the investigation progresses.\r\n\r\nStart time: Tuesday, September 29, 2026, at 5:53 PM UTC",
-          "rootCause": "",
-          "nextUpdateBy": "Wednesday, September 30, 2026, at 2:30 AM UTC",
+          "rootCause": "Elevated write activity disrupted data replication within a section of database infrastructure, reducing its ability to process device registration requests reliably and resulting in the impact.",
+          "nextUpdateBy": "Wednesday, September 30, 2026, at 4:30 AM UTC",
           "feature": "Microsoft Intune",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-30T02:28:31.93Z",
+              "postType": "regular",
+              "content": "Title: Some users in North America may experience failures when registering devices in Microsoft Intune\r\n\r\nUser impact: Users may experience failures when registering devices in Microsoft Intune.\r\n\r\nCurrent status: We've determined that elevated write activity disrupted data replication within a section of database infrastructure, reducing its ability to process device registration requests reliably and resulting in the impact. We're refreshing the affected data and monitoring replication health to restore normal processing of device registration requests.\r\n\r\nScope of impact: Some users in North America may experience failures when registering devices in Microsoft Intune. This section may be updated as the investigation progresses.\r\n\r\nStart time: Tuesday, September 29, 2026, at 5:53 PM UTC\r\n\r\nRoot cause: Elevated write activity disrupted data replication within a section of database infrastructure, reducing its ability to process device registration requests reliably and resulting in the impact.\r\n\r\nNext update by: Wednesday, September 30, 2026, at 4:30 AM UTC"
+            },
             {
               "createdAt": "2026-09-29T22:58:59.68Z",
               "postType": "regular",
