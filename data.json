@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-30T16:05:07.809Z",
+  "lastUpdated": "2026-09-30T16:35:20.392Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -456,16 +456,21 @@
           "title": "Admins may see multiple usage report types experiencing varying delays in the Microsoft 365 admin center",
           "startTime": "2026-09-28T22:36:21.907Z",
           "endTime": null,
-          "lastModified": "2026-09-29T21:57:03.223Z",
+          "lastModified": "2026-09-30T16:21:49.257Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may see multiple usage report types experiencing varying delays in the Microsoft 365 admin center.",
           "scopeOfImpact": "Some admins may not see updated usage reports in the Microsoft 365 admin center with varying delays. This section may be updated as the investigation progresses.",
           "rootCause": "",
-          "nextUpdateBy": "Wednesday, September 30, 2026, at 5:30 PM UTC",
+          "nextUpdateBy": "Thursday, October 1, 2026, at 8:00 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-30T16:21:49.257Z",
+              "postType": "regular",
+              "content": "Title: Admins may see multiple usage report types experiencing varying delays in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see multiple usage report types experiencing varying delays in the Microsoft 365 admin center.\r\n\r\nMore info: The following usage report types are delayed since September 19, 2026:\n-\tMicrosoft Teams usage reports\n-\tGroup Activity reports\n-\tMailbox usage reports\nThe following report types are delayed since September 23, 2026:\n-\tEmail Activity reports\n-\tEmail Apps usage reports\n-\tActive User reports\n-\tCopilot Readiness reports\n-\tM365 Apps usage reports\r\n\r\nCurrent status: We've identified that there are multiple issues impacting different groups of usage report types in the Microsoft 365 admin center. We're working to isolate all underlying causes of impact, and at this time, we're aware of a code issue occurring within an upstream dependency service that's causing impact to a portion of the affected reports. While we work to confirm which reports are affected by the upstream code issue, we've successfully implemented mitigation and restored Email Activity reports, Email Apps usage reports, and Active User reports to expected functionality. Our investigation is still ongoing to identify what caused these three reports to be impacted, and which other reports are facing a similar issue where this mitigation strategy can be implemented.\r\n\r\nScope of impact: Some admins may not see updated usage reports in the Microsoft 365 admin center with varying delays. This section may be updated as the investigation progresses.\r\n\r\nNext update by: Thursday, October 1, 2026, at 8:00 PM UTC"
+            },
             {
               "createdAt": "2026-09-29T21:57:03.223Z",
               "postType": "regular",
@@ -556,40 +561,9 @@
     },
     {
       "service": "SharePoint Online",
-      "status": "serviceDegradation",
+      "status": "serviceOperational",
       "id": "SharePoint",
-      "issues": [
-        {
-          "id": "SP1483357",
-          "title": "Users may encounter an error when accessing the context menu in the classic experience within SharePoint Online",
-          "startTime": "2026-09-30T12:37:03.02Z",
-          "endTime": null,
-          "lastModified": "2026-09-30T15:58:13.653Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may have encountered an error when accessing the context menu in the classic experience within SharePoint Online.",
-          "scopeOfImpact": "Impact is specific to some users attempting to access the context menu in the Classic experience within SharePoint Online.",
-          "rootCause": "",
-          "nextUpdateBy": "Wednesday, September 30, 2026, at 5:00 PM UTC",
-          "feature": "Access Services",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-09-30T14:42:01.973Z",
-              "postType": "regular",
-              "content": "Title: Users may encounter an error when accessing the context menu in the Classic experience within SharePoint Online\r\n\r\nUser impact: Users may encounter an error when accessing the context menu in the Classic experience within SharePoint Online.\r\n\r\nCurrent status: We’ve identified a recent update as the potential cause of impact, which is preventing users in the SharePoint Classic experience from being redirected when accessing the context menu. We’re reverting the update to the last known good version to restore functionality and validate our root cause theory.\r\n\r\nScope of impact: Impact is specific to some users attempting to access the context menu in the Classic experience within SharePoint Online.\r\n\r\nNext update by: Wednesday, September 30, 2026, at 5:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-09-30T12:45:01.23Z",
-              "postType": "regular",
-              "content": "Title: Users may encounter an error when accessing the context menu in the Classic experience within SharePoint Online\r\n\r\nUser impact: Users may encounter an error when accessing the context menu in the Classic experience within SharePoint Online.\r\n\r\nCurrent status: We’re reviewing recent updates that we suspect may be contributing to the impact and are working to formulate a mitigation plan.\r\n\r\nScope of impact: Impact is specific to some users attempting to access the context menu in the Classic experience within SharePoint Online.\r\n\r\nNext update by: Wednesday, September 30, 2026, at 3:00 PM UTC"
-            }
-          ],
-          "affectedServices": [
-            "SharePoint Online"
-          ]
-        }
-      ]
+      "issues": []
     },
     {
       "service": "Dynamics 365 Apps",
@@ -791,16 +765,21 @@
           "title": "Admins may see multiple usage report types experiencing varying delays in the Microsoft 365 admin center",
           "startTime": "2026-09-28T22:36:21.907Z",
           "endTime": null,
-          "lastModified": "2026-09-29T21:57:03.223Z",
+          "lastModified": "2026-09-30T16:21:49.257Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may see multiple usage report types experiencing varying delays in the Microsoft 365 admin center.",
           "scopeOfImpact": "Some admins may not see updated usage reports in the Microsoft 365 admin center with varying delays. This section may be updated as the investigation progresses.",
           "rootCause": "",
-          "nextUpdateBy": "Wednesday, September 30, 2026, at 5:30 PM UTC",
+          "nextUpdateBy": "Thursday, October 1, 2026, at 8:00 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-30T16:21:49.257Z",
+              "postType": "regular",
+              "content": "Title: Admins may see multiple usage report types experiencing varying delays in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see multiple usage report types experiencing varying delays in the Microsoft 365 admin center.\r\n\r\nMore info: The following usage report types are delayed since September 19, 2026:\n-\tMicrosoft Teams usage reports\n-\tGroup Activity reports\n-\tMailbox usage reports\nThe following report types are delayed since September 23, 2026:\n-\tEmail Activity reports\n-\tEmail Apps usage reports\n-\tActive User reports\n-\tCopilot Readiness reports\n-\tM365 Apps usage reports\r\n\r\nCurrent status: We've identified that there are multiple issues impacting different groups of usage report types in the Microsoft 365 admin center. We're working to isolate all underlying causes of impact, and at this time, we're aware of a code issue occurring within an upstream dependency service that's causing impact to a portion of the affected reports. While we work to confirm which reports are affected by the upstream code issue, we've successfully implemented mitigation and restored Email Activity reports, Email Apps usage reports, and Active User reports to expected functionality. Our investigation is still ongoing to identify what caused these three reports to be impacted, and which other reports are facing a similar issue where this mitigation strategy can be implemented.\r\n\r\nScope of impact: Some admins may not see updated usage reports in the Microsoft 365 admin center with varying delays. This section may be updated as the investigation progresses.\r\n\r\nNext update by: Thursday, October 1, 2026, at 8:00 PM UTC"
+            },
             {
               "createdAt": "2026-09-29T21:57:03.223Z",
               "postType": "regular",
@@ -1008,6 +987,42 @@
     }
   ],
   "history": [
+    {
+      "id": "SP1483357",
+      "title": "Users may encounter an error when accessing the context menu in the classic experience within SharePoint Online",
+      "startTime": "2026-09-30T12:37:03.02Z",
+      "endTime": "2026-09-30T15:58:18.293Z",
+      "lastModified": "2026-09-30T16:05:33.14Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have encountered an error when accessing the context menu in the classic experience within SharePoint Online.",
+      "scopeOfImpact": "Impact was specific to some users attempting to access the context menu in the classic experience within SharePoint Online.\r\n\r\nStart time: Wednesday, September 30, 2026, at 3:57 AM UTC\r\n\r\nEnd time: Wednesday, September 30, 2026, at 2:37 PM UTC",
+      "rootCause": "A recent update to the rendering mechanism used when accessing the context menu in the classic experience within SharePoint Online contained a code issue, resulting in impact.\r\n\r\nNext steps: - We're reviewing and improving our service update validation procedure to prevent similar issues from occurring in the future.",
+      "nextUpdateBy": "",
+      "feature": "Access Services",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-09-30T16:00:30.337Z",
+          "postType": "regular",
+          "content": "Title: Users may encounter an error when accessing the context menu in the classic experience within SharePoint Online\r\n\r\nUser impact: Users may have encountered an error when accessing the context menu in the classic experience within SharePoint Online.\r\n\r\nFinal status: We’ve reverted the update to the last known good version and confirmed with affected users that this has restored context menu access in the classic SharePoint Online experience. Users with existing browser sessions may have to refresh the page to see the fixed behavior. This also confirms that a recent update to the rendering mechanism used when accessing the context menu in the classic experience within SharePoint Online contained a code issue, resulting in impact.\r\n\r\nScope of impact: Impact was specific to some users attempting to access the context menu in the classic experience within SharePoint Online.\r\n\r\nStart time: Wednesday, September 30, 2026, at 3:57 AM UTC\r\n\r\nEnd time: Wednesday, September 30, 2026, at 2:37 PM UTC\r\n\r\nRoot cause: A recent update to the rendering mechanism used when accessing the context menu in the classic experience within SharePoint Online contained a code issue, resulting in impact.\r\n\r\nNext steps: - We're reviewing and improving our service update validation procedure to prevent similar issues from occurring in the future."
+        },
+        {
+          "createdAt": "2026-09-30T14:42:01.973Z",
+          "postType": "regular",
+          "content": "Title: Users may encounter an error when accessing the context menu in the Classic experience within SharePoint Online\r\n\r\nUser impact: Users may encounter an error when accessing the context menu in the Classic experience within SharePoint Online.\r\n\r\nCurrent status: We’ve identified a recent update as the potential cause of impact, which is preventing users in the SharePoint Classic experience from being redirected when accessing the context menu. We’re reverting the update to the last known good version to restore functionality and validate our root cause theory.\r\n\r\nScope of impact: Impact is specific to some users attempting to access the context menu in the Classic experience within SharePoint Online.\r\n\r\nNext update by: Wednesday, September 30, 2026, at 5:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-09-30T12:45:01.23Z",
+          "postType": "regular",
+          "content": "Title: Users may encounter an error when accessing the context menu in the Classic experience within SharePoint Online\r\n\r\nUser impact: Users may encounter an error when accessing the context menu in the Classic experience within SharePoint Online.\r\n\r\nCurrent status: We’re reviewing recent updates that we suspect may be contributing to the impact and are working to formulate a mitigation plan.\r\n\r\nScope of impact: Impact is specific to some users attempting to access the context menu in the Classic experience within SharePoint Online.\r\n\r\nNext update by: Wednesday, September 30, 2026, at 3:00 PM UTC"
+        }
+      ],
+      "serviceName": "SharePoint Online",
+      "affectedServices": [
+        "SharePoint Online"
+      ]
+    },
     {
       "id": "IT1483380",
       "title": "Some admins may be unable to register new Windows Autopilot devices or update Autopilot group tags in Microsoft Intune",
