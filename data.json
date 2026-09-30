@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-30T13:03:51.351Z",
+  "lastUpdated": "2026-09-30T13:34:06.661Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -556,9 +556,35 @@
     },
     {
       "service": "SharePoint Online",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "SharePoint",
-      "issues": []
+      "issues": [
+        {
+          "id": "SP1483357",
+          "title": "Users may encounter an error when accessing the context menu in the Classic experience within SharePoint Online",
+          "startTime": "2026-09-30T12:37:03.02Z",
+          "endTime": null,
+          "lastModified": "2026-09-30T13:29:07.803Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may encounter an error when accessing the context menu in the Classic experience within SharePoint Online.",
+          "scopeOfImpact": "Impact is specific to some users attempting to access the context menu in the Classic experience within SharePoint Online.",
+          "rootCause": "",
+          "nextUpdateBy": "Wednesday, September 30, 2026, at 3:00 PM UTC",
+          "feature": "Access Services",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-09-30T12:45:01.23Z",
+              "postType": "regular",
+              "content": "Title: Users may encounter an error when accessing the context menu in the Classic experience within SharePoint Online\r\n\r\nUser impact: Users may encounter an error when accessing the context menu in the Classic experience within SharePoint Online.\r\n\r\nCurrent status: We’re reviewing recent updates that we suspect may be contributing to the impact and are working to formulate a mitigation plan.\r\n\r\nScope of impact: Impact is specific to some users attempting to access the context menu in the Classic experience within SharePoint Online.\r\n\r\nNext update by: Wednesday, September 30, 2026, at 3:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "SharePoint Online"
+          ]
+        }
+      ]
     },
     {
       "service": "Dynamics 365 Apps",
@@ -592,9 +618,35 @@
     },
     {
       "service": "Microsoft Intune",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "Intune",
-      "issues": []
+      "issues": [
+        {
+          "id": "IT1483380",
+          "title": "Some admins may be unable to register new Windows Autopilot devices or update Autopilot group tags in Microsoft Intune.",
+          "startTime": "2026-09-30T13:17:38.6Z",
+          "endTime": null,
+          "lastModified": "2026-09-30T13:19:08.847Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Admins may be unable to register new Windows Autopilot devices or update Autopilot group tags in Microsoft Intune.",
+          "scopeOfImpact": "Some admins attempting to register new Windows Autopilot devices or update Autopilot group tags in Microsoft Intune may be impacted.",
+          "rootCause": "",
+          "nextUpdateBy": "Wednesday, September 30, 2026, at 3:30 PM UTC",
+          "feature": "Microsoft Intune",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-09-30T13:19:08.847Z",
+              "postType": "regular",
+              "content": "Title: Some admins may be unable to register new Windows Autopilot devices or update Autopilot group tags in Microsoft Intune.\r\n\r\nUser impact: Admins may be unable to register new Windows Autopilot devices or update Autopilot group tags in Microsoft Intune.\r\n\r\nMore info: : Affected admins may observe that Windows Autopilot group tag updates don't persist after saving, and hardware hash imports remain in an incomplete or processing state indefinitely. As a result, profile assignments that rely on Autopilot group tags may not apply as expected, and registration of new Windows Autopilot devices may fail.\r\n\r\nCurrent status: We've identified that requests to update Autopilot group tags are returning successful responses but aren't being applied as expected. We're analyzing service telemetry and recent platform activity to identify the root cause and next steps required to mitigate impact.\r\n\r\nScope of impact: Some admins attempting to register new Windows Autopilot devices or update Autopilot group tags in Microsoft Intune may be impacted.\r\n\r\nNext update by: Wednesday, September 30, 2026, at 3:30 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Intune"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft OneDrive",
