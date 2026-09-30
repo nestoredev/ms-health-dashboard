@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-30T13:34:06.661Z",
+  "lastUpdated": "2026-09-30T14:04:18.369Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -626,7 +626,7 @@
           "title": "Some admins may be unable to register new Windows Autopilot devices or update Autopilot group tags in Microsoft Intune.",
           "startTime": "2026-09-30T13:17:38.6Z",
           "endTime": null,
-          "lastModified": "2026-09-30T13:19:08.847Z",
+          "lastModified": "2026-09-30T13:52:49.873Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may be unable to register new Windows Autopilot devices or update Autopilot group tags in Microsoft Intune.",
@@ -639,7 +639,7 @@
             {
               "createdAt": "2026-09-30T13:19:08.847Z",
               "postType": "regular",
-              "content": "Title: Some admins may be unable to register new Windows Autopilot devices or update Autopilot group tags in Microsoft Intune.\r\n\r\nUser impact: Admins may be unable to register new Windows Autopilot devices or update Autopilot group tags in Microsoft Intune.\r\n\r\nMore info: : Affected admins may observe that Windows Autopilot group tag updates don't persist after saving, and hardware hash imports remain in an incomplete or processing state indefinitely. As a result, profile assignments that rely on Autopilot group tags may not apply as expected, and registration of new Windows Autopilot devices may fail.\r\n\r\nCurrent status: We've identified that requests to update Autopilot group tags are returning successful responses but aren't being applied as expected. We're analyzing service telemetry and recent platform activity to identify the root cause and next steps required to mitigate impact.\r\n\r\nScope of impact: Some admins attempting to register new Windows Autopilot devices or update Autopilot group tags in Microsoft Intune may be impacted.\r\n\r\nNext update by: Wednesday, September 30, 2026, at 3:30 PM UTC"
+              "content": "Title: Some admins may be unable to register new Windows Autopilot devices or update Autopilot group tags in Microsoft Intune.\n\nUser impact: Admins may be unable to register new Windows Autopilot devices or update Autopilot group tags in Microsoft Intune.\n\nMore info: Affected admins may observe that Windows Autopilot group tag updates don't persist after saving, and hardware hash imports remain in an incomplete or processing state indefinitely. As a result, profile assignments that rely on Autopilot group tags may not apply as expected, and registration of new Windows Autopilot devices may fail.\n\nCurrent status: We've identified that requests to update Autopilot group tags are returning successful responses but aren't being applied as expected. We're analyzing service telemetry and recent platform activity to identify the root cause and next steps required to mitigate impact.\n\nScope of impact: Some admins attempting to register new Windows Autopilot devices or update Autopilot group tags in Microsoft Intune may be impacted.\n\nNext update by: Wednesday, September 30, 2026, at 3:30 PM UTC"
             }
           ],
           "affectedServices": [
