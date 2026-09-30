@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-30T14:34:31.758Z",
+  "lastUpdated": "2026-09-30T15:04:44.067Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -564,16 +564,21 @@
           "title": "Users may encounter an error when accessing the context menu in the Classic experience within SharePoint Online",
           "startTime": "2026-09-30T12:37:03.02Z",
           "endTime": null,
-          "lastModified": "2026-09-30T13:29:07.803Z",
+          "lastModified": "2026-09-30T14:42:01.973Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may encounter an error when accessing the context menu in the Classic experience within SharePoint Online.",
           "scopeOfImpact": "Impact is specific to some users attempting to access the context menu in the Classic experience within SharePoint Online.",
           "rootCause": "",
-          "nextUpdateBy": "Wednesday, September 30, 2026, at 3:00 PM UTC",
+          "nextUpdateBy": "Wednesday, September 30, 2026, at 5:00 PM UTC",
           "feature": "Access Services",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-30T14:42:01.973Z",
+              "postType": "regular",
+              "content": "Title: Users may encounter an error when accessing the context menu in the Classic experience within SharePoint Online\r\n\r\nUser impact: Users may encounter an error when accessing the context menu in the Classic experience within SharePoint Online.\r\n\r\nCurrent status: We’ve identified a recent update as the potential cause of impact, which is preventing users in the SharePoint Classic experience from being redirected when accessing the context menu. We’re reverting the update to the last known good version to restore functionality and validate our root cause theory.\r\n\r\nScope of impact: Impact is specific to some users attempting to access the context menu in the Classic experience within SharePoint Online.\r\n\r\nNext update by: Wednesday, September 30, 2026, at 5:00 PM UTC"
+            },
             {
               "createdAt": "2026-09-30T12:45:01.23Z",
               "postType": "regular",
@@ -626,9 +631,9 @@
           "title": "Some admins may be unable to register new Windows Autopilot devices or update Autopilot group tags in Microsoft Intune.",
           "startTime": "2026-09-30T13:17:38.6Z",
           "endTime": null,
-          "lastModified": "2026-09-30T13:52:49.873Z",
+          "lastModified": "2026-09-30T14:41:31.373Z",
           "status": "serviceDegradation",
-          "severity": "advisory",
+          "severity": "incident",
           "userImpact": "Admins may be unable to register new Windows Autopilot devices or update Autopilot group tags in Microsoft Intune.",
           "scopeOfImpact": "Some admins attempting to register new Windows Autopilot devices or update Autopilot group tags in Microsoft Intune may be impacted.",
           "rootCause": "",
