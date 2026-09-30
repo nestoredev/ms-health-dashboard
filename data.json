@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-30T07:31:44.171Z",
+  "lastUpdated": "2026-09-30T08:01:53.944Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -600,16 +600,21 @@
           "title": "Some users in North America may experience failures when registering devices in Microsoft Intune",
           "startTime": "2026-09-29T17:53:00Z",
           "endTime": null,
-          "lastModified": "2026-09-30T03:23:33.927Z",
+          "lastModified": "2026-09-30T07:29:47Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may experience failures when registering devices in Microsoft Intune.",
-          "scopeOfImpact": "Some users in North America may experience failures when registering devices in Microsoft Intune. This section may be updated as the investigation progresses.\n\nStart time: Tuesday, September 29, 2026, at 5:53 PM UTC",
+          "scopeOfImpact": "Some users in North America may experience failures when registering devices in Microsoft Intune. This section may be updated as the investigation progresses.\r\n\r\nStart time: Tuesday, September 29, 2026, at 5:53 PM UTC",
           "rootCause": "Elevated write activity disrupted data replication within a section of database infrastructure, reducing its ability to process device registration requests reliably and resulting in the impact.",
-          "nextUpdateBy": "Wednesday, September 30, 2026, at 8:30 AM UTC",
+          "nextUpdateBy": "Wednesday, September 30, 2026, at 9:30 AM UTC",
           "feature": "Microsoft Intune",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-09-30T07:29:47Z",
+              "postType": "regular",
+              "content": "Title: Some users in North America may experience failures when registering devices in Microsoft Intune\r\n\r\nUser impact: Users may experience failures when registering devices in Microsoft Intune.\r\n\r\nCurrent status: We've identified a recurrence of impact and are optimizing the affected infrastructure while managing service traffic to support recovery. We're monitoring service health closely to confirm stability.\r\n\r\nScope of impact: Some users in North America may experience failures when registering devices in Microsoft Intune. This section may be updated as the investigation progresses.\r\n\r\nStart time: Tuesday, September 29, 2026, at 5:53 PM UTC\r\n\r\nRoot cause: Elevated write activity disrupted data replication within a section of database infrastructure, reducing its ability to process device registration requests reliably and resulting in the impact.\r\n\r\nNext update by: Wednesday, September 30, 2026, at 9:30 AM UTC"
+            },
             {
               "createdAt": "2026-09-30T02:28:31.93Z",
               "postType": "regular",
