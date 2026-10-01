@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-01T21:47:30.411Z",
+  "lastUpdated": "2026-10-01T22:17:41.722Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -331,16 +331,21 @@
           "title": "Some users’ email messages may not be quarantined and fail to be stored in the quarantine folder",
           "startTime": "2026-09-24T11:38:38.977Z",
           "endTime": null,
-          "lastModified": "2026-10-01T17:35:22.033Z",
+          "lastModified": "2026-10-01T22:11:50.68Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users’ email messages may not be quarantined and might fail to be stored in the quarantine folder.",
-          "scopeOfImpact": "This issue may impact users attempting to have email messages quarantined in Exchange Online. This section may be updated as the investigation progresses.",
+          "scopeOfImpact": "This issue may impact users attempting to have email messages quarantined in Exchange Online. This section may be updated as the investigation progresses.\r\n\r\nStart time: Wednesday, September 23, 2026, at 12:56 AM UTC\r\n\r\nEstimated time to resolve: We anticipate the fix will complete deployment by Friday, October 2, 2026, at 7:00 PM UTC.",
           "rootCause": "A recent service-side update introduced a code error that has caused this impacting event.",
-          "nextUpdateBy": "Thursday, October 1, 2026, at 11:30 PM UTC",
+          "nextUpdateBy": "Friday, October 2, 2026, at 7:00 PM UTC",
           "feature": "Mailflow - delayed sending to Internet",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-01T22:01:11.297Z",
+              "postType": "regular",
+              "content": "Title: Some users’ email messages may not be quarantined and fail to be stored in the quarantine folder\r\n\r\nUser impact: Users’ email messages may not be quarantined and might fail to be stored in the quarantine folder.\r\n\r\nMore info: The following error appears in message trace: '‎550 5.1.10 Failed to deliver to Quarantine store‎'. \r\n\r\nCurrent status: We're continuing to monitor the deployment of our fix, which has reached 88 percent saturation to the affected environment. We anticipate the deployment will complete by our next scheduled communications update.\r\n\r\nScope of impact: This issue may impact users attempting to have email messages quarantined in Exchange Online. This section may be updated as the investigation progresses.\r\n\r\nStart time: Wednesday, September 23, 2026, at 12:56 AM UTC\r\n\r\nEstimated time to resolve: We anticipate the fix will complete deployment by Friday, October 2, 2026, at 7:00 PM UTC.\r\n\r\nRoot cause: A recent service-side update introduced a code error that has caused this impacting event.\r\n\r\nNext update by: Friday, October 2, 2026, at 7:00 PM UTC"
+            },
             {
               "createdAt": "2026-10-01T17:35:22.033Z",
               "postType": "regular",
