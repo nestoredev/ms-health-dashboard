@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-03T19:33:59.260Z",
+  "lastUpdated": "2026-10-03T20:04:09.816Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -2672,93 +2672,6 @@
       "serviceName": "Microsoft Teams",
       "affectedServices": [
         "Microsoft Teams"
-      ]
-    },
-    {
-      "id": "MO1465286",
-      "title": "Admins may see delays in Copilot usage report data in the Microsoft 365 admin center",
-      "startTime": "2026-09-01T00:25:42Z",
-      "endTime": "2026-09-03T19:46:00Z",
-      "lastModified": "2026-09-04T03:10:10.66Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Admins may have seen delays in Copilot usage report data in the Microsoft 365 admin center.",
-      "scopeOfImpact": "This event impacted any admin attempting to access Copilot usage report data in the Microsoft 365 admin center.\n\nStart time: Monday, August 31, 2026, at 4:00 PM UTC\n\nEnd time: Thursday, September 3, 2026, at 7:46 PM UTC",
-      "rootCause": "A component utilized in the flow of this functionality was deprecated, resulting in impact.\n\nNext steps: \n - We're reviewing our deprecation procedures pertaining to the components of Copilot infrastructure responsible for processing usage report data to prevent similar impact after future maintenance operations.\n\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Company or User Administration",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-09-04T03:10:10.66Z",
-          "postType": "regular",
-          "content": "Title: Admins may see delays in Copilot usage report data in the Microsoft 365 admin center\n\nUser impact: Admins may have seen delays in Copilot usage report data in the Microsoft 365 admin center.\n\nFinal status: Our operation to process the remaining backlog of usage report data is complete, and we've monitored our telemetry to confirm that the impact is remediated.\n\nScope of impact: This event impacted any admin attempting to access Copilot usage report data in the Microsoft 365 admin center.\n\nStart time: Monday, August 31, 2026, at 4:00 PM UTC\n\nEnd time: Thursday, September 3, 2026, at 7:46 PM UTC\n\nRoot cause: A component utilized in the flow of this functionality was deprecated, resulting in impact.\n\nNext steps: \n - We're reviewing our deprecation procedures pertaining to the components of Copilot infrastructure responsible for processing usage report data to prevent similar impact after future maintenance operations.\n\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-09-04T01:28:56.37Z",
-          "postType": "regular",
-          "content": "Title: Admins' may see delays in Copilot usage report data in the Microsoft 365 admin center\r\n\r\nUser impact: Admins' may see delays in Copilot usage report data in the Microsoft 365 admin center.\r\n\r\nCurrent status: Processing of the usage report data remains underway, and we’re monitoring recovery to confirm sustained progress and determine an updated completion timeline.\r\n\r\nScope of impact: This event impacts any admin attempting to access Copilot usage report data in a Microsoft 365 admin center. This information may be updated as our investigation continues.\r\n\r\nStart time: Monday, August 31, 2026, at 4:00 PM UTC\r\n\r\nRoot cause: A component utilized in the flow of this functionality was deprecated, resulting in impact.\r\n\r\nNext update by: Friday, September 4, 2026, at 5:00 AM UTC"
-        },
-        {
-          "createdAt": "2026-09-03T17:34:11.55Z",
-          "postType": "regular",
-          "content": "Title: Admins' may see delays in Copilot usage report data in the Microsoft 365 admin center\r\n\r\nUser impact: Admins' may see delays in Copilot usage report data in the Microsoft 365 admin center.\r\n\r\nCurrent status: The usage report data is continuing to progress; however, recovery is occurring more slowly than previously anticipated. We're continuing to monitor the processing progress and validate recovery trends to establish an updated completion timeline. We'll provide additional information on the expected recovery timeline once it has been confirmed.\r\n\r\nScope of impact: This event impacts any admin attempting to access Copilot usage report data in a Microsoft 365 admin center. This information may be updated as our investigation continues.\r\n\r\nStart time: Monday, August 31, 2026, at 4:00 PM UTC\r\n\r\nRoot cause: A component utilized in the flow of this functionality was deprecated, resulting in impact.\r\n\r\nNext update by: Friday, September 4, 2026, at 2:00 AM UTC"
-        },
-        {
-          "createdAt": "2026-09-03T00:32:38.417Z",
-          "postType": "regular",
-          "content": "Title: Admins' may see delays in Copilot usage report data in the Microsoft 365 admin center\r\n\r\nUser impact: Admins' may see delays in Copilot usage report data in the Microsoft 365 admin center.\r\n\r\nCurrent status: Our review of service health telemetry indicates that recovery of all usage report data is progressing as expected, and all usage report data may be fully recovered by our next scheduled update. We're continuing to monitor to confirm this timeline, and if validation continues as expected, we anticipate recovery to be complete by our next scheduled communications update.\r\n\r\nScope of impact: This event impacts any admin attempting to access Copilot usage report data in a Microsoft 365 admin center. This information may be updated as our investigation continues.\r\n\r\nStart time: Monday, August 31, 2026, at 4:00 PM UTC\r\n\r\nRoot cause: A component utilized in the flow of this functionality was deprecated, resulting in impact.\r\n\r\nNext update by: Thursday, September 3, 2026, at 7:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-09-02T16:36:52.637Z",
-          "postType": "regular",
-          "content": "Title: Admins' may see delays in Copilot usage report data in the Microsoft 365 admin center\r\n\r\nUser impact: Admins' may see delays in Copilot usage report data in the Microsoft 365 admin center.\r\n\r\nCurrent status: A majority of the accumulated data has been processed, and our review of service health telemetry has confirmed that all Copilot usage report data excluding Graph API Copilot usage data is now up to date. While the accumulated data for the Graph API Copilot usage data continues to be processed, we recommend admins utilize the beta Graph API endpoint to view up-to-date data. We'll aim to provide a timeline for all usage report data to be recovered by our next scheduled communications update.\r\n\r\nScope of impact: This event impacts any admin attempting to access Copilot usage report data in a Microsoft 365 admin center. This information may be updated as our investigation continues.\r\n\r\nStart time: Monday, August 31, 2026, at 4:00 PM UTC\r\n\r\nRoot cause: A component utilized in the flow of this functionality was deprecated, resulting in impact.\r\n\r\nNext update by: Thursday, September 3, 2026, at 2:00 AM UTC"
-        }
-      ],
-      "serviceName": "Microsoft 365 suite",
-      "affectedServices": [
-        "Microsoft 365 suite"
-      ]
-    },
-    {
-      "id": "CW1466621",
-      "title": "Users' queries to Microsoft 365 Copilot Chat may return no response, and users receive an error",
-      "startTime": "2026-09-03T06:30:00Z",
-      "endTime": "2026-09-03T19:45:00Z",
-      "lastModified": "2026-09-03T21:06:05.823Z",
-      "status": "serviceRestored",
-      "severity": "incident",
-      "userImpact": "Users' queries to Copilot Chat may have returned no response, and users received an error.",
-      "scopeOfImpact": "Any user that attempted to query Copilot Chat may have been impacted.\r\n\r\nStart time: Thursday, September 3, 2026, at 6:30 AM UTC\r\n\r\nEnd time: Thursday, September 3, 2026, at 7:45 PM UTC",
-      "rootCause": "An increase in request traffic to the portion of service infrastructure responsible for facilitating Copilot Chat responses prevented the service from being able to efficiently process requests.\r\n\r\nNext steps: \n- We're continuing to investigate the source of the increased request traffic, so that we can determine how to prevent similar impact to users' Copilot Chat queries in the future. \r\n\r\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "General",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-09-03T20:58:18.263Z",
-          "postType": "regular",
-          "content": "Title: Users' queries to Microsoft 365 Copilot Chat may return no response, and users receive an error\r\n\r\nUser impact: Users' queries to Copilot Chat may have returned no response, and users received an error.\r\n\r\nMore info: When users attempted to query Copilot Chat, some of their queries may have returned no response and instead, users may have received an error that stated, \"Something went wrong.\"\r\n\r\nFinal status: We've applied configuration changes to rebalance the request traffic and confirmed using our service health telemetry that the impact is remediated. \r\n\r\nScope of impact: Any user that attempted to query Copilot Chat may have been impacted.\r\n\r\nStart time: Thursday, September 3, 2026, at 6:30 AM UTC\r\n\r\nEnd time: Thursday, September 3, 2026, at 7:45 PM UTC\r\n\r\nRoot cause: An increase in request traffic to the portion of service infrastructure responsible for facilitating Copilot Chat responses prevented the service from being able to efficiently process requests.\r\n\r\nNext steps: \n- We're continuing to investigate the source of the increased request traffic, so that we can determine how to prevent similar impact to users' Copilot Chat queries in the future. \r\n\r\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-09-03T18:42:10.077Z",
-          "postType": "regular",
-          "content": "Title: Users' queries to Microsoft 365 Copilot Chat may return no response, and users receive an error\r\n\r\nUser impact: Users' queries to Copilot Chat may return no response, and users receive an error.\r\n\r\nMore info: When users attempt to query Copilot Chat, some of their queries may return no response and instead, users may receive an error that states, \"Something went wrong.\"\r\n\r\nCurrent status: We've identified an increase in request traffic to the portion of service infrastructure responsible for facilitating Copilot Chat responses which is preventing the service from being able to efficiently process requests. We're evaluating our mitigation options to identify the most effective method to remediate the impact.\r\n\r\nScope of impact: Any user attempting to query Copilot Chat may be impacted. \r\n\r\nStart time: Thursday, September 3, 2026, at 6:30 AM UTC\r\n\r\nRoot cause: An increase in request traffic to the portion of service infrastructure responsible for facilitating Copilot Chat responses which is preventing the service from being able to efficiently process requests.\r\n\r\nNext update by: Thursday, September 3, 2026, at 9:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-09-03T17:27:02.927Z",
-          "postType": "regular",
-          "content": "Title: Users' queries to Microsoft 365 Copilot Chat may return no response, and users receive an error\r\n\r\nUser impact: Users' queries to Copilot Chat may return no response, and users receive an error.\r\n\r\nMore info: When users attempt to query Copilot Chat, some of their queries may return no response and instead, users may receive an error that states, \"Something went wrong.\"\r\n\r\nCurrent status: Our service health monitoring alerted us to an increase in failures occurring when users attempt to query Copilot Chat. We're reviewing our service health telemetry to isolate the source of the failures, so that we can developed a mitigation plan. \r\n\r\nScope of impact: Any user attempting to query Copilot Chat may be impacted. \r\n\r\nNext update by: Thursday, September 3, 2026, at 6:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-09-03T17:16:55.033Z",
-          "postType": "regular",
-          "content": "Title: We're looking into a potential problem impacting Microsoft 365 Copilot Chat\r\n\r\nUser impact: We're checking for potential impact to your users.\r\n\r\nCurrent status: We're investigating a potential issue impacting Microsoft 365 Copilot Chat and checking for impact to your organization. We'll provide an update within 30 minutes."
-        }
-      ],
-      "serviceName": "Microsoft 365 Copilot Chat",
-      "affectedServices": [
-        "Microsoft 365 Copilot Chat"
       ]
     }
   ]
