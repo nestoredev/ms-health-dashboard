@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-05T22:20:14.387Z",
+  "lastUpdated": "2026-10-05T22:50:23.994Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -539,19 +539,24 @@
       "issues": [
         {
           "id": "TM1488543",
-          "title": "Some users conferenced into a Microsoft Teams E911 call may not be automatically muted or able to mute themselves",
+          "title": "Some users conferenced into a Microsoft Teams emergency call may not be automatically muted or able to mute themselves",
           "startTime": "2026-09-25T20:09:00Z",
           "endTime": null,
-          "lastModified": "2026-10-05T21:34:58.997Z",
+          "lastModified": "2026-10-05T22:15:44.643Z",
           "status": "serviceDegradation",
           "severity": "incident",
-          "userImpact": "Users conferenced into a Microsoft Teams E911 call may not be automatically muted or able to mute themselves.",
-          "scopeOfImpact": "Users conferenced into a Microsoft Teams E911 call and attempting to mute their audio are affected by this issue. This section may be updated as the investigation progresses.\r\n\r\nStart time: Friday, September 25, 2026, at 8:09 PM UTC",
-          "rootCause": "A code mismatch in the components utilized when marking a Microsoft Teams call as a multi-party call is causing the code to mute participants to not be enabled as expected.",
-          "nextUpdateBy": "Monday, October 5, 2026, at 11:30 PM UTC",
+          "userImpact": "Users conferenced into a Microsoft Teams emergency call may not be automatically muted or able to mute themselves.",
+          "scopeOfImpact": "Users conferenced into a Microsoft Teams emergency call and attempting to mute their audio are affected by this issue. This section may be updated as the investigation progresses.\r\n\r\nStart time: Friday, September 25, 2026, at 8:09 PM UTC\r\n\r\nEstimated time to resolve: We anticipate impact to be resolved by Monday, October 12, 2026.",
+          "rootCause": "A code mismatch in the components utilized when marking a Microsoft Teams emergency call as a multi-party call is causing the code to mute participants to not be enabled as expected.",
+          "nextUpdateBy": "Friday, October 9, 2026, at 11:00 PM UTC",
           "feature": "Calling",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-05T22:15:44.643Z",
+              "postType": "regular",
+              "content": "Title: Some users conferenced into a Microsoft Teams emergency call may not be automatically muted or able to mute themselves\r\n\r\nUser impact: Users conferenced into a Microsoft Teams emergency call may not be automatically muted or able to mute themselves.\r\n\r\nMore info: Users conferenced into a Microsoft Teams emergency call are also unable to mute themselves and would need to leave the call.\r\n\r\nCurrent status: We've initiated deployment of our code change to address the code mismatch causing users to not be automatically muted as expected or being able to mute themselves in emergency calls. We anticipate deployment to be completed by Monday, October 12, 2026, and we aim to provide updates on our timeline to remediation as deployment progresses.\r\n\r\nScope of impact: Users conferenced into a Microsoft Teams emergency call and attempting to mute their audio are affected by this issue. This section may be updated as the investigation progresses.\r\n\r\nStart time: Friday, September 25, 2026, at 8:09 PM UTC\r\n\r\nEstimated time to resolve: We anticipate impact to be resolved by Monday, October 12, 2026.\r\n\r\nRoot cause: A code mismatch in the components utilized when marking a Microsoft Teams emergency call as a multi-party call is causing the code to mute participants to not be enabled as expected.\r\n\r\nNext update by: Friday, October 9, 2026, at 11:00 PM UTC"
+            },
             {
               "createdAt": "2026-10-05T21:18:00.453Z",
               "postType": "regular",
