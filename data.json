@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-05T21:19:54.936Z",
+  "lastUpdated": "2026-10-05T21:50:05.476Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -537,6 +537,41 @@
       "status": "serviceDegradation",
       "id": "microsoftteams",
       "issues": [
+        {
+          "id": "TM1488543",
+          "title": "Some users conferenced into a Microsoft Teams E911 call may not be automatically muted or able to mute themselves",
+          "startTime": "2026-09-25T20:09:00Z",
+          "endTime": null,
+          "lastModified": "2026-10-05T21:34:58.997Z",
+          "status": "serviceDegradation",
+          "severity": "incident",
+          "userImpact": "Users conferenced into a Microsoft Teams E911 call may not be automatically muted or able to mute themselves.",
+          "scopeOfImpact": "Users conferenced into a Microsoft Teams E911 call and attempting to mute their audio are affected by this issue. This section may be updated as the investigation progresses.\r\n\r\nStart time: Friday, September 25, 2026, at 8:09 PM UTC",
+          "rootCause": "A code mismatch in the components utilized when marking a Microsoft Teams call as a multi-party call is causing the code to mute participants to not be enabled as expected.",
+          "nextUpdateBy": "Monday, October 5, 2026, at 11:30 PM UTC",
+          "feature": "Calling",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-10-05T21:18:00.453Z",
+              "postType": "regular",
+              "content": "Title: Some users conferenced into a Microsoft Teams E911 call may not be automatically muted or able to mute themselves\r\n\r\nUser impact: Users conferenced into a Microsoft Teams E911 call may not be automatically muted or able to mute themselves.\r\n\r\nMore info: Users conferenced into a Microsoft Teams E911 are also unable to mute themselves and would need to leave the call.\r\n\r\nCurrent status: After analyzing correlation and meeting IDs provided by a subset of affected users, we've isolated a code mismatch in the components utilized when marking a Microsoft Teams call as a multi-party call is causing the code to mute participants to not be enabled as expected. We've expanded our communications to all potentially affected tenants and updated the \"Title\", \"User impact\" and \"Scope of impact\" fields of our communications to reflect this change as we begin rolling out a code change to remediate the mismatch.\r\n\r\nScope of impact: Users conferenced into a Microsoft Teams E911 call and attempting to mute their audio are affected by this issue. This section may be updated as the investigation progresses.\r\n\r\nStart time: Friday, September 25, 2026, at 8:09 PM UTC\r\n\r\nRoot cause: A code mismatch in the components utilized when marking a Microsoft Teams call as a multi-party call is causing the code to mute participants to not be enabled as expected.\r\n\r\nNext update by: Monday, October 5, 2026, at 11:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-10-05T20:23:18.163Z",
+              "postType": "regular",
+              "content": "Title: Some users conferenced into a Microsoft Teams E911 call may not be automatically muted or able to mute themselves\r\n\r\nUser impact: Users conferenced into a Microsoft Teams E911 call may not be automatically muted or able to mute themselves.\r\n\r\nCurrent status: We're analyzing affected meeting and correlation IDs provided by a subset of affected users to further our understanding of the underlying impact scenario and to determine what our next troubleshooting steps should be.\r\n\r\nScope of impact: Users conferenced into a Microsoft Teams E911 call and attempting to mute their audio are affected by this issue. This section may be updated as the investigation progresses."
+            },
+            {
+              "createdAt": "2026-10-05T20:01:45.663Z",
+              "postType": "regular",
+              "content": "Title: Some users conferenced into a Microsoft Teams E911 call may not be automatically muted or able to mute themselves\r\n\r\nUser impact: Users conferenced into a Microsoft Teams E911 call may not be automatically muted or able to mute themselves.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Teams and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Teams"
+          ]
+        },
         {
           "id": "TM1483625",
           "title": "Users' recordings of presentations using PowerPoint Live in Microsoft Teams may be missing some slides",
