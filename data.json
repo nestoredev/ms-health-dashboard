@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-05T23:20:33.942Z",
+  "lastUpdated": "2026-10-05T23:50:44.029Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -166,16 +166,26 @@
           "title": "Users may be unable to reply or reply-all to email messages sent to Microsoft 365 groups in Exchange Online",
           "startTime": "2026-09-25T15:52:36.097Z",
           "endTime": null,
-          "lastModified": "2026-09-28T23:56:12.197Z",
+          "lastModified": "2026-10-05T23:32:54.97Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to reply or reply-all to email messages sent to Microsoft 365 groups in Exchange Online.",
           "scopeOfImpact": "This issue impacts any user attempting to reply or reply-all to email messages sent to Microsoft 365 groups in Exchange Online. This information may be updated as our investigation continues.",
           "rootCause": "",
-          "nextUpdateBy": "Tuesday, October 6, 2026, at 1:00 AM UTC",
+          "nextUpdateBy": "Wednesday, October 7, 2026, at 1:00 AM UTC",
           "feature": "All clients",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-05T23:32:54.97Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to reply or reply-all to email messages sent to Microsoft 365 groups in Exchange Online\r\n\r\nUser impact: Users may be unable to reply or reply-all to email messages sent to Microsoft 365 groups in Exchange Online.\r\n\r\nMore info: As a temporary alternative, impacted users may reply or reply all to email messages through user inboxes.\r\n\r\nCurrent status: Our fix deployment is nearing completion, and most affected users should now be experiencing recovery. We’ll continue monitoring the deployment to ensure it completes and restores service for all affected users.\r\n\r\nScope of impact: This issue impacts any user attempting to reply or reply-all to email messages sent to Microsoft 365 groups in Exchange Online. This information may be updated as our investigation continues.\r\n\r\nNext update by: Wednesday, October 7, 2026, at 1:00 AM UTC"
+            },
+            {
+              "createdAt": "2026-10-05T23:32:48.747Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to reply or reply-all to email messages sent to Microsoft 365 groups in Exchange Online\r\n\r\nUser impact: Users may be unable to reply or reply-all to email messages sent to Microsoft 365 groups in Exchange Online.\r\n\r\nMore info: As a temporary alternative, impacted users may reply or reply all to email messages through user inboxes.\r\n\r\nCurrent status: Our fix deployment is nearing completion, and most affected users should now be experiencing recovery. We’ll continue monitoring the deployment to ensure it completes and restores service for all affected users.\r\n\r\nScope of impact: This issue impacts any user attempting to reply or reply-all to email messages sent to Microsoft 365 groups in Exchange Online. This information may be updated as our investigation continues.\r\n\r\nNext update by: Wednesday, October 7, 2026, at 1:00 AM UTC"
+            },
             {
               "createdAt": "2026-09-28T23:56:12.197Z",
               "postType": "regular",
@@ -215,17 +225,22 @@
           "id": "EX1483619",
           "title": "Some users' email with DocuSign URLs may not be delivered and may be quarantined due to URL reputation",
           "startTime": "2026-09-28T02:36:00Z",
-          "endTime": null,
-          "lastModified": "2026-10-05T22:55:35.42Z",
+          "endTime": "2026-10-01T23:59:00Z",
+          "lastModified": "2026-10-05T23:34:22.993Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users' email with DocuSign URLs may not have been delivered and may have been quarantined due to URL reputation.",
-          "scopeOfImpact": "This issue may affect some users attempting to send email with DocuSign URLs, who may see messages not being delivered and quarantined due to URL reputation. This section may be updated as the investigation progresses.",
-          "rootCause": "The Microsoft URL evaluation process is incorrectly identifying the affected messages as potentially malicious due to the URL inclusion, resulting in impact.",
-          "nextUpdateBy": "Monday, October 5, 2026, at 11:30 PM UTC",
+          "scopeOfImpact": "This issue may have affected some users attempting to send emails with DocuSign URLs, who may have seen messages not being delivered and quarantined due to URL reputation. \r\n\r\nStart time: Monday, September 28, 2026, at 2:36 AM UTC\r\n\r\nEnd time: Thursday, October 1, 2026, at 11:59 PM UTC",
+          "rootCause": "The Microsoft URL evaluation process was incorrectly identifying the affected messages as potentially malicious due to the URL inclusion, resulting in impact.\r\n\r\nNext steps: \n- We're analyzing our URL evaluation process to validate what additional changes we can implement to ensure similar impact scenarios don't occur in the future while also protecting Exchange Online users from potentially malicious senders.\r\n\r\nThis is the final update for the event.",
+          "nextUpdateBy": "",
           "feature": "Mailflow - delayed sending to Internet",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-05T23:33:55.027Z",
+              "postType": "regular",
+              "content": "Title: Some users' email with DocuSign URLs may not be delivered and may be quarantined due to URL reputation\r\n\r\nUser impact: Users' email with DocuSign URLs may not have been delivered and may have been quarantined due to URL reputation.\r\n\r\nFinal status: We've completed manual mitigation of the remaining affected messages and completed implementation of adjustments to our ML model to ensure its correctly sorting email messages containing DocuSign URLs while maintaining the ability to identify and prevent harmful content from reaching users. We've validated from our service telemetry and from a subset of reporting affected users that impact is remediated.\r\n\r\nScope of impact: This issue may have affected some users attempting to send emails with DocuSign URLs, who may have seen messages not being delivered and quarantined due to URL reputation. \r\n\r\nStart time: Monday, September 28, 2026, at 2:36 AM UTC\r\n\r\nEnd time: Thursday, October 1, 2026, at 11:59 PM UTC\r\n\r\nRoot cause: The Microsoft URL evaluation process was incorrectly identifying the affected messages as potentially malicious due to the URL inclusion, resulting in impact.\r\n\r\nNext steps: \n- We're analyzing our URL evaluation process to validate what additional changes we can implement to ensure similar impact scenarios don't occur in the future while also protecting Exchange Online users from potentially malicious senders.\r\n\r\nThis is the final update for the event."
+            },
             {
               "createdAt": "2026-10-01T22:23:37.253Z",
               "postType": "regular",
@@ -405,6 +420,36 @@
               "createdAt": "2026-08-21T17:31:50.35Z",
               "postType": "regular",
               "content": "Title: Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights\r\n\r\nUser impact: Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights.\r\n\r\nMore info: Affected reports include, but aren't limited to:\n\n- Copilot Usage report in Microsoft 365 admin center\n- Copilot Chat Usage report in Microsoft 365 admin center\n- Copilot Readiness reports in Microsoft 365 admin center and Viva Insights\n- Copilot Adoption report in Viva Insights\n- Microsoft 365 Apps and Active users reports in Microsoft 365 admin center\n- Teams App reports in Microsoft 365 admin center and Microsoft Teams admin center\r\n\r\nCurrent status: Our monitoring has identified an increase report generation delays and our investigation has identified that an upstream component that facilitates report data access and generation isn't responding as expected, resulting in impact. We're in the process of identifying the underlying cause of impact and develop a remediation strategy.\r\n\r\nScope of impact: Any admin expecting reports from the affected scenarios as outlined in the More info section may be affected. \r\n\r\nStart time: Friday, August 21, 2026, at 12:00 AM UTC\r\n\r\nNext update by: Monday, August 24, 2026, at 7:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite"
+          ]
+        },
+        {
+          "id": "MO1488931",
+          "title": "Admins intermittently may be unable to access the Microsoft 365 admin center",
+          "startTime": "2026-10-05T23:14:55Z",
+          "endTime": null,
+          "lastModified": "2026-10-05T23:38:47.873Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Admins intermittently may be unable to access the Microsoft 365 admin center.",
+          "scopeOfImpact": "Admins attempting to access the Microsoft 365 admin center may be intermittently affected. This section may be updated as the investigation progresses.",
+          "rootCause": "",
+          "nextUpdateBy": "Monday, October 5, 2026, at 12:30 AM UTC",
+          "feature": "Access",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-10-05T23:38:38.103Z",
+              "postType": "regular",
+              "content": "Title: Admins intermittently may be unable to access the Microsoft 365 admin center\r\n\r\nUser impact: Admins intermittently may be unable to access the Microsoft 365 admin center.\r\n\r\nCurrent status: We’re investigating an unusually large increase in requests to the Microsoft 365 admin center and expect that this increase is resulting in requests queuing and timing-out. We’re reviewing options for mitigating this issue and determining if other factors are contributing to the problem.\r\n\r\nScope of impact: Admins attempting to access the Microsoft 365 admin center may be intermittently affected. This section may be updated as the investigation progresses.\r\n\r\nNext update by: Monday, October 5, 2026, at 12:30 AM UTC"
+            },
+            {
+              "createdAt": "2026-10-05T23:19:19.003Z",
+              "postType": "regular",
+              "content": "Title: Some admins can't access the Microsoft 365 admin portal\n\nUser impact: Admins may be unable to access the Microsoft 365 admin portal. \n\nCurrent status: We're investigating a potential issue impacting admin access to the Microsoft 365 admin portal in certain regions and we're checking for impact to your organization. We'll provide an update within 30 minutes."
             }
           ],
           "affectedServices": [
