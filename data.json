@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-06T13:25:29.797Z",
+  "lastUpdated": "2026-10-06T13:55:44.106Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -171,16 +171,21 @@
           "title": "Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile",
           "startTime": "2026-10-06T11:45:49.047Z",
           "endTime": null,
-          "lastModified": "2026-10-06T12:24:26.373Z",
+          "lastModified": "2026-10-06T13:32:32.113Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.",
           "scopeOfImpact": "Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted.",
           "rootCause": "A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.",
-          "nextUpdateBy": "Tuesday, October 6, 2026, at 1:30 PM UTC",
+          "nextUpdateBy": "Tuesday, October 6, 2026, at 7:00 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-06T13:32:32.113Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behaviour may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop. \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’ve developed a fix and are deploying it to our internal environment to validate its effectiveness before deploying it to the affected environment. We expect to provide a deployment timeline and rollout trajectory in our next communication update.\r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted.\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Tuesday, October 6, 2026, at 7:00 PM UTC"
+            },
             {
               "createdAt": "2026-10-06T12:24:26.373Z",
               "postType": "regular",
@@ -348,16 +353,21 @@
           "title": "Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile",
           "startTime": "2026-10-06T11:45:49.047Z",
           "endTime": null,
-          "lastModified": "2026-10-06T12:24:26.373Z",
+          "lastModified": "2026-10-06T13:32:32.113Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.",
           "scopeOfImpact": "Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted.",
           "rootCause": "A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.",
-          "nextUpdateBy": "Tuesday, October 6, 2026, at 1:30 PM UTC",
+          "nextUpdateBy": "Tuesday, October 6, 2026, at 7:00 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-06T13:32:32.113Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behaviour may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop. \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’ve developed a fix and are deploying it to our internal environment to validate its effectiveness before deploying it to the affected environment. We expect to provide a deployment timeline and rollout trajectory in our next communication update.\r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted.\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Tuesday, October 6, 2026, at 7:00 PM UTC"
+            },
             {
               "createdAt": "2026-10-06T12:24:26.373Z",
               "postType": "regular",
@@ -687,6 +697,31 @@
           ]
         },
         {
+          "id": "TM1489450",
+          "title": "Some users may encounter intermittent VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment",
+          "startTime": "2026-10-06T13:19:30.807Z",
+          "endTime": null,
+          "lastModified": "2026-10-06T13:20:51.25Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may encounter intermittent VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment.",
+          "scopeOfImpact": "Some users who are attempting to utilize VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment may be impacted.",
+          "rootCause": "",
+          "nextUpdateBy": "Tuesday, October 6, 2026, at 5:30 PM UTC",
+          "feature": "General",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-10-06T13:20:51.25Z",
+              "postType": "regular",
+              "content": "Title: Some users may encounter intermittent VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment\r\n\r\nUser impact: Users may encounter intermittent VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment.\r\n\r\nMore info: Users may experience audio and video quality degradation, and unavailability of certain features.\n\nAs a workaround, users can restart Teams to resolve the issue.\r\n\r\nCurrent status: We're reviewing service monitoring telemetry to isolate the source of the issue and establish a fix.\r\n\r\nScope of impact: Some users who are attempting to utilize VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment may be impacted.\r\n\r\nNext update by: Tuesday, October 6, 2026, at 5:30 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Teams"
+          ]
+        },
+        {
           "id": "TM1486352",
           "title": "Users' audio quality may be degraded during Microsoft Teams calls that have video or screensharing enabled",
           "startTime": "2026-10-02T22:58:23.35Z",
@@ -779,16 +814,21 @@
           "title": "Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile",
           "startTime": "2026-10-06T11:45:49.047Z",
           "endTime": null,
-          "lastModified": "2026-10-06T12:24:26.373Z",
+          "lastModified": "2026-10-06T13:32:32.113Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.",
           "scopeOfImpact": "Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted.",
           "rootCause": "A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.",
-          "nextUpdateBy": "Tuesday, October 6, 2026, at 1:30 PM UTC",
+          "nextUpdateBy": "Tuesday, October 6, 2026, at 7:00 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-06T13:32:32.113Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behaviour may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop. \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’ve developed a fix and are deploying it to our internal environment to validate its effectiveness before deploying it to the affected environment. We expect to provide a deployment timeline and rollout trajectory in our next communication update.\r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted.\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Tuesday, October 6, 2026, at 7:00 PM UTC"
+            },
             {
               "createdAt": "2026-10-06T12:24:26.373Z",
               "postType": "regular",
