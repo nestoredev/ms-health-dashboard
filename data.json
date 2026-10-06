@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-06T11:24:40.921Z",
+  "lastUpdated": "2026-10-06T11:54:50.635Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -682,16 +682,21 @@
           "title": "Some users may be unable to view contacts and Speed Dial entries in Microsoft Teams",
           "startTime": "2026-10-02T10:37:34.567Z",
           "endTime": null,
-          "lastModified": "2026-10-06T09:54:36.46Z",
+          "lastModified": "2026-10-06T11:40:02.543Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to view contacts and Speed Dial entries in Microsoft Teams.",
           "scopeOfImpact": "Some users attempting to view contacts and Speed Dial entries in Microsoft Teams may be impacted.",
-          "rootCause": "",
-          "nextUpdateBy": "Tuesday, October 6, 2026, at 11:30 AM UTC",
+          "rootCause": "A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.",
+          "nextUpdateBy": "Tuesday, October 6, 2026, at 1:30 PM UTC",
           "feature": "Meetings",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-06T11:30:13.187Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to view contacts and Speed Dial entries in Microsoft Teams\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences.\r\n\r\nCurrent status: We’ve validated that a problem with a contact-processing component has incorrectly separated some Profile Based Contacts (PBCs) from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank. We’re developing a fix to re-merge the affected contacts with their associated profiles and expect to provide deployment timeline by our next scheduled update.\r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams may be impacted.\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Tuesday, October 6, 2026, at 1:30 PM UTC"
+            },
             {
               "createdAt": "2026-10-05T17:36:50.303Z",
               "postType": "regular",
