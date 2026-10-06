@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-06T19:28:05.650Z",
+  "lastUpdated": "2026-10-06T19:58:20.241Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -545,9 +545,35 @@
     },
     {
       "service": "Power BI",
-      "status": "serviceOperational",
+      "status": "investigating",
       "id": "PowerBIcom",
-      "issues": []
+      "issues": [
+        {
+          "id": "PB1489649",
+          "title": "Users may be unable to see chart data when using the Power BI light theme dashboard",
+          "startTime": "2026-10-06T19:32:12.24Z",
+          "endTime": null,
+          "lastModified": "2026-10-06T19:51:10.387Z",
+          "status": "investigating",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to see chart data when using the Power BI light theme dashboard.",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
+          "feature": "General",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-10-06T19:38:03.16Z",
+              "postType": "regular",
+              "content": "Title: Users can't see chart data when using the Power BI light theme dashboard\r\n\r\nUser impact: Users can't see chart data when using the Power BI light theme dashboard.\r\n\r\nCurrent status: We're investigating an issue with chart data visibility when using the light Power BI dashboard theme and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Power BI"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft Intune",
