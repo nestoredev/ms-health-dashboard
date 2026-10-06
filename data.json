@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-06T01:21:14.965Z",
+  "lastUpdated": "2026-10-06T01:51:24.691Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -310,41 +310,6 @@
               "createdAt": "2026-08-21T17:31:50.35Z",
               "postType": "regular",
               "content": "Title: Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights\r\n\r\nUser impact: Admins may encounter reporting delays across multiple Microsoft 365 admin centers and Viva Insights.\r\n\r\nMore info: Affected reports include, but aren't limited to:\n\n- Copilot Usage report in Microsoft 365 admin center\n- Copilot Chat Usage report in Microsoft 365 admin center\n- Copilot Readiness reports in Microsoft 365 admin center and Viva Insights\n- Copilot Adoption report in Viva Insights\n- Microsoft 365 Apps and Active users reports in Microsoft 365 admin center\n- Teams App reports in Microsoft 365 admin center and Microsoft Teams admin center\r\n\r\nCurrent status: Our monitoring has identified an increase report generation delays and our investigation has identified that an upstream component that facilitates report data access and generation isn't responding as expected, resulting in impact. We're in the process of identifying the underlying cause of impact and develop a remediation strategy.\r\n\r\nScope of impact: Any admin expecting reports from the affected scenarios as outlined in the More info section may be affected. \r\n\r\nStart time: Friday, August 21, 2026, at 12:00 AM UTC\r\n\r\nNext update by: Monday, August 24, 2026, at 7:00 PM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Microsoft 365 suite"
-          ]
-        },
-        {
-          "id": "MO1488931",
-          "title": "Admins intermittently may be unable to access the Microsoft 365 admin center",
-          "startTime": "2026-10-05T22:28:00Z",
-          "endTime": null,
-          "lastModified": "2026-10-06T00:57:32.307Z",
-          "status": "serviceDegradation",
-          "severity": "incident",
-          "userImpact": "Admins intermittently may have been unable to access the Microsoft 365 admin center.",
-          "scopeOfImpact": "Admins attempting to access the Microsoft 365 admin center may be intermittently affected. This section may be updated as the investigation progresses.\r\n\r\nStart time: Monday, October 5, 2026, at 10:28 PM UTC",
-          "rootCause": "",
-          "nextUpdateBy": "Tuesday, October 6, 2026, at 1:30 AM UTC",
-          "feature": "Access",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-10-06T00:08:20.39Z",
-              "postType": "regular",
-              "content": "Title: Admins intermittently may be unable to access the Microsoft 365 admin center\r\n\r\nUser impact: Admins intermittently may be unable to access the Microsoft 365 admin center.\r\n\r\nCurrent status: We're continuing to analyze the unusually large increase in requests to the Microsoft 365 admin center along with recent service updates to isolate potential sources of impact that contributed to the traffic increase. We’ve implemented performance optimizations to assist with processing affected traffic and we've validated that service availability has recovered to pre-impact levels. We're continuing our investigation in order to isolate and remediate the underlying root cause to ensure the similar scenario does not occur again in the future.\r\n\r\nScope of impact: Admins attempting to access the Microsoft 365 admin center may be intermittently affected. This section may be updated as the investigation progresses.\r\n\r\nStart time: Monday, October 5, 2026, at 10:28 PM UTC\r\n\r\nNext update by: Tuesday, October 6, 2026, at 1:30 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-05T23:38:38.103Z",
-              "postType": "regular",
-              "content": "Title: Admins intermittently may be unable to access the Microsoft 365 admin center\r\n\r\nUser impact: Admins intermittently may be unable to access the Microsoft 365 admin center.\r\n\r\nCurrent status: We’re investigating an unusually large increase in requests to the Microsoft 365 admin center and expect that this increase is resulting in requests queuing and timing-out. We’re reviewing options for mitigating this issue and determining if other factors are contributing to the problem.\r\n\r\nScope of impact: Admins attempting to access the Microsoft 365 admin center may be intermittently affected. This section may be updated as the investigation progresses.\r\n\r\nNext update by: Tuesday, October 6, 2026, at 12:30 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-05T23:19:19.003Z",
-              "postType": "regular",
-              "content": "Title: Some admins can't access the Microsoft 365 admin portal\n\nUser impact: Admins may be unable to access the Microsoft 365 admin portal. \n\nCurrent status: We're investigating a potential issue impacting admin access to the Microsoft 365 admin portal in certain regions and we're checking for impact to your organization. We'll provide an update within 30 minutes."
             }
           ],
           "affectedServices": [
@@ -1041,6 +1006,47 @@
       "serviceName": "Exchange Online",
       "affectedServices": [
         "Exchange Online"
+      ]
+    },
+    {
+      "id": "MO1488931",
+      "title": "Admins intermittently may be unable to access the Microsoft 365 admin center",
+      "startTime": "2026-10-05T22:28:00Z",
+      "endTime": "2026-10-05T23:37:00Z",
+      "lastModified": "2026-10-06T01:17:11.53Z",
+      "status": "serviceRestored",
+      "severity": "incident",
+      "userImpact": "Admins intermittently may have been unable to access the Microsoft 365 admin center.",
+      "scopeOfImpact": "Admins attempting to access the Microsoft 365 admin center may have been intermittently affected. \r\n\r\nStart time: Monday, October 5, 2026, at 10:28 PM UTC\r\n\r\nEnd time: Monday, October 5, 2026, at 11:37 PM UTC",
+      "rootCause": "An unexpected influx in requests and caused performance degradation and failures for admins attempting to access the Microsoft 365 admin center.\r\n\r\nNext steps: \n- We're evaluating what additional performance optimizations or safeguards we can implement to further the resiliency of our service.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Access",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-10-06T01:16:49.727Z",
+          "postType": "regular",
+          "content": "Title: Admins intermittently may be unable to access the Microsoft 365 admin center\r\n\r\nUser impact: Admins intermittently may have been unable to access the Microsoft 365 admin center.\r\n\r\nFinal status: We've validated that an unexpected influx in requests caused performance degradation and failures for admins attempting to access the Microsoft 365 admin center. We've implemented additional performance optimizations to assist with processing affected traffic. After completing an internal monitoring period, we've validated that impact is remediated.\r\n\r\nScope of impact: Admins attempting to access the Microsoft 365 admin center may have been intermittently affected. \r\n\r\nStart time: Monday, October 5, 2026, at 10:28 PM UTC\r\n\r\nEnd time: Monday, October 5, 2026, at 11:37 PM UTC\r\n\r\nRoot cause: An unexpected influx in requests and caused performance degradation and failures for admins attempting to access the Microsoft 365 admin center.\r\n\r\nNext steps: \n- We're evaluating what additional performance optimizations or safeguards we can implement to further the resiliency of our service.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-10-06T00:08:20.39Z",
+          "postType": "regular",
+          "content": "Title: Admins intermittently may be unable to access the Microsoft 365 admin center\r\n\r\nUser impact: Admins intermittently may be unable to access the Microsoft 365 admin center.\r\n\r\nCurrent status: We're continuing to analyze the unusually large increase in requests to the Microsoft 365 admin center along with recent service updates to isolate potential sources of impact that contributed to the traffic increase. We’ve implemented performance optimizations to assist with processing affected traffic and we've validated that service availability has recovered to pre-impact levels. We're continuing our investigation in order to isolate and remediate the underlying root cause to ensure the similar scenario does not occur again in the future.\r\n\r\nScope of impact: Admins attempting to access the Microsoft 365 admin center may be intermittently affected. This section may be updated as the investigation progresses.\r\n\r\nStart time: Monday, October 5, 2026, at 10:28 PM UTC\r\n\r\nNext update by: Tuesday, October 6, 2026, at 1:30 AM UTC"
+        },
+        {
+          "createdAt": "2026-10-05T23:38:38.103Z",
+          "postType": "regular",
+          "content": "Title: Admins intermittently may be unable to access the Microsoft 365 admin center\r\n\r\nUser impact: Admins intermittently may be unable to access the Microsoft 365 admin center.\r\n\r\nCurrent status: We’re investigating an unusually large increase in requests to the Microsoft 365 admin center and expect that this increase is resulting in requests queuing and timing-out. We’re reviewing options for mitigating this issue and determining if other factors are contributing to the problem.\r\n\r\nScope of impact: Admins attempting to access the Microsoft 365 admin center may be intermittently affected. This section may be updated as the investigation progresses.\r\n\r\nNext update by: Tuesday, October 6, 2026, at 12:30 AM UTC"
+        },
+        {
+          "createdAt": "2026-10-05T23:19:19.003Z",
+          "postType": "regular",
+          "content": "Title: Some admins can't access the Microsoft 365 admin portal\n\nUser impact: Admins may be unable to access the Microsoft 365 admin portal. \n\nCurrent status: We're investigating a potential issue impacting admin access to the Microsoft 365 admin portal in certain regions and we're checking for impact to your organization. We'll provide an update within 30 minutes."
+        }
+      ],
+      "serviceName": "Microsoft 365 suite",
+      "affectedServices": [
+        "Microsoft 365 suite"
       ]
     },
     {
