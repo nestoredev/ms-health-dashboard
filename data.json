@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-06T00:20:54.224Z",
+  "lastUpdated": "2026-10-06T00:51:04.428Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -116,9 +116,9 @@
           "title": "Some users' email with DocuSign URLs may not be delivered and may be quarantined due to URL reputation",
           "startTime": "2026-09-28T02:36:00Z",
           "endTime": "2026-10-01T23:59:00Z",
-          "lastModified": "2026-10-05T23:34:22.993Z",
+          "lastModified": "2026-10-06T00:20:28.797Z",
           "status": "serviceDegradation",
-          "severity": "advisory",
+          "severity": "incident",
           "userImpact": "Users' email with DocuSign URLs may not have been delivered and may have been quarantined due to URL reputation.",
           "scopeOfImpact": "This issue may have affected some users attempting to send emails with DocuSign URLs, who may have seen messages not being delivered and quarantined due to URL reputation. \r\n\r\nStart time: Monday, September 28, 2026, at 2:36 AM UTC\r\n\r\nEnd time: Thursday, October 1, 2026, at 11:59 PM UTC",
           "rootCause": "The Microsoft URL evaluation process was incorrectly identifying the affected messages as potentially malicious due to the URL inclusion, resulting in impact.\r\n\r\nNext steps: \n- We're analyzing our URL evaluation process to validate what additional changes we can implement to ensure similar impact scenarios don't occur in the future while also protecting Exchange Online users from potentially malicious senders.\r\n\r\nThis is the final update for the event.",
@@ -321,9 +321,9 @@
           "title": "Admins intermittently may be unable to access the Microsoft 365 admin center",
           "startTime": "2026-10-05T22:28:00Z",
           "endTime": null,
-          "lastModified": "2026-10-06T00:09:06.577Z",
+          "lastModified": "2026-10-06T00:23:46.547Z",
           "status": "serviceDegradation",
-          "severity": "advisory",
+          "severity": "incident",
           "userImpact": "Admins intermittently may be unable to access the Microsoft 365 admin center.",
           "scopeOfImpact": "Admins attempting to access the Microsoft 365 admin center may be intermittently affected. This section may be updated as the investigation progresses.\r\n\r\nStart time: Monday, October 5, 2026, at 10:28 PM UTC",
           "rootCause": "",
