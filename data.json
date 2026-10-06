@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-06T21:59:07.433Z",
+  "lastUpdated": "2026-10-06T22:29:19.416Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -636,6 +636,36 @@
               "createdAt": "2026-10-05T20:01:45.663Z",
               "postType": "regular",
               "content": "Title: Some users conferenced into a Microsoft Teams E911 call may not be automatically muted or able to mute themselves\r\n\r\nUser impact: Users conferenced into a Microsoft Teams E911 call may not be automatically muted or able to mute themselves.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Teams and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Teams"
+          ]
+        },
+        {
+          "id": "TM1489909",
+          "title": "Users' recordings of presentations using PowerPoint Live in Microsoft Teams may be missing some slides",
+          "startTime": "2026-10-06T21:48:44.69Z",
+          "endTime": null,
+          "lastModified": "2026-10-06T22:09:04.173Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users' recordings of presentations using PowerPoint Live in Microsoft Teams may be missing some slides.",
+          "scopeOfImpact": "Any user located in the United States that is recording PowerPoint Live in Microsoft Teams presentations may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Monday, September 28, 2026, at 1:00 PM UTC",
+          "rootCause": "A subset of networking service infrastructure that helps facilitate access to PowerPoint Live content has fallen below our manageable service performance thresholds, resulting in impact.",
+          "nextUpdateBy": "Tuesday, October 6, 2026, at 11:30 PM UTC",
+          "feature": "General",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-10-06T22:07:12.847Z",
+              "postType": "regular",
+              "content": "Title: Users' recordings of presentations using PowerPoint Live in Microsoft Teams may be missing some slides\r\n\r\nUser impact: Users' recordings of presentations using PowerPoint Live in Microsoft Teams may be missing some slides.\r\n\r\nCurrent status: Our service health monitoring indicates that the impact previously communicated through TM1483625 is re-occurring. We're deploying a fix to rebalance the request traffic being routed to the portion of affected infrastructure so that we can bring the service back within our optimal performance threshold. \r\n\r\nScope of impact: Any user located in the United States that is recording PowerPoint Live in Microsoft Teams presentations may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Monday, September 28, 2026, at 1:00 PM UTC\r\n\r\nRoot cause: A subset of networking service infrastructure that helps facilitate access to PowerPoint Live content has fallen below our manageable service performance thresholds, resulting in impact.\r\n\r\nNext update by: Tuesday, October 6, 2026, at 11:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-10-06T21:56:40.863Z",
+              "postType": "regular",
+              "content": "Title: Users' recordings of presentations using PowerPoint Live in Microsoft Teams may be missing some slides\r\n\r\nUser impact: Users' recordings of presentations using PowerPoint Live in Microsoft Teams may be missing some slides.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Teams and checking for impact to your organization. We'll provide an update within 30 minutes."
             }
           ],
           "affectedServices": [
