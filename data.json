@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-07T19:38:01.804Z",
+  "lastUpdated": "2026-10-07T20:08:14.498Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -410,16 +410,21 @@
           "title": "Admins may see multiple usage report types experiencing varying delays in the Microsoft 365 admin center",
           "startTime": "2026-09-28T22:36:21.907Z",
           "endTime": null,
-          "lastModified": "2026-10-06T20:21:41.26Z",
+          "lastModified": "2026-10-07T19:50:21.107Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may see multiple usage report types experiencing varying delays in the Microsoft 365 admin center.",
           "scopeOfImpact": "Some admins may not see updated usage reports in the Microsoft 365 admin center with varying delays. This section may be updated as the investigation progresses.",
           "rootCause": "",
-          "nextUpdateBy": "Wednesday, October 7, 2026, at 9:00 PM UTC",
+          "nextUpdateBy": "Thursday, October 8, 2026, at 9:00 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-07T19:50:21.107Z",
+              "postType": "regular",
+              "content": "Title: Admins may see multiple usage report types experiencing varying delays in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see multiple usage report types experiencing varying delays in the Microsoft 365 admin center.\r\n\r\nMore info: Due to the delay in data propagation, impacted usage reports may not be viewable.\n\nThe following usage report types may show delays after October 3, 2026:\n- Active user reports\n- Email Activity reports\n- Email Apps usage reports\n- Mailbox usage reports\n- Microsoft 365 Apps usage reports\n- Microsoft Teams usage reports\n- Group Activity reports\n- Adoption Score reports\r\n\r\nCurrent status: While our efforts to enable our long-term fix are ongoing, we're continuing to rebalance service traffic to provide an interim improvement to data freshness for impacted users.\r\n\r\nScope of impact: Some admins may not see updated usage reports in the Microsoft 365 admin center with varying delays. This section may be updated as the investigation progresses.\r\n\r\nNext update by: Thursday, October 8, 2026, at 9:00 PM UTC"
+            },
             {
               "createdAt": "2026-10-06T20:21:41.26Z",
               "postType": "regular",
@@ -656,35 +661,9 @@
     },
     {
       "service": "Planner",
-      "status": "investigating",
+      "status": "serviceOperational",
       "id": "Planner",
-      "issues": [
-        {
-          "id": "PL1490629",
-          "title": "Some users may see initial page loading failures and 500 errors within Microsoft Planner",
-          "startTime": "2026-09-28T11:00:00Z",
-          "endTime": "2026-10-07T18:04:00Z",
-          "lastModified": "2026-10-07T19:23:34.973Z",
-          "status": "investigating",
-          "severity": "advisory",
-          "userImpact": "Users may have seen initial page loading failures and 500 errors within Planner.",
-          "scopeOfImpact": "",
-          "rootCause": "",
-          "nextUpdateBy": "",
-          "feature": "Task detail",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-10-07T19:04:17.41Z",
-              "postType": "regular",
-              "content": "Title: Some users may see initial page loading failures and 500 errors within Microsoft Planner\r\n\r\nUser impact: Users may have seen initial page loading failures and 500 errors within Planner.\r\n\r\nCurrent status: We've investigated a problem with the Microsoft Planner service in which some users experienced initial page loading failures or 500 errors within Microsoft Planner, and we’ve confirmed that service is now restored. We'll provide additional information in a closure summary within the “History” section of the “Service health” dashboard shortly."
-            }
-          ],
-          "affectedServices": [
-            "Planner"
-          ]
-        }
-      ]
+      "issues": []
     },
     {
       "service": "Sway",
@@ -971,16 +950,21 @@
           "title": "Admins may see multiple usage report types experiencing varying delays in the Microsoft 365 admin center",
           "startTime": "2026-09-28T22:36:21.907Z",
           "endTime": null,
-          "lastModified": "2026-10-06T20:21:41.26Z",
+          "lastModified": "2026-10-07T19:50:21.107Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may see multiple usage report types experiencing varying delays in the Microsoft 365 admin center.",
           "scopeOfImpact": "Some admins may not see updated usage reports in the Microsoft 365 admin center with varying delays. This section may be updated as the investigation progresses.",
           "rootCause": "",
-          "nextUpdateBy": "Wednesday, October 7, 2026, at 9:00 PM UTC",
+          "nextUpdateBy": "Thursday, October 8, 2026, at 9:00 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-07T19:50:21.107Z",
+              "postType": "regular",
+              "content": "Title: Admins may see multiple usage report types experiencing varying delays in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see multiple usage report types experiencing varying delays in the Microsoft 365 admin center.\r\n\r\nMore info: Due to the delay in data propagation, impacted usage reports may not be viewable.\n\nThe following usage report types may show delays after October 3, 2026:\n- Active user reports\n- Email Activity reports\n- Email Apps usage reports\n- Mailbox usage reports\n- Microsoft 365 Apps usage reports\n- Microsoft Teams usage reports\n- Group Activity reports\n- Adoption Score reports\r\n\r\nCurrent status: While our efforts to enable our long-term fix are ongoing, we're continuing to rebalance service traffic to provide an interim improvement to data freshness for impacted users.\r\n\r\nScope of impact: Some admins may not see updated usage reports in the Microsoft 365 admin center with varying delays. This section may be updated as the investigation progresses.\r\n\r\nNext update by: Thursday, October 8, 2026, at 9:00 PM UTC"
+            },
             {
               "createdAt": "2026-10-06T20:21:41.26Z",
               "postType": "regular",
@@ -1349,6 +1333,37 @@
     }
   ],
   "history": [
+    {
+      "id": "PL1490629",
+      "title": "Some users may see initial page loading failures and 500 errors within Microsoft Planner",
+      "startTime": "2026-09-28T11:00:00Z",
+      "endTime": "2026-10-07T18:04:00Z",
+      "lastModified": "2026-10-07T19:46:09.25Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have seen initial page loading failures and 500 errors within Planner.",
+      "scopeOfImpact": "This issue could have caused any user to see initial page loading failures or 500 errors within Planner. \n \nStart time: Monday, September 28, 2026, at 11:00 AM UTC\n \nEnd time: Wednesday, October 7, 2026, at 6:04 PM UTC",
+      "rootCause": "A subset of Microsoft Planner service infrastructure experienced a networking issue that produced initial page failures and 500 errors within Planner.  \n \nNext steps:\n- We're further analyzing the source of the networking issue that led to the affected service infrastructure’s lower-than expected performance levels to help us prevent similar issues in the future. \n\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Task detail",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-10-07T19:40:59.817Z",
+          "postType": "regular",
+          "content": "Title: Some users may see initial page loading failures and 500 errors within Microsoft Planner\n \nUser impact: Users may have seen initial page loading failures and 500 errors within Microsoft Planner.\n\nFinal status: We've isolated a subset of Microsoft Planner service infrastructure that dropped below our manageable service performance thresholds due to a networking issue, resulting in impact. After rerouting service traffic to alternate available infrastructure, our telemetry has verified that the impact has been remediated. \n \nScope of impact: This issue could have caused any user to see initial page loading failures or 500 errors within Planner. \n \nStart time: Monday, September 28, 2026, at 11:00 AM UTC\n \nEnd time: Wednesday, October 7, 2026, at 6:04 PM UTC\n \nRoot cause: A subset of Microsoft Planner service infrastructure experienced a networking issue that produced initial page failures and 500 errors within Planner.  \n \nNext steps:\n- We're further analyzing the source of the networking issue that led to the affected service infrastructure’s lower-than expected performance levels to help us prevent similar issues in the future. \n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-10-07T19:04:17.41Z",
+          "postType": "regular",
+          "content": "Title: Some users may see initial page loading failures and 500 errors within Microsoft Planner\r\n\r\nUser impact: Users may have seen initial page loading failures and 500 errors within Planner.\r\n\r\nCurrent status: We've investigated a problem with the Microsoft Planner service in which some users experienced initial page loading failures or 500 errors within Microsoft Planner, and we’ve confirmed that service is now restored. We'll provide additional information in a closure summary within the “History” section of the “Service health” dashboard shortly."
+        }
+      ],
+      "serviceName": "Planner",
+      "affectedServices": [
+        "Planner"
+      ]
+    },
     {
       "id": "MV1489881",
       "title": "Users are unable to create or edit new meeting or broadcast events in Microsoft Viva Engage",
