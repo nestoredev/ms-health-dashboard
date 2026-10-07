@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-07T16:06:31.331Z",
+  "lastUpdated": "2026-10-07T16:36:44.822Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -540,19 +540,24 @@
       "issues": [
         {
           "id": "SP1489449",
-          "title": "Some users may not see apps in the Microsoft 365 app launcher when accessed through SharePoint Online",
+          "title": "Some users' Microsoft 365 apps may not appear in the App launcher in SharePoint Online",
           "startTime": "2026-10-06T13:17:28Z",
           "endTime": null,
-          "lastModified": "2026-10-07T15:10:27.6Z",
+          "lastModified": "2026-10-07T16:22:53.807Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "userImpact": "Users may not see apps in the Microsoft 365 app launcher when accessed through SharePoint Online.",
-          "scopeOfImpact": "Impact is specific to some users in Europe, Middle East, Africa, and the United States regions attempting to access apps through the Microsoft 365 app launcher in SharePoint Online. This information may be updated as our investigation continues.",
-          "rootCause": "",
-          "nextUpdateBy": "Wednesday, October 7, 2026, at 4:30 PM UTC",
+          "userImpact": "Users' Microsoft 365 apps may not appear in the App launcher in SharePoint Online.",
+          "scopeOfImpact": "Impact is specific to some users in Europe, Middle East, Africa, and the United States regions attempting to access apps through the Microsoft 365 app, or the Setting page, in SharePoint Online. This information may be updated as our investigation continues.\r\n\r\nStart time: Monday, October 5, 2026, at 12:30 PM UTC",
+          "rootCause": "A portion of the SharePoint Online service infrastructure is operating in a suboptimal state and causing requests related to the Microsoft 365 app launcher to time out, resulting in impact.",
+          "nextUpdateBy": "Wednesday, October 7, 2026, at 11:00 PM UTC",
           "feature": "SharePoint Search (General)",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-07T16:22:53.807Z",
+              "postType": "regular",
+              "content": "Title: Some users' Microsoft 365 apps may not appear in the App launcher in SharePoint Online\r\n\r\nUser impact: Users' Microsoft 365 apps may not appear in the App launcher in SharePoint Online.\r\n\r\nMore info: Users may not have the Settings icon, also known as the gear icon, appearing in SharePoint Online.\n\nAs a workaround, affected users can access the affected apps directly through office.com or microsoft365.com.\r\n\r\nCurrent status: We've further identified that a portion of the SharePoint Online service infrastructure is operating in a suboptimal state and causing requests from SharePoint Online to the Microsoft 365 app launcher to time out, resulting in impact. We're implementing optimizations to increase the processing functionality of the affected infrastructure and return it to expected functionality. We'll aim to provide a timeline for our optimizations to be implemented by our next scheduled communications update.\r\n\r\nScope of impact: Impact is specific to some users in Europe, Middle East, Africa, and the United States regions attempting to access apps through the Microsoft 365 app, or the Setting page, in SharePoint Online. This information may be updated as our investigation continues.\r\n\r\nStart time: Monday, October 5, 2026, at 12:30 PM UTC\r\n\r\nRoot cause: A portion of the SharePoint Online service infrastructure is operating in a suboptimal state and causing requests related to the Microsoft 365 app launcher to time out, resulting in impact.\r\n\r\nNext update by: Wednesday, October 7, 2026, at 11:00 PM UTC"
+            },
             {
               "createdAt": "2026-10-07T14:28:18.263Z",
               "postType": "regular",
