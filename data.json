@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-07T15:06:01.997Z",
+  "lastUpdated": "2026-10-07T15:36:19.727Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -540,14 +540,14 @@
       "issues": [
         {
           "id": "SP1489449",
-          "title": "Some users can’t see apps in the Microsoft 365 app launcher when accessed through SharePoint Online ",
+          "title": "Some users may not see apps in the Microsoft 365 app launcher when accessed through SharePoint Online",
           "startTime": "2026-10-06T13:17:28Z",
           "endTime": null,
-          "lastModified": "2026-10-07T14:29:02.223Z",
+          "lastModified": "2026-10-07T15:10:27.6Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "userImpact": "Users can’t see apps in the Microsoft 365 app launcher when accessed through SharePoint Online. ",
-          "scopeOfImpact": "Impact is specific to some users in Europe, Middle East, Africa, and the United States attempting to access apps through the Microsoft 365 app launcher in SharePoint Online. This information may be updated as our investigation continues.",
+          "userImpact": "Users may not see apps in the Microsoft 365 app launcher when accessed through SharePoint Online.",
+          "scopeOfImpact": "Impact is specific to some users in Europe, Middle East, Africa, and the United States regions attempting to access apps through the Microsoft 365 app launcher in SharePoint Online. This information may be updated as our investigation continues.",
           "rootCause": "",
           "nextUpdateBy": "Wednesday, October 7, 2026, at 4:30 PM UTC",
           "feature": "SharePoint Search (General)",
@@ -556,17 +556,17 @@
             {
               "createdAt": "2026-10-07T14:28:18.263Z",
               "postType": "regular",
-              "content": "Title: Some users can’t see apps in the Microsoft 365 app launcher when accessed through SharePoint Online \r\n\r\nUser impact: Users can’t see apps in the Microsoft 365 app launcher when accessed through SharePoint Online. \r\n\r\nMore info: As a workaround, affected users can access the affected apps directly through office.com or microsoft365.com. Users may also not see the Gear icon for settings in SharePoint Online as well.\r\n\r\nCurrent status: We’ve identified that requests used to display Microsoft 365 app launcher information are failing with an HTTP 500 Internal Server error response. We suspect this is related to a resource constraint affecting the supporting service infrastructure, where increased resource utilization is causing requests to be rejected. We’re working to increase the available infrastructure capacity to mitigate the underlying issue and restore app launcher functionality. \r\n\r\nScope of impact: Impact is specific to some users in Europe, Middle East, Africa, and the United States attempting to access apps through the Microsoft 365 app launcher in SharePoint Online. This information may be updated as our investigation continues. \r\n\r\nNext update by: Wednesday, October 7, 2026, at 4:30 PM UTC"
+              "content": "Title: Some users may not see apps in the Microsoft 365 app launcher when accessed through SharePoint Online\r\n\r\nUser impact: Users may not see apps in the Microsoft 365 app launcher when accessed through SharePoint Online.\r\n\r\nMore info: Users may also not see the Gear icon for settings in SharePoint Online.\n \nAs a workaround, affected users can access the affected apps directly through office.com or microsoft365.com.\r\n\r\nCurrent status: We’ve identified that requests used to display Microsoft 365 app launcher information are failing with an HTTP 500 Internal Server error response. We suspect this is related to a resource constraint affecting the supporting service infrastructure, where increased resource utilization is causing requests to be rejected. We’re working to increase the available infrastructure capacity to mitigate the underlying issue and restore app launcher functionality. \r\n\r\nScope of impact: Impact is specific to some users in Europe, Middle East, Africa, and the United States regions attempting to access apps through the Microsoft 365 app launcher in SharePoint Online. This information may be updated as our investigation continues.\r\n\r\nNext update by: Wednesday, October 7, 2026, at 4:30 PM UTC"
             },
             {
               "createdAt": "2026-10-06T15:20:18.163Z",
               "postType": "regular",
-              "content": "Title: Users can’t see apps in the Microsoft 365 app launcher when accessed through SharePoint Online \r\n\r\nUser impact: Users can’t see apps in the Microsoft 365 app launcher when accessed through SharePoint Online. \r\n\r\nMore info: As a workaround, affected users can access the affected apps directly through office.com or microsoft365.com. Users may also not see the Gear icon for settings in SharePoint Online as well.\r\n\r\nCurrent status: We're progressing with our root cause analysis and analyzing internal tokens, as we isolate both the source for this event and our next steps for remediating the impact.\r\n\r\nScope of impact: Your organization is affected by this event, and any user attempting to access apps through the Microsoft 365 app launcher in SharePoint Online is impacted. This information may be updated as our investigation continues. \r\n\r\nNext update by: Wednesday, October 7, 2026, at 3:00 PM UTC"
+              "content": "Title: Some users may not see apps in the Microsoft 365 app launcher when accessed through SharePoint Online\r\n\r\nUser impact: Users may not see apps in the Microsoft 365 app launcher when accessed through SharePoint Online.\r\n\r\nMore info: Users may also not see the Gear icon for settings in SharePoint Online.\n \nAs a workaround, affected users can access the affected apps directly through office.com or microsoft365.com.\r\n\r\nCurrent status: We're progressing with our root cause analysis and analyzing internal tokens, as we isolate both the source for this event and our next steps for remediating the impact.\r\n\r\nScope of impact: Impact is specific to some users in Europe, Middle East, Africa, and the United States regions attempting to access apps through the Microsoft 365 app launcher in SharePoint Online. This information may be updated as our investigation continues."
             },
             {
               "createdAt": "2026-10-06T13:18:26.273Z",
               "postType": "regular",
-              "content": "Title: Users can’t see apps in the Microsoft 365 app launcher when accessed through SharePoint Online \r\n\r\nUser impact: Users can’t see apps in the Microsoft 365 app launcher when accessed through SharePoint Online. \r\n\r\nMore info: As a workaround, affected users can access the affected apps directly through office.com or microsoft365.com. \r\n\r\nCurrent status: We're reviewing service monitoring telemetry to isolate the root cause and determine our next troubleshooting steps. \r\n\r\nScope of impact: Your organization is affected by this event, and any user attempting to access apps through the Microsoft 365 app launcher in SharePoint Online is impacted. This information may be updated as our investigation continues. \r\n\r\nNext update by: Tuesday, October 6, 2026, at 3:30 PM UTC"
+              "content": "Title: Some users may not see apps in the Microsoft 365 app launcher when accessed through SharePoint Online\r\n\r\nUser impact: Users may not see apps in the Microsoft 365 app launcher when accessed through SharePoint Online.\r\n\r\nMore info: Users may also not see the Gear icon for settings in SharePoint Online.\n \nAs a workaround, affected users can access the affected apps directly through office.com or microsoft365.com.\r\n\r\nCurrent status: We're reviewing service monitoring telemetry to isolate the root cause and determine our next troubleshooting steps. \r\n\r\nScope of impact: Impact is specific to some users in Europe, Middle East, Africa, and the United States regions attempting to access apps through the Microsoft 365 app launcher in SharePoint Online. This information may be updated as our investigation continues.\r\n\r\nNext update by: Tuesday, October 6, 2026, at 3:30 PM UTC"
             }
           ],
           "affectedServices": [
