@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-08T19:47:58.157Z",
+  "lastUpdated": "2026-10-08T20:18:10.820Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -360,16 +360,21 @@
           "title": "Admins may see multiple usage report types experiencing varying delays in the Microsoft 365 admin center",
           "startTime": "2026-09-28T22:36:21.907Z",
           "endTime": null,
-          "lastModified": "2026-10-07T19:50:21.107Z",
+          "lastModified": "2026-10-08T19:58:01.837Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may see multiple usage report types experiencing varying delays in the Microsoft 365 admin center.",
           "scopeOfImpact": "Some admins may not see updated usage reports in the Microsoft 365 admin center with varying delays. This section may be updated as the investigation progresses.",
-          "rootCause": "",
-          "nextUpdateBy": "Thursday, October 8, 2026, at 9:00 PM UTC",
+          "rootCause": "Upstream processes responsible for managing user data were unable to process data as effectively as expected, leading to delays populating user reports.",
+          "nextUpdateBy": "Friday, October 9, 2026, at 9:00 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-08T19:58:01.837Z",
+              "postType": "regular",
+              "content": "Title: Admins may see multiple usage report types experiencing varying delays in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see multiple usage report types experiencing varying delays in the Microsoft 365 admin center.\r\n\r\nMore info: Due to the delay in data propagation, impacted usage reports may not be viewable.\n\nThe following usage report types may show delays after October 3, 2026:\n- Active user reports\n- Email Activity reports\n- Email Apps usage reports\n- Mailbox usage reports\n- Microsoft 365 Apps usage reports\n- Microsoft Teams usage reports\n- Group Activity reports\n- Adoption Score reports\r\n\r\nCurrent status: We've enabled our long-term fix, but we're continuing our monitoring of service health as the backlog processes to ensure that this fully remediates the issue. We anticipate that our monitoring will also help us provide more information on our timeline by our next scheduled communications update,\r\n\r\nScope of impact: Some admins may not see updated usage reports in the Microsoft 365 admin center with varying delays. This section may be updated as the investigation progresses.\r\n\r\nRoot cause: Upstream processes responsible for managing user data were unable to process data as effectively as expected, leading to delays populating user reports.\r\n\r\nNext update by: Friday, October 9, 2026, at 9:00 PM UTC"
+            },
             {
               "createdAt": "2026-10-07T19:50:21.107Z",
               "postType": "regular",
@@ -646,16 +651,21 @@
           "title": "Users may not see chart data when using the Power BI light theme dashboard",
           "startTime": "2026-10-06T19:32:12.24Z",
           "endTime": null,
-          "lastModified": "2026-10-07T19:33:17.07Z",
+          "lastModified": "2026-10-08T19:48:35.37Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may not see chart data when using the Power BI light theme dashboard.",
           "scopeOfImpact": "This issue may impact any user who's attempting to view data on a cartesian chart pinned to the Power BI dashboard with light theme enabled. This information may be updated as our investigation continues.",
           "rootCause": "",
-          "nextUpdateBy": "Thursday, October 8, 2026, at 8:30 PM UTC",
+          "nextUpdateBy": "Friday, October 9, 2026, at 8:30 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-08T19:48:35.37Z",
+              "postType": "regular",
+              "content": "Title: Users may not see chart data when using the Power BI light theme dashboard\r\n\r\nUser impact: Users may not see chart data when using the Power BI light theme dashboard.\r\n\r\nMore info: This display issue impacts the appearance of cartesian charts only, such as bar charts and line charts.\n \nAs we develop our long-term remediation, users can choose to keep the report theme when pinning charts or use any dashboard theme other than light mode.\r\n\r\nCurrent status: We've encountered some blockers within our deployment pipelines, which we’re currently addressing, and it's taking longer than initially expected. We'll provide a mitigation timeline once available.\r\n\r\nScope of impact: This issue may impact any user who's attempting to view data on a cartesian chart pinned to the Power BI dashboard with light theme enabled. This information may be updated as our investigation continues.\r\n\r\nNext update by: Friday, October 9, 2026, at 8:30 PM UTC"
+            },
             {
               "createdAt": "2026-10-07T19:33:17.07Z",
               "postType": "regular",
@@ -870,16 +880,21 @@
           "title": "Admins may see multiple usage report types experiencing varying delays in the Microsoft 365 admin center",
           "startTime": "2026-09-28T22:36:21.907Z",
           "endTime": null,
-          "lastModified": "2026-10-07T19:50:21.107Z",
+          "lastModified": "2026-10-08T19:58:01.837Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may see multiple usage report types experiencing varying delays in the Microsoft 365 admin center.",
           "scopeOfImpact": "Some admins may not see updated usage reports in the Microsoft 365 admin center with varying delays. This section may be updated as the investigation progresses.",
-          "rootCause": "",
-          "nextUpdateBy": "Thursday, October 8, 2026, at 9:00 PM UTC",
+          "rootCause": "Upstream processes responsible for managing user data were unable to process data as effectively as expected, leading to delays populating user reports.",
+          "nextUpdateBy": "Friday, October 9, 2026, at 9:00 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-08T19:58:01.837Z",
+              "postType": "regular",
+              "content": "Title: Admins may see multiple usage report types experiencing varying delays in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see multiple usage report types experiencing varying delays in the Microsoft 365 admin center.\r\n\r\nMore info: Due to the delay in data propagation, impacted usage reports may not be viewable.\n\nThe following usage report types may show delays after October 3, 2026:\n- Active user reports\n- Email Activity reports\n- Email Apps usage reports\n- Mailbox usage reports\n- Microsoft 365 Apps usage reports\n- Microsoft Teams usage reports\n- Group Activity reports\n- Adoption Score reports\r\n\r\nCurrent status: We've enabled our long-term fix, but we're continuing our monitoring of service health as the backlog processes to ensure that this fully remediates the issue. We anticipate that our monitoring will also help us provide more information on our timeline by our next scheduled communications update,\r\n\r\nScope of impact: Some admins may not see updated usage reports in the Microsoft 365 admin center with varying delays. This section may be updated as the investigation progresses.\r\n\r\nRoot cause: Upstream processes responsible for managing user data were unable to process data as effectively as expected, leading to delays populating user reports.\r\n\r\nNext update by: Friday, October 9, 2026, at 9:00 PM UTC"
+            },
             {
               "createdAt": "2026-10-07T19:50:21.107Z",
               "postType": "regular",
