@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-09T13:54:59.400Z",
+  "lastUpdated": "2026-10-09T14:25:14.621Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -728,6 +728,31 @@
               "createdAt": "2026-10-06T13:20:51.25Z",
               "postType": "regular",
               "content": "Title: Some users may encounter intermittent VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment\r\n\r\nUser impact: Users may encounter intermittent VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment.\r\n\r\nMore info: Users may experience audio and video quality degradation, and unavailability of certain features.\n\nAs a workaround, users can restart Teams to resolve the issue.\r\n\r\nCurrent status: We're reviewing service monitoring telemetry to isolate the source of the issue and establish a fix.\r\n\r\nScope of impact: Some users who are attempting to utilize VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment may be impacted.\r\n\r\nNext update by: Tuesday, October 6, 2026, at 5:30 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Teams"
+          ]
+        },
+        {
+          "id": "TM1492711",
+          "title": "Users are unable to access Microsoft Teams transcripts and recordings",
+          "startTime": "2026-10-09T13:42:43.727Z",
+          "endTime": null,
+          "lastModified": "2026-10-09T13:46:18.233Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users are unable to access Microsoft Teams transcripts and recordings.",
+          "scopeOfImpact": "Your organization is affected by this event, and users attempting to access Microsoft Teams transcripts and recordings are impacted.",
+          "rootCause": "",
+          "nextUpdateBy": "Friday, October 9, 2026, at 4:00 PM UTC",
+          "feature": "Files",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-10-09T13:46:18.233Z",
+              "postType": "regular",
+              "content": "Title: Users are unable to access Microsoft Teams transcripts and recordings\r\n\r\nUser impact: Users are unable to access Microsoft Teams transcripts and recordings.\r\n\r\nMore info: Users are unable to access Microsoft Teams transcripts and recordings through Microsoft Graph API. Meeting-minutes and sales-visit-summary services are unavailable. Meetings since 9 October 2026 at 8:10 AM UTC aren't being processed, and change notifications have stopped.\r\n\r\nCurrent status: We're reviewing support case details to determine our next troubleshooting steps.\r\n\r\nScope of impact: Your organization is affected by this event, and users attempting to access Microsoft Teams transcripts and recordings are impacted.\r\n\r\nNext update by: Friday, October 9, 2026, at 4:00 PM UTC"
             }
           ],
           "affectedServices": [
