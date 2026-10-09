@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-09T14:25:14.621Z",
+  "lastUpdated": "2026-10-09T14:55:27.069Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -736,19 +736,24 @@
         },
         {
           "id": "TM1492711",
-          "title": "Users are unable to access Microsoft Teams transcripts and recordings",
+          "title": "Some users may be unable to access Microsoft Teams transcripts and recordings",
           "startTime": "2026-10-09T13:42:43.727Z",
           "endTime": null,
-          "lastModified": "2026-10-09T13:46:18.233Z",
+          "lastModified": "2026-10-09T14:43:33.273Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "userImpact": "Users are unable to access Microsoft Teams transcripts and recordings.",
-          "scopeOfImpact": "Your organization is affected by this event, and users attempting to access Microsoft Teams transcripts and recordings are impacted.",
+          "userImpact": "Users may be unable to access Microsoft Teams transcripts and recordings.",
+          "scopeOfImpact": "Impact is specific to some users who may be attempting to access Microsoft Teams transcripts and recordings.",
           "rootCause": "",
           "nextUpdateBy": "Friday, October 9, 2026, at 4:00 PM UTC",
           "feature": "Files",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-09T14:20:52.187Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to access Microsoft Teams transcripts and recordings\r\n\r\nUser impact: Users may be unable to access Microsoft Teams transcripts and recordings.\r\n\r\nMore info: Users may be unable to access Microsoft Teams transcripts and recordings through Microsoft Graph API. Meeting-minutes and sales-visit-summary services may be unavailable. Meetings since 9 October 2026 at 8:10 AM UTC may not be processed, and change notifications may have stopped. Users may also experience issues with /aiInsights (meeting AI summary) APIs.\r\n\r\nCurrent status: We're reviewing diagnostic logs to formulate our next steps of our investigation to validate a root cause hypothesis.\r\n\r\nScope of impact: Impact is specific to some users who may be attempting to access Microsoft Teams transcripts and recordings.\r\n\r\nNext update by: Friday, October 9, 2026, at 4:00 PM UTC"
+            },
             {
               "createdAt": "2026-10-09T13:46:18.233Z",
               "postType": "regular",
