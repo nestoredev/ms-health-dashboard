@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-09T18:57:20.882Z",
+  "lastUpdated": "2026-10-09T19:27:32.714Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -530,50 +530,9 @@
     },
     {
       "service": "Power BI",
-      "status": "serviceDegradation",
+      "status": "serviceOperational",
       "id": "PowerBIcom",
-      "issues": [
-        {
-          "id": "PB1489649",
-          "title": "Users may not see chart data when using the Power BI light theme dashboard",
-          "startTime": "2026-10-06T19:32:12.24Z",
-          "endTime": null,
-          "lastModified": "2026-10-08T19:48:35.37Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may not see chart data when using the Power BI light theme dashboard.",
-          "scopeOfImpact": "This issue may impact any user who's attempting to view data on a cartesian chart pinned to the Power BI dashboard with light theme enabled. This information may be updated as our investigation continues.",
-          "rootCause": "",
-          "nextUpdateBy": "Friday, October 9, 2026, at 8:30 PM UTC",
-          "feature": "General",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-10-08T19:48:35.37Z",
-              "postType": "regular",
-              "content": "Title: Users may not see chart data when using the Power BI light theme dashboard\r\n\r\nUser impact: Users may not see chart data when using the Power BI light theme dashboard.\r\n\r\nMore info: This display issue impacts the appearance of cartesian charts only, such as bar charts and line charts.\n \nAs we develop our long-term remediation, users can choose to keep the report theme when pinning charts or use any dashboard theme other than light mode.\r\n\r\nCurrent status: We've encountered some blockers within our deployment pipelines, which we’re currently addressing, and it's taking longer than initially expected. We'll provide a mitigation timeline once available.\r\n\r\nScope of impact: This issue may impact any user who's attempting to view data on a cartesian chart pinned to the Power BI dashboard with light theme enabled. This information may be updated as our investigation continues.\r\n\r\nNext update by: Friday, October 9, 2026, at 8:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-07T19:33:17.07Z",
-              "postType": "regular",
-              "content": "Title: Users may not see chart data when using the Power BI light theme dashboard\r\n\r\nUser impact: Users may not see chart data when using the Power BI light theme dashboard.\r\n\r\nMore info: This display issue impacts the appearance of cartesian charts only, such as bar charts and line charts.\n \nAs we develop our long-term remediation, users can choose to keep the report theme when pinning charts or use any dashboard theme other than light mode.\r\n\r\nCurrent status: We've completed development of the long-term fix for this issue, and we're expediting the process to deploy it to the affected environment. We anticipate the solution will be fully deployed by the time of our next scheduled update, and the results will aid in confirming the root cause.\r\n\r\nScope of impact: This issue may impact any user who's attempting to view data on a cartesian chart pinned to the Power BI dashboard with light theme enabled. This information may be updated as our investigation continues.\r\n\r\nNext update by: Thursday, October 8, 2026, at 8:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-06T20:03:25.28Z",
-              "postType": "regular",
-              "content": "Title: Users may not see chart data when using the Power BI light theme dashboard\r\n\r\nUser impact: Users may not see chart data when using the Power BI light theme dashboard.\r\n\r\nMore info: This display issue impacts the appearance of cartesian charts only, such as bar charts and line charts.\n \nAs we develop our long-term remediation, users can choose to keep the report theme when pinning charts or use any dashboard theme other than light mode.\r\n\r\nCurrent status: We've identified that a recent code change has resulted in all data in charts pinned to the Power BI dashboard when choosing the light theme for chart display to show as black. We're developing a long-term fix for this issue, which we expect to be available by the time of our next scheduled communications update.\r\n\r\nScope of impact: This issue may impact any user who's attempting to view data on a cartesian chart pinned to the Power BI dashboard with light theme enabled. This information may be updated as our investigation continues.\r\n\r\nNext update by: Friday, October 16, 2026, at 10:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-06T19:38:03.16Z",
-              "postType": "regular",
-              "content": "Title: Users may not see chart data when using the Power BI light theme dashboard\r\n\r\nUser impact: Users may not see chart data when using the Power BI light theme dashboard.\r\n\r\nCurrent status: We're investigating an issue with chart data visibility when using the light Power BI dashboard theme and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Power BI"
-          ]
-        }
-      ]
+      "issues": []
     },
     {
       "service": "Microsoft Intune",
@@ -676,6 +635,31 @@
               "createdAt": "2026-10-06T13:20:51.25Z",
               "postType": "regular",
               "content": "Title: Some users may encounter intermittent VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment\r\n\r\nUser impact: Users may encounter intermittent VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment.\r\n\r\nMore info: Users may experience audio and video quality degradation, and unavailability of certain features.\n\nAs a workaround, users can restart Teams to resolve the issue.\r\n\r\nCurrent status: We're reviewing service monitoring telemetry to isolate the source of the issue and establish a fix.\r\n\r\nScope of impact: Some users who are attempting to utilize VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment may be impacted.\r\n\r\nNext update by: Tuesday, October 6, 2026, at 5:30 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Teams"
+          ]
+        },
+        {
+          "id": "TM1492872",
+          "title": "Users may be unable to download webinar registration details from the Events app in Microsoft Teams",
+          "startTime": "2026-10-09T18:56:09.9Z",
+          "endTime": null,
+          "lastModified": "2026-10-09T18:57:19.057Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to download webinar registration details from the Events app in Microsoft Teams.",
+          "scopeOfImpact": "Impact may occur for users whose assigned meeting policy has AllowEngagementReport set to Off, preventing them from downloading webinar registration details from the Events app in Microsoft Teams. This information may be updated as our investigation continues.",
+          "rootCause": "",
+          "nextUpdateBy": "Friday, October 9, 2026, at 8:00 PM UTC",
+          "feature": "General",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-10-09T18:57:19.057Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to download webinar registration details from the Events app in Microsoft Teams\r\n\r\nUser impact: Users may be unable to download webinar registration details from the Events app in Microsoft Teams.\r\n\r\nMore info: Specifically, this impacts users who have the AllowEngagementReport meeting policy set to Off, as they're unable to download webinar registration details in Microsoft Teams Events because the Download option does not appear.\r\n\r\nCurrent status: We've received reports from affected users that users may be unable to download webinar registration details in Microsoft Teams Events when the AllowEngagementReport meeting policy is set to Off. We're reviewing recent feature updates to the service to isolate the source of this issue and identify appropriate remediation actions.\r\n\r\nScope of impact: Impact may occur for users whose assigned meeting policy has AllowEngagementReport set to Off, preventing them from downloading webinar registration details from the Events app in Microsoft Teams. This information may be updated as our investigation continues.\r\n\r\nNext update by: Friday, October 9, 2026, at 8:00 PM UTC"
             }
           ],
           "affectedServices": [
@@ -1034,6 +1018,52 @@
     }
   ],
   "history": [
+    {
+      "id": "PB1489649",
+      "title": "Users may not see chart data when using standard light or dark themes on Power BI dashboards",
+      "startTime": "2026-10-06T19:32:12.24Z",
+      "endTime": "2026-10-09T19:01:10.733Z",
+      "lastModified": "2026-10-09T19:08:34.483Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may not have seen chart data when using standard light or dark themes on Power BI dashboards.",
+      "scopeOfImpact": "This issue may have impacted any user who was attempting to view data on a cartesian chart pinned to the Power BI dashboard with standard light theme or dark theme enabled.\r\n\r\nStart time: Sunday, September 27, 2026, at 12:00 PM UTC\r\n\r\nEnd time: Friday, October 9, 2026, at 6:00 AM UTC",
+      "rootCause": "A recent code change intended to unify font colors was incorrectly applied to the background color property for cartesian charts pinned to the Power BI dashboard, resulting in the data on these charts being illegible.\r\n\r\nNext steps: \n- We're continuing to develop important visual upgrades while optimizing our quality assurance checks to ensure a smooth user experience.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "General",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-10-09T19:02:26.553Z",
+          "postType": "regular",
+          "content": "Title: Users may not see chart data when using standard light or dark themes on Power BI dashboards\r\n\r\nUser impact: Users may not have seen chart data when using standard light or dark themes on Power BI dashboards.\r\n\r\nMore info: This display issue impacted the appearance of cartesian charts only, such as bar charts and line charts. Custom themes weren't impacted.\n\nUsers could have chosen to keep the report theme when pinning charts or use any dashboard theme other than light mode or dark mode.\r\n\r\nFinal status: We've updated the Title, User impact, and scope of impact statements of this communication to reflect that this also affected standard dark mode themes. Afer mitigating the previously identified blockers in our deployment pipeline, we've confirmed that our fix has fully deployed as expected and all users can now see chart data on Power BI dashboards that use any theme.\r\n\r\nScope of impact: This issue may have impacted any user who was attempting to view data on a cartesian chart pinned to the Power BI dashboard with standard light theme or dark theme enabled.\r\n\r\nStart time: Sunday, September 27, 2026, at 12:00 PM UTC\r\n\r\nEnd time: Friday, October 9, 2026, at 6:00 AM UTC\r\n\r\nRoot cause: A recent code change intended to unify font colors was incorrectly applied to the background color property for cartesian charts pinned to the Power BI dashboard, resulting in the data on these charts being illegible.\r\n\r\nNext steps: \n- We're continuing to develop important visual upgrades while optimizing our quality assurance checks to ensure a smooth user experience.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-10-08T19:48:35.37Z",
+          "postType": "regular",
+          "content": "Title: Users may not see chart data when using standard light or dark themes on Power BI dashboards\r\n\r\nUser impact: Users may not see chart data when using standard light or dark themes on Power BI dashboards.\r\n\r\nMore info: This display issue impacts the appearance of cartesian charts only, such as bar charts and line charts.\n \nAs we develop our long-term remediation, users can choose to keep the report theme when pinning charts or use any dashboard theme other than light mode.\r\n\r\nCurrent status: We've encountered some blockers within our deployment pipelines, which we’re currently addressing, and it's taking longer than initially expected. We'll provide a mitigation timeline once available.\r\n\r\nScope of impact: This issue may impact any user who was attempting to view data on a cartesian chart pinned to the Power BI dashboard with standard light theme or dark theme enabled. This information may be updated as our investigation continues.\r\n\r\nNext update by: Friday, October 9, 2026, at 8:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-07T19:33:17.07Z",
+          "postType": "regular",
+          "content": "Title: Users may not see chart data when using standard light or dark themes on Power BI dashboards\r\n\r\nUser impact: Users may not see chart data when using standard light or dark themes on Power BI dashboards.\r\n\r\nMore info: This display issue impacts the appearance of cartesian charts only, such as bar charts and line charts.\n \nAs we develop our long-term remediation, users can choose to keep the report theme when pinning charts or use any dashboard theme other than light mode.\r\n\r\nCurrent status: We've completed development of the long-term fix for this issue, and we're expediting the process to deploy it to the affected environment. We anticipate the solution will be fully deployed by the time of our next scheduled update, and the results will aid in confirming the root cause.\r\n\r\nScope of impact: This issue may impact any user who was attempting to view data on a cartesian chart pinned to the Power BI dashboard with standard light theme or dark theme enabled. This information may be updated as our investigation continues.\r\n\r\nNext update by: Thursday, October 8, 2026, at 8:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-06T20:03:25.28Z",
+          "postType": "regular",
+          "content": "Title: Users may not see chart data when using standard light or dark themes on Power BI dashboards\r\n\r\nUser impact: Users may not see chart data when using standard light or dark themes on Power BI dashboards.\r\n\r\nMore info: This display issue impacts the appearance of cartesian charts only, such as bar charts and line charts.\n \nAs we develop our long-term remediation, users can choose to keep the report theme when pinning charts or use any dashboard theme other than light mode.\r\n\r\nCurrent status: We've identified that a recent code change has resulted in all data in charts pinned to the Power BI dashboard when choosing the light theme for chart display to show as black. We're developing a long-term fix for this issue, which we expect to be available by the time of our next scheduled communications update.\r\n\r\nScope of impact: This issue may impact any user who was attempting to view data on a cartesian chart pinned to the Power BI dashboard with standard light theme or dark theme enabled. This information may be updated as our investigation continues.\r\n\r\nNext update by: Friday, October 16, 2026, at 10:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-06T19:38:03.16Z",
+          "postType": "regular",
+          "content": "Title: Users may not see chart data when using standard light or dark themes on Power BI dashboards\r\n\r\nUser impact: Users may not see chart data when using standard light or dark themes on Power BI dashboards.\r\n\r\nCurrent status: We're investigating an issue with chart data visibility when using the light Power BI dashboard theme and checking for impact to your organization. We'll provide an update within 30 minutes."
+        }
+      ],
+      "serviceName": "Power BI",
+      "affectedServices": [
+        "Power BI"
+      ]
+    },
     {
       "id": "TM1492711",
       "title": "Some users may be unable to access Microsoft Teams transcripts and recordings",
