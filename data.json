@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-09T19:27:32.714Z",
+  "lastUpdated": "2026-10-09T19:57:45.106Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -646,16 +646,21 @@
           "title": "Users may be unable to download webinar registration details from the Events app in Microsoft Teams",
           "startTime": "2026-10-09T18:56:09.9Z",
           "endTime": null,
-          "lastModified": "2026-10-09T18:57:19.057Z",
+          "lastModified": "2026-10-09T19:35:40.46Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to download webinar registration details from the Events app in Microsoft Teams.",
           "scopeOfImpact": "Impact may occur for users whose assigned meeting policy has AllowEngagementReport set to Off, preventing them from downloading webinar registration details from the Events app in Microsoft Teams. This information may be updated as our investigation continues.",
           "rootCause": "",
-          "nextUpdateBy": "Friday, October 9, 2026, at 8:00 PM UTC",
+          "nextUpdateBy": "Friday, October 9, 2026, at 10:00 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-09T19:35:40.46Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to download webinar registration details from the Events app in Microsoft Teams\r\n\r\nUser impact: Users may be unable to download webinar registration details from the Events app in Microsoft Teams.\r\n\r\nMore info: Specifically, this impacts users who have the AllowEngagementReport meeting policy set to Off, as they're unable to download webinar registration details in Microsoft Teams Events because the Download option does not appear.\r\n\r\nCurrent status: In conjunction with our continued review of feature updates that may be contributing to the issue, we're analyzing logs provided by some affected user to determine the source of impact.\r\n\r\nScope of impact: Impact may occur for users whose assigned meeting policy has AllowEngagementReport set to Off, preventing them from downloading webinar registration details from the Events app in Microsoft Teams. This information may be updated as our investigation continues.\r\n\r\nNext update by: Friday, October 9, 2026, at 10:00 PM UTC"
+            },
             {
               "createdAt": "2026-10-09T18:57:19.057Z",
               "postType": "regular",
