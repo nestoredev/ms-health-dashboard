@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-12T13:22:03.293Z",
+  "lastUpdated": "2026-10-12T13:52:15.501Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -60,66 +60,6 @@
               "createdAt": "2026-09-30T17:04:20.98Z",
               "postType": "regular",
               "content": "Title: Users may intermittently be unable to access their calendars in Outlook on the web and the new Outlook desktop client\r\n\r\nUser impact: Users may intermittently be unable to access their calendars in Outlook on the web and the new Outlook desktop client.\r\n\r\nMore info: Users get the error message, “Can’t retrieve calendar events right now. Refresh the browser and try again.”\r\n\r\nCurrent status: We're investigating a potential issue with Exchange Online and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Exchange Online"
-          ]
-        },
-        {
-          "id": "EX1500900",
-          "title": "Admins are unable to access the Exchange admin center (EAC)",
-          "startTime": "2026-10-12T09:35:30Z",
-          "endTime": null,
-          "lastModified": "2026-10-12T13:04:24.203Z",
-          "status": "serviceDegradation",
-          "severity": "incident",
-          "userImpact": "Admins are unable to access the EAC. ",
-          "scopeOfImpact": "",
-          "rootCause": "",
-          "nextUpdateBy": "Monday, October 12, 2026, at 1:30 PM UTC",
-          "feature": "Reports of an Incident",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-10-12T13:04:24.203Z",
-              "postType": "quick",
-              "content": "We’ve completed the rollback and are continuing to monitor service health, with telemetry showing errors trending downward from their earlier peak. Admins who continue to experience impact should close their existing Exchange admin center (EAC) browser session, open a new session, and retry accessing the EAC. We’ll continue monitoring to validate recovery.\n\nThis quick update is designed to give the latest information on this issue.\n \nNext update by: Monday, October 12, 2026, at 1:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-12T12:50:57.543Z",
-              "postType": "quick",
-              "content": "We’re continuing to roll back the identified Exchange admin center (EAC) change. Initial telemetry shows errors trending downward from their earlier peak, and we’re monitoring service health to determine whether the rollback restores access for affected admins.\n \nThis quick update is designed to give the latest information on this issue.\n \nNext update by: Monday, October 12, 2026, at 1:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-12T12:23:27.19Z",
-              "postType": "regular",
-              "content": "Title: Admins are unable to access the Exchange admin center (EAC)\n\nUser impact: Admins are unable to access the EAC. \n\nMore info: When attempting to access the Exchange admin center, admins encounter an “Internal Server Error” message.\n \nCurrent status: Our testing has identified a recent Exchange admin center (EAC) configuration change as a potential contributor to the access failures and associated HTTP 302 redirects. We’re rolling back the change, which we expect to complete within approximately two hours. Once complete, we’ll monitor the environment to determine whether this resolves the impact.\n \nScope of impact: Impact may be specific to any admin attempting to access the EAC. This information may be updated as our investigation continues.\n\nNext update by: Monday, October 12, 2026, at 1:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-12T12:01:41.633Z",
-              "postType": "quick",
-              "content": "We’re continuing to test the rollback of the recent Exchange admin center (EAC) change while monitoring the results to determine if this resolves the impact. In parallel, we’re continuing our analysis of the unexpected HTTP 302 redirects to help determine the source of the issue.\n\nThis quick update is designed to give the latest information on this issue.\n\nNext update by: Monday, October 12, 2026, at 12:30 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-12T11:21:48.95Z",
-              "postType": "regular",
-              "content": "Title: Admins are unable to access the Exchange admin center (EAC)\n\nUser impact: Admins are unable to access the EAC. \n\nMore info: When attempting to access the Exchange admin center, admins encounter an “Internal Server Error” message.\n\nCurrent status: We’re continuing to investigate the unexpected HTTP 302 redirects and are testing a rollback of a recent Exchange admin center (EAC) change to determine if this resolves the impact. We’re also comparing results across affected environments to determine our next steps.\n\nScope of impact: Impact may be specific to any admin attempting to access the EAC. This information may be updated as our investigation continues.\n\nNext update by: Monday, October 12, 2026, at 12:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-12T10:53:19.417Z",
-              "postType": "quick",
-              "content": "We’ve identified unexpected 302 redirect errors during affected Exchange admin center (EAC) access attempts and are analyzing diagnostic logs to isolate the source of the access failures. While we continue our investigation, admins remain unable to access the EAC, with no workaround currently available.\n \nThis quick update is designed to give the latest information on this issue.\n \nNext update by: Monday, October 12, 2026, at 11:30 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-12T10:19:37.103Z",
-              "postType": "regular",
-              "content": "Title: Admins are unable to access the Exchange admin center (EAC)\n\nUser impact: Admins are unable to access the EAC. \n\nMore info: When attempting to access the Exchange admin center, affected admins may encounter an “Internal Server Error” message.\n \nCurrent status: We’re reviewing service logs and analyzing available diagnostic data to identify the source of the issue and determine next steps.\n \nScope of impact: Impact may be specific to any admin attempting to access the EAC. This information may be updated as our investigation continues.\n \nNext update by: Monday, October 12, 2026, at 11:30 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-12T09:37:21.227Z",
-              "postType": "regular",
-              "content": "Title: Some admins may be unable to access the Exchange admin center (EAC)\r\n\r\nUser impact: Admins may be unable to access the EAC. \r\n\r\nMore info: When attempting to access the Exchange admin center, affected admins may encounter an “Internal Server Error” message. \r\n\r\nCurrent status: When attempting to access the Exchange admin center, affected admins may encounter an “Internal Server Error” message. \r\n\r\nScope of impact: Impact may be specific to any admin attempting to access the EAC. This information may be updated as our investigation continues. \r\n\r\nNext update by: Monday, October 12, 2026, at 11:30 AM UTC"
             }
           ],
           "affectedServices": [
@@ -401,13 +341,13 @@
         {
           "id": "MO1501829",
           "title": "Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center",
-          "startTime": "2026-10-12T12:50:55.467Z",
+          "startTime": "2026-09-08T16:05:00Z",
           "endTime": null,
-          "lastModified": "2026-10-12T12:56:55.66Z",
+          "lastModified": "2026-10-12T13:35:43.13Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center.",
-          "scopeOfImpact": "Some admins attempting to see the latest Copilot Health data in the Microsoft 365 admin center may be impacted.",
+          "scopeOfImpact": "Some admins attempting to see the latest Copilot Health data in the Microsoft 365 admin center may be impacted.\r\n\r\nStart time: Tuesday, September 8, 2026, at 4:05 PM UTC",
           "rootCause": "An upstream process responsible for Copilot Health data was disabled, resulting in the impact.",
           "nextUpdateBy": "Tuesday, October 13, 2026, at 12:00 PM UTC",
           "feature": "Sign-in",
@@ -416,7 +356,7 @@
             {
               "createdAt": "2026-10-12T12:56:55.66Z",
               "postType": "regular",
-              "content": "Title: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center.\r\n\r\nMore info: Specifically, the tenant readiness score data after September 8, 2026, may be stale.\r\n\r\nCurrent status: We've confirmed that impact associated with CP1482212 persists as the data was not processed as expected. We're validating that the data is present to be able to run the pipeline successfully and remediate impact completely.\r\n\r\nScope of impact: Some admins attempting to see the latest Copilot Health data in the Microsoft 365 admin center may be impacted.\r\n\r\nRoot cause: An upstream process responsible for Copilot Health data was disabled, resulting in the impact.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 12:00 PM UTC"
+              "content": "Title: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center.\r\n\r\nMore info: Specifically, monthly data in the Update channels, Microsoft 365 updates (Past 6 months view), Connected experiences status, and OneDrive status cards on the Copilot Health page may not reflect data after July 2026. The Today view in the Microsoft 365 updates card isn't affected.\r\n\r\nCurrent status: We've confirmed that impact associated with CP1482212 persists as the data was not processed as expected. We're validating that the data is present to be able to run the pipeline successfully and remediate impact completely.\r\n\r\nScope of impact: Some admins attempting to see the latest Copilot Health data in the Microsoft 365 admin center may be impacted.\r\n\r\nStart time: Tuesday, September 8, 2026, at 4:05 PM UTC\r\n\r\nRoot cause: An upstream process responsible for Copilot Health data was disabled, resulting in the impact.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 12:00 PM UTC"
             }
           ],
           "affectedServices": [
@@ -1143,6 +1083,52 @@
     }
   ],
   "history": [
+    {
+      "id": "EX1500900",
+      "title": "Admins are unable to access the Exchange admin center (EAC)",
+      "startTime": "2026-10-12T08:15:00Z",
+      "endTime": "2026-10-12T12:50:00Z",
+      "lastModified": "2026-10-12T13:28:40.877Z",
+      "status": "serviceRestored",
+      "severity": "incident",
+      "userImpact": "Admins are unable to access the EAC. ",
+      "scopeOfImpact": "Impact was specific to admins attempting to access the EAC.\n \nStart time: Monday, October 12, 2026, at 8:15 AM UTC\n \nEnd time: Monday, October 12, 2026, at 12:50 PM UTC\n \nPreliminary",
+      "rootCause": "A recent EAC configuration change resulted in unexpected HTTP responses within the affected request path, preventing admins from successfully accessing the EAC. Reverting the identified change restored expected service functionality.\n \nNext steps:\n- We’re reviewing the identified EAC change and associated service configuration to help prevent similar impact from recurring.\n- We’re reviewing our monitoring and telemetry to improve detection and alerting for similar service behavior.\n \nWe’ll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days.",
+      "nextUpdateBy": "",
+      "feature": "Reports of an Incident",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-10-12T13:28:40.877Z",
+          "postType": "regular",
+          "content": "Title: Admins are unable to access the Exchange admin center (EAC)\n\nUser impact: Admins are unable to access the EAC. \n\nMore info: When attempting to access the Exchange admin center, affected admins encountered an “Internal Server Error” message.\n \nFinal status: We've completed the rollback of the identified Exchange admin center (EAC) change. Service telemetry shows that errors have returned to expected levels, and user reports have confirmed that EAC access has been restored. Admins who continue to experience impact should close their existing EAC browser session, open a new session, and retry accessing the EAC. We’ll continue to monitor service health to ensure sustained service stability.\n \nScope of impact: Impact was specific to admins attempting to access the EAC.\n \nStart time: Monday, October 12, 2026, at 8:15 AM UTC\n \nEnd time: Monday, October 12, 2026, at 12:50 PM UTC\n \nPreliminary root cause: A recent EAC configuration change resulted in unexpected HTTP responses within the affected request path, preventing admins from successfully accessing the EAC. Reverting the identified change restored expected service functionality.\n \nNext steps:\n- We’re reviewing the identified EAC change and associated service configuration to help prevent similar impact from recurring.\n- We’re reviewing our monitoring and telemetry to improve detection and alerting for similar service behavior.\n \nWe’ll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days."
+        },
+        {
+          "createdAt": "2026-10-12T13:04:24.203Z",
+          "postType": "quick",
+          "content": "We’ve completed the rollback and are continuing to monitor service health, with telemetry showing errors trending downward from their earlier peak. Admins who continue to experience impact should close their existing Exchange admin center (EAC) browser session, open a new session, and retry accessing the EAC. We’ll continue monitoring to validate recovery.\n\nThis quick update is designed to give the latest information on this issue.\n \nNext update by: Monday, October 12, 2026, at 1:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-12T12:50:57.543Z",
+          "postType": "quick",
+          "content": "We’re continuing to roll back the identified Exchange admin center (EAC) change. Initial telemetry shows errors trending downward from their earlier peak, and we’re monitoring service health to determine whether the rollback restores access for affected admins.\n \nThis quick update is designed to give the latest information on this issue.\n \nNext update by: Monday, October 12, 2026, at 1:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-12T12:23:27.19Z",
+          "postType": "regular",
+          "content": "Title: Admins are unable to access the Exchange admin center (EAC)\n\nUser impact: Admins are unable to access the EAC. \n\nMore info: When attempting to access the Exchange admin center, admins encounter an “Internal Server Error” message.\n \nCurrent status: Our testing has identified a recent Exchange admin center (EAC) configuration change as a potential contributor to the access failures and associated HTTP 302 redirects. We’re rolling back the change, which we expect to complete within approximately two hours. Once complete, we’ll monitor the environment to determine whether this resolves the impact.\n \nScope of impact: Impact may be specific to any admin attempting to access the EAC. This information may be updated as our investigation continues.\n\nNext update by: Monday, October 12, 2026, at 1:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-12T12:01:41.633Z",
+          "postType": "quick",
+          "content": "We’re continuing to test the rollback of the recent Exchange admin center (EAC) change while monitoring the results to determine if this resolves the impact. In parallel, we’re continuing our analysis of the unexpected HTTP 302 redirects to help determine the source of the issue.\n\nThis quick update is designed to give the latest information on this issue.\n\nNext update by: Monday, October 12, 2026, at 12:30 AM UTC"
+        }
+      ],
+      "serviceName": "Exchange Online",
+      "affectedServices": [
+        "Exchange Online"
+      ]
+    },
     {
       "id": "OP1500833",
       "title": "Users may have been unable to access or protect content using Azure Rights Management (ARM) in Microsoft 365 services",
