@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-12T13:52:15.501Z",
+  "lastUpdated": "2026-10-12T14:22:27.563Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -666,16 +666,21 @@
           "title": "Users may be unable to download webinar registration details from the Events app in Microsoft Teams",
           "startTime": "2026-10-09T18:56:09.9Z",
           "endTime": null,
-          "lastModified": "2026-10-12T06:54:12.73Z",
+          "lastModified": "2026-10-12T13:57:36.08Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to download webinar registration details from the Events app in Microsoft Teams.",
-          "scopeOfImpact": "Impact may occur for users whose assigned meeting policy has AllowEngagementReport set to Off, preventing them from downloading webinar registration details from the Events app in Microsoft Teams. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, October 9, 2026, at 4:10 PM UTC",
+          "scopeOfImpact": "Impact may occur for users whose assigned meeting policy has AllowEngagementReport set to Off, preventing them from downloading webinar registration details from the Events app in Microsoft Teams. This information may be updated as our investigation continues.",
           "rootCause": "A recent service update introduced a regression that causes the registration report download option to become unavailable when the engagement reporting policy is disabled, despite the report being independent of this policy.",
-          "nextUpdateBy": "Monday, October 12, 2026, at 4:00 PM UTC",
+          "nextUpdateBy": "Tuesday, October 13, 2026, at 4:00 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-12T13:57:36.08Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to download webinar registration details from the Events app in Microsoft Teams\r\n\r\nUser impact: Users may be unable to download webinar registration details from the Events app in Microsoft Teams.\r\n\r\nMore info: Specifically, this impacts users who have the AllowEngagementReport meeting policy set to Off, as they're unable to download webinar registration details in Microsoft Teams Events because the Download option does not appear.\r\n\r\nCurrent status: We've deployed the aforementioned fix and are reaching out to affected users to validate that impact is no longer occurring.\r\n\r\nScope of impact: Impact may occur for users whose assigned meeting policy has AllowEngagementReport set to Off, preventing them from downloading webinar registration details from the Events app in Microsoft Teams. This information may be updated as our investigation continues.\r\n\r\nRoot cause: A recent service update introduced a regression that causes the registration report download option to become unavailable when the engagement reporting policy is disabled, despite the report being independent of this policy.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 4:00 PM UTC"
+            },
             {
               "createdAt": "2026-10-11T10:35:44.497Z",
               "postType": "regular",
@@ -1088,7 +1093,7 @@
       "title": "Admins are unable to access the Exchange admin center (EAC)",
       "startTime": "2026-10-12T08:15:00Z",
       "endTime": "2026-10-12T12:50:00Z",
-      "lastModified": "2026-10-12T13:28:40.877Z",
+      "lastModified": "2026-10-12T14:08:10.083Z",
       "status": "serviceRestored",
       "severity": "incident",
       "userImpact": "Admins are unable to access the EAC. ",
