@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-12T09:20:22.881Z",
+  "lastUpdated": "2026-10-12T09:50:35.230Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -60,6 +60,31 @@
               "createdAt": "2026-09-30T17:04:20.98Z",
               "postType": "regular",
               "content": "Title: Users may intermittently be unable to access their calendars in Outlook on the web and the new Outlook desktop client\r\n\r\nUser impact: Users may intermittently be unable to access their calendars in Outlook on the web and the new Outlook desktop client.\r\n\r\nMore info: Users get the error message, “Can’t retrieve calendar events right now. Refresh the browser and try again.”\r\n\r\nCurrent status: We're investigating a potential issue with Exchange Online and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online"
+          ]
+        },
+        {
+          "id": "EX1500900",
+          "title": "Some admins may be unable to access the Exchange admin center (EAC)",
+          "startTime": "2026-10-12T09:35:30.063Z",
+          "endTime": null,
+          "lastModified": "2026-10-12T09:37:21.227Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Admins may be unable to access the EAC. ",
+          "scopeOfImpact": "Impact may be specific to any admin attempting to access the EAC. This information may be updated as our investigation continues.",
+          "rootCause": "",
+          "nextUpdateBy": "Monday, October 12, 2026, at 11:30 AM UTC",
+          "feature": "Reports of an Incident",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-10-12T09:37:21.227Z",
+              "postType": "regular",
+              "content": "Title: Some admins may be unable to access the Exchange admin center (EAC)\r\n\r\nUser impact: Admins may be unable to access the EAC. \r\n\r\nMore info: When attempting to access the Exchange admin center, affected admins may encounter an “Internal Server Error” message. \r\n\r\nCurrent status: When attempting to access the Exchange admin center, affected admins may encounter an “Internal Server Error” message. \r\n\r\nScope of impact: Impact may be specific to any admin attempting to access the EAC. This information may be updated as our investigation continues. \r\n\r\nNext update by: Monday, October 12, 2026, at 11:30 AM UTC"
             }
           ],
           "affectedServices": [
@@ -141,16 +166,26 @@
           "title": "Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile",
           "startTime": "2026-10-06T11:45:49.047Z",
           "endTime": null,
-          "lastModified": "2026-10-07T09:26:42.597Z",
+          "lastModified": "2026-10-12T09:20:53.707Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.",
           "scopeOfImpact": "Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC",
           "rootCause": "A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.",
-          "nextUpdateBy": "Monday, October 12, 2026, at 10:00 AM UTC",
+          "nextUpdateBy": "Wednesday, October 14, 2026, at 10:00 AM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-12T09:20:53.707Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’re proceeding to monitor the deployment as it progresses and expect completion by Wednesday, October 14, 2026. \r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Wednesday, October 14, 2026, at 10:00 AM UTC"
+            },
+            {
+              "createdAt": "2026-10-12T09:20:51.75Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’re proceeding to monitor the deployment as it progresses and expect completion by Wednesday, October 14, 2026. \r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Wednesday, October 14, 2026, at 10:00 AM UTC"
+            },
             {
               "createdAt": "2026-10-07T09:26:42.597Z",
               "postType": "regular",
@@ -333,16 +368,26 @@
           "title": "Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile",
           "startTime": "2026-10-06T11:45:49.047Z",
           "endTime": null,
-          "lastModified": "2026-10-07T09:26:42.597Z",
+          "lastModified": "2026-10-12T09:20:53.707Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.",
           "scopeOfImpact": "Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC",
           "rootCause": "A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.",
-          "nextUpdateBy": "Monday, October 12, 2026, at 10:00 AM UTC",
+          "nextUpdateBy": "Wednesday, October 14, 2026, at 10:00 AM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-12T09:20:53.707Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’re proceeding to monitor the deployment as it progresses and expect completion by Wednesday, October 14, 2026. \r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Wednesday, October 14, 2026, at 10:00 AM UTC"
+            },
+            {
+              "createdAt": "2026-10-12T09:20:51.75Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’re proceeding to monitor the deployment as it progresses and expect completion by Wednesday, October 14, 2026. \r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Wednesday, October 14, 2026, at 10:00 AM UTC"
+            },
             {
               "createdAt": "2026-10-07T09:26:42.597Z",
               "postType": "regular",
@@ -719,16 +764,26 @@
           "title": "Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile",
           "startTime": "2026-10-06T11:45:49.047Z",
           "endTime": null,
-          "lastModified": "2026-10-07T09:26:42.597Z",
+          "lastModified": "2026-10-12T09:20:53.707Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.",
           "scopeOfImpact": "Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC",
           "rootCause": "A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.",
-          "nextUpdateBy": "Monday, October 12, 2026, at 10:00 AM UTC",
+          "nextUpdateBy": "Wednesday, October 14, 2026, at 10:00 AM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-12T09:20:53.707Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’re proceeding to monitor the deployment as it progresses and expect completion by Wednesday, October 14, 2026. \r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Wednesday, October 14, 2026, at 10:00 AM UTC"
+            },
+            {
+              "createdAt": "2026-10-12T09:20:51.75Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’re proceeding to monitor the deployment as it progresses and expect completion by Wednesday, October 14, 2026. \r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Wednesday, October 14, 2026, at 10:00 AM UTC"
+            },
             {
               "createdAt": "2026-10-07T09:26:42.597Z",
               "postType": "regular",
@@ -848,9 +903,35 @@
     },
     {
       "service": "Microsoft 365 apps",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "O365Client",
-      "issues": []
+      "issues": [
+        {
+          "id": "OP1500833",
+          "title": "Some users may be unable to access or protect content using Azure Rights Management (ARM) across Microsoft 365 services",
+          "startTime": "2026-10-12T09:13:02.167Z",
+          "endTime": null,
+          "lastModified": "2026-10-12T09:20:30.927Z",
+          "status": "serviceDegradation",
+          "severity": "incident",
+          "userImpact": "Users may be unable to access or protect content using ARM across Microsoft 365 services.",
+          "scopeOfImpact": "Some users attempting to encrypt or decrypt content using Microsoft 365 services that rely on ARM may be impacted.",
+          "rootCause": "",
+          "nextUpdateBy": "Monday, October 12, 2026, at 11:30 AM UTC",
+          "feature": "Multiple Applications",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-10-12T09:16:44.863Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to access or protect content using Azure Rights Management (ARM) across Microsoft 365 services\r\n\r\nUser impact: Users may be unable to access or protect content using ARM across Microsoft 365 services.\r\n\r\nMore info: Impact may prevent users from encrypting or decrypting protected content, including files and email messages, across Microsoft 365 services that rely on ARM.\r\n\r\nCurrent status: We’ve identified that some service components responsible for processing ARM requests are in an unhealthy state. We’re attempting to restart the affected components to mitigate impact. We’re seeing early signs of service recovery and are investigating the root cause while evaluating whether additional mitigation actions are required.\r\n\r\nScope of impact: Some users attempting to encrypt or decrypt content using Microsoft 365 services that rely on ARM may be impacted. \r\n\r\nNext update by: Monday, October 12, 2026, at 11:30 AM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 apps"
+          ]
+        }
+      ]
     },
     {
       "service": "Power Apps",
