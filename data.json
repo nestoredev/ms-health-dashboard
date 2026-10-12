@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-12T12:21:37.176Z",
+  "lastUpdated": "2026-10-12T12:51:48.335Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -71,16 +71,21 @@
           "title": "Admins are unable to access the Exchange admin center (EAC)",
           "startTime": "2026-10-12T09:35:30Z",
           "endTime": null,
-          "lastModified": "2026-10-12T12:01:41.633Z",
+          "lastModified": "2026-10-12T12:23:27.19Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Admins are unable to access the EAC. ",
-          "scopeOfImpact": "",
+          "scopeOfImpact": "Impact may be specific to any admin attempting to access the EAC. This information may be updated as our investigation continues.",
           "rootCause": "",
-          "nextUpdateBy": "Monday, October 12, 2026, at 12:30 AM UTC",
+          "nextUpdateBy": "Monday, October 12, 2026, at 1:30 PM UTC",
           "feature": "Reports of an Incident",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-12T12:23:27.19Z",
+              "postType": "regular",
+              "content": "Title: Admins are unable to access the Exchange admin center (EAC)\n\nUser impact: Admins are unable to access the EAC. \n\nMore info: When attempting to access the Exchange admin center, admins encounter an “Internal Server Error” message.\n \nCurrent status: Our testing has identified a recent Exchange admin center (EAC) configuration change as a potential contributor to the access failures and associated HTTP 302 redirects. We’re rolling back the change, which we expect to complete within approximately two hours. Once complete, we’ll monitor the environment to determine whether this resolves the impact.\n \nScope of impact: Impact may be specific to any admin attempting to access the EAC. This information may be updated as our investigation continues.\n\nNext update by: Monday, October 12, 2026, at 1:30 PM UTC"
+            },
             {
               "createdAt": "2026-10-12T12:01:41.633Z",
               "postType": "quick",
@@ -923,40 +928,9 @@
     },
     {
       "service": "Microsoft 365 apps",
-      "status": "serviceDegradation",
+      "status": "serviceOperational",
       "id": "O365Client",
-      "issues": [
-        {
-          "id": "OP1500833",
-          "title": "Users may have been unable to access or protect content using Azure Rights Management (ARM) in Microsoft 365 services",
-          "startTime": "2026-10-12T07:00:00Z",
-          "endTime": null,
-          "lastModified": "2026-10-12T12:12:32.917Z",
-          "status": "serviceDegradation",
-          "severity": "incident",
-          "userImpact": "Users may have been unable to access or protect content using ARM in Microsoft 365 services.",
-          "scopeOfImpact": "Some users attempting to encrypt, decrypt, open, upload, or download protected content across Microsoft 365 services that rely on ARM, including Microsoft Purview and Power BI, or publish agents or add skills to existing agents in Microsoft 365 Copilot Chat, may be impacted.\r\n\r\nStart time: Monday, October 12, 2026, at 7:00 AM UTC",
-          "rootCause": "",
-          "nextUpdateBy": "Monday, October 12, 2026, at 12:30 PM UTC",
-          "feature": "Multiple Applications",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-10-12T10:42:41.803Z",
-              "postType": "regular",
-              "content": "Title: Some users may be unable to access or protect content using Azure Rights Management (ARM) across Microsoft 365 services\r\n\r\nUser impact: Users may be unable to access or protect content using ARM across Microsoft 365 services.\r\n\r\nMore info: Impact may prevent users from encrypting, decrypting, or opening protected files and email messages across Microsoft 365 services that rely on ARM. This includes protection capabilities in Microsoft Purview, encrypted documents, protected file uploads and downloads in SharePoint Online, related Power BI and dependent service functionality, and publishing agents or adding skills to existing agents in Microsoft 365 Copilot Chat.\r\n\r\nCurrent status: We’ve redirected traffic away from affected infrastructure to allow the unhealthy service components to recover. Following this action, we’ve observed service recovery across all affected regions. We’re monitoring service health to confirm that recovery remains stable while we continue investigating the root cause.\r\n\r\nScope of impact: Some users attempting to encrypt, decrypt, open, upload, or download protected content across Microsoft 365 services that rely on ARM, including Microsoft Purview and Power BI, or publish agents or add skills to existing agents in Microsoft 365 Copilot Chat, may be impacted.\r\n\r\nStart time: Monday, October 12, 2026, at 7:00 AM UTC\r\n\r\nNext update by: Monday, October 12, 2026, at 12:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-12T09:16:44.863Z",
-              "postType": "regular",
-              "content": "Title: Some users may be unable to access or protect content using Azure Rights Management (ARM) across Microsoft 365 services\r\n\r\nUser impact: Users may be unable to access or protect content using ARM across Microsoft 365 services.\r\n\r\nMore info: Impact may prevent users from encrypting or decrypting protected content, including files and email messages, across Microsoft 365 services that rely on ARM.\r\n\r\nCurrent status: We’ve identified that some service components responsible for processing ARM requests are in an unhealthy state. We’re attempting to restart the affected components to mitigate impact. We’re seeing early signs of service recovery and are investigating the root cause while evaluating whether additional mitigation actions are required.\r\n\r\nScope of impact: Some users attempting to encrypt or decrypt content using Microsoft 365 services that rely on ARM may be impacted. \r\n\r\nNext update by: Monday, October 12, 2026, at 11:30 AM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Microsoft 365 apps"
-          ]
-        }
-      ]
+      "issues": []
     },
     {
       "service": "Power Apps",
@@ -1134,6 +1108,42 @@
     }
   ],
   "history": [
+    {
+      "id": "OP1500833",
+      "title": "Users may have been unable to access or protect content using Azure Rights Management (ARM) in Microsoft 365 services",
+      "startTime": "2026-10-12T07:00:00Z",
+      "endTime": "2026-10-12T10:21:00Z",
+      "lastModified": "2026-10-12T12:14:40.333Z",
+      "status": "serviceRestored",
+      "severity": "incident",
+      "userImpact": "Users may have been unable to access or protect content using ARM in Microsoft 365 services.",
+      "scopeOfImpact": "Some users attempting to encrypt, decrypt, open, upload, or download protected content across Microsoft 365 services that rely on ARM, including Microsoft Purview and Power BI, or publish agents or add skills to existing agents in Microsoft 365 Copilot Chat, may have been impacted.\r\n\r\nStart time: Monday, October 12, 2026, at 7:00 AM UTC\r\n\r\nEnd time: Monday, October 12, 2026, at 10:21 AM UTC",
+      "rootCause": "A section of the ARM service infrastructure that facilitates the processing of cached service data was underperforming, resulting in impact.\r\n\r\nNext steps: \n- We’re reviewing performance data and trends on the affected infrastructure to help prevent similar impact from happening again.",
+      "nextUpdateBy": "",
+      "feature": "Multiple Applications",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-10-12T12:13:43.987Z",
+          "postType": "regular",
+          "content": "Title: Users may have been unable to access or protect content using Azure Rights Management (ARM) in Microsoft 365 services\r\n\r\nUser impact: Users may have been unable to access or protect content using ARM in Microsoft 365 services.\r\n\r\nMore info: Impact may have prevented users from encrypting, decrypting, or opening protected files and email messages across Microsoft 365 services that rely on ARM. This included protection capabilities in Microsoft Purview, encrypted documents, protected file uploads and downloads in SharePoint Online, related Power BI and dependent service functionality, and publishing agents or adding skills to existing agents in Microsoft 365 Copilot Chat.\r\n\r\nFinal status: We’ve determined that a section of the ARM service infrastructure that facilitates the processing of cached service data was underperforming, resulting in impact. We’ve confirmed, following a period of monitoring service telemetry, that the mitigating actions successfully resolved the issue.\r\n\r\nScope of impact: Some users attempting to encrypt, decrypt, open, upload, or download protected content across Microsoft 365 services that rely on ARM, including Microsoft Purview and Power BI, or publish agents or add skills to existing agents in Microsoft 365 Copilot Chat, may have been impacted.\r\n\r\nStart time: Monday, October 12, 2026, at 7:00 AM UTC\r\n\r\nEnd time: Monday, October 12, 2026, at 10:21 AM UTC\r\n\r\nRoot cause: A section of the ARM service infrastructure that facilitates the processing of cached service data was underperforming, resulting in impact.\r\n\r\nNext steps: \n- We’re reviewing performance data and trends on the affected infrastructure to help prevent similar impact from happening again."
+        },
+        {
+          "createdAt": "2026-10-12T10:42:41.803Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to access or protect content using Azure Rights Management (ARM) across Microsoft 365 services\r\n\r\nUser impact: Users may be unable to access or protect content using ARM across Microsoft 365 services.\r\n\r\nMore info: Impact may prevent users from encrypting, decrypting, or opening protected files and email messages across Microsoft 365 services that rely on ARM. This includes protection capabilities in Microsoft Purview, encrypted documents, protected file uploads and downloads in SharePoint Online, related Power BI and dependent service functionality, and publishing agents or adding skills to existing agents in Microsoft 365 Copilot Chat.\r\n\r\nCurrent status: We’ve redirected traffic away from affected infrastructure to allow the unhealthy service components to recover. Following this action, we’ve observed service recovery across all affected regions. We’re monitoring service health to confirm that recovery remains stable while we continue investigating the root cause.\r\n\r\nScope of impact: Some users attempting to encrypt, decrypt, open, upload, or download protected content across Microsoft 365 services that rely on ARM, including Microsoft Purview and Power BI, or publish agents or add skills to existing agents in Microsoft 365 Copilot Chat, may be impacted.\r\n\r\nStart time: Monday, October 12, 2026, at 7:00 AM UTC\r\n\r\nNext update by: Monday, October 12, 2026, at 12:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-12T09:16:44.863Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to access or protect content using Azure Rights Management (ARM) across Microsoft 365 services\r\n\r\nUser impact: Users may be unable to access or protect content using ARM across Microsoft 365 services.\r\n\r\nMore info: Impact may prevent users from encrypting or decrypting protected content, including files and email messages, across Microsoft 365 services that rely on ARM.\r\n\r\nCurrent status: We’ve identified that some service components responsible for processing ARM requests are in an unhealthy state. We’re attempting to restart the affected components to mitigate impact. We’re seeing early signs of service recovery and are investigating the root cause while evaluating whether additional mitigation actions are required.\r\n\r\nScope of impact: Some users attempting to encrypt or decrypt content using Microsoft 365 services that rely on ARM may be impacted. \r\n\r\nNext update by: Monday, October 12, 2026, at 11:30 AM UTC"
+        }
+      ],
+      "serviceName": "Microsoft 365 apps",
+      "affectedServices": [
+        "Microsoft 365 apps"
+      ]
+    },
     {
       "id": "PB1489649",
       "title": "Users may not see chart data when using standard light or dark themes on Power BI dashboards",
