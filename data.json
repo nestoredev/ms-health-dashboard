@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-12T05:18:48.768Z",
+  "lastUpdated": "2026-10-12T05:48:59.787Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -11,16 +11,21 @@
           "title": "Users may intermittently be unable to access their calendars in Outlook on the web and the new Outlook desktop client",
           "startTime": "2026-09-30T16:54:26.19Z",
           "endTime": null,
-          "lastModified": "2026-10-09T17:02:04.94Z",
+          "lastModified": "2026-10-12T05:30:32.477Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may intermittently be unable to access their calendars in Outlook on the web and the new Outlook desktop client.",
           "scopeOfImpact": "Some users attempting to access their calendars through Outlook on the web or the new Outlook desktop client may intermittently be impacted.\r\n\r\nEstimated time to resolve: Friday October 9, 2026",
           "rootCause": "The issue is related to the calendar cache state following a refresh, where the event-loading process may continue referencing outdated calendar data after the folder information is updated.",
-          "nextUpdateBy": "Monday, October 12, 2026, at 7:00 AM UTC",
+          "nextUpdateBy": "Monday, October 12, 2026, at 9:30 AM UTC",
           "feature": "Outlook - poor customer experience",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-12T05:30:32.477Z",
+              "postType": "regular",
+              "content": "Title: Users may intermittently be unable to access their calendars in Outlook on the web and the new Outlook desktop client\r\n\r\nUser impact: Users may intermittently be unable to access their calendars in Outlook on the web and the new Outlook desktop client.\r\n\r\nMore info: Impacted users may receive the following error message:\n\n“Can’t retrieve calendar events right now. Refresh the browser and try again.”\n\nAs a workaround, impacted users can access their calendar in the classic Outlook desktop client or through Microsoft Teams.\r\n\r\nCurrent status: Our fix deployment is completing for the initially identified service environment; however, we’ve confirmed that additional environments remain impacted. While some users should experience impact resolution as the fix reaches them, we’re extending the fix deployment to the remaining affected environments, and we’ll provide an estimation for its completion once available.\r\n\r\nScope of impact: Some users attempting to access their calendars through Outlook on the web or the new Outlook desktop client may intermittently be impacted.\r\n\r\nEstimated time to resolve: Friday October 9, 2026\r\n\r\nRoot cause: The issue is related to the calendar cache state following a refresh, where the event-loading process may continue referencing outdated calendar data after the folder information is updated.\r\n\r\nNext update by: Monday, October 12, 2026, at 9:30 AM UTC"
+            },
             {
               "createdAt": "2026-10-09T17:02:04.94Z",
               "postType": "regular",
