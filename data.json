@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-13T11:02:13.264Z",
+  "lastUpdated": "2026-10-13T11:32:27.196Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -192,6 +192,34 @@
             "Microsoft 365 suite",
             "Microsoft Teams"
           ]
+        },
+        {
+          "id": "MO1505952",
+          "title": "Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)",
+          "startTime": "2026-10-13T09:26:37.707Z",
+          "endTime": null,
+          "lastModified": "2026-10-13T11:25:28.51Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to access multiple Microsoft 365 services using GSA.\n ",
+          "scopeOfImpact": "Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.",
+          "rootCause": "",
+          "nextUpdateBy": "Tuesday, October 13, 2026, at 11:30 AM UTC",
+          "feature": "Access",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-10-13T09:41:18.723Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\r\n\r\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\r\n\r\nMore info: Impacted services may include, but aren't limited to:\n\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\r\n\r\nCurrent status: We're reviewing service monitoring telemetry to isolate the source of the issue and establish a fix.\r\n\r\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 11:30 AM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online",
+            "Microsoft 365 suite",
+            "Microsoft OneDrive",
+            "Microsoft Teams"
+          ]
         }
       ]
     },
@@ -348,16 +376,21 @@
           "title": "Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center",
           "startTime": "2026-09-08T16:05:00Z",
           "endTime": null,
-          "lastModified": "2026-10-12T13:35:43.13Z",
+          "lastModified": "2026-10-13T10:56:42.203Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center.",
           "scopeOfImpact": "Some admins attempting to see the latest Copilot Health data in the Microsoft 365 admin center may be impacted.\r\n\r\nStart time: Tuesday, September 8, 2026, at 4:05 PM UTC",
           "rootCause": "An upstream process responsible for Copilot Health data was disabled, resulting in the impact.",
-          "nextUpdateBy": "Tuesday, October 13, 2026, at 12:00 PM UTC",
+          "nextUpdateBy": "Tuesday, October 13, 2026, at 5:00 PM UTC",
           "feature": "Sign-in",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-13T10:56:42.203Z",
+              "postType": "regular",
+              "content": "Title: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center.\r\n\r\nMore info: Specifically, monthly data in the Update channels, Microsoft 365 updates (Past 6 months view), Connected experiences status, and OneDrive status cards on the Copilot Health page may not reflect data after July 2026. The Today view in the Microsoft 365 updates card isn't affected.\r\n\r\nCurrent status: We’ve confirmed that the pipeline responsible for processing Copilot Health data is running. We're working to gather the missing data so we can rerun the pipeline and resolve the issue.\r\n\r\nScope of impact: Some admins attempting to see the latest Copilot Health data in the Microsoft 365 admin center may be impacted.\r\n\r\nStart time: Tuesday, September 8, 2026, at 4:05 PM UTC\r\n\r\nRoot cause: An upstream process responsible for Copilot Health data was disabled, resulting in the impact.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 5:00 PM UTC"
+            },
             {
               "createdAt": "2026-10-12T12:56:55.66Z",
               "postType": "regular",
@@ -425,7 +458,7 @@
           "title": "Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)",
           "startTime": "2026-10-13T09:26:37.707Z",
           "endTime": null,
-          "lastModified": "2026-10-13T10:47:16.747Z",
+          "lastModified": "2026-10-13T11:25:28.51Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to access multiple Microsoft 365 services using GSA.\n ",
@@ -442,7 +475,10 @@
             }
           ],
           "affectedServices": [
-            "Microsoft 365 suite"
+            "Exchange Online",
+            "Microsoft 365 suite",
+            "Microsoft OneDrive",
+            "Microsoft Teams"
           ]
         },
         {
@@ -595,9 +631,55 @@
     },
     {
       "service": "SharePoint Online",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "SharePoint",
-      "issues": []
+      "issues": [
+        {
+          "id": "SP1503038",
+          "title": "Users may be unable to view or modify forms in SharePoint Online",
+          "startTime": "2026-10-12T18:04:38.993Z",
+          "endTime": null,
+          "lastModified": "2026-10-13T11:06:36.357Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to view or modify forms in SharePoint Online.",
+          "scopeOfImpact": "Impact may be specific to any user attempting to view or modify Nintex or SPFx Customizers forms in SharePoint Online.",
+          "rootCause": "",
+          "nextUpdateBy": "Tuesday, October 13, 2026, at 8:00 PM UTC",
+          "feature": "Performance (related to custom solutions)",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-10-13T00:22:33.097Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to view or modify forms in SharePoint Online\r\n\r\nUser impact: Users may be unable to view or modify forms in SharePoint Online.\r\n\r\nMore info: Affected users may encounter multiple potential scenarios with Nintex and SharePoint Framework (SPFx) Customizers forms, including:\n \n- Blank pages\n- Null target exceptions\r\n\r\nCurrent status: We’ve isolated a recent API change as the suspected source of the impact. We’ve initiated the process of deploying a fix to confirm our findings and potentially remediate the impact.\r\n\r\nScope of impact: Impact may be specific to any user attempting to view or modify Nintex or SPFx Customizers forms in SharePoint Online.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 8:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-10-12T20:58:27.167Z",
+              "postType": "regular",
+              "content": "Title: Users can't view or modify Nintex forms in SharePoint Online and receive an error\r\n\r\nUser impact: Users can't view or modify Nintex forms in SharePoint Online and receive an error. \r\n\r\nMore info: Affected users are encountering multiple potential scenarios, including:\n \n- Blank pages\n- 200 HTTP errors\n- Null target exceptions\r\n\r\nCurrent status: We're continuing our analysis of the HAR captures to determine the cause of impact. \r\n\r\nScope of impact: Your organization is impacted by this event, and impact is limited to users viewing or modifying Nintex forms in SharePoint Online.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 1:30 AM UTC"
+            },
+            {
+              "createdAt": "2026-10-12T19:11:30.83Z",
+              "postType": "regular",
+              "content": "Title: Users can't view or modify Nintex forms in SharePoint Online and receive an error\r\n\r\nUser impact: Users can't view or modify Nintex forms in SharePoint Online and receive an error. \r\n\r\nMore info: Affected users are encountering multiple potential scenarios, including:\n \n- Blank pages\n- 200 HTTP errors\n- Null target exceptions\r\n\r\nCurrent status: We're expanding our investigation to include HTTP Archive format (HAR) browser captures of the issue in progress to assist in isolating the underlying cause of impact and develop a remediation strategy. \r\n\r\nScope of impact: Your organization is impacted by this event, and impact is limited to users viewing or modifying Nintex forms in SharePoint Online.\r\n\r\nNext update by: Monday, October 12, 2026, at 9:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-10-12T18:27:32.18Z",
+              "postType": "regular",
+              "content": "Title: Users can't view or modify Nintex forms in SharePoint Online and receive an error\r\n\r\nUser impact: Users can't view or modify Nintex forms in SharePoint Online and receive an error. \r\n\r\nMore info: Affected users are encountering multiple potential scenarios, including:\n \n- Blank pages\n- 200 HTTP errors\n- Null target exceptions\r\n\r\nCurrent status: We're reviewing support case details to better understand the impact scenario and determine our next steps.\r\n\r\nScope of impact: Your organization is impacted by this event, and impact is limited to users viewing or modifying Nintex forms in SharePoint Online.\r\n\r\nNext update by: Monday, October 12, 2026, at 8:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-10-12T18:07:09.42Z",
+              "postType": "regular",
+              "content": "Title: Users can't view or modify Nintex forms in SharePoint Online and receive an error\r\n\r\nUser impact: Users can't view or modify Nintex forms in SharePoint Online and receive an error. \r\n\r\nCurrent status: We're investigating a potential issue with SharePoint Online and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "SharePoint Online"
+          ]
+        }
+      ]
     },
     {
       "service": "Dynamics 365 Apps",
@@ -663,9 +745,38 @@
     },
     {
       "service": "Microsoft OneDrive",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "OneDriveForBusiness",
-      "issues": []
+      "issues": [
+        {
+          "id": "MO1505952",
+          "title": "Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)",
+          "startTime": "2026-10-13T09:26:37.707Z",
+          "endTime": null,
+          "lastModified": "2026-10-13T11:25:28.51Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to access multiple Microsoft 365 services using GSA.\n ",
+          "scopeOfImpact": "Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.",
+          "rootCause": "",
+          "nextUpdateBy": "Tuesday, October 13, 2026, at 11:30 AM UTC",
+          "feature": "Access",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-10-13T09:41:18.723Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\r\n\r\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\r\n\r\nMore info: Impacted services may include, but aren't limited to:\n\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\r\n\r\nCurrent status: We're reviewing service monitoring telemetry to isolate the source of the issue and establish a fix.\r\n\r\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 11:30 AM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online",
+            "Microsoft 365 suite",
+            "Microsoft OneDrive",
+            "Microsoft Teams"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft Teams",
@@ -918,6 +1029,34 @@
           ]
         },
         {
+          "id": "MO1505952",
+          "title": "Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)",
+          "startTime": "2026-10-13T09:26:37.707Z",
+          "endTime": null,
+          "lastModified": "2026-10-13T11:25:28.51Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to access multiple Microsoft 365 services using GSA.\n ",
+          "scopeOfImpact": "Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.",
+          "rootCause": "",
+          "nextUpdateBy": "Tuesday, October 13, 2026, at 11:30 AM UTC",
+          "feature": "Access",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-10-13T09:41:18.723Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\r\n\r\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\r\n\r\nMore info: Impacted services may include, but aren't limited to:\n\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\r\n\r\nCurrent status: We're reviewing service monitoring telemetry to isolate the source of the issue and establish a fix.\r\n\r\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 11:30 AM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online",
+            "Microsoft 365 suite",
+            "Microsoft OneDrive",
+            "Microsoft Teams"
+          ]
+        },
+        {
           "id": "MO1481173",
           "title": "Admins may see multiple usage reports not updating in the Microsoft 365 admin center",
           "startTime": "2026-09-28T22:36:21.907Z",
@@ -1019,19 +1158,24 @@
       "issues": [
         {
           "id": "OP1505951",
-          "title": "Some users may be unable to create assignments in Microsoft OneNote ",
-          "startTime": "2026-10-13T09:25:24.453Z",
+          "title": "Some users may be unable to create or publish assignments in Microsoft OneNote ",
+          "startTime": "2026-10-13T09:25:24Z",
           "endTime": null,
-          "lastModified": "2026-10-13T09:29:46.797Z",
+          "lastModified": "2026-10-13T11:08:32.98Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "userImpact": "Users may be unable to create assignments in Microsoft OneNote. ",
-          "scopeOfImpact": "Your organization is affected by this event, and some users attempting to create assignments in Microsoft OneNote may be impacted.",
+          "userImpact": "Users may be unable to create or publish assignments in OneNote. ",
+          "scopeOfImpact": "Impact is specific to some users attempting to create or publish assignments in Microsoft OneNote.",
           "rootCause": "",
-          "nextUpdateBy": "Tuesday, October 13, 2026, at 11:30 AM UTC",
+          "nextUpdateBy": "Tuesday, October 13, 2026, at 6:30 PM UTC",
           "feature": "OneNote",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-13T11:08:25.407Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to create or publish assignments in Microsoft OneNote \r\n\r\nUser impact: Users may be unable to create or publish assignments in OneNote. \r\n\r\nCurrent status: We’ve completed development of the fix, and are preparing to deploy it across the affected environment. We’ll monitor service health as the deployment progresses to determine whether it is alleviating impact. \r\n\r\nScope of impact: Impact is specific to some users attempting to create or publish assignments in Microsoft OneNote. \r\n\r\nNext update by: Tuesday, October 13, 2026, at 6:30 PM UTC"
+            },
             {
               "createdAt": "2026-10-13T09:29:26.08Z",
               "postType": "regular",
