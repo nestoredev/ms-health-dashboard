@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-13T11:32:27.196Z",
+  "lastUpdated": "2026-10-13T12:02:41.539Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -198,16 +198,21 @@
           "title": "Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)",
           "startTime": "2026-10-13T09:26:37.707Z",
           "endTime": null,
-          "lastModified": "2026-10-13T11:25:28.51Z",
+          "lastModified": "2026-10-13T11:42:25.93Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to access multiple Microsoft 365 services using GSA.\n ",
           "scopeOfImpact": "Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.",
-          "rootCause": "",
-          "nextUpdateBy": "Tuesday, October 13, 2026, at 11:30 AM UTC",
+          "rootCause": "A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.",
+          "nextUpdateBy": "Tuesday, October 13, 2026, at 1:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-13T11:30:08.517Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\r\n\r\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\r\n\r\nMore info: Impacted services may include, but aren't limited to:\n\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\r\n\r\nCurrent status: We’ve identified that a section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact. We’re applying performance and traffic optimizations to remediate impact and restore connectivity.\r\n\r\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\r\n\r\nRoot cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 1:30 PM UTC"
+            },
             {
               "createdAt": "2026-10-13T09:41:18.723Z",
               "postType": "regular",
@@ -376,20 +381,20 @@
           "title": "Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center",
           "startTime": "2026-09-08T16:05:00Z",
           "endTime": null,
-          "lastModified": "2026-10-13T10:56:42.203Z",
+          "lastModified": "2026-10-13T11:33:14.237Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center.",
-          "scopeOfImpact": "Some admins attempting to see the latest Copilot Health data in the Microsoft 365 admin center may be impacted.\r\n\r\nStart time: Tuesday, September 8, 2026, at 4:05 PM UTC",
+          "scopeOfImpact": "Some admins attempting to see the latest Copilot Health data in the Microsoft 365 admin center may be impacted.\n\nStart time: Tuesday, September 8, 2026, at 4:05 PM UTC",
           "rootCause": "An upstream process responsible for Copilot Health data was disabled, resulting in the impact.",
-          "nextUpdateBy": "Tuesday, October 13, 2026, at 5:00 PM UTC",
+          "nextUpdateBy": "Tuesday, October 13, 2026, at 7:00 PM UTC",
           "feature": "Sign-in",
           "isResolved": false,
           "posts": [
             {
               "createdAt": "2026-10-13T10:56:42.203Z",
               "postType": "regular",
-              "content": "Title: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center.\r\n\r\nMore info: Specifically, monthly data in the Update channels, Microsoft 365 updates (Past 6 months view), Connected experiences status, and OneDrive status cards on the Copilot Health page may not reflect data after July 2026. The Today view in the Microsoft 365 updates card isn't affected.\r\n\r\nCurrent status: We’ve confirmed that the pipeline responsible for processing Copilot Health data is running. We're working to gather the missing data so we can rerun the pipeline and resolve the issue.\r\n\r\nScope of impact: Some admins attempting to see the latest Copilot Health data in the Microsoft 365 admin center may be impacted.\r\n\r\nStart time: Tuesday, September 8, 2026, at 4:05 PM UTC\r\n\r\nRoot cause: An upstream process responsible for Copilot Health data was disabled, resulting in the impact.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 5:00 PM UTC"
+              "content": "Title: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center\n\nUser impact: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center.\n\nMore info: Specifically, monthly data in the Update channels, Microsoft 365 updates (Past 6 months view), Connected experiences status, and OneDrive status cards on the Copilot Health page may not reflect data after July 2026. The Today view in the Microsoft 365 updates card isn't affected.\n\nCurrent status: We’ve confirmed that the pipeline responsible for processing Copilot Health data is running. We're working to gather the missing data so we can rerun the pipeline and resolve the issue.\n\nScope of impact: Some admins attempting to see the latest Copilot Health data in the Microsoft 365 admin center may be impacted.\n\nStart time: Tuesday, September 8, 2026, at 4:05 PM UTC\n\nRoot cause: An upstream process responsible for Copilot Health data was disabled, resulting in the impact.\n\nNext update by: Tuesday, October 13, 2026, at 7:00 PM UTC"
             },
             {
               "createdAt": "2026-10-12T12:56:55.66Z",
@@ -458,16 +463,21 @@
           "title": "Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)",
           "startTime": "2026-10-13T09:26:37.707Z",
           "endTime": null,
-          "lastModified": "2026-10-13T11:25:28.51Z",
+          "lastModified": "2026-10-13T11:42:25.93Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to access multiple Microsoft 365 services using GSA.\n ",
           "scopeOfImpact": "Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.",
-          "rootCause": "",
-          "nextUpdateBy": "Tuesday, October 13, 2026, at 11:30 AM UTC",
+          "rootCause": "A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.",
+          "nextUpdateBy": "Tuesday, October 13, 2026, at 1:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-13T11:30:08.517Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\r\n\r\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\r\n\r\nMore info: Impacted services may include, but aren't limited to:\n\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\r\n\r\nCurrent status: We’ve identified that a section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact. We’re applying performance and traffic optimizations to remediate impact and restore connectivity.\r\n\r\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\r\n\r\nRoot cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 1:30 PM UTC"
+            },
             {
               "createdAt": "2026-10-13T09:41:18.723Z",
               "postType": "regular",
@@ -753,16 +763,21 @@
           "title": "Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)",
           "startTime": "2026-10-13T09:26:37.707Z",
           "endTime": null,
-          "lastModified": "2026-10-13T11:25:28.51Z",
+          "lastModified": "2026-10-13T11:42:25.93Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to access multiple Microsoft 365 services using GSA.\n ",
           "scopeOfImpact": "Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.",
-          "rootCause": "",
-          "nextUpdateBy": "Tuesday, October 13, 2026, at 11:30 AM UTC",
+          "rootCause": "A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.",
+          "nextUpdateBy": "Tuesday, October 13, 2026, at 1:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-13T11:30:08.517Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\r\n\r\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\r\n\r\nMore info: Impacted services may include, but aren't limited to:\n\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\r\n\r\nCurrent status: We’ve identified that a section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact. We’re applying performance and traffic optimizations to remediate impact and restore connectivity.\r\n\r\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\r\n\r\nRoot cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 1:30 PM UTC"
+            },
             {
               "createdAt": "2026-10-13T09:41:18.723Z",
               "postType": "regular",
@@ -1033,16 +1048,21 @@
           "title": "Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)",
           "startTime": "2026-10-13T09:26:37.707Z",
           "endTime": null,
-          "lastModified": "2026-10-13T11:25:28.51Z",
+          "lastModified": "2026-10-13T11:42:25.93Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to access multiple Microsoft 365 services using GSA.\n ",
           "scopeOfImpact": "Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.",
-          "rootCause": "",
-          "nextUpdateBy": "Tuesday, October 13, 2026, at 11:30 AM UTC",
+          "rootCause": "A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.",
+          "nextUpdateBy": "Tuesday, October 13, 2026, at 1:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-13T11:30:08.517Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\r\n\r\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\r\n\r\nMore info: Impacted services may include, but aren't limited to:\n\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\r\n\r\nCurrent status: We’ve identified that a section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact. We’re applying performance and traffic optimizations to remediate impact and restore connectivity.\r\n\r\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\r\n\r\nRoot cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 1:30 PM UTC"
+            },
             {
               "createdAt": "2026-10-13T09:41:18.723Z",
               "postType": "regular",
