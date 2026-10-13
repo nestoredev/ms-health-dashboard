@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-13T17:05:20.018Z",
+  "lastUpdated": "2026-10-13T19:35:40.091Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -71,16 +71,21 @@
           "title": "Users may be unable to reply or reply-all to email messages sent to Microsoft 365 groups in Exchange Online",
           "startTime": "2026-09-25T15:52:36.097Z",
           "endTime": null,
-          "lastModified": "2026-10-13T00:30:13.787Z",
+          "lastModified": "2026-10-13T19:17:13.38Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to reply or reply-all to email messages sent to Microsoft 365 groups in Exchange Online.",
           "scopeOfImpact": "This issue impacts any user attempting to reply or reply-all to email messages sent to Microsoft 365 groups in Exchange Online. This information may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, September 8, 2026, at 11:00 PM UTC",
           "rootCause": "A recent change made to the service removed an attribute component from the service process that requires that attribute, leading to impact.",
-          "nextUpdateBy": "Tuesday, October 13, 2026, at 8:00 PM UTC",
+          "nextUpdateBy": "Wednesday, October 14, 2026, at 8:30 PM UTC",
           "feature": "All clients",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-13T19:17:13.38Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to reply or reply-all to email messages sent to Microsoft 365 groups in Exchange Online\r\n\r\nUser impact: Users may be unable to reply or reply-all to email messages sent to Microsoft 365 groups in Exchange Online.\r\n\r\nMore info: As a temporary alternative, impacted users may reply or reply all to email messages through user inboxes.\r\n\r\nCurrent status: Our monitoring of the deployment is ongoing as it propagates through earlier deployment rings prior to beginning saturation to affected customers’ environments. We'll provide a projected timeline for remediation based on the rate of progress as one becomes available.\r\n\r\nScope of impact: This issue impacts any user attempting to reply or reply-all to email messages sent to Microsoft 365 groups in Exchange Online. This information may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, September 8, 2026, at 11:00 PM UTC\r\n\r\nRoot cause: A recent change made to the service removed an attribute component from the service process that requires that attribute, leading to impact.\r\n\r\nNext update by: Wednesday, October 14, 2026, at 8:30 PM UTC"
+            },
             {
               "createdAt": "2026-10-13T00:30:13.787Z",
               "postType": "regular",
@@ -190,64 +195,6 @@
           "affectedServices": [
             "Exchange Online",
             "Microsoft 365 suite",
-            "Microsoft Teams"
-          ]
-        },
-        {
-          "id": "MO1505952",
-          "title": "Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)",
-          "startTime": "2026-10-13T08:00:00Z",
-          "endTime": null,
-          "lastModified": "2026-10-13T16:23:08.497Z",
-          "status": "serviceDegradation",
-          "severity": "incident",
-          "userImpact": "Users may be unable to access multiple Microsoft 365 services using GSA.\n ",
-          "scopeOfImpact": "Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\n\nStart time: Tuesday, October 13, 2026, at 8:00 AM UTC\n\nPreliminary",
-          "rootCause": "A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.",
-          "nextUpdateBy": "Tuesday, October 13, 2026, at 5:30 PM UTC",
-          "feature": "Access",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-10-13T16:22:38.54Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\n\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\n \n\nMore info: Impacted services may include, but aren't limited to:\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\n\nCurrent status: We're restarting a portion of impacted infrastructure where we've removed traffic and are seeing positive trends towards recovery. We've confirmed through internal testing that this resolves impact for some users and we're monitoring to validate the full recovery of the service.\n\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\n\nStart time: Tuesday, October 13, 2026, at 8:00 AM UTC\n\nPreliminary root cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\n\nNext update by: Tuesday, October 13, 2026, at 5:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-13T15:21:00.347Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\n\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\n \n\nMore info: Impacted services may include, but aren't limited to:\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\n\nCurrent status: We've completed redirecting traffic to healthy infrastructure and are assessing for positive trends towards recovery. We're continuing to investigate additional mitigating actions to expedite remediation.\n\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\n\nStart time: Tuesday, October 13, 2026, at 8:00 AM UTC\n\nPreliminary root cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\n\nNext update by: Tuesday, October 13, 2026, at 4:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-13T14:57:20.44Z",
-              "postType": "quick",
-              "content": "We're redirecting traffic from the underperforming infrastructure to improve service health. We're monitoring to confirm this will fully resolve impact. \n\nThis quick update is designed to give the latest information on this issue."
-            },
-            {
-              "createdAt": "2026-10-13T14:35:16.113Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\r\n\r\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\n \r\n\r\nMore info: Impacted services may include, but aren't limited to:\n\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\r\n\r\nCurrent status: We've deployed the traffic optimizations and although we saw a reduction of errors initially, this did not fully resolve the issue. We're continuing to troubleshoot the issue to develop additional mitigation strategies. \r\n\r\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\r\n\r\nStart time: Tuesday, October 13, 2026, at 8:00 AM UTC\r\n\r\nRoot cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 3:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-13T13:29:09.343Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\n\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\n\nMore info: Impacted services may include, but aren't limited to:\n\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\n\nCurrent status: We're continuing to apply the aforementioned traffic and performance optimizations with early signals showing signs of recovery.\n\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\n\nPreliminary root cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\n\nNext update by: Tuesday, October 13, 2026, at 3:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-13T11:30:08.517Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\n\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\n\nMore info: Impacted services may include, but aren't limited to:\n\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\n\nCurrent status: We’ve identified that a section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact. We’re applying performance and traffic optimizations to remediate impact and restore connectivity.\n\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\n\nPreliminary root cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\n\nNext update by: Tuesday, October 13, 2026, at 1:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-13T09:41:18.723Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\r\n\r\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\r\n\r\nMore info: Impacted services may include, but aren't limited to:\n\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\r\n\r\nCurrent status: We're reviewing service monitoring telemetry to isolate the source of the issue and establish a fix.\r\n\r\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 11:30 AM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Exchange Online",
-            "Microsoft 365 suite",
-            "Microsoft OneDrive",
             "Microsoft Teams"
           ]
         }
@@ -406,16 +353,21 @@
           "title": "Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center",
           "startTime": "2026-09-08T16:05:00Z",
           "endTime": null,
-          "lastModified": "2026-10-13T11:33:14.237Z",
+          "lastModified": "2026-10-13T17:57:12.31Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center.",
-          "scopeOfImpact": "Some admins attempting to see the latest Copilot Health data in the Microsoft 365 admin center may be impacted.\n\nStart time: Tuesday, September 8, 2026, at 4:05 PM UTC",
+          "scopeOfImpact": "Some admins attempting to see the latest Copilot Health data in the Microsoft 365 admin center may be impacted.",
           "rootCause": "An upstream process responsible for Copilot Health data was disabled, resulting in the impact.",
-          "nextUpdateBy": "Tuesday, October 13, 2026, at 7:00 PM UTC",
+          "nextUpdateBy": "Wednesday, October 14, 2026, at 6:00 PM UTC",
           "feature": "Sign-in",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-13T17:57:12.31Z",
+              "postType": "regular",
+              "content": "Title: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center.\r\n\r\nMore info: Specifically, monthly data in the Update channels, Microsoft 365 updates (Past 6 months view), Connected experiences status, and OneDrive status cards on the Copilot Health page may not reflect data after July 2026. The Today view in the Microsoft 365 updates card isn't affected.\r\n\r\nCurrent status: We're developing a fix that will gather the missing data necessary to restore our pipeline and to remediate the impact. We'll provide a timeline for the deployment of our solution once internal validations have been completed.\r\n\r\nScope of impact: Some admins attempting to see the latest Copilot Health data in the Microsoft 365 admin center may be impacted.\r\n\r\nRoot cause: An upstream process responsible for Copilot Health data was disabled, resulting in the impact.\r\n\r\nNext update by: Wednesday, October 14, 2026, at 6:00 PM UTC"
+            },
             {
               "createdAt": "2026-10-13T10:56:42.203Z",
               "postType": "regular",
@@ -480,64 +432,6 @@
           "affectedServices": [
             "Exchange Online",
             "Microsoft 365 suite",
-            "Microsoft Teams"
-          ]
-        },
-        {
-          "id": "MO1505952",
-          "title": "Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)",
-          "startTime": "2026-10-13T08:00:00Z",
-          "endTime": null,
-          "lastModified": "2026-10-13T16:23:08.497Z",
-          "status": "serviceDegradation",
-          "severity": "incident",
-          "userImpact": "Users may be unable to access multiple Microsoft 365 services using GSA.\n ",
-          "scopeOfImpact": "Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\n\nStart time: Tuesday, October 13, 2026, at 8:00 AM UTC\n\nPreliminary",
-          "rootCause": "A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.",
-          "nextUpdateBy": "Tuesday, October 13, 2026, at 5:30 PM UTC",
-          "feature": "Access",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-10-13T16:22:38.54Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\n\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\n \n\nMore info: Impacted services may include, but aren't limited to:\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\n\nCurrent status: We're restarting a portion of impacted infrastructure where we've removed traffic and are seeing positive trends towards recovery. We've confirmed through internal testing that this resolves impact for some users and we're monitoring to validate the full recovery of the service.\n\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\n\nStart time: Tuesday, October 13, 2026, at 8:00 AM UTC\n\nPreliminary root cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\n\nNext update by: Tuesday, October 13, 2026, at 5:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-13T15:21:00.347Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\n\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\n \n\nMore info: Impacted services may include, but aren't limited to:\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\n\nCurrent status: We've completed redirecting traffic to healthy infrastructure and are assessing for positive trends towards recovery. We're continuing to investigate additional mitigating actions to expedite remediation.\n\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\n\nStart time: Tuesday, October 13, 2026, at 8:00 AM UTC\n\nPreliminary root cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\n\nNext update by: Tuesday, October 13, 2026, at 4:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-13T14:57:20.44Z",
-              "postType": "quick",
-              "content": "We're redirecting traffic from the underperforming infrastructure to improve service health. We're monitoring to confirm this will fully resolve impact. \n\nThis quick update is designed to give the latest information on this issue."
-            },
-            {
-              "createdAt": "2026-10-13T14:35:16.113Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\r\n\r\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\n \r\n\r\nMore info: Impacted services may include, but aren't limited to:\n\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\r\n\r\nCurrent status: We've deployed the traffic optimizations and although we saw a reduction of errors initially, this did not fully resolve the issue. We're continuing to troubleshoot the issue to develop additional mitigation strategies. \r\n\r\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\r\n\r\nStart time: Tuesday, October 13, 2026, at 8:00 AM UTC\r\n\r\nRoot cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 3:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-13T13:29:09.343Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\n\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\n\nMore info: Impacted services may include, but aren't limited to:\n\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\n\nCurrent status: We're continuing to apply the aforementioned traffic and performance optimizations with early signals showing signs of recovery.\n\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\n\nPreliminary root cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\n\nNext update by: Tuesday, October 13, 2026, at 3:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-13T11:30:08.517Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\n\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\n\nMore info: Impacted services may include, but aren't limited to:\n\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\n\nCurrent status: We’ve identified that a section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact. We’re applying performance and traffic optimizations to remediate impact and restore connectivity.\n\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\n\nPreliminary root cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\n\nNext update by: Tuesday, October 13, 2026, at 1:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-13T09:41:18.723Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\r\n\r\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\r\n\r\nMore info: Impacted services may include, but aren't limited to:\n\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\r\n\r\nCurrent status: We're reviewing service monitoring telemetry to isolate the source of the issue and establish a fix.\r\n\r\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 11:30 AM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Exchange Online",
-            "Microsoft 365 suite",
-            "Microsoft OneDrive",
             "Microsoft Teams"
           ]
         },
@@ -620,6 +514,36 @@
           "affectedServices": [
             "Microsoft 365 suite",
             "Microsoft Teams"
+          ]
+        },
+        {
+          "id": "MO1506255",
+          "title": "Admins may be unable to review Service health or Message center postings in the Microsoft 365 admin center",
+          "startTime": "2026-10-13T18:24:19.62Z",
+          "endTime": null,
+          "lastModified": "2026-10-13T18:53:52.53Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Admins may be unable to review Service health or Message center postings in the Microsoft 365 admin center.",
+          "scopeOfImpact": "This issue affects some admins who may be unable to review Service health or Message center postings in the Microsoft 365 admin center or see new activities in the “What’s new” tab in the Microsoft Teams admin center. This section may be updated as the investigation progresses.\r\n\r\nStart time: Monday, October 12, 2026, at 9:54 PM UTC\r\n\r\nEstimated time to resolve: We anticipate impact to be resolved by Tuesday, October 13, 2026, at 8:00 PM UTC.",
+          "rootCause": "A recent service update introduced a misconfiguration which causes the Service Health and Communications API to return authentication errors, resulting in impact.",
+          "nextUpdateBy": "Tuesday, October 13, 2026, at 8:00 PM UTC",
+          "feature": "Access",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-10-13T18:53:13.83Z",
+              "postType": "regular",
+              "content": "Title: Admins may be unable to review Service health or Message center postings in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may be unable to review Service health or Message center postings in the Microsoft 365 admin center.\r\n\r\nMore info: Users may also see nothing in the \"What's new\" tab in the Microsoft Teams admin center and are returned an error stating \"We can't load data. Try again.\"\r\n\r\nCurrent status: We've received reports from a subset of affected users who have reported that they are unable to review Service health or Message center postings in the Microsoft 365 admin center or see new activities in the “What’s new” tab in the Microsoft Teams admin center. We've isolated that a recent service update introduced a misconfiguration which causes the Service Health and Communications API to return authentication errors, resulting in impact. We're rolling back the offending update and monitoring for remediation. We anticipate impact to be resolved by our next scheduled update.\r\n\r\nScope of impact: This issue affects some admins who may be unable to review Service health or Message center postings in the Microsoft 365 admin center or see new activities in the “What’s new” tab in the Microsoft Teams admin center. This section may be updated as the investigation progresses.\r\n\r\nStart time: Monday, October 12, 2026, at 9:54 PM UTC\r\n\r\nEstimated time to resolve: We anticipate impact to be resolved by Tuesday, October 13, 2026, at 8:00 PM UTC.\r\n\r\nRoot cause: A recent service update introduced a misconfiguration which causes the Service Health and Communications API to return authentication errors, resulting in impact.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 8:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-10-13T18:27:32.143Z",
+              "postType": "regular",
+              "content": "Title: Admins may be unable to review Service health postings in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may be unable to review Service health postings in the Microsoft 365 admin center.\r\n\r\nCurrent status: We're investigating a potential issue with the Microsoft 365 suite and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite"
           ]
         },
         {
@@ -758,74 +682,41 @@
     },
     {
       "service": "Microsoft Intune",
-      "status": "serviceOperational",
-      "id": "Intune",
-      "issues": []
-    },
-    {
-      "service": "Microsoft OneDrive",
       "status": "serviceDegradation",
-      "id": "OneDriveForBusiness",
+      "id": "Intune",
       "issues": [
         {
-          "id": "MO1505952",
-          "title": "Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)",
-          "startTime": "2026-10-13T08:00:00Z",
+          "id": "IT1506313",
+          "title": "Admin may see status cards displaying \"Unknown\" instead of the expected summary counts in Intune admin center",
+          "startTime": "2026-10-13T19:01:47.94Z",
           "endTime": null,
-          "lastModified": "2026-10-13T16:23:08.497Z",
+          "lastModified": "2026-10-13T19:27:04.257Z",
           "status": "serviceDegradation",
-          "severity": "incident",
-          "userImpact": "Users may be unable to access multiple Microsoft 365 services using GSA.\n ",
-          "scopeOfImpact": "Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\n\nStart time: Tuesday, October 13, 2026, at 8:00 AM UTC\n\nPreliminary",
-          "rootCause": "A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.",
-          "nextUpdateBy": "Tuesday, October 13, 2026, at 5:30 PM UTC",
-          "feature": "Access",
+          "severity": "advisory",
+          "userImpact": "Admin may see status cards displaying \"Unknown\" instead of the expected summary counts in Intune admin center.",
+          "scopeOfImpact": "This issue may affect any admin accessing the Intune admin center from Home and Troubleshooting Blades.",
+          "rootCause": "",
+          "nextUpdateBy": "Tuesday, October 13, 2026, at 9:30 PM UTC",
+          "feature": "Microsoft Intune",
           "isResolved": false,
           "posts": [
             {
-              "createdAt": "2026-10-13T16:22:38.54Z",
+              "createdAt": "2026-10-13T19:27:04.257Z",
               "postType": "regular",
-              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\n\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\n \n\nMore info: Impacted services may include, but aren't limited to:\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\n\nCurrent status: We're restarting a portion of impacted infrastructure where we've removed traffic and are seeing positive trends towards recovery. We've confirmed through internal testing that this resolves impact for some users and we're monitoring to validate the full recovery of the service.\n\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\n\nStart time: Tuesday, October 13, 2026, at 8:00 AM UTC\n\nPreliminary root cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\n\nNext update by: Tuesday, October 13, 2026, at 5:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-13T15:21:00.347Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\n\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\n \n\nMore info: Impacted services may include, but aren't limited to:\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\n\nCurrent status: We've completed redirecting traffic to healthy infrastructure and are assessing for positive trends towards recovery. We're continuing to investigate additional mitigating actions to expedite remediation.\n\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\n\nStart time: Tuesday, October 13, 2026, at 8:00 AM UTC\n\nPreliminary root cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\n\nNext update by: Tuesday, October 13, 2026, at 4:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-13T14:57:20.44Z",
-              "postType": "quick",
-              "content": "We're redirecting traffic from the underperforming infrastructure to improve service health. We're monitoring to confirm this will fully resolve impact. \n\nThis quick update is designed to give the latest information on this issue."
-            },
-            {
-              "createdAt": "2026-10-13T14:35:16.113Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\r\n\r\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\n \r\n\r\nMore info: Impacted services may include, but aren't limited to:\n\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\r\n\r\nCurrent status: We've deployed the traffic optimizations and although we saw a reduction of errors initially, this did not fully resolve the issue. We're continuing to troubleshoot the issue to develop additional mitigation strategies. \r\n\r\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\r\n\r\nStart time: Tuesday, October 13, 2026, at 8:00 AM UTC\r\n\r\nRoot cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 3:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-13T13:29:09.343Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\n\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\n\nMore info: Impacted services may include, but aren't limited to:\n\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\n\nCurrent status: We're continuing to apply the aforementioned traffic and performance optimizations with early signals showing signs of recovery.\n\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\n\nPreliminary root cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\n\nNext update by: Tuesday, October 13, 2026, at 3:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-13T11:30:08.517Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\n\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\n\nMore info: Impacted services may include, but aren't limited to:\n\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\n\nCurrent status: We’ve identified that a section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact. We’re applying performance and traffic optimizations to remediate impact and restore connectivity.\n\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\n\nPreliminary root cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\n\nNext update by: Tuesday, October 13, 2026, at 1:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-13T09:41:18.723Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\r\n\r\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\r\n\r\nMore info: Impacted services may include, but aren't limited to:\n\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\r\n\r\nCurrent status: We're reviewing service monitoring telemetry to isolate the source of the issue and establish a fix.\r\n\r\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 11:30 AM UTC"
+              "content": "Title: Admin may see status cards displaying \"Unknown\" instead of the expected summary counts in Intune admin center\r\n\r\nUser impact: Admin may see status cards displaying \"Unknown\" instead of the expected summary counts in Intune admin center.\r\n\r\nMore info: Admins are impacted when accessing the Home and Troubleshooting Blades. \n\nAs a workaround, admins can click the \"Unknown\" status, which will allow access to the data.\n \r\n\r\nCurrent status: We've identified an issue that is preventing expected status cards for admins accessing the Home and Troubleshooting Blades in the Intune admin center. We're analyzing system logging and recent updates to the service, as we isolate the source for this event and determine our next troubleshooting steps for remediating the impact.\r\n\r\nScope of impact: This issue may affect any admin accessing the Intune admin center from Home and Troubleshooting Blades.\n \r\n\r\nNext update by: Tuesday, October 13, 2026, at 9:30 PM UTC"
             }
           ],
           "affectedServices": [
-            "Exchange Online",
-            "Microsoft 365 suite",
-            "Microsoft OneDrive",
-            "Microsoft Teams"
+            "Microsoft Intune"
           ]
         }
       ]
+    },
+    {
+      "service": "Microsoft OneDrive",
+      "status": "serviceOperational",
+      "id": "OneDriveForBusiness",
+      "issues": []
     },
     {
       "service": "Microsoft Teams",
@@ -872,20 +763,25 @@
           "title": "Users may be unable to download webinar registration details from the Events app in Microsoft Teams",
           "startTime": "2026-10-09T18:56:09.9Z",
           "endTime": null,
-          "lastModified": "2026-10-13T15:49:58.157Z",
+          "lastModified": "2026-10-13T17:38:51.823Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to download webinar registration details from the Events app in Microsoft Teams.",
-          "scopeOfImpact": "Impact may occur for users whose assigned meeting policy has AllowEngagementReport set to Off, preventing them from downloading webinar registration details from the Events app in Microsoft Teams. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, October 9, 2026, at 4:10 PM UTC",
+          "scopeOfImpact": "Impact may occur for users whose assigned meeting policy has AllowEngagementReport set to Off, preventing them from downloading webinar registration details from the Events app in Microsoft Teams. This information may be updated as our investigation continues.",
           "rootCause": "A recent service update introduced a regression that causes the registration report download option to become unavailable when the engagement reporting policy is disabled, despite the report being independent of this policy.",
-          "nextUpdateBy": "Tuesday, October 13, 2026, at 6:00 PM UTC",
+          "nextUpdateBy": "Thursday, October 15, 2026, at 7:30 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
             {
+              "createdAt": "2026-10-13T17:38:51.823Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to download webinar registration details from the Events app in Microsoft Teams\r\n\r\nUser impact: Users may be unable to download webinar registration details from the Events app in Microsoft Teams.\r\n\r\nMore info: Specifically, this impacts users who have the AllowEngagementReport meeting policy set to Off, as they're unable to download webinar registration details in Microsoft Teams Events because the Download option doesn’t appear.\r\n\r\nCurrent status: After receiving reports that some affected users are still impacted by this issue, we've found that the fix hadn't completed deployment as expected. The deployment of our fix is still in progress, and we'll continue to monitor its progress to ensure it completes and resolves the issue for all users.\r\n\r\nScope of impact: Impact may occur for users whose assigned meeting policy has AllowEngagementReport set to Off, preventing them from downloading webinar registration details from the Events app in Microsoft Teams. This information may be updated as our investigation continues.\r\n\r\nRoot cause: A recent service update introduced a regression that causes the registration report download option to become unavailable when the engagement reporting policy is disabled, despite the report being independent of this policy.\r\n\r\nNext update by: Thursday, October 15, 2026, at 7:30 PM UTC"
+            },
+            {
               "createdAt": "2026-10-13T15:49:58.157Z",
               "postType": "regular",
-              "content": "Title: Users may be unable to download webinar registration details from the Events app in Microsoft Teams\r\n\r\nUser impact: Users may be unable to download webinar registration details from the Events app in Microsoft Teams.\r\n\r\nMore info: Specifically, this impacts users who have the AllowEngagementReport meeting policy set to Off, as they're unable to download webinar registration details in Microsoft Teams Events because the Download option does not appear.\r\n\r\nCurrent status: We've reached out to your organization and are awaiting feedback to confirm that the fix we deployed remediates the impact as expected. \r\n\r\nScope of impact: Impact may occur for users whose assigned meeting policy has AllowEngagementReport set to Off, preventing them from downloading webinar registration details from the Events app in Microsoft Teams. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, October 9, 2026, at 4:10 PM UTC\r\n\r\nRoot cause: A recent service update introduced a regression that causes the registration report download option to become unavailable when the engagement reporting policy is disabled, despite the report being independent of this policy.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 6:00 PM UTC"
+              "content": "Title: Users may be unable to download webinar registration details from the Events app in Microsoft Teams\r\n\r\nUser impact: Users may be unable to download webinar registration details from the Events app in Microsoft Teams.\r\n\r\nMore info: Specifically, this impacts users who have the AllowEngagementReport meeting policy set to Off, as they're unable to download webinar registration details in Microsoft Teams Events because the Download option does not appear.\r\n\r\nCurrent status: We've reached out t a subset of affected users and are awaiting feedback to confirm that the fix we deployed remediates the impact as expected. \r\n\r\nScope of impact: Impact may occur for users whose assigned meeting policy has AllowEngagementReport set to Off, preventing them from downloading webinar registration details from the Events app in Microsoft Teams. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, October 9, 2026, at 4:10 PM UTC\r\n\r\nRoot cause: A recent service update introduced a regression that causes the registration report download option to become unavailable when the engagement reporting policy is disabled, despite the report being independent of this policy.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 6:00 PM UTC"
             },
             {
               "createdAt": "2026-10-12T13:57:36.08Z",
@@ -1028,64 +924,6 @@
           ]
         },
         {
-          "id": "MO1505952",
-          "title": "Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)",
-          "startTime": "2026-10-13T08:00:00Z",
-          "endTime": null,
-          "lastModified": "2026-10-13T16:23:08.497Z",
-          "status": "serviceDegradation",
-          "severity": "incident",
-          "userImpact": "Users may be unable to access multiple Microsoft 365 services using GSA.\n ",
-          "scopeOfImpact": "Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\n\nStart time: Tuesday, October 13, 2026, at 8:00 AM UTC\n\nPreliminary",
-          "rootCause": "A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.",
-          "nextUpdateBy": "Tuesday, October 13, 2026, at 5:30 PM UTC",
-          "feature": "Access",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-10-13T16:22:38.54Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\n\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\n \n\nMore info: Impacted services may include, but aren't limited to:\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\n\nCurrent status: We're restarting a portion of impacted infrastructure where we've removed traffic and are seeing positive trends towards recovery. We've confirmed through internal testing that this resolves impact for some users and we're monitoring to validate the full recovery of the service.\n\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\n\nStart time: Tuesday, October 13, 2026, at 8:00 AM UTC\n\nPreliminary root cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\n\nNext update by: Tuesday, October 13, 2026, at 5:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-13T15:21:00.347Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\n\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\n \n\nMore info: Impacted services may include, but aren't limited to:\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\n\nCurrent status: We've completed redirecting traffic to healthy infrastructure and are assessing for positive trends towards recovery. We're continuing to investigate additional mitigating actions to expedite remediation.\n\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\n\nStart time: Tuesday, October 13, 2026, at 8:00 AM UTC\n\nPreliminary root cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\n\nNext update by: Tuesday, October 13, 2026, at 4:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-13T14:57:20.44Z",
-              "postType": "quick",
-              "content": "We're redirecting traffic from the underperforming infrastructure to improve service health. We're monitoring to confirm this will fully resolve impact. \n\nThis quick update is designed to give the latest information on this issue."
-            },
-            {
-              "createdAt": "2026-10-13T14:35:16.113Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\r\n\r\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\n \r\n\r\nMore info: Impacted services may include, but aren't limited to:\n\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\r\n\r\nCurrent status: We've deployed the traffic optimizations and although we saw a reduction of errors initially, this did not fully resolve the issue. We're continuing to troubleshoot the issue to develop additional mitigation strategies. \r\n\r\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\r\n\r\nStart time: Tuesday, October 13, 2026, at 8:00 AM UTC\r\n\r\nRoot cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 3:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-13T13:29:09.343Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\n\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\n\nMore info: Impacted services may include, but aren't limited to:\n\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\n\nCurrent status: We're continuing to apply the aforementioned traffic and performance optimizations with early signals showing signs of recovery.\n\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\n\nPreliminary root cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\n\nNext update by: Tuesday, October 13, 2026, at 3:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-13T11:30:08.517Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\n\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\n\nMore info: Impacted services may include, but aren't limited to:\n\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\n\nCurrent status: We’ve identified that a section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact. We’re applying performance and traffic optimizations to remediate impact and restore connectivity.\n\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\n\nPreliminary root cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\n\nNext update by: Tuesday, October 13, 2026, at 1:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-13T09:41:18.723Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\r\n\r\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\r\n\r\nMore info: Impacted services may include, but aren't limited to:\n\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\r\n\r\nCurrent status: We're reviewing service monitoring telemetry to isolate the source of the issue and establish a fix.\r\n\r\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 11:30 AM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Exchange Online",
-            "Microsoft 365 suite",
-            "Microsoft OneDrive",
-            "Microsoft Teams"
-          ]
-        },
-        {
           "id": "MO1481173",
           "title": "Admins may see multiple usage reports not updating in the Microsoft 365 admin center",
           "startTime": "2026-09-28T22:36:21.907Z",
@@ -1190,20 +1028,25 @@
           "title": "Some users may be unable to create or publish assignments in Microsoft OneNote ",
           "startTime": "2026-10-13T09:25:24Z",
           "endTime": null,
-          "lastModified": "2026-10-13T11:08:32.98Z",
+          "lastModified": "2026-10-13T18:14:47.393Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to create or publish assignments in OneNote. ",
-          "scopeOfImpact": "Impact is specific to some users attempting to create or publish assignments in Microsoft OneNote.",
-          "rootCause": "",
-          "nextUpdateBy": "Tuesday, October 13, 2026, at 6:30 PM UTC",
+          "scopeOfImpact": "Impact is specific to some users attempting to create or publish assignments in Microsoft OneNote.\r\n\r\nStart time: Sunday, October 11, 2026, at 12:10 PM UTC",
+          "rootCause": "A recent update to the authentication flow utilized in this event contained an issue, which is resulting in this issue.",
+          "nextUpdateBy": "Wednesday, October 14, 2026, at 6:30 PM UTC",
           "feature": "OneNote",
           "isResolved": false,
           "posts": [
             {
+              "createdAt": "2026-10-13T18:14:47.393Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to create or publish assignments in Microsoft OneNote \r\n\r\nUser impact: Users may be unable to create or publish assignments in OneNote. \r\n\r\nCurrent status: We’ve begun deploying our fix to the affected environment and anticipate that this process will be complete by our next scheduled update.\r\n\r\nScope of impact: Impact is specific to some users attempting to create or publish assignments in Microsoft OneNote.\r\n\r\nStart time: Sunday, October 11, 2026, at 12:10 PM UTC\r\n\r\nRoot cause: A recent update to the authentication flow utilized in this event contained an issue, which is resulting in this issue.\r\n\r\nNext update by: Wednesday, October 14, 2026, at 6:30 PM UTC"
+            },
+            {
               "createdAt": "2026-10-13T11:08:25.407Z",
               "postType": "regular",
-              "content": "Title: Some users may be unable to create or publish assignments in Microsoft OneNote \r\n\r\nUser impact: Users may be unable to create or publish assignments in OneNote. \r\n\r\nCurrent status: We’ve completed development of the fix, and are preparing to deploy it across the affected environment. We’ll monitor service health as the deployment progresses to determine whether it is alleviating impact. \r\n\r\nScope of impact: Impact is specific to some users attempting to create or publish assignments in Microsoft OneNote. \r\n\r\nNext update by: Tuesday, October 13, 2026, at 6:30 PM UTC"
+              "content": "Title: Some users may be unable to create or publish assignments in Microsoft OneNote \n\nUser impact: Users may be unable to create or publish assignments in OneNote. \n\nCurrent status: We’ve completed development of the fix and are preparing to deploy it across the affected environment. We’ll monitor service health as the deployment progresses to determine whether it is alleviating impact. \n\nScope of impact: Impact is specific to some users attempting to create or publish assignments in Microsoft OneNote. \n\nNext update by: Tuesday, October 13, 2026, at 6:30 PM UTC"
             },
             {
               "createdAt": "2026-10-13T09:29:26.08Z",
@@ -1341,56 +1184,87 @@
     },
     {
       "service": "Microsoft 365 Copilot Chat",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "CopilotChat",
-      "issues": []
+      "issues": [
+        {
+          "id": "CW1506243",
+          "title": "Users' Microsoft 365 Copilot document editing prompts may fail in the Microsoft Word desktop app and web clients",
+          "startTime": "2026-10-13T18:12:48.033Z",
+          "endTime": null,
+          "lastModified": "2026-10-13T18:45:27.93Z",
+          "status": "serviceDegradation",
+          "severity": "incident",
+          "userImpact": "Users' Microsoft 365 Copilot document editing prompts may fail in the Microsoft Word desktop app and web clients.",
+          "scopeOfImpact": "This issue may impact any user who is attempting to complete Copilot prompts in the Word desktop app or Office for the web. This information may be updated as our investigation continues.",
+          "rootCause": "",
+          "nextUpdateBy": "Tuesday, October 13, 2026, at 8:00 PM UTC",
+          "feature": "General",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-10-13T18:38:29.967Z",
+              "postType": "regular",
+              "content": "Title: Users' Microsoft 365 Copilot document editing prompts may fail in the Microsoft Word desktop app and web clients\r\n\r\nUser impact: Users' Microsoft 365 Copilot document editing prompts may fail in the Microsoft Word desktop app and web clients.\r\n\r\nCurrent status: We're investigating service health telemetry to determine why these prompts are failing to complete.\r\n\r\nScope of impact: This issue may impact any user who is attempting to complete Copilot prompts in the Word desktop app or Office for the web. This information may be updated as our investigation continues.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 8:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-10-13T18:14:53.88Z",
+              "postType": "regular",
+              "content": "Title: We're looking into a potential problem impacting Microsoft 365 Copilot Chat \r\n\r\nUser impact: We're checking for potential impact to your users. \r\n\r\nCurrent status: We're investigating a potential issue impacting Microsoft 365 Copilot Chat and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 Copilot Chat"
+          ]
+        }
+      ]
     }
   ],
   "history": [
     {
-      "id": "TM1489450",
-      "title": "Some users may experience intermittent audio and video degradation when using Microsoft Teams through VDI 2.0",
-      "startTime": "2026-10-06T13:19:30.807Z",
-      "endTime": "2026-10-13T15:58:02.947Z",
-      "lastModified": "2026-10-13T15:58:58.883Z",
+      "id": "MO1505952",
+      "title": "Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)",
+      "startTime": "2026-10-13T07:40:00Z",
+      "endTime": "2026-10-13T18:32:56.28Z",
+      "lastModified": "2026-10-13T18:54:22.723Z",
       "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users may have experienced intermittent audio and video degradation when using Microsoft Teams through VDI 2.0",
-      "scopeOfImpact": "Users who were using Microsoft Teams VDI 2.0 in a Citrix VDI environment may have been impacted.\r\n\r\nStart time: Thursday, October 1, 2026, at 12:00 PM UTC\r\n\r\nEnd time: Tuesday, October 6, 2026, at 11:10 PM UTC",
-      "rootCause": "A recent configuration update to the VDI Bridge component responsible for VDI optimization introduced a regression, resulting in impact.\r\n\r\nNext steps: \n- We're reviewing the impacting configuration update to understand why impact to audio and video quality wasn't identified during our pre-deployment testing processes. This investigation will help us to prevent similar issues from occurring in the future.\r\n\r\nThis is the final update for the event.",
+      "severity": "incident",
+      "userImpact": "Users may have been unable to access multiple Microsoft 365 services using GSA.",
+      "scopeOfImpact": "Some users in Germany that attempted to access Microsoft 365 services listed in the More info section using GSA may have been impacted.\r\n\r\nStart time: Tuesday, October 13, 2026, at 7:40 AM UTC\r\n\r\nEnd time: Tuesday, October 13, 2026, at 6:31 PM UTC",
+      "rootCause": "A section of GSA infrastructure was performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\r\n\r\nNext steps: \n- To help prevent similar impact in the future, we're further reviewing the GSA infrastructure and testing performance on the previously impacted portions of infrastructure.\n\nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days.",
       "nextUpdateBy": "",
-      "feature": "General",
+      "feature": "Access",
       "isResolved": true,
       "posts": [
         {
-          "createdAt": "2026-10-13T15:58:55.497Z",
+          "createdAt": "2026-10-13T18:54:18.63Z",
           "postType": "regular",
-          "content": "Title: Some users may experience intermittent audio and video degradation when using Microsoft Teams through VDI 2.0\r\n\r\nUser impact: Users may have experienced intermittent audio and video degradation when using Microsoft Teams through VDI 2.0\r\n\r\nMore info: Users also intermittently may have been unable to leverage certain feature optimizations provided by VDI 2.0\n\nAs a workaround, users could have restarted Microsoft Teams to resolve the issue.\r\n\r\nFinal status: We've monitored service health telemetry for an extended period and confirmed that the impact has been remediated on build version 26246.1604.5133.838. We recommend any user still facing impact to download this specific build version to apply the remediation.\r\n\r\nScope of impact: Users who were using Microsoft Teams VDI 2.0 in a Citrix VDI environment may have been impacted.\r\n\r\nStart time: Thursday, October 1, 2026, at 12:00 PM UTC\r\n\r\nEnd time: Tuesday, October 6, 2026, at 11:10 PM UTC\r\n\r\nRoot cause: A recent configuration update to the VDI Bridge component responsible for VDI optimization introduced a regression, resulting in impact.\r\n\r\nNext steps: \n- We're reviewing the impacting configuration update to understand why impact to audio and video quality wasn't identified during our pre-deployment testing processes. This investigation will help us to prevent similar issues from occurring in the future.\r\n\r\nThis is the final update for the event."
+          "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\r\n\r\nUser impact: Users may have been unable to access multiple Microsoft 365 services using GSA.\r\n\r\nMore info: Impacted services may have included, but not been limited to:\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\r\n\r\nFinal status: We've completed our restarts throughout the affected infrastructure and confirmed through telemetry and user reports that this issue is resolved.\r\n\r\nScope of impact: Some users in Germany that attempted to access Microsoft 365 services listed in the More info section using GSA may have been impacted.\r\n\r\nStart time: Tuesday, October 13, 2026, at 7:40 AM UTC\r\n\r\nEnd time: Tuesday, October 13, 2026, at 6:31 PM UTC\r\n\r\nRoot cause: A section of GSA infrastructure was performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\r\n\r\nNext steps: \n- To help prevent similar impact in the future, we're further reviewing the GSA infrastructure and testing performance on the previously impacted portions of infrastructure.\n\nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days."
         },
         {
-          "createdAt": "2026-10-12T17:07:48.507Z",
+          "createdAt": "2026-10-13T18:18:24.043Z",
           "postType": "regular",
-          "content": "Title: Some users may experience intermittent audio and video degradation when using Microsoft Teams through VDI 2.0\r\n\r\nUser impact: Users may experience intermittent audio and video degradation when using Microsoft Teams through VDI 2.0\r\n\r\nMore info: Users also intermittently may be unable leverage certain feature optimization provided by VDI 2.0\n \nAs a workaround, users can restart Teams to resolve the issue.\r\n\r\nCurrent status: We're seeing continued success from our mitigation of moving users to a specific build version that doesn't contain the regression, and more monitoring time is needed to ensure this provides a stable resolution for users.\r\n\r\nScope of impact: Users who are using Microsoft Teams VDI 2.0 in a Citrix VDI environment may be impacted.\r\n\r\nRoot cause: A recent configuration update to the VDI Bridge component responsible for VDI optimization introduced a regression, resulting in impact.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 5:00 PM UTC"
+          "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\n\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\n\nMore info: Impacted services may include, but aren't limited to:\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\n\nAs a workaround, users may disable GSA to access the affected Microsoft 365 services until the resolution of this incident.\n\nCurrent status: We're finishing our restarts throughout the affected infrastructure and expect this will be complete and resolve all impact by Tuesday, October 13, 2026, at 7:00 PM UTC. Our telemetry is showing service recovery, and we'll continue to monitor to ensure full remediation. \n\nScope of impact: Some users in Germany attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\n\nStart time: Tuesday, October 13, 2026, at 7:40 AM UTC\n\nPreliminary root cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\n\nNext update by: Tuesday, October 13, 2026, at 8:00 PM UTC"
         },
         {
-          "createdAt": "2026-10-09T14:55:32.663Z",
-          "postType": "regular",
-          "content": "Title: Some users may encounter intermittent VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment\r\n\r\nUser impact: Users may encounter intermittent VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment.\r\n\r\nMore info: Users may experience audio and video quality degradation, and unavailability of certain features.\n\nAs a workaround, users can restart Teams to resolve the issue.\r\n\r\nCurrent status: We’ve implemented an interim mitigation to provide immediate relief and have observed initial signs of improvement. However, we’re continuing to monitor its effectiveness while progressing with validation of a longer-term fix before proceeding with deployment.\r\n\r\nScope of impact: Some users who are attempting to utilize VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment may be impacted.\r\n\r\nRoot cause: A recent configuration update to the VDI Bridge component responsible for VDI optimisation introduced a regression, resulting in impact.\r\n\r\nNext update by: Monday, October 12, 2026, at 6:00 PM UTC"
+          "createdAt": "2026-10-13T17:56:53.2Z",
+          "postType": "quick",
+          "content": "As a workaround, users may disable GSA to access the affected Microsoft 365 services until the resolution of this incident.\n\nThis quick update is designed to give the latest information on this issue."
         },
         {
-          "createdAt": "2026-10-08T14:22:58.873Z",
+          "createdAt": "2026-10-13T17:23:43.983Z",
           "postType": "regular",
-          "content": "Title: Some users may encounter intermittent VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment\r\n\r\nUser impact: Users may encounter intermittent VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment.\r\n\r\nMore info: Users may experience audio and video quality degradation, and unavailability of certain features.\n\nAs a workaround, users can restart Teams to resolve the issue.\r\n\r\nCurrent status: We’re proceeding to validate the fix before deploying it to the affected infrastructure. Once available, we’ll provide a deployment timeline. \r\n\r\nScope of impact: Some users who are attempting to utilize VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment may be impacted.\r\n\r\nRoot cause: A recent configuration update to the VDI Bridge component responsible for VDI optimisation introduced a regression, resulting in impact.\r\n\r\nNext update by: Friday, October 9, 2026, at 4:00 PM UTC"
+          "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\n\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\n\nMore info: Impacted services may include, but aren't limited to:\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\n\nCurrent status: We're continuing our targeted restarts throughout the impacted infrastructure, and our telemetry shows services hosted on the restarted infrastructure are now operating at healthy service levels. We're also receiving confirmation that impact is resolved for some users. \n\nScope of impact: Some users in Germany attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\n\nStart time: Tuesday, October 13, 2026, at 7:40 AM UTC\n\nPreliminary root cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\n\nNext update by: Tuesday, October 13, 2026, at 6:30 PM UTC"
         },
         {
-          "createdAt": "2026-10-07T16:45:37.497Z",
+          "createdAt": "2026-10-13T16:22:38.54Z",
           "postType": "regular",
-          "content": "Title: Some users may encounter intermittent VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment\r\n\r\nUser impact: Users may encounter intermittent VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment.\r\n\r\nMore info: Users may experience audio and video quality degradation, and unavailability of certain features.\n\nAs a workaround, users can restart Teams to resolve the issue.\r\n\r\nCurrent status: We’re continuing to validate the fix before deploying it to the affected infrastructure. Once available, we’ll provide a deployment timeline. \r\n\r\nScope of impact: Some users who are attempting to utilize VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment may be impacted.\r\n\r\nRoot cause: A recent configuration update to the VDI Bridge component responsible for VDI optimisation introduced a regression, resulting in impact.\r\n\r\nNext update by: Thursday, October 8, 2026, at 4:00 PM UTC"
+          "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\n\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\n \n\nMore info: Impacted services may include, but aren't limited to:\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\n\nCurrent status: We're restarting a portion of impacted infrastructure where we've removed traffic and are seeing positive trends towards recovery. We've confirmed through internal testing that this resolves impact for some users and we're monitoring to validate the full recovery of the service.\n\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\n\nStart time: Tuesday, October 13, 2026, at 8:00 AM UTC\n\nPreliminary root cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\n\nNext update by: Tuesday, October 13, 2026, at 5:30 PM UTC"
         }
       ],
-      "serviceName": "Microsoft Teams",
+      "serviceName": "Microsoft 365 suite",
       "affectedServices": [
-        "Microsoft Teams"
+        "Microsoft 365 suite"
       ]
     },
     {
@@ -1898,6 +1772,52 @@
       "serviceName": "Microsoft Viva",
       "affectedServices": [
         "Microsoft Viva"
+      ]
+    },
+    {
+      "id": "TM1489450",
+      "title": "Some users may experience intermittent audio and video degradation when using Microsoft Teams through VDI 2.0",
+      "startTime": "2026-10-01T12:00:00Z",
+      "endTime": "2026-10-06T23:10:00Z",
+      "lastModified": "2026-10-13T17:07:05.037Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have experienced intermittent audio and video degradation when using Microsoft Teams through VDI 2.0",
+      "scopeOfImpact": "Users who were using Microsoft Teams VDI 2.0 in a Citrix VDI environment may have been impacted.\r\n\r\nStart time: Thursday, October 1, 2026, at 12:00 PM UTC\r\n\r\nEnd time: Tuesday, October 6, 2026, at 11:10 PM UTC",
+      "rootCause": "A recent configuration update to the VDI Bridge component responsible for VDI optimization introduced a regression, resulting in impact.\r\n\r\nNext steps: \n- We're reviewing the impacting configuration update to understand why impact to audio and video quality wasn't identified during our pre-deployment testing processes. This investigation will help us to prevent similar issues from occurring in the future.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "General",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-10-13T15:58:55.497Z",
+          "postType": "regular",
+          "content": "Title: Some users may experience intermittent audio and video degradation when using Microsoft Teams through VDI 2.0\r\n\r\nUser impact: Users may have experienced intermittent audio and video degradation when using Microsoft Teams through VDI 2.0\r\n\r\nMore info: Users also intermittently may have been unable to leverage certain feature optimizations provided by VDI 2.0\n\nAs a workaround, users could have restarted Microsoft Teams to resolve the issue.\r\n\r\nFinal status: We've monitored service health telemetry for an extended period and confirmed that the impact has been remediated on build version 26246.1604.5133.838. We recommend any user still facing impact to download this specific build version to apply the remediation.\r\n\r\nScope of impact: Users who were using Microsoft Teams VDI 2.0 in a Citrix VDI environment may have been impacted.\r\n\r\nStart time: Thursday, October 1, 2026, at 12:00 PM UTC\r\n\r\nEnd time: Tuesday, October 6, 2026, at 11:10 PM UTC\r\n\r\nRoot cause: A recent configuration update to the VDI Bridge component responsible for VDI optimization introduced a regression, resulting in impact.\r\n\r\nNext steps: \n- We're reviewing the impacting configuration update to understand why impact to audio and video quality wasn't identified during our pre-deployment testing processes. This investigation will help us to prevent similar issues from occurring in the future.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-10-12T17:07:48.507Z",
+          "postType": "regular",
+          "content": "Title: Some users may experience intermittent audio and video degradation when using Microsoft Teams through VDI 2.0\r\n\r\nUser impact: Users may experience intermittent audio and video degradation when using Microsoft Teams through VDI 2.0\r\n\r\nMore info: Users also intermittently may be unable leverage certain feature optimization provided by VDI 2.0\n \nAs a workaround, users can restart Teams to resolve the issue.\r\n\r\nCurrent status: We're seeing continued success from our mitigation of moving users to a specific build version that doesn't contain the regression, and more monitoring time is needed to ensure this provides a stable resolution for users.\r\n\r\nScope of impact: Users who are using Microsoft Teams VDI 2.0 in a Citrix VDI environment may be impacted.\r\n\r\nRoot cause: A recent configuration update to the VDI Bridge component responsible for VDI optimization introduced a regression, resulting in impact.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 5:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-09T14:55:32.663Z",
+          "postType": "regular",
+          "content": "Title: Some users may encounter intermittent VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment\r\n\r\nUser impact: Users may encounter intermittent VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment.\r\n\r\nMore info: Users may experience audio and video quality degradation, and unavailability of certain features.\n\nAs a workaround, users can restart Teams to resolve the issue.\r\n\r\nCurrent status: We’ve implemented an interim mitigation to provide immediate relief and have observed initial signs of improvement. However, we’re continuing to monitor its effectiveness while progressing with validation of a longer-term fix before proceeding with deployment.\r\n\r\nScope of impact: Some users who are attempting to utilize VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment may be impacted.\r\n\r\nRoot cause: A recent configuration update to the VDI Bridge component responsible for VDI optimisation introduced a regression, resulting in impact.\r\n\r\nNext update by: Monday, October 12, 2026, at 6:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-08T14:22:58.873Z",
+          "postType": "regular",
+          "content": "Title: Some users may encounter intermittent VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment\r\n\r\nUser impact: Users may encounter intermittent VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment.\r\n\r\nMore info: Users may experience audio and video quality degradation, and unavailability of certain features.\n\nAs a workaround, users can restart Teams to resolve the issue.\r\n\r\nCurrent status: We’re proceeding to validate the fix before deploying it to the affected infrastructure. Once available, we’ll provide a deployment timeline. \r\n\r\nScope of impact: Some users who are attempting to utilize VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment may be impacted.\r\n\r\nRoot cause: A recent configuration update to the VDI Bridge component responsible for VDI optimisation introduced a regression, resulting in impact.\r\n\r\nNext update by: Friday, October 9, 2026, at 4:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-07T16:45:37.497Z",
+          "postType": "regular",
+          "content": "Title: Some users may encounter intermittent VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment\r\n\r\nUser impact: Users may encounter intermittent VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment.\r\n\r\nMore info: Users may experience audio and video quality degradation, and unavailability of certain features.\n\nAs a workaround, users can restart Teams to resolve the issue.\r\n\r\nCurrent status: We’re continuing to validate the fix before deploying it to the affected infrastructure. Once available, we’ll provide a deployment timeline. \r\n\r\nScope of impact: Some users who are attempting to utilize VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment may be impacted.\r\n\r\nRoot cause: A recent configuration update to the VDI Bridge component responsible for VDI optimisation introduced a regression, resulting in impact.\r\n\r\nNext update by: Thursday, October 8, 2026, at 4:00 PM UTC"
+        }
+      ],
+      "serviceName": "Microsoft Teams",
+      "affectedServices": [
+        "Microsoft Teams"
       ]
     },
     {
