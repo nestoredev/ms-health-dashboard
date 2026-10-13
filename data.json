@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-13T22:07:02.535Z",
+  "lastUpdated": "2026-10-13T22:37:20.465Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1148,17 +1148,22 @@
       "id": "IT1506313",
       "title": "Admin may see status cards displaying \"Unknown\" instead of the expected summary counts in Intune admin center",
       "startTime": "2026-10-06T23:17:00Z",
-      "endTime": null,
-      "lastModified": "2026-10-13T21:51:00.583Z",
+      "endTime": "2026-10-13T21:51:07.893Z",
+      "lastModified": "2026-10-13T21:58:07.393Z",
       "status": "serviceRestored",
       "severity": "advisory",
       "userImpact": "Admin may have seen status cards displaying \"Unknown\" instead of the expected summary counts in Intune admin center.",
-      "scopeOfImpact": "This issue may affect any admin accessing the Intune admin center from Home and Troubleshooting Blades.",
-      "rootCause": "An incorrectly scoped Microsoft Graph flight changed the response format for batch requests across production. Some Intune UX experiences (Home, Apps, Devices, Troubleshooting) rely on the previous Base64-encoded behavior and can't parse the JSON response, resulting in status cards displaying \"Unknown.\"",
-      "nextUpdateBy": "Tuesday, October 13, 2026, at 11:30 PM UTC",
+      "scopeOfImpact": "This issue might have affected any admin who accessed the Intune admin center from Home, Apps, Devices, and Troubleshooting Blades.\r\n\r\nStart time: Tuesday, October 6, 2026, at 11:17 PM UTC\r\n\r\nEnd time: Tuesday, October 13, 2026, at 9:29 PM UTC",
+      "rootCause": "An incorrectly scoped Microsoft Graph flight changed the response format for batch requests across production. Some Intune UX experiences (Home, Apps, Devices, Troubleshooting) rely on the previous Base64-encoded behavior and couldn't parse the JSON response, resulting in status cards displaying \"Unknown.\"\r\n\r\nNext steps: \n- We're further analyzing the offending misconfigured service update to help us improve our pre-deployment testing and validation processes.\n\nThis is the final update for the event.",
+      "nextUpdateBy": "",
       "feature": "Microsoft Intune",
       "isResolved": true,
       "posts": [
+        {
+          "createdAt": "2026-10-13T21:58:03.11Z",
+          "postType": "regular",
+          "content": "Title: Admin may see status cards displaying \"Unknown\" instead of the expected summary counts in Intune admin center\r\n\r\nUser impact: Admin may have seen status cards displaying \"Unknown\" instead of the expected summary counts in Intune admin center.\r\n\r\nMore info: Admins were impacted when accessing the Home, Apps, Devices, and Troubleshooting Blades. \n\nAs a workaround, admins could have clicked the \"Unknown\" status, which allowed access to the data.\r\n\r\nFinal status: Following our change reversion process, our internal service telemetry has verified that the impact has been remediated. \r\n\r\nScope of impact: This issue might have affected any admin who accessed the Intune admin center from Home, Apps, Devices, and Troubleshooting Blades.\r\n\r\nStart time: Tuesday, October 6, 2026, at 11:17 PM UTC\r\n\r\nEnd time: Tuesday, October 13, 2026, at 9:29 PM UTC\r\n\r\nRoot cause: An incorrectly scoped Microsoft Graph flight changed the response format for batch requests across production. Some Intune UX experiences (Home, Apps, Devices, Troubleshooting) rely on the previous Base64-encoded behavior and couldn't parse the JSON response, resulting in status cards displaying \"Unknown.\"\r\n\r\nNext steps: \n- We're further analyzing the offending misconfigured service update to help us improve our pre-deployment testing and validation processes.\n\nThis is the final update for the event."
+        },
         {
           "createdAt": "2026-10-13T21:00:08.043Z",
           "postType": "regular",
