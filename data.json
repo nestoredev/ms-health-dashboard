@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-13T19:35:40.091Z",
+  "lastUpdated": "2026-10-13T20:05:56.190Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -521,16 +521,21 @@
           "title": "Admins may be unable to review Service health or Message center postings in the Microsoft 365 admin center",
           "startTime": "2026-10-13T18:24:19.62Z",
           "endTime": null,
-          "lastModified": "2026-10-13T18:53:52.53Z",
+          "lastModified": "2026-10-13T19:45:26.033Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may be unable to review Service health or Message center postings in the Microsoft 365 admin center.",
-          "scopeOfImpact": "This issue affects some admins who may be unable to review Service health or Message center postings in the Microsoft 365 admin center or see new activities in the “What’s new” tab in the Microsoft Teams admin center. This section may be updated as the investigation progresses.\r\n\r\nStart time: Monday, October 12, 2026, at 9:54 PM UTC\r\n\r\nEstimated time to resolve: We anticipate impact to be resolved by Tuesday, October 13, 2026, at 8:00 PM UTC.",
+          "scopeOfImpact": "This issue affects some admins who may be unable to review Service health or Message center postings in the Microsoft 365 admin center or see new activities in the “What’s new” tab in the Microsoft Teams admin center. This section may be updated as the investigation progresses.\r\n\r\nStart time: Monday, October 12, 2026, at 9:54 PM UTC\r\n\r\nEstimated time to resolve: We anticipate impact to be resolved by Tuesday, October 13, 2026, at 10:00 PM UTC.",
           "rootCause": "A recent service update introduced a misconfiguration which causes the Service Health and Communications API to return authentication errors, resulting in impact.",
-          "nextUpdateBy": "Tuesday, October 13, 2026, at 8:00 PM UTC",
+          "nextUpdateBy": "Tuesday, October 13, 2026, at 10:00 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-13T19:45:26.033Z",
+              "postType": "regular",
+              "content": "Title: Admins may be unable to review Service health or Message center postings in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may be unable to review Service health or Message center postings in the Microsoft 365 admin center.\r\n\r\nMore info: Users may also see nothing in the \"What's new\" tab in the Microsoft Teams admin center and are returned an error stating \"We can't load data. Try again.\"\r\n\r\nCurrent status: We're continuing to monitor recovery, and we anticipate some users will start to see remediation at this time. To ensure impact is fully remediated, we've extended our monitoring period, and we anticipate impact to be resolved by our next scheduled update.\r\n\r\nScope of impact: This issue affects some admins who may be unable to review Service health or Message center postings in the Microsoft 365 admin center or see new activities in the “What’s new” tab in the Microsoft Teams admin center. This section may be updated as the investigation progresses.\r\n\r\nStart time: Monday, October 12, 2026, at 9:54 PM UTC\r\n\r\nEstimated time to resolve: We anticipate impact to be resolved by Tuesday, October 13, 2026, at 10:00 PM UTC.\r\n\r\nRoot cause: A recent service update introduced a misconfiguration which causes the Service Health and Communications API to return authentication errors, resulting in impact.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 10:00 PM UTC"
+            },
             {
               "createdAt": "2026-10-13T18:53:13.83Z",
               "postType": "regular",
@@ -1192,16 +1197,21 @@
           "title": "Users' Microsoft 365 Copilot document editing prompts may fail in the Microsoft Word desktop app and web clients",
           "startTime": "2026-10-13T18:12:48.033Z",
           "endTime": null,
-          "lastModified": "2026-10-13T18:45:27.93Z",
+          "lastModified": "2026-10-13T19:53:44.66Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users' Microsoft 365 Copilot document editing prompts may fail in the Microsoft Word desktop app and web clients.",
           "scopeOfImpact": "This issue may impact any user who is attempting to complete Copilot prompts in the Word desktop app or Office for the web. This information may be updated as our investigation continues.",
           "rootCause": "",
-          "nextUpdateBy": "Tuesday, October 13, 2026, at 8:00 PM UTC",
+          "nextUpdateBy": "Tuesday, October 13, 2026, at 10:00 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-13T19:53:44.66Z",
+              "postType": "regular",
+              "content": "Title: Users' Microsoft 365 Copilot document editing prompts may fail in the Microsoft Word desktop app and web clients\r\n\r\nUser impact: Users' Microsoft 365 Copilot document editing prompts may fail in the Microsoft Word desktop app and web clients.\r\n\r\nCurrent status: We've identified a trend of increased traffic through our analysis of service health telemetry that we believe may be contributing to this event. We're continuing our investigation to confirm our theory and develop our next steps.\r\n\r\nScope of impact: This issue may impact any user who is attempting to complete Copilot prompts in the Word desktop app or Office for the web. This information may be updated as our investigation continues.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 10:00 PM UTC"
+            },
             {
               "createdAt": "2026-10-13T18:38:29.967Z",
               "postType": "regular",
