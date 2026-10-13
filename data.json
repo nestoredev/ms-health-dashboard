@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-13T15:34:31.517Z",
+  "lastUpdated": "2026-10-13T16:04:46.992Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -848,75 +848,25 @@
           ]
         },
         {
-          "id": "TM1489450",
-          "title": "Some users may experience intermittent audio and video degradation when using Microsoft Teams through VDI 2.0",
-          "startTime": "2026-10-06T13:19:30.807Z",
-          "endTime": null,
-          "lastModified": "2026-10-12T17:07:48.507Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may experience intermittent audio and video degradation when using Microsoft Teams through VDI 2.0",
-          "scopeOfImpact": "Users who are using Microsoft Teams VDI 2.0 in a Citrix VDI environment may be impacted.",
-          "rootCause": "A recent configuration update to the VDI Bridge component responsible for VDI optimization introduced a regression, resulting in impact.",
-          "nextUpdateBy": "Tuesday, October 13, 2026, at 5:00 PM UTC",
-          "feature": "General",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-10-12T17:07:48.507Z",
-              "postType": "regular",
-              "content": "Title: Some users may experience intermittent audio and video degradation when using Microsoft Teams through VDI 2.0\r\n\r\nUser impact: Users may experience intermittent audio and video degradation when using Microsoft Teams through VDI 2.0\r\n\r\nMore info: Users also intermittently may be unable leverage certain feature optimization provided by VDI 2.0\n \nAs a workaround, users can restart Teams to resolve the issue.\r\n\r\nCurrent status: We're seeing continued success from our mitigation of moving users to a specific build version that doesn't contain the regression, and more monitoring time is needed to ensure this provides a stable resolution for users.\r\n\r\nScope of impact: Users who are using Microsoft Teams VDI 2.0 in a Citrix VDI environment may be impacted.\r\n\r\nRoot cause: A recent configuration update to the VDI Bridge component responsible for VDI optimization introduced a regression, resulting in impact.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 5:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-09T14:55:32.663Z",
-              "postType": "regular",
-              "content": "Title: Some users may encounter intermittent VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment\r\n\r\nUser impact: Users may encounter intermittent VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment.\r\n\r\nMore info: Users may experience audio and video quality degradation, and unavailability of certain features.\n\nAs a workaround, users can restart Teams to resolve the issue.\r\n\r\nCurrent status: We’ve implemented an interim mitigation to provide immediate relief and have observed initial signs of improvement. However, we’re continuing to monitor its effectiveness while progressing with validation of a longer-term fix before proceeding with deployment.\r\n\r\nScope of impact: Some users who are attempting to utilize VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment may be impacted.\r\n\r\nRoot cause: A recent configuration update to the VDI Bridge component responsible for VDI optimisation introduced a regression, resulting in impact.\r\n\r\nNext update by: Monday, October 12, 2026, at 6:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-08T14:22:58.873Z",
-              "postType": "regular",
-              "content": "Title: Some users may encounter intermittent VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment\r\n\r\nUser impact: Users may encounter intermittent VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment.\r\n\r\nMore info: Users may experience audio and video quality degradation, and unavailability of certain features.\n\nAs a workaround, users can restart Teams to resolve the issue.\r\n\r\nCurrent status: We’re proceeding to validate the fix before deploying it to the affected infrastructure. Once available, we’ll provide a deployment timeline. \r\n\r\nScope of impact: Some users who are attempting to utilize VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment may be impacted.\r\n\r\nRoot cause: A recent configuration update to the VDI Bridge component responsible for VDI optimisation introduced a regression, resulting in impact.\r\n\r\nNext update by: Friday, October 9, 2026, at 4:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-07T16:45:37.497Z",
-              "postType": "regular",
-              "content": "Title: Some users may encounter intermittent VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment\r\n\r\nUser impact: Users may encounter intermittent VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment.\r\n\r\nMore info: Users may experience audio and video quality degradation, and unavailability of certain features.\n\nAs a workaround, users can restart Teams to resolve the issue.\r\n\r\nCurrent status: We’re continuing to validate the fix before deploying it to the affected infrastructure. Once available, we’ll provide a deployment timeline. \r\n\r\nScope of impact: Some users who are attempting to utilize VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment may be impacted.\r\n\r\nRoot cause: A recent configuration update to the VDI Bridge component responsible for VDI optimisation introduced a regression, resulting in impact.\r\n\r\nNext update by: Thursday, October 8, 2026, at 4:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-07T08:59:15.543Z",
-              "postType": "regular",
-              "content": "Title: Some users may encounter intermittent VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment\r\n\r\nUser impact: Users may encounter intermittent VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment.\r\n\r\nMore info: Users may experience audio and video quality degradation, and unavailability of certain features.\n\nAs a workaround, users can restart Teams to resolve the issue.\r\n\r\nCurrent status: We’ve identified that a recent configuration update to the VDI Bridge component responsible for VDI optimisation introduced a regression, resulting in impact. We’ve developed a fix and are currently validating it before deploying it to the affected infrastructure. We expect to provide a deployment timeline by our next scheduled update.\r\n\r\nScope of impact: Some users who are attempting to utilize VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment may be impacted.\r\n\r\nRoot cause: A recent configuration update to the VDI Bridge component responsible for VDI optimisation introduced a regression, resulting in impact.\r\n\r\nNext update by: Wednesday, October 7, 2026, at 5:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-06T16:59:31.203Z",
-              "postType": "regular",
-              "content": "Title: Some users may encounter intermittent VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment\r\n\r\nUser impact: Users may encounter intermittent VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment.\r\n\r\nMore info: Users may experience audio and video quality degradation, and unavailability of certain features.\n\nAs a workaround, users can restart Teams to resolve the issue.\r\n\r\nCurrent status: As we progress with our root cause analysis and isolate the source for this event, we've isolated an offending code regression that is believed to be producing the problems. We've internally validated a solution that is expected to remediate the impact. We're deploying our solution, and we'll provide an updated timeline for its deployment once it has become available. \r\n\r\nScope of impact: Some users who are attempting to utilize VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment may be impacted.\r\n\r\nNext update by: Wednesday, October 7, 2026, at 9:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-06T13:20:51.25Z",
-              "postType": "regular",
-              "content": "Title: Some users may encounter intermittent VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment\r\n\r\nUser impact: Users may encounter intermittent VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment.\r\n\r\nMore info: Users may experience audio and video quality degradation, and unavailability of certain features.\n\nAs a workaround, users can restart Teams to resolve the issue.\r\n\r\nCurrent status: We're reviewing service monitoring telemetry to isolate the source of the issue and establish a fix.\r\n\r\nScope of impact: Some users who are attempting to utilize VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment may be impacted.\r\n\r\nNext update by: Tuesday, October 6, 2026, at 5:30 PM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Microsoft Teams"
-          ]
-        },
-        {
           "id": "TM1492872",
           "title": "Users may be unable to download webinar registration details from the Events app in Microsoft Teams",
           "startTime": "2026-10-09T18:56:09.9Z",
           "endTime": null,
-          "lastModified": "2026-10-12T13:57:36.08Z",
+          "lastModified": "2026-10-13T15:49:58.157Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to download webinar registration details from the Events app in Microsoft Teams.",
-          "scopeOfImpact": "Impact may occur for users whose assigned meeting policy has AllowEngagementReport set to Off, preventing them from downloading webinar registration details from the Events app in Microsoft Teams. This information may be updated as our investigation continues.",
+          "scopeOfImpact": "Impact may occur for users whose assigned meeting policy has AllowEngagementReport set to Off, preventing them from downloading webinar registration details from the Events app in Microsoft Teams. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, October 9, 2026, at 4:10 PM UTC",
           "rootCause": "A recent service update introduced a regression that causes the registration report download option to become unavailable when the engagement reporting policy is disabled, despite the report being independent of this policy.",
-          "nextUpdateBy": "Tuesday, October 13, 2026, at 4:00 PM UTC",
+          "nextUpdateBy": "Tuesday, October 13, 2026, at 6:00 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-13T15:49:58.157Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to download webinar registration details from the Events app in Microsoft Teams\r\n\r\nUser impact: Users may be unable to download webinar registration details from the Events app in Microsoft Teams.\r\n\r\nMore info: Specifically, this impacts users who have the AllowEngagementReport meeting policy set to Off, as they're unable to download webinar registration details in Microsoft Teams Events because the Download option does not appear.\r\n\r\nCurrent status: We've reached out to your organization and are awaiting feedback to confirm that the fix we deployed remediates the impact as expected. \r\n\r\nScope of impact: Impact may occur for users whose assigned meeting policy has AllowEngagementReport set to Off, preventing them from downloading webinar registration details from the Events app in Microsoft Teams. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, October 9, 2026, at 4:10 PM UTC\r\n\r\nRoot cause: A recent service update introduced a regression that causes the registration report download option to become unavailable when the engagement reporting policy is disabled, despite the report being independent of this policy.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 6:00 PM UTC"
+            },
             {
               "createdAt": "2026-10-12T13:57:36.08Z",
               "postType": "regular",
@@ -1372,6 +1322,52 @@
     }
   ],
   "history": [
+    {
+      "id": "TM1489450",
+      "title": "Some users may experience intermittent audio and video degradation when using Microsoft Teams through VDI 2.0",
+      "startTime": "2026-10-06T13:19:30.807Z",
+      "endTime": null,
+      "lastModified": "2026-10-12T17:07:48.507Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may experience intermittent audio and video degradation when using Microsoft Teams through VDI 2.0",
+      "scopeOfImpact": "Users who are using Microsoft Teams VDI 2.0 in a Citrix VDI environment may be impacted.",
+      "rootCause": "A recent configuration update to the VDI Bridge component responsible for VDI optimization introduced a regression, resulting in impact.",
+      "nextUpdateBy": "Tuesday, October 13, 2026, at 5:00 PM UTC",
+      "feature": "General",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-10-12T17:07:48.507Z",
+          "postType": "regular",
+          "content": "Title: Some users may experience intermittent audio and video degradation when using Microsoft Teams through VDI 2.0\r\n\r\nUser impact: Users may experience intermittent audio and video degradation when using Microsoft Teams through VDI 2.0\r\n\r\nMore info: Users also intermittently may be unable leverage certain feature optimization provided by VDI 2.0\n \nAs a workaround, users can restart Teams to resolve the issue.\r\n\r\nCurrent status: We're seeing continued success from our mitigation of moving users to a specific build version that doesn't contain the regression, and more monitoring time is needed to ensure this provides a stable resolution for users.\r\n\r\nScope of impact: Users who are using Microsoft Teams VDI 2.0 in a Citrix VDI environment may be impacted.\r\n\r\nRoot cause: A recent configuration update to the VDI Bridge component responsible for VDI optimization introduced a regression, resulting in impact.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 5:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-09T14:55:32.663Z",
+          "postType": "regular",
+          "content": "Title: Some users may encounter intermittent VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment\r\n\r\nUser impact: Users may encounter intermittent VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment.\r\n\r\nMore info: Users may experience audio and video quality degradation, and unavailability of certain features.\n\nAs a workaround, users can restart Teams to resolve the issue.\r\n\r\nCurrent status: We’ve implemented an interim mitigation to provide immediate relief and have observed initial signs of improvement. However, we’re continuing to monitor its effectiveness while progressing with validation of a longer-term fix before proceeding with deployment.\r\n\r\nScope of impact: Some users who are attempting to utilize VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment may be impacted.\r\n\r\nRoot cause: A recent configuration update to the VDI Bridge component responsible for VDI optimisation introduced a regression, resulting in impact.\r\n\r\nNext update by: Monday, October 12, 2026, at 6:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-08T14:22:58.873Z",
+          "postType": "regular",
+          "content": "Title: Some users may encounter intermittent VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment\r\n\r\nUser impact: Users may encounter intermittent VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment.\r\n\r\nMore info: Users may experience audio and video quality degradation, and unavailability of certain features.\n\nAs a workaround, users can restart Teams to resolve the issue.\r\n\r\nCurrent status: We’re proceeding to validate the fix before deploying it to the affected infrastructure. Once available, we’ll provide a deployment timeline. \r\n\r\nScope of impact: Some users who are attempting to utilize VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment may be impacted.\r\n\r\nRoot cause: A recent configuration update to the VDI Bridge component responsible for VDI optimisation introduced a regression, resulting in impact.\r\n\r\nNext update by: Friday, October 9, 2026, at 4:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-07T16:45:37.497Z",
+          "postType": "regular",
+          "content": "Title: Some users may encounter intermittent VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment\r\n\r\nUser impact: Users may encounter intermittent VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment.\r\n\r\nMore info: Users may experience audio and video quality degradation, and unavailability of certain features.\n\nAs a workaround, users can restart Teams to resolve the issue.\r\n\r\nCurrent status: We’re continuing to validate the fix before deploying it to the affected infrastructure. Once available, we’ll provide a deployment timeline. \r\n\r\nScope of impact: Some users who are attempting to utilize VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment may be impacted.\r\n\r\nRoot cause: A recent configuration update to the VDI Bridge component responsible for VDI optimisation introduced a regression, resulting in impact.\r\n\r\nNext update by: Thursday, October 8, 2026, at 4:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-07T08:59:15.543Z",
+          "postType": "regular",
+          "content": "Title: Some users may encounter intermittent VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment\r\n\r\nUser impact: Users may encounter intermittent VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment.\r\n\r\nMore info: Users may experience audio and video quality degradation, and unavailability of certain features.\n\nAs a workaround, users can restart Teams to resolve the issue.\r\n\r\nCurrent status: We’ve identified that a recent configuration update to the VDI Bridge component responsible for VDI optimisation introduced a regression, resulting in impact. We’ve developed a fix and are currently validating it before deploying it to the affected infrastructure. We expect to provide a deployment timeline by our next scheduled update.\r\n\r\nScope of impact: Some users who are attempting to utilize VDI2 optimization loss when using Microsoft Teams in a Citrix VDI environment may be impacted.\r\n\r\nRoot cause: A recent configuration update to the VDI Bridge component responsible for VDI optimisation introduced a regression, resulting in impact.\r\n\r\nNext update by: Wednesday, October 7, 2026, at 5:00 PM UTC"
+        }
+      ],
+      "serviceName": "Microsoft Teams",
+      "affectedServices": [
+        "Microsoft Teams"
+      ]
+    },
     {
       "id": "MP1471821",
       "title": "Some admins may receive failures creating or updating Communications Compliance policies in Microsoft Purview",
