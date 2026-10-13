@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-13T20:36:15.012Z",
+  "lastUpdated": "2026-10-13T21:06:34.645Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -440,16 +440,21 @@
           "title": "Admins may see multiple usage reports not updating in the Microsoft 365 admin center",
           "startTime": "2026-09-28T22:36:21.907Z",
           "endTime": null,
-          "lastModified": "2026-10-12T20:25:00.21Z",
+          "lastModified": "2026-10-13T20:40:12.653Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may see multiple usage reports not updating in the Microsoft 365 admin center.",
           "scopeOfImpact": "Some admins may not see updated usage reports in the Microsoft 365 admin center with varying delays. This section may be updated as the investigation progresses.",
           "rootCause": "Upstream processes responsible for managing user data were unable to process data as effectively as expected, leading to delays populating user reports.",
-          "nextUpdateBy": "Tuesday, October 13, 2026, at 9:00 PM UTC",
+          "nextUpdateBy": "Wednesday, October 14, 2026, at 9:00 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-13T20:40:12.653Z",
+              "postType": "regular",
+              "content": "Title: Admins may see multiple usage reports not updating in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see multiple usage reports not updating in the Microsoft 365 admin center.\r\n\r\nMore info: Due to the delay in data propagation, impacted usage reports may not be viewable.\n\nThe following usage reports may not show data since October 6, 2026:\n- Mailbox usage reports\n- Microsoft Teams User activity reports\n- Microsoft 365 Group activity reports\n \nThe following usage reports have recovered as of October 12, 2026:\n- Adoption Score reports\n- Multi-geo Tenant usage reports\n- Active user reports\n- Email Activity reports\n- Email Apps usage reports\n- Microsoft 365 Apps usage reports\r\n\r\nCurrent status: We've completed our additional service-side optimizations and received some reports from impacted users that this issue has been remediated. We're continuing to monitor the final impacted report types to validate recovery.\r\n\r\nScope of impact: Some admins may not see updated usage reports in the Microsoft 365 admin center with varying delays. This section may be updated as the investigation progresses.\r\n\r\nRoot cause: Upstream processes responsible for managing user data were unable to process data as effectively as expected, leading to delays populating user reports.\r\n\r\nNext update by: Wednesday, October 14, 2026, at 9:00 PM UTC"
+            },
             {
               "createdAt": "2026-10-12T20:07:33.13Z",
               "postType": "regular",
@@ -519,12 +524,12 @@
         {
           "id": "MO1506255",
           "title": "Admins may be unable to review Service health or Message center postings in the Microsoft 365 admin center",
-          "startTime": "2026-10-13T18:24:19.62Z",
+          "startTime": "2026-10-12T21:54:00Z",
           "endTime": null,
-          "lastModified": "2026-10-13T19:45:26.033Z",
+          "lastModified": "2026-10-13T20:45:12.02Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "userImpact": "Admins may be unable to review Service health or Message center postings in the Microsoft 365 admin center.",
+          "userImpact": "Admins may have been unable to review Service health or Message center postings in the Microsoft 365 admin center.",
           "scopeOfImpact": "This issue affects some admins who may be unable to review Service health or Message center postings in the Microsoft 365 admin center or see new activities in the “What’s new” tab in the Microsoft Teams admin center. This section may be updated as the investigation progresses.\r\n\r\nStart time: Monday, October 12, 2026, at 9:54 PM UTC\r\n\r\nEstimated time to resolve: We anticipate impact to be resolved by Tuesday, October 13, 2026, at 10:00 PM UTC.",
           "rootCause": "A recent service update introduced a misconfiguration which causes the Service Health and Communications API to return authentication errors, resulting in impact.",
           "nextUpdateBy": "Tuesday, October 13, 2026, at 10:00 PM UTC",
@@ -933,16 +938,21 @@
           "title": "Admins may see multiple usage reports not updating in the Microsoft 365 admin center",
           "startTime": "2026-09-28T22:36:21.907Z",
           "endTime": null,
-          "lastModified": "2026-10-12T20:25:00.21Z",
+          "lastModified": "2026-10-13T20:40:12.653Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may see multiple usage reports not updating in the Microsoft 365 admin center.",
           "scopeOfImpact": "Some admins may not see updated usage reports in the Microsoft 365 admin center with varying delays. This section may be updated as the investigation progresses.",
           "rootCause": "Upstream processes responsible for managing user data were unable to process data as effectively as expected, leading to delays populating user reports.",
-          "nextUpdateBy": "Tuesday, October 13, 2026, at 9:00 PM UTC",
+          "nextUpdateBy": "Wednesday, October 14, 2026, at 9:00 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-13T20:40:12.653Z",
+              "postType": "regular",
+              "content": "Title: Admins may see multiple usage reports not updating in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see multiple usage reports not updating in the Microsoft 365 admin center.\r\n\r\nMore info: Due to the delay in data propagation, impacted usage reports may not be viewable.\n\nThe following usage reports may not show data since October 6, 2026:\n- Mailbox usage reports\n- Microsoft Teams User activity reports\n- Microsoft 365 Group activity reports\n \nThe following usage reports have recovered as of October 12, 2026:\n- Adoption Score reports\n- Multi-geo Tenant usage reports\n- Active user reports\n- Email Activity reports\n- Email Apps usage reports\n- Microsoft 365 Apps usage reports\r\n\r\nCurrent status: We've completed our additional service-side optimizations and received some reports from impacted users that this issue has been remediated. We're continuing to monitor the final impacted report types to validate recovery.\r\n\r\nScope of impact: Some admins may not see updated usage reports in the Microsoft 365 admin center with varying delays. This section may be updated as the investigation progresses.\r\n\r\nRoot cause: Upstream processes responsible for managing user data were unable to process data as effectively as expected, leading to delays populating user reports.\r\n\r\nNext update by: Wednesday, October 14, 2026, at 9:00 PM UTC"
+            },
             {
               "createdAt": "2026-10-12T20:07:33.13Z",
               "postType": "regular",
