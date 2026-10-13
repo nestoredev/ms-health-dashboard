@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-13T03:58:45.137Z",
+  "lastUpdated": "2026-10-13T04:28:59.008Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -600,9 +600,35 @@
     },
     {
       "service": "Power BI",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "PowerBIcom",
-      "issues": []
+      "issues": [
+        {
+          "id": "PB1505699",
+          "title": "Users may not see chart data when using standard light or dark themes on Power BI dashboards",
+          "startTime": "2026-10-13T03:48:20.163Z",
+          "endTime": null,
+          "lastModified": "2026-10-13T04:02:38.233Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may not have seen chart data when using standard light or dark themes on Power BI dashboards.",
+          "scopeOfImpact": "This issue may have impacted any user who was attempting to view data on a cartesian chart pinned to the Power BI dashboard with standard light theme or dark theme enabled. This section may be updated as our investigation continues.",
+          "rootCause": "",
+          "nextUpdateBy": "Tuesday, October 13, 2026, at 5:00 PM UTC",
+          "feature": "General",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-10-13T04:02:38.233Z",
+              "postType": "regular",
+              "content": "Title: Users may not see chart data when using standard light or dark themes on Power BI dashboards\r\n\r\nUser impact: Users may not have seen chart data when using standard light or dark themes on Power BI dashboards.\r\n\r\nCurrent status: We've identified that impact communicated in PB1489649 persists. We're working on developing a new fix that we suspect will complete by Tuesday, October 13, 2026. At that time we'll also aim to provide details on the root cause into what caused the impact to persist. \r\n\r\nScope of impact: This issue may have impacted any user who was attempting to view data on a cartesian chart pinned to the Power BI dashboard with standard light theme or dark theme enabled. This section may be updated as our investigation continues.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 5:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Power BI"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft Intune",
