@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-13T15:04:13.435Z",
+  "lastUpdated": "2026-10-13T15:34:31.517Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -198,16 +198,26 @@
           "title": "Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)",
           "startTime": "2026-10-13T08:00:00Z",
           "endTime": null,
-          "lastModified": "2026-10-13T14:42:42.493Z",
+          "lastModified": "2026-10-13T15:21:32.61Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to access multiple Microsoft 365 services using GSA.\n ",
-          "scopeOfImpact": "Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\r\n\r\nStart time: Tuesday, October 13, 2026, at 8:00 AM UTC",
+          "scopeOfImpact": "Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\n\nStart time: Tuesday, October 13, 2026, at 8:00 AM UTC\n\nPreliminary",
           "rootCause": "A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.",
-          "nextUpdateBy": "Tuesday, October 13, 2026, at 3:30 PM UTC",
+          "nextUpdateBy": "Tuesday, October 13, 2026, at 4:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-13T15:21:00.347Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\n\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\n \n\nMore info: Impacted services may include, but aren't limited to:\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\n\nCurrent status: We've completed redirecting traffic to healthy infrastructure and are assessing for positive trends towards recovery. We're continuing to investigate additional mitigating actions to expedite remediation.\n\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\n\nStart time: Tuesday, October 13, 2026, at 8:00 AM UTC\n\nPreliminary root cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\n\nNext update by: Tuesday, October 13, 2026, at 4:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-10-13T14:57:20.44Z",
+              "postType": "quick",
+              "content": "We're redirecting traffic from the underperforming infrastructure to improve service health. We're monitoring to confirm this will fully resolve impact. \n\nThis quick update is designed to give the latest information on this issue."
+            },
             {
               "createdAt": "2026-10-13T14:35:16.113Z",
               "postType": "regular",
@@ -216,12 +226,12 @@
             {
               "createdAt": "2026-10-13T13:29:09.343Z",
               "postType": "regular",
-              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\n\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\n\nMore info: Impacted services may include, but aren't limited to:\n\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\n\nCurrent status: We're continuing to apply the aforementioned traffic and performance optimizations with early signals showing signs of recovery.\n\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\n\nRoot cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\n\nNext update by: Tuesday, October 13, 2026, at 3:30 PM UTC"
+              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\n\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\n\nMore info: Impacted services may include, but aren't limited to:\n\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\n\nCurrent status: We're continuing to apply the aforementioned traffic and performance optimizations with early signals showing signs of recovery.\n\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\n\nPreliminary root cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\n\nNext update by: Tuesday, October 13, 2026, at 3:30 PM UTC"
             },
             {
               "createdAt": "2026-10-13T11:30:08.517Z",
               "postType": "regular",
-              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\r\n\r\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\r\n\r\nMore info: Impacted services may include, but aren't limited to:\n\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\r\n\r\nCurrent status: We’ve identified that a section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact. We’re applying performance and traffic optimizations to remediate impact and restore connectivity.\r\n\r\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\r\n\r\nRoot cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 1:30 PM UTC"
+              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\n\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\n\nMore info: Impacted services may include, but aren't limited to:\n\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\n\nCurrent status: We’ve identified that a section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact. We’re applying performance and traffic optimizations to remediate impact and restore connectivity.\n\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\n\nPreliminary root cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\n\nNext update by: Tuesday, October 13, 2026, at 1:30 PM UTC"
             },
             {
               "createdAt": "2026-10-13T09:41:18.723Z",
@@ -473,16 +483,26 @@
           "title": "Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)",
           "startTime": "2026-10-13T08:00:00Z",
           "endTime": null,
-          "lastModified": "2026-10-13T14:42:42.493Z",
+          "lastModified": "2026-10-13T15:21:32.61Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to access multiple Microsoft 365 services using GSA.\n ",
-          "scopeOfImpact": "Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\r\n\r\nStart time: Tuesday, October 13, 2026, at 8:00 AM UTC",
+          "scopeOfImpact": "Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\n\nStart time: Tuesday, October 13, 2026, at 8:00 AM UTC\n\nPreliminary",
           "rootCause": "A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.",
-          "nextUpdateBy": "Tuesday, October 13, 2026, at 3:30 PM UTC",
+          "nextUpdateBy": "Tuesday, October 13, 2026, at 4:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-13T15:21:00.347Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\n\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\n \n\nMore info: Impacted services may include, but aren't limited to:\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\n\nCurrent status: We've completed redirecting traffic to healthy infrastructure and are assessing for positive trends towards recovery. We're continuing to investigate additional mitigating actions to expedite remediation.\n\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\n\nStart time: Tuesday, October 13, 2026, at 8:00 AM UTC\n\nPreliminary root cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\n\nNext update by: Tuesday, October 13, 2026, at 4:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-10-13T14:57:20.44Z",
+              "postType": "quick",
+              "content": "We're redirecting traffic from the underperforming infrastructure to improve service health. We're monitoring to confirm this will fully resolve impact. \n\nThis quick update is designed to give the latest information on this issue."
+            },
             {
               "createdAt": "2026-10-13T14:35:16.113Z",
               "postType": "regular",
@@ -491,12 +511,12 @@
             {
               "createdAt": "2026-10-13T13:29:09.343Z",
               "postType": "regular",
-              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\n\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\n\nMore info: Impacted services may include, but aren't limited to:\n\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\n\nCurrent status: We're continuing to apply the aforementioned traffic and performance optimizations with early signals showing signs of recovery.\n\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\n\nRoot cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\n\nNext update by: Tuesday, October 13, 2026, at 3:30 PM UTC"
+              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\n\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\n\nMore info: Impacted services may include, but aren't limited to:\n\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\n\nCurrent status: We're continuing to apply the aforementioned traffic and performance optimizations with early signals showing signs of recovery.\n\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\n\nPreliminary root cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\n\nNext update by: Tuesday, October 13, 2026, at 3:30 PM UTC"
             },
             {
               "createdAt": "2026-10-13T11:30:08.517Z",
               "postType": "regular",
-              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\r\n\r\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\r\n\r\nMore info: Impacted services may include, but aren't limited to:\n\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\r\n\r\nCurrent status: We’ve identified that a section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact. We’re applying performance and traffic optimizations to remediate impact and restore connectivity.\r\n\r\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\r\n\r\nRoot cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 1:30 PM UTC"
+              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\n\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\n\nMore info: Impacted services may include, but aren't limited to:\n\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\n\nCurrent status: We’ve identified that a section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact. We’re applying performance and traffic optimizations to remediate impact and restore connectivity.\n\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\n\nPreliminary root cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\n\nNext update by: Tuesday, October 13, 2026, at 1:30 PM UTC"
             },
             {
               "createdAt": "2026-10-13T09:41:18.723Z",
@@ -661,55 +681,9 @@
     },
     {
       "service": "SharePoint Online",
-      "status": "serviceDegradation",
+      "status": "serviceOperational",
       "id": "SharePoint",
-      "issues": [
-        {
-          "id": "SP1503038",
-          "title": "Users may be unable to view or modify forms in SharePoint Online",
-          "startTime": "2026-10-12T18:04:38.993Z",
-          "endTime": null,
-          "lastModified": "2026-10-13T14:29:14.907Z",
-          "status": "serviceDegradation",
-          "severity": "incident",
-          "userImpact": "Users may be unable to view or modify forms in SharePoint Online.",
-          "scopeOfImpact": "Impact may be specific to any user attempting to view or modify Nintex or SPFx Customizers forms in SharePoint Online.",
-          "rootCause": "",
-          "nextUpdateBy": "Tuesday, October 13, 2026, at 8:00 PM UTC",
-          "feature": "Performance (related to custom solutions)",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-10-13T00:22:33.097Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to view or modify forms in SharePoint Online\r\n\r\nUser impact: Users may be unable to view or modify forms in SharePoint Online.\r\n\r\nMore info: Affected users may encounter multiple potential scenarios with Nintex and SharePoint Framework (SPFx) Customizers forms, including:\n \n- Blank pages\n- Null target exceptions\r\n\r\nCurrent status: We’ve isolated a recent API change as the suspected source of the impact. We’ve initiated the process of deploying a fix to confirm our findings and potentially remediate the impact.\r\n\r\nScope of impact: Impact may be specific to any user attempting to view or modify Nintex or SPFx Customizers forms in SharePoint Online.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 8:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-12T20:58:27.167Z",
-              "postType": "regular",
-              "content": "Title: Users can't view or modify Nintex forms in SharePoint Online and receive an error\r\n\r\nUser impact: Users can't view or modify Nintex forms in SharePoint Online and receive an error. \r\n\r\nMore info: Affected users are encountering multiple potential scenarios, including:\n \n- Blank pages\n- 200 HTTP errors\n- Null target exceptions\r\n\r\nCurrent status: We're continuing our analysis of the HAR captures to determine the cause of impact. \r\n\r\nScope of impact: Your organization is impacted by this event, and impact is limited to users viewing or modifying Nintex forms in SharePoint Online.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 1:30 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-12T19:11:30.83Z",
-              "postType": "regular",
-              "content": "Title: Users can't view or modify Nintex forms in SharePoint Online and receive an error\r\n\r\nUser impact: Users can't view or modify Nintex forms in SharePoint Online and receive an error. \r\n\r\nMore info: Affected users are encountering multiple potential scenarios, including:\n \n- Blank pages\n- 200 HTTP errors\n- Null target exceptions\r\n\r\nCurrent status: We're expanding our investigation to include HTTP Archive format (HAR) browser captures of the issue in progress to assist in isolating the underlying cause of impact and develop a remediation strategy. \r\n\r\nScope of impact: Your organization is impacted by this event, and impact is limited to users viewing or modifying Nintex forms in SharePoint Online.\r\n\r\nNext update by: Monday, October 12, 2026, at 9:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-12T18:27:32.18Z",
-              "postType": "regular",
-              "content": "Title: Users can't view or modify Nintex forms in SharePoint Online and receive an error\r\n\r\nUser impact: Users can't view or modify Nintex forms in SharePoint Online and receive an error. \r\n\r\nMore info: Affected users are encountering multiple potential scenarios, including:\n \n- Blank pages\n- 200 HTTP errors\n- Null target exceptions\r\n\r\nCurrent status: We're reviewing support case details to better understand the impact scenario and determine our next steps.\r\n\r\nScope of impact: Your organization is impacted by this event, and impact is limited to users viewing or modifying Nintex forms in SharePoint Online.\r\n\r\nNext update by: Monday, October 12, 2026, at 8:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-12T18:07:09.42Z",
-              "postType": "regular",
-              "content": "Title: Users can't view or modify Nintex forms in SharePoint Online and receive an error\r\n\r\nUser impact: Users can't view or modify Nintex forms in SharePoint Online and receive an error. \r\n\r\nCurrent status: We're investigating a potential issue with SharePoint Online and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "SharePoint Online"
-          ]
-        }
-      ]
+      "issues": []
     },
     {
       "service": "Dynamics 365 Apps",
@@ -783,16 +757,26 @@
           "title": "Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)",
           "startTime": "2026-10-13T08:00:00Z",
           "endTime": null,
-          "lastModified": "2026-10-13T14:42:42.493Z",
+          "lastModified": "2026-10-13T15:21:32.61Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to access multiple Microsoft 365 services using GSA.\n ",
-          "scopeOfImpact": "Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\r\n\r\nStart time: Tuesday, October 13, 2026, at 8:00 AM UTC",
+          "scopeOfImpact": "Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\n\nStart time: Tuesday, October 13, 2026, at 8:00 AM UTC\n\nPreliminary",
           "rootCause": "A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.",
-          "nextUpdateBy": "Tuesday, October 13, 2026, at 3:30 PM UTC",
+          "nextUpdateBy": "Tuesday, October 13, 2026, at 4:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-13T15:21:00.347Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\n\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\n \n\nMore info: Impacted services may include, but aren't limited to:\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\n\nCurrent status: We've completed redirecting traffic to healthy infrastructure and are assessing for positive trends towards recovery. We're continuing to investigate additional mitigating actions to expedite remediation.\n\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\n\nStart time: Tuesday, October 13, 2026, at 8:00 AM UTC\n\nPreliminary root cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\n\nNext update by: Tuesday, October 13, 2026, at 4:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-10-13T14:57:20.44Z",
+              "postType": "quick",
+              "content": "We're redirecting traffic from the underperforming infrastructure to improve service health. We're monitoring to confirm this will fully resolve impact. \n\nThis quick update is designed to give the latest information on this issue."
+            },
             {
               "createdAt": "2026-10-13T14:35:16.113Z",
               "postType": "regular",
@@ -801,12 +785,12 @@
             {
               "createdAt": "2026-10-13T13:29:09.343Z",
               "postType": "regular",
-              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\n\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\n\nMore info: Impacted services may include, but aren't limited to:\n\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\n\nCurrent status: We're continuing to apply the aforementioned traffic and performance optimizations with early signals showing signs of recovery.\n\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\n\nRoot cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\n\nNext update by: Tuesday, October 13, 2026, at 3:30 PM UTC"
+              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\n\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\n\nMore info: Impacted services may include, but aren't limited to:\n\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\n\nCurrent status: We're continuing to apply the aforementioned traffic and performance optimizations with early signals showing signs of recovery.\n\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\n\nPreliminary root cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\n\nNext update by: Tuesday, October 13, 2026, at 3:30 PM UTC"
             },
             {
               "createdAt": "2026-10-13T11:30:08.517Z",
               "postType": "regular",
-              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\r\n\r\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\r\n\r\nMore info: Impacted services may include, but aren't limited to:\n\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\r\n\r\nCurrent status: We’ve identified that a section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact. We’re applying performance and traffic optimizations to remediate impact and restore connectivity.\r\n\r\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\r\n\r\nRoot cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 1:30 PM UTC"
+              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\n\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\n\nMore info: Impacted services may include, but aren't limited to:\n\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\n\nCurrent status: We’ve identified that a section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact. We’re applying performance and traffic optimizations to remediate impact and restore connectivity.\n\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\n\nPreliminary root cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\n\nNext update by: Tuesday, October 13, 2026, at 1:30 PM UTC"
             },
             {
               "createdAt": "2026-10-13T09:41:18.723Z",
@@ -1078,16 +1062,26 @@
           "title": "Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)",
           "startTime": "2026-10-13T08:00:00Z",
           "endTime": null,
-          "lastModified": "2026-10-13T14:42:42.493Z",
+          "lastModified": "2026-10-13T15:21:32.61Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to access multiple Microsoft 365 services using GSA.\n ",
-          "scopeOfImpact": "Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\r\n\r\nStart time: Tuesday, October 13, 2026, at 8:00 AM UTC",
+          "scopeOfImpact": "Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\n\nStart time: Tuesday, October 13, 2026, at 8:00 AM UTC\n\nPreliminary",
           "rootCause": "A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.",
-          "nextUpdateBy": "Tuesday, October 13, 2026, at 3:30 PM UTC",
+          "nextUpdateBy": "Tuesday, October 13, 2026, at 4:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-13T15:21:00.347Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\n\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\n \n\nMore info: Impacted services may include, but aren't limited to:\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\n\nCurrent status: We've completed redirecting traffic to healthy infrastructure and are assessing for positive trends towards recovery. We're continuing to investigate additional mitigating actions to expedite remediation.\n\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\n\nStart time: Tuesday, October 13, 2026, at 8:00 AM UTC\n\nPreliminary root cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\n\nNext update by: Tuesday, October 13, 2026, at 4:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-10-13T14:57:20.44Z",
+              "postType": "quick",
+              "content": "We're redirecting traffic from the underperforming infrastructure to improve service health. We're monitoring to confirm this will fully resolve impact. \n\nThis quick update is designed to give the latest information on this issue."
+            },
             {
               "createdAt": "2026-10-13T14:35:16.113Z",
               "postType": "regular",
@@ -1096,12 +1090,12 @@
             {
               "createdAt": "2026-10-13T13:29:09.343Z",
               "postType": "regular",
-              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\n\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\n\nMore info: Impacted services may include, but aren't limited to:\n\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\n\nCurrent status: We're continuing to apply the aforementioned traffic and performance optimizations with early signals showing signs of recovery.\n\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\n\nRoot cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\n\nNext update by: Tuesday, October 13, 2026, at 3:30 PM UTC"
+              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\n\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\n\nMore info: Impacted services may include, but aren't limited to:\n\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\n\nCurrent status: We're continuing to apply the aforementioned traffic and performance optimizations with early signals showing signs of recovery.\n\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\n\nPreliminary root cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\n\nNext update by: Tuesday, October 13, 2026, at 3:30 PM UTC"
             },
             {
               "createdAt": "2026-10-13T11:30:08.517Z",
               "postType": "regular",
-              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\r\n\r\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\r\n\r\nMore info: Impacted services may include, but aren't limited to:\n\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\r\n\r\nCurrent status: We’ve identified that a section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact. We’re applying performance and traffic optimizations to remediate impact and restore connectivity.\r\n\r\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\r\n\r\nRoot cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 1:30 PM UTC"
+              "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\n\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\n\nMore info: Impacted services may include, but aren't limited to:\n\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\n\nCurrent status: We’ve identified that a section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact. We’re applying performance and traffic optimizations to remediate impact and restore connectivity.\n\nScope of impact: Some users in Germany and the United Kingdom attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\n\nPreliminary root cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\n\nNext update by: Tuesday, October 13, 2026, at 1:30 PM UTC"
             },
             {
               "createdAt": "2026-10-13T09:41:18.723Z",
