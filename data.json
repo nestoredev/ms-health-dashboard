@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-14T13:13:38.042Z",
+  "lastUpdated": "2026-10-14T13:43:54.994Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1440,16 +1440,26 @@
       "title": "Admins are unable to access the Exchange admin center (EAC)",
       "startTime": "2026-10-12T08:15:00Z",
       "endTime": "2026-10-12T12:50:00Z",
-      "lastModified": "2026-10-12T14:08:10.083Z",
-      "status": "serviceRestored",
+      "lastModified": "2026-10-14T13:11:27.51Z",
+      "status": "postIncidentReviewPublished",
       "severity": "incident",
       "userImpact": "Admins are unable to access the EAC. ",
-      "scopeOfImpact": "Impact was specific to admins attempting to access the EAC.\n \nStart time: Monday, October 12, 2026, at 8:15 AM UTC\n \nEnd time: Monday, October 12, 2026, at 12:50 PM UTC\n \nPreliminary",
-      "rootCause": "A recent EAC configuration change resulted in unexpected HTTP responses within the affected request path, preventing admins from successfully accessing the EAC. Reverting the identified change restored expected service functionality.\n \nNext steps:\n- We’re reviewing the identified EAC change and associated service configuration to help prevent similar impact from recurring.\n- We’re reviewing our monitoring and telemetry to improve detection and alerting for similar service behavior.\n \nWe’ll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days.",
+      "scopeOfImpact": "",
+      "rootCause": "",
       "nextUpdateBy": "",
       "feature": "Reports of an Incident",
       "isResolved": true,
       "posts": [
+        {
+          "createdAt": "2026-10-14T13:11:27.51Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        },
+        {
+          "createdAt": "2026-10-14T13:11:13.647Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        },
         {
           "createdAt": "2026-10-12T13:28:40.877Z",
           "postType": "regular",
@@ -1464,16 +1474,6 @@
           "createdAt": "2026-10-12T12:50:57.543Z",
           "postType": "quick",
           "content": "We’re continuing to roll back the identified Exchange admin center (EAC) change. Initial telemetry shows errors trending downward from their earlier peak, and we’re monitoring service health to determine whether the rollback restores access for affected admins.\n \nThis quick update is designed to give the latest information on this issue.\n \nNext update by: Monday, October 12, 2026, at 1:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-10-12T12:23:27.19Z",
-          "postType": "regular",
-          "content": "Title: Admins are unable to access the Exchange admin center (EAC)\n\nUser impact: Admins are unable to access the EAC. \n\nMore info: When attempting to access the Exchange admin center, admins encounter an “Internal Server Error” message.\n \nCurrent status: Our testing has identified a recent Exchange admin center (EAC) configuration change as a potential contributor to the access failures and associated HTTP 302 redirects. We’re rolling back the change, which we expect to complete within approximately two hours. Once complete, we’ll monitor the environment to determine whether this resolves the impact.\n \nScope of impact: Impact may be specific to any admin attempting to access the EAC. This information may be updated as our investigation continues.\n\nNext update by: Monday, October 12, 2026, at 1:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-10-12T12:01:41.633Z",
-          "postType": "quick",
-          "content": "We’re continuing to test the rollback of the recent Exchange admin center (EAC) change while monitoring the results to determine if this resolves the impact. In parallel, we’re continuing our analysis of the unexpected HTTP 302 redirects to help determine the source of the issue.\n\nThis quick update is designed to give the latest information on this issue.\n\nNext update by: Monday, October 12, 2026, at 12:30 AM UTC"
         }
       ],
       "serviceName": "Exchange Online",
