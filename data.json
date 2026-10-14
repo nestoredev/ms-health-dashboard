@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-14T21:48:30.781Z",
+  "lastUpdated": "2026-10-14T22:18:48.129Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -60,41 +60,6 @@
               "createdAt": "2026-09-30T17:04:20.98Z",
               "postType": "regular",
               "content": "Title: Users may intermittently be unable to access their calendars in Outlook on the web and the new Outlook desktop client\r\n\r\nUser impact: Users may intermittently be unable to access their calendars in Outlook on the web and the new Outlook desktop client.\r\n\r\nMore info: Users get the error message, “Can’t retrieve calendar events right now. Refresh the browser and try again.”\r\n\r\nCurrent status: We're investigating a potential issue with Exchange Online and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Exchange Online"
-          ]
-        },
-        {
-          "id": "EX1507783",
-          "title": "Some users' mailbox syncs may fail with an error in Exchange Online",
-          "startTime": "2026-10-14T18:50:39.43Z",
-          "endTime": null,
-          "lastModified": "2026-10-14T20:51:53.28Z",
-          "status": "serviceDegradation",
-          "severity": "incident",
-          "userImpact": "Users' mailbox syncs may fail with an error in Exchange Online.",
-          "scopeOfImpact": "This issue may affect some users' mailbox syncs, specifically for customers using apps that access non-Interpersonal Messaging (IPM) mailboxes through Microsoft Graph, which returns an error code in Exchange Online. This information may be updated as our investigation continues.",
-          "rootCause": "",
-          "nextUpdateBy": "Wednesday, October 14, 2026, at 10:30 PM UTC",
-          "feature": "Outlook - poor customer experience",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-10-14T20:15:31.497Z",
-              "postType": "regular",
-              "content": "Title: Some users' mailbox syncs may fail with an error in Exchange Online\r\n\r\nUser impact: Users' mailbox syncs may fail with an error in Exchange Online.\r\n\r\nMore info: Users see the following error message in Microsoft Graph: \"HTTP 400 -- Operation not allowed -- Operation on Non IPM Subtree forbidden.\"\r\n\r\nCurrent status: We've identified a recent code change made to specific mailbox APIs which is resulting in the error messages seen in Microsoft Graph when these apps access non-Interpersonal Messaging (IPM) mailboxes. We're reverting this change to verify that it's the source of this issue and to fully remediate impact.\r\n\r\nScope of impact: This issue may affect some users' mailbox syncs, specifically for customers using apps that access non-Interpersonal Messaging (IPM) mailboxes through Microsoft Graph, which returns an error code in Exchange Online. This information may be updated as our investigation continues.\r\n\r\nNext update by: Wednesday, October 14, 2026, at 10:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-14T19:13:17.687Z",
-              "postType": "regular",
-              "content": "Title: Some users' mailbox syncing fails with an error in Exchange Online\r\n\r\nUser impact: Users' mailbox syncing fails with an error in Exchange Online.\r\n\r\nMore info: Users see the following error message in Microsoft Graph: \"HTTP 400 -- Operation not allowed -- Operation on Non IPM Subtree forbidden.\"\r\n\r\nCurrent status: We're investigating the error code associated with this impact alongside our service records to identify the source of the issue.\r\n\r\nScope of impact: This issue may affect some users' mailbox syncs, specifically for customers using apps that access non-Interpersonal Messaging (IPM) mailboxes through Microsoft Graph, which returns an error code in Exchange Online. This information may be updated as our investigation continues.\r\n\r\nNext update by: Wednesday, October 14, 2026, at 8:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-14T19:00:17.197Z",
-              "postType": "regular",
-              "content": "Title: Users' mailbox syncing fails with an error in Exchange Online\r\n\r\nUser impact: Users' mailbox syncing fails with an error in Exchange Online.\r\n\r\nCurrent status: We're investigating a potential issue with mailbox sync status in Exchange Online and checking for impact to your organization. We'll provide an update within 30 minutes."
             }
           ],
           "affectedServices": [
@@ -721,16 +686,21 @@
           "title": "Users may be unable to join Microsoft Teams meetings and see sign-in errors",
           "startTime": "2026-10-13T16:54:23.903Z",
           "endTime": null,
-          "lastModified": "2026-10-14T20:03:44.307Z",
+          "lastModified": "2026-10-14T21:49:18.363Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to join Microsoft Teams meetings and see sign-in errors.",
-          "scopeOfImpact": "Some users may be unable to join Microsoft Teams meetings and see sign-in errors. This information may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, October 7, 2026, at 1:00 AM UTC",
+          "scopeOfImpact": "Some users may be unable to join Microsoft Teams meetings and see sign-in errors. This information may be updated as our investigation continues.",
           "rootCause": "A recent change to the authentication flow utilized in the event contained a regression, resulting in this impact.",
-          "nextUpdateBy": "Wednesday, October 14, 2026, at 10:00 PM UTC",
+          "nextUpdateBy": "Thursday, October 15, 2026, at 11:30 PM UTC",
           "feature": "Meetings",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-14T21:49:18.363Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to join Microsoft Teams meetings and see sign-in errors\r\n\r\nUser impact: Users may be unable to join Microsoft Teams meetings and see sign-in errors.\r\n\r\nMore info: Affected users see a sign-in prompt when attempting to join a meeting but clicking \"sign-in\" on the prompt has no effect.\n\nUsers can sign-out and sign back in as a temporary mitigation.\r\n\r\nCurrent status: We've halted the code change causing this problem to ensure that no additional users encounter Microsoft Teams meeting join and sign-in errors. We're deploying a code fix to remediate the issue for users who received the code change prior to us halting it. Users will experience progressive relief from the issue as this deployment reaches them and we expect the code fix to propagate fully around the time of our next update. \r\n\r\nScope of impact: Some users may be unable to join Microsoft Teams meetings and see sign-in errors. This information may be updated as our investigation continues.\r\n\r\nRoot cause: A recent change to the authentication flow utilized in the event contained a regression, resulting in this impact.\r\n\r\nNext update by: Thursday, October 15, 2026, at 11:30 PM UTC"
+            },
             {
               "createdAt": "2026-10-14T02:06:41.417Z",
               "postType": "regular",
@@ -1244,6 +1214,47 @@
     }
   ],
   "history": [
+    {
+      "id": "EX1507783",
+      "title": "Some users' mailbox syncs may fail with an error in Exchange Online",
+      "startTime": "2026-09-29T22:06:00Z",
+      "endTime": "2026-10-14T21:43:25.88Z",
+      "lastModified": "2026-10-14T21:44:44.697Z",
+      "status": "serviceRestored",
+      "severity": "incident",
+      "userImpact": "Users' mailbox syncs may have failed with an error in Exchange Online.",
+      "scopeOfImpact": "This issue may have affected some users' mailbox syncs, specifically for customers who use apps that access non-Interpersonal Messaging (IPM) mailboxes through Microsoft Graph, which returned an error code in Exchange Online. \r\n\r\nStart time: Tuesday, September 29, 2026, at 10:06 PM UTC\r\n\r\nEnd time: Wednesday, October 14, 2026, at 8:59 PM UTC",
+      "rootCause": "recent code change intended to improve the resiliency of features associated with IPM mailboxes was enabled across multiple functions, which caused specific apps which rely on these functions being unable to access them.  This resulted in the mailboxes of users with these management apps installed failing to sync.\r\n\r\nNext steps: \n- We're analyzing the records from this event so that we can ensure that future code updates account for all potential user scenarios.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Outlook - poor customer experience",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-10-14T21:44:32.467Z",
+          "postType": "regular",
+          "content": "Title: Some users' mailbox syncs may fail with an error in Exchange Online\r\n\r\nUser impact: Users' mailbox syncs may have failed with an error in Exchange Online.\r\n\r\nMore info: Users saw the following error message in Microsoft Graph: \"HTTP 400 -- Operation not allowed -- Operation on Non IPM Subtree forbidden.\"\r\n\r\nFinal status: After reverting the recent code change, we've confirmed through service health telemetry that the error code associated with this issue has been resolved. The portion of impacted users who have apps which access non-Interpersonal Messaging (IPM) mailboxes will now see that mailboxes complete syncing as expected.\r\n\r\nScope of impact: This issue may have affected some users' mailbox syncs, specifically for customers who use apps that access non-Interpersonal Messaging (IPM) mailboxes through Microsoft Graph, which returned an error code in Exchange Online. \r\n\r\nStart time: Tuesday, September 29, 2026, at 10:06 PM UTC\r\n\r\nEnd time: Wednesday, October 14, 2026, at 8:59 PM UTC\r\n\r\nRoot cause: recent code change intended to improve the resiliency of features associated with IPM mailboxes was enabled across multiple functions, which caused specific apps which rely on these functions being unable to access them.  This resulted in the mailboxes of users with these management apps installed failing to sync.\r\n\r\nNext steps: \n- We're analyzing the records from this event so that we can ensure that future code updates account for all potential user scenarios.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-10-14T20:15:31.497Z",
+          "postType": "regular",
+          "content": "Title: Some users' mailbox syncs may fail with an error in Exchange Online\r\n\r\nUser impact: Users' mailbox syncs may fail with an error in Exchange Online.\r\n\r\nMore info: Users see the following error message in Microsoft Graph: \"HTTP 400 -- Operation not allowed -- Operation on Non IPM Subtree forbidden.\"\r\n\r\nCurrent status: We've identified a recent code change made to specific mailbox APIs which is resulting in the error messages seen in Microsoft Graph when these apps access non-Interpersonal Messaging (IPM) mailboxes. We're reverting this change to verify that it's the source of this issue and to fully remediate impact.\r\n\r\nScope of impact: This issue may affect some users' mailbox syncs, specifically for customers using apps that access non-Interpersonal Messaging (IPM) mailboxes through Microsoft Graph, which returns an error code in Exchange Online. This information may be updated as our investigation continues.\r\n\r\nNext update by: Wednesday, October 14, 2026, at 10:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-14T19:13:17.687Z",
+          "postType": "regular",
+          "content": "Title: Some users' mailbox syncing fails with an error in Exchange Online\r\n\r\nUser impact: Users' mailbox syncing fails with an error in Exchange Online.\r\n\r\nMore info: Users see the following error message in Microsoft Graph: \"HTTP 400 -- Operation not allowed -- Operation on Non IPM Subtree forbidden.\"\r\n\r\nCurrent status: We're investigating the error code associated with this impact alongside our service records to identify the source of the issue.\r\n\r\nScope of impact: This issue may affect some users' mailbox syncs, specifically for customers using apps that access non-Interpersonal Messaging (IPM) mailboxes through Microsoft Graph, which returns an error code in Exchange Online. This information may be updated as our investigation continues.\r\n\r\nNext update by: Wednesday, October 14, 2026, at 8:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-14T19:00:17.197Z",
+          "postType": "regular",
+          "content": "Title: Users' mailbox syncing fails with an error in Exchange Online\r\n\r\nUser impact: Users' mailbox syncing fails with an error in Exchange Online.\r\n\r\nCurrent status: We're investigating a potential issue with mailbox sync status in Exchange Online and checking for impact to your organization. We'll provide an update within 30 minutes."
+        }
+      ],
+      "serviceName": "Exchange Online",
+      "affectedServices": [
+        "Exchange Online"
+      ]
+    },
     {
       "id": "SP1503038",
       "title": "Users may be unable to view or modify custom forms in SharePoint Online",
@@ -3276,52 +3287,6 @@
       "serviceName": "Microsoft Teams",
       "affectedServices": [
         "Microsoft Teams"
-      ]
-    },
-    {
-      "id": "MO1469836",
-      "title": "Some admins may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center",
-      "startTime": "2026-08-28T00:00:00Z",
-      "endTime": "2026-09-17T21:26:14.303Z",
-      "lastModified": "2026-09-17T21:45:18.537Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Admins may have seen Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center.",
-      "scopeOfImpact": "This event impacted some admins, who may have seen Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center starting from August 25, 2026.\r\n\r\nStart time: Friday, August 28, 2026, at 12:00 AM UTC\r\n\r\nEnd time: Wednesday, September 16, 2026, at 7:20 PM UTC",
-      "rootCause": "An error occurred within the flow of service health telemetry data utilized by the service, resulting in this impact.\r\n\r\nNext steps: \n- We're further analyzing the isolated error within the flow of service health telemetry data to help us prevent similar impacting events in the future.\n\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Company or User Administration",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-09-17T21:45:15.607Z",
-          "postType": "regular",
-          "content": "Title: Some admins may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may have seen Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center.\r\n\r\nMore info: Admins may have seen the following inaccuracies in Microsoft Teams usage reports starting from August 25, 2026:\n\n- Teams Active Users displayed as 0\n- Teams Chat Messages displayed as 0\n- Teams Channel Messages displayed as 0\r\n\r\nFinal status: Our internal service telemetry has validated that the impacting error within the flow of service health telemetry data has been addressed, and that the impact has been resolved.\r\n\r\nScope of impact: This event impacted some admins, who may have seen Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center starting from August 25, 2026.\r\n\r\nStart time: Friday, August 28, 2026, at 12:00 AM UTC\r\n\r\nEnd time: Wednesday, September 16, 2026, at 7:20 PM UTC\r\n\r\nRoot cause: An error occurred within the flow of service health telemetry data utilized by the service, resulting in this impact.\r\n\r\nNext steps: \n- We're further analyzing the isolated error within the flow of service health telemetry data to help us prevent similar impacting events in the future.\n\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-09-16T19:04:31.49Z",
-          "postType": "regular",
-          "content": "Title: Some admins may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center.\r\n\r\nMore info: Admins may see the following inaccuracies in Microsoft Teams usage reports starting from August 25, 2026:\n\n- Teams Active Users may display as 0\n- Teams Chat Messages may display as 0\n- Teams Channel Messages may display as 0\r\n\r\nCurrent status: We're continuing to validate with affected users that this issue has been successfully remediated for all impacted regions.\r\n\r\nScope of impact: This event impacts some admins, who may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center starting from August 25, 2026. This section may be updated as the investigation progresses.\r\n\r\nStart time: Friday, August 28, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: An error occurred within the flow of service health telemetry data utilized by the service, resulting in this impact.\r\n\r\nNext update by: Thursday, September 17, 2026, at 11:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-09-16T01:11:55.897Z",
-          "postType": "regular",
-          "content": "Title: Some admins may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center.\r\n\r\nMore info: Admins may see the following inaccuracies in Microsoft Teams usage reports starting from August 25, 2026:\n\n- Teams Active Users may display as 0\n- Teams Chat Messages may display as 0\n- Teams Channel Messages may display as 0\r\n\r\nCurrent status: We've confirmed that the backfill has processed as expected and are reaching out to a portion of impacted users to verify that the issue has been remediated.\r\n\r\nScope of impact: This event impacts some admins, who may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center starting from August 25, 2026. This section may be updated as the investigation progresses.\r\n\r\nStart time: Friday, August 28, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: An error occurred within the flow of service health telemetry data utilized by the service, resulting in this impact.\r\n\r\nNext update by: Wednesday, September 16, 2026, at 8:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-09-15T00:52:56.14Z",
-          "postType": "regular",
-          "content": "Title: Some admins may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center.\r\n\r\nMore info: Admins may see the following inaccuracies in Microsoft Teams usage reports starting from August 25, 2026:\n\n- Teams Active Users may display as 0\n- Teams Chat Messages may display as 0\n- Teams Channel Messages may display as 0\r\n\r\nCurrent status: We're continuing to monitor the progress of the backfill processing as more time is needed to ensure its completion and confirm if impact is resolved.\r\n\r\nScope of impact: This event impacts some admins, who may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center starting from August 25, 2026. This section may be updated as the investigation progresses.\r\n\r\nStart time: Friday, August 28, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: An error occurred within the flow of service health telemetry data utilized by the service, resulting in this impact.\r\n\r\nNext update by: Wednesday, September 16, 2026, at 2:30 AM UTC"
-        },
-        {
-          "createdAt": "2026-09-12T01:16:58.913Z",
-          "postType": "regular",
-          "content": "Title: Some admins may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center.\r\n\r\nMore info: Admins may see the following inaccuracies in Microsoft Teams usage reports starting from August 25, 2026:\n\n- Teams Active Users may display as 0\n- Teams Chat Messages may display as 0\n- Teams Channel Messages may display as 0\r\n\r\nCurrent status: The affected data backfill remains in progress and is taking longer than expected. We’re monitoring its progress and expect processing to complete to resolve the issue by our next scheduled update.\r\n\r\nScope of impact: This event impacts some admins, who may see Microsoft Teams usage report data discrepancies in the Microsoft 365 admin center starting from August 25, 2026. This section may be updated as the investigation progresses.\r\n\r\nStart time: Friday, August 28, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: An error occurred within the flow of service health telemetry data utilized by the service, resulting in this impact.\r\n\r\nNext update by: Tuesday, September 15, 2026, at 2:30 AM UTC"
-        }
-      ],
-      "serviceName": "Microsoft 365 suite",
-      "affectedServices": [
-        "Microsoft 365 suite"
       ]
     }
   ]
