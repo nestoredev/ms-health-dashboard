@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-14T09:11:33.471Z",
+  "lastUpdated": "2026-10-14T09:41:48.833Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -676,40 +676,9 @@
     },
     {
       "service": "Power BI",
-      "status": "serviceDegradation",
+      "status": "serviceOperational",
       "id": "PowerBIcom",
-      "issues": [
-        {
-          "id": "PB1505699",
-          "title": "Users may not see chart data when using standard light or dark themes on Power BI dashboards",
-          "startTime": "2026-09-27T13:10:00Z",
-          "endTime": null,
-          "lastModified": "2026-10-14T08:23:30.26Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may not have seen chart data when using standard light or dark themes on Power BI dashboards.",
-          "scopeOfImpact": "This issue may have impacted any user who was attempting to view data on a cartesian chart pinned to the Power BI dashboard with standard light theme or dark theme enabled. This section may be updated as our investigation continues.",
-          "rootCause": "",
-          "nextUpdateBy": "Wednesday, October 14, 2026, at 10:00 AM UTC",
-          "feature": "General",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-10-13T16:07:27.76Z",
-              "postType": "regular",
-              "content": "Title: Users may not see chart data when using standard light or dark themes on Power BI dashboards\r\n\r\nUser impact: Users may not have seen chart data when using standard light or dark themes on Power BI dashboards.\r\n\r\nCurrent status: We've completed development of the fix, and we're initializing the deployment. We'll provide a timeline for remediation as one becomes available, and our investigation to confirm what's causing the persistent impact is ongoing.\r\n\r\nScope of impact: This issue may have impacted any user who was attempting to view data on a cartesian chart pinned to the Power BI dashboard with standard light theme or dark theme enabled. This section may be updated as our investigation continues.\r\n\r\nNext update by: Wednesday, October 14, 2026, at 10:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-13T04:02:38.233Z",
-              "postType": "regular",
-              "content": "Title: Users may not see chart data when using standard light or dark themes on Power BI dashboards\r\n\r\nUser impact: Users may not have seen chart data when using standard light or dark themes on Power BI dashboards.\r\n\r\nCurrent status: We've identified that impact communicated in PB1489649 persists. We're working on developing a new fix that we suspect will complete by Tuesday, October 13, 2026. At that time we'll also aim to provide details on the root cause into what caused the impact to persist. \r\n\r\nScope of impact: This issue may have impacted any user who was attempting to view data on a cartesian chart pinned to the Power BI dashboard with standard light theme or dark theme enabled. This section may be updated as our investigation continues.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 5:00 PM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Power BI"
-          ]
-        }
-      ]
+      "issues": []
     },
     {
       "service": "Microsoft Intune",
@@ -1202,16 +1171,21 @@
           "title": "Some users may be unable to see model selection options in Microsoft 365 Copilot chat",
           "startTime": "2026-10-14T07:06:08.353Z",
           "endTime": null,
-          "lastModified": "2026-10-14T08:14:29.45Z",
+          "lastModified": "2026-10-14T09:20:46.453Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to see model selection options in Microsoft 365 Copilot chat.",
           "scopeOfImpact": "Some users attempting to access GPT, Claude, or other model selection options in Copilot chat may be impacted. This information may be updated as our investigation continues.",
           "rootCause": "",
-          "nextUpdateBy": "Wednesday, October 14, 2026, at 10:00 AM UTC",
+          "nextUpdateBy": "Wednesday, October 14, 2026, at 11:00 AM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-14T09:20:46.453Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to see model selection options in Microsoft 365 Copilot chat\n\nUser impact: Users may be unable to see model selection options in Microsoft 365 Copilot chat.\n\nMore info: Affected users may not see GPT, Claude, or other available models within the model selection options in Copilot chat.\n \nCurrent status: We've identified a component responsible for producing the model selection options in Copilot chat was not functioning correctly. To mitigate impact, we've developed a fix which is currently being deployed to the affected infrastructure and we're monitoring this process closely to ensure it delivers the expected resolution.\n \nScope of impact: Some users attempting to access GPT, Claude, or other model selection options in Copilot chat may be impacted. This information may be updated as our investigation continues.\n \nNext update by: Wednesday, October 14, 2026, at 11:00 AM UTC"
+            },
             {
               "createdAt": "2026-10-14T08:13:33.833Z",
               "postType": "regular",
@@ -1231,6 +1205,42 @@
     }
   ],
   "history": [
+    {
+      "id": "PB1505699",
+      "title": "Users may have been unable to view chart data on Power BI dashboards when using standard light or dark themes",
+      "startTime": "2026-09-27T13:10:00Z",
+      "endTime": "2026-10-14T00:00:00Z",
+      "lastModified": "2026-10-14T09:28:37.977Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have been unable to view chart data on Power BI dashboards when using standard light or dark themes. ",
+      "scopeOfImpact": "Impact was specific to any user attempting to view data on a Cartesian chart pinned to the Power BI dashboard with standard light theme or dark theme enabled. \r\n\r\nStart time: Sunday, September 27, 2026, at 1:10 PM UTC\r\n\r\nEnd time: Wednesday, October 14, 2026, at 12:00 AM UTC",
+      "rootCause": "A recent Power BI service update introduced a code regression that caused dashboard theme settings to incorrectly override the visual formatting of some pinned Cartesian charts, resulting in incorrect chart rendering. \r\n\r\nNext steps: \n- We’re reviewing our update procedures to help identify similar visual-rendering issues before deployment and prevent this problem from happening again. \r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "General",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-10-14T09:28:24.973Z",
+          "postType": "regular",
+          "content": "Title: Users may have been unable to view chart data on Power BI dashboards when using standard light or dark themes\r\n\r\nUser impact: Users may have been unable to view chart data on Power BI dashboards when using standard light or dark themes. \r\n\r\nFinal status: We've determined that a recent Power BI update introduced a code regression that caused dashboard theme settings to incorrectly override the visual formatting of some pinned Cartesian charts, resulting in incorrect chart rendering. We’ve completed deployment of the fix and confirmed that the affected functionality has been restored and impact is no longer occurring. \r\n\r\nScope of impact: Impact was specific to any user attempting to view data on a Cartesian chart pinned to the Power BI dashboard with standard light theme or dark theme enabled. \r\n\r\nStart time: Sunday, September 27, 2026, at 1:10 PM UTC\r\n\r\nEnd time: Wednesday, October 14, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: A recent Power BI service update introduced a code regression that caused dashboard theme settings to incorrectly override the visual formatting of some pinned Cartesian charts, resulting in incorrect chart rendering. \r\n\r\nNext steps: \n- We’re reviewing our update procedures to help identify similar visual-rendering issues before deployment and prevent this problem from happening again. \r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-10-13T16:07:27.76Z",
+          "postType": "regular",
+          "content": "Title: Users may not see chart data when using standard light or dark themes on Power BI dashboards\r\n\r\nUser impact: Users may not have seen chart data when using standard light or dark themes on Power BI dashboards.\r\n\r\nCurrent status: We've completed development of the fix, and we're initializing the deployment. We'll provide a timeline for remediation as one becomes available, and our investigation to confirm what's causing the persistent impact is ongoing.\r\n\r\nScope of impact: This issue may have impacted any user who was attempting to view data on a cartesian chart pinned to the Power BI dashboard with standard light theme or dark theme enabled. This section may be updated as our investigation continues.\r\n\r\nNext update by: Wednesday, October 14, 2026, at 10:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-10-13T04:02:38.233Z",
+          "postType": "regular",
+          "content": "Title: Users may not see chart data when using standard light or dark themes on Power BI dashboards\r\n\r\nUser impact: Users may not have seen chart data when using standard light or dark themes on Power BI dashboards.\r\n\r\nCurrent status: We've identified that impact communicated in PB1489649 persists. We're working on developing a new fix that we suspect will complete by Tuesday, October 13, 2026. At that time we'll also aim to provide details on the root cause into what caused the impact to persist. \r\n\r\nScope of impact: This issue may have impacted any user who was attempting to view data on a cartesian chart pinned to the Power BI dashboard with standard light theme or dark theme enabled. This section may be updated as our investigation continues.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 5:00 PM UTC"
+        }
+      ],
+      "serviceName": "Power BI",
+      "affectedServices": [
+        "Power BI"
+      ]
+    },
     {
       "id": "IT1506313",
       "title": "Admin may see status cards displaying \"Unknown\" instead of the expected summary counts in Intune admin center",
@@ -3273,37 +3283,6 @@
       "serviceName": "SharePoint Online",
       "affectedServices": [
         "SharePoint Online"
-      ]
-    },
-    {
-      "id": "PB1472181",
-      "title": "Microsoft Fabric users may have experienced issues with creating new support cases through the Contact support page",
-      "startTime": "2026-09-15T07:18:03.133Z",
-      "endTime": "2026-09-15T08:14:15.44Z",
-      "lastModified": "2026-09-15T08:16:12.303Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Microsoft Fabric users may have experienced issues with creating new support cases through the Contact support page.",
-      "scopeOfImpact": "Any user attempting to create a support request through the Microsoft Fabric Get Support experience may have been affected.\r\n\r\nStart time: Tuesday, September 15, 2026, at 12:30 AM UTC\r\n\r\nEnd time: Tuesday, September 15, 2026, at 7:30 AM UTC",
-      "rootCause": "A recent change in an upstream API that PowerBI and Microsoft Fabric relies on for creating support tickets caused an internal server error that causing support ticket creation to fail.\r\n\r\nNext steps: \n- We're reviewing our upstream API change procedures to help prevent similar problems in the future.\r\n\r\nThis is the final update for this event.",
-      "nextUpdateBy": "",
-      "feature": "General",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-09-15T08:16:09.1Z",
-          "postType": "regular",
-          "content": "Title: Microsoft Fabric users may have experienced issues with creating new support cases through the Contact support page\r\n\r\nUser impact: Microsoft Fabric users may have experienced issues with creating new support cases through the Contact support page.\r\n\r\nMore info: Affected users may have experienced an empty support plan list when attempting to create a support request through the Microsoft Fabric Get Support experience.\r\n\r\nFinal status: We've determined that a recent change in an upstream API that PowerBI and Microsoft Fabric relies on for creating support tickets caused an internal server error that caused support ticket creation to fail. We've reverted the change and confirmed that the service has been restored and affected users should no longer experience impact.\r\n\r\nScope of impact: Any user attempting to create a support request through the Microsoft Fabric Get Support experience may have been affected.\r\n\r\nStart time: Tuesday, September 15, 2026, at 12:30 AM UTC\r\n\r\nEnd time: Tuesday, September 15, 2026, at 7:30 AM UTC\r\n\r\nRoot cause: A recent change in an upstream API that PowerBI and Microsoft Fabric relies on for creating support tickets caused an internal server error that causing support ticket creation to fail.\r\n\r\nNext steps: \n- We're reviewing our upstream API change procedures to help prevent similar problems in the future.\r\n\r\nThis is the final update for this event."
-        },
-        {
-          "createdAt": "2026-09-15T07:23:09.193Z",
-          "postType": "regular",
-          "content": "Title: Microsoft Fabric users may experience issues with creating new support cases through the Contact support page\r\n\r\nUser impact: Microsoft Fabric users may experience issues with creating new support cases through the Contact support page.\r\n\r\nMore info: Users may experience an empty support plan list when attempting to create a support request through the Microsoft Fabric Get Support experience.\r\n\r\nCurrent status: We're investigating a potential issue affecting support plan selection in Microsoft Fabric and reviewing available diagnostic data to determine the cause and scope of impact.\r\n\r\nScope of impact: Any user attempting to create a support request through the Microsoft Fabric Get Support experience may be affected.\r\n\r\nStart time: Tuesday, September 15, 2026, at 12:30 AM UTC\r\n\r\nNext update by: Tuesday, September 15, 2026, at 9:30 AM UTC"
-        }
-      ],
-      "serviceName": "Power BI",
-      "affectedServices": [
-        "Power BI"
       ]
     }
   ]
