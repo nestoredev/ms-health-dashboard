@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-14T07:40:45.299Z",
+  "lastUpdated": "2026-10-14T08:11:01.243Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -590,7 +590,7 @@
     },
     {
       "service": "SharePoint Online",
-      "status": "investigating",
+      "status": "serviceDegradation",
       "id": "SharePoint",
       "issues": [
         {
@@ -598,10 +598,10 @@
           "title": "Users may be unable to view or modify custom forms in SharePoint Online",
           "startTime": "2026-10-12T01:00:00Z",
           "endTime": null,
-          "lastModified": "2026-10-14T07:26:38.967Z",
-          "status": "investigating",
+          "lastModified": "2026-10-14T07:40:14.463Z",
+          "status": "serviceDegradation",
           "severity": "incident",
-          "userImpact": "Users may have beem unable to view or modify custom forms in SharePoint Online.",
+          "userImpact": "Users may be unable to view or modify custom forms in SharePoint Online.",
           "scopeOfImpact": "Impact may be specific to any user attempting to view or modify Nintex or SPFx Customizers forms in SharePoint Online.\r\n\r\nStart time: Monday, October 12, 2026, at 1:00 AM UTC",
           "rootCause": "A recent API change to the SharePoint Online infrastructure introduced an incompatibility in how requests from custom forms are processed, resulting in impact.",
           "nextUpdateBy": "Wednesday, October 14, 2026, at 6:00 PM UTC",
