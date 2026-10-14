@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-14T16:45:33.183Z",
+  "lastUpdated": "2026-10-14T17:15:51.237Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1166,9 +1166,35 @@
     },
     {
       "service": "Microsoft Purview",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "Purview",
-      "issues": []
+      "issues": [
+        {
+          "id": "MP1507695",
+          "title": "Admins may encounter delays in accessing audit log data results in Microsoft Purview",
+          "startTime": "2026-10-14T16:14:28.423Z",
+          "endTime": null,
+          "lastModified": "2026-10-14T16:46:57.053Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Admins may encounter delays in accessing audit log data results in Microsoft Purview.",
+          "scopeOfImpact": "Any admin accessing audit log data from Microsoft Purview may be affected.",
+          "rootCause": "",
+          "nextUpdateBy": "Wednesday, October 21, 2026, at 6:00 PM UTC",
+          "feature": "General",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-10-14T16:46:57.053Z",
+              "postType": "regular",
+              "content": "Title: Admins may encounter delays in accessing audit log data results in Microsoft Purview\r\n\r\nUser impact: Admins may encounter delays in accessing audit log data results in Microsoft Purview.\r\n\r\nMore info: Affected users are encountering delays when accessing audit log data from the Microsoft Purview portal, Microsoft Graph API, or PowerShell.\r\n\r\nCurrent status: Our monitoring identified an increase in processing latency with Microsoft Purview audit log data. We've analyzed service telemetry and determined that a dependent service isn't processing requests as efficiently as expected, resulting in impact. We've taken action to rebalance load and improve throughput. While most users should see relief, we're continuing to monitor as the remaining backlog of events are processed, and we'll provide a complete remediation timeline once available.\r\n\r\nScope of impact: Any admin accessing audit log data from Microsoft Purview may be affected.\r\n\r\nNext update by: Wednesday, October 21, 2026, at 6:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Purview"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft Clipchamp ",
