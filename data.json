@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-14T10:12:05.440Z",
+  "lastUpdated": "2026-10-14T10:42:20.309Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1178,53 +1178,58 @@
     },
     {
       "service": "Microsoft 365 Copilot Chat",
-      "status": "serviceDegradation",
+      "status": "serviceOperational",
       "id": "CopilotChat",
-      "issues": [
-        {
-          "id": "CW1507178",
-          "title": "Some users may be unable to see model selection options in Microsoft 365 Copilot chat",
-          "startTime": "2026-10-14T07:06:08.353Z",
-          "endTime": null,
-          "lastModified": "2026-10-14T09:56:27.287Z",
-          "status": "serviceDegradation",
-          "severity": "incident",
-          "userImpact": "Users may be unable to see model selection options in Microsoft 365 Copilot chat.",
-          "scopeOfImpact": "",
-          "rootCause": "",
-          "nextUpdateBy": "",
-          "feature": "General",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-10-14T09:56:27.287Z",
-              "postType": "quick",
-              "content": "We've completed deploying the fix to the affected infrastructure, and we've verified in our internal environment that the model selection options have been restored within Copilot chat. We're now contacting affected customers directly to ensure the fix has produced the expected resolution.\n\nThis quick update is designed to give the latest information on this issue."
-            },
-            {
-              "createdAt": "2026-10-14T09:20:46.453Z",
-              "postType": "regular",
-              "content": "Title: Some users may be unable to see model selection options in Microsoft 365 Copilot chat\n\nUser impact: Users may be unable to see model selection options in Microsoft 365 Copilot chat.\n\nMore info: Affected users may not see GPT, Claude, or other available models within the model selection options in Copilot chat.\n \nCurrent status: We've identified a component responsible for producing the model selection options in Copilot chat was not functioning correctly. To mitigate impact, we've developed a fix which is currently being deployed to the affected infrastructure and we're monitoring this process closely to ensure it delivers the expected resolution.\n \nScope of impact: Some users attempting to access GPT, Claude, or other model selection options in Copilot chat may be impacted. This information may be updated as our investigation continues.\n \nNext update by: Wednesday, October 14, 2026, at 11:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-14T08:13:33.833Z",
-              "postType": "regular",
-              "content": "Title: Some users may be unable to see model selection options in Microsoft 365 Copilot chat\r\n\r\nUser impact: Users may be unable to see model selection options in Microsoft 365 Copilot chat.\r\n\r\nMore info: Affected users may not see GPT, Claude, or other available models within the model selection options in Copilot chat.\r\n\r\nCurrent status: We’re reviewing service monitoring telemetry and support provided information to determine why model selection options aren’t appearing as expected, in order to develop a remediation plan.\r\n\r\nScope of impact: Some users attempting to access GPT, Claude, or other model selection options in Copilot chat may be impacted. This information may be updated as our investigation continues.\r\n\r\nNext update by: Wednesday, October 14, 2026, at 10:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-14T07:07:25.39Z",
-              "postType": "regular",
-              "content": "Title: Some users are unable to see model selection options in Microsoft 365 Copilot chat\r\n\r\nUser impact: Users are unable to see model selection options in Copilot chat.\r\n\r\nMore info: Affected users may not see GPT, Claude, or other available models within the model selection options in Copilot chat.\r\n\r\nCurrent status: We've received reports indicating an issue with model selection options in Copilot Chat. We're reviewing service monitoring telemetry to isolate the root cause and determine our next troubleshooting steps.\r\n\r\nScope of impact: Your organization is affected by this event, and some users attempting to access GPT, Claude, or other model selection options in Copilot chat are impacted. This information may be updated as our investigation continues.\r\n\r\nNext update by: Wednesday, October 14, 2026, at 9:00 AM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Microsoft 365 Copilot Chat"
-          ]
-        }
-      ]
+      "issues": []
     }
   ],
   "history": [
+    {
+      "id": "CW1507178",
+      "title": "Some users were unable to see model selection options in Microsoft 365 Copilot chat",
+      "startTime": "2026-10-14T03:34:00Z",
+      "endTime": "2026-10-14T09:30:00Z",
+      "lastModified": "2026-10-14T10:19:33.743Z",
+      "status": "serviceRestored",
+      "severity": "incident",
+      "userImpact": "Users were unable to see model selection options in Microsoft 365 Copilot chat.",
+      "scopeOfImpact": "Some users attempting to access GPT, Claude, or other model selection options in Copilot chat were impacted. \n\nStart time: Wednesday, October 14, 2026, at 3:34 AM UTC\n \nEnd time: Wednesday, October 14, 2026, at 9:30 AM UTC\n \nPreliminary",
+      "rootCause": "A recent change resulted in the component responsible for producing the model selection options in Copilot chat to not function correctly.\n \nNext steps:\n- We're analyzing service telemetry on the affected component to help prevent this problem from happening again.\n \nWe’ll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days.",
+      "nextUpdateBy": "",
+      "feature": "General",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-10-14T10:19:33.743Z",
+          "postType": "regular",
+          "content": "Title: Some users were unable to see model selection options in Microsoft 365 Copilot chat\n\nUser impact: Users were unable to see model selection options in Microsoft 365 Copilot chat.\n\nMore info: Affected users were unable to see GPT, Claude, or other available models within the model selection options in Copilot chat.\n \nFinal status: We’ve verified through service telemetry and previously impacted users that the issue is now resolved.\n \nScope of impact: Some users attempting to access GPT, Claude, or other model selection options in Copilot chat were impacted. \n\nStart time: Wednesday, October 14, 2026, at 3:34 AM UTC\n \nEnd time: Wednesday, October 14, 2026, at 9:30 AM UTC\n \nPreliminary root cause: A recent change resulted in the component responsible for producing the model selection options in Copilot chat to not function correctly.\n \nNext steps:\n- We're analyzing service telemetry on the affected component to help prevent this problem from happening again.\n \nWe’ll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days."
+        },
+        {
+          "createdAt": "2026-10-14T09:56:27.287Z",
+          "postType": "quick",
+          "content": "We've completed deploying the fix to the affected infrastructure, and we've verified in our internal environment that the model selection options have been restored within Copilot chat. We're now contacting affected customers directly to ensure the fix has produced the expected resolution.\n\nThis quick update is designed to give the latest information on this issue."
+        },
+        {
+          "createdAt": "2026-10-14T09:20:46.453Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to see model selection options in Microsoft 365 Copilot chat\n\nUser impact: Users may be unable to see model selection options in Microsoft 365 Copilot chat.\n\nMore info: Affected users may not see GPT, Claude, or other available models within the model selection options in Copilot chat.\n \nCurrent status: We've identified a component responsible for producing the model selection options in Copilot chat was not functioning correctly. To mitigate impact, we've developed a fix which is currently being deployed to the affected infrastructure and we're monitoring this process closely to ensure it delivers the expected resolution.\n \nScope of impact: Some users attempting to access GPT, Claude, or other model selection options in Copilot chat may be impacted. This information may be updated as our investigation continues.\n \nNext update by: Wednesday, October 14, 2026, at 11:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-10-14T08:13:33.833Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to see model selection options in Microsoft 365 Copilot chat\r\n\r\nUser impact: Users may be unable to see model selection options in Microsoft 365 Copilot chat.\r\n\r\nMore info: Affected users may not see GPT, Claude, or other available models within the model selection options in Copilot chat.\r\n\r\nCurrent status: We’re reviewing service monitoring telemetry and support provided information to determine why model selection options aren’t appearing as expected, in order to develop a remediation plan.\r\n\r\nScope of impact: Some users attempting to access GPT, Claude, or other model selection options in Copilot chat may be impacted. This information may be updated as our investigation continues.\r\n\r\nNext update by: Wednesday, October 14, 2026, at 10:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-10-14T07:07:25.39Z",
+          "postType": "regular",
+          "content": "Title: Some users are unable to see model selection options in Microsoft 365 Copilot chat\r\n\r\nUser impact: Users are unable to see model selection options in Copilot chat.\r\n\r\nMore info: Affected users may not see GPT, Claude, or other available models within the model selection options in Copilot chat.\r\n\r\nCurrent status: We've received reports indicating an issue with model selection options in Copilot Chat. We're reviewing service monitoring telemetry to isolate the root cause and determine our next troubleshooting steps.\r\n\r\nScope of impact: Your organization is affected by this event, and some users attempting to access GPT, Claude, or other model selection options in Copilot chat are impacted. This information may be updated as our investigation continues.\r\n\r\nNext update by: Wednesday, October 14, 2026, at 9:00 AM UTC"
+        }
+      ],
+      "serviceName": "Microsoft 365 Copilot Chat",
+      "affectedServices": [
+        "Microsoft 365 Copilot Chat"
+      ]
+    },
     {
       "id": "PB1505699",
       "title": "Users may have been unable to view chart data on Power BI dashboards when using standard light or dark themes",
@@ -3257,52 +3262,6 @@
       "serviceName": "Microsoft 365 suite",
       "affectedServices": [
         "Microsoft 365 suite"
-      ]
-    },
-    {
-      "id": "SP1472983",
-      "title": "Users may be unable to load SharePoint Online sites or pages and receive an error message",
-      "startTime": "2026-09-16T15:04:21Z",
-      "endTime": "2026-09-16T16:30:13Z",
-      "lastModified": "2026-09-24T00:30:19.25Z",
-      "status": "postIncidentReviewPublished",
-      "severity": "incident",
-      "userImpact": "Users may have been unable to load SharePoint Online sites or pages and receive an error message.",
-      "scopeOfImpact": "",
-      "rootCause": "",
-      "nextUpdateBy": "",
-      "feature": "MySites",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-09-24T00:27:08.99Z",
-          "postType": "regular",
-          "content": "A post-incident report has been published."
-        },
-        {
-          "createdAt": "2026-09-16T16:30:34.353Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to load SharePoint Online sites or pages and receive an error message\n\nUser impact: Users may have been unable to load SharePoint Online sites or pages and receive an error message.\n\nMore info: The error message stated: \"Sorry, something went wrong: Thread was being aborted.\"\n \nFinal status: We reverted the change and confirmed through our service telemetry that impact is resolved. \n \nScope of impact: This issue may have affected any user attempting to load SharePoint Online sites and pages.\n \nStart time: Tuesday, August 25, 2026, at 3:45 PM UTC\n \nEnd time: Wednesday, September 16, 2026, at 3:17 PM UTC\n \nRoot cause: A change intended to improve how links within SharePoint Online pages are processed inadvertently introduced additional service requests when certain pages were loaded. For affected pages, the additional processing could interrupt page rendering and cause users to be redirected to an error page instead of seeing the requested content.\n \nNext steps: \n-Please see the post-incident report for more information about this event."
-        },
-        {
-          "createdAt": "2026-09-16T16:15:40.537Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to load SharePoint Online sites or pages and receive an error message\r\n\r\nUser impact: Users may be unable to load SharePoint Online sites or pages and receive an error message.\r\n\r\nMore info: The error message states: \"Sorry, something went wrong: Thread was being aborted.\"\r\n\r\nCurrent status: Our rollback of the impacting change is ongoing, and we've received confirmation from a subset of users that this is successfully remediating impact. We're monitoring the rollback as it continues to ensure completion and full remediation for all affected users.\r\n\r\nScope of impact: This issue may affect any user attempting to load SharePoint Online sites and pages.\r\n\r\nStart time: Tuesday, August 25, 2026, at 3:45 PM UTC\r\n\r\nRoot cause: A recent configuration change concerning how the server delivers code to site pages to render as content resulted in impact.\r\n\r\nNext update by: Wednesday, September 16, 2026, at 6:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-09-16T15:25:23.997Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to load SharePoint Online sites or pages and receive an error message\r\n\r\nUser impact: Users may be unable to load SharePoint Online sites or pages and receive an error message.\r\n\r\nMore info: The error message states: \"Sorry, something went wrong: Thread was being aborted.\"\r\n\r\nCurrent status: We've identified a recent configuration change concerning how the server delivers code to site pages to render as content resulted in impact. We're rolling back this change to remediate the issue for all users.\r\n\r\nScope of impact: This issue may affect any user attempting to load SharePoint Online sites and pages.\r\n\r\nStart time: Tuesday, August 25, 2026, at 3:45 PM UTC\r\n\r\nRoot cause: A recent configuration change concerning how the server delivers code to site pages to render as content resulted in impact.\r\n\r\nNext update by: Wednesday, September 16, 2026, at 4:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-09-16T15:08:34.97Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to load SharePoint Online sites or pages and receive an error message\r\n\r\nUser impact: Users may be unable to load SharePoint Online sites or pages and receive an error message.\r\n\r\nMore info: The error message states: \"Sorry, something went wrong: Thread was being aborted.\"\r\n\r\nCurrent status: We're investigating a potential issue with SharePoint Online and checking for impact to your organization. We'll provide an update within 30 minutes."
-        }
-      ],
-      "serviceName": "SharePoint Online",
-      "affectedServices": [
-        "SharePoint Online"
       ]
     }
   ]
