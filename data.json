@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-14T18:46:44.016Z",
+  "lastUpdated": "2026-10-14T19:17:04.007Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -69,9 +69,9 @@
         {
           "id": "EX1479349",
           "title": "Users may be unable to reply or reply-all to email messages sent to Microsoft 365 groups in Exchange Online",
-          "startTime": "2026-09-25T15:52:36.097Z",
+          "startTime": "2026-09-08T23:00:00Z",
           "endTime": null,
-          "lastModified": "2026-10-13T19:17:13.38Z",
+          "lastModified": "2026-10-14T18:48:17.37Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to reply or reply-all to email messages sent to Microsoft 365 groups in Exchange Online.",
@@ -195,6 +195,33 @@
               "createdAt": "2026-10-06T12:24:26.373Z",
               "postType": "regular",
               "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’ve validated that a problem with a contact-processing component has incorrectly separated some Profile Based Contacts (PBCs) from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank. We’re developing a fix to re-merge the affected contacts with their associated profiles and expect to provide deployment timeline by our next scheduled update.\r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted.\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Tuesday, October 6, 2026, at 1:30 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online",
+            "Microsoft 365 suite",
+            "Microsoft Teams"
+          ]
+        },
+        {
+          "id": "MO1507859",
+          "title": "Some users may be missing the \"Meeting options\" button for Microsoft Teams meetings in multiple Microsoft 365 apps",
+          "startTime": "2026-10-12T20:48:00Z",
+          "endTime": null,
+          "lastModified": "2026-10-14T19:04:05.747Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be missing the \"Meeting options\" button for Microsoft Teams meetings in multiple Microsoft 365 apps.",
+          "scopeOfImpact": "This issue impacts some users who may be missing the \"Meeting options” button when creating standard meetings using multiple Microsoft 365 apps. This section may be updated as the investigation progresses.\r\n\r\nStart time: Monday, October 12, 2026, at 8:48 PM UTC\r\n\r\nEstimated time to resolve: We anticipate impact to be resolved by our next scheduled update on Wednesday, October 14, 2026, at 9:00 PM UTC.",
+          "rootCause": "A tenant filter to disable the \"Meeting options\" button for a specific organization was unintentionally applied broadly to multiple organizations.",
+          "nextUpdateBy": "Wednesday, October 14, 2026, at 9:00 PM UTC",
+          "feature": "Access",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-10-14T19:04:05.747Z",
+              "postType": "regular",
+              "content": "Title: Some users may be missing the \"Meeting options\" button for Microsoft Teams meetings in multiple Microsoft 365 apps\r\n\r\nUser impact: Users may be missing the \"Meeting options\" button for Microsoft Teams meetings in multiple Microsoft 365 apps.\r\n\r\nMore info: This issue is occurring in the following Microsoft 365 apps:\n- Microsoft Teams desktop client\n- Microsoft Teams web client\n- Outlook on the web\n- Outlook desktop client\n \nThe issue only occurs in standard Teams meetings, and live events, webinars, and town halls aren’t affected.\r\n\r\nCurrent status: We've received reports from multiple organizations noting that some users are missing the \"Meeting options\" button for Microsoft Teams meetings in multiple Microsoft 365 apps as listed in the \"More info\" section of this communication. We've isolated that a tenant filter to disable the \"Meetings option\" button for a specific group of users was unintentionally applied broadly. We're rolling back the offending change, and we anticipate impact to be remediated by our next scheduled update.\r\n\r\nScope of impact: This issue impacts some users who may be missing the \"Meeting options” button when creating standard meetings using multiple Microsoft 365 apps. This section may be updated as the investigation progresses.\r\n\r\nStart time: Monday, October 12, 2026, at 8:48 PM UTC\r\n\r\nEstimated time to resolve: We anticipate impact to be resolved by our next scheduled update on Wednesday, October 14, 2026, at 9:00 PM UTC.\r\n\r\nRoot cause: A tenant filter to disable the \"Meeting options\" button for a specific organization was unintentionally applied broadly to multiple organizations.\r\n\r\nNext update by: Wednesday, October 14, 2026, at 9:00 PM UTC"
             }
           ],
           "affectedServices": [
@@ -600,6 +627,33 @@
           "affectedServices": [
             "Microsoft 365 suite"
           ]
+        },
+        {
+          "id": "MO1507859",
+          "title": "Some users may be missing the \"Meeting options\" button for Microsoft Teams meetings in multiple Microsoft 365 apps",
+          "startTime": "2026-10-12T20:48:00Z",
+          "endTime": null,
+          "lastModified": "2026-10-14T19:04:05.747Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be missing the \"Meeting options\" button for Microsoft Teams meetings in multiple Microsoft 365 apps.",
+          "scopeOfImpact": "This issue impacts some users who may be missing the \"Meeting options” button when creating standard meetings using multiple Microsoft 365 apps. This section may be updated as the investigation progresses.\r\n\r\nStart time: Monday, October 12, 2026, at 8:48 PM UTC\r\n\r\nEstimated time to resolve: We anticipate impact to be resolved by our next scheduled update on Wednesday, October 14, 2026, at 9:00 PM UTC.",
+          "rootCause": "A tenant filter to disable the \"Meeting options\" button for a specific organization was unintentionally applied broadly to multiple organizations.",
+          "nextUpdateBy": "Wednesday, October 14, 2026, at 9:00 PM UTC",
+          "feature": "Access",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-10-14T19:04:05.747Z",
+              "postType": "regular",
+              "content": "Title: Some users may be missing the \"Meeting options\" button for Microsoft Teams meetings in multiple Microsoft 365 apps\r\n\r\nUser impact: Users may be missing the \"Meeting options\" button for Microsoft Teams meetings in multiple Microsoft 365 apps.\r\n\r\nMore info: This issue is occurring in the following Microsoft 365 apps:\n- Microsoft Teams desktop client\n- Microsoft Teams web client\n- Outlook on the web\n- Outlook desktop client\n \nThe issue only occurs in standard Teams meetings, and live events, webinars, and town halls aren’t affected.\r\n\r\nCurrent status: We've received reports from multiple organizations noting that some users are missing the \"Meeting options\" button for Microsoft Teams meetings in multiple Microsoft 365 apps as listed in the \"More info\" section of this communication. We've isolated that a tenant filter to disable the \"Meetings option\" button for a specific group of users was unintentionally applied broadly. We're rolling back the offending change, and we anticipate impact to be remediated by our next scheduled update.\r\n\r\nScope of impact: This issue impacts some users who may be missing the \"Meeting options” button when creating standard meetings using multiple Microsoft 365 apps. This section may be updated as the investigation progresses.\r\n\r\nStart time: Monday, October 12, 2026, at 8:48 PM UTC\r\n\r\nEstimated time to resolve: We anticipate impact to be resolved by our next scheduled update on Wednesday, October 14, 2026, at 9:00 PM UTC.\r\n\r\nRoot cause: A tenant filter to disable the \"Meeting options\" button for a specific organization was unintentionally applied broadly to multiple organizations.\r\n\r\nNext update by: Wednesday, October 14, 2026, at 9:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online",
+            "Microsoft 365 suite",
+            "Microsoft Teams"
+          ]
         }
       ]
     },
@@ -968,6 +1022,33 @@
             }
           ],
           "affectedServices": [
+            "Microsoft 365 suite",
+            "Microsoft Teams"
+          ]
+        },
+        {
+          "id": "MO1507859",
+          "title": "Some users may be missing the \"Meeting options\" button for Microsoft Teams meetings in multiple Microsoft 365 apps",
+          "startTime": "2026-10-12T20:48:00Z",
+          "endTime": null,
+          "lastModified": "2026-10-14T19:04:05.747Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be missing the \"Meeting options\" button for Microsoft Teams meetings in multiple Microsoft 365 apps.",
+          "scopeOfImpact": "This issue impacts some users who may be missing the \"Meeting options” button when creating standard meetings using multiple Microsoft 365 apps. This section may be updated as the investigation progresses.\r\n\r\nStart time: Monday, October 12, 2026, at 8:48 PM UTC\r\n\r\nEstimated time to resolve: We anticipate impact to be resolved by our next scheduled update on Wednesday, October 14, 2026, at 9:00 PM UTC.",
+          "rootCause": "A tenant filter to disable the \"Meeting options\" button for a specific organization was unintentionally applied broadly to multiple organizations.",
+          "nextUpdateBy": "Wednesday, October 14, 2026, at 9:00 PM UTC",
+          "feature": "Access",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-10-14T19:04:05.747Z",
+              "postType": "regular",
+              "content": "Title: Some users may be missing the \"Meeting options\" button for Microsoft Teams meetings in multiple Microsoft 365 apps\r\n\r\nUser impact: Users may be missing the \"Meeting options\" button for Microsoft Teams meetings in multiple Microsoft 365 apps.\r\n\r\nMore info: This issue is occurring in the following Microsoft 365 apps:\n- Microsoft Teams desktop client\n- Microsoft Teams web client\n- Outlook on the web\n- Outlook desktop client\n \nThe issue only occurs in standard Teams meetings, and live events, webinars, and town halls aren’t affected.\r\n\r\nCurrent status: We've received reports from multiple organizations noting that some users are missing the \"Meeting options\" button for Microsoft Teams meetings in multiple Microsoft 365 apps as listed in the \"More info\" section of this communication. We've isolated that a tenant filter to disable the \"Meetings option\" button for a specific group of users was unintentionally applied broadly. We're rolling back the offending change, and we anticipate impact to be remediated by our next scheduled update.\r\n\r\nScope of impact: This issue impacts some users who may be missing the \"Meeting options” button when creating standard meetings using multiple Microsoft 365 apps. This section may be updated as the investigation progresses.\r\n\r\nStart time: Monday, October 12, 2026, at 8:48 PM UTC\r\n\r\nEstimated time to resolve: We anticipate impact to be resolved by our next scheduled update on Wednesday, October 14, 2026, at 9:00 PM UTC.\r\n\r\nRoot cause: A tenant filter to disable the \"Meeting options\" button for a specific organization was unintentionally applied broadly to multiple organizations.\r\n\r\nNext update by: Wednesday, October 14, 2026, at 9:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online",
             "Microsoft 365 suite",
             "Microsoft Teams"
           ]
