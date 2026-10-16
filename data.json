@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-16T20:13:58.277Z",
+  "lastUpdated": "2026-10-16T20:44:13.095Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -752,41 +752,6 @@
           ]
         },
         {
-          "id": "TM1508612",
-          "title": "Some users may not receive meeting-started notifications on Android devices",
-          "startTime": "2026-10-15T08:29:28.08Z",
-          "endTime": null,
-          "lastModified": "2026-10-15T15:59:32.81Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may not receive meeting-started notifications on Android devices.",
-          "scopeOfImpact": "Some users expecting to receive meeting start notifications in Microsoft Teams on Android devices may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, October 13, 2026, at 11:03 PM UTC",
-          "rootCause": "A recent notification service change intended to address an unrelated issue affected meeting-started notifications for Android users.",
-          "nextUpdateBy": "Friday, October 16, 2026, at 10:00 PM UTC",
-          "feature": "Notifications",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-10-15T15:58:40.467Z",
-              "postType": "regular",
-              "content": "Title: Some users may not receive meeting-started notifications on Android devices\r\n\r\nUser impact: Users may not receive meeting-started notifications on Android devices.\r\n\r\nCurrent status: Our reversion of the affecting change is ongoing, and initial review of our service health telemetry indicates errors associated with impact have decreased and successful notification delivery is increasing. We're continuing to monitor, and users will need to open the application in order to receive the fix.\r\n\r\nScope of impact: Some users expecting to receive meeting start notifications in Microsoft Teams on Android devices may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, October 13, 2026, at 11:03 PM UTC\r\n\r\nRoot cause: A recent notification service change intended to address an unrelated issue affected meeting-started notifications for Android users.\r\n\r\nNext update by: Friday, October 16, 2026, at 10:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-15T10:30:07.91Z",
-              "postType": "regular",
-              "content": "Title: Some users may not receive meeting-started notifications on Android devices\r\n\r\nUser impact: Users may not receive meeting-started notifications on Android devices.\r\n\r\nCurrent status: We’ve identified that a recent change to the notification service, intended to address an unrelated issue, inadvertently caused meeting-started notifications to fail for Android users. We’re reverting the affected change to mitigate the impact and expect to provide completion timeline by our next schedule update.\r\n\r\nScope of impact: Some users expecting to receive meeting start notifications in Microsoft Teams on Android devices may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, October 13, 2026, at 11:03 PM UTC\r\n\r\nRoot cause: A recent notification service change intended to address an unrelated issue affected meeting-started notifications for Android users.\r\n\r\nNext update by: Thursday, October 15, 2026, at 5:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-15T08:39:48.17Z",
-              "postType": "regular",
-              "content": "Title: Some users may not receive meeting start notifications in Microsoft Teams on Android devices\r\n\r\nUser impact: Users may not receive meeting start notifications in Microsoft Teams on Android devices.\r\n\r\nCurrent status: We're reviewing service monitoring telemetry to isolate the source of the issue and establish a fix.\r\n\r\nScope of impact: Some users expecting to receive meeting start notifications in Microsoft Teams on Android devices may be impacted. This information may be updated as our investigation continues.\r\n\r\nNext update by: Thursday, October 15, 2026, at 10:30 AM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Microsoft Teams"
-          ]
-        },
-        {
           "id": "MO1457843",
           "title": "Admins can't identify who deleted a Viva Engage community or its Microsoft 365 Group in Microsoft Entra ID audit logs",
           "startTime": "2026-08-19T22:38:36.783Z",
@@ -1168,6 +1133,42 @@
     }
   ],
   "history": [
+    {
+      "id": "TM1508612",
+      "title": "Some users may not receive meeting-started notifications on Android devices",
+      "startTime": "2026-10-15T08:29:28.08Z",
+      "endTime": null,
+      "lastModified": "2026-10-16T20:34:04.503Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have not received meeting-started notifications on Android devices.",
+      "scopeOfImpact": "Some users expecting to receive meeting start notifications in Microsoft Teams on Android devices may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, October 13, 2026, at 11:03 PM UTC",
+      "rootCause": "A recent notification service change intended to address an unrelated issue affected meeting-started notifications for Android users.",
+      "nextUpdateBy": "Friday, October 16, 2026, at 10:00 PM UTC",
+      "feature": "Notifications",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-10-15T15:58:40.467Z",
+          "postType": "regular",
+          "content": "Title: Some users may not receive meeting-started notifications on Android devices\r\n\r\nUser impact: Users may not receive meeting-started notifications on Android devices.\r\n\r\nCurrent status: Our reversion of the affecting change is ongoing, and initial review of our service health telemetry indicates errors associated with impact have decreased and successful notification delivery is increasing. We're continuing to monitor, and users will need to open the application in order to receive the fix.\r\n\r\nScope of impact: Some users expecting to receive meeting start notifications in Microsoft Teams on Android devices may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, October 13, 2026, at 11:03 PM UTC\r\n\r\nRoot cause: A recent notification service change intended to address an unrelated issue affected meeting-started notifications for Android users.\r\n\r\nNext update by: Friday, October 16, 2026, at 10:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-15T10:30:07.91Z",
+          "postType": "regular",
+          "content": "Title: Some users may not receive meeting-started notifications on Android devices\r\n\r\nUser impact: Users may not receive meeting-started notifications on Android devices.\r\n\r\nCurrent status: We’ve identified that a recent change to the notification service, intended to address an unrelated issue, inadvertently caused meeting-started notifications to fail for Android users. We’re reverting the affected change to mitigate the impact and expect to provide completion timeline by our next schedule update.\r\n\r\nScope of impact: Some users expecting to receive meeting start notifications in Microsoft Teams on Android devices may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, October 13, 2026, at 11:03 PM UTC\r\n\r\nRoot cause: A recent notification service change intended to address an unrelated issue affected meeting-started notifications for Android users.\r\n\r\nNext update by: Thursday, October 15, 2026, at 5:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-15T08:39:48.17Z",
+          "postType": "regular",
+          "content": "Title: Some users may not receive meeting start notifications in Microsoft Teams on Android devices\r\n\r\nUser impact: Users may not receive meeting start notifications in Microsoft Teams on Android devices.\r\n\r\nCurrent status: We're reviewing service monitoring telemetry to isolate the source of the issue and establish a fix.\r\n\r\nScope of impact: Some users expecting to receive meeting start notifications in Microsoft Teams on Android devices may be impacted. This information may be updated as our investigation continues.\r\n\r\nNext update by: Thursday, October 15, 2026, at 10:30 AM UTC"
+        }
+      ],
+      "serviceName": "Microsoft Teams",
+      "affectedServices": [
+        "Microsoft Teams"
+      ]
+    },
     {
       "id": "TM1492872",
       "title": "Users may be unable to download webinar registration details from the Events app in Microsoft Teams",
@@ -3205,52 +3206,6 @@
       "serviceName": "Microsoft Teams",
       "affectedServices": [
         "Microsoft Teams"
-      ]
-    },
-    {
-      "id": "MP1473907",
-      "title": "Some users may experience delays accessing audit logs through the Microsoft Purview Management API",
-      "startTime": "2026-09-14T06:00:00Z",
-      "endTime": "2026-09-20T04:56:34Z",
-      "lastModified": "2026-09-24T15:19:49.167Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users may have experienced delays accessing audit logs through the Microsoft Purview Management API.",
-      "scopeOfImpact": "This issue may have potentially impacted a subset of Microsoft Purview users in the North America region who were utilizing the audit log feature of Microsoft Purview.\n\nStart time: Monday, September 14, 2026, at 6:00 AM UTC\n\nEnd time: Sunday, September 20, 2026, at 4:56 AM UTC",
-      "rootCause": "Frequent GC was causing the portion of service infrastructure responsible for facilitating user access to audit logs through the Microsoft Purview Management API to operate in a suboptimal state, which lead to increased request timeouts and was causing impact.\n\nNext steps: - We’re continuing to analyze how the Frequent GC issue manifested, as these actions will help us to clarify what actions we can take to ensure that similar impact doesn't occur in the future and to continue our ongoing mission to improve the resilience of our service for all Microsoft Purview users. \n\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "General",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-09-24T15:19:49.167Z",
-          "postType": "regular",
-          "content": "Title: Some users may experience delays accessing audit logs through the Microsoft Purview Management API\n\nUser impact: Users may have experienced delays accessing audit logs through the Microsoft Purview Management API.\n\nTitle: Some users may experience delays accessing audit logs through the Microsoft Purview Management API\n\nUser impact: Users may have experienced delays accessing audit logs through the Microsoft Purview Management API.\n\nMore info: This issue specifically impacted Microsoft Purview users utilizing the Management Activity API and Search features to retrieve audit logs.\n\nFinal status: Following an extended period of monitoring the service health telemetry after the completion of our configuration change, we’ve confirmed that impact has been remediated.  \n\nScope of impact: This issue may have potentially impacted a subset of Microsoft Purview users in the North America region who were utilizing the audit log feature of Microsoft Purview.\n\nStart time: Monday, September 14, 2026, at 6:00 AM UTC\n\nEnd time: Sunday, September 20, 2026, at 4:56 AM UTC\n\nRoot cause: Frequent GC was causing the portion of service infrastructure responsible for facilitating user access to audit logs through the Microsoft Purview Management API to operate in a suboptimal state, which lead to increased request timeouts and was causing impact.\n\nNext steps: - We’re continuing to analyze how the Frequent GC issue manifested, as these actions will help us to clarify what actions we can take to ensure that similar impact doesn't occur in the future and to continue our ongoing mission to improve the resilience of our service for all Microsoft Purview users. \n\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-09-20T04:56:37.383Z",
-          "postType": "regular",
-          "content": "Title: Some users may experience delays accessing audit logs through the Microsoft Purview Management API\r\n\r\nUser impact: Users may have experienced delays accessing audit logs through the Microsoft Purview Management API.\r\n\r\nMore info: This issue specifically impacted Microsoft Purview users utilizing the Management Activity API and Search features to retrieve audit logs.\r\n\r\nFinal status: Following an extended period of monitoring the service health telemetry after the completion of our configuration change, we’ve confirmed that impact has been remediated.  \r\n\r\nScope of impact: This issue may have potentially impacted a subset of Microsoft Purview users in the North America region who were utilizing the audit log feature of Microsoft Purview.\r\n\r\nStart time: Monday, September 14, 2026, at 6:00 AM UTC\r\n\r\nEnd time: Sunday, September 20, 2026, at 4:56 AM UTC\r\n\r\nRoot cause: Frequent GC was causing the portion of service infrastructure responsible for facilitating user access to audit logs through the Microsoft Purview Management API to operate in a suboptimal state, which lead to increased request timeouts and was causing impact.\r\n\r\nNext steps: - We’re continuing to analyze how the Frequent GC issue manifested, as these actions will help us to clarify what actions we can take to ensure that similar impact doesn't occur in the future and to continue our ongoing mission to improve the resilience of our service for all Microsoft Purview users. \r\n\r\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-09-19T04:30:24.873Z",
-          "postType": "regular",
-          "content": "Title: Some users may experience delays accessing audit logs through the Microsoft Purview Management API\r\n\r\nUser impact: Users may experience delays accessing audit logs through the Microsoft Purview Management API.\r\n\r\nMore info: This issue is specifically impacting Microsoft Purview users utilizing the Management Activity API and Search features to retrieve audit logs.\r\n\r\nCurrent status: Our aforementioned configuration change is continuing to help reduce the impact as expected and we anticipate our change will fully resolve this issue by Sunday, September 20, 2026. \r\n\r\nScope of impact: This issue may potentially impact a subset of Microsoft Purview users in the North America region utilizing the audit log feature of Microsoft Purview. This information may be updated as our investigation continues.\r\n\r\nRoot cause: Frequent GC is causing the portion of service infrastructure responsible for facilitating user access to audit logs through the Microsoft Purview Management API to operate in a suboptimal state, leading to increased request timeouts and is causing impact.\r\n\r\nNext update by: Saturday, September 19, 2026, at 2:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-09-18T22:22:29.753Z",
-          "postType": "regular",
-          "content": "Title: Some users may experience delays accessing audit logs through the Microsoft Purview Management API\r\n\r\nUser impact: Users may experience delays accessing audit logs through the Microsoft Purview Management API.\r\n\r\nMore info: This issue is specifically impacting Microsoft Purview users utilizing the Management Activity API and Search features to retrieve audit logs.\r\n\r\nCurrent status: Our service health telemetry indicates that the configuration change we applied to a subset of the affected service infrastructure appears to be reducing the impact. We're continuing to monitor the efficacy of our change to confirm that it fully resolves the issue before we apply the change more broadly. \r\n\r\nScope of impact: This issue may potentially impact a subset of Microsoft Purview users in the North America region utilizing the audit log feature of Microsoft Purview. This information may be updated as our investigation continues.\r\n\r\nRoot cause: Frequent GC is causing the portion of service infrastructure responsible for facilitating user access to audit logs through the Microsoft Purview Management API to operate in a suboptimal state, leading to increased request timeouts and is causing impact.\r\n\r\nNext update by: Saturday, September 19, 2026, at 5:30 AM UTC"
-        },
-        {
-          "createdAt": "2026-09-18T20:58:46.243Z",
-          "postType": "regular",
-          "content": "Title: Some users may experience delays accessing audit logs through the Microsoft Purview Management API\r\n\r\nUser impact: Users may experience delays accessing audit logs through the Microsoft Purview Management API.\r\n\r\nMore info: This issue is specifically impacting Microsoft Purview users utilizing the Management Activity API and Search features to retrieve audit logs.\r\n\r\nCurrent status: We've identified that frequent garbage collection (GC) is causing the portion of service infrastructure responsible for facilitating user access to audit logs through the Microsoft Purview Management API to operate in a suboptimal state, leading to increased request timeouts and is causing impact. We've applied a configuration change to reduce the GC frequency and are monitoring to confirm that it remediates the impact as expected. \r\n\r\nScope of impact: This issue may potentially impact a subset of Microsoft Purview users in the North America region utilizing the audit log feature of Microsoft Purview. This information may be updated as our investigation continues.\r\n\r\nRoot cause: Frequent GC is causing the portion of service infrastructure responsible for facilitating user access to audit logs through the Microsoft Purview Management API to operate in a suboptimal state, leading to increased request timeouts and is causing impact.\r\n\r\nNext update by: Friday, September 18, 2026, at 11:00 PM UTC"
-        }
-      ],
-      "serviceName": "Microsoft Purview",
-      "affectedServices": [
-        "Microsoft Purview"
       ]
     }
   ]
