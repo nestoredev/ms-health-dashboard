@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-16T18:12:48.276Z",
+  "lastUpdated": "2026-10-16T18:43:05.337Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1239,52 +1239,6 @@
   ],
   "history": [
     {
-      "id": "OP1505951",
-      "title": "Some users may be unable to create or publish assignments in Microsoft OneNote ",
-      "startTime": "2026-10-13T09:25:24Z",
-      "endTime": "2026-10-16T17:53:01.127Z",
-      "lastModified": "2026-10-16T17:59:53.18Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users may have been unable to create or publish assignments in OneNote. ",
-      "scopeOfImpact": "Impact was specific to some users attempting to create or publish assignments in Microsoft OneNote.\r\n\r\nStart time: Sunday, October 11, 2026, at 12:10 PM UTC\r\n\r\nEnd time: Friday, October 16, 2026, at 2:25 PM UTC",
-      "rootCause": "A recent update to the authentication flow utilized in this event contained an issue, which is resulting in this issue.\r\n\r\nNext steps: \n- We're continuing our analysis of the impacting authentication change to better identify and prevent similar impact in the future.\r\n\r\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "OneNote",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-10-16T17:59:49.903Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to create or publish assignments in Microsoft OneNote \r\n\r\nUser impact: Users may have been unable to create or publish assignments in OneNote. \r\n\r\nFinal status: We've completed the release of the fix and validated this has remediated impact with internal testing and service telemetry.\r\n\r\nScope of impact: Impact was specific to some users attempting to create or publish assignments in Microsoft OneNote.\r\n\r\nStart time: Sunday, October 11, 2026, at 12:10 PM UTC\r\n\r\nEnd time: Friday, October 16, 2026, at 2:25 PM UTC\r\n\r\nRoot cause: A recent update to the authentication flow utilized in this event contained an issue, which is resulting in this issue.\r\n\r\nNext steps: \n- We're continuing our analysis of the impacting authentication change to better identify and prevent similar impact in the future.\r\n\r\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-10-14T17:43:10.797Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to create or publish assignments in Microsoft OneNote \r\n\r\nUser impact: Users may be unable to create or publish assignments in OneNote. \r\n\r\nCurrent status: While our fix is continuing to deploy at a rate slower than originally anticipated, we're observing some reduction in the associated errors. However, our analysis of the infrastructure to which the fix has been deployed shows some portions aren't updating as expected, which is preventing the full remediation of the impact. We're analyzing these affected portions of infrastructure to determine whether there are any other actions necessary to totally resolve the issue.\r\n\r\nScope of impact: Impact is specific to some users attempting to create or publish assignments in Microsoft OneNote.\r\n\r\nStart time: Sunday, October 11, 2026, at 12:10 PM UTC\r\n\r\nRoot cause: A recent update to the authentication flow utilized in this event contained an issue, which is resulting in this issue.\r\n\r\nNext update by: Friday, October 16, 2026, at 6:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-10-13T18:14:47.393Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to create or publish assignments in Microsoft OneNote \r\n\r\nUser impact: Users may be unable to create or publish assignments in OneNote. \r\n\r\nCurrent status: We’ve begun deploying our fix to the affected environment and anticipate that this process will be complete by our next scheduled update.\r\n\r\nScope of impact: Impact is specific to some users attempting to create or publish assignments in Microsoft OneNote.\r\n\r\nStart time: Sunday, October 11, 2026, at 12:10 PM UTC\r\n\r\nRoot cause: A recent update to the authentication flow utilized in this event contained an issue, which is resulting in this issue.\r\n\r\nNext update by: Wednesday, October 14, 2026, at 6:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-10-13T11:08:25.407Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to create or publish assignments in Microsoft OneNote \n\nUser impact: Users may be unable to create or publish assignments in OneNote. \n\nCurrent status: We’ve completed development of the fix and are preparing to deploy it across the affected environment. We’ll monitor service health as the deployment progresses to determine whether it is alleviating impact. \n\nScope of impact: Impact is specific to some users attempting to create or publish assignments in Microsoft OneNote. \n\nNext update by: Tuesday, October 13, 2026, at 6:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-10-13T09:29:26.08Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to create assignments in Microsoft OneNote \r\n\r\nUser impact: Users may be unable to create assignments in Microsoft OneNote. \r\n\r\nCurrent status: We’re investigating elevated failures affecting assignment creation in Microsoft OneNote and are monitoring the affected environments to assess the extent of impact. We're developing and testing a fix as part of our mitigation efforts. Once validation is complete, we'll begin deploying the fix across the affected environment to restore service functionality. \r\n\r\nScope of impact: Your organization is affected by this event, and some users attempting to create assignments in Microsoft OneNote may be impacted.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 11:30 AM UTC"
-        }
-      ],
-      "serviceName": "Microsoft 365 apps",
-      "affectedServices": [
-        "Microsoft 365 apps"
-      ]
-    },
-    {
       "id": "TM1509890",
       "title": "Some users' calls may fail in Microsoft Teams",
       "startTime": "2026-10-16T02:15:48.513Z",
@@ -1328,6 +1282,52 @@
       "serviceName": "Microsoft Teams",
       "affectedServices": [
         "Microsoft Teams"
+      ]
+    },
+    {
+      "id": "OP1505951",
+      "title": "Some users may be unable to create or publish assignments in Microsoft OneNote ",
+      "startTime": "2026-10-11T12:10:00Z",
+      "endTime": "2026-10-16T14:25:00Z",
+      "lastModified": "2026-10-16T18:29:53.497Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have been unable to create or publish assignments in OneNote. ",
+      "scopeOfImpact": "Impact was specific to some users attempting to create or publish assignments in Microsoft OneNote.\r\n\r\nStart time: Sunday, October 11, 2026, at 12:10 PM UTC\r\n\r\nEnd time: Friday, October 16, 2026, at 2:25 PM UTC",
+      "rootCause": "A recent update to the authentication flow utilized in this event contained an issue, which is resulting in this issue.\r\n\r\nNext steps: \n- We're continuing our analysis of the impacting authentication change to better identify and prevent similar impact in the future.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "OneNote",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-10-16T17:59:49.903Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to create or publish assignments in Microsoft OneNote \r\n\r\nUser impact: Users may have been unable to create or publish assignments in OneNote. \r\n\r\nFinal status: We've completed the release of the fix and validated this has remediated impact with internal testing and service telemetry.\r\n\r\nScope of impact: Impact was specific to some users attempting to create or publish assignments in Microsoft OneNote.\r\n\r\nStart time: Sunday, October 11, 2026, at 12:10 PM UTC\r\n\r\nEnd time: Friday, October 16, 2026, at 2:25 PM UTC\r\n\r\nRoot cause: A recent update to the authentication flow utilized in this event contained an issue, which is resulting in this issue.\r\n\r\nNext steps: \n- We're continuing our analysis of the impacting authentication change to better identify and prevent similar impact in the future.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-10-14T17:43:10.797Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to create or publish assignments in Microsoft OneNote \r\n\r\nUser impact: Users may be unable to create or publish assignments in OneNote. \r\n\r\nCurrent status: While our fix is continuing to deploy at a rate slower than originally anticipated, we're observing some reduction in the associated errors. However, our analysis of the infrastructure to which the fix has been deployed shows some portions aren't updating as expected, which is preventing the full remediation of the impact. We're analyzing these affected portions of infrastructure to determine whether there are any other actions necessary to totally resolve the issue.\r\n\r\nScope of impact: Impact is specific to some users attempting to create or publish assignments in Microsoft OneNote.\r\n\r\nStart time: Sunday, October 11, 2026, at 12:10 PM UTC\r\n\r\nRoot cause: A recent update to the authentication flow utilized in this event contained an issue, which is resulting in this issue.\r\n\r\nNext update by: Friday, October 16, 2026, at 6:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-13T18:14:47.393Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to create or publish assignments in Microsoft OneNote \r\n\r\nUser impact: Users may be unable to create or publish assignments in OneNote. \r\n\r\nCurrent status: We’ve begun deploying our fix to the affected environment and anticipate that this process will be complete by our next scheduled update.\r\n\r\nScope of impact: Impact is specific to some users attempting to create or publish assignments in Microsoft OneNote.\r\n\r\nStart time: Sunday, October 11, 2026, at 12:10 PM UTC\r\n\r\nRoot cause: A recent update to the authentication flow utilized in this event contained an issue, which is resulting in this issue.\r\n\r\nNext update by: Wednesday, October 14, 2026, at 6:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-13T11:08:25.407Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to create or publish assignments in Microsoft OneNote \n\nUser impact: Users may be unable to create or publish assignments in OneNote. \n\nCurrent status: We’ve completed development of the fix and are preparing to deploy it across the affected environment. We’ll monitor service health as the deployment progresses to determine whether it is alleviating impact. \n\nScope of impact: Impact is specific to some users attempting to create or publish assignments in Microsoft OneNote. \n\nNext update by: Tuesday, October 13, 2026, at 6:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-13T09:29:26.08Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to create assignments in Microsoft OneNote \r\n\r\nUser impact: Users may be unable to create assignments in Microsoft OneNote. \r\n\r\nCurrent status: We’re investigating elevated failures affecting assignment creation in Microsoft OneNote and are monitoring the affected environments to assess the extent of impact. We're developing and testing a fix as part of our mitigation efforts. Once validation is complete, we'll begin deploying the fix across the affected environment to restore service functionality. \r\n\r\nScope of impact: Your organization is affected by this event, and some users attempting to create assignments in Microsoft OneNote may be impacted.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 11:30 AM UTC"
+        }
+      ],
+      "serviceName": "Microsoft 365 apps",
+      "affectedServices": [
+        "Microsoft 365 apps"
       ]
     },
     {
