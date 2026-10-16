@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-16T04:35:19.595Z",
+  "lastUpdated": "2026-10-16T05:05:34.048Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -692,66 +692,6 @@
           ]
         },
         {
-          "id": "TM1506205",
-          "title": "Users may be unable to join Microsoft Teams meetings and see sign-in errors",
-          "startTime": "2026-10-07T01:00:00Z",
-          "endTime": null,
-          "lastModified": "2026-10-16T04:19:14.337Z",
-          "status": "serviceDegradation",
-          "severity": "incident",
-          "userImpact": "Users may have been unable to join Microsoft Teams meetings and saw sign-in errors.",
-          "scopeOfImpact": "Some users attempting to join Microsoft Teams meetings may be affected by this issue. This information may be updated as our investigation continues.",
-          "rootCause": "A recent change to the authentication flow utilized in the event contained a regression, resulting in this impact.",
-          "nextUpdateBy": "Friday, October 16, 2026, at 5:30 AM UTC",
-          "feature": "Meetings",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-10-16T00:35:31.71Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to join Microsoft Teams meetings and see sign-in errors\r\n\r\nUser impact: Users may be unable to join Microsoft Teams meetings and see sign-in errors.\r\n\r\nMore info: Affected users see a sign-in prompt when attempting to join a meeting but clicking \"sign-in\" on the prompt has no effect.\n\nUsers can sign-out and sign back in as a temporary mitigation.\r\n\r\nCurrent status: Our code fix has nearly completed propagation throughout most of the affected environments and we're continuing to monitor it as it progresses. We anticipate it'll have fully propagated by our next scheduled communications update.\r\n\r\nScope of impact: Some users attempting to join Microsoft Teams meetings may be affected by this issue. This information may be updated as our investigation continues.\r\n\r\nRoot cause: A recent change to the authentication flow utilized in the event contained a regression, resulting in this impact.\r\n\r\nNext update by: Friday, October 16, 2026, at 5:30 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-14T21:49:18.363Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to join Microsoft Teams meetings and see sign-in errors\r\n\r\nUser impact: Users may be unable to join Microsoft Teams meetings and see sign-in errors.\r\n\r\nMore info: Affected users see a sign-in prompt when attempting to join a meeting but clicking \"sign-in\" on the prompt has no effect.\n\nUsers can sign-out and sign back in as a temporary mitigation.\r\n\r\nCurrent status: We've halted the code change causing this problem to ensure that no additional users encounter Microsoft Teams meeting join and sign-in errors. We're deploying a code fix to remediate the issue for users who received the code change prior to us halting it. Users will experience progressive relief from the issue as this deployment reaches them and we expect the code fix to propagate fully around the time of our next update. \r\n\r\nScope of impact: Some users may be unable to join Microsoft Teams meetings and see sign-in errors. This information may be updated as our investigation continues.\r\n\r\nRoot cause: A recent change to the authentication flow utilized in the event contained a regression, resulting in this impact.\r\n\r\nNext update by: Thursday, October 15, 2026, at 11:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-14T02:06:41.417Z",
-              "postType": "regular",
-              "content": "Title: Some users may be unable to join Microsoft Teams meetings and see sign-in errors\r\n\r\nUser impact: Users may be unable to join Microsoft Teams meetings and see sign-in errors.\r\n\r\nMore info: Affected users see a sign-in prompt when attempting to join a meeting but clicking \"sign-in\" on the prompt has no effect.\n\nUsers can sign-out and sign back in as a temporary mitigation.\r\n\r\nCurrent status: We’re monitoring the rollback of the offending change and expect that a remediation timeline will be provided by our next scheduled communications update.\r\n\r\nScope of impact: Some users may be unable to join Microsoft Teams meetings and see sign-in errors. This information may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, October 7, 2026, at 1:00 AM UTC\r\n\r\nRoot cause: A recent change to the authentication flow utilized in the event contained a regression, resulting in this impact.\r\n\r\nNext update by: Wednesday, October 14, 2026, at 10:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-13T23:51:44.297Z",
-              "postType": "regular",
-              "content": "Title: Some users may be unable to join Microsoft Teams meetings and see sign-in errors\r\n\r\nUser impact: Users may be unable to join Microsoft Teams meetings and see sign-in errors.\r\n\r\nMore info: Affected users see a sign-in prompt when attempting to join a meeting but clicking \"sign-in\" on the prompt has no effect.\n\nUsers can sign-out and sign back in as a temporary mitigation.\r\n\r\nCurrent status: We've initiated our rollback of the responsible change and will monitor this rollback to provide a mitigation timeline as it becomes available.\r\n\r\nScope of impact: Some users may be unable to join Microsoft Teams meetings and see sign-in errors. This information may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, October 7, 2026, at 1:00 AM UTC\r\n\r\nRoot cause: A recent change to the authentication flow utilized in the event contained a regression, resulting in this impact.\r\n\r\nNext update by: Wednesday, October 14, 2026, at 3:30 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-13T22:00:29.347Z",
-              "postType": "regular",
-              "content": "Title: Some users may be unable to join Microsoft Teams meetings and see sign-in errors\r\n\r\nUser impact: Users may be unable to join Microsoft Teams meetings and see sign-in errors.\r\n\r\nMore info: Affected users see a sign-in prompt when attempting to join a meeting but clicking \"sign-in\" on the prompt has no effect.\n\nUsers can sign-out and sign back in as a temporary mitigation.\r\n\r\nCurrent status: We've confirmed a recent change to the authentication flow utilized in the event contained a regression, resulting in this impact. We're preparing to rollback this change in the affected environments and will provide a remediation timeline as soon as one becomes available.\r\n\r\nScope of impact: Some users may be unable to join Microsoft Teams meetings and see sign-in errors. This information may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, October 7, 2026, at 1:00 AM UTC\r\n\r\nRoot cause: A recent change to the authentication flow utilized in the event contained a regression, resulting in this impact.\r\n\r\nNext update by: Wednesday, October 14, 2026, at 12:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-13T18:56:51.733Z",
-              "postType": "regular",
-              "content": "Title: Some users may be unable to join Microsoft Teams meetings and see sign-in errors\r\n\r\nUser impact: Users may be unable to join Microsoft Teams meetings and see sign-in errors.\r\n\r\nMore info: Affected users see a sign-in prompt when attempting to join a meeting but clicking \"sign-in\" on the prompt has no effect.\n\nUsers can sign-out and sign back in as a temporary mitigation.\r\n\r\nCurrent status: We're continuing to review the logs provided by a subset of affected users alongside service side data in order to develop the most effective remediation steps.\r\n\r\nScope of impact: Some users may be unable to join Microsoft Teams meetings and see sign-in errors. This information may be updated as our investigation continues.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 10:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-13T17:18:36.99Z",
-              "postType": "regular",
-              "content": "Title: Some users may be unable to join Microsoft Teams meetings and see sign-in errors\r\n\r\nUser impact: Users may be unable to join Microsoft Teams meetings and see sign-in errors.\r\n\r\nMore info: Affected users see a sign-in prompt when attempting to join a meeting but clicking \"sign-in\" on the prompt has no effect.\n\nUsers can sign-out and sign back in as a temporary mitigation.\r\n\r\nCurrent status: We're reviewing the logs provided by a subset of affected users and have requested an additional set of fresh logs from those users to assist in pinpointing the underlying root cause of this event, so we may develop the most effective remediation steps.\r\n\r\nScope of impact: Some users may be unable to join Microsoft Teams meetings and see sign-in errors. This information may be updated as our investigation continues.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 7:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-13T16:57:13.77Z",
-              "postType": "regular",
-              "content": "Title: Some users may be unable to join Microsoft Teams meetings and see sign-in errors\r\n\r\nUser impact: Users may be unable to join Microsoft Teams meetings and see sign-in errors.\r\n\r\nMore info: Affected users see a sign-in prompt when attempting to join a meeting but clicking \"sign-in\" on the prompt has no effect.\n\nUsers can sign-out and sign back in as a temporary mitigation.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Teams and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Microsoft Teams"
-          ]
-        },
-        {
           "id": "TM1508612",
           "title": "Some users may not receive meeting-started notifications on Android devices",
           "startTime": "2026-10-15T08:29:28.08Z",
@@ -791,20 +731,20 @@
           "title": "Users may be unable to download webinar registration details from the Events app in Microsoft Teams",
           "startTime": "2026-10-09T18:56:09.9Z",
           "endTime": null,
-          "lastModified": "2026-10-16T04:28:42.317Z",
+          "lastModified": "2026-10-16T04:36:17.03Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to download webinar registration details from the Events app in Microsoft Teams.",
           "scopeOfImpact": "Impact may occur for users whose assigned meeting policy has AllowEngagementReport set to Off, preventing them from downloading webinar registration details from the Events app in Microsoft Teams. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, October 9, 2026, at 4:10 PM UTC",
           "rootCause": "A recent service update introduced a regression that causes the registration report download option to become unavailable when the engagement reporting policy is disabled, despite the report being independent of this policy.",
-          "nextUpdateBy": "Friday, October 16, 2026, at 4:28 AM UTC",
+          "nextUpdateBy": "Friday, October 16, 2026, at 8:00 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
             {
               "createdAt": "2026-10-16T04:28:42.317Z",
               "postType": "regular",
-              "content": "Title: Users may be unable to download webinar registration details from the Events app in Microsoft Teams\r\n\r\nUser impact: Users may be unable to download webinar registration details from the Events app in Microsoft Teams.\r\n\r\nMore info: Specifically, this impacts users who have the AllowEngagementReport meeting policy set to Off, as they're unable to download webinar registration details in Microsoft Teams Events because the Download option doesn’t appear.\r\n\r\nCurrent status: We’ve completed deployment of the fix and are validating with affected users to confirm that the issue is resolved.\r\n\r\nScope of impact: Impact may occur for users whose assigned meeting policy has AllowEngagementReport set to Off, preventing them from downloading webinar registration details from the Events app in Microsoft Teams. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, October 9, 2026, at 4:10 PM UTC\r\n\r\nRoot cause: A recent service update introduced a regression that causes the registration report download option to become unavailable when the engagement reporting policy is disabled, despite the report being independent of this policy.\r\n\r\nNext update by: Friday, October 16, 2026, at 4:28 AM UTC"
+              "content": "Title: Users may be unable to download webinar registration details from the Events app in Microsoft Teams\r\n\r\nUser impact: Users may be unable to download webinar registration details from the Events app in Microsoft Teams.\r\n\r\nMore info: Specifically, this impacts users who have the AllowEngagementReport meeting policy set to Off, as they're unable to download webinar registration details in Microsoft Teams Events because the Download option doesn’t appear.\r\n\r\nCurrent status: We’ve completed deployment of the fix and are validating with affected users to confirm that the issue is resolved.\r\n\r\nScope of impact: Impact may occur for users whose assigned meeting policy has AllowEngagementReport set to Off, preventing them from downloading webinar registration details from the Events app in Microsoft Teams. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, October 9, 2026, at 4:10 PM UTC\r\n\r\nRoot cause: A recent service update introduced a regression that causes the registration report download option to become unavailable when the engagement reporting policy is disabled, despite the report being independent of this policy.\r\n\r\nNext update by: Friday, October 16, 2026, at 8:00 PM UTC"
             },
             {
               "createdAt": "2026-10-15T23:29:12.14Z",
@@ -1284,6 +1224,52 @@
     }
   ],
   "history": [
+    {
+      "id": "TM1506205",
+      "title": "Users may be unable to join Microsoft Teams meetings and see sign-in errors",
+      "startTime": "2026-10-07T01:00:00Z",
+      "endTime": "2026-10-16T03:30:00Z",
+      "lastModified": "2026-10-16T04:35:46.683Z",
+      "status": "serviceRestored",
+      "severity": "incident",
+      "userImpact": "Users may have been unable to join Microsoft Teams meetings and saw sign-in errors.",
+      "scopeOfImpact": "Some users who attempted to join Microsoft Teams meetings may have been affected by this issue.\r\n\r\nStart time: Wednesday, October 7, 2026, at 1:00 AM UTC\r\n\r\nEnd time: Friday, October 16, 2026, at 3:30 AM UTC",
+      "rootCause": "A recent change to the authentication flow utilized in the event contained a regression, which resulted in impact.\r\n\r\nNext steps: \n- We're reviewing our feature update testing and validation methods to better identify the potential for impact to the Microsoft Teams meetings and sign-in authentication path prior to deployment to prevent similar impact in the future, and to improve our pre-deployment update testing processes.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Meetings",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-10-16T04:33:23.097Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to join Microsoft Teams meetings and see sign-in errors\r\n\r\nUser impact: Users may have been unable to join Microsoft Teams meetings and saw sign-in errors.\r\n\r\nMore info: Affected users saw a sign-in prompt when they attempted to join a meeting but clicking \"sign-in\" on the prompt had no effect.\n\nUsers can sign-out and sign back in as a temporary mitigation.\r\n\r\nFinal status: We've completed the deployment of our code fix to all affected environments and confirmed through telemetry, along with a subset of impacted users, that the issue is resolved.\r\n\r\nScope of impact: Some users who attempted to join Microsoft Teams meetings may have been affected by this issue.\r\n\r\nStart time: Wednesday, October 7, 2026, at 1:00 AM UTC\r\n\r\nEnd time: Friday, October 16, 2026, at 3:30 AM UTC\r\n\r\nRoot cause: A recent change to the authentication flow utilized in the event contained a regression, which resulted in impact.\r\n\r\nNext steps: \n- We're reviewing our feature update testing and validation methods to better identify the potential for impact to the Microsoft Teams meetings and sign-in authentication path prior to deployment to prevent similar impact in the future, and to improve our pre-deployment update testing processes.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-10-16T00:35:31.71Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to join Microsoft Teams meetings and see sign-in errors\r\n\r\nUser impact: Users may be unable to join Microsoft Teams meetings and see sign-in errors.\r\n\r\nMore info: Affected users see a sign-in prompt when attempting to join a meeting but clicking \"sign-in\" on the prompt has no effect.\n\nUsers can sign-out and sign back in as a temporary mitigation.\r\n\r\nCurrent status: Our code fix has nearly completed propagation throughout most of the affected environments and we're continuing to monitor it as it progresses. We anticipate it'll have fully propagated by our next scheduled communications update.\r\n\r\nScope of impact: Some users attempting to join Microsoft Teams meetings may be affected by this issue. This information may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, October 7, 2026, at 1:00 AM UTC\r\n\r\nRoot cause: A recent change to the authentication flow utilized in the event contained a regression, resulting in this impact.\r\n\r\nNext update by: Friday, October 16, 2026, at 5:30 AM UTC"
+        },
+        {
+          "createdAt": "2026-10-14T21:49:18.363Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to join Microsoft Teams meetings and see sign-in errors\r\n\r\nUser impact: Users may be unable to join Microsoft Teams meetings and see sign-in errors.\r\n\r\nMore info: Affected users see a sign-in prompt when attempting to join a meeting but clicking \"sign-in\" on the prompt has no effect.\n\nUsers can sign-out and sign back in as a temporary mitigation.\r\n\r\nCurrent status: We've halted the code change causing this problem to ensure that no additional users encounter Microsoft Teams meeting join and sign-in errors. We're deploying a code fix to remediate the issue for users who received the code change prior to us halting it. Users will experience progressive relief from the issue as this deployment reaches them and we expect the code fix to propagate fully around the time of our next update. \r\n\r\nScope of impact: Some users may be unable to join Microsoft Teams meetings and see sign-in errors. This information may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, October 7, 2026, at 1:00 AM UTC\r\n\r\nRoot cause: A recent change to the authentication flow utilized in the event contained a regression, resulting in this impact.\r\n\r\nNext update by: Thursday, October 15, 2026, at 11:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-14T02:06:41.417Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to join Microsoft Teams meetings and see sign-in errors\r\n\r\nUser impact: Users may be unable to join Microsoft Teams meetings and see sign-in errors.\r\n\r\nMore info: Affected users see a sign-in prompt when attempting to join a meeting but clicking \"sign-in\" on the prompt has no effect.\n\nUsers can sign-out and sign back in as a temporary mitigation.\r\n\r\nCurrent status: We’re monitoring the rollback of the offending change and expect that a remediation timeline will be provided by our next scheduled communications update.\r\n\r\nScope of impact: Some users may be unable to join Microsoft Teams meetings and see sign-in errors. This information may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, October 7, 2026, at 1:00 AM UTC\r\n\r\nRoot cause: A recent change to the authentication flow utilized in the event contained a regression, resulting in this impact.\r\n\r\nNext update by: Wednesday, October 14, 2026, at 10:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-13T23:51:44.297Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to join Microsoft Teams meetings and see sign-in errors\r\n\r\nUser impact: Users may be unable to join Microsoft Teams meetings and see sign-in errors.\r\n\r\nMore info: Affected users see a sign-in prompt when attempting to join a meeting but clicking \"sign-in\" on the prompt has no effect.\n\nUsers can sign-out and sign back in as a temporary mitigation.\r\n\r\nCurrent status: We've initiated our rollback of the responsible change and will monitor this rollback to provide a mitigation timeline as it becomes available.\r\n\r\nScope of impact: Some users may be unable to join Microsoft Teams meetings and see sign-in errors. This information may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, October 7, 2026, at 1:00 AM UTC\r\n\r\nRoot cause: A recent change to the authentication flow utilized in the event contained a regression, resulting in this impact.\r\n\r\nNext update by: Wednesday, October 14, 2026, at 3:30 AM UTC"
+        }
+      ],
+      "serviceName": "Microsoft Teams",
+      "affectedServices": [
+        "Microsoft Teams"
+      ]
+    },
     {
       "id": "PB1508905",
       "title": "Some users may encounter refresh failures when using the Dynamics 365 Business Central connector in Power BI",
@@ -3311,42 +3297,6 @@
           "createdAt": "2026-09-16T17:38:52.39Z",
           "postType": "regular",
           "content": "Title: Users may be unable to access Outlook on the web from a specific Outlook link \r\n\r\nUser impact: Users may be unable to access Outlook on the web from a specific Outlook link. \r\n\r\nCurrent status: We're investigating a potential issue with the Exchange Online service and are checking for impact to your organization. We'll provide an update within 30 minutes."
-        }
-      ],
-      "serviceName": "Exchange Online",
-      "affectedServices": [
-        "Exchange Online"
-      ]
-    },
-    {
-      "id": "EX1473520",
-      "title": "Users may have encountered issues with the auto compose feature in Outlook mobile app for iOS",
-      "startTime": "2026-09-15T00:00:00Z",
-      "endTime": "2026-09-18T14:31:21.067Z",
-      "lastModified": "2026-09-18T14:33:33.263Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users may have encountered issues with the auto compose feature in Outlook mobile app for iOS.",
-      "scopeOfImpact": "Impact was limited to approximately 10 percent of users performing directory searches or expecting suggestions within Outlook mobile on iOS.\r\n\r\nStart time: Tuesday, September 15, 2026, at 12:00 AM UTC\r\n\r\nEnd time: Friday, September 18, 2026, at 5:00 AM UTC",
-      "rootCause": "A recent update to a search component that facilitates directory and suggestion requests contained a code error, resulting in impact.\r\n\r\nNext steps: We're reviewing our update procedures to better identify similar issues during our development and testing cycles.\r\n\r\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Outlook - poor customer experience",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-09-18T14:33:21.913Z",
-          "postType": "regular",
-          "content": "Title: Users may have encountered issues with the auto compose feature in Outlook mobile app for iOS\r\n\r\nUser impact: Users may have encountered issues with the auto compose feature in Outlook mobile app for iOS.\r\n\r\nMore info: Impact was specific to directory searches, and suggestions when composing email messages from the Outlook app for IOS.\r\n\r\nFinal status: We've successfully deployed the fix and after an extended period of monitoring service health, we've confirmed that impact has been resolved.\r\n\r\nScope of impact: Impact was limited to approximately 10 percent of users performing directory searches or expecting suggestions within Outlook mobile on iOS.\r\n\r\nStart time: Tuesday, September 15, 2026, at 12:00 AM UTC\r\n\r\nEnd time: Friday, September 18, 2026, at 5:00 AM UTC\r\n\r\nRoot cause: A recent update to a search component that facilitates directory and suggestion requests contained a code error, resulting in impact.\r\n\r\nNext steps: We're reviewing our update procedures to better identify similar issues during our development and testing cycles.\r\n\r\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-09-17T16:39:44.807Z",
-          "postType": "regular",
-          "content": "Title: Users may encounter issues with the auto compose feature in the Outlook mobile app for iOS client\r\n\r\nUser impact: Users may encounter issues with the auto compose feature in the Outlook mobile app for iOS client.\r\n\r\nMore info: Impact is specific to directory searches, and suggestions when composing email messages from the Outlook app for IOS. \r\n\r\nCurrent status: We've identified that a recent update to a search component that facilitates directory and suggestion requests contains a code error, resulting in impact. We've developed a fix and are monitoring as it progresses. \r\n\r\nScope of impact: Impact is limited to approximately 10 percent of users performing directory searches or expecting suggestions within Outlook mobile on iOS. \r\n\r\nStart time: Tuesday, September 15, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: A recent update to a search component that facilitates directory and suggestion requests contains a code error, resulting in impact.\r\n\r\nNext update by: Friday, September 18, 2026, at 3:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-09-17T16:16:46.217Z",
-          "postType": "regular",
-          "content": "Title: Users may encounter issues with the auto compose feature in Outlook mobile app for iOS\r\n\r\nUser impact: Users may encounter issues with the auto compose feature in Outlook mobile app for iOS.\r\n\r\nCurrent status: We're investigating a potential issue with Exchange Online and checking for impact to your organization. We'll provide an update within 30 minutes."
         }
       ],
       "serviceName": "Exchange Online",
