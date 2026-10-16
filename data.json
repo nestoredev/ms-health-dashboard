@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-16T13:09:59.733Z",
+  "lastUpdated": "2026-10-16T13:40:18.716Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -706,16 +706,21 @@
           "title": "Some users' calls may fail in Microsoft Teams",
           "startTime": "2026-10-16T02:15:48.513Z",
           "endTime": null,
-          "lastModified": "2026-10-16T12:19:18.683Z",
+          "lastModified": "2026-10-16T13:33:36.32Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users' calls may fail in Microsoft Teams.",
           "scopeOfImpact": "Impact is specific to users attempting to make calls to phone numbers that have recently undergone assignment changes in Microsoft Teams.",
           "rootCause": "",
-          "nextUpdateBy": "Friday, October 16, 2026, at 1:30 PM UTC",
+          "nextUpdateBy": "Friday, October 16, 2026, at 3:30 PM UTC",
           "feature": "Calling",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-16T13:26:48.85Z",
+              "postType": "regular",
+              "content": "Title: Some users' calls may fail in Microsoft Teams\r\n\r\nUser impact: Users' calls may fail in Microsoft Teams.\r\n\r\nMore info: Specifically, reports from affected users indicate that Public Switched Telephone Network (PSTN) direct routing calls for certain accounts associated with call queues in Microsoft Teams aren't being connected. Additionally, resource accounts and auto attendants associated with these call queues may not receive inbound calls.\r\n\r\nCurrent status: We’ve reprovisioned the affected resource account-to-phone number association as an initial mitigation. During our investigation, we identified a recent configuration change that may be contributing to the impact. We’re investigating this change to determine whether it’s responsible for the issue.\r\n\r\nScope of impact: Impact is specific to users attempting to make calls to phone numbers that have recently undergone assignment changes in Microsoft Teams.\r\n\r\nNext update by: Friday, October 16, 2026, at 3:30 PM UTC"
+            },
             {
               "createdAt": "2026-10-16T09:23:29.93Z",
               "postType": "regular",
