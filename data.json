@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-16T17:12:14.503Z",
+  "lastUpdated": "2026-10-16T17:42:30.965Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -702,56 +702,6 @@
           ]
         },
         {
-          "id": "TM1509890",
-          "title": "Some users' calls may fail in Microsoft Teams",
-          "startTime": "2026-10-16T02:15:48.513Z",
-          "endTime": null,
-          "lastModified": "2026-10-16T15:30:40.707Z",
-          "status": "serviceDegradation",
-          "severity": "incident",
-          "userImpact": "Users' calls may fail in Microsoft Teams.",
-          "scopeOfImpact": "Impact is specific to users attempting to make calls to phone numbers that have recently undergone assignment changes in Microsoft Teams. This information may be updated as our investigation continues.",
-          "rootCause": "",
-          "nextUpdateBy": "Friday, October 16, 2026, at 10:30 PM UTC",
-          "feature": "Calling",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-10-16T15:30:40.707Z",
-              "postType": "regular",
-              "content": "Title: Some users' calls may fail in Microsoft Teams\r\n\r\nUser impact: Users' calls may fail in Microsoft Teams.\r\n\r\nMore info: Specifically, reports from affected users indicate that Public Switched Telephone Network (PSTN) direct routing calls for certain accounts associated with call queues in Microsoft Teams aren't being connected. Additionally, resource accounts and auto attendants associated with these call queues may not receive inbound calls.\r\n\r\nCurrent status: We've reverted the recent configuration change that relates to how phone numbers are processed and are monitoring to confirm if this change caused the reported impact and if the issue is resolved.\r\n\r\nScope of impact: Impact is specific to users attempting to make calls to phone numbers that have recently undergone assignment changes in Microsoft Teams. This information may be updated as our investigation continues.\r\n\r\nNext update by: Friday, October 16, 2026, at 10:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-16T13:26:48.85Z",
-              "postType": "regular",
-              "content": "Title: Some users' calls may fail in Microsoft Teams\r\n\r\nUser impact: Users' calls may fail in Microsoft Teams.\r\n\r\nMore info: Specifically, reports from affected users indicate that Public Switched Telephone Network (PSTN) direct routing calls for certain accounts associated with call queues in Microsoft Teams aren't being connected. Additionally, resource accounts and auto attendants associated with these call queues may not receive inbound calls.\r\n\r\nCurrent status: We’ve reprovisioned the affected resource account-to-phone number association as an initial mitigation. During our investigation, we identified a recent configuration change that may be contributing to the impact. We’re investigating this change to determine whether it’s responsible for the issue.\r\n\r\nScope of impact: Impact is specific to users attempting to make calls to phone numbers that have recently undergone assignment changes in Microsoft Teams.\r\n\r\nNext update by: Friday, October 16, 2026, at 3:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-16T09:23:29.93Z",
-              "postType": "regular",
-              "content": "Title: Some users' calls may fail in Microsoft Teams\r\n\r\nUser impact: Users' calls may fail in Microsoft Teams.\r\n\r\nMore info: Specifically, reports from affected users indicate that Public Switched Telephone Network (PSTN) direct routing calls for certain accounts associated with call queues in Microsoft Teams aren't being connected. Additionally, resource accounts and auto attendants associated with these call queues may not receive inbound calls.\r\n\r\nCurrent status: We’ve identified a potential issue with cached information not updating as expected following phone-number assignment changes. We’re reprovisioning the affected resource account-to-phone number association as an initial mitigation and monitoring the results to validate our root cause hypothesis and determine whether additional steps are required.\r\n\r\nScope of impact: Impact is specific to users attempting to make calls to phone numbers that have recently undergone assignment changes in Microsoft Teams.\r\n\r\nNext update by: Friday, October 16, 2026, at 1:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-16T04:39:05.203Z",
-              "postType": "regular",
-              "content": "Title: Some users' calls are failing in Microsoft Teams\r\n\r\nUser impact: Users' calls are failing in Microsoft Teams.\r\n\r\nMore info: Specifically, reports from affected users indicate that Public Switched Telephone Network (PSTN) direct routing calls for certain accounts associated with call queues in Microsoft Teams aren't being connected. Additionally, resource accounts and auto attendants associated with these call queues may not receive inbound calls.\r\n\r\nCurrent status: We're continuing to review user-provided service logs and call logs to gain insight into the underlying source of impact and determine our next steps.\r\n\r\nScope of impact: Your organization is impacted by this event, and some users making calls in Microsoft Teams are affected.\r\n\r\nNext update by: Friday, October 16, 2026, at 9:30 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-16T02:52:50.063Z",
-              "postType": "regular",
-              "content": "Title: Some users' calls are failing in Microsoft Teams\r\n\r\nUser impact: Users' calls are failing in Microsoft Teams.\r\n\r\nMore info: Specifically, reports from affected users indicate that PSTN direct routing calls for certain accounts associated with call queues in Microsoft Teams aren't being connected.\r\n\r\nCurrent status: We're reviewing and analyzing user-provided service logs and contextual details to assist with our investigation and determine our next troubleshooting steps.\r\n\r\nScope of impact: Your organization is impacted by this event, and some users making calls in Microsoft Teams are affected.\r\n\r\nNext update by: Friday, October 16, 2026, at 5:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-16T02:21:38.783Z",
-              "postType": "regular",
-              "content": "Title: Some users' calls are failing in Microsoft Teams\r\n\r\nUser impact: Users' calls are failing in Microsoft Teams.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Teams and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Microsoft Teams"
-          ]
-        },
-        {
           "id": "TM1489031",
           "title": "Users may see Microsoft Teams on the web displayed in English",
           "startTime": "2026-10-06T04:38:30.307Z",
@@ -1329,6 +1279,52 @@
     }
   ],
   "history": [
+    {
+      "id": "TM1509890",
+      "title": "Some users' calls may fail in Microsoft Teams",
+      "startTime": "2026-10-16T02:15:48.513Z",
+      "endTime": "2026-10-16T17:26:01.803Z",
+      "lastModified": "2026-10-16T17:32:24.167Z",
+      "status": "serviceRestored",
+      "severity": "incident",
+      "userImpact": "Users' calls may have failed in Microsoft Teams.",
+      "scopeOfImpact": "Impact was specific to users attempting to make calls to phone numbers that had recently undergone assignment changes in Microsoft Teams.\r\n\r\nStart time: Friday, October 16, 2026, at 2:12 AM UTC\r\n\r\nEnd time: Friday, October 16, 2026, at 4:00 PM UTC",
+      "rootCause": "A recent configuration change that managed how phone numbers were processed was responsible for impact.\r\n\r\nNext steps: We're reviewing and improving our configuration change procedures to detect and prevent similar issues from occurring again in the future.\r\n\r\nThis is the final update for this event.",
+      "nextUpdateBy": "",
+      "feature": "Calling",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-10-16T17:32:20.03Z",
+          "postType": "regular",
+          "content": "Title: Some users' calls may fail in Microsoft Teams\r\n\r\nUser impact: Users' calls may have failed in Microsoft Teams.\r\n\r\nMore info: Specifically, reports from affected users indicated that Public Switched Telephone Network (PSTN) direct routing calls for certain accounts associated with call queues in Microsoft Teams weren't being connected. Additionally, resource accounts and auto attendants associated with these call queues may not have received inbound calls.\r\n\r\nFinal status: We've confirmed that the recent configuration change that managed how phone numbers were processed was responsible for impact, and affected users confirm that impact is remediated after we reverted this change and replaying any changes to phone number that occurred during the window of impact.\r\n\r\nScope of impact: Impact was specific to users attempting to make calls to phone numbers that had recently undergone assignment changes in Microsoft Teams.\r\n\r\nStart time: Friday, October 16, 2026, at 2:12 AM UTC\r\n\r\nEnd time: Friday, October 16, 2026, at 4:00 PM UTC\r\n\r\nRoot cause: A recent configuration change that managed how phone numbers were processed was responsible for impact.\r\n\r\nNext steps: We're reviewing and improving our configuration change procedures to detect and prevent similar issues from occurring again in the future.\r\n\r\nThis is the final update for this event."
+        },
+        {
+          "createdAt": "2026-10-16T15:30:40.707Z",
+          "postType": "regular",
+          "content": "Title: Some users' calls may fail in Microsoft Teams\r\n\r\nUser impact: Users' calls may fail in Microsoft Teams.\r\n\r\nMore info: Specifically, reports from affected users indicate that Public Switched Telephone Network (PSTN) direct routing calls for certain accounts associated with call queues in Microsoft Teams aren't being connected. Additionally, resource accounts and auto attendants associated with these call queues may not receive inbound calls.\r\n\r\nCurrent status: We've reverted the recent configuration change that relates to how phone numbers are processed and are monitoring to confirm if this change caused the reported impact and if the issue is resolved.\r\n\r\nScope of impact: Impact is specific to users attempting to make calls to phone numbers that have recently undergone assignment changes in Microsoft Teams. This information may be updated as our investigation continues.\r\n\r\nNext update by: Friday, October 16, 2026, at 10:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-16T13:26:48.85Z",
+          "postType": "regular",
+          "content": "Title: Some users' calls may fail in Microsoft Teams\r\n\r\nUser impact: Users' calls may fail in Microsoft Teams.\r\n\r\nMore info: Specifically, reports from affected users indicate that Public Switched Telephone Network (PSTN) direct routing calls for certain accounts associated with call queues in Microsoft Teams aren't being connected. Additionally, resource accounts and auto attendants associated with these call queues may not receive inbound calls.\r\n\r\nCurrent status: We’ve reprovisioned the affected resource account-to-phone number association as an initial mitigation. During our investigation, we identified a recent configuration change that may be contributing to the impact. We’re investigating this change to determine whether it’s responsible for the issue.\r\n\r\nScope of impact: Impact is specific to users attempting to make calls to phone numbers that have recently undergone assignment changes in Microsoft Teams.\r\n\r\nNext update by: Friday, October 16, 2026, at 3:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-16T09:23:29.93Z",
+          "postType": "regular",
+          "content": "Title: Some users' calls may fail in Microsoft Teams\r\n\r\nUser impact: Users' calls may fail in Microsoft Teams.\r\n\r\nMore info: Specifically, reports from affected users indicate that Public Switched Telephone Network (PSTN) direct routing calls for certain accounts associated with call queues in Microsoft Teams aren't being connected. Additionally, resource accounts and auto attendants associated with these call queues may not receive inbound calls.\r\n\r\nCurrent status: We’ve identified a potential issue with cached information not updating as expected following phone-number assignment changes. We’re reprovisioning the affected resource account-to-phone number association as an initial mitigation and monitoring the results to validate our root cause hypothesis and determine whether additional steps are required.\r\n\r\nScope of impact: Impact is specific to users attempting to make calls to phone numbers that have recently undergone assignment changes in Microsoft Teams.\r\n\r\nNext update by: Friday, October 16, 2026, at 1:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-16T04:39:05.203Z",
+          "postType": "regular",
+          "content": "Title: Some users' calls are failing in Microsoft Teams\r\n\r\nUser impact: Users' calls are failing in Microsoft Teams.\r\n\r\nMore info: Specifically, reports from affected users indicate that Public Switched Telephone Network (PSTN) direct routing calls for certain accounts associated with call queues in Microsoft Teams aren't being connected. Additionally, resource accounts and auto attendants associated with these call queues may not receive inbound calls.\r\n\r\nCurrent status: We're continuing to review user-provided service logs and call logs to gain insight into the underlying source of impact and determine our next steps.\r\n\r\nScope of impact: Your organization is impacted by this event, and some users making calls in Microsoft Teams are affected.\r\n\r\nNext update by: Friday, October 16, 2026, at 9:30 AM UTC"
+        }
+      ],
+      "serviceName": "Microsoft Teams",
+      "affectedServices": [
+        "Microsoft Teams"
+      ]
+    },
     {
       "id": "TM1506205",
       "title": "Users may be unable to join Microsoft Teams meetings and see sign-in errors",
@@ -3366,47 +3362,6 @@
       "serviceName": "Microsoft Teams",
       "affectedServices": [
         "Microsoft Teams"
-      ]
-    },
-    {
-      "id": "EX1473059",
-      "title": "Users may be unable to access Outlook on the web from a specific Outlook link",
-      "startTime": "2026-09-15T15:00:00Z",
-      "endTime": "2026-09-18T15:40:00Z",
-      "lastModified": "2026-09-18T20:49:23.38Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users may have been unable to access Outlook on the web from a specific Outlook link.",
-      "scopeOfImpact": "This issue may have prevented any user attempting to access Outlook on the web from the specific link in the More Info portion of this communication.\r\n\r\nStart time: Tuesday, September 15, 2026, at 3:00 PM UTC\r\n\r\nEnd time: Friday, September 18, 2026, at 3:40 PM UTC",
-      "rootCause": "A recent code change was producing a code regression that was preventing users from accessing Outlook on the web from a specific link within Outlook.\r\n\r\nNext steps: - We're reviewing our update procedures to understand why impact to Outlook on the web access wasn't caught during the testing phase. This will allow us to drive service improvements by proactively identifying similar issues in the future and improve our update testing processes.\r\n\r\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Performance degradation",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-09-18T20:20:08.143Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to access Outlook on the web from a specific Outlook link\r\n\r\nUser impact: Users may have been unable to access Outlook on the web from a specific Outlook link.\r\n\r\nMore info: Users may have been unable to access Outlook on the web from a specific link within Outlook.\n \nUsers may have been access Outlook on the web by navigating to a direct URL with /mail/ appended. \nAs an example, some users could navigate to \"https://outlook.office365.com/mail/\" to \nsuccessfully access the client.\r\n\r\nFinal status: We've reverted the problematic code change, and confirmed through monitoring service health telemetry that the impact has been remediated.\r\n\r\nScope of impact: This issue may have prevented any user attempting to access Outlook on the web from the specific link in the More Info portion of this communication.\r\n\r\nStart time: Tuesday, September 15, 2026, at 3:00 PM UTC\r\n\r\nEnd time: Friday, September 18, 2026, at 3:40 PM UTC\r\n\r\nRoot cause: A recent code change was producing a code regression that was preventing users from accessing Outlook on the web from a specific link within Outlook.\r\n\r\nNext steps: - We're reviewing our update procedures to understand why impact to Outlook on the web access wasn't caught during the testing phase. This will allow us to drive service improvements by proactively identifying similar issues in the future and improve our update testing processes.\r\n\r\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-09-17T18:47:48.36Z",
-          "postType": "regular",
-          "content": "Title: Users are unable to access Outlook on the web from a specific Outlook link \r\n\r\nUser impact: Users are unable to access Outlook on the web from a specific Outlook link. \r\n\r\nMore info:  Users are unable to access Outlook on the web from a specific link within Outlook.\n\nUsers can access Outlook on the web by navigating to a direct URL with /mail/ appended. \nAs an example, some users can navigate to \"https://outlook.office365.com/mail/\" to \nsuccessfully access the client.\nDepartment of Defense customers: https://webmail.apps.mil/mail/\n\nGCCH customers: https://outlook.office365.us/mail/\r\n\r\nCurrent status: Our change reversion is approximately 82 percent complete, and our established timeline expects it will have completed by our next scheduled communication update.‌\r\n\r\nScope of impact: This issue may prevent any user attempting to access Outlook on the web from the specific link in the More Info portion of this communication. This information may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, September 15, 2026, at 3:00 PM UTC\r\n\r\nRoot cause: A recent code change is producing a code regression that is preventing users from accessing Outlook on the web from a specific link within Outlook.\r\n\r\nNext update by: Friday, September 18, 2026, at 9:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-09-16T17:51:35.607Z",
-          "postType": "regular",
-          "content": "Title: Users are unable to access Outlook on the web from a specific Outlook link \r\n\r\nUser impact: Users are unable to access Outlook on the web from a specific Outlook link. \r\n\r\nMore info: Users are unable to access Outlook on the web from a specific link within Outlook.\n\nUsers can access Outlook on the web by navigating to a direct URL with /mail/ appended. \nAs an example, some users can navigate to \"https://outlook.office365.com/mail/\" to \nsuccessfully access the client.\nDepartment of Defense customers: https://webmail.apps.mil/mail/\n\nGCCH customers: https://outlook.office365.us/mail/\r\n\r\nCurrent status: We've determined that a recent code change is preventing users from accessing Outlook on the web from a specific link within Outlook. We've conducted our change reversion process to address the code issue and to remediate the impact. We're monitoring the environment to ensure no other impact persists and that the issue is resolved.\r\n\r\nScope of impact: This issue may prevent any user attempting to access Outlook on the web from the specific link in the More Info portion of this communication. This information may be updated as our investigation continues. \r\n\r\nStart time: Tuesday, September 15, 2026, at 3:00 PM UTC\r\n\r\nRoot cause: A recent code change is producing a code regression that is preventing users from accessing Outlook on the web from a specific link within Outlook.\r\n\r\nNext update by: Thursday, September 17, 2026, at 9:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-09-16T17:38:52.39Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to access Outlook on the web from a specific Outlook link \r\n\r\nUser impact: Users may be unable to access Outlook on the web from a specific Outlook link. \r\n\r\nCurrent status: We're investigating a potential issue with the Exchange Online service and are checking for impact to your organization. We'll provide an update within 30 minutes."
-        }
-      ],
-      "serviceName": "Exchange Online",
-      "affectedServices": [
-        "Exchange Online"
       ]
     }
   ]
