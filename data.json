@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-19T20:49:04.915Z",
+  "lastUpdated": "2026-10-19T21:19:22.387Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -390,16 +390,21 @@
           "title": "Admins may see multiple usage reports not updating in the Microsoft 365 admin center",
           "startTime": "2026-09-28T22:36:21.907Z",
           "endTime": null,
-          "lastModified": "2026-10-16T18:54:29.143Z",
+          "lastModified": "2026-10-19T20:59:13.93Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may see multiple usage reports not updating in the Microsoft 365 admin center.",
           "scopeOfImpact": "Some admins may not see updated usage reports in the Microsoft 365 admin center with varying delays. This section may be updated as the investigation progresses.",
-          "rootCause": "Upstream processes responsible for managing user data were unable to process data as effectively as expected, leading to delays populating user reports.",
-          "nextUpdateBy": "Monday, October 19, 2026, at 8:30 PM UTC",
+          "rootCause": "An upstream process responsible for managing user data is unable to process data as effectively as expected, leading to delays populating user reports.",
+          "nextUpdateBy": "Wednesday, October 21, 2026, at 8:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-19T20:59:13.93Z",
+              "postType": "regular",
+              "content": "Title: Admins may see multiple usage reports not updating in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see multiple usage reports not updating in the Microsoft 365 admin center.\r\n\r\nMore info: Due to the delay in data propagation, impacted usage reports may not be viewable.\n\nThe following usage reports may not show data since October 6, 2026:\n- Microsoft App Active Users reports \n\n- Overview reports \n- Forms reports\n \nThe following usage reports have recovered as of October 12, 2026:\n\n- Adoption Score reports\n- Multi-geo Tenant usage reports\n- Active user reports\n- Email Activity reports\n- Email Apps usage reports\n- Microsoft 365 Apps usage reports\n\nThe following usage reports have recovered as of October 15, 2026:\n\n- Mailbox usage reports\n- Microsoft Teams User activity reports\n- Microsoft 365 Group reports\r\n\r\nCurrent status: Our telemetry shows that some reporting data is now flowing as expected; however, admins may continue to encounter issues until the fix is released. We're continuing our development and validation of a fix and will provide a release timeline once available.\r\n\r\nScope of impact: Some admins may not see updated usage reports in the Microsoft 365 admin center with varying delays. This section may be updated as the investigation progresses.\r\n\r\nRoot cause: An upstream process responsible for managing user data is unable to process data as effectively as expected, leading to delays populating user reports.\r\n\r\nNext update by: Wednesday, October 21, 2026, at 8:30 PM UTC"
+            },
             {
               "createdAt": "2026-10-16T18:54:29.143Z",
               "postType": "regular",
@@ -876,16 +881,21 @@
           "title": "Admins may see multiple usage reports not updating in the Microsoft 365 admin center",
           "startTime": "2026-09-28T22:36:21.907Z",
           "endTime": null,
-          "lastModified": "2026-10-16T18:54:29.143Z",
+          "lastModified": "2026-10-19T20:59:13.93Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may see multiple usage reports not updating in the Microsoft 365 admin center.",
           "scopeOfImpact": "Some admins may not see updated usage reports in the Microsoft 365 admin center with varying delays. This section may be updated as the investigation progresses.",
-          "rootCause": "Upstream processes responsible for managing user data were unable to process data as effectively as expected, leading to delays populating user reports.",
-          "nextUpdateBy": "Monday, October 19, 2026, at 8:30 PM UTC",
+          "rootCause": "An upstream process responsible for managing user data is unable to process data as effectively as expected, leading to delays populating user reports.",
+          "nextUpdateBy": "Wednesday, October 21, 2026, at 8:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-19T20:59:13.93Z",
+              "postType": "regular",
+              "content": "Title: Admins may see multiple usage reports not updating in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see multiple usage reports not updating in the Microsoft 365 admin center.\r\n\r\nMore info: Due to the delay in data propagation, impacted usage reports may not be viewable.\n\nThe following usage reports may not show data since October 6, 2026:\n- Microsoft App Active Users reports \n\n- Overview reports \n- Forms reports\n \nThe following usage reports have recovered as of October 12, 2026:\n\n- Adoption Score reports\n- Multi-geo Tenant usage reports\n- Active user reports\n- Email Activity reports\n- Email Apps usage reports\n- Microsoft 365 Apps usage reports\n\nThe following usage reports have recovered as of October 15, 2026:\n\n- Mailbox usage reports\n- Microsoft Teams User activity reports\n- Microsoft 365 Group reports\r\n\r\nCurrent status: Our telemetry shows that some reporting data is now flowing as expected; however, admins may continue to encounter issues until the fix is released. We're continuing our development and validation of a fix and will provide a release timeline once available.\r\n\r\nScope of impact: Some admins may not see updated usage reports in the Microsoft 365 admin center with varying delays. This section may be updated as the investigation progresses.\r\n\r\nRoot cause: An upstream process responsible for managing user data is unable to process data as effectively as expected, leading to delays populating user reports.\r\n\r\nNext update by: Wednesday, October 21, 2026, at 8:30 PM UTC"
+            },
             {
               "createdAt": "2026-10-16T18:54:29.143Z",
               "postType": "regular",
@@ -1932,7 +1942,7 @@
       "title": "Admins are unable to access the Exchange admin center (EAC)",
       "startTime": "2026-10-12T08:15:00Z",
       "endTime": "2026-10-12T12:50:00Z",
-      "lastModified": "2026-10-14T13:11:27.51Z",
+      "lastModified": "2026-10-19T21:04:26.143Z",
       "status": "postIncidentReviewPublished",
       "severity": "incident",
       "userImpact": "Admins are unable to access the EAC. ",
@@ -1942,6 +1952,11 @@
       "feature": "Reports of an Incident",
       "isResolved": true,
       "posts": [
+        {
+          "createdAt": "2026-10-19T21:02:58.363Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        },
         {
           "createdAt": "2026-10-14T13:11:27.51Z",
           "postType": "regular",
@@ -1955,17 +1970,12 @@
         {
           "createdAt": "2026-10-12T13:28:40.877Z",
           "postType": "regular",
-          "content": "Title: Admins are unable to access the Exchange admin center (EAC)\n\nUser impact: Admins are unable to access the EAC. \n\nMore info: When attempting to access the Exchange admin center, affected admins encountered an “Internal Server Error” message.\n \nFinal status: We've completed the rollback of the identified Exchange admin center (EAC) change. Service telemetry shows that errors have returned to expected levels, and user reports have confirmed that EAC access has been restored. Admins who continue to experience impact should close their existing EAC browser session, open a new session, and retry accessing the EAC. We’ll continue to monitor service health to ensure sustained service stability.\n \nScope of impact: Impact was specific to admins attempting to access the EAC.\n \nStart time: Monday, October 12, 2026, at 8:15 AM UTC\n \nEnd time: Monday, October 12, 2026, at 12:50 PM UTC\n \nPreliminary root cause: A recent EAC configuration change resulted in unexpected HTTP responses within the affected request path, preventing admins from successfully accessing the EAC. Reverting the identified change restored expected service functionality.\n \nNext steps:\n- We’re reviewing the identified EAC change and associated service configuration to help prevent similar impact from recurring.\n- We’re reviewing our monitoring and telemetry to improve detection and alerting for similar service behavior.\n \nWe’ll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days."
+          "content": "Title: Admins are unable to access the Exchange admin center (EAC)\n\nUser impact: Admins are unable to access the EAC. \n\nMore info: When attempting to access the Exchange admin center, affected admins encountered an “Internal Server Error” message.\n \nFinal status: We've completed the rollback of the identified Exchange admin center (EAC) change. Service telemetry shows that errors have returned to expected levels, and user reports have confirmed that EAC access has been restored. Admins who continue to experience impact should close their existing EAC browser session, open a new session, and retry accessing the EAC. We’ll continue to monitor service health to ensure sustained service stability.\n \nScope of impact: Impact was specific to admins attempting to access the EAC.\n \nStart time: Monday, October 12, 2026, at 8:15 AM UTC\n \nEnd time: Monday, October 12, 2026, at 12:50 PM UTC\n \nRoot cause: During a routine service deployment, an update to the Exchange Admin Center authentication components introduced an incompatibility in the way delegated administrator access tokens were validated.\n\nWhen administrators accessed the Exchange Admin Center through the Microsoft 365 admin experience, the updated authentication components did not successfully validate the delegated token used for the request. The service then attempted an interactive sign-in as a fallback. That fallback could not complete because the sign-in context was associated with a different service domain, resulting in an authentication failure and an Internal Server Error.\n\nNext steps:\n- For a more comprehensive list of next steps and actions, please refer to the Post Incident Report document.\n \nWe’ll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days."
         },
         {
           "createdAt": "2026-10-12T13:04:24.203Z",
           "postType": "quick",
           "content": "We’ve completed the rollback and are continuing to monitor service health, with telemetry showing errors trending downward from their earlier peak. Admins who continue to experience impact should close their existing Exchange admin center (EAC) browser session, open a new session, and retry accessing the EAC. We’ll continue monitoring to validate recovery.\n\nThis quick update is designed to give the latest information on this issue.\n \nNext update by: Monday, October 12, 2026, at 1:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-10-12T12:50:57.543Z",
-          "postType": "quick",
-          "content": "We’re continuing to roll back the identified Exchange admin center (EAC) change. Initial telemetry shows errors trending downward from their earlier peak, and we’re monitoring service health to determine whether the rollback restores access for affected admins.\n \nThis quick update is designed to give the latest information on this issue.\n \nNext update by: Monday, October 12, 2026, at 1:30 PM UTC"
         }
       ],
       "serviceName": "Exchange Online",
