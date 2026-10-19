@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-19T19:18:21.815Z",
+  "lastUpdated": "2026-10-19T19:48:35.700Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -265,19 +265,24 @@
         },
         {
           "id": "MO1515549",
-          "title": "Users and admins are unable to view or manage device group configurations through the Microsoft Defender portal.",
+          "title": "Users and admins can't view or manage device group configurations through the Microsoft Defender portal",
           "startTime": "2026-10-19T18:35:18.653Z",
           "endTime": null,
-          "lastModified": "2026-10-19T18:56:04.5Z",
+          "lastModified": "2026-10-19T19:18:49.533Z",
           "status": "investigating",
           "severity": "advisory",
-          "userImpact": "Users and admins are unable to view or manage device group configurations through the Microsoft Defender portal.",
-          "scopeOfImpact": "",
-          "rootCause": "",
-          "nextUpdateBy": "",
+          "userImpact": "Users and admins can't view or manage device group configurations through the Microsoft Defender portal.",
+          "scopeOfImpact": "Users and admins attempting to view or manage device group configurations through the Microsoft Defender portal may be affected. This section may be updated as our investigation continues.",
+          "rootCause": "An issue in the device groups page is causing a component in the page rendering process to fail to handle the response correctly and is resulting in the page to crash.",
+          "nextUpdateBy": "Monday, October 19, 2026, at 9:00 PM UTC",
           "feature": "Company or User Administration",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-19T19:14:28.39Z",
+              "postType": "regular",
+              "content": "Title: Users and admins can't view or manage device group configurations through the Microsoft Defender portal\r\n\r\nUser impact: Users and admins can't view or manage device group configurations through the Microsoft Defender portal.\r\n\r\nMore info: The device groups page in the Microsoft Defender portal isn't loading for affected users and admins. Core security operations such as detection, alerting, and incident response aren't affected.\r\n\r\nCurrent status: We've identified that an issue in the device groups page is causing a component in the page rendering process to fail to handle the response correctly and is resulting in the page to crash. We're working on developing a solution that remediates the impact.\r\n\r\nScope of impact: Users and admins attempting to view or manage device group configurations through the Microsoft Defender portal may be affected. This section may be updated as our investigation continues.\r\n\r\nRoot cause: An issue in the device groups page is causing a component in the page rendering process to fail to handle the response correctly and is resulting in the page to crash.\r\n\r\nNext update by: Monday, October 19, 2026, at 9:00 PM UTC"
+            },
             {
               "createdAt": "2026-10-19T18:48:35.72Z",
               "postType": "regular",
