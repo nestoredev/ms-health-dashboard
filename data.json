@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-19T08:12:46.591Z",
+  "lastUpdated": "2026-10-19T08:43:01.432Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -655,9 +655,35 @@
     },
     {
       "service": "Power BI",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "PowerBIcom",
-      "issues": []
+      "issues": [
+        {
+          "id": "PB1514788",
+          "title": "Some users may experience intermittent failures with sensitivity-labeled items in Microsoft Fabric",
+          "startTime": "2026-10-19T08:03:44.62Z",
+          "endTime": null,
+          "lastModified": "2026-10-19T08:17:27.627Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may experience intermittent failures with sensitivity-labeled items in Microsoft Fabric.",
+          "scopeOfImpact": "Some users attempting to set or remove sensitivity labels in Microsoft Fabric, or export or publish items with sensitivity labels, may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Monday, October 19, 2026, at 7:05 AM UTC",
+          "rootCause": "",
+          "nextUpdateBy": "Monday, October 19, 2026, at 10:00 AM UTC",
+          "feature": "General",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-10-19T08:07:42.917Z",
+              "postType": "regular",
+              "content": "Title: Some users may experience intermittent failures with sensitivity-labeled items in Microsoft Fabric\r\n\r\nUser impact: Users may experience intermittent failures with sensitivity-labeled items in Microsoft Fabric.\r\n\r\nMore info: Affected scenarios may include exporting or publishing items with sensitivity labels applied, as well as setting or removing sensitivity labels.\n \nAs a workaround, affected users can refresh and retry the operation.\r\n\r\nCurrent status: We're reviewing diagnostic data from affected operations and service health information to identify the root cause and determine the next steps required to mitigate impact.\r\n\r\nScope of impact: Some users attempting to set or remove sensitivity labels in Microsoft Fabric, or export or publish items with sensitivity labels, may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Monday, October 19, 2026, at 7:05 AM UTC\r\n\r\nNext update by: Monday, October 19, 2026, at 10:00 AM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Power BI"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft Intune",
