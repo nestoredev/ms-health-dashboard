@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-20T19:30:55.175Z",
+  "lastUpdated": "2026-10-20T20:01:12.123Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -711,6 +711,31 @@
               "createdAt": "2026-10-12T21:28:46.413Z",
               "postType": "regular",
               "content": "Title: Users' Microsoft Teams contact cards don't fully display Out of office text\r\n\r\nUser impact: Users' Microsoft Teams contact cards don't fully display Out of office text.\r\n\r\nMore info: Selecting “See more” doesn’t display the full Out of office message. Users may hover over the message to see the full text in a tool tip.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Teams and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Teams"
+          ]
+        },
+        {
+          "id": "TM1517449",
+          "title": "Users may not receive notifications when added to or removed from tags in Microsoft Teams",
+          "startTime": "2026-10-20T19:49:00.287Z",
+          "endTime": null,
+          "lastModified": "2026-10-20T19:52:12.947Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may not receive notifications when added to or removed from tags in Microsoft Teams.",
+          "scopeOfImpact": "This event may impact any user, and any user may not receive notifications when added to or removed from tags in Microsoft Teams. This information may be updated as our investigation continues.\r\n\r\nStart time: Thursday, September 24, 2026, at 9:19 AM UTC",
+          "rootCause": "A recent update to the authentication flow that contained the issue resulting in impact.",
+          "nextUpdateBy": "Wednesday, October 21, 2026, at 8:30 PM UTC",
+          "feature": "Notifications",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-10-20T19:52:12.947Z",
+              "postType": "regular",
+              "content": "Title: Users may not receive notifications when added to or removed from tags in Microsoft Teams\r\n\r\nUser impact: Users may not receive notifications when added to or removed from tags in Microsoft Teams.\r\n\r\nMore info: This event may also impact notifications surrounding tag creation, deletion, or restoration.\n \nThis only impact notifications and tag operations still succeed as expected.\r\n\r\nCurrent status: We identified a recent update to the authentication flow that contained the issue resulting in impact. We're validating a fix to resolve this issue and will provide a remediation timeline as soon as one becomes available.\r\n\r\nScope of impact: This event may impact any user, and any user may not receive notifications when added to or removed from tags in Microsoft Teams. This information may be updated as our investigation continues.\r\n\r\nStart time: Thursday, September 24, 2026, at 9:19 AM UTC\r\n\r\nRoot cause: A recent update to the authentication flow that contained the issue resulting in impact.\r\n\r\nNext update by: Wednesday, October 21, 2026, at 8:30 PM UTC"
             }
           ],
           "affectedServices": [
