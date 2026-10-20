@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-20T01:21:25.594Z",
+  "lastUpdated": "2026-10-20T01:51:40.362Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -626,9 +626,35 @@
     },
     {
       "service": "Microsoft Intune",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "Intune",
-      "issues": []
+      "issues": [
+        {
+          "id": "IT1516138",
+          "title": "Admins may not be able to identify non-compliant device settings as expected in Microsoft Intune",
+          "startTime": "2026-08-07T19:53:00Z",
+          "endTime": null,
+          "lastModified": "2026-10-20T01:40:56.98Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Admins may not be able to identify non-compliant device settings as expected in Microsoft Intune.",
+          "scopeOfImpact": "Any admins may be impacted by this event and may be unable to correctly identify non-compliant device settings as expected in Microsoft Intune. This section may be updated as our investigation continues.\r\n\r\nStart time: Friday, August 7, 2026, at 7:53 PM UTC",
+          "rootCause": "A previous change to the generation of unique Policy and Settings metadata identifiers caused some policy documents to be malformed, which caused some non-compliant settings to incorrectly show as compliant.",
+          "nextUpdateBy": "Tuesday, October 20, 2026, at 9:30 PM UTC",
+          "feature": "Microsoft Intune",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-10-20T01:34:04.14Z",
+              "postType": "regular",
+              "content": "Title: Admins may not be able to identify non-compliant device settings as expected in Microsoft Intune\r\n\r\nUser impact: Admins may not be able to identify non-compliant device settings as expected in Microsoft Intune.\r\n\r\nMore info: The device compliance calculation is unaffected.\r\n\r\nCurrent status: We were alerted to an issue in Microsoft Intune from a customer report, which indicated that admins may not be able to identify the settings causing non-compliant devices. We investigated the issue and identified that a previous change to the generation of unique Policy and Settings metadata identifiers caused some policy documents to be malformed, which caused some non-compliant settings to incorrectly show as compliant. We're working on developing a fix to address the issue and once ready, we'll begin deploying to all affected environments.\r\n\r\nScope of impact: Any admins may be impacted by this event and may be unable to correctly identify non-compliant device settings as expected in Microsoft Intune. This section may be updated as our investigation continues.\r\n\r\nStart time: Friday, August 7, 2026, at 7:53 PM UTC\r\n\r\nRoot cause: A previous change to the generation of unique Policy and Settings metadata identifiers caused some policy documents to be malformed, which caused some non-compliant settings to incorrectly show as compliant.\r\n\r\nNext update by: Tuesday, October 20, 2026, at 9:30 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Intune"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft OneDrive",
@@ -675,56 +701,6 @@
               "createdAt": "2026-10-12T21:28:46.413Z",
               "postType": "regular",
               "content": "Title: Users' Microsoft Teams contact cards don't fully display Out of office text\r\n\r\nUser impact: Users' Microsoft Teams contact cards don't fully display Out of office text.\r\n\r\nMore info: Selecting “See more” doesn’t display the full Out of office message. Users may hover over the message to see the full text in a tool tip.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Teams and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Microsoft Teams"
-          ]
-        },
-        {
-          "id": "TM1514781",
-          "title": "Some users may be unable to join town hall meetings in Microsoft Teams and are redirected to a registration page",
-          "startTime": "2026-10-19T07:56:42Z",
-          "endTime": null,
-          "lastModified": "2026-10-20T01:13:03.273Z",
-          "status": "serviceDegradation",
-          "severity": "incident",
-          "userImpact": "Users may have been unable to join town hall meetings in Microsoft Teams and were redirected to a registration page.",
-          "scopeOfImpact": "Impact is specific to some users attempting to join town hall meetings in Microsoft Teams when registration is disabled.",
-          "rootCause": "A recent service change introduced a code regression that incorrectly requires attendee registration information when registration is disabled. As a result, the attendee Join URL is removed from the session response, preventing users from joining affected town hall meetings.",
-          "nextUpdateBy": "Tuesday, October 20, 2026, at 3:00 AM UTC",
-          "feature": "Meetings",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-10-19T22:16:26.567Z",
-              "postType": "regular",
-              "content": "Title: Some users may be unable to join town hall meetings in Microsoft Teams and are redirected to a registration page\r\n\r\nUser impact: Users may be unable to join town hall meetings in Microsoft Teams and are redirected to a registration page.\r\n\r\nMore info: This may occur when organizers create and publish town halls with registration disabled. Additionally, users may find the Join option unavailable or unresponsive.\n\nWhile we work to remediate the impact, affected users can utilize their Microsoft Teams or Outlook calendars to join town hall meetings.\r\n\r\nCurrent status: While most affected users have received the fix, the complete deployment is taking longer than initially anticipated. We're continuing to monitor the deployment to ensure that the impact is remediated for all affected users.\r\n\r\nScope of impact: Impact is specific to some users attempting to join town hall meetings in Microsoft Teams when registration is disabled. \r\n\r\nRoot cause: A recent service change introduced a code regression that incorrectly requires attendee registration information when registration is disabled. As a result, the attendee Join URL is removed from the session response, preventing users from joining affected town hall meetings.\r\n\r\nNext update by: Tuesday, October 20, 2026, at 3:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-19T16:15:10.947Z",
-              "postType": "regular",
-              "content": "Title: Some users may be unable to join town hall meetings in Microsoft Teams and are redirected to a registration page\r\n\r\nUser impact: Users may be unable to join town hall meetings in Microsoft Teams and are redirected to a registration page.\r\n\r\nMore info: This may occur when organizers create and publish town halls with registration disabled. Additionally, users may find the Join option unavailable or unresponsive.\n\nWhile we work to remediate the impact, affected users can utilize their Microsoft Teams or Outlook calendars to join town hall meetings.\r\n\r\nCurrent status: As we verify the timeline for the offending service change and when users started to become redirected to the registration page when joining Microsoft Teams town hall meetings, we're deploying our solution. Our fix deployment timeline projects our deployment will have completed and that the impact will be remediated by our next scheduled communication update.\r\n\r\nScope of impact: Impact is specific to some users attempting to join town hall meetings in Microsoft Teams when registration is disabled. \r\n\r\nRoot cause: A recent service change introduced a code regression that incorrectly requires attendee registration information when registration is disabled. As a result, the attendee Join URL is removed from the session response, preventing users from joining affected town hall meetings.\r\n\r\nNext update by: Tuesday, October 20, 2026, at 12:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-19T13:57:19.883Z",
-              "postType": "regular",
-              "content": "Title: Some users are unable to join town hall meetings in Microsoft Teams and are redirected to a registration page \r\n\r\nUser impact: Users are unable to join town hall meetings in Microsoft Teams and are redirected to a registration page. \r\n\r\nMore info: This occurs when organizers create and publish town halls with registration disabled. Additionally, users find the Join option unavailable or unresponsive.\r\n\r\nCurrent status: We’ve completed development of the fix and successfully tested the updated build in an internal environment with the offending change removed. We’re progressing the remaining preparations required to deploy the fix to the affected environment. Once deployed, we’ll validate that the fix has remediated impact. \r\n\r\nScope of impact: Impact is specific to some users attempting to join town hall meetings in Microsoft Teams when registration is disabled. \r\n\r\nRoot cause: A recent service change has introduced a code regression that incorrectly requires attendee registration information when registration is disabled. As a result, the attendee Join URL is removed from the session response, preventing users from joining affected town hall meetings. \r\n\r\nNext update by: Monday, October 19, 2026, at 5:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-19T11:52:37.303Z",
-              "postType": "regular",
-              "content": "Title: Some users are unable to join town hall meetings in Microsoft Teams and are redirected to a registration page \r\n\r\nUser impact: Users are unable to join town hall meetings in Microsoft Teams and are redirected to a registration page. \r\n\r\nMore info: This occurs when organizers create and publish town halls with registration disabled. Additionally, some users may find the Join option unavailable or unresponsive.\r\n\r\nCurrent status: We’ve confirmed the source of the regression and are developing a code fix to remediate impact. Once the updated build is complete, we’ll test the fix within an internal environment to confirm its effectiveness before progressing with a gradual rollout to the affected environment. \r\n\r\nScope of impact: Your organization is affected by this event, and some users attempting to join town hall meetings in Microsoft Teams with registration disabled are impacted.\r\n\r\nRoot cause: A recent service change introduced a code regression that caused the attendee Join URL to be removed when registration was disabled, resulting in impact.\r\n\r\nNext update by: Monday, October 19, 2026, at 2:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-19T09:55:47.17Z",
-              "postType": "regular",
-              "content": "Title: Some users are unable to join town hall meetings in Microsoft Teams and are redirected to a registration page \r\n\r\nUser impact: Users are unable to join town hall meetings in Microsoft Teams and are redirected to a registration page. \r\n\r\nMore info: This occurs when organizers create and publish town halls with registration disabled. Additionally, some users may find the Join option unavailable or unresponsive. \r\n\r\nCurrent status: We’ve identified that a recent service change introduced a regression which removes the attendee Join URL when registration is disabled, resulting in the Join option being unavailable or unresponsive. We’re validating this finding and assessing whether reverting the change or implementing a code fix is the most appropriate mitigation to remediate impact. \r\n\r\nScope of impact: Your organization is affected by this event, and some users attempting to join town hall meetings in Microsoft Teams with registration disabled are impacted. \r\n\r\nRoot cause: A recent service change introduced a code regression that caused the attendee Join URL to be removed when registration was disabled, resulting in impact. \r\n\r\nNext update by: Monday, October 19, 2026, at 12:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-19T07:58:02.547Z",
-              "postType": "regular",
-              "content": "Title: Some users are unable to join town hall meetings in Microsoft Teams and are redirected to a registration page \r\n\r\nUser impact: Users are unable to join town hall meetings in Microsoft Teams and are redirected to a registration page. \r\n\r\nMore info: This occurs when organizers create and publish town halls with registration disabled. Additionally, some users may find the Join option unavailable or unresponsive. \r\n\r\nCurrent status: We’ve confirmed that affected town halls are successfully created and published with registration disabled as intended. However, the attendee experience isn’t honoring this setting and users continue to be directed to a registration page. We're reviewing service monitoring telemetry to isolate the root cause and determine our next troubleshooting steps. \r\n\r\nScope of impact: Your organization is affected by this event, and some users attempting to join town hall meetings in Microsoft Teams with registration disabled are impacted. \r\n\r\nNext update by: Monday, October 19, 2026, at 10:00 AM UTC"
             }
           ],
           "affectedServices": [
@@ -1168,6 +1144,52 @@
     }
   ],
   "history": [
+    {
+      "id": "TM1514781",
+      "title": "Some users may be unable to join town hall meetings in Microsoft Teams and are redirected to a registration page",
+      "startTime": "2026-10-19T07:56:42Z",
+      "endTime": "2026-10-20T01:13:13.667Z",
+      "lastModified": "2026-10-20T01:22:02.627Z",
+      "status": "serviceRestored",
+      "severity": "incident",
+      "userImpact": "Users may have been unable to join town hall meetings in Microsoft Teams and were redirected to a registration page.",
+      "scopeOfImpact": "Impact was specific to some users that attempted to join town hall meetings in Microsoft Teams when registration was disabled.\r\n\r\nStart time: Thursday, October 1, 2026, at 4:16 PM UTC\r\n\r\nEnd time: Tuesday, October 20, 2026, at 12:06 AM UTC",
+      "rootCause": "A recent service change introduced a code regression that incorrectly required attendee registration information when registration was disabled. As a result, the attendee Join URL was removed from the session response, and prevented users from joining affected town hall meetings.\r\n\r\nNext steps: \n-We're reviewing the code change that resulted in impact to better understand why it incorrectly required users to register, and prevent similar issues from taking place in the future.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Meetings",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-10-20T01:21:58.65Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to join town hall meetings in Microsoft Teams and are redirected to a registration page\r\n\r\nUser impact: Users may have been unable to join town hall meetings in Microsoft Teams and were redirected to a registration page.\r\n\r\nMore info: This may have occurred when organizers created and published town halls with registration disabled. Additionally, users may have found the Join option unavailable or unresponsive.\n \nWhile we worked to remediate the impact, affected users could have utilized their Microsoft Teams or Outlook calendars to join town hall meetings.\r\n\r\nFinal status: We've confirmed that the deployment of the fix has been fully rolled out, and we've validated with our internal monitoring to confirm that the impact has been remediated.\r\n\r\nScope of impact: Impact was specific to some users that attempted to join town hall meetings in Microsoft Teams when registration was disabled.\r\n\r\nStart time: Thursday, October 1, 2026, at 4:16 PM UTC\r\n\r\nEnd time: Tuesday, October 20, 2026, at 12:06 AM UTC\r\n\r\nRoot cause: A recent service change introduced a code regression that incorrectly required attendee registration information when registration was disabled. As a result, the attendee Join URL was removed from the session response, and prevented users from joining affected town hall meetings.\r\n\r\nNext steps: \n-We're reviewing the code change that resulted in impact to better understand why it incorrectly required users to register, and prevent similar issues from taking place in the future.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-10-19T22:16:26.567Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to join town hall meetings in Microsoft Teams and are redirected to a registration page\r\n\r\nUser impact: Users may be unable to join town hall meetings in Microsoft Teams and are redirected to a registration page.\r\n\r\nMore info: This may occur when organizers create and publish town halls with registration disabled. Additionally, users may find the Join option unavailable or unresponsive.\n\nWhile we work to remediate the impact, affected users can utilize their Microsoft Teams or Outlook calendars to join town hall meetings.\r\n\r\nCurrent status: While most affected users have received the fix, the complete deployment is taking longer than initially anticipated. We're continuing to monitor the deployment to ensure that the impact is remediated for all affected users.\r\n\r\nScope of impact: Impact is specific to some users attempting to join town hall meetings in Microsoft Teams when registration is disabled. \r\n\r\nRoot cause: A recent service change introduced a code regression that incorrectly requires attendee registration information when registration is disabled. As a result, the attendee Join URL is removed from the session response, preventing users from joining affected town hall meetings.\r\n\r\nNext update by: Tuesday, October 20, 2026, at 3:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-10-19T16:15:10.947Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to join town hall meetings in Microsoft Teams and are redirected to a registration page\r\n\r\nUser impact: Users may be unable to join town hall meetings in Microsoft Teams and are redirected to a registration page.\r\n\r\nMore info: This may occur when organizers create and publish town halls with registration disabled. Additionally, users may find the Join option unavailable or unresponsive.\n\nWhile we work to remediate the impact, affected users can utilize their Microsoft Teams or Outlook calendars to join town hall meetings.\r\n\r\nCurrent status: As we verify the timeline for the offending service change and when users started to become redirected to the registration page when joining Microsoft Teams town hall meetings, we're deploying our solution. Our fix deployment timeline projects our deployment will have completed and that the impact will be remediated by our next scheduled communication update.\r\n\r\nScope of impact: Impact is specific to some users attempting to join town hall meetings in Microsoft Teams when registration is disabled. \r\n\r\nRoot cause: A recent service change introduced a code regression that incorrectly requires attendee registration information when registration is disabled. As a result, the attendee Join URL is removed from the session response, preventing users from joining affected town hall meetings.\r\n\r\nNext update by: Tuesday, October 20, 2026, at 12:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-10-19T13:57:19.883Z",
+          "postType": "regular",
+          "content": "Title: Some users are unable to join town hall meetings in Microsoft Teams and are redirected to a registration page \r\n\r\nUser impact: Users are unable to join town hall meetings in Microsoft Teams and are redirected to a registration page. \r\n\r\nMore info: This occurs when organizers create and publish town halls with registration disabled. Additionally, users find the Join option unavailable or unresponsive.\r\n\r\nCurrent status: We’ve completed development of the fix and successfully tested the updated build in an internal environment with the offending change removed. We’re progressing the remaining preparations required to deploy the fix to the affected environment. Once deployed, we’ll validate that the fix has remediated impact. \r\n\r\nScope of impact: Impact is specific to some users attempting to join town hall meetings in Microsoft Teams when registration is disabled. \r\n\r\nRoot cause: A recent service change has introduced a code regression that incorrectly requires attendee registration information when registration is disabled. As a result, the attendee Join URL is removed from the session response, preventing users from joining affected town hall meetings. \r\n\r\nNext update by: Monday, October 19, 2026, at 5:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-19T11:52:37.303Z",
+          "postType": "regular",
+          "content": "Title: Some users are unable to join town hall meetings in Microsoft Teams and are redirected to a registration page \r\n\r\nUser impact: Users are unable to join town hall meetings in Microsoft Teams and are redirected to a registration page. \r\n\r\nMore info: This occurs when organizers create and publish town halls with registration disabled. Additionally, some users may find the Join option unavailable or unresponsive.\r\n\r\nCurrent status: We’ve confirmed the source of the regression and are developing a code fix to remediate impact. Once the updated build is complete, we’ll test the fix within an internal environment to confirm its effectiveness before progressing with a gradual rollout to the affected environment. \r\n\r\nScope of impact: Your organization is affected by this event, and some users attempting to join town hall meetings in Microsoft Teams with registration disabled are impacted.\r\n\r\nRoot cause: A recent service change introduced a code regression that caused the attendee Join URL to be removed when registration was disabled, resulting in impact.\r\n\r\nNext update by: Monday, October 19, 2026, at 2:00 PM UTC"
+        }
+      ],
+      "serviceName": "Microsoft Teams",
+      "affectedServices": [
+        "Microsoft Teams"
+      ]
+    },
     {
       "id": "MO1515549",
       "title": "Users and admins couldn't view or manage device group configurations through the Microsoft Defender portal",
@@ -3190,37 +3212,6 @@
       "serviceName": "Microsoft 365 suite",
       "affectedServices": [
         "Microsoft 365 suite"
-      ]
-    },
-    {
-      "id": "TM1478719",
-      "title": "Users may not be able to create, schedule, or update Microsoft Teams meetings",
-      "startTime": "2026-09-24T19:57:37Z",
-      "endTime": "2026-09-24T20:27:15Z",
-      "lastModified": "2026-09-24T22:28:38.677Z",
-      "status": "serviceRestored",
-      "severity": "incident",
-      "userImpact": "Users may have not been able to create, schedule, or update Microsoft Teams meetings.",
-      "scopeOfImpact": "This event may have impacted any user attempting to create, schedule, or update Microsoft Teams meetings.\r\n\r\nStart time: Thursday, September 24, 2026, at 7:09 PM UTC\r\n\r\nEnd time: Thursday, September 24, 2026, at 8:07 PM UTC",
-      "rootCause": "A recent feature update contained an issue that resulted in impact.\r\n\r\nNext steps: - We're reviewing the responsible change to better understand what led to the error that resulted in impact and prevent similar future occurrences.\r\n\r\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Meetings",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-09-24T20:29:07.957Z",
-          "postType": "regular",
-          "content": "Title: Users may not be able to create, schedule, or update Microsoft Teams meetings\r\n\r\nUser impact: Users may have not been able to create, schedule, or update Microsoft Teams meetings.\r\n\r\nFinal status: We identified a recent feature update that contained an issue that resulted in impact. We rolled back this responsible update to expediently remediate this event and have confirmed that this effectively resolved impact through service health telemetry.\r\n\r\nScope of impact: This event may have impacted any user attempting to create, schedule, or update Microsoft Teams meetings.\r\n\r\nStart time: Thursday, September 24, 2026, at 7:09 PM UTC\r\n\r\nEnd time: Thursday, September 24, 2026, at 8:07 PM UTC\r\n\r\nRoot cause: A recent feature update contained an issue that resulted in impact.\r\n\r\nNext steps: - We're reviewing the responsible change to better understand what led to the error that resulted in impact and prevent similar future occurrences.\r\n\r\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-09-24T19:58:53.303Z",
-          "postType": "regular",
-          "content": "Title: Users may not be able to create, schedule, or update Microsoft Teams meetings\r\n\r\nUser impact: Users may not be able to create, schedule, or update Microsoft Teams meetings.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Teams and checking for impact to your organization. We'll provide an update within 30 minutes."
-        }
-      ],
-      "serviceName": "Microsoft Teams",
-      "affectedServices": [
-        "Microsoft Teams"
       ]
     }
   ]
