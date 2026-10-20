@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-20T00:51:08.632Z",
+  "lastUpdated": "2026-10-20T01:21:25.594Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -686,10 +686,10 @@
           "title": "Some users may be unable to join town hall meetings in Microsoft Teams and are redirected to a registration page",
           "startTime": "2026-10-19T07:56:42Z",
           "endTime": null,
-          "lastModified": "2026-10-19T22:16:26.567Z",
+          "lastModified": "2026-10-20T01:13:03.273Z",
           "status": "serviceDegradation",
           "severity": "incident",
-          "userImpact": "Users may be unable to join town hall meetings in Microsoft Teams and are redirected to a registration page.",
+          "userImpact": "Users may have been unable to join town hall meetings in Microsoft Teams and were redirected to a registration page.",
           "scopeOfImpact": "Impact is specific to some users attempting to join town hall meetings in Microsoft Teams when registration is disabled.",
           "rootCause": "A recent service change introduced a code regression that incorrectly requires attendee registration information when registration is disabled. As a result, the attendee Join URL is removed from the session response, preventing users from joining affected town hall meetings.",
           "nextUpdateBy": "Tuesday, October 20, 2026, at 3:00 AM UTC",
