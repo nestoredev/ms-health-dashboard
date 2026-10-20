@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-20T20:31:27.272Z",
+  "lastUpdated": "2026-10-20T21:01:41.964Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -644,16 +644,21 @@
           "title": "Admins may not be able to identify non-compliant device settings as expected in Microsoft Intune",
           "startTime": "2026-08-07T19:53:00Z",
           "endTime": null,
-          "lastModified": "2026-10-20T01:40:56.98Z",
+          "lastModified": "2026-10-20T20:30:42.793Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may not be able to identify non-compliant device settings as expected in Microsoft Intune.",
           "scopeOfImpact": "Any admins may be impacted by this event and may be unable to correctly identify non-compliant device settings as expected in Microsoft Intune. This section may be updated as our investigation continues.\r\n\r\nStart time: Friday, August 7, 2026, at 7:53 PM UTC",
           "rootCause": "A previous change to the generation of unique Policy and Settings metadata identifiers caused some policy documents to be malformed, which caused some non-compliant settings to incorrectly show as compliant.",
-          "nextUpdateBy": "Tuesday, October 20, 2026, at 9:30 PM UTC",
+          "nextUpdateBy": "Wednesday, October 21, 2026, at 9:30 PM UTC",
           "feature": "Microsoft Intune",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-20T20:30:42.793Z",
+              "postType": "regular",
+              "content": "Title: Admins may not be able to identify non-compliant device settings as expected in Microsoft Intune\r\n\r\nUser impact: Admins may not be able to identify non-compliant device settings as expected in Microsoft Intune.\r\n\r\nMore info: The device compliance calculation is unaffected.\r\n\r\nCurrent status: We're continuing our efforts to develop and validate a fix. We'll provide a release timeline once available. \r\n\r\nScope of impact: Any admins may be impacted by this event and may be unable to correctly identify non-compliant device settings as expected in Microsoft Intune. This section may be updated as our investigation continues.\r\n\r\nStart time: Friday, August 7, 2026, at 7:53 PM UTC\r\n\r\nRoot cause: A previous change to the generation of unique Policy and Settings metadata identifiers caused some policy documents to be malformed, which caused some non-compliant settings to incorrectly show as compliant.\r\n\r\nNext update by: Wednesday, October 21, 2026, at 9:30 PM UTC"
+            },
             {
               "createdAt": "2026-10-20T01:34:04.14Z",
               "postType": "regular",
