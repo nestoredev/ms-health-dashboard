@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-21T00:03:17.360Z",
+  "lastUpdated": "2026-10-21T00:33:33.760Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1953,7 +1953,7 @@
       "title": "Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)",
       "startTime": "2026-10-13T07:40:00Z",
       "endTime": "2026-10-13T18:31:00Z",
-      "lastModified": "2026-10-15T23:43:53.033Z",
+      "lastModified": "2026-10-21T00:08:42.22Z",
       "status": "postIncidentReviewPublished",
       "severity": "incident",
       "userImpact": "Users may have been unable to access multiple Microsoft 365 services using GSA. ",
@@ -1963,6 +1963,11 @@
       "feature": "Access",
       "isResolved": true,
       "posts": [
+        {
+          "createdAt": "2026-10-21T00:08:42.22Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        },
         {
           "createdAt": "2026-10-15T23:43:53.033Z",
           "postType": "regular",
@@ -1982,11 +1987,6 @@
           "createdAt": "2026-10-13T17:56:53.2Z",
           "postType": "quick",
           "content": "As a workaround, users may disable GSA to access the affected Microsoft 365 services until the resolution of this incident.\n\nThis quick update is designed to give the latest information on this issue."
-        },
-        {
-          "createdAt": "2026-10-13T17:23:43.983Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA)\n\nUser impact: Users may be unable to access multiple Microsoft 365 services using GSA.\n\nMore info: Impacted services may include, but aren't limited to:\n- Outlook\n- Outlook on the web\n- OneDrive\n- SharePoint Online\n- Microsoft Teams\n- Windows 365 Cloud PCs\n\nCurrent status: We're continuing our targeted restarts throughout the impacted infrastructure, and our telemetry shows services hosted on the restarted infrastructure are now operating at healthy service levels. We're also receiving confirmation that impact is resolved for some users. \n\nScope of impact: Some users in Germany attempting to access Microsoft 365 services listed in the More info section using GSA may be impacted.\n\nStart time: Tuesday, October 13, 2026, at 7:40 AM UTC\n\nPreliminary root cause: A section of GSA infrastructure is performing below acceptable performance thresholds, affecting connectivity to Microsoft 365 services and resulting in impact.\n\nNext update by: Tuesday, October 13, 2026, at 6:30 PM UTC"
         }
       ],
       "serviceName": "Microsoft 365 suite",
