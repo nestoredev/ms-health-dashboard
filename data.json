@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-21T19:14:50.266Z",
+  "lastUpdated": "2026-10-21T19:45:11.379Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -400,16 +400,21 @@
           "title": "Admins may see multiple usage reports not updating in the Microsoft 365 admin center",
           "startTime": "2026-09-28T22:36:21.907Z",
           "endTime": null,
-          "lastModified": "2026-10-19T20:59:13.93Z",
+          "lastModified": "2026-10-21T19:18:34.873Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may see multiple usage reports not updating in the Microsoft 365 admin center.",
           "scopeOfImpact": "Some admins may not see updated usage reports in the Microsoft 365 admin center with varying delays. This section may be updated as the investigation progresses.",
           "rootCause": "An upstream process responsible for managing user data is unable to process data as effectively as expected, leading to delays populating user reports.",
-          "nextUpdateBy": "Wednesday, October 21, 2026, at 8:30 PM UTC",
+          "nextUpdateBy": "Thursday, October 22, 2026, at 4:00 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-21T19:18:34.873Z",
+              "postType": "regular",
+              "content": "Title: Admins may see multiple usage reports not updating in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see multiple usage reports not updating in the Microsoft 365 admin center.\r\n\r\nMore info: Due to the delay in data propagation, impacted usage reports may not be viewable.\n\nThe following usage reports may not show data since October 6, 2026:\n- Microsoft App Active Users reports \n\n- Overview reports \n- Forms reports\n \nThe following usage reports have recovered as of October 12, 2026:\n\n- Adoption Score reports\n- Multi-geo Tenant usage reports\n- Active user reports\n- Email Activity reports\n- Email Apps usage reports\n- Microsoft 365 Apps usage reports\n\nThe following usage reports have recovered as of October 15, 2026:\n\n- Mailbox usage reports\n- Microsoft Teams User activity reports\n- Microsoft 365 Group reports\r\n\r\nCurrent status: We're determined that an infrastructure migration is producing corrupt file formatting and delaying our upstream data processing for the remaining affected reports. We've validated that the corrupt file formatting doesn't affect the data output from these reports, and we're deploying our pre-discussed fix to remove the infrastructure mitigation and return expected data to the remaining affected reports.\r\n\r\nScope of impact: Some admins may not see updated usage reports in the Microsoft 365 admin center with varying delays. This section may be updated as the investigation progresses.\r\n\r\nRoot cause: An upstream process responsible for managing user data is unable to process data as effectively as expected, leading to delays populating user reports.\r\n\r\nNext update by: Thursday, October 22, 2026, at 4:00 PM UTC"
+            },
             {
               "createdAt": "2026-10-19T20:59:13.93Z",
               "postType": "regular",
@@ -948,16 +953,21 @@
           "title": "Admins may see multiple usage reports not updating in the Microsoft 365 admin center",
           "startTime": "2026-09-28T22:36:21.907Z",
           "endTime": null,
-          "lastModified": "2026-10-19T20:59:13.93Z",
+          "lastModified": "2026-10-21T19:18:34.873Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may see multiple usage reports not updating in the Microsoft 365 admin center.",
           "scopeOfImpact": "Some admins may not see updated usage reports in the Microsoft 365 admin center with varying delays. This section may be updated as the investigation progresses.",
           "rootCause": "An upstream process responsible for managing user data is unable to process data as effectively as expected, leading to delays populating user reports.",
-          "nextUpdateBy": "Wednesday, October 21, 2026, at 8:30 PM UTC",
+          "nextUpdateBy": "Thursday, October 22, 2026, at 4:00 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-21T19:18:34.873Z",
+              "postType": "regular",
+              "content": "Title: Admins may see multiple usage reports not updating in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see multiple usage reports not updating in the Microsoft 365 admin center.\r\n\r\nMore info: Due to the delay in data propagation, impacted usage reports may not be viewable.\n\nThe following usage reports may not show data since October 6, 2026:\n- Microsoft App Active Users reports \n\n- Overview reports \n- Forms reports\n \nThe following usage reports have recovered as of October 12, 2026:\n\n- Adoption Score reports\n- Multi-geo Tenant usage reports\n- Active user reports\n- Email Activity reports\n- Email Apps usage reports\n- Microsoft 365 Apps usage reports\n\nThe following usage reports have recovered as of October 15, 2026:\n\n- Mailbox usage reports\n- Microsoft Teams User activity reports\n- Microsoft 365 Group reports\r\n\r\nCurrent status: We're determined that an infrastructure migration is producing corrupt file formatting and delaying our upstream data processing for the remaining affected reports. We've validated that the corrupt file formatting doesn't affect the data output from these reports, and we're deploying our pre-discussed fix to remove the infrastructure mitigation and return expected data to the remaining affected reports.\r\n\r\nScope of impact: Some admins may not see updated usage reports in the Microsoft 365 admin center with varying delays. This section may be updated as the investigation progresses.\r\n\r\nRoot cause: An upstream process responsible for managing user data is unable to process data as effectively as expected, leading to delays populating user reports.\r\n\r\nNext update by: Thursday, October 22, 2026, at 4:00 PM UTC"
+            },
             {
               "createdAt": "2026-10-19T20:59:13.93Z",
               "postType": "regular",
