@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-21T16:43:16.576Z",
+  "lastUpdated": "2026-10-21T17:13:34.097Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1118,31 +1118,6 @@
       "id": "Viva",
       "issues": [
         {
-          "id": "MV1519166",
-          "title": "Users may be unable to access the group feed in Microsoft Viva Engage",
-          "startTime": "2026-10-21T14:01:00Z",
-          "endTime": null,
-          "lastModified": "2026-10-21T16:37:44.44Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may have been unable to access the group feed with Microsoft Viva Engage.",
-          "scopeOfImpact": "This issue is preventing any user from accessing the group feed with Microsoft Viva Engage.\r\n\r\nStart time: Wednesday, October 21, 2026, at 2:01 PM UTC",
-          "rootCause": "A subset of service infrastructure that helps facilitate access to the Microsoft Viva Engage group feed has fallen below our manageable service performance thresholds, resulting in impact.",
-          "nextUpdateBy": "Wednesday, October 21, 2026, at 5:30 PM UTC",
-          "feature": "Post/Reply/Like",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-10-21T15:54:16.893Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to access the group feed in Microsoft Viva Engage\r\n\r\nUser impact: Users may be unable to access the group feed with Microsoft Viva Engage.\r\n\r\nCurrent status: We've identified a subset of service infrastructure that has dropped below our manageable service performance thresholds, preventing users from accessing the Microsoft Viva group feed with Microsoft Viva Engage. We're conducting service optimizations to the affected subset of service infrastructure to remediate the impact.\r\n\r\nScope of impact: This issue is preventing any user from accessing the group feed with Microsoft Viva Engage.\r\n\r\nStart time: Wednesday, October 21, 2026, at 2:01 PM UTC\r\n\r\nRoot cause: A subset of service infrastructure that helps facilitate access to the Microsoft Viva Engage group feed has fallen below our manageable service performance thresholds, resulting in impact.\r\n\r\nNext update by: Wednesday, October 21, 2026, at 5:30 PM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Microsoft Viva"
-          ]
-        },
-        {
           "id": "MO1457843",
           "title": "Admins can't identify who deleted a Viva Engage community or its Microsoft 365 Group in Microsoft Entra ID audit logs",
           "startTime": "2026-08-19T22:38:36.783Z",
@@ -1245,6 +1220,37 @@
     }
   ],
   "history": [
+    {
+      "id": "MV1519166",
+      "title": "Users may be unable to access the group feed in Microsoft Viva Engage",
+      "startTime": "2026-10-21T14:01:00Z",
+      "endTime": "2026-10-21T16:47:17.163Z",
+      "lastModified": "2026-10-21T16:50:29.07Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have been unable to access the group feed with Microsoft Viva Engage.",
+      "scopeOfImpact": "This issue prevented any user from accessing the group feed with Microsoft Viva Engage.\r\n\r\nStart time: Wednesday, October 21, 2026, at 2:01 PM UTC\r\n\r\nEnd time: Wednesday, October 21, 2026, at 4:02 PM UTC",
+      "rootCause": "A subset of service infrastructure that helps facilitate access to the Microsoft Viva Engage group feed dropped below our manageable service performance thresholds, resulting in impact.\r\n\r\nNext steps: \n- We're further analyzing the subset of affected infrastructure to better understand the source for the lower-than-expected service performance, and to prevent similar issues in the future.\n\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Post/Reply/Like",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-10-21T16:50:25.707Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to access the group feed in Microsoft Viva Engage\r\n\r\nUser impact: Users may have been unable to access the group feed with Microsoft Viva Engage.\r\n\r\nFinal status: Following our infrastructure optimizations, our internal telemetry verified that the impact had been remediated.\r\n\r\nScope of impact: This issue prevented any user from accessing the group feed with Microsoft Viva Engage.\r\n\r\nStart time: Wednesday, October 21, 2026, at 2:01 PM UTC\r\n\r\nEnd time: Wednesday, October 21, 2026, at 4:02 PM UTC\r\n\r\nRoot cause: A subset of service infrastructure that helps facilitate access to the Microsoft Viva Engage group feed dropped below our manageable service performance thresholds, resulting in impact.\r\n\r\nNext steps: \n- We're further analyzing the subset of affected infrastructure to better understand the source for the lower-than-expected service performance, and to prevent similar issues in the future.\n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-10-21T15:54:16.893Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to access the group feed in Microsoft Viva Engage\r\n\r\nUser impact: Users may be unable to access the group feed with Microsoft Viva Engage.\r\n\r\nCurrent status: We've identified a subset of service infrastructure that has dropped below our manageable service performance thresholds, preventing users from accessing the Microsoft Viva group feed with Microsoft Viva Engage. We're conducting service optimizations to the affected subset of service infrastructure to remediate the impact.\r\n\r\nScope of impact: This issue is preventing any user from accessing the group feed with Microsoft Viva Engage.\r\n\r\nStart time: Wednesday, October 21, 2026, at 2:01 PM UTC\r\n\r\nRoot cause: A subset of service infrastructure that helps facilitate access to the Microsoft Viva Engage group feed has fallen below our manageable service performance thresholds, resulting in impact.\r\n\r\nNext update by: Wednesday, October 21, 2026, at 5:30 PM UTC"
+        }
+      ],
+      "serviceName": "Microsoft Viva",
+      "affectedServices": [
+        "Microsoft Viva"
+      ]
+    },
     {
       "id": "CW1517097",
       "title": "Some users may not receive responses from Microsoft 365 Copilot Chat in the web and desktop apps",
@@ -3272,47 +3278,6 @@
       "serviceName": "Microsoft 365 apps",
       "affectedServices": [
         "Microsoft 365 apps"
-      ]
-    },
-    {
-      "id": "CW1478470",
-      "title": "Some users may be unable to access or receive prompt responses with Microsoft 365 Copilot Chat or Copilot Notebooks",
-      "startTime": "2026-09-22T02:50:00Z",
-      "endTime": "2026-09-28T18:18:00Z",
-      "lastModified": "2026-09-28T21:43:16.99Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users may have been unable to access or receive prompt responses with Copilot Chat or Copilot Notebooks.",
-      "scopeOfImpact": "This incident impacted some users attempting to generate images or prompts using Copilot Chat or accessing Copilot Notebooks. \r\n\r\nStart time: Tuesday, September 22, 2026, at 2:50 AM UTC\r\n\r\nEnd time: Sunday, September 27, 2026, at 6:18 PM UTC",
-      "rootCause": "A licensing mismatch in the request flow was causing Copilot to view affected users as unlicensed, preventing them from completing requests or accessing Notebooks.\r\n\r\nNext steps: \n- We're analyzing the problematic request flow to isolate how the licensing mismatch was introduced into our service and to validate what actions we can take to prevent similar impact scenarios from occurring in the future.\r\n\r\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "General",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-09-28T21:42:45.79Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to access or receive prompt responses with Microsoft 365 Copilot Chat or Copilot Notebooks\r\n\r\nUser impact: Users may have been unable to access or receive prompt responses with Copilot Chat or Copilot Notebooks.\r\n\r\nMore info: Users may have experienced failing requests for the following scenarios:\n- Image generation requests in Copilot Chat\n- Prompt generation requests in Copilot Chat\n- Failures when attempting to access or view Copilot Notebooks\r\n\r\nFinal status: We've completed deployment of our code change to address a licensing mismatch in the request flow. After completing an internal monitoring period, we've validated that impact is remediated.\r\n\r\nScope of impact: This incident impacted some users attempting to generate images or prompts using Copilot Chat or accessing Copilot Notebooks. \r\n\r\nStart time: Tuesday, September 22, 2026, at 2:50 AM UTC\r\n\r\nEnd time: Sunday, September 27, 2026, at 6:18 PM UTC\r\n\r\nRoot cause: A licensing mismatch in the request flow was causing Copilot to view affected users as unlicensed, preventing them from completing requests or accessing Notebooks.\r\n\r\nNext steps: \n- We're analyzing the problematic request flow to isolate how the licensing mismatch was introduced into our service and to validate what actions we can take to prevent similar impact scenarios from occurring in the future.\r\n\r\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-09-25T17:40:28.543Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to access or receive prompt responses with Microsoft 365 Copilot Chat or Copilot Notebooks\r\n\r\nUser impact: Users may be unable to access or receive prompt responses with Copilot Chat or Copilot Notebooks.\r\n\r\nMore info: Users may experience failing requests for the following scenarios:\n- Image generation requests in Copilot Chat\n- Prompt generation requests in Copilot Chat\n- Failures when attempting to access or view Copilot Notebooks\r\n\r\nCurrent status: We've confirmed that the first change needed to allow us to fully remediate this issue has been validated and is in the process of being deployed. We're expediting the creation and deployment of additional changes needed, and anticipate that users will experience progressive relief by Wednesday, September 30, 2026.\r\n\r\nScope of impact: This incident impacts some users attempting to generate images or prompts using Copilot Chat or accessing Copilot notebooks. This section may be updated as the investigation progresses.\r\n\r\nEstimated time to resolve: Users are expected to be able to access and receive prompt responses when accessing Copilot directly by Wednesday, September 30, 2026. We're finalizing our ETA for the remaining change to OneNote Copilot functionalities, which will require an additional change.\r\n\r\nRoot cause: A licensing mismatch in the request flow is causing Copilot to view affected users as unlicensed, preventing them from completing requests or accessing Notebooks.\r\n\r\nNext update by: Monday, September 28, 2026, at 10:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-09-24T19:29:54.49Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to access or receive prompt responses with Microsoft 365 Copilot Chat or Copilot Notebooks\r\n\r\nUser impact: Users may be unable to access or receive prompt responses with Copilot Chat or Copilot Notebooks.\r\n\r\nMore info: Users may experience failing requests for the following scenarios:\n- Image generation requests in Copilot Chat\n- Prompt generation requests in Copilot Chat\n- Failures when attempting to access or view Copilot Notebooks\r\n\r\nCurrent status: We've developed a fix that we expect will resolve the issue and are validating its efficacy before proceeding with deployment. We'll provide a timeline for the deployment as one becomes available. \r\n\r\nScope of impact: This incident impacts some users attempting to generate images or prompts using Copilot Chat or accessing Copilot notebooks. This section may be updated as the investigation progresses.\r\n\r\nRoot cause: A licensing mismatch in the request flow is causing Copilot to view affected users as unlicensed, preventing them from completing requests or accessing Notebooks.\r\n\r\nNext update by: Friday, September 25, 2026, at 6:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-09-24T16:00:33.283Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to access or receive prompt responses with Microsoft 365 Copilot Chat or Copilot Notebooks\r\n\r\nUser impact: Users may be unable to access or receive prompt responses with Copilot Chat or Copilot Notebooks.\r\n\r\nMore info: Users may experience failing requests for the following scenarios:\n- Image generation requests in Copilot Chat\n- Prompt generation requests in Copilot Chat\n- Failures when attempting to access or view Copilot Notebooks\r\n\r\nCurrent status: We've received reports from a subset of affected users who have reported impact to prompt and image generation in Copilot Chat, as well as failures when accessing Copilot Notebooks. We've isolated that impact is caused by a licensing mismatch which is causing Copilot Chat to view affected users as unlicensed, preventing them from completing requests or accessing Notebooks. We're developing a fix to remediate the discrepancy, and we aim to provide more details on our fix and a timeline to release in our next scheduled update.\r\n\r\nScope of impact: This incident impacts some users attempting to generate images or prompts using Copilot Chat or accessing Copilot notebooks. This section may be updated as the investigation progresses.\r\n\r\nRoot cause: A licensing mismatch is causing Copilot to view affected users as unlicensed, preventing them from completing requests or accessing Notebooks. \r\n\r\nNext update by: Thursday, September 24, 2026, at 9:00 PM UTC"
-        }
-      ],
-      "serviceName": "Microsoft 365 Copilot Chat",
-      "affectedServices": [
-        "Microsoft 365 Copilot Chat"
       ]
     }
   ]
