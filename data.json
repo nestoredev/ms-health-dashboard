@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-21T18:44:33.521Z",
+  "lastUpdated": "2026-10-21T19:14:50.266Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -608,16 +608,21 @@
           "title": "Users may be unable to perform migrations ",
           "startTime": "2026-10-21T10:10:45Z",
           "endTime": null,
-          "lastModified": "2026-10-21T15:45:23.603Z",
+          "lastModified": "2026-10-21T18:51:57.497Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to perform migrations using the Migration Manager Platform (MMP) API.",
-          "scopeOfImpact": "Admins attempting to migrate using the Migration Manager Platform (MMP) API will be impacted.\n \nNext update: Wednesday, October 21, 2026 at 7:00 PM UTC",
+          "scopeOfImpact": "Admins attempting to migrate using the Migration Manager Platform (MMP) API will be impacted.\n\nNext update: Wednesday, October 21, 2026, at 11:00 PM UTC",
           "rootCause": "",
           "nextUpdateBy": "",
           "feature": "Provisioning",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-21T18:51:57.497Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to perform migrations \n\nUser impact: Users may be unable to perform migrations using the Migration Manager Platform (MMP) API.\n\nMore info: Migrations that use the Migration Manager Platform (MMP) API will be impacted. These include migrations initiated from Microsoft 365 Admin Center and third-party migrations. Migrations using SPMT (SharePoint Migration Tool) will not be impacted.\n\nCurrent status: The required internal deployment steps are taking longer than anticipated as we perform final validations to ensure the efficacy of our fix. Once internal validation is complete, we’ll begin deploying the fix to the impacted infrastructure.\n\nScope of impact: Admins attempting to migrate using the Migration Manager Platform (MMP) API will be impacted.\n\nNext update: Wednesday, October 21, 2026, at 11:00 PM UTC"
+            },
             {
               "createdAt": "2026-10-21T15:45:23.603Z",
               "postType": "regular",
