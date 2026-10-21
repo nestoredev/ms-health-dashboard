@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-21T12:40:46.829Z",
+  "lastUpdated": "2026-10-21T13:11:03.060Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -608,16 +608,21 @@
           "title": "Users may be unable to perform migrations",
           "startTime": "2026-10-21T10:10:45Z",
           "endTime": null,
-          "lastModified": "2026-10-21T10:26:05.543Z",
+          "lastModified": "2026-10-21T12:48:28.267Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to perform migrations",
-          "scopeOfImpact": "",
+          "scopeOfImpact": "Admins attempting to migrate using Migration Manager Platform (MMP) API will be impacted.\n\nNext update: Wednesday, October 21, 2026 at 4:00 PM UTC",
           "rootCause": "",
           "nextUpdateBy": "",
           "feature": "Provisioning",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-21T12:48:28.267Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to perform migrations\n\nUser impact: Users may be unable to perform migrations\n\nMore info: Migrations that use Migration Manager Platform (MMP) API will be impacted. These include migrations initiated from Microsoft 365 Admin Center and third-party migrations. Migrations using SPMT (SharePoint Migration Tool) will not be impacted. \n\nCurrent status: We’ve identified a fix to address the underlying issue and are completing validation cycles to confirm that it resolves the impact without introducing additional risk. Once these checks are complete, we’ll begin deploying the fix to the affected environment. We’ll closely monitor service telemetry throughout the deployment to verify recovery and confirm that the fix is having the intended effect. We’ll provide a further update as deployment progresses.\n\nScope of impact: Admins attempting to migrate using Migration Manager Platform (MMP) API will be impacted.\n\nNext update: Wednesday, October 21, 2026 at 4:00 PM UTC"
+            },
             {
               "createdAt": "2026-10-21T10:26:05.543Z",
               "postType": "regular",
