@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-21T15:42:43.189Z",
+  "lastUpdated": "2026-10-21T16:12:58.522Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -605,19 +605,24 @@
       "issues": [
         {
           "id": "SP1518858",
-          "title": "Users may be unable to perform migrations",
+          "title": "Users may be unable to perform migrations ",
           "startTime": "2026-10-21T10:10:45Z",
           "endTime": null,
-          "lastModified": "2026-10-21T12:48:28.267Z",
+          "lastModified": "2026-10-21T15:45:23.603Z",
           "status": "serviceDegradation",
           "severity": "incident",
-          "userImpact": "Users may be unable to perform migrations",
-          "scopeOfImpact": "Admins attempting to migrate using Migration Manager Platform (MMP) API will be impacted.\n\nNext update: Wednesday, October 21, 2026 at 4:00 PM UTC",
+          "userImpact": "Users may be unable to perform migrations using the Migration Manager Platform (MMP) API.",
+          "scopeOfImpact": "Admins attempting to migrate using the Migration Manager Platform (MMP) API will be impacted.\n \nNext update: Wednesday, October 21, 2026 at 7:00 PM UTC",
           "rootCause": "",
           "nextUpdateBy": "",
           "feature": "Provisioning",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-21T15:45:23.603Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to perform migrations \n\nUser impact: Users may be unable to perform migrations using the Migration Manager Platform (MMP) API.\n\nMore info: Migrations that use the Migration Manager Platform (MMP) API will be impacted. These include migrations initiated from Microsoft 365 Admin Center and third-party migrations. Migrations using SPMT (SharePoint Migration Tool) will not be impacted.\n \nCurrent status: We're continuing to perform extensive testing on the fix to ensure that it addresses the underlying issue without causing additional impact. Once the fix is validated, we'll start the deployment to the impacted infrastructure.\n \nScope of impact: Admins attempting to migrate using the Migration Manager Platform (MMP) API will be impacted.\n \nNext update: Wednesday, October 21, 2026 at 7:00 PM UTC"
+            },
             {
               "createdAt": "2026-10-21T12:48:28.267Z",
               "postType": "regular",
@@ -1112,6 +1117,31 @@
       "status": "serviceDegradation",
       "id": "Viva",
       "issues": [
+        {
+          "id": "MV1519166",
+          "title": "Users may be unable to access the group feed in Microsoft Viva Engage",
+          "startTime": "2026-10-21T15:39:05.877Z",
+          "endTime": null,
+          "lastModified": "2026-10-21T16:04:35.223Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to access the group feed with Microsoft Viva Engage.",
+          "scopeOfImpact": "This issue is preventing any user from accessing the group feed with Microsoft Viva Engage.\r\n\r\nStart time: Wednesday, October 21, 2026, at 2:01 PM UTC",
+          "rootCause": "A subset of service infrastructure that helps facilitate access to the Microsoft Viva Engage group feed has fallen below our manageable service performance thresholds, resulting in impact.",
+          "nextUpdateBy": "Wednesday, October 21, 2026, at 5:30 PM UTC",
+          "feature": "Post/Reply/Like",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-10-21T15:54:16.893Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to access the group feed in Microsoft Viva Engage\r\n\r\nUser impact: Users may be unable to access the group feed with Microsoft Viva Engage.\r\n\r\nCurrent status: We've identified a subset of service infrastructure that has dropped below our manageable service performance thresholds, preventing users from accessing the Microsoft Viva group feed with Microsoft Viva Engage. We're conducting service optimizations to the affected subset of service infrastructure to remediate the impact.\r\n\r\nScope of impact: This issue is preventing any user from accessing the group feed with Microsoft Viva Engage.\r\n\r\nStart time: Wednesday, October 21, 2026, at 2:01 PM UTC\r\n\r\nRoot cause: A subset of service infrastructure that helps facilitate access to the Microsoft Viva Engage group feed has fallen below our manageable service performance thresholds, resulting in impact.\r\n\r\nNext update by: Wednesday, October 21, 2026, at 5:30 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Viva"
+          ]
+        },
         {
           "id": "MO1457843",
           "title": "Admins can't identify who deleted a Viva Engage community or its Microsoft 365 Group in Microsoft Entra ID audit logs",
