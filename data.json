@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-21T10:09:13.995Z",
+  "lastUpdated": "2026-10-21T10:39:32.307Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -600,9 +600,35 @@
     },
     {
       "service": "SharePoint Online",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "SharePoint",
-      "issues": []
+      "issues": [
+        {
+          "id": "SP1518858",
+          "title": "Users may be unable to perform migrations",
+          "startTime": "2026-10-21T10:10:45Z",
+          "endTime": null,
+          "lastModified": "2026-10-21T10:26:05.543Z",
+          "status": "serviceDegradation",
+          "severity": "incident",
+          "userImpact": "Users may be unable to perform migrations",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
+          "feature": "Provisioning",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-10-21T10:26:05.543Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to perform migrations\n\nUser impact: Users may be unable to perform migrations\n\nMore info: Migrations that use Migration Manager Platform (MMP) API will be impacted. These include migrations initiated from Microsoft 365 Admin Center and third-party migrations. Migrations using SPMT (Sharepoint Migration Tool) will not be impacted. \n\nCurrent status: After reviewing telemetry data, we’ve identified the source of the issue and have narrowed our investigation to the specific conditions contributing to the impact. We’re now assessing the most effective mitigation options and determining the actions required to restore normal service as quickly and safely as possible.\n\nNext update: Wednesday, October 21, 2026 at 1:00 PM UTC\n"
+            }
+          ],
+          "affectedServices": [
+            "SharePoint Online"
+          ]
+        }
+      ]
     },
     {
       "service": "Dynamics 365 Apps",
