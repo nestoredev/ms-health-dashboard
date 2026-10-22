@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-22T02:49:18.346Z",
+  "lastUpdated": "2026-10-22T03:19:34.409Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -613,16 +613,21 @@
           "title": "Users may be unable to perform migrations ",
           "startTime": "2026-10-21T10:10:45Z",
           "endTime": null,
-          "lastModified": "2026-10-21T22:49:01.727Z",
+          "lastModified": "2026-10-22T02:59:45.377Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to perform migrations using the Migration Manager Platform (MMP) API.",
           "scopeOfImpact": "Admins attempting to migrate using the Migration Manager Platform (MMP) API will be impacted.",
-          "rootCause": "A configuration issue has made components that facilitate migrations that leverage the MMP unavailable, which is preventing users from performing certain migrations.\n \nNext update: Thursday, October 22, 2026, at 2:00 AM UTC",
-          "nextUpdateBy": "",
+          "rootCause": "A configuration issue has made components that facilitate migrations that leverage the MMP unavailable, which is preventing users from performing certain migrations.",
+          "nextUpdateBy": "Thursday, October 22, 2026, at 8:00 AM UTC",
           "feature": "Provisioning",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-22T02:59:45.377Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to perform migrations \r\n\r\nUser impact: Users may be unable to perform migrations using the Migration Manager Platform (MMP) API.\r\n\r\nMore info: Migrations that use the Migration Manager Platform (MMP) API will be impacted. These include migrations initiated from Microsoft 365 Admin Center and third-party migrations. Migrations using SPMT (SharePoint Migration Tool) are not impacted.\r\n\r\nCurrent status: We've resolved the integration issues identified during our previous validation and have started the release process for our updated build. We're progressing the fix through our deployment and validation stages, and we'll continue monitoring its health before deploying it more broadly to the affected infrastructure. We'll provide a resolution timeline as deployment progresses.\r\n\r\nScope of impact: Admins attempting to migrate using the Migration Manager Platform (MMP) API will be impacted.\r\n\r\nRoot cause: A configuration issue has made components that facilitate migrations that leverage the MMP unavailable, which is preventing users from performing certain migrations.\r\n\r\nNext update by: Thursday, October 22, 2026, at 8:00 AM UTC"
+            },
             {
               "createdAt": "2026-10-21T22:49:01.727Z",
               "postType": "regular",
