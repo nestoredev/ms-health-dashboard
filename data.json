@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-22T16:27:17.009Z",
+  "lastUpdated": "2026-10-22T16:57:33.814Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -278,16 +278,21 @@
           "title": "Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center",
           "startTime": "2026-09-08T16:05:00Z",
           "endTime": null,
-          "lastModified": "2026-10-20T17:23:54.307Z",
+          "lastModified": "2026-10-22T16:50:37.137Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center.",
           "scopeOfImpact": "Some admins attempting to see the latest Copilot Health data in the Microsoft 365 admin center may be impacted. This information may be updated as our investigation continues.",
           "rootCause": "An upstream process responsible for Copilot Health data was disabled, resulting in the impact.",
-          "nextUpdateBy": "Thursday, October 22, 2026, at 6:30 PM UTC",
+          "nextUpdateBy": "Friday, October 23, 2026, at 12:00 PM UTC",
           "feature": "Sign-in",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-22T16:50:37.137Z",
+              "postType": "regular",
+              "content": "Title: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center.\r\n\r\nMore info: Specifically, monthly data in the Update channels, Microsoft 365 updates (Past 6 months view), Connected experiences status, and OneDrive status cards on the Copilot Health page may not reflect data after July 2026. The Today view in the Microsoft 365 updates card isn't affected.\r\n\r\nCurrent status: Our work to restore the missing upstream data file is complete. We're re-running the affected pipeline to fully resolve this issue, and we'll provide a remediation timeline once it becomes available.\r\n\r\nScope of impact: Some admins attempting to see the latest Copilot Health data in the Microsoft 365 admin center may be impacted. This information may be updated as our investigation continues.\r\n\r\nRoot cause: An upstream process responsible for Copilot Health data was disabled, resulting in the impact.\r\n\r\nNext update by: Friday, October 23, 2026, at 12:00 PM UTC"
+            },
             {
               "createdAt": "2026-10-20T17:23:46.513Z",
               "postType": "regular",
@@ -775,7 +780,7 @@
     },
     {
       "service": "Microsoft Teams",
-      "status": "extendedRecovery",
+      "status": "serviceDegradation",
       "id": "microsoftteams",
       "issues": [
         {
@@ -887,56 +892,6 @@
               "createdAt": "2026-10-06T04:39:57.093Z",
               "postType": "regular",
               "content": "Title: Users see Microsoft Teams on the web displayed in English\r\n\r\nUser impact: Users see Microsoft Teams on the web displayed in English.\r\n\r\nMore info: Affected users don’t have English set as their preferred language.\r\n\r\nCurrent status: We’re reviewing system logs to isolate the origin of this issue.\r\n\r\nScope of impact: Your organization is affected by this event, and some users see Microsoft Teams on the web displayed in English when it isn’t their preferred language. This information may be updated as our investigation continues.\r\n\r\nNext update by: Tuesday, October 6, 2026, at 6:30 AM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Microsoft Teams"
-          ]
-        },
-        {
-          "id": "TM1519335",
-          "title": "SIP devices can't make or receive calls",
-          "startTime": "2026-10-21T20:15:55Z",
-          "endTime": null,
-          "lastModified": "2026-10-22T16:00:37.313Z",
-          "status": "extendedRecovery",
-          "severity": "incident",
-          "userImpact": "Users may be unable to make or receive calls using SIP devices.",
-          "scopeOfImpact": "Any user attempting to make or receive calls using SIP devices are impacted by this event.",
-          "rootCause": "A configuration issue has impacted components that manage SIP devices, resulting in impact.",
-          "nextUpdateBy": "Thursday, October 22, 2026, at 8:00 PM UTC",
-          "feature": "Calling",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-10-22T16:00:37.313Z",
-              "postType": "regular",
-              "content": "Title: SIP devices can't make or receive calls\n\nUser impact: Users may be unable to make or receive calls using SIP devices.\n\nMore info: Users may be unable to sign in to their SIP devices or encounter \"Service Unavailable\" errors.\n\nOnce a SIP device attempts to perform its next synchronization, the device will disconnect. Users will be unable to log back into those devices and therefore can't make or receive calls using those SIP devices.\n\nCalling functionality using the Microsoft Teams web and desktop clients, or Teams Phone Devices are not impacted.\n\nCurrent status: We continue to monitor service recovery after the fix completed deployment. We've received confirmation from some organizations that SIP devices are now performing as expected. We're contacting other organizations for further validations. \n\nScope of impact: Any user attempting to make or receive calls using SIP devices are impacted by this event.\n\nRoot cause: A configuration issue has impacted components that manage SIP devices, resulting in impact.\n\nNext update by: Thursday, October 22, 2026, at 8:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-22T11:50:37.823Z",
-              "postType": "regular",
-              "content": "Title: SIP devices can't make or receive calls\n\nUser impact: Users may be unable to make or receive calls using SIP devices.\n\nMore info: Users may be unable to sign in to their SIP devices or encounter \"Service Unavailable\" errors.\n \nOnce a SIP device attempts to perform its next synchronization, the device will disconnect. Users will be unable to log back into those devices and therefore can't make or receive calls using those SIP devices.\n\nCalling functionality using the Microsoft Teams web and desktop clients, or Teams Phone Devices are not impacted.\n \nCurrent status: We've deployed a fix to the affected infrastructure and we've observed a restoration of some of the affected functionality. We're closely monitoring SIP device reconnections and calling stability while conducting additional mitigation actions to push towards a full recovery.\n \nScope of impact: Any user attempting to make or receive calls using SIP devices is impacted by this event.\n \nNext update by: Thursday, October 22, 2026, at 4:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-22T07:50:04.567Z",
-              "postType": "regular",
-              "content": "Title: SIP devices can't make or receive calls\n\nUser impact: Users may be unable to make or receive calls using SIP devices.\n\nMore info: Users may be unable to sign in to their SIP devices or encounter \"Service Unavailable\" errors.\n \nOnce a SIP device attempts to perform its next synchronization, the device will disconnect. Users will be unable to log back into those devices and therefore can't make or receive calls using those SIP devices.\n\nCalling functionality using the Microsoft Teams web and desktop clients, or Teams Phone Devices are not impacted.\n \nCurrent status: Our fix is progressing through validation, alongside additional measures to support a safe and stable recovery. Once validation is complete, we'll deploy the fix to the affected infrastructure to begin restoring the affected functionality.\n \nScope of impact: Any user attempting to make or receive calls using SIP devices is impacted by this event.\n \nNext update by: Thursday, October 22, 2026, at 12:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-22T02:58:16.333Z",
-              "postType": "regular",
-              "content": "Title: SIP devices can't make or receive calls\r\n\r\nUser impact: Users may be unable to make or receive calls using SIP devices.\r\n\r\nMore info: Users may be unable to sign in to their SIP devices or encounter \"Service Unavailable\" errors. \n\nOnce a SIP device attempts to perform its next synchronization, the device will disconnect. Users will be unable to log back into those devices and therefore can't make or receive calls using those SIP devices.\n \nCalling functionality using the Microsoft Teams web and desktop clients, or Teams Phone Devices are not impacted.\r\n\r\nCurrent status: We're continuing to validate our fix and the recovery of SIP devices within our internal environment. We're also validating additional protective measures before restoring the affected functionality. Once we've confirmed these changes are operating as expected, we'll begin our restoration actions and monitor affected SIP devices as they recover.\r\n\r\nScope of impact: Any user attempting to make or receive calls using SIP devices is impacted by this event.\r\n\r\nNext update by: Thursday, October 22, 2026, at 8:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-21T22:52:37.313Z",
-              "postType": "regular",
-              "content": "Title: SIP devices can't make or receive calls\n\nUser impact: Users may be unable to make or receive calls using SIP devices.\n\nMore info: Once a SIP device attempts to perform its next synchronization, the device will disconnect. Users will be unable to log back into those devices and therefore can't make or receive calls using those SIP devices.\n \nCalling functionality using the Microsoft Teams web and desktop clients, or Teams Phone Devices are not impacted.\n \nCurrent status: We’re validating a fix within our internal environments and monitoring how SIP devices recover after the fix is applied. This validation is also helping us determine how long affected devices may take to return to normal functionality once the fix is applied. Once validation is complete, we’ll use the results to guide our remediation and restoration actions.\n \nScope of impact: Any user attempting to make or receive calls using SIP devices is impacted by this event.\n \nNext update: Thursday, October 22, 2026, at 2:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-21T20:20:59.677Z",
-              "postType": "regular",
-              "content": "Title: SIP devices can't make or receive calls\n\nUser impact: Users may be unable to make or receive call using SIP devices.\n\nMore info: Once a SIP device attempts to perform its next synchronization, the device will disconnect. Users will be unable to log back into those devices and therefore can't make or receive calls using those SIP devices.\n \nCalling functionality using the Microsoft Teams web and desktop clients, or Teams Phone Devices are not impacted.\n \nCurrent status: We’ve identified the underlying root cause and we are working on developing a fix.\n \nScope of impact: This issue could impact any SIP device.\n \nNext update: Wednesday, October 21, 2026 at 11:00 PM UTC"
             }
           ],
           "affectedServices": [
@@ -1360,6 +1315,52 @@
     }
   ],
   "history": [
+    {
+      "id": "TM1519335",
+      "title": "SIP devices can't make or receive calls",
+      "startTime": "2026-10-21T18:00:00Z",
+      "endTime": "2026-10-22T15:30:00Z",
+      "lastModified": "2026-10-22T16:50:05.797Z",
+      "status": "serviceRestored",
+      "severity": "incident",
+      "userImpact": "Users may have been unable to make or receive calls using SIP devices.",
+      "scopeOfImpact": "Any user attempting to make or receive calls using SIP devices were impacted by this event.\n\nStart time: Wednesday, October 21, 2026, at 6:00 PM UTC\n\nEnd time: Thursday, October 22, 2026, at 3:30 PM UTC",
+      "rootCause": "A configuration issue had impacted components that manage SIP devices, resulting in impact.\n\nNext steps:\n- We're reviewing the affected systems to identify improvements that could prevent similar issues from recurring.\n \nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Calling",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-10-22T16:50:05.797Z",
+          "postType": "regular",
+          "content": "Title: SIP devices can't make or receive calls\n\nUser impact: Users may have been unable to make or receive calls using SIP devices.\n\nMore info: Users may have been unable to sign in to their SIP devices or encountered \"Service Unavailable\" errors.\n \nOnce a SIP device attempted to perform its next synchronization, the device would have disconnected. Users would have been unable to log back into those devices and therefore could not make or receive calls using those SIP devices.\n \nCalling functionality using the Microsoft Teams web and desktop clients, or Teams Phone Devices was not impacted.\n\nFinal status: We received additional confirmations from previously impacted organizations that the issue is resolved, and SIP devices are performing as expected.\n\nScope of impact: Any user attempting to make or receive calls using SIP devices were impacted by this event.\n\nStart time: Wednesday, October 21, 2026, at 6:00 PM UTC\n\nEnd time: Thursday, October 22, 2026, at 3:30 PM UTC\n\nRoot cause: A configuration issue had impacted components that manage SIP devices, resulting in impact.\n\nNext steps:\n- We're reviewing the affected systems to identify improvements that could prevent similar issues from recurring.\n \nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-10-22T16:00:37.313Z",
+          "postType": "regular",
+          "content": "Title: SIP devices can't make or receive calls\n\nUser impact: Users may be unable to make or receive calls using SIP devices.\n\nMore info: Users may be unable to sign in to their SIP devices or encounter \"Service Unavailable\" errors.\n\nOnce a SIP device attempts to perform its next synchronization, the device will disconnect. Users will be unable to log back into those devices and therefore can't make or receive calls using those SIP devices.\n\nCalling functionality using the Microsoft Teams web and desktop clients, or Teams Phone Devices are not impacted.\n\nCurrent status: We continue to monitor service recovery after the fix completed deployment. We've received confirmation from some organizations that SIP devices are now performing as expected. We're contacting other organizations for further validations. \n\nScope of impact: Any user attempting to make or receive calls using SIP devices are impacted by this event.\n\nRoot cause: A configuration issue has impacted components that manage SIP devices, resulting in impact.\n\nNext update by: Thursday, October 22, 2026, at 8:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-22T11:50:37.823Z",
+          "postType": "regular",
+          "content": "Title: SIP devices can't make or receive calls\n\nUser impact: Users may be unable to make or receive calls using SIP devices.\n\nMore info: Users may be unable to sign in to their SIP devices or encounter \"Service Unavailable\" errors.\n \nOnce a SIP device attempts to perform its next synchronization, the device will disconnect. Users will be unable to log back into those devices and therefore can't make or receive calls using those SIP devices.\n\nCalling functionality using the Microsoft Teams web and desktop clients, or Teams Phone Devices are not impacted.\n \nCurrent status: We've deployed a fix to the affected infrastructure and we've observed a restoration of some of the affected functionality. We're closely monitoring SIP device reconnections and calling stability while conducting additional mitigation actions to push towards a full recovery.\n \nScope of impact: Any user attempting to make or receive calls using SIP devices is impacted by this event.\n \nNext update by: Thursday, October 22, 2026, at 4:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-22T07:50:04.567Z",
+          "postType": "regular",
+          "content": "Title: SIP devices can't make or receive calls\n\nUser impact: Users may be unable to make or receive calls using SIP devices.\n\nMore info: Users may be unable to sign in to their SIP devices or encounter \"Service Unavailable\" errors.\n \nOnce a SIP device attempts to perform its next synchronization, the device will disconnect. Users will be unable to log back into those devices and therefore can't make or receive calls using those SIP devices.\n\nCalling functionality using the Microsoft Teams web and desktop clients, or Teams Phone Devices are not impacted.\n \nCurrent status: Our fix is progressing through validation, alongside additional measures to support a safe and stable recovery. Once validation is complete, we'll deploy the fix to the affected infrastructure to begin restoring the affected functionality.\n \nScope of impact: Any user attempting to make or receive calls using SIP devices is impacted by this event.\n \nNext update by: Thursday, October 22, 2026, at 12:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-22T02:58:16.333Z",
+          "postType": "regular",
+          "content": "Title: SIP devices can't make or receive calls\r\n\r\nUser impact: Users may be unable to make or receive calls using SIP devices.\r\n\r\nMore info: Users may be unable to sign in to their SIP devices or encounter \"Service Unavailable\" errors. \n\nOnce a SIP device attempts to perform its next synchronization, the device will disconnect. Users will be unable to log back into those devices and therefore can't make or receive calls using those SIP devices.\n \nCalling functionality using the Microsoft Teams web and desktop clients, or Teams Phone Devices are not impacted.\r\n\r\nCurrent status: We're continuing to validate our fix and the recovery of SIP devices within our internal environment. We're also validating additional protective measures before restoring the affected functionality. Once we've confirmed these changes are operating as expected, we'll begin our restoration actions and monitor affected SIP devices as they recover.\r\n\r\nScope of impact: Any user attempting to make or receive calls using SIP devices is impacted by this event.\r\n\r\nNext update by: Thursday, October 22, 2026, at 8:00 AM UTC"
+        }
+      ],
+      "serviceName": "Microsoft Teams",
+      "affectedServices": [
+        "Microsoft Teams"
+      ]
+    },
     {
       "id": "MV1519166",
       "title": "Users may be unable to access the group feed in Microsoft Viva Engage",
@@ -3377,52 +3378,6 @@
       "serviceName": "Microsoft Viva",
       "affectedServices": [
         "Microsoft Viva"
-      ]
-    },
-    {
-      "id": "OP1478558",
-      "title": "Users may be unable to convert Microsoft Word desktop app documents to PDFs using Save As to SharePoint locations",
-      "startTime": "2026-09-24T18:23:33.737Z",
-      "endTime": "2026-09-28T19:57:04.08Z",
-      "lastModified": "2026-09-28T19:58:10.047Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users may have been unable to convert Word desktop app documents to PDFs using Save As to SharePoint locations.",
-      "scopeOfImpact": "This event may have impacted any user on version 2609 attempting to save Microsoft Word desktop app documents as PDFs to SharePoint Online.\r\n\r\nStart time: Tuesday, September 8, 2026, at 7:00 AM UTC\r\n\r\nEnd time: Friday, September 25, 2026, at 11:00 PM UTC",
-      "rootCause": "A recent Microsoft Word change relating to the Save As filename validation path to cloud-backed locations prevented the SharePoint save flow from completing and was causing impact.\r\n\r\nNext steps: - We're reviewing the responsible change to better understand what led to the error that resulted in impact and prevent similar future occurrences.\r\n\r\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Word",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-09-28T19:58:06.88Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to convert Microsoft Word desktop app documents to PDFs using Save As to SharePoint locations\r\n\r\nUser impact: Users may have been unable to convert Word desktop app documents to PDFs using Save As to SharePoint locations.\r\n\r\nMore info: This issue was reported to affect Microsoft Word version 2609, and some users reported that version 2608 wasn't affected. No error was presented and the file was instead saved to the “C:\\Users\\username\\AppData\\Local\\Microsoft\\Windows\\INetCache\\Content.MSO” folder with an incorrect file name.\nWhile we focused on remediation, users that had the option to save the file locally to their computer may have used this to work around the problem. Additionally, using the Export to PDF function worked as expected.\r\n\r\nFinal status: We've finished deploying our change to disable the impacting behavior and have confirmed that this has resolved the issue through service health telemetry.\r\n\r\nScope of impact: This event may have impacted any user on version 2609 attempting to save Microsoft Word desktop app documents as PDFs to SharePoint Online.\r\n\r\nStart time: Tuesday, September 8, 2026, at 7:00 AM UTC\r\n\r\nEnd time: Friday, September 25, 2026, at 11:00 PM UTC\r\n\r\nRoot cause: A recent Microsoft Word change relating to the Save As filename validation path to cloud-backed locations prevented the SharePoint save flow from completing and was causing impact.\r\n\r\nNext steps: - We're reviewing the responsible change to better understand what led to the error that resulted in impact and prevent similar future occurrences.\r\n\r\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-09-25T19:28:50.4Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to convert Microsoft Word desktop app documents to PDFs using Save As to SharePoint locations\r\n\r\nUser impact: Users may be unable to convert Microsoft Word desktop app documents to PDFs using Save As to SharePoint locations.\r\n\r\nMore info: This issue is reported to affect Microsoft Word version 2609, and some users report that version 2608 isn't affected. No error is presented and the file is instead saved to the “C:\\Users\\username\\AppData\\Local\\Microsoft\\Windows\\INetCache\\Content.MSO” folder with an incorrect file name.\n \nAdditionally, this only reported to only impact converting Microsoft Word desktop app documents to PDFs using Save As and SharePoint Online as the location.\n \nWhile we're focused on remediation, users that have the option to save the file locally to their computer may use this to work around the problem. Additionally, using the Export to PDF function works as expected.\r\n\r\nCurrent status: We've confirmed that the issue is related to a recent Microsoft Word change affecting Save As filename validation for cloud-backed locations. This validation issue prevents the SharePoint save process from completing successfully during PDF conversion. We're actively deploying a change to disable the impacting behavior and expect this deployment to be completed by our next scheduled update.\r\n\r\nScope of impact: This event may impact any user on version 2609 attempting to save Microsoft Word desktop app documents as PDFs to SharePoint Online. This information may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, September 8, 2026, at 7:00 AM UTC\r\n\r\nRoot cause: A recent Microsoft Word change relating to the Save As filename validation path to cloud-backed locations, which prevents the SharePoint save flow from completing and is causing impact.\r\n\r\nNext update by: Monday, September 28, 2026, at 9:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-09-24T23:35:02.033Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to convert Microsoft Word desktop app documents to PDFs using Save As to SharePoint locations\r\n\r\nUser impact: Users may be unable to convert Microsoft Word desktop app documents to PDFs using Save As to SharePoint locations.\r\n\r\nMore info: This issue is reported to affect Microsoft Word version 2609, and some users report that version 2608 isn't affected. No error is presented and the file is instead saved to the “C:\\Users\\username\\AppData\\Local\\Microsoft\\Windows\\INetCache\\Content.MSO” folder with an incorrect file name.\n \nAdditionally, this only reported to only impact converting Microsoft Word desktop app documents to PDFs using Save As and SharePoint Online as the location.\n \nWhile we're focused on remediation, users that have the option to save the file locally to their computer may use this to work around the problem. Additionally, using the Export to PDF function works as expected.\r\n\r\nCurrent status: We're in the process of disabling the impacting code for impacted users. This is a multiple-step process, and we will provide an updated remediation timeline as soon as the initial steps have been completed.\r\n\r\nScope of impact: This event may impact any user on version 2609 attempting to save Microsoft Word desktop app documents as PDFs to SharePoint Online. This information may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, September 8, 2026, at 7:00 AM UTC\r\n\r\nRoot cause: A recent code change meant to optimize the save-as pathways utilized by the service contained an issue that's resulting in impact.\r\n\r\nNext update by: Friday, September 25, 2026, at 9:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-09-24T21:21:15.38Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to convert Microsoft Word desktop app documents to PDFs using Save As to SharePoint locations\r\n\r\nUser impact: Users may be unable to convert Microsoft Word desktop app documents to PDFs using Save As to SharePoint locations.\r\n\r\nMore info: This issue is reported to affect Microsoft Word version 2609, and some users report that version 2608 isn't affected. No error is presented and the file is instead saved to the “C:\\Users\\username\\AppData\\Local\\Microsoft\\Windows\\INetCache\\Content.MSO” folder with an incorrect file name.\n \nAdditionally, this only reported to only impact converting Microsoft Word desktop app documents to PDFs using Save As and SharePoint Online as the location.\n \nWhile we're focused on remediation, users that have the option to save the file locally to their computer may use this to work around the problem. Additionally, using the Export to PDF function works as expected.\r\n\r\nCurrent status: We've identified the code change leading to this behavior and confirmed that disabling it mitigates the impact in our internal tests. Based on this finding, we've determined that this problem may have begun impacting users on Current Channel (Preview) as early as Tuesday, September 8, 2026, while non-Preview Current Channel users may have seen the issue begin on Tuesday, September 22, 2026. While we collect more information regarding this code change to include in this communication, we've halted its rollout to prevent more users from encountering this problem and are preparing to disable the impacting code for currently affected users.\r\n\r\nScope of impact: This event may impact any user on version 2609 attempting to save Microsoft Word desktop app documents as PDFs to SharePoint Online. This information may be updated as our investigation continues.\r\n\r\nNext update by: Thursday, September 24, 2026, at 11:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-09-24T19:25:50.613Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to convert Microsoft Word desktop app documents to PDFs using Save As to SharePoint locations\r\n\r\nUser impact: Users may be unable to convert Microsoft Word desktop app documents to PDFs using Save As to SharePoint locations.\r\n\r\nMore info: This issue is reported to affect Microsoft Word version 2609, and some users report that version 2608 isn't affected. No error is presented and the file is instead saved to the “C:\\Users\\username\\AppData\\Local\\Microsoft\\Windows\\INetCache\\Content.MSO” folder with an incorrect file name.\n \nAdditionally, this only reported to only impact converting Microsoft Word desktop app documents to PDFs using Save As and SharePoint Online as the location.\n \nWhile we're focused on remediation, users that have the option to save the file locally to their computer may use this to work around the problem. Additionally, using the Export to PDF function works as expected.\r\n\r\nCurrent status: We've internally reproduced the problem, and we're reviewing recent service changes that affect this code path to determine the cause of impact.\r\n\r\nScope of impact: This event may impact any user on version 2609 attempting to save Microsoft Word desktop app documents as PDFs to SharePoint Online. This information may be updated as our investigation continues.\r\n\r\nNext update by: Thursday, September 24, 2026, at 9:30 PM UTC"
-        }
-      ],
-      "serviceName": "Microsoft 365 apps",
-      "affectedServices": [
-        "Microsoft 365 apps"
       ]
     }
   ]
