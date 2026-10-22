@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-22T07:21:50.355Z",
+  "lastUpdated": "2026-10-22T07:52:07.294Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -857,6 +857,41 @@
               "createdAt": "2026-10-06T04:39:57.093Z",
               "postType": "regular",
               "content": "Title: Users see Microsoft Teams on the web displayed in English\r\n\r\nUser impact: Users see Microsoft Teams on the web displayed in English.\r\n\r\nMore info: Affected users don’t have English set as their preferred language.\r\n\r\nCurrent status: We’re reviewing system logs to isolate the origin of this issue.\r\n\r\nScope of impact: Your organization is affected by this event, and some users see Microsoft Teams on the web displayed in English when it isn’t their preferred language. This information may be updated as our investigation continues.\r\n\r\nNext update by: Tuesday, October 6, 2026, at 6:30 AM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Teams"
+          ]
+        },
+        {
+          "id": "TM1519335",
+          "title": "SIP devices can't make or receive calls",
+          "startTime": "2026-10-21T20:15:55Z",
+          "endTime": null,
+          "lastModified": "2026-10-22T06:10:59.5Z",
+          "status": "serviceDegradation",
+          "severity": "incident",
+          "userImpact": "Users may be unable to make or receive calls using SIP devices.",
+          "scopeOfImpact": "Any user attempting to make or receive calls using SIP devices is impacted by this event.",
+          "rootCause": "",
+          "nextUpdateBy": "Thursday, October 22, 2026, at 8:00 AM UTC",
+          "feature": "Calling",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-10-22T02:58:16.333Z",
+              "postType": "regular",
+              "content": "Title: SIP devices can't make or receive calls\r\n\r\nUser impact: Users may be unable to make or receive calls using SIP devices.\r\n\r\nMore info: Users may be unable to sign in to their SIP devices or encounter \"Service Unavailable\" errors. \n\nOnce a SIP device attempts to perform its next synchronization, the device will disconnect. Users will be unable to log back into those devices and therefore can't make or receive calls using those SIP devices.\n \nCalling functionality using the Microsoft Teams web and desktop clients, or Teams Phone Devices are not impacted.\r\n\r\nCurrent status: We're continuing to validate our fix and the recovery of SIP devices within our internal environment. We're also validating additional protective measures before restoring the affected functionality. Once we've confirmed these changes are operating as expected, we'll begin our restoration actions and monitor affected SIP devices as they recover.\r\n\r\nScope of impact: Any user attempting to make or receive calls using SIP devices is impacted by this event.\r\n\r\nNext update by: Thursday, October 22, 2026, at 8:00 AM UTC"
+            },
+            {
+              "createdAt": "2026-10-21T22:52:37.313Z",
+              "postType": "regular",
+              "content": "Title: SIP devices can't make or receive calls\n\nUser impact: Users may be unable to make or receive calls using SIP devices.\n\nMore info: Once a SIP device attempts to perform its next synchronization, the device will disconnect. Users will be unable to log back into those devices and therefore can't make or receive calls using those SIP devices.\n \nCalling functionality using the Microsoft Teams web and desktop clients, or Teams Phone Devices are not impacted.\n \nCurrent status: We’re validating a fix within our internal environments and monitoring how SIP devices recover after the fix is applied. This validation is also helping us determine how long affected devices may take to return to normal functionality once the fix is applied. Once validation is complete, we’ll use the results to guide our remediation and restoration actions.\n \nScope of impact: Any user attempting to make or receive calls using SIP devices is impacted by this event.\n \nNext update: Thursday, October 22, 2026, at 2:00 AM UTC"
+            },
+            {
+              "createdAt": "2026-10-21T20:20:59.677Z",
+              "postType": "regular",
+              "content": "Title: SIP devices can't make or receive calls\n\nUser impact: Users may be unable to make or receive call using SIP devices.\n\nMore info: Once a SIP device attempts to perform its next synchronization, the device will disconnect. Users will be unable to log back into those devices and therefore can't make or receive calls using those SIP devices.\n \nCalling functionality using the Microsoft Teams web and desktop clients, or Teams Phone Devices are not impacted.\n \nCurrent status: We’ve identified the underlying root cause and we are working on developing a fix.\n \nScope of impact: This issue could impact any SIP device.\n \nNext update: Wednesday, October 21, 2026 at 11:00 PM UTC"
             }
           ],
           "affectedServices": [
