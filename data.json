@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-22T19:59:28.911Z",
+  "lastUpdated": "2026-10-22T20:29:46.566Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -630,75 +630,9 @@
     },
     {
       "service": "SharePoint Online",
-      "status": "serviceDegradation",
+      "status": "serviceOperational",
       "id": "SharePoint",
-      "issues": [
-        {
-          "id": "SP1518858",
-          "title": "Users may be unable to perform migrations ",
-          "startTime": "2026-10-21T10:10:45Z",
-          "endTime": null,
-          "lastModified": "2026-10-22T19:50:24.547Z",
-          "status": "serviceDegradation",
-          "severity": "incident",
-          "userImpact": "Users may have been unable to perform migrations using the Migration Manager Platform (MMP) API.",
-          "scopeOfImpact": "Admins attempting to migrate using the Migration Manager Platform (MMP) API are impacted.",
-          "rootCause": "A configuration issue has made components that facilitate migrations that leverage the MMP unavailable, which is preventing users from performing certain migrations.",
-          "nextUpdateBy": "Thursday, October 22, 2026, at 8:00 PM UTC",
-          "feature": "Provisioning",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-10-22T15:58:05.523Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to perform migrations \n\nUser impact: Users may be unable to perform migrations using the Migration Manager Platform (MMP) API.\n\nMore info: Migrations that use the Migration Manager Platform (MMP) API are impacted. These include migrations initiated from Microsoft 365 Admin Center and third-party migrations. Migrations using SPMT (SharePoint Migration Tool) are not impacted.\n\nCurrent status: We’ve completed the fix deployment to approximately 75% of our internal environment, where we are performing additional testing to ensure that no additional impact occurs. Once the internal validations are complete, we will start the deployment to the production infrastructures.\n\nScope of impact: Admins attempting to migrate using the Migration Manager Platform (MMP) API are impacted.\n\nRoot cause: A configuration issue has made components that facilitate migrations that leverage the MMP unavailable, which is preventing users from performing certain migrations.\n\nNext update by: Thursday, October 22, 2026, at 8:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-22T11:58:04.773Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to perform migrations \n\nUser impact: Users may be unable to perform migrations using the Migration Manager Platform (MMP) API.\n\nMore info: Migrations that use the Migration Manager Platform (MMP) API will be impacted. These include migrations initiated from Microsoft 365 Admin Center and third-party migrations. Migrations using SPMT (SharePoint Migration Tool) are not impacted.\n\nCurrent status: The fix has progressed through code validations and is being deployed to our internal environments for further testing. If the internal validations are successful, we’ll begin a broader rollout by our next scheduled update.\n\nScope of impact: Admins attempting to migrate using the Migration Manager Platform (MMP) API will be impacted.\n\nRoot cause: A configuration issue has made components that facilitate migrations that leverage the MMP unavailable, which is preventing users from performing certain migrations.\n\nNext update by: Thursday, October 22, 2026, at 4:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-22T07:50:47.04Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to perform migrations \n\nUser impact: Users may be unable to perform migrations using the Migration Manager Platform (MMP) API.\n\nMore info: Migrations that use the Migration Manager Platform (MMP) API will be impacted. These include migrations initiated from Microsoft 365 Admin Center and third-party migrations. Migrations using SPMT (SharePoint Migration Tool) are not impacted.\n\nCurrent status: We’re continuing to closely monitor service health as the deployment progresses through the validation and early deployment stages. We'll provide a resolution timeline as deployment progresses.\n\nScope of impact: Admins attempting to migrate using the Migration Manager Platform (MMP) API will be impacted.\n\nRoot cause: A configuration issue has made components that facilitate migrations that leverage the MMP unavailable, which is preventing users from performing certain migrations.\n\nNext update by: Thursday, October 22, 2026, at 12:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-22T02:59:45.377Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to perform migrations \r\n\r\nUser impact: Users may be unable to perform migrations using the Migration Manager Platform (MMP) API.\r\n\r\nMore info: Migrations that use the Migration Manager Platform (MMP) API will be impacted. These include migrations initiated from Microsoft 365 Admin Center and third-party migrations. Migrations using SPMT (SharePoint Migration Tool) are not impacted.\r\n\r\nCurrent status: We've resolved the integration issues identified during our previous validation and have started the release process for our updated build. We're progressing the fix through our deployment and validation stages, and we'll continue monitoring its health before deploying it more broadly to the affected infrastructure. We'll provide a resolution timeline as deployment progresses.\r\n\r\nScope of impact: Admins attempting to migrate using the Migration Manager Platform (MMP) API will be impacted.\r\n\r\nRoot cause: A configuration issue has made components that facilitate migrations that leverage the MMP unavailable, which is preventing users from performing certain migrations.\r\n\r\nNext update by: Thursday, October 22, 2026, at 8:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-21T22:49:01.727Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to perform migrations \n\nUser impact: Users may be unable to perform migrations using the Migration Manager Platform (MMP) API.\n\nMore info: Migrations that use the Migration Manager Platform (MMP) API will be impacted. These include migrations initiated from Microsoft 365 Admin Center and third-party migrations. Migrations using SPMT (SharePoint Migration Tool) are not impacted.\n \nCurrent status: Our internal validation checks found integration issues with the fix. We're taking steps to address those issues and ensure a comprehensive solution is included in the updated build version as intended. Once we confirm that, we'll start deploying the fix to the impacted infrastructure. We'll share an incident resolution timeline once it's available.\n \nScope of impact: Admins attempting to migrate using the Migration Manager Platform (MMP) API will be impacted.\n \nRoot cause: A configuration issue has made components that facilitate migrations that leverage the MMP unavailable, which is preventing users from performing certain migrations.\n \nNext update: Thursday, October 22, 2026, at 2:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-21T18:51:57.497Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to perform migrations \n\nUser impact: Users may be unable to perform migrations using the Migration Manager Platform (MMP) API.\n\nMore info: Migrations that use the Migration Manager Platform (MMP) API will be impacted. These include migrations initiated from Microsoft 365 Admin Center and third-party migrations. Migrations using SPMT (SharePoint Migration Tool) will not be impacted.\n\nCurrent status: The required internal deployment steps are taking longer than anticipated as we perform final validations to ensure the efficacy of our fix. Once internal validation is complete, we’ll begin deploying the fix to the impacted infrastructure.\n\nScope of impact: Admins attempting to migrate using the Migration Manager Platform (MMP) API will be impacted.\n\nNext update: Wednesday, October 21, 2026, at 11:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-21T15:45:23.603Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to perform migrations \n\nUser impact: Users may be unable to perform migrations using the Migration Manager Platform (MMP) API.\n\nMore info: Migrations that use the Migration Manager Platform (MMP) API will be impacted. These include migrations initiated from Microsoft 365 Admin Center and third-party migrations. Migrations using SPMT (SharePoint Migration Tool) will not be impacted.\n \nCurrent status: We're continuing to perform extensive testing on the fix to ensure that it addresses the underlying issue without causing additional impact. Once the fix is validated, we'll start the deployment to the impacted infrastructure.\n \nScope of impact: Admins attempting to migrate using the Migration Manager Platform (MMP) API will be impacted.\n \nNext update: Wednesday, October 21, 2026 at 7:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-21T12:48:28.267Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to perform migrations\n\nUser impact: Users may be unable to perform migrations\n\nMore info: Migrations that use Migration Manager Platform (MMP) API will be impacted. These include migrations initiated from Microsoft 365 Admin Center and third-party migrations. Migrations using SPMT (SharePoint Migration Tool) will not be impacted. \n\nCurrent status: We’ve identified a fix to address the underlying issue and are completing validation cycles to confirm that it resolves the impact without introducing additional risk. Once these checks are complete, we’ll begin deploying the fix to the affected environment. We’ll closely monitor service telemetry throughout the deployment to verify recovery and confirm that the fix is having the intended effect. We’ll provide a further update as deployment progresses.\n\nScope of impact: Admins attempting to migrate using Migration Manager Platform (MMP) API will be impacted.\n\nNext update: Wednesday, October 21, 2026 at 4:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-21T10:26:05.543Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to perform migrations\n\nUser impact: Users may be unable to perform migrations\n\nMore info: Migrations that use Migration Manager Platform (MMP) API will be impacted. These include migrations initiated from Microsoft 365 Admin Center and third-party migrations. Migrations using SPMT (Sharepoint Migration Tool) will not be impacted. \n\nCurrent status: After reviewing telemetry data, we’ve identified the source of the issue and have narrowed our investigation to the specific conditions contributing to the impact. We’re now assessing the most effective mitigation options and determining the actions required to restore normal service as quickly and safely as possible.\n\nNext update: Wednesday, October 21, 2026 at 1:00 PM UTC\n"
-            }
-          ],
-          "affectedServices": [
-            "SharePoint Online"
-          ]
-        }
-      ]
+      "issues": []
     },
     {
       "service": "Dynamics 365 Apps",
@@ -1356,6 +1290,52 @@
     }
   ],
   "history": [
+    {
+      "id": "SP1518858",
+      "title": "Users may be unable to perform migrations ",
+      "startTime": "2026-10-21T10:10:45Z",
+      "endTime": "2026-10-22T19:52:28Z",
+      "lastModified": "2026-10-22T19:54:57.763Z",
+      "status": "serviceRestored",
+      "severity": "incident",
+      "userImpact": "Users may have been unable to perform migrations using the Migration Manager Platform (MMP) API.",
+      "scopeOfImpact": "Admins attempting to migrate using the Migration Manager Platform (MMP) API were impacted.\n\nStart time: Wednesday, October 21, 2026, at 9:49 AM UTC\n\nEnd time: Thursday, October 22, 2026, at 5:50 PM UTC",
+      "rootCause": "A configuration issue made components that facilitate migrations leveraging the MMP API unavailable, which prevented users from performing certain migrations.\n\nNext steps:\n- We're reviewing the affected system component configurations to identify improvements that could prevent similar issues from occurring.\n\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Provisioning",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-10-22T19:54:57.763Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to perform migrations \n\nUser impact: Users may have been unable to perform migrations using the Migration Manager Platform (MMP) API.\n\nMore info: Migrations that use the Migration Manager Platform (MMP) API were impacted. This includes migrations initiated from Microsoft 365 Admin Center and third-party migrations. Migrations using SPMT (SharePoint Migration Tool) were not impacted.\n\nFinal status: We’ve finished the deployment of our fix to all impacted environments and have confirmed that impact is fully resolved.\n\nScope of impact: Admins attempting to migrate using the Migration Manager Platform (MMP) API were impacted.\n\nStart time: Wednesday, October 21, 2026, at 9:49 AM UTC\n\nEnd time: Thursday, October 22, 2026, at 5:50 PM UTC\n\nRoot cause: A configuration issue made components that facilitate migrations leveraging the MMP API unavailable, which prevented users from performing certain migrations.\n\nNext steps:\n- We're reviewing the affected system component configurations to identify improvements that could prevent similar issues from occurring.\n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-10-22T15:58:05.523Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to perform migrations \n\nUser impact: Users may be unable to perform migrations using the Migration Manager Platform (MMP) API.\n\nMore info: Migrations that use the Migration Manager Platform (MMP) API are impacted. These include migrations initiated from Microsoft 365 Admin Center and third-party migrations. Migrations using SPMT (SharePoint Migration Tool) are not impacted.\n\nCurrent status: We’ve completed the fix deployment to approximately 75% of our internal environment, where we are performing additional testing to ensure that no additional impact occurs. Once the internal validations are complete, we will start the deployment to the production infrastructures.\n\nScope of impact: Admins attempting to migrate using the Migration Manager Platform (MMP) API are impacted.\n\nRoot cause: A configuration issue has made components that facilitate migrations that leverage the MMP unavailable, which is preventing users from performing certain migrations.\n\nNext update by: Thursday, October 22, 2026, at 8:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-22T11:58:04.773Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to perform migrations \n\nUser impact: Users may be unable to perform migrations using the Migration Manager Platform (MMP) API.\n\nMore info: Migrations that use the Migration Manager Platform (MMP) API will be impacted. These include migrations initiated from Microsoft 365 Admin Center and third-party migrations. Migrations using SPMT (SharePoint Migration Tool) are not impacted.\n\nCurrent status: The fix has progressed through code validations and is being deployed to our internal environments for further testing. If the internal validations are successful, we’ll begin a broader rollout by our next scheduled update.\n\nScope of impact: Admins attempting to migrate using the Migration Manager Platform (MMP) API will be impacted.\n\nRoot cause: A configuration issue has made components that facilitate migrations that leverage the MMP unavailable, which is preventing users from performing certain migrations.\n\nNext update by: Thursday, October 22, 2026, at 4:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-22T07:50:47.04Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to perform migrations \n\nUser impact: Users may be unable to perform migrations using the Migration Manager Platform (MMP) API.\n\nMore info: Migrations that use the Migration Manager Platform (MMP) API will be impacted. These include migrations initiated from Microsoft 365 Admin Center and third-party migrations. Migrations using SPMT (SharePoint Migration Tool) are not impacted.\n\nCurrent status: We’re continuing to closely monitor service health as the deployment progresses through the validation and early deployment stages. We'll provide a resolution timeline as deployment progresses.\n\nScope of impact: Admins attempting to migrate using the Migration Manager Platform (MMP) API will be impacted.\n\nRoot cause: A configuration issue has made components that facilitate migrations that leverage the MMP unavailable, which is preventing users from performing certain migrations.\n\nNext update by: Thursday, October 22, 2026, at 12:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-22T02:59:45.377Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to perform migrations \r\n\r\nUser impact: Users may be unable to perform migrations using the Migration Manager Platform (MMP) API.\r\n\r\nMore info: Migrations that use the Migration Manager Platform (MMP) API will be impacted. These include migrations initiated from Microsoft 365 Admin Center and third-party migrations. Migrations using SPMT (SharePoint Migration Tool) are not impacted.\r\n\r\nCurrent status: We've resolved the integration issues identified during our previous validation and have started the release process for our updated build. We're progressing the fix through our deployment and validation stages, and we'll continue monitoring its health before deploying it more broadly to the affected infrastructure. We'll provide a resolution timeline as deployment progresses.\r\n\r\nScope of impact: Admins attempting to migrate using the Migration Manager Platform (MMP) API will be impacted.\r\n\r\nRoot cause: A configuration issue has made components that facilitate migrations that leverage the MMP unavailable, which is preventing users from performing certain migrations.\r\n\r\nNext update by: Thursday, October 22, 2026, at 8:00 AM UTC"
+        }
+      ],
+      "serviceName": "SharePoint Online",
+      "affectedServices": [
+        "SharePoint Online"
+      ]
+    },
     {
       "id": "TM1519335",
       "title": "SIP devices can't make or receive calls",
@@ -3383,42 +3363,6 @@
       "serviceName": "Microsoft 365 Copilot Chat",
       "affectedServices": [
         "Microsoft 365 Copilot Chat"
-      ]
-    },
-    {
-      "id": "MV1481028",
-      "title": "Users may not be able to access Microsoft Viva Glint",
-      "startTime": "2026-09-28T21:48:07.58Z",
-      "endTime": "2026-09-28T23:21:22.783Z",
-      "lastModified": "2026-09-28T23:22:25.777Z",
-      "status": "serviceRestored",
-      "severity": "incident",
-      "userImpact": "Users may have not been able to access Viva Glint.",
-      "scopeOfImpact": "This event impacted any user attempting to access Viva Glint.\r\n\r\nStart time: Monday, September 28, 2026, at 9:15 PM UTC\r\n\r\nEnd time: Monday, September 28, 2026, at 10:29 PM UTC",
-      "rootCause": "A combination of two simultaneous deployments led to a misconfiguration which resulted in this impact.\r\n\r\nNext steps: - We're reviewing the responsible deployments to better understand what led to the error that resulted in impact and prevent similar future occurrences.\r\n\r\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "General",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-09-28T23:22:22.827Z",
-          "postType": "regular",
-          "content": "Title: Users may not be able to access Microsoft Viva Glint\r\n\r\nUser impact: Users may have not been able to access Viva Glint.\r\n\r\nFinal status: We determined that a combination of two simultaneous deployments led to a misconfiguration which resulted in this impact. We halted one of the responsible deployments and confirmed that this resolved the issue by monitoring service health data.\r\n\r\nScope of impact: This event impacted any user attempting to access Viva Glint.\r\n\r\nStart time: Monday, September 28, 2026, at 9:15 PM UTC\r\n\r\nEnd time: Monday, September 28, 2026, at 10:29 PM UTC\r\n\r\nRoot cause: A combination of two simultaneous deployments led to a misconfiguration which resulted in this impact.\r\n\r\nNext steps: - We're reviewing the responsible deployments to better understand what led to the error that resulted in impact and prevent similar future occurrences.\r\n\r\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-09-28T22:16:12.107Z",
-          "postType": "regular",
-          "content": "Title: Users may not be able to access Microsoft Viva Glint\r\n\r\nUser impact: Users may not be able to access Viva Glint.\r\n\r\nCurrent status: We're reviewing service logs to isolate the source of this impact and an expedient mitigation to restore service.\r\n\r\nScope of impact: This event impacts any user attempting to access Viva Glint. This information may be updated as our investigation continues.\r\n\r\nStart time: Monday, September 28, 2026, at 9:15 PM UTC\r\n\r\nNext update by: Monday, September 28, 2026, at 11:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-09-28T21:49:57.12Z",
-          "postType": "regular",
-          "content": "Title: Users may not be able to access Microsoft Viva Glint\r\n\r\nUser impact: Users may not be able to access Viva Glint.\r\n\r\nCurrent status: We're investigating a potential issue with Viva Glint and checking for impact to your organization. We'll provide an update within 30 minutes."
-        }
-      ],
-      "serviceName": "Microsoft Viva",
-      "affectedServices": [
-        "Microsoft Viva"
       ]
     }
   ]
