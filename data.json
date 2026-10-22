@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-22T15:56:54.907Z",
+  "lastUpdated": "2026-10-22T16:27:17.009Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -628,16 +628,21 @@
           "title": "Users may be unable to perform migrations ",
           "startTime": "2026-10-21T10:10:45Z",
           "endTime": null,
-          "lastModified": "2026-10-22T11:58:04.773Z",
+          "lastModified": "2026-10-22T15:58:05.523Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to perform migrations using the Migration Manager Platform (MMP) API.",
-          "scopeOfImpact": "Admins attempting to migrate using the Migration Manager Platform (MMP) API will be impacted.",
+          "scopeOfImpact": "Admins attempting to migrate using the Migration Manager Platform (MMP) API are impacted.",
           "rootCause": "A configuration issue has made components that facilitate migrations that leverage the MMP unavailable, which is preventing users from performing certain migrations.",
-          "nextUpdateBy": "Thursday, October 22, 2026, at 4:00 PM UTC",
+          "nextUpdateBy": "Thursday, October 22, 2026, at 8:00 PM UTC",
           "feature": "Provisioning",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-22T15:58:05.523Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to perform migrations \n\nUser impact: Users may be unable to perform migrations using the Migration Manager Platform (MMP) API.\n\nMore info: Migrations that use the Migration Manager Platform (MMP) API are impacted. These include migrations initiated from Microsoft 365 Admin Center and third-party migrations. Migrations using SPMT (SharePoint Migration Tool) are not impacted.\n\nCurrent status: We’ve completed the fix deployment to approximately 75% of our internal environment, where we are performing additional testing to ensure that no additional impact occurs. Once the internal validations are complete, we will start the deployment to the production infrastructures.\n\nScope of impact: Admins attempting to migrate using the Migration Manager Platform (MMP) API are impacted.\n\nRoot cause: A configuration issue has made components that facilitate migrations that leverage the MMP unavailable, which is preventing users from performing certain migrations.\n\nNext update by: Thursday, October 22, 2026, at 8:00 PM UTC"
+            },
             {
               "createdAt": "2026-10-22T11:58:04.773Z",
               "postType": "regular",
@@ -770,7 +775,7 @@
     },
     {
       "service": "Microsoft Teams",
-      "status": "serviceDegradation",
+      "status": "extendedRecovery",
       "id": "microsoftteams",
       "issues": [
         {
@@ -893,16 +898,21 @@
           "title": "SIP devices can't make or receive calls",
           "startTime": "2026-10-21T20:15:55Z",
           "endTime": null,
-          "lastModified": "2026-10-22T11:50:37.823Z",
-          "status": "serviceDegradation",
+          "lastModified": "2026-10-22T16:00:37.313Z",
+          "status": "extendedRecovery",
           "severity": "incident",
           "userImpact": "Users may be unable to make or receive calls using SIP devices.",
-          "scopeOfImpact": "Any user attempting to make or receive calls using SIP devices is impacted by this event.",
-          "rootCause": "",
-          "nextUpdateBy": "Thursday, October 22, 2026, at 4:00 PM UTC",
+          "scopeOfImpact": "Any user attempting to make or receive calls using SIP devices are impacted by this event.",
+          "rootCause": "A configuration issue has impacted components that manage SIP devices, resulting in impact.",
+          "nextUpdateBy": "Thursday, October 22, 2026, at 8:00 PM UTC",
           "feature": "Calling",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-22T16:00:37.313Z",
+              "postType": "regular",
+              "content": "Title: SIP devices can't make or receive calls\n\nUser impact: Users may be unable to make or receive calls using SIP devices.\n\nMore info: Users may be unable to sign in to their SIP devices or encounter \"Service Unavailable\" errors.\n\nOnce a SIP device attempts to perform its next synchronization, the device will disconnect. Users will be unable to log back into those devices and therefore can't make or receive calls using those SIP devices.\n\nCalling functionality using the Microsoft Teams web and desktop clients, or Teams Phone Devices are not impacted.\n\nCurrent status: We continue to monitor service recovery after the fix completed deployment. We've received confirmation from some organizations that SIP devices are now performing as expected. We're contacting other organizations for further validations. \n\nScope of impact: Any user attempting to make or receive calls using SIP devices are impacted by this event.\n\nRoot cause: A configuration issue has impacted components that manage SIP devices, resulting in impact.\n\nNext update by: Thursday, October 22, 2026, at 8:00 PM UTC"
+            },
             {
               "createdAt": "2026-10-22T11:50:37.823Z",
               "postType": "regular",
