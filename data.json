@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-22T17:58:08.236Z",
+  "lastUpdated": "2026-10-22T18:28:28.348Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1181,9 +1181,40 @@
     },
     {
       "service": "Microsoft Defender XDR",
-      "status": "serviceOperational",
+      "status": "investigating",
       "id": "Microsoft365Defender",
-      "issues": []
+      "issues": [
+        {
+          "id": "DZ1520933",
+          "title": "Users experience delays of up to one hour and 40 minutes for activity processing in Microsoft Defender for Cloud apps",
+          "startTime": "2026-10-22T18:11:18.84Z",
+          "endTime": null,
+          "lastModified": "2026-10-22T18:22:23.02Z",
+          "status": "investigating",
+          "severity": "advisory",
+          "userImpact": "Users experience delays of up to one hour and 40 minutes for activity processing in Microsoft Defender for Cloud apps.",
+          "scopeOfImpact": "Your organization is affected by this event, and users experience delays of up to one hour and 40 minutes for activity processing in Microsoft Defender for Cloud apps. This section may be updated as our investigation continues.\r\n\r\nStart time: Thursday, October 22, 2026, at 10:10 AM UTC",
+          "rootCause": "A portion of upstream database infrastructure managing Microsoft Defender for Cloud apps requests was operating in a suboptimal state, resulting in impact and a backlog of accumulated requests generating.",
+          "nextUpdateBy": "Friday, October 23, 2026, at 9:00 AM UTC",
+          "feature": "Application Governance",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-10-22T18:22:23.02Z",
+              "postType": "regular",
+              "content": "Title: Users experience delays of up to one hour and 40 minutes for activity processing in Microsoft Defender for Cloud apps\r\n\r\nUser impact: Users experience delays of up to one hour and 40 minutes for activity processing in Microsoft Defender for Cloud apps.\r\n\r\nMore info: Affected scenarios include:\n- Anomaly detection\n- Activity policy alerts not triggering\n- Activities not appearing in the UI or not being available for hunting\n- Delays for custom detections and Microsoft Sentinel\r\n\r\nCurrent status: We've identified that a portion of upstream database infrastructure managing Microsoft Defender for Cloud apps requests was operating in a suboptimal state, resulting in impact and causing a backlog of requests to accumulate. We've implemented a fix to return the upstream infrastructure to expected functionality, and we're processing the accumulated backlog to remediate the impact. We'll aim to provide a timeline for the backlog to be cleared by our next scheduled communications update.\r\n\r\nScope of impact: Your organization is affected by this event, and users experience delays of up to one hour and 40 minutes for activity processing in Microsoft Defender for Cloud apps. This section may be updated as our investigation continues.\r\n\r\nStart time: Thursday, October 22, 2026, at 10:10 AM UTC\r\n\r\nRoot cause: A portion of upstream database infrastructure managing Microsoft Defender for Cloud apps requests was operating in a suboptimal state, resulting in impact and a backlog of accumulated requests generating.\r\n\r\nNext update by: Friday, October 23, 2026, at 9:00 AM UTC"
+            },
+            {
+              "createdAt": "2026-10-22T18:12:20.73Z",
+              "postType": "regular",
+              "content": "Title: Users experience delays of up to one hour and 40 minutes for activity processing in Microsoft Defender for Cloud apps\r\n\r\nUser impact: Users experience delays of up to one hour and 40 minutes for activity processing in Microsoft Defender for Cloud apps.\r\n\r\nMore info: Affected scenarios include:\n- Anomaly detection\n- Activity policy alerts not triggering\n- Activities not appearing in the UI or not being available for hunting\n- Delays for custom detections and Microsoft Sentinel\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Defender for Cloud Apps and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Defender XDR"
+          ]
+        }
+      ]
     },
     {
       "service": "Project for the web",
