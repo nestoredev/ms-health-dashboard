@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-23T20:13:52.363Z",
+  "lastUpdated": "2026-10-23T20:44:11.054Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -353,16 +353,21 @@
           "title": "Admin usage reports for Microsoft 365 apps and Exchange Online may have refresh delays",
           "startTime": "2026-10-23T19:29:31.007Z",
           "endTime": null,
-          "lastModified": "2026-10-23T20:06:48.073Z",
-          "status": "investigating",
+          "lastModified": "2026-10-23T20:20:12.91Z",
+          "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admin usage reports for Microsoft 365 apps and Exchange Online may have refresh delays. ",
-          "scopeOfImpact": "",
-          "rootCause": "",
-          "nextUpdateBy": "",
+          "scopeOfImpact": "Admins who review Microsoft 365 reports in the Microsoft 365 admin center may be impacted and see delayed reporting information. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, October 23, 2026, at 12:00 AM UTC",
+          "rootCause": "An issue with the pipeline for our upstream data source responsible for timely report data in the admin center is causing reporting delays.",
+          "nextUpdateBy": "Monday, October 26, 2026, at 4:00 PM UTC",
           "feature": "Company or User Administration",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-23T20:19:43.13Z",
+              "postType": "regular",
+              "content": "Title: Admin usage reports for Microsoft 365 apps and Exchange Online may have refresh delays\r\n\r\nUser impact: Admin usage reports for Microsoft 365 apps and Exchange Online may have refresh delays. \r\n\r\nMore info: This includes the following usage reports:\n- Microsoft 365 Apps Usage\n- Active Users \n- Exchange Email \n- Mailbox\n- Email Apps \n \nThe last updated date for these reports may be October 18th, 2026, or later depending on the report.\r\n\r\nCurrent status: We've identified through our service-side telemetry that the reporting data as identified in the \"More info\" section of this communication are delayed. We're applying a remediation action through working with our upstream data provider to correct this delay. \r\n\r\nScope of impact: Admins who review Microsoft 365 reports in the Microsoft 365 admin center may be impacted and see delayed reporting information. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, October 23, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: An issue with the pipeline for our upstream data source responsible for timely report data in the admin center is causing reporting delays.\r\n\r\nNext update by: Monday, October 26, 2026, at 4:00 PM UTC"
+            },
             {
               "createdAt": "2026-10-23T19:53:03.42Z",
               "postType": "regular",
@@ -1201,7 +1206,7 @@
           "title": "Users may be unable to import .XLSX files in Microsoft Viva Glint",
           "startTime": "2026-10-22T12:00:00Z",
           "endTime": null,
-          "lastModified": "2026-10-23T19:21:38.917Z",
+          "lastModified": "2026-10-23T20:21:39.48Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to import .XLSX files in Microsoft Viva Glint.",
