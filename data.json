@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-23T23:15:42.705Z",
+  "lastUpdated": "2026-10-23T23:45:58.818Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1323,38 +1323,43 @@
     },
     {
       "service": "Microsoft 365 Copilot Chat",
-      "status": "serviceDegradation",
+      "status": "serviceOperational",
       "id": "CopilotChat",
-      "issues": [
-        {
-          "id": "CW1523046",
-          "title": "Users may be seeing unexpected users when changing accounts in Microsoft 365 Copilot Chat",
-          "startTime": "2026-10-23T21:58:51.01Z",
-          "endTime": null,
-          "lastModified": "2026-10-23T22:15:19.193Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may be seeing unexpected users when changing accounts in Microsoft 365 Copilot Chat",
-          "scopeOfImpact": "Users attempting to change account in Microsoft 365 Copilot Chat may see unexpected users.",
-          "rootCause": "A recently deployed build of Microsoft 365 Copilot Chat contains an issue that's showing unexpected users when changing accounts in Microsoft 365 Copilot Chat.",
-          "nextUpdateBy": "Friday, October 23, 2026, at 12:30 AM UTC",
-          "feature": "General",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-10-23T22:15:19.193Z",
-              "postType": "regular",
-              "content": "Title: Users may be seeing unexpected users when changing accounts in Microsoft 365 Copilot Chat\r\n\r\nUser impact: Users may be seeing unexpected users when changing accounts in Microsoft 365 Copilot Chat\r\n\r\nMore info: Affected user are unable to modify or access these unexpected users in any way.\r\n\r\nCurrent status: We've reviewed recent changes to Microsoft 365 Copilot Chat and identified an update that correlates with the time this issue began. We're considering our options to revert it back to a healthy build to remediate impact.\r\n\r\nScope of impact: Users attempting to change account in Microsoft 365 Copilot Chat may see unexpected users.\r\n\r\nRoot cause: A recently deployed build of Microsoft 365 Copilot Chat contains an issue that's showing unexpected users when changing accounts in Microsoft 365 Copilot Chat.\r\n\r\nNext update by: Friday, October 23, 2026, at 12:30 AM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Microsoft 365 Copilot Chat"
-          ]
-        }
-      ]
+      "issues": []
     }
   ],
   "history": [
+    {
+      "id": "CW1523046",
+      "title": "Users may be seeing unexpected users when changing accounts in Microsoft 365 Copilot Chat",
+      "startTime": "2026-10-05T11:23:00Z",
+      "endTime": "2026-10-23T22:30:00Z",
+      "lastModified": "2026-10-23T23:19:37.74Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have seen unexpected users when changing accounts in Microsoft 365 Copilot Chat.",
+      "scopeOfImpact": "Users attempting to change account in Microsoft 365 Copilot Chat may have seen unexpected users.\r\n\r\nStart time: Monday, October 5, 2026, at 11:23 AM UTC\r\n\r\nEnd time: Friday, October 23, 2026, at 11:18 PM UTC",
+      "rootCause": "A recently deployed build of Microsoft 365 Copilot Chat contained an issue that showed unexpected users when changing accounts in Microsoft 365 Copilot Chat.\r\n\r\nNext steps: \n- We're improving the \"change account\" feature to ensure that its functionality aligns with user expectations.\n \nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "General",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-10-23T23:19:00.46Z",
+          "postType": "regular",
+          "content": "Title: Users may be seeing unexpected users when changing accounts in Microsoft 365 Copilot Chat\r\n\r\nUser impact: Users may have seen unexpected users when changing accounts in Microsoft 365 Copilot Chat.\r\n\r\nMore info: While we work to improve the long-term stability of our code change, users won't be able to use the \"change account\" feature.\n \nAffected users were unable to modify or access these unexpected users in any way.\r\n\r\nFinal status: We've determined that our best option to ensure a comprehensive resolution is to temporarily disable the \"change account feature\" while we prepare a code change to ensure that this feature is only available for the expected scenarios. After we finalize our code improvements, we'll re-enable this feature.\r\n\r\nScope of impact: Users attempting to change account in Microsoft 365 Copilot Chat may have seen unexpected users.\r\n\r\nStart time: Monday, October 5, 2026, at 11:23 AM UTC\r\n\r\nEnd time: Friday, October 23, 2026, at 11:18 PM UTC\r\n\r\nRoot cause: A recently deployed build of Microsoft 365 Copilot Chat contained an issue that showed unexpected users when changing accounts in Microsoft 365 Copilot Chat.\r\n\r\nNext steps: \n- We're improving the \"change account\" feature to ensure that its functionality aligns with user expectations.\n \nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-10-23T22:15:19.193Z",
+          "postType": "regular",
+          "content": "Title: Users may be seeing unexpected users when changing accounts in Microsoft 365 Copilot Chat\r\n\r\nUser impact: Users may be seeing unexpected users when changing accounts in Microsoft 365 Copilot Chat.\r\n\r\nMore info: Affected user are unable to modify or access these unexpected users in any way.\r\n\r\nCurrent status: We've reviewed recent changes to Microsoft 365 Copilot Chat and identified an update that correlates with the time this issue began. We're considering our options to revert it back to a healthy build to remediate impact.\r\n\r\nScope of impact: Users attempting to change account in Microsoft 365 Copilot Chat may see unexpected users.\r\n\r\nRoot cause: A recently deployed build of Microsoft 365 Copilot Chat contains an issue that's showing unexpected users when changing accounts in Microsoft 365 Copilot Chat.\r\n\r\nNext update by: Friday, October 23, 2026, at 12:30 AM UTC"
+        }
+      ],
+      "serviceName": "Microsoft 365 Copilot Chat",
+      "affectedServices": [
+        "Microsoft 365 Copilot Chat"
+      ]
+    },
     {
       "id": "MV1522708",
       "title": "Users may be unable to import .XLSX files in Microsoft Viva Glint",
@@ -3372,42 +3377,6 @@
       "serviceName": "Exchange Online",
       "affectedServices": [
         "Exchange Online"
-      ]
-    },
-    {
-      "id": "SP1483357",
-      "title": "Users may encounter an error when accessing the context menu in the classic experience within SharePoint Online",
-      "startTime": "2026-09-30T12:37:03.02Z",
-      "endTime": "2026-09-30T15:58:18.293Z",
-      "lastModified": "2026-09-30T18:54:44.6Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users may have encountered an error when accessing the context menu in the classic experience within SharePoint Online.",
-      "scopeOfImpact": "Impact was specific to some users attempting to access the context menu in the classic experience within SharePoint Online.\n\nStart time: Wednesday, September 30, 2026, at 3:57 AM UTC\n\nEnd time: Wednesday, September 30, 2026, at 2:37 PM UTC",
-      "rootCause": "A recent update to the rendering mechanism used when accessing the context menu in the classic experience within SharePoint Online contained a code issue, resulting in impact.\n\nNext steps: \n- We're reviewing and improving our service update validation procedure to prevent similar issues from occurring in the future.",
-      "nextUpdateBy": "",
-      "feature": "Access Services",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-09-30T16:00:30.337Z",
-          "postType": "regular",
-          "content": "Title: Users may encounter an error when accessing the context menu in the classic experience within SharePoint Online\n\nUser impact: Users may have encountered an error when accessing the context menu in the classic experience within SharePoint Online.\n\nFinal status: We’ve reverted the update to the last known good version and confirmed with affected users that this has restored context menu access in the classic SharePoint Online experience. Users with existing browser sessions may have to refresh the page to see the fixed behavior. This also confirms that a recent update to the rendering mechanism used when accessing the context menu in the classic experience within SharePoint Online contained a code issue, resulting in impact.\n\nScope of impact: Impact was specific to some users attempting to access the context menu in the classic experience within SharePoint Online.\n\nStart time: Wednesday, September 30, 2026, at 3:57 AM UTC\n\nEnd time: Wednesday, September 30, 2026, at 2:37 PM UTC\n\nRoot cause: A recent update to the rendering mechanism used when accessing the context menu in the classic experience within SharePoint Online contained a code issue, resulting in impact.\n\nNext steps: \n- We're reviewing and improving our service update validation procedure to prevent similar issues from occurring in the future."
-        },
-        {
-          "createdAt": "2026-09-30T14:42:01.973Z",
-          "postType": "regular",
-          "content": "Title: Users may encounter an error when accessing the context menu in the Classic experience within SharePoint Online\r\n\r\nUser impact: Users may encounter an error when accessing the context menu in the Classic experience within SharePoint Online.\r\n\r\nCurrent status: We’ve identified a recent update as the potential cause of impact, which is preventing users in the SharePoint Classic experience from being redirected when accessing the context menu. We’re reverting the update to the last known good version to restore functionality and validate our root cause theory.\r\n\r\nScope of impact: Impact is specific to some users attempting to access the context menu in the Classic experience within SharePoint Online.\r\n\r\nNext update by: Wednesday, September 30, 2026, at 5:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-09-30T12:45:01.23Z",
-          "postType": "regular",
-          "content": "Title: Users may encounter an error when accessing the context menu in the Classic experience within SharePoint Online\r\n\r\nUser impact: Users may encounter an error when accessing the context menu in the Classic experience within SharePoint Online.\r\n\r\nCurrent status: We’re reviewing recent updates that we suspect may be contributing to the impact and are working to formulate a mitigation plan.\r\n\r\nScope of impact: Impact is specific to some users attempting to access the context menu in the Classic experience within SharePoint Online.\r\n\r\nNext update by: Wednesday, September 30, 2026, at 3:00 PM UTC"
-        }
-      ],
-      "serviceName": "SharePoint Online",
-      "affectedServices": [
-        "SharePoint Online"
       ]
     }
   ]
