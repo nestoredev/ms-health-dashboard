@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-23T10:07:49.404Z",
+  "lastUpdated": "2026-10-23T10:38:05.867Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -283,16 +283,21 @@
           "title": "Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center",
           "startTime": "2026-09-08T16:05:00Z",
           "endTime": null,
-          "lastModified": "2026-10-22T16:50:37.137Z",
+          "lastModified": "2026-10-23T10:34:34.63Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center.",
           "scopeOfImpact": "Some admins attempting to see the latest Copilot Health data in the Microsoft 365 admin center may be impacted. This information may be updated as our investigation continues.",
           "rootCause": "An upstream process responsible for Copilot Health data was disabled, resulting in the impact.",
-          "nextUpdateBy": "Friday, October 23, 2026, at 12:00 PM UTC",
+          "nextUpdateBy": "Tuesday, October 27, 2026, at 12:00 PM UTC",
           "feature": "Sign-in",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-23T10:34:34.63Z",
+              "postType": "regular",
+              "content": "Title: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center.\r\n\r\nMore info: Specifically, monthly data in the Update channels, Microsoft 365 updates (Past 6 months view), Connected experiences status, and OneDrive status cards on the Copilot Health page may not reflect data after July 2026. The Today view in the Microsoft 365 updates card isn't affected.\r\n\r\nCurrent status: We've restored the missing upstream data file, but we encountered errors while re-running the data processing pipeline. We're investigating the underlying cause before attempting another run. We expect to resolve the errors and complete the pipeline re-run by our next scheduled update.\r\n\r\nScope of impact: Some admins attempting to see the latest Copilot Health data in the Microsoft 365 admin center may be impacted. This information may be updated as our investigation continues.\r\n\r\nRoot cause: An upstream process responsible for Copilot Health data was disabled, resulting in the impact.\r\n\r\nNext update by: Tuesday, October 27, 2026, at 12:00 PM UTC"
+            },
             {
               "createdAt": "2026-10-22T16:50:37.137Z",
               "postType": "regular",
