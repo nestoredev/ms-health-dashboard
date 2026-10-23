@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-23T19:43:34.746Z",
+  "lastUpdated": "2026-10-23T20:13:52.363Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -342,6 +342,31 @@
               "createdAt": "2026-10-12T12:56:55.66Z",
               "postType": "regular",
               "content": "Title: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center.\r\n\r\nMore info: Specifically, monthly data in the Update channels, Microsoft 365 updates (Past 6 months view), Connected experiences status, and OneDrive status cards on the Copilot Health page may not reflect data after July 2026. The Today view in the Microsoft 365 updates card isn't affected.\r\n\r\nCurrent status: We've confirmed that impact associated with CP1482212 persists as the data was not processed as expected. We're validating that the data is present to be able to run the pipeline successfully and remediate impact completely.\r\n\r\nScope of impact: Some admins attempting to see the latest Copilot Health data in the Microsoft 365 admin center may be impacted.\r\n\r\nStart time: Tuesday, September 8, 2026, at 4:05 PM UTC\r\n\r\nRoot cause: An upstream process responsible for Copilot Health data was disabled, resulting in the impact.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 12:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite"
+          ]
+        },
+        {
+          "id": "MO1522731",
+          "title": "Admin usage reports for Microsoft 365 apps and Exchange Online may have refresh delays",
+          "startTime": "2026-10-23T19:29:31.007Z",
+          "endTime": null,
+          "lastModified": "2026-10-23T20:06:48.073Z",
+          "status": "investigating",
+          "severity": "advisory",
+          "userImpact": "Admin usage reports for Microsoft 365 apps and Exchange Online may have refresh delays. ",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
+          "feature": "Company or User Administration",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-10-23T19:53:03.42Z",
+              "postType": "regular",
+              "content": "Title: Admin usage reports for Microsoft 365 apps and Exchange Online may have refresh delays\r\n\r\nUser impact: Admin usage reports for Microsoft 365 apps and Exchange Online may have refresh delays. \r\n\r\nMore info: This includes the following usage reports:\n- Microsoft 365 Apps Usage\n- Active Users \n- Exchange Email \n- Mailbox\n- Email Apps \n \nThe last updated date for these reports may be October 18th, 2026, or later depending on the report.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft 365 suite and checking for impact to your organization. We'll provide an update within 30 minutes."
             }
           ],
           "affectedServices": [
@@ -742,16 +767,21 @@
           "title": "Users' Microsoft Teams contact cards may not fully display Out of office text",
           "startTime": "2026-10-12T21:18:48.69Z",
           "endTime": null,
-          "lastModified": "2026-10-19T19:41:16.017Z",
+          "lastModified": "2026-10-23T20:03:46.66Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users' Microsoft Teams contact cards may not fully display Out of office text.",
-          "scopeOfImpact": "Any user attempting to view Out of office text on Microsoft Teams contact cards may be impacted. This section may be updated as our investigation continues.",
+          "scopeOfImpact": "Any user attempting to view Out of office text on Microsoft Teams contact cards may be impacted. This section may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, October 7, 2026, at 1:15 AM UTC",
           "rootCause": "A recent service change to the Microsoft Teams contact cards introduced a code regression in which the user interface (UI) of the Out of office text contains an invalid value and is causing impact.",
-          "nextUpdateBy": "Friday, October 23, 2026, at 9:00 PM UTC",
+          "nextUpdateBy": "Tuesday, October 27, 2026, at 9:00 PM UTC",
           "feature": "Presence",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-23T20:03:46.66Z",
+              "postType": "regular",
+              "content": "Title: Users' Microsoft Teams contact cards may not fully display Out of office text\r\n\r\nUser impact: Users' Microsoft Teams contact cards may not fully display Out of office text.\r\n\r\nMore info: Selecting “See more” may not display the full Out of office message. Users may hover over the message to see the full text in a tool tip.\r\n\r\nCurrent status: We're continuing to monitor the deployment of our fix, which has completed deployment to a majority of affected users at this time. We'll aim to provide a timeline for the deployment to complete by our next scheduled communications update.\r\n\r\nScope of impact: Any user attempting to view Out of office text on Microsoft Teams contact cards may be impacted. This section may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, October 7, 2026, at 1:15 AM UTC\r\n\r\nRoot cause: A recent service change to the Microsoft Teams contact cards introduced a code regression in which the user interface (UI) of the Out of office text contains an invalid value and is causing impact.\r\n\r\nNext update by: Tuesday, October 27, 2026, at 9:00 PM UTC"
+            },
             {
               "createdAt": "2026-10-19T19:41:16.017Z",
               "postType": "regular",
