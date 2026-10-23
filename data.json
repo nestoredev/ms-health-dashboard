@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-23T19:13:18.513Z",
+  "lastUpdated": "2026-10-23T19:43:34.746Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1166,6 +1166,31 @@
       "status": "serviceDegradation",
       "id": "Viva",
       "issues": [
+        {
+          "id": "MV1522708",
+          "title": "Users may be unable to import .XLSX files in Microsoft Viva Glint",
+          "startTime": "2026-10-22T12:00:00Z",
+          "endTime": null,
+          "lastModified": "2026-10-23T19:21:38.917Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to import .XLSX files in Microsoft Viva Glint.",
+          "scopeOfImpact": "This issue may impact any user who's attempting to upload a .XLSX file to Viva Glint. This information may be updated as our investigation continues.\r\n\r\nStart time: Thursday, October 22, 2026, at 12:00 PM UTC",
+          "rootCause": "A recent change intended to improve record count accuracy introduced a code conflict that causes .XLSX file types to be misidentified, resulting in these files not recognized and failing to upload in Viva Glint.",
+          "nextUpdateBy": "Friday, October 23, 2026, at 11:30 PM UTC",
+          "feature": "General",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-10-23T19:12:45.927Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to import .XLSX files in Microsoft Viva Glint\r\n\r\nUser impact: Users may be unable to import .XLSX files in Microsoft Viva Glint.\r\n\r\nMore info: Users receive an error message indicating that the file was uploaded as an invalid format.\n\nAs a temporary alternative, users may import the impacted files in .CSV format. \r\n\r\nCurrent status: We've identified that a recent change intended to improve record count accuracy introduced a code conflict that results in files in .XLSX format not being recognized as the intended file type. We're reverting this change. \r\n\r\nScope of impact: This issue may impact any user who's attempting to upload a .XLSX file to Viva Glint. This information may be updated as our investigation continues.\r\n\r\nStart time: Thursday, October 22, 2026, at 12:00 PM UTC\r\n\r\nRoot cause: A recent change intended to improve record count accuracy introduced a code conflict that causes .XLSX file types to be misidentified, resulting in these files not recognized and failing to upload in Viva Glint. \r\n\r\nNext update by: Friday, October 23, 2026, at 11:30 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Viva"
+          ]
+        },
         {
           "id": "MO1457843",
           "title": "Admins can't identify who deleted a Viva Engage community or its Microsoft 365 Group in Microsoft Entra ID audit logs",
