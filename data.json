@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-24T05:49:19.394Z",
+  "lastUpdated": "2026-10-24T06:19:44.872Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -236,6 +236,71 @@
       "id": "OSDPPlatform",
       "issues": [
         {
+          "id": "MO1447619",
+          "title": "Users may have been unable to sign into the OneNote Web Clipper",
+          "startTime": "2026-07-24T08:06:00Z",
+          "endTime": "2026-08-06T10:20:00Z",
+          "lastModified": "2026-08-06T11:38:26.13Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may have been unable to sign into the OneNote Web Clipper. ",
+          "scopeOfImpact": "Your organization was affected by this event, and any users attempting to sign in to OneNote Web Clipper were impacted. \r\n\r\nStart time: Friday, July 24, 2026, at 8:06 AM UTC\r\n\r\nEnd time: Thursday, August 6, 2026, at 10:20 AM UTC",
+          "rootCause": "A recent maintenance update intended to remove unnecessary components from the service inadvertently removed a required authentication component, resulting in impact.\r\n\r\nNext steps: - We're reviewing our service maintenance procedures and validation processes to help prevent this problem from happening again. \r\n\r\nThis is the final update for the event.",
+          "nextUpdateBy": "",
+          "feature": "Company or User Administration",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-08-06T11:37:57.25Z",
+              "postType": "regular",
+              "content": "Title: Users may have been unable to sign into the OneNote Web Clipper\r\n\r\nUser impact: Users may have been unable to sign into the OneNote Web Clipper. \r\n\r\nMore info: Users may have received an error when attempting to sign into the OneNote Web Clipper. \r\n\r\nFinal status: We've completed the deployment of the fix, and service monitoring indicates that the impact has now been resolved. \r\n\r\nScope of impact: Your organization was affected by this event, and any users attempting to sign in to OneNote Web Clipper were impacted. \r\n\r\nStart time: Friday, July 24, 2026, at 8:06 AM UTC\r\n\r\nEnd time: Thursday, August 6, 2026, at 10:20 AM UTC\r\n\r\nRoot cause: A recent maintenance update intended to remove unnecessary components from the service inadvertently removed a required authentication component, resulting in impact.\r\n\r\nNext steps: - We're reviewing our service maintenance procedures and validation processes to help prevent this problem from happening again. \r\n\r\nThis is the final update for the event."
+            },
+            {
+              "createdAt": "2026-08-06T10:20:18.697Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to sign into the OneNote Web Clipper\r\n\r\nUser impact: Users may be unable to sign into the OneNote Web Clipper.\r\n\r\nMore info: Users may receive an error when attempting to sign into the OneNote Web Clipper.\r\n\r\nCurrent status: We've completed the deployment of our fix to the majority of the affected environments and anticipate that most users will no longer be affected by the issue. We expect deployment to complete in the remaining affected infrastructure by our next scheduled update. \r\n\r\nScope of impact: Your organization is affected by this event, and any users attempting to sign into the OneNote Web Clipper are impacted. This information may be updated as our investigation continues.\r\n\r\nRoot cause: A recent maintenance action meant to remove unneeded code from the service has mistakenly removed the authentication html, preventing users from signing into the OneNote Web Clipper.\r\n\r\nNext update by: Thursday, August 6, 2026, at 12:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-08-06T05:11:54.747Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to sign into the OneNote Web Clipper\r\n\r\nUser impact: Users may be unable to sign into the OneNote Web Clipper.\r\n\r\nMore info: Users may receive an error when attempting to sign into the OneNote Web Clipper.\r\n\r\nCurrent status: We've completed validations on the new fix and have initiated its deployment. We're monitoring as it progresses to establish a completion timeline. \r\n\r\nScope of impact: Your organization is affected by this event, and any users attempting to sign into the OneNote Web Clipper are impacted. This information may be updated as our investigation continues.\r\n\r\nRoot cause: A recent maintenance action meant to remove unneeded code from the service has mistakenly removed the authentication html, preventing users from signing into the OneNote Web Clipper.\r\n\r\nNext update by: Thursday, August 6, 2026, at 10:30 AM UTC"
+            },
+            {
+              "createdAt": "2026-08-05T20:38:32.37Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to sign into the OneNote Web Clipper\r\n\r\nUser impact: Users may be unable to sign into the OneNote Web Clipper.\r\n\r\nMore info: Users may receive an error when attempting to sign into the OneNote Web Clipper.\r\n\r\nCurrent status: We've completed the deployment of our fix to our internal testing environment; however, the fix did not resolve the issue as expected. We've prepared another fix which is being deployed to our testing environment. Once complete, we'll perform validations and confirm if we see impact remediation, after which we'll confirm a timeline for deployment to the affected environment.\r\n\r\nScope of impact: Your organization is affected by this event, and any users attempting to sign into the OneNote Web Clipper are impacted. This information may be updated as our investigation continues.\r\n\r\nRoot cause: A recent maintenance action meant to remove unneeded code from the service has mistakenly removed the authentication html, preventing users from signing into the OneNote Web Clipper.\r\n\r\nNext update by: Thursday, August 6, 2026, at 6:30 AM UTC"
+            },
+            {
+              "createdAt": "2026-08-05T13:55:40.253Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to sign into the OneNote Web Clipper\r\n\r\nUser impact: Users may be unable to sign into the OneNote Web Clipper.\r\n\r\nMore info: Users may receive an error when attempting to sign into the OneNote Web Clipper.\r\n\r\nCurrent status: We've confirmed that the deployment is progressing as expected and anticipate sharing a completion timeline by our next scheduled update.\r\n\r\nScope of impact: Your organization is affected by this event, and any users attempting to sign into the OneNote Web Clipper are impacted. This information may be updated as our investigation continues.\r\n\r\nRoot cause: A recent maintenance action meant to remove unneeded code from the service has mistakenly removed the authentication html, preventing users from signing into the OneNote Web Clipper.\r\n\r\nNext update by: Wednesday, August 5, 2026, at 9:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-08-05T03:22:19.03Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to sign into the OneNote Web Clipper\r\n\r\nUser impact: Users may be unable to sign into the OneNote Web Clipper.\r\n\r\nMore info: Users may receive an error when attempting to sign into the OneNote Web Clipper.\r\n\r\nCurrent status: We've identified that the deployment of the fix is taking longer than initially anticipated, but we're monitoring its progress closely to ensure the deployment completes without encountering any complications.\r\n\r\nScope of impact: Your organization is affected by this event, and any users attempting to sign into the OneNote Web Clipper are impacted. This information may be updated as our investigation continues.\r\n\r\nRoot cause: A recent maintenance action meant to remove unneeded code from the service has mistakenly removed the authentication html, preventing users from signing into the OneNote Web Clipper.\r\n\r\nNext update by: Wednesday, August 5, 2026, at 2:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-08-05T00:52:24.067Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to sign into the OneNote Web Clipper\r\n\r\nUser impact: Users may be unable to sign into the OneNote Web Clipper.\r\n\r\nMore info: Users may receive an error when attempting to sign into the OneNote Web Clipper.\r\n\r\nCurrent status: We've completed creating the code fix, and we've initiated deployment to the imapcted environment. We expect the deployment will be complete and the issue resolved by our next scheduled update.\r\n\r\nScope of impact: Your organization is affected by this event, and any users attempting to sign into the OneNote Web Clipper are impacted. This information may be updated as our investigation continues.\r\n\r\nRoot cause: A recent maintenance action meant to remove unneeded code from the service has mistakenly removed the authentication html, preventing users from signing into the OneNote Web Clipper.\r\n\r\nNext update by: Wednesday, August 5, 2026, at 3:30 AM UTC"
+            },
+            {
+              "createdAt": "2026-08-04T22:32:48.367Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to sign into the OneNote Web Clipper\r\n\r\nUser impact: Users may be unable to sign into the OneNote Web Clipper.\r\n\r\nMore info: Users may receive an error when attempting to sign into the OneNote Web Clipper.\r\n\r\nCurrent status: We've identified that a recent maintenance action meant to remove unneeded code from the service has mistakenly removed the authentication HTML, preventing users from signing into the OneNote Web Clipper. We're creating a code fix that will add this authentication HTML back into the service and remediate impact.\r\n\r\nScope of impact: Your organization is affected by this event, and any users attempting to sign into the OneNote Web Clipper is impacted. This information may be updated as our investigation continues.\r\n\r\nRoot cause: A recent maintenance action meant to remove unneeded code from the service has mistakenly removed the authentication html, preventing users from signing into the OneNote Web Clipper.\r\n\r\nNext update by: Wednesday, August 5, 2026, at 1:00 AM UTC"
+            },
+            {
+              "createdAt": "2026-08-04T22:09:05.95Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to sign into the OneNote Web Clipper\r\n\r\nUser impact: Users may be unable to sign into the OneNote Web Clipper.\r\n\r\nMore info: Users may receive an error when attempting to sign into the OneNote Web Clipper.\r\n\r\nCurrent status: We're investigating a potential issue with the OneNote Web Clipper and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite"
+          ]
+        },
+        {
           "id": "MO1457843",
           "title": "Admins can't identify who deleted a Viva Engage community or its Microsoft 365 Group in Microsoft Entra ID audit logs",
           "startTime": "2026-08-19T22:38:36.783Z",
@@ -276,178 +341,6 @@
             "Microsoft 365 suite",
             "Microsoft Teams",
             "Microsoft Viva"
-          ]
-        },
-        {
-          "id": "MO1501829",
-          "title": "Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center",
-          "startTime": "2026-09-08T16:05:00Z",
-          "endTime": null,
-          "lastModified": "2026-10-23T10:34:34.63Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center.",
-          "scopeOfImpact": "Some admins attempting to see the latest Copilot Health data in the Microsoft 365 admin center may be impacted. This information may be updated as our investigation continues.",
-          "rootCause": "An upstream process responsible for Copilot Health data was disabled, resulting in the impact.",
-          "nextUpdateBy": "Tuesday, October 27, 2026, at 12:00 PM UTC",
-          "feature": "Sign-in",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-10-23T10:34:34.63Z",
-              "postType": "regular",
-              "content": "Title: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center.\r\n\r\nMore info: Specifically, monthly data in the Update channels, Microsoft 365 updates (Past 6 months view), Connected experiences status, and OneDrive status cards on the Copilot Health page may not reflect data after July 2026. The Today view in the Microsoft 365 updates card isn't affected.\r\n\r\nCurrent status: We've restored the missing upstream data file, but we encountered errors while re-running the data processing pipeline. We're investigating the underlying cause before attempting another run. We expect to resolve the errors and complete the pipeline re-run by our next scheduled update.\r\n\r\nScope of impact: Some admins attempting to see the latest Copilot Health data in the Microsoft 365 admin center may be impacted. This information may be updated as our investigation continues.\r\n\r\nRoot cause: An upstream process responsible for Copilot Health data was disabled, resulting in the impact.\r\n\r\nNext update by: Tuesday, October 27, 2026, at 12:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-22T16:50:37.137Z",
-              "postType": "regular",
-              "content": "Title: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center.\r\n\r\nMore info: Specifically, monthly data in the Update channels, Microsoft 365 updates (Past 6 months view), Connected experiences status, and OneDrive status cards on the Copilot Health page may not reflect data after July 2026. The Today view in the Microsoft 365 updates card isn't affected.\r\n\r\nCurrent status: Our work to restore the missing upstream data file is complete. We're re-running the affected pipeline to fully resolve this issue, and we'll provide a remediation timeline once it becomes available.\r\n\r\nScope of impact: Some admins attempting to see the latest Copilot Health data in the Microsoft 365 admin center may be impacted. This information may be updated as our investigation continues.\r\n\r\nRoot cause: An upstream process responsible for Copilot Health data was disabled, resulting in the impact.\r\n\r\nNext update by: Friday, October 23, 2026, at 12:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-20T17:23:46.513Z",
-              "postType": "regular",
-              "content": "Title: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center.\r\n\r\nMore info: Specifically, monthly data in the Update channels, Microsoft 365 updates (Past 6 months view), Connected experiences status, and OneDrive status cards on the Copilot Health page may not reflect data after July 2026. The Today view in the Microsoft 365 updates card isn't affected.\r\n\r\nCurrent status: We're continuing our efforts to restore the missing upstream data file required to rerun the affected pipeline and remediate the impact. We'll provide a remediation timeline once available.\r\n\r\nScope of impact: Some admins attempting to see the latest Copilot Health data in the Microsoft 365 admin center may be impacted. This information may be updated as our investigation continues.\r\n\r\nRoot cause: An upstream process responsible for Copilot Health data was disabled, resulting in the impact.\r\n\r\nNext update by: Thursday, October 22, 2026, at 6:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-20T11:25:48.153Z",
-              "postType": "regular",
-              "content": "Title: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center\n\nUser impact: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center.\n\nMore info: Specifically, monthly data in the Update channels, Microsoft 365 updates (Past 6 months view), Connected experiences status, and OneDrive status cards on the Copilot Health page may not reflect data after July 2026. The Today view in the Microsoft 365 updates card isn't affected.\n\nCurrent status: We’ve determined that an additional upstream data file required to restore the affected pipeline is missing. We’re working to restore the missing data file so that we can rerun the pipeline and remediate the impact.\n\nScope of impact: Some admins attempting to see the latest Copilot Health data in the Microsoft 365 admin center may be impacted. This information may be updated as our investigation continues.\n\nRoot cause: An upstream process responsible for Copilot Health data was disabled, resulting in the impact.\n\nNext update by: Tuesday, October 20, 2026, at 6:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-19T09:47:53.967Z",
-              "postType": "regular",
-              "content": "Title: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center.\r\n\r\nMore info: Specifically, monthly data in the Update channels, Microsoft 365 updates (Past 6 months view), Connected experiences status, and OneDrive status cards on the Copilot Health page may not reflect data after July 2026. The Today view in the Microsoft 365 updates card isn't affected.\r\n\r\nCurrent status: We’re continuing preparations to begin the deployment to restore the affected pipeline and will provide a completion timeline as soon as one becomes available.\r\n\r\nScope of impact: Some admins attempting to see the latest Copilot Health data in the Microsoft 365 admin center may be impacted. This information may be updated as our investigation continues.\r\n\r\nRoot cause: An upstream process responsible for Copilot Health data was disabled, resulting in the impact.\r\n\r\nNext update by: Tuesday, October 20, 2026, at 12:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-16T19:46:36.217Z",
-              "postType": "regular",
-              "content": "Title: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center.\r\n\r\nMore info: Specifically, monthly data in the Update channels, Microsoft 365 updates (Past 6 months view), Connected experiences status, and OneDrive status cards on the Copilot Health page may not reflect data after July 2026. The Today view in the Microsoft 365 updates card isn't affected.\r\n\r\nCurrent status: We've validated our fix's efficacy in remediating the impact, and we're preparing to begin the deployment and restore the affected pipeline. We'll aim to provide a timeline for the deployment to begin by our next scheduled communications update.\r\n\r\nScope of impact: Some admins attempting to see the latest Copilot Health data in the Microsoft 365 admin center may be impacted. This information may be updated as our investigation continues.\r\n\r\nRoot cause: An upstream process responsible for Copilot Health data was disabled, resulting in the impact.\r\n\r\nNext update by: Monday, October 19, 2026, at 10:30 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-14T17:20:28.073Z",
-              "postType": "regular",
-              "content": "Title: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center.\r\n\r\nMore info: Specifically, monthly data in the Update channels, Microsoft 365 updates (Past 6 months view), Connected experiences status, and OneDrive status cards on the Copilot Health page may not reflect data after July 2026. The Today view in the Microsoft 365 updates card isn't affected.\r\n\r\nCurrent status: We're continuing our efforts to develop a fix to gather the missing data needed to restore our pipeline and remediate the impact. Once internal validations are complete, we'll provide a timeline for the deployment.\r\n\r\nScope of impact: Some admins attempting to see the latest Copilot Health data in the Microsoft 365 admin center may be impacted. This information may be updated as our investigation continues.\r\n\r\nRoot cause: An upstream process responsible for Copilot Health data was disabled, resulting in the impact.\r\n\r\nNext update by: Friday, October 16, 2026, at 8:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-13T17:57:12.31Z",
-              "postType": "regular",
-              "content": "Title: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center.\r\n\r\nMore info: Specifically, monthly data in the Update channels, Microsoft 365 updates (Past 6 months view), Connected experiences status, and OneDrive status cards on the Copilot Health page may not reflect data after July 2026. The Today view in the Microsoft 365 updates card isn't affected.\r\n\r\nCurrent status: We're developing a fix that will gather the missing data necessary to restore our pipeline and to remediate the impact. We'll provide a timeline for the deployment of our solution once internal validations have been completed.\r\n\r\nScope of impact: Some admins attempting to see the latest Copilot Health data in the Microsoft 365 admin center may be impacted.\r\n\r\nRoot cause: An upstream process responsible for Copilot Health data was disabled, resulting in the impact.\r\n\r\nNext update by: Wednesday, October 14, 2026, at 6:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-13T10:56:42.203Z",
-              "postType": "regular",
-              "content": "Title: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center\n\nUser impact: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center.\n\nMore info: Specifically, monthly data in the Update channels, Microsoft 365 updates (Past 6 months view), Connected experiences status, and OneDrive status cards on the Copilot Health page may not reflect data after July 2026. The Today view in the Microsoft 365 updates card isn't affected.\n\nCurrent status: We’ve confirmed that the pipeline responsible for processing Copilot Health data is running. We're working to gather the missing data so we can rerun the pipeline and resolve the issue.\n\nScope of impact: Some admins attempting to see the latest Copilot Health data in the Microsoft 365 admin center may be impacted.\n\nStart time: Tuesday, September 8, 2026, at 4:05 PM UTC\n\nRoot cause: An upstream process responsible for Copilot Health data was disabled, resulting in the impact.\n\nNext update by: Tuesday, October 13, 2026, at 7:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-12T12:56:55.66Z",
-              "postType": "regular",
-              "content": "Title: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center.\r\n\r\nMore info: Specifically, monthly data in the Update channels, Microsoft 365 updates (Past 6 months view), Connected experiences status, and OneDrive status cards on the Copilot Health page may not reflect data after July 2026. The Today view in the Microsoft 365 updates card isn't affected.\r\n\r\nCurrent status: We've confirmed that impact associated with CP1482212 persists as the data was not processed as expected. We're validating that the data is present to be able to run the pipeline successfully and remediate impact completely.\r\n\r\nScope of impact: Some admins attempting to see the latest Copilot Health data in the Microsoft 365 admin center may be impacted.\r\n\r\nStart time: Tuesday, September 8, 2026, at 4:05 PM UTC\r\n\r\nRoot cause: An upstream process responsible for Copilot Health data was disabled, resulting in the impact.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 12:00 PM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Microsoft 365 suite"
-          ]
-        },
-        {
-          "id": "MO1522731",
-          "title": "Admin usage reports for Microsoft 365 apps and Exchange Online may have refresh delays",
-          "startTime": "2026-10-23T19:29:31.007Z",
-          "endTime": null,
-          "lastModified": "2026-10-23T20:20:12.91Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Admin usage reports for Microsoft 365 apps and Exchange Online may have refresh delays. ",
-          "scopeOfImpact": "Admins who review Microsoft 365 reports in the Microsoft 365 admin center may be impacted and see delayed reporting information. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, October 23, 2026, at 12:00 AM UTC",
-          "rootCause": "An issue with the pipeline for our upstream data source responsible for timely report data in the admin center is causing reporting delays.",
-          "nextUpdateBy": "Monday, October 26, 2026, at 4:00 PM UTC",
-          "feature": "Company or User Administration",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-10-23T20:19:43.13Z",
-              "postType": "regular",
-              "content": "Title: Admin usage reports for Microsoft 365 apps and Exchange Online may have refresh delays\r\n\r\nUser impact: Admin usage reports for Microsoft 365 apps and Exchange Online may have refresh delays. \r\n\r\nMore info: This includes the following usage reports:\n- Microsoft 365 Apps Usage\n- Active Users \n- Exchange Email \n- Mailbox\n- Email Apps \n \nThe last updated date for these reports may be October 18th, 2026, or later depending on the report.\r\n\r\nCurrent status: We've identified through our service-side telemetry that the reporting data as identified in the \"More info\" section of this communication are delayed. We're applying a remediation action through working with our upstream data provider to correct this delay. \r\n\r\nScope of impact: Admins who review Microsoft 365 reports in the Microsoft 365 admin center may be impacted and see delayed reporting information. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, October 23, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: An issue with the pipeline for our upstream data source responsible for timely report data in the admin center is causing reporting delays.\r\n\r\nNext update by: Monday, October 26, 2026, at 4:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-23T19:53:03.42Z",
-              "postType": "regular",
-              "content": "Title: Admin usage reports for Microsoft 365 apps and Exchange Online may have refresh delays\r\n\r\nUser impact: Admin usage reports for Microsoft 365 apps and Exchange Online may have refresh delays. \r\n\r\nMore info: This includes the following usage reports:\n- Microsoft 365 Apps Usage\n- Active Users \n- Exchange Email \n- Mailbox\n- Email Apps \n \nThe last updated date for these reports may be October 18th, 2026, or later depending on the report.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft 365 suite and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Microsoft 365 suite"
-          ]
-        },
-        {
-          "id": "MO1489432",
-          "title": "Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile",
-          "startTime": "2026-10-06T11:45:49.047Z",
-          "endTime": null,
-          "lastModified": "2026-10-22T09:01:09.607Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.",
-          "scopeOfImpact": "Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC",
-          "rootCause": "A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.",
-          "nextUpdateBy": "Monday, October 26, 2026, at 10:00 AM UTC",
-          "feature": "Access",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-10-22T09:01:09.607Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’ve started to deploy the aforementioned additional fix to address the remaining impact and expect this to be complete by our next scheduled update.\r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Monday, October 26, 2026, at 10:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-19T08:46:00.427Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’ve completed deployment of our previous fix and determined that it only remediated impact for a small percentage of affected contacts. We’re validating an additional fix to address the remaining impact and, if successful, will begin deploying it to the affected environment. We anticipate to share a completion timeline by our next scheduled update. \r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Thursday, October 22, 2026, at 10:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-16T09:48:24.057Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’re validating an additional fix in our internal environment to confirm its effectiveness before deploying it to the affected infrastructure. We’ll provide the deployment timeline once it becomes available.\r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Monday, October 19, 2026, at 10:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-14T09:56:16.457Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We've confirmed that the fix should now have reached most affected users, and we're working with a subset of users to confirm its effectiveness and validate recovery. We've identified some cases where the issue persists and are working to implement additional fix. We'll provide an update once a deployment timeline for the additional fix is available.\r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Friday, October 16, 2026, at 10:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-12T09:20:53.707Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’re proceeding to monitor the deployment as it progresses and expect completion by Wednesday, October 14, 2026. \r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Wednesday, October 14, 2026, at 10:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-12T09:20:51.75Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’re proceeding to monitor the deployment as it progresses and expect completion by Wednesday, October 14, 2026. \r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Wednesday, October 14, 2026, at 10:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-07T09:26:42.597Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’ve completed validation of our fix in our internal testing environment and have begun deploying it across the affected environments. We’ve received confirmation from a subset of affected users that the fix successfully resolves the issue, and we’re continuing to monitor the broader deployment as it progresses. We expect the deployment to complete by Wednesday, October 14, 2026. \r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Monday, October 12, 2026, at 10:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-06T18:49:01.207Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’ve begun deploying our fix to the internal environment to validate its effectiveness. Once this process has completed, we will provide a remediation timeline.\r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Wednesday, October 7, 2026, at 10:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-06T13:32:32.113Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’ve developed a fix and are deploying it to our internal environment to validate its effectiveness before deploying it to the affected environment. We expect to provide a deployment timeline and rollout trajectory in our next communication update.\r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted.\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank."
-            },
-            {
-              "createdAt": "2026-10-06T12:24:26.373Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’ve validated that a problem with a contact-processing component has incorrectly separated some Profile Based Contacts (PBCs) from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank. We’re developing a fix to re-merge the affected contacts with their associated profiles and expect to provide deployment timeline by our next scheduled update.\r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted.\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Tuesday, October 6, 2026, at 1:30 PM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Exchange Online",
-            "Microsoft 365 suite",
-            "Microsoft Teams"
           ]
         },
         {
@@ -577,64 +470,141 @@
           ]
         },
         {
-          "id": "MO1447619",
-          "title": "Users may have been unable to sign into the OneNote Web Clipper",
-          "startTime": "2026-07-24T08:06:00Z",
-          "endTime": "2026-08-06T10:20:00Z",
-          "lastModified": "2026-08-06T11:38:26.13Z",
+          "id": "MO1489432",
+          "title": "Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile",
+          "startTime": "2026-10-06T11:45:49.047Z",
+          "endTime": null,
+          "lastModified": "2026-10-22T09:01:09.607Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "userImpact": "Users may have been unable to sign into the OneNote Web Clipper. ",
-          "scopeOfImpact": "Your organization was affected by this event, and any users attempting to sign in to OneNote Web Clipper were impacted. \r\n\r\nStart time: Friday, July 24, 2026, at 8:06 AM UTC\r\n\r\nEnd time: Thursday, August 6, 2026, at 10:20 AM UTC",
-          "rootCause": "A recent maintenance update intended to remove unnecessary components from the service inadvertently removed a required authentication component, resulting in impact.\r\n\r\nNext steps: - We're reviewing our service maintenance procedures and validation processes to help prevent this problem from happening again. \r\n\r\nThis is the final update for the event.",
-          "nextUpdateBy": "",
-          "feature": "Company or User Administration",
+          "userImpact": "Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.",
+          "scopeOfImpact": "Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC",
+          "rootCause": "A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.",
+          "nextUpdateBy": "Monday, October 26, 2026, at 10:00 AM UTC",
+          "feature": "Access",
           "isResolved": false,
           "posts": [
             {
-              "createdAt": "2026-08-06T11:37:57.25Z",
+              "createdAt": "2026-10-22T09:01:09.607Z",
               "postType": "regular",
-              "content": "Title: Users may have been unable to sign into the OneNote Web Clipper\r\n\r\nUser impact: Users may have been unable to sign into the OneNote Web Clipper. \r\n\r\nMore info: Users may have received an error when attempting to sign into the OneNote Web Clipper. \r\n\r\nFinal status: We've completed the deployment of the fix, and service monitoring indicates that the impact has now been resolved. \r\n\r\nScope of impact: Your organization was affected by this event, and any users attempting to sign in to OneNote Web Clipper were impacted. \r\n\r\nStart time: Friday, July 24, 2026, at 8:06 AM UTC\r\n\r\nEnd time: Thursday, August 6, 2026, at 10:20 AM UTC\r\n\r\nRoot cause: A recent maintenance update intended to remove unnecessary components from the service inadvertently removed a required authentication component, resulting in impact.\r\n\r\nNext steps: - We're reviewing our service maintenance procedures and validation processes to help prevent this problem from happening again. \r\n\r\nThis is the final update for the event."
+              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’ve started to deploy the aforementioned additional fix to address the remaining impact and expect this to be complete by our next scheduled update.\r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Monday, October 26, 2026, at 10:00 AM UTC"
             },
             {
-              "createdAt": "2026-08-06T10:20:18.697Z",
+              "createdAt": "2026-10-19T08:46:00.427Z",
               "postType": "regular",
-              "content": "Title: Users may be unable to sign into the OneNote Web Clipper\r\n\r\nUser impact: Users may be unable to sign into the OneNote Web Clipper.\r\n\r\nMore info: Users may receive an error when attempting to sign into the OneNote Web Clipper.\r\n\r\nCurrent status: We've completed the deployment of our fix to the majority of the affected environments and anticipate that most users will no longer be affected by the issue. We expect deployment to complete in the remaining affected infrastructure by our next scheduled update. \r\n\r\nScope of impact: Your organization is affected by this event, and any users attempting to sign into the OneNote Web Clipper are impacted. This information may be updated as our investigation continues.\r\n\r\nRoot cause: A recent maintenance action meant to remove unneeded code from the service has mistakenly removed the authentication html, preventing users from signing into the OneNote Web Clipper.\r\n\r\nNext update by: Thursday, August 6, 2026, at 12:30 PM UTC"
+              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’ve completed deployment of our previous fix and determined that it only remediated impact for a small percentage of affected contacts. We’re validating an additional fix to address the remaining impact and, if successful, will begin deploying it to the affected environment. We anticipate to share a completion timeline by our next scheduled update. \r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Thursday, October 22, 2026, at 10:00 AM UTC"
             },
             {
-              "createdAt": "2026-08-06T05:11:54.747Z",
+              "createdAt": "2026-10-16T09:48:24.057Z",
               "postType": "regular",
-              "content": "Title: Users may be unable to sign into the OneNote Web Clipper\r\n\r\nUser impact: Users may be unable to sign into the OneNote Web Clipper.\r\n\r\nMore info: Users may receive an error when attempting to sign into the OneNote Web Clipper.\r\n\r\nCurrent status: We've completed validations on the new fix and have initiated its deployment. We're monitoring as it progresses to establish a completion timeline. \r\n\r\nScope of impact: Your organization is affected by this event, and any users attempting to sign into the OneNote Web Clipper are impacted. This information may be updated as our investigation continues.\r\n\r\nRoot cause: A recent maintenance action meant to remove unneeded code from the service has mistakenly removed the authentication html, preventing users from signing into the OneNote Web Clipper.\r\n\r\nNext update by: Thursday, August 6, 2026, at 10:30 AM UTC"
+              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’re validating an additional fix in our internal environment to confirm its effectiveness before deploying it to the affected infrastructure. We’ll provide the deployment timeline once it becomes available.\r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Monday, October 19, 2026, at 10:00 AM UTC"
             },
             {
-              "createdAt": "2026-08-05T20:38:32.37Z",
+              "createdAt": "2026-10-14T09:56:16.457Z",
               "postType": "regular",
-              "content": "Title: Users may be unable to sign into the OneNote Web Clipper\r\n\r\nUser impact: Users may be unable to sign into the OneNote Web Clipper.\r\n\r\nMore info: Users may receive an error when attempting to sign into the OneNote Web Clipper.\r\n\r\nCurrent status: We've completed the deployment of our fix to our internal testing environment; however, the fix did not resolve the issue as expected. We've prepared another fix which is being deployed to our testing environment. Once complete, we'll perform validations and confirm if we see impact remediation, after which we'll confirm a timeline for deployment to the affected environment.\r\n\r\nScope of impact: Your organization is affected by this event, and any users attempting to sign into the OneNote Web Clipper are impacted. This information may be updated as our investigation continues.\r\n\r\nRoot cause: A recent maintenance action meant to remove unneeded code from the service has mistakenly removed the authentication html, preventing users from signing into the OneNote Web Clipper.\r\n\r\nNext update by: Thursday, August 6, 2026, at 6:30 AM UTC"
+              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We've confirmed that the fix should now have reached most affected users, and we're working with a subset of users to confirm its effectiveness and validate recovery. We've identified some cases where the issue persists and are working to implement additional fix. We'll provide an update once a deployment timeline for the additional fix is available.\r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Friday, October 16, 2026, at 10:00 AM UTC"
             },
             {
-              "createdAt": "2026-08-05T13:55:40.253Z",
+              "createdAt": "2026-10-12T09:20:53.707Z",
               "postType": "regular",
-              "content": "Title: Users may be unable to sign into the OneNote Web Clipper\r\n\r\nUser impact: Users may be unable to sign into the OneNote Web Clipper.\r\n\r\nMore info: Users may receive an error when attempting to sign into the OneNote Web Clipper.\r\n\r\nCurrent status: We've confirmed that the deployment is progressing as expected and anticipate sharing a completion timeline by our next scheduled update.\r\n\r\nScope of impact: Your organization is affected by this event, and any users attempting to sign into the OneNote Web Clipper are impacted. This information may be updated as our investigation continues.\r\n\r\nRoot cause: A recent maintenance action meant to remove unneeded code from the service has mistakenly removed the authentication html, preventing users from signing into the OneNote Web Clipper.\r\n\r\nNext update by: Wednesday, August 5, 2026, at 9:30 PM UTC"
+              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’re proceeding to monitor the deployment as it progresses and expect completion by Wednesday, October 14, 2026. \r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Wednesday, October 14, 2026, at 10:00 AM UTC"
             },
             {
-              "createdAt": "2026-08-05T03:22:19.03Z",
+              "createdAt": "2026-10-12T09:20:51.75Z",
               "postType": "regular",
-              "content": "Title: Users may be unable to sign into the OneNote Web Clipper\r\n\r\nUser impact: Users may be unable to sign into the OneNote Web Clipper.\r\n\r\nMore info: Users may receive an error when attempting to sign into the OneNote Web Clipper.\r\n\r\nCurrent status: We've identified that the deployment of the fix is taking longer than initially anticipated, but we're monitoring its progress closely to ensure the deployment completes without encountering any complications.\r\n\r\nScope of impact: Your organization is affected by this event, and any users attempting to sign into the OneNote Web Clipper are impacted. This information may be updated as our investigation continues.\r\n\r\nRoot cause: A recent maintenance action meant to remove unneeded code from the service has mistakenly removed the authentication html, preventing users from signing into the OneNote Web Clipper.\r\n\r\nNext update by: Wednesday, August 5, 2026, at 2:00 PM UTC"
+              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’re proceeding to monitor the deployment as it progresses and expect completion by Wednesday, October 14, 2026. \r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Wednesday, October 14, 2026, at 10:00 AM UTC"
             },
             {
-              "createdAt": "2026-08-05T00:52:24.067Z",
+              "createdAt": "2026-10-07T09:26:42.597Z",
               "postType": "regular",
-              "content": "Title: Users may be unable to sign into the OneNote Web Clipper\r\n\r\nUser impact: Users may be unable to sign into the OneNote Web Clipper.\r\n\r\nMore info: Users may receive an error when attempting to sign into the OneNote Web Clipper.\r\n\r\nCurrent status: We've completed creating the code fix, and we've initiated deployment to the imapcted environment. We expect the deployment will be complete and the issue resolved by our next scheduled update.\r\n\r\nScope of impact: Your organization is affected by this event, and any users attempting to sign into the OneNote Web Clipper are impacted. This information may be updated as our investigation continues.\r\n\r\nRoot cause: A recent maintenance action meant to remove unneeded code from the service has mistakenly removed the authentication html, preventing users from signing into the OneNote Web Clipper.\r\n\r\nNext update by: Wednesday, August 5, 2026, at 3:30 AM UTC"
+              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’ve completed validation of our fix in our internal testing environment and have begun deploying it across the affected environments. We’ve received confirmation from a subset of affected users that the fix successfully resolves the issue, and we’re continuing to monitor the broader deployment as it progresses. We expect the deployment to complete by Wednesday, October 14, 2026. \r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Monday, October 12, 2026, at 10:00 AM UTC"
             },
             {
-              "createdAt": "2026-08-04T22:32:48.367Z",
+              "createdAt": "2026-10-06T18:49:01.207Z",
               "postType": "regular",
-              "content": "Title: Users may be unable to sign into the OneNote Web Clipper\r\n\r\nUser impact: Users may be unable to sign into the OneNote Web Clipper.\r\n\r\nMore info: Users may receive an error when attempting to sign into the OneNote Web Clipper.\r\n\r\nCurrent status: We've identified that a recent maintenance action meant to remove unneeded code from the service has mistakenly removed the authentication HTML, preventing users from signing into the OneNote Web Clipper. We're creating a code fix that will add this authentication HTML back into the service and remediate impact.\r\n\r\nScope of impact: Your organization is affected by this event, and any users attempting to sign into the OneNote Web Clipper is impacted. This information may be updated as our investigation continues.\r\n\r\nRoot cause: A recent maintenance action meant to remove unneeded code from the service has mistakenly removed the authentication html, preventing users from signing into the OneNote Web Clipper.\r\n\r\nNext update by: Wednesday, August 5, 2026, at 1:00 AM UTC"
+              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’ve begun deploying our fix to the internal environment to validate its effectiveness. Once this process has completed, we will provide a remediation timeline.\r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Wednesday, October 7, 2026, at 10:00 AM UTC"
             },
             {
-              "createdAt": "2026-08-04T22:09:05.95Z",
+              "createdAt": "2026-10-06T13:32:32.113Z",
               "postType": "regular",
-              "content": "Title: Users may be unable to sign into the OneNote Web Clipper\r\n\r\nUser impact: Users may be unable to sign into the OneNote Web Clipper.\r\n\r\nMore info: Users may receive an error when attempting to sign into the OneNote Web Clipper.\r\n\r\nCurrent status: We're investigating a potential issue with the OneNote Web Clipper and checking for impact to your organization. We'll provide an update within 30 minutes."
+              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’ve developed a fix and are deploying it to our internal environment to validate its effectiveness before deploying it to the affected environment. We expect to provide a deployment timeline and rollout trajectory in our next communication update.\r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted.\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank."
+            },
+            {
+              "createdAt": "2026-10-06T12:24:26.373Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’ve validated that a problem with a contact-processing component has incorrectly separated some Profile Based Contacts (PBCs) from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank. We’re developing a fix to re-merge the affected contacts with their associated profiles and expect to provide deployment timeline by our next scheduled update.\r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted.\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Tuesday, October 6, 2026, at 1:30 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online",
+            "Microsoft 365 suite",
+            "Microsoft Teams"
+          ]
+        },
+        {
+          "id": "MO1501829",
+          "title": "Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center",
+          "startTime": "2026-09-08T16:05:00Z",
+          "endTime": null,
+          "lastModified": "2026-10-23T10:34:34.63Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center.",
+          "scopeOfImpact": "Some admins attempting to see the latest Copilot Health data in the Microsoft 365 admin center may be impacted. This information may be updated as our investigation continues.",
+          "rootCause": "An upstream process responsible for Copilot Health data was disabled, resulting in the impact.",
+          "nextUpdateBy": "Tuesday, October 27, 2026, at 12:00 PM UTC",
+          "feature": "Sign-in",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-10-23T10:34:34.63Z",
+              "postType": "regular",
+              "content": "Title: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center.\r\n\r\nMore info: Specifically, monthly data in the Update channels, Microsoft 365 updates (Past 6 months view), Connected experiences status, and OneDrive status cards on the Copilot Health page may not reflect data after July 2026. The Today view in the Microsoft 365 updates card isn't affected.\r\n\r\nCurrent status: We've restored the missing upstream data file, but we encountered errors while re-running the data processing pipeline. We're investigating the underlying cause before attempting another run. We expect to resolve the errors and complete the pipeline re-run by our next scheduled update.\r\n\r\nScope of impact: Some admins attempting to see the latest Copilot Health data in the Microsoft 365 admin center may be impacted. This information may be updated as our investigation continues.\r\n\r\nRoot cause: An upstream process responsible for Copilot Health data was disabled, resulting in the impact.\r\n\r\nNext update by: Tuesday, October 27, 2026, at 12:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-10-22T16:50:37.137Z",
+              "postType": "regular",
+              "content": "Title: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center.\r\n\r\nMore info: Specifically, monthly data in the Update channels, Microsoft 365 updates (Past 6 months view), Connected experiences status, and OneDrive status cards on the Copilot Health page may not reflect data after July 2026. The Today view in the Microsoft 365 updates card isn't affected.\r\n\r\nCurrent status: Our work to restore the missing upstream data file is complete. We're re-running the affected pipeline to fully resolve this issue, and we'll provide a remediation timeline once it becomes available.\r\n\r\nScope of impact: Some admins attempting to see the latest Copilot Health data in the Microsoft 365 admin center may be impacted. This information may be updated as our investigation continues.\r\n\r\nRoot cause: An upstream process responsible for Copilot Health data was disabled, resulting in the impact.\r\n\r\nNext update by: Friday, October 23, 2026, at 12:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-10-20T17:23:46.513Z",
+              "postType": "regular",
+              "content": "Title: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center.\r\n\r\nMore info: Specifically, monthly data in the Update channels, Microsoft 365 updates (Past 6 months view), Connected experiences status, and OneDrive status cards on the Copilot Health page may not reflect data after July 2026. The Today view in the Microsoft 365 updates card isn't affected.\r\n\r\nCurrent status: We're continuing our efforts to restore the missing upstream data file required to rerun the affected pipeline and remediate the impact. We'll provide a remediation timeline once available.\r\n\r\nScope of impact: Some admins attempting to see the latest Copilot Health data in the Microsoft 365 admin center may be impacted. This information may be updated as our investigation continues.\r\n\r\nRoot cause: An upstream process responsible for Copilot Health data was disabled, resulting in the impact.\r\n\r\nNext update by: Thursday, October 22, 2026, at 6:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-10-20T11:25:48.153Z",
+              "postType": "regular",
+              "content": "Title: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center\n\nUser impact: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center.\n\nMore info: Specifically, monthly data in the Update channels, Microsoft 365 updates (Past 6 months view), Connected experiences status, and OneDrive status cards on the Copilot Health page may not reflect data after July 2026. The Today view in the Microsoft 365 updates card isn't affected.\n\nCurrent status: We’ve determined that an additional upstream data file required to restore the affected pipeline is missing. We’re working to restore the missing data file so that we can rerun the pipeline and remediate the impact.\n\nScope of impact: Some admins attempting to see the latest Copilot Health data in the Microsoft 365 admin center may be impacted. This information may be updated as our investigation continues.\n\nRoot cause: An upstream process responsible for Copilot Health data was disabled, resulting in the impact.\n\nNext update by: Tuesday, October 20, 2026, at 6:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-10-19T09:47:53.967Z",
+              "postType": "regular",
+              "content": "Title: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center.\r\n\r\nMore info: Specifically, monthly data in the Update channels, Microsoft 365 updates (Past 6 months view), Connected experiences status, and OneDrive status cards on the Copilot Health page may not reflect data after July 2026. The Today view in the Microsoft 365 updates card isn't affected.\r\n\r\nCurrent status: We’re continuing preparations to begin the deployment to restore the affected pipeline and will provide a completion timeline as soon as one becomes available.\r\n\r\nScope of impact: Some admins attempting to see the latest Copilot Health data in the Microsoft 365 admin center may be impacted. This information may be updated as our investigation continues.\r\n\r\nRoot cause: An upstream process responsible for Copilot Health data was disabled, resulting in the impact.\r\n\r\nNext update by: Tuesday, October 20, 2026, at 12:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-10-16T19:46:36.217Z",
+              "postType": "regular",
+              "content": "Title: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center.\r\n\r\nMore info: Specifically, monthly data in the Update channels, Microsoft 365 updates (Past 6 months view), Connected experiences status, and OneDrive status cards on the Copilot Health page may not reflect data after July 2026. The Today view in the Microsoft 365 updates card isn't affected.\r\n\r\nCurrent status: We've validated our fix's efficacy in remediating the impact, and we're preparing to begin the deployment and restore the affected pipeline. We'll aim to provide a timeline for the deployment to begin by our next scheduled communications update.\r\n\r\nScope of impact: Some admins attempting to see the latest Copilot Health data in the Microsoft 365 admin center may be impacted. This information may be updated as our investigation continues.\r\n\r\nRoot cause: An upstream process responsible for Copilot Health data was disabled, resulting in the impact.\r\n\r\nNext update by: Monday, October 19, 2026, at 10:30 AM UTC"
+            },
+            {
+              "createdAt": "2026-10-14T17:20:28.073Z",
+              "postType": "regular",
+              "content": "Title: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center.\r\n\r\nMore info: Specifically, monthly data in the Update channels, Microsoft 365 updates (Past 6 months view), Connected experiences status, and OneDrive status cards on the Copilot Health page may not reflect data after July 2026. The Today view in the Microsoft 365 updates card isn't affected.\r\n\r\nCurrent status: We're continuing our efforts to develop a fix to gather the missing data needed to restore our pipeline and remediate the impact. Once internal validations are complete, we'll provide a timeline for the deployment.\r\n\r\nScope of impact: Some admins attempting to see the latest Copilot Health data in the Microsoft 365 admin center may be impacted. This information may be updated as our investigation continues.\r\n\r\nRoot cause: An upstream process responsible for Copilot Health data was disabled, resulting in the impact.\r\n\r\nNext update by: Friday, October 16, 2026, at 8:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-10-13T17:57:12.31Z",
+              "postType": "regular",
+              "content": "Title: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center.\r\n\r\nMore info: Specifically, monthly data in the Update channels, Microsoft 365 updates (Past 6 months view), Connected experiences status, and OneDrive status cards on the Copilot Health page may not reflect data after July 2026. The Today view in the Microsoft 365 updates card isn't affected.\r\n\r\nCurrent status: We're developing a fix that will gather the missing data necessary to restore our pipeline and to remediate the impact. We'll provide a timeline for the deployment of our solution once internal validations have been completed.\r\n\r\nScope of impact: Some admins attempting to see the latest Copilot Health data in the Microsoft 365 admin center may be impacted.\r\n\r\nRoot cause: An upstream process responsible for Copilot Health data was disabled, resulting in the impact.\r\n\r\nNext update by: Wednesday, October 14, 2026, at 6:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-10-13T10:56:42.203Z",
+              "postType": "regular",
+              "content": "Title: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center\n\nUser impact: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center.\n\nMore info: Specifically, monthly data in the Update channels, Microsoft 365 updates (Past 6 months view), Connected experiences status, and OneDrive status cards on the Copilot Health page may not reflect data after July 2026. The Today view in the Microsoft 365 updates card isn't affected.\n\nCurrent status: We’ve confirmed that the pipeline responsible for processing Copilot Health data is running. We're working to gather the missing data so we can rerun the pipeline and resolve the issue.\n\nScope of impact: Some admins attempting to see the latest Copilot Health data in the Microsoft 365 admin center may be impacted.\n\nStart time: Tuesday, September 8, 2026, at 4:05 PM UTC\n\nRoot cause: An upstream process responsible for Copilot Health data was disabled, resulting in the impact.\n\nNext update by: Tuesday, October 13, 2026, at 7:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-10-12T12:56:55.66Z",
+              "postType": "regular",
+              "content": "Title: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center\r\n\r\nUser impact: Admins may see stale data in the Copilot Health page in the Microsoft 365 admin center.\r\n\r\nMore info: Specifically, monthly data in the Update channels, Microsoft 365 updates (Past 6 months view), Connected experiences status, and OneDrive status cards on the Copilot Health page may not reflect data after July 2026. The Today view in the Microsoft 365 updates card isn't affected.\r\n\r\nCurrent status: We've confirmed that impact associated with CP1482212 persists as the data was not processed as expected. We're validating that the data is present to be able to run the pipeline successfully and remediate impact completely.\r\n\r\nScope of impact: Some admins attempting to see the latest Copilot Health data in the Microsoft 365 admin center may be impacted.\r\n\r\nStart time: Tuesday, September 8, 2026, at 4:05 PM UTC\r\n\r\nRoot cause: An upstream process responsible for Copilot Health data was disabled, resulting in the impact.\r\n\r\nNext update by: Tuesday, October 13, 2026, at 12:00 PM UTC"
             }
           ],
           "affectedServices": [
@@ -665,6 +635,36 @@
               "createdAt": "2026-10-14T19:04:05.747Z",
               "postType": "regular",
               "content": "Title: Some users may be missing the \"Meeting options\" button for Microsoft Teams meetings in multiple Microsoft 365 apps\r\n\r\nUser impact: Users may be missing the \"Meeting options\" button for Microsoft Teams meetings in multiple Microsoft 365 apps.\r\n\r\nMore info: This issue is occurring in the following Microsoft 365 apps:\n- Microsoft Teams desktop client\n- Microsoft Teams web client\n- Outlook on the web\n- Outlook desktop client\n \nThe issue only occurs in standard Teams meetings, and live events, webinars, and town halls aren’t affected.\r\n\r\nCurrent status: We've received reports from multiple organizations noting that some users are missing the \"Meeting options\" button for Microsoft Teams meetings in multiple Microsoft 365 apps as listed in the \"More info\" section of this communication. We've isolated that a tenant filter to disable the \"Meetings option\" button for a specific group of users was unintentionally applied broadly. We're rolling back the offending change, and we anticipate impact to be remediated by our next scheduled update.\r\n\r\nScope of impact: This issue impacts some users who may be missing the \"Meeting options” button when creating standard meetings using multiple Microsoft 365 apps. This section may be updated as the investigation progresses.\r\n\r\nStart time: Monday, October 12, 2026, at 8:48 PM UTC\r\n\r\nEstimated time to resolve: We anticipate impact to be resolved by our next scheduled update on Wednesday, October 14, 2026, at 9:00 PM UTC.\r\n\r\nRoot cause: A tenant filter to disable the \"Meeting options\" button for a specific organization was unintentionally applied broadly to multiple organizations.\r\n\r\nNext update by: Wednesday, October 14, 2026, at 9:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite"
+          ]
+        },
+        {
+          "id": "MO1522731",
+          "title": "Admin usage reports for Microsoft 365 apps and Exchange Online may have refresh delays",
+          "startTime": "2026-10-23T19:29:31.007Z",
+          "endTime": null,
+          "lastModified": "2026-10-23T20:20:12.91Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Admin usage reports for Microsoft 365 apps and Exchange Online may have refresh delays. ",
+          "scopeOfImpact": "Admins who review Microsoft 365 reports in the Microsoft 365 admin center may be impacted and see delayed reporting information. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, October 23, 2026, at 12:00 AM UTC",
+          "rootCause": "An issue with the pipeline for our upstream data source responsible for timely report data in the admin center is causing reporting delays.",
+          "nextUpdateBy": "Monday, October 26, 2026, at 4:00 PM UTC",
+          "feature": "Company or User Administration",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-10-23T20:19:43.13Z",
+              "postType": "regular",
+              "content": "Title: Admin usage reports for Microsoft 365 apps and Exchange Online may have refresh delays\r\n\r\nUser impact: Admin usage reports for Microsoft 365 apps and Exchange Online may have refresh delays. \r\n\r\nMore info: This includes the following usage reports:\n- Microsoft 365 Apps Usage\n- Active Users \n- Exchange Email \n- Mailbox\n- Email Apps \n \nThe last updated date for these reports may be October 18th, 2026, or later depending on the report.\r\n\r\nCurrent status: We've identified through our service-side telemetry that the reporting data as identified in the \"More info\" section of this communication are delayed. We're applying a remediation action through working with our upstream data provider to correct this delay. \r\n\r\nScope of impact: Admins who review Microsoft 365 reports in the Microsoft 365 admin center may be impacted and see delayed reporting information. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, October 23, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: An issue with the pipeline for our upstream data source responsible for timely report data in the admin center is causing reporting delays.\r\n\r\nNext update by: Monday, October 26, 2026, at 4:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-10-23T19:53:03.42Z",
+              "postType": "regular",
+              "content": "Title: Admin usage reports for Microsoft 365 apps and Exchange Online may have refresh delays\r\n\r\nUser impact: Admin usage reports for Microsoft 365 apps and Exchange Online may have refresh delays. \r\n\r\nMore info: This includes the following usage reports:\n- Microsoft 365 Apps Usage\n- Active Users \n- Exchange Email \n- Mailbox\n- Email Apps \n \nThe last updated date for these reports may be October 18th, 2026, or later depending on the report.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft 365 suite and checking for impact to your organization. We'll provide an update within 30 minutes."
             }
           ],
           "affectedServices": [
@@ -778,6 +778,56 @@
       "id": "microsoftteams",
       "issues": [
         {
+          "id": "TM1489031",
+          "title": "Users may see Microsoft Teams on the web displayed in English",
+          "startTime": "2026-10-06T04:38:30.307Z",
+          "endTime": null,
+          "lastModified": "2026-10-23T21:02:43.733Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may see Microsoft Teams on the web displayed in English.",
+          "scopeOfImpact": "Any user may see Microsoft Teams on the web displayed in English when it isn’t their preferred language. This information may be updated as our investigation continues.\r\n\r\nEstimated time to resolve: Thursday, November 5, 2026",
+          "rootCause": "A redirection issue is incorrectly applying English language settings when users access Microsoft Teams on the web.",
+          "nextUpdateBy": "Wednesday, October 28, 2026, at 11:00 PM UTC",
+          "feature": "General",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-10-23T21:02:43.733Z",
+              "postType": "regular",
+              "content": "Title: Users may see Microsoft Teams on the web displayed in English\r\n\r\nUser impact: Users may see Microsoft Teams on the web displayed in English.\r\n\r\nMore info: Impact may affect any user that doesn't have English set as their preferred language.\r\n\r\nCurrent status: We've begun deployment and are monitoring its progress while we consider possible options to expedite its completion. We'll provide an updated deployment timeline if one becomes available.\r\n\r\nScope of impact: Any user may see Microsoft Teams on the web displayed in English when it isn’t their preferred language. This information may be updated as our investigation continues.\r\n\r\nEstimated time to resolve: Thursday, November 5, 2026\r\n\r\nRoot cause: A redirection issue is incorrectly applying English language settings when users access Microsoft Teams on the web.\r\n\r\nNext update by: Wednesday, October 28, 2026, at 11:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-10-19T21:55:19.167Z",
+              "postType": "regular",
+              "content": "Title: Users may see Microsoft Teams on the web displayed in English\r\n\r\nUser impact: Users may see Microsoft Teams on the web displayed in English.\r\n\r\nMore info: Impact may affect any user that doesn't have English set as their preferred language.\r\n\r\nCurrent status: We're completing final validations of the efficacy of our fix, after which we'll begin deployment and continually monitor the progress. We currently estimate that it will complete deployment on Thursday, November 5, 2026. \r\n\r\nScope of impact: Any user may see Microsoft Teams on the web displayed in English when it isn’t their preferred language. This information may be updated as our investigation continues.\r\n\r\nEstimated time to resolve: Thursday, November 5, 2026\r\n\r\nRoot cause: A redirection issue is incorrectly applying English language settings when users access Microsoft Teams on the web.\r\n\r\nNext update by: Friday, October 23, 2026, at 10:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-10-16T05:56:33.537Z",
+              "postType": "regular",
+              "content": "Title: Users may see Microsoft Teams on the web displayed in English\r\n\r\nUser impact: Users may see Microsoft Teams on the web displayed in English.\r\n\r\nMore info: Impact may affect any user that doesn't have English set as their preferred language.\r\n\r\nCurrent status: We're continuing to prepare our fix for full deployment and our current projections indicate that the issue may be remediated by early to mid-November, 2026.\r\n\r\nScope of impact: Any user may see Microsoft Teams on the web displayed in English when it isn’t their preferred language. This information may be updated as our investigation continues.\r\n\r\nNext update by: Monday, October 19, 2026, at 10:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-10-07T02:54:58.25Z",
+              "postType": "regular",
+              "content": "Title: Users see Microsoft Teams on the web displayed in English\r\n\r\nUser impact: Users see Microsoft Teams on the web displayed in English.\r\n\r\nMore info: Affected users don’t have English set as their preferred language.\r\n\r\nCurrent status: We’ve developed and are in the initial stages of deploying a fix to correct the recent configuration change which is causing the issue and expect that a remediation timeline will be provided by the time of our next scheduled update.\r\n\r\nScope of impact: Your organization is affected by this event, and some users see Microsoft Teams on the web displayed in English when it isn’t their preferred language. This information may be updated as our investigation continues.\r\n\r\nNext update by: Monday, October 19, 2026, at 10:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-10-06T06:09:44.583Z",
+              "postType": "regular",
+              "content": "Title: Users see Microsoft Teams on the web displayed in English\r\n\r\nUser impact: Users see Microsoft Teams on the web displayed in English.\r\n\r\nMore info: Affected users don’t have English set as their preferred language.\r\n\r\nCurrent status: We’ve determined that a redirection issue is incorrectly applying English language settings when users access Microsoft Teams on the web. We’re reviewing options to correct this behavior and working with affected users to collect additional logs to better understand the impact scenario and fully resolve the issue.\r\n\r\nScope of impact: Your organization is affected by this event, and some users see Microsoft Teams on the web displayed in English when it isn’t their preferred language. This information may be updated as our investigation continues.\r\n\r\nNext update by: Wednesday, October 7, 2026, at 4:00 AM UTC"
+            },
+            {
+              "createdAt": "2026-10-06T04:39:57.093Z",
+              "postType": "regular",
+              "content": "Title: Users see Microsoft Teams on the web displayed in English\r\n\r\nUser impact: Users see Microsoft Teams on the web displayed in English.\r\n\r\nMore info: Affected users don’t have English set as their preferred language.\r\n\r\nCurrent status: We’re reviewing system logs to isolate the origin of this issue.\r\n\r\nScope of impact: Your organization is affected by this event, and some users see Microsoft Teams on the web displayed in English when it isn’t their preferred language. This information may be updated as our investigation continues.\r\n\r\nNext update by: Tuesday, October 6, 2026, at 6:30 AM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Teams"
+          ]
+        },
+        {
           "id": "TM1504581",
           "title": "Users' Microsoft Teams contact cards may not fully display Out of office text",
           "startTime": "2026-10-12T21:18:48.69Z",
@@ -858,56 +908,6 @@
           ]
         },
         {
-          "id": "TM1489031",
-          "title": "Users may see Microsoft Teams on the web displayed in English",
-          "startTime": "2026-10-06T04:38:30.307Z",
-          "endTime": null,
-          "lastModified": "2026-10-23T21:02:43.733Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may see Microsoft Teams on the web displayed in English.",
-          "scopeOfImpact": "Any user may see Microsoft Teams on the web displayed in English when it isn’t their preferred language. This information may be updated as our investigation continues.\r\n\r\nEstimated time to resolve: Thursday, November 5, 2026",
-          "rootCause": "A redirection issue is incorrectly applying English language settings when users access Microsoft Teams on the web.",
-          "nextUpdateBy": "Wednesday, October 28, 2026, at 11:00 PM UTC",
-          "feature": "General",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-10-23T21:02:43.733Z",
-              "postType": "regular",
-              "content": "Title: Users may see Microsoft Teams on the web displayed in English\r\n\r\nUser impact: Users may see Microsoft Teams on the web displayed in English.\r\n\r\nMore info: Impact may affect any user that doesn't have English set as their preferred language.\r\n\r\nCurrent status: We've begun deployment and are monitoring its progress while we consider possible options to expedite its completion. We'll provide an updated deployment timeline if one becomes available.\r\n\r\nScope of impact: Any user may see Microsoft Teams on the web displayed in English when it isn’t their preferred language. This information may be updated as our investigation continues.\r\n\r\nEstimated time to resolve: Thursday, November 5, 2026\r\n\r\nRoot cause: A redirection issue is incorrectly applying English language settings when users access Microsoft Teams on the web.\r\n\r\nNext update by: Wednesday, October 28, 2026, at 11:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-19T21:55:19.167Z",
-              "postType": "regular",
-              "content": "Title: Users may see Microsoft Teams on the web displayed in English\r\n\r\nUser impact: Users may see Microsoft Teams on the web displayed in English.\r\n\r\nMore info: Impact may affect any user that doesn't have English set as their preferred language.\r\n\r\nCurrent status: We're completing final validations of the efficacy of our fix, after which we'll begin deployment and continually monitor the progress. We currently estimate that it will complete deployment on Thursday, November 5, 2026. \r\n\r\nScope of impact: Any user may see Microsoft Teams on the web displayed in English when it isn’t their preferred language. This information may be updated as our investigation continues.\r\n\r\nEstimated time to resolve: Thursday, November 5, 2026\r\n\r\nRoot cause: A redirection issue is incorrectly applying English language settings when users access Microsoft Teams on the web.\r\n\r\nNext update by: Friday, October 23, 2026, at 10:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-16T05:56:33.537Z",
-              "postType": "regular",
-              "content": "Title: Users may see Microsoft Teams on the web displayed in English\r\n\r\nUser impact: Users may see Microsoft Teams on the web displayed in English.\r\n\r\nMore info: Impact may affect any user that doesn't have English set as their preferred language.\r\n\r\nCurrent status: We're continuing to prepare our fix for full deployment and our current projections indicate that the issue may be remediated by early to mid-November, 2026.\r\n\r\nScope of impact: Any user may see Microsoft Teams on the web displayed in English when it isn’t their preferred language. This information may be updated as our investigation continues.\r\n\r\nNext update by: Monday, October 19, 2026, at 10:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-07T02:54:58.25Z",
-              "postType": "regular",
-              "content": "Title: Users see Microsoft Teams on the web displayed in English\r\n\r\nUser impact: Users see Microsoft Teams on the web displayed in English.\r\n\r\nMore info: Affected users don’t have English set as their preferred language.\r\n\r\nCurrent status: We’ve developed and are in the initial stages of deploying a fix to correct the recent configuration change which is causing the issue and expect that a remediation timeline will be provided by the time of our next scheduled update.\r\n\r\nScope of impact: Your organization is affected by this event, and some users see Microsoft Teams on the web displayed in English when it isn’t their preferred language. This information may be updated as our investigation continues.\r\n\r\nNext update by: Monday, October 19, 2026, at 10:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-06T06:09:44.583Z",
-              "postType": "regular",
-              "content": "Title: Users see Microsoft Teams on the web displayed in English\r\n\r\nUser impact: Users see Microsoft Teams on the web displayed in English.\r\n\r\nMore info: Affected users don’t have English set as their preferred language.\r\n\r\nCurrent status: We’ve determined that a redirection issue is incorrectly applying English language settings when users access Microsoft Teams on the web. We’re reviewing options to correct this behavior and working with affected users to collect additional logs to better understand the impact scenario and fully resolve the issue.\r\n\r\nScope of impact: Your organization is affected by this event, and some users see Microsoft Teams on the web displayed in English when it isn’t their preferred language. This information may be updated as our investigation continues.\r\n\r\nNext update by: Wednesday, October 7, 2026, at 4:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-06T04:39:57.093Z",
-              "postType": "regular",
-              "content": "Title: Users see Microsoft Teams on the web displayed in English\r\n\r\nUser impact: Users see Microsoft Teams on the web displayed in English.\r\n\r\nMore info: Affected users don’t have English set as their preferred language.\r\n\r\nCurrent status: We’re reviewing system logs to isolate the origin of this issue.\r\n\r\nScope of impact: Your organization is affected by this event, and some users see Microsoft Teams on the web displayed in English when it isn’t their preferred language. This information may be updated as our investigation continues.\r\n\r\nNext update by: Tuesday, October 6, 2026, at 6:30 AM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Microsoft Teams"
-          ]
-        },
-        {
           "id": "MO1457843",
           "title": "Admins can't identify who deleted a Viva Engage community or its Microsoft 365 Group in Microsoft Entra ID audit logs",
           "startTime": "2026-08-19T22:38:36.783Z",
@@ -948,78 +948,6 @@
             "Microsoft 365 suite",
             "Microsoft Teams",
             "Microsoft Viva"
-          ]
-        },
-        {
-          "id": "MO1489432",
-          "title": "Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile",
-          "startTime": "2026-10-06T11:45:49.047Z",
-          "endTime": null,
-          "lastModified": "2026-10-22T09:01:09.607Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.",
-          "scopeOfImpact": "Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC",
-          "rootCause": "A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.",
-          "nextUpdateBy": "Monday, October 26, 2026, at 10:00 AM UTC",
-          "feature": "Access",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-10-22T09:01:09.607Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’ve started to deploy the aforementioned additional fix to address the remaining impact and expect this to be complete by our next scheduled update.\r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Monday, October 26, 2026, at 10:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-19T08:46:00.427Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’ve completed deployment of our previous fix and determined that it only remediated impact for a small percentage of affected contacts. We’re validating an additional fix to address the remaining impact and, if successful, will begin deploying it to the affected environment. We anticipate to share a completion timeline by our next scheduled update. \r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Thursday, October 22, 2026, at 10:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-16T09:48:24.057Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’re validating an additional fix in our internal environment to confirm its effectiveness before deploying it to the affected infrastructure. We’ll provide the deployment timeline once it becomes available.\r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Monday, October 19, 2026, at 10:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-14T09:56:16.457Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We've confirmed that the fix should now have reached most affected users, and we're working with a subset of users to confirm its effectiveness and validate recovery. We've identified some cases where the issue persists and are working to implement additional fix. We'll provide an update once a deployment timeline for the additional fix is available.\r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Friday, October 16, 2026, at 10:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-12T09:20:53.707Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’re proceeding to monitor the deployment as it progresses and expect completion by Wednesday, October 14, 2026. \r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Wednesday, October 14, 2026, at 10:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-12T09:20:51.75Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’re proceeding to monitor the deployment as it progresses and expect completion by Wednesday, October 14, 2026. \r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Wednesday, October 14, 2026, at 10:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-07T09:26:42.597Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’ve completed validation of our fix in our internal testing environment and have begun deploying it across the affected environments. We’ve received confirmation from a subset of affected users that the fix successfully resolves the issue, and we’re continuing to monitor the broader deployment as it progresses. We expect the deployment to complete by Wednesday, October 14, 2026. \r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Monday, October 12, 2026, at 10:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-06T18:49:01.207Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’ve begun deploying our fix to the internal environment to validate its effectiveness. Once this process has completed, we will provide a remediation timeline.\r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Wednesday, October 7, 2026, at 10:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-06T13:32:32.113Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’ve developed a fix and are deploying it to our internal environment to validate its effectiveness before deploying it to the affected environment. We expect to provide a deployment timeline and rollout trajectory in our next communication update.\r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted.\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank."
-            },
-            {
-              "createdAt": "2026-10-06T12:24:26.373Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’ve validated that a problem with a contact-processing component has incorrectly separated some Profile Based Contacts (PBCs) from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank. We’re developing a fix to re-merge the affected contacts with their associated profiles and expect to provide deployment timeline by our next scheduled update.\r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted.\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Tuesday, October 6, 2026, at 1:30 PM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Exchange Online",
-            "Microsoft 365 suite",
-            "Microsoft Teams"
           ]
         },
         {
@@ -1144,6 +1072,78 @@
             }
           ],
           "affectedServices": [
+            "Microsoft 365 suite",
+            "Microsoft Teams"
+          ]
+        },
+        {
+          "id": "MO1489432",
+          "title": "Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile",
+          "startTime": "2026-10-06T11:45:49.047Z",
+          "endTime": null,
+          "lastModified": "2026-10-22T09:01:09.607Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.",
+          "scopeOfImpact": "Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC",
+          "rootCause": "A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.",
+          "nextUpdateBy": "Monday, October 26, 2026, at 10:00 AM UTC",
+          "feature": "Access",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-10-22T09:01:09.607Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’ve started to deploy the aforementioned additional fix to address the remaining impact and expect this to be complete by our next scheduled update.\r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Monday, October 26, 2026, at 10:00 AM UTC"
+            },
+            {
+              "createdAt": "2026-10-19T08:46:00.427Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’ve completed deployment of our previous fix and determined that it only remediated impact for a small percentage of affected contacts. We’re validating an additional fix to address the remaining impact and, if successful, will begin deploying it to the affected environment. We anticipate to share a completion timeline by our next scheduled update. \r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Thursday, October 22, 2026, at 10:00 AM UTC"
+            },
+            {
+              "createdAt": "2026-10-16T09:48:24.057Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’re validating an additional fix in our internal environment to confirm its effectiveness before deploying it to the affected infrastructure. We’ll provide the deployment timeline once it becomes available.\r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Monday, October 19, 2026, at 10:00 AM UTC"
+            },
+            {
+              "createdAt": "2026-10-14T09:56:16.457Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We've confirmed that the fix should now have reached most affected users, and we're working with a subset of users to confirm its effectiveness and validate recovery. We've identified some cases where the issue persists and are working to implement additional fix. We'll provide an update once a deployment timeline for the additional fix is available.\r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Friday, October 16, 2026, at 10:00 AM UTC"
+            },
+            {
+              "createdAt": "2026-10-12T09:20:53.707Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’re proceeding to monitor the deployment as it progresses and expect completion by Wednesday, October 14, 2026. \r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Wednesday, October 14, 2026, at 10:00 AM UTC"
+            },
+            {
+              "createdAt": "2026-10-12T09:20:51.75Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’re proceeding to monitor the deployment as it progresses and expect completion by Wednesday, October 14, 2026. \r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Wednesday, October 14, 2026, at 10:00 AM UTC"
+            },
+            {
+              "createdAt": "2026-10-07T09:26:42.597Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’ve completed validation of our fix in our internal testing environment and have begun deploying it across the affected environments. We’ve received confirmation from a subset of affected users that the fix successfully resolves the issue, and we’re continuing to monitor the broader deployment as it progresses. We expect the deployment to complete by Wednesday, October 14, 2026. \r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Monday, October 12, 2026, at 10:00 AM UTC"
+            },
+            {
+              "createdAt": "2026-10-06T18:49:01.207Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’ve begun deploying our fix to the internal environment to validate its effectiveness. Once this process has completed, we will provide a remediation timeline.\r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Wednesday, October 7, 2026, at 10:00 AM UTC"
+            },
+            {
+              "createdAt": "2026-10-06T13:32:32.113Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’ve developed a fix and are deploying it to our internal environment to validate its effectiveness before deploying it to the affected environment. We expect to provide a deployment timeline and rollout trajectory in our next communication update.\r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted.\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank."
+            },
+            {
+              "createdAt": "2026-10-06T12:24:26.373Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may observe missing contacts, blank or grey placeholder entries, or Speed Dial entries that can't be re-added. This behavior may occur across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacts in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also be impacted under specific circumstances.\r\n\r\nCurrent status: We’ve validated that a problem with a contact-processing component has incorrectly separated some Profile Based Contacts (PBCs) from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank. We’re developing a fix to re-merge the affected contacts with their associated profiles and expect to provide deployment timeline by our next scheduled update.\r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may be impacted.\r\n\r\nRoot cause: A problem with a contact-processing component has incorrectly separated some PBCs from their associated profiles when specific contact information isn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext update by: Tuesday, October 6, 2026, at 1:30 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online",
             "Microsoft 365 suite",
             "Microsoft Teams"
           ]
