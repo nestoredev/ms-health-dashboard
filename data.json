@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-25T17:12:18.509Z",
+  "lastUpdated": "2026-10-25T17:42:36.250Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -711,60 +711,9 @@
     },
     {
       "service": "Microsoft Intune",
-      "status": "serviceDegradation",
+      "status": "serviceOperational",
       "id": "Intune",
-      "issues": [
-        {
-          "id": "IT1516138",
-          "title": "Admins may not be able to identify non-compliant device settings as expected in Microsoft Intune",
-          "startTime": "2026-08-07T19:53:00Z",
-          "endTime": null,
-          "lastModified": "2026-10-24T00:27:33.283Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Admins may not be able to identify non-compliant device settings as expected in Microsoft Intune.",
-          "scopeOfImpact": "Any admins may be impacted by this event and may be unable to correctly identify non-compliant device settings as expected in Microsoft Intune. This section may be updated as our investigation continues.\r\n\r\nStart time: Friday, August 7, 2026, at 7:53 PM UTC",
-          "rootCause": "A previous change to the generation of unique Policy and Settings metadata identifiers caused some policy documents to be malformed, which caused some non-compliant settings to incorrectly show as compliant.",
-          "nextUpdateBy": "Sunday, October 25, 2026, at 7:00 PM UTC",
-          "feature": "Microsoft Intune",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-10-24T00:27:33.283Z",
-              "postType": "regular",
-              "content": "Title: Admins may not be able to identify non-compliant device settings as expected in Microsoft Intune\r\n\r\nUser impact: Admins may not be able to identify non-compliant device settings as expected in Microsoft Intune.\r\n\r\nMore info: The device compliance calculation is unaffected.\r\n\r\nCurrent status: The deployment of our fix is progressing as expected and we estimate that it'll have completed and resolved this issue by our next scheduled communications update.\r\n\r\nScope of impact: Any admins may be impacted by this event and may be unable to correctly identify non-compliant device settings as expected in Microsoft Intune. This section may be updated as our investigation continues.\r\n\r\nStart time: Friday, August 7, 2026, at 7:53 PM UTC\r\n\r\nRoot cause: A previous change to the generation of unique Policy and Settings metadata identifiers caused some policy documents to be malformed, which caused some non-compliant settings to incorrectly show as compliant.\r\n\r\nNext update by: Sunday, October 25, 2026, at 7:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-22T20:36:39.72Z",
-              "postType": "regular",
-              "content": "Title: Admins may not be able to identify non-compliant device settings as expected in Microsoft Intune\r\n\r\nUser impact: Admins may not be able to identify non-compliant device settings as expected in Microsoft Intune.\r\n\r\nMore info: The device compliance calculation is unaffected.\r\n\r\nCurrent status: We've observed positive trends in telemetry following the deployment of our fix, but this deployment process is methodical to ensure safe and thorough resolution. We'll provide an updated remediation timeline after a period of additional monitoring.\r\n\r\nScope of impact: Any admins may be impacted by this event and may be unable to correctly identify non-compliant device settings as expected in Microsoft Intune. This section may be updated as our investigation continues.\r\n\r\nStart time: Friday, August 7, 2026, at 7:53 PM UTC\r\n\r\nRoot cause: A previous change to the generation of unique Policy and Settings metadata identifiers caused some policy documents to be malformed, which caused some non-compliant settings to incorrectly show as compliant.\r\n\r\nNext update by: Saturday, October 24, 2026, at 2:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-21T23:26:30.063Z",
-              "postType": "regular",
-              "content": "Title: Admins may not be able to identify non-compliant device settings as expected in Microsoft Intune\r\n\r\nUser impact: Admins may not be able to identify non-compliant device settings as expected in Microsoft Intune.\r\n\r\nMore info: The device compliance calculation is unaffected.\r\n\r\nCurrent status: We’ve initiated deployment of the fix and are monitoring its progress to confirm an estimated completion time once available.\r\n\r\nScope of impact: Any admins may be impacted by this event and may be unable to correctly identify non-compliant device settings as expected in Microsoft Intune. This section may be updated as our investigation continues.\r\n\r\nStart time: Friday, August 7, 2026, at 7:53 PM UTC\r\n\r\nRoot cause: A previous change to the generation of unique Policy and Settings metadata identifiers caused some policy documents to be malformed, which caused some non-compliant settings to incorrectly show as compliant.\r\n\r\nNext update by: Thursday, October 22, 2026, at 9:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-21T20:55:12.793Z",
-              "postType": "regular",
-              "content": "Title: Admins may not be able to identify non-compliant device settings as expected in Microsoft Intune\r\n\r\nUser impact: Admins may not be able to identify non-compliant device settings as expected in Microsoft Intune.\r\n\r\nMore info: The device compliance calculation is unaffected.\r\n\r\nCurrent status: We've developed and validated a fix that will deploy shortly and is expected to remediate impact. We'll provide a timeline for the fix deployment if one becomes available.\r\n\r\nScope of impact: Any admins may be impacted by this event and may be unable to correctly identify non-compliant device settings as expected in Microsoft Intune. This section may be updated as our investigation continues.\r\n\r\nStart time: Friday, August 7, 2026, at 7:53 PM UTC\r\n\r\nRoot cause: A previous change to the generation of unique Policy and Settings metadata identifiers caused some policy documents to be malformed, which caused some non-compliant settings to incorrectly show as compliant.\r\n\r\nNext update by: Thursday, October 22, 2026, at 1:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-20T20:30:42.793Z",
-              "postType": "regular",
-              "content": "Title: Admins may not be able to identify non-compliant device settings as expected in Microsoft Intune\r\n\r\nUser impact: Admins may not be able to identify non-compliant device settings as expected in Microsoft Intune.\r\n\r\nMore info: The device compliance calculation is unaffected.\r\n\r\nCurrent status: We're continuing our efforts to develop and validate a fix. We'll provide a release timeline once available. \r\n\r\nScope of impact: Any admins may be impacted by this event and may be unable to correctly identify non-compliant device settings as expected in Microsoft Intune. This section may be updated as our investigation continues.\r\n\r\nStart time: Friday, August 7, 2026, at 7:53 PM UTC\r\n\r\nRoot cause: A previous change to the generation of unique Policy and Settings metadata identifiers caused some policy documents to be malformed, which caused some non-compliant settings to incorrectly show as compliant.\r\n\r\nNext update by: Wednesday, October 21, 2026, at 9:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-20T01:34:04.14Z",
-              "postType": "regular",
-              "content": "Title: Admins may not be able to identify non-compliant device settings as expected in Microsoft Intune\r\n\r\nUser impact: Admins may not be able to identify non-compliant device settings as expected in Microsoft Intune.\r\n\r\nMore info: The device compliance calculation is unaffected.\r\n\r\nCurrent status: We were alerted to an issue in Microsoft Intune from a customer report, which indicated that admins may not be able to identify the settings causing non-compliant devices. We investigated the issue and identified that a previous change to the generation of unique Policy and Settings metadata identifiers caused some policy documents to be malformed, which caused some non-compliant settings to incorrectly show as compliant. We're working on developing a fix to address the issue and once ready, we'll begin deploying to all affected environments.\r\n\r\nScope of impact: Any admins may be impacted by this event and may be unable to correctly identify non-compliant device settings as expected in Microsoft Intune. This section may be updated as our investigation continues.\r\n\r\nStart time: Friday, August 7, 2026, at 7:53 PM UTC\r\n\r\nRoot cause: A previous change to the generation of unique Policy and Settings metadata identifiers caused some policy documents to be malformed, which caused some non-compliant settings to incorrectly show as compliant.\r\n\r\nNext update by: Tuesday, October 20, 2026, at 9:30 PM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Microsoft Intune"
-          ]
-        }
-      ]
+      "issues": []
     },
     {
       "service": "Microsoft OneDrive",
@@ -1334,6 +1283,52 @@
     }
   ],
   "history": [
+    {
+      "id": "IT1516138",
+      "title": "Admins may not be able to identify non-compliant device settings as expected in Microsoft Intune",
+      "startTime": "2026-08-07T19:53:00Z",
+      "endTime": "2026-10-25T17:13:15.85Z",
+      "lastModified": "2026-10-25T17:25:29.137Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Admins may not have been able to identify non-compliant device settings as expected in Microsoft Intune.",
+      "scopeOfImpact": "Any admin may have been impacted by this event and unable to correctly identify non-compliant device settings as expected in Microsoft Intune.\r\n\r\nStart time: Friday, August 7, 2026, at 7:53 PM UTC\r\n\r\nEnd time: Sunday, October 25, 2026, at 9:00 AM UTC",
+      "rootCause": "A previous change to the generation of unique Policy and Settings metadata identifiers caused some policy documents to be malformed, which caused some non-compliant settings to incorrectly show as compliant.\r\n\r\nNext steps: \n- We're further analyzing our changes to the generation of unique Policy and Settings metadata identifiers to help prevent similar issues through improvement in our change development, testing, and validation procedures in the future.\n\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Microsoft Intune",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-10-25T17:25:25.82Z",
+          "postType": "regular",
+          "content": "Title: Admins may not be able to identify non-compliant device settings as expected in Microsoft Intune\r\n\r\nUser impact: Admins may not have been able to identify non-compliant device settings as expected in Microsoft Intune.\r\n\r\nMore info: The device compliance calculation was unaffected.\r\n\r\nFinal status: Following the deployment of our fix, our internal service telemetry has verified that the policy documents have been corrected, and that the impact has been remediated. \r\n\r\nScope of impact: Any admin may have been impacted by this event and unable to correctly identify non-compliant device settings as expected in Microsoft Intune.\r\n\r\nStart time: Friday, August 7, 2026, at 7:53 PM UTC\r\n\r\nEnd time: Sunday, October 25, 2026, at 9:00 AM UTC\r\n\r\nRoot cause: A previous change to the generation of unique Policy and Settings metadata identifiers caused some policy documents to be malformed, which caused some non-compliant settings to incorrectly show as compliant.\r\n\r\nNext steps: \n- We're further analyzing our changes to the generation of unique Policy and Settings metadata identifiers to help prevent similar issues through improvement in our change development, testing, and validation procedures in the future.\n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-10-24T00:27:33.283Z",
+          "postType": "regular",
+          "content": "Title: Admins may not be able to identify non-compliant device settings as expected in Microsoft Intune\r\n\r\nUser impact: Admins may not be able to identify non-compliant device settings as expected in Microsoft Intune.\r\n\r\nMore info: The device compliance calculation is unaffected.\r\n\r\nCurrent status: The deployment of our fix is progressing as expected and we estimate that it'll have completed and resolved this issue by our next scheduled communications update.\r\n\r\nScope of impact: Any admins may be impacted by this event and may be unable to correctly identify non-compliant device settings as expected in Microsoft Intune. This section may be updated as our investigation continues.\r\n\r\nStart time: Friday, August 7, 2026, at 7:53 PM UTC\r\n\r\nRoot cause: A previous change to the generation of unique Policy and Settings metadata identifiers caused some policy documents to be malformed, which caused some non-compliant settings to incorrectly show as compliant.\r\n\r\nNext update by: Sunday, October 25, 2026, at 7:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-22T20:36:39.72Z",
+          "postType": "regular",
+          "content": "Title: Admins may not be able to identify non-compliant device settings as expected in Microsoft Intune\r\n\r\nUser impact: Admins may not be able to identify non-compliant device settings as expected in Microsoft Intune.\r\n\r\nMore info: The device compliance calculation is unaffected.\r\n\r\nCurrent status: We've observed positive trends in telemetry following the deployment of our fix, but this deployment process is methodical to ensure safe and thorough resolution. We'll provide an updated remediation timeline after a period of additional monitoring.\r\n\r\nScope of impact: Any admins may be impacted by this event and may be unable to correctly identify non-compliant device settings as expected in Microsoft Intune. This section may be updated as our investigation continues.\r\n\r\nStart time: Friday, August 7, 2026, at 7:53 PM UTC\r\n\r\nRoot cause: A previous change to the generation of unique Policy and Settings metadata identifiers caused some policy documents to be malformed, which caused some non-compliant settings to incorrectly show as compliant.\r\n\r\nNext update by: Saturday, October 24, 2026, at 2:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-10-21T23:26:30.063Z",
+          "postType": "regular",
+          "content": "Title: Admins may not be able to identify non-compliant device settings as expected in Microsoft Intune\r\n\r\nUser impact: Admins may not be able to identify non-compliant device settings as expected in Microsoft Intune.\r\n\r\nMore info: The device compliance calculation is unaffected.\r\n\r\nCurrent status: We’ve initiated deployment of the fix and are monitoring its progress to confirm an estimated completion time once available.\r\n\r\nScope of impact: Any admins may be impacted by this event and may be unable to correctly identify non-compliant device settings as expected in Microsoft Intune. This section may be updated as our investigation continues.\r\n\r\nStart time: Friday, August 7, 2026, at 7:53 PM UTC\r\n\r\nRoot cause: A previous change to the generation of unique Policy and Settings metadata identifiers caused some policy documents to be malformed, which caused some non-compliant settings to incorrectly show as compliant.\r\n\r\nNext update by: Thursday, October 22, 2026, at 9:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-21T20:55:12.793Z",
+          "postType": "regular",
+          "content": "Title: Admins may not be able to identify non-compliant device settings as expected in Microsoft Intune\r\n\r\nUser impact: Admins may not be able to identify non-compliant device settings as expected in Microsoft Intune.\r\n\r\nMore info: The device compliance calculation is unaffected.\r\n\r\nCurrent status: We've developed and validated a fix that will deploy shortly and is expected to remediate impact. We'll provide a timeline for the fix deployment if one becomes available.\r\n\r\nScope of impact: Any admins may be impacted by this event and may be unable to correctly identify non-compliant device settings as expected in Microsoft Intune. This section may be updated as our investigation continues.\r\n\r\nStart time: Friday, August 7, 2026, at 7:53 PM UTC\r\n\r\nRoot cause: A previous change to the generation of unique Policy and Settings metadata identifiers caused some policy documents to be malformed, which caused some non-compliant settings to incorrectly show as compliant.\r\n\r\nNext update by: Thursday, October 22, 2026, at 1:00 AM UTC"
+        }
+      ],
+      "serviceName": "Microsoft Intune",
+      "affectedServices": [
+        "Microsoft Intune"
+      ]
+    },
     {
       "id": "CW1523046",
       "title": "Users may be seeing unexpected users when changing accounts in Microsoft 365 Copilot Chat",
@@ -3331,52 +3326,6 @@
           "createdAt": "2026-10-01T00:07:23.883Z",
           "postType": "regular",
           "content": "Title: Some users' email with DocuSign URLs may not be delivered and may be quarantined due to URL reputation\r\n\r\nUser impact: Users' email with DocuSign URLs may not be delivered and may be quarantined due to URL reputation.\r\n\r\nCurrent status: We've determined that the Microsoft URL evaluation process is incorrectly identifying the affected messages as potentially malicious due to the URL inclusion, resulting in impact. We've added the URLs to our allow list to expedite relief to affected users for new email and we're reprocessing the affected messages. This process may take up to 48 hours but the propagation time is typically less than this. We're reaching out to a subset of users to ensure they are seeing resolution.\r\n\r\nScope of impact: This issue affects some users attempting to send email with DocuSign URLs, who may see message not being delivered and quarantined due to URL reputation. This section may be updated as the investigation progresses.\r\n\r\nRoot cause: The Microsoft URL evaluation process is incorrectly identifying the affected messages as potentially malicious due to the URL inclusion, resulting in impact.\r\n\r\nNext update by: Thursday, October 1, 2026, at 9:00 PM UTC"
-        }
-      ],
-      "serviceName": "Exchange Online",
-      "affectedServices": [
-        "Exchange Online"
-      ]
-    },
-    {
-      "id": "EX1478033",
-      "title": "Some users may be unable to search mailbox or Address Book content in Exchange Online across connection methods",
-      "startTime": "2026-09-19T03:00:00Z",
-      "endTime": "2026-09-30T16:00:00Z",
-      "lastModified": "2026-10-01T16:40:28.657Z",
-      "status": "serviceRestored",
-      "severity": "incident",
-      "userImpact": "Users may have been unable to search mailbox or Address Book content in Exchange Online across connection methods.",
-      "scopeOfImpact": "Some users attempting to search mailbox or Address Book content in Exchange Online across connection methods may have been affected. \r\n\r\nStart time: Saturday, September 19, 2026, at 3:00 AM UTC\r\n\r\nEnd time: Wednesday, September 30, 2026, at 4:00 PM UTC",
-      "rootCause": "An authentication issue was preventing users from searching mailbox or Address Book content in Exchange Online.\r\n\r\nNext steps: \n- We're isolating how the authentication issue was introduced into our service to validate what additional actions we can take to ensure similar impact scenarios don't occur in the future.\r\n\r\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Performance degradation",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-10-01T16:39:32.887Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to search mailbox or Address Book content in Exchange Online across connection methods\r\n\r\nUser impact: Users may have been unable to search mailbox or Address Book content in Exchange Online across connection methods.\r\n\r\nFinal status: We've completed deployment of our fix to resolve the authentication issue and validated with a subset of affected users that our fix successfully remediated impact.\r\n\r\nScope of impact: Some users attempting to search mailbox or Address Book content in Exchange Online across connection methods may have been affected. \r\n\r\nStart time: Saturday, September 19, 2026, at 3:00 AM UTC\r\n\r\nEnd time: Wednesday, September 30, 2026, at 4:00 PM UTC\r\n\r\nRoot cause: An authentication issue was preventing users from searching mailbox or Address Book content in Exchange Online.\r\n\r\nNext steps: \n- We're isolating how the authentication issue was introduced into our service to validate what additional actions we can take to ensure similar impact scenarios don't occur in the future.\r\n\r\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-09-29T20:57:16.463Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to search mailbox or Address Book content in Exchange Online across connection methods\r\n\r\nUser impact: Users may be unable to search mailbox or Address Book content in Exchange Online across connection methods.\r\n\r\nCurrent status: The fix has begun deployment in the affected environment, and it appears to be remediating impact. This confirms that an authentication issue is preventing users from searching mailbox or Address Book content in Exchange Online. We’ll provide an estimated timeline for the complete saturation of this fix if it becomes available.\r\n\r\nScope of impact: Some users attempting to search mailbox or Address Book content in Exchange Online across connection methods may be affected. This section may be updated as our investigation progresses.\r\n\r\nRoot cause: An authentication issue is preventing users from searching mailbox or Address Book content in Exchange Online.\r\n\r\nNext update by: Friday, October 2, 2026, at 9:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-09-28T19:27:56.983Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to search mailbox or Address Book content in Exchange Online across connection methods\r\n\r\nUser impact: Users may be unable to search mailbox or Address Book content in Exchange Online across connection methods.\r\n\r\nCurrent status: We're continuing the development and validation of our potential fix, and an estimated timeline for their deployment will be provided if it becomes available. \r\n\r\nScope of impact: Some users attempting to search mailbox or Address Book content in Exchange Online across connection methods may be affected. This section may be updated as our investigation progresses.\r\n\r\nNext update by: Tuesday, September 29, 2026, at 9:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-09-27T19:34:50.873Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to search mailbox or Address Book content in Exchange Online across connection methods\r\n\r\nUser impact: Users may be unable to search mailbox or Address Book content in Exchange Online across connection methods.\r\n\r\nCurrent status: As we progress with our root cause analysis and validate the source for this event, we've determined that our potential fix will require some adjustments ahead of deployment. We're developing and validating these additions, and an estimated timeline for their deployment is expected to be available by our next scheduled communication update. \r\n\r\nScope of impact: Some users attempting to search mailbox or Address Book content in Exchange Online across connection methods may be affected. This section may be updated as our investigation progresses.\r\n\r\nNext update by: Monday, September 28, 2026, at 9:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-09-26T19:15:55.803Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to search mailbox or Address Book content in Exchange Online across connection methods\r\n\r\nUser impact: Users may be unable to search mailbox or Address Book content in Exchange Online across connection methods.\r\n\r\nCurrent status: We're preparing our potential fix for deployment to resolve the 503 errors and anticipate that deployment should be ready by the time of our next update.\r\n\r\nScope of impact: Some users attempting to search mailbox or Address Book content in Exchange Online across connection methods may be affected. This section may be updated as our investigation progresses.\r\n\r\nNext update by: Sunday, September 27, 2026, at 9:00 PM UTC"
         }
       ],
       "serviceName": "Exchange Online",
