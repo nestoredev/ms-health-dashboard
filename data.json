@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-25T05:32:41.270Z",
+  "lastUpdated": "2026-10-25T06:06:21.186Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -2125,47 +2125,6 @@
       ]
     },
     {
-      "id": "EX1507783",
-      "title": "Some users' mailbox syncs may fail with an error in Exchange Online",
-      "startTime": "2026-09-29T22:06:00Z",
-      "endTime": "2026-10-14T21:43:25.88Z",
-      "lastModified": "2026-10-14T21:44:44.697Z",
-      "status": "serviceRestored",
-      "severity": "incident",
-      "userImpact": "Users' mailbox syncs may have failed with an error in Exchange Online.",
-      "scopeOfImpact": "This issue may have affected some users' mailbox syncs, specifically for customers who use apps that access non-Interpersonal Messaging (IPM) mailboxes through Microsoft Graph, which returned an error code in Exchange Online. \r\n\r\nStart time: Tuesday, September 29, 2026, at 10:06 PM UTC\r\n\r\nEnd time: Wednesday, October 14, 2026, at 8:59 PM UTC",
-      "rootCause": "recent code change intended to improve the resiliency of features associated with IPM mailboxes was enabled across multiple functions, which caused specific apps which rely on these functions being unable to access them.  This resulted in the mailboxes of users with these management apps installed failing to sync.\r\n\r\nNext steps: \n- We're analyzing the records from this event so that we can ensure that future code updates account for all potential user scenarios.\r\n\r\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Outlook - poor customer experience",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-10-14T21:44:32.467Z",
-          "postType": "regular",
-          "content": "Title: Some users' mailbox syncs may fail with an error in Exchange Online\r\n\r\nUser impact: Users' mailbox syncs may have failed with an error in Exchange Online.\r\n\r\nMore info: Users saw the following error message in Microsoft Graph: \"HTTP 400 -- Operation not allowed -- Operation on Non IPM Subtree forbidden.\"\r\n\r\nFinal status: After reverting the recent code change, we've confirmed through service health telemetry that the error code associated with this issue has been resolved. The portion of impacted users who have apps which access non-Interpersonal Messaging (IPM) mailboxes will now see that mailboxes complete syncing as expected.\r\n\r\nScope of impact: This issue may have affected some users' mailbox syncs, specifically for customers who use apps that access non-Interpersonal Messaging (IPM) mailboxes through Microsoft Graph, which returned an error code in Exchange Online. \r\n\r\nStart time: Tuesday, September 29, 2026, at 10:06 PM UTC\r\n\r\nEnd time: Wednesday, October 14, 2026, at 8:59 PM UTC\r\n\r\nRoot cause: recent code change intended to improve the resiliency of features associated with IPM mailboxes was enabled across multiple functions, which caused specific apps which rely on these functions being unable to access them.  This resulted in the mailboxes of users with these management apps installed failing to sync.\r\n\r\nNext steps: \n- We're analyzing the records from this event so that we can ensure that future code updates account for all potential user scenarios.\r\n\r\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-10-14T20:15:31.497Z",
-          "postType": "regular",
-          "content": "Title: Some users' mailbox syncs may fail with an error in Exchange Online\r\n\r\nUser impact: Users' mailbox syncs may fail with an error in Exchange Online.\r\n\r\nMore info: Users see the following error message in Microsoft Graph: \"HTTP 400 -- Operation not allowed -- Operation on Non IPM Subtree forbidden.\"\r\n\r\nCurrent status: We've identified a recent code change made to specific mailbox APIs which is resulting in the error messages seen in Microsoft Graph when these apps access non-Interpersonal Messaging (IPM) mailboxes. We're reverting this change to verify that it's the source of this issue and to fully remediate impact.\r\n\r\nScope of impact: This issue may affect some users' mailbox syncs, specifically for customers using apps that access non-Interpersonal Messaging (IPM) mailboxes through Microsoft Graph, which returns an error code in Exchange Online. This information may be updated as our investigation continues.\r\n\r\nNext update by: Wednesday, October 14, 2026, at 10:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-10-14T19:13:17.687Z",
-          "postType": "regular",
-          "content": "Title: Some users' mailbox syncing fails with an error in Exchange Online\r\n\r\nUser impact: Users' mailbox syncing fails with an error in Exchange Online.\r\n\r\nMore info: Users see the following error message in Microsoft Graph: \"HTTP 400 -- Operation not allowed -- Operation on Non IPM Subtree forbidden.\"\r\n\r\nCurrent status: We're investigating the error code associated with this impact alongside our service records to identify the source of the issue.\r\n\r\nScope of impact: This issue may affect some users' mailbox syncs, specifically for customers using apps that access non-Interpersonal Messaging (IPM) mailboxes through Microsoft Graph, which returns an error code in Exchange Online. This information may be updated as our investigation continues.\r\n\r\nNext update by: Wednesday, October 14, 2026, at 8:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-10-14T19:00:17.197Z",
-          "postType": "regular",
-          "content": "Title: Users' mailbox syncing fails with an error in Exchange Online\r\n\r\nUser impact: Users' mailbox syncing fails with an error in Exchange Online.\r\n\r\nCurrent status: We're investigating a potential issue with mailbox sync status in Exchange Online and checking for impact to your organization. We'll provide an update within 30 minutes."
-        }
-      ],
-      "serviceName": "Exchange Online",
-      "affectedServices": [
-        "Exchange Online"
-      ]
-    },
-    {
       "id": "CW1507178",
       "title": "Some users were unable to see model selection options in Microsoft 365 Copilot chat",
       "startTime": "2026-10-14T03:34:00Z",
@@ -2414,52 +2373,6 @@
       "serviceName": "Microsoft Purview",
       "affectedServices": [
         "Microsoft Purview"
-      ]
-    },
-    {
-      "id": "EX1500900",
-      "title": "Admins are unable to access the Exchange admin center (EAC)",
-      "startTime": "2026-10-12T08:15:00Z",
-      "endTime": "2026-10-12T12:50:00Z",
-      "lastModified": "2026-10-19T21:04:26.143Z",
-      "status": "postIncidentReviewPublished",
-      "severity": "incident",
-      "userImpact": "Admins are unable to access the EAC. ",
-      "scopeOfImpact": "",
-      "rootCause": "",
-      "nextUpdateBy": "",
-      "feature": "Reports of an Incident",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-10-19T21:02:58.363Z",
-          "postType": "regular",
-          "content": "A post-incident report has been published."
-        },
-        {
-          "createdAt": "2026-10-14T13:11:27.51Z",
-          "postType": "regular",
-          "content": "A post-incident report has been published."
-        },
-        {
-          "createdAt": "2026-10-14T13:11:13.647Z",
-          "postType": "regular",
-          "content": "A post-incident report has been published."
-        },
-        {
-          "createdAt": "2026-10-12T13:28:40.877Z",
-          "postType": "regular",
-          "content": "Title: Admins are unable to access the Exchange admin center (EAC)\n\nUser impact: Admins are unable to access the EAC. \n\nMore info: When attempting to access the Exchange admin center, affected admins encountered an “Internal Server Error” message.\n \nFinal status: We've completed the rollback of the identified Exchange admin center (EAC) change. Service telemetry shows that errors have returned to expected levels, and user reports have confirmed that EAC access has been restored. Admins who continue to experience impact should close their existing EAC browser session, open a new session, and retry accessing the EAC. We’ll continue to monitor service health to ensure sustained service stability.\n \nScope of impact: Impact was specific to admins attempting to access the EAC.\n \nStart time: Monday, October 12, 2026, at 8:15 AM UTC\n \nEnd time: Monday, October 12, 2026, at 12:50 PM UTC\n \nRoot cause: During a routine service deployment, an update to the Exchange Admin Center authentication components introduced an incompatibility in the way delegated administrator access tokens were validated.\n\nWhen administrators accessed the Exchange Admin Center through the Microsoft 365 admin experience, the updated authentication components did not successfully validate the delegated token used for the request. The service then attempted an interactive sign-in as a fallback. That fallback could not complete because the sign-in context was associated with a different service domain, resulting in an authentication failure and an Internal Server Error.\n\nNext steps:\n- For a more comprehensive list of next steps and actions, please refer to the Post Incident Report document.\n \nWe’ll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days."
-        },
-        {
-          "createdAt": "2026-10-12T13:04:24.203Z",
-          "postType": "quick",
-          "content": "We’ve completed the rollback and are continuing to monitor service health, with telemetry showing errors trending downward from their earlier peak. Admins who continue to experience impact should close their existing Exchange admin center (EAC) browser session, open a new session, and retry accessing the EAC. We’ll continue monitoring to validate recovery.\n\nThis quick update is designed to give the latest information on this issue.\n \nNext update by: Monday, October 12, 2026, at 1:30 PM UTC"
-        }
-      ],
-      "serviceName": "Exchange Online",
-      "affectedServices": [
-        "Exchange Online"
       ]
     },
     {
@@ -3032,52 +2945,6 @@
       ]
     },
     {
-      "id": "EX1478163",
-      "title": "Users may be unable to update calendar delegates in the classic Outlook desktop client ",
-      "startTime": "2026-09-23T07:13:00Z",
-      "endTime": "2026-10-05T23:58:04.717Z",
-      "lastModified": "2026-10-05T23:59:52.4Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users may have been unable to update calendar delegates in the classic Outlook desktop client.",
-      "scopeOfImpact": "Impact was specific to users that were unable to update calendar delegates in the classic Outlook desktop client. \r\n\r\nStart time: Wednesday, September 23, 2026, at 7:13 AM UTC\r\n\r\nEnd time: Saturday, October 3, 2026, at 12:00 AM UTC",
-      "rootCause": "A recent update to the service contained a regression, resulting in the impact.\r\n\r\nNext steps: -We're reviewing our validation and updating procedures to better detect and prevent issues like this prior to deployment in the future. \r\n\r\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Tenant Administration (Provisioning, Remote PowerShell)",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-10-05T23:59:09.16Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to update calendar delegates in the classic Outlook desktop client \r\n\r\nUser impact: Users may have been unable to update calendar delegates in the classic Outlook desktop client.\r\n\r\nMore info: As a workaround, affected users could’ve managed delegate changes through Outlook on the web.\r\n\r\nFinal status: Our fix deployment is complete and we’ve determined from service telemetry that this issue is resolved. \r\n\r\nScope of impact: Impact was specific to users that were unable to update calendar delegates in the classic Outlook desktop client. \r\n\r\nStart time: Wednesday, September 23, 2026, at 7:13 AM UTC\r\n\r\nEnd time: Saturday, October 3, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: A recent update to the service contained a regression, resulting in the impact.\r\n\r\nNext steps: -We're reviewing our validation and updating procedures to better detect and prevent issues like this prior to deployment in the future. \r\n\r\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-10-03T00:24:30.277Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to update calendar delegates in the classic Outlook desktop client \r\n\r\nUser impact: Users may be unable to update calendar delegates in the classic Outlook desktop client.\r\n\r\nMore info: As a workaround, affected users can manage delegate changes through Outlook on the web.\r\n\r\nCurrent status: Our fix has saturated 95 percent of the affected environment and we'll continue to monitor its progress to ensure it completes successfully. We anticipate that it'll reach full percent saturation and resolve this issue by our next scheduled communications update.\r\n\r\nScope of impact: Impact is specific to users that are unable to update calendar delegates in the classic Outlook desktop client. This information may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, September 23, 2026, at 7:13 AM UTC\r\n\r\nRoot cause: A recent update to the service contained a regression, resulting in this impact.\r\n\r\nNext update by: Tuesday, October 6, 2026, at 2:00 AM UTC"
-        },
-        {
-          "createdAt": "2026-10-02T01:01:13.54Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to update calendar delegates in the classic Outlook desktop client \r\n\r\nUser impact: Users may be unable to update calendar delegates in the classic Outlook desktop client.\r\n\r\nMore info: As a workaround, affected users can manage delegate changes through Outlook on the web.\r\n\r\nCurrent status: We're still monitoring the deployment of our fix, and more time is needed to ensure it fully saturates across all affected environments before confirming impact remediation. We will share an updated estimate of completion once one becomes available. \r\n\r\nScope of impact: Impact is specific to users that are unable to update calendar delegates in the classic Outlook desktop client. This information may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, September 23, 2026, at 7:13 AM UTC\r\n\r\nRoot cause: A recent update to the service contained a regression, resulting in this impact.\r\n\r\nNext update by: Saturday, October 3, 2026, at 2:00 AM UTC"
-        },
-        {
-          "createdAt": "2026-10-01T21:11:14.95Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to update calendar delegates in the classic Outlook desktop client \r\n\r\nUser impact: Users may be unable to update calendar delegates in the classic Outlook desktop client.\r\n\r\nMore info: As a workaround, affected users can manage delegate changes through Outlook on the web.\r\n\r\nCurrent status: While the deployment of our fix will take longer than previously expected, we've confirmed that saturation is currently at 93 percent. We anticipate that deployment will reach full saturation by the time of our next scheduled communications update.\r\n\r\nScope of impact: Impact is specific to users that are unable to update calendar delegates in the classic Outlook desktop client. This information may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, September 23, 2026, at 7:13 AM UTC\r\n\r\nEstimated time to resolve: Our updated timeline for full remediation is Friday, October 2, 2026, at 12:00 AM UTC.\r\n\r\nRoot cause: A recent update to the service contained a regression, resulting in this impact.\r\n\r\nNext update by: Friday, October 2, 2026, at 2:00 AM UTC"
-        },
-        {
-          "createdAt": "2026-09-30T20:28:55.74Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to update calendar delegates in the classic Outlook desktop client \r\n\r\nUser impact: Users may be unable to update calendar delegates in the classic Outlook desktop client.\r\n\r\nMore info: As a workaround, affected users can manage delegate changes through Outlook on the web.\r\n\r\nCurrent status: Our deployment is at 62 percent saturation, and we anticipate deployment to be complete by our next scheduled update.\r\n\r\nScope of impact: Impact is specific to users that are unable to update calendar delegates in the classic Outlook desktop client. This information may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, September 23, 2026, at 7:13 AM UTC\r\n\r\nEstimated time to resolve: We anticipate impact to be resolved by our next scheduled update on Thursday, October 1, 2026, at 10:00 PM\r\n\r\nRoot cause: A recent update to the service contained a regression, resulting in this impact.\r\n\r\nNext update by: Thursday, October 1, 2026, at 10:00 PM UTC"
-        }
-      ],
-      "serviceName": "Exchange Online",
-      "affectedServices": [
-        "Exchange Online"
-      ]
-    },
-    {
       "id": "MO1488931",
       "title": "Admins intermittently may be unable to access the Microsoft 365 admin center",
       "startTime": "2026-10-05T22:28:00Z",
@@ -3247,52 +3114,6 @@
       ]
     },
     {
-      "id": "EX1478331",
-      "title": "Some users’ email messages may not be quarantined and fail to be stored in the quarantine folder",
-      "startTime": "2026-09-23T00:56:00Z",
-      "endTime": "2026-10-02T08:24:00Z",
-      "lastModified": "2026-10-02T17:47:41.623Z",
-      "status": "serviceRestored",
-      "severity": "incident",
-      "userImpact": "Users’ email messages may not have been quarantined and failed to be stored in the quarantine folder.",
-      "scopeOfImpact": "This issue impacted users attempting to have email messages quarantined in Exchange Online.\r\n\r\nStart time: Wednesday, September 23, 2026, at 12:56 AM UTC\r\n\r\nEnd time: Friday, October 2, 2026, at 8:24 AM UTC",
-      "rootCause": "A recent service-side update introduced a code error that caused this impacting event.\r\n\r\nNext steps: We're reviewing the service-side update that introduced the code error to understand why it resulted in this impact and help prevent similar issues from occurring in the future.\r\n\r\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Mailflow - delayed sending to Internet",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-10-02T17:46:47.79Z",
-          "postType": "regular",
-          "content": "Title: Some users’ email messages may not be quarantined and fail to be stored in the quarantine folder\r\n\r\nUser impact: Users’ email messages may not have been quarantined and failed to be stored in the quarantine folder.\r\n\r\nMore info: The following error appeared in message trace: '‎550 5.1.10 Failed to deliver to Quarantine store‎'.\r\n\r\nFinal status: We completed deployment of our fix to the affected environments and confirmed with affected users that this action successfully resolved the problem.\r\n\r\nScope of impact: This issue impacted users attempting to have email messages quarantined in Exchange Online.\r\n\r\nStart time: Wednesday, September 23, 2026, at 12:56 AM UTC\r\n\r\nEnd time: Friday, October 2, 2026, at 8:24 AM UTC\r\n\r\nRoot cause: A recent service-side update introduced a code error that caused this impacting event.\r\n\r\nNext steps: We're reviewing the service-side update that introduced the code error to understand why it resulted in this impact and help prevent similar issues from occurring in the future.\r\n\r\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-10-01T22:01:11.297Z",
-          "postType": "regular",
-          "content": "Title: Some users’ email messages may not be quarantined and fail to be stored in the quarantine folder\r\n\r\nUser impact: Users’ email messages may not be quarantined and might fail to be stored in the quarantine folder.\r\n\r\nMore info: The following error appears in message trace: '‎550 5.1.10 Failed to deliver to Quarantine store‎'. \r\n\r\nCurrent status: We're continuing to monitor the deployment of our fix, which has reached 88 percent saturation to the affected environment. We anticipate the deployment will complete by our next scheduled communications update.\r\n\r\nScope of impact: This issue may impact users attempting to have email messages quarantined in Exchange Online. This section may be updated as the investigation progresses.\r\n\r\nStart time: Wednesday, September 23, 2026, at 12:56 AM UTC\r\n\r\nEstimated time to resolve: We anticipate the fix will complete deployment by Friday, October 2, 2026, at 7:00 PM UTC.\r\n\r\nRoot cause: A recent service-side update introduced a code error that has caused this impacting event.\r\n\r\nNext update by: Friday, October 2, 2026, at 7:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-10-01T17:35:22.033Z",
-          "postType": "regular",
-          "content": "Title: Some users’ email messages may not be quarantined and fail to be stored in the quarantine folder\r\n\r\nUser impact: Users’ email messages may not be quarantined and might fail to be stored in the quarantine folder.\r\n\r\nMore info: The following error appears in message trace: '‎550 5.1.10 Failed to deliver to Quarantine store‎'. \r\n\r\nCurrent status: We've initiated the fix release and are monitoring as it progresses. We expect to have a completion timeline by the next scheduled update. \r\n\r\nScope of impact: This issue may impact users attempting to have email messages quarantined in Exchange Online. This section may be updated as the investigation progresses.\r\n\r\nRoot cause: A recent service-side update introduced a code error that has caused this impacting event.\r\n\r\nNext update by: Thursday, October 1, 2026, at 11:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-10-01T01:02:16.7Z",
-          "postType": "regular",
-          "content": "Title: Some users’ email messages may not be quarantined and fail to be stored in the quarantine folder\r\n\r\nUser impact: Users’ email messages may not be quarantined and might fail to be stored in the quarantine folder.\r\n\r\nMore info: The following error appears in message trace: '‎550 5.1.10 Failed to deliver to Quarantine store‎'. \r\n\r\nCurrent status: Validation of our fix is in its final stages, and we expect to begin deploying it to the affected environment by our next scheduled update. We’ll provide an estimated completion timeline once available.\r\n\r\nScope of impact: This issue may impact users attempting to have email messages quarantined in Exchange Online. This section may be updated as the investigation progresses.\r\n\r\nRoot cause: A recent service-side updated unintentionally introduced a code error that has caused this impacting event.\r\n\r\nNext update by: Thursday, October 1, 2026, at 6:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-10-01T01:02:09.947Z",
-          "postType": "regular",
-          "content": "Title: Some users’ email messages may not be quarantined and fail to be stored in the quarantine folder\r\n\r\nUser impact: Users’ email messages may not be quarantined and might fail to be stored in the quarantine folder.\r\n\r\nMore info: The following error appears in message trace: '‎550 5.1.10 Failed to deliver to Quarantine store‎'. \r\n\r\nCurrent status: Validation of our fix is in its final stages, and we expect to begin deploying it to the affected environment by our next scheduled update. We’ll provide an estimated completion timeline once available.\r\n\r\nScope of impact: This issue may impact users attempting to have email messages quarantined in Exchange Online. This section may be updated as the investigation progresses.\r\n\r\nRoot cause: A recent service-side updated unintentionally introduced a code error that has caused this impacting event.\r\n\r\nNext update by: Thursday, October 1, 2026, at 6:00 PM UTC"
-        }
-      ],
-      "serviceName": "Exchange Online",
-      "affectedServices": [
-        "Exchange Online"
-      ]
-    },
-    {
       "id": "EX1483619",
       "title": "Some users' email with DocuSign URLs may not be delivered and may be quarantined due to URL reputation",
       "startTime": "2026-09-28T02:36:00Z",
@@ -3382,6 +3203,165 @@
       "serviceName": "Exchange Online",
       "affectedServices": [
         "Exchange Online"
+      ]
+    },
+    {
+      "id": "SP1483357",
+      "title": "Users may encounter an error when accessing the context menu in the classic experience within SharePoint Online",
+      "startTime": "2026-09-30T12:37:03.02Z",
+      "endTime": "2026-09-30T15:58:18.293Z",
+      "lastModified": "2026-09-30T18:54:44.6Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have encountered an error when accessing the context menu in the classic experience within SharePoint Online.",
+      "scopeOfImpact": "Impact was specific to some users attempting to access the context menu in the classic experience within SharePoint Online.\n\nStart time: Wednesday, September 30, 2026, at 3:57 AM UTC\n\nEnd time: Wednesday, September 30, 2026, at 2:37 PM UTC",
+      "rootCause": "A recent update to the rendering mechanism used when accessing the context menu in the classic experience within SharePoint Online contained a code issue, resulting in impact.\n\nNext steps: \n- We're reviewing and improving our service update validation procedure to prevent similar issues from occurring in the future.",
+      "nextUpdateBy": "",
+      "feature": "Access Services",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-09-30T16:00:30.337Z",
+          "postType": "regular",
+          "content": "Title: Users may encounter an error when accessing the context menu in the classic experience within SharePoint Online\n\nUser impact: Users may have encountered an error when accessing the context menu in the classic experience within SharePoint Online.\n\nFinal status: We’ve reverted the update to the last known good version and confirmed with affected users that this has restored context menu access in the classic SharePoint Online experience. Users with existing browser sessions may have to refresh the page to see the fixed behavior. This also confirms that a recent update to the rendering mechanism used when accessing the context menu in the classic experience within SharePoint Online contained a code issue, resulting in impact.\n\nScope of impact: Impact was specific to some users attempting to access the context menu in the classic experience within SharePoint Online.\n\nStart time: Wednesday, September 30, 2026, at 3:57 AM UTC\n\nEnd time: Wednesday, September 30, 2026, at 2:37 PM UTC\n\nRoot cause: A recent update to the rendering mechanism used when accessing the context menu in the classic experience within SharePoint Online contained a code issue, resulting in impact.\n\nNext steps: \n- We're reviewing and improving our service update validation procedure to prevent similar issues from occurring in the future."
+        },
+        {
+          "createdAt": "2026-09-30T14:42:01.973Z",
+          "postType": "regular",
+          "content": "Title: Users may encounter an error when accessing the context menu in the Classic experience within SharePoint Online\r\n\r\nUser impact: Users may encounter an error when accessing the context menu in the Classic experience within SharePoint Online.\r\n\r\nCurrent status: We’ve identified a recent update as the potential cause of impact, which is preventing users in the SharePoint Classic experience from being redirected when accessing the context menu. We’re reverting the update to the last known good version to restore functionality and validate our root cause theory.\r\n\r\nScope of impact: Impact is specific to some users attempting to access the context menu in the Classic experience within SharePoint Online.\r\n\r\nNext update by: Wednesday, September 30, 2026, at 5:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-09-30T12:45:01.23Z",
+          "postType": "regular",
+          "content": "Title: Users may encounter an error when accessing the context menu in the Classic experience within SharePoint Online\r\n\r\nUser impact: Users may encounter an error when accessing the context menu in the Classic experience within SharePoint Online.\r\n\r\nCurrent status: We’re reviewing recent updates that we suspect may be contributing to the impact and are working to formulate a mitigation plan.\r\n\r\nScope of impact: Impact is specific to some users attempting to access the context menu in the Classic experience within SharePoint Online.\r\n\r\nNext update by: Wednesday, September 30, 2026, at 3:00 PM UTC"
+        }
+      ],
+      "serviceName": "SharePoint Online",
+      "affectedServices": [
+        "SharePoint Online"
+      ]
+    },
+    {
+      "id": "IT1483380",
+      "title": "Some admins may be unable to register new Windows Autopilot devices or update Autopilot group tags in Microsoft Intune",
+      "startTime": "2026-09-30T13:17:38Z",
+      "endTime": "2026-09-30T14:30:00Z",
+      "lastModified": "2026-10-07T21:49:49.167Z",
+      "status": "postIncidentReviewPublished",
+      "severity": "incident",
+      "userImpact": "Admins may have been unable to register new Windows Autopilot devices or update Autopilot group tags in Microsoft Intune",
+      "scopeOfImpact": "",
+      "rootCause": "",
+      "nextUpdateBy": "",
+      "feature": "Microsoft Intune",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-10-07T21:49:49.167Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        },
+        {
+          "createdAt": "2026-10-02T22:31:17.43Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        },
+        {
+          "createdAt": "2026-09-30T15:14:32.013Z",
+          "postType": "regular",
+          "content": "Title: Some admins may have been unable to register new Windows Autopilot devices or update Autopilot group tags in Microsoft Intune\n\nUser impact: Admins may have been unable to register new Windows Autopilot devices or update Autopilot group tags in Microsoft Intune.\n\nMore info: Affected admins may have observed that Windows Autopilot group tag updates didn’t persist after saving, and hardware hash imports were in an incomplete or processing state while the event was ongoing. As a result, profile assignments that relied on Autopilot group tags may not have applied as expected, and registration of new Windows Autopilot devices may have failed.\n\nFinal status: We’ve identified and reverted a change in the Intune service, and telemetry confirms that the service has returned to normal functionality and that customer impact has resolved.\n \nScope of impact: Some admins attempting to register new Windows Autopilot devices or update Autopilot group tags in Microsoft Intune may have been impacted.\n \nStart time: Tuesday, September 29. 2026, at 5:42 PM UTC\n \nEnd time: Wednesday, September 30, 2026, at 2:30 PM UTC\n \nPreliminary root cause: A change that was intended to update network traffic routing configurations interrupted Admins ability to register new Windows Autopilot devices or update Autopilot group tags in Microsoft Intune.\n \nNext steps:\n- We’re reviewing internal processes related to the configuration change pipeline to avoid similar impact in the future.\n\nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days."
+        },
+        {
+          "createdAt": "2026-09-30T13:19:08.847Z",
+          "postType": "regular",
+          "content": "Title: Some admins may be unable to register new Windows Autopilot devices or update Autopilot group tags in Microsoft Intune.\n\nUser impact: Admins may be unable to register new Windows Autopilot devices or update Autopilot group tags in Microsoft Intune.\n\nMore info: Affected admins may observe that Windows Autopilot group tag updates don't persist after saving, and hardware hash imports remain in an incomplete or processing state indefinitely. As a result, profile assignments that rely on Autopilot group tags may not apply as expected, and registration of new Windows Autopilot devices may fail.\n\nCurrent status: We've identified that requests to update Autopilot group tags are returning successful responses but aren't being applied as expected. We're analyzing service telemetry and recent platform activity to identify the root cause and next steps required to mitigate impact.\n\nScope of impact: Some admins attempting to register new Windows Autopilot devices or update Autopilot group tags in Microsoft Intune may be impacted.\n\nNext update by: Wednesday, September 30, 2026, at 3:30 PM UTC"
+        }
+      ],
+      "serviceName": "Microsoft Intune",
+      "affectedServices": [
+        "Microsoft Intune"
+      ]
+    },
+    {
+      "id": "CW1470765",
+      "title": "Some users' Exchange Online email messages may not be retrieved when prompting Microsoft 365 Copilot Chat",
+      "startTime": "2026-07-22T22:07:00Z",
+      "endTime": "2026-09-29T00:12:26.6Z",
+      "lastModified": "2026-09-29T01:08:36.94Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users' Exchange Online email messages may not have been retrieved when prompting Copilot Chat.",
+      "scopeOfImpact": "Some users who attempted to prompt Copilot Chat to retrieve details from Exchange Online email messages between July 22, 2026, and the present were impacted.\r\n\r\nStart time: Wednesday, July 22, 2026, at 10:07 PM UTC\r\n\r\nEnd time: Monday, September 28, 2026, at 5:08 PM UTC",
+      "rootCause": "A service change introduced a misconfiguration that prevented Exchange Online email messages between July 22, 2026, and today from being indexed by our semantic index model, which resulted in the impact.\r\n\r\nNext steps: We're investigating why the misconfiguration wasn't identified during the testing and validation phases of the service change to help prevent similar issues in the future.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "General",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-09-29T00:12:09.713Z",
+          "postType": "regular",
+          "content": "Title: Some users' Exchange Online email messages may not be retrieved when prompting Microsoft 365 Copilot Chat\r\n\r\nUser impact: Users' Exchange Online email messages may not have been retrieved when prompting Copilot Chat.\r\n\r\nMore info: Some Exchange Online email messages between July 22, 2026, and the date were not retrieved by Copilot Chat when prompted. While the affected email messages were being indexed to the semantic index model, users could've prompted Copilot Chat using exact wording to retrieve the email messages.\r\n\r\nFinal status: We determined that the deployment fully saturated the environment and after a period of monitoring, we confirmed that the impact was remediated.\r\n\r\nScope of impact: Some users who attempted to prompt Copilot Chat to retrieve details from Exchange Online email messages between July 22, 2026, and the present were impacted.\r\n\r\nStart time: Wednesday, July 22, 2026, at 10:07 PM UTC\r\n\r\nEnd time: Monday, September 28, 2026, at 5:08 PM UTC\r\n\r\nRoot cause: A service change introduced a misconfiguration that prevented Exchange Online email messages between July 22, 2026, and today from being indexed by our semantic index model, which resulted in the impact.\r\n\r\nNext steps: We're investigating why the misconfiguration wasn't identified during the testing and validation phases of the service change to help prevent similar issues in the future.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-09-18T01:30:08.023Z",
+          "postType": "regular",
+          "content": "Title: Some users' Exchange Online email messages may not be retrieved when prompting Microsoft 365 Copilot Chat\n\nUser impact: Users' Exchange Online email messages may not be retrieved when prompting Copilot Chat.\n\nMore info: Some Exchange Online email messages between July 22, 2026, and today may not be retrieved by Copilot Chat when prompted. While we index the affected email messages to our semantic index model, users can prompt Copilot Chat using exact wording to retrieve the email messages.\n\nCurrent status: The aforementioned deployment has saturated over 50% of the affected infrastructure and we've confirmed that some users are beginning to see remediation as the fix continues to propagate. Additionally, we expect that the remainder of the affected users will have received the fix deployment prior to our next scheduled update, at which point we'll monitor service health telemetry to ensure that impact is remediated and no additional mitigative actions will be required.\n\nScope of impact: Some users that are attempting to prompt Copilot Chat to retrieve details from Exchange Online email messages between July 22, 2026, and today may be impacted. This information may be updated as our investigation continues.\n\nStart time: Wednesday, July 22, 2026, at 10:07 PM UTC\n\nRoot cause: A service change introduced a misconfiguration that prevented Exchange Online email messages between July 22, 2026, and today from being indexed by our semantic index model, causing impact.\n\nNext update by: Tuesday, September 29, 2026, at 2:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-09-13T01:19:23.32Z",
+          "postType": "regular",
+          "content": "Title: Some users' Exchange Online email messages may not be retrieved when prompting Microsoft 365 Copilot Chat\r\n\r\nUser impact: Users' Exchange Online email messages may not be retrieved when prompting Copilot Chat.\r\n\r\nMore info: Some Exchange Online email messages between July 22, 2026, and today may not be retrieved by Copilot Chat when prompted. While we index the affected email messages to our semantic index model, users can prompt Copilot Chat using exact wording to retrieve the email messages.\r\n\r\nCurrent status: The initial 10% of the deployment has saturated throughout the affected infrastructure and has proven successful. We’re now in the process of deploying another 40% of the fix while we continue monitoring service health. Additionally, we expect that some users may be incrementally remediated as the deployment continues to saturate throughout the affected environment.\r\n\r\nScope of impact: Some users that are attempting to prompt Copilot Chat to retrieve details from Exchange Online email messages between July 22, 2026, and today may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, July 22, 2026, at 10:07 PM UTC\r\n\r\nRoot cause: A service change introduced a misconfiguration that prevented Exchange Online email messages between July 22, 2026, and today from being indexed by our semantic index model, causing impact.\r\n\r\nNext update by: Sunday, September 20, 2026, at 3:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-09-12T16:09:56.02Z",
+          "postType": "regular",
+          "content": "Title: Some users' Exchange Online email messages may not be retrieved when prompting Microsoft 365 Copilot Chat\r\n\r\nUser impact: Users' Exchange Online email messages may not be retrieved when prompting Copilot Chat.\r\n\r\nMore info: Some Exchange Online email messages between July 22, 2026, and today may not be retrieved by Copilot Chat when prompted. While we index the affected email messages to our semantic index model, users can prompt Copilot Chat using exact wording to retrieve the email messages.\r\n\r\nCurrent status: We’re continuing to monitor the initial 10 percent deployment of our secondary fix, which is progressing as expected. We’ll continue monitoring service health and deployment progress before proceeding with the next phase and provide a timeline for full remediation once available.\r\n\r\nScope of impact: Some users that are attempting to prompt Copilot Chat to retrieve details from Exchange Online email messages between July 22, 2026, and today may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, July 22, 2026, at 10:07 PM UTC\r\n\r\nRoot cause: A service change introduced a misconfiguration that prevented Exchange Online email messages between July 22, 2026, and today from being indexed by our semantic index model, causing impact.\r\n\r\nNext update by: Sunday, September 13, 2026, at 3:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-09-12T02:12:04.507Z",
+          "postType": "regular",
+          "content": "Title: Some users' Exchange Online email messages may not be retrieved when prompting Microsoft 365 Copilot Chat\r\n\r\nUser impact: Users' Exchange Online email messages may not be retrieved when prompting Copilot Chat.\r\n\r\nMore info: Some Exchange Online email messages between July 22, 2026, and today may not be retrieved by Copilot Chat when prompted. While we index the affected email messages to our semantic index model, users can prompt Copilot Chat using exact wording to retrieve the email messages.\r\n\r\nCurrent status: We've validated our secondary fix and begun the first 10 percent of deployment. We'll monitor this initial deployment process in order to determine the estimated timeline for full remediation and provide those details as soon as they become available.\r\n\r\nScope of impact: Some users that are attempting to prompt Copilot Chat to retrieve details from Exchange Online email messages between July 22, 2026, and today may be impacted. This information may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, July 22, 2026, at 10:07 PM UTC\r\n\r\nRoot cause: A service change introduced a misconfiguration that prevented Exchange Online email messages between July 22, 2026, and today from being indexed by our semantic index model, causing impact.\r\n\r\nNext update by: Saturday, September 12, 2026, at 5:00 PM UTC"
+        }
+      ],
+      "serviceName": "Microsoft 365 Copilot Chat",
+      "affectedServices": [
+        "Microsoft 365 Copilot Chat"
+      ]
+    },
+    {
+      "id": "MV1481028",
+      "title": "Users may not be able to access Microsoft Viva Glint",
+      "startTime": "2026-09-28T21:48:07.58Z",
+      "endTime": "2026-09-28T23:21:22.783Z",
+      "lastModified": "2026-09-28T23:22:25.777Z",
+      "status": "serviceRestored",
+      "severity": "incident",
+      "userImpact": "Users may have not been able to access Viva Glint.",
+      "scopeOfImpact": "This event impacted any user attempting to access Viva Glint.\r\n\r\nStart time: Monday, September 28, 2026, at 9:15 PM UTC\r\n\r\nEnd time: Monday, September 28, 2026, at 10:29 PM UTC",
+      "rootCause": "A combination of two simultaneous deployments led to a misconfiguration which resulted in this impact.\r\n\r\nNext steps: - We're reviewing the responsible deployments to better understand what led to the error that resulted in impact and prevent similar future occurrences.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "General",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-09-28T23:22:22.827Z",
+          "postType": "regular",
+          "content": "Title: Users may not be able to access Microsoft Viva Glint\r\n\r\nUser impact: Users may have not been able to access Viva Glint.\r\n\r\nFinal status: We determined that a combination of two simultaneous deployments led to a misconfiguration which resulted in this impact. We halted one of the responsible deployments and confirmed that this resolved the issue by monitoring service health data.\r\n\r\nScope of impact: This event impacted any user attempting to access Viva Glint.\r\n\r\nStart time: Monday, September 28, 2026, at 9:15 PM UTC\r\n\r\nEnd time: Monday, September 28, 2026, at 10:29 PM UTC\r\n\r\nRoot cause: A combination of two simultaneous deployments led to a misconfiguration which resulted in this impact.\r\n\r\nNext steps: - We're reviewing the responsible deployments to better understand what led to the error that resulted in impact and prevent similar future occurrences.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-09-28T22:16:12.107Z",
+          "postType": "regular",
+          "content": "Title: Users may not be able to access Microsoft Viva Glint\r\n\r\nUser impact: Users may not be able to access Viva Glint.\r\n\r\nCurrent status: We're reviewing service logs to isolate the source of this impact and an expedient mitigation to restore service.\r\n\r\nScope of impact: This event impacts any user attempting to access Viva Glint. This information may be updated as our investigation continues.\r\n\r\nStart time: Monday, September 28, 2026, at 9:15 PM UTC\r\n\r\nNext update by: Monday, September 28, 2026, at 11:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-09-28T21:49:57.12Z",
+          "postType": "regular",
+          "content": "Title: Users may not be able to access Microsoft Viva Glint\r\n\r\nUser impact: Users may not be able to access Viva Glint.\r\n\r\nCurrent status: We're investigating a potential issue with Viva Glint and checking for impact to your organization. We'll provide an update within 30 minutes."
+        }
+      ],
+      "serviceName": "Microsoft Viva",
+      "affectedServices": [
+        "Microsoft Viva"
       ]
     }
   ]
