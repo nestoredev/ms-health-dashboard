@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-26T16:25:16.993Z",
+  "lastUpdated": "2026-10-26T16:55:33.611Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1191,36 +1191,6 @@
       "id": "Viva",
       "issues": [
         {
-          "id": "MV1526068",
-          "title": "Some users may be unable to access the group feed with Microsoft Viva Engage",
-          "startTime": "2026-10-26T14:45:04.21Z",
-          "endTime": null,
-          "lastModified": "2026-10-26T16:04:30.397Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may be unable to access the group feed with Viva Engage.",
-          "scopeOfImpact": "This issue is preventing any user from accessing the group feed with Microsoft Engage.\r\n\r\nStart time: Monday, October 26, 2026, at 1:39 PM UTC",
-          "rootCause": "A subset of service infrastructure that helps facilitate access to the Viva Engage group feed has fallen below our manageable service performance thresholds, resulting in impact.",
-          "nextUpdateBy": "Monday, October 26, 2026, at 4:30 PM UTC",
-          "feature": "Post/Reply/Like",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-10-26T15:12:04.037Z",
-              "postType": "regular",
-              "content": "Title: Some users may be unable to access the group feed with Microsoft Viva Engage\r\n\r\nUser impact: Users may be unable to access the group feed with Viva Engage.\r\n\r\nCurrent status: Our review of service-side telemetry pinpoints that a subset of service infrastructure facilitating access to the Viva Engage group feed has fallen below our manageable service performance thresholds. To better understand this issue, we’re continuing to review our service telemetry to better understand this issue and determine our next troubleshooting steps.\r\n\r\nScope of impact: This issue is preventing any user from accessing the group feed with Microsoft Engage.\r\n\r\nStart time: Monday, October 26, 2026, at 1:39 PM UTC\r\n\r\nRoot cause: A subset of service infrastructure that helps facilitate access to the Viva Engage group feed has fallen below our manageable service performance thresholds, resulting in impact.\r\n\r\nNext update by: Monday, October 26, 2026, at 4:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-26T14:54:59.827Z",
-              "postType": "regular",
-              "content": "Title: Some users may be unable to access the group feed with Microsoft Viva Engage\r\n\r\nUser impact: Users may be unable to access the group feed with Viva Engage.\r\n\r\nCurrent status: We're investigating a potential issue with Viva Engage and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Microsoft Viva"
-          ]
-        },
-        {
           "id": "MO1457843",
           "title": "Admins can't identify who deleted a Viva Engage community or its Microsoft 365 Group in Microsoft Entra ID audit logs",
           "startTime": "2026-08-19T22:38:36.783Z",
@@ -1333,6 +1303,47 @@
     }
   ],
   "history": [
+    {
+      "id": "MV1526068",
+      "title": "Some users may be unable to access the group feed with Microsoft Viva Engage",
+      "startTime": "2026-10-26T14:45:04.21Z",
+      "endTime": "2026-10-26T16:40:59.277Z",
+      "lastModified": "2026-10-26T16:51:49.88Z",
+      "status": "serviceRestored",
+      "severity": "incident",
+      "userImpact": "Users may have been unable to access the group feed with Viva Engage.",
+      "scopeOfImpact": "This issue was preventing any user from accessing the group feed with Microsoft Engage.\r\n\r\nStart time: Monday, October 26, 2026, at 1:39 PM UTC\r\n\r\nEnd time: Monday, October 26, 2026, at 4:23 PM UTC",
+      "rootCause": "A subset of service infrastructure that helps facilitate access to the Viva Engage group feed had fallen below our manageable service performance thresholds, resulting in impact.\r\n\r\nNext steps: We'll continue to monitor our service-side telemetry to ensure the service stays healthy and to help prevent similar events int he future. \r\n\r\nThis is the final update for this event.",
+      "nextUpdateBy": "",
+      "feature": "Post/Reply/Like",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-10-26T16:46:26.617Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to access the group feed with Microsoft Viva Engage\r\n\r\nUser impact: Users may have been unable to access the group feed with Viva Engage.\r\n\r\nFinal status: We've completed our deployment of the fix and confirmed through service-side telemetry that the service has been restored to a healthy state. \r\n\r\nScope of impact: This issue was preventing any user from accessing the group feed with Microsoft Engage.\r\n\r\nStart time: Monday, October 26, 2026, at 1:39 PM UTC\r\n\r\nEnd time: Monday, October 26, 2026, at 4:23 PM UTC\r\n\r\nRoot cause: A subset of service infrastructure that helps facilitate access to the Viva Engage group feed had fallen below our manageable service performance thresholds, resulting in impact.\r\n\r\nNext steps: We'll continue to monitor our service-side telemetry to ensure the service stays healthy and to help prevent similar events int he future. \r\n\r\nThis is the final update for this event."
+        },
+        {
+          "createdAt": "2026-10-26T16:29:22.013Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to access the group feed with Microsoft Viva Engage\r\n\r\nUser impact: Users may be unable to access the group feed with Viva Engage.\r\n\r\nCurrent status: We're working on deploying a fix to help improve the health of the service infrastructure. We'll confirm its effectiveness, once fully deployed, through monitoring the service-side telemetry.\r\n\r\nScope of impact: This issue is preventing any user from accessing the group feed with Microsoft Engage.\r\n\r\nStart time: Monday, October 26, 2026, at 1:39 PM UTC\r\n\r\nRoot cause: A subset of service infrastructure that helps facilitate access to the Viva Engage group feed has fallen below our manageable service performance thresholds, resulting in impact.\r\n\r\nNext update by: Monday, October 26, 2026, at 6:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-26T15:12:04.037Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to access the group feed with Microsoft Viva Engage\r\n\r\nUser impact: Users may be unable to access the group feed with Viva Engage.\r\n\r\nCurrent status: Our review of service-side telemetry pinpoints that a subset of service infrastructure facilitating access to the Viva Engage group feed has fallen below our manageable service performance thresholds. To better understand this issue, we’re continuing to review our service telemetry to better understand this issue and determine our next troubleshooting steps.\r\n\r\nScope of impact: This issue is preventing any user from accessing the group feed with Microsoft Engage.\r\n\r\nStart time: Monday, October 26, 2026, at 1:39 PM UTC\r\n\r\nRoot cause: A subset of service infrastructure that helps facilitate access to the Viva Engage group feed has fallen below our manageable service performance thresholds, resulting in impact.\r\n\r\nNext update by: Monday, October 26, 2026, at 4:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-26T14:54:59.827Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to access the group feed with Microsoft Viva Engage\r\n\r\nUser impact: Users may be unable to access the group feed with Viva Engage.\r\n\r\nCurrent status: We're investigating a potential issue with Viva Engage and checking for impact to your organization. We'll provide an update within 30 minutes."
+        }
+      ],
+      "serviceName": "Microsoft Viva",
+      "affectedServices": [
+        "Microsoft Viva"
+      ]
+    },
     {
       "id": "IT1516138",
       "title": "Admins may not be able to identify non-compliant device settings as expected in Microsoft Intune",
@@ -3330,52 +3341,6 @@
           "createdAt": "2026-10-01T01:02:09.947Z",
           "postType": "regular",
           "content": "Title: Some users’ email messages may not be quarantined and fail to be stored in the quarantine folder\r\n\r\nUser impact: Users’ email messages may not be quarantined and might fail to be stored in the quarantine folder.\r\n\r\nMore info: The following error appears in message trace: '‎550 5.1.10 Failed to deliver to Quarantine store‎'. \r\n\r\nCurrent status: Validation of our fix is in its final stages, and we expect to begin deploying it to the affected environment by our next scheduled update. We’ll provide an estimated completion timeline once available.\r\n\r\nScope of impact: This issue may impact users attempting to have email messages quarantined in Exchange Online. This section may be updated as the investigation progresses.\r\n\r\nRoot cause: A recent service-side updated unintentionally introduced a code error that has caused this impacting event.\r\n\r\nNext update by: Thursday, October 1, 2026, at 6:00 PM UTC"
-        }
-      ],
-      "serviceName": "Exchange Online",
-      "affectedServices": [
-        "Exchange Online"
-      ]
-    },
-    {
-      "id": "EX1483619",
-      "title": "Some users' email with DocuSign URLs may not be delivered and may be quarantined due to URL reputation",
-      "startTime": "2026-09-28T02:36:00Z",
-      "endTime": "2026-10-01T23:59:00Z",
-      "lastModified": "2026-10-07T20:36:50.687Z",
-      "status": "serviceRestored",
-      "severity": "incident",
-      "userImpact": "Users' email with DocuSign URLs may not have been delivered and may have been quarantined due to URL reputation.",
-      "scopeOfImpact": "This issue may have affected some users attempting to send emails with DocuSign URLs, who may have seen messages not being delivered and quarantined due to URL reputation. \r\n\r\nStart time: Monday, September 28, 2026, at 2:36 AM UTC\r\n\r\nEnd time: Thursday, October 1, 2026, at 11:59 PM UTC",
-      "rootCause": "The Microsoft URL evaluation process was incorrectly identifying the affected messages as potentially malicious due to the URL inclusion, resulting in impact.\r\n\r\nNext steps: \n- We're analyzing our URL evaluation process to validate what additional changes we can implement to ensure similar impact scenarios don't occur in the future while also protecting Exchange Online users from potentially malicious senders.\r\n\r\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Mailflow - delayed sending to Internet",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-10-05T23:33:55.027Z",
-          "postType": "regular",
-          "content": "Title: Some users' email with DocuSign URLs may not be delivered and may be quarantined due to URL reputation\r\n\r\nUser impact: Users' email with DocuSign URLs may not have been delivered and may have been quarantined due to URL reputation.\r\n\r\nFinal status: We've completed manual mitigation of the remaining affected messages and completed implementation of adjustments to our ML model to ensure its correctly sorting email messages containing DocuSign URLs while maintaining the ability to identify and prevent harmful content from reaching users. We've validated from our service telemetry and from a subset of reporting affected users that impact is remediated.\r\n\r\nScope of impact: This issue may have affected some users attempting to send emails with DocuSign URLs, who may have seen messages not being delivered and quarantined due to URL reputation. \r\n\r\nStart time: Monday, September 28, 2026, at 2:36 AM UTC\r\n\r\nEnd time: Thursday, October 1, 2026, at 11:59 PM UTC\r\n\r\nRoot cause: The Microsoft URL evaluation process was incorrectly identifying the affected messages as potentially malicious due to the URL inclusion, resulting in impact.\r\n\r\nNext steps: \n- We're analyzing our URL evaluation process to validate what additional changes we can implement to ensure similar impact scenarios don't occur in the future while also protecting Exchange Online users from potentially malicious senders.\r\n\r\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-10-01T22:23:37.253Z",
-          "postType": "regular",
-          "content": "Title: Some users' email with DocuSign URLs may not be delivered and may be quarantined due to URL reputation\r\n\r\nUser impact: Users' email with DocuSign URLs may not be delivered and may be quarantined due to URL reputation.\r\n\r\nCurrent status: We're making further manual adjustments to our ML model to ensure its correctly sorting email messages containing DocuSign URLs while maintaining the ability to identify and prevent harmful content from reaching users. We've confirmed that the majority of formerly impacted email messages have been restored, and we're continuing to manually mitigate the remaining affected messages we receive from impacted users as our ML model is being improved.\r\n\r\nScope of impact: This issue may affect some users attempting to send email with DocuSign URLs, who may see messages not being delivered and quarantined due to URL reputation. This section may be updated as the investigation progresses.\r\n\r\nRoot cause: The Microsoft URL evaluation process is incorrectly identifying the affected messages as potentially malicious due to the URL inclusion, resulting in impact.\r\n\r\nNext update by: Monday, October 5, 2026, at 11:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-10-01T18:15:45.43Z",
-          "postType": "regular",
-          "content": "Title: Some users' email with DocuSign URLs may not be delivered and may be quarantined due to URL reputation\r\n\r\nUser impact: Users' email with DocuSign URLs may not be delivered and may be quarantined due to URL reputation.\r\n\r\nCurrent status: We're continuing to analyze messages containing affected DocuSign URLs to determine what mitigation actions we can implement to prevent our ML model from detecting messages as malicious while still protecting users from harmful content or messages.\r\n\r\nScope of impact: This issue may affect some users attempting to send email with DocuSign URLs, who may see messages not being delivered and quarantined due to URL reputation. This section may be updated as the investigation progresses.\r\n\r\nRoot cause: The Microsoft URL evaluation process is incorrectly identifying the affected messages as potentially malicious due to the URL inclusion, resulting in impact.\r\n\r\nNext update by: Thursday, October 1, 2026, at 11:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-10-01T17:11:04.823Z",
-          "postType": "regular",
-          "content": "Title: Some users' email with DocuSign URLs may not be delivered and may be quarantined due to URL reputation\r\n\r\nUser impact: Users' email with DocuSign URLs may not be delivered and may be quarantined due to URL reputation.\r\n\r\nCurrent status: After further analysis of impact, we've determined that the scope of impact is wider than initially documented, and we've expanded our communications to all potentially affected users. We've updated the \"Title\", \"User impact\", and \"Scope of impact\" fields to reflect this change. Propagation has completed for our change to add affected DocuSign URLs to our allow lists, but some messages containing affected URLs have not been able to be recovered at this time as they're still being detected by our Machine Learning (ML) model as potentially malicious. We're analyzing affected messages to determine how we can recover the messages in order to fully remediate impact.\r\n\r\nScope of impact: This issue affects some users attempting to send email with DocuSign URLs, who may see message not being delivered and quarantined due to URL reputation. This section may be updated as the investigation progresses.\r\n\r\nRoot cause: The Microsoft URL evaluation process is incorrectly identifying the affected messages as potentially malicious due to the URL inclusion, resulting in impact.\r\n\r\nNext update by: Thursday, October 1, 2026, at 7:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-10-01T00:07:23.883Z",
-          "postType": "regular",
-          "content": "Title: Some users' email with DocuSign URLs may not be delivered and may be quarantined due to URL reputation\r\n\r\nUser impact: Users' email with DocuSign URLs may not be delivered and may be quarantined due to URL reputation.\r\n\r\nCurrent status: We've determined that the Microsoft URL evaluation process is incorrectly identifying the affected messages as potentially malicious due to the URL inclusion, resulting in impact. We've added the URLs to our allow list to expedite relief to affected users for new email and we're reprocessing the affected messages. This process may take up to 48 hours but the propagation time is typically less than this. We're reaching out to a subset of users to ensure they are seeing resolution.\r\n\r\nScope of impact: This issue affects some users attempting to send email with DocuSign URLs, who may see message not being delivered and quarantined due to URL reputation. This section may be updated as the investigation progresses.\r\n\r\nRoot cause: The Microsoft URL evaluation process is incorrectly identifying the affected messages as potentially malicious due to the URL inclusion, resulting in impact.\r\n\r\nNext update by: Thursday, October 1, 2026, at 9:00 PM UTC"
         }
       ],
       "serviceName": "Exchange Online",
