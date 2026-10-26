@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-26T14:54:18.082Z",
+  "lastUpdated": "2026-10-26T15:24:42.913Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1190,6 +1190,36 @@
       "status": "serviceDegradation",
       "id": "Viva",
       "issues": [
+        {
+          "id": "MV1526068",
+          "title": "Some users may be unable to access the group feed with Microsoft Viva Engage",
+          "startTime": "2026-10-26T14:45:04.21Z",
+          "endTime": null,
+          "lastModified": "2026-10-26T15:12:04.037Z",
+          "status": "investigating",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to access the group feed with Viva Engage.",
+          "scopeOfImpact": "This issue is preventing any user from accessing the group feed with Microsoft Engage.\r\n\r\nStart time: Monday, October 26, 2026, at 1:39 PM UTC",
+          "rootCause": "A subset of service infrastructure that helps facilitate access to the Viva Engage group feed has fallen below our manageable service performance thresholds, resulting in impact.",
+          "nextUpdateBy": "Monday, October 26, 2026, at 4:30 PM UTC",
+          "feature": "Post/Reply/Like",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-10-26T15:12:04.037Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to access the group feed with Microsoft Viva Engage\r\n\r\nUser impact: Users may be unable to access the group feed with Viva Engage.\r\n\r\nCurrent status: Our review of service-side telemetry pinpoints that a subset of service infrastructure facilitating access to the Viva Engage group feed has fallen below our manageable service performance thresholds. To better understand this issue, we’re continuing to review our service telemetry to better understand this issue and determine our next troubleshooting steps.\r\n\r\nScope of impact: This issue is preventing any user from accessing the group feed with Microsoft Engage.\r\n\r\nStart time: Monday, October 26, 2026, at 1:39 PM UTC\r\n\r\nRoot cause: A subset of service infrastructure that helps facilitate access to the Viva Engage group feed has fallen below our manageable service performance thresholds, resulting in impact.\r\n\r\nNext update by: Monday, October 26, 2026, at 4:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-10-26T14:54:59.827Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to access the group feed with Microsoft Viva Engage\r\n\r\nUser impact: Users may be unable to access the group feed with Viva Engage.\r\n\r\nCurrent status: We're investigating a potential issue with Viva Engage and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Viva"
+          ]
+        },
         {
           "id": "MO1457843",
           "title": "Admins can't identify who deleted a Viva Engage community or its Microsoft 365 Group in Microsoft Entra ID audit logs",
