@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-26T20:27:42.042Z",
+  "lastUpdated": "2026-10-26T20:57:57.430Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1766,7 +1766,7 @@
       "title": "Some users may be unable to access or protect content using Azure Rights Management (ARM) across Microsoft 365 services ",
       "startTime": "2026-10-19T06:30:00Z",
       "endTime": "2026-10-19T09:19:00Z",
-      "lastModified": "2026-10-21T17:47:58.713Z",
+      "lastModified": "2026-10-26T20:25:21.34Z",
       "status": "postIncidentReviewPublished",
       "severity": "incident",
       "userImpact": "Users may be unable to access or protect content using ARM across Microsoft 365 services. ",
@@ -1777,6 +1777,11 @@
       "isResolved": true,
       "posts": [
         {
+          "createdAt": "2026-10-26T20:24:03.743Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        },
+        {
           "createdAt": "2026-10-21T17:47:58.713Z",
           "postType": "regular",
           "content": "A post-incident report has been published."
@@ -1784,7 +1789,7 @@
         {
           "createdAt": "2026-10-19T10:27:19.807Z",
           "postType": "regular",
-          "content": "Title: Some users may be unable to access or protect content using Azure Rights Management (ARM) across Microsoft 365 services \n\nUser impact: Users may be unable to access or protect content using ARM across Microsoft 365 services. \n\nMore info: Impact may have prevented users from encrypting or decrypting protected content, including files and email messages, across Microsoft 365 services that rely on ARM.\n \nFinal status: Our mitigation efforts to stabilize the affected service components and restore request processing have been successful, and we’ve observed sustained recovery across the affected services. \n \nScope of impact: Some users attempting to encrypt or decrypt content using Microsoft 365 services that rely on ARM may have been impacted.\n \nStart time: Monday, October 19, 2026, at 6:30 AM UTC \n \nEnd time: Monday, October 19, 2026, at 9:19 AM UTC\n \nPreliminary root cause: Our preliminary investigation indicates that unexpected service behavior resulted in some components becoming unhealthy and unable to reliably process requests. We’re continuing our investigation to determine the underlying cause.\n \nNext steps: \n- We’re continuing our investigation into the underlying cause of the identified service behavior to help prevent similar impact from recurring. \n- We’re reviewing our monitoring and telemetry to improve detection and alerting for similar service behavior.\n \nWe’ll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days."
+          "content": "Title: Some users may be unable to access or protect content using Azure Rights Management (ARM) across Microsoft 365 services \n\nUser impact: Users may be unable to access or protect content using ARM across Microsoft 365 services. \n\nMore info: Impact may have prevented users from encrypting or decrypting protected content, including files and email messages, across Microsoft 365 services that rely on ARM.\n \nFinal status: Our mitigation efforts to stabilize the affected service components and restore request processing have been successful, and we’ve observed sustained recovery across the affected services. \n \nScope of impact: Some users attempting to encrypt or decrypt content using Microsoft 365 services that rely on ARM may have been impacted.\n \nStart time: Monday, October 19, 2026, at 6:30 AM UTC \n \nEnd time: Monday, October 19, 2026, at 9:19 AM UTC\n \nRoot cause: A significant increase in requests from several Microsoft 365 services exceeded the available processing capacity of the Azure Rights Management (ARM) front-end service. We identified that one contributing service had recently adopted a new software component that did not respond correctly to instructions to slow retry attempts, causing requests to be repeated more frequently than intended. The resulting resource pressure made some service components unhealthy and unable to process traffic reliably. \n \nNext steps: \n- For a more comprehensive list of next steps and actions, please refer to the Post Incident Report document."
         },
         {
           "createdAt": "2026-10-19T09:05:23.927Z",
