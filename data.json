@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-26T19:57:23.169Z",
+  "lastUpdated": "2026-10-26T20:27:42.042Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -787,41 +787,6 @@
           ]
         },
         {
-          "id": "TM1517449",
-          "title": "Users may not receive notifications when added to or removed from tags in Microsoft Teams",
-          "startTime": "2026-09-24T09:19:00Z",
-          "endTime": null,
-          "lastModified": "2026-10-22T18:43:14.783Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may not receive notifications when added to or removed from tags in Microsoft Teams.",
-          "scopeOfImpact": "This event may impact any user, and any user may not receive notifications when added to or removed from tags in Microsoft Teams. This information may be updated as our investigation continues.\r\n\r\nStart time: Thursday, September 24, 2026, at 9:19 AM UTC",
-          "rootCause": "A recent update to the authentication flow that contained the issue resulting in impact.",
-          "nextUpdateBy": "Monday, October 26, 2026, at 8:30 PM UTC",
-          "feature": "Notifications",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-10-22T18:38:45.02Z",
-              "postType": "regular",
-              "content": "Title: Users may not receive notifications when added to or removed from tags in Microsoft Teams\r\n\r\nUser impact: Users may not receive notifications when added to or removed from tags in Microsoft Teams.\r\n\r\nMore info: This event may also impact notifications surrounding tag creation, deletion, or restoration.\n \nThis only impact notifications and tag operations still succeed as expected.\r\n\r\nCurrent status: We've developed a forward fix and validated it in our internal testing environments. We're now deploying this fix to all affected regions and monitoring the progress to ensure impact is fully resolved as expected.\r\n\r\nScope of impact: This event may impact any user, and any user may not receive notifications when added to or removed from tags in Microsoft Teams. This information may be updated as our investigation continues.\r\n\r\nStart time: Thursday, September 24, 2026, at 9:19 AM UTC\r\n\r\nRoot cause: A recent update to the authentication flow that contained the issue resulting in impact.\r\n\r\nNext update by: Monday, October 26, 2026, at 8:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-21T20:18:05.48Z",
-              "postType": "regular",
-              "content": "Title: Users may not receive notifications when added to or removed from tags in Microsoft Teams\r\n\r\nUser impact: Users may not receive notifications when added to or removed from tags in Microsoft Teams.\r\n\r\nMore info: This event may also impact notifications surrounding tag creation, deletion, or restoration.\n \nThis only impact notifications and tag operations still succeed as expected.\r\n\r\nCurrent status: We're continuing our validation of a fix and will provide a remediation timeline once available. \r\n\r\nScope of impact: This event may impact any user, and any user may not receive notifications when added to or removed from tags in Microsoft Teams. This information may be updated as our investigation continues.\r\n\r\nStart time: Thursday, September 24, 2026, at 9:19 AM UTC\r\n\r\nRoot cause: A recent update to the authentication flow that contained the issue resulting in impact.\r\n\r\nNext update by: Thursday, October 22, 2026, at 8:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-20T19:52:12.947Z",
-              "postType": "regular",
-              "content": "Title: Users may not receive notifications when added to or removed from tags in Microsoft Teams\r\n\r\nUser impact: Users may not receive notifications when added to or removed from tags in Microsoft Teams.\r\n\r\nMore info: This event may also impact notifications surrounding tag creation, deletion, or restoration.\n \nThis only impact notifications and tag operations still succeed as expected.\r\n\r\nCurrent status: We identified a recent update to the authentication flow that contained the issue resulting in impact. We're validating a fix to resolve this issue and will provide a remediation timeline as soon as one becomes available.\r\n\r\nScope of impact: This event may impact any user, and any user may not receive notifications when added to or removed from tags in Microsoft Teams. This information may be updated as our investigation continues.\r\n\r\nStart time: Thursday, September 24, 2026, at 9:19 AM UTC\r\n\r\nRoot cause: A recent update to the authentication flow that contained the issue resulting in impact.\r\n\r\nNext update by: Wednesday, October 21, 2026, at 8:30 PM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Microsoft Teams"
-          ]
-        },
-        {
           "id": "TM1489031",
           "title": "Users may see Microsoft Teams on the web displayed in English",
           "startTime": "2026-10-06T04:38:30.307Z",
@@ -1303,6 +1268,47 @@
     }
   ],
   "history": [
+    {
+      "id": "TM1517449",
+      "title": "Users may not receive notifications when added to or removed from tags in Microsoft Teams",
+      "startTime": "2026-09-24T09:19:00Z",
+      "endTime": "2026-10-26T20:17:32.377Z",
+      "lastModified": "2026-10-26T20:19:08.563Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have not received notifications when added to or removed from tags in Microsoft Teams.",
+      "scopeOfImpact": "This event may have impacted any user, and any user may have not received notifications when added to or removed from tags in Microsoft Teams.\r\n\r\nStart time: Thursday, September 24, 2026, at 9:19 AM UTC\r\n\r\nEnd time: Friday, October 23, 2026, at 1:00 AM UTC",
+      "rootCause": "A recent update to the authentication flow contained an issue that resulted in impact to tag notifications.\r\n\r\nNext steps: - We're reviewing the responsible update to better understand what led to the error that resulted in impact and prevent similar future occurrences.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Notifications",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-10-26T20:19:04.713Z",
+          "postType": "regular",
+          "content": "Title: Users may not receive notifications when added to or removed from tags in Microsoft Teams\r\n\r\nUser impact: Users may have not received notifications when added to or removed from tags in Microsoft Teams.\r\n\r\nMore info: This event may have also impacted notifications surrounding tag creation, deletion, or restoration.\n\nThis only impacted notifications and tag operations still succeed as expected.\r\n\r\nFinal status: Our fix has completed its deployment, and we've confirmed through service health telemetry that this has successfully resolved the event.\r\n\r\nScope of impact: This event may have impacted any user, and any user may have not received notifications when added to or removed from tags in Microsoft Teams.\r\n\r\nStart time: Thursday, September 24, 2026, at 9:19 AM UTC\r\n\r\nEnd time: Friday, October 23, 2026, at 1:00 AM UTC\r\n\r\nRoot cause: A recent update to the authentication flow contained an issue that resulted in impact to tag notifications.\r\n\r\nNext steps: - We're reviewing the responsible update to better understand what led to the error that resulted in impact and prevent similar future occurrences.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-10-22T18:38:45.02Z",
+          "postType": "regular",
+          "content": "Title: Users may not receive notifications when added to or removed from tags in Microsoft Teams\r\n\r\nUser impact: Users may not receive notifications when added to or removed from tags in Microsoft Teams.\r\n\r\nMore info: This event may also impact notifications surrounding tag creation, deletion, or restoration.\n \nThis only impact notifications and tag operations still succeed as expected.\r\n\r\nCurrent status: We've developed a forward fix and validated it in our internal testing environments. We're now deploying this fix to all affected regions and monitoring the progress to ensure impact is fully resolved as expected.\r\n\r\nScope of impact: This event may impact any user, and any user may not receive notifications when added to or removed from tags in Microsoft Teams. This information may be updated as our investigation continues.\r\n\r\nStart time: Thursday, September 24, 2026, at 9:19 AM UTC\r\n\r\nRoot cause: A recent update to the authentication flow that contained the issue resulting in impact.\r\n\r\nNext update by: Monday, October 26, 2026, at 8:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-21T20:18:05.48Z",
+          "postType": "regular",
+          "content": "Title: Users may not receive notifications when added to or removed from tags in Microsoft Teams\r\n\r\nUser impact: Users may not receive notifications when added to or removed from tags in Microsoft Teams.\r\n\r\nMore info: This event may also impact notifications surrounding tag creation, deletion, or restoration.\n \nThis only impact notifications and tag operations still succeed as expected.\r\n\r\nCurrent status: We're continuing our validation of a fix and will provide a remediation timeline once available. \r\n\r\nScope of impact: This event may impact any user, and any user may not receive notifications when added to or removed from tags in Microsoft Teams. This information may be updated as our investigation continues.\r\n\r\nStart time: Thursday, September 24, 2026, at 9:19 AM UTC\r\n\r\nRoot cause: A recent update to the authentication flow that contained the issue resulting in impact.\r\n\r\nNext update by: Thursday, October 22, 2026, at 8:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-20T19:52:12.947Z",
+          "postType": "regular",
+          "content": "Title: Users may not receive notifications when added to or removed from tags in Microsoft Teams\r\n\r\nUser impact: Users may not receive notifications when added to or removed from tags in Microsoft Teams.\r\n\r\nMore info: This event may also impact notifications surrounding tag creation, deletion, or restoration.\n \nThis only impact notifications and tag operations still succeed as expected.\r\n\r\nCurrent status: We identified a recent update to the authentication flow that contained the issue resulting in impact. We're validating a fix to resolve this issue and will provide a remediation timeline as soon as one becomes available.\r\n\r\nScope of impact: This event may impact any user, and any user may not receive notifications when added to or removed from tags in Microsoft Teams. This information may be updated as our investigation continues.\r\n\r\nStart time: Thursday, September 24, 2026, at 9:19 AM UTC\r\n\r\nRoot cause: A recent update to the authentication flow that contained the issue resulting in impact.\r\n\r\nNext update by: Wednesday, October 21, 2026, at 8:30 PM UTC"
+        }
+      ],
+      "serviceName": "Microsoft Teams",
+      "affectedServices": [
+        "Microsoft Teams"
+      ]
+    },
     {
       "id": "MV1526068",
       "title": "Some users may be unable to access the group feed with Microsoft Viva Engage",
@@ -3300,52 +3306,6 @@
       "serviceName": "Microsoft Teams",
       "affectedServices": [
         "Microsoft Teams"
-      ]
-    },
-    {
-      "id": "EX1478331",
-      "title": "Some users’ email messages may not be quarantined and fail to be stored in the quarantine folder",
-      "startTime": "2026-09-23T00:56:00Z",
-      "endTime": "2026-10-02T08:24:00Z",
-      "lastModified": "2026-10-02T17:47:41.623Z",
-      "status": "serviceRestored",
-      "severity": "incident",
-      "userImpact": "Users’ email messages may not have been quarantined and failed to be stored in the quarantine folder.",
-      "scopeOfImpact": "This issue impacted users attempting to have email messages quarantined in Exchange Online.\r\n\r\nStart time: Wednesday, September 23, 2026, at 12:56 AM UTC\r\n\r\nEnd time: Friday, October 2, 2026, at 8:24 AM UTC",
-      "rootCause": "A recent service-side update introduced a code error that caused this impacting event.\r\n\r\nNext steps: We're reviewing the service-side update that introduced the code error to understand why it resulted in this impact and help prevent similar issues from occurring in the future.\r\n\r\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Mailflow - delayed sending to Internet",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-10-02T17:46:47.79Z",
-          "postType": "regular",
-          "content": "Title: Some users’ email messages may not be quarantined and fail to be stored in the quarantine folder\r\n\r\nUser impact: Users’ email messages may not have been quarantined and failed to be stored in the quarantine folder.\r\n\r\nMore info: The following error appeared in message trace: '‎550 5.1.10 Failed to deliver to Quarantine store‎'.\r\n\r\nFinal status: We completed deployment of our fix to the affected environments and confirmed with affected users that this action successfully resolved the problem.\r\n\r\nScope of impact: This issue impacted users attempting to have email messages quarantined in Exchange Online.\r\n\r\nStart time: Wednesday, September 23, 2026, at 12:56 AM UTC\r\n\r\nEnd time: Friday, October 2, 2026, at 8:24 AM UTC\r\n\r\nRoot cause: A recent service-side update introduced a code error that caused this impacting event.\r\n\r\nNext steps: We're reviewing the service-side update that introduced the code error to understand why it resulted in this impact and help prevent similar issues from occurring in the future.\r\n\r\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-10-01T22:01:11.297Z",
-          "postType": "regular",
-          "content": "Title: Some users’ email messages may not be quarantined and fail to be stored in the quarantine folder\r\n\r\nUser impact: Users’ email messages may not be quarantined and might fail to be stored in the quarantine folder.\r\n\r\nMore info: The following error appears in message trace: '‎550 5.1.10 Failed to deliver to Quarantine store‎'. \r\n\r\nCurrent status: We're continuing to monitor the deployment of our fix, which has reached 88 percent saturation to the affected environment. We anticipate the deployment will complete by our next scheduled communications update.\r\n\r\nScope of impact: This issue may impact users attempting to have email messages quarantined in Exchange Online. This section may be updated as the investigation progresses.\r\n\r\nStart time: Wednesday, September 23, 2026, at 12:56 AM UTC\r\n\r\nEstimated time to resolve: We anticipate the fix will complete deployment by Friday, October 2, 2026, at 7:00 PM UTC.\r\n\r\nRoot cause: A recent service-side update introduced a code error that has caused this impacting event.\r\n\r\nNext update by: Friday, October 2, 2026, at 7:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-10-01T17:35:22.033Z",
-          "postType": "regular",
-          "content": "Title: Some users’ email messages may not be quarantined and fail to be stored in the quarantine folder\r\n\r\nUser impact: Users’ email messages may not be quarantined and might fail to be stored in the quarantine folder.\r\n\r\nMore info: The following error appears in message trace: '‎550 5.1.10 Failed to deliver to Quarantine store‎'. \r\n\r\nCurrent status: We've initiated the fix release and are monitoring as it progresses. We expect to have a completion timeline by the next scheduled update. \r\n\r\nScope of impact: This issue may impact users attempting to have email messages quarantined in Exchange Online. This section may be updated as the investigation progresses.\r\n\r\nRoot cause: A recent service-side update introduced a code error that has caused this impacting event.\r\n\r\nNext update by: Thursday, October 1, 2026, at 11:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-10-01T01:02:16.7Z",
-          "postType": "regular",
-          "content": "Title: Some users’ email messages may not be quarantined and fail to be stored in the quarantine folder\r\n\r\nUser impact: Users’ email messages may not be quarantined and might fail to be stored in the quarantine folder.\r\n\r\nMore info: The following error appears in message trace: '‎550 5.1.10 Failed to deliver to Quarantine store‎'. \r\n\r\nCurrent status: Validation of our fix is in its final stages, and we expect to begin deploying it to the affected environment by our next scheduled update. We’ll provide an estimated completion timeline once available.\r\n\r\nScope of impact: This issue may impact users attempting to have email messages quarantined in Exchange Online. This section may be updated as the investigation progresses.\r\n\r\nRoot cause: A recent service-side updated unintentionally introduced a code error that has caused this impacting event.\r\n\r\nNext update by: Thursday, October 1, 2026, at 6:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-10-01T01:02:09.947Z",
-          "postType": "regular",
-          "content": "Title: Some users’ email messages may not be quarantined and fail to be stored in the quarantine folder\r\n\r\nUser impact: Users’ email messages may not be quarantined and might fail to be stored in the quarantine folder.\r\n\r\nMore info: The following error appears in message trace: '‎550 5.1.10 Failed to deliver to Quarantine store‎'. \r\n\r\nCurrent status: Validation of our fix is in its final stages, and we expect to begin deploying it to the affected environment by our next scheduled update. We’ll provide an estimated completion timeline once available.\r\n\r\nScope of impact: This issue may impact users attempting to have email messages quarantined in Exchange Online. This section may be updated as the investigation progresses.\r\n\r\nRoot cause: A recent service-side updated unintentionally introduced a code error that has caused this impacting event.\r\n\r\nNext update by: Thursday, October 1, 2026, at 6:00 PM UTC"
-        }
-      ],
-      "serviceName": "Exchange Online",
-      "affectedServices": [
-        "Exchange Online"
       ]
     }
   ]
