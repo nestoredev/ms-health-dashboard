@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-27T19:10:50.347Z",
+  "lastUpdated": "2026-10-27T19:41:06.910Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -11,16 +11,21 @@
           "title": "Some users may experience intermittent errors or failures when accessing Exchange Online through REST APIs",
           "startTime": "2026-10-27T15:56:24.433Z",
           "endTime": null,
-          "lastModified": "2026-10-27T17:17:28.197Z",
+          "lastModified": "2026-10-27T19:16:17.077Z",
           "status": "investigating",
           "severity": "incident",
           "userImpact": "Users may experience intermittent errors or failures when accessing Exchange Online through REST APIs.",
           "scopeOfImpact": "Impact may occur intermittently for users attempting to access Exchange Online through REST APIs.",
           "rootCause": "",
-          "nextUpdateBy": "Tuesday, October 27, 2026, at 7:30 PM UTC",
+          "nextUpdateBy": "Tuesday, October 27, 2026, at 9:30 PM UTC",
           "feature": "Reports of an Incident",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-27T19:15:13.297Z",
+              "postType": "regular",
+              "content": "Title: Some users may experience intermittent errors or failures when accessing Exchange Online through REST APIs\r\n\r\nUser impact: Users may experience intermittent errors or failures when accessing Exchange Online through REST APIs.\r\n\r\nCurrent status: We're continuing to disable the recent service change intended to optimize directory functionality in additional selected affected environments and monitoring service telemetry to validate whether this action alleviates impact. If successful, we'll proceed with disabling the change throughout the remaining affected environments to fully remediate impact.\r\n\r\nScope of impact: Impact may occur intermittently for users attempting to access Exchange Online through REST APIs.\r\n\r\nNext update by: Tuesday, October 27, 2026, at 9:30 PM UTC"
+            },
             {
               "createdAt": "2026-10-27T17:17:28.197Z",
               "postType": "regular",
