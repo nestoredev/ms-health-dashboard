@@ -1,11 +1,41 @@
 {
-  "lastUpdated": "2026-10-27T16:09:04.721Z",
+  "lastUpdated": "2026-10-27T16:39:24.490Z",
   "services": [
     {
       "service": "Exchange Online",
       "status": "serviceDegradation",
       "id": "Exchange",
       "issues": [
+        {
+          "id": "EX1527500",
+          "title": "Some users may experience intermittent errors or failures when accessing Exchange Online through REST APIs",
+          "startTime": "2026-10-27T15:56:24.433Z",
+          "endTime": null,
+          "lastModified": "2026-10-27T16:24:08.81Z",
+          "status": "investigating",
+          "severity": "incident",
+          "userImpact": "Users may experience intermittent errors or failures when accessing Exchange Online through REST APIs.",
+          "scopeOfImpact": "Impact may occur intermittently for users attempting to access Exchange Online through REST APIs.",
+          "rootCause": "",
+          "nextUpdateBy": "Tuesday, October 27, 2026, at 5:30 PM UTC",
+          "feature": "Reports of an Incident",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-10-27T16:24:01.367Z",
+              "postType": "regular",
+              "content": "Title: Some users may experience intermittent errors or failures when accessing Exchange Online through REST APIs\r\n\r\nUser impact: Users may experience intermittent errors or failures when accessing Exchange Online through REST APIs.\r\n\r\nCurrent status: We're continuing to review service telemetry and recent service changes in an effort to isolate the source of this issue and determine an appropriate remediation action.\r\n\r\nScope of impact: Impact may occur intermittently for users attempting to access Exchange Online through REST APIs.\r\n\r\nNext update by: Tuesday, October 27, 2026, at 5:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-10-27T16:06:50.55Z",
+              "postType": "regular",
+              "content": "Title: Some users may experience intermittent errors or failures when accessing Exchange Online through REST APIs\r\n\r\nUser impact: Users may experience intermittent errors or failures when accessing Exchange Online through REST APIs.\r\n\r\nCurrent status: We're investigating an issue in which users may experience intermittent errors or failures when accessing Exchange Online through REST APIs. We're reviewing service telemetry to determine the underlying cause and identify the most effective remediation action. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online"
+          ]
+        },
         {
           "id": "EX1479349",
           "title": "Users may be unable to reply or reply-all to email messages sent to Microsoft 365 groups in Exchange Online",
