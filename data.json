@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-27T17:39:58.695Z",
+  "lastUpdated": "2026-10-27T18:10:17.137Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -841,16 +841,21 @@
           "title": "Some users may be unable to load their calendar in the Microsoft Teams web app",
           "startTime": "2026-10-27T14:04:37.85Z",
           "endTime": null,
-          "lastModified": "2026-10-27T15:25:28.543Z",
+          "lastModified": "2026-10-27T17:55:06.327Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to load their calendar in the Microsoft Teams web app.",
           "scopeOfImpact": "Some users attempting to load their calendar in the Microsoft Teams web app may be impacted. This information may be updated as our investigation continues.",
           "rootCause": "",
-          "nextUpdateBy": "Tuesday, October 27, 2026, at 6:00 PM UTC",
+          "nextUpdateBy": "Tuesday, October 27, 2026, at 8:00 PM UTC",
           "feature": "Calendar",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-27T17:55:06.327Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to load their calendar in the Microsoft Teams web app\r\n\r\nUser impact: Users may be unable to load their calendar in the Microsoft Teams web app.\r\n\r\nMore info: Affected users may experience extended loading times, and subsequent attempts to load their calendar may succeed.\r\n\r\nCurrent status: We've identified latencies in a specific flow that result in timeout failures, potentially contributing to the reported impact. We're comparing failed and successful attempts from our internal telemetry data to better understand the flow latency and identify a strategy that remediates impact.\r\n\r\nScope of impact: Some users attempting to load their calendar in the Microsoft Teams web app may be impacted. This information may be updated as our investigation continues.\r\n\r\nNext update by: Tuesday, October 27, 2026, at 8:00 PM UTC"
+            },
             {
               "createdAt": "2026-10-27T15:25:28.543Z",
               "postType": "regular",
