@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-28T23:26:14.740Z",
+  "lastUpdated": "2026-10-28T23:56:29.291Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -11,16 +11,21 @@
           "title": "Users may not be able to open email file attachments or see the \"Open\" option in the new Outlook desktop app",
           "startTime": "2026-10-28T16:24:46.9Z",
           "endTime": null,
-          "lastModified": "2026-10-28T22:37:06.693Z",
+          "lastModified": "2026-10-28T23:23:13.933Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may not be able to open email file attachments or see the \"Open\" option in the new Outlook desktop app.",
-          "scopeOfImpact": "This issue affects new Outlook desktop users who have upgraded to Edge version 156.",
+          "scopeOfImpact": "This issue affects new Outlook desktop users who have upgraded to Edge version 156. This section may be updated as our investigation continues.",
           "rootCause": "",
-          "nextUpdateBy": "Wednesday, October 28, 2026, at 11:30 PM UTC",
+          "nextUpdateBy": "Wednesday, October 28, 2026, at 1:30 AM UTC",
           "feature": "Reports of an Incident",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-28T23:23:13.933Z",
+              "postType": "regular",
+              "content": "Title: Users may not be able to open email file attachments or see the \"Open\" option in the new Outlook desktop app\r\n\r\nUser impact: Users may not be able to open email file attachments or see the \"Open\" option in the new Outlook desktop app.\r\n\r\nMore info: Impacted users may be presented with an error that the file can't be opened and to restart Outlook to try again; however, the \"Open\" option is no longer available after encountering the error. Users can select \"Save as\" to download the file and then open the attachment to bypass the impact.\r\n\r\nCurrent status: We're continuing to work on validating our root cause hypothesis and once completed, we'll determine our next steps towards remediation.\r\n\r\nScope of impact: This issue affects new Outlook desktop users who have upgraded to Edge version 156. This section may be updated as our investigation continues.\r\n\r\nNext update by: Wednesday, October 28, 2026, at 1:30 AM UTC"
+            },
             {
               "createdAt": "2026-10-28T21:21:09.117Z",
               "postType": "regular",
@@ -1306,6 +1311,52 @@
       "serviceName": "Microsoft Viva",
       "affectedServices": [
         "Microsoft Viva"
+      ]
+    },
+    {
+      "id": "TM1526111",
+      "title": "Users may be unable to send or receive messages, upload images, or schedule meetings in Microsoft Teams",
+      "startTime": "2026-10-26T15:01:00Z",
+      "endTime": "2026-10-26T15:42:00Z",
+      "lastModified": "2026-10-28T23:36:20.207Z",
+      "status": "postIncidentReviewPublished",
+      "severity": "incident",
+      "userImpact": "Users may have been unable to send or receive messages, upload images, or schedule meetings in Teams.",
+      "scopeOfImpact": "",
+      "rootCause": "",
+      "nextUpdateBy": "",
+      "feature": "General",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-10-28T23:36:20.207Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        },
+        {
+          "createdAt": "2026-10-26T16:26:13.943Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to send or receive messages, upload images, or schedule meetings in Microsoft Teams\n\nUser impact: Users may have been unable to send or receive messages, upload images, or schedule meetings in Teams.\n\nMore info: Users may have also encountered issues with \n- Delays in sending and receiving messages \n- Creating new threads\n- Signing in and out\n- Scheduling service timeouts\n\nFinal status: We can confirm after monitoring our telemetry that the automatic scaling efforts to increase processing throughput were successful and the service has returned to healthy levels.\n\nScope of impact: GCC users who attempted to send or receive messages, upload images, or schedule meetings in Microsoft Teams may have been impacted by this event.\n\nStart time: Monday, October 26, 2026, at 3:01 PM UTC\n\nEnd time: Monday, October 26, 2026, at 3:42 PM UTC\n\nPreliminary root cause: We've identified that higher-than-normal latency impacted backend services that manage chat threads and messages, along with higher-than-normal Central Processing Unit (CPU) utilization resulted in our service entering an unhealthy state.\n\nNext steps:  \n- To help prevent similar impact in the future, we're further reviewing our alerting and traffic distribution systems.\n\nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days."
+        },
+        {
+          "createdAt": "2026-10-26T16:02:19.98Z",
+          "postType": "quick",
+          "content": "We're seeing positive trends towards recovery in our telemetry following our service's automatic scaling efforts to increase processing throughput.\n\nThis quick update is designed to give the latest information on this issue.\n\nNext update by: Monday, October 26, 2026, at 5:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-26T15:52:20.047Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to send or receive messages, upload images, or schedule meetings in Microsoft Teams\r\n\r\nUser impact: Users may be unable to send or receive messages, upload images, or schedule meetings in Teams.\r\n\r\nMore info: Users may also encounter issues with \n- Delays in sending and receiving messages \n- Creating new threads\n- Signing in and out\n- Scheduling service timeouts\r\n\r\nCurrent status: We've received reports with Teams issues in GCC and we're analyzing recent changes and service telemetry to isolate the source of the issue. \r\n\r\nScope of impact: GCC users attempting to send or receive messages, upload images, or schedule meetings in Microsoft Teams may be impacted by this event.\r\n\r\nStart time: Monday, October 26, 2026, at 3:00 PM UTC\r\n\r\nNext update by: Monday, October 26, 2026, at 5:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-26T15:29:08.03Z",
+          "postType": "regular",
+          "content": "Title: We're looking into a potential problem impacting images in Microsoft Teams\r\n\r\nUser impact: We're checking for potential impact to your users.\r\n\r\nCurrent status: We're investigating a potential issue with images in Microsoft Teams and checking for impact to your organization. We'll provide an update within 30 minutes."
+        }
+      ],
+      "serviceName": "Microsoft Teams",
+      "affectedServices": [
+        "Microsoft Teams"
       ]
     },
     {
@@ -3023,37 +3074,6 @@
       "serviceName": "Microsoft 365 suite",
       "affectedServices": [
         "Microsoft 365 suite"
-      ]
-    },
-    {
-      "id": "PB1488968",
-      "title": "Some users may be unable to create or update Ontology artifacts in Microsoft Fabric",
-      "startTime": "2026-10-05T22:30:00Z",
-      "endTime": "2026-10-06T00:26:00Z",
-      "lastModified": "2026-10-06T01:55:44.073Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users may have been unable to create or update Ontology artifacts in Microsoft Fabric.",
-      "scopeOfImpact": "This issue impacted some users who may have been unable to create or update Ontology artifacts in Microsoft Fabric.\r\n\r\nStart time: Monday, October 5, 2026, at 10:30 PM UTC\r\n\r\nEnd time: Tuesday, October 6, 2026, at 12:26 AM UTC",
-      "rootCause": "A recent feature update introduced a misconfiguration which prevented Ontology artifact creation or updates.\r\n\r\nNext steps: \n- We're analyzing the problematic feature update to determine why the potential for impact wasn't caught during our internal update testing and validation phases. This analysis will help us to improve our update implementation process moving forward to help ensure similar impact scenarios don't occur in the future.\r\n\r\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "General",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-10-06T01:55:23.163Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to create or update Ontology artifacts in Microsoft Fabric\r\n\r\nUser impact: Users may have been unable to create or update Ontology artifacts in Microsoft Fabric.\r\n\r\nFinal status: We've isolated a regression impacting a subset of users who were unable create or update Ontology artifacts in Microsoft Fabric. We've determined that a recent feature update introduced a misconfiguration which prevented Ontology artifact creation or updates. We've addressed the misconfiguration and we've validated after an internal monitoring period that impact is remediated.\r\n\r\nScope of impact: This issue impacted some users who may have been unable to create or update Ontology artifacts in Microsoft Fabric.\r\n\r\nStart time: Monday, October 5, 2026, at 10:30 PM UTC\r\n\r\nEnd time: Tuesday, October 6, 2026, at 12:26 AM UTC\r\n\r\nRoot cause: A recent feature update introduced a misconfiguration which prevented Ontology artifact creation or updates.\r\n\r\nNext steps: \n- We're analyzing the problematic feature update to determine why the potential for impact wasn't caught during our internal update testing and validation phases. This analysis will help us to improve our update implementation process moving forward to help ensure similar impact scenarios don't occur in the future.\r\n\r\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-10-06T01:49:11.853Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to create or update Ontology artifacts in Microsoft Fabric\r\n\r\nUser impact: Users may have been unable to create or update Ontology artifacts in Microsoft Fabric.\r\n\r\nCurrent status: We've investigated a problem in which some users may have been unable to create or update Ontology artifacts in Microsoft Fabric and confirmed that service is now restored. We'll provide additional information in a closure summary within the \"History\" section of the \"Service health\" dashboard shortly."
-        }
-      ],
-      "serviceName": "Power BI",
-      "affectedServices": [
-        "Power BI"
       ]
     }
   ]
