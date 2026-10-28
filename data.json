@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-28T15:21:48.578Z",
+  "lastUpdated": "2026-10-28T15:52:04.630Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -906,6 +906,31 @@
               "createdAt": "2026-10-06T04:39:57.093Z",
               "postType": "regular",
               "content": "Title: Users see Microsoft Teams on the web displayed in English\r\n\r\nUser impact: Users see Microsoft Teams on the web displayed in English.\r\n\r\nMore info: Affected users don’t have English set as their preferred language.\r\n\r\nCurrent status: We’re reviewing system logs to isolate the origin of this issue.\r\n\r\nScope of impact: Your organization is affected by this event, and some users see Microsoft Teams on the web displayed in English when it isn’t their preferred language. This information may be updated as our investigation continues.\r\n\r\nNext update by: Tuesday, October 6, 2026, at 6:30 AM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Teams"
+          ]
+        },
+        {
+          "id": "TM1528936",
+          "title": "Admins may be unable to access Best Practices content in the Microsoft Teams admin center",
+          "startTime": "2026-10-28T15:00:51.54Z",
+          "endTime": null,
+          "lastModified": "2026-10-28T15:31:30.083Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Admins may be unable to access Best Practices content in the Microsoft Teams admin center.",
+          "scopeOfImpact": "This issue is preventing some admins in North America and Japan from accessing Best Practices content or from conducting CQD report queries in the Microsoft Teams admin center.\r\n\r\nStart time: Tuesday, October 13, 2026, at 12:00 AM UTC",
+          "rootCause": "A recent update has introduced a code regression for the subset of infrastructure that supports access to the Best Practices content in the Microsoft Teams admin center.",
+          "nextUpdateBy": "Wednesday, October 28, 2026, at 8:00 PM UTC",
+          "feature": "Teams Admin Center",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-10-28T15:29:50.56Z",
+              "postType": "regular",
+              "content": "Title: Admins may be unable to access Best Practices content in the Microsoft Teams admin center\r\n\r\nUser impact: Admins may be unable to access Best Practices content in the Microsoft Teams admin center.\r\n\r\nMore info: In addition, admins are unable to conduct Call Quality Dashboard (CQD) queries in the Microsoft Teams admin center.\r\n\r\nCurrent status: We've identified a recent service update that introduced a code regression and is affecting a subset of service infrastructure that helps facilitate access to Best Practices content in the Microsoft Teams admin center. We've conducted our change reversion process to remove the change and remediate the impact.\r\n\r\nScope of impact: This issue is preventing some admins in North America and Japan from accessing Best Practices content or from conducting CQD report queries in the Microsoft Teams admin center.\r\n\r\nStart time: Tuesday, October 13, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: A recent update has introduced a code regression for the subset of infrastructure that supports access to the Best Practices content in the Microsoft Teams admin center.\r\n\r\nNext update by: Wednesday, October 28, 2026, at 8:00 PM UTC"
             }
           ],
           "affectedServices": [
