@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-28T14:21:13.871Z",
+  "lastUpdated": "2026-10-28T14:51:32.969Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -765,9 +765,35 @@
     },
     {
       "service": "Power BI",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "PowerBIcom",
-      "issues": []
+      "issues": [
+        {
+          "id": "PB1528889",
+          "title": "Some users may experience that Azure Maps visuals are blank and are not loading as expected in Microsoft Fabric",
+          "startTime": "2026-10-28T14:23:41.37Z",
+          "endTime": null,
+          "lastModified": "2026-10-28T14:37:22.133Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may experience that Azure Maps visuals are blank and are not loading as expected in Microsoft Fabric.",
+          "scopeOfImpact": "Impact is specific to users attempting to load Azure Maps visuals in Microsoft Fabric.",
+          "rootCause": "",
+          "nextUpdateBy": "Wednesday, October 28, 2026, at 4:30 PM UTC",
+          "feature": "General",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-10-28T14:25:41.123Z",
+              "postType": "regular",
+              "content": "Title: Some users may experience that Azure Maps visuals are blank and are not loading as expected in Microsoft Fabric\r\n\r\nUser impact: Users may experience that Azure Maps visuals are blank and are not loading as expected in Microsoft Fabric.\r\n\r\nCurrent status: We're reviewing service monitoring telemetry to isolate the root cause and develop a remediation plan.\r\n\r\nScope of impact: Impact is specific to users attempting to load Azure Maps visuals in Microsoft Fabric.\r\n\r\nNext update by: Wednesday, October 28, 2026, at 4:30 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Power BI"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft Intune",
