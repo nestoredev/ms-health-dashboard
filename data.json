@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-28T16:52:38.074Z",
+  "lastUpdated": "2026-10-28T17:22:53.053Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -383,16 +383,21 @@
           "title": "Admin usage reports for Microsoft 365 apps and Exchange Online may have refresh delays",
           "startTime": "2026-10-23T19:29:31.007Z",
           "endTime": null,
-          "lastModified": "2026-10-27T15:43:04.377Z",
+          "lastModified": "2026-10-28T16:52:02.107Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admin usage reports for Microsoft 365 apps and Exchange Online may have refresh delays. ",
           "scopeOfImpact": "Admins who review Microsoft 365 reports in the Microsoft 365 admin center may be impacted and see delayed reporting information. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, October 23, 2026, at 12:00 AM UTC",
           "rootCause": "An issue with the pipeline for our upstream data source responsible for timely report data in the admin center is causing reporting delays.",
-          "nextUpdateBy": "Wednesday, October 28, 2026, at 6:00 PM UTC",
+          "nextUpdateBy": "Thursday, October 29, 2026, at 2:00 AM UTC",
           "feature": "Company or User Administration",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-28T16:52:02.107Z",
+              "postType": "regular",
+              "content": "Title: Admin usage reports for Microsoft 365 apps and Exchange Online may have refresh delays\r\n\r\nUser impact: Admin usage reports for Microsoft 365 apps and Exchange Online may have refresh delays. \r\n\r\nMore info: This includes the following usage reports:\n- Microsoft 365 Apps Usage\n- Active Users \n- Exchange Email \n- Mailbox\n \nThe last updated date for these reports may be October 18th, 2026, or later depending on the report.\r\n\r\nCurrent status: Our telemetry has validated that usage reports for Email Apps has caught up and are no longer experiencing refresh delays. We're continuing to apply our remediation action to the upstream data pipeline for Microsoft 365 Apps Usage, Exchange Email, and Mailbox reports, and our remediation timeline expects them to have completed by our next scheduled communication update.  \r\n\r\nScope of impact: Admins who review Microsoft 365 reports in the Microsoft 365 admin center may be impacted and see delayed reporting information. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, October 23, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: An issue with the pipeline for our upstream data source responsible for timely report data in the admin center is causing reporting delays.\r\n\r\nNext update by: Thursday, October 29, 2026, at 2:00 AM UTC"
+            },
             {
               "createdAt": "2026-10-27T15:42:58.717Z",
               "postType": "regular",
