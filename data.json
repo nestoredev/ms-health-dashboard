@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-28T18:53:42.615Z",
+  "lastUpdated": "2026-10-28T19:23:58.837Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -515,10 +515,10 @@
           "title": "Admins may see multiple usage reports not updating in the Microsoft 365 admin center",
           "startTime": "2026-09-28T22:36:21.907Z",
           "endTime": null,
-          "lastModified": "2026-10-27T14:15:49.303Z",
+          "lastModified": "2026-10-28T19:18:19.697Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "userImpact": "Admins may see multiple usage reports not updating in the Microsoft 365 admin center.",
+          "userImpact": "Admins may have seen multiple usage reports not updating in the Microsoft 365 admin center.",
           "scopeOfImpact": "Some admins may not see updated usage reports in the Microsoft 365 admin center with varying delays. This section may be updated as the investigation progresses.",
           "rootCause": "An upstream process responsible for managing user data is unable to process data as effectively as expected, leading to delays populating user reports.",
           "nextUpdateBy": "Wednesday, October 28, 2026, at 8:30 PM UTC",
@@ -923,31 +923,6 @@
           ]
         },
         {
-          "id": "TM1528936",
-          "title": "Admins may be unable to access Best Practices content in the Microsoft Teams admin center",
-          "startTime": "2026-10-28T15:00:51.54Z",
-          "endTime": null,
-          "lastModified": "2026-10-28T15:31:30.083Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Admins may be unable to access Best Practices content in the Microsoft Teams admin center.",
-          "scopeOfImpact": "This issue is preventing some admins in North America and Japan from accessing Best Practices content or from conducting CQD report queries in the Microsoft Teams admin center.\r\n\r\nStart time: Tuesday, October 13, 2026, at 12:00 AM UTC",
-          "rootCause": "A recent update has introduced a code regression for the subset of infrastructure that supports access to the Best Practices content in the Microsoft Teams admin center.",
-          "nextUpdateBy": "Wednesday, October 28, 2026, at 8:00 PM UTC",
-          "feature": "Teams Admin Center",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-10-28T15:29:50.56Z",
-              "postType": "regular",
-              "content": "Title: Admins may be unable to access Best Practices content in the Microsoft Teams admin center\r\n\r\nUser impact: Admins may be unable to access Best Practices content in the Microsoft Teams admin center.\r\n\r\nMore info: In addition, admins are unable to conduct Call Quality Dashboard (CQD) queries in the Microsoft Teams admin center.\r\n\r\nCurrent status: We've identified a recent service update that introduced a code regression and is affecting a subset of service infrastructure that helps facilitate access to Best Practices content in the Microsoft Teams admin center. We've conducted our change reversion process to remove the change and remediate the impact.\r\n\r\nScope of impact: This issue is preventing some admins in North America and Japan from accessing Best Practices content or from conducting CQD report queries in the Microsoft Teams admin center.\r\n\r\nStart time: Tuesday, October 13, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: A recent update has introduced a code regression for the subset of infrastructure that supports access to the Best Practices content in the Microsoft Teams admin center.\r\n\r\nNext update by: Wednesday, October 28, 2026, at 8:00 PM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Microsoft Teams"
-          ]
-        },
-        {
           "id": "MO1457843",
           "title": "Admins can't identify who deleted a Viva Engage community or its Microsoft 365 Group in Microsoft Entra ID audit logs",
           "startTime": "2026-08-19T22:38:36.783Z",
@@ -1082,10 +1057,10 @@
           "title": "Admins may see multiple usage reports not updating in the Microsoft 365 admin center",
           "startTime": "2026-09-28T22:36:21.907Z",
           "endTime": null,
-          "lastModified": "2026-10-27T14:15:49.303Z",
+          "lastModified": "2026-10-28T19:18:19.697Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "userImpact": "Admins may see multiple usage reports not updating in the Microsoft 365 admin center.",
+          "userImpact": "Admins may have seen multiple usage reports not updating in the Microsoft 365 admin center.",
           "scopeOfImpact": "Some admins may not see updated usage reports in the Microsoft 365 admin center with varying delays. This section may be updated as the investigation progresses.",
           "rootCause": "An upstream process responsible for managing user data is unable to process data as effectively as expected, leading to delays populating user reports.",
           "nextUpdateBy": "Wednesday, October 28, 2026, at 8:30 PM UTC",
@@ -1394,6 +1369,37 @@
     }
   ],
   "history": [
+    {
+      "id": "TM1528936",
+      "title": "Admins may be unable to access Best Practices content in the Microsoft Teams admin center",
+      "startTime": "2026-10-28T15:00:51.54Z",
+      "endTime": "2026-10-28T19:18:16.367Z",
+      "lastModified": "2026-10-28T19:18:45.373Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Admins may have been unable to access Best Practices content in the Microsoft Teams admin center.",
+      "scopeOfImpact": "This issue was preventing some admins in North America and Japan from accessing Best Practices content or from conducting CQD report queries in the Microsoft Teams admin center.\r\n\r\nStart time: Tuesday, October 13, 2026, at 11:08 AM UTC\r\n\r\nEnd time: Wednesday, October 28, 2026, at 3:32 PM UTC",
+      "rootCause": "A recent update introduced a code regression for the subset of infrastructure that supported access to the Best Practices content and CQD report queries in the Microsoft Teams admin center.\r\n\r\nNext steps: - We're reviewing and improving our service update validation procedure to detect and prevent similar code issues from occurring in the future.\r\n\r\nThis is the final update for this event.",
+      "nextUpdateBy": "",
+      "feature": "Teams Admin Center",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-10-28T19:18:41.507Z",
+          "postType": "regular",
+          "content": "Title: Admins may be unable to access Best Practices content in the Microsoft Teams admin center\r\n\r\nUser impact: Admins may have been unable to access Best Practices content in the Microsoft Teams admin center.\r\n\r\nMore info: In addition, admins were unable to conduct Call Quality Dashboard (CQD) queries in the Microsoft Teams admin center.\r\n\r\nFinal status: We've confirmed with previously affected users that impact is remediated after our change reversion completed. \r\n\r\nScope of impact: This issue was preventing some admins in North America and Japan from accessing Best Practices content or from conducting CQD report queries in the Microsoft Teams admin center.\r\n\r\nStart time: Tuesday, October 13, 2026, at 11:08 AM UTC\r\n\r\nEnd time: Wednesday, October 28, 2026, at 3:32 PM UTC\r\n\r\nRoot cause: A recent update introduced a code regression for the subset of infrastructure that supported access to the Best Practices content and CQD report queries in the Microsoft Teams admin center.\r\n\r\nNext steps: - We're reviewing and improving our service update validation procedure to detect and prevent similar code issues from occurring in the future.\r\n\r\nThis is the final update for this event."
+        },
+        {
+          "createdAt": "2026-10-28T15:29:50.56Z",
+          "postType": "regular",
+          "content": "Title: Admins may be unable to access Best Practices content in the Microsoft Teams admin center\r\n\r\nUser impact: Admins may be unable to access Best Practices content in the Microsoft Teams admin center.\r\n\r\nMore info: In addition, admins are unable to conduct Call Quality Dashboard (CQD) queries in the Microsoft Teams admin center.\r\n\r\nCurrent status: We've identified a recent service update that introduced a code regression and is affecting a subset of service infrastructure that helps facilitate access to Best Practices content in the Microsoft Teams admin center. We've conducted our change reversion process to remove the change and remediate the impact.\r\n\r\nScope of impact: This issue is preventing some admins in North America and Japan from accessing Best Practices content or from conducting CQD report queries in the Microsoft Teams admin center.\r\n\r\nStart time: Tuesday, October 13, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: A recent update has introduced a code regression for the subset of infrastructure that supports access to the Best Practices content in the Microsoft Teams admin center.\r\n\r\nNext update by: Wednesday, October 28, 2026, at 8:00 PM UTC"
+        }
+      ],
+      "serviceName": "Microsoft Teams",
+      "affectedServices": [
+        "Microsoft Teams"
+      ]
+    },
     {
       "id": "EX1527500",
       "title": "Some users may see intermittent failures when accessing Exchange Online through Representational State Transfer (REST)",
@@ -3401,42 +3407,6 @@
       "serviceName": "Exchange Online",
       "affectedServices": [
         "Exchange Online"
-      ]
-    },
-    {
-      "id": "SP1488394",
-      "title": "Some users may be unable to search using the search box in SharePoint Online",
-      "startTime": "2026-10-05T13:39:01.72Z",
-      "endTime": "2026-10-05T17:59:35.01Z",
-      "lastModified": "2026-10-05T18:09:26.247Z",
-      "status": "serviceRestored",
-      "severity": "incident",
-      "userImpact": "Users may have been unable to search using the search box in SharePoint Online.",
-      "scopeOfImpact": "Some users attempting to search in SharePoint Online may have been impacted.\r\n\r\nStart time: Monday, October 5, 2026, at 7:23 AM UTC\r\n\r\nEnd time: Monday, October 5, 2026, at 4:20 PM UTC",
-      "rootCause": "A recent feature update caused a compatibility issue that prevented users from searching in SharePoint Online. \r\n\r\nNext steps: - We're reviewing and improving our feature update validation procedure to prevent similar search issues from occurring in the future.\r\n\r\nThis is the final update for this event.",
-      "nextUpdateBy": "",
-      "feature": "SharePoint Search (General)",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-10-05T18:09:22.437Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to search using the search box in SharePoint Online\r\n\r\nUser impact: Users may have been unable to search using the search box in SharePoint Online.\r\n\r\nFinal status: We've identified that a recent feature update caused a compatibility issue that prevented users from searching in SharePoint Online. We reverted the recent feature update and confirm that impact is remediated.\r\n\r\nScope of impact: Some users attempting to search in SharePoint Online may have been impacted.\r\n\r\nStart time: Monday, October 5, 2026, at 7:23 AM UTC\r\n\r\nEnd time: Monday, October 5, 2026, at 4:20 PM UTC\r\n\r\nRoot cause: A recent feature update caused a compatibility issue that prevented users from searching in SharePoint Online. \r\n\r\nNext steps: - We're reviewing and improving our feature update validation procedure to prevent similar search issues from occurring in the future.\r\n\r\nThis is the final update for this event."
-        },
-        {
-          "createdAt": "2026-10-05T15:51:26.467Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to search using the search box in SharePoint Online\r\n\r\nUser impact: Users may be unable to search using the search box in SharePoint Online.\r\n\r\nCurrent status: We've identified a potential compatibility issue with a newly updated search service component and we're reviewing the component details to identify the root cause and a strategy that remediates impact.\r\n\r\nScope of impact: Some users attempting to search in SharePoint Online are impacted. This information may be updated as our investigation continues.\r\n\r\nNext update by: Monday, October 5, 2026, at 6:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-10-05T13:40:41.46Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to search using the search box in SharePoint Online\r\n\r\nUser impact: Users may be unable to search using the search box in SharePoint Online.\r\n\r\nCurrent status: We're analyzing support provided information to determine our next troubleshooting steps.\r\n\r\nScope of impact: Some users attempting to search in SharePoint Online are impacted. This information may be updated as our investigation continues.\r\n\r\nNext update by: Monday, October 5, 2026, at 4:00 PM UTC"
-        }
-      ],
-      "serviceName": "SharePoint Online",
-      "affectedServices": [
-        "SharePoint Online"
       ]
     }
   ]
