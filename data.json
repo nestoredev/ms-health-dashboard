@@ -1,61 +1,11 @@
 {
-  "lastUpdated": "2026-10-28T00:43:57.005Z",
+  "lastUpdated": "2026-10-28T01:14:13.284Z",
   "services": [
     {
       "service": "Exchange Online",
       "status": "serviceDegradation",
       "id": "Exchange",
       "issues": [
-        {
-          "id": "EX1527500",
-          "title": "Some users may see intermittent failures when accessing Exchange Online through Representational State Transfer (REST)",
-          "startTime": "2026-10-27T15:56:24.433Z",
-          "endTime": null,
-          "lastModified": "2026-10-27T22:54:10.017Z",
-          "status": "investigating",
-          "severity": "incident",
-          "userImpact": "Users may experience intermittent errors or failures when accessing Exchange Online through REST.",
-          "scopeOfImpact": "Impact may intermittently occur for some users who are attempting to access Exchange Online through REST. This section may be updated as the investigation continues.",
-          "rootCause": "",
-          "nextUpdateBy": "Wednesday, October 28, 2026, at 1:00 AM UTC",
-          "feature": "Reports of an Incident",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-10-27T22:52:24.673Z",
-              "postType": "regular",
-              "content": "Title: Some users may see intermittent failures when accessing Exchange Online through Representational State Transfer (REST)\r\n\r\nUser impact: Users may experience intermittent errors or failures when accessing Exchange Online through REST.\r\n\r\nCurrent status: We've successfully validated that disabling the change remediates impact with no unforeseen side effects. We're continuing to roll out this change in order to fully remediate impact, and we expect that it will complete by our next scheduled update. \r\n\r\nScope of impact: Impact may intermittently occur for some users who are attempting to access Exchange Online through REST. This section may be updated as the investigation continues.\r\n\r\nNext update by: Wednesday, October 28, 2026, at 1:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-27T21:10:08.68Z",
-              "postType": "regular",
-              "content": "Title: Some users may experience intermittent errors or failures when accessing Exchange Online through REST APIs\r\n\r\nUser impact: Users may experience intermittent errors or failures when accessing Exchange Online through REST APIs.\r\n\r\nCurrent status: We're continuing to disable the recent service change intended to optimize directory functionality in additional selected affected environments while monitoring service telemetry to validate whether this action successfully alleviates impact. If successful, we'll proceed with disabling the change throughout the remaining affected environments to fully remediate impact. We'll provide a resolution timeline once available.\r\n\r\nScope of impact: Impact may occur intermittently for users attempting to access Exchange Online through REST APIs.\r\n\r\nNext update by: Tuesday, October 27, 2026, at 11:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-27T19:15:13.297Z",
-              "postType": "regular",
-              "content": "Title: Some users may experience intermittent errors or failures when accessing Exchange Online through REST APIs\r\n\r\nUser impact: Users may experience intermittent errors or failures when accessing Exchange Online through REST APIs.\r\n\r\nCurrent status: We're continuing to disable the recent service change intended to optimize directory functionality in additional selected affected environments and monitoring service telemetry to validate whether this action alleviates impact. If successful, we'll proceed with disabling the change throughout the remaining affected environments to fully remediate impact.\r\n\r\nScope of impact: Impact may occur intermittently for users attempting to access Exchange Online through REST APIs.\r\n\r\nNext update by: Tuesday, October 27, 2026, at 9:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-27T17:17:28.197Z",
-              "postType": "regular",
-              "content": "Title: Some users may experience intermittent errors or failures when accessing Exchange Online through REST APIs\r\n\r\nUser impact: Users may experience intermittent errors or failures when accessing Exchange Online through REST APIs.\r\n\r\nCurrent status: We've identified that a recent service change intended to optimize directory functionality may have introduced an issue with how Exchange Online Representational State Transfer (REST) API requests are processed, resulting in intermittent errors or failures. We're testing this theory by disabling the change in a portion of the affected environments and monitoring service telemetry to determine whether this action alleviates impact. If successful, we'll proceed with disabling the change throughout the remaining affected environments to fully remediate impact.\r\n\r\nScope of impact: Impact may occur intermittently for users attempting to access Exchange Online through REST APIs.\r\n\r\nNext update by: Tuesday, October 27, 2026, at 7:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-27T16:24:01.367Z",
-              "postType": "regular",
-              "content": "Title: Some users may experience intermittent errors or failures when accessing Exchange Online through REST APIs\r\n\r\nUser impact: Users may experience intermittent errors or failures when accessing Exchange Online through REST APIs.\r\n\r\nCurrent status: We're continuing to review service telemetry and recent service changes in an effort to isolate the source of this issue and determine an appropriate remediation action.\r\n\r\nScope of impact: Impact may occur intermittently for users attempting to access Exchange Online through REST APIs.\r\n\r\nNext update by: Tuesday, October 27, 2026, at 5:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-27T16:06:50.55Z",
-              "postType": "regular",
-              "content": "Title: Some users may experience intermittent errors or failures when accessing Exchange Online through REST APIs\r\n\r\nUser impact: Users may experience intermittent errors or failures when accessing Exchange Online through REST APIs.\r\n\r\nCurrent status: We're investigating an issue in which users may experience intermittent errors or failures when accessing Exchange Online through REST APIs. We're reviewing service telemetry to determine the underlying cause and identify the most effective remediation action. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Exchange Online"
-          ]
-        },
         {
           "id": "EX1479349",
           "title": "Users may be unable to reply or reply-all to email messages sent to Microsoft 365 groups in Exchange Online",
@@ -1348,6 +1298,52 @@
     }
   ],
   "history": [
+    {
+      "id": "EX1527500",
+      "title": "Some users may see intermittent failures when accessing Exchange Online through Representational State Transfer (REST)",
+      "startTime": "2026-10-27T15:56:24.433Z",
+      "endTime": "2026-10-28T00:08:48.557Z",
+      "lastModified": "2026-10-28T00:55:49.09Z",
+      "status": "serviceRestored",
+      "severity": "incident",
+      "userImpact": "Users may have experienced intermittent errors or failures when accessing Exchange Online through REST.",
+      "scopeOfImpact": "Impact may have intermittently occurred for some users who were attempting to access Exchange Online through Representational State Transfer (REST).\r\n\r\nStart time: Wednesday, October 14, 2026, at 5:55 PM UTC\r\n\r\nEnd time: Tuesday, October 27, 2026, at 11:48 PM UTC",
+      "rootCause": "A directory service component configuration change intended to further optimize the service was resulting in impact.\r\n\r\nNext steps: \n-We're reviewing our feature update testing and validation methods to better identify the potential for impact prior to deployment so we can prevent similar issues in the future, and to improve our pre-deployment update testing processes.",
+      "nextUpdateBy": "",
+      "feature": "Reports of an Incident",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-10-28T00:51:27.383Z",
+          "postType": "regular",
+          "content": "Title: Some users may see intermittent failures when accessing Exchange Online through Representational State Transfer (REST)\r\n\r\nUser impact: Users may have experienced intermittent errors or failures when accessing Exchange Online through REST.\r\n\r\nFinal status: We've confirmed that a directory service component configuration change intended to further optimize the service was resulting in impact. We've fully disabled the offending change and verified through internal monitoring that impact is remediated.\r\n\r\nScope of impact: Impact may have intermittently occurred for some users who were attempting to access Exchange Online through Representational State Transfer (REST).\r\n\r\nStart time: Wednesday, October 14, 2026, at 5:55 PM UTC\r\n\r\nEnd time: Tuesday, October 27, 2026, at 11:48 PM UTC\r\n\r\nRoot cause: A directory service component configuration change intended to further optimize the service was resulting in impact.\r\n\r\nNext steps: \n-We're reviewing our feature update testing and validation methods to better identify the potential for impact prior to deployment so we can prevent similar issues in the future, and to improve our pre-deployment update testing processes."
+        },
+        {
+          "createdAt": "2026-10-27T22:52:24.673Z",
+          "postType": "regular",
+          "content": "Title: Some users may see intermittent failures when accessing Exchange Online through Representational State Transfer (REST)\r\n\r\nUser impact: Users may experience intermittent errors or failures when accessing Exchange Online through REST.\r\n\r\nCurrent status: We've successfully validated that disabling the change remediates impact with no unforeseen side effects. We're continuing to roll out this change in order to fully remediate impact, and we expect that it will complete by our next scheduled update. \r\n\r\nScope of impact: Impact may intermittently occur for some users who are attempting to access Exchange Online through REST. This section may be updated as the investigation continues.\r\n\r\nNext update by: Wednesday, October 28, 2026, at 1:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-10-27T21:10:08.68Z",
+          "postType": "regular",
+          "content": "Title: Some users may experience intermittent errors or failures when accessing Exchange Online through REST APIs\r\n\r\nUser impact: Users may experience intermittent errors or failures when accessing Exchange Online through REST APIs.\r\n\r\nCurrent status: We're continuing to disable the recent service change intended to optimize directory functionality in additional selected affected environments while monitoring service telemetry to validate whether this action successfully alleviates impact. If successful, we'll proceed with disabling the change throughout the remaining affected environments to fully remediate impact. We'll provide a resolution timeline once available.\r\n\r\nScope of impact: Impact may occur intermittently for users attempting to access Exchange Online through REST APIs.\r\n\r\nNext update by: Tuesday, October 27, 2026, at 11:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-27T19:15:13.297Z",
+          "postType": "regular",
+          "content": "Title: Some users may experience intermittent errors or failures when accessing Exchange Online through REST APIs\r\n\r\nUser impact: Users may experience intermittent errors or failures when accessing Exchange Online through REST APIs.\r\n\r\nCurrent status: We're continuing to disable the recent service change intended to optimize directory functionality in additional selected affected environments and monitoring service telemetry to validate whether this action alleviates impact. If successful, we'll proceed with disabling the change throughout the remaining affected environments to fully remediate impact.\r\n\r\nScope of impact: Impact may occur intermittently for users attempting to access Exchange Online through REST APIs.\r\n\r\nNext update by: Tuesday, October 27, 2026, at 9:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-27T17:17:28.197Z",
+          "postType": "regular",
+          "content": "Title: Some users may experience intermittent errors or failures when accessing Exchange Online through REST APIs\r\n\r\nUser impact: Users may experience intermittent errors or failures when accessing Exchange Online through REST APIs.\r\n\r\nCurrent status: We've identified that a recent service change intended to optimize directory functionality may have introduced an issue with how Exchange Online Representational State Transfer (REST) API requests are processed, resulting in intermittent errors or failures. We're testing this theory by disabling the change in a portion of the affected environments and monitoring service telemetry to determine whether this action alleviates impact. If successful, we'll proceed with disabling the change throughout the remaining affected environments to fully remediate impact.\r\n\r\nScope of impact: Impact may occur intermittently for users attempting to access Exchange Online through REST APIs.\r\n\r\nNext update by: Tuesday, October 27, 2026, at 7:30 PM UTC"
+        }
+      ],
+      "serviceName": "Exchange Online",
+      "affectedServices": [
+        "Exchange Online"
+      ]
+    },
     {
       "id": "TM1517449",
       "title": "Users may not receive notifications when added to or removed from tags in Microsoft Teams",
@@ -3345,52 +3341,6 @@
       "serviceName": "SharePoint Online",
       "affectedServices": [
         "SharePoint Online"
-      ]
-    },
-    {
-      "id": "TM1440450",
-      "title": "Users may be unable to run run-only workflows from Microsoft Teams",
-      "startTime": "2026-06-30T07:00:00Z",
-      "endTime": "2026-10-02T23:26:00Z",
-      "lastModified": "2026-10-06T00:03:05.363Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users may have been unable to run run-only workflows from Microsoft Teams.",
-      "scopeOfImpact": "Users attempting to run \"run-only workflows\" from Microsoft Teams may have been impacted.\r\n\r\nStart time: Tuesday, June 30, 2026, at 7:00 AM UTC\r\n\r\nEnd time: Friday, October 2, 2026, at 11:26 PM UTC",
-      "rootCause": "A recent service update introduced a code regression that affected how Microsoft Teams processed shared workflow requests, which prevented some users from running \"run-only workflows\" from Microsoft Teams.\r\n\r\nNext steps: \n- We're reviewing our update procedures to understand why impact to how Microsoft Teams processes shared workflow requests wasn't caught during the testing phase. This will help drive service improvements by proactively identifying similar issues in the future and improve our update testing processes.\r\n\r\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Teams and Channels",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-10-06T00:02:52.473Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to run run-only workflows from Microsoft Teams\r\n\r\nUser impact: Users may have been unable to run run-only workflows from Microsoft Teams.\r\n\r\nMore info: As a result of our initial fix deployment, users were able to run \"run-only workflows\" through the \"workflows\" button in Microsoft Teams. However, running \"run-only workflows\" by hovering and selecting \"More actions\" > \"Create workflows\" was still an impacted scenario.\n\nAffected users were unable to run workflows in Teams when those workflows were configured to be executed by designated users without requiring those users to own or edit the workflow. Users received the following error message:\n\n\"Missing Trigger URI\"\n\nAs a way to have avoided the issue, impacted users could've been granted Owner or Co-owner permissions for the affected workflow.\r\n\r\nFinal status: We've completed the deployment of our fix and confirmed after monitoring our service health telemetry that impact is remediated.\r\n\r\nScope of impact: Users attempting to run \"run-only workflows\" from Microsoft Teams may have been impacted.\r\n\r\nStart time: Tuesday, June 30, 2026, at 7:00 AM UTC\r\n\r\nEnd time: Friday, October 2, 2026, at 11:26 PM UTC\r\n\r\nRoot cause: A recent service update introduced a code regression that affected how Microsoft Teams processed shared workflow requests, which prevented some users from running \"run-only workflows\" from Microsoft Teams.\r\n\r\nNext steps: \n- We're reviewing our update procedures to understand why impact to how Microsoft Teams processes shared workflow requests wasn't caught during the testing phase. This will help drive service improvements by proactively identifying similar issues in the future and improve our update testing processes.\r\n\r\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-10-02T00:37:33.33Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to run run-only workflows from Microsoft Teams\r\n\r\nUser impact: Users may be unable to run run-only workflows from Microsoft Teams.\r\n\r\nMore info: As a result of our initial fix deployment, users are now able to run run-only workflows through the \"workflows\" button in Microsoft Teams. However, running run-only workflows by hovering and selecting \"More actions\" > \"Create workflows\" is still an impacted scenario.\n\nAffected users are unable to run workflows in Teams when those workflows are configured to be executed by designated users without requiring those users to own or edit the workflow. Users receive the following error message:\n\n\"Missing Trigger URI\"\n\nAs a way to avoid this issue, impacted users can be granted Owner or Co-owner permissions for the affected workflow.\r\n\r\nCurrent status: The deployment of our fix is taking longer than initially projected and is currently 50 percent complete. We’re monitoring its progress to ensure it completes as expected and resolves the issue by our next scheduled update.\r\n\r\nScope of impact: Users attempting to run run-only workflows from Microsoft Teams may be impacted. This section may be updated as the investigation progresses.\r\n\r\nStart time: Tuesday, June 30, 2026, at 7:00 AM UTC\r\n\r\nRoot cause: A recent service update introduced a code regression that affects how Microsoft Teams processes shared workflow requests, preventing some users from running run-only workflows from Microsoft Teams.\r\n\r\nNext update by: Tuesday, October 6, 2026, at 1:00 AM UTC"
-        },
-        {
-          "createdAt": "2026-09-28T23:08:32.313Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to run run-only workflows from Microsoft Teams\r\n\r\nUser impact: Users may be unable to run run-only workflows from Microsoft Teams.\r\n\r\nMore info: As a result of our initial fix deployment, users are now able to run run-only workflows through the \"workflows\" button in Microsoft Teams. However, running run-only workflows by hovering and selecting \"More actions\" > \"Create workflows\" is still an impacted scenario.\n\nAffected users are unable to run workflows in Teams when those workflows are configured to be executed by designated users without requiring those users to own or edit the workflow. Users receive the following error message:\n\n\"Missing Trigger URI\"\n\nAs a way to avoid this issue, impacted users can be granted Owner or Co-owner permissions for the affected workflow.\r\n\r\nCurrent status: We've identified that the deployment of the fix is taking longer than anticipated; however, we are taking manual action to correct the problem. We anticipate that the deployment of the fix should complete by the end of October 1, 2026.\r\n\r\nScope of impact: Users attempting to run run-only workflows from Microsoft Teams may be impacted. This section may be updated as the investigation progresses.\r\n\r\nStart time: Tuesday, June 30, 2026, at 7:00 AM UTC\r\n\r\nRoot cause: A recent service update introduced a code regression that affects how Microsoft Teams processes shared workflow requests, preventing some users from running run-only workflows from Microsoft Teams.\r\n\r\nNext update by: Friday, October 2, 2026, at 1:00 AM UTC"
-        },
-        {
-          "createdAt": "2026-09-26T00:02:55.43Z",
-          "postType": "regular",
-          "content": "Title: Users may have been unable to run run-only workflows from Microsoft Teams\r\n\r\nUser impact: Users may be unable to run run-only workflows from Microsoft Teams.\r\n\r\nMore info: As a result of our initial fix deployment, users are now able to run run-only workflows through the \"workflows\" button in Microsoft Teams. However, running run-only workflows by hovering and selecting \"More actions\" > \"Create workflows\" is still an impacted scenario.\n\nAffected users are unable to run workflows in Teams when those workflows are configured to be executed by designated users without requiring those users to own or edit the workflow. Users receive the following error message:\n\n\"Missing Trigger URI\"\n\nAs a way to avoid this issue, impacted users can be granted Owner or Co-owner permissions for the affected workflow.\r\n\r\nCurrent status: We've identified that the deployment of the fix is taking longer than anticipated. It's currently 25 percent saturated, and we anticipate it will be complete and the issue fully resolved by our next scheduled update.\r\n\r\nScope of impact: Users attempting to run run-only workflows from Microsoft Teams may be impacted. This section may be updated as the investigation progresses. This information may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, June 30, 2026, at 7:00 AM UTC\r\n\r\nRoot cause: A recent service update introduced a code regression that affects how Microsoft Teams processes shared workflow requests, preventing some users from running run-only workflows from Microsoft Teams.\r\n\r\nNext update by: Tuesday, September 29, 2026, at 1:00 AM UTC"
-        },
-        {
-          "createdAt": "2026-09-14T23:21:15.52Z",
-          "postType": "regular",
-          "content": "Title: Users may have been unable to run run-only workflows from Microsoft Teams\r\n\r\nUser impact: Users may be unable to run run-only workflows from Microsoft Teams.\r\n\r\nMore info: As a result of our initial fix deployment, users are now able to run run-only workflows through the \"workflows\" button in Microsoft Teams. However, running run-only workflows by hovering and selecting \"More actions\" > \"Create workflows\" is still an impacted scenario.\n\nAffected users are unable to run workflows in Teams when those workflows are configured to be executed by designated users without requiring those users to own or edit the workflow. Users receive the following error message:\n\n\"Missing Trigger URI\"\n\nAs a way to avoid this issue, impacted users can be granted Owner or Co-owner permissions for the affected workflow.\r\n\r\nCurrent status: We've completed validating our fix for this issue and anticipate that its deployment will be complete by Friday, September 25, 2026.\r\n\r\nScope of impact: Users attempting to run run-only workflows from Microsoft Teams may be impacted. This section may be updated as the investigation progresses. This information may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, June 30, 2026, at 7:00 AM UTC\r\n\r\nRoot cause: A recent service update introduced a code regression that affects how Microsoft Teams processes shared workflow requests, preventing some users from running run-only workflows from Microsoft Teams.\r\n\r\nNext update by: Saturday, September 26, 2026, at 1:00 AM UTC"
-        }
-      ],
-      "serviceName": "Microsoft Teams",
-      "affectedServices": [
-        "Microsoft Teams"
       ]
     }
   ]
