@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-28T15:52:04.630Z",
+  "lastUpdated": "2026-10-28T16:22:23.629Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -770,19 +770,24 @@
       "issues": [
         {
           "id": "PB1528889",
-          "title": "Some users may experience that Azure Maps visuals are blank and are not loading as expected in Microsoft Fabric",
+          "title": "Some users may see Azure Maps visuals are blank and aren't loading as expected in Microsoft Fabric",
           "startTime": "2026-10-28T14:23:41.37Z",
           "endTime": null,
-          "lastModified": "2026-10-28T14:37:22.133Z",
+          "lastModified": "2026-10-28T16:13:33.953Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "userImpact": "Users may experience that Azure Maps visuals are blank and are not loading as expected in Microsoft Fabric.",
-          "scopeOfImpact": "Impact is specific to users attempting to load Azure Maps visuals in Microsoft Fabric.",
+          "userImpact": "Users may see that Azure Maps visuals are blank and aren't loading as expected in Microsoft Fabric.",
+          "scopeOfImpact": "Impact is specific to users attempting to load Azure Maps visuals in Microsoft Fabric who may see visuals fail to load as expected. This section may be updated as the investigation progresses.",
           "rootCause": "",
-          "nextUpdateBy": "Wednesday, October 28, 2026, at 4:30 PM UTC",
+          "nextUpdateBy": "Wednesday, October 28, 2026, at 9:00 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-28T16:13:33.953Z",
+              "postType": "regular",
+              "content": "Title: Some users may see Azure Maps visuals are blank and aren't loading as expected in Microsoft Fabric\r\n\r\nUser impact: Users may see that Azure Maps visuals are blank and aren't loading as expected in Microsoft Fabric.\r\n\r\nCurrent status: We're analyzing HTTP Archive format (HAR) traces provided by affected users along with an ongoing evaluation of the October 2026 Microsoft Fabric build to isolate potential sources of impact.\r\n\r\nScope of impact: Impact is specific to users attempting to load Azure Maps visuals in Microsoft Fabric who may see visuals fail to load as expected. This section may be updated as the investigation progresses.\r\n\r\nNext update by: Wednesday, October 28, 2026, at 9:00 PM UTC"
+            },
             {
               "createdAt": "2026-10-28T14:25:41.123Z",
               "postType": "regular",
