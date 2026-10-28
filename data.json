@@ -1,11 +1,51 @@
 {
-  "lastUpdated": "2026-10-28T22:25:42.619Z",
+  "lastUpdated": "2026-10-28T22:56:00.285Z",
   "services": [
     {
       "service": "Exchange Online",
       "status": "serviceDegradation",
       "id": "Exchange",
       "issues": [
+        {
+          "id": "EX1528992",
+          "title": "Users may not be able to open email file attachments or see the \"Open\" option in the new Outlook desktop app",
+          "startTime": "2026-10-28T16:24:46.9Z",
+          "endTime": null,
+          "lastModified": "2026-10-28T22:37:06.693Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may not be able to open email file attachments or see the \"Open\" option in the new Outlook desktop app.",
+          "scopeOfImpact": "This issue affects new Outlook desktop users who have upgraded to Edge version 156.",
+          "rootCause": "",
+          "nextUpdateBy": "Wednesday, October 28, 2026, at 11:30 PM UTC",
+          "feature": "Reports of an Incident",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-10-28T21:21:09.117Z",
+              "postType": "regular",
+              "content": "Title: Users may not be able to open email file attachments or see the \"Open\" option in the new Outlook desktop app\r\n\r\nUser impact: Users may not be able to open email file attachments or see the \"Open\" option in the new Outlook desktop app.\r\n\r\nMore info: Impacted users may be presented with an error that the file can't be opened and to restart Outlook to try again; however, the \"Open\" option is no longer available after encountering the error. Users can select \"Save as\" to download the file and then open the attachment to bypass the impact.\r\n\r\nCurrent status: We're narrowing down a potential root cause that is related to a recent service-side update. We're in the process of validating this hypothesis and once confirmed will help us determine our remediation options. \r\n\r\nScope of impact: This issue affects new Outlook desktop users who have upgraded to Edge version 156. \r\n\r\nNext update by: Wednesday, October 28, 2026, at 11:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-10-28T19:08:12.54Z",
+              "postType": "regular",
+              "content": "Title: Users may not be able to open email file attachments or see the \"Open\" option in the new Outlook desktop app\r\n\r\nUser impact: Users may not be able to open email file attachments or see the \"Open\" option in the new Outlook desktop app.\n \r\n\r\nMore info: Impacted users may be presented with an error that the file can't be opened and to restart Outlook to try again; however, the \"Open\" option is no longer available after encountering the error. Users can select \"Save as\" to download the file and then open the attachment to bypass the impact.\r\n\r\nCurrent status: We're continuing our investigation into this issue, reviewing the information provided in specific support cases as well as our own service-side reproductions of this issue in order determine the best approach for troubleshooting this issue. \r\n\r\nScope of impact: This issue affects new Outlook desktop users who have upgraded to Edge version 156.\r\n\r\nNext update by: Wednesday, October 28, 2026, at 9:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-10-28T17:31:25.023Z",
+              "postType": "regular",
+              "content": "Title: Users may not be able to open email file attachments or see the \"Open\" option in the new Outlook desktop app\r\n\r\nUser impact: Users may not be able to open email file attachments or see the \"Open\" option in the new Outlook desktop app.\r\n\r\nMore info: Impacted users may be presented with an error that the file can't be opened and to restart Outlook to try again; however, the \"Open\" option is no longer available after encountering the error. Users can select \"Save as\" to download the file and then open the attachment to bypass the impact.\r\n\r\nCurrent status: We're reviewing user reports of impact and data collected from an internal reproduction of the problem to determine what's leading to this behavior, as well as our approach to addressing the impact.\r\n\r\nScope of impact: This issue affects new Outlook desktop users who have upgraded to Edge version 156.\r\n\r\nNext update by: Wednesday, October 28, 2026, at 7:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-10-28T16:33:31.26Z",
+              "postType": "regular",
+              "content": "Title: Users may not be able to open email file attachments or see the \"Open\" option in the new Outlook desktop app\r\n\r\nUser impact: Users may not be able to open email file attachments or see the \"Open\" option in the new Outlook desktop app.\r\n\r\nMore info: Impacted users may be presented with an error that the file can't be opened and to restart Outlook to try again; however, the \"Open\" option is no longer available after encountering the error. Users can select \"Save as\" to download the file and then open the attachment to bypass the impact.\r\n\r\nCurrent status: We're investigating a potential issue with Exchange Online and checking for impact. We'll provide an update within 60 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online"
+          ]
+        },
         {
           "id": "MO1489432",
           "title": "Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile",
@@ -534,45 +574,9 @@
     },
     {
       "service": "Power BI",
-      "status": "serviceDegradation",
+      "status": "serviceOperational",
       "id": "PowerBIcom",
-      "issues": [
-        {
-          "id": "PB1528889",
-          "title": "Some users may see Azure Maps visuals are blank and aren't loading as expected in Microsoft Fabric",
-          "startTime": "2026-10-27T17:20:00Z",
-          "endTime": null,
-          "lastModified": "2026-10-28T22:21:47.54Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may have seen that Azure Maps visuals were blank and weren't loading as expected in Microsoft Fabric.",
-          "scopeOfImpact": "Impact is specific to users attempting to load Azure Maps visuals in Microsoft Fabric who may see visuals fail to load as expected. This section may be updated as the investigation progresses.",
-          "rootCause": "",
-          "nextUpdateBy": "Wednesday, October 28, 2026, at 11:30 PM UTC",
-          "feature": "General",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-10-28T19:26:48.06Z",
-              "postType": "regular",
-              "content": "Title: Some users may see Azure Maps visuals are blank and aren't loading as expected in Microsoft Fabric\r\n\r\nUser impact: Users may see that Azure Maps visuals are blank and aren't loading as expected in Microsoft Fabric.\r\n\r\nCurrent status: We're continuing to review HAR traces provided by affected users along with our ongoing evaluation of the October 2026 Microsoft Fabric build to isolate potential sources of impact and determine an appropriate remediation action.\r\n\r\nScope of impact: Impact is specific to users attempting to load Azure Maps visuals in Microsoft Fabric who may see visuals fail to load as expected. This section may be updated as the investigation progresses.\r\n\r\nNext update by: Wednesday, October 28, 2026, at 11:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-28T16:13:33.953Z",
-              "postType": "regular",
-              "content": "Title: Some users may see Azure Maps visuals are blank and aren't loading as expected in Microsoft Fabric\r\n\r\nUser impact: Users may see that Azure Maps visuals are blank and aren't loading as expected in Microsoft Fabric.\r\n\r\nCurrent status: We're analyzing HTTP Archive format (HAR) traces provided by affected users along with an ongoing evaluation of the October 2026 Microsoft Fabric build to isolate potential sources of impact.\r\n\r\nScope of impact: Impact is specific to users attempting to load Azure Maps visuals in Microsoft Fabric who may see visuals fail to load as expected. This section may be updated as the investigation progresses.\r\n\r\nNext update by: Wednesday, October 28, 2026, at 9:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-28T14:25:41.123Z",
-              "postType": "regular",
-              "content": "Title: Some users may experience that Azure Maps visuals are blank and are not loading as expected in Microsoft Fabric\r\n\r\nUser impact: Users may experience that Azure Maps visuals are blank and are not loading as expected in Microsoft Fabric.\r\n\r\nCurrent status: We're reviewing service monitoring telemetry to isolate the root cause and develop a remediation plan.\r\n\r\nScope of impact: Impact is specific to users attempting to load Azure Maps visuals in Microsoft Fabric.\r\n\r\nNext update by: Wednesday, October 28, 2026, at 4:30 PM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Power BI"
-          ]
-        }
-      ]
+      "issues": []
     },
     {
       "service": "Microsoft Intune",
@@ -1012,6 +1016,47 @@
     }
   ],
   "history": [
+    {
+      "id": "PB1528889",
+      "title": "Some users may see Azure Maps visuals are blank and aren't loading as expected in Microsoft Fabric",
+      "startTime": "2026-10-27T17:20:00Z",
+      "endTime": "2026-10-28T22:21:55.057Z",
+      "lastModified": "2026-10-28T22:29:09.62Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have seen that Azure Maps visuals were blank and weren't loading as expected in Microsoft Fabric.",
+      "scopeOfImpact": "Impact was specific to users attempting to load Azure Maps visuals in Microsoft Fabric who may have seen visuals fail to load as expected. \r\n\r\nStart time: Tuesday, October 27, 2026, at 5:20 PM UTC\r\n\r\nEnd time: Wednesday, October 28, 2026, at 10:05 PM UTC",
+      "rootCause": "A recent service update introduced an offending code regression that prevented Azure Maps visuals from loading as expected in Microsoft Fabric. \r\n\r\nNext steps: \n- We're further analyzing the offending service update to help us improve our pre-deployment testing and validation processes. \n\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "General",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-10-28T22:29:06.193Z",
+          "postType": "regular",
+          "content": "Title: Some users may see Azure Maps visuals are blank and aren't loading as expected in Microsoft Fabric\r\n\r\nUser impact: Users may have seen that Azure Maps visuals were blank and weren't loading as expected in Microsoft Fabric.\r\n\r\nMore info: While we worked to remediate the impact, affected users could clear their Microsoft Edge browser cache and retry loading the report. After Microsoft Edge cache clearing, Azure Maps visuals may have been restored. If the issue persisted, after clearing the cache, we recommended users close and reopen Power BI Desktop.\r\n\r\nFinal status: We've determined that a recent service update had introduced an offending code regression that prevented Azure Maps visuals from loading as expected in Microsoft Fabric. After deploying a fix that addressed the offending regression, our internal service telemetry verified that the impact had been remediated. \r\n\r\nScope of impact: Impact was specific to users attempting to load Azure Maps visuals in Microsoft Fabric who may have seen visuals fail to load as expected. \r\n\r\nStart time: Tuesday, October 27, 2026, at 5:20 PM UTC\r\n\r\nEnd time: Wednesday, October 28, 2026, at 10:05 PM UTC\r\n\r\nRoot cause: A recent service update introduced an offending code regression that prevented Azure Maps visuals from loading as expected in Microsoft Fabric. \r\n\r\nNext steps: \n- We're further analyzing the offending service update to help us improve our pre-deployment testing and validation processes. \n\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-10-28T19:26:48.06Z",
+          "postType": "regular",
+          "content": "Title: Some users may see Azure Maps visuals are blank and aren't loading as expected in Microsoft Fabric\r\n\r\nUser impact: Users may see that Azure Maps visuals are blank and aren't loading as expected in Microsoft Fabric.\r\n\r\nCurrent status: We're continuing to review HAR traces provided by affected users along with our ongoing evaluation of the October 2026 Microsoft Fabric build to isolate potential sources of impact and determine an appropriate remediation action.\r\n\r\nScope of impact: Impact is specific to users attempting to load Azure Maps visuals in Microsoft Fabric who may see visuals fail to load as expected. This section may be updated as the investigation progresses.\r\n\r\nNext update by: Wednesday, October 28, 2026, at 11:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-28T16:13:33.953Z",
+          "postType": "regular",
+          "content": "Title: Some users may see Azure Maps visuals are blank and aren't loading as expected in Microsoft Fabric\r\n\r\nUser impact: Users may see that Azure Maps visuals are blank and aren't loading as expected in Microsoft Fabric.\r\n\r\nCurrent status: We're analyzing HTTP Archive format (HAR) traces provided by affected users along with an ongoing evaluation of the October 2026 Microsoft Fabric build to isolate potential sources of impact.\r\n\r\nScope of impact: Impact is specific to users attempting to load Azure Maps visuals in Microsoft Fabric who may see visuals fail to load as expected. This section may be updated as the investigation progresses.\r\n\r\nNext update by: Wednesday, October 28, 2026, at 9:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-28T14:25:41.123Z",
+          "postType": "regular",
+          "content": "Title: Some users may experience that Azure Maps visuals are blank and are not loading as expected in Microsoft Fabric\r\n\r\nUser impact: Users may experience that Azure Maps visuals are blank and are not loading as expected in Microsoft Fabric.\r\n\r\nCurrent status: We're reviewing service monitoring telemetry to isolate the root cause and develop a remediation plan.\r\n\r\nScope of impact: Impact is specific to users attempting to load Azure Maps visuals in Microsoft Fabric.\r\n\r\nNext update by: Wednesday, October 28, 2026, at 4:30 PM UTC"
+        }
+      ],
+      "serviceName": "Power BI",
+      "affectedServices": [
+        "Power BI"
+      ]
+    },
     {
       "id": "MO1481173",
       "title": "Admins may see multiple usage reports not updating in the Microsoft 365 admin center",
@@ -3009,52 +3054,6 @@
       "serviceName": "Power BI",
       "affectedServices": [
         "Power BI"
-      ]
-    },
-    {
-      "id": "EX1478163",
-      "title": "Users may be unable to update calendar delegates in the classic Outlook desktop client ",
-      "startTime": "2026-09-23T07:13:00Z",
-      "endTime": "2026-10-05T23:58:04.717Z",
-      "lastModified": "2026-10-05T23:59:52.4Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users may have been unable to update calendar delegates in the classic Outlook desktop client.",
-      "scopeOfImpact": "Impact was specific to users that were unable to update calendar delegates in the classic Outlook desktop client. \r\n\r\nStart time: Wednesday, September 23, 2026, at 7:13 AM UTC\r\n\r\nEnd time: Saturday, October 3, 2026, at 12:00 AM UTC",
-      "rootCause": "A recent update to the service contained a regression, resulting in the impact.\r\n\r\nNext steps: -We're reviewing our validation and updating procedures to better detect and prevent issues like this prior to deployment in the future. \r\n\r\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Tenant Administration (Provisioning, Remote PowerShell)",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-10-05T23:59:09.16Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to update calendar delegates in the classic Outlook desktop client \r\n\r\nUser impact: Users may have been unable to update calendar delegates in the classic Outlook desktop client.\r\n\r\nMore info: As a workaround, affected users could’ve managed delegate changes through Outlook on the web.\r\n\r\nFinal status: Our fix deployment is complete and we’ve determined from service telemetry that this issue is resolved. \r\n\r\nScope of impact: Impact was specific to users that were unable to update calendar delegates in the classic Outlook desktop client. \r\n\r\nStart time: Wednesday, September 23, 2026, at 7:13 AM UTC\r\n\r\nEnd time: Saturday, October 3, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: A recent update to the service contained a regression, resulting in the impact.\r\n\r\nNext steps: -We're reviewing our validation and updating procedures to better detect and prevent issues like this prior to deployment in the future. \r\n\r\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-10-03T00:24:30.277Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to update calendar delegates in the classic Outlook desktop client \r\n\r\nUser impact: Users may be unable to update calendar delegates in the classic Outlook desktop client.\r\n\r\nMore info: As a workaround, affected users can manage delegate changes through Outlook on the web.\r\n\r\nCurrent status: Our fix has saturated 95 percent of the affected environment and we'll continue to monitor its progress to ensure it completes successfully. We anticipate that it'll reach full percent saturation and resolve this issue by our next scheduled communications update.\r\n\r\nScope of impact: Impact is specific to users that are unable to update calendar delegates in the classic Outlook desktop client. This information may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, September 23, 2026, at 7:13 AM UTC\r\n\r\nRoot cause: A recent update to the service contained a regression, resulting in this impact.\r\n\r\nNext update by: Tuesday, October 6, 2026, at 2:00 AM UTC"
-        },
-        {
-          "createdAt": "2026-10-02T01:01:13.54Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to update calendar delegates in the classic Outlook desktop client \r\n\r\nUser impact: Users may be unable to update calendar delegates in the classic Outlook desktop client.\r\n\r\nMore info: As a workaround, affected users can manage delegate changes through Outlook on the web.\r\n\r\nCurrent status: We're still monitoring the deployment of our fix, and more time is needed to ensure it fully saturates across all affected environments before confirming impact remediation. We will share an updated estimate of completion once one becomes available. \r\n\r\nScope of impact: Impact is specific to users that are unable to update calendar delegates in the classic Outlook desktop client. This information may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, September 23, 2026, at 7:13 AM UTC\r\n\r\nRoot cause: A recent update to the service contained a regression, resulting in this impact.\r\n\r\nNext update by: Saturday, October 3, 2026, at 2:00 AM UTC"
-        },
-        {
-          "createdAt": "2026-10-01T21:11:14.95Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to update calendar delegates in the classic Outlook desktop client \r\n\r\nUser impact: Users may be unable to update calendar delegates in the classic Outlook desktop client.\r\n\r\nMore info: As a workaround, affected users can manage delegate changes through Outlook on the web.\r\n\r\nCurrent status: While the deployment of our fix will take longer than previously expected, we've confirmed that saturation is currently at 93 percent. We anticipate that deployment will reach full saturation by the time of our next scheduled communications update.\r\n\r\nScope of impact: Impact is specific to users that are unable to update calendar delegates in the classic Outlook desktop client. This information may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, September 23, 2026, at 7:13 AM UTC\r\n\r\nEstimated time to resolve: Our updated timeline for full remediation is Friday, October 2, 2026, at 12:00 AM UTC.\r\n\r\nRoot cause: A recent update to the service contained a regression, resulting in this impact.\r\n\r\nNext update by: Friday, October 2, 2026, at 2:00 AM UTC"
-        },
-        {
-          "createdAt": "2026-09-30T20:28:55.74Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to update calendar delegates in the classic Outlook desktop client \r\n\r\nUser impact: Users may be unable to update calendar delegates in the classic Outlook desktop client.\r\n\r\nMore info: As a workaround, affected users can manage delegate changes through Outlook on the web.\r\n\r\nCurrent status: Our deployment is at 62 percent saturation, and we anticipate deployment to be complete by our next scheduled update.\r\n\r\nScope of impact: Impact is specific to users that are unable to update calendar delegates in the classic Outlook desktop client. This information may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, September 23, 2026, at 7:13 AM UTC\r\n\r\nEstimated time to resolve: We anticipate impact to be resolved by our next scheduled update on Thursday, October 1, 2026, at 10:00 PM\r\n\r\nRoot cause: A recent update to the service contained a regression, resulting in this impact.\r\n\r\nNext update by: Thursday, October 1, 2026, at 10:00 PM UTC"
-        }
-      ],
-      "serviceName": "Exchange Online",
-      "affectedServices": [
-        "Exchange Online"
       ]
     }
   ]
