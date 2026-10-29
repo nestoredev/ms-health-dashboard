@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-29T00:57:02.231Z",
+  "lastUpdated": "2026-10-29T01:27:17.180Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -11,16 +11,21 @@
           "title": "Users may not be able to open email file attachments or see the \"Open\" option in the new Outlook desktop app",
           "startTime": "2026-10-28T16:24:46.9Z",
           "endTime": null,
-          "lastModified": "2026-10-28T23:23:13.933Z",
+          "lastModified": "2026-10-29T01:05:18.45Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may not be able to open email file attachments or see the \"Open\" option in the new Outlook desktop app.",
           "scopeOfImpact": "This issue affects new Outlook desktop users who have upgraded to Edge version 156. This section may be updated as our investigation continues.",
-          "rootCause": "",
-          "nextUpdateBy": "Wednesday, October 28, 2026, at 1:30 AM UTC",
+          "rootCause": "A recent update to Edge Version 156 unintentionally enabled an unnecessary configuration change and is resulting in impact.",
+          "nextUpdateBy": "Wednesday, October 28, 2026, at 8:30 PM UTC",
           "feature": "Reports of an Incident",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-29T01:05:18.45Z",
+              "postType": "regular",
+              "content": "Title: Users may not be able to open email file attachments or see the \"Open\" option in the new Outlook desktop app\r\n\r\nUser impact: Users may not be able to open email file attachments or see the \"Open\" option in the new Outlook desktop app.\r\n\r\nMore info: Impacted users may be presented with an error that the file can't be opened and to restart Outlook to try again; however, the \"Open\" option is no longer available after encountering the error. Users can select \"Save as\" to download the file and then open the attachment to bypass the impact.\r\n\r\nCurrent status: We’ve determined that a recent update to Edge Version 156 unintentionally enabled an unnecessary configuration, resulting in impact. We’ve developed and deployed a targeted fix to disable this configuration, which may take up to 12 hours to propagate across our service infrastructure. We’ll use service telemetry to confirm the fix has been applied across the infrastructure. Once confirmed, users will need to close and reopen New Outlook for the change to take effect and resolve the issue.\r\n\r\nScope of impact: This issue affects new Outlook desktop users who have upgraded to Edge version 156. This section may be updated as our investigation continues.\r\n\r\nRoot cause: A recent update to Edge Version 156 unintentionally enabled an unnecessary configuration change and is resulting in impact.\r\n\r\nNext update by: Wednesday, October 28, 2026, at 8:30 PM UTC"
+            },
             {
               "createdAt": "2026-10-28T23:23:13.933Z",
               "postType": "regular",
