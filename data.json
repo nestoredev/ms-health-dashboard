@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-30T17:18:44.523Z",
+  "lastUpdated": "2026-10-30T17:48:58.579Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -564,16 +564,21 @@
           "title": "Admins are unable to complete Microsoft OneDrive or SharePoint site migrations",
           "startTime": "2026-10-28T18:29:00Z",
           "endTime": null,
-          "lastModified": "2026-10-29T17:34:01.797Z",
+          "lastModified": "2026-10-30T17:34:33.247Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Admins are unable to complete OneDrive or SharePoint site migrations.",
           "scopeOfImpact": "This issue will impact any admins attempting to perform OneDrive or SharePoint site migrations. This applies only to the M365 Multi-Geo and Cross-Tenant Migration features for SharePoint and OneDrive. Other modes of migration, such as Migration Manager (https://learn.microsoft.com/en-us/sharepointmigration/mm-get-started) or 3rd party tools, are not affected. This information may be updated as our investigation continues.\n\nStart time: Wednesday, October 28, 2026, at 6:29 PM UTC",
           "rootCause": "",
-          "nextUpdateBy": "Friday, October 30, 2026, at 6:00 PM UTC",
+          "nextUpdateBy": "Saturday, October 31, 2026, at 5:00 AM UTC",
           "feature": "OneDrive for Business",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-30T17:20:54.16Z",
+              "postType": "regular",
+              "content": "Title: Admins are unable to complete Microsoft OneDrive or SharePoint site migrations\n\nUser impact: Admins are unable to complete OneDrive or SharePoint site migrations.\n\nMore info: Several migration workflows may experience impact, which include:\n- Newly initiated Cross-Geo OneDrive or SharePoint site moves will fail to start.\n- Newly initiated Cross-Tenant OneDrive or SharePoint site migrations will fail to start.\n- Admins may see some migration jobs remain in the Scheduled/Queued state.\n\nCurrent status: The deployment is progressing as expected and we believe this to fully complete within the next eight hours. To expedite recovery, once a section of the service receives the full deployment, we're making the required configuration change to allow the processing of the migration jobs, so some organizations and admins will begin to experience relief sooner.\n\nScope of impact: This issue will impact any admins attempting to perform OneDrive or SharePoint site migrations. This applies only to the M365 Multi-Geo and Cross-Tenant Migration features for SharePoint and OneDrive. Other modes of migration, such as Migration Manager (https://learn.microsoft.com/en-us/sharepointmigration/mm-get-started) or 3rd party tools, are not affected. This information may be updated as our investigation continues.\n\nStart time: Wednesday, October 28, 2026, at 6:29 PM UTC\n\nNext update by: Saturday, October 31, 2026, at 5:00 AM UTC"
+            },
             {
               "createdAt": "2026-10-29T17:34:01.797Z",
               "postType": "regular",
@@ -1039,16 +1044,21 @@
           "title": "Users may be unable to view recent portions of their conversation history with Microsoft 365 Copilot Chat",
           "startTime": "2026-10-29T17:19:12.283Z",
           "endTime": null,
-          "lastModified": "2026-10-30T02:50:10.143Z",
+          "lastModified": "2026-10-30T17:39:28.947Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to view recent portions of their conversation history with Copilot Chat.",
           "scopeOfImpact": "Some users are sporadically missing recent portions of their conversation history with Copilot Chat. This section may be updated as the investigation progresses.",
           "rootCause": "",
-          "nextUpdateBy": "Friday, October 30, 2026, at 6:00 PM UTC",
+          "nextUpdateBy": "Saturday, October 31, 2026, at 1:00 AM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-30T17:39:28.947Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to view recent portions of their conversation history with Microsoft 365 Copilot Chat\r\n\r\nUser impact: Users may be unable to view recent portions of their conversation history with Copilot Chat.\r\n\r\nMore info: The affected conversations have not been deleted and are temporarily unavailable within conversation history.\n \nSome reports indicate that this issue typically occurs when users with an active Copilot Chat leave and then reopen the chat.\r\n\r\nCurrent status: Our investigation has identified specific geographic regions in our broader service infrastructure where the majority of failures are occurring. We're continuing our analysis related to how recent conversation activity is synchronized within our service as part of this effort. In parallel, we're continuing to review reported cases to confirm whether this accounts for all instances of impact, which will help guide our next steps toward remediation.\r\n\r\nScope of impact: Some users are sporadically missing recent portions of their conversation history with Copilot Chat. This section may be updated as the investigation progresses.\r\n\r\nNext update by: Saturday, October 31, 2026, at 1:00 AM UTC"
+            },
             {
               "createdAt": "2026-10-30T02:50:10.143Z",
               "postType": "regular",
