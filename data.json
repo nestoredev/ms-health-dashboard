@@ -1,11 +1,41 @@
 {
-  "lastUpdated": "2026-10-30T21:51:10.317Z",
+  "lastUpdated": "2026-10-30T22:21:23.931Z",
   "services": [
     {
       "service": "Exchange Online",
       "status": "serviceDegradation",
       "id": "Exchange",
       "issues": [
+        {
+          "id": "EX1532233",
+          "title": "External users’ replies to encrypted email messages may not be delivered in Exchange Online",
+          "startTime": "2026-10-30T21:44:31.64Z",
+          "endTime": null,
+          "lastModified": "2026-10-30T22:03:14.83Z",
+          "status": "serviceDegradation",
+          "severity": "incident",
+          "userImpact": "External users’ replies to encrypted email messages may not be delivered in Exchange Online.",
+          "scopeOfImpact": "This issue may affect any users utilizing encrypted messages.\r\n\r\nStart time: Thursday, October 29, 2026, at 4:00 PM UTC",
+          "rootCause": "An anti-spam rule is being triggered on internal domains associated with encrypted message delivery, resulting in impact.",
+          "nextUpdateBy": "Saturday, October 31, 2026, at 12:30 AM UTC",
+          "feature": "Mailflow - delayed delivery from Internet",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-10-30T21:59:29.137Z",
+              "postType": "regular",
+              "content": "Title: External users’ replies to encrypted email messages may not be delivered in Exchange Online\r\n\r\nUser impact: External users’ replies to encrypted email messages may not be delivered in Exchange Online.\r\n\r\nCurrent status: We’ve identified that an anti-spam rule is being triggered on internal domains associated with encrypted message delivery, resulting in impact. We’re applying an exclusion to these affected domains to exclude them from our outbound banned sender list to remediate impact.\r\n\r\nScope of impact: This issue may affect any users utilizing encrypted messages.\r\n\r\nStart time: Thursday, October 29, 2026, at 4:00 PM UTC\r\n\r\nRoot cause: An anti-spam rule is being triggered on internal domains associated with encrypted message delivery, resulting in impact.\r\n\r\nNext update by: Saturday, October 31, 2026, at 12:30 AM UTC"
+            },
+            {
+              "createdAt": "2026-10-30T21:47:42.18Z",
+              "postType": "regular",
+              "content": "Title: External users’ replies to encrypted email messages may not be delivered in Exchange Online\r\n\r\nUser impact: External users’ replies to encrypted email messages may not be delivered in Exchange Online.\r\n\r\nCurrent status: We're investigating a potential issue with Exchange Online and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online"
+          ]
+        },
         {
           "id": "EX1531593",
           "title": "Users are unable to access Notes in Outlook on the web",
