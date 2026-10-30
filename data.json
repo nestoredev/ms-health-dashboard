@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-30T23:21:53.610Z",
+  "lastUpdated": "2026-10-30T23:52:10.126Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1074,16 +1074,21 @@
           "title": "Users may be unable to view recent portions of their conversation history with Microsoft 365 Copilot Chat",
           "startTime": "2026-10-29T17:19:12.283Z",
           "endTime": null,
-          "lastModified": "2026-10-30T17:39:28.947Z",
+          "lastModified": "2026-10-30T23:44:28.993Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to view recent portions of their conversation history with Copilot Chat.",
           "scopeOfImpact": "Some users are sporadically missing recent portions of their conversation history with Copilot Chat. This section may be updated as the investigation progresses.",
           "rootCause": "",
-          "nextUpdateBy": "Saturday, October 31, 2026, at 1:00 AM UTC",
+          "nextUpdateBy": "Saturday, October 31, 2026, at 11:00 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-30T23:44:28.993Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to view recent portions of their conversation history with Microsoft 365 Copilot Chat\r\n\r\nUser impact: Users may be unable to view recent portions of their conversation history with Copilot Chat.\r\n\r\nMore info: The affected conversations have not been deleted and are temporarily unavailable within conversation history.\n \nSome reports indicate that this issue typically occurs when users with an active Copilot Chat leave and then reopen the chat.\r\n\r\nCurrent status: We're continuing our analysis related to how recent conversation activity is synchronized within our service as part of our effort to fully understand the cause of this issue and implement a withstanding solution. In parallel, we're applying a targeted change to improve our infrastructure balancing processes related to the service components which support this synchronization. We expect this change will be completed by the time of our next scheduled update, at which time we'll validate its effectiveness and assess what additional mitigation actions may be required.\r\n\r\nScope of impact: Some users are sporadically missing recent portions of their conversation history with Copilot Chat. This section may be updated as the investigation progresses.\r\n\r\nNext update by: Saturday, October 31, 2026, at 11:00 PM UTC"
+            },
             {
               "createdAt": "2026-10-30T17:39:28.947Z",
               "postType": "regular",
