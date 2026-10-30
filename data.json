@@ -1,11 +1,41 @@
 {
-  "lastUpdated": "2026-10-30T11:15:28.140Z",
+  "lastUpdated": "2026-10-30T11:45:43.245Z",
   "services": [
     {
       "service": "Exchange Online",
       "status": "serviceDegradation",
       "id": "Exchange",
       "issues": [
+        {
+          "id": "EX1531593",
+          "title": "Users are unable to access Notes in Outlook on the web",
+          "startTime": "2026-10-30T09:25:31.007Z",
+          "endTime": null,
+          "lastModified": "2026-10-30T11:18:03.563Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users are unable to access Notes in Outlook on the web.",
+          "scopeOfImpact": "Your organization is affected by this event, and all users attempting to access Notes in Outlook on the web are impacted.",
+          "rootCause": "",
+          "nextUpdateBy": "Friday, October 30, 2026, at 2:00 PM UTC",
+          "feature": "OWA - service unavailable",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-10-30T11:16:47.293Z",
+              "postType": "regular",
+              "content": "Title: Users are unable to access Notes in Outlook on the web\r\n\r\nUser impact: Users are unable to access Notes in Outlook on the web.\r\n\r\nMore info: Affected users may find that the Notes interface remains in a loading state and doesn't display their existing notes. Other Outlook on the web functionality remains available.\r\n\r\nCurrent status: We’re reverting the affected service setting rather than deploying an updated version, and will monitor this action to confirm whether it restores users’ access to Notes. We’ll provide an update on our progress as this process continues.\r\n\r\nScope of impact: Your organization is affected by this event, and all users attempting to access Notes in Outlook on the web are impacted.\r\n\r\nNext update by: Friday, October 30, 2026, at 2:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-10-30T09:29:56.157Z",
+              "postType": "regular",
+              "content": "Title: Users are unable to access Notes in Outlook on the web\r\n\r\nUser impact: Users are unable to access Notes in Outlook on the web.\r\n\r\nMore info: Affected users may find that the Notes interface remains in a loading state and doesn't display their existing notes. Other Outlook on the web functionality remains available.\r\n\r\nCurrent status: We’ve identified a recent service update is causing impact to Notes in Outlook on the web. We’re deploying an updated version to the affected environment and expect this to restore access to Notes. We’ll validate service functionality as the update progresses.\r\n\r\nScope of impact: Your organization is affected by this event, and all users attempting to access Notes in Outlook on the web are impacted.\r\n\r\nNext update by: Friday, October 30, 2026, at 11:30 AM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online"
+          ]
+        },
         {
           "id": "MO1489432",
           "title": "Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile",
