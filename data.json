@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-30T13:46:49.175Z",
+  "lastUpdated": "2026-10-30T14:17:07.075Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -11,16 +11,21 @@
           "title": "Users are unable to access Notes in Outlook on the web",
           "startTime": "2026-10-30T09:25:31.007Z",
           "endTime": null,
-          "lastModified": "2026-10-30T11:18:03.563Z",
+          "lastModified": "2026-10-30T13:58:34.837Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users are unable to access Notes in Outlook on the web.",
-          "scopeOfImpact": "Your organization is affected by this event, and all users attempting to access Notes in Outlook on the web are impacted.",
-          "rootCause": "",
-          "nextUpdateBy": "Friday, October 30, 2026, at 2:00 PM UTC",
+          "scopeOfImpact": "Your organization is affected by this event, and all users attempting to access Notes in Outlook on the web are impacted.\r\n\r\nStart time: Friday, October 30, 2026, at 10:17 AM UTC",
+          "rootCause": "A configuration issue caused requests for Notes in Outlook on the web to fail, resulting in users being unable to access their notes.",
+          "nextUpdateBy": "Monday, November 2, 2026, at 2:00 AM UTC",
           "feature": "OWA - service unavailable",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-10-30T13:58:34.837Z",
+              "postType": "regular",
+              "content": "Title: Users are unable to access Notes in Outlook on the web\r\n\r\nUser impact: Users are unable to access Notes in Outlook on the web.\r\n\r\nMore info: Affected users may find that the Notes interface remains in a loading state and doesn't display their existing notes. Other Outlook on the web functionality remains available.\r\n\r\nCurrent status: We’ve successfully reverted the affected service setting and confirmed through our internal testing that access to Notes has been restored. We’re awaiting confirmation from your organization's representative to validate recovery for affected users.\r\n\r\nScope of impact: Your organization is affected by this event, and all users attempting to access Notes in Outlook on the web are impacted.\r\n\r\nStart time: Friday, October 30, 2026, at 10:17 AM UTC\r\n\r\nRoot cause: A configuration issue caused requests for Notes in Outlook on the web to fail, resulting in users being unable to access their notes.\r\n\r\nNext update by: Monday, November 2, 2026, at 2:00 AM UTC"
+            },
             {
               "createdAt": "2026-10-30T11:16:47.293Z",
               "postType": "regular",
