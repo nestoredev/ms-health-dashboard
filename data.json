@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-02T17:56:11.315Z",
+  "lastUpdated": "2026-11-02T18:26:29.943Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -155,6 +155,31 @@
               "createdAt": "2026-08-19T22:38:40.473Z",
               "postType": "regular",
               "content": "Title: Admins can't identify who deleted a Viva Engage community or its Microsoft 365 Group in Microsoft Entra ID audit logs\r\n\r\nUser impact: Admins can't identify who deleted a Viva Engage community or its Microsoft 365 Group in Entra ID audit logs.\r\n\r\nMore info: Impact applies to deletions initiated from both the Viva Engage web experience and the Viva Engage app in Microsoft Teams.\n\nAdmins needing to identify who deleted a specific community or group during the affected period should open a Microsoft support case with the deletion date and group/community details so support can trace the initiating user through service-side logs.\r\n\r\nCurrent status: We've identified an update to our Viva Engage communities that’s preventing admins from identifying users who deleted a Viva Engage community or its connected Microsoft 365 Group in Microsoft Entra ID audit logs. We've developed and are internally validating a fix to remediate the impact. We'll provide an updated timeline for the deployment of our solution and the remediation of the impact once it has become available.\r\n\r\nScope of impact: This issue is preventing all admins from identifying who deleted Viva Engage communities or their connected Microsoft 365 Group in Microsoft Entra ID audit logs.\r\n\r\nRoot cause: A recent update to improve group deletions of Viva Engage communities within Microsoft Teams is resulting in impact. \r\n\r\nNext update by: Wednesday, September 2, 2026, at 11:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite"
+          ]
+        },
+        {
+          "id": "MO1535688",
+          "title": "Some admins' Microsoft 365 Copilot and Copilot Chat usage reports may be delayed in the Microsoft 365 admin center",
+          "startTime": "2026-11-02T00:00:00Z",
+          "endTime": null,
+          "lastModified": "2026-11-02T18:15:57.36Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Admins' Copilot and Copilot Chat usage reports may be delayed by 24 hours in the Microsoft 365 admin center.",
+          "scopeOfImpact": "Some admins' Copilot and Copilot Chat usage reports may be delayed by 24 hours in the Microsoft 365 admin center. This section may be updated as the investigation progresses.\r\n\r\nStart time: Monday, November 2, 2026, at 12:00 AM UTC",
+          "rootCause": "A degradation in the upstream data pipeline used to populate Copilot and Copilot chat usage reports is causing impact.",
+          "nextUpdateBy": "Tuesday, November 3, 2026, at 3:00 AM UTC",
+          "feature": "Access",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-11-02T18:15:57.36Z",
+              "postType": "regular",
+              "content": "Title: Some admins' Microsoft 365 Copilot and Copilot Chat usage reports may be delayed in the Microsoft 365 admin center\r\n\r\nUser impact: Admins' Copilot and Copilot Chat usage reports may be delayed by 24 hours in the Microsoft 365 admin center.\r\n\r\nCurrent status: Our service telemetry has alerted us to ongoing data population delays of approximately 24 hours for Copilot and Copilot Chat usage reports to populate in the Microsoft 365 admin center. We're isolated that a degradation in the upstream data pipeline used to populate these reports is causing impact, and we're working to remediate the degradation to restore reports as soon as possible.\r\n\r\nScope of impact: Some admins' Copilot and Copilot Chat usage reports may be delayed by 24 hours in the Microsoft 365 admin center. This section may be updated as the investigation progresses.\r\n\r\nStart time: Monday, November 2, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: A degradation in the upstream data pipeline used to populate Copilot and Copilot chat usage reports is causing impact.\r\n\r\nNext update by: Tuesday, November 3, 2026, at 3:00 AM UTC"
             }
           ],
           "affectedServices": [
