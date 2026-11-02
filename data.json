@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-02T15:24:38.230Z",
+  "lastUpdated": "2026-11-02T15:54:54.732Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -519,60 +519,9 @@
     },
     {
       "service": "Microsoft OneDrive",
-      "status": "serviceDegradation",
+      "status": "serviceOperational",
       "id": "OneDriveForBusiness",
-      "issues": [
-        {
-          "id": "OD1530155",
-          "title": "Admins are unable to complete Microsoft OneDrive or SharePoint site migrations",
-          "startTime": "2026-10-28T18:29:00Z",
-          "endTime": null,
-          "lastModified": "2026-10-30T23:57:42.127Z",
-          "status": "serviceDegradation",
-          "severity": "incident",
-          "userImpact": "Admins are unable to complete OneDrive or SharePoint site migrations.",
-          "scopeOfImpact": "This issue will impact any admins attempting to perform OneDrive or SharePoint site migrations. This applies only to the M365 Multi-Geo and Cross-Tenant Migration features for SharePoint and OneDrive. Other modes of migration, such as Migration Manager (https://learn.microsoft.com/en-us/sharepointmigration/mm-get-started) or 3rd party tools, are not affected. This information may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, October 28, 2026, at 6:29 PM UTC",
-          "rootCause": "",
-          "nextUpdateBy": "Tuesday, November 3, 2026, at 3:00 AM UTC",
-          "feature": "OneDrive for Business",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-10-30T23:57:42.127Z",
-              "postType": "regular",
-              "content": "Title: Admins are unable to complete Microsoft OneDrive or SharePoint site migrations\r\n\r\nUser impact: Admins are unable to complete OneDrive or SharePoint site migrations.\r\n\r\nMore info: Several migration workflows may experience impact, which include:\n- Newly initiated Cross-Geo OneDrive or SharePoint site moves will fail to start.\n- Newly initiated Cross-Tenant OneDrive or SharePoint site migrations will fail to start.\n- Admins may see some migration jobs remain in the Scheduled/Queued state.\r\n\r\nCurrent status: The aforementioned fix deployment has completed successfully. We're reaching out to a sample of previously affected admins to validate that this functionality has been restored.\r\n\r\nScope of impact: This issue will impact any admins attempting to perform OneDrive or SharePoint site migrations. This applies only to the M365 Multi-Geo and Cross-Tenant Migration features for SharePoint and OneDrive. Other modes of migration, such as Migration Manager (https://learn.microsoft.com/en-us/sharepointmigration/mm-get-started) or 3rd party tools, are not affected. This information may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, October 28, 2026, at 6:29 PM UTC\r\n\r\nNext update by: Tuesday, November 3, 2026, at 3:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-30T17:20:54.16Z",
-              "postType": "regular",
-              "content": "Title: Admins are unable to complete Microsoft OneDrive or SharePoint site migrations\n\nUser impact: Admins are unable to complete OneDrive or SharePoint site migrations.\n\nMore info: Several migration workflows may experience impact, which include:\n- Newly initiated Cross-Geo OneDrive or SharePoint site moves will fail to start.\n- Newly initiated Cross-Tenant OneDrive or SharePoint site migrations will fail to start.\n- Admins may see some migration jobs remain in the Scheduled/Queued state.\n\nCurrent status: The deployment is progressing as expected and we believe this to fully complete within the next eight hours. To expedite recovery, once a section of the service receives the full deployment, we're making the required configuration change to allow the processing of the migration jobs, so some organizations and admins will begin to experience relief sooner.\n\nScope of impact: This issue will impact any admins attempting to perform OneDrive or SharePoint site migrations. This applies only to the M365 Multi-Geo and Cross-Tenant Migration features for SharePoint and OneDrive. Other modes of migration, such as Migration Manager (https://learn.microsoft.com/en-us/sharepointmigration/mm-get-started) or 3rd party tools, are not affected. This information may be updated as our investigation continues.\n\nStart time: Wednesday, October 28, 2026, at 6:29 PM UTC\n\nNext update by: Saturday, October 31, 2026, at 5:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-29T17:34:01.797Z",
-              "postType": "regular",
-              "content": "Title: Admins are unable to complete Microsoft OneDrive or SharePoint site migrations\n\nUser impact: Admins are unable to complete OneDrive or SharePoint site migrations.\n\nMore info: Several migration workflows may experience impact, which include:\n- Newly initiated Cross-Geo OneDrive or SharePoint site moves will fail to start.\n- Newly initiated Cross-Tenant OneDrive or SharePoint site migrations will fail to start.\n- Admins may see some migration jobs remain in the Scheduled/Queued state.\n\nCurrent status: We've identified the source of the issue, and have developed a fix which we are currently testing. Once the validations are complete, we'll start deployment.\n\nScope of impact: This issue will impact any admins attempting to perform OneDrive or SharePoint site migrations. This applies only to the M365 Multi-Geo and Cross-Tenant Migration features for SharePoint and OneDrive. Other modes of migration, such as Migration Manager (https://learn.microsoft.com/en-us/sharepointmigration/mm-get-started) or 3rd party tools, are not affected. This information may be updated as our investigation continues.\n\nStart time: Wednesday, October 28, 2026, at 6:29 PM UTC\n\nNext update by: Friday, October 30, 2026, at 6:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-29T13:03:50.21Z",
-              "postType": "regular",
-              "content": "Title: Admins are unable to complete cross-tenant Microsoft OneDrive migrations\n\nUser impact: Admins are unable to complete cross-tenant OneDrive migrations.\n\nMore info: Admins may see some migration jobs remain in the Scheduled/Queued state. \n\nCurrent status: We're continuing to review the move request jobs, and the underlying migration infrastructure to isolate the source of the issue.\n\nScope of impact: This could potentially impact an admins attempting to perform cross-tenant OneDrive migrations. This information may be updated as our investigation continues.\n\nNext update by: Thursday, October 29, 2026, at 6:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-29T12:09:01.627Z",
-              "postType": "regular",
-              "content": "Title: Admins are unable to complete cross-tenant Microsoft OneDrive migrations\n\nUser impact: Admins are unable to complete cross-tenant OneDrive migrations.\n\nMore info: Admins may see some migration jobs remain in the Scheduled/Queued state. \n\nCurrent status: We're reviewing the move request jobs to identify where the migration process is failing to complete. Once this review is complete, we'll have a better understanding of the root cause and the appropriate steps to mitigate impact.\n\nScope of impact: Your organization is affected by this event, and admins attempting to complete cross-tenant OneDrive migrations are impacted. This information may be updated as our investigation continues.\n\nNext update by: Thursday, October 29, 2026, at 2:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-29T10:08:40.067Z",
-              "postType": "regular",
-              "content": "Title: Admins are unable to complete cross-tenant Microsoft OneDrive migrations\n\nUser impact: Admins are unable to complete cross-tenant OneDrive migrations.\n\nMore info: Admins may see some migration jobs remain in the Scheduled/Queued state. \n\nCurrent status: We're analyzing support provided information to determine our next troubleshooting steps.\n\nScope of impact: Your organization is affected by this event, and admins attempting to complete cross-tenant OneDrive migrations are impacted.\n\nNext update by: Thursday, October 29, 2026, at 12:30 PM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Microsoft OneDrive"
-          ]
-        }
-      ]
+      "issues": []
     },
     {
       "service": "Microsoft Teams",
@@ -1029,6 +978,52 @@
     }
   ],
   "history": [
+    {
+      "id": "OD1530155",
+      "title": "Admins were unable to complete Microsoft OneDrive or SharePoint site migrations",
+      "startTime": "2026-10-28T18:29:00Z",
+      "endTime": "2026-10-30T22:30:00Z",
+      "lastModified": "2026-11-02T15:38:08.08Z",
+      "status": "serviceRestored",
+      "severity": "incident",
+      "userImpact": "Admins were unable to complete OneDrive or SharePoint site migrations.",
+      "scopeOfImpact": "This issue would have impacted any admins attempting to perform OneDrive or SharePoint site migrations. This only applied to the M365 Multi-Geo and Cross-Tenant Migration features for SharePoint and OneDrive. Other modes of migration, such as Migration Manager (https://learn.microsoft.com/en-us/sharepointmigration/mm-get-started) or 3rd party tools, were not affected.\r\n\r\nStart time: Wednesday, October 28, 2026, at 6:29 PM UTC\r\n\r\nEnd time: Monday, November 2, 2026, at 3:37 PM UTC",
+      "rootCause": "A configuration issue within a backend migration job resulted in impact.\r\n\r\nNext steps: - We're reviewing the migration infrastructure to better understand how to prevent this type of issue happening again.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "OneDrive for Business",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-11-02T15:37:36.07Z",
+          "postType": "regular",
+          "content": "Title: Admins were unable to complete Microsoft OneDrive or SharePoint site migrations\r\n\r\nUser impact: Admins were unable to complete OneDrive or SharePoint site migrations.\r\n\r\nMore info: Several migration workflows may have experienced impact, which included:\n- Newly initiated Cross-Geo OneDrive or SharePoint site moves would have failed to start.\n- Newly initiated Cross-Tenant OneDrive or SharePoint site migrations would have failed to start.\n- Admins may have seen some migration jobs remain in the Scheduled/Queued state.\r\n\r\nFinal status: We've received confirmation from previously impacted users that the issue is no longer occurring.\r\n\r\nScope of impact: This issue would have impacted any admins attempting to perform OneDrive or SharePoint site migrations. This only applied to the M365 Multi-Geo and Cross-Tenant Migration features for SharePoint and OneDrive. Other modes of migration, such as Migration Manager (https://learn.microsoft.com/en-us/sharepointmigration/mm-get-started) or 3rd party tools, were not affected.\r\n\r\nStart time: Wednesday, October 28, 2026, at 6:29 PM UTC\r\n\r\nEnd time: Monday, November 2, 2026, at 3:37 PM UTC\r\n\r\nRoot cause: A configuration issue within a backend migration job resulted in impact.\r\n\r\nNext steps: - We're reviewing the migration infrastructure to better understand how to prevent this type of issue happening again.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-10-30T23:57:42.127Z",
+          "postType": "regular",
+          "content": "Title: Admins are unable to complete Microsoft OneDrive or SharePoint site migrations\r\n\r\nUser impact: Admins are unable to complete OneDrive or SharePoint site migrations.\r\n\r\nMore info: Several migration workflows may experience impact, which include:\n- Newly initiated Cross-Geo OneDrive or SharePoint site moves will fail to start.\n- Newly initiated Cross-Tenant OneDrive or SharePoint site migrations will fail to start.\n- Admins may see some migration jobs remain in the Scheduled/Queued state.\r\n\r\nCurrent status: The aforementioned fix deployment has completed successfully. We're reaching out to a sample of previously affected admins to validate that this functionality has been restored.\r\n\r\nScope of impact: This issue will impact any admins attempting to perform OneDrive or SharePoint site migrations. This applies only to the M365 Multi-Geo and Cross-Tenant Migration features for SharePoint and OneDrive. Other modes of migration, such as Migration Manager (https://learn.microsoft.com/en-us/sharepointmigration/mm-get-started) or 3rd party tools, are not affected. This information may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, October 28, 2026, at 6:29 PM UTC\r\n\r\nNext update by: Tuesday, November 3, 2026, at 3:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-10-30T17:20:54.16Z",
+          "postType": "regular",
+          "content": "Title: Admins are unable to complete Microsoft OneDrive or SharePoint site migrations\n\nUser impact: Admins are unable to complete OneDrive or SharePoint site migrations.\n\nMore info: Several migration workflows may experience impact, which include:\n- Newly initiated Cross-Geo OneDrive or SharePoint site moves will fail to start.\n- Newly initiated Cross-Tenant OneDrive or SharePoint site migrations will fail to start.\n- Admins may see some migration jobs remain in the Scheduled/Queued state.\n\nCurrent status: The deployment is progressing as expected and we believe this to fully complete within the next eight hours. To expedite recovery, once a section of the service receives the full deployment, we're making the required configuration change to allow the processing of the migration jobs, so some organizations and admins will begin to experience relief sooner.\n\nScope of impact: This issue will impact any admins attempting to perform OneDrive or SharePoint site migrations. This applies only to the M365 Multi-Geo and Cross-Tenant Migration features for SharePoint and OneDrive. Other modes of migration, such as Migration Manager (https://learn.microsoft.com/en-us/sharepointmigration/mm-get-started) or 3rd party tools, are not affected. This information may be updated as our investigation continues.\n\nStart time: Wednesday, October 28, 2026, at 6:29 PM UTC\n\nNext update by: Saturday, October 31, 2026, at 5:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-10-29T17:34:01.797Z",
+          "postType": "regular",
+          "content": "Title: Admins are unable to complete Microsoft OneDrive or SharePoint site migrations\n\nUser impact: Admins are unable to complete OneDrive or SharePoint site migrations.\n\nMore info: Several migration workflows may experience impact, which include:\n- Newly initiated Cross-Geo OneDrive or SharePoint site moves will fail to start.\n- Newly initiated Cross-Tenant OneDrive or SharePoint site migrations will fail to start.\n- Admins may see some migration jobs remain in the Scheduled/Queued state.\n\nCurrent status: We've identified the source of the issue, and have developed a fix which we are currently testing. Once the validations are complete, we'll start deployment.\n\nScope of impact: This issue will impact any admins attempting to perform OneDrive or SharePoint site migrations. This applies only to the M365 Multi-Geo and Cross-Tenant Migration features for SharePoint and OneDrive. Other modes of migration, such as Migration Manager (https://learn.microsoft.com/en-us/sharepointmigration/mm-get-started) or 3rd party tools, are not affected. This information may be updated as our investigation continues.\n\nStart time: Wednesday, October 28, 2026, at 6:29 PM UTC\n\nNext update by: Friday, October 30, 2026, at 6:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-29T13:03:50.21Z",
+          "postType": "regular",
+          "content": "Title: Admins are unable to complete cross-tenant Microsoft OneDrive migrations\n\nUser impact: Admins are unable to complete cross-tenant OneDrive migrations.\n\nMore info: Admins may see some migration jobs remain in the Scheduled/Queued state. \n\nCurrent status: We're continuing to review the move request jobs, and the underlying migration infrastructure to isolate the source of the issue.\n\nScope of impact: This could potentially impact an admins attempting to perform cross-tenant OneDrive migrations. This information may be updated as our investigation continues.\n\nNext update by: Thursday, October 29, 2026, at 6:00 PM UTC"
+        }
+      ],
+      "serviceName": "Microsoft OneDrive",
+      "affectedServices": [
+        "Microsoft OneDrive"
+      ]
+    },
     {
       "id": "EX1532233",
       "title": "External users’ replies to encrypted email messages may not be delivered in Exchange Online",
@@ -3061,37 +3056,6 @@
       "serviceName": "Microsoft Teams",
       "affectedServices": [
         "Microsoft Teams"
-      ]
-    },
-    {
-      "id": "PL1490629",
-      "title": "Some users may see initial page loading failures and 500 errors within Microsoft Planner",
-      "startTime": "2026-09-28T11:00:00Z",
-      "endTime": "2026-10-07T18:04:00Z",
-      "lastModified": "2026-10-07T19:46:09.25Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users may have seen initial page loading failures and 500 errors within Planner.",
-      "scopeOfImpact": "This issue could have caused any user to see initial page loading failures or 500 errors within Planner. \n \nStart time: Monday, September 28, 2026, at 11:00 AM UTC\n \nEnd time: Wednesday, October 7, 2026, at 6:04 PM UTC",
-      "rootCause": "A subset of Microsoft Planner service infrastructure experienced a networking issue that produced initial page failures and 500 errors within Planner.  \n \nNext steps:\n- We're further analyzing the source of the networking issue that led to the affected service infrastructure’s lower-than expected performance levels to help us prevent similar issues in the future. \n\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Task detail",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-10-07T19:40:59.817Z",
-          "postType": "regular",
-          "content": "Title: Some users may see initial page loading failures and 500 errors within Microsoft Planner\n \nUser impact: Users may have seen initial page loading failures and 500 errors within Microsoft Planner.\n\nFinal status: We've isolated a subset of Microsoft Planner service infrastructure that dropped below our manageable service performance thresholds due to a networking issue, resulting in impact. After rerouting service traffic to alternate available infrastructure, our telemetry has verified that the impact has been remediated. \n \nScope of impact: This issue could have caused any user to see initial page loading failures or 500 errors within Planner. \n \nStart time: Monday, September 28, 2026, at 11:00 AM UTC\n \nEnd time: Wednesday, October 7, 2026, at 6:04 PM UTC\n \nRoot cause: A subset of Microsoft Planner service infrastructure experienced a networking issue that produced initial page failures and 500 errors within Planner.  \n \nNext steps:\n- We're further analyzing the source of the networking issue that led to the affected service infrastructure’s lower-than expected performance levels to help us prevent similar issues in the future. \n\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-10-07T19:04:17.41Z",
-          "postType": "regular",
-          "content": "Title: Some users may see initial page loading failures and 500 errors within Microsoft Planner\r\n\r\nUser impact: Users may have seen initial page loading failures and 500 errors within Planner.\r\n\r\nCurrent status: We've investigated a problem with the Microsoft Planner service in which some users experienced initial page loading failures or 500 errors within Microsoft Planner, and we’ve confirmed that service is now restored. We'll provide additional information in a closure summary within the “History” section of the “Service health” dashboard shortly."
-        }
-      ],
-      "serviceName": "Planner",
-      "affectedServices": [
-        "Planner"
       ]
     }
   ]
