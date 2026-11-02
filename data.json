@@ -1,46 +1,11 @@
 {
-  "lastUpdated": "2026-11-02T02:17:28.202Z",
+  "lastUpdated": "2026-11-02T02:47:43.796Z",
   "services": [
     {
       "service": "Exchange Online",
       "status": "serviceDegradation",
       "id": "Exchange",
       "issues": [
-        {
-          "id": "EX1531593",
-          "title": "Users are unable to access Notes in Outlook on the web",
-          "startTime": "2026-10-30T09:25:31.007Z",
-          "endTime": null,
-          "lastModified": "2026-10-30T13:58:34.837Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users are unable to access Notes in Outlook on the web.",
-          "scopeOfImpact": "Your organization is affected by this event, and all users attempting to access Notes in Outlook on the web are impacted.\r\n\r\nStart time: Friday, October 30, 2026, at 10:17 AM UTC",
-          "rootCause": "A configuration issue caused requests for Notes in Outlook on the web to fail, resulting in users being unable to access their notes.",
-          "nextUpdateBy": "Monday, November 2, 2026, at 2:00 AM UTC",
-          "feature": "OWA - service unavailable",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-10-30T13:58:34.837Z",
-              "postType": "regular",
-              "content": "Title: Users are unable to access Notes in Outlook on the web\r\n\r\nUser impact: Users are unable to access Notes in Outlook on the web.\r\n\r\nMore info: Affected users may find that the Notes interface remains in a loading state and doesn't display their existing notes. Other Outlook on the web functionality remains available.\r\n\r\nCurrent status: We’ve successfully reverted the affected service setting and confirmed through our internal testing that access to Notes has been restored. We’re awaiting confirmation from your organization's representative to validate recovery for affected users.\r\n\r\nScope of impact: Your organization is affected by this event, and all users attempting to access Notes in Outlook on the web are impacted.\r\n\r\nStart time: Friday, October 30, 2026, at 10:17 AM UTC\r\n\r\nRoot cause: A configuration issue caused requests for Notes in Outlook on the web to fail, resulting in users being unable to access their notes.\r\n\r\nNext update by: Monday, November 2, 2026, at 2:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-30T11:16:47.293Z",
-              "postType": "regular",
-              "content": "Title: Users are unable to access Notes in Outlook on the web\r\n\r\nUser impact: Users are unable to access Notes in Outlook on the web.\r\n\r\nMore info: Affected users may find that the Notes interface remains in a loading state and doesn't display their existing notes. Other Outlook on the web functionality remains available.\r\n\r\nCurrent status: We’re reverting the affected service setting rather than deploying an updated version, and will monitor this action to confirm whether it restores users’ access to Notes. We’ll provide an update on our progress as this process continues.\r\n\r\nScope of impact: Your organization is affected by this event, and all users attempting to access Notes in Outlook on the web are impacted.\r\n\r\nNext update by: Friday, October 30, 2026, at 2:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-30T09:29:56.157Z",
-              "postType": "regular",
-              "content": "Title: Users are unable to access Notes in Outlook on the web\r\n\r\nUser impact: Users are unable to access Notes in Outlook on the web.\r\n\r\nMore info: Affected users may find that the Notes interface remains in a loading state and doesn't display their existing notes. Other Outlook on the web functionality remains available.\r\n\r\nCurrent status: We’ve identified a recent service update is causing impact to Notes in Outlook on the web. We’re deploying an updated version to the affected environment and expect this to restore access to Notes. We’ll validate service functionality as the update progresses.\r\n\r\nScope of impact: Your organization is affected by this event, and all users attempting to access Notes in Outlook on the web are impacted.\r\n\r\nNext update by: Friday, October 30, 2026, at 11:30 AM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Exchange Online"
-          ]
-        },
         {
           "id": "MO1489432",
           "title": "Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile",
@@ -1078,6 +1043,47 @@
           "createdAt": "2026-10-30T21:47:42.18Z",
           "postType": "regular",
           "content": "Title: External users’ replies to encrypted email messages may not be delivered in Exchange Online\r\n\r\nUser impact: External users’ replies to encrypted email messages may not be delivered in Exchange Online.\r\n\r\nCurrent status: We're investigating a potential issue with Exchange Online and checking for impact to your organization. We'll provide an update within 30 minutes."
+        }
+      ],
+      "serviceName": "Exchange Online",
+      "affectedServices": [
+        "Exchange Online"
+      ]
+    },
+    {
+      "id": "EX1531593",
+      "title": "Users may be unable to access Notes in Outlook on the web",
+      "startTime": "2026-10-30T07:52:00Z",
+      "endTime": "2026-10-30T13:10:00Z",
+      "lastModified": "2026-11-02T02:31:34.877Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have been unable to access Notes in Outlook on the web.",
+      "scopeOfImpact": "Any user who attempted to access Notes in Outlook on the web may have been impacted.\r\n\r\nStart time: Friday, October 30, 2026, at 7:52 AM UTC\r\n\r\nEnd time: Friday, October 30, 2026, at 1:10 PM UTC",
+      "rootCause": "A configuration issue caused requests for Notes in Outlook on the web to fail, which resulted in users being unable to access their notes.\r\n\r\nNext steps: \n- We're reviewing our update procedures to understand why the configuration issue wasn't caught during the testing phase. This will allow us to drive service improvements by proactively identifying similar issues in the future and improve our update testing processes.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "OWA - service unavailable",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-11-02T02:31:14.4Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to access Notes in Outlook on the web\r\n\r\nUser impact: Users may have been unable to access Notes in Outlook on the web.\r\n\r\nMore info: Affected users may have found that the Notes interface remained in a loading state and didn't display their existing notes. Other Outlook on the web functionality remained available.\r\n\r\nFinal status: We've confirmed with a subset of affected users that impact was resolved successfully following our revert of the affected service setting.\r\n\r\nScope of impact: Any user who attempted to access Notes in Outlook on the web may have been impacted.\r\n\r\nStart time: Friday, October 30, 2026, at 7:52 AM UTC\r\n\r\nEnd time: Friday, October 30, 2026, at 1:10 PM UTC\r\n\r\nRoot cause: A configuration issue caused requests for Notes in Outlook on the web to fail, which resulted in users being unable to access their notes.\r\n\r\nNext steps: \n- We're reviewing our update procedures to understand why the configuration issue wasn't caught during the testing phase. This will allow us to drive service improvements by proactively identifying similar issues in the future and improve our update testing processes.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-10-30T13:58:34.837Z",
+          "postType": "regular",
+          "content": "Title: Users are unable to access Notes in Outlook on the web\r\n\r\nUser impact: Users are unable to access Notes in Outlook on the web.\r\n\r\nMore info: Affected users may find that the Notes interface remains in a loading state and doesn't display their existing notes. Other Outlook on the web functionality remains available.\r\n\r\nCurrent status: We’ve successfully reverted the affected service setting and confirmed through our internal testing that access to Notes has been restored. We’re awaiting confirmation from your organization's representative to validate recovery for affected users.\r\n\r\nScope of impact: Your organization is affected by this event, and all users attempting to access Notes in Outlook on the web are impacted.\r\n\r\nStart time: Friday, October 30, 2026, at 10:17 AM UTC\r\n\r\nRoot cause: A configuration issue caused requests for Notes in Outlook on the web to fail, resulting in users being unable to access their notes.\r\n\r\nNext update by: Monday, November 2, 2026, at 2:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-10-30T11:16:47.293Z",
+          "postType": "regular",
+          "content": "Title: Users are unable to access Notes in Outlook on the web\r\n\r\nUser impact: Users are unable to access Notes in Outlook on the web.\r\n\r\nMore info: Affected users may find that the Notes interface remains in a loading state and doesn't display their existing notes. Other Outlook on the web functionality remains available.\r\n\r\nCurrent status: We’re reverting the affected service setting rather than deploying an updated version, and will monitor this action to confirm whether it restores users’ access to Notes. We’ll provide an update on our progress as this process continues.\r\n\r\nScope of impact: Your organization is affected by this event, and all users attempting to access Notes in Outlook on the web are impacted.\r\n\r\nNext update by: Friday, October 30, 2026, at 2:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-10-30T09:29:56.157Z",
+          "postType": "regular",
+          "content": "Title: Users are unable to access Notes in Outlook on the web\r\n\r\nUser impact: Users are unable to access Notes in Outlook on the web.\r\n\r\nMore info: Affected users may find that the Notes interface remains in a loading state and doesn't display their existing notes. Other Outlook on the web functionality remains available.\r\n\r\nCurrent status: We’ve identified a recent service update is causing impact to Notes in Outlook on the web. We’re deploying an updated version to the affected environment and expect this to restore access to Notes. We’ll validate service functionality as the update progresses.\r\n\r\nScope of impact: Your organization is affected by this event, and all users attempting to access Notes in Outlook on the web are impacted.\r\n\r\nNext update by: Friday, October 30, 2026, at 11:30 AM UTC"
         }
       ],
       "serviceName": "Exchange Online",
@@ -3071,42 +3077,6 @@
       "serviceName": "Planner",
       "affectedServices": [
         "Planner"
-      ]
-    },
-    {
-      "id": "MV1489881",
-      "title": "Users are unable to create or edit new meeting or broadcast events in Microsoft Viva Engage",
-      "startTime": "2026-10-06T21:09:18.037Z",
-      "endTime": "2026-10-07T05:08:50.09Z",
-      "lastModified": "2026-10-07T05:50:10.86Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users were unable to create or edit new meeting or broadcast events in Viva Engage.",
-      "scopeOfImpact": "Impact may have occurred for all users in Europe and the United States when users attempted to create or edit new meeting or broadcast events in Viva Engage.\r\n\r\nStart time: Tuesday, October 6, 2026, at 1:44 AM UTC\r\n\r\nEnd time: Wednesday, October 7, 2026, at 4:50 AM UTC",
-      "rootCause": "A recent deployment introduced a configuration issue that prevented users from creating or editing meeting and broadcast events.\r\n\r\nNext steps: \n- We're investigating the impacting recent deployment to pinpoint what the change was intended to do and why impact wasn't caught during the testing and validation phase so that we can prevent impact to the ability of creating and editing of new meetings or broadcast events in Microsoft Viva Engage.\r\n\r\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Upload files/notes/documents",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-10-07T05:21:12.457Z",
-          "postType": "regular",
-          "content": "Title: Users are unable to create or edit new meeting or broadcast events in Microsoft Viva Engage\r\n\r\nUser impact: Users were unable to create or edit new meeting or broadcast events in Viva Engage.\r\n\r\nMore info: Users in Europe and the United States were unable to create or edit new meeting or broadcast events in Viva Engage. Existing events and meetings remained accessible and weren't impacted. To bypass this issue, affected users could've created the meeting or town hall directly in Microsoft Teams and shared the link in Viva Engage.\r\n\r\nFinal status: We've completed deploying our fix and confirmed with our service telemetry metrics that this issue is resolved.\r\n\r\nScope of impact: Impact may have occurred for all users in Europe and the United States when users attempted to create or edit new meeting or broadcast events in Viva Engage.\r\n\r\nStart time: Tuesday, October 6, 2026, at 1:44 AM UTC\r\n\r\nEnd time: Wednesday, October 7, 2026, at 4:50 AM UTC\r\n\r\nRoot cause: A recent deployment introduced a configuration issue that prevented users from creating or editing meeting and broadcast events.\r\n\r\nNext steps: \n- We're investigating the impacting recent deployment to pinpoint what the change was intended to do and why impact wasn't caught during the testing and validation phase so that we can prevent impact to the ability of creating and editing of new meetings or broadcast events in Microsoft Viva Engage.\r\n\r\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-10-07T01:51:22.837Z",
-          "postType": "regular",
-          "content": "Title: Users are unable to create or edit new meeting or broadcast events in Microsoft Viva Engage\r\n\r\nUser impact: Users are unable to create or edit new meeting or broadcast events in Viva Engage.\r\n\r\nMore info: Users in Europe and the United States are unable to create or edit new meeting or broadcast events in Viva Engage. Existing events and meetings remain accessible and aren't impacted. To bypass this issue, affected users can create the meeting or town hall directly in Microsoft Teams and share the link in Viva Engage.\r\n\r\nCurrent status: We’ve determined that a recent deployment introduced a configuration issue that prevented users from creating or editing meeting and broadcast events. Deployment of our fix is in its final stages, and we anticipate that it will complete to resolve the issue by our next scheduled update.\r\n\r\nScope of impact: Impact may occur for all users in Europe and the United States when users attempt to create or edit new meeting or broadcast events in Viva Engage. This information may be updated as our investigation continues.\r\n\r\nRoot cause: A recent deployment introduced a configuration issue that prevented users from creating or editing meeting and broadcast events.\r\n\r\nNext update by: Wednesday, October 7, 2026, at 7:00 AM UTC"
-        },
-        {
-          "createdAt": "2026-10-06T21:11:21.797Z",
-          "postType": "regular",
-          "content": "Title: Users are unable to create or edit new meeting or broadcast events in Microsoft Viva Engage\r\n\r\nUser impact: Users are unable to create or edit new meeting or broadcast events in Viva Engage.\r\n\r\nMore info: Users in Europe and the United States are unable to create or edit new meeting or broadcast events in Viva Engage. Existing events and meetings remain accessible and aren't impacted. To bypass this issue, affected users can create the meeting or town hall directly in Microsoft Teams and share the link in Viva Engage.\r\n\r\nCurrent status: We’ve received reports from affected users that users are unable to create or edit new meeting or broadcast events in Viva Engage. We’ve developed a configuration fix and are deploying it to the affected environments to mitigate the impact while we continue investigating the underlying cause. Based on our current estimates, we suspect that the configuration fix will complete deployment by our next scheduled update.\r\n\r\nScope of impact: Impact may occur for all users in Europe and the United States when users attempt to create or edit new meeting or broadcast events in Viva Engage. This information may be updated as our investigation continues.\r\n\r\nNext update by: Wednesday, October 7, 2026, at 2:00 AM UTC"
-        }
-      ],
-      "serviceName": "Microsoft Viva",
-      "affectedServices": [
-        "Microsoft Viva"
       ]
     }
   ]
