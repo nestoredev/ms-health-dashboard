@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-02T21:28:14.347Z",
+  "lastUpdated": "2026-11-02T21:58:29.604Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -633,9 +633,50 @@
     },
     {
       "service": "SharePoint Online",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "SharePoint",
-      "issues": []
+      "issues": [
+        {
+          "id": "SP1535405",
+          "title": "Admins can't download the Migration Manager agent from the SharePoint admin center",
+          "startTime": "2026-11-02T16:04:16.557Z",
+          "endTime": null,
+          "lastModified": "2026-11-02T21:50:15.213Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Admins can't download the Migration Manager agent from the SharePoint admin center.",
+          "scopeOfImpact": "Your organization is affected by this event, and this issue prevents admins from downloading the Migration Manager agent. This section may be updated as our investigation continues.",
+          "rootCause": "",
+          "nextUpdateBy": "Tuesday, November 3, 2026, at 2:30 AM UTC",
+          "feature": "SharePoint Online all features",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-11-02T20:59:11.58Z",
+              "postType": "regular",
+              "content": "Title: Admins can't download the Migration Manager agent from the SharePoint admin center\r\n\r\nUser impact: Admins can't download the Migration Manager agent from the SharePoint admin center.\r\n\r\nMore info: Admins receive an error stating, \"The specified container does not exist.\"\r\n\r\nCurrent status: It's taking longer than expected to review the service telemetry and potential changes that may be contributing to this issue, but we're making progress as we strive to understand the root cause and devise a strategy that remediates impact.\r\n\r\nScope of impact: Your organization is affected by this event, and this issue prevents admins from downloading the Migration Manager agent. This section may be updated as our investigation continues. \r\n\r\nNext update by: Tuesday, November 3, 2026, at 2:30 AM UTC"
+            },
+            {
+              "createdAt": "2026-11-02T18:48:03.42Z",
+              "postType": "regular",
+              "content": "Title: Admins can't download the Migration Manager agent from the SharePoint admin center\r\n\r\nUser impact: Admins can't download the Migration Manager agent from the SharePoint admin center.\r\n\r\nMore info: Admins receive an error stating, \"The specified container does not exist.\"\r\n\r\nCurrent status: We're continuing to review the service telemetry and looking for potential changes that could be contributing to the issue to identify the root cause and a strategy that remediates impact.\r\n\r\nScope of impact: Your organization is affected by this event, and this issue prevents admins from downloading the Migration Manager agent.\r\n\r\nNext update by: Monday, November 2, 2026, at 9:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-11-02T16:42:44.873Z",
+              "postType": "regular",
+              "content": "Title: Admins can't download the Migration Manager agent from the SharePoint admin center\r\n\r\nUser impact: Admins can't download the Migration Manager agent from the SharePoint admin center.\r\n\r\nMore info: Admins receive an error stating, \"The specified container does not exist.\"\r\n\r\nCurrent status: We're reviewing admin reports of impact and service telemetry for this functionality to gain a better understanding of what's leading to this behavior.\r\n\r\nScope of impact: Your organization is affected by this event, and this issue prevents admins from downloading the Migration Manager agent.\r\n\r\nNext update by: Monday, November 2, 2026, at 7:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-11-02T16:04:17.487Z",
+              "postType": "regular",
+              "content": "Title: Possible delays or problems when accessing SharePoint Online\n\nUser impact: Some customers have reported issues with accessing the service, or using features in SharePoint Online.\n\nCurrent status: We’re looking into your reported issue and checking for impact to your organization. We'll provide an update within one hour."
+            }
+          ],
+          "affectedServices": [
+            "SharePoint Online"
+          ]
+        }
+      ]
     },
     {
       "service": "Dynamics 365 Apps",
