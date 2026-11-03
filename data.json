@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-03T01:00:16.891Z",
+  "lastUpdated": "2026-11-03T01:30:34.622Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -646,16 +646,21 @@
           "title": "Admins can't download the Migration Manager agent from the SharePoint admin center",
           "startTime": "2026-11-02T16:04:16.557Z",
           "endTime": null,
-          "lastModified": "2026-11-02T21:50:15.213Z",
+          "lastModified": "2026-11-03T01:18:50.45Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins can't download the Migration Manager agent from the SharePoint admin center.",
           "scopeOfImpact": "Your organization is affected by this event, and this issue prevents admins from downloading the Migration Manager agent. This section may be updated as our investigation continues.",
-          "rootCause": "",
-          "nextUpdateBy": "Tuesday, November 3, 2026, at 2:30 AM UTC",
+          "rootCause": "A recent change to the SharePoint Online service that supports the Migration Manager agent in the SharePoint Online admin center contains a code regression and is leading to impact.",
+          "nextUpdateBy": "Tuesday, November 3, 2026, at 2:00 PM UTC",
           "feature": "SharePoint Online all features",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-11-03T01:18:50.45Z",
+              "postType": "regular",
+              "content": "Title: Admins can't download the Migration Manager agent from the SharePoint admin center\r\n\r\nUser impact: Admins can't download the Migration Manager agent from the SharePoint admin center.\r\n\r\nMore info: Admins receive an error stating, \"The specified container does not exist.\"\r\n\r\nCurrent status: We've identified a change to the SharePoint Online service that we believe is causing impact. We're in the process of rolling back this change and once complete, we'll validate whether it has had the desired effect of resolving impact.\r\n\r\nScope of impact: Your organization is affected by this event, and this issue prevents admins from downloading the Migration Manager agent. This section may be updated as our investigation continues.\r\n\r\nRoot cause: A recent change to the SharePoint Online service that supports the Migration Manager agent in the SharePoint Online admin center contains a code regression and is leading to impact.\r\n\r\nNext update by: Tuesday, November 3, 2026, at 2:00 PM UTC"
+            },
             {
               "createdAt": "2026-11-02T20:59:11.58Z",
               "postType": "regular",
