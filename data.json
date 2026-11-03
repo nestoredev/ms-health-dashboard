@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-03T17:39:45.769Z",
+  "lastUpdated": "2026-11-03T18:10:08.778Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -300,17 +300,22 @@
           "id": "MO1535688",
           "title": "Some admins' Microsoft 365 Copilot and Copilot Chat usage reports may be delayed in the Microsoft 365 admin center",
           "startTime": "2026-11-02T00:00:00Z",
-          "endTime": null,
-          "lastModified": "2026-11-03T01:31:53.253Z",
+          "endTime": "2026-11-03T01:20:00Z",
+          "lastModified": "2026-11-03T17:44:54.163Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "userImpact": "Admins' Copilot and Copilot Chat usage reports may be delayed by 24 hours in the Microsoft 365 admin center.",
-          "scopeOfImpact": "Some admins' Copilot and Copilot Chat usage reports may be delayed by 24 hours in the Microsoft 365 admin center. This section may be updated as the investigation progresses.\r\n\r\nStart time: Monday, November 2, 2026, at 12:00 AM UTC",
-          "rootCause": "A degradation in the upstream data pipeline used to populate Copilot and Copilot chat usage reports is causing impact.",
-          "nextUpdateBy": "Tuesday, November 3, 2026, at 7:00 PM UTC",
+          "userImpact": "Admins' Copilot and Copilot Chat usage reports were delayed by up to 24 hours in the Microsoft 365 admin center.",
+          "scopeOfImpact": "Some admins' Copilot and Copilot Chat usage reports may have been delayed by up to 24 hours in the Microsoft 365 admin center.\r\n\r\nStart time: Monday, November 2, 2026, at 12:00 AM UTC\r\n\r\nEnd time: Tuesday, November 3, 2026, at 1:20 AM UTC",
+          "rootCause": "A degradation in the upstream data pipeline used to populate Copilot and Copilot Chat usage reports caused impact.\r\n\r\nNext steps: We're investigating why the upstream data pipeline didn't function as intended to implement measures for preventing this problem from happening again in the future.\r\n\r\nThis is the final update for the event.",
+          "nextUpdateBy": "",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-11-03T17:43:57.41Z",
+              "postType": "regular",
+              "content": "Title: Some admins' Microsoft 365 Copilot and Copilot Chat usage reports may be delayed in the Microsoft 365 admin center\r\n\r\nUser impact: Admins' Copilot and Copilot Chat usage reports were delayed by up to 24 hours in the Microsoft 365 admin center.\r\n\r\nFinal status: We've resolved the upstream pipeline degradation, and the affected reporting jobs have completed successfully. After monitoring the service, we've confirmed that Microsoft 365 Copilot and Copilot Chat usage reports have fully recovered across all affected regions.\r\n\r\nScope of impact: Some admins' Copilot and Copilot Chat usage reports may have been delayed by up to 24 hours in the Microsoft 365 admin center.\r\n\r\nStart time: Monday, November 2, 2026, at 12:00 AM UTC\r\n\r\nEnd time: Tuesday, November 3, 2026, at 1:20 AM UTC\r\n\r\nRoot cause: A degradation in the upstream data pipeline used to populate Copilot and Copilot Chat usage reports caused impact.\r\n\r\nNext steps: We're investigating why the upstream data pipeline didn't function as intended to implement measures for preventing this problem from happening again in the future.\r\n\r\nThis is the final update for the event."
+            },
             {
               "createdAt": "2026-11-03T01:31:53.253Z",
               "postType": "regular",
@@ -323,8 +328,7 @@
             }
           ],
           "affectedServices": [
-            "Microsoft 365 suite",
-            "Microsoft 365 Copilot Chat"
+            "Microsoft 365 suite"
           ]
         },
         {
@@ -775,31 +779,6 @@
           ]
         },
         {
-          "id": "TM1536687",
-          "title": " Some users may be unable to load their calendar in the Microsoft Teams web app",
-          "startTime": "2026-11-03T10:58:09.88Z",
-          "endTime": null,
-          "lastModified": "2026-11-03T11:24:45.59Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may be unable to load their calendar in the Microsoft Teams web app.",
-          "scopeOfImpact": "Impact is specific to some users attempting to load their calendar in the Microsoft Teams web app.",
-          "rootCause": "",
-          "nextUpdateBy": "Tuesday, November 3, 2026, at 6:30 PM UTC",
-          "feature": "Calendar",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-11-03T11:08:11.553Z",
-              "postType": "regular",
-              "content": "Title: Some users may be unable to load their calendar in the Microsoft Teams web app\r\n\r\nUser impact: Users may be unable to load their calendar in the Microsoft Teams web app.\r\n\r\nMore info: Affected users may experience longer loading times when accessing their calendars. Retrying may allow the calendar to load successfully.\r\n\r\nCurrent status: We’ve observed that the issue previously communicated under TM1527987 has not been fully resolved by the mitigation already implemented. We’re continuing to investigate the root cause and assess whether additional mitigation is needed to resolve the remaining impact.\r\n\r\nScope of impact: Impact is specific to some users attempting to load their calendar in the Microsoft Teams web app.\r\n\r\nNext update by: Tuesday, November 3, 2026, at 6:30 PM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Microsoft Teams"
-          ]
-        },
-        {
           "id": "TM1489031",
           "title": "Users may see Microsoft Teams on the web displayed in English",
           "startTime": "2026-10-06T04:38:30.307Z",
@@ -1209,42 +1188,42 @@
           "affectedServices": [
             "Microsoft 365 Copilot Chat"
           ]
-        },
-        {
-          "id": "MO1535688",
-          "title": "Some admins' Microsoft 365 Copilot and Copilot Chat usage reports may be delayed in the Microsoft 365 admin center",
-          "startTime": "2026-11-02T00:00:00Z",
-          "endTime": null,
-          "lastModified": "2026-11-03T01:31:53.253Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Admins' Copilot and Copilot Chat usage reports may be delayed by 24 hours in the Microsoft 365 admin center.",
-          "scopeOfImpact": "Some admins' Copilot and Copilot Chat usage reports may be delayed by 24 hours in the Microsoft 365 admin center. This section may be updated as the investigation progresses.\r\n\r\nStart time: Monday, November 2, 2026, at 12:00 AM UTC",
-          "rootCause": "A degradation in the upstream data pipeline used to populate Copilot and Copilot chat usage reports is causing impact.",
-          "nextUpdateBy": "Tuesday, November 3, 2026, at 7:00 PM UTC",
-          "feature": "Access",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-11-03T01:31:53.253Z",
-              "postType": "regular",
-              "content": "Title: Some admins' Microsoft 365 Copilot and Copilot Chat usage reports may be delayed in the Microsoft 365 admin center\r\n\r\nUser impact: Admins' Copilot and Copilot Chat usage reports may be delayed by 24 hours in the Microsoft 365 admin center.\r\n\r\nCurrent status: We're continuing our efforts to resolve the pipeline degradation and restore reports. We anticipate this may complete by our next scheduled update. \r\n\r\nScope of impact: Some admins' Copilot and Copilot Chat usage reports may be delayed by 24 hours in the Microsoft 365 admin center. This section may be updated as the investigation progresses.\r\n\r\nStart time: Monday, November 2, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: A degradation in the upstream data pipeline used to populate Copilot and Copilot chat usage reports is causing impact.\r\n\r\nNext update by: Tuesday, November 3, 2026, at 7:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-11-02T18:15:57.36Z",
-              "postType": "regular",
-              "content": "Title: Some admins' Microsoft 365 Copilot and Copilot Chat usage reports may be delayed in the Microsoft 365 admin center\r\n\r\nUser impact: Admins' Copilot and Copilot Chat usage reports may be delayed by 24 hours in the Microsoft 365 admin center.\r\n\r\nCurrent status: Our service telemetry has alerted us to ongoing data population delays of approximately 24 hours for Copilot and Copilot Chat usage reports to populate in the Microsoft 365 admin center. We're isolated that a degradation in the upstream data pipeline used to populate these reports is causing impact, and we're working to remediate the degradation to restore reports as soon as possible.\r\n\r\nScope of impact: Some admins' Copilot and Copilot Chat usage reports may be delayed by 24 hours in the Microsoft 365 admin center. This section may be updated as the investigation progresses.\r\n\r\nStart time: Monday, November 2, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: A degradation in the upstream data pipeline used to populate Copilot and Copilot chat usage reports is causing impact.\r\n\r\nNext update by: Tuesday, November 3, 2026, at 3:00 AM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Microsoft 365 suite",
-            "Microsoft 365 Copilot Chat"
-          ]
         }
       ]
     }
   ],
   "history": [
+    {
+      "id": "TM1536687",
+      "title": " Some users may be unable to load their calendar in the Microsoft Teams web app",
+      "startTime": "2026-11-03T10:58:09.88Z",
+      "endTime": "2026-11-03T17:34:06.557Z",
+      "lastModified": "2026-11-03T17:51:52.933Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have been unable to load their calendar in the Microsoft Teams web app.",
+      "scopeOfImpact": "Impact was specific to some users attempting to load their calendar in the Microsoft Teams web app.\r\n\r\nStart time: Saturday, October 10, 2026, at 12:00 AM UTC\r\n\r\nEnd time: Thursday, October 29, 2026, at 6:07 PM UTC",
+      "rootCause": "A recent configuration change to the way licensing is checked within the environment contained an error, which resulted in a portion of the supporting infrastructure for this feature becoming unhealthy and this impacting event.\r\n\r\nNext steps: \n- We're reverting the licensing check change throughout the entire affected environment to further help availability and prevent future similar events.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Calendar",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-11-03T17:51:49.247Z",
+          "postType": "regular",
+          "content": "Title:  Some users may be unable to load their calendar in the Microsoft Teams web app\r\n\r\nUser impact: Users may have been unable to load their calendar in the Microsoft Teams web app.\r\n\r\nMore info: Affected users may have experienced longer loading times when accessing their calendars. Retrying may have allowed the calendar to load successfully.\r\n\r\nFinal status: While we were in the process of analyzing our service-side telemetry to review the recurrence of the previously identified issue, our system monitoring indicated that the service had returned to normal health. We've confirmed that the issue is no longer occurring, and we'll continue to monitor the service to ensure that the problem doesn't happen again.\r\n\r\nScope of impact: Impact was specific to some users attempting to load their calendar in the Microsoft Teams web app.\r\n\r\nStart time: Saturday, October 10, 2026, at 12:00 AM UTC\r\n\r\nEnd time: Thursday, October 29, 2026, at 6:07 PM UTC\r\n\r\nRoot cause: A recent configuration change to the way licensing is checked within the environment contained an error, which resulted in a portion of the supporting infrastructure for this feature becoming unhealthy and this impacting event.\r\n\r\nNext steps: \n- We're reverting the licensing check change throughout the entire affected environment to further help availability and prevent future similar events.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-11-03T11:08:11.553Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to load their calendar in the Microsoft Teams web app\r\n\r\nUser impact: Users may be unable to load their calendar in the Microsoft Teams web app.\r\n\r\nMore info: Affected users may experience longer loading times when accessing their calendars. Retrying may allow the calendar to load successfully.\r\n\r\nCurrent status: We’ve observed that the issue previously communicated under TM1527987 has not been fully resolved by the mitigation already implemented. We’re continuing to investigate the root cause and assess whether additional mitigation is needed to resolve the remaining impact.\r\n\r\nScope of impact: Impact is specific to some users attempting to load their calendar in the Microsoft Teams web app.\r\n\r\nNext update by: Tuesday, November 3, 2026, at 6:30 PM UTC"
+        }
+      ],
+      "serviceName": "Microsoft Teams",
+      "affectedServices": [
+        "Microsoft Teams"
+      ]
+    },
     {
       "id": "SP1535405",
       "title": "Admins couldn't download the Migration Manager agent from the SharePoint admin center",
@@ -3277,52 +3256,6 @@
       "serviceName": "Microsoft Teams",
       "affectedServices": [
         "Microsoft Teams"
-      ]
-    },
-    {
-      "id": "SP1489449",
-      "title": "Some users' Microsoft 365 apps may not appear in the App launcher in SharePoint Online",
-      "startTime": "2026-10-05T12:30:00Z",
-      "endTime": "2026-10-08T14:30:00Z",
-      "lastModified": "2026-10-08T20:28:36.17Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users' Microsoft 365 apps may have not appeared in the App launcher in SharePoint Online.",
-      "scopeOfImpact": "Impact was specific to some users in the United States region who attempted to access apps through the Microsoft 365 app or the Settings page in SharePoint Online.\r\n\r\nStart time: Monday, October 5, 2026, at 12:30 PM UTC\r\n\r\nEnd time: Thursday, October 8, 2026, at 2:30 PM UTC",
-      "rootCause": "A portion of the SharePoint Online service infrastructure was operating in a suboptimal state and causing requests related to the Microsoft 365 app launcher to time out, resulting in impact.\r\n\r\nNext steps: We're analyzing performance data and trends on the affected SharePoint Online service infrastructure to help prevent this problem from happening again.\r\n\r\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "SharePoint Search (General)",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-10-08T20:22:42.327Z",
-          "postType": "regular",
-          "content": "Title: Some users' Microsoft 365 apps may not appear in the App launcher in SharePoint Online\r\n\r\nUser impact: Users' Microsoft 365 apps may have not appeared in the App launcher in SharePoint Online.\r\n\r\nMore info: Users may not have seen the Settings icon, also known as the gear icon, appearing in SharePoint Online.\n\nAs a workaround, affected users could access the affected apps directly through office.com or microsoft365.com.\n\nPreviously, some users who were based in the Europe, Middle East and Africa region were affected by this event and have since been remediated.\r\n\r\nFinal status: We've confirmed that the final deployment has completed saturation throughout the remaining affected regions, and after monitoring the service, we've verified that this action has successfully remediated the problem.\r\n\r\nScope of impact: Impact was specific to some users in the United States region who attempted to access apps through the Microsoft 365 app or the Settings page in SharePoint Online.\r\n\r\nStart time: Monday, October 5, 2026, at 12:30 PM UTC\r\n\r\nEnd time: Thursday, October 8, 2026, at 2:30 PM UTC\r\n\r\nRoot cause: A portion of the SharePoint Online service infrastructure was operating in a suboptimal state and causing requests related to the Microsoft 365 app launcher to time out, resulting in impact.\r\n\r\nNext steps: We're analyzing performance data and trends on the affected SharePoint Online service infrastructure to help prevent this problem from happening again.\r\n\r\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-10-08T15:08:56.737Z",
-          "postType": "regular",
-          "content": "Title: Some users' Microsoft 365 apps may not appear in the App launcher in SharePoint Online\r\n\r\nUser impact: Users' Microsoft 365 apps may not appear in the App launcher in SharePoint Online.\r\n\r\nMore info: Users may not have the Settings icon, also known as the gear icon, appearing in SharePoint Online.\n\nAs a workaround, affected users can access the affected apps directly through office.com or microsoft365.com.\n\n \nPreviously, some users who are based in the Europe, Middle East and Africa region were affected by this event, and have since been remediated. \r\n\r\nCurrent status: We've validated that a majority of the affected users, specifically those in the Europe, Middle East and Africa regions, that have received our optimizations are no longer impacted by the event. We're monitoring a final deployment as it saturates in the remaining affected region, before verifying that the impact has been remediated.\r\n\r\nScope of impact: Impact is specific to some users in the United States region attempting to access apps through the Microsoft 365 app, or the Setting page, in SharePoint Online. This information may be updated as our investigation continues.\r\n\r\nStart time: Monday, October 5, 2026, at 12:30 PM UTC\r\n\r\nRoot cause: A portion of the SharePoint Online service infrastructure is operating in a suboptimal state and causing requests related to the Microsoft 365 app launcher to time out, resulting in impact.\r\n\r\nNext update by: Thursday, October 8, 2026, at 9:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-10-08T09:49:59.11Z",
-          "postType": "regular",
-          "content": "Title: Some users' Microsoft 365 apps may not appear in the App launcher in SharePoint Online\r\n\r\nUser impact: Users' Microsoft 365 apps may not appear in the App launcher in SharePoint Online.\r\n\r\nMore info: Users may not have the Settings icon, also known as the gear icon, appearing in SharePoint Online.\n\nAs a workaround, affected users can access the affected apps directly through office.com or microsoft365.com.\r\n\r\nCurrent status: We're continuing to monitor as our optimizations are implemented across the affected regions, and we're seeing further signs of recovery. We aim to provide a remediation timeline by our next scheduled update.\r\n\r\nScope of impact: Impact is specific to some users in Europe, Middle East, Africa, and the United States regions attempting to access apps through the Microsoft 365 app, or the Setting page, in SharePoint Online. This information may be updated as our investigation continues.\r\n\r\nStart time: Monday, October 5, 2026, at 12:30 PM UTC\r\n\r\nRoot cause: A portion of the SharePoint Online service infrastructure is operating in a suboptimal state and causing requests related to the Microsoft 365 app launcher to time out, resulting in impact.\r\n\r\nNext update by: Thursday, October 8, 2026, at 4:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-10-07T22:05:05.147Z",
-          "postType": "regular",
-          "content": "Title: Some users' Microsoft 365 apps may not appear in the App launcher in SharePoint Online\r\n\r\nUser impact: Users' Microsoft 365 apps may not appear in the App launcher in SharePoint Online.\r\n\r\nMore info: Users may not have the Settings icon, also known as the gear icon, appearing in SharePoint Online.\n\nAs a workaround, affected users can access the affected apps directly through office.com or microsoft365.com.\r\n\r\nCurrent status: We're monitoring as our optimizations are implemented across the affected regions, and we're noting signs of recovery. We're continuing to monitor and our ongoing observation of the rate of progress will aid in determining a timeline for remediation.\r\n\r\nScope of impact: Impact is specific to some users in Europe, Middle East, Africa, and the United States regions attempting to access apps through the Microsoft 365 app, or the Setting page, in SharePoint Online. This information may be updated as our investigation continues.\r\n\r\nStart time: Monday, October 5, 2026, at 12:30 PM UTC\r\n\r\nRoot cause: A portion of the SharePoint Online service infrastructure is operating in a suboptimal state and causing requests related to the Microsoft 365 app launcher to time out, resulting in impact.\r\n\r\nNext update by: Thursday, October 8, 2026, at 11:00 AM UTC"
-        },
-        {
-          "createdAt": "2026-10-07T16:22:53.807Z",
-          "postType": "regular",
-          "content": "Title: Some users' Microsoft 365 apps may not appear in the App launcher in SharePoint Online\r\n\r\nUser impact: Users' Microsoft 365 apps may not appear in the App launcher in SharePoint Online.\r\n\r\nMore info: Users may not have the Settings icon, also known as the gear icon, appearing in SharePoint Online.\n\nAs a workaround, affected users can access the affected apps directly through office.com or microsoft365.com.\r\n\r\nCurrent status: We've further identified that a portion of the SharePoint Online service infrastructure is operating in a suboptimal state and causing requests from SharePoint Online to the Microsoft 365 app launcher to time out, resulting in impact. We're implementing optimizations to increase the processing functionality of the affected infrastructure and return it to expected functionality. We'll aim to provide a timeline for our optimizations to be implemented by our next scheduled communications update.\r\n\r\nScope of impact: Impact is specific to some users in Europe, Middle East, Africa, and the United States regions attempting to access apps through the Microsoft 365 app, or the Setting page, in SharePoint Online. This information may be updated as our investigation continues.\r\n\r\nStart time: Monday, October 5, 2026, at 12:30 PM UTC\r\n\r\nRoot cause: A portion of the SharePoint Online service infrastructure is operating in a suboptimal state and causing requests related to the Microsoft 365 app launcher to time out, resulting in impact.\r\n\r\nNext update by: Wednesday, October 7, 2026, at 11:00 PM UTC"
-        }
-      ],
-      "serviceName": "SharePoint Online",
-      "affectedServices": [
-        "SharePoint Online"
       ]
     }
   ]
