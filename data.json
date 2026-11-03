@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-03T22:43:54.159Z",
+  "lastUpdated": "2026-11-03T23:14:11.601Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -990,40 +990,9 @@
     },
     {
       "service": "Microsoft 365 for the web",
-      "status": "investigating",
+      "status": "serviceOperational",
       "id": "officeonline",
-      "issues": [
-        {
-          "id": "OO1537414",
-          "title": "Some users may be unable to access Microsoft Word, PowerPoint, or Excel for the web",
-          "startTime": "2026-11-03T21:24:43.213Z",
-          "endTime": null,
-          "lastModified": "2026-11-03T22:34:56.7Z",
-          "status": "investigating",
-          "severity": "advisory",
-          "userImpact": "Users may have been unable to access Microsoft Word, PowerPoint, or Excel for the web.",
-          "scopeOfImpact": "Some users attempting to access Microsoft Word, PowerPoint, or Excel for the web may be impacted. This section may be updated as our investigation continues.",
-          "rootCause": "",
-          "nextUpdateBy": "Tuesday, November 3, 2026, at 11:30 PM UTC",
-          "feature": "Word Online",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-11-03T21:59:03.803Z",
-              "postType": "regular",
-              "content": "Title: Some users may be unable to access Microsoft Word, PowerPoint, or Excel for the web\r\n\r\nUser impact: Users may be unable to access Microsoft Word, PowerPoint, or Excel for the web.\r\n\r\nCurrent status: We're reviewing service health telemetry, as well as recent changes, to identify the source of the impact and develop a mitigation strategy.\r\n\r\nScope of impact: Some users attempting to access Microsoft Word, PowerPoint, or Excel for the web may be impacted. This section may be updated as our investigation continues.\r\n\r\nNext update by: Tuesday, November 3, 2026, at 11:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-11-03T21:34:27.41Z",
-              "postType": "regular",
-              "content": "Title: Some users may be unable to access Microsoft Word, PowerPoint, or Excel for the web\r\n\r\nUser impact: Users may be unable to access Microsoft Word, PowerPoint, or Excel for the web.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft 365 for the web and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Microsoft 365 for the web"
-          ]
-        }
-      ]
+      "issues": []
     },
     {
       "service": "Microsoft 365 apps",
@@ -1264,6 +1233,42 @@
     }
   ],
   "history": [
+    {
+      "id": "OO1537414",
+      "title": "Some users may be unable to access Microsoft Word, PowerPoint, or Excel for the web",
+      "startTime": "2026-11-03T21:24:43.213Z",
+      "endTime": "2026-11-03T22:35:05.747Z",
+      "lastModified": "2026-11-03T22:57:04.623Z",
+      "status": "serviceRestored",
+      "severity": "incident",
+      "userImpact": "Users may have been unable to access Microsoft Word, PowerPoint, or Excel for the web.",
+      "scopeOfImpact": "Some users who attempted to access Microsoft Word, PowerPoint, or Excel for the web may have been impacted.\r\n\r\nStart time: Monday, November 2, 2026, at 11:26 PM UTC\r\n\r\nEnd time: Tuesday, November 3, 2026, at 9:31 PM UTC",
+      "rootCause": "A recent change intended to update the process by which access requests are routed introduced a header issue which resulted in the impact.\r\n\r\nNext steps: \n- We're reviewing our update standards to ensure similar issues are caught and addressed ahead of deployment to prevent similar issues from occurring.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Word Online",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-11-03T22:52:08.637Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to access Microsoft Word, PowerPoint, or Excel for the web\r\n\r\nUser impact: Users may have been unable to access Microsoft Word, PowerPoint, or Excel for the web.\r\n\r\nFinal status: We've identified a recent change intended to update the process by which access requests are routed introduced a header issue which resulted in the impact. We've reversed this change and, after monitoring service health telemetry, confirmed the failures associated with the issue have ceased and the impact is remediated.\r\n\r\nScope of impact: Some users who attempted to access Microsoft Word, PowerPoint, or Excel for the web may have been impacted.\r\n\r\nStart time: Monday, November 2, 2026, at 11:26 PM UTC\r\n\r\nEnd time: Tuesday, November 3, 2026, at 9:31 PM UTC\r\n\r\nRoot cause: A recent change intended to update the process by which access requests are routed introduced a header issue which resulted in the impact.\r\n\r\nNext steps: \n- We're reviewing our update standards to ensure similar issues are caught and addressed ahead of deployment to prevent similar issues from occurring.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-11-03T21:59:03.803Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to access Microsoft Word, PowerPoint, or Excel for the web\r\n\r\nUser impact: Users may be unable to access Microsoft Word, PowerPoint, or Excel for the web.\r\n\r\nCurrent status: We're reviewing service health telemetry, as well as recent changes, to identify the source of the impact and develop a mitigation strategy.\r\n\r\nScope of impact: Some users attempting to access Microsoft Word, PowerPoint, or Excel for the web may be impacted. This section may be updated as our investigation continues.\r\n\r\nNext update by: Tuesday, November 3, 2026, at 11:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-11-03T21:34:27.41Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to access Microsoft Word, PowerPoint, or Excel for the web\r\n\r\nUser impact: Users may be unable to access Microsoft Word, PowerPoint, or Excel for the web.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft 365 for the web and checking for impact to your organization. We'll provide an update within 30 minutes."
+        }
+      ],
+      "serviceName": "Microsoft 365 for the web",
+      "affectedServices": [
+        "Microsoft 365 for the web"
+      ]
+    },
     {
       "id": "TM1537403",
       "title": "Users may be unable to download meeting transcripts in docx format from Microsoft Teams",
@@ -3271,47 +3276,6 @@
       "serviceName": "Microsoft 365 suite",
       "affectedServices": [
         "Microsoft 365 suite"
-      ]
-    },
-    {
-      "id": "EX1491694",
-      "title": "Some users' email messages from on-premises Exchange servers to Exchange Online may intermittently fail",
-      "startTime": "2026-10-08T14:39:42.28Z",
-      "endTime": "2026-10-08T18:29:29.037Z",
-      "lastModified": "2026-10-08T18:40:27.403Z",
-      "status": "serviceRestored",
-      "severity": "incident",
-      "userImpact": "Users' email messages from on-premises Exchange servers to Exchange Online may have intermittently failed.",
-      "scopeOfImpact": "Some users' email messages from on-premises Exchange servers to Exchange Online may have intermittently failed.\r\n\r\nStart time: Thursday, October 8, 2026, at 10:06 AM UTC\r\n\r\nEnd time: Thursday, October 8, 2026, at 4:05 PM UTC",
-      "rootCause": "A routing service-side testing process created a Domain Name System (DNS) issue resulting in this impacting event. \r\n\r\nNext steps: \n-We're reviewing our service side testing processes and checks to ensure that impact is avoided or to notify admins ahead of time to potential downtime periods so that preventative actions can be taken.\r\n\r\nThis is the final update for this event.",
-      "nextUpdateBy": "",
-      "feature": "All clients",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-10-08T18:40:15.907Z",
-          "postType": "regular",
-          "content": "Title: Some users' email messages from on-premises Exchange servers to Exchange Online may intermittently fail\r\n\r\nUser impact: Users' email messages from on-premises Exchange servers to Exchange Online may have intermittently failed.\r\n\r\nMore info: Impacted users received the following error \"Mail sent to the wrong Office 365 region. ATTR35.\"\r\n\r\nFinal status: We have stopped the service-side testing and reversed the changes it had made. We've confirmed with both service-side telemetry and multiple users' feedback that this issue is now resolved. We've stopped the service-side testing, reversed the changes it had made, and confirmed with service-side telemetry and user feedback that this issue is now resolved.\r\n\r\nScope of impact: Some users' email messages from on-premises Exchange servers to Exchange Online may have intermittently failed.\r\n\r\nStart time: Thursday, October 8, 2026, at 10:06 AM UTC\r\n\r\nEnd time: Thursday, October 8, 2026, at 4:05 PM UTC\r\n\r\nRoot cause: A routing service-side testing process created a Domain Name System (DNS) issue resulting in this impacting event. \r\n\r\nNext steps: \n-We're reviewing our service side testing processes and checks to ensure that impact is avoided or to notify admins ahead of time to potential downtime periods so that preventative actions can be taken.\r\n\r\nThis is the final update for this event."
-        },
-        {
-          "createdAt": "2026-10-08T16:20:07.423Z",
-          "postType": "regular",
-          "content": "Title: Some users' email messages from on-premises Exchange servers to Exchange Online may intermittently fail\r\n\r\nUser impact: Users' email messages from on-premises Exchange servers to Exchange Online may intermittently fail.\r\n\r\nMore info: Impacted users receive the following error \"Mail sent to the wrong Office 365 region. ATTR35.\"\r\n\r\nCurrent status: We've identified a potential root cause related to a service-side testing process. We're working on a remediation plan to correct this issue and restore service. This information may be updated as our investigation continues. \r\n\r\nScope of impact: Some users' email messages from on-premises Exchange servers to Exchange Online may intermittently fail.\r\n\r\nNext update by: Thursday, October 8, 2026, at 6:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-10-08T15:14:23.013Z",
-          "postType": "regular",
-          "content": "Title: Some users' email messages from on-premises Exchange servers to Exchange Online may intermittently fail\r\n\r\nUser impact: Users' email messages from on-premises Exchange servers to Exchange Online may intermittently fail.\r\n\r\nCurrent status: We're reviewing the information provided by some reporting users to better understand this issue and determine our next troubleshooting steps.\r\n\r\nScope of impact: Some users' email messages from on-premises Exchange servers to Exchange Online may intermittently fail.\r\n\r\nNext update by: Thursday, October 8, 2026, at 4:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-10-08T14:53:13.693Z",
-          "postType": "regular",
-          "content": "Title: Some users' email messages from on-premises Exchange servers to Exchange Online may intermittently fail\r\n\r\nUser impact: Users' email messages from on-premises Exchange servers to Exchange Online may intermittently fail.\r\n\r\nCurrent status: We're investigating a potential issue with Exchange Online and checking for impact to your organization. We'll provide an update within 30 minutes."
-        }
-      ],
-      "serviceName": "Exchange Online",
-      "affectedServices": [
-        "Exchange Online"
       ]
     }
   ]
