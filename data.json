@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-03T13:06:51.433Z",
+  "lastUpdated": "2026-11-03T13:37:08.438Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -668,55 +668,9 @@
     },
     {
       "service": "SharePoint Online",
-      "status": "serviceDegradation",
+      "status": "serviceOperational",
       "id": "SharePoint",
-      "issues": [
-        {
-          "id": "SP1535405",
-          "title": "Admins can't download the Migration Manager agent from the SharePoint admin center",
-          "startTime": "2026-11-02T16:04:16.557Z",
-          "endTime": null,
-          "lastModified": "2026-11-03T01:18:50.45Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Admins can't download the Migration Manager agent from the SharePoint admin center.",
-          "scopeOfImpact": "Your organization is affected by this event, and this issue prevents admins from downloading the Migration Manager agent. This section may be updated as our investigation continues.",
-          "rootCause": "A recent change to the SharePoint Online service that supports the Migration Manager agent in the SharePoint Online admin center contains a code regression and is leading to impact.",
-          "nextUpdateBy": "Tuesday, November 3, 2026, at 2:00 PM UTC",
-          "feature": "SharePoint Online all features",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-11-03T01:18:50.45Z",
-              "postType": "regular",
-              "content": "Title: Admins can't download the Migration Manager agent from the SharePoint admin center\r\n\r\nUser impact: Admins can't download the Migration Manager agent from the SharePoint admin center.\r\n\r\nMore info: Admins receive an error stating, \"The specified container does not exist.\"\r\n\r\nCurrent status: We've identified a change to the SharePoint Online service that we believe is causing impact. We're in the process of rolling back this change and once complete, we'll validate whether it has had the desired effect of resolving impact.\r\n\r\nScope of impact: Your organization is affected by this event, and this issue prevents admins from downloading the Migration Manager agent. This section may be updated as our investigation continues.\r\n\r\nRoot cause: A recent change to the SharePoint Online service that supports the Migration Manager agent in the SharePoint Online admin center contains a code regression and is leading to impact.\r\n\r\nNext update by: Tuesday, November 3, 2026, at 2:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-11-02T20:59:11.58Z",
-              "postType": "regular",
-              "content": "Title: Admins can't download the Migration Manager agent from the SharePoint admin center\r\n\r\nUser impact: Admins can't download the Migration Manager agent from the SharePoint admin center.\r\n\r\nMore info: Admins receive an error stating, \"The specified container does not exist.\"\r\n\r\nCurrent status: It's taking longer than expected to review the service telemetry and potential changes that may be contributing to this issue, but we're making progress as we strive to understand the root cause and devise a strategy that remediates impact.\r\n\r\nScope of impact: Your organization is affected by this event, and this issue prevents admins from downloading the Migration Manager agent. This section may be updated as our investigation continues. \r\n\r\nNext update by: Tuesday, November 3, 2026, at 2:30 AM UTC"
-            },
-            {
-              "createdAt": "2026-11-02T18:48:03.42Z",
-              "postType": "regular",
-              "content": "Title: Admins can't download the Migration Manager agent from the SharePoint admin center\r\n\r\nUser impact: Admins can't download the Migration Manager agent from the SharePoint admin center.\r\n\r\nMore info: Admins receive an error stating, \"The specified container does not exist.\"\r\n\r\nCurrent status: We're continuing to review the service telemetry and looking for potential changes that could be contributing to the issue to identify the root cause and a strategy that remediates impact.\r\n\r\nScope of impact: Your organization is affected by this event, and this issue prevents admins from downloading the Migration Manager agent.\r\n\r\nNext update by: Monday, November 2, 2026, at 9:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-11-02T16:42:44.873Z",
-              "postType": "regular",
-              "content": "Title: Admins can't download the Migration Manager agent from the SharePoint admin center\r\n\r\nUser impact: Admins can't download the Migration Manager agent from the SharePoint admin center.\r\n\r\nMore info: Admins receive an error stating, \"The specified container does not exist.\"\r\n\r\nCurrent status: We're reviewing admin reports of impact and service telemetry for this functionality to gain a better understanding of what's leading to this behavior.\r\n\r\nScope of impact: Your organization is affected by this event, and this issue prevents admins from downloading the Migration Manager agent.\r\n\r\nNext update by: Monday, November 2, 2026, at 7:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-11-02T16:04:17.487Z",
-              "postType": "regular",
-              "content": "Title: Possible delays or problems when accessing SharePoint Online\n\nUser impact: Some customers have reported issues with accessing the service, or using features in SharePoint Online.\n\nCurrent status: We’re looking into your reported issue and checking for impact to your organization. We'll provide an update within one hour."
-            }
-          ],
-          "affectedServices": [
-            "SharePoint Online"
-          ]
-        }
-      ]
+      "issues": []
     },
     {
       "service": "Dynamics 365 Apps",
@@ -1291,6 +1245,52 @@
     }
   ],
   "history": [
+    {
+      "id": "SP1535405",
+      "title": "Admins couldn't download the Migration Manager agent from the SharePoint admin center",
+      "startTime": "2026-11-02T09:07:00Z",
+      "endTime": "2026-11-03T04:00:00Z",
+      "lastModified": "2026-11-03T13:17:54.02Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Admins couldn't download the Migration Manager agent from the SharePoint admin center.",
+      "scopeOfImpact": "Your organization was affected by this event, and this issue prevented admins from downloading the Migration Manager agent.\r\n\r\nStart time: Monday, November 2, 2026, at 9:07 AM UTC\r\n\r\nEnd time: Tuesday, November 3, 2026, at 4:00 AM UTC",
+      "rootCause": "A storage account containing files required for application downloads was inadvertently disabled, which caused the removal of the files needed to execute the download and resulted in impact. \r\n\r\nNext steps: \n- We're reviewing our storage account file management procedures to help prevent similar problems in the future.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "SharePoint Online all features",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-11-03T13:17:29.147Z",
+          "postType": "regular",
+          "content": "Title: Admins couldn't download the Migration Manager agent from the SharePoint admin center\r\n\r\nUser impact: Admins couldn't download the Migration Manager agent from the SharePoint admin center.\r\n\r\nMore info: Admins received an error stating, \"The specified container does not exist.\"\r\n\r\nFinal status: We've identified that a storage account containing files required for application downloads was inadvertently disabled, which caused the removal of the files needed to execute the download and resulted in impact. We've restored the affected files and confirmed that users can successfully download the applications again. We’re also progressing a long-term solution to prevent similar impact from recurring.\r\n\r\nScope of impact: Your organization was affected by this event, and this issue prevented admins from downloading the Migration Manager agent.\r\n\r\nStart time: Monday, November 2, 2026, at 9:07 AM UTC\r\n\r\nEnd time: Tuesday, November 3, 2026, at 4:00 AM UTC\r\n\r\nRoot cause: A storage account containing files required for application downloads was inadvertently disabled, which caused the removal of the files needed to execute the download and resulted in impact. \r\n\r\nNext steps: \n- We're reviewing our storage account file management procedures to help prevent similar problems in the future.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-11-03T01:18:50.45Z",
+          "postType": "regular",
+          "content": "Title: Admins can't download the Migration Manager agent from the SharePoint admin center\r\n\r\nUser impact: Admins can't download the Migration Manager agent from the SharePoint admin center.\r\n\r\nMore info: Admins receive an error stating, \"The specified container does not exist.\"\r\n\r\nCurrent status: We've identified a change to the SharePoint Online service that we believe is causing impact. We're in the process of rolling back this change and once complete, we'll validate whether it has had the desired effect of resolving impact.\r\n\r\nScope of impact: Your organization is affected by this event, and this issue prevents admins from downloading the Migration Manager agent. This section may be updated as our investigation continues.\r\n\r\nRoot cause: A recent change to the SharePoint Online service that supports the Migration Manager agent in the SharePoint Online admin center contains a code regression and is leading to impact.\r\n\r\nNext update by: Tuesday, November 3, 2026, at 2:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-11-02T20:59:11.58Z",
+          "postType": "regular",
+          "content": "Title: Admins can't download the Migration Manager agent from the SharePoint admin center\r\n\r\nUser impact: Admins can't download the Migration Manager agent from the SharePoint admin center.\r\n\r\nMore info: Admins receive an error stating, \"The specified container does not exist.\"\r\n\r\nCurrent status: It's taking longer than expected to review the service telemetry and potential changes that may be contributing to this issue, but we're making progress as we strive to understand the root cause and devise a strategy that remediates impact.\r\n\r\nScope of impact: Your organization is affected by this event, and this issue prevents admins from downloading the Migration Manager agent. This section may be updated as our investigation continues. \r\n\r\nNext update by: Tuesday, November 3, 2026, at 2:30 AM UTC"
+        },
+        {
+          "createdAt": "2026-11-02T18:48:03.42Z",
+          "postType": "regular",
+          "content": "Title: Admins can't download the Migration Manager agent from the SharePoint admin center\r\n\r\nUser impact: Admins can't download the Migration Manager agent from the SharePoint admin center.\r\n\r\nMore info: Admins receive an error stating, \"The specified container does not exist.\"\r\n\r\nCurrent status: We're continuing to review the service telemetry and looking for potential changes that could be contributing to the issue to identify the root cause and a strategy that remediates impact.\r\n\r\nScope of impact: Your organization is affected by this event, and this issue prevents admins from downloading the Migration Manager agent.\r\n\r\nNext update by: Monday, November 2, 2026, at 9:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-11-02T16:42:44.873Z",
+          "postType": "regular",
+          "content": "Title: Admins can't download the Migration Manager agent from the SharePoint admin center\r\n\r\nUser impact: Admins can't download the Migration Manager agent from the SharePoint admin center.\r\n\r\nMore info: Admins receive an error stating, \"The specified container does not exist.\"\r\n\r\nCurrent status: We're reviewing admin reports of impact and service telemetry for this functionality to gain a better understanding of what's leading to this behavior.\r\n\r\nScope of impact: Your organization is affected by this event, and this issue prevents admins from downloading the Migration Manager agent.\r\n\r\nNext update by: Monday, November 2, 2026, at 7:00 PM UTC"
+        }
+      ],
+      "serviceName": "SharePoint Online",
+      "affectedServices": [
+        "SharePoint Online"
+      ]
+    },
     {
       "id": "OD1530155",
       "title": "Admins were unable to complete Microsoft OneDrive or SharePoint site migrations",
@@ -3323,52 +3323,6 @@
       "serviceName": "SharePoint Online",
       "affectedServices": [
         "SharePoint Online"
-      ]
-    },
-    {
-      "id": "TM1488543",
-      "title": "Some users conferenced into a Microsoft Teams emergency call may not be automatically muted or able to mute themselves",
-      "startTime": "2026-09-25T20:09:00Z",
-      "endTime": "2026-10-08T12:00:00Z",
-      "lastModified": "2026-10-09T21:36:03.67Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users conferenced into a Microsoft Teams emergency call were not automatically muted or able to mute themselves.",
-      "scopeOfImpact": "Users conferenced into a Microsoft Teams emergency call and attempting to mute their audio were affected by this issue.\r\n\r\nStart time: Friday, September 25, 2026, at 8:09 PM UTC\r\n\r\nEnd time: Thursday, October 8, 2026, at 12:00 PM UTC",
-      "rootCause": "A code mismatch in the components utilized when marking a Microsoft Teams emergency call as a multi-party call caused the code to mute participants to not be enabled as expected.\r\n\r\nNext steps: \n- We're continuing to optimize Teams emergency calls for all user scenarios.\r\n\r\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Calling",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-10-09T21:34:54.73Z",
-          "postType": "regular",
-          "content": "Title: Some users conferenced into a Microsoft Teams emergency call may not be automatically muted or able to mute themselves\r\n\r\nUser impact: Users conferenced into a Microsoft Teams emergency call may not have been automatically muted or able to mute themselves.\r\n\r\nFinal status: We've confirmed that our fix has deployed as expected and that users are now automatically muted when or can mute themselves when they're conferenced in to a Microsoft Teams call.\r\n\r\nScope of impact: Users conferenced into a Microsoft Teams emergency call and attempting to mute their audio were affected by this issue.\r\n\r\nStart time: Friday, September 25, 2026, at 8:09 PM UTC\r\n\r\nEnd time: Thursday, October 8, 2026, at 12:00 PM UTC\r\n\r\nRoot cause: A code mismatch in the components utilized when marking a Microsoft Teams emergency call as a multi-party call caused the code to mute participants to not be enabled as expected.\r\n\r\nNext steps: \n- We're continuing to optimize Teams emergency calls for all user scenarios.\r\n\r\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-10-05T22:15:44.643Z",
-          "postType": "regular",
-          "content": "Title: Some users conferenced into a Microsoft Teams emergency call may not be automatically muted or able to mute themselves\r\n\r\nUser impact: Users conferenced into a Microsoft Teams emergency call may not be automatically muted or able to mute themselves.\r\n\r\nMore info: Users conferenced into a Microsoft Teams emergency call are also unable to mute themselves and would need to leave the call.\r\n\r\nCurrent status: We've initiated deployment of our code change to address the code mismatch causing users to not be automatically muted as expected or being able to mute themselves in emergency calls. We anticipate deployment to be completed by Monday, October 12, 2026, and we aim to provide updates on our timeline to remediation as deployment progresses.\r\n\r\nScope of impact: Users conferenced into a Microsoft Teams emergency call and attempting to mute their audio are affected by this issue. This section may be updated as the investigation progresses.\r\n\r\nStart time: Friday, September 25, 2026, at 8:09 PM UTC\r\n\r\nEstimated time to resolve: We anticipate impact to be resolved by Monday, October 12, 2026.\r\n\r\nRoot cause: A code mismatch in the components utilized when marking a Microsoft Teams emergency call as a multi-party call is causing the code to mute participants to not be enabled as expected.\r\n\r\nNext update by: Friday, October 9, 2026, at 11:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-10-05T21:18:00.453Z",
-          "postType": "regular",
-          "content": "Title: Some users conferenced into a Microsoft Teams E911 call may not be automatically muted or able to mute themselves\r\n\r\nUser impact: Users conferenced into a Microsoft Teams E911 call may not be automatically muted or able to mute themselves.\r\n\r\nMore info: Users conferenced into a Microsoft Teams E911 are also unable to mute themselves and would need to leave the call.\r\n\r\nCurrent status: After analyzing correlation and meeting IDs provided by a subset of affected users, we've isolated a code mismatch in the components utilized when marking a Microsoft Teams call as a multi-party call is causing the code to mute participants to not be enabled as expected. We've expanded our communications to all potentially affected tenants and updated the \"Title\", \"User impact\" and \"Scope of impact\" fields of our communications to reflect this change as we begin rolling out a code change to remediate the mismatch.\r\n\r\nScope of impact: Users conferenced into a Microsoft Teams E911 call and attempting to mute their audio are affected by this issue. This section may be updated as the investigation progresses.\r\n\r\nStart time: Friday, September 25, 2026, at 8:09 PM UTC\r\n\r\nRoot cause: A code mismatch in the components utilized when marking a Microsoft Teams call as a multi-party call is causing the code to mute participants to not be enabled as expected.\r\n\r\nNext update by: Monday, October 5, 2026, at 11:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-10-05T20:23:18.163Z",
-          "postType": "regular",
-          "content": "Title: Some users conferenced into a Microsoft Teams E911 call may not be automatically muted or able to mute themselves\r\n\r\nUser impact: Users conferenced into a Microsoft Teams E911 call may not be automatically muted or able to mute themselves.\r\n\r\nCurrent status: We're analyzing affected meeting and correlation IDs provided by a subset of affected users to further our understanding of the underlying impact scenario and to determine what our next troubleshooting steps should be.\r\n\r\nScope of impact: Users conferenced into a Microsoft Teams E911 call and attempting to mute their audio are affected by this issue. This section may be updated as the investigation progresses."
-        },
-        {
-          "createdAt": "2026-10-05T20:01:45.663Z",
-          "postType": "regular",
-          "content": "Title: Some users conferenced into a Microsoft Teams E911 call may not be automatically muted or able to mute themselves\r\n\r\nUser impact: Users conferenced into a Microsoft Teams E911 call may not be automatically muted or able to mute themselves.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Teams and checking for impact to your organization. We'll provide an update within 30 minutes."
-        }
-      ],
-      "serviceName": "Microsoft Teams",
-      "affectedServices": [
-        "Microsoft Teams"
       ]
     }
   ]
