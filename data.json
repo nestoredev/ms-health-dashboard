@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-04T01:15:21.670Z",
+  "lastUpdated": "2026-11-04T01:45:38.112Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -11,16 +11,21 @@
           "title": "On-premises users may see inconsistent results when viewing the hybrid free/busy information for Exchange Online users",
           "startTime": "2026-11-03T18:06:39.85Z",
           "endTime": null,
-          "lastModified": "2026-11-03T21:23:27.033Z",
+          "lastModified": "2026-11-04T01:32:22.98Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "On-premises users may see inconsistent results when viewing the hybrid free/busy information for Exchange Online users.",
           "scopeOfImpact": "On-premises users attempting to view hybrid free/busy information for Exchange Online users may be impacted. This section may be updated as our investigation continues.",
           "rootCause": "",
-          "nextUpdateBy": "Wednesday, November 4, 2026, at 2:00 AM UTC",
+          "nextUpdateBy": "Wednesday, November 4, 2026, at 5:00 AM UTC",
           "feature": "Reports of an Incident",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-11-04T01:32:22.98Z",
+              "postType": "regular",
+              "content": "Title: On-premises users may see inconsistent results when viewing the hybrid free/busy information for Exchange Online users\r\n\r\nUser impact: On-premises users may see inconsistent results when viewing the hybrid free/busy information for Exchange Online users.\r\n\r\nMore info: While we investigate this issue, we recommend adjusting the hybrid default setting from \"LimitedDetails\" to \"AvailabilityOnly\" to avoid the impact. Alternatively, disabling the Organization Relationship feature will also avoid the impact.\r\n\r\nCurrent status: Our review of recent service changes has led us to suspect that a recent service change contains a code regression and is resulting in impact. We’re in the process of reverting the potentially offending change and reaching out to a subset of affected users to validate whether additional mitigative actions will be required. \r\n\r\nScope of impact: On-premises users attempting to view hybrid free/busy information for Exchange Online users may be impacted. This section may be updated as our investigation continues.\r\n\r\nNext update by: Wednesday, November 4, 2026, at 5:00 AM UTC"
+            },
             {
               "createdAt": "2026-11-03T21:21:49.857Z",
               "postType": "regular",
