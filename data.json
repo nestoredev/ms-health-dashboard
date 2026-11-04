@@ -1,56 +1,11 @@
 {
-  "lastUpdated": "2026-11-04T03:46:44.032Z",
+  "lastUpdated": "2026-11-04T04:17:02.177Z",
   "services": [
     {
       "service": "Exchange Online",
       "status": "serviceDegradation",
       "id": "Exchange",
       "issues": [
-        {
-          "id": "EX1537187",
-          "title": "On-premises users may see inconsistent results when viewing the hybrid free/busy information for Exchange Online users",
-          "startTime": "2026-10-26T19:41:00Z",
-          "endTime": null,
-          "lastModified": "2026-11-04T03:11:29.79Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "On-premises users saw inconsistent results when they viewed the hybrid free/busy information for Exchange Online users.",
-          "scopeOfImpact": "On-premises users attempting to view hybrid free/busy information for Exchange Online users may be impacted. This section may be updated as our investigation continues.",
-          "rootCause": "",
-          "nextUpdateBy": "Wednesday, November 4, 2026, at 5:00 AM UTC",
-          "feature": "Reports of an Incident",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-11-04T01:32:22.98Z",
-              "postType": "regular",
-              "content": "Title: On-premises users may see inconsistent results when viewing the hybrid free/busy information for Exchange Online users\r\n\r\nUser impact: On-premises users may see inconsistent results when viewing the hybrid free/busy information for Exchange Online users.\r\n\r\nMore info: While we investigate this issue, we recommend adjusting the hybrid default setting from \"LimitedDetails\" to \"AvailabilityOnly\" to avoid the impact. Alternatively, disabling the Organization Relationship feature will also avoid the impact.\r\n\r\nCurrent status: Our review of recent service changes has led us to suspect that a recent service change contains a code regression and is resulting in impact. We’re in the process of reverting the potentially offending change and reaching out to a subset of affected users to validate whether additional mitigative actions will be required. \r\n\r\nScope of impact: On-premises users attempting to view hybrid free/busy information for Exchange Online users may be impacted. This section may be updated as our investigation continues.\r\n\r\nNext update by: Wednesday, November 4, 2026, at 5:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-11-03T21:21:49.857Z",
-              "postType": "regular",
-              "content": "Title: On-premises users may see inconsistent results when viewing the hybrid free/busy information for Exchange Online users\r\n\r\nUser impact: On-premises users may see inconsistent results when viewing the hybrid free/busy information for Exchange Online users.\r\n\r\nMore info: While we investigate this issue, we recommend adjusting the hybrid default setting from \"LimitedDetails\" to \"AvailabilityOnly\" to avoid the impact. Alternatively, disabling the Organization Relationship feature will also avoid the impact.\r\n\r\nCurrent status: We're continuing our review of the event trace logs provided by a subset of affected users, as well as recent service changes, to determine the root cause and a strategy that remediates impact.\r\n\r\nScope of impact: On-premises users attempting to view hybrid free/busy information for Exchange Online users may be impacted. This section may be updated as our investigation continues.\r\n\r\nNext update by: Wednesday, November 4, 2026, at 2:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-11-03T21:21:48.903Z",
-              "postType": "regular",
-              "content": "Title: On-premises users may see inconsistent results when viewing the hybrid free/busy information for Exchange Online users\r\n\r\nUser impact: On-premises users may see inconsistent results when viewing the hybrid free/busy information for Exchange Online users.\r\n\r\nMore info: While we investigate this issue, we recommend adjusting the hybrid default setting from \"LimitedDetails\" to \"AvailabilityOnly\" to avoid the impact. Alternatively, disabling the Organization Relationship feature will also avoid the impact.\r\n\r\nCurrent status: We're continuing our review of the event trace logs provided by a subset of affected users, as well as recent service changes, to determine the root cause and a strategy that remediates impact.\r\n\r\nScope of impact: On-premises users attempting to view hybrid free/busy information for Exchange Online users may be impacted. This section may be updated as our investigation continues.\r\n\r\nNext update by: Wednesday, November 4, 2026, at 2:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-11-03T21:21:46.833Z",
-              "postType": "regular",
-              "content": "Title: On-premises users may see inconsistent results when viewing the hybrid free/busy information for Exchange Online users\r\n\r\nUser impact: On-premises users may see inconsistent results when viewing the hybrid free/busy information for Exchange Online users.\r\n\r\nMore info: While we investigate this issue, we recommend adjusting the hybrid default setting from \"LimitedDetails\" to \"AvailabilityOnly\" to avoid the impact. Alternatively, disabling the Organization Relationship feature will also avoid the impact.\r\n\r\nCurrent status: We're continuing our review of the event trace logs provided by a subset of affected users, as well as recent service changes, to determine the root cause and a strategy that remediates impact.\r\n\r\nScope of impact: On-premises users attempting to view hybrid free/busy information for Exchange Online users may be impacted. This section may be updated as our investigation continues.\r\n\r\nNext update by: Wednesday, November 4, 2026, at 2:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-11-03T18:22:22.523Z",
-              "postType": "regular",
-              "content": "Title: On-premises users see inconsistent results when viewing the hybrid free/busy information for Exchange Online users\r\n\r\nUser impact: On-premises users see inconsistent results when viewing the hybrid free/busy information for Exchange Online users.\r\n\r\nMore info: While we investigate this issue, we recommend adjusting the hybrid default setting from \"LimitedDetails\" to \"AvailabilityOnly\" to avoid the impact.\r\n\r\nCurrent status: We're reviewing the event trace logs provided by a subset of affected users, as well as recent service changes, to determine the source of this issue so we can develop steps towards impact remediation.\r\n\r\nScope of impact: Your organization is affected by this event, and on-premises users attempting to view hybrid free/busy information for Exchange Online users are impacted. This section may be updated as our investigation continues.\r\n\r\nNext update by: Wednesday, November 4, 2026, at 8:30 PM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Exchange Online"
-          ]
-        },
         {
           "id": "EX1490154",
           "title": "Users may receive duplicate email messages sent to mailboxes using Exchange Online SMTP forwarding",
@@ -1248,6 +1203,52 @@
     }
   ],
   "history": [
+    {
+      "id": "EX1537187",
+      "title": "On-premises users may see inconsistent results when viewing the hybrid free/busy information for Exchange Online users",
+      "startTime": "2026-10-26T19:41:00Z",
+      "endTime": "2026-11-04T04:02:05.81Z",
+      "lastModified": "2026-11-04T04:03:54.507Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "On-premises users saw inconsistent results when they viewed the hybrid free/busy information for Exchange Online users.",
+      "scopeOfImpact": "On-premises users who attempted to view hybrid free/busy information for Exchange Online users may have been impacted.\r\n\r\nStart time: Monday, October 26, 2026, at 7:41 PM UTC\r\n\r\nEnd time: Wednesday, November 4, 2026, at 1:00 AM UTC",
+      "rootCause": "A recent service change contained a code regression and was resulting in inconsistent results when users viewed the hybrid free/busy information for Exchange Online users.\r\n\r\nNext steps: - We’re continuing to analyze how the recent service change was applied to understand why the potential for impact wasn't caught during the update testing and validation phase. These actions will help us to clarify what actions we can take to ensure similar impact doesn't occur in the future and to continue our ongoing mission to improve the resilience of our service for all Exchange Online users.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Reports of an Incident",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-11-04T04:03:44.013Z",
+          "postType": "regular",
+          "content": "Title: On-premises users may see inconsistent results when viewing the hybrid free/busy information for Exchange Online users\r\n\r\nUser impact: On-premises users saw inconsistent results when they viewed the hybrid free/busy information for Exchange Online users.\r\n\r\nMore info: While this issue was ongoing, users could have adjusted the hybrid default setting from \"LimitedDetails\" to \"AvailabilityOnly\" to avoid the impact. Alternatively, disabling the Organization Relationship feature would have also allowed users to avoid the impacted scenario.\r\n\r\nFinal status: Following the reversion of the offending change and confirmation from a subset of affected users, we’ve confirmed that impact has been remediated.\r\n\r\nScope of impact: On-premises users who attempted to view hybrid free/busy information for Exchange Online users may have been impacted.\r\n\r\nStart time: Monday, October 26, 2026, at 7:41 PM UTC\r\n\r\nEnd time: Wednesday, November 4, 2026, at 1:00 AM UTC\r\n\r\nRoot cause: A recent service change contained a code regression and was resulting in inconsistent results when users viewed the hybrid free/busy information for Exchange Online users.\r\n\r\nNext steps: - We’re continuing to analyze how the recent service change was applied to understand why the potential for impact wasn't caught during the update testing and validation phase. These actions will help us to clarify what actions we can take to ensure similar impact doesn't occur in the future and to continue our ongoing mission to improve the resilience of our service for all Exchange Online users.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-11-04T01:32:22.98Z",
+          "postType": "regular",
+          "content": "Title: On-premises users may see inconsistent results when viewing the hybrid free/busy information for Exchange Online users\r\n\r\nUser impact: On-premises users may see inconsistent results when viewing the hybrid free/busy information for Exchange Online users.\r\n\r\nMore info: While we investigate this issue, we recommend adjusting the hybrid default setting from \"LimitedDetails\" to \"AvailabilityOnly\" to avoid the impact. Alternatively, disabling the Organization Relationship feature will also avoid the impact.\r\n\r\nCurrent status: Our review of recent service changes has led us to suspect that a recent service change contains a code regression and is resulting in impact. We’re in the process of reverting the potentially offending change and reaching out to a subset of affected users to validate whether additional mitigative actions will be required. \r\n\r\nScope of impact: On-premises users attempting to view hybrid free/busy information for Exchange Online users may be impacted. This section may be updated as our investigation continues.\r\n\r\nNext update by: Wednesday, November 4, 2026, at 5:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-11-03T21:21:49.857Z",
+          "postType": "regular",
+          "content": "Title: On-premises users may see inconsistent results when viewing the hybrid free/busy information for Exchange Online users\r\n\r\nUser impact: On-premises users may see inconsistent results when viewing the hybrid free/busy information for Exchange Online users.\r\n\r\nMore info: While we investigate this issue, we recommend adjusting the hybrid default setting from \"LimitedDetails\" to \"AvailabilityOnly\" to avoid the impact. Alternatively, disabling the Organization Relationship feature will also avoid the impact.\r\n\r\nCurrent status: We're continuing our review of the event trace logs provided by a subset of affected users, as well as recent service changes, to determine the root cause and a strategy that remediates impact.\r\n\r\nScope of impact: On-premises users attempting to view hybrid free/busy information for Exchange Online users may be impacted. This section may be updated as our investigation continues.\r\n\r\nNext update by: Wednesday, November 4, 2026, at 2:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-11-03T21:21:48.903Z",
+          "postType": "regular",
+          "content": "Title: On-premises users may see inconsistent results when viewing the hybrid free/busy information for Exchange Online users\r\n\r\nUser impact: On-premises users may see inconsistent results when viewing the hybrid free/busy information for Exchange Online users.\r\n\r\nMore info: While we investigate this issue, we recommend adjusting the hybrid default setting from \"LimitedDetails\" to \"AvailabilityOnly\" to avoid the impact. Alternatively, disabling the Organization Relationship feature will also avoid the impact.\r\n\r\nCurrent status: We're continuing our review of the event trace logs provided by a subset of affected users, as well as recent service changes, to determine the root cause and a strategy that remediates impact.\r\n\r\nScope of impact: On-premises users attempting to view hybrid free/busy information for Exchange Online users may be impacted. This section may be updated as our investigation continues.\r\n\r\nNext update by: Wednesday, November 4, 2026, at 2:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-11-03T21:21:46.833Z",
+          "postType": "regular",
+          "content": "Title: On-premises users may see inconsistent results when viewing the hybrid free/busy information for Exchange Online users\r\n\r\nUser impact: On-premises users may see inconsistent results when viewing the hybrid free/busy information for Exchange Online users.\r\n\r\nMore info: While we investigate this issue, we recommend adjusting the hybrid default setting from \"LimitedDetails\" to \"AvailabilityOnly\" to avoid the impact. Alternatively, disabling the Organization Relationship feature will also avoid the impact.\r\n\r\nCurrent status: We're continuing our review of the event trace logs provided by a subset of affected users, as well as recent service changes, to determine the root cause and a strategy that remediates impact.\r\n\r\nScope of impact: On-premises users attempting to view hybrid free/busy information for Exchange Online users may be impacted. This section may be updated as our investigation continues.\r\n\r\nNext update by: Wednesday, November 4, 2026, at 2:00 AM UTC"
+        }
+      ],
+      "serviceName": "Exchange Online",
+      "affectedServices": [
+        "Exchange Online"
+      ]
+    },
     {
       "id": "OO1537414",
       "title": "Some users may be unable to access Microsoft Word, PowerPoint, or Excel for the web",
@@ -3245,52 +3246,6 @@
       "serviceName": "Microsoft Teams",
       "affectedServices": [
         "Microsoft Teams"
-      ]
-    },
-    {
-      "id": "MO1480956",
-      "title": "Some users may be unable to change page distribution or review work in Microsoft OneNote and OneNote for the web\n",
-      "startTime": "2026-07-22T13:21:00Z",
-      "endTime": "2026-10-09T17:25:47.287Z",
-      "lastModified": "2026-10-09T17:27:43.523Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users may have been unable to make changes to page distribution or review work in OneNote and OneNote for the web.\n",
-      "scopeOfImpact": "This issue may have impacted some users attempting to make changes to page distribution or review work in Microsoft OneNote and OneNote for the web.\r\n\r\nStart time: Wednesday, July 22, 2026, at 1:21 PM UTC\r\n\r\nEnd time: Thursday, October 8, 2026, at 12:00 AM UTC",
-      "rootCause": "We determined that a transient connectivity disruption in between the service and its caching layer resulted in this impact.\r\n\r\nNext steps: - We're reviewing the connectivity issue to better understand what led to the error that resulted in impact and prevent similar future occurrences.\r\n\r\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Access",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-10-09T17:27:39.897Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to change page distribution or review work in Microsoft OneNote and OneNote for the web\n\r\n\r\nUser impact: Users may have been unable to make changes to page distribution or review work in OneNote and OneNote for the web.\n\r\n\r\nMore info: Users may have received an error message that read \"waiting to start\" that didn't resolve when attempting the affected actions.\r\n\r\nFinal status: Our fix has completed its deployment, and we've confirmed that this has resolved the issue though monitoring service health telemetry.\r\n\r\nScope of impact: This issue may have impacted some users attempting to make changes to page distribution or review work in Microsoft OneNote and OneNote for the web.\r\n\r\nStart time: Wednesday, July 22, 2026, at 1:21 PM UTC\r\n\r\nEnd time: Thursday, October 8, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: We determined that a transient connectivity disruption in between the service and its caching layer resulted in this impact.\r\n\r\nNext steps: - We're reviewing the connectivity issue to better understand what led to the error that resulted in impact and prevent similar future occurrences.\r\n\r\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-10-07T17:20:25.477Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to change page distribution or review work in Microsoft OneNote and OneNote for the web\n\nUser impact: Users may be unable to make changes to page distribution or review work in Microsoft OneNote and OneNote for the web.\n\nMore info: Users may receive an error message that reads \"waiting to start\" that doesn't resolve when attempting the affected actions.\n\nCurrent status: After further analysis of service availability, we've isolated that additional users are impacted and we've expanded our communications to encompass all potentially affected users. We've updated the \"Title\". \"User impact\", \"More info\", and \"Scope of impact\" fields of our communication to reflect this change. \n\nWe've initiated deployment of our fix, and we anticipate deployment to be completed by our next scheduled update.\n\nScope of impact: This issue may impact some users attempting to make changes to page distribution or review work in Microsoft OneNote and OneNote for the web. This information may be updated as our investigation continues.\n\nStart time: Wednesday, July 22, 2026, at 1:21 PM UTC\n\nEstimated time to resolve: We anticipate impact to be resolved by our next scheduled update on Friday, October 9, 2026, at 6:30 PM UTC.\n\nNext update by: Friday, October 9, 2026, at 6:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-10-06T21:52:21.443Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to change page distribution or review work in Microsoft OneNote and OneNote for the web\n\r\n\r\nUser impact: Users may be unable to make changes to page distribution or review work in Microsoft OneNote and OneNote for the web.\r\n\r\nMore info: Users may receive an error message that reads \"waiting to start\" that doesn't resolve when attempting the affected actions.\r\n\r\nCurrent status: We're addressing an unrelated issue that's causing the deployment of our fix to take additional time. We'll aim to provide a timeline for the deployment to complete by our next scheduled communications update.\r\n\r\nScope of impact: This issue may impact some users attempting to make changes to page distribution or review work in Microsoft OneNote and OneNote for the web. This information may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, July 22, 2026, at 1:21 PM UTC\r\n\r\nNext update by: Wednesday, October 7, 2026, at 6:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-10-05T21:01:06.133Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to change page distribution or review work in Microsoft OneNote and OneNote for the web\n\r\n\r\nUser impact: Users may be unable to make changes to page distribution or review work in Microsoft OneNote and OneNote for the web.\n\r\n\r\nMore info: Users may receive an error message that reads \"waiting to start\" that doesn't resolve when attempting the affected actions.\r\n\r\nCurrent status: The deployment of a fix that we suspect will remediate the impact is nearly complete. We'll reach out to some affected users to determine is impact is still occurring after the deployment, and we'll also monitor service telemetry to ensure failure rates are decreasing.\r\n\r\nScope of impact: This issue may impact some users attempting to make changes to page distribution or review work in Microsoft OneNote and OneNote for the web. This information may be updated as our investigation continues.\r\n\r\nNext update by: Tuesday, October 6, 2026, at 11:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-10-02T15:44:02.927Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to change page distribution or review work in Microsoft OneNote and OneNote for the web\r\n\r\nUser impact: Users may be unable to make changes to page distribution or review work in Microsoft OneNote and OneNote for the web.\r\n\r\nMore info: Users may receive an error message that reads \"waiting to start\" that doesn't resolve when attempting the affected actions.\r\n\r\nCurrent status: The issue delaying the release of our solution has been resolved, and we've started deploying our fixes for this issue. We anticipate that all necessary deployments will be completed by our next scheduled update.\r\n\r\nScope of impact: This issue may impact some users attempting to make changes to page distribution or review work in Microsoft OneNote and OneNote for the web. This information may be updated as our investigation continues.\r\n\r\nNext update by: Monday, October 5, 2026, at 10:30 PM UTC"
-        }
-      ],
-      "serviceName": "Microsoft 365 suite",
-      "affectedServices": [
-        "Microsoft 365 suite"
       ]
     }
   ]
