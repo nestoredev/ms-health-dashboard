@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-04T16:24:58.142Z",
+  "lastUpdated": "2026-11-04T16:55:22.014Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1093,36 +1093,42 @@
           "affectedServices": [
             "Microsoft 365 Copilot Chat"
           ]
-        },
-        {
-          "id": "CW1530649",
-          "title": "Some users may be unable to load chat history or previously pinned chats, and can't pin chats in Microsoft 365 Copilot",
-          "startTime": "2026-09-01T03:38:00Z",
-          "endTime": null,
-          "lastModified": "2026-11-04T16:08:28.563Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may have been unable to load chat history or previously pinned chats, and couldn't pin chats in Copilot Chat.",
-          "scopeOfImpact": "Some users may be unable to load chat history, previously pinned chats, and can't pin chats in Copilot Chat. This information may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, September 1, 2026, at 3:38 AM UTC",
-          "rootCause": "A recent feature update revealed an error resulting in this impacting event.",
-          "nextUpdateBy": "Wednesday, November 4, 2026, at 4:30 PM UTC",
-          "feature": "General",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-10-29T19:09:35.993Z",
-              "postType": "regular",
-              "content": "Title: Some users may be unable to load chat history or previously pinned chats, and can't pin chats in Microsoft 365 Copilot\r\n\r\nUser impact: Users may be unable to load chat history or previously pinned chats, and can't pin chats in Copilot Chat.\r\n\r\nMore info: Previously pinned chats don't show up for users to select, and chat histories aren't showing up as expected.\r\n\r\nCurrent status: We've identified a recent feature update that introduced an error which is resulting in impact. We've deployed a code fix to address the error and remediate the impact. We're monitoring the rollout of the fix deployment, and the current timeline estimates it will be completed by our next scheduled communication update.\r\n\r\nScope of impact: Some users may be unable to load chat history, previously pinned chats, and can't pin chats in Copilot Chat. This information may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, September 1, 2026, at 3:38 AM UTC\r\n\r\nRoot cause: A recent feature update revealed an error resulting in this impacting event.\r\n\r\nNext update by: Wednesday, November 4, 2026, at 4:30 PM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Microsoft 365 Copilot Chat"
-          ]
         }
       ]
     }
   ],
   "history": [
+    {
+      "id": "CW1530649",
+      "title": "Some users may be unable to load chat history or previously pinned chats, and can't pin chats in Microsoft 365 Copilot",
+      "startTime": "2026-09-01T03:38:00Z",
+      "endTime": "2026-11-04T16:08:39.533Z",
+      "lastModified": "2026-11-04T16:33:48.85Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have been unable to load chat history or previously pinned chats, and couldn't pin chats in Copilot Chat.",
+      "scopeOfImpact": "Some users may have been unable to load chat history, previously pinned chats, and couldn't pin chats in Copilot Chat.\r\n\r\nStart time: Tuesday, September 1, 2026, at 3:38 AM UTC\r\n\r\nEnd time: Wednesday, November 4, 2026, at 12:30 PM UTC",
+      "rootCause": "A recent feature update revealed an existing issue with the pinned chats feature, resulting in impact under certain conditions.\r\n\r\nNext steps: -We're reviewing and improving our feature update validation procedure to detect and prevent similar issues in the future.\r\n\r\nThis is the final update of this event.",
+      "nextUpdateBy": "",
+      "feature": "General",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-11-04T16:33:45.367Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to load chat history or previously pinned chats, and can't pin chats in Microsoft 365 Copilot\r\n\r\nUser impact: Users may have been unable to load chat history or previously pinned chats, and couldn't pin chats in Copilot Chat.\r\n\r\nMore info: Previously pinned chats didn't show up for users to select, and chat histories weren't showing up as expected.\r\n\r\nFinal status: The fix is fully deployed across all affected environments and we've confirmed with affected users that impact is remediated.\r\n\r\nScope of impact: Some users may have been unable to load chat history, previously pinned chats, and couldn't pin chats in Copilot Chat.\r\n\r\nStart time: Tuesday, September 1, 2026, at 3:38 AM UTC\r\n\r\nEnd time: Wednesday, November 4, 2026, at 12:30 PM UTC\r\n\r\nRoot cause: A recent feature update revealed an existing issue with the pinned chats feature, resulting in impact under certain conditions.\r\n\r\nNext steps: -We're reviewing and improving our feature update validation procedure to detect and prevent similar issues in the future.\r\n\r\nThis is the final update of this event."
+        },
+        {
+          "createdAt": "2026-10-29T19:09:35.993Z",
+          "postType": "regular",
+          "content": "Title: Some users may be unable to load chat history or previously pinned chats, and can't pin chats in Microsoft 365 Copilot\r\n\r\nUser impact: Users may be unable to load chat history or previously pinned chats, and can't pin chats in Copilot Chat.\r\n\r\nMore info: Previously pinned chats don't show up for users to select, and chat histories aren't showing up as expected.\r\n\r\nCurrent status: We've identified a recent feature update that introduced an error which is resulting in impact. We've deployed a code fix to address the error and remediate the impact. We're monitoring the rollout of the fix deployment, and the current timeline estimates it will be completed by our next scheduled communication update.\r\n\r\nScope of impact: Some users may be unable to load chat history, previously pinned chats, and can't pin chats in Copilot Chat. This information may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, September 1, 2026, at 3:38 AM UTC\r\n\r\nRoot cause: A recent feature update revealed an error resulting in this impacting event.\r\n\r\nNext update by: Wednesday, November 4, 2026, at 4:30 PM UTC"
+        }
+      ],
+      "serviceName": "Microsoft 365 Copilot Chat",
+      "affectedServices": [
+        "Microsoft 365 Copilot Chat"
+      ]
+    },
     {
       "id": "MO1501829",
       "title": "Admins may have seen stale data in the Copilot Health page in the Microsoft 365 admin center",
@@ -3125,52 +3131,6 @@
       "serviceName": "Microsoft 365 apps",
       "affectedServices": [
         "Microsoft 365 apps"
-      ]
-    },
-    {
-      "id": "PB1489649",
-      "title": "Users may not see chart data when using standard light or dark themes on Power BI dashboards",
-      "startTime": "2026-10-06T19:32:12.24Z",
-      "endTime": "2026-10-09T19:01:10.733Z",
-      "lastModified": "2026-10-09T19:08:34.483Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users may not have seen chart data when using standard light or dark themes on Power BI dashboards.",
-      "scopeOfImpact": "This issue may have impacted any user who was attempting to view data on a cartesian chart pinned to the Power BI dashboard with standard light theme or dark theme enabled.\r\n\r\nStart time: Sunday, September 27, 2026, at 12:00 PM UTC\r\n\r\nEnd time: Friday, October 9, 2026, at 6:00 AM UTC",
-      "rootCause": "A recent code change intended to unify font colors was incorrectly applied to the background color property for cartesian charts pinned to the Power BI dashboard, resulting in the data on these charts being illegible.\r\n\r\nNext steps: \n- We're continuing to develop important visual upgrades while optimizing our quality assurance checks to ensure a smooth user experience.\r\n\r\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "General",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-10-09T19:02:26.553Z",
-          "postType": "regular",
-          "content": "Title: Users may not see chart data when using standard light or dark themes on Power BI dashboards\r\n\r\nUser impact: Users may not have seen chart data when using standard light or dark themes on Power BI dashboards.\r\n\r\nMore info: This display issue impacted the appearance of cartesian charts only, such as bar charts and line charts. Custom themes weren't impacted.\n\nUsers could have chosen to keep the report theme when pinning charts or use any dashboard theme other than light mode or dark mode.\r\n\r\nFinal status: We've updated the Title, User impact, and scope of impact statements of this communication to reflect that this also affected standard dark mode themes. Afer mitigating the previously identified blockers in our deployment pipeline, we've confirmed that our fix has fully deployed as expected and all users can now see chart data on Power BI dashboards that use any theme.\r\n\r\nScope of impact: This issue may have impacted any user who was attempting to view data on a cartesian chart pinned to the Power BI dashboard with standard light theme or dark theme enabled.\r\n\r\nStart time: Sunday, September 27, 2026, at 12:00 PM UTC\r\n\r\nEnd time: Friday, October 9, 2026, at 6:00 AM UTC\r\n\r\nRoot cause: A recent code change intended to unify font colors was incorrectly applied to the background color property for cartesian charts pinned to the Power BI dashboard, resulting in the data on these charts being illegible.\r\n\r\nNext steps: \n- We're continuing to develop important visual upgrades while optimizing our quality assurance checks to ensure a smooth user experience.\r\n\r\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-10-08T19:48:35.37Z",
-          "postType": "regular",
-          "content": "Title: Users may not see chart data when using standard light or dark themes on Power BI dashboards\r\n\r\nUser impact: Users may not see chart data when using standard light or dark themes on Power BI dashboards.\r\n\r\nMore info: This display issue impacts the appearance of cartesian charts only, such as bar charts and line charts.\n \nAs we develop our long-term remediation, users can choose to keep the report theme when pinning charts or use any dashboard theme other than light mode.\r\n\r\nCurrent status: We've encountered some blockers within our deployment pipelines, which we’re currently addressing, and it's taking longer than initially expected. We'll provide a mitigation timeline once available.\r\n\r\nScope of impact: This issue may impact any user who was attempting to view data on a cartesian chart pinned to the Power BI dashboard with standard light theme or dark theme enabled. This information may be updated as our investigation continues.\r\n\r\nNext update by: Friday, October 9, 2026, at 8:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-10-07T19:33:17.07Z",
-          "postType": "regular",
-          "content": "Title: Users may not see chart data when using standard light or dark themes on Power BI dashboards\r\n\r\nUser impact: Users may not see chart data when using standard light or dark themes on Power BI dashboards.\r\n\r\nMore info: This display issue impacts the appearance of cartesian charts only, such as bar charts and line charts.\n \nAs we develop our long-term remediation, users can choose to keep the report theme when pinning charts or use any dashboard theme other than light mode.\r\n\r\nCurrent status: We've completed development of the long-term fix for this issue, and we're expediting the process to deploy it to the affected environment. We anticipate the solution will be fully deployed by the time of our next scheduled update, and the results will aid in confirming the root cause.\r\n\r\nScope of impact: This issue may impact any user who was attempting to view data on a cartesian chart pinned to the Power BI dashboard with standard light theme or dark theme enabled. This information may be updated as our investigation continues.\r\n\r\nNext update by: Thursday, October 8, 2026, at 8:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-10-06T20:03:25.28Z",
-          "postType": "regular",
-          "content": "Title: Users may not see chart data when using standard light or dark themes on Power BI dashboards\r\n\r\nUser impact: Users may not see chart data when using standard light or dark themes on Power BI dashboards.\r\n\r\nMore info: This display issue impacts the appearance of cartesian charts only, such as bar charts and line charts.\n \nAs we develop our long-term remediation, users can choose to keep the report theme when pinning charts or use any dashboard theme other than light mode.\r\n\r\nCurrent status: We've identified that a recent code change has resulted in all data in charts pinned to the Power BI dashboard when choosing the light theme for chart display to show as black. We're developing a long-term fix for this issue, which we expect to be available by the time of our next scheduled communications update.\r\n\r\nScope of impact: This issue may impact any user who was attempting to view data on a cartesian chart pinned to the Power BI dashboard with standard light theme or dark theme enabled. This information may be updated as our investigation continues.\r\n\r\nNext update by: Friday, October 16, 2026, at 10:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-10-06T19:38:03.16Z",
-          "postType": "regular",
-          "content": "Title: Users may not see chart data when using standard light or dark themes on Power BI dashboards\r\n\r\nUser impact: Users may not see chart data when using standard light or dark themes on Power BI dashboards.\r\n\r\nCurrent status: We're investigating an issue with chart data visibility when using the light Power BI dashboard theme and checking for impact to your organization. We'll provide an update within 30 minutes."
-        }
-      ],
-      "serviceName": "Power BI",
-      "affectedServices": [
-        "Power BI"
       ]
     }
   ]
