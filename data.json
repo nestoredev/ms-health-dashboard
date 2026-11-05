@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-05T01:00:20.076Z",
+  "lastUpdated": "2026-11-05T01:30:35.414Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -961,98 +961,58 @@
     },
     {
       "service": "Microsoft 365 Copilot Chat",
-      "status": "serviceDegradation",
+      "status": "serviceOperational",
       "id": "CopilotChat",
-      "issues": [
-        {
-          "id": "CW1530567",
-          "title": "Users may be unable to view recent portions of their conversation history with Microsoft 365 Copilot Chat",
-          "startTime": "2026-10-29T17:19:12.283Z",
-          "endTime": null,
-          "lastModified": "2026-11-04T00:38:30.383Z",
-          "status": "serviceDegradation",
-          "severity": "incident",
-          "userImpact": "Users may be unable to view recent portions of their conversation history with Copilot Chat.",
-          "scopeOfImpact": "Some users are sporadically missing recent portions of their conversation history with Copilot Chat. This section may be updated as the investigation progresses.",
-          "rootCause": "A latent request routing configuration issue is impacting users' ability to view recent portions of their conversation history with Copilot Chat.",
-          "nextUpdateBy": "Thursday, November 5, 2026, at 2:00 AM UTC",
-          "feature": "General",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-11-04T00:38:30.383Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to view recent portions of their conversation history with Microsoft 365 Copilot Chat\r\n\r\nUser impact: Users may be unable to view recent portions of their conversation history with Copilot Chat.\r\n\r\nMore info: The affected conversations have not been deleted and are temporarily unavailable within conversation history.\n \nSome reports indicate that this issue typically occurs when users with an active Copilot Chat leave and then reopen the chat.\r\n\r\nCurrent status: Our secondary fix has completed across the affected regions, and we're continuing to apply targeted adjustments to address any peripheral errors resulting from the previously identified resource limitations. Meantime, we've observed a withstanding reduction in the errors related to inconsistent message routing, and we expect the impact to users is largely resolved at this time. We're reaching out to a sample of reporting users to seek validation that conversation history is displaying as expected and the impact is fully remediated.\r\n\r\nScope of impact: Some users are sporadically missing recent portions of their conversation history with Copilot Chat. This section may be updated as the investigation progresses.\r\n\r\nRoot cause: A latent request routing configuration issue is impacting users' ability to view recent portions of their conversation history with Copilot Chat.\r\n\r\nNext update by: Thursday, November 5, 2026, at 2:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-11-03T02:01:07.657Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to view recent portions of their conversation history with Microsoft 365 Copilot Chat\r\n\r\nUser impact: Users may be unable to view recent portions of their conversation history with Copilot Chat.\r\n\r\nMore info: The affected conversations have not been deleted and are temporarily unavailable within conversation history.\n \nSome reports indicate that this issue typically occurs when users with an active Copilot Chat leave and then reopen the chat.\r\n\r\nCurrent status: Deployment of the secondary fix to the remaining regions is nearing completion, and we've observed a precipitous decrease in the errors related to inconsistent message routing, suggesting the impact is largely resolved. We're observing some instances wherein the incorrect routing information persists, so we're continuing our previously described workstream to clear the cached error responses and ensure new requests can use the corrected routing information.\n\nIn parallel, we're continuing to make targeted adjustments to address any peripheral errors resulting from the previously identified resource limitations within portions of the infrastructure supporting conversation history. This will help us ensure withstanding recovery.\n\nAfter these actions are complete, we’ll closely monitor the service environment during peak business hours and reach out to a sample of reporting users to validate that conversation history is displaying as expected and the impact is fully remediated.\r\n\r\nScope of impact: Some users are sporadically missing recent portions of their conversation history with Copilot Chat. This section may be updated as the investigation progresses.\r\n\r\nRoot cause: A latent request routing configuration issue is impacting users' ability to view recent portions of their conversation history with Copilot Chat.\r\n\r\nNext update by: Wednesday, November 4, 2026, at 2:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-11-02T20:23:08.8Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to view recent portions of their conversation history with Microsoft 365 Copilot Chat\n\nUser impact: Users may be unable to view recent portions of their conversation history with Copilot Chat.\n\nMore info: The affected conversations have not been deleted and are temporarily unavailable within conversation history.\n \nSome reports indicate that this issue typically occurs when users with an active Copilot Chat leave and then reopen the chat.\n \nCurrent status: We’ve deployed the secondary fix to nearly all affected regions to correct inconsistent message routing, and related errors have decreased significantly. Deployment to the remaining regions is ongoing. We’re also clearing cached error responses so that new requests can use the corrected routing information.\n\nSeparately, we’ve identified resource limitations within portions of the infrastructure supporting conversation history and are making adjustments to address the resulting errors. After these actions are complete, we’ll monitor to validate that conversation history is displaying as expected.\n \nScope of impact: Some users are sporadically missing recent portions of their conversation history with Copilot Chat. This section may be updated as the investigation progresses.\n \nNext update by: Tuesday, November 3, 2026, at 2:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-31T22:36:16.107Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to view recent portions of their conversation history with Microsoft 365 Copilot Chat\n\nUser impact: Users may be unable to view recent portions of their conversation history with Copilot Chat.\n\nMore info: The affected conversations have not been deleted and are temporarily unavailable within conversation history.\n \nSome reports indicate that this issue typically occurs when users with an active Copilot Chat leave and then reopen the chat.\n\nCurrent status: We’ve successfully applied the targeted change to improve our infrastructure balancing processes and are monitoring the environment to validate that this change has been successful. In addition, we’re deploying a secondary change to address errors in the environment that have caused inconsistent message routing. \n\nScope of impact: Some users are sporadically missing recent portions of their conversation history with Copilot Chat. This section may be updated as the investigation progresses.\n\nNext update by: Monday, November 2, 2026, at 8:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-30T23:44:28.993Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to view recent portions of their conversation history with Microsoft 365 Copilot Chat\r\n\r\nUser impact: Users may be unable to view recent portions of their conversation history with Copilot Chat.\r\n\r\nMore info: The affected conversations have not been deleted and are temporarily unavailable within conversation history.\n \nSome reports indicate that this issue typically occurs when users with an active Copilot Chat leave and then reopen the chat.\r\n\r\nCurrent status: We're continuing our analysis related to how recent conversation activity is synchronized within our service as part of our effort to fully understand the cause of this issue and implement a withstanding solution. In parallel, we're applying a targeted change to improve our infrastructure balancing processes related to the service components which support this synchronization. We expect this change will be completed by the time of our next scheduled update, at which time we'll validate its effectiveness and assess what additional mitigation actions may be required.\r\n\r\nScope of impact: Some users are sporadically missing recent portions of their conversation history with Copilot Chat. This section may be updated as the investigation progresses.\r\n\r\nNext update by: Saturday, October 31, 2026, at 11:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-30T17:39:28.947Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to view recent portions of their conversation history with Microsoft 365 Copilot Chat\r\n\r\nUser impact: Users may be unable to view recent portions of their conversation history with Copilot Chat.\r\n\r\nMore info: The affected conversations have not been deleted and are temporarily unavailable within conversation history.\n \nSome reports indicate that this issue typically occurs when users with an active Copilot Chat leave and then reopen the chat.\r\n\r\nCurrent status: Our investigation has identified specific geographic regions in our broader service infrastructure where the majority of failures are occurring. We're continuing our analysis related to how recent conversation activity is synchronized within our service as part of this effort. In parallel, we're continuing to review reported cases to confirm whether this accounts for all instances of impact, which will help guide our next steps toward remediation.\r\n\r\nScope of impact: Some users are sporadically missing recent portions of their conversation history with Copilot Chat. This section may be updated as the investigation progresses.\r\n\r\nNext update by: Saturday, October 31, 2026, at 1:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-30T02:50:10.143Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to view recent portions of their conversation history with Microsoft 365 Copilot Chat\r\n\r\nUser impact: Users may be unable to view recent portions of their conversation history with Copilot Chat.\r\n\r\nMore info: The affected conversations have not been deleted and are temporarily unavailable within conversation history.\n \nSome reports indicate that this issue typically occurs when users with an active Copilot Chat leave and then reopen the chat.\r\n\r\nCurrent status: We're continuing our analysis of diagnostic data and service logs provided by affected users to disambiguate reported behaviors, identify any apparent patterns, and isolate the conditions which may be contributing to the issue so we can assess our next troubleshooting actions.\r\n\r\nScope of impact: Some users are sporadically missing recent portions of their conversation history with Copilot Chat. This section may be updated as the investigation progresses.\r\n\r\nNext update by: Friday, October 30, 2026, at 6:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-29T22:52:30.013Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to view recent portions of their conversation history with Microsoft 365 Copilot Chat\r\n\r\nUser impact: Users may be unable to view recent portions of their conversation history with Copilot Chat.\r\n\r\nMore info: The affected conversations have not been deleted and are temporarily unavailable within conversation history.\n \nSome reports indicate that this issue typically occurs when users with an active Copilot Chat leave and then reopen the chat.\r\n\r\nCurrent status: We're continuing to make steady progress in our investigation. We're analyzing diagnostic data and service logs collected from affected users to identify patterns and isolate the conditions contributing to the issue. This analysis is helping us narrow the investigation and determine the most effective path toward remediation.\r\n\r\nScope of impact: Some users are sporadically missing recent portions of their conversation history with Copilot Chat. This section may be updated as the investigation progresses.\r\n\r\nNext update by: Friday, October 30, 2026, at 3:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-10-29T21:50:31.76Z",
-              "postType": "quick",
-              "content": "We're analyzing newly provided diagnostic data from affected users alongside our service logs to help isolate the source of the issue.\n\nThis quick update is designed to give the latest information on this issue."
-            },
-            {
-              "createdAt": "2026-10-29T20:58:15.58Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to view recent portions of their conversation history with Microsoft 365 Copilot Chat\r\n\r\nUser impact: Users may be unable to view recent portions of their conversation history with Copilot Chat.\r\n\r\nMore info: The affected conversations have not been deleted and are temporarily unavailable within conversation history. \n\nSome reports indicate that this issue typically occurs when users with an active Copilot Chat leave and then reopen the chat.\r\n\r\nCurrent status: We're working to trace how impacted conversation history requests are moving through each layer of our service to identify any potential inconsistences in routing behavior. We're also reviewing recent diagnostic data from affected users, which will inform our next steps toward remediation.\r\n\r\nScope of impact: Some users are sporadically missing recent portions of their conversation history with Copilot Chat. This section may be updated as the investigation progresses.\r\n\r\nNext update by: Thursday, October 29, 2026, at 11:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-29T18:59:41.967Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to view recent portions of their conversation history with Microsoft 365 Copilot Chat\n\nUser impact: Users may be unable to view recent portions of their conversation history with Copilot Chat.\n\nMore info: The affected conversations have not been deleted and are temporarily unavailable within conversation history. \n\nSome reports indicate that this issue typically occurs when users with an active Copilot Chat leave and then reopen the chat.\n\nCurrent status: Our review of support cases and service telemetry has identified an issue with how some Copilot Chat requests are directed to our service infrastructure. Requests from the same user can intermittently be sent to different parts of our infrastructure, so a conversation may sometimes load an earlier version of its history that doesn't include the latest exchanges. We're working to determine why these requests aren't being consistently directed, so that we can develop a fix that ensures users always see their complete conversation history.\n\nScope of impact: Some users are sporadically missing recent portions of their conversation history with Copilot Chat. This section may be updated as the investigation progresses.\n\nNext update by: Thursday, October 29, 2026, at 9:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-29T17:43:57.243Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to view recent portions of their conversation history with Microsoft 365 Copilot Chat\r\n\r\nUser impact: Users may be unable to view recent portions of their conversation history with Copilot Chat.\r\n\r\nMore info: The affected conversations have not been deleted and are temporarily unavailable within conversation history. \n\nSome reports indicate that this issue typically occurs when users with an active Copilot Chat leave and then reopen the chat.\r\n\r\nCurrent status: We're reviewing support cases to further our understanding of the current impact scenario and to determine our next troubleshooting steps.\r\n\r\nScope of impact: Your organization is affected by this event, and users are sporadically missing recent portions of their conversation history with Copilot Chat. This section may be updated as the investigation progresses.\r\n\r\nNext update by: Thursday, October 29, 2026, at 7:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-10-29T17:21:51.53Z",
-              "postType": "regular",
-              "content": "Title: We're looking into a potential problem impacting Microsoft 365 Copilot Chat\r\n\r\nUser impact: We're checking for potential impact to your users.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft 365 Copilot Chat and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Microsoft 365 Copilot Chat"
-          ]
-        }
-      ]
+      "issues": []
     }
   ],
   "history": [
+    {
+      "id": "CW1530567",
+      "title": "Users may be unable to view recent portions of their conversation history with Microsoft 365 Copilot Chat",
+      "startTime": "2026-10-29T17:19:12Z",
+      "endTime": "2026-11-04T21:27:00Z",
+      "lastModified": "2026-11-05T01:01:14.993Z",
+      "status": "serviceRestored",
+      "severity": "incident",
+      "userImpact": "Users may have been unable to view recent portions of their conversation history with Copilot Chat.",
+      "scopeOfImpact": "Some users were sporadically missing recent portions of their conversation history with Copilot Chat.\n \nStart time: Wednesday, October 14, 2026, at 3:55 PM UTC\n \nEnd time: Wednesday, November 4, 2026, at 9:27 PM UTC\n \nPreliminary",
+      "rootCause": "A latent request routing configuration issue was impacting users' ability to view recent portions of their conversation history with Copilot Chat.\n \nNext steps:\n- We’re continuing to analyze the routing configuration issue to determine why it limited access to conversation history and identify preventative measures to reduce the likelihood of similar impact in the future.\n \nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days.",
+      "nextUpdateBy": "",
+      "feature": "General",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-11-05T01:01:14.993Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to view recent portions of their conversation history with Microsoft 365 Copilot Chat\n\nUser impact: Users may have been unable to view recent portions of their conversation history with Copilot Chat.\n\nMore info: The affected conversations weren’t deleted and were temporarily unavailable within conversation history.\n \nSome reports indicated that this issue typically occurred when users with an active Copilot Chat left and then reopened the chat.\n \nFinal status: We’ve completed deployment of the fixes and have received confirmation from a subset of affected customers that the issue is resolved. To ensure you’re using the latest build, please close and reopen the web interface or, if using the app, close and restart it.\n \nScope of impact: Some users were sporadically missing recent portions of their conversation history with Copilot Chat.\n \nStart time: Wednesday, October 14, 2026, at 3:55 PM UTC\n \nEnd time: Wednesday, November 4, 2026, at 9:27 PM UTC\n \nPreliminary root cause: A latent request routing configuration issue was impacting users' ability to view recent portions of their conversation history with Copilot Chat.\n \nNext steps:\n- We’re continuing to analyze the routing configuration issue to determine why it limited access to conversation history and identify preventative measures to reduce the likelihood of similar impact in the future.\n \nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days."
+        },
+        {
+          "createdAt": "2026-11-04T00:38:30.383Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to view recent portions of their conversation history with Microsoft 365 Copilot Chat\r\n\r\nUser impact: Users may be unable to view recent portions of their conversation history with Copilot Chat.\r\n\r\nMore info: The affected conversations have not been deleted and are temporarily unavailable within conversation history.\n \nSome reports indicate that this issue typically occurs when users with an active Copilot Chat leave and then reopen the chat.\r\n\r\nCurrent status: Our secondary fix has completed across the affected regions, and we're continuing to apply targeted adjustments to address any peripheral errors resulting from the previously identified resource limitations. Meantime, we've observed a withstanding reduction in the errors related to inconsistent message routing, and we expect the impact to users is largely resolved at this time. We're reaching out to a sample of reporting users to seek validation that conversation history is displaying as expected and the impact is fully remediated.\r\n\r\nScope of impact: Some users are sporadically missing recent portions of their conversation history with Copilot Chat. This section may be updated as the investigation progresses.\r\n\r\nRoot cause: A latent request routing configuration issue is impacting users' ability to view recent portions of their conversation history with Copilot Chat.\r\n\r\nNext update by: Thursday, November 5, 2026, at 2:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-11-03T02:01:07.657Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to view recent portions of their conversation history with Microsoft 365 Copilot Chat\r\n\r\nUser impact: Users may be unable to view recent portions of their conversation history with Copilot Chat.\r\n\r\nMore info: The affected conversations have not been deleted and are temporarily unavailable within conversation history.\n \nSome reports indicate that this issue typically occurs when users with an active Copilot Chat leave and then reopen the chat.\r\n\r\nCurrent status: Deployment of the secondary fix to the remaining regions is nearing completion, and we've observed a precipitous decrease in the errors related to inconsistent message routing, suggesting the impact is largely resolved. We're observing some instances wherein the incorrect routing information persists, so we're continuing our previously described workstream to clear the cached error responses and ensure new requests can use the corrected routing information.\n\nIn parallel, we're continuing to make targeted adjustments to address any peripheral errors resulting from the previously identified resource limitations within portions of the infrastructure supporting conversation history. This will help us ensure withstanding recovery.\n\nAfter these actions are complete, we’ll closely monitor the service environment during peak business hours and reach out to a sample of reporting users to validate that conversation history is displaying as expected and the impact is fully remediated.\r\n\r\nScope of impact: Some users are sporadically missing recent portions of their conversation history with Copilot Chat. This section may be updated as the investigation progresses.\r\n\r\nRoot cause: A latent request routing configuration issue is impacting users' ability to view recent portions of their conversation history with Copilot Chat.\r\n\r\nNext update by: Wednesday, November 4, 2026, at 2:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-11-02T20:23:08.8Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to view recent portions of their conversation history with Microsoft 365 Copilot Chat\n\nUser impact: Users may be unable to view recent portions of their conversation history with Copilot Chat.\n\nMore info: The affected conversations have not been deleted and are temporarily unavailable within conversation history.\n \nSome reports indicate that this issue typically occurs when users with an active Copilot Chat leave and then reopen the chat.\n \nCurrent status: We’ve deployed the secondary fix to nearly all affected regions to correct inconsistent message routing, and related errors have decreased significantly. Deployment to the remaining regions is ongoing. We’re also clearing cached error responses so that new requests can use the corrected routing information.\n\nSeparately, we’ve identified resource limitations within portions of the infrastructure supporting conversation history and are making adjustments to address the resulting errors. After these actions are complete, we’ll monitor to validate that conversation history is displaying as expected.\n \nScope of impact: Some users are sporadically missing recent portions of their conversation history with Copilot Chat. This section may be updated as the investigation progresses.\n \nNext update by: Tuesday, November 3, 2026, at 2:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-10-31T22:36:16.107Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to view recent portions of their conversation history with Microsoft 365 Copilot Chat\n\nUser impact: Users may be unable to view recent portions of their conversation history with Copilot Chat.\n\nMore info: The affected conversations have not been deleted and are temporarily unavailable within conversation history.\n \nSome reports indicate that this issue typically occurs when users with an active Copilot Chat leave and then reopen the chat.\n\nCurrent status: We’ve successfully applied the targeted change to improve our infrastructure balancing processes and are monitoring the environment to validate that this change has been successful. In addition, we’re deploying a secondary change to address errors in the environment that have caused inconsistent message routing. \n\nScope of impact: Some users are sporadically missing recent portions of their conversation history with Copilot Chat. This section may be updated as the investigation progresses.\n\nNext update by: Monday, November 2, 2026, at 8:30 PM UTC"
+        }
+      ],
+      "serviceName": "Microsoft 365 Copilot Chat",
+      "affectedServices": [
+        "Microsoft 365 Copilot Chat"
+      ]
+    },
     {
       "id": "CW1530649",
       "title": "Some users may be unable to load chat history or previously pinned chats, and can't pin chats in Microsoft 365 Copilot",
@@ -3050,52 +3010,6 @@
       "serviceName": "Microsoft Purview",
       "affectedServices": [
         "Microsoft Purview"
-      ]
-    },
-    {
-      "id": "EX1500900",
-      "title": "Admins are unable to access the Exchange admin center (EAC)",
-      "startTime": "2026-10-12T08:15:00Z",
-      "endTime": "2026-10-12T12:50:00Z",
-      "lastModified": "2026-10-19T21:04:26.143Z",
-      "status": "postIncidentReviewPublished",
-      "severity": "incident",
-      "userImpact": "Admins are unable to access the EAC. ",
-      "scopeOfImpact": "",
-      "rootCause": "",
-      "nextUpdateBy": "",
-      "feature": "Reports of an Incident",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-10-19T21:02:58.363Z",
-          "postType": "regular",
-          "content": "A post-incident report has been published."
-        },
-        {
-          "createdAt": "2026-10-14T13:11:27.51Z",
-          "postType": "regular",
-          "content": "A post-incident report has been published."
-        },
-        {
-          "createdAt": "2026-10-14T13:11:13.647Z",
-          "postType": "regular",
-          "content": "A post-incident report has been published."
-        },
-        {
-          "createdAt": "2026-10-12T13:28:40.877Z",
-          "postType": "regular",
-          "content": "Title: Admins are unable to access the Exchange admin center (EAC)\n\nUser impact: Admins are unable to access the EAC. \n\nMore info: When attempting to access the Exchange admin center, affected admins encountered an “Internal Server Error” message.\n \nFinal status: We've completed the rollback of the identified Exchange admin center (EAC) change. Service telemetry shows that errors have returned to expected levels, and user reports have confirmed that EAC access has been restored. Admins who continue to experience impact should close their existing EAC browser session, open a new session, and retry accessing the EAC. We’ll continue to monitor service health to ensure sustained service stability.\n \nScope of impact: Impact was specific to admins attempting to access the EAC.\n \nStart time: Monday, October 12, 2026, at 8:15 AM UTC\n \nEnd time: Monday, October 12, 2026, at 12:50 PM UTC\n \nRoot cause: During a routine service deployment, an update to the Exchange Admin Center authentication components introduced an incompatibility in the way delegated administrator access tokens were validated.\n\nWhen administrators accessed the Exchange Admin Center through the Microsoft 365 admin experience, the updated authentication components did not successfully validate the delegated token used for the request. The service then attempted an interactive sign-in as a fallback. That fallback could not complete because the sign-in context was associated with a different service domain, resulting in an authentication failure and an Internal Server Error.\n\nNext steps:\n- For a more comprehensive list of next steps and actions, please refer to the Post Incident Report document.\n \nWe’ll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days."
-        },
-        {
-          "createdAt": "2026-10-12T13:04:24.203Z",
-          "postType": "quick",
-          "content": "We’ve completed the rollback and are continuing to monitor service health, with telemetry showing errors trending downward from their earlier peak. Admins who continue to experience impact should close their existing Exchange admin center (EAC) browser session, open a new session, and retry accessing the EAC. We’ll continue monitoring to validate recovery.\n\nThis quick update is designed to give the latest information on this issue.\n \nNext update by: Monday, October 12, 2026, at 1:30 PM UTC"
-        }
-      ],
-      "serviceName": "Exchange Online",
-      "affectedServices": [
-        "Exchange Online"
       ]
     }
   ]
