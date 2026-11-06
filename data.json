@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-06T00:43:20.659Z",
+  "lastUpdated": "2026-11-06T01:13:36.298Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -266,32 +266,6 @@
       "status": "serviceDegradation",
       "id": "OSDPPlatform",
       "issues": [
-        {
-          "id": "MO1540560",
-          "title": "Users may not be able to access Class Notebooks in Microsoft OneNote",
-          "startTime": "2026-11-05T23:36:40.787Z",
-          "endTime": null,
-          "lastModified": "2026-11-05T23:39:18.23Z",
-          "status": "investigating",
-          "severity": "advisory",
-          "userImpact": "Users may not have been able to access Class Notebooks in Microsoft OneNote.",
-          "scopeOfImpact": "",
-          "rootCause": "",
-          "nextUpdateBy": "",
-          "feature": "Company or User Administration",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-11-05T23:39:18.23Z",
-              "postType": "regular",
-              "content": "Title: Users may not be able to access Class Notebooks in Microsoft OneNote\r\n\r\nUser impact: Users may not have been able to access Class Notebooks in Microsoft OneNote.\r\n\r\nMore info: The Class Notebook tab was missing in OneNote making it inaccessible. \r\n\r\nCurrent status: We've investigated a problem with accessing Class Notebook in OneNote and confirmed that service is now restored. We'll provide additional information in a closure summary within the \"History\" section of the \"Service health\" dashboard shortly."
-            }
-          ],
-          "affectedServices": [
-            "Microsoft 365 suite",
-            "Microsoft OneDrive"
-          ]
-        },
         {
           "id": "MO1457843",
           "title": "Admins can't identify who deleted a Viva Engage community or its Microsoft 365 Group in Microsoft Entra ID audit logs",
@@ -685,36 +659,9 @@
     },
     {
       "service": "Microsoft OneDrive",
-      "status": "investigating",
+      "status": "serviceOperational",
       "id": "OneDriveForBusiness",
-      "issues": [
-        {
-          "id": "MO1540560",
-          "title": "Users may not be able to access Class Notebooks in Microsoft OneNote",
-          "startTime": "2026-11-05T23:36:40.787Z",
-          "endTime": null,
-          "lastModified": "2026-11-05T23:39:18.23Z",
-          "status": "investigating",
-          "severity": "advisory",
-          "userImpact": "Users may not have been able to access Class Notebooks in Microsoft OneNote.",
-          "scopeOfImpact": "",
-          "rootCause": "",
-          "nextUpdateBy": "",
-          "feature": "Company or User Administration",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-11-05T23:39:18.23Z",
-              "postType": "regular",
-              "content": "Title: Users may not be able to access Class Notebooks in Microsoft OneNote\r\n\r\nUser impact: Users may not have been able to access Class Notebooks in Microsoft OneNote.\r\n\r\nMore info: The Class Notebook tab was missing in OneNote making it inaccessible. \r\n\r\nCurrent status: We've investigated a problem with accessing Class Notebook in OneNote and confirmed that service is now restored. We'll provide additional information in a closure summary within the \"History\" section of the \"Service health\" dashboard shortly."
-            }
-          ],
-          "affectedServices": [
-            "Microsoft 365 suite",
-            "Microsoft OneDrive"
-          ]
-        }
-      ]
+      "issues": []
     },
     {
       "service": "Microsoft Teams",
@@ -1051,6 +998,37 @@
   ],
   "history": [
     {
+      "id": "MO1540560",
+      "title": "Users may not be able to access Class Notebooks in Microsoft OneNote",
+      "startTime": "2026-11-05T23:36:40.787Z",
+      "endTime": "2026-11-06T01:01:35.67Z",
+      "lastModified": "2026-11-06T01:03:48.5Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have not been able to access Class Notebooks in Microsoft OneNote.",
+      "scopeOfImpact": "This event may have impacted any user attempting to utilize the Class Notebooks toolbar in Microsoft OneNote\r\n\r\nStart time: Thursday, November 5, 2026, at 6:10 PM UTC\r\n\r\nEnd time: Thursday, November 5, 2026, at 11:50 PM UTC",
+      "rootCause": "An issue contained in a recent service change that was resulting in impact.\r\n\r\nNext steps: - We're reviewing the responsible service change to better understand what led to the error that resulted in impact and prevent similar future occurrences.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Company or User Administration",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-11-06T01:03:44.837Z",
+          "postType": "regular",
+          "content": "Title: Users may not be able to access Class Notebooks in Microsoft OneNote\r\n\r\nUser impact: Users may have not been able to access Class Notebooks in Microsoft OneNote.\r\n\r\nMore info: The Class Notebook tab was missing in OneNote making it inaccessible.\r\n\r\nFinal status: We identified an issue contained in a recent service change that was resulting in impact. We reverted this change and were able to confirm that this successfully resolved the event through monitoring service health data.\r\n\r\nScope of impact: This event may have impacted any user attempting to utilize the Class Notebooks toolbar in Microsoft OneNote\r\n\r\nStart time: Thursday, November 5, 2026, at 6:10 PM UTC\r\n\r\nEnd time: Thursday, November 5, 2026, at 11:50 PM UTC\r\n\r\nRoot cause: An issue contained in a recent service change that was resulting in impact.\r\n\r\nNext steps: - We're reviewing the responsible service change to better understand what led to the error that resulted in impact and prevent similar future occurrences.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-11-05T23:39:18.23Z",
+          "postType": "regular",
+          "content": "Title: Users may not be able to access Class Notebooks in Microsoft OneNote\r\n\r\nUser impact: Users may have not been able to access Class Notebooks in Microsoft OneNote.\r\n\r\nMore info: The Class Notebook tab was missing in OneNote making it inaccessible. \r\n\r\nCurrent status: We've investigated a problem with accessing Class Notebook in OneNote and confirmed that service is now restored. We'll provide additional information in a closure summary within the \"History\" section of the \"Service health\" dashboard shortly."
+        }
+      ],
+      "serviceName": "Microsoft 365 suite",
+      "affectedServices": [
+        "Microsoft 365 suite"
+      ]
+    },
+    {
       "id": "CW1530567",
       "title": "Users may be unable to view recent portions of their conversation history with Microsoft 365 Copilot Chat",
       "startTime": "2026-10-14T15:55:00Z",
@@ -1101,16 +1079,21 @@
       "title": "Some users may be unable to load chat history or previously pinned chats, and can't pin chats in Microsoft 365 Copilot",
       "startTime": "2026-09-01T03:38:00Z",
       "endTime": "2026-11-04T16:08:39.533Z",
-      "lastModified": "2026-11-04T17:27:02.247Z",
-      "status": "serviceRestored",
+      "lastModified": "2026-11-06T00:44:01.217Z",
+      "status": "postIncidentReviewPublished",
       "severity": "advisory",
       "userImpact": "Users may have been unable to load chat history or previously pinned chats, and couldn't pin chats in Copilot Chat.",
-      "scopeOfImpact": "Some users may have been unable to load chat history, previously pinned chats, and couldn't pin chats in Copilot Chat.\n\nStart time: Tuesday, September 1, 2026, at 3:38 AM UTC\n\nEnd time: Wednesday, November 4, 2026, at 12:30 PM UTC\n\nPreliminary",
-      "rootCause": "A recent feature update revealed an existing issue with the pinned chats feature, resulting in impact under certain conditions.\n\nNext steps: \n- We're reviewing and improving our feature update validation procedure to detect and prevent similar issues in the future.\n\nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days.",
+      "scopeOfImpact": "",
+      "rootCause": "",
       "nextUpdateBy": "",
       "feature": "General",
       "isResolved": true,
       "posts": [
+        {
+          "createdAt": "2026-11-06T00:44:01.217Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        },
         {
           "createdAt": "2026-11-04T16:33:45.367Z",
           "postType": "regular",
@@ -3047,52 +3030,6 @@
       "serviceName": "Microsoft 365 suite",
       "affectedServices": [
         "Microsoft 365 suite"
-      ]
-    },
-    {
-      "id": "MP1471821",
-      "title": "Some admins may receive failures creating or updating Communications Compliance policies in Microsoft Purview",
-      "startTime": "2026-09-14T16:41:47.403Z",
-      "endTime": "2026-10-12T16:28:30.053Z",
-      "lastModified": "2026-10-12T16:42:12.4Z",
-      "status": "serviceRestored",
-      "severity": "incident",
-      "userImpact": "Admins may have received failures creating or updating Communications Compliance policies in Microsoft Purview.",
-      "scopeOfImpact": "Some admins may have received failures when they created or updated Communications Compliance policies in Microsoft Purview with more than four classifiers.\r\n\r\nStart time: Monday, July 6, 2026, at 12:00 AM UTC\r\n\r\nEnd time: Friday, October 9, 2026, at 6:00 PM UTC",
-      "rootCause": "A service update which intended to add operations with larger data sizes introduced a code error, causing size limitation issues.\r\n\r\nNext steps: We're reviewing and improving our service update validation procedure to prevent similar issues from occurring again in the future.\r\n\r\nThis is the final update for this event.",
-      "nextUpdateBy": "",
-      "feature": "General",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-10-12T16:42:08.967Z",
-          "postType": "regular",
-          "content": "Title: Some admins may receive failures creating or updating Communications Compliance policies in Microsoft Purview\r\n\r\nUser impact: Admins may have received failures creating or updating Communications Compliance policies in Microsoft Purview.\r\n\r\nMore info: Impact was limited to Communications Compliance policies with more than four classifiers.\r\n\r\nFinal status: The fix deployed to the whole of the affected infrastructure, and we've confirmed with our internal monitoring telemetry that impact is remediated.\r\n\r\nScope of impact: Some admins may have received failures when they created or updated Communications Compliance policies in Microsoft Purview with more than four classifiers.\r\n\r\nStart time: Monday, July 6, 2026, at 12:00 AM UTC\r\n\r\nEnd time: Friday, October 9, 2026, at 6:00 PM UTC\r\n\r\nRoot cause: A service update which intended to add operations with larger data sizes introduced a code error, causing size limitation issues.\r\n\r\nNext steps: We're reviewing and improving our service update validation procedure to prevent similar issues from occurring again in the future.\r\n\r\nThis is the final update for this event."
-        },
-        {
-          "createdAt": "2026-10-06T17:47:50.377Z",
-          "postType": "regular",
-          "content": "Title: Some admins may receive failures creating or updating Communications Compliance policies in Microsoft Purview\r\n\r\nUser impact: Admins may receive failures creating or updating Communications Compliance policies in Microsoft Purview.\r\n\r\nMore info: Impact is limited to Communications Compliance policies with more than four classifiers.\n\nWe advise admins to keep classifiers to a maximum of four during this time.\r\n\r\nCurrent status: We've completed the deployment to over 90 percent of the affected infrastructure. While most admins should see relief, we expect the release to complete by the next scheduled update.\r\n\r\nScope of impact: Some admins may receive failures creating or updating Communications Compliance policies in Microsoft Purview with more than four classifiers. This section may be updated as the investigation progresses.\r\n\r\nRoot cause: A service update which intended to add operations with larger data sizes introduced a code error, causing size limitation issues.\r\n\r\nNext update by: Monday, October 12, 2026, at 6:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-09-29T16:35:01.517Z",
-          "postType": "regular",
-          "content": "Title: Some admins may receive failures creating or updating Communications Compliance policies in Microsoft Purview\r\n\r\nUser impact: Admins may receive failures creating or updating Communications Compliance policies in Microsoft Purview.\r\n\r\nMore info: Impact is limited to Communications Compliance policies with more than four classifiers.\n\nWe advise admins to keep classifiers to a maximum of four during this time and we anticipate the limit to be remediated by Monday, October 5, 2026.\r\n\r\nCurrent status: We've continuing to monitor the deployment of our fix which remains scheduled to complete by Monday, October 5, 2026.\r\n\r\nScope of impact: Some admins may receive failures creating or updating Communications Compliance policies in Microsoft Purview with more than four classifiers. This section may be updated as the investigation progresses.\r\n\r\nEstimated time to resolve: We anticipate impact to be remediated by Monday, October 5, 2026.\r\n\r\nRoot cause: A service update which intended to add operations with larger data sizes introduced a code error, causing size limitation issues.\r\n\r\nNext update by: Tuesday, October 6, 2026, at 6:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-09-22T16:44:05.683Z",
-          "postType": "regular",
-          "content": "Title: Some admins may receive failures creating or updating Communications Compliance policies in Microsoft Purview\r\n\r\nUser impact: Admins may receive failures creating or updating Communications Compliance policies in Microsoft Purview.\r\n\r\nMore info: Impact is limited to Communications Compliance policies with more than four classifiers.\n\nWe advise admins to keep classifiers to a maximum of four during this time and we anticipate the limit to be remediated by Monday, October 5, 2026.\r\n\r\nCurrent status: We've completed internal validations for our solution and have begun its deployment. Our fix deployment timeline projects the deployment will remediate the impact by Monday, October 5, 2026. Until this time, we advise users to keep Communications Compliance policies limited to under four classifiers in order to avoid impact.\r\n\r\nScope of impact: Some admins may receive failures creating or updating Communications Compliance policies in Microsoft Purview with more than four classifiers. This section may be updated as the investigation progresses.\r\n\r\nEstimated time to resolve: We anticipate impact to be remediated by Monday, October 5, 2026.\r\n\r\nRoot cause: A recent update introduced operations with larger data size included a code error, causing size limitation issues.\r\n\r\nNext update by: Tuesday, September 29, 2026, at 6:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-09-14T16:47:32.587Z",
-          "postType": "regular",
-          "content": "Title: Some admins may receive failures creating or updating Communications Compliance policies in Microsoft Purview\r\n\r\nUser impact: Admins may receive failures creating or updating Communications Compliance policies in Microsoft Purview.\r\n\r\nMore info: Impact is limited to Communications Compliance policies with more than four classifiers.\n\nWe advise admins to keep classifiers to a maximum of four during this time and we anticipate the limit to be remediated by Monday, October 5, 2026.\r\n\r\nCurrent status: We've received reports from a subset of affected admins who have reported receiving size limitation failures when creating or updating Communications Compliance policies in Microsoft Purview. We've isolated that a recent update introduced operations with larger data size included a code issue, causing size limitation issues. We've created a code fix to address the issue, which we anticipate being fully deployed by Monday, October 5, 2026. During this time, we advise users to keep Communications Compliance policies limited to under four classifiers in order to avoid impact.\r\n\r\nScope of impact: Some admins may receive failures creating or updating Communications Compliance policies in Microsoft Purview with more than four classifiers. This section may be updated as the investigation progresses.\r\n\r\nEstimated time to resolve: We anticipate impact to be remediated by Monday, October 5, 2026.\r\n\r\nRoot cause: A recent update introduced operations with larger data size included a code error, causing size limitation issues.\r\n\r\nNext update by: Monday, September 28, 2026, at 6:00 PM UTC"
-        }
-      ],
-      "serviceName": "Microsoft Purview",
-      "affectedServices": [
-        "Microsoft Purview"
       ]
     }
   ]
