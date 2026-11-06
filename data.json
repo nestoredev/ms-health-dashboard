@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-05T23:42:46.309Z",
+  "lastUpdated": "2026-11-06T00:13:03.075Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -267,6 +267,32 @@
       "id": "OSDPPlatform",
       "issues": [
         {
+          "id": "MO1540560",
+          "title": "Users may not be able to access Class Notebooks in Microsoft OneNote",
+          "startTime": "2026-11-05T23:36:40.787Z",
+          "endTime": null,
+          "lastModified": "2026-11-05T23:39:18.23Z",
+          "status": "investigating",
+          "severity": "advisory",
+          "userImpact": "Users may not have been able to access Class Notebooks in Microsoft OneNote.",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
+          "feature": "Company or User Administration",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-11-05T23:39:18.23Z",
+              "postType": "regular",
+              "content": "Title: Users may not be able to access Class Notebooks in Microsoft OneNote\r\n\r\nUser impact: Users may not have been able to access Class Notebooks in Microsoft OneNote.\r\n\r\nMore info: The Class Notebook tab was missing in OneNote making it inaccessible. \r\n\r\nCurrent status: We've investigated a problem with accessing Class Notebook in OneNote and confirmed that service is now restored. We'll provide additional information in a closure summary within the \"History\" section of the \"Service health\" dashboard shortly."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite",
+            "Microsoft OneDrive"
+          ]
+        },
+        {
           "id": "MO1457843",
           "title": "Admins can't identify who deleted a Viva Engage community or its Microsoft 365 Group in Microsoft Entra ID audit logs",
           "startTime": "2026-07-10T14:05:00Z",
@@ -349,9 +375,9 @@
         {
           "id": "MO1532211",
           "title": "Users' Microsoft 365 Apps usage reports may show outdated data in the Microsoft 365 admin center",
-          "startTime": "2026-10-30T21:02:23.467Z",
+          "startTime": "2026-10-30T00:00:00Z",
           "endTime": null,
-          "lastModified": "2026-11-05T00:24:02.497Z",
+          "lastModified": "2026-11-05T23:52:27.973Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users' Microsoft 365 Apps usage reports may show outdated data in the Microsoft 365 admin center.",
@@ -654,9 +680,36 @@
     },
     {
       "service": "Microsoft OneDrive",
-      "status": "serviceOperational",
+      "status": "investigating",
       "id": "OneDriveForBusiness",
-      "issues": []
+      "issues": [
+        {
+          "id": "MO1540560",
+          "title": "Users may not be able to access Class Notebooks in Microsoft OneNote",
+          "startTime": "2026-11-05T23:36:40.787Z",
+          "endTime": null,
+          "lastModified": "2026-11-05T23:39:18.23Z",
+          "status": "investigating",
+          "severity": "advisory",
+          "userImpact": "Users may not have been able to access Class Notebooks in Microsoft OneNote.",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
+          "feature": "Company or User Administration",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-11-05T23:39:18.23Z",
+              "postType": "regular",
+              "content": "Title: Users may not be able to access Class Notebooks in Microsoft OneNote\r\n\r\nUser impact: Users may not have been able to access Class Notebooks in Microsoft OneNote.\r\n\r\nMore info: The Class Notebook tab was missing in OneNote making it inaccessible. \r\n\r\nCurrent status: We've investigated a problem with accessing Class Notebook in OneNote and confirmed that service is now restored. We'll provide additional information in a closure summary within the \"History\" section of the \"Service health\" dashboard shortly."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite",
+            "Microsoft OneDrive"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft Teams",
