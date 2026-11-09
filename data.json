@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-09T17:42:08.671Z",
+  "lastUpdated": "2026-11-09T18:12:24.155Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -737,6 +737,41 @@
               "createdAt": "2026-10-12T21:28:46.413Z",
               "postType": "regular",
               "content": "Title: Users' Microsoft Teams contact cards don't fully display Out of office text\r\n\r\nUser impact: Users' Microsoft Teams contact cards don't fully display Out of office text.\r\n\r\nMore info: Selecting “See more” doesn’t display the full Out of office message. Users may hover over the message to see the full text in a tool tip.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Teams and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Teams"
+          ]
+        },
+        {
+          "id": "TM1545775",
+          "title": "Users may be unable to view previously deleted teams after restoration in Microsoft Teams",
+          "startTime": "2026-11-09T15:56:37.777Z",
+          "endTime": null,
+          "lastModified": "2026-11-09T18:05:49.263Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to view previously deleted teams after restoration in Microsoft Teams.",
+          "scopeOfImpact": "This issue may affect any user attempting to view previously deleted and restored teams.",
+          "rootCause": "A recent change introduced a regression that resulted in restored teams remaining invisible due to a code check missing the “restored” tag, resulting in impact.",
+          "nextUpdateBy": "Monday, November 9, 2026, at 7:30 PM UTC",
+          "feature": "Teams and Channels",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-11-09T17:20:12.657Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to view previously deleted teams after restoration in Microsoft Teams\r\n\r\nUser impact: Users may be unable to view previously deleted teams after restoration in Microsoft Teams.\r\n\r\nMore info: As a workaround, changing an affected user's role (member to owner and then back to member) makes the team visible for that user.\r\n\r\nCurrent status: We’ve identified a recent change introduced a regression that resulted in restored teams remaining invisible due to a code check missing the “restored” tag, resulting in impact. We’re developing a fix to correct this issue and working to establish a timeline for the fix deployment. \r\n\r\nScope of impact: This issue may affect any user attempting to view previously deleted and restored teams. \r\n\r\nRoot cause: A recent change introduced a regression that resulted in restored teams remaining invisible due to a code check missing the “restored” tag, resulting in impact.\r\n\r\nNext update by: Monday, November 9, 2026, at 7:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-11-09T16:15:04.72Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to view previously deleted teams after restoration in Microsoft Teams\r\n\r\nUser impact: Users may be unable to view previously deleted teams after restoration in Microsoft Teams.\r\n\r\nMore info: As a workaround, changing an affected user's role (member to owner and then back to member) makes the team visible for that user.\r\n\r\nCurrent status: We’re reviewing screenshots of impact and client logs captured from an affected user to assist our investigation into the source of the issue. In parallel, we’ve successfully reproduced impact in our internal testing environment and are reviewing this reproduction to further assist our root cause efforts. \r\n\r\nScope of impact: This issue may affect any user attempting to view previously deleted and restored teams. \r\n\r\nNext update by: Monday, November 9, 2026, at 5:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-11-09T15:58:40.03Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to view previously deleted teams after restoration in Microsoft Teams\r\n\r\nUser impact: Users may be unable to view previously deleted teams after restoration in Microsoft Teams.\r\n\r\nMore info: As a workaround, changing an affected user's role (member to owner and then back to member) makes the team visible for that user.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Teams and checking for impact to your organization. We'll provide an update within 30 minutes."
             }
           ],
           "affectedServices": [
