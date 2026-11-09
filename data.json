@@ -1,11 +1,36 @@
 {
-  "lastUpdated": "2026-11-09T20:13:22.961Z",
+  "lastUpdated": "2026-11-09T20:43:35.515Z",
   "services": [
     {
       "service": "Exchange Online",
       "status": "serviceDegradation",
       "id": "Exchange",
       "issues": [
+        {
+          "id": "EX1545193",
+          "title": "Some users may be intermittently unable to send email messages to Outlook.com, Hotmail.com, or Live.com email addresses",
+          "startTime": "2026-11-09T05:07:31Z",
+          "endTime": null,
+          "lastModified": "2026-11-09T20:10:26.093Z",
+          "status": "serviceDegradation",
+          "severity": "incident",
+          "userImpact": "Users may be intermittently unable to send email messages to Outlook.com, Hotmail.com, or Live.com email addresses.",
+          "scopeOfImpact": "Some users may be intermittently unable to send email messages to Outlook, Hotmail, and Live email accounts.",
+          "rootCause": "",
+          "nextUpdateBy": "Wednesday, November 11, 2026, at 7:00 AM UTC",
+          "feature": "Mailflow - delayed sending to Internet",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-11-09T05:24:35.96Z",
+              "postType": "regular",
+              "content": "Title: Some users may be intermittently unable to send email messages to Outlook.com, Hotmail.com, or Live.com email addresses\n\r\n\r\nUser impact: Users may be intermittently unable to send email messages to Outlook.com, Hotmail.com, or Live.com email addresses.\n\r\n\r\nMore info: Users may receive a Non-Delivery Report (NDR) reporting 550 5.7.1 or 550 5.7.23 due to Service Provider Foundation (SPF) violation.\r\n\r\nCurrent status: We've received reports indicating that some users may be unable to send email messages to Outlook.com, Hotmail.com or Live.com email addresses. We're requesting that affected users reach out to their support representatives and provide fresh Network Message IDs, fresh logs, and examples of impact users are facing in .eml format. These logs will aid in the root cause investigation into why impact persists, so we can identify a remediation plan.\r\n\r\nScope of impact: Some users may be intermittently unable to send email messages to Outlook, Hotmail, and Live email accounts. \n\r\n\r\nNext update by: Wednesday, November 11, 2026, at 7:00 AM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online"
+          ]
+        },
         {
           "id": "EX1490154",
           "title": "Users may receive duplicate email messages sent to mailboxes using Exchange Online SMTP forwarding",
