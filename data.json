@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-09T21:13:49.031Z",
+  "lastUpdated": "2026-11-09T21:44:02.017Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -723,16 +723,21 @@
           "title": "Users' Microsoft Teams contact cards may not fully display Out of office text",
           "startTime": "2026-10-12T21:18:48.69Z",
           "endTime": null,
-          "lastModified": "2026-11-04T20:18:42.603Z",
+          "lastModified": "2026-11-09T21:34:45.197Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users' Microsoft Teams contact cards may not fully display Out of office text.",
           "scopeOfImpact": "Any user attempting to view Out of office text on Microsoft Teams contact cards may be impacted. This section may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, October 7, 2026, at 1:15 AM UTC",
           "rootCause": "A recent service change to the Microsoft Teams contact cards introduced a code regression in which the user interface (UI) of the Out of office text contains an invalid value and is causing impact.",
-          "nextUpdateBy": "Monday, November 9, 2026, at 10:00 PM UTC",
+          "nextUpdateBy": "Tuesday, November 10, 2026, at 10:00 PM UTC",
           "feature": "Presence",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-11-09T21:34:45.197Z",
+              "postType": "regular",
+              "content": "Title: Users' Microsoft Teams contact cards may not fully display Out of office text\r\n\r\nUser impact: Users' Microsoft Teams contact cards may not fully display Out of office text.\r\n\r\nMore info: Selecting “See more” may not display the full Out of office message. Users may hover over the message to see the full text in a tool tip.\r\n\r\nCurrent status: We've confirmed that our deployment has completed in the remaining impacted environments. We're performing final verification to confirm that the issue is fully remediated. Users who are still experiencing impact should restart their Teams app and ensure that they're running the latest version.\r\n\r\nScope of impact: Any user attempting to view Out of office text on Microsoft Teams contact cards may be impacted. This section may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, October 7, 2026, at 1:15 AM UTC\r\n\r\nRoot cause: A recent service change to the Microsoft Teams contact cards introduced a code regression in which the user interface (UI) of the Out of office text contains an invalid value and is causing impact.\r\n\r\nNext update by: Tuesday, November 10, 2026, at 10:00 PM UTC"
+            },
             {
               "createdAt": "2026-11-04T20:18:42.603Z",
               "postType": "regular",
@@ -783,16 +788,21 @@
           "title": "Users may be unable to view previously deleted teams after restoration in Microsoft Teams",
           "startTime": "2026-10-26T12:53:00Z",
           "endTime": null,
-          "lastModified": "2026-11-09T21:09:26.85Z",
+          "lastModified": "2026-11-09T21:11:37.473Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to view previously deleted teams after restoration in Microsoft Teams.",
-          "scopeOfImpact": "This issue may affect any user attempting to view previously deleted and restored teams.",
+          "scopeOfImpact": "This issue may affect any user attempting to view previously deleted and restored teams.\r\n\r\nStart time: Monday, October 26, 2026, at 12:53 PM UTC",
           "rootCause": "A recent change introduced a regression that resulted in restored teams remaining invisible due to a code check missing the “restored” tag, resulting in impact.",
-          "nextUpdateBy": "Monday, November 9, 2026, at 10:30 PM UTC",
+          "nextUpdateBy": "Tuesday, November 10, 2026, at 2:00 AM UTC",
           "feature": "Teams and Channels",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-11-09T21:11:37.473Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to view previously deleted teams after restoration in Microsoft Teams\r\n\r\nUser impact: Users may be unable to view previously deleted teams after restoration in Microsoft Teams.\r\n\r\nMore info: As a workaround, changing an affected user's role (member to owner and then back to member) makes the team visible for that user.\r\n\r\nCurrent status: We're monitoring our fix deployment as it saturates throughout the affected environment, and we expect this process to complete by Tuesday, November 10, 2026, at 12:00 AM UTC. Once fully saturated, we'll validate whether impact is resolved or if any additional mitigative actions may be required to do so.\r\n\r\nScope of impact: This issue may affect any user attempting to view previously deleted and restored teams.\r\n\r\nStart time: Monday, October 26, 2026, at 12:53 PM UTC\r\n\r\nRoot cause: A recent change introduced a regression that resulted in restored teams remaining invisible due to a code check missing the “restored” tag, resulting in impact.\r\n\r\nNext update by: Tuesday, November 10, 2026, at 2:00 AM UTC"
+            },
             {
               "createdAt": "2026-11-09T19:09:03.917Z",
               "postType": "regular",
