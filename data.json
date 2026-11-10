@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-10T19:24:15.736Z",
+  "lastUpdated": "2026-11-10T19:54:29.890Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -724,61 +724,6 @@
           ]
         },
         {
-          "id": "TM1545775",
-          "title": "Users may be unable to view previously deleted teams after restoration in Microsoft Teams",
-          "startTime": "2026-10-26T12:53:00Z",
-          "endTime": null,
-          "lastModified": "2026-11-10T05:29:58.603Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may be unable to view previously deleted teams after restoration in Microsoft Teams.",
-          "scopeOfImpact": "This issue may affect any user attempting to view previously deleted and restored teams. This information may be updated as our investigation continues.\r\n\r\nStart time: Monday, October 26, 2026, at 12:53 PM UTC",
-          "rootCause": "A recent change introduced a regression that resulted in restored teams remaining invisible due to a code check missing the “restored” tag, resulting in impact.",
-          "nextUpdateBy": "Tuesday, November 10, 2026, at 8:30 PM UTC",
-          "feature": "Teams and Channels",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-11-10T05:29:58.603Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to view previously deleted teams after restoration in Microsoft Teams\r\n\r\nUser impact: Users may be unable to view previously deleted teams after restoration in Microsoft Teams.\r\n\r\nMore info: As a workaround, changing an affected user's role (member to owner and then back to member) makes the team visible for that user.\r\n\r\nCurrent status: The rollout of our fix is ongoing and will be completed in stages. Early deployment has been completed and we're seeing improvements in system health, but more time will be required to complete the full rollout and monitor for confirmation of impact resolution.\r\n\r\nScope of impact: This issue may affect any user attempting to view previously deleted and restored teams. This information may be updated as our investigation continues.\r\n\r\nStart time: Monday, October 26, 2026, at 12:53 PM UTC\r\n\r\nRoot cause: A recent change introduced a regression that resulted in restored teams remaining invisible due to a code check missing the “restored” tag, resulting in impact.\r\n\r\nNext update by: Tuesday, November 10, 2026, at 8:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-11-10T00:35:03.433Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to view previously deleted teams after restoration in Microsoft Teams\r\n\r\nUser impact: Users may be unable to view previously deleted teams after restoration in Microsoft Teams.\r\n\r\nMore info: As a workaround, changing an affected user's role (member to owner and then back to member) makes the team visible for that user.\r\n\r\nCurrent status: We're continuing our fix deployment and expect the process to finish in a few hours.\r\n\r\nScope of impact: This issue may affect any user attempting to view previously deleted and restored teams. This information may be updated as our investigation continues.\r\n\r\nStart time: Monday, October 26, 2026, at 12:53 PM UTC\r\n\r\nRoot cause: A recent change introduced a regression that resulted in restored teams remaining invisible due to a code check missing the “restored” tag, resulting in impact.\r\n\r\nNext update by: Tuesday, November 10, 2026, at 7:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-11-09T21:11:37.473Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to view previously deleted teams after restoration in Microsoft Teams\n\nUser impact: Users may be unable to view previously deleted teams after restoration in Microsoft Teams.\n\nMore info: As a workaround, changing an affected user's role (member to owner and then back to member) makes the team visible for that user.\n\nCurrent status: We're monitoring our fix deployment as it saturates throughout the affected environment, and we expect this process to complete by Tuesday, November 10, 2026, at 12:00 AM UTC. Once fully saturated, we'll validate whether impact is resolved or if any additional mitigative actions may be required to do so.\n\nScope of impact: This issue may affect any user attempting to view previously deleted and restored teams. This information may be updated as our investigation continues.\n\nStart time: Monday, October 26, 2026, at 12:53 PM UTC\n\nRoot cause: A recent change introduced a regression that resulted in restored teams remaining invisible due to a code check missing the “restored” tag, resulting in impact.\n\nNext update by: Tuesday, November 10, 2026, at 2:00 AM UTC"
-            },
-            {
-              "createdAt": "2026-11-09T19:09:03.917Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to view previously deleted teams after restoration in Microsoft Teams\n\nUser impact: Users may be unable to view previously deleted teams after restoration in Microsoft Teams.\n\nMore info: As a workaround, changing an affected user's role (member to owner and then back to member) makes the team visible for that user.\n\nCurrent status: We’ve completed the development of our fix and have initiated its deployment. We’re working to establish an accurate timeline for deployment completion and impact remediation to provide with our next scheduled communication update. \n\nScope of impact: This issue may affect any user attempting to view previously deleted and restored teams. This information may be updated as our investigation continues.\n\nRoot cause: A recent change introduced a regression that resulted in restored teams remaining invisible due to a code check missing the “restored” tag, resulting in impact.\n\nNext update by: Monday, November 9, 2026, at 10:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-11-09T17:20:12.657Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to view previously deleted teams after restoration in Microsoft Teams\n\nUser impact: Users may be unable to view previously deleted teams after restoration in Microsoft Teams.\n\nMore info: As a workaround, changing an affected user's role (member to owner and then back to member) makes the team visible for that user.\n\nCurrent status: We’ve identified a recent change introduced a regression that resulted in restored teams remaining invisible due to a code check missing the “restored” tag, resulting in impact. We’re developing a fix to correct this issue and working to establish a timeline for the fix deployment. \n\nScope of impact: This issue may affect any user attempting to view previously deleted and restored teams. This information may be updated as our investigation continues.\n\nRoot cause: A recent change introduced a regression that resulted in restored teams remaining invisible due to a code check missing the “restored” tag, resulting in impact.\n\nNext update by: Monday, November 9, 2026, at 7:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-11-09T16:15:04.72Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to view previously deleted teams after restoration in Microsoft Teams\n\nUser impact: Users may be unable to view previously deleted teams after restoration in Microsoft Teams.\n\nMore info: As a workaround, changing an affected user's role (member to owner and then back to member) makes the team visible for that user.\n\nCurrent status: We’re reviewing screenshots of impact and client logs captured from an affected user to assist our investigation into the source of the issue. In parallel, we’ve successfully reproduced impact in our internal testing environment and are reviewing this reproduction to further assist our root cause efforts. \n\nScope of impact: This issue may affect any user attempting to view previously deleted and restored teams. This information may be updated as our investigation continues.\n\nNext update by: Monday, November 9, 2026, at 5:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-11-09T15:58:40.03Z",
-              "postType": "regular",
-              "content": "Title: Users may be unable to view previously deleted teams after restoration in Microsoft Teams\r\n\r\nUser impact: Users may be unable to view previously deleted teams after restoration in Microsoft Teams.\r\n\r\nMore info: As a workaround, changing an affected user's role (member to owner and then back to member) makes the team visible for that user.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Teams and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Microsoft Teams"
-          ]
-        },
-        {
           "id": "MO1489432",
           "title": "Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile",
           "startTime": "2026-10-06T11:45:49.047Z",
@@ -1052,6 +997,52 @@
     }
   ],
   "history": [
+    {
+      "id": "TM1545775",
+      "title": "Users may be unable to view previously deleted teams after restoration in Microsoft Teams",
+      "startTime": "2026-10-26T12:53:00Z",
+      "endTime": "2026-11-10T19:34:54.36Z",
+      "lastModified": "2026-11-10T19:47:08.777Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have been unable to view previously deleted teams after restoration in Microsoft Teams.",
+      "scopeOfImpact": "This issue may have affected any user attempting to view previously deleted and restored teams. \r\n\r\nStart time: Monday, October 26, 2026, at 12:53 PM UTC\r\n\r\nEnd time: Tuesday, November 10, 2026, at 2:00 PM UTC",
+      "rootCause": "A recent change introduced a regression that resulted in restored teams remaining invisible due to a code check missing the “restored” tag, resulting in impact.\r\n\r\nNext steps: We're continuing our analysis of the impacting change to better identify and prevent similar impact in the future.\r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Teams and Channels",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-11-10T19:47:05.377Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to view previously deleted teams after restoration in Microsoft Teams\r\n\r\nUser impact: Users may have been unable to view previously deleted teams after restoration in Microsoft Teams.\r\n\r\nMore info: As a workaround, changing an affected user's role (member to owner and then back to member) made the team visible for that user.\r\n\r\nFinal status: We've confirmed that the fix has completed across all affected environments and validated this issue has been remediated with service telemetry and affected users. \r\n\r\nScope of impact: This issue may have affected any user attempting to view previously deleted and restored teams. \r\n\r\nStart time: Monday, October 26, 2026, at 12:53 PM UTC\r\n\r\nEnd time: Tuesday, November 10, 2026, at 2:00 PM UTC\r\n\r\nRoot cause: A recent change introduced a regression that resulted in restored teams remaining invisible due to a code check missing the “restored” tag, resulting in impact.\r\n\r\nNext steps: We're continuing our analysis of the impacting change to better identify and prevent similar impact in the future.\r\n\r\nThis is the final update for the event."
+        },
+        {
+          "createdAt": "2026-11-10T05:29:58.603Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to view previously deleted teams after restoration in Microsoft Teams\r\n\r\nUser impact: Users may be unable to view previously deleted teams after restoration in Microsoft Teams.\r\n\r\nMore info: As a workaround, changing an affected user's role (member to owner and then back to member) makes the team visible for that user.\r\n\r\nCurrent status: The rollout of our fix is ongoing and will be completed in stages. Early deployment has been completed and we're seeing improvements in system health, but more time will be required to complete the full rollout and monitor for confirmation of impact resolution.\r\n\r\nScope of impact: This issue may affect any user attempting to view previously deleted and restored teams. This information may be updated as our investigation continues.\r\n\r\nStart time: Monday, October 26, 2026, at 12:53 PM UTC\r\n\r\nRoot cause: A recent change introduced a regression that resulted in restored teams remaining invisible due to a code check missing the “restored” tag, resulting in impact.\r\n\r\nNext update by: Tuesday, November 10, 2026, at 8:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-11-10T00:35:03.433Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to view previously deleted teams after restoration in Microsoft Teams\r\n\r\nUser impact: Users may be unable to view previously deleted teams after restoration in Microsoft Teams.\r\n\r\nMore info: As a workaround, changing an affected user's role (member to owner and then back to member) makes the team visible for that user.\r\n\r\nCurrent status: We're continuing our fix deployment and expect the process to finish in a few hours.\r\n\r\nScope of impact: This issue may affect any user attempting to view previously deleted and restored teams. This information may be updated as our investigation continues.\r\n\r\nStart time: Monday, October 26, 2026, at 12:53 PM UTC\r\n\r\nRoot cause: A recent change introduced a regression that resulted in restored teams remaining invisible due to a code check missing the “restored” tag, resulting in impact.\r\n\r\nNext update by: Tuesday, November 10, 2026, at 7:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-11-09T21:11:37.473Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to view previously deleted teams after restoration in Microsoft Teams\n\nUser impact: Users may be unable to view previously deleted teams after restoration in Microsoft Teams.\n\nMore info: As a workaround, changing an affected user's role (member to owner and then back to member) makes the team visible for that user.\n\nCurrent status: We're monitoring our fix deployment as it saturates throughout the affected environment, and we expect this process to complete by Tuesday, November 10, 2026, at 12:00 AM UTC. Once fully saturated, we'll validate whether impact is resolved or if any additional mitigative actions may be required to do so.\n\nScope of impact: This issue may affect any user attempting to view previously deleted and restored teams. This information may be updated as our investigation continues.\n\nStart time: Monday, October 26, 2026, at 12:53 PM UTC\n\nRoot cause: A recent change introduced a regression that resulted in restored teams remaining invisible due to a code check missing the “restored” tag, resulting in impact.\n\nNext update by: Tuesday, November 10, 2026, at 2:00 AM UTC"
+        },
+        {
+          "createdAt": "2026-11-09T19:09:03.917Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to view previously deleted teams after restoration in Microsoft Teams\n\nUser impact: Users may be unable to view previously deleted teams after restoration in Microsoft Teams.\n\nMore info: As a workaround, changing an affected user's role (member to owner and then back to member) makes the team visible for that user.\n\nCurrent status: We’ve completed the development of our fix and have initiated its deployment. We’re working to establish an accurate timeline for deployment completion and impact remediation to provide with our next scheduled communication update. \n\nScope of impact: This issue may affect any user attempting to view previously deleted and restored teams. This information may be updated as our investigation continues.\n\nRoot cause: A recent change introduced a regression that resulted in restored teams remaining invisible due to a code check missing the “restored” tag, resulting in impact.\n\nNext update by: Monday, November 9, 2026, at 10:30 PM UTC"
+        }
+      ],
+      "serviceName": "Microsoft Teams",
+      "affectedServices": [
+        "Microsoft Teams"
+      ]
+    },
     {
       "id": "MO1532211",
       "title": "Users' Microsoft 365 Apps usage reports may show outdated data in the Microsoft 365 admin center",
@@ -3039,42 +3030,6 @@
       "serviceName": "Power BI",
       "affectedServices": [
         "Power BI"
-      ]
-    },
-    {
-      "id": "IT1506313",
-      "title": "Admin may see status cards displaying \"Unknown\" instead of the expected summary counts in Intune admin center",
-      "startTime": "2026-10-06T23:17:00Z",
-      "endTime": "2026-10-13T21:51:07.893Z",
-      "lastModified": "2026-10-13T21:58:07.393Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Admin may have seen status cards displaying \"Unknown\" instead of the expected summary counts in Intune admin center.",
-      "scopeOfImpact": "This issue might have affected any admin who accessed the Intune admin center from Home, Apps, Devices, and Troubleshooting Blades.\r\n\r\nStart time: Tuesday, October 6, 2026, at 11:17 PM UTC\r\n\r\nEnd time: Tuesday, October 13, 2026, at 9:29 PM UTC",
-      "rootCause": "An incorrectly scoped Microsoft Graph flight changed the response format for batch requests across production. Some Intune UX experiences (Home, Apps, Devices, Troubleshooting) rely on the previous Base64-encoded behavior and couldn't parse the JSON response, resulting in status cards displaying \"Unknown.\"\r\n\r\nNext steps: \n- We're further analyzing the offending misconfigured service update to help us improve our pre-deployment testing and validation processes.\n\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Microsoft Intune",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-10-13T21:58:03.11Z",
-          "postType": "regular",
-          "content": "Title: Admin may see status cards displaying \"Unknown\" instead of the expected summary counts in Intune admin center\r\n\r\nUser impact: Admin may have seen status cards displaying \"Unknown\" instead of the expected summary counts in Intune admin center.\r\n\r\nMore info: Admins were impacted when accessing the Home, Apps, Devices, and Troubleshooting Blades. \n\nAs a workaround, admins could have clicked the \"Unknown\" status, which allowed access to the data.\r\n\r\nFinal status: Following our change reversion process, our internal service telemetry has verified that the impact has been remediated. \r\n\r\nScope of impact: This issue might have affected any admin who accessed the Intune admin center from Home, Apps, Devices, and Troubleshooting Blades.\r\n\r\nStart time: Tuesday, October 6, 2026, at 11:17 PM UTC\r\n\r\nEnd time: Tuesday, October 13, 2026, at 9:29 PM UTC\r\n\r\nRoot cause: An incorrectly scoped Microsoft Graph flight changed the response format for batch requests across production. Some Intune UX experiences (Home, Apps, Devices, Troubleshooting) rely on the previous Base64-encoded behavior and couldn't parse the JSON response, resulting in status cards displaying \"Unknown.\"\r\n\r\nNext steps: \n- We're further analyzing the offending misconfigured service update to help us improve our pre-deployment testing and validation processes.\n\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-10-13T21:00:08.043Z",
-          "postType": "regular",
-          "content": "Title: Admin may see status cards displaying \"Unknown\" instead of the expected summary counts in Intune admin center\r\n\r\nUser impact: Admin may see status cards displaying \"Unknown\" instead of the expected summary counts in Intune admin center.\r\n\r\nMore info: Admins are impacted when accessing the Home, Apps, Devices, and Troubleshooting Blades. \n\nAs a workaround, admins can click the \"Unknown\" status, which will allow access to the data.\n \r\n\r\nCurrent status: We've identified a recent misconfigured service update that is producing unexpected status card displays for admins in the Intune admin center. We're conducting our change reversion process to remove the offending change and to remediate the impact.\r\n\r\nScope of impact: This issue may affect any admin accessing the Intune admin center from Home and Troubleshooting Blades.\n \r\n\r\nRoot cause: An incorrectly scoped Microsoft Graph flight changed the response format for batch requests across production. Some Intune UX experiences (Home, Apps, Devices, Troubleshooting) rely on the previous Base64-encoded behavior and can't parse the JSON response, resulting in status cards displaying \"Unknown.\"\r\n\r\nNext update by: Tuesday, October 13, 2026, at 11:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-10-13T19:27:04.257Z",
-          "postType": "regular",
-          "content": "Title: Admin may see status cards displaying \"Unknown\" instead of the expected summary counts in Intune admin center\r\n\r\nUser impact: Admin may see status cards displaying \"Unknown\" instead of the expected summary counts in Intune admin center.\r\n\r\nMore info: Admins are impacted when accessing the Home and Troubleshooting Blades. \n\nAs a workaround, admins can click the \"Unknown\" status, which will allow access to the data.\n \r\n\r\nCurrent status: We've identified an issue that is preventing expected status cards for admins accessing the Home and Troubleshooting Blades in the Intune admin center. We're analyzing system logging and recent updates to the service, as we isolate the source for this event and determine our next troubleshooting steps for remediating the impact.\r\n\r\nScope of impact: This issue may affect any admin accessing the Intune admin center from Home and Troubleshooting Blades.\n \r\n\r\nNext update by: Tuesday, October 13, 2026, at 9:30 PM UTC"
-        }
-      ],
-      "serviceName": "Microsoft Intune",
-      "affectedServices": [
-        "Microsoft Intune"
       ]
     }
   ]
