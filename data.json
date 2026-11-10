@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-10T23:26:06.713Z",
+  "lastUpdated": "2026-11-10T23:56:20.327Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -648,9 +648,35 @@
     },
     {
       "service": "Microsoft Intune",
-      "status": "serviceOperational",
+      "status": "investigating",
       "id": "Intune",
-      "issues": []
+      "issues": [
+        {
+          "id": "IT1547988",
+          "title": "Users may not be able to check-in or enroll with Microsoft Intune",
+          "startTime": "2026-11-10T23:46:32.067Z",
+          "endTime": null,
+          "lastModified": "2026-11-10T23:47:22.757Z",
+          "status": "investigating",
+          "severity": "advisory",
+          "userImpact": "Users may not be able to check-in or enroll with Microsoft Intune.",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
+          "feature": "Microsoft Intune",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-11-10T23:47:22.757Z",
+              "postType": "regular",
+              "content": "Title: Users may not be able to check-in or enroll with Microsoft Intune\r\n\r\nUser impact: Users may not be able to check-in or enroll with Microsoft Intune.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Intune and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Intune"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft OneDrive",
