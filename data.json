@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-10T17:53:32.647Z",
+  "lastUpdated": "2026-11-10T18:23:46.710Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -326,16 +326,21 @@
           "title": "Admins may not be receiving new Microsoft Copilot low latency adoption reports from the Microsoft 365 admin center",
           "startTime": "2026-11-10T17:03:49.123Z",
           "endTime": null,
-          "lastModified": "2026-11-10T17:19:21.69Z",
+          "lastModified": "2026-11-10T18:07:27.58Z",
           "status": "investigating",
           "severity": "advisory",
           "userImpact": "Admins may not be receiving new Microsoft Copilot low latency adoption reports from the Microsoft 365 admin center.",
-          "scopeOfImpact": "",
-          "rootCause": "",
-          "nextUpdateBy": "",
+          "scopeOfImpact": "Any admin expecting to receive new Microsoft Copilot low latency adoption reports from Monday, November 9, 2026, and onward may be impacted. This information may be updated as our investigation continues.",
+          "rootCause": "A backend data interface dependency is blocking the pipeline that provides the Microsoft Copilot low latency adoption report data to the Microsoft 365 admin center, resulting in impact.",
+          "nextUpdateBy": "Wednesday, November 11, 2026, at 12:00 AM UTC",
           "feature": "Company or User Administration",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-11-10T18:07:27.58Z",
+              "postType": "regular",
+              "content": "Title: Admins may not be receiving new Microsoft Copilot low latency adoption reports from the Microsoft 365 admin center\r\n\r\nUser impact: Admins may not be receiving new Microsoft Copilot low latency adoption reports from the Microsoft 365 admin center.\r\n\r\nMore info: This may impact new Microsoft Copilot low latency adoption reports from Monday, November 9, 2026, onward.\r\n\r\nCurrent status: We've identified that a backend data interface dependency is blocking the pipeline that provides the Microsoft Copilot low latency adoption report data to the Microsoft 365 admin center, resulting in impact. We're considering our options to correct this issue, and we'll provide more details on our fix once we've reached a conclusion.\r\n\r\nScope of impact: Any admin expecting to receive new Microsoft Copilot low latency adoption reports from Monday, November 9, 2026, and onward may be impacted. This information may be updated as our investigation continues.\r\n\r\nRoot cause: A backend data interface dependency is blocking the pipeline that provides the Microsoft Copilot low latency adoption report data to the Microsoft 365 admin center, resulting in impact. \r\n\r\nNext update by: Wednesday, November 11, 2026, at 12:00 AM UTC"
+            },
             {
               "createdAt": "2026-11-10T17:19:21.69Z",
               "postType": "regular",
@@ -386,10 +391,10 @@
           "title": "Users' Microsoft 365 Apps usage reports may show outdated data in the Microsoft 365 admin center",
           "startTime": "2026-10-30T00:00:00Z",
           "endTime": null,
-          "lastModified": "2026-11-09T18:49:33.177Z",
+          "lastModified": "2026-11-10T18:18:37.463Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "userImpact": "Users' Microsoft 365 Apps usage reports may show outdated data in the Microsoft 365 admin center.",
+          "userImpact": "Users' Microsoft 365 Apps usage reports may have shown outdated data in the Microsoft 365 admin center.",
           "scopeOfImpact": "This issue may impact any admin who is attempting to view Microsoft 365 Apps usage reports in the admin center. This information may be updated as our investigation continues.\r\n\r\nStart time: Friday, October 30, 2026, at 12:00 AM UTC",
           "rootCause": "An upstream component of the data processing pipeline has entered an unhealthy state, resulting in delays processing Microsoft 365 Apps data.",
           "nextUpdateBy": "Tuesday, November 10, 2026, at 8:00 PM UTC",
