@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-10T17:23:17.337Z",
+  "lastUpdated": "2026-11-10T17:53:32.647Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -315,6 +315,31 @@
               "createdAt": "2026-08-19T22:38:40.473Z",
               "postType": "regular",
               "content": "Title: Admins can't identify who deleted a Viva Engage community or its Microsoft 365 Group in Microsoft Entra ID audit logs\r\n\r\nUser impact: Admins can't identify who deleted a Viva Engage community or its Microsoft 365 Group in Entra ID audit logs.\r\n\r\nMore info: Impact applies to deletions initiated from both the Viva Engage web experience and the Viva Engage app in Microsoft Teams.\n\nAdmins needing to identify who deleted a specific community or group during the affected period should open a Microsoft support case with the deletion date and group/community details so support can trace the initiating user through service-side logs.\r\n\r\nCurrent status: We've identified an update to our Viva Engage communities that’s preventing admins from identifying users who deleted a Viva Engage community or its connected Microsoft 365 Group in Microsoft Entra ID audit logs. We've developed and are internally validating a fix to remediate the impact. We'll provide an updated timeline for the deployment of our solution and the remediation of the impact once it has become available.\r\n\r\nScope of impact: This issue is preventing all admins from identifying who deleted Viva Engage communities or their connected Microsoft 365 Group in Microsoft Entra ID audit logs.\r\n\r\nRoot cause: A recent update to improve group deletions of Viva Engage communities within Microsoft Teams is resulting in impact. \r\n\r\nNext update by: Wednesday, September 2, 2026, at 11:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 suite"
+          ]
+        },
+        {
+          "id": "MO1547527",
+          "title": "Admins may not be receiving new Microsoft Copilot low latency adoption reports from the Microsoft 365 admin center",
+          "startTime": "2026-11-10T17:03:49.123Z",
+          "endTime": null,
+          "lastModified": "2026-11-10T17:19:21.69Z",
+          "status": "investigating",
+          "severity": "advisory",
+          "userImpact": "Admins may not be receiving new Microsoft Copilot low latency adoption reports from the Microsoft 365 admin center.",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
+          "feature": "Company or User Administration",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-11-10T17:19:21.69Z",
+              "postType": "regular",
+              "content": "Title: Admins may not be receiving new Microsoft Copilot low latency adoption reports from the Microsoft 365 admin center\r\n\r\nUser impact: Admins may not be receiving new Microsoft Copilot low latency adoption reports from the Microsoft 365 admin center.\r\n\r\nMore info: This may impact new Microsoft Copilot low latency adoption reports from Monday, November 9, 2026, onward.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Copilot low latency adoption reports from the Microsoft 365 admin center and checking for impact to your organization. We'll provide an update within 30 minutes."
             }
           ],
           "affectedServices": [
