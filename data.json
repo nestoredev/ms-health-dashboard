@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-11T13:32:47.426Z",
+  "lastUpdated": "2026-11-11T14:02:59.526Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -593,14 +593,14 @@
         {
           "id": "SP1548842",
           "title": "Users are unable to view reporting metrics for Amplify Campaigns in SharePoint Online",
-          "startTime": "2026-11-11T12:07:13.797Z",
+          "startTime": "2026-10-31T10:28:13Z",
           "endTime": null,
-          "lastModified": "2026-11-11T13:09:48.27Z",
+          "lastModified": "2026-11-11T13:44:02.537Z",
           "status": "serviceDegradation",
-          "severity": "advisory",
+          "severity": "incident",
           "userImpact": "Users are unable to view reporting metrics for Amplify Campaigns in SharePoint Online.",
-          "scopeOfImpact": "Impact is specific to users attempting to view reporting metrics for Amplify Campaigns in SharePoint Online.",
-          "rootCause": "",
+          "scopeOfImpact": "Impact is specific to users attempting to view reporting metrics for Amplify Campaigns in SharePoint Online.\r\n\r\nStart time: Saturday, October 31, 2026, at 10:28 AM UTC",
+          "rootCause": "A recent service change is affecting the configuration used to retrieve Viva Amplify campaign analytics data. This is resulting in requests for reporting data failing and preventing the reporting page from displaying metrics.",
           "nextUpdateBy": "Thursday, November 12, 2026, at 11:30 AM UTC",
           "feature": "SharePoint Online all features",
           "isResolved": false,
@@ -608,7 +608,7 @@
             {
               "createdAt": "2026-11-11T13:09:15.91Z",
               "postType": "regular",
-              "content": "Title: Users are unable to view reporting metrics for Amplify Campaigns in SharePoint Online\r\n\r\nUser impact: Users are unable to view reporting metrics for Amplify Campaigns in SharePoint Online.\r\n\r\nMore info: Users can open Amplify Campaigns, but reporting metrics may fail to load. Affected users may receive the following error message:\n\n\"Couldn't load data. Something went wrong and we couldn't get the data to display.\"\r\n\r\nCurrent status: We’re preparing a fix to mitigate impact and are working to expedite its deployment throughout the affected environment. We’ll provide an estimated timeline for completion as soon as one becomes available.\r\n\r\nScope of impact: Impact is specific to users attempting to view reporting metrics for Amplify Campaigns in SharePoint Online.\r\n\r\nNext update by: Thursday, November 12, 2026, at 11:30 AM UTC"
+              "content": "Title: Users are unable to view reporting metrics for Amplify Campaigns in SharePoint Online\r\n\r\nUser impact: Users are unable to view reporting metrics for Amplify Campaigns in SharePoint Online.\r\n\r\nMore info: Users can open Amplify Campaigns, but reporting metrics may fail to load. Affected users may receive the following error message:\n\n\"Couldn't load data. Something went wrong and we couldn't get the data to display.\"\r\n\r\nCurrent status: We’ve identified that a recent service change is affecting the configuration used to retrieve Viva Amplify campaign analytics data. This is resulting in requests for reporting data failing and preventing the reporting page from displaying metrics. We’re preparing a fix to mitigate impact and working to expedite its deployment throughout the affected environment. We’ll provide an estimated timeline for completion as soon as one becomes available.\r\n\r\nScope of impact: Impact is specific to users attempting to view reporting metrics for Amplify Campaigns in SharePoint Online.\r\n\r\nStart time: Saturday, October 31, 2026, at 10:28 AM UTC\r\n\r\nRoot cause: A recent service change is affecting the configuration used to retrieve Viva Amplify campaign analytics data. This is resulting in requests for reporting data failing and preventing the reporting page from displaying metrics.\r\n\r\nNext update by: Thursday, November 12, 2026, at 11:30 AM UTC"
             },
             {
               "createdAt": "2026-11-11T12:12:04.22Z",
