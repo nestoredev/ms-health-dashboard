@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-11T14:33:12.174Z",
+  "lastUpdated": "2026-11-11T15:03:26.395Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -973,9 +973,35 @@
     },
     {
       "service": "Microsoft 365 Copilot Chat",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "CopilotChat",
-      "issues": []
+      "issues": [
+        {
+          "id": "CW1548957",
+          "title": "Some users may encounter errors when submitting queries in Microsoft 365 Copilot Chat",
+          "startTime": "2026-11-11T14:39:26.723Z",
+          "endTime": null,
+          "lastModified": "2026-11-11T14:43:55.39Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may encounter errors when submitting queries in Copilot Chat. ",
+          "scopeOfImpact": "Impact is specific to some users attempting to submit queries in Copilot Chat.",
+          "rootCause": "",
+          "nextUpdateBy": "Wednesday, November 11, 2026, at 5:00 PM UTC",
+          "feature": "General",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-11-11T14:43:55.39Z",
+              "postType": "regular",
+              "content": "Title: Some users may encounter errors when submitting queries in Microsoft 365 Copilot Chat\r\n\r\nUser impact: Users may encounter errors when submitting queries in Copilot Chat. \r\n\r\nMore info: Affected users may see errors such as “Something went wrong” or “I couldn’t help with that” when submitting queries. \r\n\r\nCurrent status: We're reviewing service monitoring telemetry to isolate the root cause and determine our next troubleshooting steps. \r\n\r\nScope of impact: Impact is specific to some users attempting to submit queries in Copilot Chat. \r\n\r\nNext update by: Wednesday, November 11, 2026, at 5:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft 365 Copilot Chat"
+          ]
+        }
+      ]
     }
   ],
   "history": [
