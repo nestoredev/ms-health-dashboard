@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-11T08:30:21.620Z",
+  "lastUpdated": "2026-11-11T09:00:34.534Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -768,16 +768,21 @@
           "title": "Some users may be unable to upload audio files using the Transcribe feature in Word for the web using some browsers",
           "startTime": "2026-11-10T19:40:50.19Z",
           "endTime": null,
-          "lastModified": "2026-11-10T19:53:26.84Z",
+          "lastModified": "2026-11-11T08:40:57.273Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may be unable to upload audio files using the Transcribe feature in Word for the web using some browsers.",
           "scopeOfImpact": "Some users attempting to upload audio files for transcription using the Transcribe feature in Word for the web on Chromium-based browsers may be impacted if their browser window's size is under the minimum threshold.\r\n\r\nStart time: Tuesday, November 10, 2026, at 9:57 AM UTC",
           "rootCause": "A recent update for Chromium-based browsers relating to minimum window size restrictions is causing impact to the Transcribe feature in Word for the web if a users' browser window doesn't match the minimum size threshold.",
-          "nextUpdateBy": "Wednesday, November 11, 2026, at 9:00 AM UTC",
+          "nextUpdateBy": "Friday, November 13, 2026, at 8:00 AM UTC",
           "feature": "Word Online",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-11-11T08:40:57.273Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to upload audio files using the Transcribe feature in Word for the web using some browsers\r\n\r\nUser impact: Users may be unable to upload audio files using the Transcribe feature in Word for the web using some browsers.\r\n\r\nMore info: Selecting the Upload audio button under Dictate > Transcribe in Word for the web may not open the file selection window, potentially preventing users from uploading audio files for transcription. In some cases, the button may be unresponsive without displaying an error message. This only impacts users leveraging Chromium-based browsers such as Edge and Chrome. Users may be able to avoid this issue by adjusting their browser window size.\r\n\r\nCurrent status: We’re continuing to deploy the code change to update the affected Word for the web logic and expect the deployment to complete by our next scheduled update.\r\n\r\nScope of impact: Some users attempting to upload audio files for transcription using the Transcribe feature in Word for the web on Chromium-based browsers may be impacted if their browser window's size is under the minimum threshold.\r\n\r\nStart time: Tuesday, November 10, 2026, at 9:57 AM UTC\r\n\r\nRoot cause: A recent update for Chromium-based browsers relating to minimum window size restrictions is causing impact to the Transcribe feature in Word for the web if a users' browser window doesn't match the minimum size threshold.\r\n\r\nNext update by: Friday, November 13, 2026, at 8:00 AM UTC"
+            },
             {
               "createdAt": "2026-11-10T19:53:26.84Z",
               "postType": "regular",
