@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-11T16:34:09.085Z",
+  "lastUpdated": "2026-11-11T17:04:24.636Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -519,9 +519,40 @@
     },
     {
       "service": "Microsoft Intune",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "Intune",
-      "issues": []
+      "issues": [
+        {
+          "id": "IT1549049",
+          "title": "Some users' Microsoft Intune enrolled Windows devices may experience device check-in delays of up to eight hours",
+          "startTime": "2026-11-11T16:34:41.043Z",
+          "endTime": null,
+          "lastModified": "2026-11-11T16:57:39.23Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users' Microsoft Intune enrolled Windows devices may experience device check-in delays of up to eight hours.",
+          "scopeOfImpact": "Any user with a Microsoft Intune enrolled Windows device may be affected. This information may be updated as our investigation continues.",
+          "rootCause": "",
+          "nextUpdateBy": "Wednesday, November 11, 2026, at 8:00 PM UTC",
+          "feature": "Microsoft Intune",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-11-11T16:57:39.23Z",
+              "postType": "regular",
+              "content": "Title: Some users' Microsoft Intune enrolled Windows devices may experience device check-in delays of up to eight hours\r\n\r\nUser impact: Users' Microsoft Intune enrolled Windows devices may experience device check-in delays of up to eight hours.\r\n\r\nMore info: While we're working to remediate impact, affected users can perform a manual check-in. \r\n\r\nCurrent status: This event is a continuation of the issue previously communicated via IT1547988. \n\nOur monitoring has identified an increase in delays affecting check-ins for Microsoft Intune-enrolled Windows devices. Our investigation indicates that an issue in a recent Windows update is causing initial device check-in attempts to fail, while subsequent automated and manual attempts remain unaffected. We're continuing to analyze the changes introduced in the recent Windows update to isolate the specific root cause and determine an appropriate remediation strategy.\r\n\r\nScope of impact: Any user with a Microsoft Intune enrolled Windows device may be affected. This information may be updated as our investigation continues.\r\n\r\nNext update by: Wednesday, November 11, 2026, at 8:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-11-11T16:37:04.227Z",
+              "postType": "regular",
+              "content": "Title: Some users' Microsoft Intune enrolled Windows devices may experience device check-in delays of up to eight hours\r\n\r\nUser impact: Users' Microsoft Intune enrolled Windows devices may experience device check-in delays of up to eight hours.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Intune and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Intune"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft OneDrive",
@@ -843,19 +874,24 @@
       "issues": [
         {
           "id": "CW1548957",
-          "title": "Some users may encounter errors when submitting queries in Microsoft 365 Copilot Chat",
+          "title": "Some users may intermittently receive no response when submitting queries in Microsoft 365 Copilot Chat",
           "startTime": "2026-11-11T14:39:26Z",
           "endTime": null,
-          "lastModified": "2026-11-11T15:38:30.463Z",
+          "lastModified": "2026-11-11T16:52:29.003Z",
           "status": "serviceDegradation",
           "severity": "incident",
-          "userImpact": "Users may encounter errors when submitting queries in Copilot Chat. ",
-          "scopeOfImpact": "Impact is specific to some users attempting to submit queries in Copilot Chat.",
+          "userImpact": "Users may intermittently receive no response when submitting queries in Copilot Chat.",
+          "scopeOfImpact": "Some users located in West Europe that are attempting to submit queries to Copilot Chat are affected.\r\n\r\nStart time: Wednesday, November 11, 2026, at 9:00 AM UTC",
           "rootCause": "",
-          "nextUpdateBy": "Wednesday, November 11, 2026, at 5:00 PM UTC",
+          "nextUpdateBy": "Wednesday, November 11, 2026, at 7:00 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-11-11T16:52:29.003Z",
+              "postType": "regular",
+              "content": "Title: Some users may intermittently receive no response when submitting queries in Microsoft 365 Copilot Chat\r\n\r\nUser impact: Users may intermittently receive no response when submitting queries in Copilot Chat.\r\n\r\nMore info: Affected users may see errors such as “Something went wrong” or “I couldn’t help with that” when submitting queries. \r\n\r\nCurrent status: We've identified an increase in \"499\" error codes coming from the portion of service infrastructure responsible for facilitating Copilot Chat query responses, which occur during the request flow that communicates queries to that infrastructure. Our initial review suggests that the affected infrastructure isn't handling the request traffic at optimal levels of efficiency. Another theory suggests that the request traffic may be routing incorrectly. While we continue to investigate the root cause, we're observing that the error rate is decreasing and the service is self-recovering. We'll continue to monitor our service health telemetry while we determine how to expedite the recovery.\r\n\r\nScope of impact: Some users located in West Europe that are attempting to submit queries to Copilot Chat are affected.\r\n\r\nStart time: Wednesday, November 11, 2026, at 9:00 AM UTC\r\n\r\nNext update by: Wednesday, November 11, 2026, at 7:00 PM UTC"
+            },
             {
               "createdAt": "2026-11-11T14:43:55.39Z",
               "postType": "regular",
