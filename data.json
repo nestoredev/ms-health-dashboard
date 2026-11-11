@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-11T19:35:39.749Z",
+  "lastUpdated": "2026-11-11T20:05:55.966Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -527,16 +527,21 @@
           "title": "Some users' Microsoft Intune enrolled Windows devices may experience device check-in delays of up to eight hours",
           "startTime": "2026-11-11T16:34:41.043Z",
           "endTime": null,
-          "lastModified": "2026-11-11T16:58:46.007Z",
+          "lastModified": "2026-11-11T19:48:20.347Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users' Microsoft Intune enrolled Windows devices may experience device check-in delays of up to eight hours.",
           "scopeOfImpact": "Any user with a Microsoft Intune enrolled Windows device may be affected. This information may be updated as our investigation continues.",
-          "rootCause": "",
-          "nextUpdateBy": "Wednesday, November 11, 2026, at 8:00 PM UTC",
+          "rootCause": "A recent Windows update contains a code issue affecting Intune's ability to perform an initial check-in, resulting in impact.",
+          "nextUpdateBy": "Thursday, November 12, 2026, at 2:30 AM UTC",
           "feature": "Microsoft Intune",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-11-11T19:48:20.347Z",
+              "postType": "regular",
+              "content": "Title: Some users' Microsoft Intune enrolled Windows devices may experience device check-in delays of up to eight hours\r\n\r\nUser impact: Users' Microsoft Intune enrolled Windows devices may experience device check-in delays of up to eight hours.\r\n\r\nMore info: While we're working to remediate impact, affected users can perform a manual check-in. \r\n\r\nCurrent status: We've confirmed that a component introduced in a recent Windows update is causing the issue and are developing a fix. We'll provide an estimated release timeline once one is available.\r\n\r\nScope of impact: Any user with a Microsoft Intune enrolled Windows device may be affected. This information may be updated as our investigation continues.\r\n\r\nRoot cause: A recent Windows update contains a code issue affecting Intune's ability to perform an initial check-in, resulting in impact. \r\n\r\nNext update by: Thursday, November 12, 2026, at 2:30 AM UTC"
+            },
             {
               "createdAt": "2026-11-11T16:57:39.23Z",
               "postType": "regular",
@@ -557,20 +562,20 @@
           "title": "Users may experience delays installing Volume Purchase Program (VPP) apps in Microsoft Intune for iOS and Mac",
           "startTime": "2026-11-11T18:57:04.257Z",
           "endTime": null,
-          "lastModified": "2026-11-11T19:25:00.403Z",
+          "lastModified": "2026-11-11T19:54:21.717Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may experience delays installing VPP apps in Microsoft Intune for iOS and Mac.",
-          "scopeOfImpact": "This event may impact ay user installing VPP apps in Microsoft Intune for iOS and Mac. This information may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, November 11, 2026, at 8:00 AM UTC",
+          "scopeOfImpact": "This event may impact ay user installing VPP apps in Microsoft Intune for iOS and Mac. This information may be updated as our investigation continues.\n\nStart time: Wednesday, November 11, 2026, at 8:00 AM UTC",
           "rootCause": "A recent third-party change is resulting in this impact.",
-          "nextUpdateBy": "Wednesday, November 11, 2026, at 8:30 PM UTC",
+          "nextUpdateBy": "Thursday, November 12, 2026, at 8:30 PM UTC",
           "feature": "Microsoft Intune",
           "isResolved": false,
           "posts": [
             {
               "createdAt": "2026-11-11T19:25:00.403Z",
               "postType": "regular",
-              "content": "Title: Users may experience delays installing Volume Purchase Program (VPP) apps in Microsoft Intune for iOS and Mac\r\n\r\nUser impact: Users may experience delays installing VPP apps in Microsoft Intune for iOS and Mac.\r\n\r\nMore info: Users may see delays in installing VPP apps of up to eight hours.\r\n\r\nCurrent status: We've isolated a recent third-party change, which is resulting in this impact. We're working closely with the third-party to expedite a resolution and will provide an updated remediation timeline as soon as one becomes available.\r\n\r\nScope of impact: This event may impact ay user installing VPP apps in Microsoft Intune for iOS and Mac. This information may be updated as our investigation continues.\r\n\r\nStart time: Wednesday, November 11, 2026, at 8:00 AM UTC\r\n\r\nRoot cause: A recent third-party change is resulting in this impact.\r\n\r\nNext update by: Wednesday, November 11, 2026, at 8:30 PM UTC"
+              "content": "Title: Users may experience delays installing Volume Purchase Program (VPP) apps in Microsoft Intune for iOS and Mac\n\nUser impact: Users may experience delays installing VPP apps in Microsoft Intune for iOS and Mac.\n\nMore info: Users may see delays in installing VPP apps of up to eight hours.\n\nCurrent status: We've isolated a recent third-party change, which is resulting in this impact. We're working closely with the third-party to expedite a resolution and will provide an updated remediation timeline as soon as one becomes available.\n\nScope of impact: This event may impact ay user installing VPP apps in Microsoft Intune for iOS and Mac. This information may be updated as our investigation continues.\n\nStart time: Wednesday, November 11, 2026, at 8:00 AM UTC\n\nRoot cause: A recent third-party change is resulting in this impact.\n\nNext update by: Thursday, November 12, 2026, at 8:30 PM UTC"
             },
             {
               "createdAt": "2026-11-11T18:57:55.26Z",
