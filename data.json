@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-12T21:18:04.169Z",
+  "lastUpdated": "2026-11-12T21:48:18.472Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -101,20 +101,25 @@
           "title": "Users may be unable to connect to multiple Microsoft 365 services",
           "startTime": "2026-11-12T18:26:10.493Z",
           "endTime": null,
-          "lastModified": "2026-11-12T20:57:05.867Z",
+          "lastModified": "2026-11-12T21:31:54.52Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to connect to multiple Microsoft 365 services. ",
-          "scopeOfImpact": "This issue may affect users attempting to access the affected Microsoft 365 services.",
+          "scopeOfImpact": "",
           "rootCause": "",
           "nextUpdateBy": "Thursday, November 12, 2026, at 10:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
             {
+              "createdAt": "2026-11-12T21:31:54.52Z",
+              "postType": "quick",
+              "content": "We're continuing to work through restarting and validating the affected servers to safely return them to service, and we're exploring opportunities to expedite this process. In parallel, we're assessing whether reverting the small number of recent configuration updates we identified could help accelerate recovery.\n\nNext update by: Thursday, November 12, 2026, at 10:30 PM UTC\n\nThis quick update is designed to give the latest information on this issue."
+            },
+            {
               "createdAt": "2026-11-12T20:57:05.867Z",
               "postType": "regular",
-              "content": "Title: Users may be unable to connect to multiple Microsoft 365 services\r\n\r\nUser impact: Users may be unable to connect to multiple Microsoft 365 services. \r\n\r\nMore info: More info: Potentially impacted services include:\n- Exchange Online\n- Microsoft Teams\n- SharePoint Online\n- Microsoft Copilot 365\n- Microsoft Defender XDR\n- Microsoft Planner\n- Microsoft To Do\n- Microsoft Purview: Multiple Purview services including Authorization, Auto Labelling, Data Loss Prevention (DLP), Communication Compliance, and Data Classification are impacted.\r\n\r\nCurrent status: We've validated an alternative health check method on a subset of affected infrastructure, which allowed the servers in that subset to successfully return to service, and we're now applying this change more broadly. We're also preparing an automated recovery process to continually detect and restart unresponsive servers, to help keep them in service while this change progresses. Additionally, our review of recent changes has identified a small number of configuration updates that we're investigating as potential contributors to the issue.\r\n\r\nScope of impact: This issue may affect users attempting to access the affected Microsoft 365 services.\r\n\r\nNext update by: Thursday, November 12, 2026, at 10:30 PM UTC"
+              "content": "Title: Users may be unable to connect to multiple Microsoft 365 services\n\nUser impact: Users may be unable to connect to multiple Microsoft 365 services. \n\nMore info: More info: Potentially impacted services include:\n- Exchange Online\n- Microsoft Teams\n- SharePoint Online\n- Microsoft Copilot 365\n- Microsoft Defender XDR\n- Microsoft Planner\n- Microsoft To Do\n- Microsoft Intune\n- Microsoft Defender for Office 365\n- Microsoft Purview: Multiple Purview services including Authorization, Auto Labelling, Data Loss Prevention (DLP), Communication Compliance, and Data Classification are impacted.\n- Power BI: All users may intermittently be unable to export reports with MIP sensitivity labels to PDF in Power BI.\n\nCurrent status: We've validated an alternative health check method on a subset of affected infrastructure, which allowed the servers in that subset to successfully return to service, and we're now applying this change more broadly. We're also preparing an automated recovery process to continually detect and restart unresponsive servers, to help keep them in service while this change progresses. Additionally, our review of recent changes has identified a small number of configuration updates that we're investigating as potential contributors to the issue.\n\nScope of impact: This issue may affect users attempting to access the affected Microsoft 365 services.\n\nNext update by: Thursday, November 12, 2026, at 10:30 PM UTC"
             },
             {
               "createdAt": "2026-11-12T20:38:42.34Z",
@@ -300,20 +305,25 @@
           "title": "Users may be unable to connect to multiple Microsoft 365 services",
           "startTime": "2026-11-12T18:26:10.493Z",
           "endTime": null,
-          "lastModified": "2026-11-12T20:57:05.867Z",
+          "lastModified": "2026-11-12T21:31:54.52Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to connect to multiple Microsoft 365 services. ",
-          "scopeOfImpact": "This issue may affect users attempting to access the affected Microsoft 365 services.",
+          "scopeOfImpact": "",
           "rootCause": "",
           "nextUpdateBy": "Thursday, November 12, 2026, at 10:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
             {
+              "createdAt": "2026-11-12T21:31:54.52Z",
+              "postType": "quick",
+              "content": "We're continuing to work through restarting and validating the affected servers to safely return them to service, and we're exploring opportunities to expedite this process. In parallel, we're assessing whether reverting the small number of recent configuration updates we identified could help accelerate recovery.\n\nNext update by: Thursday, November 12, 2026, at 10:30 PM UTC\n\nThis quick update is designed to give the latest information on this issue."
+            },
+            {
               "createdAt": "2026-11-12T20:57:05.867Z",
               "postType": "regular",
-              "content": "Title: Users may be unable to connect to multiple Microsoft 365 services\r\n\r\nUser impact: Users may be unable to connect to multiple Microsoft 365 services. \r\n\r\nMore info: More info: Potentially impacted services include:\n- Exchange Online\n- Microsoft Teams\n- SharePoint Online\n- Microsoft Copilot 365\n- Microsoft Defender XDR\n- Microsoft Planner\n- Microsoft To Do\n- Microsoft Purview: Multiple Purview services including Authorization, Auto Labelling, Data Loss Prevention (DLP), Communication Compliance, and Data Classification are impacted.\r\n\r\nCurrent status: We've validated an alternative health check method on a subset of affected infrastructure, which allowed the servers in that subset to successfully return to service, and we're now applying this change more broadly. We're also preparing an automated recovery process to continually detect and restart unresponsive servers, to help keep them in service while this change progresses. Additionally, our review of recent changes has identified a small number of configuration updates that we're investigating as potential contributors to the issue.\r\n\r\nScope of impact: This issue may affect users attempting to access the affected Microsoft 365 services.\r\n\r\nNext update by: Thursday, November 12, 2026, at 10:30 PM UTC"
+              "content": "Title: Users may be unable to connect to multiple Microsoft 365 services\n\nUser impact: Users may be unable to connect to multiple Microsoft 365 services. \n\nMore info: More info: Potentially impacted services include:\n- Exchange Online\n- Microsoft Teams\n- SharePoint Online\n- Microsoft Copilot 365\n- Microsoft Defender XDR\n- Microsoft Planner\n- Microsoft To Do\n- Microsoft Intune\n- Microsoft Defender for Office 365\n- Microsoft Purview: Multiple Purview services including Authorization, Auto Labelling, Data Loss Prevention (DLP), Communication Compliance, and Data Classification are impacted.\n- Power BI: All users may intermittently be unable to export reports with MIP sensitivity labels to PDF in Power BI.\n\nCurrent status: We've validated an alternative health check method on a subset of affected infrastructure, which allowed the servers in that subset to successfully return to service, and we're now applying this change more broadly. We're also preparing an automated recovery process to continually detect and restart unresponsive servers, to help keep them in service while this change progresses. Additionally, our review of recent changes has identified a small number of configuration updates that we're investigating as potential contributors to the issue.\n\nScope of impact: This issue may affect users attempting to access the affected Microsoft 365 services.\n\nNext update by: Thursday, November 12, 2026, at 10:30 PM UTC"
             },
             {
               "createdAt": "2026-11-12T20:38:42.34Z",
@@ -708,20 +718,25 @@
           "title": "Users may be unable to connect to multiple Microsoft 365 services",
           "startTime": "2026-11-12T18:26:10.493Z",
           "endTime": null,
-          "lastModified": "2026-11-12T20:57:05.867Z",
+          "lastModified": "2026-11-12T21:31:54.52Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to connect to multiple Microsoft 365 services. ",
-          "scopeOfImpact": "This issue may affect users attempting to access the affected Microsoft 365 services.",
+          "scopeOfImpact": "",
           "rootCause": "",
           "nextUpdateBy": "Thursday, November 12, 2026, at 10:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
             {
+              "createdAt": "2026-11-12T21:31:54.52Z",
+              "postType": "quick",
+              "content": "We're continuing to work through restarting and validating the affected servers to safely return them to service, and we're exploring opportunities to expedite this process. In parallel, we're assessing whether reverting the small number of recent configuration updates we identified could help accelerate recovery.\n\nNext update by: Thursday, November 12, 2026, at 10:30 PM UTC\n\nThis quick update is designed to give the latest information on this issue."
+            },
+            {
               "createdAt": "2026-11-12T20:57:05.867Z",
               "postType": "regular",
-              "content": "Title: Users may be unable to connect to multiple Microsoft 365 services\r\n\r\nUser impact: Users may be unable to connect to multiple Microsoft 365 services. \r\n\r\nMore info: More info: Potentially impacted services include:\n- Exchange Online\n- Microsoft Teams\n- SharePoint Online\n- Microsoft Copilot 365\n- Microsoft Defender XDR\n- Microsoft Planner\n- Microsoft To Do\n- Microsoft Purview: Multiple Purview services including Authorization, Auto Labelling, Data Loss Prevention (DLP), Communication Compliance, and Data Classification are impacted.\r\n\r\nCurrent status: We've validated an alternative health check method on a subset of affected infrastructure, which allowed the servers in that subset to successfully return to service, and we're now applying this change more broadly. We're also preparing an automated recovery process to continually detect and restart unresponsive servers, to help keep them in service while this change progresses. Additionally, our review of recent changes has identified a small number of configuration updates that we're investigating as potential contributors to the issue.\r\n\r\nScope of impact: This issue may affect users attempting to access the affected Microsoft 365 services.\r\n\r\nNext update by: Thursday, November 12, 2026, at 10:30 PM UTC"
+              "content": "Title: Users may be unable to connect to multiple Microsoft 365 services\n\nUser impact: Users may be unable to connect to multiple Microsoft 365 services. \n\nMore info: More info: Potentially impacted services include:\n- Exchange Online\n- Microsoft Teams\n- SharePoint Online\n- Microsoft Copilot 365\n- Microsoft Defender XDR\n- Microsoft Planner\n- Microsoft To Do\n- Microsoft Intune\n- Microsoft Defender for Office 365\n- Microsoft Purview: Multiple Purview services including Authorization, Auto Labelling, Data Loss Prevention (DLP), Communication Compliance, and Data Classification are impacted.\n- Power BI: All users may intermittently be unable to export reports with MIP sensitivity labels to PDF in Power BI.\n\nCurrent status: We've validated an alternative health check method on a subset of affected infrastructure, which allowed the servers in that subset to successfully return to service, and we're now applying this change more broadly. We're also preparing an automated recovery process to continually detect and restart unresponsive servers, to help keep them in service while this change progresses. Additionally, our review of recent changes has identified a small number of configuration updates that we're investigating as potential contributors to the issue.\n\nScope of impact: This issue may affect users attempting to access the affected Microsoft 365 services.\n\nNext update by: Thursday, November 12, 2026, at 10:30 PM UTC"
             },
             {
               "createdAt": "2026-11-12T20:38:42.34Z",
@@ -774,7 +789,7 @@
           "title": "Agents may be unable to access Dynamics 365 Contact Center ",
           "startTime": "2026-11-12T17:00:00Z",
           "endTime": null,
-          "lastModified": "2026-11-12T20:45:58.62Z",
+          "lastModified": "2026-11-12T21:14:32.473Z",
           "status": "serviceInterruption",
           "severity": "incident",
           "userImpact": "Agents may be unable to access Dynamics 365 Contact Center.",
@@ -784,6 +799,11 @@
           "feature": "Sign In/Authentication",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-11-12T21:14:32.473Z",
+              "postType": "regular",
+              "content": "Title: Agents may be unable to access Dynamics 365 Contact Center \n\nUser impact: Agents may be unable to access Dynamics 365 Contact Center.\n\nMore info: Agents may be unable to access the Dynamics Contact Center, preventing agents from sending or receiving messages or voice calls. Agents who can access the Contact Center may experience degraded voice and messaging functionality. Functionality and access may improve as the failover completes. \n\nCurrent Status: Following our service diagnostic review, we are performing a failover of the impacted database infrastructure. We are monitoring service telemetry for recovery.\n\nNext Update: Thursday, November 12, 2026, at 11:00 PM UTC"
+            },
             {
               "createdAt": "2026-11-12T20:25:29.34Z",
               "postType": "regular",
@@ -888,20 +908,25 @@
           "title": "Users may be unable to connect to multiple Microsoft 365 services",
           "startTime": "2026-11-12T18:26:10.493Z",
           "endTime": null,
-          "lastModified": "2026-11-12T20:57:05.867Z",
+          "lastModified": "2026-11-12T21:31:54.52Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to connect to multiple Microsoft 365 services. ",
-          "scopeOfImpact": "This issue may affect users attempting to access the affected Microsoft 365 services.",
+          "scopeOfImpact": "",
           "rootCause": "",
           "nextUpdateBy": "Thursday, November 12, 2026, at 10:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
             {
+              "createdAt": "2026-11-12T21:31:54.52Z",
+              "postType": "quick",
+              "content": "We're continuing to work through restarting and validating the affected servers to safely return them to service, and we're exploring opportunities to expedite this process. In parallel, we're assessing whether reverting the small number of recent configuration updates we identified could help accelerate recovery.\n\nNext update by: Thursday, November 12, 2026, at 10:30 PM UTC\n\nThis quick update is designed to give the latest information on this issue."
+            },
+            {
               "createdAt": "2026-11-12T20:57:05.867Z",
               "postType": "regular",
-              "content": "Title: Users may be unable to connect to multiple Microsoft 365 services\r\n\r\nUser impact: Users may be unable to connect to multiple Microsoft 365 services. \r\n\r\nMore info: More info: Potentially impacted services include:\n- Exchange Online\n- Microsoft Teams\n- SharePoint Online\n- Microsoft Copilot 365\n- Microsoft Defender XDR\n- Microsoft Planner\n- Microsoft To Do\n- Microsoft Purview: Multiple Purview services including Authorization, Auto Labelling, Data Loss Prevention (DLP), Communication Compliance, and Data Classification are impacted.\r\n\r\nCurrent status: We've validated an alternative health check method on a subset of affected infrastructure, which allowed the servers in that subset to successfully return to service, and we're now applying this change more broadly. We're also preparing an automated recovery process to continually detect and restart unresponsive servers, to help keep them in service while this change progresses. Additionally, our review of recent changes has identified a small number of configuration updates that we're investigating as potential contributors to the issue.\r\n\r\nScope of impact: This issue may affect users attempting to access the affected Microsoft 365 services.\r\n\r\nNext update by: Thursday, November 12, 2026, at 10:30 PM UTC"
+              "content": "Title: Users may be unable to connect to multiple Microsoft 365 services\n\nUser impact: Users may be unable to connect to multiple Microsoft 365 services. \n\nMore info: More info: Potentially impacted services include:\n- Exchange Online\n- Microsoft Teams\n- SharePoint Online\n- Microsoft Copilot 365\n- Microsoft Defender XDR\n- Microsoft Planner\n- Microsoft To Do\n- Microsoft Intune\n- Microsoft Defender for Office 365\n- Microsoft Purview: Multiple Purview services including Authorization, Auto Labelling, Data Loss Prevention (DLP), Communication Compliance, and Data Classification are impacted.\n- Power BI: All users may intermittently be unable to export reports with MIP sensitivity labels to PDF in Power BI.\n\nCurrent status: We've validated an alternative health check method on a subset of affected infrastructure, which allowed the servers in that subset to successfully return to service, and we're now applying this change more broadly. We're also preparing an automated recovery process to continually detect and restart unresponsive servers, to help keep them in service while this change progresses. Additionally, our review of recent changes has identified a small number of configuration updates that we're investigating as potential contributors to the issue.\n\nScope of impact: This issue may affect users attempting to access the affected Microsoft 365 services.\n\nNext update by: Thursday, November 12, 2026, at 10:30 PM UTC"
             },
             {
               "createdAt": "2026-11-12T20:38:42.34Z",
@@ -1160,20 +1185,25 @@
           "title": "Users may be unable to connect to multiple Microsoft 365 services",
           "startTime": "2026-11-12T18:26:10.493Z",
           "endTime": null,
-          "lastModified": "2026-11-12T20:57:05.867Z",
+          "lastModified": "2026-11-12T21:31:54.52Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to connect to multiple Microsoft 365 services. ",
-          "scopeOfImpact": "This issue may affect users attempting to access the affected Microsoft 365 services.",
+          "scopeOfImpact": "",
           "rootCause": "",
           "nextUpdateBy": "Thursday, November 12, 2026, at 10:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
             {
+              "createdAt": "2026-11-12T21:31:54.52Z",
+              "postType": "quick",
+              "content": "We're continuing to work through restarting and validating the affected servers to safely return them to service, and we're exploring opportunities to expedite this process. In parallel, we're assessing whether reverting the small number of recent configuration updates we identified could help accelerate recovery.\n\nNext update by: Thursday, November 12, 2026, at 10:30 PM UTC\n\nThis quick update is designed to give the latest information on this issue."
+            },
+            {
               "createdAt": "2026-11-12T20:57:05.867Z",
               "postType": "regular",
-              "content": "Title: Users may be unable to connect to multiple Microsoft 365 services\r\n\r\nUser impact: Users may be unable to connect to multiple Microsoft 365 services. \r\n\r\nMore info: More info: Potentially impacted services include:\n- Exchange Online\n- Microsoft Teams\n- SharePoint Online\n- Microsoft Copilot 365\n- Microsoft Defender XDR\n- Microsoft Planner\n- Microsoft To Do\n- Microsoft Purview: Multiple Purview services including Authorization, Auto Labelling, Data Loss Prevention (DLP), Communication Compliance, and Data Classification are impacted.\r\n\r\nCurrent status: We've validated an alternative health check method on a subset of affected infrastructure, which allowed the servers in that subset to successfully return to service, and we're now applying this change more broadly. We're also preparing an automated recovery process to continually detect and restart unresponsive servers, to help keep them in service while this change progresses. Additionally, our review of recent changes has identified a small number of configuration updates that we're investigating as potential contributors to the issue.\r\n\r\nScope of impact: This issue may affect users attempting to access the affected Microsoft 365 services.\r\n\r\nNext update by: Thursday, November 12, 2026, at 10:30 PM UTC"
+              "content": "Title: Users may be unable to connect to multiple Microsoft 365 services\n\nUser impact: Users may be unable to connect to multiple Microsoft 365 services. \n\nMore info: More info: Potentially impacted services include:\n- Exchange Online\n- Microsoft Teams\n- SharePoint Online\n- Microsoft Copilot 365\n- Microsoft Defender XDR\n- Microsoft Planner\n- Microsoft To Do\n- Microsoft Intune\n- Microsoft Defender for Office 365\n- Microsoft Purview: Multiple Purview services including Authorization, Auto Labelling, Data Loss Prevention (DLP), Communication Compliance, and Data Classification are impacted.\n- Power BI: All users may intermittently be unable to export reports with MIP sensitivity labels to PDF in Power BI.\n\nCurrent status: We've validated an alternative health check method on a subset of affected infrastructure, which allowed the servers in that subset to successfully return to service, and we're now applying this change more broadly. We're also preparing an automated recovery process to continually detect and restart unresponsive servers, to help keep them in service while this change progresses. Additionally, our review of recent changes has identified a small number of configuration updates that we're investigating as potential contributors to the issue.\n\nScope of impact: This issue may affect users attempting to access the affected Microsoft 365 services.\n\nNext update by: Thursday, November 12, 2026, at 10:30 PM UTC"
             },
             {
               "createdAt": "2026-11-12T20:38:42.34Z",
@@ -1244,7 +1274,7 @@
           "title": "Users may experience sandbox plug-in execution failures across multiple Dynamics 365 apps",
           "startTime": "2026-11-12T17:36:00Z",
           "endTime": null,
-          "lastModified": "2026-11-12T20:57:13.317Z",
+          "lastModified": "2026-11-12T21:23:54.2Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may experience sandbox plug-in execution failures across multiple Dynamics 365 apps.",
@@ -1254,6 +1284,11 @@
           "feature": "Other",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-11-12T21:23:54.2Z",
+              "postType": "regular",
+              "content": "Title: Users may experience sandbox plug-in execution failures across multiple Dynamics 365 apps\n\nUser impact: Users may experience sandbox plug-in execution failures across multiple Dynamics 365 apps.\n\nMore Info: Dynamics 365 apps features that depend on sandbox plug-ins are impacted, including create, update, retrieve, and delete operations on Customer Service tables.\n\nCurrent Status: After our investigation, we identified a service dependency responsible for Dataverse plug-in execution is experiencing connectivity failures. We have performed mitigation actions on the affected service dependency infrastructure and are beginning to observe recovery.\n\nNext Update: Thursday, November 12, 2026, at 10:30 PM UTC"
+            },
             {
               "createdAt": "2026-11-12T20:55:41.01Z",
               "postType": "regular",
