@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-12T19:47:20.294Z",
+  "lastUpdated": "2026-11-12T20:17:34.250Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -101,16 +101,26 @@
           "title": "Users may be unable to connect to multiple Microsoft 365 services",
           "startTime": "2026-11-12T18:26:10.493Z",
           "endTime": null,
-          "lastModified": "2026-11-12T19:30:15.677Z",
+          "lastModified": "2026-11-12T20:10:56.68Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to connect to multiple Microsoft 365 services. ",
           "scopeOfImpact": "This issue may affect users attempting to access the affected Microsoft 365 services.",
           "rootCause": "",
-          "nextUpdateBy": "Thursday, November 12, 2026, at 10:00 PM UTC",
+          "nextUpdateBy": "Thursday, November 12, 2026, at 9:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-11-12T19:58:41.983Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to connect to multiple Microsoft 365 services\n\nUser impact: Users may be unable to connect to multiple Microsoft 365 services. \n\nMore info: Potentially impacted services include:\n- Exchange Online\n- Microsoft Teams\n- SharePoint Online\n- Microsoft Copilot 365\n- Microsoft Defender XDR\n- Microsoft Planner\n- Microsoft To Do\n\nCurrent status: While we haven't identified any recent changes that correlate with the start of impact, our investigation indicates the failed health checks may originate from a specific component on the affected servers that's responsible for processing them. We're deploying a targeted change to bypass this component on a subset of servers to validate whether this restores availability, and we've taken steps to prevent additional servers from being removed from service while we work to return the affected servers to service. We're also investigating why affected servers are experiencing elevated processor usage while handling requests.\n\nScope of impact: This issue may affect users attempting to access the affected Microsoft 365 services.\n\nNext update by: Thursday, November 12, 2026, at 9:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-11-12T19:43:19.133Z",
+              "postType": "quick",
+              "content": "We've identified that affected servers are failing automated health checks, which is causing them to become unavailable, and this may be related to a recent change to a component involved in processing those checks. We're testing a configuration change on a subset of affected infrastructure to address this and, if successful, will apply it more broadly. In parallel, we've initiated a restart of all affected servers and are validating whether they're successfully returning to service.\n\nThis quick update is designed to give the latest information on this issue.\n\nNext update by: Thursday, November 12, 2026, at 10:00 PM UTC"
+            },
             {
               "createdAt": "2026-11-12T19:30:15.677Z",
               "postType": "regular",
@@ -280,16 +290,26 @@
           "title": "Users may be unable to connect to multiple Microsoft 365 services",
           "startTime": "2026-11-12T18:26:10.493Z",
           "endTime": null,
-          "lastModified": "2026-11-12T19:30:15.677Z",
+          "lastModified": "2026-11-12T20:10:56.68Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to connect to multiple Microsoft 365 services. ",
           "scopeOfImpact": "This issue may affect users attempting to access the affected Microsoft 365 services.",
           "rootCause": "",
-          "nextUpdateBy": "Thursday, November 12, 2026, at 10:00 PM UTC",
+          "nextUpdateBy": "Thursday, November 12, 2026, at 9:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-11-12T19:58:41.983Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to connect to multiple Microsoft 365 services\n\nUser impact: Users may be unable to connect to multiple Microsoft 365 services. \n\nMore info: Potentially impacted services include:\n- Exchange Online\n- Microsoft Teams\n- SharePoint Online\n- Microsoft Copilot 365\n- Microsoft Defender XDR\n- Microsoft Planner\n- Microsoft To Do\n\nCurrent status: While we haven't identified any recent changes that correlate with the start of impact, our investigation indicates the failed health checks may originate from a specific component on the affected servers that's responsible for processing them. We're deploying a targeted change to bypass this component on a subset of servers to validate whether this restores availability, and we've taken steps to prevent additional servers from being removed from service while we work to return the affected servers to service. We're also investigating why affected servers are experiencing elevated processor usage while handling requests.\n\nScope of impact: This issue may affect users attempting to access the affected Microsoft 365 services.\n\nNext update by: Thursday, November 12, 2026, at 9:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-11-12T19:43:19.133Z",
+              "postType": "quick",
+              "content": "We've identified that affected servers are failing automated health checks, which is causing them to become unavailable, and this may be related to a recent change to a component involved in processing those checks. We're testing a configuration change on a subset of affected infrastructure to address this and, if successful, will apply it more broadly. In parallel, we've initiated a restart of all affected servers and are validating whether they're successfully returning to service.\n\nThis quick update is designed to give the latest information on this issue.\n\nNext update by: Thursday, November 12, 2026, at 10:00 PM UTC"
+            },
             {
               "createdAt": "2026-11-12T19:30:15.677Z",
               "postType": "regular",
@@ -668,16 +688,26 @@
           "title": "Users may be unable to connect to multiple Microsoft 365 services",
           "startTime": "2026-11-12T18:26:10.493Z",
           "endTime": null,
-          "lastModified": "2026-11-12T19:30:15.677Z",
+          "lastModified": "2026-11-12T20:10:56.68Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to connect to multiple Microsoft 365 services. ",
           "scopeOfImpact": "This issue may affect users attempting to access the affected Microsoft 365 services.",
           "rootCause": "",
-          "nextUpdateBy": "Thursday, November 12, 2026, at 10:00 PM UTC",
+          "nextUpdateBy": "Thursday, November 12, 2026, at 9:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-11-12T19:58:41.983Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to connect to multiple Microsoft 365 services\n\nUser impact: Users may be unable to connect to multiple Microsoft 365 services. \n\nMore info: Potentially impacted services include:\n- Exchange Online\n- Microsoft Teams\n- SharePoint Online\n- Microsoft Copilot 365\n- Microsoft Defender XDR\n- Microsoft Planner\n- Microsoft To Do\n\nCurrent status: While we haven't identified any recent changes that correlate with the start of impact, our investigation indicates the failed health checks may originate from a specific component on the affected servers that's responsible for processing them. We're deploying a targeted change to bypass this component on a subset of servers to validate whether this restores availability, and we've taken steps to prevent additional servers from being removed from service while we work to return the affected servers to service. We're also investigating why affected servers are experiencing elevated processor usage while handling requests.\n\nScope of impact: This issue may affect users attempting to access the affected Microsoft 365 services.\n\nNext update by: Thursday, November 12, 2026, at 9:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-11-12T19:43:19.133Z",
+              "postType": "quick",
+              "content": "We've identified that affected servers are failing automated health checks, which is causing them to become unavailable, and this may be related to a recent change to a component involved in processing those checks. We're testing a configuration change on a subset of affected infrastructure to address this and, if successful, will apply it more broadly. In parallel, we've initiated a restart of all affected servers and are validating whether they're successfully returning to service.\n\nThis quick update is designed to give the latest information on this issue.\n\nNext update by: Thursday, November 12, 2026, at 10:00 PM UTC"
+            },
             {
               "createdAt": "2026-11-12T19:30:15.677Z",
               "postType": "regular",
@@ -706,9 +736,35 @@
     },
     {
       "service": "Dynamics 365 Apps",
-      "status": "serviceOperational",
+      "status": "investigating",
       "id": "DynamicsCRM",
-      "issues": []
+      "issues": [
+        {
+          "id": "CR1550885",
+          "title": "Users are unable to access Dynamics 365 Contact Center",
+          "startTime": "2026-11-12T17:00:00Z",
+          "endTime": null,
+          "lastModified": "2026-11-12T20:01:44.83Z",
+          "status": "investigating",
+          "severity": "incident",
+          "userImpact": "Users are unable to access Dynamics 365 Contact Center.",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
+          "feature": "Sign In/Authentication",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-11-12T20:01:25.403Z",
+              "postType": "regular",
+              "content": "Title: Users are unable to access Dynamics 365 Contact Center\n\nUser impact: Users are unable to access Dynamics 365 Contact Center.\n\nCurrent Status: We are aware of an emerging issue where users are unable to access your Dynamics 365 Contact Center environment. We are investigating the issue and will provide another update within the next 30 minutes.\n\nThis information is preliminary and may be subject to changes, corrections, and updates.\n"
+            }
+          ],
+          "affectedServices": [
+            "Dynamics 365 Apps"
+          ]
+        }
+      ]
     },
     {
       "service": "Basic Mobility and Security",
@@ -797,16 +853,26 @@
           "title": "Users may be unable to connect to multiple Microsoft 365 services",
           "startTime": "2026-11-12T18:26:10.493Z",
           "endTime": null,
-          "lastModified": "2026-11-12T19:30:15.677Z",
+          "lastModified": "2026-11-12T20:10:56.68Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to connect to multiple Microsoft 365 services. ",
           "scopeOfImpact": "This issue may affect users attempting to access the affected Microsoft 365 services.",
           "rootCause": "",
-          "nextUpdateBy": "Thursday, November 12, 2026, at 10:00 PM UTC",
+          "nextUpdateBy": "Thursday, November 12, 2026, at 9:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-11-12T19:58:41.983Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to connect to multiple Microsoft 365 services\n\nUser impact: Users may be unable to connect to multiple Microsoft 365 services. \n\nMore info: Potentially impacted services include:\n- Exchange Online\n- Microsoft Teams\n- SharePoint Online\n- Microsoft Copilot 365\n- Microsoft Defender XDR\n- Microsoft Planner\n- Microsoft To Do\n\nCurrent status: While we haven't identified any recent changes that correlate with the start of impact, our investigation indicates the failed health checks may originate from a specific component on the affected servers that's responsible for processing them. We're deploying a targeted change to bypass this component on a subset of servers to validate whether this restores availability, and we've taken steps to prevent additional servers from being removed from service while we work to return the affected servers to service. We're also investigating why affected servers are experiencing elevated processor usage while handling requests.\n\nScope of impact: This issue may affect users attempting to access the affected Microsoft 365 services.\n\nNext update by: Thursday, November 12, 2026, at 9:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-11-12T19:43:19.133Z",
+              "postType": "quick",
+              "content": "We've identified that affected servers are failing automated health checks, which is causing them to become unavailable, and this may be related to a recent change to a component involved in processing those checks. We're testing a configuration change on a subset of affected infrastructure to address this and, if successful, will apply it more broadly. In parallel, we've initiated a restart of all affected servers and are validating whether they're successfully returning to service.\n\nThis quick update is designed to give the latest information on this issue.\n\nNext update by: Thursday, November 12, 2026, at 10:00 PM UTC"
+            },
             {
               "createdAt": "2026-11-12T19:30:15.677Z",
               "postType": "regular",
@@ -1049,16 +1115,26 @@
           "title": "Users may be unable to connect to multiple Microsoft 365 services",
           "startTime": "2026-11-12T18:26:10.493Z",
           "endTime": null,
-          "lastModified": "2026-11-12T19:30:15.677Z",
+          "lastModified": "2026-11-12T20:10:56.68Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to connect to multiple Microsoft 365 services. ",
           "scopeOfImpact": "This issue may affect users attempting to access the affected Microsoft 365 services.",
           "rootCause": "",
-          "nextUpdateBy": "Thursday, November 12, 2026, at 10:00 PM UTC",
+          "nextUpdateBy": "Thursday, November 12, 2026, at 9:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-11-12T19:58:41.983Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to connect to multiple Microsoft 365 services\n\nUser impact: Users may be unable to connect to multiple Microsoft 365 services. \n\nMore info: Potentially impacted services include:\n- Exchange Online\n- Microsoft Teams\n- SharePoint Online\n- Microsoft Copilot 365\n- Microsoft Defender XDR\n- Microsoft Planner\n- Microsoft To Do\n\nCurrent status: While we haven't identified any recent changes that correlate with the start of impact, our investigation indicates the failed health checks may originate from a specific component on the affected servers that's responsible for processing them. We're deploying a targeted change to bypass this component on a subset of servers to validate whether this restores availability, and we've taken steps to prevent additional servers from being removed from service while we work to return the affected servers to service. We're also investigating why affected servers are experiencing elevated processor usage while handling requests.\n\nScope of impact: This issue may affect users attempting to access the affected Microsoft 365 services.\n\nNext update by: Thursday, November 12, 2026, at 9:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-11-12T19:43:19.133Z",
+              "postType": "quick",
+              "content": "We've identified that affected servers are failing automated health checks, which is causing them to become unavailable, and this may be related to a recent change to a component involved in processing those checks. We're testing a configuration change on a subset of affected infrastructure to address this and, if successful, will apply it more broadly. In parallel, we've initiated a restart of all affected servers and are validating whether they're successfully returning to service.\n\nThis quick update is designed to give the latest information on this issue.\n\nNext update by: Thursday, November 12, 2026, at 10:00 PM UTC"
+            },
             {
               "createdAt": "2026-11-12T19:30:15.677Z",
               "postType": "regular",
