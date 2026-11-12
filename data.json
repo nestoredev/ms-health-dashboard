@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-12T20:17:34.250Z",
+  "lastUpdated": "2026-11-12T20:47:48.060Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -101,16 +101,21 @@
           "title": "Users may be unable to connect to multiple Microsoft 365 services",
           "startTime": "2026-11-12T18:26:10.493Z",
           "endTime": null,
-          "lastModified": "2026-11-12T20:10:56.68Z",
+          "lastModified": "2026-11-12T20:38:42.34Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to connect to multiple Microsoft 365 services. ",
-          "scopeOfImpact": "This issue may affect users attempting to access the affected Microsoft 365 services.",
+          "scopeOfImpact": "",
           "rootCause": "",
           "nextUpdateBy": "Thursday, November 12, 2026, at 9:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-11-12T20:38:42.34Z",
+              "postType": "quick",
+              "content": "While validating the targeted change, we found that many of the affected servers have become unresponsive, which is preventing us from confirming whether the change is effective. We're restarting these servers so they can come back online with the change in place, and we're applying the same approach to additional affected portions of our infrastructure to validate the results more broadly. \n\nNext update by: Thursday, November 12, 2026, at 9:30 PM UTC\n\nThis quick update is designed to give the latest information on this issue."
+            },
             {
               "createdAt": "2026-11-12T19:58:41.983Z",
               "postType": "regular",
@@ -290,16 +295,21 @@
           "title": "Users may be unable to connect to multiple Microsoft 365 services",
           "startTime": "2026-11-12T18:26:10.493Z",
           "endTime": null,
-          "lastModified": "2026-11-12T20:10:56.68Z",
+          "lastModified": "2026-11-12T20:38:42.34Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to connect to multiple Microsoft 365 services. ",
-          "scopeOfImpact": "This issue may affect users attempting to access the affected Microsoft 365 services.",
+          "scopeOfImpact": "",
           "rootCause": "",
           "nextUpdateBy": "Thursday, November 12, 2026, at 9:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-11-12T20:38:42.34Z",
+              "postType": "quick",
+              "content": "While validating the targeted change, we found that many of the affected servers have become unresponsive, which is preventing us from confirming whether the change is effective. We're restarting these servers so they can come back online with the change in place, and we're applying the same approach to additional affected portions of our infrastructure to validate the results more broadly. \n\nNext update by: Thursday, November 12, 2026, at 9:30 PM UTC\n\nThis quick update is designed to give the latest information on this issue."
+            },
             {
               "createdAt": "2026-11-12T19:58:41.983Z",
               "postType": "regular",
@@ -688,16 +698,21 @@
           "title": "Users may be unable to connect to multiple Microsoft 365 services",
           "startTime": "2026-11-12T18:26:10.493Z",
           "endTime": null,
-          "lastModified": "2026-11-12T20:10:56.68Z",
+          "lastModified": "2026-11-12T20:38:42.34Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to connect to multiple Microsoft 365 services. ",
-          "scopeOfImpact": "This issue may affect users attempting to access the affected Microsoft 365 services.",
+          "scopeOfImpact": "",
           "rootCause": "",
           "nextUpdateBy": "Thursday, November 12, 2026, at 9:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-11-12T20:38:42.34Z",
+              "postType": "quick",
+              "content": "While validating the targeted change, we found that many of the affected servers have become unresponsive, which is preventing us from confirming whether the change is effective. We're restarting these servers so they can come back online with the change in place, and we're applying the same approach to additional affected portions of our infrastructure to validate the results more broadly. \n\nNext update by: Thursday, November 12, 2026, at 9:30 PM UTC\n\nThis quick update is designed to give the latest information on this issue."
+            },
             {
               "createdAt": "2026-11-12T19:58:41.983Z",
               "postType": "regular",
@@ -736,18 +751,18 @@
     },
     {
       "service": "Dynamics 365 Apps",
-      "status": "investigating",
+      "status": "serviceInterruption",
       "id": "DynamicsCRM",
       "issues": [
         {
           "id": "CR1550885",
-          "title": "Users are unable to access Dynamics 365 Contact Center",
+          "title": "Agents may be unable to access Dynamics 365 Contact Center ",
           "startTime": "2026-11-12T17:00:00Z",
           "endTime": null,
-          "lastModified": "2026-11-12T20:01:44.83Z",
-          "status": "investigating",
+          "lastModified": "2026-11-12T20:25:29.34Z",
+          "status": "serviceInterruption",
           "severity": "incident",
-          "userImpact": "Users are unable to access Dynamics 365 Contact Center.",
+          "userImpact": "Agents may be unable to access Dynamics 365 Contact Center.",
           "scopeOfImpact": "",
           "rootCause": "",
           "nextUpdateBy": "",
@@ -755,9 +770,14 @@
           "isResolved": false,
           "posts": [
             {
+              "createdAt": "2026-11-12T20:25:29.34Z",
+              "postType": "regular",
+              "content": "Title: Agents may be unable to access Dynamics 365 Contact Center \n\nUser impact: Agents may be unable to access Dynamics 365 Contact Center.\n\nMore Info: Agents are unable to access Dynamics 365 Contact Center, preventing agents from sending or receiving messages or voice calls. Agents who can access Contact Center may experience degraded voice and messaging functionality.\n\nCurrent Status: After our investigation, we identified a portion of the database infrastructure responsible for Contact Center experienced connectivity failures. We are gathering and reviewing service diagnostic data to determine cause and possible next troubleshooting steps.\n\nNext Update: Thursday, November 12, 2026, at 10:00 PM UTC"
+            },
+            {
               "createdAt": "2026-11-12T20:01:25.403Z",
               "postType": "regular",
-              "content": "Title: Users are unable to access Dynamics 365 Contact Center\n\nUser impact: Users are unable to access Dynamics 365 Contact Center.\n\nCurrent Status: We are aware of an emerging issue where users are unable to access your Dynamics 365 Contact Center environment. We are investigating the issue and will provide another update within the next 30 minutes.\n\nThis information is preliminary and may be subject to changes, corrections, and updates.\n"
+              "content": "Title: Users are unable to access Dynamics 365 Contact Center\n\nUser impact: Users are unable to access Dynamics 365 Contact Center.\n\nCurrent Status: We are aware of an emerging issue where users are unable to access your Dynamics 365 Contact Center, preventing agents from sending or receive messages and voice calls. We are investigating the issue and will provide another update within the next 30 minutes.\n\nThis information is preliminary and may be subject to changes, corrections, and updates."
             }
           ],
           "affectedServices": [
@@ -853,16 +873,21 @@
           "title": "Users may be unable to connect to multiple Microsoft 365 services",
           "startTime": "2026-11-12T18:26:10.493Z",
           "endTime": null,
-          "lastModified": "2026-11-12T20:10:56.68Z",
+          "lastModified": "2026-11-12T20:38:42.34Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to connect to multiple Microsoft 365 services. ",
-          "scopeOfImpact": "This issue may affect users attempting to access the affected Microsoft 365 services.",
+          "scopeOfImpact": "",
           "rootCause": "",
           "nextUpdateBy": "Thursday, November 12, 2026, at 9:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-11-12T20:38:42.34Z",
+              "postType": "quick",
+              "content": "While validating the targeted change, we found that many of the affected servers have become unresponsive, which is preventing us from confirming whether the change is effective. We're restarting these servers so they can come back online with the change in place, and we're applying the same approach to additional affected portions of our infrastructure to validate the results more broadly. \n\nNext update by: Thursday, November 12, 2026, at 9:30 PM UTC\n\nThis quick update is designed to give the latest information on this issue."
+            },
             {
               "createdAt": "2026-11-12T19:58:41.983Z",
               "postType": "regular",
@@ -1115,16 +1140,21 @@
           "title": "Users may be unable to connect to multiple Microsoft 365 services",
           "startTime": "2026-11-12T18:26:10.493Z",
           "endTime": null,
-          "lastModified": "2026-11-12T20:10:56.68Z",
+          "lastModified": "2026-11-12T20:38:42.34Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to connect to multiple Microsoft 365 services. ",
-          "scopeOfImpact": "This issue may affect users attempting to access the affected Microsoft 365 services.",
+          "scopeOfImpact": "",
           "rootCause": "",
           "nextUpdateBy": "Thursday, November 12, 2026, at 9:30 PM UTC",
           "feature": "Access",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-11-12T20:38:42.34Z",
+              "postType": "quick",
+              "content": "While validating the targeted change, we found that many of the affected servers have become unresponsive, which is preventing us from confirming whether the change is effective. We're restarting these servers so they can come back online with the change in place, and we're applying the same approach to additional affected portions of our infrastructure to validate the results more broadly. \n\nNext update by: Thursday, November 12, 2026, at 9:30 PM UTC\n\nThis quick update is designed to give the latest information on this issue."
+            },
             {
               "createdAt": "2026-11-12T19:58:41.983Z",
               "postType": "regular",
