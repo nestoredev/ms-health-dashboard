@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-12T06:41:01.470Z",
+  "lastUpdated": "2026-11-12T07:11:15.374Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1415,7 +1415,7 @@
       "title": "Some users may be unable to load chat history or previously pinned chats, and can't pin chats in Microsoft 365 Copilot",
       "startTime": "2026-09-01T03:38:00Z",
       "endTime": "2026-11-04T16:08:39.533Z",
-      "lastModified": "2026-11-06T00:44:01.217Z",
+      "lastModified": "2026-11-12T07:06:34.103Z",
       "status": "postIncidentReviewPublished",
       "severity": "advisory",
       "userImpact": "Users may have been unable to load chat history or previously pinned chats, and couldn't pin chats in Copilot Chat.",
@@ -1426,6 +1426,11 @@
       "isResolved": true,
       "posts": [
         {
+          "createdAt": "2026-11-12T07:02:28.23Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        },
+        {
           "createdAt": "2026-11-06T00:44:01.217Z",
           "postType": "regular",
           "content": "A post-incident report has been published."
@@ -1433,7 +1438,7 @@
         {
           "createdAt": "2026-11-04T16:33:45.367Z",
           "postType": "regular",
-          "content": "Title: Some users may be unable to load chat history or previously pinned chats, and can't pin chats in Microsoft 365 Copilot\n\nUser impact: Users may have been unable to load chat history or previously pinned chats, and couldn't pin chats in Copilot Chat.\n\nMore info: Previously pinned chats didn't show up for users to select, and chat histories weren't showing up as expected.\n\nFinal status: The fix is fully deployed across all affected environments and we've confirmed with affected users that impact is remediated.\n\nScope of impact: Some users may have been unable to load chat history, previously pinned chats, and couldn't pin chats in Copilot Chat.\n\nStart time: Tuesday, September 1, 2026, at 3:38 AM UTC\n\nEnd time: Wednesday, November 4, 2026, at 12:30 PM UTC\n\nPreliminary root cause: A recent feature update revealed an existing issue with the pinned chats feature, resulting in impact under certain conditions.\n\nNext steps: \n- We're reviewing and improving our feature update validation procedure to detect and prevent similar issues in the future.\n\nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days."
+          "content": "Title: Some users may be unable to load chat history or previously pinned chats, and can't pin chats in Microsoft 365 Copilot\n\nUser impact: Users may have been unable to load chat history or previously pinned chats, and couldn't pin chats in Copilot Chat.\n\nMore info: Previously pinned chats didn't show up for users to select, and chat histories weren't showing up as expected.\n\nFinal status: The fix is fully deployed across all affected environments and we've confirmed with affected users that impact is remediated.\n\nScope of impact: Some users may have been unable to load chat history, previously pinned chats, and couldn't pin chats in Copilot Chat.\n\nStart time: Tuesday, September 1, 2026, at 3:38 AM UTC\n\nEnd time: Wednesday, November 4, 2026, at 12:30 PM UTC\n\nRoot cause: The pinned chats feature in Microsoft 365 Copilot and Copilot Chat contained a code defect that had been present since the feature was first released. This defect wasn’t caught during testing due to its difficulty to reproduce locally. A recent migration exposed this defect, which, under certain conditions, prevented pinned chats from loading and prevented users from pinning new chats. \n\nNext steps: \n- Please see the post-incident report (PIR) for next steps."
         },
         {
           "createdAt": "2026-10-29T19:09:35.993Z",
