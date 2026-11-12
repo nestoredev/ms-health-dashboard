@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-12T18:16:35.022Z",
+  "lastUpdated": "2026-11-12T18:46:50.400Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -94,6 +94,35 @@
           ],
           "affectedServices": [
             "Exchange Online"
+          ]
+        },
+        {
+          "id": "MO1550821",
+          "title": "Users may be unable to connect to multiple Microsoft 365 services",
+          "startTime": "2026-11-12T18:26:10.493Z",
+          "endTime": null,
+          "lastModified": "2026-11-12T18:27:35.593Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to connect to multiple Microsoft 365 services. ",
+          "scopeOfImpact": "This issue may affect users attempting to access the affected Microsoft 365 services.",
+          "rootCause": "",
+          "nextUpdateBy": "Thursday, November 12, 2026, at 8:30 PM UTC",
+          "feature": "Access",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-11-12T18:27:35.593Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to connect to multiple Microsoft 365 services\r\n\r\nUser impact: Users may be unable to connect to multiple Microsoft 365 services. \r\n\r\nMore info: Potentially impacted services include:\n- Exchange Online\n- Microsoft Teams\n- SharePoint Online\n- Microsoft Copilot 365\n- Microsoft Defender XDR\r\n\r\nCurrent status: We’re investigating an issue impacting multiple Microsoft 365 services and we've determined the affected infrastructure is experiencing elevated load across multiple regions, which is likely contributing to the connectivity errors. We're restarting and repairing impacted portions of this infrastructure to restore capacity, and reviewing an unexpected increase in a specific type of service traffic to determine whether it's contributing to the elevated load. In parallel, we're evaluating options to redirect traffic to alternate infrastructure to expedite relief.\r\n\r\nScope of impact: This issue may affect users attempting to access the affected Microsoft 365 services. \r\n\r\nNext update by: Thursday, November 12, 2026, at 8:30 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online",
+            "Microsoft 365 suite",
+            "SharePoint Online",
+            "Microsoft Teams",
+            "Microsoft Defender XDR"
           ]
         },
         {
@@ -236,6 +265,35 @@
       "status": "serviceDegradation",
       "id": "OSDPPlatform",
       "issues": [
+        {
+          "id": "MO1550821",
+          "title": "Users may be unable to connect to multiple Microsoft 365 services",
+          "startTime": "2026-11-12T18:26:10.493Z",
+          "endTime": null,
+          "lastModified": "2026-11-12T18:27:35.593Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to connect to multiple Microsoft 365 services. ",
+          "scopeOfImpact": "This issue may affect users attempting to access the affected Microsoft 365 services.",
+          "rootCause": "",
+          "nextUpdateBy": "Thursday, November 12, 2026, at 8:30 PM UTC",
+          "feature": "Access",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-11-12T18:27:35.593Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to connect to multiple Microsoft 365 services\r\n\r\nUser impact: Users may be unable to connect to multiple Microsoft 365 services. \r\n\r\nMore info: Potentially impacted services include:\n- Exchange Online\n- Microsoft Teams\n- SharePoint Online\n- Microsoft Copilot 365\n- Microsoft Defender XDR\r\n\r\nCurrent status: We’re investigating an issue impacting multiple Microsoft 365 services and we've determined the affected infrastructure is experiencing elevated load across multiple regions, which is likely contributing to the connectivity errors. We're restarting and repairing impacted portions of this infrastructure to restore capacity, and reviewing an unexpected increase in a specific type of service traffic to determine whether it's contributing to the elevated load. In parallel, we're evaluating options to redirect traffic to alternate infrastructure to expedite relief.\r\n\r\nScope of impact: This issue may affect users attempting to access the affected Microsoft 365 services. \r\n\r\nNext update by: Thursday, November 12, 2026, at 8:30 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online",
+            "Microsoft 365 suite",
+            "SharePoint Online",
+            "Microsoft Teams",
+            "Microsoft Defender XDR"
+          ]
+        },
         {
           "id": "MO1457843",
           "title": "Admins can't identify who deleted a Viva Engage community or its Microsoft 365 Group in Microsoft Entra ID audit logs",
@@ -584,6 +642,35 @@
           "affectedServices": [
             "SharePoint Online"
           ]
+        },
+        {
+          "id": "MO1550821",
+          "title": "Users may be unable to connect to multiple Microsoft 365 services",
+          "startTime": "2026-11-12T18:26:10.493Z",
+          "endTime": null,
+          "lastModified": "2026-11-12T18:27:35.593Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to connect to multiple Microsoft 365 services. ",
+          "scopeOfImpact": "This issue may affect users attempting to access the affected Microsoft 365 services.",
+          "rootCause": "",
+          "nextUpdateBy": "Thursday, November 12, 2026, at 8:30 PM UTC",
+          "feature": "Access",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-11-12T18:27:35.593Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to connect to multiple Microsoft 365 services\r\n\r\nUser impact: Users may be unable to connect to multiple Microsoft 365 services. \r\n\r\nMore info: Potentially impacted services include:\n- Exchange Online\n- Microsoft Teams\n- SharePoint Online\n- Microsoft Copilot 365\n- Microsoft Defender XDR\r\n\r\nCurrent status: We’re investigating an issue impacting multiple Microsoft 365 services and we've determined the affected infrastructure is experiencing elevated load across multiple regions, which is likely contributing to the connectivity errors. We're restarting and repairing impacted portions of this infrastructure to restore capacity, and reviewing an unexpected increase in a specific type of service traffic to determine whether it's contributing to the elevated load. In parallel, we're evaluating options to redirect traffic to alternate infrastructure to expedite relief.\r\n\r\nScope of impact: This issue may affect users attempting to access the affected Microsoft 365 services. \r\n\r\nNext update by: Thursday, November 12, 2026, at 8:30 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online",
+            "Microsoft 365 suite",
+            "SharePoint Online",
+            "Microsoft Teams",
+            "Microsoft Defender XDR"
+          ]
         }
       ]
     },
@@ -705,6 +792,35 @@
       "status": "serviceDegradation",
       "id": "microsoftteams",
       "issues": [
+        {
+          "id": "MO1550821",
+          "title": "Users may be unable to connect to multiple Microsoft 365 services",
+          "startTime": "2026-11-12T18:26:10.493Z",
+          "endTime": null,
+          "lastModified": "2026-11-12T18:27:35.593Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to connect to multiple Microsoft 365 services. ",
+          "scopeOfImpact": "This issue may affect users attempting to access the affected Microsoft 365 services.",
+          "rootCause": "",
+          "nextUpdateBy": "Thursday, November 12, 2026, at 8:30 PM UTC",
+          "feature": "Access",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-11-12T18:27:35.593Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to connect to multiple Microsoft 365 services\r\n\r\nUser impact: Users may be unable to connect to multiple Microsoft 365 services. \r\n\r\nMore info: Potentially impacted services include:\n- Exchange Online\n- Microsoft Teams\n- SharePoint Online\n- Microsoft Copilot 365\n- Microsoft Defender XDR\r\n\r\nCurrent status: We’re investigating an issue impacting multiple Microsoft 365 services and we've determined the affected infrastructure is experiencing elevated load across multiple regions, which is likely contributing to the connectivity errors. We're restarting and repairing impacted portions of this infrastructure to restore capacity, and reviewing an unexpected increase in a specific type of service traffic to determine whether it's contributing to the elevated load. In parallel, we're evaluating options to redirect traffic to alternate infrastructure to expedite relief.\r\n\r\nScope of impact: This issue may affect users attempting to access the affected Microsoft 365 services. \r\n\r\nNext update by: Thursday, November 12, 2026, at 8:30 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online",
+            "Microsoft 365 suite",
+            "SharePoint Online",
+            "Microsoft Teams",
+            "Microsoft Defender XDR"
+          ]
+        },
         {
           "id": "MO1489432",
           "title": "Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile",
@@ -915,9 +1031,39 @@
     },
     {
       "service": "Microsoft Defender XDR",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "Microsoft365Defender",
-      "issues": []
+      "issues": [
+        {
+          "id": "MO1550821",
+          "title": "Users may be unable to connect to multiple Microsoft 365 services",
+          "startTime": "2026-11-12T18:26:10.493Z",
+          "endTime": null,
+          "lastModified": "2026-11-12T18:27:35.593Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may be unable to connect to multiple Microsoft 365 services. ",
+          "scopeOfImpact": "This issue may affect users attempting to access the affected Microsoft 365 services.",
+          "rootCause": "",
+          "nextUpdateBy": "Thursday, November 12, 2026, at 8:30 PM UTC",
+          "feature": "Access",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-11-12T18:27:35.593Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to connect to multiple Microsoft 365 services\r\n\r\nUser impact: Users may be unable to connect to multiple Microsoft 365 services. \r\n\r\nMore info: Potentially impacted services include:\n- Exchange Online\n- Microsoft Teams\n- SharePoint Online\n- Microsoft Copilot 365\n- Microsoft Defender XDR\r\n\r\nCurrent status: We’re investigating an issue impacting multiple Microsoft 365 services and we've determined the affected infrastructure is experiencing elevated load across multiple regions, which is likely contributing to the connectivity errors. We're restarting and repairing impacted portions of this infrastructure to restore capacity, and reviewing an unexpected increase in a specific type of service traffic to determine whether it's contributing to the elevated load. In parallel, we're evaluating options to redirect traffic to alternate infrastructure to expedite relief.\r\n\r\nScope of impact: This issue may affect users attempting to access the affected Microsoft 365 services. \r\n\r\nNext update by: Thursday, November 12, 2026, at 8:30 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Exchange Online",
+            "Microsoft 365 suite",
+            "SharePoint Online",
+            "Microsoft Teams",
+            "Microsoft Defender XDR"
+          ]
+        }
+      ]
     },
     {
       "service": "Project for the web",
