@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-12T15:15:07.299Z",
+  "lastUpdated": "2026-11-12T15:45:21.618Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -705,6 +705,36 @@
       "status": "serviceDegradation",
       "id": "microsoftteams",
       "issues": [
+        {
+          "id": "TM1550488",
+          "title": "Some users may be unable to access or use Microsoft Teams functionality",
+          "startTime": "2026-11-12T15:17:47Z",
+          "endTime": null,
+          "lastModified": "2026-11-12T15:35:46.43Z",
+          "status": "investigating",
+          "severity": "incident",
+          "userImpact": "Some users may experience issues when accessing or using Microsoft Teams functionality.",
+          "scopeOfImpact": "Any user accessing Microsoft Teams services hosted in or routed through the North America region may be impacted. We’re working to better understand the full scope of impact.",
+          "rootCause": "",
+          "nextUpdateBy": "Thursday, November 12, 2026, at 4:30 PM UTC",
+          "feature": "General",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-11-12T15:35:46.43Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to access or use Microsoft Teams functionality\n\nUser impact: Some users may experience issues when accessing or using Microsoft Teams functionality.\n\nCurrent status: Our investigation has identified elevated service errors affecting multiple Microsoft Teams operations, including messaging and presence functionality. We're analyzing the associated error patterns and service dependencies to isolate the underlying cause and determine appropriate mitigation actions.\n \nScope of impact: Any user accessing Microsoft Teams services hosted in or routed through the North America region may be impacted. We’re working to better understand the full scope of impact.\n \nNext update by: Thursday, November 12, 2026, at 4:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-11-12T15:18:37.56Z",
+              "postType": "regular",
+              "content": "Title: We're looking into a potential problem impacting Microsoft Teams\r\n\r\nUser impact: We're checking for potential impact to your users.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Teams and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Teams"
+          ]
+        },
         {
           "id": "MO1489432",
           "title": "Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile",
