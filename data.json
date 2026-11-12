@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-12T01:38:39.591Z",
+  "lastUpdated": "2026-11-12T02:08:53.062Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1005,6 +1005,32 @@
     }
   ],
   "history": [
+    {
+      "id": "IT1549677",
+      "title": "Users may be unable to install applications on Windows devices through Microsoft Intune",
+      "startTime": "2026-11-12T01:27:26.05Z",
+      "endTime": "2026-11-12T01:57:30.457Z",
+      "lastModified": "2026-11-12T01:58:05.997Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have been unable to install applications on Windows devices through Microsoft Intune.",
+      "scopeOfImpact": "Users in Central US who attempted to install applications on Windows devices through Microsoft Intune may have been impacted by this event.\r\n\r\nStart time: Wednesday, November 11, 2026, at 8:12 PM UTC\r\n\r\nEnd time: Wednesday, November 11, 2026, at 8:57 PM UTC",
+      "rootCause": "A gateway configuration change caused this impact.\r\n\r\nNext steps: \n- We're investigating the impacting gateway configuration change to better understand what it was intended to do and why impact wasn't caught prior to deployment so that we can prevent impact to installing applications on Windows devices through Microsoft Intune in the future. \r\n\r\nThis is the final update for the event.",
+      "nextUpdateBy": "",
+      "feature": "Microsoft Intune",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-11-12T01:57:30.457Z",
+          "postType": "regular",
+          "content": "Title: Users may be unable to install applications on Windows devices through Microsoft Intune\r\n\r\nUser impact: Users may have been unable to install applications on Windows devices through Microsoft Intune.\r\n\r\nFinal status: We've been alerted by our automated monitoring system to an issue in which users in Central US may have been unable to install applications on Windows devices through Microsoft Intune. We've identified that a gateway configuration change caused this impact. We've reverted this configuration change to remediate impact and confirmed with our service health telemetry that this issue has been resolved. \r\n\r\nScope of impact: Users in Central US who attempted to install applications on Windows devices through Microsoft Intune may have been impacted by this event.\r\n\r\nStart time: Wednesday, November 11, 2026, at 8:12 PM UTC\r\n\r\nEnd time: Wednesday, November 11, 2026, at 8:57 PM UTC\r\n\r\nRoot cause: A gateway configuration change caused this impact.\r\n\r\nNext steps: \n- We're investigating the impacting gateway configuration change to better understand what it was intended to do and why impact wasn't caught prior to deployment so that we can prevent impact to installing applications on Windows devices through Microsoft Intune in the future. \r\n\r\nThis is the final update for the event."
+        }
+      ],
+      "serviceName": "Microsoft Intune",
+      "affectedServices": [
+        "Microsoft Intune"
+      ]
+    },
     {
       "id": "CW1548957",
       "title": "Some users may intermittently receive no response when submitting queries in Microsoft 365 Copilot Chat",
@@ -3002,47 +3028,6 @@
       "serviceName": "Microsoft Teams",
       "affectedServices": [
         "Microsoft Teams"
-      ]
-    },
-    {
-      "id": "PB1508905",
-      "title": "Some users may encounter refresh failures when using the Dynamics 365 Business Central connector in Power BI",
-      "startTime": "2026-10-14T15:00:00Z",
-      "endTime": "2026-10-15T14:55:10.463Z",
-      "lastModified": "2026-10-15T15:41:43.173Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users may have encountered refresh failures when using the Dynamics 365 Business Central connector in Power BI.",
-      "scopeOfImpact": "The impact was specific to some users who had expected refreshes using the Dynamics 365 Business Central connector in Power BI.\r\n\r\nStart time: Wednesday, October 14, 2026, at 3:00 PM UTC\r\n\r\nEnd time: Thursday, October 15, 2026, at 2:32 PM UTC",
-      "rootCause": "A regression in the Dynamics 365 Business Central control-plane service was causing refresh failures when using the connector in Power BI\r\n\r\nNext steps: \n- We're further analyzing the regression to help us isolate its source, and to help prevent similar issues in the future.\n\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "General",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-10-15T15:41:39.82Z",
-          "postType": "regular",
-          "content": "Title: Some users may encounter refresh failures when using the Dynamics 365 Business Central connector in Power BI\r\n\r\nUser impact: Users may have encountered refresh failures when using the Dynamics 365 Business Central connector in Power BI.\r\n\r\nFinal status: After our completed rollback of the affected service, our internal telemetry verified that the impact had been remediated.\r\n\r\nScope of impact: The impact was specific to some users who had expected refreshes using the Dynamics 365 Business Central connector in Power BI.\r\n\r\nStart time: Wednesday, October 14, 2026, at 3:00 PM UTC\r\n\r\nEnd time: Thursday, October 15, 2026, at 2:32 PM UTC\r\n\r\nRoot cause: A regression in the Dynamics 365 Business Central control-plane service was causing refresh failures when using the connector in Power BI\r\n\r\nNext steps: \n- We're further analyzing the regression to help us isolate its source, and to help prevent similar issues in the future.\n\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-10-15T14:17:52.767Z",
-          "postType": "regular",
-          "content": "Title: Some users may encounter refresh failures when using the Dynamics 365 Business Central connector in Power BI\r\n\r\nUser impact: Users may encounter refresh failures when using the Dynamics 365 Business Central connector in Power BI.\r\n\r\nCurrent status: We've identified that a regression in the Dynamics 365 Business Central control plane is causing API connection failures. We're rolling back the affected service to remediate the issue and are monitoring progress.\r\n\r\nScope of impact: Impact may be specific to some users expecting refreshes using the Dynamics 365 Business Central connector in Power BI.\r\n\r\nRoot cause: A regression in the Dynamics 365 Business Central control-plane service is causing refresh failures when using the connector in Power BI\r\n\r\nNext update by: Thursday, October 15, 2026, at 4:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-10-15T13:31:04.39Z",
-          "postType": "regular",
-          "content": "Title: Some users may encounter refresh failures when using the Dynamics 365 Business Central connector in Power BI\r\n\r\nUser impact: Users may encounter refresh failures when using the Dynamics 365 Business Central connector in Power BI.\r\n\r\nCurrent status: We're continuing our analysis of service telemetry to help us identify the root cause and the next steps required to mitigate impact.\r\n\r\nScope of impact: Impact may be specific to some users expecting refreshes using the Dynamics 365 Business Central connector in Power BI.\r\n\r\nNext update by: Thursday, October 15, 2026, at 4:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-10-15T12:21:50.443Z",
-          "postType": "regular",
-          "content": "Title: Some users may encounter refresh failures when using the Dynamics 365 Business Central connector in Power BI\r\n\r\nUser impact: Users may encounter refresh failures when using the Dynamics 365 Business Central connector in Power BI.\r\n\r\nCurrent status: We're analyzing service telemetry to help us identify the root cause and the next steps required to mitigate impact.\r\n\r\nScope of impact: Impact may be specific to some users expecting refreshes using the Dynamics 365 Business Central connector in Power BI.\r\n\r\nNext update by: Thursday, October 15, 2026, at 2:00 PM UTC"
-        }
-      ],
-      "serviceName": "Power BI",
-      "affectedServices": [
-        "Power BI"
       ]
     }
   ]
