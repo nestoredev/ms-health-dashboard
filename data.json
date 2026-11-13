@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-13T21:29:46.463Z",
+  "lastUpdated": "2026-11-13T22:00:00.095Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -11,16 +11,21 @@
           "title": "Some users may not see free/busy info shared between organizations using cross-tenant access policy in Exchange Online",
           "startTime": "2026-11-04T16:00:00Z",
           "endTime": null,
-          "lastModified": "2026-11-12T22:21:03.757Z",
+          "lastModified": "2026-11-13T21:33:43.223Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Users may not see free/busy info shared between organizations using cross-tenant access policy in Exchange Online.",
-          "scopeOfImpact": "This issue impacts some users whose organization utilizes cross-tenant access policy, who may be unable to view free/busy info shared between organizations in Exchange Online. This section may be updated as the investigation progresses.\r\n\r\nEstimated time to resolve: We anticipate that the fix will complete deployment and remediate the impact by Friday, November 14, 2026.",
+          "scopeOfImpact": "This issue impacts some users whose organization utilizes cross-tenant access policy, who may be unable to view free/busy info shared between organizations in Exchange Online. This section may be updated as the investigation progresses.\r\n\r\nEstimated time to resolve: We anticipate that the fix will complete deployment and remediate the impact by Monday, November 16, 2027.",
           "rootCause": "A recent change introduced a regression that causes cross-tenant mailbox requests to be rejected when a tenant ID was used instead of the mailbox's SMTP address.",
-          "nextUpdateBy": "Friday, November 13, 2026, at 11:00 PM UTC",
+          "nextUpdateBy": "Tuesday, November 17, 2026, at 12:30 AM UTC",
           "feature": "OWA - poor customer experience",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-11-13T21:33:43.223Z",
+              "postType": "regular",
+              "content": "Title: Some users may not see free/busy info shared between organizations using cross-tenant access policy in Exchange Online\r\n\r\nUser impact: Users may not see free/busy info shared between organizations using cross-tenant access policy in Exchange Online.\r\n\r\nMore info: To remediate impact while our investigation is ongoing, admins can configure free/busy sharing between impacted organizations using Organization Relationship. The Organization Relationship will take precedence over the cross-tenant access policy and sharing will begin working again after caches clear, usually within 2 hours. If EWS has been disabled in your tenant, it will need to be re-enabled to support Organization Relationship. The Organization Relationship should be removed when this incident is resolved.\r\n\r\nCurrent status: The deployment of our fix was paused while we addressed a separate issue and remains at 62 percent saturation to the affected environment. We've finished addressing the unrelated issue, and we've resumed the deployment of our fix. Due to this delay, we now anticipate the fix will complete deployment by Monday, November 16, 2026.\r\n\r\nScope of impact: This issue impacts some users whose organization utilizes cross-tenant access policy, who may be unable to view free/busy info shared between organizations in Exchange Online. This section may be updated as the investigation progresses.\r\n\r\nEstimated time to resolve: We anticipate that the fix will complete deployment and remediate the impact by Monday, November 16, 2027.\r\n\r\nRoot cause: A recent change introduced a regression that causes cross-tenant mailbox requests to be rejected when a tenant ID was used instead of the mailbox's SMTP address.\r\n\r\nNext update by: Tuesday, November 17, 2026, at 12:30 AM UTC"
+            },
             {
               "createdAt": "2026-11-12T22:21:03.757Z",
               "postType": "regular",
@@ -1240,16 +1245,21 @@
           "title": "Admins may see Windows and Android devices appear as unmonitored in the Pro Management Portal (PMP) in Microsoft Teams",
           "startTime": "2026-11-13T19:05:35.07Z",
           "endTime": null,
-          "lastModified": "2026-11-13T20:57:08.797Z",
+          "lastModified": "2026-11-13T21:38:18.117Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins may see Windows and Android devices appear as unmonitored in the PMP in Microsoft Teams.",
           "scopeOfImpact": "This event may impact any admin attempting to manage Windows and Android devices through the Microsoft Teams Pro Management Portal. This information may be updated as our investigation continues.\r\n\r\nStart time: Thursday, November 12, 2026, at 6:00 PM UTC",
           "rootCause": "A spike in request traffic following yesterday's outage is disrupting device monitoring status in the PMP.",
-          "nextUpdateBy": "Friday, November 13, 2026, at 9:00 PM UTC",
+          "nextUpdateBy": "Sunday, November 15, 2026, at 11:30 AM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-11-13T21:38:18.117Z",
+              "postType": "regular",
+              "content": "Title: Admins may see Windows and Android devices appear as unmonitored in the Pro Management Portal (PMP) in Microsoft Teams\r\n\r\nUser impact: Admins may see Windows and Android devices appear as unmonitored in the PMP in Microsoft Teams.\r\n\r\nMore info: Admins may utilize the Microsoft Teams admin center to circumvent this impact for Android devices.\r\n\r\nCurrent status: We anticipate that our fixes will be fully saturated, automatically restoring devices to a healthy state, by our next scheduled update. However, we've confirmed that admins who wish to receive the fix faster can initiate a restart or bulk restart of affected devices through the Teams Admin Center to remediate this event immediately.\r\n\r\nScope of impact: This event may impact any admin attempting to manage Windows and Android devices through the Microsoft Teams Pro Management Portal. This information may be updated as our investigation continues.\r\n\r\nStart time: Thursday, November 12, 2026, at 6:00 PM UTC\r\n\r\nRoot cause: A spike in request traffic following yesterday's outage is disrupting device monitoring status in the PMP.\r\n\r\nNext update by: Sunday, November 15, 2026, at 11:30 AM UTC"
+            },
             {
               "createdAt": "2026-11-13T20:57:08.797Z",
               "postType": "regular",
