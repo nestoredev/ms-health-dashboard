@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-13T15:26:48.354Z",
+  "lastUpdated": "2026-11-13T15:57:05.453Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1101,40 +1101,9 @@
     },
     {
       "service": "Dynamics 365 Apps",
-      "status": "serviceDegradation",
+      "status": "serviceOperational",
       "id": "DynamicsCRM",
-      "issues": [
-        {
-          "id": "CR1551339",
-          "title": "Field Service mobile app users experience intermittent sign-in failures",
-          "startTime": "2026-11-12T17:30:00Z",
-          "endTime": null,
-          "lastModified": "2026-11-13T15:22:04.5Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Field Service mobile app users experienced intermittent sign-in failures.",
-          "scopeOfImpact": "",
-          "rootCause": "",
-          "nextUpdateBy": "",
-          "feature": "Field Services",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-11-13T08:56:12.283Z",
-              "postType": "regular",
-              "content": "Title: Field Service mobile app users experience intermittent sign-in failures\n\nUser impact: Field Service mobile app users experience intermittent sign-in failures.\n\nMore Info: Impact is limited to signing-in to new sessions and signing back in to a session after signing out. Users who are already signed are not affected until their cached tokens expire.\n\nUsers receive the error message \"No network connection. Please check your network settings and try again.\" upon failure.\n\nAs a workaround, we recommend that:\n• Use Field Service in a web browser until this is mitigated.\n• Users who are still signed in shouldn't sign out, clear app data or reinstall.\n\nCurrent Status: We are continuing to monitor diagnostics of the upstream service dependency for recovery as actions are being performed to mitigate the issue.\n\nNext Update: Friday, November 13, 2026, at 4:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-11-13T06:05:57.827Z",
-              "postType": "regular",
-              "content": "Title: Field Service mobile app users experience intermittent sign-in failures\n\nUser impact: Field Service mobile app users experience intermittent sign-in failures.\n\nMore Info: Impact is limited to signing-in to new sessions and signing back in to a session after signing out. Users who are already signed are not affected until their cached tokens expire.\n\nUsers receive the error message \"No network connection. Please check your network settings and try again.\" upon failure.\n\nAs a workaround, we recommend that:\n• Use Field Service in a web browser until this is mitigated.\n• Users who are still signed in shouldn't sign out, clear app data or reinstall.\n\nCurrent Status: Our monitoring alerted us to an issue where Field Service mobile app users experience intermittent sign-in failures. Our investigation identified that an internal upstream service dependency, Exchange, which supports the sign-in functionality, is experiencing a service outage. This service outage has caused sign-in requests to intermittently fail at the authorization step. We are monitoring service diagnostics for recovery as actions are performed to mitigate the service outage on Exchange.\n\nNext Update: Friday, November 13, 2026, at 9:00 AM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Dynamics 365 Apps"
-          ]
-        }
-      ]
+      "issues": []
     },
     {
       "service": "Basic Mobility and Security",
@@ -1551,40 +1520,9 @@
     },
     {
       "service": "Power Apps",
-      "status": "serviceDegradation",
+      "status": "serviceOperational",
       "id": "PowerApps",
-      "issues": [
-        {
-          "id": "MX1551341",
-          "title": "Power Apps mobile app users experience intermittent sign-in failures",
-          "startTime": "2026-11-12T17:30:00Z",
-          "endTime": null,
-          "lastModified": "2026-11-13T08:54:58.623Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Power Apps mobile app users experience intermittent sign-in failures.",
-          "scopeOfImpact": "",
-          "rootCause": "",
-          "nextUpdateBy": "",
-          "feature": "Other",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-11-13T08:54:58.623Z",
-              "postType": "regular",
-              "content": "Title: Power Apps mobile app users experience intermittent sign-in failures\n\nUser impact: Power Apps mobile app users experience intermittent sign-in failures.\n\nMore Info: Impact is limited to signing-in to new sessions and signing back in to a session after signing out. Users who are already signed are not affected until their cached tokens expire.\n\nUsers receive the error message \"No network connection. Please check your network settings and try again.\" upon failure.\n\nAs a workaround, we recommend that:\n• Use Power Apps in a web browser until this is mitigated.\n• Users who are still signed in shouldn't sign out, clear app data, or reinstall.\n\nCurrent Status: We are continuing to monitor diagnostics of the upstream service dependency for recovery as actions are being performed to mitigate the issue.\n\nNext Update: Friday, November 13, 2026, at 4:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-11-13T06:07:06.053Z",
-              "postType": "regular",
-              "content": "Title: Power Apps mobile app users experience intermittent sign-in failures\n\nUser impact: Power Apps mobile app users experience intermittent sign-in failures.\n\nMore Info: Impact is limited to signing-in to new sessions and signing back in to a session after signing out. Users who are already signed are not affected until their cached tokens expire.\n\nUsers receive the error message \"No network connection. Please check your network settings and try again.\" upon failure.\n\nAs a workaround, we recommend that:\n• Use Power Apps in a web browser until this is mitigated.\n• Users who are still signed in shouldn't sign out, clear app data, or reinstall.\n\nCurrent Status: Our monitoring alerted us to an issue where Power Apps mobile app users experience intermittent sign-in failures. Our investigation identified that an internal upstream service dependency, Exchange, which supports the sign-in functionality, is experiencing a service outage. This service outage has caused sign-in requests to intermittently fail at the authorization step. We are monitoring service diagnostics for recovery as actions are performed to mitigate the service outage on Exchange.\n\nNext Update: Friday, November 13, 2026, at 9:00 AM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Power Apps"
-          ]
-        }
-      ]
+      "issues": []
     },
     {
       "service": "Power Apps in Microsoft 365",
@@ -1897,6 +1835,83 @@
     }
   ],
   "history": [
+    {
+      "id": "CR1551339",
+      "title": "Field Service mobile app users experience intermittent sign-in failures",
+      "startTime": "2026-11-12T17:30:00Z",
+      "endTime": "2026-11-13T12:30:00Z",
+      "lastModified": "2026-11-13T15:22:49.593Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Field Service mobile app users experienced intermittent sign-in failures.",
+      "scopeOfImpact": "",
+      "rootCause": "A dependency service responsible for authentication was unavailable. \n\nNext Steps: We’re reviewing our code for improved performance and potential automated recovery options to reduce or avoid similar issues in the future.",
+      "nextUpdateBy": "",
+      "feature": "Field Services",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-11-13T15:22:49.593Z",
+          "postType": "regular",
+          "content": "Title: Field Service mobile app users experience intermittent sign-in failures\n\nUser impact: Field Service mobile app users experienced intermittent sign-in failures.\n\nFinal Status: The upstream dependency service has recovered. We have confirmed via service diagnostic review that users are no longer experiencing intermittent sign-in failures with the Field Service mobile app. \n\nA Post Incident Report will be published within five days.\n\nPreliminary Root Cause: A dependency service responsible for authentication was unavailable. \n\nNext Steps: We’re reviewing our code for improved performance and potential automated recovery options to reduce or avoid similar issues in the future."
+        },
+        {
+          "createdAt": "2026-11-13T08:56:12.283Z",
+          "postType": "regular",
+          "content": "Title: Field Service mobile app users experience intermittent sign-in failures\n\nUser impact: Field Service mobile app users experience intermittent sign-in failures.\n\nMore Info: Impact is limited to signing-in to new sessions and signing back in to a session after signing out. Users who are already signed are not affected until their cached tokens expire.\n\nUsers receive the error message \"No network connection. Please check your network settings and try again.\" upon failure.\n\nAs a workaround, we recommend that:\n• Use Field Service in a web browser until this is mitigated.\n• Users who are still signed in shouldn't sign out, clear app data or reinstall.\n\nCurrent Status: We are continuing to monitor diagnostics of the upstream service dependency for recovery as actions are being performed to mitigate the issue.\n\nNext Update: Friday, November 13, 2026, at 4:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-11-13T06:05:57.827Z",
+          "postType": "regular",
+          "content": "Title: Field Service mobile app users experience intermittent sign-in failures\n\nUser impact: Field Service mobile app users experience intermittent sign-in failures.\n\nMore Info: Impact is limited to signing-in to new sessions and signing back in to a session after signing out. Users who are already signed are not affected until their cached tokens expire.\n\nUsers receive the error message \"No network connection. Please check your network settings and try again.\" upon failure.\n\nAs a workaround, we recommend that:\n• Use Field Service in a web browser until this is mitigated.\n• Users who are still signed in shouldn't sign out, clear app data or reinstall.\n\nCurrent Status: Our monitoring alerted us to an issue where Field Service mobile app users experience intermittent sign-in failures. Our investigation identified that an internal upstream service dependency, Exchange, which supports the sign-in functionality, is experiencing a service outage. This service outage has caused sign-in requests to intermittently fail at the authorization step. We are monitoring service diagnostics for recovery as actions are performed to mitigate the service outage on Exchange.\n\nNext Update: Friday, November 13, 2026, at 9:00 AM UTC"
+        }
+      ],
+      "serviceName": "Dynamics 365 Apps",
+      "affectedServices": [
+        "Dynamics 365 Apps"
+      ]
+    },
+    {
+      "id": "MX1551341",
+      "title": "Power Apps mobile app users experience intermittent sign-in failures",
+      "startTime": "2026-11-12T17:30:00Z",
+      "endTime": "2026-11-13T12:30:00Z",
+      "lastModified": "2026-11-13T15:24:57.607Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Power Apps mobile app users experience intermittent sign-in failures.",
+      "scopeOfImpact": "",
+      "rootCause": "A dependency service responsible for authentication was unavailable. \n\nNext Steps: We’re reviewing our code for improved performance and potential automated recovery options to reduce or avoid similar issues in the future.",
+      "nextUpdateBy": "",
+      "feature": "Other",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-11-13T15:24:57.607Z",
+          "postType": "regular",
+          "content": "Title: Power Apps mobile app users experience intermittent sign-in failures\n\nUser impact: Power Apps mobile app users experience intermittent sign-in failures.\n\nFinal Status: The upstream dependency service has recovered. We have confirmed via service diagnostic review that users are no longer experiencing intermittent sign-in failures with the Power Apps mobile app. \n\nA Post Incident Report will be published within five days.\n\nPreliminary Root Cause: A dependency service responsible for authentication was unavailable. \n\nNext Steps: We’re reviewing our code for improved performance and potential automated recovery options to reduce or avoid similar issues in the future."
+        },
+        {
+          "createdAt": "2026-11-13T15:24:23.7Z",
+          "postType": "regular",
+          "content": "Title: Power Apps mobile app users experience intermittent sign-in failures\n\nUser impact: Power Apps mobile app users experience intermittent sign-in failures.\n\nFinal Status: The upstream dependency service has recovered. We have confirmed via service diagnostic review that users are no longer experiencing intermittent sign-in failures with the Power Apps mobile app. \n\nA Post Incident Report will be published within five days.\n\nPreliminary Root Cause: A dependency service responsible for authentication was unavailable. \n\nNext Steps: We’re reviewing our code for improved performance and potential automated recovery options to reduce or avoid similar issues in the future."
+        },
+        {
+          "createdAt": "2026-11-13T08:54:58.623Z",
+          "postType": "regular",
+          "content": "Title: Power Apps mobile app users experience intermittent sign-in failures\n\nUser impact: Power Apps mobile app users experience intermittent sign-in failures.\n\nMore Info: Impact is limited to signing-in to new sessions and signing back in to a session after signing out. Users who are already signed are not affected until their cached tokens expire.\n\nUsers receive the error message \"No network connection. Please check your network settings and try again.\" upon failure.\n\nAs a workaround, we recommend that:\n• Use Power Apps in a web browser until this is mitigated.\n• Users who are still signed in shouldn't sign out, clear app data, or reinstall.\n\nCurrent Status: We are continuing to monitor diagnostics of the upstream service dependency for recovery as actions are being performed to mitigate the issue.\n\nNext Update: Friday, November 13, 2026, at 4:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-11-13T06:07:06.053Z",
+          "postType": "regular",
+          "content": "Title: Power Apps mobile app users experience intermittent sign-in failures\n\nUser impact: Power Apps mobile app users experience intermittent sign-in failures.\n\nMore Info: Impact is limited to signing-in to new sessions and signing back in to a session after signing out. Users who are already signed are not affected until their cached tokens expire.\n\nUsers receive the error message \"No network connection. Please check your network settings and try again.\" upon failure.\n\nAs a workaround, we recommend that:\n• Use Power Apps in a web browser until this is mitigated.\n• Users who are still signed in shouldn't sign out, clear app data, or reinstall.\n\nCurrent Status: Our monitoring alerted us to an issue where Power Apps mobile app users experience intermittent sign-in failures. Our investigation identified that an internal upstream service dependency, Exchange, which supports the sign-in functionality, is experiencing a service outage. This service outage has caused sign-in requests to intermittently fail at the authorization step. We are monitoring service diagnostics for recovery as actions are performed to mitigate the service outage on Exchange.\n\nNext Update: Friday, November 13, 2026, at 9:00 AM UTC"
+        }
+      ],
+      "serviceName": "Power Apps",
+      "affectedServices": [
+        "Power Apps"
+      ]
+    },
     {
       "id": "SP1548842",
       "title": "Users were unable to view reporting metrics for Amplify Campaigns in SharePoint Online",
@@ -3828,78 +3843,6 @@
       "serviceName": "Microsoft 365 suite",
       "affectedServices": [
         "Microsoft 365 suite"
-      ]
-    },
-    {
-      "id": "CW1515013",
-      "title": "Some users may have been unable to send messages in Microsoft 365 Copilot chat",
-      "startTime": "2026-10-19T07:20:00Z",
-      "endTime": "2026-10-19T09:20:00Z",
-      "lastModified": "2026-10-19T14:20:37.46Z",
-      "status": "serviceRestored",
-      "severity": "incident",
-      "userImpact": "Users may have been unable to send messages in Copilot chat.",
-      "scopeOfImpact": "Some users attempting to send messages in Copilot chat through the Copilot web app, the Copilot app on Windows, Microsoft Teams, Outlook, and Microsoft 365 desktop apps may have been impacted.\r\n\r\nStart time: Monday, October 19, 2026, at 7:20 AM UTC\r\n\r\nEnd time: Monday, October 19, 2026, at 9:20 AM UTC",
-      "rootCause": "A recent Copilot service update inadvertently increased traffic beyond expected levels, resulting in impact.\r\n\r\nNext steps: \n- We're reviewing our update procedures to better identify similar issues during our development and testing cycles.\r\n\r\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "General",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-10-19T10:23:37.037Z",
-          "postType": "regular",
-          "content": "Title: Some users may have been unable to send messages in Microsoft 365 Copilot chat\r\n\r\nUser impact: Users may have been unable to send messages in Copilot chat.\r\n\r\nMore info: Impacted experiences included Copilot chat through the Copilot web app, the Copilot app on Windows, Microsoft Teams, Outlook, and Microsoft 365 desktop apps.\r\n\r\nFinal status: We’ve determined that a recent Copilot service update inadvertently increased traffic beyond expected levels, resulting in impact. We’ve confirmed that reverting the update successfully mitigated the impact and restored the service.\r\n\r\nScope of impact: Some users attempting to send messages in Copilot chat through the Copilot web app, the Copilot app on Windows, Microsoft Teams, Outlook, and Microsoft 365 desktop apps may have been impacted.\r\n\r\nStart time: Monday, October 19, 2026, at 7:20 AM UTC\r\n\r\nEnd time: Monday, October 19, 2026, at 9:20 AM UTC\r\n\r\nRoot cause: A recent Copilot service update inadvertently increased traffic beyond expected levels, resulting in impact.\r\n\r\nNext steps: \n- We're reviewing our update procedures to better identify similar issues during our development and testing cycles.\r\n\r\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-10-19T09:29:44.763Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to send messages in Microsoft 365 Copilot chat\r\n\r\nUser impact: Users may be unable to send messages in Copilot chat.\r\n\r\nMore info: Impacted experiences include Copilot chat through the Copilot web app, the Copilot app on Windows, Microsoft Teams, Outlook, and Microsoft 365 desktop apps.\r\n\r\nCurrent status: We’ve identified that a section of the Copilot service infrastructure that facilitates access is performing below acceptable thresholds. We’ve identified a service change that may be contributing to the impact and have reverted the change in an attempt to mitigate the issue. In parallel, we’re reviewing service telemetry and error data to confirm the root cause.\r\n\r\nScope of impact: Some users attempting to send messages in Copilot chat through the Copilot web app, the Copilot app on Windows, Microsoft Teams, Outlook, and Microsoft 365 desktop apps are impacted. This information may be updated as our investigation continues.\r\n\r\nNext update by: Monday, October 19, 2026, at 11:30 AM UTC"
-        }
-      ],
-      "serviceName": "Microsoft 365 Copilot Chat",
-      "affectedServices": [
-        "Microsoft 365 Copilot Chat"
-      ]
-    },
-    {
-      "id": "OP1514821",
-      "title": "Some users may be unable to access or protect content using Azure Rights Management (ARM) across Microsoft 365 services ",
-      "startTime": "2026-10-19T06:30:00Z",
-      "endTime": "2026-10-19T09:19:00Z",
-      "lastModified": "2026-10-26T20:25:21.34Z",
-      "status": "postIncidentReviewPublished",
-      "severity": "incident",
-      "userImpact": "Users may be unable to access or protect content using ARM across Microsoft 365 services. ",
-      "scopeOfImpact": "",
-      "rootCause": "",
-      "nextUpdateBy": "",
-      "feature": "Multiple Applications",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-10-26T20:24:03.743Z",
-          "postType": "regular",
-          "content": "A post-incident report has been published."
-        },
-        {
-          "createdAt": "2026-10-21T17:47:58.713Z",
-          "postType": "regular",
-          "content": "A post-incident report has been published."
-        },
-        {
-          "createdAt": "2026-10-19T10:27:19.807Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to access or protect content using Azure Rights Management (ARM) across Microsoft 365 services \n\nUser impact: Users may be unable to access or protect content using ARM across Microsoft 365 services. \n\nMore info: Impact may have prevented users from encrypting or decrypting protected content, including files and email messages, across Microsoft 365 services that rely on ARM.\n \nFinal status: Our mitigation efforts to stabilize the affected service components and restore request processing have been successful, and we’ve observed sustained recovery across the affected services. \n \nScope of impact: Some users attempting to encrypt or decrypt content using Microsoft 365 services that rely on ARM may have been impacted.\n \nStart time: Monday, October 19, 2026, at 6:30 AM UTC \n \nEnd time: Monday, October 19, 2026, at 9:19 AM UTC\n \nRoot cause: A significant increase in requests from several Microsoft 365 services exceeded the available processing capacity of the Azure Rights Management (ARM) front-end service. We identified that one contributing service had recently adopted a new software component that did not respond correctly to instructions to slow retry attempts, causing requests to be repeated more frequently than intended. The resulting resource pressure made some service components unhealthy and unable to process traffic reliably. \n \nNext steps: \n- For a more comprehensive list of next steps and actions, please refer to the Post Incident Report document."
-        },
-        {
-          "createdAt": "2026-10-19T09:05:23.927Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to access or protect content using Azure Rights Management (ARM) across Microsoft 365 services \r\n\r\nUser impact: Users may be unable to access or protect content using ARM across Microsoft 365 services. \r\n\r\nMore info: Impact may prevent users from encrypting or decrypting protected content, including files and email messages, across Microsoft 365 services that rely on ARM.\r\n\r\nCurrent status: We’ve identified that some service components responsible for processing Azure Rights Management requests are in an unhealthy state. We’re attempting to restart the affected components to mitigate impact. We’re seeing early signs of service recovery and are investigating the root cause while evaluating whether additional mitigation actions are required. \r\n\r\nScope of impact: Some users attempting to encrypt or decrypt content using Microsoft 365 services that rely on ARM may be impacted.\r\n\r\nNext update by: Monday, October 19, 2026, at 11:00 AM UTC"
-        }
-      ],
-      "serviceName": "Microsoft 365 apps",
-      "affectedServices": [
-        "Microsoft 365 apps"
       ]
     }
   ]
