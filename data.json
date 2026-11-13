@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-13T19:28:48.280Z",
+  "lastUpdated": "2026-11-13T19:59:01.810Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1222,23 +1222,28 @@
       "issues": [
         {
           "id": "TM1551945",
-          "title": "Admins may see devices appear as unmonitored in the Pro Management Portal (PMP) in Microsoft Teams",
+          "title": "Admins may see Windows and Android devices appear as unmonitored in the Pro Management Portal (PMP) in Microsoft Teams",
           "startTime": "2026-11-13T19:05:35.07Z",
           "endTime": null,
-          "lastModified": "2026-11-13T19:06:44.377Z",
+          "lastModified": "2026-11-13T19:45:19.053Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "userImpact": "Admins may see devices appear as unmonitored in the Pro Management Portal (PMP) in Microsoft Teams.",
-          "scopeOfImpact": "",
-          "rootCause": "",
-          "nextUpdateBy": "",
+          "userImpact": "Admins may see Windows and Android devices appear as unmonitored in the PMP in Microsoft Teams.",
+          "scopeOfImpact": "This event may impact any admin attempting to manage Windows and Android devices through the Microsoft Teams Pro Management Portal. This information may be updated as our investigation continues.\r\n\r\nStart time: Thursday, November 12, 2026, at 6:00 PM UTC",
+          "rootCause": "A spike in request traffic following yesterday's outage is disrupting device monitoring status in the PMP.",
+          "nextUpdateBy": "Friday, November 13, 2026, at 9:00 PM UTC",
           "feature": "General",
           "isResolved": false,
           "posts": [
             {
+              "createdAt": "2026-11-13T19:40:01.663Z",
+              "postType": "regular",
+              "content": "Title: Admins may see Windows and Android devices appear as unmonitored in the Pro Management Portal (PMP) in Microsoft Teams\r\n\r\nUser impact: Admins may see Windows and Android devices appear as unmonitored in the PMP in Microsoft Teams.\r\n\r\nMore info: Admins may utilize the Microsoft Teams admin center to circumvent this impact for Android devices.\r\n\r\nCurrent status: We've confirmed that a spike in request traffic following yesterday's outage is causing Windows and Android devices to appear as unmonitored in the PMP. To address the issue, we've scaled out the service, restarted affected pods, and redirected traffic from the Teams client away from PMP and to an alternate infrastructure. We're monitoring service health telemetry to verify that these actions restore normal device monitoring.\r\n\r\nScope of impact: This event may impact any admin attempting to manage Windows and Android devices through the Microsoft Teams Pro Management Portal. This information may be updated as our investigation continues.\r\n\r\nStart time: Thursday, November 12, 2026, at 6:00 PM UTC\r\n\r\nRoot cause: A spike in request traffic following yesterday's outage is disrupting device monitoring status in the PMP.\r\n\r\nNext update by: Friday, November 13, 2026, at 9:00 PM UTC"
+            },
+            {
               "createdAt": "2026-11-13T19:06:44.377Z",
               "postType": "regular",
-              "content": "Title: Admins may see devices appear as unmonitored in the Pro Management Portal (PMP) in Microsoft Teams\r\n\r\nUser impact: Admins may see devices appear as unmonitored in the Pro Management Portal (PMP) in Microsoft Teams.\r\n\r\nMore info: Admins may utilize the Microsoft Teams admin center to circumvent this impact.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Teams and checking for impact to your organization. We'll provide an update within 30 minutes."
+              "content": "Title: Admins may see Windows and Android devices appear as unmonitored in the Pro Management Portal (PMP) in Microsoft Teams\r\n\r\nUser impact: Admins may see Windows and Android devices appear as unmonitored in the PMP in Microsoft Teams.\r\n\r\nMore info: Admins may utilize the Microsoft Teams admin center to circumvent this impact.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Teams and checking for impact to your organization. We'll provide an update within 30 minutes."
             }
           ],
           "affectedServices": [
