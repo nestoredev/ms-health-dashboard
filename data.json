@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-16T22:06:01.354Z",
+  "lastUpdated": "2026-11-16T22:36:15.940Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -11,10 +11,10 @@
           "title": "Some users may not see free/busy info shared between organizations using cross-tenant access policy in Exchange Online",
           "startTime": "2026-11-04T16:00:00Z",
           "endTime": null,
-          "lastModified": "2026-11-13T21:33:43.223Z",
+          "lastModified": "2026-11-16T22:24:04.49Z",
           "status": "serviceDegradation",
           "severity": "advisory",
-          "userImpact": "Users may not see free/busy info shared between organizations using cross-tenant access policy in Exchange Online.",
+          "userImpact": "Users may not have seen free/busy info shared between organizations using cross-tenant access policy in Exchange Online.",
           "scopeOfImpact": "This issue impacts some users whose organization utilizes cross-tenant access policy, who may be unable to view free/busy info shared between organizations in Exchange Online. This section may be updated as the investigation progresses.\r\n\r\nEstimated time to resolve: We anticipate that the fix will complete deployment and remediate the impact by Monday, November 16, 2027.",
           "rootCause": "A recent change introduced a regression that causes cross-tenant mailbox requests to be rejected when a tenant ID was used instead of the mailbox's SMTP address.",
           "nextUpdateBy": "Tuesday, November 17, 2026, at 12:30 AM UTC",
