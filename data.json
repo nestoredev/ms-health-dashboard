@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-16T18:34:16.482Z",
+  "lastUpdated": "2026-11-16T19:04:33.158Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -655,51 +655,6 @@
       "id": "microsoftteams",
       "issues": [
         {
-          "id": "TM1551945",
-          "title": "Admins may see Windows and Android devices appear as unmonitored in the Pro Management Portal (PMP) in Microsoft Teams",
-          "startTime": "2026-11-13T19:05:35.07Z",
-          "endTime": null,
-          "lastModified": "2026-11-15T10:59:33.487Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Admins may see Windows and Android devices appear as unmonitored in the PMP in Microsoft Teams.",
-          "scopeOfImpact": "This event may impact any admin attempting to manage Windows and Android devices through the Microsoft Teams Pro Management Portal. This information may be updated as our investigation continues.\r\n\r\nStart time: Thursday, November 12, 2026, at 6:00 PM UTC",
-          "rootCause": "A spike in request traffic following a previous outage overloaded the service, triggering temporary limits on request volume and disrupting device monitoring status in PMP.",
-          "nextUpdateBy": "Monday, November 16, 2026, at 8:30 PM UTC",
-          "feature": "General",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-11-15T10:59:33.487Z",
-              "postType": "regular",
-              "content": "Title: Admins may see Windows and Android devices appear as unmonitored in the Pro Management Portal (PMP) in Microsoft Teams\r\n\r\nUser impact: Admins may see Windows and Android devices appear as unmonitored in the PMP in Microsoft Teams.\r\n\r\nMore info: Admins may utilize the Microsoft Teams admin center to circumvent this impact for Android devices.\r\n\r\nCurrent status: We’re continuing to monitor the deployment of the fix, which has restored approximately 95 percent of affected devices. We expect the remaining devices to recover as the deployment fully saturates across the impacted environment, which we anticipate will complete by our next scheduled communication. Admins who wish to expedite recovery can initiate a restart or bulk restart of affected devices through the Teams Admin Center.\r\n\r\nScope of impact: This event may impact any admin attempting to manage Windows and Android devices through the Microsoft Teams Pro Management Portal. This information may be updated as our investigation continues.\r\n\r\nStart time: Thursday, November 12, 2026, at 6:00 PM UTC\r\n\r\nRoot cause: A spike in request traffic following a previous outage overloaded the service, triggering temporary limits on request volume and disrupting device monitoring status in PMP.\r\n\r\nNext update by: Monday, November 16, 2026, at 8:30 PM UTC"
-            },
-            {
-              "createdAt": "2026-11-13T21:38:18.117Z",
-              "postType": "regular",
-              "content": "Title: Admins may see Windows and Android devices appear as unmonitored in the Pro Management Portal (PMP) in Microsoft Teams\r\n\r\nUser impact: Admins may see Windows and Android devices appear as unmonitored in the PMP in Microsoft Teams.\r\n\r\nMore info: Admins may utilize the Microsoft Teams admin center to circumvent this impact for Android devices.\r\n\r\nCurrent status: We anticipate that our fixes will be fully saturated, automatically restoring devices to a healthy state, by our next scheduled update. However, we've confirmed that admins who wish to receive the fix faster can initiate a restart or bulk restart of affected devices through the Teams Admin Center to remediate this event immediately.\r\n\r\nScope of impact: This event may impact any admin attempting to manage Windows and Android devices through the Microsoft Teams Pro Management Portal. This information may be updated as our investigation continues.\r\n\r\nStart time: Thursday, November 12, 2026, at 6:00 PM UTC\r\n\r\nRoot cause: A spike in request traffic following yesterday's outage is disrupting device monitoring status in the PMP.\r\n\r\nNext update by: Sunday, November 15, 2026, at 11:30 AM UTC"
-            },
-            {
-              "createdAt": "2026-11-13T20:57:08.797Z",
-              "postType": "regular",
-              "content": "Title: Admins may see Windows and Android devices appear as unmonitored in the Pro Management Portal (PMP) in Microsoft Teams\r\n\r\nUser impact: Admins may see Windows and Android devices appear as unmonitored in the PMP in Microsoft Teams.\r\n\r\nMore info: Admins may utilize the Microsoft Teams admin center to circumvent this impact for Android devices.\r\n\r\nCurrent status: Our fixes to restore the flow of traffic and resolve this issue have completed, but these changes will take time to fully saturate. We're currently testing a workaround to expedite this fix for affected users as we continue to monitor service health.\r\n\r\nScope of impact: This event may impact any admin attempting to manage Windows and Android devices through the Microsoft Teams Pro Management Portal. This information may be updated as our investigation continues.\r\n\r\nStart time: Thursday, November 12, 2026, at 6:00 PM UTC\r\n\r\nRoot cause: A spike in request traffic following yesterday's outage is disrupting device monitoring status in the PMP.\r\n\r\nNext update by: Friday, November 13, 2026, at 9:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-11-13T19:40:01.663Z",
-              "postType": "regular",
-              "content": "Title: Admins may see Windows and Android devices appear as unmonitored in the Pro Management Portal (PMP) in Microsoft Teams\r\n\r\nUser impact: Admins may see Windows and Android devices appear as unmonitored in the PMP in Microsoft Teams.\r\n\r\nMore info: Admins may utilize the Microsoft Teams admin center to circumvent this impact for Android devices.\r\n\r\nCurrent status: We've confirmed that a spike in request traffic following yesterday's outage is causing Windows and Android devices to appear as unmonitored in the PMP. To address the issue, we've scaled out the service, restarted affected pods, and redirected traffic from the Teams client away from PMP and to an alternate infrastructure. We're monitoring service health telemetry to verify that these actions restore normal device monitoring.\r\n\r\nScope of impact: This event may impact any admin attempting to manage Windows and Android devices through the Microsoft Teams Pro Management Portal. This information may be updated as our investigation continues.\r\n\r\nStart time: Thursday, November 12, 2026, at 6:00 PM UTC\r\n\r\nRoot cause: A spike in request traffic following yesterday's outage is disrupting device monitoring status in the PMP.\r\n\r\nNext update by: Friday, November 13, 2026, at 9:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-11-13T19:06:44.377Z",
-              "postType": "regular",
-              "content": "Title: Admins may see Windows and Android devices appear as unmonitored in the Pro Management Portal (PMP) in Microsoft Teams\r\n\r\nUser impact: Admins may see Windows and Android devices appear as unmonitored in the PMP in Microsoft Teams.\r\n\r\nMore info: Admins may utilize the Microsoft Teams admin center to circumvent this impact.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Teams and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Microsoft Teams"
-          ]
-        },
-        {
           "id": "MO1489432",
           "title": "Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile",
           "startTime": "2026-10-06T11:45:49.047Z",
@@ -988,6 +943,52 @@
     }
   ],
   "history": [
+    {
+      "id": "TM1551945",
+      "title": "Admins may see Windows and Android devices appear as unmonitored in the Pro Management Portal (PMP) in Microsoft Teams",
+      "startTime": "2026-11-13T19:05:35.07Z",
+      "endTime": null,
+      "lastModified": "2026-11-16T18:48:05.783Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Admins may have seen Windows and Android devices appear as unmonitored in the PMP in Microsoft Teams.",
+      "scopeOfImpact": "This event may impact any admin attempting to manage Windows and Android devices through the Microsoft Teams Pro Management Portal. This information may be updated as our investigation continues.\r\n\r\nStart time: Thursday, November 12, 2026, at 6:00 PM UTC",
+      "rootCause": "A spike in request traffic following a previous outage overloaded the service, triggering temporary limits on request volume and disrupting device monitoring status in PMP.",
+      "nextUpdateBy": "Monday, November 16, 2026, at 8:30 PM UTC",
+      "feature": "General",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-11-15T10:59:33.487Z",
+          "postType": "regular",
+          "content": "Title: Admins may see Windows and Android devices appear as unmonitored in the Pro Management Portal (PMP) in Microsoft Teams\r\n\r\nUser impact: Admins may see Windows and Android devices appear as unmonitored in the PMP in Microsoft Teams.\r\n\r\nMore info: Admins may utilize the Microsoft Teams admin center to circumvent this impact for Android devices.\r\n\r\nCurrent status: We’re continuing to monitor the deployment of the fix, which has restored approximately 95 percent of affected devices. We expect the remaining devices to recover as the deployment fully saturates across the impacted environment, which we anticipate will complete by our next scheduled communication. Admins who wish to expedite recovery can initiate a restart or bulk restart of affected devices through the Teams Admin Center.\r\n\r\nScope of impact: This event may impact any admin attempting to manage Windows and Android devices through the Microsoft Teams Pro Management Portal. This information may be updated as our investigation continues.\r\n\r\nStart time: Thursday, November 12, 2026, at 6:00 PM UTC\r\n\r\nRoot cause: A spike in request traffic following a previous outage overloaded the service, triggering temporary limits on request volume and disrupting device monitoring status in PMP.\r\n\r\nNext update by: Monday, November 16, 2026, at 8:30 PM UTC"
+        },
+        {
+          "createdAt": "2026-11-13T21:38:18.117Z",
+          "postType": "regular",
+          "content": "Title: Admins may see Windows and Android devices appear as unmonitored in the Pro Management Portal (PMP) in Microsoft Teams\r\n\r\nUser impact: Admins may see Windows and Android devices appear as unmonitored in the PMP in Microsoft Teams.\r\n\r\nMore info: Admins may utilize the Microsoft Teams admin center to circumvent this impact for Android devices.\r\n\r\nCurrent status: We anticipate that our fixes will be fully saturated, automatically restoring devices to a healthy state, by our next scheduled update. However, we've confirmed that admins who wish to receive the fix faster can initiate a restart or bulk restart of affected devices through the Teams Admin Center to remediate this event immediately.\r\n\r\nScope of impact: This event may impact any admin attempting to manage Windows and Android devices through the Microsoft Teams Pro Management Portal. This information may be updated as our investigation continues.\r\n\r\nStart time: Thursday, November 12, 2026, at 6:00 PM UTC\r\n\r\nRoot cause: A spike in request traffic following yesterday's outage is disrupting device monitoring status in the PMP.\r\n\r\nNext update by: Sunday, November 15, 2026, at 11:30 AM UTC"
+        },
+        {
+          "createdAt": "2026-11-13T20:57:08.797Z",
+          "postType": "regular",
+          "content": "Title: Admins may see Windows and Android devices appear as unmonitored in the Pro Management Portal (PMP) in Microsoft Teams\r\n\r\nUser impact: Admins may see Windows and Android devices appear as unmonitored in the PMP in Microsoft Teams.\r\n\r\nMore info: Admins may utilize the Microsoft Teams admin center to circumvent this impact for Android devices.\r\n\r\nCurrent status: Our fixes to restore the flow of traffic and resolve this issue have completed, but these changes will take time to fully saturate. We're currently testing a workaround to expedite this fix for affected users as we continue to monitor service health.\r\n\r\nScope of impact: This event may impact any admin attempting to manage Windows and Android devices through the Microsoft Teams Pro Management Portal. This information may be updated as our investigation continues.\r\n\r\nStart time: Thursday, November 12, 2026, at 6:00 PM UTC\r\n\r\nRoot cause: A spike in request traffic following yesterday's outage is disrupting device monitoring status in the PMP.\r\n\r\nNext update by: Friday, November 13, 2026, at 9:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-11-13T19:40:01.663Z",
+          "postType": "regular",
+          "content": "Title: Admins may see Windows and Android devices appear as unmonitored in the Pro Management Portal (PMP) in Microsoft Teams\r\n\r\nUser impact: Admins may see Windows and Android devices appear as unmonitored in the PMP in Microsoft Teams.\r\n\r\nMore info: Admins may utilize the Microsoft Teams admin center to circumvent this impact for Android devices.\r\n\r\nCurrent status: We've confirmed that a spike in request traffic following yesterday's outage is causing Windows and Android devices to appear as unmonitored in the PMP. To address the issue, we've scaled out the service, restarted affected pods, and redirected traffic from the Teams client away from PMP and to an alternate infrastructure. We're monitoring service health telemetry to verify that these actions restore normal device monitoring.\r\n\r\nScope of impact: This event may impact any admin attempting to manage Windows and Android devices through the Microsoft Teams Pro Management Portal. This information may be updated as our investigation continues.\r\n\r\nStart time: Thursday, November 12, 2026, at 6:00 PM UTC\r\n\r\nRoot cause: A spike in request traffic following yesterday's outage is disrupting device monitoring status in the PMP.\r\n\r\nNext update by: Friday, November 13, 2026, at 9:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-11-13T19:06:44.377Z",
+          "postType": "regular",
+          "content": "Title: Admins may see Windows and Android devices appear as unmonitored in the Pro Management Portal (PMP) in Microsoft Teams\r\n\r\nUser impact: Admins may see Windows and Android devices appear as unmonitored in the PMP in Microsoft Teams.\r\n\r\nMore info: Admins may utilize the Microsoft Teams admin center to circumvent this impact.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft Teams and checking for impact to your organization. We'll provide an update within 30 minutes."
+        }
+      ],
+      "serviceName": "Microsoft Teams",
+      "affectedServices": [
+        "Microsoft Teams"
+      ]
+    },
     {
       "id": "MO1550821",
       "title": "Users may be unable to connect to multiple Microsoft 365 services",
@@ -2960,52 +2961,6 @@
       "serviceName": "Microsoft 365 Copilot Chat",
       "affectedServices": [
         "Microsoft 365 Copilot Chat"
-      ]
-    },
-    {
-      "id": "TM1514781",
-      "title": "Some users may be unable to join town hall meetings in Microsoft Teams and are redirected to a registration page",
-      "startTime": "2026-10-19T07:56:42Z",
-      "endTime": "2026-10-20T01:13:13.667Z",
-      "lastModified": "2026-10-20T01:22:02.627Z",
-      "status": "serviceRestored",
-      "severity": "incident",
-      "userImpact": "Users may have been unable to join town hall meetings in Microsoft Teams and were redirected to a registration page.",
-      "scopeOfImpact": "Impact was specific to some users that attempted to join town hall meetings in Microsoft Teams when registration was disabled.\r\n\r\nStart time: Thursday, October 1, 2026, at 4:16 PM UTC\r\n\r\nEnd time: Tuesday, October 20, 2026, at 12:06 AM UTC",
-      "rootCause": "A recent service change introduced a code regression that incorrectly required attendee registration information when registration was disabled. As a result, the attendee Join URL was removed from the session response, and prevented users from joining affected town hall meetings.\r\n\r\nNext steps: \n-We're reviewing the code change that resulted in impact to better understand why it incorrectly required users to register, and prevent similar issues from taking place in the future.\r\n\r\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Meetings",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-10-20T01:21:58.65Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to join town hall meetings in Microsoft Teams and are redirected to a registration page\r\n\r\nUser impact: Users may have been unable to join town hall meetings in Microsoft Teams and were redirected to a registration page.\r\n\r\nMore info: This may have occurred when organizers created and published town halls with registration disabled. Additionally, users may have found the Join option unavailable or unresponsive.\n \nWhile we worked to remediate the impact, affected users could have utilized their Microsoft Teams or Outlook calendars to join town hall meetings.\r\n\r\nFinal status: We've confirmed that the deployment of the fix has been fully rolled out, and we've validated with our internal monitoring to confirm that the impact has been remediated.\r\n\r\nScope of impact: Impact was specific to some users that attempted to join town hall meetings in Microsoft Teams when registration was disabled.\r\n\r\nStart time: Thursday, October 1, 2026, at 4:16 PM UTC\r\n\r\nEnd time: Tuesday, October 20, 2026, at 12:06 AM UTC\r\n\r\nRoot cause: A recent service change introduced a code regression that incorrectly required attendee registration information when registration was disabled. As a result, the attendee Join URL was removed from the session response, and prevented users from joining affected town hall meetings.\r\n\r\nNext steps: \n-We're reviewing the code change that resulted in impact to better understand why it incorrectly required users to register, and prevent similar issues from taking place in the future.\r\n\r\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-10-19T22:16:26.567Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to join town hall meetings in Microsoft Teams and are redirected to a registration page\r\n\r\nUser impact: Users may be unable to join town hall meetings in Microsoft Teams and are redirected to a registration page.\r\n\r\nMore info: This may occur when organizers create and publish town halls with registration disabled. Additionally, users may find the Join option unavailable or unresponsive.\n\nWhile we work to remediate the impact, affected users can utilize their Microsoft Teams or Outlook calendars to join town hall meetings.\r\n\r\nCurrent status: While most affected users have received the fix, the complete deployment is taking longer than initially anticipated. We're continuing to monitor the deployment to ensure that the impact is remediated for all affected users.\r\n\r\nScope of impact: Impact is specific to some users attempting to join town hall meetings in Microsoft Teams when registration is disabled. \r\n\r\nRoot cause: A recent service change introduced a code regression that incorrectly requires attendee registration information when registration is disabled. As a result, the attendee Join URL is removed from the session response, preventing users from joining affected town hall meetings.\r\n\r\nNext update by: Tuesday, October 20, 2026, at 3:00 AM UTC"
-        },
-        {
-          "createdAt": "2026-10-19T16:15:10.947Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to join town hall meetings in Microsoft Teams and are redirected to a registration page\r\n\r\nUser impact: Users may be unable to join town hall meetings in Microsoft Teams and are redirected to a registration page.\r\n\r\nMore info: This may occur when organizers create and publish town halls with registration disabled. Additionally, users may find the Join option unavailable or unresponsive.\n\nWhile we work to remediate the impact, affected users can utilize their Microsoft Teams or Outlook calendars to join town hall meetings.\r\n\r\nCurrent status: As we verify the timeline for the offending service change and when users started to become redirected to the registration page when joining Microsoft Teams town hall meetings, we're deploying our solution. Our fix deployment timeline projects our deployment will have completed and that the impact will be remediated by our next scheduled communication update.\r\n\r\nScope of impact: Impact is specific to some users attempting to join town hall meetings in Microsoft Teams when registration is disabled. \r\n\r\nRoot cause: A recent service change introduced a code regression that incorrectly requires attendee registration information when registration is disabled. As a result, the attendee Join URL is removed from the session response, preventing users from joining affected town hall meetings.\r\n\r\nNext update by: Tuesday, October 20, 2026, at 12:00 AM UTC"
-        },
-        {
-          "createdAt": "2026-10-19T13:57:19.883Z",
-          "postType": "regular",
-          "content": "Title: Some users are unable to join town hall meetings in Microsoft Teams and are redirected to a registration page \r\n\r\nUser impact: Users are unable to join town hall meetings in Microsoft Teams and are redirected to a registration page. \r\n\r\nMore info: This occurs when organizers create and publish town halls with registration disabled. Additionally, users find the Join option unavailable or unresponsive.\r\n\r\nCurrent status: We’ve completed development of the fix and successfully tested the updated build in an internal environment with the offending change removed. We’re progressing the remaining preparations required to deploy the fix to the affected environment. Once deployed, we’ll validate that the fix has remediated impact. \r\n\r\nScope of impact: Impact is specific to some users attempting to join town hall meetings in Microsoft Teams when registration is disabled. \r\n\r\nRoot cause: A recent service change has introduced a code regression that incorrectly requires attendee registration information when registration is disabled. As a result, the attendee Join URL is removed from the session response, preventing users from joining affected town hall meetings. \r\n\r\nNext update by: Monday, October 19, 2026, at 5:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-10-19T11:52:37.303Z",
-          "postType": "regular",
-          "content": "Title: Some users are unable to join town hall meetings in Microsoft Teams and are redirected to a registration page \r\n\r\nUser impact: Users are unable to join town hall meetings in Microsoft Teams and are redirected to a registration page. \r\n\r\nMore info: This occurs when organizers create and publish town halls with registration disabled. Additionally, some users may find the Join option unavailable or unresponsive.\r\n\r\nCurrent status: We’ve confirmed the source of the regression and are developing a code fix to remediate impact. Once the updated build is complete, we’ll test the fix within an internal environment to confirm its effectiveness before progressing with a gradual rollout to the affected environment. \r\n\r\nScope of impact: Your organization is affected by this event, and some users attempting to join town hall meetings in Microsoft Teams with registration disabled are impacted.\r\n\r\nRoot cause: A recent service change introduced a code regression that caused the attendee Join URL to be removed when registration was disabled, resulting in impact.\r\n\r\nNext update by: Monday, October 19, 2026, at 2:00 PM UTC"
-        }
-      ],
-      "serviceName": "Microsoft Teams",
-      "affectedServices": [
-        "Microsoft Teams"
       ]
     }
   ]
