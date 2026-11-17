@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-17T00:06:56.043Z",
+  "lastUpdated": "2026-11-17T00:37:10.401Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1227,16 +1227,21 @@
       "title": "Some users may be unable to access or use Microsoft Teams functionality",
       "startTime": "2026-11-12T14:45:00Z",
       "endTime": "2026-11-12T15:53:00Z",
-      "lastModified": "2026-11-12T17:08:41.617Z",
-      "status": "serviceRestored",
+      "lastModified": "2026-11-17T00:23:05.02Z",
+      "status": "postIncidentReviewPublished",
       "severity": "incident",
       "userImpact": "Some users may have experienced issues when accessing or using Microsoft Teams functionality.",
-      "scopeOfImpact": "Any user accessing Microsoft Teams services hosted in or routed through the North and South America regions may have been impacted.\n \nStart time: Thursday, November 12, 2026, at 2:45 PM UTC\n \nEnd time: Thursday, November 12, 2026, at 3:53 PM UTC\n \nPreliminary",
-      "rootCause": "Resource contention within the underlying service infrastructure resulted in elevated resource utilization, which affected the service's ability to process Microsoft Teams messaging requests as expected.\n \nNext steps:\n-We’re investigating resource utilization balance in the affected service infrastructure to identify improvements to prevent similar issues in the future.\n\nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days.",
+      "scopeOfImpact": "",
+      "rootCause": "",
       "nextUpdateBy": "",
       "feature": "General",
       "isResolved": true,
       "posts": [
+        {
+          "createdAt": "2026-11-17T00:23:05.02Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        },
         {
           "createdAt": "2026-11-12T17:08:41.617Z",
           "postType": "regular",
@@ -1256,11 +1261,6 @@
           "createdAt": "2026-11-12T15:53:47.167Z",
           "postType": "quick",
           "content": "Affected users may experience symptoms including, but not limited to:\n\n- Delays or failures when sending chat messages.\n- Errors when creating or updating chat conversations.\n- Issues retrieving messages or loading conversations.\n- Delays or inaccuracies in presence status updates.\n- Intermittent failures when using affected Microsoft Teams chat functionality.\n\nThis quick update is designed to give the latest information on this issue.\n\nNext update by: Thursday, November 12, 2026, at 4:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-11-12T15:35:46.43Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to access or use Microsoft Teams functionality\n\nUser impact: Some users may experience issues when accessing or using Microsoft Teams functionality.\n\nCurrent status: Our investigation has identified elevated service errors affecting multiple Microsoft Teams operations, including messaging and presence functionality. We're analyzing the associated error patterns and service dependencies to isolate the underlying cause and determine appropriate mitigation actions.\n \nScope of impact: Any user accessing Microsoft Teams services hosted in or routed through the Americas regions may be impacted. We’re working to better understand the full scope of impact.\n \nNext update by: Thursday, November 12, 2026, at 4:30 PM UTC"
         }
       ],
       "serviceName": "Microsoft Teams",
