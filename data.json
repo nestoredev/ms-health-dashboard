@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-18T00:17:44.521Z",
+  "lastUpdated": "2026-11-18T00:47:56.764Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -837,12 +837,43 @@
     },
     {
       "service": "Microsoft 365 Copilot Chat",
-      "status": "restoringService",
+      "status": "serviceOperational",
       "id": "CopilotChat",
       "issues": []
     }
   ],
   "history": [
+    {
+      "id": "CW1558072",
+      "title": "Some users aren't able to upload new skills in Microsoft 365 Copilot Chat",
+      "startTime": "2026-11-17T23:41:01.97Z",
+      "endTime": "2026-11-18T00:09:13.8Z",
+      "lastModified": "2026-11-18T00:17:25.423Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users weren't able to upload new skills in Microsoft 365 Copilot Chat",
+      "scopeOfImpact": "Your organization was impacted, and some users weren't able to upload new skills in Microsoft 365 Copilot Chat. \r\n\r\nStart time: Tuesday, November 10, 2026, at 7:00 PM UTC\r\n\r\nEnd time: Tuesday, November 17, 2026, at 11:40 PM UTC",
+      "rootCause": "A recent service-side update resulted in this impacting event.\r\n\r\nNext steps: \n- We'll continue to review our update approval process to better help prevent future similar events.\r\n\r\nThis is the final update for this event.",
+      "nextUpdateBy": "",
+      "feature": "General",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-11-18T00:17:21.943Z",
+          "postType": "regular",
+          "content": "Title: Some users aren't able to upload new skills in Microsoft 365 Copilot Chat\r\n\r\nUser impact: Users weren't able to upload new skills in Microsoft 365 Copilot Chat\r\n\r\nFinal status: We identified that a recent service-side update resulted in the inability to upload new skills. We've applied a targeted code change to correct this issue and have confirmed through service-side reproduction that the issue is resolved.\r\n\r\nScope of impact: Your organization was impacted, and some users weren't able to upload new skills in Microsoft 365 Copilot Chat. \r\n\r\nStart time: Tuesday, November 10, 2026, at 7:00 PM UTC\r\n\r\nEnd time: Tuesday, November 17, 2026, at 11:40 PM UTC\r\n\r\nRoot cause: A recent service-side update resulted in this impacting event.\r\n\r\nNext steps: \n- We'll continue to review our update approval process to better help prevent future similar events.\r\n\r\nThis is the final update for this event."
+        },
+        {
+          "createdAt": "2026-11-17T23:47:31.857Z",
+          "postType": "regular",
+          "content": "Title: Some users aren't able to upload new skills in Microsoft 365 Copilot Chat\r\n\r\nUser impact: Users weren't able to upload new skills in Microsoft 365 Copilot Chat\r\n\r\nCurrent status: We've investigated a problem with Microsoft 365 Copilot Chat in which users aren't able to upload new skills, and we’ve confirmed that service is now restored. We'll provide additional information in a closure summary within the “History” section of the “Service health” dashboard shortly."
+        }
+      ],
+      "serviceName": "Microsoft 365 Copilot Chat",
+      "affectedServices": [
+        "Microsoft 365 Copilot Chat"
+      ]
+    },
     {
       "id": "EX1542065",
       "title": "Some users may not see free/busy info shared between organizations using cross-tenant access policy in Exchange Online",
@@ -2850,37 +2881,6 @@
       "serviceName": "Microsoft Teams",
       "affectedServices": [
         "Microsoft Teams"
-      ]
-    },
-    {
-      "id": "MV1519166",
-      "title": "Users may be unable to access the group feed in Microsoft Viva Engage",
-      "startTime": "2026-10-21T14:01:00Z",
-      "endTime": "2026-10-21T16:47:17.163Z",
-      "lastModified": "2026-10-21T16:50:29.07Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users may have been unable to access the group feed with Microsoft Viva Engage.",
-      "scopeOfImpact": "This issue prevented any user from accessing the group feed with Microsoft Viva Engage.\r\n\r\nStart time: Wednesday, October 21, 2026, at 2:01 PM UTC\r\n\r\nEnd time: Wednesday, October 21, 2026, at 4:02 PM UTC",
-      "rootCause": "A subset of service infrastructure that helps facilitate access to the Microsoft Viva Engage group feed dropped below our manageable service performance thresholds, resulting in impact.\r\n\r\nNext steps: \n- We're further analyzing the subset of affected infrastructure to better understand the source for the lower-than-expected service performance, and to prevent similar issues in the future.\n\nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Post/Reply/Like",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-10-21T16:50:25.707Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to access the group feed in Microsoft Viva Engage\r\n\r\nUser impact: Users may have been unable to access the group feed with Microsoft Viva Engage.\r\n\r\nFinal status: Following our infrastructure optimizations, our internal telemetry verified that the impact had been remediated.\r\n\r\nScope of impact: This issue prevented any user from accessing the group feed with Microsoft Viva Engage.\r\n\r\nStart time: Wednesday, October 21, 2026, at 2:01 PM UTC\r\n\r\nEnd time: Wednesday, October 21, 2026, at 4:02 PM UTC\r\n\r\nRoot cause: A subset of service infrastructure that helps facilitate access to the Microsoft Viva Engage group feed dropped below our manageable service performance thresholds, resulting in impact.\r\n\r\nNext steps: \n- We're further analyzing the subset of affected infrastructure to better understand the source for the lower-than-expected service performance, and to prevent similar issues in the future.\n\nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-10-21T15:54:16.893Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to access the group feed in Microsoft Viva Engage\r\n\r\nUser impact: Users may be unable to access the group feed with Microsoft Viva Engage.\r\n\r\nCurrent status: We've identified a subset of service infrastructure that has dropped below our manageable service performance thresholds, preventing users from accessing the Microsoft Viva group feed with Microsoft Viva Engage. We're conducting service optimizations to the affected subset of service infrastructure to remediate the impact.\r\n\r\nScope of impact: This issue is preventing any user from accessing the group feed with Microsoft Viva Engage.\r\n\r\nStart time: Wednesday, October 21, 2026, at 2:01 PM UTC\r\n\r\nRoot cause: A subset of service infrastructure that helps facilitate access to the Microsoft Viva Engage group feed has fallen below our manageable service performance thresholds, resulting in impact.\r\n\r\nNext update by: Wednesday, October 21, 2026, at 5:30 PM UTC"
-        }
-      ],
-      "serviceName": "Microsoft Viva",
-      "affectedServices": [
-        "Microsoft Viva"
       ]
     }
   ]
