@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-18T20:56:35.521Z",
+  "lastUpdated": "2026-11-18T21:26:47.672Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -1181,20 +1181,25 @@
       "title": "Agents are unable to access Dynamics 365 Contact Center ",
       "startTime": "2026-11-12T17:00:00Z",
       "endTime": "2026-11-13T00:57:00Z",
-      "lastModified": "2026-11-13T01:25:41.99Z",
-      "status": "serviceRestored",
+      "lastModified": "2026-11-18T20:56:27.45Z",
+      "status": "postIncidentReviewPublished",
       "severity": "incident",
       "userImpact": "Agents were unable to access Dynamics 365 Contact Center.",
       "scopeOfImpact": "",
-      "rootCause": "A portion of the database infrastructure responsible for Contact Center experienced connectivity failures.\n \nNext Steps: We're analyzing performance data and trends on the affected systems to prevent this problem from happening again.",
+      "rootCause": "",
       "nextUpdateBy": "",
       "feature": "Sign In/Authentication",
       "isResolved": true,
       "posts": [
         {
+          "createdAt": "2026-11-18T20:54:59.417Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        },
+        {
           "createdAt": "2026-11-13T01:25:41.99Z",
           "postType": "regular",
-          "content": "Title: Agents are unable to access Dynamics 365 Contact Center \n\nUser impact: Agents were unable to access Dynamics 365 Contact Center.\n\nFinal Status: We have completed the restart. Following a period of monitoring service diagnostics, we have confirmed that agent access to Dynamics 365 Contact Center has been restored.\n \nA Post Incident Report will be published within five days.\n \nPreliminary Root Cause: A portion of the database infrastructure responsible for Contact Center experienced connectivity failures.\n \nNext Steps: We're analyzing performance data and trends on the affected systems to prevent this problem from happening again."
+          "content": "Title: Agents are unable to access Dynamics 365 Contact Center \n\nUser impact: Agents were unable to access Dynamics 365 Contact Center.\n\nMore Info: For an in-depth description of the impact that occurred, please refer to the Post Incident Report (PIR) that has been published for this incident.\n\nFinal Status: We have completed the restart. Following a period of monitoring service diagnostics, we have confirmed that agent access to Dynamics 365 Contact Center has been restored.\n \nA Post Incident Report will be published within five days.\n \nPreliminary Root Cause: A portion of the database infrastructure responsible for Contact Center experienced connectivity failures.\n \nNext Steps: We're analyzing performance data and trends on the affected systems to prevent this problem from happening again."
         },
         {
           "createdAt": "2026-11-12T23:50:55.653Z",
@@ -1210,11 +1215,6 @@
           "createdAt": "2026-11-12T21:14:32.473Z",
           "postType": "regular",
           "content": "Title: Agents are unable to access Dynamics 365 Contact Center \n\nUser impact: Agents are unable to access Dynamics 365 Contact Center.\n\nMore info: Agents may be unable to access the Dynamics Contact Center, preventing agents from sending or receiving messages or voice calls. Agents who can access the Contact Center may experience degraded voice and messaging functionality. Functionality and access may improve as the failover completes. \n\nCurrent Status: Following our service diagnostic review, we are performing a failover of the impacted database infrastructure. We are monitoring service telemetry for recovery.\n\nNext Update: Thursday, November 12, 2026, at 11:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-11-12T20:25:29.34Z",
-          "postType": "regular",
-          "content": "Title: Agents are unable to access Dynamics 365 Contact Center \n\nUser impact: Agents are unable to access Dynamics 365 Contact Center.\n\nMore Info: Agents are unable to access Dynamics 365 Contact Center, preventing agents from sending or receiving messages or voice calls. Agents who can access Contact Center may experience degraded voice and messaging functionality.\n\nCurrent Status: After our investigation, we identified a portion of the database infrastructure responsible for Contact Center experienced connectivity failures. We are gathering and reviewing service diagnostic data to determine cause and possible next troubleshooting steps.\n\nNext Update: Thursday, November 12, 2026, at 10:00 PM UTC"
         }
       ],
       "serviceName": "Dynamics 365 Apps",
