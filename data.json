@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-18T00:47:56.764Z",
+  "lastUpdated": "2026-11-18T01:18:08.812Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -504,11 +504,11 @@
         {
           "id": "IT1549049",
           "title": "Some users may see delays receiving policies, apps, and other changes on Windows devices enrolled in Microsoft Intune",
-          "startTime": "2026-11-11T16:34:41.043Z",
+          "startTime": "2026-11-11T16:34:41Z",
           "endTime": null,
-          "lastModified": "2026-11-12T01:18:04.16Z",
+          "lastModified": "2026-11-18T01:01:18.19Z",
           "status": "serviceDegradation",
-          "severity": "incident",
+          "severity": "advisory",
           "userImpact": "Users may see delays receiving policies, apps, and other changes on Windows devices enrolled in Microsoft Intune.",
           "scopeOfImpact": "Some users with Windows devices enrolled in Microsoft Intune may experience delays receiving policies, apps, and other changes while their devices install Windows security update MSRC144654. This information may be updated as our investigation continues.",
           "rootCause": "A recent Windows security update, MSRC144654, can cause a single check in to fail during installation.",
