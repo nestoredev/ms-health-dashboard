@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-19T11:32:31.834Z",
+  "lastUpdated": "2026-11-19T12:02:44.026Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -555,31 +555,6 @@
       "id": "microsoftteams",
       "issues": [
         {
-          "id": "TM1560260",
-          "title": "Some users may experience delays or failures receiving chat messages in Microsoft Teams desktop app",
-          "startTime": "2026-11-19T10:06:33.847Z",
-          "endTime": null,
-          "lastModified": "2026-11-19T10:08:04.037Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Users may experience delays or failures receiving chat messages in Microsoft Teams desktop app. ",
-          "scopeOfImpact": "Impact is specific to some users receiving chat messages through the Microsoft Teams desktop app.",
-          "rootCause": "A recent service change is causing Microsoft Teams desktop client registrations to be removed without prompting the client to promptly re-register, preventing real-time message delivery and resulting in delays.",
-          "nextUpdateBy": "Thursday, November 19, 2026, at 12:00 PM UTC",
-          "feature": "Messaging",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-11-19T10:08:04.037Z",
-              "postType": "regular",
-              "content": "Title: Some users may experience delays or failures receiving chat messages in Microsoft Teams desktop app\r\n\r\nUser impact: Users may experience delays or failures receiving chat messages in Microsoft Teams desktop app. \r\n\r\nMore info: Affected users may experience delays of several minutes before messages appear in the desktop app. \n\nAs a workaround, users may be able to use Microsoft Teams on the web to access messages without delay.\r\n\r\nCurrent status: We’ve identified that a recent service update is causing some Microsoft Teams desktop registrations to be unexpectedly removed. When this occurs, the affected desktop client isn’t notified that it needs to re-register, preventing real-time message notifications from being delivered and causing messages to appear only after the client performs a periodic synchronization. We’re proceeding with reverting the responsible update to restore normal message delivery. \r\n\r\nScope of impact: Impact is specific to some users receiving chat messages through the Microsoft Teams desktop app. \r\n\r\nRoot cause: A recent service change is causing Microsoft Teams desktop client registrations to be removed without prompting the client to promptly re-register, preventing real-time message delivery and resulting in delays. \r\n\r\nNext update by: Thursday, November 19, 2026, at 12:00 PM UTC"
-            }
-          ],
-          "affectedServices": [
-            "Microsoft Teams"
-          ]
-        },
-        {
           "id": "MO1489432",
           "title": "Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile",
           "startTime": "2026-10-06T11:45:49.047Z",
@@ -873,6 +848,37 @@
     }
   ],
   "history": [
+    {
+      "id": "TM1560260",
+      "title": "Some users may have experienced delays or failures receiving chat messages in Microsoft Teams desktop client ",
+      "startTime": "2026-11-10T13:16:00Z",
+      "endTime": "2026-11-19T10:15:00Z",
+      "lastModified": "2026-11-19T11:38:27.237Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Users may have experienced delays or failures receiving chat messages in Microsoft Teams desktop client. ",
+      "scopeOfImpact": "Impact was specific to some users receiving chat messages through the Microsoft Teams desktop client. \r\n\r\nStart time: Tuesday, November 10, 2026, at 1:16 PM UTC\r\n\r\nEnd time: Thursday, November 19, 2026, at 10:15 AM UTC",
+      "rootCause": "A recent service change caused Microsoft Teams desktop client registrations to be unexpectedly removed without prompting the client to promptly re-register, preventing real-time message delivery which resulted in delays.\r\n\r\nNext steps: \n- We're reviewing our update procedures to better identify similar issues during our development and testing cycles.\r\n\r\nThis is the final update for this event.",
+      "nextUpdateBy": "",
+      "feature": "Messaging",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-11-19T11:36:30.473Z",
+          "postType": "regular",
+          "content": "Title: Some users may have experienced delays or failures receiving chat messages in Microsoft Teams desktop client \r\n\r\nUser impact: Users may have experienced delays or failures receiving chat messages in Microsoft Teams desktop client. \r\n\r\nMore info: Affected users may have experienced delays receiving messages in the Microsoft Teams desktop client and delays receiving notifications on Microsoft Teams mobile apps.\n \nAs a workaround, users may have been able to use Microsoft Teams on the web to access messages without delay. \r\n\r\nFinal status: We’ve completed the reversion of the service change responsible for the impact and confirmed that new instances of the issue are no longer occurring. Previously affected users who continue to experience residual impact can restart the Microsoft Teams desktop client to restore functionality, while remaining affected clients are expected to recover automatically. In addition, we’ve received confirmation from a number of affected users that impact has been remediated. \r\n\r\nScope of impact: Impact was specific to some users receiving chat messages through the Microsoft Teams desktop client. \r\n\r\nStart time: Tuesday, November 10, 2026, at 1:16 PM UTC\r\n\r\nEnd time: Thursday, November 19, 2026, at 10:15 AM UTC\r\n\r\nRoot cause: A recent service change caused Microsoft Teams desktop client registrations to be unexpectedly removed without prompting the client to promptly re-register, preventing real-time message delivery which resulted in delays.\r\n\r\nNext steps: \n- We're reviewing our update procedures to better identify similar issues during our development and testing cycles.\r\n\r\nThis is the final update for this event."
+        },
+        {
+          "createdAt": "2026-11-19T10:08:04.037Z",
+          "postType": "regular",
+          "content": "Title: Some users may experience delays or failures receiving chat messages in Microsoft Teams desktop client\r\n\r\nUser impact: Users may experience delays or failures receiving chat messages in Microsoft Teams desktop client. \r\n\r\nMore info: Affected users may experience delays of several minutes before messages appear in the desktop client. \n\nAs a workaround, users may be able to use Microsoft Teams on the web to access messages without delay.\r\n\r\nCurrent status: We’ve identified that a recent service update is causing some Microsoft Teams desktop registrations to be unexpectedly removed. When this occurs, the affected desktop client isn’t notified that it needs to re-register, preventing real-time message notifications from being delivered and causing messages to appear only after the client performs a periodic synchronization. We’re proceeding with reverting the responsible update to restore normal message delivery. \r\n\r\nScope of impact: Impact is specific to some users receiving chat messages through the Microsoft Teams desktop client. \r\n\r\nRoot cause: A recent service change is causing Microsoft Teams desktop client registrations to be removed without prompting the client to promptly re-register, preventing real-time message delivery and resulting in delays. \r\n\r\nNext update by: Thursday, November 19, 2026, at 12:00 PM UTC"
+        }
+      ],
+      "serviceName": "Microsoft Teams",
+      "affectedServices": [
+        "Microsoft Teams"
+      ]
+    },
     {
       "id": "CW1558072",
       "title": "Some users aren't able to upload new skills in Microsoft 365 Copilot Chat",
@@ -2870,52 +2876,6 @@
       "serviceName": "SharePoint Online",
       "affectedServices": [
         "SharePoint Online"
-      ]
-    },
-    {
-      "id": "TM1519335",
-      "title": "SIP devices can't make or receive calls",
-      "startTime": "2026-10-21T18:00:00Z",
-      "endTime": "2026-10-22T15:30:00Z",
-      "lastModified": "2026-10-22T16:50:05.797Z",
-      "status": "serviceRestored",
-      "severity": "incident",
-      "userImpact": "Users may have been unable to make or receive calls using SIP devices.",
-      "scopeOfImpact": "Any user attempting to make or receive calls using SIP devices were impacted by this event.\n\nStart time: Wednesday, October 21, 2026, at 6:00 PM UTC\n\nEnd time: Thursday, October 22, 2026, at 3:30 PM UTC",
-      "rootCause": "A configuration issue had impacted components that manage SIP devices, resulting in impact.\n\nNext steps:\n- We're reviewing the affected systems to identify improvements that could prevent similar issues from recurring.\n \nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "Calling",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-10-22T16:50:05.797Z",
-          "postType": "regular",
-          "content": "Title: SIP devices can't make or receive calls\n\nUser impact: Users may have been unable to make or receive calls using SIP devices.\n\nMore info: Users may have been unable to sign in to their SIP devices or encountered \"Service Unavailable\" errors.\n \nOnce a SIP device attempted to perform its next synchronization, the device would have disconnected. Users would have been unable to log back into those devices and therefore could not make or receive calls using those SIP devices.\n \nCalling functionality using the Microsoft Teams web and desktop clients, or Teams Phone Devices was not impacted.\n\nFinal status: We received additional confirmations from previously impacted organizations that the issue is resolved, and SIP devices are performing as expected.\n\nScope of impact: Any user attempting to make or receive calls using SIP devices were impacted by this event.\n\nStart time: Wednesday, October 21, 2026, at 6:00 PM UTC\n\nEnd time: Thursday, October 22, 2026, at 3:30 PM UTC\n\nRoot cause: A configuration issue had impacted components that manage SIP devices, resulting in impact.\n\nNext steps:\n- We're reviewing the affected systems to identify improvements that could prevent similar issues from recurring.\n \nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-10-22T16:00:37.313Z",
-          "postType": "regular",
-          "content": "Title: SIP devices can't make or receive calls\n\nUser impact: Users may be unable to make or receive calls using SIP devices.\n\nMore info: Users may be unable to sign in to their SIP devices or encounter \"Service Unavailable\" errors.\n\nOnce a SIP device attempts to perform its next synchronization, the device will disconnect. Users will be unable to log back into those devices and therefore can't make or receive calls using those SIP devices.\n\nCalling functionality using the Microsoft Teams web and desktop clients, or Teams Phone Devices are not impacted.\n\nCurrent status: We continue to monitor service recovery after the fix completed deployment. We've received confirmation from some organizations that SIP devices are now performing as expected. We're contacting other organizations for further validations. \n\nScope of impact: Any user attempting to make or receive calls using SIP devices are impacted by this event.\n\nRoot cause: A configuration issue has impacted components that manage SIP devices, resulting in impact.\n\nNext update by: Thursday, October 22, 2026, at 8:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-10-22T11:50:37.823Z",
-          "postType": "regular",
-          "content": "Title: SIP devices can't make or receive calls\n\nUser impact: Users may be unable to make or receive calls using SIP devices.\n\nMore info: Users may be unable to sign in to their SIP devices or encounter \"Service Unavailable\" errors.\n \nOnce a SIP device attempts to perform its next synchronization, the device will disconnect. Users will be unable to log back into those devices and therefore can't make or receive calls using those SIP devices.\n\nCalling functionality using the Microsoft Teams web and desktop clients, or Teams Phone Devices are not impacted.\n \nCurrent status: We've deployed a fix to the affected infrastructure and we've observed a restoration of some of the affected functionality. We're closely monitoring SIP device reconnections and calling stability while conducting additional mitigation actions to push towards a full recovery.\n \nScope of impact: Any user attempting to make or receive calls using SIP devices is impacted by this event.\n \nNext update by: Thursday, October 22, 2026, at 4:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-10-22T07:50:04.567Z",
-          "postType": "regular",
-          "content": "Title: SIP devices can't make or receive calls\n\nUser impact: Users may be unable to make or receive calls using SIP devices.\n\nMore info: Users may be unable to sign in to their SIP devices or encounter \"Service Unavailable\" errors.\n \nOnce a SIP device attempts to perform its next synchronization, the device will disconnect. Users will be unable to log back into those devices and therefore can't make or receive calls using those SIP devices.\n\nCalling functionality using the Microsoft Teams web and desktop clients, or Teams Phone Devices are not impacted.\n \nCurrent status: Our fix is progressing through validation, alongside additional measures to support a safe and stable recovery. Once validation is complete, we'll deploy the fix to the affected infrastructure to begin restoring the affected functionality.\n \nScope of impact: Any user attempting to make or receive calls using SIP devices is impacted by this event.\n \nNext update by: Thursday, October 22, 2026, at 12:00 PM UTC"
-        },
-        {
-          "createdAt": "2026-10-22T02:58:16.333Z",
-          "postType": "regular",
-          "content": "Title: SIP devices can't make or receive calls\r\n\r\nUser impact: Users may be unable to make or receive calls using SIP devices.\r\n\r\nMore info: Users may be unable to sign in to their SIP devices or encounter \"Service Unavailable\" errors. \n\nOnce a SIP device attempts to perform its next synchronization, the device will disconnect. Users will be unable to log back into those devices and therefore can't make or receive calls using those SIP devices.\n \nCalling functionality using the Microsoft Teams web and desktop clients, or Teams Phone Devices are not impacted.\r\n\r\nCurrent status: We're continuing to validate our fix and the recovery of SIP devices within our internal environment. We're also validating additional protective measures before restoring the affected functionality. Once we've confirmed these changes are operating as expected, we'll begin our restoration actions and monitor affected SIP devices as they recover.\r\n\r\nScope of impact: Any user attempting to make or receive calls using SIP devices is impacted by this event.\r\n\r\nNext update by: Thursday, October 22, 2026, at 8:00 AM UTC"
-        }
-      ],
-      "serviceName": "Microsoft Teams",
-      "affectedServices": [
-        "Microsoft Teams"
       ]
     }
   ]
