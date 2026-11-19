@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-19T10:01:55.017Z",
+  "lastUpdated": "2026-11-19T10:32:07.122Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -554,6 +554,31 @@
       "status": "serviceDegradation",
       "id": "microsoftteams",
       "issues": [
+        {
+          "id": "TM1560260",
+          "title": "Some users may experience delays or failures receiving chat messages in Microsoft Teams desktop app",
+          "startTime": "2026-11-19T10:06:33.847Z",
+          "endTime": null,
+          "lastModified": "2026-11-19T10:08:04.037Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may experience delays or failures receiving chat messages in Microsoft Teams desktop app. ",
+          "scopeOfImpact": "Impact is specific to some users receiving chat messages through the Microsoft Teams desktop app.",
+          "rootCause": "A recent service change is causing Microsoft Teams desktop client registrations to be removed without prompting the client to promptly re-register, preventing real-time message delivery and resulting in delays.",
+          "nextUpdateBy": "Thursday, November 19, 2026, at 12:00 PM UTC",
+          "feature": "Messaging",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-11-19T10:08:04.037Z",
+              "postType": "regular",
+              "content": "Title: Some users may experience delays or failures receiving chat messages in Microsoft Teams desktop app\r\n\r\nUser impact: Users may experience delays or failures receiving chat messages in Microsoft Teams desktop app. \r\n\r\nMore info: Affected users may experience delays of several minutes before messages appear in the desktop app. \n\nAs a workaround, users may be able to use Microsoft Teams on the web to access messages without delay.\r\n\r\nCurrent status: We’ve identified that a recent service update is causing some Microsoft Teams desktop registrations to be unexpectedly removed. When this occurs, the affected desktop client isn’t notified that it needs to re-register, preventing real-time message notifications from being delivered and causing messages to appear only after the client performs a periodic synchronization. We’re proceeding with reverting the responsible update to restore normal message delivery. \r\n\r\nScope of impact: Impact is specific to some users receiving chat messages through the Microsoft Teams desktop app. \r\n\r\nRoot cause: A recent service change is causing Microsoft Teams desktop client registrations to be removed without prompting the client to promptly re-register, preventing real-time message delivery and resulting in delays. \r\n\r\nNext update by: Thursday, November 19, 2026, at 12:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Teams"
+          ]
+        },
         {
           "id": "MO1489432",
           "title": "Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile",
