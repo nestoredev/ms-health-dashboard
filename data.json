@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-19T20:36:31.227Z",
+  "lastUpdated": "2026-11-19T21:06:45.392Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -9,18 +9,23 @@
         {
           "id": "EX1558755",
           "title": "Admins' mail-enabled security groups created through the admin center UI may be provisioned incorrectly",
-          "startTime": "2026-11-18T06:44:06.08Z",
+          "startTime": "2026-10-13T09:34:00Z",
           "endTime": null,
-          "lastModified": "2026-11-19T18:48:26.83Z",
+          "lastModified": "2026-11-19T20:56:46.997Z",
           "status": "serviceDegradation",
           "severity": "advisory",
           "userImpact": "Admins' mail-enabled security groups created through the admin center UI may be provisioned incorrectly.",
           "scopeOfImpact": "Some admins attempting to create mail-enabled security groups in the Exchange admin center or Microsoft 365 admin center may be affected. This section may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, October 13, 2026, at 9:34 AM UTC",
           "rootCause": "A recent service change designed to adjust the way our service handles requests to create security and distribution groups is missing a necessary configuration and is causing impact.",
-          "nextUpdateBy": "Thursday, November 19, 2026, at 9:00 PM UTC",
+          "nextUpdateBy": "Thursday, November 19, 2026, at 11:00 PM UTC",
           "feature": "Provisioning – Object synchronization failures",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-11-19T20:44:23.69Z",
+              "postType": "regular",
+              "content": "Title: Admins' mail-enabled security groups created through the admin center UI may be provisioned incorrectly\r\n\r\nUser impact: Admins' mail-enabled security groups created through the admin center UI may be provisioned incorrectly.\r\n\r\nMore info: Specifically, when admins attempt to create mail-enabled security groups in the Exchange admin center (EAC) or Microsoft 365 admin center, the groups may be provisioned as regular distribution groups rather than mail-enabled security groups. As a workaround, admins can use PowerShell to create mail-enabled security groups.\r\n\r\nCurrent status: We've verified that reversing the impacting change resolves the issue in our testing environment and we're proceeding with the reversal for all affected users.\r\n\r\nScope of impact: Some admins attempting to create mail-enabled security groups in the Exchange admin center or Microsoft 365 admin center may be affected. This section may be updated as our investigation continues.\r\n\r\nStart time: Tuesday, October 13, 2026, at 9:34 AM UTC\r\n\r\nRoot cause: A recent service change designed to adjust the way our service handles requests to create security and distribution groups is missing a necessary configuration and is causing impact.\r\n\r\nNext update by: Thursday, November 19, 2026, at 11:00 PM UTC"
+            },
             {
               "createdAt": "2026-11-19T18:47:37.343Z",
               "postType": "regular",
