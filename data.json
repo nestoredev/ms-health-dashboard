@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-21T04:19:32.335Z",
+  "lastUpdated": "2026-11-21T04:49:44.615Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -11,16 +11,21 @@
           "title": "Some users may be unable to open or upload attachments in the new Outlook client",
           "startTime": "2026-11-19T20:49:00Z",
           "endTime": null,
-          "lastModified": "2026-11-21T02:21:36.99Z",
+          "lastModified": "2026-11-21T04:18:24.523Z",
           "status": "serviceDegradation",
           "severity": "incident",
           "userImpact": "Users may be unable to open or upload attachments or view inline images in the new Outlook client.",
           "scopeOfImpact": "Some users attempting to open or upload attachments or view inline images in email messages may be impacted.\n\nStart time: Thursday, November 19, 2026, at 8:49 PM UTC\n\nPreliminary",
           "rootCause": "A recent update to the code which supports embedded web content unexpectedly caused impact.",
-          "nextUpdateBy": "Saturday, November 21, 2026, at 5:00 AM UTC",
+          "nextUpdateBy": "Saturday, November 21, 2026, at 7:00 AM UTC",
           "feature": "Outlook - poor customer experience",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-11-21T04:18:04.553Z",
+              "postType": "regular",
+              "content": "Title: Some users may be unable to open or upload attachments in the new Outlook client\n\nUser impact: Users may be unable to open or upload attachments or view inline images in the new Outlook client.\n\nMore info: Affected users may be able to use Outlook on the web or the Outlook classic client to open or upload attachments and view inline images.\n\nCurrent status: We're closely monitoring the deployment progress of the supplemental fix as we continue with our scaled approach to its implementation. This allows us to ensure efficacy and maintain balance as the fix is incrementally saturated throughout the affected environments.\n\nScope of impact: Some users attempting to open or upload attachments or view inline images in email messages may be impacted.\n\nStart time: Thursday, November 19, 2026, at 8:49 PM UTC\n\nPreliminary root cause: A recent update to the code which supports embedded web content unexpectedly caused impact.\n\nNext update by: Saturday, November 21, 2026, at 7:00 AM UTC"
+            },
             {
               "createdAt": "2026-11-21T02:21:16.687Z",
               "postType": "regular",
