@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-22T23:06:12.993Z",
+  "lastUpdated": "2026-11-22T23:36:26.231Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -2839,37 +2839,6 @@
       "serviceName": "Microsoft Intune",
       "affectedServices": [
         "Microsoft Intune"
-      ]
-    },
-    {
-      "id": "CW1523046",
-      "title": "Users may be seeing unexpected users when changing accounts in Microsoft 365 Copilot Chat",
-      "startTime": "2026-10-05T11:23:00Z",
-      "endTime": "2026-10-23T22:30:00Z",
-      "lastModified": "2026-10-23T23:19:37.74Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Users may have seen unexpected users when changing accounts in Microsoft 365 Copilot Chat.",
-      "scopeOfImpact": "Users attempting to change account in Microsoft 365 Copilot Chat may have seen unexpected users.\r\n\r\nStart time: Monday, October 5, 2026, at 11:23 AM UTC\r\n\r\nEnd time: Friday, October 23, 2026, at 11:18 PM UTC",
-      "rootCause": "A recently deployed build of Microsoft 365 Copilot Chat contained an issue that showed unexpected users when changing accounts in Microsoft 365 Copilot Chat.\r\n\r\nNext steps: \n- We're improving the \"change account\" feature to ensure that its functionality aligns with user expectations.\n \nThis is the final update for the event.",
-      "nextUpdateBy": "",
-      "feature": "General",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-10-23T23:19:00.46Z",
-          "postType": "regular",
-          "content": "Title: Users may be seeing unexpected users when changing accounts in Microsoft 365 Copilot Chat\r\n\r\nUser impact: Users may have seen unexpected users when changing accounts in Microsoft 365 Copilot Chat.\r\n\r\nMore info: While we work to improve the long-term stability of our code change, users won't be able to use the \"change account\" feature.\n \nAffected users were unable to modify or access these unexpected users in any way.\r\n\r\nFinal status: We've determined that our best option to ensure a comprehensive resolution is to temporarily disable the \"change account feature\" while we prepare a code change to ensure that this feature is only available for the expected scenarios. After we finalize our code improvements, we'll re-enable this feature.\r\n\r\nScope of impact: Users attempting to change account in Microsoft 365 Copilot Chat may have seen unexpected users.\r\n\r\nStart time: Monday, October 5, 2026, at 11:23 AM UTC\r\n\r\nEnd time: Friday, October 23, 2026, at 11:18 PM UTC\r\n\r\nRoot cause: A recently deployed build of Microsoft 365 Copilot Chat contained an issue that showed unexpected users when changing accounts in Microsoft 365 Copilot Chat.\r\n\r\nNext steps: \n- We're improving the \"change account\" feature to ensure that its functionality aligns with user expectations.\n \nThis is the final update for the event."
-        },
-        {
-          "createdAt": "2026-10-23T22:15:19.193Z",
-          "postType": "regular",
-          "content": "Title: Users may be seeing unexpected users when changing accounts in Microsoft 365 Copilot Chat\r\n\r\nUser impact: Users may be seeing unexpected users when changing accounts in Microsoft 365 Copilot Chat.\r\n\r\nMore info: Affected user are unable to modify or access these unexpected users in any way.\r\n\r\nCurrent status: We've reviewed recent changes to Microsoft 365 Copilot Chat and identified an update that correlates with the time this issue began. We're considering our options to revert it back to a healthy build to remediate impact.\r\n\r\nScope of impact: Users attempting to change account in Microsoft 365 Copilot Chat may see unexpected users.\r\n\r\nRoot cause: A recently deployed build of Microsoft 365 Copilot Chat contains an issue that's showing unexpected users when changing accounts in Microsoft 365 Copilot Chat.\r\n\r\nNext update by: Friday, October 23, 2026, at 12:30 AM UTC"
-        }
-      ],
-      "serviceName": "Microsoft 365 Copilot Chat",
-      "affectedServices": [
-        "Microsoft 365 Copilot Chat"
       ]
     }
   ]
