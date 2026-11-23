@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-23T19:14:10.532Z",
+  "lastUpdated": "2026-11-23T19:44:22.630Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -158,19 +158,24 @@
       "issues": [
         {
           "id": "MO1565800",
-          "title": "Admins may notice delays with certain reports in the Microsoft 365 and Microsoft Teams admin centers",
-          "startTime": "2026-11-23T18:54:13.27Z",
+          "title": "Admins may notice delays with certain reports in multiple Microsoft 365 operated by 21Vianet and Teams admin centers",
+          "startTime": "2026-11-22T00:00:00Z",
           "endTime": null,
-          "lastModified": "2026-11-23T19:00:05.19Z",
-          "status": "investigating",
+          "lastModified": "2026-11-23T19:32:23.22Z",
+          "status": "serviceDegradation",
           "severity": "advisory",
-          "userImpact": "Admins may notice delays with certain reports in the Microsoft 365 and Microsoft Teams admin centers.",
-          "scopeOfImpact": "",
-          "rootCause": "",
-          "nextUpdateBy": "",
+          "userImpact": "Admins may notice delays with certain reports in multiple Microsoft 365 operated by 21Vianet and Teams admin centers.",
+          "scopeOfImpact": "Any admin expecting either of the affected reports from Sunday, November 22, 2026, are affected. \r\n\r\nStart time: Sunday, November 22, 2026, at 12:00 AM UTC\r\n\r\nEstimated time to resolve: We expect the fix to complete deployment, and mitigation by 9:00 PM UTC on Tuesday, November 24, 2026.",
+          "rootCause": "A portion of infrastructure that facilitates report generation isn't processing requests as expected, resulting in in impact",
+          "nextUpdateBy": "Tuesday, November 24, 2026, at 9:00 PM UTC",
           "feature": "Company or User Administration",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-11-23T19:21:48.49Z",
+              "postType": "regular",
+              "content": "Title: Admins may notice delays with certain reports in the Microsoft 365 and Microsoft Teams admin centers\r\n\r\nUser impact: Admins may notice delays with certain reports in the Microsoft 365 and Microsoft Teams admin centers.\r\n\r\nMore info: Affected reports include:\n\n- Microsoft 365 group activity reports\n- Microsoft Teams usage reports\r\n\r\nCurrent status: Our monitoring has identified delays in certain reporting within the Microsoft 365 and Microsoft Teams admin centers. We've analyzed service telemetry and determined that a portion of infrastructure that facilitates report generation isn't processing requests as expected, resulting in in impact. We've developed a fix to improve throughput and are monitoring the request processing rate as it releases.\r\n\r\nScope of impact: Any admin expecting either of the affected reports from Sunday, November 22, 2026, are affected. \r\n\r\nStart time: Sunday, November 22, 2026, at 12:00 AM UTC\r\n\r\nEstimated time to resolve: We expect the fix to complete deployment, and mitigation by 9:00 PM UTC on Tuesday, November 24, 2026.\r\n\r\nRoot cause: A portion of infrastructure that facilitates report generation isn't processing requests as expected, resulting in in impact\r\n\r\nNext update by: Tuesday, November 24, 2026, at 9:00 PM UTC"
+            },
             {
               "createdAt": "2026-11-23T19:00:05.19Z",
               "postType": "regular",
@@ -592,19 +597,24 @@
       "issues": [
         {
           "id": "MO1565800",
-          "title": "Admins may notice delays with certain reports in the Microsoft 365 and Microsoft Teams admin centers",
-          "startTime": "2026-11-23T18:54:13.27Z",
+          "title": "Admins may notice delays with certain reports in multiple Microsoft 365 operated by 21Vianet and Teams admin centers",
+          "startTime": "2026-11-22T00:00:00Z",
           "endTime": null,
-          "lastModified": "2026-11-23T19:00:05.19Z",
-          "status": "investigating",
+          "lastModified": "2026-11-23T19:32:23.22Z",
+          "status": "serviceDegradation",
           "severity": "advisory",
-          "userImpact": "Admins may notice delays with certain reports in the Microsoft 365 and Microsoft Teams admin centers.",
-          "scopeOfImpact": "",
-          "rootCause": "",
-          "nextUpdateBy": "",
+          "userImpact": "Admins may notice delays with certain reports in multiple Microsoft 365 operated by 21Vianet and Teams admin centers.",
+          "scopeOfImpact": "Any admin expecting either of the affected reports from Sunday, November 22, 2026, are affected. \r\n\r\nStart time: Sunday, November 22, 2026, at 12:00 AM UTC\r\n\r\nEstimated time to resolve: We expect the fix to complete deployment, and mitigation by 9:00 PM UTC on Tuesday, November 24, 2026.",
+          "rootCause": "A portion of infrastructure that facilitates report generation isn't processing requests as expected, resulting in in impact",
+          "nextUpdateBy": "Tuesday, November 24, 2026, at 9:00 PM UTC",
           "feature": "Company or User Administration",
           "isResolved": false,
           "posts": [
+            {
+              "createdAt": "2026-11-23T19:21:48.49Z",
+              "postType": "regular",
+              "content": "Title: Admins may notice delays with certain reports in the Microsoft 365 and Microsoft Teams admin centers\r\n\r\nUser impact: Admins may notice delays with certain reports in the Microsoft 365 and Microsoft Teams admin centers.\r\n\r\nMore info: Affected reports include:\n\n- Microsoft 365 group activity reports\n- Microsoft Teams usage reports\r\n\r\nCurrent status: Our monitoring has identified delays in certain reporting within the Microsoft 365 and Microsoft Teams admin centers. We've analyzed service telemetry and determined that a portion of infrastructure that facilitates report generation isn't processing requests as expected, resulting in in impact. We've developed a fix to improve throughput and are monitoring the request processing rate as it releases.\r\n\r\nScope of impact: Any admin expecting either of the affected reports from Sunday, November 22, 2026, are affected. \r\n\r\nStart time: Sunday, November 22, 2026, at 12:00 AM UTC\r\n\r\nEstimated time to resolve: We expect the fix to complete deployment, and mitigation by 9:00 PM UTC on Tuesday, November 24, 2026.\r\n\r\nRoot cause: A portion of infrastructure that facilitates report generation isn't processing requests as expected, resulting in in impact\r\n\r\nNext update by: Tuesday, November 24, 2026, at 9:00 PM UTC"
+            },
             {
               "createdAt": "2026-11-23T19:00:05.19Z",
               "postType": "regular",
