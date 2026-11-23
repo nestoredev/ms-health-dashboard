@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-23T17:43:32.704Z",
+  "lastUpdated": "2026-11-23T18:13:44.631Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -564,6 +564,51 @@
       "status": "serviceDegradation",
       "id": "microsoftteams",
       "issues": [
+        {
+          "id": "TM1561667",
+          "title": "Users may be unable to open Microsoft 365 Copilot in Microsoft Teams meetings on the iOS app",
+          "startTime": "2026-10-27T00:00:00Z",
+          "endTime": null,
+          "lastModified": "2026-11-23T17:57:17.997Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may have been unable to open Copilot in Microsoft Teams meetings on the iOS app.",
+          "scopeOfImpact": "Users who are attempting to open Copilot in Microsoft Teams meetings on the iOS app may be impacted.\r\n\r\nStart time: Tuesday, October 27, 2026, at 12:00 AM UTC",
+          "rootCause": "We're continuing to monitor the status of the build update submitted to Apple for approval. We're exploring methods to expedite remediation and will provide a resolution timeline as soon as one becomes available.",
+          "nextUpdateBy": "Monday, November 23, 2026, at 7:30 PM UTC",
+          "feature": "Meetings",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-11-21T04:40:44.607Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to open Microsoft 365 Copilot in Microsoft Teams meetings on the iOS app\r\n\r\nUser impact: Users may be unable to open Copilot in Microsoft Teams meetings on the iOS app.\r\n\r\nMore info: After users confirm the Copilot start prompt and select the meeting language, Copilot appears to start but may remain inactive, and meeting participants may not receive the \"Copilot has started\" notification. Subsequent attempts may prompt users to repeat the same steps, but Copilot may still fail to start. \nWhile we work to finalize the full release of our fix, affected users can manually update their Microsoft Teams app to version 8.21.0 or above from the Apple App Store to acquire the fix more quickly and resolve impact.\r\n\r\nCurrent status: We've released our fix with the latest app version on the Apple App Store and are monitoring as it rolls out to all affected users. While the full rollout is progressing, impacted users can manually update their Microsoft Teams app to version 8.21.0 or above from the Apple App Store to acquire the fix more quickly and resolve impact.\r\n\r\nScope of impact: Users who are attempting to open Copilot in Microsoft Teams meetings on the iOS app may be impacted.\r\n\r\nStart time: Tuesday, October 27, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: We're continuing to monitor the status of the build update submitted to Apple for approval. We're exploring methods to expedite remediation and will provide a resolution timeline as soon as one becomes available.\r\n\r\nNext update by: Monday, November 23, 2026, at 7:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-11-20T22:00:01.723Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to open Microsoft 365 Copilot in Microsoft Teams meetings on the iOS app\r\n\r\nUser impact: Users may be unable to open Copilot in Microsoft Teams meetings on the iOS app.\r\n\r\nMore info: After users confirm the Copilot start prompt and select the meeting language, Copilot appears to start but may remain inactive, and meeting participants may not receive the \"Copilot has started\" notification. Subsequent attempts may prompt users to repeat the same steps, but Copilot may still fail to start.\r\n\r\nCurrent status: We're continuing to monitor the status of the build update submitted to Apple for approval. We're exploring methods to expedite remediation and will provide a resolution timeline as soon as one becomes available.\r\n\r\nScope of impact: Users who are attempting to open Copilot in Microsoft Teams meetings on the iOS app may be impacted.\r\n\r\nStart time: Tuesday, October 27, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: We're continuing to monitor the status of the build update submitted to Apple for approval. We're exploring methods to expedite remediation and will provide a resolution timeline as soon as one becomes available.\r\n\r\nNext update by: Monday, November 23, 2026, at 7:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-11-20T17:14:48.207Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to open Microsoft 365 Copilot in Microsoft Teams meetings on the iOS app\r\n\r\nUser impact: Users may be unable to open Copilot in Microsoft Teams meetings on the iOS app.\r\n\r\nMore info: After users confirm the Copilot start prompt and select the meeting language, Copilot appears to start but may remain inactive, and meeting participants may not receive the \"Copilot has started\" notification. Subsequent attempts may prompt users to repeat the same steps, but Copilot may still fail to start.\r\n\r\nCurrent status: Our investigation has identified that the issue is specific to version 8.20.0(100772026202402) and have developed an update to remediate impact. The update has been submitted to Apple for approval, and we'll provide a remediation timeline once available.\r\n\r\nScope of impact: Users who are attempting to open Copilot in Microsoft Teams meetings on the iOS app may be impacted.\r\n\r\nNext update by: Friday, November 20, 2026, at 11:00 PM UTC"
+            },
+            {
+              "createdAt": "2026-11-20T13:56:07.357Z",
+              "postType": "regular",
+              "content": "Title: Users are unable to open Microsoft 365 Copilot in Microsoft Teams meetings on the iOS app\r\n\r\nUser impact: Users are unable to open Copilot in Microsoft Teams meetings on the iOS app.\r\n\r\nMore info: After users confirm the Copilot start prompt and select the meeting language, Copilot appears to start but may remain inactive, and meeting participants may not receive the \"Copilot has started\" notification. Subsequent attempts may prompt users to repeat the same steps, but Copilot may still fail to start.\r\n\r\nCurrent status: We’re continuing to review mobile client logs from affected devices to identify the root cause of impact and develop a mitigation plan.\r\n\r\nScope of impact: Users who are attempting to open Copilot in Microsoft Teams meetings on the iOS app may be impacted.\r\n\r\nNext update by: Friday, November 20, 2026, at 5:30 PM UTC"
+            },
+            {
+              "createdAt": "2026-11-20T12:10:36.653Z",
+              "postType": "regular",
+              "content": "Title: Users may be unable to open Microsoft 365 Copilot in Microsoft Teams meetings on the iOS app\r\n\r\nUser impact: Users may be unable to open Copilot in Microsoft Teams meetings on the iOS app.\r\n\r\nMore info: After users confirm the Copilot start prompt and select the meeting language, Copilot appears to start but may remain inactive, and meeting participants may not receive the \"Copilot has started\" notification. Subsequent attempts may prompt users to repeat the same steps, but Copilot may still fail to start.\r\n\r\nCurrent status: We’re reviewing details provided by a subset of affected users determine the next steps needed to resolve this issue.\r\n\r\nScope of impact: Any users attempting to open Copilot in Microsoft Teams meetings on the iOS app may be impacted.\r\n\r\nNext update by: Friday, November 20, 2026, at 2:00 PM UTC"
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Teams"
+          ]
+        },
         {
           "id": "MO1489432",
           "title": "Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile",
