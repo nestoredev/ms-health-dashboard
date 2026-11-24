@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-24T18:53:18.907Z",
+  "lastUpdated": "2026-11-24T19:23:30.395Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -18,37 +18,6 @@
       "status": "serviceDegradation",
       "id": "OSDPPlatform",
       "issues": [
-        {
-          "id": "MO1565800",
-          "title": "Admins may notice delays with certain reports in the Microsoft 365 and Microsoft Teams admin centers",
-          "startTime": "2026-11-22T00:00:00Z",
-          "endTime": null,
-          "lastModified": "2026-11-24T18:40:05.813Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Admins may have noticed delays with certain reports in the Microsoft 365 and Microsoft Teams admin centers.",
-          "scopeOfImpact": "Any admin expecting either of the affected reports from Sunday, November 22, 2026, are affected. \r\n\r\nStart time: Sunday, November 22, 2026, at 12:00 AM UTC\r\n\r\nEstimated time to resolve: We expect the fix to complete deployment, and mitigation by 9:00 PM UTC on Tuesday, November 24, 2026.",
-          "rootCause": "A portion of infrastructure that facilitates report generation isn't processing requests as expected, resulting in in impact",
-          "nextUpdateBy": "Tuesday, November 24, 2026, at 9:00 PM UTC",
-          "feature": "Company or User Administration",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-11-23T19:21:48.49Z",
-              "postType": "regular",
-              "content": "Title: Admins may notice delays with certain reports in the Microsoft 365 and Microsoft Teams admin centers\r\n\r\nUser impact: Admins may notice delays with certain reports in the Microsoft 365 and Microsoft Teams admin centers.\r\n\r\nMore info: Affected reports include:\n\n- Microsoft 365 group activity reports\n- Microsoft Teams usage reports\r\n\r\nCurrent status: Our monitoring has identified delays in certain reporting within the Microsoft 365 and Microsoft Teams admin centers. We've analyzed service telemetry and determined that a portion of infrastructure that facilitates report generation isn't processing requests as expected, resulting in in impact. We've developed a fix to improve throughput and are monitoring the request processing rate as it releases.\r\n\r\nScope of impact: Any admin expecting either of the affected reports from Sunday, November 22, 2026, are affected. \r\n\r\nStart time: Sunday, November 22, 2026, at 12:00 AM UTC\r\n\r\nEstimated time to resolve: We expect the fix to complete deployment, and mitigation by 9:00 PM UTC on Tuesday, November 24, 2026.\r\n\r\nRoot cause: A portion of infrastructure that facilitates report generation isn't processing requests as expected, resulting in in impact\r\n\r\nNext update by: Tuesday, November 24, 2026, at 9:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-11-23T19:00:05.19Z",
-              "postType": "regular",
-              "content": "Title: Admins may notice delays with certain reports in the Microsoft 365 and Microsoft Teams admin centers\r\n\r\nUser impact: Admins may notice delays with certain reports in the Microsoft 365 and Microsoft Teams admin centers.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft 365 and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Microsoft 365 suite",
-            "Microsoft Teams"
-          ]
-        },
         {
           "id": "MO1457843",
           "title": "Admins can't identify who deleted a Viva Engage community or its Microsoft 365 Group in Microsoft Entra ID audit logs",
@@ -317,41 +286,9 @@
     },
     {
       "service": "Microsoft Teams",
-      "status": "serviceDegradation",
+      "status": "serviceOperational",
       "id": "microsoftteams",
-      "issues": [
-        {
-          "id": "MO1565800",
-          "title": "Admins may notice delays with certain reports in the Microsoft 365 and Microsoft Teams admin centers",
-          "startTime": "2026-11-22T00:00:00Z",
-          "endTime": null,
-          "lastModified": "2026-11-24T18:40:05.813Z",
-          "status": "serviceDegradation",
-          "severity": "advisory",
-          "userImpact": "Admins may have noticed delays with certain reports in the Microsoft 365 and Microsoft Teams admin centers.",
-          "scopeOfImpact": "Any admin expecting either of the affected reports from Sunday, November 22, 2026, are affected. \r\n\r\nStart time: Sunday, November 22, 2026, at 12:00 AM UTC\r\n\r\nEstimated time to resolve: We expect the fix to complete deployment, and mitigation by 9:00 PM UTC on Tuesday, November 24, 2026.",
-          "rootCause": "A portion of infrastructure that facilitates report generation isn't processing requests as expected, resulting in in impact",
-          "nextUpdateBy": "Tuesday, November 24, 2026, at 9:00 PM UTC",
-          "feature": "Company or User Administration",
-          "isResolved": false,
-          "posts": [
-            {
-              "createdAt": "2026-11-23T19:21:48.49Z",
-              "postType": "regular",
-              "content": "Title: Admins may notice delays with certain reports in the Microsoft 365 and Microsoft Teams admin centers\r\n\r\nUser impact: Admins may notice delays with certain reports in the Microsoft 365 and Microsoft Teams admin centers.\r\n\r\nMore info: Affected reports include:\n\n- Microsoft 365 group activity reports\n- Microsoft Teams usage reports\r\n\r\nCurrent status: Our monitoring has identified delays in certain reporting within the Microsoft 365 and Microsoft Teams admin centers. We've analyzed service telemetry and determined that a portion of infrastructure that facilitates report generation isn't processing requests as expected, resulting in in impact. We've developed a fix to improve throughput and are monitoring the request processing rate as it releases.\r\n\r\nScope of impact: Any admin expecting either of the affected reports from Sunday, November 22, 2026, are affected. \r\n\r\nStart time: Sunday, November 22, 2026, at 12:00 AM UTC\r\n\r\nEstimated time to resolve: We expect the fix to complete deployment, and mitigation by 9:00 PM UTC on Tuesday, November 24, 2026.\r\n\r\nRoot cause: A portion of infrastructure that facilitates report generation isn't processing requests as expected, resulting in in impact\r\n\r\nNext update by: Tuesday, November 24, 2026, at 9:00 PM UTC"
-            },
-            {
-              "createdAt": "2026-11-23T19:00:05.19Z",
-              "postType": "regular",
-              "content": "Title: Admins may notice delays with certain reports in the Microsoft 365 and Microsoft Teams admin centers\r\n\r\nUser impact: Admins may notice delays with certain reports in the Microsoft 365 and Microsoft Teams admin centers.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft 365 and checking for impact to your organization. We'll provide an update within 30 minutes."
-            }
-          ],
-          "affectedServices": [
-            "Microsoft 365 suite",
-            "Microsoft Teams"
-          ]
-        }
-      ]
+      "issues": []
     },
     {
       "service": "Microsoft Bookings",
@@ -513,6 +450,42 @@
     }
   ],
   "history": [
+    {
+      "id": "MO1565800",
+      "title": "Admins may notice delays with certain reports in the Microsoft 365 and Microsoft Teams admin centers",
+      "startTime": "2026-11-22T00:00:00Z",
+      "endTime": "2026-11-24T12:00:00Z",
+      "lastModified": "2026-11-24T18:57:17.28Z",
+      "status": "serviceRestored",
+      "severity": "advisory",
+      "userImpact": "Admins may have noticed delays with certain reports in the Microsoft 365 and Microsoft Teams admin centers.",
+      "scopeOfImpact": "Any admin expecting either of the affected reports from Sunday, November 22, 2026, were affected. \n\nStart time: Sunday, November 22, 2026, at 12:00 AM UTC\n\nEnd time: Tuesday, November 24, 2026, at 6:52 PM UTC",
+      "rootCause": "A portion of infrastructure that facilitates report generation wasn't processing requests as expected, resulting in in impact\n\nNext steps: \n- We're further analyzing the subset of affected service infrastructure to help us isolate the source for the lower-than-expected request processing, and so we can prevent similar issues in the future.  \n\nThis is the final update for this event.",
+      "nextUpdateBy": "",
+      "feature": "Company or User Administration",
+      "isResolved": true,
+      "posts": [
+        {
+          "createdAt": "2026-11-24T18:57:17.28Z",
+          "postType": "regular",
+          "content": "Title: Admins may notice delays with certain reports in the Microsoft 365 and Microsoft Teams admin centers\n\nUser impact: Admins may have noticed delays with certain reports in the Microsoft 365 and Microsoft Teams admin centers.\n\nMore info: Affected reports included:\n\n- Microsoft 365 group activity reports\n- Microsoft Teams usage reports\n\nFinal status: Following the deployment of our fix, our internal service telemetry has verified that request generation and processing has returned to expected levels, and that the impact has been remediated.\n\nScope of impact: Any admin expecting either of the affected reports from Sunday, November 22, 2026, were affected. \n\nStart time: Sunday, November 22, 2026, at 12:00 AM UTC\n\nEnd time: Tuesday, November 24, 2026, at 6:52 PM UTC\n\nRoot cause: A portion of infrastructure that facilitates report generation wasn't processing requests as expected, resulting in in impact\n\nNext steps: \n- We're further analyzing the subset of affected service infrastructure to help us isolate the source for the lower-than-expected request processing, and so we can prevent similar issues in the future.  \n\nThis is the final update for this event."
+        },
+        {
+          "createdAt": "2026-11-23T19:21:48.49Z",
+          "postType": "regular",
+          "content": "Title: Admins may notice delays with certain reports in the Microsoft 365 and Microsoft Teams admin centers\r\n\r\nUser impact: Admins may notice delays with certain reports in the Microsoft 365 and Microsoft Teams admin centers.\r\n\r\nMore info: Affected reports include:\n\n- Microsoft 365 group activity reports\n- Microsoft Teams usage reports\r\n\r\nCurrent status: Our monitoring has identified delays in certain reporting within the Microsoft 365 and Microsoft Teams admin centers. We've analyzed service telemetry and determined that a portion of infrastructure that facilitates report generation isn't processing requests as expected, resulting in in impact. We've developed a fix to improve throughput and are monitoring the request processing rate as it releases.\r\n\r\nScope of impact: Any admin expecting either of the affected reports from Sunday, November 22, 2026, are affected. \r\n\r\nStart time: Sunday, November 22, 2026, at 12:00 AM UTC\r\n\r\nEstimated time to resolve: We expect the fix to complete deployment, and mitigation by 9:00 PM UTC on Tuesday, November 24, 2026.\r\n\r\nRoot cause: A portion of infrastructure that facilitates report generation isn't processing requests as expected, resulting in in impact\r\n\r\nNext update by: Tuesday, November 24, 2026, at 9:00 PM UTC"
+        },
+        {
+          "createdAt": "2026-11-23T19:00:05.19Z",
+          "postType": "regular",
+          "content": "Title: Admins may notice delays with certain reports in the Microsoft 365 and Microsoft Teams admin centers\r\n\r\nUser impact: Admins may notice delays with certain reports in the Microsoft 365 and Microsoft Teams admin centers.\r\n\r\nCurrent status: We're investigating a potential issue with Microsoft 365 and checking for impact to your organization. We'll provide an update within 30 minutes."
+        }
+      ],
+      "serviceName": "Microsoft 365 suite",
+      "affectedServices": [
+        "Microsoft 365 suite"
+      ]
+    },
     {
       "id": "MO1489432",
       "title": "Users may have been unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile",
