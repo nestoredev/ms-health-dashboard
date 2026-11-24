@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-24T19:53:41.381Z",
+  "lastUpdated": "2026-11-24T20:23:52.519Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -286,9 +286,35 @@
     },
     {
       "service": "Microsoft Teams",
-      "status": "serviceOperational",
+      "status": "serviceDegradation",
       "id": "microsoftteams",
-      "issues": []
+      "issues": [
+        {
+          "id": "TM1567135",
+          "title": "Users may not see Public Switched Telephone Network (PSTN) contact names shown on inbound Microsoft Teams call banners",
+          "startTime": "2026-11-10T20:30:00Z",
+          "endTime": null,
+          "lastModified": "2026-11-24T20:18:15.51Z",
+          "status": "serviceDegradation",
+          "severity": "advisory",
+          "userImpact": "Users may not see Public Switched Telephone Network (PSTN) contact names shown on inbound Microsoft Teams call banners.",
+          "scopeOfImpact": "",
+          "rootCause": "",
+          "nextUpdateBy": "",
+          "feature": "Calling",
+          "isResolved": false,
+          "posts": [
+            {
+              "createdAt": "2026-11-24T20:07:58.443Z",
+              "postType": "regular",
+              "content": "Title: Users may not see Public Switched Telephone Network (PSTN) contact names shown on inbound Microsoft Teams call banners\r\n\r\nUser impact: Users may not see Public Switched Telephone Network (PSTN) contact names shown on inbound Microsoft Teams call banners.\r\n\r\nMore info: Affected users report that they expect to see saved contact names displayed on inbound PSTN Teams call banners. Calls can still be received and answered. The saved contact name may appear after answering or in call history. Internal Teams calls aren’t reported as affected.\r\n\r\nCurrent status: We're investigating a potential issue with names not appearing in incoming call banners in Microsoft Teams and checking for impact to your organization. We'll provide an update within 30 minutes."
+            }
+          ],
+          "affectedServices": [
+            "Microsoft Teams"
+          ]
+        }
+      ]
     },
     {
       "service": "Microsoft Bookings",
