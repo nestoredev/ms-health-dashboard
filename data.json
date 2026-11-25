@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-25T20:03:24.213Z",
+  "lastUpdated": "2026-11-25T20:33:35.683Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -666,15 +666,15 @@
     },
     {
       "id": "MO1489432",
-      "title": "Users may have been unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile",
+      "title": "Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile",
       "startTime": "2026-09-25T07:30:00Z",
       "endTime": "2026-11-24T10:00:00Z",
-      "lastModified": "2026-11-24T15:00:22.93Z",
+      "lastModified": "2026-11-25T20:08:24.843Z",
       "status": "serviceRestored",
       "severity": "advisory",
       "userImpact": "Users may have been unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.",
-      "scopeOfImpact": "Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may have been impacted.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC\r\n\r\nEnd time: Tuesday, November 24, 2026, at 10:00 AM UTC",
-      "rootCause": "A problem with a contact-processing component had incorrectly separated some Profile Based Contact (PBCs) from their associated profiles when specific contact information wasn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext steps: We're reviewing our contact-processing procedures on the affected infrastructure to help prevent this problem from happening again.\r\n\r\nThis is the final update for this event.",
+      "scopeOfImpact": "Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may have been impacted.\n \nStart time: Friday, September 25, 2026, at 7:30 AM UTC\n \nEnd time: Tuesday, November 24, 2026, at 10:00 AM UTC",
+      "rootCause": "A problem with a contact-processing component had incorrectly separated some Profile Based Contact (PBCs) from their associated profiles when specific contact information wasn't explicitly stored, causing affected contacts to appear as blank.\n \nNext steps: \n- We're reviewing our contact-processing procedures on the affected infrastructure to help prevent this problem from happening again.\n \nThis is the final update for this event.",
       "nextUpdateBy": "",
       "feature": "Access",
       "isResolved": true,
@@ -682,7 +682,7 @@
         {
           "createdAt": "2026-11-24T14:24:06.237Z",
           "postType": "regular",
-          "content": "Title: Users may have been unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\r\n\r\nUser impact: Users may have been unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\r\n\r\nMore info: Affected users may have observed missing contacts, blank or grey placeholder entries, or Speed Dial entries that couldn't be re-added. This behavior may have occured across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacted in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also have been impacted under specific circumstances.\r\n\r\nFinal status: We’ve completed deployment of the code fix to repair the remaining affected contacts on a user basis and confirmed that impact is remediated.\r\n\r\nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may have been impacted.\r\n\r\nStart time: Friday, September 25, 2026, at 7:30 AM UTC\r\n\r\nEnd time: Tuesday, November 24, 2026, at 10:00 AM UTC\r\n\r\nRoot cause: A problem with a contact-processing component had incorrectly separated some Profile Based Contact (PBCs) from their associated profiles when specific contact information wasn't explicitly stored, causing affected contacts to appear as blank.\r\n\r\nNext steps: We're reviewing our contact-processing procedures on the affected infrastructure to help prevent this problem from happening again.\r\n\r\nThis is the final update for this event."
+          "content": "Title: Users may be unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile\n \nUser impact: Users may have been unable to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile.\n \nMore info: Affected users may have observed missing contacts, blank or grey placeholder entries, or Speed Dial entries that couldn't be re-added. This behavior may have occurred across Microsoft Teams desktop and web experiences, Outlook Mobile, and Outlook desktop.\n \nMore specifically, this issue impacted in-tenant contacts created in Microsoft Teams using the Notify when available presence notification option. Some older contacts may also have been impacted under specific circumstances.\n \nFinal status: We’ve completed deployment of the code fix to repair the remaining affected contacts on a user basis and confirmed that impact is remediated. Some contacts may still be blank; however, we're unable to automate a fix to resolve all instances of blank contacts. We recommend users to delete the blank contacts and add them again. If they add a contact from a profile card, all information that was previously visible should return:\n\nhttps://support.microsoft.com/en-us/outlook/create-view-and-edit-contacts-and-contact-lists-in-outlook\n \nScope of impact: Some users attempting to view contacts and Speed Dial entries in Microsoft Teams, Outlook desktop and mobile may have been impacted.\n \nStart time: Friday, September 25, 2026, at 7:30 AM UTC\n \nEnd time: Tuesday, November 24, 2026, at 10:00 AM UTC\n \nRoot cause: A problem with a contact-processing component had incorrectly separated some Profile Based Contact (PBCs) from their associated profiles when specific contact information wasn't explicitly stored, causing affected contacts to appear as blank.\n \nNext steps: \n- We're reviewing our contact-processing procedures on the affected infrastructure to help prevent this problem from happening again.\n \nThis is the final update for this event."
         },
         {
           "createdAt": "2026-11-20T14:16:36.837Z",
