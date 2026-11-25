@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-25T16:32:02.677Z",
+  "lastUpdated": "2026-11-25T17:02:14.192Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -2640,52 +2640,6 @@
       "serviceName": "Microsoft Viva",
       "affectedServices": [
         "Microsoft Viva"
-      ]
-    },
-    {
-      "id": "TM1526111",
-      "title": "Users may be unable to send or receive messages, upload images, or schedule meetings in Microsoft Teams",
-      "startTime": "2026-10-26T15:01:00Z",
-      "endTime": "2026-10-26T15:42:00Z",
-      "lastModified": "2026-11-03T01:38:33.217Z",
-      "status": "postIncidentReviewPublished",
-      "severity": "incident",
-      "userImpact": "Users may have been unable to send or receive messages, upload images, or schedule meetings in Teams.",
-      "scopeOfImpact": "",
-      "rootCause": "",
-      "nextUpdateBy": "",
-      "feature": "General",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-11-03T01:38:33.217Z",
-          "postType": "regular",
-          "content": "A post-incident report has been published."
-        },
-        {
-          "createdAt": "2026-11-03T01:30:18.343Z",
-          "postType": "regular",
-          "content": "A post-incident report has been published."
-        },
-        {
-          "createdAt": "2026-10-28T23:36:20.207Z",
-          "postType": "regular",
-          "content": "A post-incident report has been published."
-        },
-        {
-          "createdAt": "2026-10-26T16:26:13.943Z",
-          "postType": "regular",
-          "content": "Title: Users may be unable to send or receive messages, upload images, or schedule meetings in Microsoft Teams\n\nUser impact: Users may have been unable to send or receive messages, upload images, or schedule meetings in Teams.\n\nMore info: Users may have also encountered issues with \n- Delays in sending and receiving messages \n- Creating new threads\n- Signing in and out\n- Scheduling service timeouts\n\nFinal status: We can confirm after monitoring our telemetry that the automatic scaling efforts to increase processing throughput were successful and the service has returned to healthy levels.\n\nScope of impact: GCC users who attempted to send or receive messages, upload images, or schedule meetings in Microsoft Teams may have been impacted by this event.\n\nStart time: Monday, October 26, 2026, at 3:01 PM UTC\n\nEnd time: Monday, October 26, 2026, at 3:42 PM UTC\n\nPreliminary root cause: We've identified that higher-than-normal latency impacted backend services that manage chat threads and messages, along with higher-than-normal Central Processing Unit (CPU) utilization resulted in our service entering an unhealthy state.\n\nNext steps:  \n- To help prevent similar impact in the future, we're further reviewing our alerting and traffic distribution systems.\n\nWe'll provide a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days."
-        },
-        {
-          "createdAt": "2026-10-26T16:02:19.98Z",
-          "postType": "quick",
-          "content": "We're seeing positive trends towards recovery in our telemetry following our service's automatic scaling efforts to increase processing throughput.\n\nThis quick update is designed to give the latest information on this issue.\n\nNext update by: Monday, October 26, 2026, at 5:00 PM UTC"
-        }
-      ],
-      "serviceName": "Microsoft Teams",
-      "affectedServices": [
-        "Microsoft Teams"
       ]
     }
   ]
