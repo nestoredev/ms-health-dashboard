@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-27T00:44:03.387Z",
+  "lastUpdated": "2026-11-27T01:14:13.543Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -2563,52 +2563,6 @@
       "serviceName": "Microsoft Teams",
       "affectedServices": [
         "Microsoft Teams"
-      ]
-    },
-    {
-      "id": "EX1527500",
-      "title": "Some users may see intermittent failures when accessing Exchange Online through Representational State Transfer (REST)",
-      "startTime": "2026-10-27T15:56:24.433Z",
-      "endTime": "2026-10-28T00:08:48.557Z",
-      "lastModified": "2026-10-28T00:55:49.09Z",
-      "status": "serviceRestored",
-      "severity": "incident",
-      "userImpact": "Users may have experienced intermittent errors or failures when accessing Exchange Online through REST.",
-      "scopeOfImpact": "Impact may have intermittently occurred for some users who were attempting to access Exchange Online through Representational State Transfer (REST).\r\n\r\nStart time: Wednesday, October 14, 2026, at 5:55 PM UTC\r\n\r\nEnd time: Tuesday, October 27, 2026, at 11:48 PM UTC",
-      "rootCause": "A directory service component configuration change intended to further optimize the service was resulting in impact.\r\n\r\nNext steps: \n-We're reviewing our feature update testing and validation methods to better identify the potential for impact prior to deployment so we can prevent similar issues in the future, and to improve our pre-deployment update testing processes.",
-      "nextUpdateBy": "",
-      "feature": "Reports of an Incident",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-10-28T00:51:27.383Z",
-          "postType": "regular",
-          "content": "Title: Some users may see intermittent failures when accessing Exchange Online through Representational State Transfer (REST)\r\n\r\nUser impact: Users may have experienced intermittent errors or failures when accessing Exchange Online through REST.\r\n\r\nFinal status: We've confirmed that a directory service component configuration change intended to further optimize the service was resulting in impact. We've fully disabled the offending change and verified through internal monitoring that impact is remediated.\r\n\r\nScope of impact: Impact may have intermittently occurred for some users who were attempting to access Exchange Online through Representational State Transfer (REST).\r\n\r\nStart time: Wednesday, October 14, 2026, at 5:55 PM UTC\r\n\r\nEnd time: Tuesday, October 27, 2026, at 11:48 PM UTC\r\n\r\nRoot cause: A directory service component configuration change intended to further optimize the service was resulting in impact.\r\n\r\nNext steps: \n-We're reviewing our feature update testing and validation methods to better identify the potential for impact prior to deployment so we can prevent similar issues in the future, and to improve our pre-deployment update testing processes."
-        },
-        {
-          "createdAt": "2026-10-27T22:52:24.673Z",
-          "postType": "regular",
-          "content": "Title: Some users may see intermittent failures when accessing Exchange Online through Representational State Transfer (REST)\r\n\r\nUser impact: Users may experience intermittent errors or failures when accessing Exchange Online through REST.\r\n\r\nCurrent status: We've successfully validated that disabling the change remediates impact with no unforeseen side effects. We're continuing to roll out this change in order to fully remediate impact, and we expect that it will complete by our next scheduled update. \r\n\r\nScope of impact: Impact may intermittently occur for some users who are attempting to access Exchange Online through REST. This section may be updated as the investigation continues.\r\n\r\nNext update by: Wednesday, October 28, 2026, at 1:00 AM UTC"
-        },
-        {
-          "createdAt": "2026-10-27T21:10:08.68Z",
-          "postType": "regular",
-          "content": "Title: Some users may experience intermittent errors or failures when accessing Exchange Online through REST APIs\r\n\r\nUser impact: Users may experience intermittent errors or failures when accessing Exchange Online through REST APIs.\r\n\r\nCurrent status: We're continuing to disable the recent service change intended to optimize directory functionality in additional selected affected environments while monitoring service telemetry to validate whether this action successfully alleviates impact. If successful, we'll proceed with disabling the change throughout the remaining affected environments to fully remediate impact. We'll provide a resolution timeline once available.\r\n\r\nScope of impact: Impact may occur intermittently for users attempting to access Exchange Online through REST APIs.\r\n\r\nNext update by: Tuesday, October 27, 2026, at 11:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-10-27T19:15:13.297Z",
-          "postType": "regular",
-          "content": "Title: Some users may experience intermittent errors or failures when accessing Exchange Online through REST APIs\r\n\r\nUser impact: Users may experience intermittent errors or failures when accessing Exchange Online through REST APIs.\r\n\r\nCurrent status: We're continuing to disable the recent service change intended to optimize directory functionality in additional selected affected environments and monitoring service telemetry to validate whether this action alleviates impact. If successful, we'll proceed with disabling the change throughout the remaining affected environments to fully remediate impact.\r\n\r\nScope of impact: Impact may occur intermittently for users attempting to access Exchange Online through REST APIs.\r\n\r\nNext update by: Tuesday, October 27, 2026, at 9:30 PM UTC"
-        },
-        {
-          "createdAt": "2026-10-27T17:17:28.197Z",
-          "postType": "regular",
-          "content": "Title: Some users may experience intermittent errors or failures when accessing Exchange Online through REST APIs\r\n\r\nUser impact: Users may experience intermittent errors or failures when accessing Exchange Online through REST APIs.\r\n\r\nCurrent status: We've identified that a recent service change intended to optimize directory functionality may have introduced an issue with how Exchange Online Representational State Transfer (REST) API requests are processed, resulting in intermittent errors or failures. We're testing this theory by disabling the change in a portion of the affected environments and monitoring service telemetry to determine whether this action alleviates impact. If successful, we'll proceed with disabling the change throughout the remaining affected environments to fully remediate impact.\r\n\r\nScope of impact: Impact may occur intermittently for users attempting to access Exchange Online through REST APIs.\r\n\r\nNext update by: Tuesday, October 27, 2026, at 7:30 PM UTC"
-        }
-      ],
-      "serviceName": "Exchange Online",
-      "affectedServices": [
-        "Exchange Online"
       ]
     }
   ]
