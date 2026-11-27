@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-27T19:51:07.349Z",
+  "lastUpdated": "2026-11-27T20:21:17.983Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -2532,37 +2532,6 @@
       "serviceName": "Exchange Online",
       "affectedServices": [
         "Exchange Online"
-      ]
-    },
-    {
-      "id": "TM1528936",
-      "title": "Admins may be unable to access Best Practices content in the Microsoft Teams admin center",
-      "startTime": "2026-10-28T15:00:51.54Z",
-      "endTime": "2026-10-28T19:18:16.367Z",
-      "lastModified": "2026-10-28T19:18:45.373Z",
-      "status": "serviceRestored",
-      "severity": "advisory",
-      "userImpact": "Admins may have been unable to access Best Practices content in the Microsoft Teams admin center.",
-      "scopeOfImpact": "This issue was preventing some admins in North America and Japan from accessing Best Practices content or from conducting CQD report queries in the Microsoft Teams admin center.\r\n\r\nStart time: Tuesday, October 13, 2026, at 11:08 AM UTC\r\n\r\nEnd time: Wednesday, October 28, 2026, at 3:32 PM UTC",
-      "rootCause": "A recent update introduced a code regression for the subset of infrastructure that supported access to the Best Practices content and CQD report queries in the Microsoft Teams admin center.\r\n\r\nNext steps: - We're reviewing and improving our service update validation procedure to detect and prevent similar code issues from occurring in the future.\r\n\r\nThis is the final update for this event.",
-      "nextUpdateBy": "",
-      "feature": "Teams Admin Center",
-      "isResolved": true,
-      "posts": [
-        {
-          "createdAt": "2026-10-28T19:18:41.507Z",
-          "postType": "regular",
-          "content": "Title: Admins may be unable to access Best Practices content in the Microsoft Teams admin center\r\n\r\nUser impact: Admins may have been unable to access Best Practices content in the Microsoft Teams admin center.\r\n\r\nMore info: In addition, admins were unable to conduct Call Quality Dashboard (CQD) queries in the Microsoft Teams admin center.\r\n\r\nFinal status: We've confirmed with previously affected users that impact is remediated after our change reversion completed. \r\n\r\nScope of impact: This issue was preventing some admins in North America and Japan from accessing Best Practices content or from conducting CQD report queries in the Microsoft Teams admin center.\r\n\r\nStart time: Tuesday, October 13, 2026, at 11:08 AM UTC\r\n\r\nEnd time: Wednesday, October 28, 2026, at 3:32 PM UTC\r\n\r\nRoot cause: A recent update introduced a code regression for the subset of infrastructure that supported access to the Best Practices content and CQD report queries in the Microsoft Teams admin center.\r\n\r\nNext steps: - We're reviewing and improving our service update validation procedure to detect and prevent similar code issues from occurring in the future.\r\n\r\nThis is the final update for this event."
-        },
-        {
-          "createdAt": "2026-10-28T15:29:50.56Z",
-          "postType": "regular",
-          "content": "Title: Admins may be unable to access Best Practices content in the Microsoft Teams admin center\r\n\r\nUser impact: Admins may be unable to access Best Practices content in the Microsoft Teams admin center.\r\n\r\nMore info: In addition, admins are unable to conduct Call Quality Dashboard (CQD) queries in the Microsoft Teams admin center.\r\n\r\nCurrent status: We've identified a recent service update that introduced a code regression and is affecting a subset of service infrastructure that helps facilitate access to Best Practices content in the Microsoft Teams admin center. We've conducted our change reversion process to remove the change and remediate the impact.\r\n\r\nScope of impact: This issue is preventing some admins in North America and Japan from accessing Best Practices content or from conducting CQD report queries in the Microsoft Teams admin center.\r\n\r\nStart time: Tuesday, October 13, 2026, at 12:00 AM UTC\r\n\r\nRoot cause: A recent update has introduced a code regression for the subset of infrastructure that supports access to the Best Practices content in the Microsoft Teams admin center.\r\n\r\nNext update by: Wednesday, October 28, 2026, at 8:00 PM UTC"
-        }
-      ],
-      "serviceName": "Microsoft Teams",
-      "affectedServices": [
-        "Microsoft Teams"
       ]
     }
   ]
