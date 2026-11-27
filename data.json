@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-27T21:51:50.197Z",
+  "lastUpdated": "2026-11-27T22:22:00.017Z",
   "services": [
     {
       "service": "Exchange Online",
@@ -812,7 +812,7 @@
       "title": "Some users may have been unable to open or upload attachments in the new Outlook client",
       "startTime": "2026-11-19T20:49:00Z",
       "endTime": "2026-11-21T08:25:00Z",
-      "lastModified": "2026-11-25T07:21:18.993Z",
+      "lastModified": "2026-11-27T21:47:16.073Z",
       "status": "postIncidentReviewPublished",
       "severity": "incident",
       "userImpact": "Users may have been to open or upload attachments or view inline images in the new Outlook client.",
@@ -822,6 +822,11 @@
       "feature": "Outlook - poor customer experience",
       "isResolved": true,
       "posts": [
+        {
+          "createdAt": "2026-11-27T21:47:16.073Z",
+          "postType": "regular",
+          "content": "A post-incident report has been published."
+        },
         {
           "createdAt": "2026-11-25T07:21:18.993Z",
           "postType": "regular",
@@ -841,11 +846,6 @@
           "createdAt": "2026-11-21T06:04:26.083Z",
           "postType": "regular",
           "content": "Title: Some users may be unable to open or upload attachments in the new Outlook client\n\nUser impact: Users may be unable to open or upload attachments or view inline images in the new Outlook client.\n\nMore info: Affected users may be able to use Outlook on the web or the Outlook classic client to open or upload attachments and view inline images.\n\nCurrent status: The deployment of the supplemental fix has saturated the majority of affected environments, and we expect most users will see remediation at this time. Users actively using the new Outlook client and encountering the impact may need to close and reopen the client for the fix to take effect. Otherwise, the fix will be applied automatically the next time users open the new Outlook client. We anticipate the fix will be fully saturated across the remaining environments by the time of our next scheduled update.\n\nScope of impact: Some users attempting to open or upload attachments or view inline images in email messages may be impacted.\n\nStart time: Thursday, November 19, 2026, at 8:49 PM UTC\n\nPreliminary root cause: A recent update to the code which supports embedded web content unexpectedly caused impact.\n\nNext update by: Saturday, November 21, 2026, at 10:00 AM UTC"
-        },
-        {
-          "createdAt": "2026-11-21T04:18:04.553Z",
-          "postType": "regular",
-          "content": "Title: Some users may be unable to open or upload attachments in the new Outlook client\n\nUser impact: Users may be unable to open or upload attachments or view inline images in the new Outlook client.\n\nMore info: Affected users may be able to use Outlook on the web or the Outlook classic client to open or upload attachments and view inline images.\n\nCurrent status: We're closely monitoring the deployment progress of the supplemental fix as we continue with our scaled approach to its implementation. This allows us to ensure efficacy and maintain balance as the fix is incrementally saturated throughout the affected environments.\n\nScope of impact: Some users attempting to open or upload attachments or view inline images in email messages may be impacted.\n\nStart time: Thursday, November 19, 2026, at 8:49 PM UTC\n\nPreliminary root cause: A recent update to the code which supports embedded web content unexpectedly caused impact.\n\nNext update by: Saturday, November 21, 2026, at 7:00 AM UTC"
         }
       ],
       "serviceName": "Exchange Online",
